@@ -1,15 +1,15 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Y – Development</title><link>/docs/development/</link><description>Recent content in Development on Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Acceptance Testing</title><link>/docs/development/acceptancetesting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/acceptancetesting/</guid><description>
-&lt;p>Open Y is a big distribution with a large amount of modules, components, subsystems, and business
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Y USA Open Y – Development</title><link>/docs/development/</link><description>Recent content in Development on Y USA Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Acceptance Testing</title><link>/docs/development/acceptancetesting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/acceptancetesting/</guid><description>
+&lt;p>Y USA Open Y is a big distribution with a large amount of modules, components, subsystems, and business
 processes, therefore we have to take appropriate steps to ensure the stability of major functionality during development.&lt;/p>
 &lt;p>For the automated tests we have created
 &lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/.github/PULL_REQUEST_TEMPLATE.md" target="_blank">General Checks template&lt;/a>
-on GitHub every developer should follow to get review approval from Open Y core team.
+on GitHub every developer should follow to get review approval from Y USA Open Y core team.
 However, General Checks are for testing functionality for the current proposed change only, not for Regression Testing.&lt;/p>
 &lt;p>For regression testing,
-&lt;a href="/docs/development/tests/#behat">Behat tests&lt;/a> in this flow are provided automatically on each build by Open Y community.&lt;/p>
-&lt;p>Every pull request should include a testing plan prior to release into Open Y. This plan should cover the testing of all workflows and functionality to ensure that they continue to work with any new code or change implemented. This is because it is possible for conflicts to occur between elements of Open Y, Drupal Modules, and Drupal Core. These pull request testing plans will increase productivity and decrease effort for manual Acceptance Testing of upcoming Releases. This testing plan should cover specific features and functionality that is likely to cause regression issues post-release or post-upgrade to the latest version of Open Y once this new code is implemented.&lt;/p>
+&lt;a href="/docs/development/tests/#behat">Behat tests&lt;/a> in this flow are provided automatically on each build by Y USA Open Y community.&lt;/p>
+&lt;p>Every pull request should include a testing plan prior to release into Y USA Open Y. This plan should cover the testing of all workflows and functionality to ensure that they continue to work with any new code or change implemented. This is because it is possible for conflicts to occur between elements of Y USA Open Y, Drupal Modules, and Drupal Core. These pull request testing plans will increase productivity and decrease effort for manual Acceptance Testing of upcoming Releases. This testing plan should cover specific features and functionality that is likely to cause regression issues post-release or post-upgrade to the latest version of Y USA Open Y once this new code is implemented.&lt;/p>
 &lt;p>Example of testing plan: If the Drupal core is updated it is important to gather all Drupal core Release Notes since last release
-core upgrade for Open Y and analyze important issues fixed.
+core upgrade for Y USA Open Y and analyze important issues fixed.
 Example - in case if you are doing upgrade from latest 8.4.0 to 8.4.4:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -30,14 +30,14 @@ Example - in case if you are doing upgrade from latest 8.4.0 to 8.4.4:&lt;/p>
 &lt;li>ckeditor&lt;/li>
 &lt;li>composer&lt;/li>
 &lt;/ul>
-&lt;p>This list could be extended by analyzing some highly important parts of Open Y distributions that depends from the above
+&lt;p>This list could be extended by analyzing some highly important parts of Y USA Open Y distributions that depends from the above
 subsystems. It is not required to spend time on every module that has a dependency taxonomy, but it is important to test at least one impacted module to ensure it is still working post-implementation. In case if there is a Behat test already created for the subsystem in a list then a manual test could be skipped as long as the build is not failing due to the module or element covered in the associated Behat test.&lt;/p>
 &lt;p>How to choose which modules to test: These can be a random selection from the list of systems impacted, or one of the oldest modules in a system impacted. This is because there is a higher chance that a minor change could cause a regression issue for the modules that have not received recent or regular updates.&lt;/p>
 &lt;p>The oldest modules(contrib modules) that have dependencies from the above list should also be updated, but
 to improve productivity, these updates should only be initiated if there is a security issue or a module stopped working because of
 the subsystems getting updated within an upcoming release. In case if a respective module update creates more issues
 that the older version of said module - then it is better to keep the old module and fix an associated regression bug.
-Tip: usually a new version of the module already contains a bug fix, so adding a patch from the drupal.org to composer.json of the Open Y distribution is preferred to get distribution
+Tip: usually a new version of the module already contains a bug fix, so adding a patch from the drupal.org to composer.json of the Y USA Open Y distribution is preferred to get distribution
 released. Keep in mind, you will need to create a follow-up task for the module to be updated after release.&lt;/p>
 &lt;p>After creating list of modules that could introduce regression issues it is highly recommended to follow
 Quick-start section of the module&amp;rsquo;s readme files, that usually is shipped with modules.
@@ -46,16 +46,16 @@ In case if a module has no Quick-start or Acceptance testing section in readme -
 where functionality of the module should be working. It is highly recommended to add this manual test steps as
 a follow-up task,
 &lt;a href="https://github.com/ymcatwincities/openy/issues/new" target="_blank">new issue&lt;/a> or even better - create Pull Request
-with changes to readme into Open Y repository. For the sake of performance, adding step by step how-to to the respective
+with changes to readme into Y USA Open Y repository. For the sake of performance, adding step by step how-to to the respective
 module&amp;rsquo;s README.md file is highly recommended. It takes only a few minutes to write a couple of lines of documentation which will greatly help others with future contributions and changes.&lt;/p>
-&lt;p>Optional, but greatly appreciated: Add a Drupal tour for the how-to, created in README will benefit future Open Y users and developers.
+&lt;p>Optional, but greatly appreciated: Add a Drupal tour for the how-to, created in README will benefit future Y USA Open Y users and developers.
 Having a tour for the business functionality is highly recommended to ship with the component - it creates an in-site visual guided documentation and helps to decrease time for the Acceptance testing.&lt;/p>
 &lt;p>And last, but not the lease - adding Behat tests to the system will ensure functionality is tested on every pull
 request, on every CI build in the future.&lt;/p>
 &lt;h3 id="rule">Rule&lt;/h3>
-&lt;p>Every release of Open Y since 8.1.9 should include list of subsystems, changed in release for the community to be aware of the possible regressions on their end.&lt;/p></description></item><item><title>Docs: AddThis</title><link>/docs/development/addthis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/addthis/</guid><description>
+&lt;p>Every release of Y USA Open Y since 8.1.9 should include list of subsystems, changed in release for the community to be aware of the possible regressions on their end.&lt;/p></description></item><item><title>Docs: AddThis</title><link>/docs/development/addthis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/addthis/</guid><description>
 &lt;h1 id="how-to-configure-addthis">How to configure AddThis&lt;/h1>
-&lt;p>Open Y AddThis module allow you easy add Social icons to any node.&lt;/p>
+&lt;p>Y USA Open Y AddThis module allow you easy add Social icons to any node.&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Go to &lt;code>http://www.addthis.com&lt;/code> and create your account and get public id.&lt;/p>
@@ -88,7 +88,7 @@ You can use &lt;code>composer update&lt;/code> command to update any package, in
 &lt;p>Add import social posts to site (Facebook, Instagram, Twitter)&lt;/p>
 &lt;h2 id="how-configure-import-of-posts-from-the-social-networks">How configure import of posts from the social networks&lt;/h2>
 &lt;p>&lt;strong>Given:&lt;/strong>
-As an Open Y site developer, I want to be able import posts from company&amp;rsquo;s accounts form social networks (Twitter, Facebook, Instagram) and save them as content on the site.&lt;/p>
+As an Y USA Open Y site developer, I want to be able import posts from company&amp;rsquo;s accounts form social networks (Twitter, Facebook, Instagram) and save them as content on the site.&lt;/p>
 &lt;p>&lt;strong>How to:&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>Open configuration page /admin/config/social_feed_fetcher_settings - Configuration -&amp;gt; Social Feed Settings&lt;/li>
@@ -129,7 +129,7 @@ As an Open Y site developer, I want to be able import posts from company&amp;rsq
 &lt;li>Once PR has been merged, reviewer will close drupal.org issue with appropriate credits.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Create &amp; Use New View Modes</title><link>/docs/development/create-view-modes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/create-view-modes/</guid><description>
 &lt;p>As with any other entity in Drupal, when it comes to render the rendering it in different contexts, you might want to have specific view modes.&lt;/p>
-&lt;p>Here you can find instructions how you can add new view modes into embedded entity form on Open Y distribution.&lt;/p>
+&lt;p>Here you can find instructions how you can add new view modes into embedded entity form on Y USA Open Y distribution.&lt;/p>
 &lt;h3 id="create-a-new-view-mode">Create a new View Mode&lt;/h3>
 &lt;ol>
 &lt;li>Go to &amp;lsquo;View modes&amp;rsquo; page: Structure -&amp;gt; Display modes -&amp;gt; View modes (or visit the URL: &lt;code>/admin/structure/display-modes/view&lt;/code>
@@ -288,43 +288,43 @@ As an Open Y site developer, I want to be able import posts from company&amp;rsq
 &lt;p>
 &lt;img src="../../assets/Custom_Font.png" alt="Custom_Font|690x156, 100%" />&lt;/p>
 &lt;ul>
-&lt;li>Your site should now use the Cachet font in headers and other areas. Usage is dependent on the Open Y theme you choose.&lt;/li>
+&lt;li>Your site should now use the Cachet font in headers and other areas. Usage is dependent on the Y USA Open Y theme you choose.&lt;/li>
 &lt;/ul>
 &lt;p>This content was originally
-&lt;a href="https://community.openymca.org/t/using-the-latest-2020-cachet-web-fonts-on-your-open-y-or-virtual-y-site/894" target="_blank">published on the Open Y Message Board&lt;/a>.&lt;/p></description></item><item><title>Docs: Google Analytics</title><link>/docs/development/google_analytics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/google_analytics/</guid><description>
+&lt;a href="https://community.openymca.org/t/using-the-latest-2020-cachet-web-fonts-on-your-open-y-or-virtual-y-site/894" target="_blank">published on the Y USA Open Y Message Board&lt;/a>.&lt;/p></description></item><item><title>Docs: Google Analytics</title><link>/docs/development/google_analytics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/google_analytics/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Open Y uses the Drupal contrib
+&lt;p>Y USA Open Y uses the Drupal contrib
 &lt;a href="https://www.drupal.org/project/google_analytics" target="_blank">Google Analytics module&lt;/a> to enable
-&lt;a href="https://marketingplatform.google.com/about/analytics/" target="_blank">Google Analytics&lt;/a> tracking on your Open Y site.&lt;/p>
+&lt;a href="https://marketingplatform.google.com/about/analytics/" target="_blank">Google Analytics&lt;/a> tracking on your Y USA Open Y site.&lt;/p>
 &lt;p>To get started, you should first create a GA property. Use the
 &lt;a href="https://support.google.com/analytics/#topic=10737980" target="_blank">Analytics Help&lt;/a> for assistance.&lt;/p>
 &lt;h2 id="configuration">Configuration&lt;/h2>
 &lt;p>Configuration is done at the standard module configuration page: &lt;code>/admin/config/services/google-analytics&lt;/code>.&lt;/p>
 &lt;h3 id="google-analytics-version-compatibility">Google Analytics Version Compatibility&lt;/h3>
 &lt;p>In the
-&lt;a href="https://github.com/ymcatwincities/openy/releases/tag/9.2.11" target="_blank">9.2.11&lt;/a> release in November 2021, Open Y
-&lt;a href="https://github.com/ymcatwincities/openy/pull/2400" target="_blank">added support for Google Analytics 4&lt;/a>. If your site has been updated to Open Y 9.2.11 or greater AND the &lt;code>google_analytics&lt;/code> module has been updated to 4.x you should be able to use GA4. Otherwise you&amp;rsquo;ll need to stick with GA3.&lt;/p>
+&lt;a href="https://github.com/ymcatwincities/openy/releases/tag/9.2.11" target="_blank">9.2.11&lt;/a> release in November 2021, Y USA Open Y
+&lt;a href="https://github.com/ymcatwincities/openy/pull/2400" target="_blank">added support for Google Analytics 4&lt;/a>. If your site has been updated to Y USA Open Y 9.2.11 or greater AND the &lt;code>google_analytics&lt;/code> module has been updated to 4.x you should be able to use GA4. Otherwise you&amp;rsquo;ll need to stick with GA3.&lt;/p>
 &lt;p>See this
 &lt;a href="https://community.openymca.org/t/about-google-analytics-compatibility/917" target="_blank">community post&lt;/a> for more information.&lt;/p></description></item><item><title>Docs: Google Custom Search Configuration</title><link>/docs/development/googlecustomsearchconfiguration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/googlecustomsearchconfiguration/</guid><description>
-&lt;p>The Open Y release &lt;strong>8.2.4&lt;/strong> introduces Google Custom Search for the website out of the box.&lt;/p>
+&lt;p>The Y USA Open Y release &lt;strong>8.2.4&lt;/strong> introduces Google Custom Search for the website out of the box.&lt;/p>
 &lt;h2 id="enabling-the-module">Enabling the module&lt;/h2>
 &lt;h3 id="fresh-installations">Fresh installations&lt;/h3>
 &lt;p>The search feature is included in the &lt;code>Extended&lt;/code> installation type.
 For &lt;code>Standard&lt;/code> see the &lt;a href="#existing-websites">Existing websites&lt;/a> section.&lt;/p>
-&lt;p>If you are installing a fresh Open Y website and going through the installation process via the Web interface, on the 3rd party integration step you can specify Google Search ID. If you specify the Google Search ID in this form your site&amp;rsquo;s search feature is up.&lt;/p>
+&lt;p>If you are installing a fresh Y USA Open Y website and going through the installation process via the Web interface, on the 3rd party integration step you can specify Google Search ID. If you specify the Google Search ID in this form your site&amp;rsquo;s search feature is up.&lt;/p>
 &lt;h3 id="existing-websites">Existing websites&lt;/h3>
-&lt;p>The search feature is not automatically enabled after upgrading an Open Y website. You have to manually enable it.&lt;/p>
+&lt;p>The search feature is not automatically enabled after upgrading an Y USA Open Y website. You have to manually enable it.&lt;/p>
 &lt;p>In order to do that:&lt;/p>
 &lt;ol>
 &lt;li>Log in as an admin (or a user with the &lt;code>administrator&lt;/code> role).&lt;/li>
-&lt;li>Go to the Open Y package install page (Admin menu &amp;gt; Open Y &amp;gt; Extend &amp;gt; Install, or &lt;code>/admin/openy/extend/list&lt;/code>)&lt;/li>
+&lt;li>Go to the Y USA Open Y package install page (Admin menu &amp;gt; Y USA Open Y &amp;gt; Extend &amp;gt; Install, or &lt;code>/admin/openy/extend/list&lt;/code>)&lt;/li>
 &lt;li>Find the &lt;code>SEARCH&lt;/code> package there, tick the checkbox and submit the form.&lt;/li>
 &lt;/ol>
 &lt;p>Now the search modules are enabled and the header of the website should have a search field.
 Upon installation, the modules create a Landing page for search results and point the header search form to the page.&lt;/p>
 &lt;h2 id="configuring-the-google-search-modules">Configuring the Google Search modules&lt;/h2>
 &lt;ol>
-&lt;li>Go to the Google Search settings form (Admin menu &amp;gt; Open Y &amp;gt; Settings &amp;gt; Google Search settings, or &lt;code>/admin/openy/settings/google-search&lt;/code>).&lt;/li>
+&lt;li>Go to the Google Search settings form (Admin menu &amp;gt; Y USA Open Y &amp;gt; Settings &amp;gt; Google Search settings, or &lt;code>/admin/openy/settings/google-search&lt;/code>).&lt;/li>
 &lt;li>Set the value of the &lt;code>Google Search ID&lt;/code> field (see the following &lt;a href="#obtaining-search-engine-id">section&lt;/a> for details) and submit the form.&lt;/li>
 &lt;/ol>
 &lt;h3 id="obtaining-search-engine-id">Obtaining Search Engine ID&lt;/h3>
@@ -340,7 +340,7 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;li>Click &amp;ldquo;Create&amp;rdquo;.&lt;/li>
 &lt;/ol>
 &lt;/li>
-&lt;li>On the newly created Search Engine page there is the &lt;code>Search engine ID&lt;/code> field. Use this value in the Open Y Google Search configuration form.&lt;/li>
+&lt;li>On the newly created Search Engine page there is the &lt;code>Search engine ID&lt;/code> field. Use this value in the Y USA Open Y Google Search configuration form.&lt;/li>
 &lt;/ol>
 &lt;h2 id="configuring-the-search-engine-look-and-feel">Configuring the Search Engine look and feel&lt;/h2>
 &lt;ol>
@@ -401,7 +401,7 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;p>Use the following snippet to enable the package on existing websites:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>drush en openy_google_search
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="configuring-the-module-via-drush">Configuring the module via Drush&lt;/h3>
-&lt;p>Use the following snippet when you install Open Y via Drush to set the Search Engine ID:&lt;/p>
+&lt;p>Use the following snippet when you install Y USA Open Y via Drush to set the Search Engine ID:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>drush site-install openy \
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --account-pass=password \
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --db-url=&amp;#34;mysql://user:pass@host:3306/db&amp;#34; \
@@ -417,7 +417,7 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;a href="https://drushcommands.com/drush-8x/core/site-install/" target="_blank">drush site-install&lt;/a> command.&lt;/p>
 &lt;p>Basically you use something like this:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>drush site-install openy --account-pass=password --db-url=&amp;#34;mysql://user:pass@host:3306/db&amp;#34; --root=/var/www/docroot
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Complete Open Y profile preset and Open Y Rose theme is used in this case.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Complete Y USA Open Y profile preset and Y USA Open Y Rose theme is used in this case.&lt;/p>
 &lt;p>You can set which preset must be installed by specifying it with &lt;code>openy_configure_profile.preset&lt;/code> variable, and theme with
 &lt;code>openy_theme_select.theme&lt;/code>variable e.g.:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>drush site-install openy --account-pass=password --db-url=&amp;#34;mysql://user:pass@host:3306/db&amp;#34; --root=/var/www/docroot openy_configure_profile.preset=extended openy_theme_select.theme=openy_rose
@@ -425,20 +425,20 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;h3 id="module-content-removal">Module content removal&lt;/h3>
 &lt;p>When deleting an entity, where plugins or services of removing module are used,
 then content removal should be done in the hook_uninstall() of that module.
-See openy_prgf_camp_menu.install as example.&lt;/p></description></item><item><title>Docs: Patch Open Y</title><link>/docs/development/patch-openy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/patch-openy/</guid><description>
-&lt;p>Here you can find instructions how you can patch Open Y distribution used on
+See openy_prgf_camp_menu.install as example.&lt;/p></description></item><item><title>Docs: Patch Y USA Open Y</title><link>/docs/development/patch-openy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/patch-openy/</guid><description>
+&lt;p>Here you can find instructions how you can patch Y USA Open Y distribution used on
 your project.&lt;/p>
-&lt;h2 id="when-you-need-to-patch-open-y">When you need to patch Open Y&lt;/h2>
+&lt;h2 id="when-you-need-to-patch-y-usa-open-y">When you need to patch Y USA Open Y&lt;/h2>
 &lt;ul>
-&lt;li>In case you found a bug and prepared a patch for Open Y on github.&lt;/li>
-&lt;li>In case you developed a new feature that will be good to have in Open Y and
-created Pull Request to Open Y repository&lt;/li>
-&lt;li>In case you want to add a feature that added to Open Y but not included yet to
-Open Y release.&lt;/li>
+&lt;li>In case you found a bug and prepared a patch for Y USA Open Y on github.&lt;/li>
+&lt;li>In case you developed a new feature that will be good to have in Y USA Open Y and
+created Pull Request to Y USA Open Y repository&lt;/li>
+&lt;li>In case you want to add a feature that added to Y USA Open Y but not included yet to
+Y USA Open Y release.&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-patch-open-y-via-composer">How to patch Open Y via composer?&lt;/h3>
+&lt;h3 id="how-to-patch-y-usa-open-y-via-composer">How to patch Y USA Open Y via composer?&lt;/h3>
 &lt;p>If you followed instructions
-&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-1.x/docs/Development/Start%20new%20OpenY%20project.md" target="_blank">docs/Development/Start new Open Y project&lt;/a>
+&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-1.x/docs/Development/Start%20new%20OpenY%20project.md" target="_blank">docs/Development/Start new Y USA Open Y project&lt;/a>
 and you have configured &lt;code>composer.json&lt;/code> you need just to do a few simple steps:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -449,7 +449,7 @@ and you have configured &lt;code>composer.json&lt;/code> you need just to do a f
 &lt;p>Where XXX is a number of pull request you want to use.&lt;/p>
 &lt;ol start="2">
 &lt;li>
-&lt;p>Add a new section &lt;code>patches&lt;/code> to the section &lt;code>extra&lt;/code> and add a patch to Open Y
+&lt;p>Add a new section &lt;code>patches&lt;/code> to the section &lt;code>extra&lt;/code> and add a patch to Y USA Open Y
 repository, as on this example:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>&amp;#34;extra&amp;#34;: {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;installer-paths&amp;#34;: {
@@ -467,7 +467,7 @@ repository, as on this example:&lt;/p>
 &lt;p>After adding a patch execute command &lt;code>composer update&lt;/code>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Verify you can see added changes in Open Y&lt;/p>
+&lt;p>Verify you can see added changes in Y USA Open Y&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Enjoy!&lt;/p>
@@ -481,7 +481,7 @@ repository, as on this example:&lt;/p>
 &lt;h2 id="steps">Steps&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>Log in to Google Analytics account that configured to track your Open Y site.&lt;/p>
+&lt;p>Log in to Google Analytics account that configured to track your Y USA Open Y site.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click Admin button in bottom right corner of main screen
@@ -505,11 +505,11 @@ repository, as on this example:&lt;/p>
 &lt;p>Attention: Data processing latency for search tracking reports is 24-48 hours
 (see
 &lt;a href="https://support.google.com/analytics/answer/1070983?hl=en#DataProcessingLatency" target="_blank">Google&amp;rsquo;s support doc&lt;/a>).&lt;/p></description></item><item><title>Docs: Server Requirements</title><link>/docs/development/server-requirements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/server-requirements/</guid><description>
-&lt;p>If you need to prepare server for the Open Y instance, here below you should find all needed software to meet its requirements.&lt;/p>
+&lt;p>If you need to prepare server for the Y USA Open Y instance, here below you should find all needed software to meet its requirements.&lt;/p>
 &lt;h3 id="list-of-requirements">List of requirements&lt;/h3>
 &lt;ol>
 &lt;li>
-&lt;p>Ubuntu LTS (14 or 16) is preferred. CentOS is ok as well. Or even any other Linux distribution, but was not tested by Open Y team so far.&lt;/p>
+&lt;p>Ubuntu LTS (14 or 16) is preferred. CentOS is ok as well. Or even any other Linux distribution, but was not tested by Y USA Open Y team so far.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>(Drupal 8 server requirements should be met)[https://www.drupal.org/docs/system-requirements/php-requirements].&lt;/p>
@@ -558,15 +558,15 @@ repository, as on this example:&lt;/p>
 &lt;li>Docker (optional)&lt;/li>
 &lt;li>SOLR 4.x (if there will be requirement for SOLR search support)&lt;/li>
 &lt;li>Varnish (optional)&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Start new Open Y project</title><link>/docs/development/start-new-openy-project/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/start-new-openy-project/</guid><description>
-&lt;p>Here you can find instructions how you can start project based on Open Y distribution.&lt;/p>
-&lt;h2 id="new-project-from-scratch-based-on-open-y">New project from scratch based on Open Y&lt;/h2>
+&lt;/ul></description></item><item><title>Docs: Start new Y USA Open Y project</title><link>/docs/development/start-new-openy-project/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/start-new-openy-project/</guid><description>
+&lt;p>Here you can find instructions how you can start project based on Y USA Open Y distribution.&lt;/p>
+&lt;h2 id="new-project-from-scratch-based-on-y-usa-open-y">New project from scratch based on Y USA Open Y&lt;/h2>
 &lt;p>In order to start new project from scratch, you can use
 &lt;a href="https://github.com/ymcatwincities/openy-project#installation" target="_blank">installation instructions&lt;/a> that will build your project and even add development environment.&lt;/p>
-&lt;h2 id="add-open-y-to-existing-drupal-8-project">Add Open Y to existing Drupal 8 project&lt;/h2>
+&lt;h2 id="add-y-usa-open-y-to-existing-drupal-8-project">Add Y USA Open Y to existing Drupal 8 project&lt;/h2>
 &lt;p>Please take a look at the full &lt;code>composer.json&lt;/code> file below that you should eventually get.&lt;/p>
 &lt;details>
- &lt;summary>&lt;strong>Example composer.json (Drupal 8.3.2 + Open Y 1.2)&lt;/strong>&lt;/summary>
+ &lt;summary>&lt;strong>Example composer.json (Drupal 8.3.2 + Y USA Open Y 1.2)&lt;/strong>&lt;/summary>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>{
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;name&amp;#34;: &amp;#34;drupal/drupal&amp;#34;,
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;description&amp;#34;: &amp;#34;Drupal is an open source content management platform powering millions of websites and applications.&amp;#34;,
@@ -823,7 +823,7 @@ Installer path will look like this:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>Add cleaner script to your project from
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/scripts/remove_vendor_git_folders.sh" target="_blank">Open Y composer package&lt;/a>. You can just copy it and paste onto your project.&lt;/p>
+&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/scripts/remove_vendor_git_folders.sh" target="_blank">Y USA Open Y composer package&lt;/a>. You can just copy it and paste onto your project.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>
@@ -853,7 +853,7 @@ Installer path will look like this:&lt;/p>
 &lt;a href="http://docs.cibox.tools/en/latest/Quickstart/#prepare-github-project" target="_blank">this quickstart&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Add Open Y to the project using (Add Open Y to already existing Drupal 8 project)&lt;/p>
+&lt;p>Add Y USA Open Y to the project using (Add Y USA Open Y to already existing Drupal 8 project)&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Init git and add initial commit&lt;/p>
@@ -861,7 +861,7 @@ Installer path will look like this:&lt;/p>
 &lt;/ol>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> OPENY_PROJECT
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git init
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &lt;span style="color:#4e9a06">&amp;#34;Init Open Y project&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &lt;span style="color:#4e9a06">&amp;#34;Init Y USA Open Y project&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git remote add origin git@github.com:NAMESPACE/PROJECT.git
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push -u origin master
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="4">
@@ -878,7 +878,7 @@ Installer path will look like this:&lt;/p>
 &lt;li>Setup hosting STAGE environment (it should be a 1:1 copy of existing or expected hosting account for ability to provide performance testing there)&lt;/li>
 &lt;li>Setup deployment plans for CI by reusing DEMO builder job&lt;/li>
 &lt;/ul>
-&lt;h1 id="install-open-y-on-digitaloceanhttpbitlycibox-digitalocean">Install Open Y on
+&lt;h1 id="install-y-usa-open-y-on-digitaloceanhttpbitlycibox-digitalocean">Install Y USA Open Y on
 &lt;a href="http://bit.ly/cibox-digitalocean" target="_blank">DigitalOcean&lt;/a>&lt;/h1>
 &lt;ol>
 &lt;li>Create new Droplet using &amp;ldquo;One-click apps&amp;rdquo; image &lt;code>Drupal 8.*.* on 14.04&lt;/code>&lt;/li>
@@ -889,16 +889,16 @@ Installer path will look like this:&lt;/p>
 &lt;/ol>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>bash &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>curl -s https://raw.githubusercontent.com/ymcatwincities/openy/8.x-1.x/build/openy-digital-ocean.sh&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="4">
-&lt;li>Open link(e.g. http://IP/core/install.php) from console output and finish Open Y installation&lt;/li>
+&lt;li>Open link(e.g. http://IP/core/install.php) from console output and finish Y USA Open Y installation&lt;/li>
 &lt;/ol>
 &lt;h2 id="video-tutorial">Video tutorial&lt;/h2>
 &lt;p>
 &lt;a href="https://youtu.be/RCvsLANsbm8" target="_blank">
-&lt;img src="https://img.youtube.com/vi/RCvsLANsbm8/0.jpg" alt="Open Y v1.0b - Install Tutorial" />&lt;/a>&lt;/p>
+&lt;img src="https://img.youtube.com/vi/RCvsLANsbm8/0.jpg" alt="Y USA Open Y v1.0b - Install Tutorial" />&lt;/a>&lt;/p>
 &lt;h2 id="end-to-end-installation">End to end installation&lt;/h2>
 &lt;p>
 &lt;a href="https://youtu.be/RT6kC38zgvo" target="_blank">
-&lt;img src="https://img.youtube.com/vi/RT6kC38zgvo/0.jpg" alt="Open Y install - in 16 minutes end to end, no tutorial" />&lt;/a>&lt;/p></description></item><item><title>Docs: Tests</title><link>/docs/development/tests/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/tests/</guid><description>
+&lt;img src="https://img.youtube.com/vi/RT6kC38zgvo/0.jpg" alt="Y USA Open Y install - in 16 minutes end to end, no tutorial" />&lt;/a>&lt;/p></description></item><item><title>Docs: Tests</title><link>/docs/development/tests/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/tests/</guid><description>
 &lt;p>These instructions explain how you can run tests.&lt;/p>
 &lt;h2 id="behat">Behat&lt;/h2>
 &lt;h3 id="requirements">Requirements&lt;/h3>
@@ -1033,10 +1033,10 @@ The first portion, &lt;code>field_location_address&lt;/code> represents the Drup
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> | field_location_phone | +1234567890 |
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Theming and Design</title><link>/docs/development/theming_and_design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/theming_and_design/</guid><description>
-&lt;p>Welcome to Open Y Theming and Design documentation.&lt;/p>
+&lt;p>Welcome to Y USA Open Y Theming and Design documentation.&lt;/p>
 &lt;h3 id="how-to-change-styles-on-content-type-level">How to change styles on content type level&lt;/h3>
 &lt;p>&lt;strong>Given:&lt;/strong>
-As an Open Y site developer, I want to be able to easily change the CSS for a Camp page
+As an Y USA Open Y site developer, I want to be able to easily change the CSS for a Camp page
 independently from a Location page, so I can better customize the site to meet the needs of my customers.&lt;/p>
 &lt;p>&lt;strong>How to:&lt;/strong>&lt;/p>
 &lt;ul>
@@ -1051,7 +1051,7 @@ the theme configuration page - Custom CSS - check &amp;ldquo;Enable or disable c
 &lt;li>.path-frontpage.&lt;/li>
 &lt;/ul>
 &lt;p>The existing node types are: &lt;em>activity&lt;/em>, &lt;em>alert&lt;/em>, &lt;em>blog&lt;/em>, &lt;em>branch&lt;/em>, &lt;em>camp&lt;/em>, &lt;em>class&lt;/em>, &lt;em>facility&lt;/em>, &lt;em>landing-page&lt;/em>, &lt;em>membership&lt;/em>, &lt;em>news&lt;/em>, &lt;em>program&lt;/em>, &lt;em>program-subcategory&lt;/em>, &lt;em>session&lt;/em>.&lt;/p></description></item><item><title>Docs: Tour</title><link>/docs/development/tour/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/tour/</guid><description>
-&lt;h3 id="how-to-use-open-y-tour-token-with-tour">How to use Open Y Tour Token with Tour&lt;/h3>
+&lt;h3 id="how-to-use-y-usa-open-y-tour-token-with-tour">How to use Y USA Open Y Tour Token with Tour&lt;/h3>
 &lt;p>In someone modules have tour tips and for more interactivity, you can add a token with a click to any selector.&lt;/p>
 &lt;ol>
 &lt;li>

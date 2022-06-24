@@ -1,8 +1,8 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Y – Wiki</title><link>/docs/wiki/</link><description>Recent content in Wiki on Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/wiki/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Code Review Quality Best Practices</title><link>/docs/wiki/code-review-quality-best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/code-review-quality-best-practices/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Y USA Open Y – Wiki</title><link>/docs/wiki/</link><description>Recent content in Wiki on Y USA Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/wiki/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Code Review Quality Best Practices</title><link>/docs/wiki/code-review-quality-best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/code-review-quality-best-practices/</guid><description>
 &lt;p>This document serves as an addition to our
-&lt;a href="/docs/wiki/open-y-code-of-conduct-and-best-practices/">Code of Conduct and Best Practices&lt;/a>. It is more technical and in-depth for specific cases that were discussed during code quality review processes the Open Y team has in place. During this process, all code should be reviewed by 1-2 developers before being merged into the Open Y codebase.&lt;/p>
+&lt;a href="/docs/wiki/open-y-code-of-conduct-and-best-practices/">Code of Conduct and Best Practices&lt;/a>. It is more technical and in-depth for specific cases that were discussed during code quality review processes the Y USA Open Y team has in place. During this process, all code should be reviewed by 1-2 developers before being merged into the Y USA Open Y codebase.&lt;/p>
 &lt;h1 id="general-rules">General Rules&lt;/h1>
-&lt;p>Components in Open Y (whether modules, themes, or other code structures) should be, as much as possible, reusable and atomic. All features, content types, settings, styles, etc. should be bundled together to create a cohesive component.&lt;/p>
+&lt;p>Components in Y USA Open Y (whether modules, themes, or other code structures) should be, as much as possible, reusable and atomic. All features, content types, settings, styles, etc. should be bundled together to create a cohesive component.&lt;/p>
 &lt;ol>
 &lt;li>General naming conventions
 &lt;ol>
@@ -140,7 +140,7 @@
 &lt;p>If you update some configuration for a specific feature, make sure that you put updates into this file in the appropriate module.&lt;/p>
 &lt;h2 id="config-management">Config Management&lt;/h2>
 &lt;h3 id="revert-only-specific-property-from-config">Revert only specific property from config&lt;/h3>
-&lt;p>This is the preferred method of updating configs as it will result in fewer conflicts for upgrading customized Open Y instances.&lt;/p>
+&lt;p>This is the preferred method of updating configs as it will result in fewer conflicts for upgrading customized Y USA Open Y instances.&lt;/p>
 &lt;p>With
 &lt;a href="https://www.drupal.org/project/confi" target="_blank">config_import module&lt;/a> we can update only part of the full config.&lt;/p>
 &lt;p>For updating specific property in config use the &lt;code>openy_upgrade_tool.param_updater&lt;/code> service:&lt;/p>
@@ -177,8 +177,8 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">]);&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="javascript-includes">JavaScript includes&lt;/h1>
 &lt;p>
-&lt;img src="https://user-images.githubusercontent.com/563412/122801945-6f28b700-d2cd-11eb-8d0c-694432e8cbf0.png" alt="image" />&lt;/p></description></item><item><title>Docs: Composer version constraints for Open Y</title><link>/docs/wiki/composer-version-constraints-for-open-y/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/composer-version-constraints-for-open-y/</guid><description>
-&lt;p>In 2020, due to changes in Drupal core release management and demand from Open Y customers to improve upgrade path flexibility and stability, the Open Y team added extended composer version constraints to our &lt;code>composer.json&lt;/code>.&lt;/p>
+&lt;img src="https://user-images.githubusercontent.com/563412/122801945-6f28b700-d2cd-11eb-8d0c-694432e8cbf0.png" alt="image" />&lt;/p></description></item><item><title>Docs: Composer version constraints for Y USA Open Y</title><link>/docs/wiki/composer-version-constraints-for-open-y/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/composer-version-constraints-for-open-y/</guid><description>
+&lt;p>In 2020, due to changes in Drupal core release management and demand from Y USA Open Y customers to improve upgrade path flexibility and stability, the Y USA Open Y team added extended composer version constraints to our &lt;code>composer.json&lt;/code>.&lt;/p>
 &lt;p>Examples from
 &lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/composer.json" target="_blank">composer.json&lt;/a>:&lt;/p>
 &lt;ul>
@@ -186,8 +186,8 @@
 &lt;li>&lt;code>&amp;quot;drupal/custom_formatters&amp;quot;: &amp;quot;^3.0 || ^3.0@beta&amp;quot;,&lt;/code> - tested with 3.0 beta of custom_formatters and allowed any 3.x starting from 3.0 (when it will be released)&lt;/li>
 &lt;/ul>
 &lt;p>By having multiple OR (&lt;code>||&lt;/code>) conditions we are providing information for developers on which versions could be used for upgrades. There are cases when the latest, even stable version of dependency could be incompatible with some other functionality and it makes sense to keep the version older while functionality is in the process of upgrading.&lt;/p>
-&lt;p>For example, if, for some reason, &lt;code>custom_formatters&lt;/code> 3.0 won&amp;rsquo;t be compatible with any of Open Y dependencies at the time of release, a developer can select an older beta version in order to proceed with the upgrade.&lt;/p>
-&lt;p>To select a specific version of a dependency when you do an upgrade of Open Y, add a dependency and its version alongside Open Y at the &lt;code>composer require...&lt;/code> step.&lt;/p>
+&lt;p>For example, if, for some reason, &lt;code>custom_formatters&lt;/code> 3.0 won&amp;rsquo;t be compatible with any of Y USA Open Y dependencies at the time of release, a developer can select an older beta version in order to proceed with the upgrade.&lt;/p>
+&lt;p>To select a specific version of a dependency when you do an upgrade of Y USA Open Y, add a dependency and its version alongside Y USA Open Y at the &lt;code>composer require...&lt;/code> step.&lt;/p>
 &lt;p>For example:&lt;/p>
 &lt;p>from
 &lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">upgrade doc&lt;/a>&lt;/p>
@@ -196,24 +196,24 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>then change the dependency version&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>composer require ymcatwincities/openy:NEW_VERSION_HERE --no-update
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require drupal/custom_formatters:3.0@beta1
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can change any of the dependency versions without upgrading Open Y by running only the &lt;code>composer require...&lt;/code> command for specific dependencies and Drupal Update DB routines afterward.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can change any of the dependency versions without upgrading Y USA Open Y by running only the &lt;code>composer require...&lt;/code> command for specific dependencies and Drupal Update DB routines afterward.&lt;/p>
 &lt;p>Check
 &lt;a href="https://getcomposer.org/doc/articles/versions.md" target="_blank">official Composer documentation about version constraints&lt;/a> and
-&lt;a href="https://www.drupal.org/docs/updating-drupal/updating-modules-and-themes-using-composer" target="_blank">updating Drupal modules with Composer&lt;/a>.&lt;/p></description></item><item><title>Docs: Decouple component from Open Y as independent module project</title><link>/docs/wiki/decouple-component-from-open-y-as-independent-module-project/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/decouple-component-from-open-y-as-independent-module-project/</guid><description>
+&lt;a href="https://www.drupal.org/docs/updating-drupal/updating-modules-and-themes-using-composer" target="_blank">updating Drupal modules with Composer&lt;/a>.&lt;/p></description></item><item><title>Docs: Decouple component from Y USA Open Y as independent module project</title><link>/docs/wiki/decouple-component-from-open-y-as-independent-module-project/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/decouple-component-from-open-y-as-independent-module-project/</guid><description>
 &lt;h2 id="history">History&lt;/h2>
-&lt;p>In 2019 the Open Y team started decoupling major components to streamline the distribution and simplify support.&lt;/p>
+&lt;p>In 2019 the Y USA Open Y team started decoupling major components to streamline the distribution and simplify support.&lt;/p>
 &lt;p>Communication started in the
 &lt;a href="https://community.openymca.org/t/ejecting-modules-from-openy-distro-as-independent-projects/513" target="_blank">Community Board - Ejecting modules from OpenY distro as independent projects&lt;/a>.&lt;/p>
 &lt;p>The decoupling process is ongoing. See
 &lt;a href="/docs/wiki/decoupled--external--projects-of-openy/">the index of decoupled projects&lt;/a>.&lt;/p>
-&lt;p>In 2021 the Open Y core team faced coupling blockers in the distribution during
+&lt;p>In 2021 the Y USA Open Y core team faced coupling blockers in the distribution during
 &lt;a href="https://github.com/ymcatwincities/openy/milestone/21" target="_blank">the upgrade from Drupal 8 to Drupal 9&lt;/a>&lt;/p>
-&lt;p>To formalize the ongoing development and maintenance strategy, the Open Y core team
+&lt;p>To formalize the ongoing development and maintenance strategy, the Y USA Open Y core team
 &lt;a href="https://docs.google.com/presentation/d/1H09GsUsSdt3RoN7rbKpNv4eihCNos74Y2KCbJBJXRqc/edit?usp=sharing" target="_blank">shared its decoupling plan with the wider community&lt;/a> in mid-2021.&lt;/p>
 &lt;p>This document elaborates on those processes.&lt;/p>
 &lt;h2 id="policy">Policy&lt;/h2>
 &lt;ul>
-&lt;li>Every new component or sub-project of Open Y should be developed in its own repository - either on GitHub or Drupal.org.
+&lt;li>Every new component or sub-project of Y USA Open Y should be developed in its own repository - either on GitHub or Drupal.org.
 &lt;ul>
 &lt;li>Drupal.org example:
 &lt;a href="https://www.drupal.org/project/paragraph_skins" target="_blank">paragraph_skins&lt;/a>&lt;/li>
@@ -223,16 +223,16 @@
 &lt;/li>
 &lt;li>The decoupled project could be
 &lt;ul>
-&lt;li>&lt;strong>part of Open Y core&lt;/strong> - e.g.
+&lt;li>&lt;strong>part of Y USA Open Y core&lt;/strong> - e.g.
 &lt;a href="https://github.com/ymcatwincities/openy_activity_finder" target="_blank">Activity Finder&lt;/a> and
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.2.8.0/composer.json#L112" target="_blank">added to Open Y profile by default&lt;/a>, or&lt;/li>
+&lt;a href="https://github.com/ymcatwincities/openy/blob/9.2.8.0/composer.json#L112" target="_blank">added to Y USA Open Y profile by default&lt;/a>, or&lt;/li>
 &lt;li>&lt;strong>not part of the core&lt;/strong>, e.g.
-&lt;a href="https://github.com/ymcatwincities/openy_memberships" target="_blank">Open Y Membership Framework&lt;/a> which could be
+&lt;a href="https://github.com/ymcatwincities/openy_memberships" target="_blank">Y USA Open Y Membership Framework&lt;/a> which could be
 &lt;a href="https://github.com/ymcatwincities/openy_memberships/blob/master/README.md#installation" target="_blank">installed later&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;strong>GitHub&lt;/strong> should be used when there is no strategy to make a component or project available for the wider Drupal community - that is, when it is tied to YMCA business and unlikely to be leveraged by somebody else.&lt;/li>
-&lt;li>&lt;strong>Drupal.org&lt;/strong> should be used when the component could be useful to projects outside of Open Y.&lt;/li>
+&lt;li>&lt;strong>Drupal.org&lt;/strong> should be used when the component could be useful to projects outside of Y USA Open Y.&lt;/li>
 &lt;/ul>
 &lt;h2 id="process">Process&lt;/h2>
 &lt;h3 id="for-creating-a-new-decoupled-component">for creating a new decoupled component&lt;/h3>
@@ -242,21 +242,21 @@
 &lt;li>Create a composer.json file for the component in order to be able to start using it via &lt;code>composer&lt;/code>. See
 &lt;a href="https://github.com/ymcatwincities/openy_gated_content/blob/master/composer.json" target="_blank">Virtual Y&lt;/a> for an example.&lt;/li>
 &lt;li>Make it available for the public via packagist.org or drupal.org as a release. Ensure &lt;code>podarok&lt;/code> is added as a co-maintainer to the respective system.&lt;/li>
-&lt;li>Suggest adding to Open Y by
+&lt;li>Suggest adding to Y USA Open Y by
 &lt;a href="https://github.com/ymcatwincities/openy/issues" target="_blank">opening an issue&lt;/a>.&lt;/li>
 &lt;li>If approved, create a Pull Request adding it as a dependency in
 &lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/composer.json" target="_blank">composer.json&lt;/a>.&lt;/li>
 &lt;li>Ensure this component is enabled in any of the packages maintained in the
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/openy.packages.yml" target="_blank">Open Y profile installation&lt;/a>&lt;/li>
+&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/openy.packages.yml" target="_blank">Y USA Open Y profile installation&lt;/a>&lt;/li>
 &lt;li>Ask for review and release, according to the
 &lt;a href="/docs/wiki/how-we-release-openy-distribution-from-code-perspective/">release plan&lt;/a>.&lt;/li>
 &lt;/ol>
-&lt;h3 id="for-decoupling-an-existing-component-of-open-y">for decoupling an existing component of Open Y&lt;/h3>
+&lt;h3 id="for-decoupling-an-existing-component-of-y-usa-open-y">for decoupling an existing component of Y USA Open Y&lt;/h3>
 &lt;p>Follow the steps above, but:&lt;/p>
 &lt;ul>
-&lt;li>After creating the repo, filter the selected component by running &lt;code>git filter-branch --subdirectory-filter ...&lt;/code> from the latest development branch of the Open Y profile. This keeps credits of work done for this component as a part of the
+&lt;li>After creating the repo, filter the selected component by running &lt;code>git filter-branch --subdirectory-filter ...&lt;/code> from the latest development branch of the Y USA Open Y profile. This keeps credits of work done for this component as a part of the
 &lt;a href="/docs/wiki/open-y-code-of-conduct-and-best-practices/">Code of Conduct&lt;/a>.&lt;/li>
-&lt;li>After separating the code, ensure the ejected code is not duplicated in the Open Y profile. Remove duplicated code in the same Pull Request in which you add the new dependency.&lt;/li>
+&lt;li>After separating the code, ensure the ejected code is not duplicated in the Y USA Open Y profile. Remove duplicated code in the same Pull Request in which you add the new dependency.&lt;/li>
 &lt;/ul>
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="how-to-update-module-on-drupalorg">How to update module on Drupal.org&lt;/h3>
@@ -280,8 +280,8 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Resolve conflicts if applicable.&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push origin production:8.x-1.x
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Create tags and release on Drupal.org&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="how-to-decouple-module-from-open-y-to-open-y-subprojectshttpsgithubcomopen-y-subprojects">How to decouple module from Open Y to
-&lt;a href="https://github.com/Open-Y-subprojects" target="_blank">Open Y Subprojects&lt;/a>&lt;/h3>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="how-to-decouple-module-from-y-usa-open-y-to-y-usa-open-y-subprojectshttpsgithubcomopen-y-subprojects">How to decouple module from Y USA Open Y to
+&lt;a href="https://github.com/Open-Y-subprojects" target="_blank">Y USA Open Y Subprojects&lt;/a>&lt;/h3>
 &lt;p>Request a repository for the module. Example:
 &lt;a href="https://github.com/Open-Y-subprojects/shared_content_server" target="_blank">shared_content_server&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>git clone git@github.com:ymcatwincities/openy.git decouple
@@ -323,13 +323,13 @@
 &lt;li>
 &lt;a href="https://github.com/open-y-subprojects/ynorth_gxp_spots_proxy" target="_blank">&lt;code>open-y-subprojects/ynorth_gxp_spots_proxy&lt;/code>&lt;/a> - Availability Spots Cache Proxy for Groupex PRO embed API Syncer into PEF&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/open-y-subprojects/openy_node_alert" target="_blank">&lt;code>open-y-subprojects/openy_node_alert&lt;/code>&lt;/a> - Alerts APP for Open Y&lt;/li>
+&lt;a href="https://github.com/open-y-subprojects/openy_node_alert" target="_blank">&lt;code>open-y-subprojects/openy_node_alert&lt;/code>&lt;/a> - Alerts APP for Y USA Open Y&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/open-y-subprojects/openy_focal_point" target="_blank">&lt;code>open-y-subprojects/openy_focal_point&lt;/code>&lt;/a> - Open Y Focal Point routines&lt;/li>
+&lt;a href="https://github.com/open-y-subprojects/openy_focal_point" target="_blank">&lt;code>open-y-subprojects/openy_focal_point&lt;/code>&lt;/a> - Y USA Open Y Focal Point routines&lt;/li>
 &lt;li>
 &lt;a href="https://github.com/open-y-subprojects/shared_content_server" target="_blank">&lt;code>open-y-subprojects/shared_content_server&lt;/code>&lt;/a> - Shared Content Server&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/ynorth-projects/openy_node_session" target="_blank">&lt;code>ynorth-projects/openy_node_session&lt;/code>&lt;/a> - Open Y Node Session&lt;/li>
+&lt;a href="https://github.com/ynorth-projects/openy_node_session" target="_blank">&lt;code>ynorth-projects/openy_node_session&lt;/code>&lt;/a> - Y USA Open Y Node Session&lt;/li>
 &lt;li>
 &lt;a href="https://github.com/ynorth-projects/openy_repeat" target="_blank">&lt;code>ynorth-projects/openy_repeat&lt;/code>&lt;/a> - Repeat API for PEF. Schedules APP built in Vue.js&lt;/li>
 &lt;li>
@@ -346,16 +346,16 @@
 &lt;h2 id="drupalorg-hosted">Drupal.org hosted&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;a href="https://www.drupal.org/project/upgrade_tool" target="_blank">&lt;code>drupal/upgrade_tool&lt;/code>&lt;/a> - Open Y Upgrade Tool&lt;/li>
+&lt;a href="https://www.drupal.org/project/upgrade_tool" target="_blank">&lt;code>drupal/upgrade_tool&lt;/code>&lt;/a> - Y USA Open Y Upgrade Tool&lt;/li>
 &lt;li>
 &lt;a href="https://github.com/ymcatwincities/paragraph_skins" target="_blank">&lt;code>ymcatwincities/paragraph_skins&lt;/code>&lt;/a> - Skins component from OpenY. Decoupled to
 &lt;a href="https://www.drupal.org/project/paragraph_skins" target="_blank">&lt;code>drupal/paragraph_skins&lt;/code>&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://www.drupal.org/project/openy_autocomplete_path" target="_blank">&lt;code>drupal/openy_autocomplete_path&lt;/code>&lt;/a> - Open Y Autocomplete Path. Works in Drupal 8 only. Removed from &lt;code>9.*&lt;/code> Open Y releases.&lt;/li>
+&lt;a href="https://www.drupal.org/project/openy_autocomplete_path" target="_blank">&lt;code>drupal/openy_autocomplete_path&lt;/code>&lt;/a> - Y USA Open Y Autocomplete Path. Works in Drupal 8 only. Removed from &lt;code>9.*&lt;/code> Y USA Open Y releases.&lt;/li>
 &lt;/ol>
 &lt;h2 id="decoupling-mind-map">Decoupling mind-map&lt;/h2>
 &lt;p>
-&lt;img src="https://user-images.githubusercontent.com/563412/123959435-d540c880-d9b6-11eb-89ed-8af3f21095dd.png" alt="&amp;lt;code&amp;gt;Open Y decoupling&amp;lt;/code&amp;gt;" />&lt;/p></description></item><item><title>Docs: Dependencies in drupal info.yml</title><link>/docs/wiki/dependencies-in-drupal-info.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/dependencies-in-drupal-info.yml/</guid><description>
+&lt;img src="https://user-images.githubusercontent.com/563412/123959435-d540c880-d9b6-11eb-89ed-8af3f21095dd.png" alt="&amp;lt;code&amp;gt;Y USA Open Y decoupling&amp;lt;/code&amp;gt;" />&lt;/p></description></item><item><title>Docs: Dependencies in drupal info.yml</title><link>/docs/wiki/dependencies-in-drupal-info.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/dependencies-in-drupal-info.yml/</guid><description>
 &lt;p>In order to generate &lt;code>composer.json&lt;/code>, Drupal.org defines specific rules in the modules &lt;code>info.yml&lt;/code> file&lt;/p>
 &lt;p>If you need to add a dependency to the Drupal.org module you should provide a format:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">dependencies&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
@@ -369,12 +369,12 @@
 &lt;p>In order to break the dependency on composer level but still tell Drupal core to have module dependency while resolving dependencies during the process of enabling the module, you should use the simplified format:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">dependencies&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>- &lt;span style="color:#000">webform&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In the above case, composer won&amp;rsquo;t have any dependencies, but your module will require that the webform module be available in the codebase in order to be enabled by Drupal core.&lt;/p></description></item><item><title>Docs: Deprecate and remove components from Open Y</title><link>/docs/wiki/deprecate-and-remove-components-from-open-y/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/deprecate-and-remove-components-from-open-y/</guid><description>
-&lt;p>Occasionally old code is deprecated from the Open Y codebase. In order to minimize disruption to existing sites, we use the following process:&lt;/p>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In the above case, composer won&amp;rsquo;t have any dependencies, but your module will require that the webform module be available in the codebase in order to be enabled by Drupal core.&lt;/p></description></item><item><title>Docs: Deprecate and remove components from Y USA Open Y</title><link>/docs/wiki/deprecate-and-remove-components-from-open-y/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/deprecate-and-remove-components-from-open-y/</guid><description>
+&lt;p>Occasionally old code is deprecated from the Y USA Open Y codebase. In order to minimize disruption to existing sites, we use the following process:&lt;/p>
 &lt;ol>
-&lt;li>&lt;strong>Decide&lt;/strong> - Before removing components from the distribution we gather feedback from the community to protect active projects from having components accidentally removed. This is accomplished via messaging in the Open Y Slack and discussion on Monthly calls.&lt;/li>
-&lt;li>&lt;strong>Deprecate&lt;/strong> - Once a decision is made, we notify users that the feature will be removed soon. The deprecated component is moved from the &lt;code>Open Y&lt;/code> package group to the &lt;code>Open Y ( Deprecated )&lt;/code> package group. For example:
-&lt;a href="https://github.com/open-y-subprojects/openy_features/pull/15/files" target="_blank">Deprecate Daxko Program Registration Paragraph&lt;/a>. Deprecation notices are posted in point and quarterly releases of Open Y.&lt;/li>
+&lt;li>&lt;strong>Decide&lt;/strong> - Before removing components from the distribution we gather feedback from the community to protect active projects from having components accidentally removed. This is accomplished via messaging in the Y USA Open Y Slack and discussion on Monthly calls.&lt;/li>
+&lt;li>&lt;strong>Deprecate&lt;/strong> - Once a decision is made, we notify users that the feature will be removed soon. The deprecated component is moved from the &lt;code>Y USA Open Y&lt;/code> package group to the &lt;code>Y USA Open Y ( Deprecated )&lt;/code> package group. For example:
+&lt;a href="https://github.com/open-y-subprojects/openy_features/pull/15/files" target="_blank">Deprecate Daxko Program Registration Paragraph&lt;/a>. Deprecation notices are posted in point and quarterly releases of Y USA Open Y.&lt;/li>
 &lt;li>&lt;strong>Uninstall&lt;/strong> - Before removing code, components should be uninstalled via an update hook in the distribution and any hard dependencies should be removed. Uninstalls must occur &lt;em>at least one point (fix) release&lt;/em> after the deprecation notice.&lt;/li>
 &lt;li>&lt;strong>Remove&lt;/strong> - Complete removal of the component from the codebase or &lt;code>composer.json&lt;/code> should happen &lt;em>at least one quarterly (feature) release&lt;/em> after the deprecation notice.&lt;/li>
 &lt;/ol>
@@ -384,31 +384,31 @@
 &lt;a href="https://github.com/ymcatwincities/openy/wiki/Important-versions-for-upgrade-path" target="_blank">important versions document&lt;/a> in the Wiki.&lt;/li>
 &lt;li>Code should be decoupled to external GitHub repositories with all history of commits, marked as &lt;code>openy-decoupled&lt;/code>, and archived.&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Development FAQ</title><link>/docs/wiki/development-faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/development-faq/</guid><description>
-&lt;h1 id="open-y-developer-faq">Open Y Developer FAQ&lt;/h1>
+&lt;h1 id="y-usa-open-y-developer-faq">Y USA Open Y Developer FAQ&lt;/h1>
 &lt;h2 id="local-development">Local Development&lt;/h2>
 &lt;h3 id="getting-started-with-a-local-environment">Getting started with a local environment&lt;/h3>
-&lt;p>To start developing you need to obtain the latest Open Y codebase. See the
+&lt;p>To start developing you need to obtain the latest Y USA Open Y codebase. See the
 &lt;a href="https://github.com/ymcatwincities/openy-project#latest-development-version-drupal-9-2x" target="_blank">&lt;code>openy-project&lt;/code> repository&lt;/a> for the full process.&lt;/p>
 &lt;p>
 &lt;a href="https://www.youtube.com/watch?v=jRlinjpTl0c" target="_blank">This video tutorial&lt;/a> will walk you through how to initiate a local development environment.&lt;/p>
-&lt;p>The Open Y team has pre-built environments and walkthroughs using either
+&lt;p>The Y USA Open Y team has pre-built environments and walkthroughs using either
 &lt;a href="https://github.com/ymcatwincities/openy-cibox-vm#drupal-vagrant-dev-box-for-openy-support" target="_blank">Vagrant and VirtualBox&lt;/a> or
 &lt;a href="https://github.com/ymcatwincities/openy-docksal#get-started" target="_blank">Docker and Docksal&lt;/a>. Choose the method that you&amp;rsquo;re most comfortable with and get started!&lt;/p>
 &lt;h3 id="gathering-information-about-your-local-environment">Gathering information about your local environment&lt;/h3>
-&lt;p>To best troubleshoot issues, it&amp;rsquo;s helpful for the Open Y team to have as much information about your environment as possible. Before you ask for help, watch this tutorial on
+&lt;p>To best troubleshoot issues, it&amp;rsquo;s helpful for the Y USA Open Y team to have as much information about your environment as possible. Before you ask for help, watch this tutorial on
 &lt;a href="https://www.youtube.com/watch?v=01y617maeBE" target="_blank">how to gather that information&lt;/a>.&lt;/p>
 &lt;h3 id="debugging-with-xdebug-in-your-local">Debugging with Xdebug in your local&lt;/h3>
 &lt;p>The Docksal project maintains detailed information for
 &lt;a href="https://docs.docksal.io/tools/xdebug/" target="_blank">using Xdebug with VSCode, PHPStorm, and more&lt;/a>.&lt;/p>
 &lt;h2 id="contributing">Contributing&lt;/h2>
 &lt;h3 id="who-should-i-specify-for-review">Who should I specify for review?&lt;/h3>
-&lt;p>We have a best practice to get at least 2 independent reviews before merging code. Please request a review from the Open Y Lead Technical Architect (Andrii Podanenko, &lt;code>@podarok&lt;/code>) and somebody else (from your team or another Open Y partner).&lt;/p>
+&lt;p>We have a best practice to get at least 2 independent reviews before merging code. Please request a review from the Y USA Open Y Lead Technical Architect (Andrii Podanenko, &lt;code>@podarok&lt;/code>) and somebody else (from your team or another Y USA Open Y partner).&lt;/p>
 &lt;h3 id="who-is-responsible-for-merging">Who is responsible for merging?&lt;/h3>
-&lt;p>The Open Y Lead Technical Architect (Andrii Podanenko, &lt;code>@podarok&lt;/code>) is responsible for final approval, merging, and release management on the Open Y project.&lt;/p>
+&lt;p>The Y USA Open Y Lead Technical Architect (Andrii Podanenko, &lt;code>@podarok&lt;/code>) is responsible for final approval, merging, and release management on the Y USA Open Y project.&lt;/p>
 &lt;h3 id="what-labels-in-prs-should-i-use">What labels in PRs should I use?&lt;/h3>
 &lt;h3 id="what-milestone-should-i-specify">What milestone should I specify?&lt;/h3>
 &lt;h3 id="why-i-cant-add-labels-or-specify-milestones">Why I can&amp;rsquo;t add labels or specify milestones?&lt;/h3>
-&lt;p>All of these require you to be granted Contributor access to the Open Y GitHub repository. Contact the Open Y Lead Technical Architect (Andrii Podanenko, &lt;code>@podarok&lt;/code>) to get access. Labels are usually set by the Open Y Core Team.&lt;/p>
+&lt;p>All of these require you to be granted Contributor access to the Y USA Open Y GitHub repository. Contact the Y USA Open Y Lead Technical Architect (Andrii Podanenko, &lt;code>@podarok&lt;/code>) to get access. Labels are usually set by the Y USA Open Y Core Team.&lt;/p>
 &lt;h3 id="why-are-the-steps-for-review-in-pull-requests-so-important">Why are the steps for review in Pull Requests so important?&lt;/h3>
 &lt;p>When you send your code for review our team must know both how to review the code and what to test to verify the functionality. You are the only source of truth for how to check functionality. Adding steps for review will help the reviewer and QA team to verify that the issue is resolved.&lt;/p>
 &lt;h3 id="why-should-i-add-a-reference-to-the-github-issue-in-my-pr-description">Why should I add a reference to the GitHub issue in my PR description?&lt;/h3>
@@ -418,54 +418,54 @@
 &lt;h3 id="what-is-the-deepcode-bot">What is the &amp;ldquo;DeepCode&amp;rdquo; bot?&lt;/h3>
 &lt;p>DeepCode bot is the automated, machine learning code review system that analyses huge amounts of GitHub repositories and is sometimes useful to find common issues before humans do reviews. It is helpful, but not always necessary to fix issues found by the DeepCode bot because sometimes it fails. If you see a comment be sure to read the report. If the report makes sense, then fix the issue suggested by the bot.&lt;/p>
 &lt;h2 id="build-automation--ci">Build Automation &amp;amp; CI&lt;/h2>
-&lt;h3 id="what-ci-processes-does-open-y-have-in-place">What CI processes does Open Y have in place?&lt;/h3>
-&lt;p>To get a fully working Open Y site for the code change you are about to push for review there is a build generating system installed for the Open Y GitHub repository that automatically generates a dedicated temporary website with your changes applied.&lt;/p>
+&lt;h3 id="what-ci-processes-does-y-usa-open-y-have-in-place">What CI processes does Y USA Open Y have in place?&lt;/h3>
+&lt;p>To get a fully working Y USA Open Y site for the code change you are about to push for review there is a build generating system installed for the Y USA Open Y GitHub repository that automatically generates a dedicated temporary website with your changes applied.&lt;/p>
 &lt;h2 id="why-are-some-builds-created-automatically-and-some-not">Why are some builds created automatically and some not?&lt;/h2>
 &lt;p>By default, builds are configured for trusted users, so if you are getting a message from the bot like&lt;/p>
 &lt;blockquote>
 &lt;p>&amp;ldquo;Can one of the admins verify this patch? Use &amp;ldquo;o+k to test&amp;rdquo; or &amp;lsquo;&amp;rsquo;t+est this please&amp;rdquo; for manual build execution.&amp;quot;&lt;/p>
 &lt;/blockquote>
-&lt;p>then your username is not in the allowlist and somebody from the Open Y Core Team can comment to initiate a build for you. Contact &lt;code>@podarok&lt;/code> to get your build generated or your name added to the allowlist.&lt;/p>
+&lt;p>then your username is not in the allowlist and somebody from the Y USA Open Y Core Team can comment to initiate a build for you. Contact &lt;code>@podarok&lt;/code> to get your build generated or your name added to the allowlist.&lt;/p>
 &lt;h3 id="how-do-i-create-a-build-for-my-pr">How do I create a build for my PR?&lt;/h3>
-&lt;p>If you are on the allowlist then simply create a Pull Request from your fork to the Open Y repository. After up to 30 minutes you&amp;rsquo;ll receive comments with links to the generated site builds.&lt;/p>
+&lt;p>If you are on the allowlist then simply create a Pull Request from your fork to the Y USA Open Y repository. After up to 30 minutes you&amp;rsquo;ll receive comments with links to the generated site builds.&lt;/p>
 &lt;h3 id="when-are-builds-deleted-from-the-server">When are builds deleted from the server?&lt;/h3>
 &lt;p>Usually, you have a day for the build to be wiped out from the server. If there is an upcoming deadline and many PRs are coming in, the lifetime could be significantly shorter, down to a couple of hours.&lt;/p>
 &lt;h3 id="who-should-i-contact-to-get-logs-from-the-build-server">Who should I contact to get logs from the build server?&lt;/h3>
 &lt;p>Andrii Podanenko &lt;code>@podarok&lt;/code> or Dima Danylevskyi &lt;code>@danylevskyi&lt;/code>&lt;/p>
 &lt;h3 id="what-should-i-do-if-tests-fail">What should I do if tests fail?&lt;/h3>
-&lt;p>If you have any concerns with reports generated by the code checkers that are used in Open Y ask Open Y Lead Technical Architect Andrii Podanenko to get them resolved. The majority of these systems are works-in-progress and it is helpful to have feedback on them.&lt;/p>
-&lt;h2 id="how-do-i-install-open-y-on-pantheon-hosting">How do I install Open Y on Pantheon hosting&lt;/h2>
+&lt;p>If you have any concerns with reports generated by the code checkers that are used in Y USA Open Y ask Y USA Open Y Lead Technical Architect Andrii Podanenko to get them resolved. The majority of these systems are works-in-progress and it is helpful to have feedback on them.&lt;/p>
+&lt;h2 id="how-do-i-install-y-usa-open-y-on-pantheon-hosting">How do I install Y USA Open Y on Pantheon hosting&lt;/h2>
 &lt;p>See
 &lt;a href="https://github.com/ymcatwincities/openy/issues/2004" target="_blank">request from a community&lt;/a>. The solution is described in
 &lt;a href="https://pantheon.io/docs/nested-docroot" target="_blank">Pantheon&amp;rsquo;s documentation on nested docroots&lt;/a>. We suggest that you maintain your own &lt;code>composer.json&lt;/code> with the specified web-root directory, as described in the
 &lt;a href="https://github.com/pantheon-systems/example-drops-8-composer/blob/master/composer.json#L94" target="_blank">Pantheon examples&lt;/a>.&lt;/p></description></item><item><title>Docs: Drupal 9 core dependencies version flexibility</title><link>/docs/wiki/drupal-9-core-dependencies-version-flexibility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/drupal-9-core-dependencies-version-flexibility/</guid><description>
 &lt;p>This document is no longer updated.&lt;/p>
-&lt;p>To update the version of Drupal being used on your site independent of Open Y see
+&lt;p>To update the version of Drupal being used on your site independent of Y USA Open Y see
 &lt;a href="https://www.drupal.org/docs/updating-drupal/updating-drupal-core-via-composer" target="_blank">Updating Drupal Core via Composer&lt;/a>. Be aware that &lt;code>openy/composer.json&lt;/code> may set
 &lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/composer.json#:~:text=%22drupal/-,core%2Drecommended,-%22%3A%20%22%3E%3D9.1%2C%20%3C9.3%22%2C" target="_blank">Drupal core version constraints&lt;/a>.&lt;/p>
 &lt;hr>
 &lt;p>February 2021 release tagged Drupal core both 9.0.x and 9.1.x as allowed to be used.&lt;/p>
 &lt;p>Composer by default is installing the latest stable version, so a command&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project:dev-9.2.x-development OPENY --no-interaction
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>will install Open Y on latest 9.1.x Drupal core.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>will install Y USA Open Y on latest 9.1.x Drupal core.&lt;/p>
 &lt;p>If there is a need to stay on Drupal 9.0.x stable core please use&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project:dev-9.2.x-development OPENY --no-interaction
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> OPENY
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require drupal/core:~9.0.7
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>where 9.0.7 - is a needed version for your Open Y instance&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>where 9.0.7 - is a needed version for your Y USA Open Y instance&lt;/p>
 &lt;p>For modules see
 &lt;a href="/docs/wiki/composer-version-constraints-for-open-y/">Composer-version-constraints-for-Open-Y&lt;/a>&lt;/p></description></item><item><title>Docs: GroupEx PRO quick start</title><link>/docs/wiki/groupex-pro-quick-start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/groupex-pro-quick-start/</guid><description>
 &lt;p>This document has been moved to
-&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync#readme" target="_blank">ynorth-projects/openy_pef_gxp_sync&lt;/a>.&lt;/p></description></item><item><title>Docs: How to contribute large features into Open Y (backporting, etc)</title><link>/docs/wiki/how-to-contribute-large-features-into-open-y-backporting-etc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/how-to-contribute-large-features-into-open-y-backporting-etc/</guid><description>
-&lt;p>Our best practices for backporting large features into Open Y, contributing code for others to use, can be found on
-&lt;a href="https://community.openymca.org/t/i-made-some-customizations-to-my-site-that-i-want-to-contribute-back-to-open-y-what-are-the-best-practices-for-backporting-my-features/435" target="_blank">this Open Y message board post&lt;/a>.&lt;/p></description></item><item><title>Docs: How to develop themes in Open Y</title><link>/docs/wiki/how-to-develop-themes-in-open-y/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/how-to-develop-themes-in-open-y/</guid><description>
+&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync#readme" target="_blank">ynorth-projects/openy_pef_gxp_sync&lt;/a>.&lt;/p></description></item><item><title>Docs: How to contribute large features into Y USA Open Y (backporting, etc)</title><link>/docs/wiki/how-to-contribute-large-features-into-open-y-backporting-etc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/how-to-contribute-large-features-into-open-y-backporting-etc/</guid><description>
+&lt;p>Our best practices for backporting large features into Y USA Open Y, contributing code for others to use, can be found on
+&lt;a href="https://community.openymca.org/t/i-made-some-customizations-to-my-site-that-i-want-to-contribute-back-to-open-y-what-are-the-best-practices-for-backporting-my-features/435" target="_blank">this Y USA Open Y message board post&lt;/a>.&lt;/p></description></item><item><title>Docs: How to develop themes in Y USA Open Y</title><link>/docs/wiki/how-to-develop-themes-in-open-y/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/how-to-develop-themes-in-open-y/</guid><description>
 &lt;h1 id="working-with-themes">Working with Themes&lt;/h1>
-&lt;p>Each Open Y theme was developed independently, either by the Open Y Core Team or by a partner for one specific Y and then contributed back. You can see demos of each theme on the
+&lt;p>Each Y USA Open Y theme was developed independently, either by the Y USA Open Y Core Team or by a partner for one specific Y and then contributed back. You can see demos of each theme on the
 &lt;a href="/docs/wiki/sandboxes/">Sandboxes&lt;/a>.&lt;/p>
 &lt;p>Each theme has its own dependencies and build processes. Please read the steps in each &lt;code>README&lt;/code> for details.&lt;/p>
 &lt;h2 id="inventory-of-themes">Inventory of themes&lt;/h2>
 &lt;p>As of December 2021, themes
-&lt;a href="https://github.com/ymcatwincities/openy/pull/2595" target="_blank">have been decoupled&lt;/a> from the Open Y profile to independent projects on Drupal.org.&lt;/p>
+&lt;a href="https://github.com/ymcatwincities/openy/pull/2595" target="_blank">have been decoupled&lt;/a> from the Y USA Open Y profile to independent projects on Drupal.org.&lt;/p>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;ul>
 &lt;li>
@@ -489,11 +489,11 @@
 &lt;/ul></description></item><item><title>Docs: How we release OpenY distribution from code perspective</title><link>/docs/wiki/how-we-release-openy-distribution-from-code-perspective/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/how-we-release-openy-distribution-from-code-perspective/</guid><description>
 &lt;h3 id="repos-involved-in-releases">Repos involved in releases&lt;/h3>
 &lt;ol>
-&lt;li>Open Y Drupal Profile Distribution
+&lt;li>Y USA Open Y Drupal Profile Distribution
 &lt;a href="https://github.com/ymcatwincities/openy" target="_blank">ymcatwincities/openy&lt;/a>&lt;/li>
-&lt;li>Open Y Project for initiating an Open Y instance -
+&lt;li>Y USA Open Y Project for initiating an Y USA Open Y instance -
 &lt;a href="https://github.com/ymcatwincities/openy-project" target="_blank">ymcatwincities/openy-project&lt;/a>&lt;/li>
-&lt;li>Continuous Integration/DevOps for rebuilding/installing Open Y -
+&lt;li>Continuous Integration/DevOps for rebuilding/installing Y USA Open Y -
 &lt;a href="https://github.com/ymcatwincities/openy-cibox-build" target="_blank">ymcatwincities/openy-cibox-build&lt;/a>&lt;/li>
 &lt;li>CIBox development environment (Virtualbox, Docker, Vagrant)
 &lt;a href="https://github.com/ymcatwincities/openy-cibox-vm" target="_blank">ymcatwincities/openy-cibox-vm&lt;/a>&lt;/li>
@@ -501,29 +501,29 @@
 &lt;a href="https://github.com/ymcatwincities/openy-docksal" target="_blank">ymcatwincities/openy-docksal&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;h3 id="release-management">Release Management&lt;/h3>
-&lt;p>When tagging a new release of Open Y, the Lead Architect takes the following steps:&lt;/p>
+&lt;p>When tagging a new release of Y USA Open Y, the Lead Architect takes the following steps:&lt;/p>
 &lt;ol>
 &lt;li>Review/Merge/Update
 &lt;a href="https://github.com/ymcatwincities/openy-project" target="_blank">ymcatwincities/openy-project&lt;/a> (usually composer.json or/and oneline script install) and tag a new release there.&lt;/li>
 &lt;li>Review/Merge all Pull Requests in
 &lt;a href="https://github.com/ymcatwincities/openy" target="_blank">ymcatwincities/openy&lt;/a> that were planned for release.&lt;/li>
-&lt;li>Change the Open Y version in
+&lt;li>Change the Y USA Open Y version in
 &lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/openy.info.yml#L5" target="_blank">&lt;code>openy.info.yml&lt;/code>&lt;/a>.&lt;/li>
-&lt;li>Change the Open Y version in major modules if there were changes to them (Activity Finder, PEF, etc).&lt;/li>
+&lt;li>Change the Y USA Open Y version in major modules if there were changes to them (Activity Finder, PEF, etc).&lt;/li>
 &lt;li>Create Changelog release notes as a draft and include Contributors as well as major issues fixed/introduced.&lt;/li>
-&lt;li>Spin up a copy of an Open Y site and check top priority functionality for regressions.&lt;/li>
+&lt;li>Spin up a copy of an Y USA Open Y site and check top priority functionality for regressions.&lt;/li>
 &lt;li>Send for review to Core Team (Craig Paulnock, Paige Kiecker), get approval.&lt;/li>
-&lt;li>Change the Open Y version to next with -dev suffix for developers in
+&lt;li>Change the Y USA Open Y version to next with -dev suffix for developers in
 &lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-2.x/openy.info.yml#L5" target="_blank">&lt;code>openy.info.yml&lt;/code>&lt;/a>.&lt;/li>
-&lt;li>Refresh the Open Y private mirror on the &lt;code>openy.cibox.tools&lt;/code> CI server.&lt;/li>
+&lt;li>Refresh the Y USA Open Y private mirror on the &lt;code>openy.cibox.tools&lt;/code> CI server.&lt;/li>
 &lt;li>Check that the
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.2.x/scripts/openyonclickinstall.sh" target="_blank">one-click install&lt;/a> is working on a fresh DigitalOcean instance ($10: 1CPU 2Gb RAM). Ensure the version of Open Y is the proper one in site info (&lt;code>admin/reports/status&lt;/code>).&lt;/li>
-&lt;li>Publish announcement in #developers Open Y Slack channel.&lt;/li>
-&lt;li>Publish announcement in #general Open Y Slack channel.&lt;/li>
+&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.2.x/scripts/openyonclickinstall.sh" target="_blank">one-click install&lt;/a> is working on a fresh DigitalOcean instance ($10: 1CPU 2Gb RAM). Ensure the version of Y USA Open Y is the proper one in site info (&lt;code>admin/reports/status&lt;/code>).&lt;/li>
+&lt;li>Publish announcement in #developers Y USA Open Y Slack channel.&lt;/li>
+&lt;li>Publish announcement in #general Y USA Open Y Slack channel.&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Important versions for upgrade path</title><link>/docs/wiki/important-versions-for-upgrade-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/important-versions-for-upgrade-path/</guid><description>
-&lt;p>Open Y development moves quickly and in this document, we flag important versions that should not be skipped while you upgrade your sites.&lt;/p>
+&lt;p>Y USA Open Y development moves quickly and in this document, we flag important versions that should not be skipped while you upgrade your sites.&lt;/p>
 &lt;h2 id="determining-your-upgrade-path">Determining your upgrade path&lt;/h2>
-&lt;p>For example: If you are on Open Y 8.1.2 and want to upgrade to Open Y 8.2.8.5 you should make it in a couple of steps&lt;/p>
+&lt;p>For example: If you are on Y USA Open Y 8.1.2 and want to upgrade to Y USA Open Y 8.2.8.5 you should make it in a couple of steps&lt;/p>
 &lt;ol>
 &lt;li>Upgrade 8.1.2 to 8.1.13.1&lt;/li>
 &lt;li>Upgrade 8.1.13.1 to 8.2.2.1&lt;/li>
@@ -533,7 +533,7 @@
 &lt;p>These supplemental documents elaborate on a few specific cases:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="/docs/wiki/openy-upgrade-for-developers.-upgrade-to-old-openy-1.x-version/">Upgrade from Open Y &amp;lt;8.1.3&lt;/a>&lt;/li>
+&lt;a href="/docs/wiki/openy-upgrade-for-developers.-upgrade-to-old-openy-1.x-version/">Upgrade from Y USA Open Y &amp;lt;8.1.3&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="/docs/wiki/upgrade-openy-8.1.3-to-8.2.2.1/">Upgrade from 8.1.3 to 8.2.2.1&lt;/a>&lt;/li>
 &lt;li>
@@ -543,17 +543,17 @@
 &lt;ul>
 &lt;li>&lt;code>8.1.13.1&lt;/code> - Optional, when you have a lot of customized code and 8.2.2.1 is failing in most places.&lt;/li>
 &lt;li>&lt;code>8.2.2.1&lt;/code> - This is a very important step everyone should have. After this version, &lt;code>drush entup&lt;/code> stops working. In this version, we finally migrated to the core media subsystem, and before going further it is important to upgrade media by upgrading your site to this version first.&lt;/li>
-&lt;li>&lt;code>8.2.7.3&lt;/code> - This is a very stable Drupal 8 based Open Y with a bunch of contrib module updates. This is one of the last Drupal 8 based Open Y versions before the upgrade to Drupal 9 core. Also, in 8.2.7.0 and 8.2.7.1 we started to introduce multiple version constraints in &lt;code>composer.json&lt;/code> to allow developers to choose between the minimum or latest dependency versions. This is for securing the upgrade path as well as adding flexibility for version selection if needed.&lt;/li>
+&lt;li>&lt;code>8.2.7.3&lt;/code> - This is a very stable Drupal 8 based Y USA Open Y with a bunch of contrib module updates. This is one of the last Drupal 8 based Y USA Open Y versions before the upgrade to Drupal 9 core. Also, in 8.2.7.0 and 8.2.7.1 we started to introduce multiple version constraints in &lt;code>composer.json&lt;/code> to allow developers to choose between the minimum or latest dependency versions. This is for securing the upgrade path as well as adding flexibility for version selection if needed.&lt;/li>
 &lt;li>&lt;code>9.2.8.0&lt;/code> - Drupal 9 version which must be used in the upgrade path before going to 9.2.8.1+. This version added 9.0-9.1 Drupal Core and disabled deprecated components.&lt;/li>
 &lt;li>&lt;code>9.2.10.0&lt;/code> - Removed a bunch of unused modules from distribution.&lt;/li>
 &lt;/ul>
 &lt;p>See
-&lt;a href="/docs/wiki/composer-version-constraints-for-open-y/">Version Constraints practices for Open Y&lt;/a>&lt;/p>
+&lt;a href="/docs/wiki/composer-version-constraints-for-open-y/">Version Constraints practices for Y USA Open Y&lt;/a>&lt;/p>
 &lt;h2 id="known-issues">Known issues&lt;/h2>
-&lt;p>If you are faced with an issue when &lt;code>composer&lt;/code> installs an improper version of &lt;code>drupal/core&lt;/code> for the chosen version of Open Y from the list above, please use this trick in order to downgrade:&lt;/p>
+&lt;p>If you are faced with an issue when &lt;code>composer&lt;/code> installs an improper version of &lt;code>drupal/core&lt;/code> for the chosen version of Y USA Open Y from the list above, please use this trick in order to downgrade:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer require drupal/core-recommended:9.2.8
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Run the above command where your &lt;code>docroot&lt;/code> is. Use the current core version instead of &lt;code>9.2.8&lt;/code>.&lt;/p></description></item><item><title>Docs: Install Solr site search for Open Y</title><link>/docs/wiki/install-solr-site-search-for-open-y/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/install-solr-site-search-for-open-y/</guid><description>
-&lt;p>Open Y leverages
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Run the above command where your &lt;code>docroot&lt;/code> is. Use the current core version instead of &lt;code>9.2.8&lt;/code>.&lt;/p></description></item><item><title>Docs: Install Solr site search for Y USA Open Y</title><link>/docs/wiki/install-solr-site-search-for-open-y/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/install-solr-site-search-for-open-y/</guid><description>
+&lt;p>Y USA Open Y leverages
 &lt;a href="https://solr.apache.org/" target="_blank">Apache Solr&lt;/a> for a few features:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -564,7 +564,7 @@
 &lt;h2 id="quick-start--upgrade-path">Quick Start / Upgrade path&lt;/h2>
 &lt;ul>
 &lt;li>Log in as admin.&lt;/li>
-&lt;li>Go to &lt;code>admin/modules&lt;/code> and enable the Open Y Search API module.&lt;/li>
+&lt;li>Go to &lt;code>admin/modules&lt;/code> and enable the Y USA Open Y Search API module.&lt;/li>
 &lt;/ul>
 &lt;p>
 &lt;img src="https://user-images.githubusercontent.com/563412/142628630-b412aa4b-8f2b-42f6-ba06-c5bb6a78469c.png" alt="image" />&lt;/p>
@@ -594,9 +594,9 @@
 &lt;ul>
 &lt;li>Verify search results are displayed correctly.&lt;/li>
 &lt;/ul>
-&lt;h2 id="starting-from-the-open-y-installer">Starting from the Open Y installer&lt;/h2>
+&lt;h2 id="starting-from-the-y-usa-open-y-installer">Starting from the Y USA Open Y installer&lt;/h2>
 &lt;ul>
-&lt;li>Find the &lt;code>Select search service&lt;/code> step displayed during the Open Y installation.&lt;/li>
+&lt;li>Find the &lt;code>Select search service&lt;/code> step displayed during the Y USA Open Y installation.&lt;/li>
 &lt;li>Choose from one of these options during installation:
 &lt;ul>
 &lt;li>&lt;strong>None&lt;/strong>
@@ -604,24 +604,24 @@
 &lt;li>Nothing happens if the user chooses this option, search modules are displayed after installation.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Open Y Google Custom Search&lt;/strong>
+&lt;li>&lt;strong>Y USA Open Y Google Custom Search&lt;/strong>
 &lt;ul>
 &lt;li>Google Custom Search configuration form is displayed if the user chooses this option.&lt;/li>
-&lt;li>The Open Y Google Search module is enabled after installation and ready to use.&lt;/li>
+&lt;li>The Y USA Open Y Google Search module is enabled after installation and ready to use.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Open Y Search API&lt;/strong>
+&lt;li>&lt;strong>Y USA Open Y Search API&lt;/strong>
 &lt;ul>
 &lt;li>Search API backend options are displayed in this case with the following options:
 &lt;ul>
 &lt;li>&lt;em>Database&lt;/em>
 &lt;ul>
-&lt;li>The Open Y Search API module is enabled after installation. The database search API server is enabled. The search is ready to use after content indexation.&lt;/li>
+&lt;li>The Y USA Open Y Search API module is enabled after installation. The database search API server is enabled. The search is ready to use after content indexation.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;em>Solr&lt;/em>
 &lt;ul>
-&lt;li>Additional installation step with Solr configuration form is displayed in this case and user can specify all params for Solr connection. The Open Y Search API module is enabled after installation, Solr search API server is enabled. The search is ready to use after content indexing (if the correct Solr settings were used).&lt;/li>
+&lt;li>Additional installation step with Solr configuration form is displayed in this case and user can specify all params for Solr connection. The Y USA Open Y Search API module is enabled after installation, Solr search API server is enabled. The search is ready to use after content indexing (if the correct Solr settings were used).&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -644,447 +644,22 @@
 &lt;/ul>
 &lt;h2 id="legacy-solr-support">Legacy Solr Support&lt;/h2>
 &lt;p>The contrib
-&lt;a href="https://www.drupal.org/project/search_api_solr" target="_blank">Search API Solr&lt;/a> module supports a broad swath of Solr versions, but occasionally old versions are dropped from support in the main module. If, when enabling Open Y Search API, you encounter errors that your version of Solr is out of date, you may need to enable the [Search API Solr Legacy module](
+&lt;a href="https://www.drupal.org/project/search_api_solr" target="_blank">Search API Solr&lt;/a> module supports a broad swath of Solr versions, but occasionally old versions are dropped from support in the main module. If, when enabling Y USA Open Y Search API, you encounter errors that your version of Solr is out of date, you may need to enable the [Search API Solr Legacy module](
 &lt;a href="https://git.drupalcode.org/project/search_api_solr/-/blob/4.x/modules/search_api_solr_legacy/README.md]" target="_blank">https://git.drupalcode.org/project/search_api_solr/-/blob/4.x/modules/search_api_solr_legacy/README.md]&lt;/a>. As of January 2022, Search API Solr Legacy supports Solr 3.6 through 6.4.&lt;/p>
 &lt;p>The error message may look something like this:&lt;/p>
 &lt;blockquote>
 &lt;p>Notice: Undefined index: 4.x in Drupal\search_api_solr\Controller\SolrConfigSetController-&amp;gt;getConfigFiles()&lt;/p>
 &lt;/blockquote></description></item><item><title>Docs: Install SSL certificate for the OpenY site</title><link>/docs/wiki/install-ssl-certificate-for-the-openy-site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/install-ssl-certificate-for-the-openy-site/</guid><description>
-&lt;h2 id="web-security-and-open-y">Web Security and Open Y&lt;/h2>
+&lt;h2 id="web-security-and-y-usa-open-y">Web Security and Y USA Open Y&lt;/h2>
 &lt;p>As many parties have moved to
 &lt;a href="https://www.eff.org/encrypt-the-web" target="_blank">Encrypt the Web&lt;/a>, &lt;code>https&lt;/code> sites and SSL certificates have shifted from &amp;ldquo;nice to have&amp;rdquo; to necessities.&lt;/p>
-&lt;p>If you&amp;rsquo;re running Open Y on a managed platform you most likely have SSL already configured. If you choose to manage Open Y on your own, you&amp;rsquo;ll have to install a certificate.&lt;/p>
+&lt;p>If you&amp;rsquo;re running Y USA Open Y on a managed platform you most likely have SSL already configured. If you choose to manage Y USA Open Y on your own, you&amp;rsquo;ll have to install a certificate.&lt;/p>
 &lt;p>
 &lt;a href="https://letsencrypt.org/" target="_blank">Let&amp;rsquo;s Encrypt&lt;/a> is &amp;ldquo;a free, automated, and open certificate authority (CA), run for the public’s benefit. It is a service provided by the
 &lt;a href="https://www.abetterinternet.org/" target="_blank">Internet Security Research Group (ISRG)&lt;/a>.&amp;rdquo;
 &lt;a href="https://certbot.eff.org/" target="_blank">Certbot&lt;/a> is &amp;ldquo;a free, open source software tool for automatically using Let’s Encrypt certificates on manually-administrated websites to enable HTTPS.&amp;rdquo;&lt;/p>
 &lt;p>Certbot maintains detailed documentation for installing SSL certificates on a variety of systems. Simply
-&lt;a href="https://certbot.eff.org/instructions" target="_blank">visit Certbot&amp;rsquo;s instructions wizard&lt;/a> and follow the instructions to configure your server.&lt;/p></description></item><item><title>Docs: Open Y 2.0 root YAML files</title><link>/docs/wiki/open-y-2.0-root-yaml-files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-2.0-root-yaml-files/</guid><description>
-&lt;p>There are plenty of
-&lt;a href="http://en.wikipedia.org/wiki/YAML" target="_blank">YAML&lt;/a> configuration files at the root of the profile. Some of them are standard Drupal configuration and others are Open Y specific.&lt;/p>
-&lt;h2 id="basic-yml-files">Basic .yml files&lt;/h2>
-&lt;p>The following ones are very common and can be found in many Drupal modules:&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>openy.info.yml&lt;/code> (
-&lt;a href="https://www.drupal.org/docs/8/creating-custom-modules/let-drupal-8-know-about-your-module-with-an-infoyml-file" target="_blank">documentation&lt;/a>) - defines Open Y as a profile and defines its name and dependencies&lt;/li>
-&lt;li>&lt;code>openy.libraries.yml&lt;/code> (
-&lt;a href="https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module" target="_blank">documentation&lt;/a>) - defines global Open Y drupal asset libraries&lt;/li>
-&lt;li>&lt;code>openy.permissions.yml&lt;/code> - defines global Open Y permissions&lt;/li>
-&lt;li>&lt;code>openy.services.yml&lt;/code> (
-&lt;a href="https://www.drupal.org/docs/8/api/services-and-dependency-injection/structure-of-a-service-file" target="_blank">documentation&lt;/a>) - if you are introducing a service that is needed by all (or the majority of) Open Y modules add it here and store the service class file in the &lt;code>openy/src&lt;/code> directory&lt;/li>
-&lt;/ul>
-&lt;h2 id="open-y-specific-yml-files">Open Y specific .yml files&lt;/h2>
-&lt;p>There are also a few configurations related to the Open Y installation process and the Open Y package system:&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>openy.installation_types.yml&lt;/code>&lt;/li>
-&lt;li>&lt;code>openy.themes.yml&lt;/code>&lt;/li>
-&lt;li>&lt;code>openy.packages.yml&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h3 id="open-y-packages">Open Y packages&lt;/h3>
-&lt;p>The Open Y package system introduces a new level of abstraction, shifting from the Drupal standard module level to packages. Packages represent complete Open Y features, which could include multiple modules. A package is a declaration of a group of several modules. You can enable and disable a package, which means the whole set of the associated Drupal modules are enabled or disabled.&lt;/p>
-&lt;p>This approach provides a convenient way of managing Open Y features.&lt;/p>
-&lt;p>The Open Y system module provides a page where the enabled and available packages are listed and can be installed/uninstalled. See the Open Y Extend page (at &lt;code>/admin/openy/extend&lt;/code>).&lt;/p>
-&lt;h3 id="open-y-installation-types">Open Y Installation types&lt;/h3>
-&lt;p>When an Open Y site is installed there is also another abstraction level - the installation type - which groups packages.&lt;/p>
-&lt;p>The hierarchy is as follows:&lt;/p>
-&lt;ul>
-&lt;li>installation type
-&lt;ul>
-&lt;li>package
-&lt;ul>
-&lt;li>module&lt;/li>
-&lt;li>module&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>package
-&lt;ul>
-&lt;li>module&lt;/li>
-&lt;li>module&lt;/li>
-&lt;li>module&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>package
-&lt;ul>
-&lt;li>module&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>installation type
-&lt;ul>
-&lt;li>package
-&lt;ul>
-&lt;li>module&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="openyinstallation_typesyml">openy.installation_types.yml&lt;/h3>
-&lt;p>&lt;code>openy.installation_types.yml&lt;/code> defines the high-level presets available during website installation.&lt;/p>
-&lt;p>File structure:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>standard:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> name: Standard
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> packages:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - alerts
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - editorial
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - news
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - seo
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - webform
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>extended:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> name: Extended
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> packages:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - alerts
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - analytics
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - ...
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>complete:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> name: Complete/Developer
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> hidden: true
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> packages:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - activenet
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - ...
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Each installation type has a machine name which is a key of the top-level items.&lt;/p>
-&lt;h4 id="properties-of-installation-types">Properties of installation types:&lt;/h4>
-&lt;ul>
-&lt;li>&lt;strong>name&lt;/strong> (required) - a human-friendly name of the installation type&lt;/li>
-&lt;li>&lt;strong>packages&lt;/strong> (required) - a list of Open Y packages that are associated with the installation type. The packages are listed when a website is installed via the web-interface&lt;/li>
-&lt;li>&lt;strong>hidden&lt;/strong> (optional) - if the installation type must be hidden when a website is installed via the web interface&lt;/li>
-&lt;/ul>
-&lt;p>If an Open Y site is installed using the web interface there is a step where the installation type can be selected.&lt;/p>
-&lt;p>If an Open Y site is installed using Drush then the installation type can be specified by an optional argument for the &lt;code>drush site-install&lt;/code> command (
-&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-2.x/docs/Development/InstallationWithDrush.md" target="_blank">Installation with Drush&lt;/a>):&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> drush site-install openy \
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --db-url=&amp;#34;mysql://user:pass@host:3306/db&amp;#34; \
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --root=/docroot \
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> openy_configure_profile.preset=extended
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="openypackagesyml">openy.packages.yml&lt;/h3>
-&lt;p>Packages are defined in &lt;code>openy.packages.yml&lt;/code>. This file is placed in the root of the profile, it&amp;rsquo;s automatically detected and used by the Open Y installation process.&lt;/p>
-&lt;p>File structure&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">blog&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">name&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#a40000">&amp;#39;&lt;/span>&lt;span style="color:#000">Blog&lt;/span>&lt;span style="color:#a40000">&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">description&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Blog package provides a set of modules to maintain and create different blog post listings.&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">help&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#a40000">&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">p&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#000">Using&lt;/span> &lt;span style="color:#000">Blog&lt;/span> &lt;span style="color:#204a87;font-weight:bold">package&lt;/span> &lt;span style="color:#000">you&lt;/span> &lt;span style="color:#000">can&lt;/span> &lt;span style="color:#000">create&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000">maintain&lt;/span> &lt;span style="color:#000">blog&lt;/span> &lt;span style="color:#000">posts&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000">create&lt;/span> &lt;span style="color:#000">flexible&lt;/span> &lt;span style="color:#000">listings&lt;/span> &lt;span style="color:#000">of&lt;/span> &lt;span style="color:#000">blog&lt;/span> &lt;span style="color:#000">posts&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span> &lt;span style="color:#000">Watch&lt;/span> &lt;span style="color:#000">a&lt;/span> &lt;span style="color:#000">video&lt;/span> &lt;span style="color:#000">below&lt;/span> &lt;span style="color:#000">to&lt;/span> &lt;span style="color:#000">learn&lt;/span> &lt;span style="color:#000">more&lt;/span> &lt;span style="color:#000">about&lt;/span> &lt;span style="color:#000">blog&lt;/span> &lt;span style="color:#000">anatomy&lt;/span>&lt;span style="color:#000;font-weight:bold">.&amp;lt;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">/&lt;/span>&lt;span style="color:#000">p&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">iframe&lt;/span> &lt;span style="color:#000">width&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;560&amp;#34;&lt;/span> &lt;span style="color:#000">height&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;315&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">src&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;https://www.youtube.com/embed/PTZkgOb8CFE&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">frameborder&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;0&amp;#34;&lt;/span> &lt;span style="color:#000">allow&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;autoplay; encrypted-media&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">allowfullscreen&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&amp;lt;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">/&lt;/span>&lt;span style="color:#000">iframe&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#a40000">&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">modules&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_node_blog&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_prgf_blog_listing&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_prgf_featured_blogs&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_prgf_blog_branch&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_prgf_blog_camp&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_prgf_blog_latest&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_txnm_blog_category&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">camps&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">name&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#a40000">&amp;#39;&lt;/span>&lt;span style="color:#000">Camps&lt;/span>&lt;span style="color:#a40000">&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">description&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Camps package provides a set of modules to maintain camps and add them to the location finder page.&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">help&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#a40000">&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">p&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#000">Using&lt;/span> &lt;span style="color:#000">Camps&lt;/span> &lt;span style="color:#204a87;font-weight:bold">package&lt;/span> &lt;span style="color:#000">you&lt;/span> &lt;span style="color:#000">can&lt;/span> &lt;span style="color:#000">create&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000">maintain&lt;/span> &lt;span style="color:#000">Camps&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000">extend&lt;/span> &lt;span style="color:#000">location&lt;/span> &lt;span style="color:#000">finder&lt;/span> &lt;span style="color:#000">page&lt;/span> &lt;span style="color:#000">to&lt;/span> &lt;span style="color:#000">include&lt;/span> &lt;span style="color:#000">them&lt;/span>&lt;span style="color:#000;font-weight:bold">.&amp;lt;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">/&lt;/span>&lt;span style="color:#000">p&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#a40000">&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">modules&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_prgf_camp_menu&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_loc_camp&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Each package has a machine name which is a key of the top-level items.&lt;/p>
-&lt;h4 id="properties-of-packages">Properties of packages:&lt;/h4>
-&lt;ul>
-&lt;li>&lt;strong>name&lt;/strong> (required) - a human-friendly name of the package.&lt;/li>
-&lt;li>&lt;strong>description&lt;/strong> (required) - a short description of the package features to show up on the Open Y Extend page.&lt;/li>
-&lt;li>&lt;strong>help&lt;/strong> (required) - an HTML markup for the installation via web interface. It contains a help message that pops up when the package name is clicked on the &lt;code>Select installation type&lt;/code> step.&lt;/li>
-&lt;li>&lt;strong>modules&lt;/strong> (required) - a list of Drupal modules that are associated with the package. When the package is installed/uninstalled the associated modules are installed/uninstalled respectively. When a website is installed via web interface all the available packages are listed there but split into two groups - the ones that are to be installed (associated with the selected package) and all the rest.&lt;/li>
-&lt;/ul>
-&lt;h3 id="openythemeyml">openy.theme.yml&lt;/h3>
-&lt;p>The file defines which Open Y themes are available for installation when a website is being installed.&lt;/p>
-&lt;p>If an Open Y site is installed using Drush then the theme can be specified by an optional argument for the &lt;code>drush site-install&lt;/code> command (
-&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-2.x/docs/Development/InstallationWithDrush.md" target="_blank">Installation with Drush&lt;/a>):&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> drush site-install openy \
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --db-url=&amp;#34;mysql://user:pass@host:3306/db&amp;#34; \
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --root=/docroot \
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> openy_configure_profile.preset=extended \
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> openy_theme_select.theme=openy_rose
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Open Y 3rd-party dependencies</title><link>/docs/wiki/open-y-3rd-party-dependencies/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-3rd-party-dependencies/</guid><description>
-&lt;p>Open Y&amp;rsquo;s system requirements generally track
-&lt;a href="https://www.drupal.org/docs/system-requirements" target="_blank">those of Drupal&lt;/a> with some occasional more opinionated recommendations.&lt;/p>
-&lt;h2 id="general-requirements">General Requirements&lt;/h2>
-&lt;p>Supported versions may differ based on your Drupal version.&lt;/p>
-&lt;ul>
-&lt;li>A
-&lt;a href="https://www.drupal.org/docs/system-requirements/web-server-requirements" target="_blank">supported web server&lt;/a> like Apache or Nginx&lt;/li>
-&lt;li>A
-&lt;a href="https://www.drupal.org/docs/system-requirements/database-server-requirements" target="_blank">supported database server&lt;/a> like MySQL or MariaDB&lt;/li>
-&lt;li>A
-&lt;a href="https://www.drupal.org/docs/system-requirements/php-requirements" target="_blank">supported version of PHP&lt;/a>&lt;/li>
-&lt;li>A Linux-based operating system
-&lt;ul>
-&lt;li>
-&lt;a href="https://ubuntu.com/" target="_blank">Ubuntu&lt;/a> 16, 18, and 20 are supported.&lt;/li>
-&lt;li>CentOS or similar may work as well.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>Recommended for advanced functionality, but not required:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;a href="https://lucene.apache.org/solr/" target="_blank">Apache SOLR&lt;/a> search server
-&lt;ul>
-&lt;li>Version 4.9.1 and version 8 have been tested for Activity Finder. Other versions are works in progress.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="for-high-loadperformance-sites">For high load/performance sites&lt;/h3>
-&lt;ul>
-&lt;li>A memory-based key-value store
-&lt;ul>
-&lt;li>
-&lt;a href="http://memcached.org/" target="_blank">Memcache&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://redis.io" target="_blank">Redis&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>A reverse proxy/HTTP cache
-&lt;ul>
-&lt;li>
-&lt;a href="https://varnish-cache.org/" target="_blank">Varnish&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/" target="_blank">Nginx reverse proxy&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>See also Drupal&amp;rsquo;s recommendations for
-&lt;a href="https://www.drupal.org/docs/managing-site-performance-and-scalability" target="_blank">managing site performance and scalability&lt;/a>.&lt;/p>
-&lt;h3 id="for-development">For development&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;a href="https://www.virtualbox.org/" target="_blank">Oracle VM Virtualbox&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.vagrantup.com/" target="_blank">Vagrant configuration manager&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.ansible.com/" target="_blank">Ansible configuration manager and automation&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://getcomposer.org/" target="_blank">Composer package manager&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.docker.com/" target="_blank">Docker virtual environments&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>See our
-&lt;a href="https://github.com/ymcatwincities/openy-project#installation" target="_blank">installation instructions&lt;/a> for a full walkthrough of these tools.&lt;/p>
-&lt;h2 id="software-libraries-and-frameworks">Software libraries and frameworks&lt;/h2>
-&lt;p>Open Y leverages many other open source frameworks including, but not limited to:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;a href="https://drupal.org/project/drupal" target="_blank">Drupal&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://symfony.com/" target="_blank">Symfony&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://reactjs.org/" target="_blank">ReactJS&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://vuejs.org/" target="_blank">Vue.js&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.google.com/recaptcha/intro/v3.html" target="_blank">Google reCAPTCHA&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://nodejs.org/en/" target="_blank">NodeJS&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Open Y anti spam protection</title><link>/docs/wiki/openy-anti-spam-protection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/openy-anti-spam-protection/</guid><description>
-&lt;p>In order to protect Open Y customers, we have added anti-spam protection based on CAPTCHA and Google reCAPTCHA out of the box in Open Y core&lt;/p>
-&lt;p>You can check
-&lt;a href="https://www.youtube.com/watch?v=nHo2uL-bPyM" target="_blank">the tutorial for how to install and configure reCaptcha on your site&lt;/a>.&lt;/p>
-&lt;p>In the majority of cases having the above configuration in place will protect you from 99% of spam, unless there is human-entered spam that has no protection. To overcome some human-based spam you should use blacklist logic for blocking email domains, used in spam messages.&lt;/p>
-&lt;p>For that, you can use
-&lt;a href="https://www.drupal.org/project/protected_submissions" target="_blank">the Protected Submissions module&lt;/a> module, which allows you to harden all submissions on a site with a list of stop words as well as per-language settings.&lt;/p>
-&lt;h2 id="virtual-y-use-case">Virtual Y use case&lt;/h2>
-&lt;p>In order to overcome caching issues, Virtual Y uses the
-&lt;a href="https://www.drupal.org/project/simple_recaptcha" target="_blank">simple_recaptcha&lt;/a> module which could be used in similar cases.&lt;/p>
-&lt;p>The CAPTCHA + reCAPTCHA module solution has presented some reliability issues. The most recent
-&lt;a href="https://www.drupal.org/project/captcha/issues/3089263" target="_blank">discussion and fix from drupal.org&lt;/a> has also not reliably resolved issues for some clients.&lt;/p>
-&lt;p>At some point, the “Simple reCaptcha” module was used on a project and had no issues, so we’ve started to replace the “CAPTCHA” + “reCAPTCHA” modules with “Simple reCAPTCHA”.&lt;/p></description></item><item><title>Docs: Open Y Code of Conduct and Best Practices</title><link>/docs/wiki/open-y-code-of-conduct-and-best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-code-of-conduct-and-best-practices/</guid><description>
-&lt;p>The Open Y community aims to build from the methods and best practices of other open-source projects, such as the
-&lt;a href="https://drupal.org" target="_blank">Drupal community&lt;/a> and the
-&lt;a href="http://drupal.ua" target="_blank">Drupal Ukrainian community&lt;/a>.&lt;/p>
-&lt;h1 id="bylaws">Bylaws&lt;/h1>
-&lt;p>For the OpenY distribution we have
-&lt;a href="/docs/wiki/open-y-terms-of-use/">Terms of Use&lt;/a> and
-&lt;a href="/docs/wiki/open-y-participant-agreement/">Participant Agreement&lt;/a>.&lt;/p>
-&lt;h1 id="development">Development&lt;/h1>
-&lt;p>To understand how we use and develop technologies, refer to the documents below:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;a href="https://www.drupal.org/dcoc" target="_blank">Drupal Code of Conduct&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">Conventional commits policy&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.drupal.org/docs/develop/standards" target="_blank">Drupal Coding Standards&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="/docs/wiki/development-faq/">Open Y Development FAQ&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="/docs/wiki/code-review-quality-best-practices/">Open Y Development Best Practices&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>JavaScript Code Standards&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;a href="https://github.com/airbnb/javascript/tree/master/react" target="_blank">Airbnb React/JSX Style Guide&lt;/a> (for reviewing JavaScript ES5/ES6)&lt;/li>
-&lt;li>
-&lt;a href="https://vuejs.org/v2/style-guide/" target="_blank">Vue.js code style guide&lt;/a> (for Vue.js components)&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Open Y one-click install how-to</title><link>/docs/wiki/open-y-one-click-install-how-to/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-one-click-install-how-to/</guid><description>
-&lt;p>This walk-through is outdated and is in the process of being updated. Instead, try:&lt;/p>
-&lt;ul>
-&lt;li>A
-&lt;a href="https://www.youtube.com/watch?v=nGyMJCwMsqM" target="_blank">video walk-through of installing Open Y for tech novices&lt;/a>&lt;/li>
-&lt;li>An overview of the
-&lt;a href="/docs/wiki/sandboxes/">Open Y Sandboxes&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="installing-open-y-on-digitalocean-droplet">Installing Open Y on DigitalOcean droplet&lt;/h3>
-&lt;ol>
-&lt;li>Create Ubuntu 16.04 LTS x64 droplet in area close to your location
-&lt;img src="https://user-images.githubusercontent.com/563412/44273919-6ffd8c80-a249-11e8-958b-3d7fbee6108d.png" alt="image" />&lt;/li>
-&lt;/ol>
-&lt;p>Use 2Gb droplet or more powerful if you need. Do not use 1Gb option - Open Y will fail on it.&lt;/p>
-&lt;ol start="2">
-&lt;li>Login to the SSH console of the droplet&lt;/li>
-&lt;li>Follow the comment from
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/scripts/openyonclickinstall.sh" target="_blank">https://github.com/ymcatwincities/openy-project/blob/8.1.x/scripts/openyonclickinstall.sh&lt;/a>
-Basically - run a command under root&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>curl -Ls http://bit.ly/initopeny &lt;span style="color:#000;font-weight:bold">|&lt;/span> bash -s
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The command above will run approximately 10 minutes.
-4. In the end you should see a message similar to&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>Open http://127.0.0.1/core/install.php to proceed with OpenY installation.
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="5">
-&lt;li>Open the link from the above message(from your console, not from this document) with your browser and proceed with Open Y installation.&lt;/li>
-&lt;/ol>
-&lt;p>Enjoy.&lt;/p>
-&lt;hr>
-&lt;p>In order to install the latest beta release of Open Y 2.0 change the command on step 3:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>curl -Ls http://bit.ly/initopeny &lt;span style="color:#000;font-weight:bold">|&lt;/span> bash -s beta
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
-&lt;p>If you find any issues please post a message to the issue queue
-&lt;a href="https://github.com/ymcatwincities/openy/issues" target="_blank">https://github.com/ymcatwincities/openy/issues&lt;/a>&lt;/p></description></item><item><title>Docs: Open Y Participant Agreement</title><link>/docs/wiki/open-y-participant-agreement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-participant-agreement/</guid><description>
-&lt;p>&lt;strong>OPEN Y PARTICIPATION AGREEMENT&lt;/strong>&lt;/p>
-&lt;p>This Open Y Participation Agreement (this “&lt;strong>Agreement&lt;/strong>”) is between Open Y, LLC, and participating YMCA member associations in the United States (“&lt;strong>Member Associations&lt;/strong>”). Open Y, LLC has received license rights from the National Council of Young Men’s Christian Associations of the United States of America, an Illinois not-for-profit corporation (“&lt;strong>YUSA&lt;/strong>”) to provide the Platform (as defined below) to you. Open Y is not a part of YUSA; Open Y is a part of the YMCA of the Greater Twin Cities.&lt;/p>
-&lt;p>The purpose of the Open Y community is to collectively advance YMCA web and online experiences to better serve the YMCA mission. The terms of this Agreement govern your use of Open Y’s open-source digital content management system, which facilitates the sharing of YUSA brand-compliant website templates, tools, applications, and related digital assets (“&lt;strong>Platform&lt;/strong>”). The community provides a collaborative environment for individuals to positively interact and participate in the Platform. These guidelines address the standards and expectations of those contributing to and participating in the Open Y community and are meant to help our YMCA community grow and thrive. Your participation in Open Y means that you agree to the following guidelines and to the Open Y Terms of Use.&lt;/p>
-&lt;p>&lt;strong>YMCA BRAND ASSETS&lt;/strong>&lt;/p>
-&lt;p>No right is granted by this Agreement to use or license the YUSA brand assets. YMCA brand assets, which include, but are not limited to YMCA trademarks, trade dress, logos and other indicia of origin, are owned and controlled by YUSA. &lt;em>Open Y, LLC provides the Platform to you under license from YUSA. Accordingly, neither Open Y, LLC nor any Member Association shall, either directly or indirectly, at any time do any act or thing contesting the validity of YUSA’s trademarks or its rights thereto.&lt;/em>&lt;/p>
-&lt;p>Only Member Associations in the United States will have access to use any YUSA brand assets included in Open Y. All use by Member Associations must be in compliance with YUSA brand standards and guidelines as established by the National Board. YUSA is a third party beneficiary to this Agreement, with the right to enforce each of the terms of this Agreement with respect to Open Y and you. Open Y shall send copies of all notices due to you under this Agreement to each of you and YUSA.&lt;/p>
-&lt;p>&lt;strong>BEING A MEMBER OF OUR COMMUNITY&lt;/strong>&lt;/p>
-&lt;p>&lt;em>Participation&lt;/em>: Open Y will be at its best if each member participates in the community. There are many different ways you can participate, including through using the platform, presentations, forums, summits, emails, calls, etc. We encourage your active participation to the extent you feel you are able and willing. Open Y, LLC may publicly disclose your participation in the project.&lt;/p>
-&lt;p>&lt;em>Contribution&lt;/em>: Open Y encourages Members to contribute to the enhancement, editing, and building of Open Y. To ensure valuable contributions to the community, Open Y encourages Members to stay familiar and up-to-date with the Open Y roadmap, as well as new features in active development. When you make changes that improve Open Y features, please contribute those back to the community by ensuring they are re-useable and decoupled.&lt;/p>
-&lt;p>&lt;em>Collaboration&lt;/em>: Open Y encourages Members to collaborate across the YMCA community to share costs and efforts on building new capabilities.&lt;/p>
-&lt;p>&lt;em>Transparency&lt;/em>: Customizations of code provided by Open Y for your website will likely increase the initial fees, support, and upgrade costs for your website. When modifying or redistributing code, you must include a notice giving credit to Open Y for the portion of the Open Y code you use.&lt;/p>
-&lt;p>&lt;em>Promotion&lt;/em>: Open Y encourages Members to share their expertise and Open Y experience to expand its reach and accessibility to experienced and new members alike. There will be many opportunities for members to support Open Y and its marketing and messaging initiatives.&lt;/p>
-&lt;p>&lt;strong>Reporting Problems&lt;/strong>&lt;/p>
-&lt;p>If you believe someone has violated the Open Y Community Guidelines, or have any questions or concerns, please contact Open Y, LLC at
-&lt;a href="http://openy.org" target="_blank">http://openy.org&lt;/a>.&lt;/p></description></item><item><title>Docs: Open Y Pull Requests review standard</title><link>/docs/wiki/open-y-pull-requests-review-standard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-pull-requests-review-standard/</guid><description>
-&lt;p>Check more
-&lt;a href="/docs/wiki/code-review-quality-best-practices/">technical guidelines about our best practices for code quality&lt;/a>.&lt;/p>
-&lt;h1 id="adherence-to-standards">Adherence to Standards&lt;/h1>
-&lt;p>The Open Y Core Team will adhere to the same standards we set for the community for all areas of development and technologies as per the Open Y documentation.&lt;/p>
-&lt;p>The Open Y Core Team reserves the right to break these standards only in the following scenarios:&lt;/p>
-&lt;ul>
-&lt;li>Emergency - a major defect or security risk has been discovered that requires extreme measures to resolve.&lt;/li>
-&lt;li>When the standards are broken, it is the responsibility of the Open Y Core Team to explain why the standards needed to be broken, and what the new standards will be moving forward.&lt;/li>
-&lt;li>This communication will be posted to the Open Y message board, Slack, and the documentation on GitHub will be updated to reflect the new standards.&lt;/li>
-&lt;/ul>
-&lt;h2 id="requirements-for-pull-requests">Requirements for Pull Requests&lt;/h2>
-&lt;ul>
-&lt;li>Code in Pull Requests should follow our established
-&lt;a href="/docs/wiki/code-review-quality-best-practices/">best practices&lt;/a>&lt;/li>
-&lt;li>Submitters&amp;rsquo; profiles on GitHub or Drupal.org should be up to date and contain at least a name and organization.&lt;/li>
-&lt;/ul>
-&lt;h2 id="template-for-the-pr">Template for the PR&lt;/h2>
-&lt;p>In order to create a good quality Pull Request, we prepared a
-&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-2.x/.github/PULL_REQUEST_TEMPLATE.md" target="_blank">PR template&lt;/a> which is automatically added to new Pull Requests on GitHub.&lt;/p>
-&lt;p>List of requirements from the template:&lt;/p>
-&lt;ul>
-&lt;li>Provide a link to the original issue, which is going to be fixed by the PR you are creating.&lt;/li>
-&lt;li>All coding styles are fulfilled and there are no issues reported by CodeSniffer. See
-&lt;a href="/docs/wiki/open-y-code-of-conduct-and-best-practices/">Code of Conduct&lt;/a>.&lt;/li>
-&lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy/tree/9.x-2.x/docs" target="_blank">Documentation&lt;/a> have been updated according to PR changes.&lt;/li>
-&lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy/pull/94#issue-204580200" target="_blank">Steps for review&lt;/a> have been provided according to PR changes. &lt;br/>&lt;img src="https://raw.githubusercontent.com/ymcatwincities/openy/8.x-1.x/.github/assets/steps-for-review.png" width="200" alt="Steps for review"/>&lt;/li>
-&lt;li>Make sure you&amp;rsquo;ve provided all necessary hook_update_N to
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/docs/Development/Upgrade%20path.md" target="_blank">support upgrade path&lt;/a>.&lt;/li>
-&lt;li>Make sure your git email is associated with an account on drupal.org, otherwise you won&amp;rsquo;t get commits there. &lt;br/>&lt;img src="https://raw.githubusercontent.com/ymcatwincities/openy/8.x-1.x/.github/assets/drupalorg-email.png" width="200" alt="drupal.org email"/>&lt;/li>
-&lt;li>If you would like to get credits on drupal.org,
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/docs/Development/Contributing.md#drupalorg-credits" target="_blank">check documentation&lt;/a>.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Open Y Release Schedule and Guidelines</title><link>/docs/wiki/open-y-release-schedule-and-guidelines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-release-schedule-and-guidelines/</guid><description>
-&lt;h2 id="open-y-release-guidelines">Open Y Release Guidelines&lt;/h2>
-&lt;p>Open Y releases major releases of the base project
-&lt;a href="https://github.com/ymcatwincities/openy" target="_blank">Open Y&lt;/a> and
-&lt;a href="https://github.com/ymcatwincities/openy_gated_content" target="_blank">Virtual Y&lt;/a> quarterly. Minor releases and sub-project releases occur as needed.&lt;/p>
-&lt;h3 id="major-releases-quarterly">Major releases (Quarterly)&lt;/h3>
-&lt;p>Major releases are scheduled for the second Tuesday of the second month of each quarter (February, May, August, November). They are numbered &lt;code>2.x&lt;/code> and consist of:&lt;/p>
-&lt;ul>
-&lt;li>New Features&lt;/li>
-&lt;li>New Enhancements&lt;/li>
-&lt;li>New Bugfixes&lt;/li>
-&lt;/ul>
-&lt;h3 id="minor-releases">Minor Releases&lt;/h3>
-&lt;p>Minor releases are numbered &lt;code>2.x.x&lt;/code> and consist of&lt;/p>
-&lt;ul>
-&lt;li>Only bugfixes&lt;/li>
-&lt;li>Never have new features or major enhancements&lt;/li>
-&lt;/ul>
-&lt;h3 id="release-schedule">Release schedule&lt;/h3>
-&lt;h4 id="2021">2021&lt;/h4>
-&lt;p>
-&lt;img src="https://user-images.githubusercontent.com/563412/104428684-6fd65800-558d-11eb-93b3-5c63e92ccd56.png" alt="OpenY/VirtualY Releases for 2021" />&lt;/p>
-&lt;h4 id="prior-years">Prior years&lt;/h4>
-&lt;ul>
-&lt;li>
-&lt;a href="https://user-images.githubusercontent.com/238201/146017405-10f28823-5af7-4498-9384-5502cbf5adaf.png" target="_blank">Open Y releases for 2018-2019&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Open Y Smoke Tests Index</title><link>/docs/wiki/open-y-smoke-tests-index/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-smoke-tests-index/</guid><description>
-&lt;h2 id="smoke-tests-in-core-and-dependencies">Smoke tests in core and dependencies&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/SMOKE_TESTS.md" target="_blank">Open Y core tests and dependencies&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://github.com/open-y-subprojects/openy_node_alert/blob/main/SMOKE_TESTS.md" target="_blank">Alert Application&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy_gated_content/blob/master/SMOKE_TESTS.md" target="_blank">Virtual Y Application&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy_activity_finder/blob/4.x/openy_af_vue_app/SMOKE_TESTS.md" target="_blank">Activity Finder v3&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="open-y-features">Open Y Features&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;a href="https://github.com/open-y-subprojects/openy_features/blob/main/openy_prgf/modules/openy_prgf_loc_finder/SMOKE_TESTS.md" target="_blank">Location Finder Application&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://github.com/open-y-subprojects/openy_features/blob/main/openy_prgf/modules/openy_prgf_small_banner/SMOKE_TESTS.md" target="_blank">Small Banner&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://github.com/open-y-subprojects/openy_features/blob/main/openy_prgf/modules/openy_prgf_banner/SMOKE_TESTS.md" target="_blank">Banner&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://github.com/open-y-subprojects/openy_features/blob/main/openy_prgf/modules/openy_prgf_simple_content/SMOKE_TESTS.md" target="_blank">Simple Content&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://github.com/open-y-subprojects/openy_features/blob/main/openy_prgf/modules/openy_prgf_grid_content/SMOKE_TESTS.md" target="_blank">Grid Content&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://git.drupalcode.org/project/groupexpro/-/blob/main/modules/embedded_groupexpro_schedule/SMOKE_TESTS.md" target="_blank">Embedded GroupEx Pro Schedule&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/modules/custom/openy_search/SMOKE_TESTS.md" target="_blank">Open Y Search&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Open Y technology pipeline</title><link>/docs/wiki/open-y-technology-pipeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-technology-pipeline/</guid><description>
-&lt;p>To deliver the best technologies for the YMCA movement, the Open Y development community maintains the following documents and best practices:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;a href="/docs/wiki/development-faq/">Development FAQ&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="/docs/wiki/code-review-quality-best-practices/">Open Y Coding Standards&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://community.openymca.org/t/i-made-some-customizations-to-my-site-that-i-want-to-co[%e2%80%a6]at-are-the-best-practices-for-backporting-my-features/435" target="_blank">How new technologies and features are added to Open Y&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="/docs/wiki/sandboxes/">Sandboxes&lt;/a>&lt;/li>
-&lt;li>Smoke Tests
-&lt;ul>
-&lt;li>
-&lt;a href="https://www.youtube.com/watch?v=MH4BwMowlic&amp;amp;list=PL_QVggMcFfKYfV1cnistny2L-Sp55SoMg" target="_blank">Smoke Tests YouTube Playlist&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="/docs/wiki/open-y-smoke-tests-index/">Open-Y-Smoke-Tests-Index&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>A Slack Team
-&lt;a href="https://openy.org/contact/slack_access_request" target="_blank">by invite&lt;/a> with an #architects_support channel where we discuss technical issues with our partners and YUSA.&lt;/li>
-&lt;li>A
-&lt;a href="https://www.youtube.com/watch?v=RSsQLVVhldc&amp;amp;list=PL_QVggMcFfKZp05THV3dYlYOG3MsJ8xSf" target="_blank">YouTube playlist for Developers&lt;/a>&lt;/li>
-&lt;li>A list of
-&lt;a href="/docs/wiki/open-y-3rd-party-dependencies/">3rd party dependencies&lt;/a> which are reviewed periodically for new features and deprecations.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Open Y Terms of Use</title><link>/docs/wiki/open-y-terms-of-use/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-terms-of-use/</guid><description>
+&lt;a href="https://certbot.eff.org/instructions" target="_blank">visit Certbot&amp;rsquo;s instructions wizard&lt;/a> and follow the instructions to configure your server.&lt;/p></description></item><item><title>Docs: Open Y Terms of Use</title><link>/docs/wiki/open-y-terms-of-use/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-terms-of-use/</guid><description>
 &lt;p>Version 2.0, May 2018&lt;/p>
 &lt;p>This is a free service provided by Open Y, LLC (“&lt;strong>we&lt;/strong>,” “&lt;strong>us&lt;/strong>,” and “&lt;strong>our&lt;/strong>”) for users in the YMCA community (“&lt;strong>users&lt;/strong>,” “&lt;strong>you&lt;/strong>,” and “&lt;strong>your&lt;/strong>”). &lt;strong>By using the Open Y repository, you agree to these Terms of Use.&lt;/strong>&lt;/p>
 &lt;p>We reserve the right to modify or discontinue, temporarily or permanently any services or the Terms of Use at any time, with or without prior notice to users. Open Y, LLC is not liable for any damage to any user or other third party that may result from any such modification, suspension or discontinuance of the service or of the Terms of Use.&lt;/p>
@@ -1131,7 +706,7 @@ This Agreement shall be governed by, and construed in accordance with, the laws 
 &lt;p>The idea behind this was to gather data in order to understand the demand for the components in Open Y and use the data to make better decisions.&lt;/p>
 &lt;p>Recently, the Open Y Core Team decided to sunset this functionality and remove &lt;code>openy_analytics&lt;/code> as well as &lt;code>openy_update&lt;/code> modules from the Open Y Distribution, as this feature was rarely used. By sunsetting this functionality, we reduced server load from Open Y instances and archive the analytics server.&lt;/p>
 &lt;h2 id="how-to-opt-out-from-analytics-subsystem">How to opt-out from analytics subsystem&lt;/h2>
-&lt;p>Visit Open Y -&amp;gt; Terms and Conditions in your Open Y site instance and uncheck the Optional Permissions checkbox&lt;/p>
+&lt;p>Visit Y USA Open Y -&amp;gt; Terms and Conditions in your Y USA Open Y site instance and uncheck the Optional Permissions checkbox&lt;/p>
 &lt;p>
 &lt;img src="https://user-images.githubusercontent.com/563412/130236284-5979a4fe-289c-4ccc-9c18-059d17d143e8.png" alt="image" />&lt;/p>
 &lt;p>After submitting this form your site will stop sending anonymous data.&lt;/p>
@@ -1140,7 +715,7 @@ This Agreement shall be governed by, and construed in accordance with, the laws 
 &lt;p>Uninstall and deprecation was done in
 &lt;a href="https://github.com/ymcatwincities/openy/pull/2537" target="_blank">#2537&lt;/a>&lt;/p></description></item><item><title>Docs: OpenY security Drupal-SA-CORE-2018-004</title><link>/docs/wiki/openy-security---drupal-sa-core-2018-004/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/openy-security---drupal-sa-core-2018-004/</guid><description>
 &lt;p>This document is archived but may contain useful information for troubleshooting future updates. For updated update steps, visit
-&lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">How to upgrade Open Y&lt;/a>.&lt;/p>
+&lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">How to upgrade Y USA Open Y&lt;/a>.&lt;/p>
 &lt;hr>
 &lt;p>To update your OpenY site with security fix from Drupal core
 &lt;a href="https://www.drupal.org/SA-CORE-2018-004" target="_blank">https://www.drupal.org/SA-CORE-2018-004&lt;/a>
@@ -1197,7 +772,7 @@ In case if all good proceed with a command below, which will patch your site:&lt
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and hit Enter.
 You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p></description></item><item><title>Docs: OpenY security update how to - Update Drupal core only</title><link>/docs/wiki/openy-security-update-how-to.-update-drupal-core-only/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/openy-security-update-how-to.-update-drupal-core-only/</guid><description>
 &lt;p>This document is archived but may contain useful information for troubleshooting future updates. For updated update steps, visit
-&lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">How to upgrade Open Y&lt;/a>.&lt;/p>
+&lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">How to upgrade Y USA Open Y&lt;/a>.&lt;/p>
 &lt;hr>
 &lt;p>To update your OpenY site with security fix from Drupal core
 &lt;a href="https://www.drupal.org/sa-core-2018-002" target="_blank">https://www.drupal.org/sa-core-2018-002&lt;/a>
@@ -1308,7 +883,7 @@ You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and hit Enter.
 You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p></description></item><item><title>Docs: OpenY upgrade for developers - Upgrade to old OpenY 1.x version</title><link>/docs/wiki/openy-upgrade-for-developers.-upgrade-to-old-openy-1.x-version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/openy-upgrade-for-developers.-upgrade-to-old-openy-1.x-version/</guid><description>
 &lt;p>This document is archived but may contain useful information for troubleshooting future updates. For updated update steps, visit
-&lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">How to upgrade Open Y&lt;/a>.&lt;/p>
+&lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">How to upgrade Y USA Open Y&lt;/a>.&lt;/p>
 &lt;hr>
 &lt;h1 id="upgrade-to-old-open-y-1x-version--tested-on-upgrading-802-to-81114-">Upgrade to old, Open Y 1.x version ( tested on upgrading 8.0.2 to 8.1.1.14 )&lt;/h1>
 &lt;p>See
@@ -1407,13 +982,13 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;li>
 &lt;a href="#run-command-with-next-never-version-replace-new_version_here-with-the-version-you-are-upgrading-to-eg-8207">Run command with next newer version (replace NEW_VERSION_HERE with the version you are upgrading to, e.g 8.2.0.7 )&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="#enable-openy-introduced-modules-in-case-if-you-are-updating-from-very-old-version-or-if-they-are-disabled-intentionally">Enable Open Y introduced modules in case if you are updating from very old version or if they are disabled intentionally&lt;/a>&lt;/li>
+&lt;a href="#enable-openy-introduced-modules-in-case-if-you-are-updating-from-very-old-version-or-if-they-are-disabled-intentionally">Enable Y USA Open Y introduced modules in case if you are updating from very old version or if they are disabled intentionally&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="#verify-if-the-media-entity-to-media-in-core-migration-is-possible">Verify if the Media Entity to Media in Core migration is possible&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="#update-the-site">Update the site&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="#visit-openy-upgrade-tool-dashboard">Visit the Open Y upgrade tool dashboard&lt;/a>&lt;/li>
+&lt;a href="#visit-openy-upgrade-tool-dashboard">Visit the Y USA Open Y upgrade tool dashboard&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="#check-for-regressions">Check for regressions/Smoke tests&lt;/a>&lt;/li>
 &lt;li>
@@ -1421,7 +996,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;li>
 &lt;a href="#proceed-with-an-update-to-next-version-until-succeeded-start-from-item-1">Proceed with an update to next version until succeeded (Start from item 1)&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="upgrade-to-open-y-2x">Upgrade to Open Y 2.x&lt;/h2>
+&lt;h2 id="upgrade-to-y-usa-open-y-2x">Upgrade to Y USA Open Y 2.x&lt;/h2>
 &lt;h3 id="prepare-dedicated-environment-for-upgrade-testing">Prepare dedicated environment for upgrade testing&lt;/h3>
 &lt;p>Ensure you have a working computer or virtual machine with:&lt;/p>
 &lt;ul>
@@ -1429,11 +1004,11 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;li>MySQL 5.7+ (8+ is preferred because of the performance improvements)&lt;/li>
 &lt;li>Apache 2.4 (or Nginx + php-fpm in case if you are fine with htaccess issues down the road)&lt;/li>
 &lt;li>PHP 7.4 (8.0+ could be an issue with some contrib modules)&lt;/li>
-&lt;li>Drush 8.4.10 system version (for Open Y pre 8.2 ). &lt;strong>No support for Drush 9.x in Drupal 8 branches. Only in Drupal 9&lt;/strong>. &lt;strong>Use Drush 8.4+ for OpenY 9.2+&lt;/strong>&lt;/li>
+&lt;li>Drush 8.4.10 system version (for Y USA Open Y pre 8.2 ). &lt;strong>No support for Drush 9.x in Drupal 8 branches. Only in Drupal 9&lt;/strong>. &lt;strong>Use Drush 8.4+ for OpenY 9.2+&lt;/strong>&lt;/li>
 &lt;/ul>
-&lt;p>The Open Y team maintains
+&lt;p>The Y USA Open Y team maintains
 &lt;a href="https://github.com/ymcatwincities/openy-cibox-vm" target="_blank">Vagrant preconfigured Virtualbox based virtual machine with OpenY&lt;/a>. Feel free to use it to get a working virtual environment.&lt;/p>
-&lt;p>Your own Open Y instance should have a virtual machine injected into your site codebase. Just find &lt;code>Vagrantfile&lt;/code> and proceed with &lt;code>vagrant up&lt;/code>
+&lt;p>Your own Y USA Open Y instance should have a virtual machine injected into your site codebase. Just find &lt;code>Vagrantfile&lt;/code> and proceed with &lt;code>vagrant up&lt;/code>
 &lt;a href="https://github.com/ymcatwincities/openy-cibox-vm/blob/master/README.md" target="_blank">accordingly to the documentation&lt;/a>.&lt;/p>
 &lt;h3 id="obtain-local-copy-of-your-production-site">Obtain local copy of your production site&lt;/h3>
 &lt;p>You have to create a local copy of your site locally to be able to proceed with the upgrade.&lt;/p>
@@ -1441,7 +1016,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;ul>
 &lt;li>Make a backup of your production database and copy it to your local machine&lt;/li>
 &lt;li>Make a copy of your production site codebase and copy it to your local machine&lt;/li>
-&lt;li>&lt;strong>Ensure you have not manually removed Drupal modules in your database without the uninstallation step being executed!&lt;/strong> In this case you&amp;rsquo;ll need to return the module back to the codebase and uninstall it via Drupal Extend UI or Drush before running the next steps to upgrade Open Y.&lt;/li>
+&lt;li>&lt;strong>Ensure you have not manually removed Drupal modules in your database without the uninstallation step being executed!&lt;/strong> In this case you&amp;rsquo;ll need to return the module back to the codebase and uninstall it via Drupal Extend UI or Drush before running the next steps to upgrade Y USA Open Y.&lt;/li>
 &lt;/ul>
 &lt;h3 id="run-command-with-next-never-version--replace-new_version_here-with-the-version-you-are-upgrading-to-eg-8207-">Run command with next never version ( replace NEW_VERSION_HERE with the version you are upgrading to, e.g 8.2.0.7 )&lt;/h3>
 &lt;p>In the same folder where your &lt;code>docroot&lt;/code> is, run:&lt;/p>
@@ -1461,7 +1036,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> docroot
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush en openy_upgrade_tool openy_er openy_prgf_loc_finder openy_map openy_data_wrapper openy_loc_branch openy_focal_point media_directories_ui
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Sometimes it is important to get the latest
-&lt;a href="https://github.com/ymcatwincities/openy/tree/8.x-2.x/modules/custom/openy_upgrade_tool" target="_blank">openy_upgrade_tool&lt;/a> from the repository even if you are not updating to the latest version of Open Y. You&amp;rsquo;ll be able to disable them in the end once all updates are executed successfully.&lt;/p>
+&lt;a href="https://github.com/ymcatwincities/openy/tree/8.x-2.x/modules/custom/openy_upgrade_tool" target="_blank">openy_upgrade_tool&lt;/a> from the repository even if you are not updating to the latest version of Y USA Open Y. You&amp;rsquo;ll be able to disable them in the end once all updates are executed successfully.&lt;/p>
 &lt;h3 id="verify-if-the-media-entity-to-media-in-core-migration-is-possible--only-for-upgrades-from-openy-1x-to-2x-">Verify if the Media Entity to Media in Core migration is possible ( only for upgrades from OpenY 1.x to 2.x )&lt;/h3>
 &lt;p>Go to the &lt;code>docroot&lt;/code> directory of your codebase and execute:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>drush mecu
@@ -1502,7 +1077,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You have almost 100% proven updates were executed correctly.&lt;/p>
 &lt;p>Sometimes, you could face an error like:&lt;/p>
 &lt;blockquote>
-&lt;p>openy.terms_and_conditions.schema depends on the Open Y module that will not be installed after import.&lt;/p>
+&lt;p>openy.terms_and_conditions.schema depends on the Y USA Open Y module that will not be installed after import.&lt;/p>
 &lt;/blockquote>
 &lt;p>In this case, please, ensure that the module connected with this config is enabled.&lt;/p>
 &lt;p>To make it happen, please execute this command:&lt;/p>
@@ -1512,7 +1087,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;p>
 &lt;img src="https://user-images.githubusercontent.com/563412/55151463-01759b00-5157-11e9-878e-dc744698a021.png" alt="image" />&lt;/p>
 &lt;h3 id="check-for-regressions">Check for regressions&lt;/h3>
-&lt;p>In order to check for regressions during the upgrade, it is best to work with smoke tests. Open Y maintains the
+&lt;p>In order to check for regressions during the upgrade, it is best to work with smoke tests. Y USA Open Y maintains the
 &lt;a href="https://docs.google.com/spreadsheets/d/1yLUkMgJKK94hABy107_V-1AcJbRSSEf2s4wsQto1wfI/edit?usp=sharing" target="_blank">smoke tests database document&lt;/a> you should use for the process.&lt;/p>
 &lt;h3 id="backup-current-state-of-the-updated-site">Backup current state of the updated site&lt;/h3>
 &lt;p>Use
@@ -1521,8 +1096,8 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;p>DISCLAIMER: If you have an old 1.x version it makes sense to update to the latest 1.x before going OpenY 2.0 upgrade
 See
 &lt;a href="/docs/wiki/openy-upgrade-for-developers.-upgrade-to-old-openy-1.x-version/">OpenY-upgrade-for-developers.-Upgrade-to-old-OpenY-1.x-version&lt;/a>&lt;/p></description></item><item><title>Docs: Sandboxes</title><link>/docs/wiki/sandboxes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/sandboxes/</guid><description>
-&lt;h1 id="open-y-sandboxes-for-evaluation-and-qa">Open Y Sandboxes for Evaluation and QA&lt;/h1>
-&lt;p>The Open Y core team manages sandboxes for stable and development versions of Open Y to facilitate the evaluation of the product, to help with QA, and enable investigation of issues.&lt;/p>
+&lt;h1 id="y-usa-open-y-sandboxes-for-evaluation-and-qa">Y USA Open Y Sandboxes for Evaluation and QA&lt;/h1>
+&lt;p>The Y USA Open Y core team manages sandboxes for stable and development versions of Y USA Open Y to facilitate the evaluation of the product, to help with QA, and enable investigation of issues.&lt;/p>
 &lt;p>To learn more:&lt;/p>
 &lt;ul>
 &lt;li>Watch a
@@ -1534,14 +1109,14 @@ See
 &lt;p>
 &lt;a href="https://sandboxes.openy.org/" target="_blank">https://sandboxes.openy.org/&lt;/a>&lt;/p>
 &lt;p>These sandboxes are set to rebuild completely overnight and clear their database and files every 2 hours. To get access visit
-&lt;a href="https://community.openymca.org/t/how-can-i-try-or-get-a-demo-of-open-y/318" target="_blank">How can I try or get a demo of Open Y?&lt;/a>&lt;/p>
+&lt;a href="https://community.openymca.org/t/how-can-i-try-or-get-a-demo-of-open-y/318" target="_blank">How can I try or get a demo of Y USA Open Y?&lt;/a>&lt;/p>
 &lt;p>These sandboxes contain 3 profile variations:&lt;/p>
 &lt;ul>
 &lt;li>Standard&lt;/li>
 &lt;li>Extended&lt;/li>
 &lt;li>Custom&lt;/li>
 &lt;/ul>
-&lt;p>based on the latest stable release of Open Y.&lt;/p>
+&lt;p>based on the latest stable release of Y USA Open Y.&lt;/p>
 &lt;p>These sandboxes are built on CI by running:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project buildnew --no-interaction --prefer-dist
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
@@ -1549,7 +1124,7 @@ See
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="development-sandboxes">Development Sandboxes&lt;/h2>
 &lt;p>
 &lt;a href="https://sandboxes-dev.openy.org/" target="_blank">https://sandboxes-dev.openy.org/&lt;/a>&lt;/p>
-&lt;p>These usually contain the latest development version of Open Y (the master branch of
+&lt;p>These usually contain the latest development version of Y USA Open Y (the master branch of
 &lt;a href="https://github.com/ymcatwincities/openy" target="_blank">openy&lt;/a>.&lt;/p>
 &lt;p>These sandboxes are built on CI by running:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project:dev-9.2.x-development buildnew --no-interaction --prefer-dist
@@ -1558,7 +1133,7 @@ See
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="membership-framework-sandboxes">Membership Framework Sandboxes&lt;/h2>
 &lt;p>
 &lt;a href="https://membership-framework-sandboxes-d9.openy.org/" target="_blank">https://membership-framework-sandboxes-d9.openy.org/&lt;/a>&lt;/p>
-&lt;p>These are based on the Open Y stable Standard profile and the development version of the
+&lt;p>These are based on the Y USA Open Y stable Standard profile and the development version of the
 &lt;a href="https://github.com/ymcatwincities/openy_memberships" target="_blank">Membership Framework&lt;/a>.&lt;/p>
 &lt;p>To rebuild the sandbox, CI is running:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project buildnew --no-interaction --prefer-dist
@@ -1572,7 +1147,7 @@ See
 &lt;tr>
 &lt;th>Theme&lt;/th>
 &lt;th>Link&lt;/th>
-&lt;th>Open Y&lt;/th>
+&lt;th>Y USA Open Y&lt;/th>
 &lt;th>Profile&lt;/th>
 &lt;th>Activity Finder&lt;/th>
 &lt;th>Theme&lt;/th>
@@ -1631,12 +1206,12 @@ See
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Solr 4.5-4.9, Activity Finder v4, Carnation theme, bootstrap v4&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush cset -y openy_activity_finder.settings bs_version &lt;span style="color:#0000cf;font-weight:bold">4&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#204a87">true&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Secure devops for composer 2 release</title><link>/docs/wiki/secure-devops-for-composer-2-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/secure-devops-for-composer-2-release/</guid><description>
-&lt;p>This article only applies to long-term users of Open Y. Open Y supports Composer 2
+&lt;p>This article only applies to long-term users of Y USA Open Y. Y USA Open Y supports Composer 2
 &lt;a href="https://github.com/ymcatwincities/openy/releases/tag/8.2.7" target="_blank">as of version 8.2.7 in November 2020&lt;/a> and new installs use Composer 2 by default.&lt;/p>
 &lt;hr>
-&lt;p>Composer was upgraded to &lt;code>2.x&lt;/code> on October 30, 2020. This could cause instability when your older composer &lt;code>1.x&lt;/code> accidentally auto-updates to the &lt;code>2.x&lt;/code> version. Issues could include: composer fails to run any commands and blocks OpenY upgrade/maintenance. The instability would be in the developer environment, not Open Y/Drupal.&lt;/p>
-&lt;p>The Open Y team prepared an avoidance plan for the community to take action steps before the release while Open Y will be verifying Composer &lt;code>2.x&lt;/code> causes no issues or regressions.&lt;/p>
-&lt;p>If you use Docksal or Vagrant local environments your composer version will not update automatically, so you&amp;rsquo;re currently safe from inadvertent updates. Instructions for updating those environments will be included with any necessary Open Y updates at a later date.&lt;/p>
+&lt;p>Composer was upgraded to &lt;code>2.x&lt;/code> on October 30, 2020. This could cause instability when your older composer &lt;code>1.x&lt;/code> accidentally auto-updates to the &lt;code>2.x&lt;/code> version. Issues could include: composer fails to run any commands and blocks OpenY upgrade/maintenance. The instability would be in the developer environment, not Y USA Open Y/Drupal.&lt;/p>
+&lt;p>The Y USA Open Y team prepared an avoidance plan for the community to take action steps before the release while Y USA Open Y will be verifying Composer &lt;code>2.x&lt;/code> causes no issues or regressions.&lt;/p>
+&lt;p>If you use Docksal or Vagrant local environments your composer version will not update automatically, so you&amp;rsquo;re currently safe from inadvertent updates. Instructions for updating those environments will be included with any necessary Y USA Open Y updates at a later date.&lt;/p>
 &lt;h3 id="case-before-october-30-2020-when-you-are-on-composer-1x">Case before October 30, 2020, when you are on composer 1.x&lt;/h3>
 &lt;p>Composer 2 is coming and older versions of composer &lt;code>1.x&lt;/code> show the message below.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>Composer 2.0 is about to be released and the older 1.x releases will self-update directly to it once it is released. To avoid surprises update now to the latest 1.x version
@@ -1651,9 +1226,9 @@ See
 &lt;h3 id="if-you-do-not-upgrade-to-the-latest-1x-version-before-october-30-2020-ie-if-you-accidentally-upgrade-to-composer-2x">If you do not upgrade to the latest 1.x version before October 30, 2020. i.e. if you accidentally upgrade to Composer 2.x&lt;/h3>
 &lt;p>If your composer updated to version 2 and you have issues with this upgrade, the solution is to downgrade Composer to the latest &lt;code>1.x&lt;/code> version by running:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer selfupdate --1
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you are faced with any issues connect with the Open Y team on GitHub (
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you are faced with any issues connect with the Y USA Open Y team on GitHub (
 &lt;a href="https://github.com/ymcatwincities/openy/issues/new" target="_blank">create issue&lt;/a>) and the #developers channel
-&lt;a href="https://openy.org/contact" target="_blank">on Slack&lt;/a>.&lt;/p></description></item><item><title>Docs: Testing Open Y for PHP 7.4 version support</title><link>/docs/wiki/testing-open-y-for-php-7.4-version-support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/testing-open-y-for-php-7.4-version-support/</guid><description>
+&lt;a href="https://openy.org/contact" target="_blank">on Slack&lt;/a>.&lt;/p></description></item><item><title>Docs: Testing Y USA Open Y for PHP 7.4 version support</title><link>/docs/wiki/testing-open-y-for-php-7.4-version-support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/testing-open-y-for-php-7.4-version-support/</guid><description>
 &lt;h2 id="requirements">Requirements&lt;/h2>
 &lt;ul>
 &lt;li>php-cli 7.4 ( memory_limit value should be large ( 2000M ) or unlimiter ( -1 ) in order to not fail&lt;/li>
@@ -1661,7 +1236,7 @@ See
 &lt;/ul>
 &lt;h2 id="steps">Steps&lt;/h2>
 &lt;ol>
-&lt;li>Obtain latest development code of Open Y&lt;/li>
+&lt;li>Obtain latest development code of Y USA Open Y&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project:9.2.x-development-dev openy7.4
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
@@ -1678,15 +1253,15 @@ See
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>./vendor/bin/phpcs -p . --standard=PHPCompatibility --runtime-set testVersion 7.4 --report-file=report.txt -n
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In report.txt you&amp;rsquo;d find a full list of findings to be resolved in order to pass compatibility&lt;/p></description></item><item><title>Docs: Upgrade OpenY 8.1.3 to 8.2.2.1</title><link>/docs/wiki/upgrade-openy-8.1.3-to-8.2.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/upgrade-openy-8.1.3-to-8.2.2.1/</guid><description>
 &lt;p>This document is archived but may contain useful information for troubleshooting future updates. For updated update steps, visit
-&lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">How to upgrade Open Y&lt;/a>.&lt;/p>
+&lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">How to upgrade Y USA Open Y&lt;/a>.&lt;/p>
 &lt;hr>
 &lt;h3 id="video-tutorials">Video tutorials&lt;/h3>
 &lt;p>Upgrade OpenY from 8.0.7 to 8.2.2.1 -
 &lt;a href="https://www.youtube.com/watch?v=U_mg0-yKGOI" target="_blank">https://www.youtube.com/watch?v=U_mg0-yKGOI&lt;/a>&lt;/p>
 &lt;h3 id="document-is-work-in-progress">Document is work in progress&lt;/h3>
-&lt;p>These are instructions for upgrading a very old version of Open Y to the latest version.
+&lt;p>These are instructions for upgrading a very old version of Y USA Open Y to the latest version.
 Given the fact
-&lt;a href="https://www.drupal.org/node/3034742" target="_blank">Drupal 8.7+ has no support for automatic entity updates&lt;/a> ( BaseFieldDefinitions ) we have to upgrade to 8.2.2.1 of OpenY, which is still on 8.6 Drupal Core, and then update to the latest Open Y version as usual.&lt;/p>
+&lt;a href="https://www.drupal.org/node/3034742" target="_blank">Drupal 8.7+ has no support for automatic entity updates&lt;/a> ( BaseFieldDefinitions ) we have to upgrade to 8.2.2.1 of OpenY, which is still on 8.6 Drupal Core, and then update to the latest Y USA Open Y version as usual.&lt;/p>
 &lt;h1 id="environment">Environment&lt;/h1>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>vagrant@vagrant:/var/www/docroot$ uname -a
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Linux vagrant 4.15.0-29-generic &lt;span style="color:#8f5902;font-style:italic">#31-Ubuntu SMP Tue Jul 17 15:39:52 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux&lt;/span>
@@ -1734,7 +1309,7 @@ Given the fact
 &lt;li>run &lt;code>drush entup&lt;/code>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Upgrade use case from 8.2.2.3 to 8.2.7.3</title><link>/docs/wiki/upgrade-use-case-from-8.2.2.3-to-8.2.7.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/upgrade-use-case-from-8.2.2.3-to-8.2.7.3/</guid><description>
 &lt;p>This document is archived but may contain useful information for troubleshooting future updates. For updated update steps, visit
-&lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">How to upgrade Open Y&lt;/a>.&lt;/p>
+&lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">How to upgrade Y USA Open Y&lt;/a>.&lt;/p>
 &lt;hr>
 &lt;p>1 uninstall &lt;code>lndr&lt;/code> and &lt;code>optimizely&lt;/code> modules before running
 &lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/#run-command-with-next-never-version--replace-new_version_here-with-the-version-you-are-upgrading-to-eg-8207-">composer update commands&lt;/a>&lt;/p>
@@ -1745,7 +1320,7 @@ Given the fact
 &lt;p>4 - run drush updatedb
 &lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/#update-the-site">and next steps from tutorial&lt;/a>&lt;/p></description></item><item><title>Docs: Videos</title><link>/docs/wiki/videos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/videos/</guid><description>
 &lt;h1 id="video-tutorials">Video Tutorials&lt;/h1>
-&lt;p>The Open Y team maintains a
+&lt;p>The Y USA Open Y team maintains a
 &lt;a href="https://www.youtube.com/c/OpenY/featured" target="_blank">YouTube channel&lt;/a> with video tutorials for developers, content editors, evaluators, and more. Visit YouTube for the full list of content.&lt;/p>
 &lt;h2 id="playlists">Playlists&lt;/h2>
 &lt;p>As of December 2021:&lt;/p>
@@ -1755,7 +1330,7 @@ Given the fact
 &lt;li>
 &lt;a href="https://youtube.com/watch?v=MH4BwMowlic&amp;amp;list=PL_QVggMcFfKYfV1cnistny2L-Sp55SoMg" target="_blank">Smoke Tests&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://youtube.com/watch?v=zr6MnmbAJas&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga" target="_blank">Open Y Tutorial; Virtual Y&lt;/a>&lt;/li>
+&lt;a href="https://youtube.com/watch?v=zr6MnmbAJas&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga" target="_blank">Y USA Open Y Tutorial; Virtual Y&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="https://youtube.com/watch?v=f4FHYdU0VNM&amp;amp;list=PL_QVggMcFfKa46PgvB89bqUxmy9I9nSte" target="_blank">Live Streaming Tutorials&lt;/a>&lt;/li>
 &lt;li>
@@ -1765,21 +1340,446 @@ Given the fact
 &lt;li>
 &lt;a href="https://youtube.com/watch?v=63Mzqhqc35o&amp;amp;list=PL_QVggMcFfKbWQAcTUX19KY3W8SDyS2_1" target="_blank">Open Y Monthly Calls 2020&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://youtube.com/watch?v=_OtMKR3KK3w&amp;amp;list=PL_QVggMcFfKbeUmI7dXDk7hlepQ4rXKNG" target="_blank">Open Y Tutorial; Drupal Basics for Content Managers&lt;/a>&lt;/li>
+&lt;a href="https://youtube.com/watch?v=_OtMKR3KK3w&amp;amp;list=PL_QVggMcFfKbeUmI7dXDk7hlepQ4rXKNG" target="_blank">Y USA Open Y Tutorial; Drupal Basics for Content Managers&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="https://youtube.com/watch?v=Mb8lcml3BPI&amp;amp;list=PL_QVggMcFfKaN-aYig2Gj3cE4ylCmhJyW" target="_blank">Open Y Summit 2019 Presentations&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://youtube.com/watch?v=nHo2uL-bPyM&amp;amp;list=PL_QVggMcFfKahw9Y5t1RpM-g6kX45nA3C" target="_blank">Open Y Tutorial; Security&lt;/a>&lt;/li>
+&lt;a href="https://youtube.com/watch?v=nHo2uL-bPyM&amp;amp;list=PL_QVggMcFfKahw9Y5t1RpM-g6kX45nA3C" target="_blank">Y USA Open Y Tutorial; Security&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="https://youtube.com/watch?v=Ok5Gf23pVs0&amp;amp;list=PL_QVggMcFfKbS2z3APizFCQVUDqHjRGKa" target="_blank">OpenY components&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://youtube.com/watch?v=UNYCB9XegDE&amp;amp;list=PL_QVggMcFfKYX5bB0epu31O8cVuEVPo6i" target="_blank">Open Y Tutorial; Content Types&lt;/a>&lt;/li>
+&lt;a href="https://youtube.com/watch?v=UNYCB9XegDE&amp;amp;list=PL_QVggMcFfKYX5bB0epu31O8cVuEVPo6i" target="_blank">Y USA Open Y Tutorial; Content Types&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://youtube.com/watch?v=--gW0zj4wEc&amp;amp;list=PL_QVggMcFfKZZlVzNcVaIWCl4WwcOr9Jk" target="_blank">Open Y Tutorial; Blogs &amp;amp; Content&lt;/a>&lt;/li>
+&lt;a href="https://youtube.com/watch?v=--gW0zj4wEc&amp;amp;list=PL_QVggMcFfKZZlVzNcVaIWCl4WwcOr9Jk" target="_blank">Y USA Open Y Tutorial; Blogs &amp;amp; Content&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://youtube.com/watch?v=3--CzMz5DPk&amp;amp;list=PL_QVggMcFfKbcayynOt0pb_Uw7DAR7KIl" target="_blank">Open Y Tutorial; Basic Configuration Instructions&lt;/a>&lt;/li>
+&lt;a href="https://youtube.com/watch?v=3--CzMz5DPk&amp;amp;list=PL_QVggMcFfKbcayynOt0pb_Uw7DAR7KIl" target="_blank">Y USA Open Y Tutorial; Basic Configuration Instructions&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="https://youtube.com/watch?v=y2oI9-6DvYQ&amp;amp;list=PL_QVggMcFfKY_80g0z3UPZL7_wn-27UUg" target="_blank">For Y Associations&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="https://youtube.com/watch?v=RSsQLVVhldc&amp;amp;list=PL_QVggMcFfKZp05THV3dYlYOG3MsJ8xSf" target="_blank">For Developers&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>Docs: Y USA Open Y 2.0 root YAML files</title><link>/docs/wiki/open-y-2.0-root-yaml-files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-2.0-root-yaml-files/</guid><description>
+&lt;p>There are plenty of
+&lt;a href="http://en.wikipedia.org/wiki/YAML" target="_blank">YAML&lt;/a> configuration files at the root of the profile. Some of them are standard Drupal configuration and others are Y USA Open Y specific.&lt;/p>
+&lt;h2 id="basic-yml-files">Basic .yml files&lt;/h2>
+&lt;p>The following ones are very common and can be found in many Drupal modules:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>openy.info.yml&lt;/code> (
+&lt;a href="https://www.drupal.org/docs/8/creating-custom-modules/let-drupal-8-know-about-your-module-with-an-infoyml-file" target="_blank">documentation&lt;/a>) - defines Y USA Open Y as a profile and defines its name and dependencies&lt;/li>
+&lt;li>&lt;code>openy.libraries.yml&lt;/code> (
+&lt;a href="https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module" target="_blank">documentation&lt;/a>) - defines global Y USA Open Y drupal asset libraries&lt;/li>
+&lt;li>&lt;code>openy.permissions.yml&lt;/code> - defines global Y USA Open Y permissions&lt;/li>
+&lt;li>&lt;code>openy.services.yml&lt;/code> (
+&lt;a href="https://www.drupal.org/docs/8/api/services-and-dependency-injection/structure-of-a-service-file" target="_blank">documentation&lt;/a>) - if you are introducing a service that is needed by all (or the majority of) Y USA Open Y modules add it here and store the service class file in the &lt;code>openy/src&lt;/code> directory&lt;/li>
+&lt;/ul>
+&lt;h2 id="y-usa-open-y-specific-yml-files">Y USA Open Y specific .yml files&lt;/h2>
+&lt;p>There are also a few configurations related to the Y USA Open Y installation process and the Y USA Open Y package system:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>openy.installation_types.yml&lt;/code>&lt;/li>
+&lt;li>&lt;code>openy.themes.yml&lt;/code>&lt;/li>
+&lt;li>&lt;code>openy.packages.yml&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="y-usa-open-y-packages">Y USA Open Y packages&lt;/h3>
+&lt;p>The Y USA Open Y package system introduces a new level of abstraction, shifting from the Drupal standard module level to packages. Packages represent complete Y USA Open Y features, which could include multiple modules. A package is a declaration of a group of several modules. You can enable and disable a package, which means the whole set of the associated Drupal modules are enabled or disabled.&lt;/p>
+&lt;p>This approach provides a convenient way of managing Y USA Open Y features.&lt;/p>
+&lt;p>The Y USA Open Y system module provides a page where the enabled and available packages are listed and can be installed/uninstalled. See the Y USA Open Y Extend page (at &lt;code>/admin/openy/extend&lt;/code>).&lt;/p>
+&lt;h3 id="y-usa-open-y-installation-types">Y USA Open Y Installation types&lt;/h3>
+&lt;p>When an Y USA Open Y site is installed there is also another abstraction level - the installation type - which groups packages.&lt;/p>
+&lt;p>The hierarchy is as follows:&lt;/p>
+&lt;ul>
+&lt;li>installation type
+&lt;ul>
+&lt;li>package
+&lt;ul>
+&lt;li>module&lt;/li>
+&lt;li>module&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>package
+&lt;ul>
+&lt;li>module&lt;/li>
+&lt;li>module&lt;/li>
+&lt;li>module&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>package
+&lt;ul>
+&lt;li>module&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>installation type
+&lt;ul>
+&lt;li>package
+&lt;ul>
+&lt;li>module&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="openyinstallation_typesyml">openy.installation_types.yml&lt;/h3>
+&lt;p>&lt;code>openy.installation_types.yml&lt;/code> defines the high-level presets available during website installation.&lt;/p>
+&lt;p>File structure:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>standard:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> name: Standard
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> packages:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - alerts
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - editorial
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - news
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - seo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - webform
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>extended:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> name: Extended
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> packages:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - alerts
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - analytics
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - ...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>complete:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> name: Complete/Developer
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> hidden: true
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> packages:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - activenet
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - ...
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Each installation type has a machine name which is a key of the top-level items.&lt;/p>
+&lt;h4 id="properties-of-installation-types">Properties of installation types:&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>name&lt;/strong> (required) - a human-friendly name of the installation type&lt;/li>
+&lt;li>&lt;strong>packages&lt;/strong> (required) - a list of Y USA Open Y packages that are associated with the installation type. The packages are listed when a website is installed via the web-interface&lt;/li>
+&lt;li>&lt;strong>hidden&lt;/strong> (optional) - if the installation type must be hidden when a website is installed via the web interface&lt;/li>
+&lt;/ul>
+&lt;p>If an Y USA Open Y site is installed using the web interface there is a step where the installation type can be selected.&lt;/p>
+&lt;p>If an Y USA Open Y site is installed using Drush then the installation type can be specified by an optional argument for the &lt;code>drush site-install&lt;/code> command (
+&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-2.x/docs/Development/InstallationWithDrush.md" target="_blank">Installation with Drush&lt;/a>):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> drush site-install openy \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --db-url=&amp;#34;mysql://user:pass@host:3306/db&amp;#34; \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --root=/docroot \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> openy_configure_profile.preset=extended
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="openypackagesyml">openy.packages.yml&lt;/h3>
+&lt;p>Packages are defined in &lt;code>openy.packages.yml&lt;/code>. This file is placed in the root of the profile, it&amp;rsquo;s automatically detected and used by the Y USA Open Y installation process.&lt;/p>
+&lt;p>File structure&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">blog&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">name&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#a40000">&amp;#39;&lt;/span>&lt;span style="color:#000">Blog&lt;/span>&lt;span style="color:#a40000">&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">description&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Blog package provides a set of modules to maintain and create different blog post listings.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">help&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#a40000">&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">p&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#000">Using&lt;/span> &lt;span style="color:#000">Blog&lt;/span> &lt;span style="color:#204a87;font-weight:bold">package&lt;/span> &lt;span style="color:#000">you&lt;/span> &lt;span style="color:#000">can&lt;/span> &lt;span style="color:#000">create&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000">maintain&lt;/span> &lt;span style="color:#000">blog&lt;/span> &lt;span style="color:#000">posts&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000">create&lt;/span> &lt;span style="color:#000">flexible&lt;/span> &lt;span style="color:#000">listings&lt;/span> &lt;span style="color:#000">of&lt;/span> &lt;span style="color:#000">blog&lt;/span> &lt;span style="color:#000">posts&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span> &lt;span style="color:#000">Watch&lt;/span> &lt;span style="color:#000">a&lt;/span> &lt;span style="color:#000">video&lt;/span> &lt;span style="color:#000">below&lt;/span> &lt;span style="color:#000">to&lt;/span> &lt;span style="color:#000">learn&lt;/span> &lt;span style="color:#000">more&lt;/span> &lt;span style="color:#000">about&lt;/span> &lt;span style="color:#000">blog&lt;/span> &lt;span style="color:#000">anatomy&lt;/span>&lt;span style="color:#000;font-weight:bold">.&amp;lt;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">/&lt;/span>&lt;span style="color:#000">p&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">iframe&lt;/span> &lt;span style="color:#000">width&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;560&amp;#34;&lt;/span> &lt;span style="color:#000">height&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;315&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">src&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;https://www.youtube.com/embed/PTZkgOb8CFE&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">frameborder&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;0&amp;#34;&lt;/span> &lt;span style="color:#000">allow&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;autoplay; encrypted-media&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">allowfullscreen&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&amp;lt;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">/&lt;/span>&lt;span style="color:#000">iframe&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#a40000">&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">modules&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_node_blog&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_prgf_blog_listing&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_prgf_featured_blogs&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_prgf_blog_branch&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_prgf_blog_camp&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_prgf_blog_latest&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_txnm_blog_category&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">camps&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">name&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#a40000">&amp;#39;&lt;/span>&lt;span style="color:#000">Camps&lt;/span>&lt;span style="color:#a40000">&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">description&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Camps package provides a set of modules to maintain camps and add them to the location finder page.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">help&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#a40000">&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">p&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#000">Using&lt;/span> &lt;span style="color:#000">Camps&lt;/span> &lt;span style="color:#204a87;font-weight:bold">package&lt;/span> &lt;span style="color:#000">you&lt;/span> &lt;span style="color:#000">can&lt;/span> &lt;span style="color:#000">create&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000">maintain&lt;/span> &lt;span style="color:#000">Camps&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000">extend&lt;/span> &lt;span style="color:#000">location&lt;/span> &lt;span style="color:#000">finder&lt;/span> &lt;span style="color:#000">page&lt;/span> &lt;span style="color:#000">to&lt;/span> &lt;span style="color:#000">include&lt;/span> &lt;span style="color:#000">them&lt;/span>&lt;span style="color:#000;font-weight:bold">.&amp;lt;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">/&lt;/span>&lt;span style="color:#000">p&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#a40000">&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">modules&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_prgf_camp_menu&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span> &lt;span style="color:#000">openy_loc_camp&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Each package has a machine name which is a key of the top-level items.&lt;/p>
+&lt;h4 id="properties-of-packages">Properties of packages:&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>name&lt;/strong> (required) - a human-friendly name of the package.&lt;/li>
+&lt;li>&lt;strong>description&lt;/strong> (required) - a short description of the package features to show up on the Y USA Open Y Extend page.&lt;/li>
+&lt;li>&lt;strong>help&lt;/strong> (required) - an HTML markup for the installation via web interface. It contains a help message that pops up when the package name is clicked on the &lt;code>Select installation type&lt;/code> step.&lt;/li>
+&lt;li>&lt;strong>modules&lt;/strong> (required) - a list of Drupal modules that are associated with the package. When the package is installed/uninstalled the associated modules are installed/uninstalled respectively. When a website is installed via web interface all the available packages are listed there but split into two groups - the ones that are to be installed (associated with the selected package) and all the rest.&lt;/li>
+&lt;/ul>
+&lt;h3 id="openythemeyml">openy.theme.yml&lt;/h3>
+&lt;p>The file defines which Y USA Open Y themes are available for installation when a website is being installed.&lt;/p>
+&lt;p>If an Y USA Open Y site is installed using Drush then the theme can be specified by an optional argument for the &lt;code>drush site-install&lt;/code> command (
+&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-2.x/docs/Development/InstallationWithDrush.md" target="_blank">Installation with Drush&lt;/a>):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> drush site-install openy \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --db-url=&amp;#34;mysql://user:pass@host:3306/db&amp;#34; \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --root=/docroot \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> openy_configure_profile.preset=extended \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> openy_theme_select.theme=openy_rose
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Y USA Open Y 3rd-party dependencies</title><link>/docs/wiki/open-y-3rd-party-dependencies/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-3rd-party-dependencies/</guid><description>
+&lt;p>Y USA Open Y&amp;rsquo;s system requirements generally track
+&lt;a href="https://www.drupal.org/docs/system-requirements" target="_blank">those of Drupal&lt;/a> with some occasional more opinionated recommendations.&lt;/p>
+&lt;h2 id="general-requirements">General Requirements&lt;/h2>
+&lt;p>Supported versions may differ based on your Drupal version.&lt;/p>
+&lt;ul>
+&lt;li>A
+&lt;a href="https://www.drupal.org/docs/system-requirements/web-server-requirements" target="_blank">supported web server&lt;/a> like Apache or Nginx&lt;/li>
+&lt;li>A
+&lt;a href="https://www.drupal.org/docs/system-requirements/database-server-requirements" target="_blank">supported database server&lt;/a> like MySQL or MariaDB&lt;/li>
+&lt;li>A
+&lt;a href="https://www.drupal.org/docs/system-requirements/php-requirements" target="_blank">supported version of PHP&lt;/a>&lt;/li>
+&lt;li>A Linux-based operating system
+&lt;ul>
+&lt;li>
+&lt;a href="https://ubuntu.com/" target="_blank">Ubuntu&lt;/a> 16, 18, and 20 are supported.&lt;/li>
+&lt;li>CentOS or similar may work as well.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Recommended for advanced functionality, but not required:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://lucene.apache.org/solr/" target="_blank">Apache SOLR&lt;/a> search server
+&lt;ul>
+&lt;li>Version 4.9.1 and version 8 have been tested for Activity Finder. Other versions are works in progress.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="for-high-loadperformance-sites">For high load/performance sites&lt;/h3>
+&lt;ul>
+&lt;li>A memory-based key-value store
+&lt;ul>
+&lt;li>
+&lt;a href="http://memcached.org/" target="_blank">Memcache&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://redis.io" target="_blank">Redis&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>A reverse proxy/HTTP cache
+&lt;ul>
+&lt;li>
+&lt;a href="https://varnish-cache.org/" target="_blank">Varnish&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/" target="_blank">Nginx reverse proxy&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>See also Drupal&amp;rsquo;s recommendations for
+&lt;a href="https://www.drupal.org/docs/managing-site-performance-and-scalability" target="_blank">managing site performance and scalability&lt;/a>.&lt;/p>
+&lt;h3 id="for-development">For development&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;a href="https://www.virtualbox.org/" target="_blank">Oracle VM Virtualbox&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.vagrantup.com/" target="_blank">Vagrant configuration manager&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.ansible.com/" target="_blank">Ansible configuration manager and automation&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://getcomposer.org/" target="_blank">Composer package manager&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.docker.com/" target="_blank">Docker virtual environments&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>See our
+&lt;a href="https://github.com/ymcatwincities/openy-project#installation" target="_blank">installation instructions&lt;/a> for a full walkthrough of these tools.&lt;/p>
+&lt;h2 id="software-libraries-and-frameworks">Software libraries and frameworks&lt;/h2>
+&lt;p>Y USA Open Y leverages many other open source frameworks including, but not limited to:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://drupal.org/project/drupal" target="_blank">Drupal&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://symfony.com/" target="_blank">Symfony&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://reactjs.org/" target="_blank">ReactJS&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://vuejs.org/" target="_blank">Vue.js&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.google.com/recaptcha/intro/v3.html" target="_blank">Google reCAPTCHA&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://nodejs.org/en/" target="_blank">NodeJS&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Y USA Open Y anti spam protection</title><link>/docs/wiki/openy-anti-spam-protection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/openy-anti-spam-protection/</guid><description>
+&lt;p>In order to protect Y USA Open Y customers, we have added anti-spam protection based on CAPTCHA and Google reCAPTCHA out of the box in Y USA Open Y core&lt;/p>
+&lt;p>You can check
+&lt;a href="https://www.youtube.com/watch?v=nHo2uL-bPyM" target="_blank">the tutorial for how to install and configure reCaptcha on your site&lt;/a>.&lt;/p>
+&lt;p>In the majority of cases having the above configuration in place will protect you from 99% of spam, unless there is human-entered spam that has no protection. To overcome some human-based spam you should use blacklist logic for blocking email domains, used in spam messages.&lt;/p>
+&lt;p>For that, you can use
+&lt;a href="https://www.drupal.org/project/protected_submissions" target="_blank">the Protected Submissions module&lt;/a> module, which allows you to harden all submissions on a site with a list of stop words as well as per-language settings.&lt;/p>
+&lt;h2 id="virtual-y-use-case">Virtual Y use case&lt;/h2>
+&lt;p>In order to overcome caching issues, Virtual Y uses the
+&lt;a href="https://www.drupal.org/project/simple_recaptcha" target="_blank">simple_recaptcha&lt;/a> module which could be used in similar cases.&lt;/p>
+&lt;p>The CAPTCHA + reCAPTCHA module solution has presented some reliability issues. The most recent
+&lt;a href="https://www.drupal.org/project/captcha/issues/3089263" target="_blank">discussion and fix from drupal.org&lt;/a> has also not reliably resolved issues for some clients.&lt;/p>
+&lt;p>At some point, the “Simple reCaptcha” module was used on a project and had no issues, so we’ve started to replace the “CAPTCHA” + “reCAPTCHA” modules with “Simple reCAPTCHA”.&lt;/p></description></item><item><title>Docs: Y USA Open Y Code of Conduct and Best Practices</title><link>/docs/wiki/open-y-code-of-conduct-and-best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-code-of-conduct-and-best-practices/</guid><description>
+&lt;p>The Y USA Open Y community aims to build from the methods and best practices of other open-source projects, such as the
+&lt;a href="https://drupal.org" target="_blank">Drupal community&lt;/a> and the
+&lt;a href="http://drupal.ua" target="_blank">Drupal Ukrainian community&lt;/a>.&lt;/p>
+&lt;h1 id="bylaws">Bylaws&lt;/h1>
+&lt;p>For the OpenY distribution we have
+&lt;a href="/docs/wiki/open-y-terms-of-use/">Terms of Use&lt;/a> and
+&lt;a href="/docs/wiki/open-y-participant-agreement/">Participant Agreement&lt;/a>.&lt;/p>
+&lt;h1 id="development">Development&lt;/h1>
+&lt;p>To understand how we use and develop technologies, refer to the documents below:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://www.drupal.org/dcoc" target="_blank">Drupal Code of Conduct&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">Conventional commits policy&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/docs/develop/standards" target="_blank">Drupal Coding Standards&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="/docs/wiki/development-faq/">Y USA Open Y Development FAQ&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="/docs/wiki/code-review-quality-best-practices/">Y USA Open Y Development Best Practices&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>JavaScript Code Standards&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://github.com/airbnb/javascript/tree/master/react" target="_blank">Airbnb React/JSX Style Guide&lt;/a> (for reviewing JavaScript ES5/ES6)&lt;/li>
+&lt;li>
+&lt;a href="https://vuejs.org/v2/style-guide/" target="_blank">Vue.js code style guide&lt;/a> (for Vue.js components)&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Y USA Open Y one-click install how-to</title><link>/docs/wiki/open-y-one-click-install-how-to/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-one-click-install-how-to/</guid><description>
+&lt;p>This walk-through is outdated and is in the process of being updated. Instead, try:&lt;/p>
+&lt;ul>
+&lt;li>A
+&lt;a href="https://www.youtube.com/watch?v=nGyMJCwMsqM" target="_blank">video walk-through of installing Y USA Open Y for tech novices&lt;/a>&lt;/li>
+&lt;li>An overview of the
+&lt;a href="/docs/wiki/sandboxes/">Y USA Open Y Sandboxes&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="installing-y-usa-open-y-on-digitalocean-droplet">Installing Y USA Open Y on DigitalOcean droplet&lt;/h3>
+&lt;ol>
+&lt;li>Create Ubuntu 16.04 LTS x64 droplet in area close to your location
+&lt;img src="https://user-images.githubusercontent.com/563412/44273919-6ffd8c80-a249-11e8-958b-3d7fbee6108d.png" alt="image" />&lt;/li>
+&lt;/ol>
+&lt;p>Use 2Gb droplet or more powerful if you need. Do not use 1Gb option - Y USA Open Y will fail on it.&lt;/p>
+&lt;ol start="2">
+&lt;li>Login to the SSH console of the droplet&lt;/li>
+&lt;li>Follow the comment from
+&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/scripts/openyonclickinstall.sh" target="_blank">https://github.com/ymcatwincities/openy-project/blob/8.1.x/scripts/openyonclickinstall.sh&lt;/a>
+Basically - run a command under root&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>curl -Ls http://bit.ly/initopeny &lt;span style="color:#000;font-weight:bold">|&lt;/span> bash -s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The command above will run approximately 10 minutes.
+4. In the end you should see a message similar to&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>Open http://127.0.0.1/core/install.php to proceed with OpenY installation.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="5">
+&lt;li>Open the link from the above message(from your console, not from this document) with your browser and proceed with Y USA Open Y installation.&lt;/li>
+&lt;/ol>
+&lt;p>Enjoy.&lt;/p>
+&lt;hr>
+&lt;p>In order to install the latest beta release of Y USA Open Y 2.0 change the command on step 3:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>curl -Ls http://bit.ly/initopeny &lt;span style="color:#000;font-weight:bold">|&lt;/span> bash -s beta
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;p>If you find any issues please post a message to the issue queue
+&lt;a href="https://github.com/ymcatwincities/openy/issues" target="_blank">https://github.com/ymcatwincities/openy/issues&lt;/a>&lt;/p></description></item><item><title>Docs: Y USA Open Y Participant Agreement</title><link>/docs/wiki/open-y-participant-agreement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-participant-agreement/</guid><description>
+&lt;p>&lt;strong>Y USA Open Y PARTICIPATION AGREEMENT&lt;/strong>&lt;/p>
+&lt;p>This Y USA Open Y Participation Agreement (this “&lt;strong>Agreement&lt;/strong>”) is between Open Y, LLC, and participating YMCA member associations in the United States (“&lt;strong>Member Associations&lt;/strong>”). Open Y, LLC has received license rights from the National Council of Young Men’s Christian Associations of the United States of America, an Illinois not-for-profit corporation (“&lt;strong>YUSA&lt;/strong>”) to provide the Platform (as defined below) to you. Open Y is not a part of YUSA; Open Y is a part of the YMCA of the Greater Twin Cities.&lt;/p>
+&lt;p>The purpose of the Y USA Open Y community is to collectively advance YMCA web and online experiences to better serve the YMCA mission. The terms of this Agreement govern your use of Y USA Open Y’s open-source digital content management system, which facilitates the sharing of YUSA brand-compliant website templates, tools, applications, and related digital assets (“&lt;strong>Platform&lt;/strong>”). The community provides a collaborative environment for individuals to positively interact and participate in the Platform. These guidelines address the standards and expectations of those contributing to and participating in the Y USA Open Y community and are meant to help our YMCA community grow and thrive. Your participation in Y USA Open Y means that you agree to the following guidelines and to the Y USA Open Y Terms of Use.&lt;/p>
+&lt;p>&lt;strong>YMCA BRAND ASSETS&lt;/strong>&lt;/p>
+&lt;p>No right is granted by this Agreement to use or license the YUSA brand assets. YMCA brand assets, which include, but are not limited to YMCA trademarks, trade dress, logos and other indicia of origin, are owned and controlled by YUSA. &lt;em>Open Y, LLC provides the Platform to you under license from YUSA. Accordingly, neither Open Y, LLC nor any Member Association shall, either directly or indirectly, at any time do any act or thing contesting the validity of YUSA’s trademarks or its rights thereto.&lt;/em>&lt;/p>
+&lt;p>Only Member Associations in the United States will have access to use any YUSA brand assets included in Y USA Open Y. All use by Member Associations must be in compliance with YUSA brand standards and guidelines as established by the National Board. YUSA is a third party beneficiary to this Agreement, with the right to enforce each of the terms of this Agreement with respect to Y USA Open Y and you. Y USA Open Y shall send copies of all notices due to you under this Agreement to each of you and YUSA.&lt;/p>
+&lt;p>&lt;strong>BEING A MEMBER OF OUR COMMUNITY&lt;/strong>&lt;/p>
+&lt;p>&lt;em>Participation&lt;/em>: Y USA Open Y will be at its best if each member participates in the community. There are many different ways you can participate, including through using the platform, presentations, forums, summits, emails, calls, etc. We encourage your active participation to the extent you feel you are able and willing. Open Y, LLC may publicly disclose your participation in the project.&lt;/p>
+&lt;p>&lt;em>Contribution&lt;/em>: Y USA Open Y encourages Members to contribute to the enhancement, editing, and building of Y USA Open Y. To ensure valuable contributions to the community, Y USA Open Y encourages Members to stay familiar and up-to-date with the Y USA Open Y roadmap, as well as new features in active development. When you make changes that improve Y USA Open Y features, please contribute those back to the community by ensuring they are re-useable and decoupled.&lt;/p>
+&lt;p>&lt;em>Collaboration&lt;/em>: Y USA Open Y encourages Members to collaborate across the YMCA community to share costs and efforts on building new capabilities.&lt;/p>
+&lt;p>&lt;em>Transparency&lt;/em>: Customizations of code provided by Y USA Open Y for your website will likely increase the initial fees, support, and upgrade costs for your website. When modifying or redistributing code, you must include a notice giving credit to Y USA Open Y for the portion of the Y USA Open Y code you use.&lt;/p>
+&lt;p>&lt;em>Promotion&lt;/em>: Y USA Open Y encourages Members to share their expertise and Y USA Open Y experience to expand its reach and accessibility to experienced and new members alike. There will be many opportunities for members to support Y USA Open Y and its marketing and messaging initiatives.&lt;/p>
+&lt;p>&lt;strong>Reporting Problems&lt;/strong>&lt;/p>
+&lt;p>If you believe someone has violated the Y USA Open Y Community Guidelines, or have any questions or concerns, please contact Open Y, LLC at
+&lt;a href="http://openy.org" target="_blank">http://openy.org&lt;/a>.&lt;/p></description></item><item><title>Docs: Y USA Open Y Pull Requests review standard</title><link>/docs/wiki/open-y-pull-requests-review-standard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-pull-requests-review-standard/</guid><description>
+&lt;p>Check more
+&lt;a href="/docs/wiki/code-review-quality-best-practices/">technical guidelines about our best practices for code quality&lt;/a>.&lt;/p>
+&lt;h1 id="adherence-to-standards">Adherence to Standards&lt;/h1>
+&lt;p>The Y USA Open Y Core Team will adhere to the same standards we set for the community for all areas of development and technologies as per the Y USA Open Y documentation.&lt;/p>
+&lt;p>The Y USA Open Y Core Team reserves the right to break these standards only in the following scenarios:&lt;/p>
+&lt;ul>
+&lt;li>Emergency - a major defect or security risk has been discovered that requires extreme measures to resolve.&lt;/li>
+&lt;li>When the standards are broken, it is the responsibility of the Y USA Open Y Core Team to explain why the standards needed to be broken, and what the new standards will be moving forward.&lt;/li>
+&lt;li>This communication will be posted to the Y USA Open Y message board, Slack, and the documentation on GitHub will be updated to reflect the new standards.&lt;/li>
+&lt;/ul>
+&lt;h2 id="requirements-for-pull-requests">Requirements for Pull Requests&lt;/h2>
+&lt;ul>
+&lt;li>Code in Pull Requests should follow our established
+&lt;a href="/docs/wiki/code-review-quality-best-practices/">best practices&lt;/a>&lt;/li>
+&lt;li>Submitters&amp;rsquo; profiles on GitHub or Drupal.org should be up to date and contain at least a name and organization.&lt;/li>
+&lt;/ul>
+&lt;h2 id="template-for-the-pr">Template for the PR&lt;/h2>
+&lt;p>In order to create a good quality Pull Request, we prepared a
+&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-2.x/.github/PULL_REQUEST_TEMPLATE.md" target="_blank">PR template&lt;/a> which is automatically added to new Pull Requests on GitHub.&lt;/p>
+&lt;p>List of requirements from the template:&lt;/p>
+&lt;ul>
+&lt;li>Provide a link to the original issue, which is going to be fixed by the PR you are creating.&lt;/li>
+&lt;li>All coding styles are fulfilled and there are no issues reported by CodeSniffer. See
+&lt;a href="/docs/wiki/open-y-code-of-conduct-and-best-practices/">Code of Conduct&lt;/a>.&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ymcatwincities/openy/tree/9.x-2.x/docs" target="_blank">Documentation&lt;/a> have been updated according to PR changes.&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ymcatwincities/openy/pull/94#issue-204580200" target="_blank">Steps for review&lt;/a> have been provided according to PR changes. &lt;br/>&lt;img src="https://raw.githubusercontent.com/ymcatwincities/openy/8.x-1.x/.github/assets/steps-for-review.png" width="200" alt="Steps for review"/>&lt;/li>
+&lt;li>Make sure you&amp;rsquo;ve provided all necessary hook_update_N to
+&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/docs/Development/Upgrade%20path.md" target="_blank">support upgrade path&lt;/a>.&lt;/li>
+&lt;li>Make sure your git email is associated with an account on drupal.org, otherwise you won&amp;rsquo;t get commits there. &lt;br/>&lt;img src="https://raw.githubusercontent.com/ymcatwincities/openy/8.x-1.x/.github/assets/drupalorg-email.png" width="200" alt="drupal.org email"/>&lt;/li>
+&lt;li>If you would like to get credits on drupal.org,
+&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/docs/Development/Contributing.md#drupalorg-credits" target="_blank">check documentation&lt;/a>.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Y USA Open Y Release Schedule and Guidelines</title><link>/docs/wiki/open-y-release-schedule-and-guidelines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-release-schedule-and-guidelines/</guid><description>
+&lt;h2 id="y-usa-open-y-release-guidelines">Y USA Open Y Release Guidelines&lt;/h2>
+&lt;p>Y USA Open Y releases major releases of the base project
+&lt;a href="https://github.com/ymcatwincities/openy" target="_blank">Y USA Open Y&lt;/a> and
+&lt;a href="https://github.com/ymcatwincities/openy_gated_content" target="_blank">Virtual Y&lt;/a> quarterly. Minor releases and sub-project releases occur as needed.&lt;/p>
+&lt;h3 id="major-releases-quarterly">Major releases (Quarterly)&lt;/h3>
+&lt;p>Major releases are scheduled for the second Tuesday of the second month of each quarter (February, May, August, November). They are numbered &lt;code>2.x&lt;/code> and consist of:&lt;/p>
+&lt;ul>
+&lt;li>New Features&lt;/li>
+&lt;li>New Enhancements&lt;/li>
+&lt;li>New Bugfixes&lt;/li>
+&lt;/ul>
+&lt;h3 id="minor-releases">Minor Releases&lt;/h3>
+&lt;p>Minor releases are numbered &lt;code>2.x.x&lt;/code> and consist of&lt;/p>
+&lt;ul>
+&lt;li>Only bugfixes&lt;/li>
+&lt;li>Never have new features or major enhancements&lt;/li>
+&lt;/ul>
+&lt;h3 id="release-schedule">Release schedule&lt;/h3>
+&lt;h4 id="2021">2021&lt;/h4>
+&lt;p>
+&lt;img src="https://user-images.githubusercontent.com/563412/104428684-6fd65800-558d-11eb-93b3-5c63e92ccd56.png" alt="OpenY/VirtualY Releases for 2021" />&lt;/p>
+&lt;h4 id="prior-years">Prior years&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;a href="https://user-images.githubusercontent.com/238201/146017405-10f28823-5af7-4498-9384-5502cbf5adaf.png" target="_blank">Y USA Open Y releases for 2018-2019&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Y USA Open Y Smoke Tests Index</title><link>/docs/wiki/open-y-smoke-tests-index/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-smoke-tests-index/</guid><description>
+&lt;h2 id="smoke-tests-in-core-and-dependencies">Smoke tests in core and dependencies&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/SMOKE_TESTS.md" target="_blank">Y USA Open Y core tests and dependencies&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/open-y-subprojects/openy_node_alert/blob/main/SMOKE_TESTS.md" target="_blank">Alert Application&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ymcatwincities/openy_gated_content/blob/master/SMOKE_TESTS.md" target="_blank">Virtual Y Application&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ymcatwincities/openy_activity_finder/blob/4.x/openy_af_vue_app/SMOKE_TESTS.md" target="_blank">Activity Finder v3&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="y-usa-open-y-features">Y USA Open Y Features&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;a href="https://github.com/open-y-subprojects/openy_features/blob/main/openy_prgf/modules/openy_prgf_loc_finder/SMOKE_TESTS.md" target="_blank">Location Finder Application&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/open-y-subprojects/openy_features/blob/main/openy_prgf/modules/openy_prgf_small_banner/SMOKE_TESTS.md" target="_blank">Small Banner&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/open-y-subprojects/openy_features/blob/main/openy_prgf/modules/openy_prgf_banner/SMOKE_TESTS.md" target="_blank">Banner&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/open-y-subprojects/openy_features/blob/main/openy_prgf/modules/openy_prgf_simple_content/SMOKE_TESTS.md" target="_blank">Simple Content&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/open-y-subprojects/openy_features/blob/main/openy_prgf/modules/openy_prgf_grid_content/SMOKE_TESTS.md" target="_blank">Grid Content&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://git.drupalcode.org/project/groupexpro/-/blob/main/modules/embedded_groupexpro_schedule/SMOKE_TESTS.md" target="_blank">Embedded GroupEx Pro Schedule&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/modules/custom/openy_search/SMOKE_TESTS.md" target="_blank">Y USA Open Y Search&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Y USA Open Y technology pipeline</title><link>/docs/wiki/open-y-technology-pipeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-technology-pipeline/</guid><description>
+&lt;p>To deliver the best technologies for the YMCA movement, the Y USA Open Y development community maintains the following documents and best practices:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;a href="/docs/wiki/development-faq/">Development FAQ&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="/docs/wiki/code-review-quality-best-practices/">Y USA Open Y Coding Standards&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://community.openymca.org/t/i-made-some-customizations-to-my-site-that-i-want-to-co[%e2%80%a6]at-are-the-best-practices-for-backporting-my-features/435" target="_blank">How new technologies and features are added to Y USA Open Y&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="/docs/wiki/sandboxes/">Sandboxes&lt;/a>&lt;/li>
+&lt;li>Smoke Tests
+&lt;ul>
+&lt;li>
+&lt;a href="https://www.youtube.com/watch?v=MH4BwMowlic&amp;amp;list=PL_QVggMcFfKYfV1cnistny2L-Sp55SoMg" target="_blank">Smoke Tests YouTube Playlist&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="/docs/wiki/open-y-smoke-tests-index/">Open-Y-Smoke-Tests-Index&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>A Slack Team
+&lt;a href="https://openy.org/contact/slack_access_request" target="_blank">by invite&lt;/a> with an #architects_support channel where we discuss technical issues with our partners and YUSA.&lt;/li>
+&lt;li>A
+&lt;a href="https://www.youtube.com/watch?v=RSsQLVVhldc&amp;amp;list=PL_QVggMcFfKZp05THV3dYlYOG3MsJ8xSf" target="_blank">YouTube playlist for Developers&lt;/a>&lt;/li>
+&lt;li>A list of
+&lt;a href="/docs/wiki/open-y-3rd-party-dependencies/">3rd party dependencies&lt;/a> which are reviewed periodically for new features and deprecations.&lt;/li>
+&lt;/ol></description></item></channel></rss>

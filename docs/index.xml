@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Y – Open Y Distribution Documentation</title><link>/docs/</link><description>Recent content in Open Y Distribution Documentation on Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 1 Column</title><link>/docs/content-structure/paragraphs/1c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/1c/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Y USA Open Y – Y USA Open Y Distribution Documentation</title><link>/docs/</link><description>Recent content in Y USA Open Y Distribution Documentation on Y USA Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 1 Column</title><link>/docs/content-structure/paragraphs/1c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/1c/</guid><description>
 &lt;p>This is a paragraph type that will be used for implements a paragraph with 1 column.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
 &lt;table>
@@ -480,7 +480,7 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;a href="/docs/user-documentation/text-editor/adding-links/">Learn more about the link field ⇒&lt;/a>&lt;/p>
 &lt;h2 id="advanced">Advanced&lt;/h2>
 &lt;h3 id="title-field-styling">Title Field Styling&lt;/h3>
-&lt;p>In all three themes currently in Open Y, the Title field displays in a font-size and color nearly identical to the body copy. To override, target &lt;code>.field-sb-title&lt;/code>.&lt;/p>
+&lt;p>In all three themes currently in Y USA Open Y, the Title field displays in a font-size and color nearly identical to the body copy. To override, target &lt;code>.field-sb-title&lt;/code>.&lt;/p>
 &lt;h3 id="carnation---columns-stack-in-desktop">Carnation -&amp;gt; Columns stack in desktop&lt;/h3>
 &lt;p>In order for this to work in Carnation, the &lt;code>.wrapper&lt;/code> containing the column elements needs to be changed to &lt;code>.row&lt;/code>; otherwise, each of the four columns expands to the full width of the Area it’s embedded in.&lt;/p>
 &lt;p>
@@ -504,17 +504,17 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;li>
 &lt;a href="/docs/user-documentation/content-types/news-post/">News Post&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Acceptance Testing</title><link>/docs/development/acceptancetesting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/acceptancetesting/</guid><description>
-&lt;p>Open Y is a big distribution with a large amount of modules, components, subsystems, and business
+&lt;p>Y USA Open Y is a big distribution with a large amount of modules, components, subsystems, and business
 processes, therefore we have to take appropriate steps to ensure the stability of major functionality during development.&lt;/p>
 &lt;p>For the automated tests we have created
 &lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/.github/PULL_REQUEST_TEMPLATE.md" target="_blank">General Checks template&lt;/a>
-on GitHub every developer should follow to get review approval from Open Y core team.
+on GitHub every developer should follow to get review approval from Y USA Open Y core team.
 However, General Checks are for testing functionality for the current proposed change only, not for Regression Testing.&lt;/p>
 &lt;p>For regression testing,
-&lt;a href="/docs/development/tests/#behat">Behat tests&lt;/a> in this flow are provided automatically on each build by Open Y community.&lt;/p>
-&lt;p>Every pull request should include a testing plan prior to release into Open Y. This plan should cover the testing of all workflows and functionality to ensure that they continue to work with any new code or change implemented. This is because it is possible for conflicts to occur between elements of Open Y, Drupal Modules, and Drupal Core. These pull request testing plans will increase productivity and decrease effort for manual Acceptance Testing of upcoming Releases. This testing plan should cover specific features and functionality that is likely to cause regression issues post-release or post-upgrade to the latest version of Open Y once this new code is implemented.&lt;/p>
+&lt;a href="/docs/development/tests/#behat">Behat tests&lt;/a> in this flow are provided automatically on each build by Y USA Open Y community.&lt;/p>
+&lt;p>Every pull request should include a testing plan prior to release into Y USA Open Y. This plan should cover the testing of all workflows and functionality to ensure that they continue to work with any new code or change implemented. This is because it is possible for conflicts to occur between elements of Y USA Open Y, Drupal Modules, and Drupal Core. These pull request testing plans will increase productivity and decrease effort for manual Acceptance Testing of upcoming Releases. This testing plan should cover specific features and functionality that is likely to cause regression issues post-release or post-upgrade to the latest version of Y USA Open Y once this new code is implemented.&lt;/p>
 &lt;p>Example of testing plan: If the Drupal core is updated it is important to gather all Drupal core Release Notes since last release
-core upgrade for Open Y and analyze important issues fixed.
+core upgrade for Y USA Open Y and analyze important issues fixed.
 Example - in case if you are doing upgrade from latest 8.4.0 to 8.4.4:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -535,14 +535,14 @@ Example - in case if you are doing upgrade from latest 8.4.0 to 8.4.4:&lt;/p>
 &lt;li>ckeditor&lt;/li>
 &lt;li>composer&lt;/li>
 &lt;/ul>
-&lt;p>This list could be extended by analyzing some highly important parts of Open Y distributions that depends from the above
+&lt;p>This list could be extended by analyzing some highly important parts of Y USA Open Y distributions that depends from the above
 subsystems. It is not required to spend time on every module that has a dependency taxonomy, but it is important to test at least one impacted module to ensure it is still working post-implementation. In case if there is a Behat test already created for the subsystem in a list then a manual test could be skipped as long as the build is not failing due to the module or element covered in the associated Behat test.&lt;/p>
 &lt;p>How to choose which modules to test: These can be a random selection from the list of systems impacted, or one of the oldest modules in a system impacted. This is because there is a higher chance that a minor change could cause a regression issue for the modules that have not received recent or regular updates.&lt;/p>
 &lt;p>The oldest modules(contrib modules) that have dependencies from the above list should also be updated, but
 to improve productivity, these updates should only be initiated if there is a security issue or a module stopped working because of
 the subsystems getting updated within an upcoming release. In case if a respective module update creates more issues
 that the older version of said module - then it is better to keep the old module and fix an associated regression bug.
-Tip: usually a new version of the module already contains a bug fix, so adding a patch from the drupal.org to composer.json of the Open Y distribution is preferred to get distribution
+Tip: usually a new version of the module already contains a bug fix, so adding a patch from the drupal.org to composer.json of the Y USA Open Y distribution is preferred to get distribution
 released. Keep in mind, you will need to create a follow-up task for the module to be updated after release.&lt;/p>
 &lt;p>After creating list of modules that could introduce regression issues it is highly recommended to follow
 Quick-start section of the module&amp;rsquo;s readme files, that usually is shipped with modules.
@@ -551,14 +551,14 @@ In case if a module has no Quick-start or Acceptance testing section in readme -
 where functionality of the module should be working. It is highly recommended to add this manual test steps as
 a follow-up task,
 &lt;a href="https://github.com/ymcatwincities/openy/issues/new" target="_blank">new issue&lt;/a> or even better - create Pull Request
-with changes to readme into Open Y repository. For the sake of performance, adding step by step how-to to the respective
+with changes to readme into Y USA Open Y repository. For the sake of performance, adding step by step how-to to the respective
 module&amp;rsquo;s README.md file is highly recommended. It takes only a few minutes to write a couple of lines of documentation which will greatly help others with future contributions and changes.&lt;/p>
-&lt;p>Optional, but greatly appreciated: Add a Drupal tour for the how-to, created in README will benefit future Open Y users and developers.
+&lt;p>Optional, but greatly appreciated: Add a Drupal tour for the how-to, created in README will benefit future Y USA Open Y users and developers.
 Having a tour for the business functionality is highly recommended to ship with the component - it creates an in-site visual guided documentation and helps to decrease time for the Acceptance testing.&lt;/p>
 &lt;p>And last, but not the lease - adding Behat tests to the system will ensure functionality is tested on every pull
 request, on every CI build in the future.&lt;/p>
 &lt;h3 id="rule">Rule&lt;/h3>
-&lt;p>Every release of Open Y since 8.1.9 should include list of subsystems, changed in release for the community to be aware of the possible regressions on their end.&lt;/p></description></item><item><title>Docs: Activity</title><link>/docs/content-structure/content-types/activity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/activity/</guid><description>
+&lt;p>Every release of Y USA Open Y since 8.1.9 should include list of subsystems, changed in release for the community to be aware of the possible regressions on their end.&lt;/p></description></item><item><title>Docs: Activity</title><link>/docs/content-structure/content-types/activity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/activity/</guid><description>
 &lt;p>Activity content type is used for adding Activities on the site.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
 &lt;table>
@@ -609,7 +609,7 @@ request, on every CI build in the future.&lt;/p>
 &lt;li>Bottom Area&lt;/li>
 &lt;/ul>
 &lt;p>How it Works&lt;/p>
-&lt;p>This paragraph type requires an integration into a CRM. Out-of-the-box, Open Y’s Activity Finder integrates with Daxko, ActiveNet, and Personify. Any other CRM will require custom developer work.&lt;/p>
+&lt;p>This paragraph type requires an integration into a CRM. Out-of-the-box, Y USA Open Y’s Activity Finder integrates with Daxko, ActiveNet, and Personify. Any other CRM will require custom developer work.&lt;/p>
 &lt;p>Read more about the Activity Finder feature &amp;gt;&lt;/p>
 &lt;p>How you use these paragraphs will depend on how your Association has structured its program data on the CRM and on how you decide to get people to program results.&lt;/p>
 &lt;p>There are three primary approaches to setting this up: a standard approach, a results-only approach, and a targeted approach.&lt;/p>
@@ -625,7 +625,7 @@ request, on every CI build in the future.&lt;/p>
 &lt;p>Targeted Approach&lt;/p>
 &lt;p>Activity Finder can also be used on multiple pages on your site, specifically on your Program Subcategory pages. On a Subcategory page, add the “Activity Finder” paragraph&lt;/p></description></item><item><title>Docs: Activity, Class, and Session</title><link>/docs/user-documentation/content-types/activity-class-session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/activity-class-session/</guid><description>
 &lt;blockquote>
-&lt;p>These content types format data/content pulled from third parties, such as Daxko, Personify and ActiveNet, for display in Open Y.&lt;/p>
+&lt;p>These content types format data/content pulled from third parties, such as Daxko, Personify and ActiveNet, for display in Y USA Open Y.&lt;/p>
 &lt;/blockquote>
 &lt;p>Content editors rarely, if ever, enter information directly into these content types on a day-to-day basis. However, it is important to know how they work and how they relate to manually-entered content.&lt;/p>
 &lt;blockquote>
@@ -656,8 +656,8 @@ request, on every CI build in the future.&lt;/p>
 &lt;h2 id="session">Session&lt;/h2>
 &lt;p>An individual program offering. Contains fields for pricing, session date/time, instructor, ages and a registration link. This are the individual rows/instances in Repeat Schedules and
 &lt;a href="https://community.openymca.org/t/activity-finder-activity-finder-search-paragraphs-open-y-user-docs/702" target="_blank">Activity Finder&lt;/a>.&lt;/p></description></item><item><title>Docs: Adding and Embedding Videos</title><link>/docs/user-documentation/text-editor/adding-embedding-videos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/adding-embedding-videos/</guid><description>
-&lt;h1 id="addingembedding-videos-with-the-open-y-text-editor">Adding/Embedding Videos with the Open Y Text Editor&lt;/h1>
-&lt;p>Open Y allows you to upload and embed images directly into a block of text, either from your computer or from the Open Y media library and browser.&lt;/p>
+&lt;h1 id="addingembedding-videos-with-the-y-usa-open-y-text-editor">Adding/Embedding Videos with the Y USA Open Y Text Editor&lt;/h1>
+&lt;p>Y USA Open Y allows you to upload and embed images directly into a block of text, either from your computer or from the Y USA Open Y media library and browser.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/nC414txq3F8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
@@ -680,7 +680,7 @@ request, on every CI build in the future.&lt;/p>
 &lt;p>After you save your video to the media library, a dialogue box will appear, giving you some additional options for embedding it inline.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Entity Name&lt;/strong> simply refers to the name of your video, which you provided on the previous screen.&lt;/li>
-&lt;li>&lt;strong>Display as&lt;/strong> allows you to change the size of the video display without the size of the original video.* By default, Open Y comes with &lt;em>Full, Half, and Link&lt;/em> display modes
+&lt;li>&lt;strong>Display as&lt;/strong> allows you to change the size of the video display without the size of the original video.* By default, Y USA Open Y comes with &lt;em>Full, Half, and Link&lt;/em> display modes
 &lt;ul>
 &lt;li>Full means your video fills the area where it&amp;rsquo;s inserted&lt;/li>
 &lt;li>Half mean the video is half the size of its area.&lt;/li>
@@ -695,15 +695,15 @@ request, on every CI build in the future.&lt;/p>
 &lt;blockquote>
 &lt;p>*If you want to make changes to the video you just embedded after you&amp;rsquo;ve added it, double click on the icon, and the &amp;ldquo;Embed media&amp;rdquo; dialogue will appear.&lt;/p>
 &lt;/blockquote></description></item><item><title>Docs: Adding Images</title><link>/docs/user-documentation/text-editor/adding-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/adding-images/</guid><description>
-&lt;h3 id="note-to-users-of-open-y-24">NOTE TO USERS OF OPEN Y 2.4+&lt;/h3>
+&lt;h3 id="note-to-users-of-y-usa-open-y-24">NOTE TO USERS OF Y USA Open Y 2.4+&lt;/h3>
 &lt;blockquote>
 &lt;p>This documentation is not up-to-date if you are using
-&lt;a href="https://community.openymca.org/t/version-2-4-released-q1-2020-major-release/624" target="_blank">Open Y 2.4&lt;/a> and later.&lt;/p>
+&lt;a href="https://community.openymca.org/t/version-2-4-released-q1-2020-major-release/624" target="_blank">Y USA Open Y 2.4&lt;/a> and later.&lt;/p>
 &lt;p>
 &lt;a href="https://www.youtube.com/watch?v=gcaBlhyPZEY" target="_blank">View video tutorial for Open 2.4 and later ⇒&lt;/a>&lt;/p>
 &lt;/blockquote>
-&lt;h1 id="adding-images-with-the-open-y-text-editor">Adding Images with the Open Y Text Editor&lt;/h1>
-&lt;p>Open Y allows you to upload and embed images directly into a block of text, either from your computer or from the Open Y media library and browser.&lt;/p>
+&lt;h1 id="adding-images-with-the-y-usa-open-y-text-editor">Adding Images with the Y USA Open Y Text Editor&lt;/h1>
+&lt;p>Y USA Open Y allows you to upload and embed images directly into a block of text, either from your computer or from the Y USA Open Y media library and browser.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/xogdtPEYxgg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
@@ -726,7 +726,7 @@ request, on every CI build in the future.&lt;/p>
 &lt;p>After you save your image to the media library, a dialogue box will appear, giving you some additional options for embedding your image inline.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Entity Name&lt;/strong> simply refers to the name of your image, which you provided on the previous screen.&lt;/li>
-&lt;li>&lt;strong>Display as&lt;/strong> allows you to change the size of the image display without the size of the original image.* By default, Open Y comes with &lt;em>Full, Half, and Link&lt;/em> display modes
+&lt;li>&lt;strong>Display as&lt;/strong> allows you to change the size of the image display without the size of the original image.* By default, Y USA Open Y comes with &lt;em>Full, Half, and Link&lt;/em> display modes
 &lt;ul>
 &lt;li>Full means your image fills the area where it&amp;rsquo;s inserted&lt;/li>
 &lt;li>Half mean the picture is half the size of its area.&lt;/li>
@@ -752,7 +752,7 @@ request, on every CI build in the future.&lt;/p>
 &lt;iframe src="https://www.youtube.com/embed/-AJLwiKC3oE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;p>&lt;strong>Using Links with the Text Editor&lt;/strong>
-Links are simple in Open Y - just highlight your text and click the link icon or type Ctrl+K (Windows)/Command(⌘)+K (Mac). Once the pop-up appears, type your URL into the field and click “Save.”&lt;/p>
+Links are simple in Y USA Open Y - just highlight your text and click the link icon or type Ctrl+K (Windows)/Command(⌘)+K (Mac). Once the pop-up appears, type your URL into the field and click “Save.”&lt;/p>
 &lt;p>
 &lt;figure class="image-caption">
 &lt;img alt="blog-description_text-editor-links" srcset="
@@ -771,8 +771,8 @@ Links are simple in Open Y - just highlight your text and click the link icon or
 &lt;p>&lt;em>
 &lt;a href="https://ckeditor.com/ckeditor-4/demo/" target="_blank">Demo this on CKEditor Site &amp;gt;&lt;/a>&lt;/em>&lt;/p>
 &lt;hr />
-&lt;p>&lt;strong>Open Y 2.5 and later&lt;/strong>&lt;/p>
-&lt;p>Ys with newer versions of Open Y can add attributes to their links, including a title (
+&lt;p>&lt;strong>Y USA Open Y 2.5 and later&lt;/strong>&lt;/p>
+&lt;p>Ys with newer versions of Y USA Open Y can add attributes to their links, including a title (
 &lt;a href="https://en.wikipedia.org/wiki/Tooltip" target="_blank">for tooltips&lt;/a>) HTML ID, HTML rel and CSS classes. You can also opt to have your link open in a new window/tab.&lt;/p>
 &lt;p>
 &lt;figure class="image-caption">
@@ -811,7 +811,7 @@ Links are simple in Open Y - just highlight your text and click the link icon or
 &lt;p>&lt;strong>Pro Tip:&lt;/strong> The link button doesn’t support opening links in a new window or tab, such as with a &lt;code>&amp;quot;target='_blank'&amp;quot;&lt;/code> You can either use HTML or the
 &lt;a href="https://community.openymca.org/t/building-buttons-in-the-text-editor/646" target="_blank">WYSIWYG button tool to create links&lt;/a> in new tabs.&lt;/p>
 &lt;/blockquote></description></item><item><title>Docs: Adding/Embedding Documents</title><link>/docs/user-documentation/text-editor/adding-documents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/adding-documents/</guid><description>
-&lt;p>Open Y allows you to upload and embed documents directly into a block of text, either from your computer or from the Open Y media library and browser.&lt;/p>
+&lt;p>Y USA Open Y allows you to upload and embed documents directly into a block of text, either from your computer or from the Y USA Open Y media library and browser.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/5w-_bpHtTLI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
@@ -833,7 +833,7 @@ Links are simple in Open Y - just highlight your text and click the link icon or
 &lt;p>After you save your document to the media library, a dialogue box will appear, giving you some additional options for embedding it inline.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Entity Name&lt;/strong> simply refers to the name of your document, which you provided on the previous screen.&lt;/li>
-&lt;li>&lt;strong>Display as&lt;/strong> allows you to change the size of the document display without the size of the original video.* By default, Open Y comes with &lt;em>Full, Half, and Link&lt;/em> display modes
+&lt;li>&lt;strong>Display as&lt;/strong> allows you to change the size of the document display without the size of the original video.* By default, Y USA Open Y comes with &lt;em>Full, Half, and Link&lt;/em> display modes
 &lt;ul>
 &lt;li>Full means your document fills the area where it&amp;rsquo;s inserted&lt;/li>
 &lt;li>Half mean the document is half the size of its area.&lt;/li>
@@ -849,7 +849,7 @@ Links are simple in Open Y - just highlight your text and click the link icon or
 &lt;p>*If you want to make changes to the document you just embedded after you&amp;rsquo;ve added it, double click on the icon, and the &amp;ldquo;Embed media&amp;rdquo; dialogue will appear.&lt;/p>
 &lt;/blockquote></description></item><item><title>Docs: AddThis</title><link>/docs/development/addthis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/addthis/</guid><description>
 &lt;h1 id="how-to-configure-addthis">How to configure AddThis&lt;/h1>
-&lt;p>Open Y AddThis module allow you easy add Social icons to any node.&lt;/p>
+&lt;p>Y USA Open Y AddThis module allow you easy add Social icons to any node.&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Go to &lt;code>http://www.addthis.com&lt;/code> and create your account and get public id.&lt;/p>
@@ -943,7 +943,7 @@ Links are simple in Open Y - just highlight your text and click the link icon or
 &lt;/blockquote>
 &lt;p>
 &lt;img src="upload://4xCXyDaACMFdZrLgm2X88iV7AEY.png" alt="Screen Shot 2020-03-24 at 10.07.11 PM|690x67" />&lt;/p>
-&lt;p>Unlike most content types in Open Y, you don&amp;rsquo;t use Alert to create pages. Instead, Alerts display as a &lt;em>rendered entity&lt;/em> or a section of content on other pages.&lt;/p>
+&lt;p>Unlike most content types in Y USA Open Y, you don&amp;rsquo;t use Alert to create pages. Instead, Alerts display as a &lt;em>rendered entity&lt;/em> or a section of content on other pages.&lt;/p>
 &lt;p>Alerts also don&amp;rsquo;t use paragraphs. By design, the layout of Alerts are rigid; however, text editor and the the color options listed below allow content editors some flexibility.&lt;/p>
 &lt;h2 id="when-should-you-use-an-alert">When Should You Use an Alert?&lt;/h2>
 &lt;ul>
@@ -958,11 +958,11 @@ Links are simple in Open Y - just highlight your text and click the link icon or
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Description&lt;/strong>: The main body of your alert. Sentences should be short and minimally styled in this section. Uses
-&lt;a href="https://community.openymca.org/c/Resources-and-training-for-content-editors/Learn-how-to-use-the-basic-text-editing-functions-available-to-content-editors" target="_blank">the Open Y Text Editor&lt;/a>.&lt;/p>
+&lt;a href="https://community.openymca.org/c/Resources-and-training-for-content-editors/Learn-how-to-use-the-basic-text-editing-functions-available-to-content-editors" target="_blank">the Y USA Open Y Text Editor&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Color Fields&lt;/strong>: These three dropdown fields control different aspects of color in your alert. All three dropdowns reference the
-&lt;a href="http://#" target="_blank">the Open Y color vocabulary&lt;/a>.&lt;/p>
+&lt;a href="http://#" target="_blank">the Y USA Open Y color vocabulary&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>&lt;em>&lt;strong>Background Color&lt;/strong>&lt;/em>: The color of your alert.&lt;/li>
 &lt;li>&lt;em>&lt;strong>Text Color&lt;/strong>&lt;/em>: Stick to using either black or white for accessibility.&lt;/li>
@@ -1029,7 +1029,7 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>Bottom Area&lt;/li>
 &lt;/ul>
 &lt;p>How to Use It&lt;/p>
-&lt;p>NOTE: This paragraph provides similar functionality to the Location filter by amenities, and is no longer recommended for use by the Open Y Core Team.&lt;/p>
+&lt;p>NOTE: This paragraph provides similar functionality to the Location filter by amenities, and is no longer recommended for use by the Y USA Open Y Core Team.&lt;/p>
 &lt;p>After selecting “All Amenities” from the paragraphs list, you can change the title that displays above the search checkboxes by entering text in the Title field.&lt;/p>
 &lt;p>Styling will differ greatly based on the theme. Use of this paragraph in Rose is not recommended.&lt;/p>
 &lt;p>Supported Content Types&lt;/p>
@@ -1123,7 +1123,7 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;p>
 &lt;img src="upload://3sSzX2tN1MLavjpM1pDSK3gsFEC.gif" alt="landing-page__banner-image-select|480x94" />&lt;/p>
 &lt;p>Use the image library to embed an image. You can upload a new image from your computer or reuse an existing image from your library. The image field is optional, but recommended.&lt;/p>
-&lt;p>For recommended image sizes for your Open Y site, talk to your agency partner.&lt;/p>
+&lt;p>For recommended image sizes for your Y USA Open Y site, talk to your agency partner.&lt;/p>
 &lt;p>&lt;strong>How to add/edit images &amp;gt;&lt;/strong>&lt;/p>
 &lt;/li>
 &lt;li>
@@ -1204,7 +1204,7 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>&lt;strong>Bulleted/Numbered lists -&lt;/strong> Click the numbered or bulleted list icon to create a list. You can create indented bullets by hitting your tab key or clicking on the indent icon&lt;/li>
 &lt;/ol>
 &lt;blockquote>
-&lt;p>&lt;strong>Pro tip:&lt;/strong> The Text Editor also ships with a custom “Styles” dropdown that allows you to customize additional text formats/styles for content editors. This is disabled by default in Open Y. Advanced users can enable this by going to Configuration &amp;gt; Content authoring &amp;gt; Text formats and editors&lt;/p>
+&lt;p>&lt;strong>Pro tip:&lt;/strong> The Text Editor also ships with a custom “Styles” dropdown that allows you to customize additional text formats/styles for content editors. This is disabled by default in Y USA Open Y. Advanced users can enable this by going to Configuration &amp;gt; Content authoring &amp;gt; Text formats and editors&lt;/p>
 &lt;/blockquote></description></item><item><title>Docs: Block Menu</title><link>/docs/content-structure/blocks/block-menu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/block-menu/</guid><description>
 &lt;p>Implements custom block type with a links.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
@@ -1354,7 +1354,7 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;/blockquote>
 &lt;p>
 &lt;img src="upload://Rkgdb0hjyEt9lLUjFxWtTDGmZE.jpeg" alt="carnation&amp;amp;ndash;blog&amp;amp;ndash;desktop|690x479, 75%" />&lt;/p>
-&lt;p>Blog posts in Open Y allow you the flexibility to both create simple posts using only the text editor and more robust layouts with paragraphs.&lt;/p>
+&lt;p>Blog posts in Y USA Open Y allow you the flexibility to both create simple posts using only the text editor and more robust layouts with paragraphs.&lt;/p>
 &lt;h2 id="when-should-i-use-a-blog-post">When Should I Use a Blog Post?&lt;/h2>
 &lt;p>When you decide to use a blog post
 &lt;a href="https://www.youtube.com/watch?v=myGNK_qUGDM" target="_blank">depends greatly on your Association&amp;rsquo;s content strategy&lt;/a>. However, blog posts are designed so you can post timely pages and list them throughout your site. Examples of blogs may include:&lt;/p>
@@ -1413,7 +1413,7 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Description&lt;/strong>:
-&lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">Using the Open Y text editor&lt;/a>, you can enter anything from a brief summary to the entire body of your text.
+&lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">Using the Y USA Open Y text editor&lt;/a>, you can enter anything from a brief summary to the entire body of your text.
 &lt;img src="upload://zhby7Do2LGR6ZscauU8bVJdUB8h.png" alt="carnation&amp;amp;ndash;landing-page__blog-posts&amp;amp;ndash;color-card&amp;amp;ndash;green|590x500, 50%" />
 &lt;img src="upload://48cFIYzzKbvW4UQushKjT8etmSS.png" alt="lily&amp;amp;ndash;landing-page__blog-posts&amp;amp;ndash;color-card&amp;amp;ndash;green|434x500, 50%" />&lt;/p>
 &lt;/li>
@@ -1475,7 +1475,7 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;p>
 &lt;a href="https://www.youtube.com/watch?v=h39RyuMzfBU" target="_blank">https://www.youtube.com/watch?v=h39RyuMzfBU&lt;/a>&lt;/p>
 &lt;p>The view for the Blog Listings paragraph is not available for editing in the
-&lt;a href="https://sandbox.openymca.org" target="_blank">Open Y sandbox&lt;/a>, but you can edit the View
+&lt;a href="https://sandbox.openymca.org" target="_blank">Y USA Open Y sandbox&lt;/a>, but you can edit the View
 &lt;a href="https://www.youtube.com/watch?v=GpknEXv1IfA" target="_blank">using your own dedicated instance&lt;/a>. Doing so through the UI, however, could have implications for future upgrades.&lt;/p>
 &lt;h2 id="content-types-that-support-blog-posts">Content Types that Support Blog Posts&lt;/h2>
 &lt;ul>
@@ -1641,7 +1641,7 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;h3 id="url-pattern">URL pattern&lt;/h3>
 &lt;p>Content type is using following pattern:
 &lt;code>/locations/[node:title]&lt;/code>&lt;/p></description></item><item><title>Docs: Branch</title><link>/docs/user-documentation/content-types/branch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/branch/</guid><description>
-&lt;p>&lt;strong>One of the first places members go when they visit a Y website is to their local Y’s page. In Open Y, you create pages for a wellness facility with the Branch content type.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>One of the first places members go when they visit a Y website is to their local Y’s page. In Y USA Open Y, you create pages for a wellness facility with the Branch content type.&lt;/strong>&lt;/p>
 &lt;hr>
 &lt;p>
 &lt;img src="upload://qaEmMaGxttuNKYSzZRH4IrVvTc5.png" alt="carnation&amp;amp;ndash;branch&amp;amp;ndash;tablet_1|375x500, 75%" />&lt;/p>
@@ -1735,7 +1735,7 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;p>If you embed a Branch Amenities with Icons paragraph on your page, the amenities will display in your content. The Amenities will also serve as filters for branches on your locations page.&lt;/p>
 &lt;p>If you don&amp;rsquo;t see an option available or would like to rename a branch amenity, go to Structure &amp;gt; Taxonomy &amp;gt; Amenities.&lt;/p>
 &lt;p>&lt;strong>####&lt;/strong> Closed Amenities
-Ys with Open Y 2.5 or later can tag amenities at a branch that have closed. Content editors will see a &amp;ldquo;Closed Amenities&amp;rdquo; field.&lt;/p>
+Ys with Y USA Open Y 2.5 or later can tag amenities at a branch that have closed. Content editors will see a &amp;ldquo;Closed Amenities&amp;rdquo; field.&lt;/p>
 &lt;p>
 &lt;img src="upload://1H6H8xKzjCpEMYDKfZe7it4R40Y.png" alt="carnation&amp;amp;ndash;branch&amp;amp;ndash;closed-amenities|442x499, 50%" />
 &lt;img src="upload://a4WrDjPoqlMgnP5OtobiCzpvrZg.png" alt="admin&amp;amp;ndash;branch__amenities&amp;amp;ndash;closed-amenities|690x341, 50%" />&lt;/p></description></item><item><title>Docs: Branch Amenities</title><link>/docs/content-structure/blocks/branch-amenities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/branch-amenities/</guid><description>
@@ -1831,7 +1831,7 @@ Ys with Open Y 2.5 or later can tag amenities at a branch that have closed. Cont
 &lt;iframe src="https://www.youtube.com/embed/lJmhRo99uuM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;p>
-&lt;a href="https://community.openymca.org/t/adding-links-in-the-text-editor/645" target="_blank">As an alternate to using the link tool&lt;/a>, you can easily create buttons with Open Y using the button editor. When you click on the button icon, it will open a pop-up.&lt;/p>
+&lt;a href="https://community.openymca.org/t/adding-links-in-the-text-editor/645" target="_blank">As an alternate to using the link tool&lt;/a>, you can easily create buttons with Y USA Open Y using the button editor. When you click on the button icon, it will open a pop-up.&lt;/p>
 &lt;p>
 &lt;figure class="image-caption">
 &lt;img alt="WYSIWYG Editor options with the button tab highlighted in green." srcset="
@@ -1937,11 +1937,11 @@ Ys with Open Y 2.5 or later can tag amenities at a branch that have closed. Cont
 &lt;p>&lt;em>Example:&lt;/em> For a Right Chevron, type &lt;code>fa-chevron-right&lt;/code>.&lt;/p>
 &lt;p>&lt;strong>View free font awesome icons at fontawesome.com&lt;/strong>&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;strong>Note:&lt;/strong> The left field makes reference to the Bootstrap Glyphicons library. As of this documentation, this icon library has been deprecated, and the Glyphicons fields will not work in Open Y.&lt;/p>
+&lt;p>&lt;strong>Note:&lt;/strong> The left field makes reference to the Bootstrap Glyphicons library. As of this documentation, this icon library has been deprecated, and the Glyphicons fields will not work in Y USA Open Y.&lt;/p>
 &lt;p>Because the button embed is an open-source tool developed by a third party, these fields will go away once the code’s maintainer updates the code.&lt;/p>
 &lt;/blockquote></description></item><item><title>Docs: Building Tables</title><link>/docs/user-documentation/text-editor/building-tables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/building-tables/</guid><description>
 &lt;blockquote>
-&lt;p>The tables tool in the Open Y text editor provides the ability to create flexible tables for a number of different use cases, including displaying contact information, pricing tables, and more.&lt;/p>
+&lt;p>The tables tool in the Y USA Open Y text editor provides the ability to create flexible tables for a number of different use cases, including displaying contact information, pricing tables, and more.&lt;/p>
 &lt;/blockquote>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/eUNj3ipaF58" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
@@ -2318,7 +2318,7 @@ Ys with Open Y 2.5 or later can tag amenities at a branch that have closed. Cont
 &lt;p>Content type is using following pattern:
 &lt;code>/camps/[node:title]&lt;/code>&lt;/p></description></item><item><title>Docs: Camp</title><link>/docs/user-documentation/content-types/camp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/camp/</guid><description>
 &lt;blockquote>
-&lt;p>Camps in Open Y are physical locations where outdoor camp programming takes place.&lt;/p>
+&lt;p>Camps in Y USA Open Y are physical locations where outdoor camp programming takes place.&lt;/p>
 &lt;p>&lt;em>Note: Camp is similar to the
 &lt;a href="https://community.openymca.org/t/branch-content-types-open-y-user-docs/685" target="_blank">Branch content type&lt;/a>.&lt;/em>&lt;/p>
 &lt;/blockquote>

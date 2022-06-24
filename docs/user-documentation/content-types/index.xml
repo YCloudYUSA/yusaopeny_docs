@@ -1,6 +1,6 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Y – Page/Content Types</title><link>/docs/user-documentation/content-types/</link><description>Recent content in Page/Content Types on Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/user-documentation/content-types/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Activity, Class, and Session</title><link>/docs/user-documentation/content-types/activity-class-session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/activity-class-session/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Y USA Open Y – Page/Content Types</title><link>/docs/user-documentation/content-types/</link><description>Recent content in Page/Content Types on Y USA Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/user-documentation/content-types/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Activity, Class, and Session</title><link>/docs/user-documentation/content-types/activity-class-session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/activity-class-session/</guid><description>
 &lt;blockquote>
-&lt;p>These content types format data/content pulled from third parties, such as Daxko, Personify and ActiveNet, for display in Open Y.&lt;/p>
+&lt;p>These content types format data/content pulled from third parties, such as Daxko, Personify and ActiveNet, for display in Y USA Open Y.&lt;/p>
 &lt;/blockquote>
 &lt;p>Content editors rarely, if ever, enter information directly into these content types on a day-to-day basis. However, it is important to know how they work and how they relate to manually-entered content.&lt;/p>
 &lt;blockquote>
@@ -36,7 +36,7 @@
 &lt;/blockquote>
 &lt;p>
 &lt;img src="upload://4xCXyDaACMFdZrLgm2X88iV7AEY.png" alt="Screen Shot 2020-03-24 at 10.07.11 PM|690x67" />&lt;/p>
-&lt;p>Unlike most content types in Open Y, you don&amp;rsquo;t use Alert to create pages. Instead, Alerts display as a &lt;em>rendered entity&lt;/em> or a section of content on other pages.&lt;/p>
+&lt;p>Unlike most content types in Y USA Open Y, you don&amp;rsquo;t use Alert to create pages. Instead, Alerts display as a &lt;em>rendered entity&lt;/em> or a section of content on other pages.&lt;/p>
 &lt;p>Alerts also don&amp;rsquo;t use paragraphs. By design, the layout of Alerts are rigid; however, text editor and the the color options listed below allow content editors some flexibility.&lt;/p>
 &lt;h2 id="when-should-you-use-an-alert">When Should You Use an Alert?&lt;/h2>
 &lt;ul>
@@ -51,11 +51,11 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Description&lt;/strong>: The main body of your alert. Sentences should be short and minimally styled in this section. Uses
-&lt;a href="https://community.openymca.org/c/Resources-and-training-for-content-editors/Learn-how-to-use-the-basic-text-editing-functions-available-to-content-editors" target="_blank">the Open Y Text Editor&lt;/a>.&lt;/p>
+&lt;a href="https://community.openymca.org/c/Resources-and-training-for-content-editors/Learn-how-to-use-the-basic-text-editing-functions-available-to-content-editors" target="_blank">the Y USA Open Y Text Editor&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Color Fields&lt;/strong>: These three dropdown fields control different aspects of color in your alert. All three dropdowns reference the
-&lt;a href="http://#" target="_blank">the Open Y color vocabulary&lt;/a>.&lt;/p>
+&lt;a href="http://#" target="_blank">the Y USA Open Y color vocabulary&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>&lt;em>&lt;strong>Background Color&lt;/strong>&lt;/em>: The color of your alert.&lt;/li>
 &lt;li>&lt;em>&lt;strong>Text Color&lt;/strong>&lt;/em>: Stick to using either black or white for accessibility.&lt;/li>
@@ -94,7 +94,7 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;/blockquote>
 &lt;p>
 &lt;img src="upload://Rkgdb0hjyEt9lLUjFxWtTDGmZE.jpeg" alt="carnation&amp;amp;ndash;blog&amp;amp;ndash;desktop|690x479, 75%" />&lt;/p>
-&lt;p>Blog posts in Open Y allow you the flexibility to both create simple posts using only the text editor and more robust layouts with paragraphs.&lt;/p>
+&lt;p>Blog posts in Y USA Open Y allow you the flexibility to both create simple posts using only the text editor and more robust layouts with paragraphs.&lt;/p>
 &lt;h2 id="when-should-i-use-a-blog-post">When Should I Use a Blog Post?&lt;/h2>
 &lt;p>When you decide to use a blog post
 &lt;a href="https://www.youtube.com/watch?v=myGNK_qUGDM" target="_blank">depends greatly on your Association&amp;rsquo;s content strategy&lt;/a>. However, blog posts are designed so you can post timely pages and list them throughout your site. Examples of blogs may include:&lt;/p>
@@ -153,7 +153,7 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Description&lt;/strong>:
-&lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">Using the Open Y text editor&lt;/a>, you can enter anything from a brief summary to the entire body of your text.
+&lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">Using the Y USA Open Y text editor&lt;/a>, you can enter anything from a brief summary to the entire body of your text.
 &lt;img src="upload://zhby7Do2LGR6ZscauU8bVJdUB8h.png" alt="carnation&amp;amp;ndash;landing-page__blog-posts&amp;amp;ndash;color-card&amp;amp;ndash;green|590x500, 50%" />
 &lt;img src="upload://48cFIYzzKbvW4UQushKjT8etmSS.png" alt="lily&amp;amp;ndash;landing-page__blog-posts&amp;amp;ndash;color-card&amp;amp;ndash;green|434x500, 50%" />&lt;/p>
 &lt;/li>
@@ -162,7 +162,7 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;p>The sidebar area also allows you embed paragraphs below a section that links to the centers tagged in the post, the categories and a &lt;em>Related Content field&lt;/em> that allows you to promote other Blog Posts by tagging them with the autocomplete widget.&lt;/p>
 &lt;h3 id="layouts">Layouts&lt;/h3>
 &lt;p>While you have the option to build layouts in blog posts using paragraphs, all blog posts are strictly two-column layouts. The Content Area displays on the left while the Sidebar Area displays on the right.&lt;/p></description></item><item><title>Docs: Branch</title><link>/docs/user-documentation/content-types/branch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/branch/</guid><description>
-&lt;p>&lt;strong>One of the first places members go when they visit a Y website is to their local Y’s page. In Open Y, you create pages for a wellness facility with the Branch content type.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>One of the first places members go when they visit a Y website is to their local Y’s page. In Y USA Open Y, you create pages for a wellness facility with the Branch content type.&lt;/strong>&lt;/p>
 &lt;hr>
 &lt;p>
 &lt;img src="upload://qaEmMaGxttuNKYSzZRH4IrVvTc5.png" alt="carnation&amp;amp;ndash;branch&amp;amp;ndash;tablet_1|375x500, 75%" />&lt;/p>
@@ -256,12 +256,12 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;p>If you embed a Branch Amenities with Icons paragraph on your page, the amenities will display in your content. The Amenities will also serve as filters for branches on your locations page.&lt;/p>
 &lt;p>If you don&amp;rsquo;t see an option available or would like to rename a branch amenity, go to Structure &amp;gt; Taxonomy &amp;gt; Amenities.&lt;/p>
 &lt;p>&lt;strong>####&lt;/strong> Closed Amenities
-Ys with Open Y 2.5 or later can tag amenities at a branch that have closed. Content editors will see a &amp;ldquo;Closed Amenities&amp;rdquo; field.&lt;/p>
+Ys with Y USA Open Y 2.5 or later can tag amenities at a branch that have closed. Content editors will see a &amp;ldquo;Closed Amenities&amp;rdquo; field.&lt;/p>
 &lt;p>
 &lt;img src="upload://1H6H8xKzjCpEMYDKfZe7it4R40Y.png" alt="carnation&amp;amp;ndash;branch&amp;amp;ndash;closed-amenities|442x499, 50%" />
 &lt;img src="upload://a4WrDjPoqlMgnP5OtobiCzpvrZg.png" alt="admin&amp;amp;ndash;branch__amenities&amp;amp;ndash;closed-amenities|690x341, 50%" />&lt;/p></description></item><item><title>Docs: Camp</title><link>/docs/user-documentation/content-types/camp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/camp/</guid><description>
 &lt;blockquote>
-&lt;p>Camps in Open Y are physical locations where outdoor camp programming takes place.&lt;/p>
+&lt;p>Camps in Y USA Open Y are physical locations where outdoor camp programming takes place.&lt;/p>
 &lt;p>&lt;em>Note: Camp is similar to the
 &lt;a href="https://community.openymca.org/t/branch-content-types-open-y-user-docs/685" target="_blank">Branch content type&lt;/a>.&lt;/em>&lt;/p>
 &lt;/blockquote>
@@ -372,7 +372,7 @@ Ys with Open Y 2.5 or later can tag amenities at a branch that have closed. Cont
 &lt;li>
 &lt;a href="https://community.openymca.org/t/limited-time-offer-paragraphs-open-y-user-docs/719" target="_blank">Limited Time Offer&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Facility</title><link>/docs/user-documentation/content-types/facility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/facility/</guid><description/></item><item><title>Docs: Landing Page</title><link>/docs/user-documentation/content-types/landing-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/landing-page/</guid><description>
-&lt;h4 id="landing-pages-are-the-most-flexible-content-type-in-open-y-with-no-unique-fields-other-than-a-layout-selector">Landing pages are the most flexible content type in Open Y, with no unique fields other than a layout selector.&lt;/h4>
+&lt;h4 id="landing-pages-are-the-most-flexible-content-type-in-y-usa-open-y-with-no-unique-fields-other-than-a-layout-selector">Landing pages are the most flexible content type in Y USA Open Y, with no unique fields other than a layout selector.&lt;/h4>
 &lt;h3 id="fields-in-landing-page">Fields in Landing Page&lt;/h3>
 &lt;h4 id="---title-required">&amp;ndash;&amp;gt; Title (Required)&lt;/h4>
 &lt;p>This is what you will see in your admin portal as your content&amp;rsquo;s name. it will also show as the page title in the Header unless you add a paragraph in the &lt;em>Header Area&lt;/em>.&lt;/p>
@@ -439,7 +439,7 @@ Ys with Open Y 2.5 or later can tag amenities at a branch that have closed. Cont
 &lt;/blockquote>
 &lt;p>
 &lt;img src="upload://s0DLIEjlMW9Tt8s68bV3168YsnA.png" alt="carnation&amp;amp;ndash;news&amp;amp;ndash;desktop|690x479, 75%" />&lt;/p>
-&lt;p>News posts in Open Y allow you the flexibility to both create simple posts using only the text editor and more robust layouts with paragraphs.&lt;/p>
+&lt;p>News posts in Y USA Open Y allow you the flexibility to both create simple posts using only the text editor and more robust layouts with paragraphs.&lt;/p>
 &lt;h2 id="when-should-i-use-a-news-post">When Should I Use a News Post?&lt;/h2>
 &lt;p>When you decide to use a news post
 &lt;a href="https://www.youtube.com/watch?v=myGNK_qUGDM" target="_blank">depends greatly on your Association&amp;rsquo;s content strategy&lt;/a>. However, news posts are designed so you can post timely pages and list them throughout your site. Examples of news posts may include:&lt;/p>
@@ -481,7 +481,7 @@ Ys with Open Y 2.5 or later can tag amenities at a branch that have closed. Cont
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Description&lt;/strong>:
-&lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">Using the Open Y text editor&lt;/a>, you can enter anything from a brief summary to the entire body of your text.&lt;/p>
+&lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">Using the Y USA Open Y text editor&lt;/a>, you can enter anything from a brief summary to the entire body of your text.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="sidebar-area">Sidebar Area&lt;/h3>
@@ -491,15 +491,15 @@ Ys with Open Y 2.5 or later can tag amenities at a branch that have closed. Cont
 &lt;h3 id="other-settings">Other Settings&lt;/h3>
 &lt;p>In the right column, make sure the &amp;ldquo;promoted to front page&amp;rdquo; item is checked so it will appear in any listings.&lt;/p></description></item><item><title>Docs: Program</title><link>/docs/user-documentation/content-types/program/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/program/</guid><description>
 &lt;blockquote>
-&lt;p>In Open Y, a Program doesn&amp;rsquo;t refer to specific offering or format, but to a content type that serves as a large, generic category page for program offerings.&lt;/p>
+&lt;p>In Y USA Open Y, a Program doesn&amp;rsquo;t refer to specific offering or format, but to a content type that serves as a large, generic category page for program offerings.&lt;/p>
 &lt;/blockquote>
 &lt;p>
 &lt;img src="upload://bpcGydlHcEsAnc6KAQpcR3Xou4i.jpeg" alt="lily&amp;amp;ndash;program&amp;amp;ndash;desktop|690x454, 75%" />&lt;/p>
 &lt;p>The Program content type is a high-level page that directs people to more specific program offerings.&lt;/p>
-&lt;p>An example of a Program in Open Y would be a Swimming &amp;amp; Aquatics page that directs people to more specific offerings, such as swim lessons or clinics.&lt;/p>
+&lt;p>An example of a Program in Y USA Open Y would be a Swimming &amp;amp; Aquatics page that directs people to more specific offerings, such as swim lessons or clinics.&lt;/p>
 &lt;hr>
 &lt;h2 id="when-should-i-use-a-program">When Should I Use a Program?&lt;/h2>
-&lt;p>Programs are pages that should link to more specific offering pages. Most often in Open Y sites, they are the main program pages in an Open Y mega menu setup.&lt;/p>
+&lt;p>Programs are pages that should link to more specific offering pages. Most often in Y USA Open Y sites, they are the main program pages in an Y USA Open Y mega menu setup.&lt;/p>
 &lt;p>
 &lt;img src="upload://wFIrGVZ4jOvjo2BCVy4bqrdjKyO.png" alt="carnation__mega-menu&amp;amp;ndash;desktop|684x500, 75%" />&lt;/p>
 &lt;hr>
@@ -610,9 +610,9 @@ Ys with Open Y 2.5 or later can tag amenities at a branch that have closed. Cont
 &lt;blockquote>
 &lt;p>Subcategory was originally designed to work with the &lt;em>Classes Listing Filters&lt;/em> paragraph in the Header Area and the &lt;em>Classes Listing&lt;/em> paragraph in the Content Area.&lt;/p>
 &lt;p>&lt;strong>
-&lt;a href="https://sandbox-rose-cus.openy.org/programs/health-and-fitness/small-group-specialty-training?location=All" target="_blank">View Subcategory Demo on Open Y Sandbox ⇒&lt;/a>&lt;/strong>&lt;/p>
+&lt;a href="https://sandbox-rose-cus.openy.org/programs/health-and-fitness/small-group-specialty-training?location=All" target="_blank">View Subcategory Demo on Y USA Open Y Sandbox ⇒&lt;/a>&lt;/strong>&lt;/p>
 &lt;hr>
-&lt;p>With the integration of Activity Finder into Open Y, Classes Listing and Classes Listing Filters are becoming less popular among Open Y sites.&lt;/p>
+&lt;p>With the integration of Activity Finder into Y USA Open Y, Classes Listing and Classes Listing Filters are becoming less popular among Y USA Open Y sites.&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="content-area">Content Area&lt;/h3>
 &lt;p>The Content Area includes a &lt;em>Description&lt;/em> that displays full-width just below the Header Area.&lt;/p>
