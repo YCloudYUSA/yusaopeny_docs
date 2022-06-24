@@ -180,7 +180,7 @@
 &lt;img src="https://user-images.githubusercontent.com/563412/122801945-6f28b700-d2cd-11eb-8d0c-694432e8cbf0.png" alt="image" />&lt;/p></description></item><item><title>Docs: Composer version constraints for Y USA Open Y</title><link>/docs/wiki/composer-version-constraints-for-open-y/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/composer-version-constraints-for-open-y/</guid><description>
 &lt;p>In 2020, due to changes in Drupal core release management and demand from Y USA Open Y customers to improve upgrade path flexibility and stability, the Y USA Open Y team added extended composer version constraints to our &lt;code>composer.json&lt;/code>.&lt;/p>
 &lt;p>Examples from
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/composer.json" target="_blank">composer.json&lt;/a>:&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/composer.json" target="_blank">composer.json&lt;/a>:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>&amp;quot;drupal/ckeditor_bootstrap_buttons&amp;quot;: &amp;quot;^1.2 || ^2.0.0&amp;quot;,&lt;/code> - this line means previous version was 1.2 or any 1.x starting from 1.2, and latest tested - 2.0.0 with allowed any stable 2.x starting from 2.0.0&lt;/li>
 &lt;li>&lt;code>&amp;quot;drupal/custom_formatters&amp;quot;: &amp;quot;^3.0 || ^3.0@beta&amp;quot;,&lt;/code> - tested with 3.0 beta of custom_formatters and allowed any 3.x starting from 3.0 (when it will be released)&lt;/li>
@@ -191,10 +191,10 @@
 &lt;p>For example:&lt;/p>
 &lt;p>from
 &lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">upgrade doc&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>composer require ymcatwincities/openy:NEW_VERSION_HERE --no-update
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>composer require YCloudYUSA/yusaopeny:NEW_VERSION_HERE --no-update
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer update --prefer-dist --with-dependencies --prefer-stable --no-suggest
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>then change the dependency version&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>composer require ymcatwincities/openy:NEW_VERSION_HERE --no-update
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>composer require YCloudYUSA/yusaopeny:NEW_VERSION_HERE --no-update
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require drupal/custom_formatters:3.0@beta1
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can change any of the dependency versions without upgrading Y USA Open Y by running only the &lt;code>composer require...&lt;/code> command for specific dependencies and Drupal Update DB routines afterward.&lt;/p>
 &lt;p>Check
@@ -207,7 +207,7 @@
 &lt;p>The decoupling process is ongoing. See
 &lt;a href="/docs/wiki/decoupled--external--projects-of-openy/">the index of decoupled projects&lt;/a>.&lt;/p>
 &lt;p>In 2021 the Y USA Open Y core team faced coupling blockers in the distribution during
-&lt;a href="https://github.com/ymcatwincities/openy/milestone/21" target="_blank">the upgrade from Drupal 8 to Drupal 9&lt;/a>&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/milestone/21" target="_blank">the upgrade from Drupal 8 to Drupal 9&lt;/a>&lt;/p>
 &lt;p>To formalize the ongoing development and maintenance strategy, the Y USA Open Y core team
 &lt;a href="https://docs.google.com/presentation/d/1H09GsUsSdt3RoN7rbKpNv4eihCNos74Y2KCbJBJXRqc/edit?usp=sharing" target="_blank">shared its decoupling plan with the wider community&lt;/a> in mid-2021.&lt;/p>
 &lt;p>This document elaborates on those processes.&lt;/p>
@@ -218,17 +218,17 @@
 &lt;li>Drupal.org example:
 &lt;a href="https://www.drupal.org/project/paragraph_skins" target="_blank">paragraph_skins&lt;/a>&lt;/li>
 &lt;li>GitHub Example:
-&lt;a href="https://github.com/ymcatwincities/openy_activity_finder" target="_blank">openy_activity_finder&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">openy_activity_finder&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>The decoupled project could be
 &lt;ul>
 &lt;li>&lt;strong>part of Y USA Open Y core&lt;/strong> - e.g.
-&lt;a href="https://github.com/ymcatwincities/openy_activity_finder" target="_blank">Activity Finder&lt;/a> and
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.2.8.0/composer.json#L112" target="_blank">added to Y USA Open Y profile by default&lt;/a>, or&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">Activity Finder&lt;/a> and
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.2.8.0/composer.json#L112" target="_blank">added to Y USA Open Y profile by default&lt;/a>, or&lt;/li>
 &lt;li>&lt;strong>not part of the core&lt;/strong>, e.g.
-&lt;a href="https://github.com/ymcatwincities/openy_memberships" target="_blank">Y USA Open Y Membership Framework&lt;/a> which could be
-&lt;a href="https://github.com/ymcatwincities/openy_memberships/blob/master/README.md#installation" target="_blank">installed later&lt;/a>.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships" target="_blank">Y USA Open Y Membership Framework&lt;/a> which could be
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships/blob/master/README.md#installation" target="_blank">installed later&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;strong>GitHub&lt;/strong> should be used when there is no strategy to make a component or project available for the wider Drupal community - that is, when it is tied to YMCA business and unlikely to be leveraged by somebody else.&lt;/li>
@@ -240,14 +240,14 @@
 &lt;li>Create a new GitHub/Drupal.org repository.&lt;/li>
 &lt;li>Work on getting an initial release with at least &lt;code>beta&lt;/code> version stability.&lt;/li>
 &lt;li>Create a composer.json file for the component in order to be able to start using it via &lt;code>composer&lt;/code>. See
-&lt;a href="https://github.com/ymcatwincities/openy_gated_content/blob/master/composer.json" target="_blank">Virtual Y&lt;/a> for an example.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content/blob/master/composer.json" target="_blank">Virtual Y&lt;/a> for an example.&lt;/li>
 &lt;li>Make it available for the public via packagist.org or drupal.org as a release. Ensure &lt;code>podarok&lt;/code> is added as a co-maintainer to the respective system.&lt;/li>
 &lt;li>Suggest adding to Y USA Open Y by
-&lt;a href="https://github.com/ymcatwincities/openy/issues" target="_blank">opening an issue&lt;/a>.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/issues" target="_blank">opening an issue&lt;/a>.&lt;/li>
 &lt;li>If approved, create a Pull Request adding it as a dependency in
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/composer.json" target="_blank">composer.json&lt;/a>.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/composer.json" target="_blank">composer.json&lt;/a>.&lt;/li>
 &lt;li>Ensure this component is enabled in any of the packages maintained in the
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/openy.packages.yml" target="_blank">Y USA Open Y profile installation&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/openy.packages.yml" target="_blank">Y USA Open Y profile installation&lt;/a>&lt;/li>
 &lt;li>Ask for review and release, according to the
 &lt;a href="/docs/wiki/how-we-release-openy-distribution-from-code-perspective/">release plan&lt;/a>.&lt;/li>
 &lt;/ol>
@@ -270,7 +270,7 @@
 &lt;h3 id="how-to-decouple-module-from-yn-to-drupalorg">How to decouple module from YN to Drupal.org&lt;/h3>
 &lt;p>Example:
 &lt;a href="https://www.drupal.org/project/paragraph_skins" target="_blank">paragraph_skins&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>git clone git@github.com:ymcatwincities/openy.git decouple
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>git clone git@github.com:YCloudYUSA/yusaopeny.git decouple
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm -rf decouple_copy &lt;span style="color:#ce5c00;font-weight:bold">&amp;amp;&amp;amp;&lt;/span> cp -a decouple decouple_copy
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> decouple_copy
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git filter-branch --subdirectory-filter docroot/modules/contrib/paragraph_skins
@@ -284,18 +284,18 @@
 &lt;a href="https://github.com/Open-Y-subprojects" target="_blank">Y USA Open Y Subprojects&lt;/a>&lt;/h3>
 &lt;p>Request a repository for the module. Example:
 &lt;a href="https://github.com/Open-Y-subprojects/shared_content_server" target="_blank">shared_content_server&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>git clone git@github.com:ymcatwincities/openy.git decouple
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>git clone git@github.com:YCloudYUSA/yusaopeny.git decouple
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm -rf decouple_copy &lt;span style="color:#ce5c00;font-weight:bold">&amp;amp;&amp;amp;&lt;/span> cp -a decouple decouple_copy
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> decouple_copy
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git filter-branch --subdirectory-filter docroot/profiles/contrib/openy/modules/custom/SOME_MODULE_HERE
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git clean -dfx
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git remote remove origin &lt;span style="color:#ce5c00;font-weight:bold">&amp;amp;&amp;amp;&lt;/span> git remote add origin git@github.com:Open-Y-subprojects/SOME_MODULE_HERE.git
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push origin production
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Create composer.json on the decoupled repository. Example: https://github.com/ymcatwincities/openy_activity_finder/blob/4.x/composer.json&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Create composer.json on the decoupled repository. Example: https://github.com/YCloudYUSA/yusaopeny_activity_finder/blob/4.x/composer.json&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git clone git@github.com:ynorth-projects/distribution.git yn-distribution
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Update composer json for distrubution. See below&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
-&lt;a href="https://github.com/ymcatwincities/openy/pull/2288/files#diff-d2ab9925cad7eac58e0ff4cc0d251a937ecf49e4b6bf57f8b95aab76648a9d34R111" target="_blank">Example for Activity Finder&lt;/a>&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/2288/files#diff-d2ab9925cad7eac58e0ff4cc0d251a937ecf49e4b6bf57f8b95aab76648a9d34R111" target="_blank">Example for Activity Finder&lt;/a>&lt;/p>
 &lt;h1 id="references">References&lt;/h1>
 &lt;ul>
 &lt;li>A useful article for future decoupling -
@@ -307,13 +307,13 @@
 &lt;h2 id="github-hosted">GitHub hosted&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy_block_modal" target="_blank">&lt;code>ymcatwincities/openy_block_modal&lt;/code>&lt;/a> - Implements a simple block with a body and title that will be used to display modal windows.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_block_modal" target="_blank">&lt;code>YCloudYUSA/yusaopeny_block_modal&lt;/code>&lt;/a> - Implements a simple block with a body and title that will be used to display modal windows.&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy_memberships" target="_blank">&lt;code>ymcatwincities/openy_memberships&lt;/code>&lt;/a> - Membership Framework for OpenY and Drupal.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships" target="_blank">&lt;code>YCloudYUSA/yusaopeny_memberships&lt;/code>&lt;/a> - Membership Framework for OpenY and Drupal.&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy_prgf_sidebar_menu" target="_blank">&lt;code>ymcatwincities/openy_prgf_sidebar_menu&lt;/code>&lt;/a> - SideBar menu for referencing menu blocks and using in SideBars across different pages.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_prgf_sidebar_menu" target="_blank">&lt;code>YCloudYUSA/yusaopeny_prgf_sidebar_menu&lt;/code>&lt;/a> - SideBar menu for referencing menu blocks and using in SideBars across different pages.&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy_loc_filter" target="_blank">&lt;code>ymcatwincities/openy_loc_finder&lt;/code>&lt;/a> - Extended Location Finder&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_loc_filter" target="_blank">&lt;code>YCloudYUSA/yusaopeny_loc_finder&lt;/code>&lt;/a> - Extended Location Finder&lt;/li>
 &lt;li>
 &lt;a href="https://github.com/Open-Y-subprojects/reqclique_gxp_sync" target="_blank">&lt;code>Open-Y-subprojects/reqclique_gxp_sync&lt;/code>&lt;/a> - Reqclique Group Exercise Sync&lt;/li>
 &lt;li>
@@ -337,7 +337,7 @@
 &lt;li>
 &lt;a href="https://github.com/ymcatwincities/ymca_sync" target="_blank">&lt;code>ymcatwincities/ymca_sync&lt;/code>&lt;/a> - Syncer backend core&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy_activity_finder" target="_blank">&lt;code>ymcatwincities/openy_activity_finder&lt;/code>&lt;/a> - Activity Finder app&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">&lt;code>YCloudYUSA/yusaopeny_activity_finder&lt;/code>&lt;/a> - Activity Finder app&lt;/li>
 &lt;li>
 &lt;a href="https://github.com/ymcatwincities/media_entity_document" target="_blank">&lt;code>ymcatwincities/media_entity_document&lt;/code>&lt;/a> - Media Entity Document&lt;/li>
 &lt;li>
@@ -381,19 +381,19 @@
 &lt;p>Additionally, the following housekeeping steps should be taken when deprecating a component:&lt;/p>
 &lt;ol>
 &lt;li>The release where the deprecated component has been uninstalled should be added to the
-&lt;a href="https://github.com/ymcatwincities/openy/wiki/Important-versions-for-upgrade-path" target="_blank">important versions document&lt;/a> in the Wiki.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/wiki/Important-versions-for-upgrade-path" target="_blank">important versions document&lt;/a> in the Wiki.&lt;/li>
 &lt;li>Code should be decoupled to external GitHub repositories with all history of commits, marked as &lt;code>openy-decoupled&lt;/code>, and archived.&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Development FAQ</title><link>/docs/wiki/development-faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/development-faq/</guid><description>
 &lt;h1 id="y-usa-open-y-developer-faq">Y USA Open Y Developer FAQ&lt;/h1>
 &lt;h2 id="local-development">Local Development&lt;/h2>
 &lt;h3 id="getting-started-with-a-local-environment">Getting started with a local environment&lt;/h3>
 &lt;p>To start developing you need to obtain the latest Y USA Open Y codebase. See the
-&lt;a href="https://github.com/ymcatwincities/openy-project#latest-development-version-drupal-9-2x" target="_blank">&lt;code>openy-project&lt;/code> repository&lt;/a> for the full process.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project#latest-development-version-drupal-9-2x" target="_blank">&lt;code>openy-project&lt;/code> repository&lt;/a> for the full process.&lt;/p>
 &lt;p>
 &lt;a href="https://www.youtube.com/watch?v=jRlinjpTl0c" target="_blank">This video tutorial&lt;/a> will walk you through how to initiate a local development environment.&lt;/p>
 &lt;p>The Y USA Open Y team has pre-built environments and walkthroughs using either
-&lt;a href="https://github.com/ymcatwincities/openy-cibox-vm#drupal-vagrant-dev-box-for-openy-support" target="_blank">Vagrant and VirtualBox&lt;/a> or
-&lt;a href="https://github.com/ymcatwincities/openy-docksal#get-started" target="_blank">Docker and Docksal&lt;/a>. Choose the method that you&amp;rsquo;re most comfortable with and get started!&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm#drupal-vagrant-dev-box-for-openy-support" target="_blank">Vagrant and VirtualBox&lt;/a> or
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-docksal#get-started" target="_blank">Docker and Docksal&lt;/a>. Choose the method that you&amp;rsquo;re most comfortable with and get started!&lt;/p>
 &lt;h3 id="gathering-information-about-your-local-environment">Gathering information about your local environment&lt;/h3>
 &lt;p>To best troubleshoot issues, it&amp;rsquo;s helpful for the Y USA Open Y team to have as much information about your environment as possible. Before you ask for help, watch this tutorial on
 &lt;a href="https://www.youtube.com/watch?v=01y617maeBE" target="_blank">how to gather that information&lt;/a>.&lt;/p>
@@ -436,20 +436,20 @@
 &lt;p>If you have any concerns with reports generated by the code checkers that are used in Y USA Open Y ask Y USA Open Y Lead Technical Architect Andrii Podanenko to get them resolved. The majority of these systems are works-in-progress and it is helpful to have feedback on them.&lt;/p>
 &lt;h2 id="how-do-i-install-y-usa-open-y-on-pantheon-hosting">How do I install Y USA Open Y on Pantheon hosting&lt;/h2>
 &lt;p>See
-&lt;a href="https://github.com/ymcatwincities/openy/issues/2004" target="_blank">request from a community&lt;/a>. The solution is described in
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/issues/2004" target="_blank">request from a community&lt;/a>. The solution is described in
 &lt;a href="https://pantheon.io/docs/nested-docroot" target="_blank">Pantheon&amp;rsquo;s documentation on nested docroots&lt;/a>. We suggest that you maintain your own &lt;code>composer.json&lt;/code> with the specified web-root directory, as described in the
 &lt;a href="https://github.com/pantheon-systems/example-drops-8-composer/blob/master/composer.json#L94" target="_blank">Pantheon examples&lt;/a>.&lt;/p></description></item><item><title>Docs: Drupal 9 core dependencies version flexibility</title><link>/docs/wiki/drupal-9-core-dependencies-version-flexibility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/drupal-9-core-dependencies-version-flexibility/</guid><description>
 &lt;p>This document is no longer updated.&lt;/p>
 &lt;p>To update the version of Drupal being used on your site independent of Y USA Open Y see
 &lt;a href="https://www.drupal.org/docs/updating-drupal/updating-drupal-core-via-composer" target="_blank">Updating Drupal Core via Composer&lt;/a>. Be aware that &lt;code>openy/composer.json&lt;/code> may set
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/composer.json#:~:text=%22drupal/-,core%2Drecommended,-%22%3A%20%22%3E%3D9.1%2C%20%3C9.3%22%2C" target="_blank">Drupal core version constraints&lt;/a>.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/composer.json#:~:text=%22drupal/-,core%2Drecommended,-%22%3A%20%22%3E%3D9.1%2C%20%3C9.3%22%2C" target="_blank">Drupal core version constraints&lt;/a>.&lt;/p>
 &lt;hr>
 &lt;p>February 2021 release tagged Drupal core both 9.0.x and 9.1.x as allowed to be used.&lt;/p>
 &lt;p>Composer by default is installing the latest stable version, so a command&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project:dev-9.2.x-development OPENY --no-interaction
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>composer create-project YCloudYUSA/yusaopeny-project:dev-9.2.x-development OPENY --no-interaction
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>will install Y USA Open Y on latest 9.1.x Drupal core.&lt;/p>
 &lt;p>If there is a need to stay on Drupal 9.0.x stable core please use&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project:dev-9.2.x-development OPENY --no-interaction
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>composer create-project YCloudYUSA/yusaopeny-project:dev-9.2.x-development OPENY --no-interaction
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> OPENY
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require drupal/core:~9.0.7
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>where 9.0.7 - is a needed version for your Y USA Open Y instance&lt;/p>
@@ -465,7 +465,7 @@
 &lt;p>Each theme has its own dependencies and build processes. Please read the steps in each &lt;code>README&lt;/code> for details.&lt;/p>
 &lt;h2 id="inventory-of-themes">Inventory of themes&lt;/h2>
 &lt;p>As of December 2021, themes
-&lt;a href="https://github.com/ymcatwincities/openy/pull/2595" target="_blank">have been decoupled&lt;/a> from the Y USA Open Y profile to independent projects on Drupal.org.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/2595" target="_blank">have been decoupled&lt;/a> from the Y USA Open Y profile to independent projects on Drupal.org.&lt;/p>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;ul>
 &lt;li>
@@ -490,34 +490,34 @@
 &lt;h3 id="repos-involved-in-releases">Repos involved in releases&lt;/h3>
 &lt;ol>
 &lt;li>Y USA Open Y Drupal Profile Distribution
-&lt;a href="https://github.com/ymcatwincities/openy" target="_blank">ymcatwincities/openy&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">YCloudYUSA/yusaopeny&lt;/a>&lt;/li>
 &lt;li>Y USA Open Y Project for initiating an Y USA Open Y instance -
-&lt;a href="https://github.com/ymcatwincities/openy-project" target="_blank">ymcatwincities/openy-project&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project" target="_blank">YCloudYUSA/yusaopeny-project&lt;/a>&lt;/li>
 &lt;li>Continuous Integration/DevOps for rebuilding/installing Y USA Open Y -
-&lt;a href="https://github.com/ymcatwincities/openy-cibox-build" target="_blank">ymcatwincities/openy-cibox-build&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-build" target="_blank">YCloudYUSA/yusaopeny-cibox-build&lt;/a>&lt;/li>
 &lt;li>CIBox development environment (Virtualbox, Docker, Vagrant)
-&lt;a href="https://github.com/ymcatwincities/openy-cibox-vm" target="_blank">ymcatwincities/openy-cibox-vm&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm" target="_blank">YCloudYUSA/yusaopeny-cibox-vm&lt;/a>&lt;/li>
 &lt;li>Docksal development environment (Docker, VirtualBox) -
-&lt;a href="https://github.com/ymcatwincities/openy-docksal" target="_blank">ymcatwincities/openy-docksal&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-docksal" target="_blank">YCloudYUSA/yusaopeny-docksal&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;h3 id="release-management">Release Management&lt;/h3>
 &lt;p>When tagging a new release of Y USA Open Y, the Lead Architect takes the following steps:&lt;/p>
 &lt;ol>
 &lt;li>Review/Merge/Update
-&lt;a href="https://github.com/ymcatwincities/openy-project" target="_blank">ymcatwincities/openy-project&lt;/a> (usually composer.json or/and oneline script install) and tag a new release there.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project" target="_blank">YCloudYUSA/yusaopeny-project&lt;/a> (usually composer.json or/and oneline script install) and tag a new release there.&lt;/li>
 &lt;li>Review/Merge all Pull Requests in
-&lt;a href="https://github.com/ymcatwincities/openy" target="_blank">ymcatwincities/openy&lt;/a> that were planned for release.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">YCloudYUSA/yusaopeny&lt;/a> that were planned for release.&lt;/li>
 &lt;li>Change the Y USA Open Y version in
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/openy.info.yml#L5" target="_blank">&lt;code>openy.info.yml&lt;/code>&lt;/a>.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/openy.info.yml#L5" target="_blank">&lt;code>openy.info.yml&lt;/code>&lt;/a>.&lt;/li>
 &lt;li>Change the Y USA Open Y version in major modules if there were changes to them (Activity Finder, PEF, etc).&lt;/li>
 &lt;li>Create Changelog release notes as a draft and include Contributors as well as major issues fixed/introduced.&lt;/li>
 &lt;li>Spin up a copy of an Y USA Open Y site and check top priority functionality for regressions.&lt;/li>
 &lt;li>Send for review to Core Team (Craig Paulnock, Paige Kiecker), get approval.&lt;/li>
 &lt;li>Change the Y USA Open Y version to next with -dev suffix for developers in
-&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-2.x/openy.info.yml#L5" target="_blank">&lt;code>openy.info.yml&lt;/code>&lt;/a>.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/8.x-2.x/openy.info.yml#L5" target="_blank">&lt;code>openy.info.yml&lt;/code>&lt;/a>.&lt;/li>
 &lt;li>Refresh the Y USA Open Y private mirror on the &lt;code>openy.cibox.tools&lt;/code> CI server.&lt;/li>
 &lt;li>Check that the
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.2.x/scripts/openyonclickinstall.sh" target="_blank">one-click install&lt;/a> is working on a fresh DigitalOcean instance ($10: 1CPU 2Gb RAM). Ensure the version of Y USA Open Y is the proper one in site info (&lt;code>admin/reports/status&lt;/code>).&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project/blob/8.2.x/scripts/openyonclickinstall.sh" target="_blank">one-click install&lt;/a> is working on a fresh DigitalOcean instance ($10: 1CPU 2Gb RAM). Ensure the version of Y USA Open Y is the proper one in site info (&lt;code>admin/reports/status&lt;/code>).&lt;/li>
 &lt;li>Publish announcement in #developers Y USA Open Y Slack channel.&lt;/li>
 &lt;li>Publish announcement in #general Y USA Open Y Slack channel.&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Important versions for upgrade path</title><link>/docs/wiki/important-versions-for-upgrade-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/important-versions-for-upgrade-path/</guid><description>
@@ -557,9 +557,9 @@
 &lt;a href="https://solr.apache.org/" target="_blank">Apache Solr&lt;/a> for a few features:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy_activity_finder/wiki" target="_blank">Activity Finder&lt;/a> requires Solr&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder/wiki" target="_blank">Activity Finder&lt;/a> requires Solr&lt;/li>
 &lt;li>Site search can &lt;em>optionally&lt;/em> use Solr as per
-&lt;a href="https://github.com/ymcatwincities/openy/pull/1967" target="_blank">this Pull Request&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/1967" target="_blank">this Pull Request&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="quick-start--upgrade-path">Quick Start / Upgrade path&lt;/h2>
 &lt;ul>
@@ -702,7 +702,7 @@
 This Agreement shall be governed by, and construed in accordance with, the laws of the State of Minnesota, without reference to conflicts of laws principles. The parties agree that the federal and state courts in the county of Hennepin, Minnesota will have exclusive jurisdiction and venue under this Agreement, and each party hereby agrees to submit to such jurisdiction exclusively.&lt;/p></description></item><item><title>Docs: Open Y update sunset - opt out tutorial</title><link>/docs/wiki/open-y-update-sunset---opt-out-tutorial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-update-sunset---opt-out-tutorial/</guid><description>
 &lt;h2 id="preamble">Preamble&lt;/h2>
 &lt;p>Back on 28 Jan 2020 Open Y decided to add an anonymous analytics module
-&lt;a href="https://github.com/ymcatwincities/openy/tree/9.x-2.x/modules/custom/openy_analytics" target="_blank">&lt;code>openy_analytics&lt;/code>&lt;/a> which was a free opt-in/opt-out solution for the Core team to gather stats from Open Y sites about the frequency of components used.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/tree/9.x-2.x/modules/custom/openy_analytics" target="_blank">&lt;code>openy_analytics&lt;/code>&lt;/a> which was a free opt-in/opt-out solution for the Core team to gather stats from Open Y sites about the frequency of components used.&lt;/p>
 &lt;p>The idea behind this was to gather data in order to understand the demand for the components in Open Y and use the data to make better decisions.&lt;/p>
 &lt;p>Recently, the Open Y Core Team decided to sunset this functionality and remove &lt;code>openy_analytics&lt;/code> as well as &lt;code>openy_update&lt;/code> modules from the Open Y Distribution, as this feature was rarely used. By sunsetting this functionality, we reduced server load from Open Y instances and archive the analytics server.&lt;/p>
 &lt;h2 id="how-to-opt-out-from-analytics-subsystem">How to opt-out from analytics subsystem&lt;/h2>
@@ -713,7 +713,7 @@ This Agreement shall be governed by, and construed in accordance with, the laws 
 &lt;p>If the checkbox was not enabled just disregard it, you didn&amp;rsquo;t opt-in earlier.&lt;/p>
 &lt;h2 id="deprecation-action">Deprecation action&lt;/h2>
 &lt;p>Uninstall and deprecation was done in
-&lt;a href="https://github.com/ymcatwincities/openy/pull/2537" target="_blank">#2537&lt;/a>&lt;/p></description></item><item><title>Docs: OpenY security Drupal-SA-CORE-2018-004</title><link>/docs/wiki/openy-security---drupal-sa-core-2018-004/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/openy-security---drupal-sa-core-2018-004/</guid><description>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/2537" target="_blank">#2537&lt;/a>&lt;/p></description></item><item><title>Docs: OpenY security Drupal-SA-CORE-2018-004</title><link>/docs/wiki/openy-security---drupal-sa-core-2018-004/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/openy-security---drupal-sa-core-2018-004/</guid><description>
 &lt;p>This document is archived but may contain useful information for troubleshooting future updates. For updated update steps, visit
 &lt;a href="/docs/wiki/openy-upgrade-how-to-for-developers/">How to upgrade Y USA Open Y&lt;/a>.&lt;/p>
 &lt;hr>
@@ -733,12 +733,12 @@ if your site is located in /var/www/html&lt;/li>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>ssh -l root YOUR_SERVER_DOMAIN_NAME
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> /var/www/html
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/ymcatwincities/openy-project/8.1.x/scripts/patches/SA-CORE-2018-004.patch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/SA-CORE-2018-004.patch
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>if your site is located in /var/www/openy&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>ssh -l root YOUR_SERVER_DOMAIN_NAME
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> /var/www/openy
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/ymcatwincities/openy-project/8.1.x/scripts/patches/SA-CORE-2018-004.patch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/SA-CORE-2018-004.patch
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now you are ready to patch your site. But before patching - make a backup of the file which is about to be patched&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>sudo cp docroot/core/lib/Drupal/Core/Security/RequestSanitizer.php /var/backups/RequestSanitizer.php
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo cp docroot/core/modules/file/src/Element/ManagedFile.php /var/backups/ManagedFile.php
@@ -768,7 +768,7 @@ In case if all good proceed with a command below, which will patch your site:&lt
 &lt;/ol>
 &lt;h3 id="one-line-script-to-patch-drupal-core-for-openy">One line script to patch Drupal core for OpenY&lt;/h3>
 &lt;p>Type manually exact line&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>bash &amp;lt; &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>curl -s https://raw.githubusercontent.com/ymcatwincities/openy-project/8.1.x/scripts/patches/runSA-CORE-2018-004.sh&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>bash &amp;lt; &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>curl -s https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/runSA-CORE-2018-004.sh&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and hit Enter.
 You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p></description></item><item><title>Docs: OpenY security update how to - Update Drupal core only</title><link>/docs/wiki/openy-security-update-how-to.-update-drupal-core-only/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/openy-security-update-how-to.-update-drupal-core-only/</guid><description>
 &lt;p>This document is archived but may contain useful information for troubleshooting future updates. For updated update steps, visit
@@ -789,7 +789,7 @@ So consider to apply patch and plan OpenY upgrade later.&lt;/p>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>ssh -l root YOUR_SERVER_DOMAIN_NAME
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> /var/www/html
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/ymcatwincities/openy-project/8.1.x/scripts/patches/8.2.x.patch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/8.2.x.patch
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now you are ready to patch your site. But before patching - make a backup of the file which is about to be patched&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>cp docroot/core/lib/Drupal/Core/DrupalKernel.php /var/backups/DrupalKernel.php
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To patch your site run the command to test if the patch can be applied:&lt;/p>
@@ -814,7 +814,7 @@ In case if all good proceed with a command below, which will patch your site:&lt
 &lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>ssh -l root YOUR_SERVER_DOMAIN_NAME
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> /var/www/html
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/ymcatwincities/openy-project/8.1.x/scripts/patches/8.3.x.patch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/8.3.x.patch
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now you are ready to patch your site. But before patching - make a backup of the file which is about to be patched&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>cp docroot/core/lib/Drupal/Core/DrupalKernel.php /var/backups/DrupalKernel.php
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To patch your site run the command to test if the patch can be applied:&lt;/p>
@@ -839,7 +839,7 @@ In case if all good proceed with a command below, which will patch your site:&lt
 &lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>ssh -l root YOUR_SERVER_DOMAIN_NAME
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> /var/www/html
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/ymcatwincities/openy-project/8.1.x/scripts/patches/8.4.x.patch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/8.4.x.patch
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now you are ready to patch your site. But before patching - make a backup of the file which is about to be patched&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>cp docroot/core/lib/Drupal/Core/DrupalKernel.php /var/backups/DrupalKernel.php
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To patch your site run the command to test if the patch can be applied:&lt;/p>
@@ -869,17 +869,17 @@ In case if all good proceed with a command below, which will patch your site:&lt
 &lt;/ol>
 &lt;h3 id="one-line-script-to-patch-82x-drupal-core-for-openy">One line script to patch 8.2.x Drupal core for OpenY&lt;/h3>
 &lt;p>Type manually exact line&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>bash &amp;lt; &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>curl -s https://raw.githubusercontent.com/ymcatwincities/openy-project/8.1.x/scripts/patches/run8.2.x.sh&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>bash &amp;lt; &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>curl -s https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/run8.2.x.sh&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and hit Enter.
 You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p>
 &lt;h3 id="one-line-script-to-patch-83x-drupal-core-for-openy">One line script to patch 8.3.x Drupal core for OpenY&lt;/h3>
 &lt;p>Type manually exact line&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>bash &amp;lt; &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>curl -s https://raw.githubusercontent.com/ymcatwincities/openy-project/8.1.x/scripts/patches/run8.3.x.sh&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>bash &amp;lt; &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>curl -s https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/run8.3.x.sh&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and hit Enter.
 You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p>
 &lt;h3 id="one-line-script-to-patch-84x-drupal-core-for-openy">One line script to patch 8.4.x Drupal core for OpenY&lt;/h3>
 &lt;p>Type manually exact line&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>bash &amp;lt; &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>curl -s https://raw.githubusercontent.com/ymcatwincities/openy-project/8.1.x/scripts/patches/run8.2.x.sh&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>bash &amp;lt; &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>curl -s https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/run8.2.x.sh&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and hit Enter.
 You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p></description></item><item><title>Docs: OpenY upgrade for developers - Upgrade to old OpenY 1.x version</title><link>/docs/wiki/openy-upgrade-for-developers.-upgrade-to-old-openy-1.x-version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/openy-upgrade-for-developers.-upgrade-to-old-openy-1.x-version/</guid><description>
 &lt;p>This document is archived but may contain useful information for troubleshooting future updates. For updated update steps, visit
@@ -898,9 +898,9 @@ You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p></description
 &lt;li>PHP 5.6-7.1 (7.2 is not supported yet)&lt;/li>
 &lt;/ul>
 &lt;p>OpenY team maintains
-&lt;a href="https://github.com/ymcatwincities/openy-cibox-vm" target="_blank">Vagrant preconfigured Virtualbox based virtual machine with OpenY&lt;/a>. Feel free to use it to get working virtual environment.
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm" target="_blank">Vagrant preconfigured Virtualbox based virtual machine with OpenY&lt;/a>. Feel free to use it to get working virtual environment.
 Your own OpenY instance should have Virtual machine injected into your site codebase. Just find &lt;code>Vagrantfile&lt;/code> and proceed with &lt;code>vagrant up&lt;/code>
-&lt;a href="https://github.com/ymcatwincities/openy-cibox-vm/blob/master/README.md" target="_blank">accordingly to the documentation&lt;/a>.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm/blob/master/README.md" target="_blank">accordingly to the documentation&lt;/a>.&lt;/p>
 &lt;h3 id="obtain-local-copy-of-your-production-site">Obtain local copy of your production site&lt;/h3>
 &lt;p>You have to create local copy of your site locally to be able to proceed with the upgrade.
 For that&lt;/p>
@@ -916,7 +916,7 @@ For that&lt;/p>
 &lt;/ol>
 &lt;p>Starting from OpenY 1.10 release you should see a version of OpenY in your site reports dashboard.
 For previous versions the best way to check your version is to analyze creation date of index.php pr README.txt file in the docroot folder of your site and compare it to the release date from
-&lt;a href="https://github.com/ymcatwincities/openy/releases" target="_blank">https://github.com/ymcatwincities/openy/releases&lt;/a> . Your OpenY version should be the one which is older than creation date of the files.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases" target="_blank">https://github.com/YCloudYUSA/yusaopeny/releases&lt;/a> . Your OpenY version should be the one which is older than creation date of the files.&lt;/p>
 &lt;ol start="2">
 &lt;li>
 &lt;h3 id="run-command-with-next-never-version">Run command with next never version&lt;/h3>
@@ -924,14 +924,14 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;/ol>
 &lt;p>In a same folder where is your &lt;code>docroot&lt;/code> folder run&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>mv composer.json composer.json.bak &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#204a87">true&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/ymcatwincities/openy-project/8.1.x/composer.json
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/composer.json
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> docroot/profiles/contrib/openy/
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm -f yparse*
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/ymcatwincities/openy-project/8.1.x/scripts/yparse.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/yparse.sh
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush cr
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh yparse.sh &lt;span style="color:#000;font-weight:bold">|&lt;/span> xargs drush en -y
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> ../../../../
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require ymcatwincities/openy:NEW_VERSION_HERE --no-update
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require YCloudYUSA/yusaopeny:NEW_VERSION_HERE --no-update
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer update --prefer-dist --with-dependencies --prefer-stable --update-with-all-dependencies --no-suggest
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
 &lt;li>
@@ -1007,9 +1007,9 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;li>Drush 8.4.10 system version (for Y USA Open Y pre 8.2 ). &lt;strong>No support for Drush 9.x in Drupal 8 branches. Only in Drupal 9&lt;/strong>. &lt;strong>Use Drush 8.4+ for OpenY 9.2+&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>The Y USA Open Y team maintains
-&lt;a href="https://github.com/ymcatwincities/openy-cibox-vm" target="_blank">Vagrant preconfigured Virtualbox based virtual machine with OpenY&lt;/a>. Feel free to use it to get a working virtual environment.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm" target="_blank">Vagrant preconfigured Virtualbox based virtual machine with OpenY&lt;/a>. Feel free to use it to get a working virtual environment.&lt;/p>
 &lt;p>Your own Y USA Open Y instance should have a virtual machine injected into your site codebase. Just find &lt;code>Vagrantfile&lt;/code> and proceed with &lt;code>vagrant up&lt;/code>
-&lt;a href="https://github.com/ymcatwincities/openy-cibox-vm/blob/master/README.md" target="_blank">accordingly to the documentation&lt;/a>.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm/blob/master/README.md" target="_blank">accordingly to the documentation&lt;/a>.&lt;/p>
 &lt;h3 id="obtain-local-copy-of-your-production-site">Obtain local copy of your production site&lt;/h3>
 &lt;p>You have to create a local copy of your site locally to be able to proceed with the upgrade.&lt;/p>
 &lt;p>For that:&lt;/p>
@@ -1021,14 +1021,14 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;h3 id="run-command-with-next-never-version--replace-new_version_here-with-the-version-you-are-upgrading-to-eg-8207-">Run command with next never version ( replace NEW_VERSION_HERE with the version you are upgrading to, e.g 8.2.0.7 )&lt;/h3>
 &lt;p>In the same folder where your &lt;code>docroot&lt;/code> is, run:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>mv composer.json composer.json.bak &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#204a87">true&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/ymcatwincities/openy-project/8.2.x/composer.json
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.2.x/composer.json
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> docroot/profiles/contrib/openy/
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm -f yparse*
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/ymcatwincities/openy-project/8.2.x/scripts/yparse.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.2.x/scripts/yparse.sh
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush cr
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh yparse.sh &lt;span style="color:#000;font-weight:bold">|&lt;/span> xargs drush en -y
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> ../../../../
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require ymcatwincities/openy:NEW_VERSION_HERE --no-update
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require YCloudYUSA/yusaopeny:NEW_VERSION_HERE --no-update
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer update --prefer-dist --with-dependencies --prefer-stable --no-suggest
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The script above &lt;em>replaces&lt;/em> your &lt;code>composer.json&lt;/code> file, so it&amp;rsquo;s only applicable to websites that have the file unmodified.&lt;/p>
 &lt;p>If your &lt;code>composer.json&lt;/code> file is modified, merge the changes manually. Essentially, the &lt;code>repositories&lt;/code> section of the file is updated.&lt;/p>
@@ -1036,7 +1036,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> docroot
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush en openy_upgrade_tool openy_er openy_prgf_loc_finder openy_map openy_data_wrapper openy_loc_branch openy_focal_point media_directories_ui
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Sometimes it is important to get the latest
-&lt;a href="https://github.com/ymcatwincities/openy/tree/8.x-2.x/modules/custom/openy_upgrade_tool" target="_blank">openy_upgrade_tool&lt;/a> from the repository even if you are not updating to the latest version of Y USA Open Y. You&amp;rsquo;ll be able to disable them in the end once all updates are executed successfully.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/tree/8.x-2.x/modules/custom/openy_upgrade_tool" target="_blank">openy_upgrade_tool&lt;/a> from the repository even if you are not updating to the latest version of Y USA Open Y. You&amp;rsquo;ll be able to disable them in the end once all updates are executed successfully.&lt;/p>
 &lt;h3 id="verify-if-the-media-entity-to-media-in-core-migration-is-possible--only-for-upgrades-from-openy-1x-to-2x-">Verify if the Media Entity to Media in Core migration is possible ( only for upgrades from OpenY 1.x to 2.x )&lt;/h3>
 &lt;p>Go to the &lt;code>docroot&lt;/code> directory of your codebase and execute:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>drush mecu
@@ -1068,7 +1068,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush entup
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Please any log errors as issues for the QA team investigate.&lt;/p>
 &lt;p>If you have issues, the only way to avoid errors is to use Drupal&amp;rsquo;s &lt;code>hook_update_dependencies&lt;/code> API to change the order of running updates to eliminate issues.
-&lt;a href="https://github.com/ymcatwincities/openy/pull/1560/files" target="_blank">See this example&lt;/a>.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/1560/files" target="_blank">See this example&lt;/a>.&lt;/p>
 &lt;p>Ensure commands above have finished with no error messages. The best way to check it is to run them one more time. If the next run shows:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ drush updatedb
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>No database updates required &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>success&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
@@ -1118,25 +1118,25 @@ See
 &lt;/ul>
 &lt;p>based on the latest stable release of Y USA Open Y.&lt;/p>
 &lt;p>These sandboxes are built on CI by running:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project buildnew --no-interaction --prefer-dist
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project YCloudYUSA/yusaopeny-project buildnew --no-interaction --prefer-dist
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ansible-playbook docroot/reinstall.yml -i /tmp/inventory5068801741271597001.ini -f &lt;span style="color:#0000cf;font-weight:bold">5&lt;/span> -e &lt;span style="color:#000">php_env_vars&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">APP_ENV&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>dev -e &lt;span style="color:#000">mysql_user&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_password&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_db&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>sandbox_carnation_custom -e &lt;span style="color:#000">drupal_folder&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>/var/www/sandbox_carnation_custom -e &lt;span style="color:#000">site_url&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>https://sandbox-carnation-cus.openy.org -e &lt;span style="color:#000">pp_environment&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>demo -e &lt;span style="color:#000">run_reinstall&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">true&lt;/span> -e &lt;span style="color:#4e9a06">&amp;#34;openy_profile_install_settings=&amp;#39;openy_configure_profile.preset=complete openy_theme_select.theme=openy_carnation&amp;#39;&amp;#34;&lt;/span> -e &lt;span style="color:#000">use_solr&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">false&lt;/span> -i localhost, --connection&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">local&lt;/span> -vvvv
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="development-sandboxes">Development Sandboxes&lt;/h2>
 &lt;p>
 &lt;a href="https://sandboxes-dev.openy.org/" target="_blank">https://sandboxes-dev.openy.org/&lt;/a>&lt;/p>
 &lt;p>These usually contain the latest development version of Y USA Open Y (the master branch of
-&lt;a href="https://github.com/ymcatwincities/openy" target="_blank">openy&lt;/a>.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">openy&lt;/a>.&lt;/p>
 &lt;p>These sandboxes are built on CI by running:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project:dev-9.2.x-development buildnew --no-interaction --prefer-dist
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project YCloudYUSA/yusaopeny-project:dev-9.2.x-development buildnew --no-interaction --prefer-dist
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ansible-playbook docroot/reinstall.yml -i /tmp/inventory5068801741271597001.ini -f &lt;span style="color:#0000cf;font-weight:bold">5&lt;/span> -e &lt;span style="color:#000">php_env_vars&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">APP_ENV&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>dev -e &lt;span style="color:#000">mysql_user&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_password&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_db&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>sandbox_carnation_custom -e &lt;span style="color:#000">drupal_folder&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>/var/www/sandbox_carnation_custom -e &lt;span style="color:#000">site_url&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>https://sandbox-carnation-cus.openy.org -e &lt;span style="color:#000">pp_environment&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>demo -e &lt;span style="color:#000">run_reinstall&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">true&lt;/span> -e &lt;span style="color:#4e9a06">&amp;#34;openy_profile_install_settings=&amp;#39;openy_configure_profile.preset=complete openy_theme_select.theme=openy_carnation&amp;#39;&amp;#34;&lt;/span> -e &lt;span style="color:#000">use_solr&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">false&lt;/span> -i localhost, --connection&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">local&lt;/span> -vvvv
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="membership-framework-sandboxes">Membership Framework Sandboxes&lt;/h2>
 &lt;p>
 &lt;a href="https://membership-framework-sandboxes-d9.openy.org/" target="_blank">https://membership-framework-sandboxes-d9.openy.org/&lt;/a>&lt;/p>
 &lt;p>These are based on the Y USA Open Y stable Standard profile and the development version of the
-&lt;a href="https://github.com/ymcatwincities/openy_memberships" target="_blank">Membership Framework&lt;/a>.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships" target="_blank">Membership Framework&lt;/a>.&lt;/p>
 &lt;p>To rebuild the sandbox, CI is running:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project buildnew --no-interaction --prefer-dist
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project YCloudYUSA/yusaopeny-project buildnew --no-interaction --prefer-dist
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> buildnew
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer config minimum-stability dev
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require &lt;span style="color:#4e9a06">&amp;#34;openy/openy_memberships&amp;#34;&lt;/span>:&lt;span style="color:#4e9a06">&amp;#34;dev-master as 1.0.0&amp;#34;&lt;/span>
@@ -1188,9 +1188,9 @@ See
 &lt;/tbody>
 &lt;/table>
 &lt;p>To rebuild the sandbox, CI is running:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project:dev-9.2.x-development-af4 build --no-interaction --prefer-dist
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project YCloudYUSA/yusaopeny-project:dev-9.2.x-development-af4 build --no-interaction --prefer-dist
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> &lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">WORKSPACE&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>/build
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require ymcatwincities/openy_activity_finder:&lt;span style="color:#4e9a06">&amp;#34;4.x-dev as 4.0&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require YCloudYUSA/yusaopeny_activity_finder:&lt;span style="color:#4e9a06">&amp;#34;4.x-dev as 4.0&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ansible-playbook docroot/reinstall.yml -i /tmp/inventory4660848605526222353.ini -f &lt;span style="color:#0000cf;font-weight:bold">5&lt;/span> -e &lt;span style="color:#000">php_env_vars&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">APP_ENV&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>dev -e &lt;span style="color:#000">mysql_user&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_password&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_db&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>d9_sandbox_carnation_custom -e &lt;span style="color:#000">drupal_folder&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>/var/www/d9_sandbox_carnation_custom -e &lt;span style="color:#000">site_url&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>https://sandbox-carnation-cus-d9.openy.org -e &lt;span style="color:#000">pp_environment&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>demo -e &lt;span style="color:#000">run_reinstall&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">true&lt;/span> -e &lt;span style="color:#4e9a06">&amp;#34;openy_profile_install_settings=&amp;#39;openy_configure_profile.preset=complete openy_theme_select.theme=openy_carnation&amp;#39;&amp;#34;&lt;/span> -i localhost, --connection&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">local&lt;/span> -vvvv
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
@@ -1207,7 +1207,7 @@ See
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush cset -y openy_activity_finder.settings bs_version &lt;span style="color:#0000cf;font-weight:bold">4&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#204a87">true&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Secure devops for composer 2 release</title><link>/docs/wiki/secure-devops-for-composer-2-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/secure-devops-for-composer-2-release/</guid><description>
 &lt;p>This article only applies to long-term users of Y USA Open Y. Y USA Open Y supports Composer 2
-&lt;a href="https://github.com/ymcatwincities/openy/releases/tag/8.2.7" target="_blank">as of version 8.2.7 in November 2020&lt;/a> and new installs use Composer 2 by default.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/8.2.7" target="_blank">as of version 8.2.7 in November 2020&lt;/a> and new installs use Composer 2 by default.&lt;/p>
 &lt;hr>
 &lt;p>Composer was upgraded to &lt;code>2.x&lt;/code> on October 30, 2020. This could cause instability when your older composer &lt;code>1.x&lt;/code> accidentally auto-updates to the &lt;code>2.x&lt;/code> version. Issues could include: composer fails to run any commands and blocks OpenY upgrade/maintenance. The instability would be in the developer environment, not Y USA Open Y/Drupal.&lt;/p>
 &lt;p>The Y USA Open Y team prepared an avoidance plan for the community to take action steps before the release while Y USA Open Y will be verifying Composer &lt;code>2.x&lt;/code> causes no issues or regressions.&lt;/p>
@@ -1227,8 +1227,8 @@ See
 &lt;p>If your composer updated to version 2 and you have issues with this upgrade, the solution is to downgrade Composer to the latest &lt;code>1.x&lt;/code> version by running:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer selfupdate --1
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you are faced with any issues connect with the Y USA Open Y team on GitHub (
-&lt;a href="https://github.com/ymcatwincities/openy/issues/new" target="_blank">create issue&lt;/a>) and the #developers channel
-&lt;a href="https://openy.org/contact" target="_blank">on Slack&lt;/a>.&lt;/p></description></item><item><title>Docs: Testing Y USA Open Y for PHP 7.4 version support</title><link>/docs/wiki/testing-open-y-for-php-7.4-version-support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/testing-open-y-for-php-7.4-version-support/</guid><description>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/issues/new" target="_blank">create issue&lt;/a>) and the #developers channel
+&lt;a href="https://ycloud.y.org/open-y-association-websites/contact" target="_blank">on Slack&lt;/a>.&lt;/p></description></item><item><title>Docs: Testing Y USA Open Y for PHP 7.4 version support</title><link>/docs/wiki/testing-open-y-for-php-7.4-version-support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/testing-open-y-for-php-7.4-version-support/</guid><description>
 &lt;h2 id="requirements">Requirements&lt;/h2>
 &lt;ul>
 &lt;li>php-cli 7.4 ( memory_limit value should be large ( 2000M ) or unlimiter ( -1 ) in order to not fail&lt;/li>
@@ -1238,7 +1238,7 @@ See
 &lt;ol>
 &lt;li>Obtain latest development code of Y USA Open Y&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project ymcatwincities/openy-project:9.2.x-development-dev openy7.4
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project YCloudYUSA/yusaopeny-project:9.2.x-development-dev openy7.4
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
 &lt;li>Add phpcompatibility to require-dev section&lt;/li>
 &lt;/ol>
@@ -1286,9 +1286,9 @@ Given the fact
 &lt;li>Use PHP7.1 for upgrade and install &lt;code>php7.1-mysql php7.1-mcrypt php7.1-cli php7.1-common php7.1-curl php7.1-dev php7.1-fpm php7.1-gd php7.1-mysql php7.1-memcached php7.1-imagic php7.1-xml php7.1-xdebug php7.1-mbstring php7.1-soap php7.1-zip php7.1-xml&lt;/code>&lt;/li>
 &lt;li>Go to the folder of OpenY code tree where &lt;code>docroot&lt;/code> folder is contained&lt;/li>
 &lt;li>&lt;code>mv composer.json composer.json.orig&lt;/code>&lt;/li>
-&lt;li>&lt;code>wget https://raw.githubusercontent.com/ymcatwincities/openy-project/8.2.x/composer.json&lt;/code>&lt;/li>
-&lt;li>&lt;code>mkdir -p scripts ; cd scripts &amp;amp;&amp;amp; wget https://raw.githubusercontent.com/ymcatwincities/openy-project/8.2.x/scripts/remove_libraries_gitignore_files.sh &amp;amp;&amp;amp; cd ..&lt;/code>&lt;/li>
-&lt;li>&lt;code>composer require ymcatwincities/openy:8.2.2.1 --no-suggest --no-update&lt;/code>&lt;/li>
+&lt;li>&lt;code>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.2.x/composer.json&lt;/code>&lt;/li>
+&lt;li>&lt;code>mkdir -p scripts ; cd scripts &amp;amp;&amp;amp; wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.2.x/scripts/remove_libraries_gitignore_files.sh &amp;amp;&amp;amp; cd ..&lt;/code>&lt;/li>
+&lt;li>&lt;code>composer require YCloudYUSA/yusaopeny:8.2.2.1 --no-suggest --no-update&lt;/code>&lt;/li>
 &lt;li>&lt;code>composer install --ignore-platform-reqs --no-suggest&lt;/code>&lt;/li>
 &lt;li>&lt;code>composer update --prefer-stable --no-suggest&lt;/code>&lt;/li>
 &lt;li>&lt;code>cd docroot&lt;/code>&lt;/li>
@@ -1452,7 +1452,7 @@ Given the fact
 &lt;/ul>
 &lt;p>If an Y USA Open Y site is installed using the web interface there is a step where the installation type can be selected.&lt;/p>
 &lt;p>If an Y USA Open Y site is installed using Drush then the installation type can be specified by an optional argument for the &lt;code>drush site-install&lt;/code> command (
-&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-2.x/docs/Development/InstallationWithDrush.md" target="_blank">Installation with Drush&lt;/a>):&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/8.x-2.x/docs/Development/InstallationWithDrush.md" target="_blank">Installation with Drush&lt;/a>):&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> drush site-install openy \
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --db-url=&amp;#34;mysql://user:pass@host:3306/db&amp;#34; \
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --root=/docroot \
@@ -1495,7 +1495,7 @@ Given the fact
 &lt;h3 id="openythemeyml">openy.theme.yml&lt;/h3>
 &lt;p>The file defines which Y USA Open Y themes are available for installation when a website is being installed.&lt;/p>
 &lt;p>If an Y USA Open Y site is installed using Drush then the theme can be specified by an optional argument for the &lt;code>drush site-install&lt;/code> command (
-&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-2.x/docs/Development/InstallationWithDrush.md" target="_blank">Installation with Drush&lt;/a>):&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/8.x-2.x/docs/Development/InstallationWithDrush.md" target="_blank">Installation with Drush&lt;/a>):&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> drush site-install openy \
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --db-url=&amp;#34;mysql://user:pass@host:3306/db&amp;#34; \
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --root=/docroot \
@@ -1565,7 +1565,7 @@ Given the fact
 &lt;a href="https://www.docker.com/" target="_blank">Docker virtual environments&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>See our
-&lt;a href="https://github.com/ymcatwincities/openy-project#installation" target="_blank">installation instructions&lt;/a> for a full walkthrough of these tools.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project#installation" target="_blank">installation instructions&lt;/a> for a full walkthrough of these tools.&lt;/p>
 &lt;h2 id="software-libraries-and-frameworks">Software libraries and frameworks&lt;/h2>
 &lt;p>Y USA Open Y leverages many other open source frameworks including, but not limited to:&lt;/p>
 &lt;ul>
@@ -1638,7 +1638,7 @@ Given the fact
 &lt;ol start="2">
 &lt;li>Login to the SSH console of the droplet&lt;/li>
 &lt;li>Follow the comment from
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/scripts/openyonclickinstall.sh" target="_blank">https://github.com/ymcatwincities/openy-project/blob/8.1.x/scripts/openyonclickinstall.sh&lt;/a>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/scripts/openyonclickinstall.sh" target="_blank">https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/scripts/openyonclickinstall.sh&lt;/a>
 Basically - run a command under root&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>curl -Ls http://bit.ly/initopeny &lt;span style="color:#000;font-weight:bold">|&lt;/span> bash -s
@@ -1654,7 +1654,7 @@ Basically - run a command under root&lt;/li>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>curl -Ls http://bit.ly/initopeny &lt;span style="color:#000;font-weight:bold">|&lt;/span> bash -s beta
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
 &lt;p>If you find any issues please post a message to the issue queue
-&lt;a href="https://github.com/ymcatwincities/openy/issues" target="_blank">https://github.com/ymcatwincities/openy/issues&lt;/a>&lt;/p></description></item><item><title>Docs: Y USA Open Y Participant Agreement</title><link>/docs/wiki/open-y-participant-agreement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-participant-agreement/</guid><description>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/issues" target="_blank">https://github.com/YCloudYUSA/yusaopeny/issues&lt;/a>&lt;/p></description></item><item><title>Docs: Y USA Open Y Participant Agreement</title><link>/docs/wiki/open-y-participant-agreement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-participant-agreement/</guid><description>
 &lt;p>&lt;strong>Y USA Open Y PARTICIPATION AGREEMENT&lt;/strong>&lt;/p>
 &lt;p>This Y USA Open Y Participation Agreement (this “&lt;strong>Agreement&lt;/strong>”) is between Open Y, LLC, and participating YMCA member associations in the United States (“&lt;strong>Member Associations&lt;/strong>”). Open Y, LLC has received license rights from the National Council of Young Men’s Christian Associations of the United States of America, an Illinois not-for-profit corporation (“&lt;strong>YUSA&lt;/strong>”) to provide the Platform (as defined below) to you. Open Y is not a part of YUSA; Open Y is a part of the YMCA of the Greater Twin Cities.&lt;/p>
 &lt;p>The purpose of the Y USA Open Y community is to collectively advance YMCA web and online experiences to better serve the YMCA mission. The terms of this Agreement govern your use of Y USA Open Y’s open-source digital content management system, which facilitates the sharing of YUSA brand-compliant website templates, tools, applications, and related digital assets (“&lt;strong>Platform&lt;/strong>”). The community provides a collaborative environment for individuals to positively interact and participate in the Platform. These guidelines address the standards and expectations of those contributing to and participating in the Y USA Open Y community and are meant to help our YMCA community grow and thrive. Your participation in Y USA Open Y means that you agree to the following guidelines and to the Y USA Open Y Terms of Use.&lt;/p>
@@ -1688,26 +1688,26 @@ Basically - run a command under root&lt;/li>
 &lt;/ul>
 &lt;h2 id="template-for-the-pr">Template for the PR&lt;/h2>
 &lt;p>In order to create a good quality Pull Request, we prepared a
-&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-2.x/.github/PULL_REQUEST_TEMPLATE.md" target="_blank">PR template&lt;/a> which is automatically added to new Pull Requests on GitHub.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/8.x-2.x/.github/PULL_REQUEST_TEMPLATE.md" target="_blank">PR template&lt;/a> which is automatically added to new Pull Requests on GitHub.&lt;/p>
 &lt;p>List of requirements from the template:&lt;/p>
 &lt;ul>
 &lt;li>Provide a link to the original issue, which is going to be fixed by the PR you are creating.&lt;/li>
 &lt;li>All coding styles are fulfilled and there are no issues reported by CodeSniffer. See
 &lt;a href="/docs/wiki/open-y-code-of-conduct-and-best-practices/">Code of Conduct&lt;/a>.&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy/tree/9.x-2.x/docs" target="_blank">Documentation&lt;/a> have been updated according to PR changes.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/tree/9.x-2.x/docs" target="_blank">Documentation&lt;/a> have been updated according to PR changes.&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy/pull/94#issue-204580200" target="_blank">Steps for review&lt;/a> have been provided according to PR changes. &lt;br/>&lt;img src="https://raw.githubusercontent.com/ymcatwincities/openy/8.x-1.x/.github/assets/steps-for-review.png" width="200" alt="Steps for review"/>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/94#issue-204580200" target="_blank">Steps for review&lt;/a> have been provided according to PR changes. &lt;br/>&lt;img src="https://raw.githubusercontent.com/YCloudYUSA/yusaopeny/8.x-1.x/.github/assets/steps-for-review.png" width="200" alt="Steps for review"/>&lt;/li>
 &lt;li>Make sure you&amp;rsquo;ve provided all necessary hook_update_N to
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/docs/Development/Upgrade%20path.md" target="_blank">support upgrade path&lt;/a>.&lt;/li>
-&lt;li>Make sure your git email is associated with an account on drupal.org, otherwise you won&amp;rsquo;t get commits there. &lt;br/>&lt;img src="https://raw.githubusercontent.com/ymcatwincities/openy/8.x-1.x/.github/assets/drupalorg-email.png" width="200" alt="drupal.org email"/>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/docs/Development/Upgrade%20path.md" target="_blank">support upgrade path&lt;/a>.&lt;/li>
+&lt;li>Make sure your git email is associated with an account on drupal.org, otherwise you won&amp;rsquo;t get commits there. &lt;br/>&lt;img src="https://raw.githubusercontent.com/YCloudYUSA/yusaopeny/8.x-1.x/.github/assets/drupalorg-email.png" width="200" alt="drupal.org email"/>&lt;/li>
 &lt;li>If you would like to get credits on drupal.org,
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/docs/Development/Contributing.md#drupalorg-credits" target="_blank">check documentation&lt;/a>.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/docs/Development/Contributing.md#drupalorg-credits" target="_blank">check documentation&lt;/a>.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Y USA Open Y Release Schedule and Guidelines</title><link>/docs/wiki/open-y-release-schedule-and-guidelines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-release-schedule-and-guidelines/</guid><description>
 &lt;h2 id="y-usa-open-y-release-guidelines">Y USA Open Y Release Guidelines&lt;/h2>
 &lt;p>Y USA Open Y releases major releases of the base project
-&lt;a href="https://github.com/ymcatwincities/openy" target="_blank">Y USA Open Y&lt;/a> and
-&lt;a href="https://github.com/ymcatwincities/openy_gated_content" target="_blank">Virtual Y&lt;/a> quarterly. Minor releases and sub-project releases occur as needed.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">Y USA Open Y&lt;/a> and
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content" target="_blank">Virtual Y&lt;/a> quarterly. Minor releases and sub-project releases occur as needed.&lt;/p>
 &lt;h3 id="major-releases-quarterly">Major releases (Quarterly)&lt;/h3>
 &lt;p>Major releases are scheduled for the second Tuesday of the second month of each quarter (February, May, August, November). They are numbered &lt;code>2.x&lt;/code> and consist of:&lt;/p>
 &lt;ul>
@@ -1733,13 +1733,13 @@ Basically - run a command under root&lt;/li>
 &lt;h2 id="smoke-tests-in-core-and-dependencies">Smoke tests in core and dependencies&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/SMOKE_TESTS.md" target="_blank">Y USA Open Y core tests and dependencies&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/SMOKE_TESTS.md" target="_blank">Y USA Open Y core tests and dependencies&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="https://github.com/open-y-subprojects/openy_node_alert/blob/main/SMOKE_TESTS.md" target="_blank">Alert Application&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy_gated_content/blob/master/SMOKE_TESTS.md" target="_blank">Virtual Y Application&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content/blob/master/SMOKE_TESTS.md" target="_blank">Virtual Y Application&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy_activity_finder/blob/4.x/openy_af_vue_app/SMOKE_TESTS.md" target="_blank">Activity Finder v3&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder/blob/4.x/openy_af_vue_app/SMOKE_TESTS.md" target="_blank">Activity Finder v3&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="y-usa-open-y-features">Y USA Open Y Features&lt;/h2>
 &lt;ul>
@@ -1756,7 +1756,7 @@ Basically - run a command under root&lt;/li>
 &lt;li>
 &lt;a href="https://git.drupalcode.org/project/groupexpro/-/blob/main/modules/embedded_groupexpro_schedule/SMOKE_TESTS.md" target="_blank">Embedded GroupEx Pro Schedule&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/modules/custom/openy_search/SMOKE_TESTS.md" target="_blank">Y USA Open Y Search&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/modules/custom/openy_search/SMOKE_TESTS.md" target="_blank">Y USA Open Y Search&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Y USA Open Y technology pipeline</title><link>/docs/wiki/open-y-technology-pipeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-technology-pipeline/</guid><description>
 &lt;p>To deliver the best technologies for the YMCA movement, the Y USA Open Y development community maintains the following documents and best practices:&lt;/p>
 &lt;ol>
@@ -1777,7 +1777,7 @@ Basically - run a command under root&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>A Slack Team
-&lt;a href="https://openy.org/contact/slack_access_request" target="_blank">by invite&lt;/a> with an #architects_support channel where we discuss technical issues with our partners and YUSA.&lt;/li>
+&lt;a href="https://ycloud.y.org/open-y-association-websites/contact/slack_access_request" target="_blank">by invite&lt;/a> with an #architects_support channel where we discuss technical issues with our partners and YUSA.&lt;/li>
 &lt;li>A
 &lt;a href="https://www.youtube.com/watch?v=RSsQLVVhldc&amp;amp;list=PL_QVggMcFfKZp05THV3dYlYOG3MsJ8xSf" target="_blank">YouTube playlist for Developers&lt;/a>&lt;/li>
 &lt;li>A list of

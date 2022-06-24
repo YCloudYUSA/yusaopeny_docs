@@ -507,7 +507,7 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;p>Y USA Open Y is a big distribution with a large amount of modules, components, subsystems, and business
 processes, therefore we have to take appropriate steps to ensure the stability of major functionality during development.&lt;/p>
 &lt;p>For the automated tests we have created
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/.github/PULL_REQUEST_TEMPLATE.md" target="_blank">General Checks template&lt;/a>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/.github/PULL_REQUEST_TEMPLATE.md" target="_blank">General Checks template&lt;/a>
 on GitHub every developer should follow to get review approval from Y USA Open Y core team.
 However, General Checks are for testing functionality for the current proposed change only, not for Regression Testing.&lt;/p>
 &lt;p>For regression testing,
@@ -546,11 +546,11 @@ Tip: usually a new version of the module already contains a bug fix, so adding a
 released. Keep in mind, you will need to create a follow-up task for the module to be updated after release.&lt;/p>
 &lt;p>After creating list of modules that could introduce regression issues it is highly recommended to follow
 Quick-start section of the module&amp;rsquo;s readme files, that usually is shipped with modules.
-&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-1.x/modules/custom/location_finder/README.md#quickstart" target="_blank">Example for the location_finder&lt;/a>.
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/8.x-1.x/modules/custom/location_finder/README.md#quickstart" target="_blank">Example for the location_finder&lt;/a>.
 In case if a module has no Quick-start or Acceptance testing section in readme - it is important to test at least one place
 where functionality of the module should be working. It is highly recommended to add this manual test steps as
 a follow-up task,
-&lt;a href="https://github.com/ymcatwincities/openy/issues/new" target="_blank">new issue&lt;/a> or even better - create Pull Request
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/issues/new" target="_blank">new issue&lt;/a> or even better - create Pull Request
 with changes to readme into Y USA Open Y repository. For the sake of performance, adding step by step how-to to the respective
 module&amp;rsquo;s README.md file is highly recommended. It takes only a few minutes to write a couple of lines of documentation which will greatly help others with future contributions and changes.&lt;/p>
 &lt;p>Optional, but greatly appreciated: Add a Drupal tour for the how-to, created in README will benefit future Y USA Open Y users and developers.
@@ -800,7 +800,7 @@ Links are simple in Y USA Open Y - just highlight your text and click the link i
 &lt;li>For links on other websites, grab the full URL, including the &lt;code>https://&lt;/code>.
 &lt;ul>
 &lt;li>For example, for openy.org/about, you would choose
-&lt;a href="https://openy.org/about" target="_blank">https://openy.org/about&lt;/a>.&lt;/li>
+&lt;a href="https://ycloud.y.org/open-y-association-websites/about" target="_blank">https://ycloud.y.org/open-y-association-websites/about&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>For email links, add &lt;code>&amp;quot;mailto:example@exampleymca.org.&amp;quot;&lt;/code>&lt;/li>
@@ -991,7 +991,7 @@ Links are simple in Y USA Open Y - just highlight your text and click the link i
 &lt;p>&lt;strong>What is a relative path?&lt;/strong>
 A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain name.&lt;/em>&lt;/p>
 &lt;p>At
-&lt;a href="https://openy.org/community" target="_blank">https://openy.org/community&lt;/a>, for example, the &lt;em>domain name&lt;/em> is &lt;strong>&lt;code>openy.org&lt;/code>&lt;/strong>, while the &lt;em>relative path&lt;/em> is &lt;strong>&lt;code>/community&lt;/code>&lt;/strong>.&lt;/p>
+&lt;a href="https://ycloud.y.org/open-y-association-websites/community" target="_blank">https://ycloud.y.org/open-y-association-websites/community&lt;/a>, for example, the &lt;em>domain name&lt;/em> is &lt;strong>&lt;code>openy.org&lt;/code>&lt;/strong>, while the &lt;em>relative path&lt;/em> is &lt;strong>&lt;code>/community&lt;/code>&lt;/strong>.&lt;/p>
 &lt;/blockquote>
 &lt;p>Using the &lt;strong>Alert visibility state&lt;/strong> radio buttons at the bottom, you can either show or hide your alert from the page paths listed in the text area above.&lt;/p></description></item><item><title>Docs: All Amenities</title><link>/docs/content-structure/paragraphs/all-amenities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/all-amenities/</guid><description>
 &lt;p>Provide a paragraph with a table view shows list of Branches.&lt;/p>
@@ -1902,7 +1902,7 @@ Ys with Y USA Open Y 2.5 or later can tag amenities at a branch that have closed
 &lt;li>For links on other websites, grab the full URL, including the &lt;code>https://&lt;/code>.
 &lt;ul>
 &lt;li>For example, for openy.org/about, you would choose
-&lt;a href="https://openy.org/about" target="_blank">https://openy.org/about&lt;/a>.&lt;/li>
+&lt;a href="https://ycloud.y.org/open-y-association-websites/about" target="_blank">https://ycloud.y.org/open-y-association-websites/about&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>For email links, add &lt;code>mailto:example@exampleymca.org.&lt;/code>&lt;/li>

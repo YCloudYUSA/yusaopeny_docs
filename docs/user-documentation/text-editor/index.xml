@@ -143,7 +143,7 @@ Links are simple in Y USA Open Y - just highlight your text and click the link i
 &lt;li>For links on other websites, grab the full URL, including the &lt;code>https://&lt;/code>.
 &lt;ul>
 &lt;li>For example, for openy.org/about, you would choose
-&lt;a href="https://openy.org/about" target="_blank">https://openy.org/about&lt;/a>.&lt;/li>
+&lt;a href="https://ycloud.y.org/open-y-association-websites/about" target="_blank">https://ycloud.y.org/open-y-association-websites/about&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>For email links, add &lt;code>&amp;quot;mailto:example@exampleymca.org.&amp;quot;&lt;/code>&lt;/li>
@@ -305,7 +305,7 @@ Links are simple in Y USA Open Y - just highlight your text and click the link i
 &lt;li>For links on other websites, grab the full URL, including the &lt;code>https://&lt;/code>.
 &lt;ul>
 &lt;li>For example, for openy.org/about, you would choose
-&lt;a href="https://openy.org/about" target="_blank">https://openy.org/about&lt;/a>.&lt;/li>
+&lt;a href="https://ycloud.y.org/open-y-association-websites/about" target="_blank">https://ycloud.y.org/open-y-association-websites/about&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>For email links, add &lt;code>mailto:example@exampleymca.org.&lt;/code>&lt;/li>

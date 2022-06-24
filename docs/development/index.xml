@@ -2,7 +2,7 @@
 &lt;p>Y USA Open Y is a big distribution with a large amount of modules, components, subsystems, and business
 processes, therefore we have to take appropriate steps to ensure the stability of major functionality during development.&lt;/p>
 &lt;p>For the automated tests we have created
-&lt;a href="https://github.com/ymcatwincities/openy/blob/9.x-2.x/.github/PULL_REQUEST_TEMPLATE.md" target="_blank">General Checks template&lt;/a>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/.github/PULL_REQUEST_TEMPLATE.md" target="_blank">General Checks template&lt;/a>
 on GitHub every developer should follow to get review approval from Y USA Open Y core team.
 However, General Checks are for testing functionality for the current proposed change only, not for Regression Testing.&lt;/p>
 &lt;p>For regression testing,
@@ -41,11 +41,11 @@ Tip: usually a new version of the module already contains a bug fix, so adding a
 released. Keep in mind, you will need to create a follow-up task for the module to be updated after release.&lt;/p>
 &lt;p>After creating list of modules that could introduce regression issues it is highly recommended to follow
 Quick-start section of the module&amp;rsquo;s readme files, that usually is shipped with modules.
-&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-1.x/modules/custom/location_finder/README.md#quickstart" target="_blank">Example for the location_finder&lt;/a>.
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/8.x-1.x/modules/custom/location_finder/README.md#quickstart" target="_blank">Example for the location_finder&lt;/a>.
 In case if a module has no Quick-start or Acceptance testing section in readme - it is important to test at least one place
 where functionality of the module should be working. It is highly recommended to add this manual test steps as
 a follow-up task,
-&lt;a href="https://github.com/ymcatwincities/openy/issues/new" target="_blank">new issue&lt;/a> or even better - create Pull Request
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/issues/new" target="_blank">new issue&lt;/a> or even better - create Pull Request
 with changes to readme into Y USA Open Y repository. For the sake of performance, adding step by step how-to to the respective
 module&amp;rsquo;s README.md file is highly recommended. It takes only a few minutes to write a couple of lines of documentation which will greatly help others with future contributions and changes.&lt;/p>
 &lt;p>Optional, but greatly appreciated: Add a Drupal tour for the how-to, created in README will benefit future Y USA Open Y users and developers.
@@ -99,22 +99,22 @@ As an Y USA Open Y site developer, I want to be able import posts from company&a
 &lt;p>If you have a support request, you&amp;rsquo;ve found a bug or you have a feature request:&lt;/p>
 &lt;ul>
 &lt;li>Search through known issues/requests
-&lt;a href="https://github.com/ymcatwincities/openy/issues" target="_blank">https://github.com/ymcatwincities/openy/issues&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/issues" target="_blank">https://github.com/YCloudYUSA/yusaopeny/issues&lt;/a>&lt;/li>
 &lt;li>Create new issue
-&lt;a href="https://github.com/ymcatwincities/openy/issues/new" target="_blank">https://github.com/ymcatwincities/openy/issues/new&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/issues/new" target="_blank">https://github.com/YCloudYUSA/yusaopeny/issues/new&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="pull-requests">Pull Requests&lt;/h2>
 &lt;p>If you have some time to make a contribution to the project, here are the steps that will help you:&lt;/p>
 &lt;ul>
 &lt;li>Create fork of
-&lt;a href="https://github.com/ymcatwincities/openy" target="_blank">main project&lt;/a>.
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">main project&lt;/a>.
 &lt;a href="https://help.github.com/articles/fork-a-repo/" target="_blank">How to create fork&lt;/a>.&lt;/li>
 &lt;li>Commit &amp;amp; push changes into your fork&lt;/li>
 &lt;li>Create new Pull Request.
 &lt;a href="https://help.github.com/articles/creating-a-pull-request/" target="_blank">How to create Pull Request&lt;/a>.&lt;/li>
 &lt;li>Write steps for review. In this way maintainers can go through steps on build to verify your fix/feature.&lt;/li>
 &lt;li>Ensure steps for review added to README.md file in a module&amp;rsquo;s/project&amp;rsquo;s directory if it makes sense to check them on regular basis. Often this is needed for crucial parts of the system which is main business functionality of the component. Example of super simple steps for review
-&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-1.x/modules/custom/location_finder/README.md#quickstart" target="_blank">see in Quickstart section of location_finder module&lt;/a>, please.&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/8.x-1.x/modules/custom/location_finder/README.md#quickstart" target="_blank">see in Quickstart section of location_finder module&lt;/a>, please.&lt;/li>
 &lt;li>Create Drupal tour module, based on steps for review and ship it with the module which provides a functionality.&lt;/li>
 &lt;li>Wait for a CI build and ask maintainers for review.&lt;/li>
 &lt;/ul>
@@ -302,8 +302,8 @@ As an Y USA Open Y site developer, I want to be able import posts from company&a
 &lt;p>Configuration is done at the standard module configuration page: &lt;code>/admin/config/services/google-analytics&lt;/code>.&lt;/p>
 &lt;h3 id="google-analytics-version-compatibility">Google Analytics Version Compatibility&lt;/h3>
 &lt;p>In the
-&lt;a href="https://github.com/ymcatwincities/openy/releases/tag/9.2.11" target="_blank">9.2.11&lt;/a> release in November 2021, Y USA Open Y
-&lt;a href="https://github.com/ymcatwincities/openy/pull/2400" target="_blank">added support for Google Analytics 4&lt;/a>. If your site has been updated to Y USA Open Y 9.2.11 or greater AND the &lt;code>google_analytics&lt;/code> module has been updated to 4.x you should be able to use GA4. Otherwise you&amp;rsquo;ll need to stick with GA3.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.11" target="_blank">9.2.11&lt;/a> release in November 2021, Y USA Open Y
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/2400" target="_blank">added support for Google Analytics 4&lt;/a>. If your site has been updated to Y USA Open Y 9.2.11 or greater AND the &lt;code>google_analytics&lt;/code> module has been updated to 4.x you should be able to use GA4. Otherwise you&amp;rsquo;ll need to stick with GA3.&lt;/p>
 &lt;p>See this
 &lt;a href="https://community.openymca.org/t/about-google-analytics-compatibility/917" target="_blank">community post&lt;/a> for more information.&lt;/p></description></item><item><title>Docs: Google Custom Search Configuration</title><link>/docs/development/googlecustomsearchconfiguration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/googlecustomsearchconfiguration/</guid><description>
 &lt;p>The Y USA Open Y release &lt;strong>8.2.4&lt;/strong> introduces Google Custom Search for the website out of the box.&lt;/p>
@@ -438,12 +438,12 @@ Y USA Open Y release.&lt;/li>
 &lt;/ul>
 &lt;h3 id="how-to-patch-y-usa-open-y-via-composer">How to patch Y USA Open Y via composer?&lt;/h3>
 &lt;p>If you followed instructions
-&lt;a href="https://github.com/ymcatwincities/openy/blob/8.x-1.x/docs/Development/Start%20new%20OpenY%20project.md" target="_blank">docs/Development/Start new Y USA Open Y project&lt;/a>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/8.x-1.x/docs/Development/Start%20new%20OpenY%20project.md" target="_blank">docs/Development/Start new Y USA Open Y project&lt;/a>
 and you have configured &lt;code>composer.json&lt;/code> you need just to do a few simple steps:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Build a link to a patch using pull request ID&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>https://patch-diff.githubusercontent.com/raw/ymcatwincities/openy/pull/XXX.patch
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>https://patch-diff.githubusercontent.com/raw/YCloudYUSA/yusaopeny/pull/XXX.patch
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;/ol>
 &lt;p>Where XXX is a number of pull request you want to use.&lt;/p>
@@ -457,8 +457,8 @@ repository, as on this example:&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;enable-patching&amp;#34;: true,
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;patches&amp;#34;: {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;ymcatwincities/openy&amp;#34;: {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;Patch description&amp;#34;: &amp;#34;https://patch-diff.githubusercontent.com/raw/ymcatwincities/openy/pull/XXX.patch&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;YCloudYUSA/yusaopeny&amp;#34;: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;Patch description&amp;#34;: &amp;#34;https://patch-diff.githubusercontent.com/raw/YCloudYUSA/yusaopeny/pull/XXX.patch&amp;#34;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
@@ -562,7 +562,7 @@ repository, as on this example:&lt;/p>
 &lt;p>Here you can find instructions how you can start project based on Y USA Open Y distribution.&lt;/p>
 &lt;h2 id="new-project-from-scratch-based-on-y-usa-open-y">New project from scratch based on Y USA Open Y&lt;/h2>
 &lt;p>In order to start new project from scratch, you can use
-&lt;a href="https://github.com/ymcatwincities/openy-project#installation" target="_blank">installation instructions&lt;/a> that will build your project and even add development environment.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project#installation" target="_blank">installation instructions&lt;/a> that will build your project and even add development environment.&lt;/p>
 &lt;h2 id="add-y-usa-open-y-to-existing-drupal-8-project">Add Y USA Open Y to existing Drupal 8 project&lt;/h2>
 &lt;p>Please take a look at the full &lt;code>composer.json&lt;/code> file below that you should eventually get.&lt;/p>
 &lt;details>
@@ -575,7 +575,7 @@ repository, as on this example:&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;require&amp;#34;: {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;composer/installers&amp;#34;: &amp;#34;^1.0.24&amp;#34;,
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;wikimedia/composer-merge-plugin&amp;#34;: &amp;#34;~1.4&amp;#34;,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;ymcatwincities/openy&amp;#34;: &amp;#34;8.*.*&amp;#34;,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;YCloudYUSA/yusaopeny&amp;#34;: &amp;#34;8.*.*&amp;#34;,
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;cweagans/composer-patches&amp;#34;: &amp;#34;~1.0&amp;#34;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;minimum-stability&amp;#34;: &amp;#34;dev&amp;#34;,
@@ -755,16 +755,16 @@ repository, as on this example:&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;ol>
 &lt;li>
-&lt;p>Add &lt;code>&amp;quot;ymcatwincities/openy&amp;quot;: &amp;quot;8.*.*&amp;quot;&lt;/code> to the &lt;code>require&lt;/code> section in your &lt;code>composer.json&lt;/code>, like
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/composer.json#L7" target="_blank">here&lt;/a>&lt;/p>
+&lt;p>Add &lt;code>&amp;quot;YCloudYUSA/yusaopeny&amp;quot;: &amp;quot;8.*.*&amp;quot;&lt;/code> to the &lt;code>require&lt;/code> section in your &lt;code>composer.json&lt;/code>, like
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/composer.json#L7" target="_blank">here&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Add all required repositories that are
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/composer.json#L31" target="_blank">listed here&lt;/a> to your &lt;code>composer.json&lt;/code>&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/composer.json#L31" target="_blank">listed here&lt;/a> to your &lt;code>composer.json&lt;/code>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Add installer path as here to your &lt;code>composer json&lt;/code>. See
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/composer.json#L165" target="_blank">example&lt;/a>.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/composer.json#L165" target="_blank">example&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;ul>
@@ -800,15 +800,15 @@ Installer path will look like this:&lt;/p>
 &lt;ol start="4">
 &lt;li>
 &lt;p>Add &lt;code>&amp;quot;cweagans/composer-patches&amp;quot;: &amp;quot;~1.0&amp;quot;&lt;/code> to the &lt;code>require&lt;/code> section in you &lt;code>composer.json&lt;/code>. See
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/composer.json#L10" target="_blank">example&lt;/a>.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/composer.json#L10" target="_blank">example&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Add &lt;code>&amp;quot;enable-patching&amp;quot;: true&lt;/code> to the &lt;code>extra&lt;/code> section in your &lt;code>composer.json&lt;/code> See
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/composer.json#L173" target="_blank">example&lt;/a>.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/composer.json#L173" target="_blank">example&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Add &lt;code>&amp;quot;secure-http&amp;quot;: false&lt;/code> to the &lt;code>config&lt;/code> section in your &lt;code>composer.json&lt;/code> See
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/composer.json#L177" target="_blank">example&lt;/a>.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/composer.json#L177" target="_blank">example&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Remove &lt;code>composer.lock&lt;/code> and &lt;code>vendor&lt;/code> folder from the project if they are exist in your folder.&lt;/p>
@@ -823,11 +823,11 @@ Installer path will look like this:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>Add cleaner script to your project from
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/scripts/remove_vendor_git_folders.sh" target="_blank">Y USA Open Y composer package&lt;/a>. You can just copy it and paste onto your project.&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/scripts/remove_vendor_git_folders.sh" target="_blank">Y USA Open Y composer package&lt;/a>. You can just copy it and paste onto your project.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>
-&lt;a href="https://github.com/ymcatwincities/openy-project/blob/8.1.x/scripts/remove_vendor_git_folders.sh#L4" target="_blank">Adjust folders&lt;/a> that you would like to cleanup&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/scripts/remove_vendor_git_folders.sh#L4" target="_blank">Adjust folders&lt;/a> that you would like to cleanup&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Execute it in &lt;code>post-install-cmd&lt;/code> and &lt;code>post-update-cmd&lt;/code>:&lt;/p>
@@ -887,7 +887,7 @@ Installer path will look like this:&lt;/p>
 &lt;a href="https://www.digitalocean.com/community/tutorials/how-to-use-the-digitalocean-console-to-access-your-droplet" target="_blank">web console&lt;/a>&lt;/li>
 &lt;li>Run command&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>bash &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>curl -s https://raw.githubusercontent.com/ymcatwincities/openy/8.x-1.x/build/openy-digital-ocean.sh&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>bash &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>curl -s https://raw.githubusercontent.com/YCloudYUSA/yusaopeny/8.x-1.x/build/openy-digital-ocean.sh&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="4">
 &lt;li>Open link(e.g. http://IP/core/install.php) from console output and finish Y USA Open Y installation&lt;/li>
 &lt;/ol>

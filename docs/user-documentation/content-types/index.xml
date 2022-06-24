@@ -84,7 +84,7 @@
 &lt;p>&lt;strong>What is a relative path?&lt;/strong>
 A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain name.&lt;/em>&lt;/p>
 &lt;p>At
-&lt;a href="https://openy.org/community" target="_blank">https://openy.org/community&lt;/a>, for example, the &lt;em>domain name&lt;/em> is &lt;strong>&lt;code>openy.org&lt;/code>&lt;/strong>, while the &lt;em>relative path&lt;/em> is &lt;strong>&lt;code>/community&lt;/code>&lt;/strong>.&lt;/p>
+&lt;a href="https://ycloud.y.org/open-y-association-websites/community" target="_blank">https://ycloud.y.org/open-y-association-websites/community&lt;/a>, for example, the &lt;em>domain name&lt;/em> is &lt;strong>&lt;code>openy.org&lt;/code>&lt;/strong>, while the &lt;em>relative path&lt;/em> is &lt;strong>&lt;code>/community&lt;/code>&lt;/strong>.&lt;/p>
 &lt;/blockquote>
 &lt;p>Using the &lt;strong>Alert visibility state&lt;/strong> radio buttons at the bottom, you can either show or hide your alert from the page paths listed in the text area above.&lt;/p></description></item><item><title>Docs: Blog Post</title><link>/docs/user-documentation/content-types/blog-post/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/blog-post/</guid><description>
 &lt;blockquote>
