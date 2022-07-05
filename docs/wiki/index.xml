@@ -982,11 +982,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;li>
 &lt;a href="#obtain-local-copy-of-your-production-site">Obtain a local copy of your production site&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="#run-command-with-next-never-version-replace-new_version_here-with-the-version-you-are-upgrading-to-eg-8207">Run command with next newer version (replace NEW_VERSION_HERE with the version you are upgrading to, e.g 8.2.0.7 )&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="#enable-openy-introduced-modules-in-case-if-you-are-updating-from-very-old-version-or-if-they-are-disabled-intentionally">Enable Y USA Open Y introduced modules in case if you are updating from very old version or if they are disabled intentionally&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="#verify-if-the-media-entity-to-media-in-core-migration-is-possible">Verify if the Media Entity to Media in Core migration is possible&lt;/a>&lt;/li>
+&lt;a href="#run-command">Run command&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="#update-the-site">Update the site&lt;/a>&lt;/li>
 &lt;li>
@@ -998,7 +994,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;li>
 &lt;a href="#proceed-with-an-update-to-next-version-until-succeeded-start-from-item-1">Proceed with an update to next version until succeeded (Start from item 1)&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="upgrade-to-y-usa-open-y-2x">Upgrade to Y USA Open Y 2.x&lt;/h2>
+&lt;h2 id="upgrade-to-y-usa-open-y-92114-from-open-y-92113">Upgrade to Y USA Open Y 9.2.11.4 from Open Y 9.2.11.3&lt;/h2>
 &lt;h3 id="prepare-dedicated-environment-for-upgrade-testing">Prepare dedicated environment for upgrade testing&lt;/h3>
 &lt;p>Ensure you have a working computer or virtual machine with:&lt;/p>
 &lt;ul>
@@ -1019,71 +1015,24 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;li>Make a backup of your production database and copy it to your local machine&lt;/li>
 &lt;li>Make a copy of your production site codebase and copy it to your local machine&lt;/li>
 &lt;li>&lt;strong>Ensure you have not manually removed Drupal modules in your database without the uninstallation step being executed!&lt;/strong> In this case you&amp;rsquo;ll need to return the module back to the codebase and uninstall it via Drupal Extend UI or Drush before running the next steps to upgrade Y USA Open Y.&lt;/li>
+&lt;li>Upgrade your site to latest Open Y - 9.2.11.3&lt;/li>
 &lt;/ul>
-&lt;h3 id="run-command-with-next-never-version--replace-new_version_here-with-the-version-you-are-upgrading-to-eg-8207-">Run command with next never version ( replace NEW_VERSION_HERE with the version you are upgrading to, e.g 8.2.0.7 )&lt;/h3>
+&lt;h3 id="run-command">Run command&lt;/h3>
 &lt;p>In the same folder where your &lt;code>docroot&lt;/code> is, run:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>mv composer.json composer.json.bak &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#204a87">true&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.2.x/composer.json
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> docroot/profiles/contrib/openy/
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm -f yparse*
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.2.x/scripts/yparse.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush cr
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh yparse.sh &lt;span style="color:#000;font-weight:bold">|&lt;/span> xargs drush en -y
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> ../../../../
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require YCloudYUSA/yusaopeny:NEW_VERSION_HERE --no-update
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer update --prefer-dist --with-dependencies --prefer-stable --no-suggest
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/9.2.x/composer.json
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer update -W
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The script above &lt;em>replaces&lt;/em> your &lt;code>composer.json&lt;/code> file, so it&amp;rsquo;s only applicable to websites that have the file unmodified.&lt;/p>
 &lt;p>If your &lt;code>composer.json&lt;/code> file is modified, merge the changes manually. Essentially, the &lt;code>repositories&lt;/code> section of the file is updated.&lt;/p>
-&lt;h3 id="enable-openy-introduced-modules-in-case-if-you-are-updating-from-very-old-version-or-if-they-are-disabled-intentionally">Enable OpenY introduced modules in case if you are updating from very old version or if they are disabled intentionally.&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> docroot
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush en openy_upgrade_tool openy_er openy_prgf_loc_finder openy_map openy_data_wrapper openy_loc_branch openy_focal_point media_directories_ui
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Sometimes it is important to get the latest
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny/tree/8.x-2.x/modules/custom/openy_upgrade_tool" target="_blank">openy_upgrade_tool&lt;/a> from the repository even if you are not updating to the latest version of Y USA Open Y. You&amp;rsquo;ll be able to disable them in the end once all updates are executed successfully.&lt;/p>
-&lt;h3 id="verify-if-the-media-entity-to-media-in-core-migration-is-possible--only-for-upgrades-from-openy-1x-to-2x-">Verify if the Media Entity to Media in Core migration is possible ( only for upgrades from OpenY 1.x to 2.x )&lt;/h3>
-&lt;p>Go to the &lt;code>docroot&lt;/code> directory of your codebase and execute:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>drush mecu
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If the output looks like the following lines, you are good to proceed with database updates.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-v" data-lang="v">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">✓&lt;/span> &lt;span style="color:#000">SUCCESS&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000">All&lt;/span> &lt;span style="color:#000">upgrade&lt;/span> &lt;span style="color:#000">requirements&lt;/span> &lt;span style="color:#000">are&lt;/span> &lt;span style="color:#000">met&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#c4a000">ok&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">you&lt;/span> &lt;span style="color:#000">can&lt;/span> &lt;span style="color:#000">proceed&lt;/span> &lt;span style="color:#000">with&lt;/span> &lt;span style="color:#000">the&lt;/span> &lt;span style="color:#000">DB&lt;/span> &lt;span style="color:#000">updates&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">Drupal&lt;/span> &lt;span style="color:#000">core&lt;/span> &lt;span style="color:#204a87;font-weight:bold">is&lt;/span> &lt;span style="color:#000">the&lt;/span> &lt;span style="color:#000">correct&lt;/span> &lt;span style="color:#000">version&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">&amp;gt;=&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">8.6.0&lt;/span>&lt;span style="color:#000;font-weight:bold">).&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">8.6.10&lt;/span> &lt;span style="color:#000">detected&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#000">ok&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">The&lt;/span> &lt;span style="color:#000">contributed&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Media&amp;#34;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">module&lt;/span> &lt;span style="color:#204a87;font-weight:bold">is&lt;/span> &lt;span style="color:#000">not&lt;/span> &lt;span style="color:#000">installed&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#000">ok&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">All&lt;/span> &lt;span style="color:#000">provider&lt;/span> &lt;span style="color:#000">plugins&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000">modules&lt;/span> &lt;span style="color:#000">depending&lt;/span> &lt;span style="color:#000">on&lt;/span> &lt;span style="color:#000">media_entity&lt;/span> &lt;span style="color:#000">are&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#c4a000">ok&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">up&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">to&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">date&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">Site&lt;/span> &lt;span style="color:#000">uses&lt;/span> &lt;span style="color:#000">EXIF&lt;/span> &lt;span style="color:#000">handling&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000">the&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Media Entity Image EXIF&amp;#34;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">module&lt;/span> &lt;span style="color:#204a87;font-weight:bold">is&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#c4a000">ok&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">available&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Follow the instructions of the output messages if they contain warnings or errors. Take a look at the
-&lt;a href="https://www.drupal.org/node/2863992" target="_blank">detailed guide&lt;/a> if you have any troubles.&lt;/p>
 &lt;h3 id="update-the-site">Update the site&lt;/h3>
 &lt;p>Go to the &lt;code>docroot&lt;/code> folder of your codebase and run:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>drush updatedb
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush entup
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We found, in some instances, because of the complexity of the database you&amp;rsquo;d need to run this command above up to 6 times to get all entities and updates run to the end. You may ignore errors of the commands until there are no errors after the final run. So:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>drush updatedb
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush entup
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush updatedb
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush entup
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush updatedb
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush entup
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush updatedb
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush entup
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush updatedb
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush entup
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Please any log errors as issues for the QA team investigate.&lt;/p>
-&lt;p>If you have issues, the only way to avoid errors is to use Drupal&amp;rsquo;s &lt;code>hook_update_dependencies&lt;/code> API to change the order of running updates to eliminate issues.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you have issues, the only way to avoid errors is to use Drupal&amp;rsquo;s &lt;code>hook_update_dependencies&lt;/code> API to change the order of running updates to eliminate issues.
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/1560/files" target="_blank">See this example&lt;/a>.&lt;/p>
 &lt;p>Ensure commands above have finished with no error messages. The best way to check it is to run them one more time. If the next run shows:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ drush updatedb
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>No database updates required &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>success&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ drush entup
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>No entity schema updates required &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>success&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You have almost 100% proven updates were executed correctly.&lt;/p>
-&lt;p>Sometimes, you could face an error like:&lt;/p>
-&lt;blockquote>
-&lt;p>openy.terms_and_conditions.schema depends on the Y USA Open Y module that will not be installed after import.&lt;/p>
-&lt;/blockquote>
-&lt;p>In this case, please, ensure that the module connected with this config is enabled.&lt;/p>
-&lt;p>To make it happen, please execute this command:&lt;/p>
-&lt;p>&lt;code>drush ev &amp;quot;Drupal::service('module_installer')-&amp;gt;install(['module_with_problem']);&amp;quot;&lt;/code>&lt;/p>
 &lt;h3 id="visit-openy-upgrade-tool-dashboard">Visit OpenY upgrade tool dashboard&lt;/h3>
 &lt;p>Review and revert or apply an updated version of the configs after the upgrade.&lt;/p>
 &lt;p>
