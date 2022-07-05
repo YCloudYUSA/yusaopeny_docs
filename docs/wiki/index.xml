@@ -1001,13 +1001,13 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;li>Ubuntu 20.04 (16.04, 18.04, or any decent Ubuntu LTS version) 64 bit&lt;/li>
 &lt;li>MySQL 5.7+ (8+ is preferred because of the performance improvements)&lt;/li>
 &lt;li>Apache 2.4 (or Nginx + php-fpm in case if you are fine with htaccess issues down the road)&lt;/li>
-&lt;li>PHP 7.4 (8.0+ could be an issue with some contrib modules)&lt;/li>
-&lt;li>Drush 8.4.10 system version (for Y USA Open Y pre 8.2 ). &lt;strong>No support for Drush 9.x in Drupal 8 branches. Only in Drupal 9&lt;/strong>. &lt;strong>Use Drush 8.4+ for OpenY 9.2+&lt;/strong>&lt;/li>
+&lt;li>PHP 8.1 (pre 8.1 could be an issue with some contrib modules)&lt;/li>
+&lt;li>Drush 10 || 11&lt;/li>
 &lt;/ul>
 &lt;p>The Y USA Open Y team maintains
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm" target="_blank">Vagrant preconfigured Virtualbox based virtual machine with OpenY&lt;/a>. Feel free to use it to get a working virtual environment.&lt;/p>
 &lt;p>Your own Y USA Open Y instance should have a virtual machine injected into your site codebase. Just find &lt;code>Vagrantfile&lt;/code> and proceed with &lt;code>vagrant up&lt;/code>
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm/blob/master/README.md" target="_blank">accordingly to the documentation&lt;/a>.&lt;/p>
+&lt;a href="https://github.com/ymcatwincities/openy-cibox-vm/blob/master/README.md" target="_blank">accordingly to the documentation&lt;/a>.&lt;/p>
 &lt;h3 id="obtain-local-copy-of-your-production-site">Obtain local copy of your production site&lt;/h3>
 &lt;p>You have to create a local copy of your site locally to be able to proceed with the upgrade.&lt;/p>
 &lt;p>For that:&lt;/p>
@@ -1015,7 +1015,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;li>Make a backup of your production database and copy it to your local machine&lt;/li>
 &lt;li>Make a copy of your production site codebase and copy it to your local machine&lt;/li>
 &lt;li>&lt;strong>Ensure you have not manually removed Drupal modules in your database without the uninstallation step being executed!&lt;/strong> In this case you&amp;rsquo;ll need to return the module back to the codebase and uninstall it via Drupal Extend UI or Drush before running the next steps to upgrade Y USA Open Y.&lt;/li>
-&lt;li>Upgrade your site to latest Open Y - 9.2.11.3&lt;/li>
+&lt;li>&lt;strong>Upgrade your site to latest Open Y - 9.2.11.3&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;h3 id="run-command">Run command&lt;/h3>
 &lt;p>In the same folder where your &lt;code>docroot&lt;/code> is, run:&lt;/p>
