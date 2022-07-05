@@ -970,80 +970,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;h3 id="proceed-with-an-update-to-next-version-until-succeeded-start-from-item-1">Proceed with an update to next version until succeeded (Start from item 1)&lt;/h3>
 &lt;/li>
 &lt;/ol>
-&lt;p>&amp;hellip;&lt;/p></description></item><item><title>Docs: OpenY upgrade how to for Developers</title><link>/docs/wiki/openy-upgrade-how-to-for-developers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/openy-upgrade-how-to-for-developers/</guid><description>
-&lt;p>Review a
-&lt;a href="https://youtu.be/RGfYLjYpi4Q" target="_blank">video about this document&lt;/a>.&lt;/p>
-&lt;p>Before upgrading, please review these
-&lt;a href="/docs/wiki/important-versions-for-upgrade-path/">required version steps for your upgrade path&lt;/a>.&lt;/p>
-&lt;h2 id="overview">Overview&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;a href="#prepare-dedicated-environment-for-upgrade-testing">Prepare a dedicated environment for upgrade testing&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="#obtain-local-copy-of-your-production-site">Obtain a local copy of your production site&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="#run-command">Run command&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="#update-the-site">Update the site&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="#visit-openy-upgrade-tool-dashboard">Visit the Y USA Open Y upgrade tool dashboard&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="#check-for-regressions">Check for regressions/Smoke tests&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="#backup-current-state-of-the-updated-site">Backup current state of the updated site&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="#proceed-with-an-update-to-next-version-until-succeeded-start-from-item-1">Proceed with an update to next version until succeeded (Start from item 1)&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="upgrade-to-y-usa-open-y-92114-from-open-y-92113">Upgrade to Y USA Open Y 9.2.11.4 from Open Y 9.2.11.3&lt;/h2>
-&lt;h3 id="prepare-dedicated-environment-for-upgrade-testing">Prepare dedicated environment for upgrade testing&lt;/h3>
-&lt;p>Ensure you have a working computer or virtual machine with:&lt;/p>
-&lt;ul>
-&lt;li>Ubuntu 20.04 (16.04, 18.04, or any decent Ubuntu LTS version) 64 bit&lt;/li>
-&lt;li>MySQL 5.7+ (8+ is preferred because of the performance improvements)&lt;/li>
-&lt;li>Apache 2.4 (or Nginx + php-fpm in case if you are fine with htaccess issues down the road)&lt;/li>
-&lt;li>PHP 8.1 (pre 8.1 could be an issue with some contrib modules)&lt;/li>
-&lt;li>Drush 10 || 11&lt;/li>
-&lt;/ul>
-&lt;p>The Y USA Open Y team maintains
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm" target="_blank">Vagrant preconfigured Virtualbox based virtual machine with OpenY&lt;/a>. Feel free to use it to get a working virtual environment.&lt;/p>
-&lt;p>Your own Y USA Open Y instance should have a virtual machine injected into your site codebase. Just find &lt;code>Vagrantfile&lt;/code> and proceed with &lt;code>vagrant up&lt;/code>
-&lt;a href="https://github.com/ymcatwincities/openy-cibox-vm/blob/master/README.md" target="_blank">accordingly to the documentation&lt;/a>.&lt;/p>
-&lt;h3 id="obtain-local-copy-of-your-production-site">Obtain local copy of your production site&lt;/h3>
-&lt;p>You have to create a local copy of your site locally to be able to proceed with the upgrade.&lt;/p>
-&lt;p>For that:&lt;/p>
-&lt;ul>
-&lt;li>Make a backup of your production database and copy it to your local machine&lt;/li>
-&lt;li>Make a copy of your production site codebase and copy it to your local machine&lt;/li>
-&lt;li>&lt;strong>Ensure you have not manually removed Drupal modules in your database without the uninstallation step being executed!&lt;/strong> In this case you&amp;rsquo;ll need to return the module back to the codebase and uninstall it via Drupal Extend UI or Drush before running the next steps to upgrade Y USA Open Y.&lt;/li>
-&lt;li>&lt;strong>Upgrade your site to latest Open Y - 9.2.11.3&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;h3 id="run-command">Run command&lt;/h3>
-&lt;p>In the same folder where your &lt;code>docroot&lt;/code> is, run:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>mv composer.json composer.json.bak &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#204a87">true&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/9.2.x/composer.json
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer update -W
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The script above &lt;em>replaces&lt;/em> your &lt;code>composer.json&lt;/code> file, so it&amp;rsquo;s only applicable to websites that have the file unmodified.&lt;/p>
-&lt;p>If your &lt;code>composer.json&lt;/code> file is modified, merge the changes manually. Essentially, the &lt;code>repositories&lt;/code> section of the file is updated.&lt;/p>
-&lt;h3 id="update-the-site">Update the site&lt;/h3>
-&lt;p>Go to the &lt;code>docroot&lt;/code> folder of your codebase and run:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>drush updatedb
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you have issues, the only way to avoid errors is to use Drupal&amp;rsquo;s &lt;code>hook_update_dependencies&lt;/code> API to change the order of running updates to eliminate issues.
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/1560/files" target="_blank">See this example&lt;/a>.&lt;/p>
-&lt;p>Ensure commands above have finished with no error messages. The best way to check it is to run them one more time. If the next run shows:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ drush updatedb
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>No database updates required &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>success&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You have almost 100% proven updates were executed correctly.&lt;/p>
-&lt;h3 id="visit-openy-upgrade-tool-dashboard">Visit OpenY upgrade tool dashboard&lt;/h3>
-&lt;p>Review and revert or apply an updated version of the configs after the upgrade.&lt;/p>
-&lt;p>
-&lt;img src="https://user-images.githubusercontent.com/563412/55151463-01759b00-5157-11e9-878e-dc744698a021.png" alt="image" />&lt;/p>
-&lt;h3 id="check-for-regressions">Check for regressions&lt;/h3>
-&lt;p>In order to check for regressions during the upgrade, it is best to work with smoke tests. Y USA Open Y maintains the
-&lt;a href="https://docs.google.com/spreadsheets/d/1yLUkMgJKK94hABy107_V-1AcJbRSSEf2s4wsQto1wfI/edit?usp=sharing" target="_blank">smoke tests database document&lt;/a> you should use for the process.&lt;/p>
-&lt;h3 id="backup-current-state-of-the-updated-site">Backup current state of the updated site&lt;/h3>
-&lt;p>Use
-&lt;a href="https://www.drush.org/latest/commands/sql_dump/" target="_blank">&lt;code>drush sql-dump&lt;/code>&lt;/a> or another backup tool to take a backup of the site in its current state.&lt;/p>
-&lt;h3 id="proceed-with-an-update-to-next-version-until-succeeded-start-from-item-1">Proceed with an update to next version until succeeded (Start from item 1)&lt;/h3></description></item><item><title>Docs: Sandboxes</title><link>/docs/wiki/sandboxes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/sandboxes/</guid><description>
+&lt;p>&amp;hellip;&lt;/p></description></item><item><title>Docs: Sandboxes</title><link>/docs/wiki/sandboxes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/sandboxes/</guid><description>
 &lt;h1 id="y-usa-open-y-sandboxes-for-evaluation-and-qa">Y USA Open Y Sandboxes for Evaluation and QA&lt;/h1>
 &lt;p>The Y USA Open Y core team manages sandboxes for stable and development versions of Y USA Open Y to facilitate the evaluation of the product, to help with QA, and enable investigation of issues.&lt;/p>
 &lt;p>To learn more:&lt;/p>
@@ -1730,4 +1657,78 @@ Basically - run a command under root&lt;/li>
 &lt;a href="https://www.youtube.com/watch?v=RSsQLVVhldc&amp;amp;list=PL_QVggMcFfKZp05THV3dYlYOG3MsJ8xSf" target="_blank">YouTube playlist for Developers&lt;/a>&lt;/li>
 &lt;li>A list of
 &lt;a href="/docs/wiki/open-y-3rd-party-dependencies/">3rd party dependencies&lt;/a> which are reviewed periodically for new features and deprecations.&lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;/ol></description></item><item><title>Docs: Y USA Open Y upgrade how to for Developers</title><link>/docs/wiki/openy-upgrade-how-to-for-developers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/openy-upgrade-how-to-for-developers/</guid><description>
+&lt;p>Review a
+&lt;a href="https://youtu.be/geeO2goJo9s" target="_blank">video about this document&lt;/a>.&lt;/p>
+&lt;p>Before upgrading, please review these
+&lt;a href="/docs/wiki/important-versions-for-upgrade-path/">required version steps for your upgrade path&lt;/a>.&lt;/p>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;a href="#prepare-dedicated-environment-for-upgrade-testing">Prepare a dedicated environment for upgrade testing&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="#obtain-local-copy-of-your-production-site">Obtain a local copy of your production site&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="#run-command">Run command&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="#update-the-site">Update the site&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="#visit-openy-upgrade-tool-dashboard">Visit the Y USA Open Y upgrade tool dashboard&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="#check-for-regressions">Check for regressions/Smoke tests&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="#backup-current-state-of-the-updated-site">Backup current state of the updated site&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="#proceed-with-an-update-to-next-version-until-succeeded-start-from-item-1">Proceed with an update to next version until succeeded (Start from item 1)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="upgrade-to-y-usa-open-y-92114-from-open-y-92113">Upgrade to Y USA Open Y 9.2.11.4 from Open Y 9.2.11.3&lt;/h2>
+&lt;h3 id="prepare-dedicated-environment-for-upgrade-testing">Prepare dedicated environment for upgrade testing&lt;/h3>
+&lt;p>Ensure you have a working computer or virtual machine with:&lt;/p>
+&lt;ul>
+&lt;li>Ubuntu 20.04 (16.04, 18.04, or any decent Ubuntu LTS version) 64 bit&lt;/li>
+&lt;li>MySQL 5.7+ (8+ is preferred because of the performance improvements)&lt;/li>
+&lt;li>Apache 2.4 (or Nginx + php-fpm in case if you are fine with htaccess issues down the road)&lt;/li>
+&lt;li>PHP 8.1 (pre 8.1 could be an issue with some contrib modules)&lt;/li>
+&lt;li>Drush 10 || 11&lt;/li>
+&lt;/ul>
+&lt;p>The Y USA Open Y team maintains
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm" target="_blank">Vagrant preconfigured Virtualbox based virtual machine with OpenY&lt;/a>. Feel free to use it to get a working virtual environment.&lt;/p>
+&lt;p>Your own Y USA Open Y instance should have a virtual machine injected into your site codebase. Just find &lt;code>Vagrantfile&lt;/code> and proceed with &lt;code>vagrant up&lt;/code>
+&lt;a href="https://github.com/ymcatwincities/openy-cibox-vm/blob/master/README.md" target="_blank">accordingly to the documentation&lt;/a>.&lt;/p>
+&lt;h3 id="obtain-local-copy-of-your-production-site">Obtain local copy of your production site&lt;/h3>
+&lt;p>You have to create a local copy of your site locally to be able to proceed with the upgrade.&lt;/p>
+&lt;p>For that:&lt;/p>
+&lt;ul>
+&lt;li>Make a backup of your production database and copy it to your local machine&lt;/li>
+&lt;li>Make a copy of your production site codebase and copy it to your local machine&lt;/li>
+&lt;li>&lt;strong>Ensure you have not manually removed Drupal modules in your database without the uninstallation step being executed!&lt;/strong> In this case you&amp;rsquo;ll need to return the module back to the codebase and uninstall it via Drupal Extend UI or Drush before running the next steps to upgrade Y USA Open Y.&lt;/li>
+&lt;li>&lt;strong>Upgrade your site to latest Open Y - 9.2.11.3&lt;/strong> See
+&lt;a href="https://github.com/open-y-subprojects/openy_docs/blob/main/content/en/docs/wiki/OpenY-upgrade-how-to-for-Developers.md" target="_blank">respective docs from Open Y documentation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="run-command">Run command&lt;/h3>
+&lt;p>In the same folder where your &lt;code>docroot&lt;/code> is, run:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>mv composer.json composer.json.bak &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#204a87">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/9.2.x/composer.json
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer update -W
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The script above &lt;em>replaces&lt;/em> your &lt;code>composer.json&lt;/code> file, so it&amp;rsquo;s only applicable to websites that have the file unmodified.&lt;/p>
+&lt;p>If your &lt;code>composer.json&lt;/code> file is modified, merge the changes manually. Essentially, the &lt;code>repositories&lt;/code> section of the file is updated.&lt;/p>
+&lt;h3 id="update-the-site">Update the site&lt;/h3>
+&lt;p>Go to the &lt;code>docroot&lt;/code> folder of your codebase and run:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>drush updatedb
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you have issues, the only way to avoid errors is to use Drupal&amp;rsquo;s &lt;code>hook_update_dependencies&lt;/code> API to change the order of running updates to eliminate issues.
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/1560/files" target="_blank">See this example&lt;/a>.&lt;/p>
+&lt;p>Ensure commands above have finished with no error messages. The best way to check it is to run them one more time. If the next run shows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ drush updatedb
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>No database updates required &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>success&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You have almost 100% proven updates were executed correctly.&lt;/p>
+&lt;h3 id="visit-openy-upgrade-tool-dashboard">Visit OpenY upgrade tool dashboard&lt;/h3>
+&lt;p>Review and revert or apply an updated version of the configs after the upgrade.&lt;/p>
+&lt;p>
+&lt;img src="https://user-images.githubusercontent.com/563412/55151463-01759b00-5157-11e9-878e-dc744698a021.png" alt="image" />&lt;/p>
+&lt;h3 id="check-for-regressions">Check for regressions&lt;/h3>
+&lt;p>In order to check for regressions during the upgrade, it is best to work with smoke tests. Y USA Open Y maintains the
+&lt;a href="https://docs.google.com/spreadsheets/d/1yLUkMgJKK94hABy107_V-1AcJbRSSEf2s4wsQto1wfI/edit?usp=sharing" target="_blank">smoke tests database document&lt;/a> you should use for the process.&lt;/p>
+&lt;h3 id="backup-current-state-of-the-updated-site">Backup current state of the updated site&lt;/h3>
+&lt;p>Use
+&lt;a href="https://www.drush.org/latest/commands/sql_dump/" target="_blank">&lt;code>drush sql-dump&lt;/code>&lt;/a> or another backup tool to take a backup of the site in its current state.&lt;/p>
+&lt;h3 id="proceed-with-an-update-to-next-version-until-succeeded-start-from-item-1">Proceed with an update to next version until succeeded (Start from item 1)&lt;/h3></description></item></channel></rss>
