@@ -982,7 +982,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;li>
 &lt;a href="#obtain-local-copy-of-your-production-site">Obtain a local copy of your production site&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="#run-command">Run command)&lt;/a>&lt;/li>
+&lt;a href="#run-command">Run command&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="#update-the-site">Update the site&lt;/a>&lt;/li>
 &lt;li>
@@ -1043,10 +1043,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;h3 id="backup-current-state-of-the-updated-site">Backup current state of the updated site&lt;/h3>
 &lt;p>Use
 &lt;a href="https://www.drush.org/latest/commands/sql_dump/" target="_blank">&lt;code>drush sql-dump&lt;/code>&lt;/a> or another backup tool to take a backup of the site in its current state.&lt;/p>
-&lt;h3 id="proceed-with-an-update-to-next-version-until-succeeded-start-from-item-1">Proceed with an update to next version until succeeded (Start from item 1)&lt;/h3>
-&lt;p>DISCLAIMER: If you have an old 1.x version it makes sense to update to the latest 1.x before going OpenY 2.0 upgrade
-See
-&lt;a href="/docs/wiki/openy-upgrade-for-developers.-upgrade-to-old-openy-1.x-version/">OpenY-upgrade-for-developers.-Upgrade-to-old-OpenY-1.x-version&lt;/a>&lt;/p></description></item><item><title>Docs: Sandboxes</title><link>/docs/wiki/sandboxes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/sandboxes/</guid><description>
+&lt;h3 id="proceed-with-an-update-to-next-version-until-succeeded-start-from-item-1">Proceed with an update to next version until succeeded (Start from item 1)&lt;/h3></description></item><item><title>Docs: Sandboxes</title><link>/docs/wiki/sandboxes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/sandboxes/</guid><description>
 &lt;h1 id="y-usa-open-y-sandboxes-for-evaluation-and-qa">Y USA Open Y Sandboxes for Evaluation and QA&lt;/h1>
 &lt;p>The Y USA Open Y core team manages sandboxes for stable and development versions of Y USA Open Y to facilitate the evaluation of the product, to help with QA, and enable investigation of issues.&lt;/p>
 &lt;p>To learn more:&lt;/p>
