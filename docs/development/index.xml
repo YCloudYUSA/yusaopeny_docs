@@ -1,5 +1,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Y USA Open Y – Development</title><link>/docs/development/</link><description>Recent content in Development on Y USA Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs:</title><link>/docs/development/onboarding_to_yusa_openy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/onboarding_to_yusa_openy/</guid><description>
 &lt;h1 id="welcome-to-ymca-code-sharing">Welcome to YMCA Code Sharing&lt;/h1>
+&lt;h2 id="list-of-migrated-repositiresprojects">List of migrated repositires/projects&lt;/h2>
+&lt;ul>
+&lt;li>Open Y
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">https://github.com/YCloudYUSA/yusaopeny&lt;/a>&lt;/li>
+&lt;li>Virtual Y
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content" target="_blank">https://github.com/YCloudYUSA/yusaopeny_gated_content&lt;/a>&lt;/li>
+&lt;li>Activity Finder
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">https://github.com/YCloudYUSA/yusaopeny_activity_finder&lt;/a>&lt;/li>
+&lt;li>Open Y Docs
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_docs" target="_blank">https://github.com/YCloudYUSA/yusaopeny_docs&lt;/a>&lt;/li>
+&lt;li>Open Y project
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project" target="_blank">https://github.com/YCloudYUSA/yusaopeny-project&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="how-to-start-developing-open-y">How to start developing Open Y&lt;/h2>
 &lt;p>In order to get copy of latest development version of Open Y, please follow steps from YUSA OpenY README.md
 See
@@ -7,7 +20,7 @@ See
 &lt;p>Pay attention Open Y has a modular structure, so if you plan changes to specific component - create Pull Request/Merge Request in respective project or repository, based on component&amp;rsquo;s composer.json data.&lt;/p>
 &lt;p>In order to test specific component - create PR to Open Y
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny/pulls" target="_blank">https://github.com/YCloudYUSA/yusaopeny/pulls&lt;/a> with adding reference in composer.json of Open Y in order for the build system to start using updated component.&lt;/p>
-&lt;h2 id="qa-sandboxes-for-open-y">QA sandboxes for Open Y&lt;/h2>
+&lt;h3 id="qa-sandboxes-for-open-y">QA sandboxes for Open Y&lt;/h3>
 &lt;p>See case study of sandboxes
 &lt;a href="https://www.drupal.org/case-study/open-y-sandboxes" target="_blank">https://www.drupal.org/case-study/open-y-sandboxes&lt;/a>&lt;/p>
 &lt;p>
@@ -16,7 +29,7 @@ See
 &lt;h2 id="how-to-start-developing-virtual-y">How to start developing Virtual Y&lt;/h2>
 &lt;p>See
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content#development" target="_blank">https://github.com/YCloudYUSA/yusaopeny_gated_content#development&lt;/a>&lt;/p>
-&lt;h2 id="qa-sandboxes-for-virtual-y">QA sandboxes for Virtual Y&lt;/h2>
+&lt;h3 id="qa-sandboxes-for-virtual-y">QA sandboxes for Virtual Y&lt;/h3>
 &lt;p>
 &lt;a href="https://virtual-y-sandboxes.openy-d9.org/" target="_blank">https://virtual-y-sandboxes.openy-d9.org/&lt;/a>&lt;/p></description></item><item><title>Docs: Acceptance Testing</title><link>/docs/development/acceptancetesting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/acceptancetesting/</guid><description>
 &lt;p>Y USA Open Y is a big distribution with a large amount of modules, components, subsystems, and business
