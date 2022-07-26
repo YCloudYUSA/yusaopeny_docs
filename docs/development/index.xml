@@ -8,6 +8,8 @@
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content" target="_blank">https://github.com/YCloudYUSA/yusaopeny_gated_content&lt;/a>&lt;/li>
 &lt;li>Activity Finder
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">https://github.com/YCloudYUSA/yusaopeny_activity_finder&lt;/a>&lt;/li>
+&lt;li>Membership Framework
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships" target="_blank">https://github.com/YCloudYUSA/yusaopeny_memberships&lt;/a>&lt;/li>
 &lt;li>Open Y Docs
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_docs" target="_blank">https://github.com/YCloudYUSA/yusaopeny_docs&lt;/a>&lt;/li>
 &lt;li>Open Y project
@@ -31,7 +33,13 @@ See
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content#development" target="_blank">https://github.com/YCloudYUSA/yusaopeny_gated_content#development&lt;/a>&lt;/p>
 &lt;h3 id="qa-sandboxes-for-virtual-y">QA sandboxes for Virtual Y&lt;/h3>
 &lt;p>
-&lt;a href="https://virtual-y-sandboxes.openy-d9.org/" target="_blank">https://virtual-y-sandboxes.openy-d9.org/&lt;/a>&lt;/p></description></item><item><title>Docs: Acceptance Testing</title><link>/docs/development/acceptancetesting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/acceptancetesting/</guid><description>
+&lt;a href="https://virtual-y-sandboxes.openy-d9.org/" target="_blank">https://virtual-y-sandboxes.openy-d9.org/&lt;/a>&lt;/p>
+&lt;h2 id="how-to-start-developing-membership-framework">How to start developing Membership Framework&lt;/h2>
+&lt;p>See how to install/build it to your Open Y working project
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships/blob/master/README.md#installation" target="_blank">https://github.com/YCloudYUSA/yusaopeny_memberships/blob/master/README.md#installation&lt;/a>&lt;/p>
+&lt;h3 id="qa-sandboxes-for-mf">QA sandboxes for MF&lt;/h3>
+&lt;p>
+&lt;a href="https://membership-framework-sandboxes-d9.openy.org/" target="_blank">https://membership-framework-sandboxes-d9.openy.org/&lt;/a>&lt;/p></description></item><item><title>Docs: Acceptance Testing</title><link>/docs/development/acceptancetesting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/acceptancetesting/</guid><description>
 &lt;p>Y USA Open Y is a big distribution with a large amount of modules, components, subsystems, and business
 processes, therefore we have to take appropriate steps to ensure the stability of major functionality during development.&lt;/p>
 &lt;p>For the automated tests we have created
