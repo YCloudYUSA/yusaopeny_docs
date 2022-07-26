@@ -1,4 +1,24 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Y USA Open Y – Y USA Open Y Distribution Documentation</title><link>/docs/</link><description>Recent content in Y USA Open Y Distribution Documentation on Y USA Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 1 Column</title><link>/docs/content-structure/paragraphs/1c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/1c/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Y USA Open Y – Y USA Open Y Distribution Documentation</title><link>/docs/</link><description>Recent content in Y USA Open Y Distribution Documentation on Y USA Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs:</title><link>/docs/development/onboarding_to_yusa_openy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/onboarding_to_yusa_openy/</guid><description>
+&lt;h1 id="welcome-to-ymca-code-sharing">Welcome to YMCA Code Sharing&lt;/h1>
+&lt;h2 id="how-to-start-developing-open-y">How to start developing Open Y&lt;/h2>
+&lt;p>In order to get copy of latest development version of Open Y, please follow steps from YUSA OpenY README.md
+See
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny#latest-development-version-drupal-9-2x" target="_blank">https://github.com/YCloudYUSA/yusaopeny#latest-development-version-drupal-9-2x&lt;/a>&lt;/p>
+&lt;p>Pay attention Open Y has a modular structure, so if you plan changes to specific component - create Pull Request/Merge Request in respective project or repository, based on component&amp;rsquo;s composer.json data.&lt;/p>
+&lt;p>In order to test specific component - create PR to Open Y
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pulls" target="_blank">https://github.com/YCloudYUSA/yusaopeny/pulls&lt;/a> with adding reference in composer.json of Open Y in order for the build system to start using updated component.&lt;/p>
+&lt;h2 id="qa-sandboxes-for-open-y">QA sandboxes for Open Y&lt;/h2>
+&lt;p>See case study of sandboxes
+&lt;a href="https://www.drupal.org/case-study/open-y-sandboxes" target="_blank">https://www.drupal.org/case-study/open-y-sandboxes&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://sandboxes-dev-php8.openy.org/" target="_blank">https://sandboxes-dev-php8.openy.org/&lt;/a> - PHP 8.1 and Latest Open Y development branch ( 9.x-2.x from
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">https://github.com/YCloudYUSA/yusaopeny&lt;/a> )&lt;/p>
+&lt;h2 id="how-to-start-developing-virtual-y">How to start developing Virtual Y&lt;/h2>
+&lt;p>See
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content#development" target="_blank">https://github.com/YCloudYUSA/yusaopeny_gated_content#development&lt;/a>&lt;/p>
+&lt;h2 id="qa-sandboxes-for-virtual-y">QA sandboxes for Virtual Y&lt;/h2>
+&lt;p>
+&lt;a href="https://virtual-y-sandboxes.openy-d9.org/" target="_blank">https://virtual-y-sandboxes.openy-d9.org/&lt;/a>&lt;/p></description></item><item><title>Docs: 1 Column</title><link>/docs/content-structure/paragraphs/1c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/1c/</guid><description>
 &lt;p>This is a paragraph type that will be used for implements a paragraph with 1 column.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
 &lt;table>
@@ -2807,24 +2827,4 @@ Ys with Y USA Open Y 2.5 or later can tag amenities at a branch that have closed
 &lt;li>Location popup shouldn&amp;rsquo;t be shown&lt;/li>
 &lt;li>Filter by location should show branch from URL&lt;/li>
 &lt;li>Results should be filtered&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Code</title><link>/docs/content-structure/paragraphs/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/code/</guid><description>
-&lt;p>Provide paragraph containing a Code block. Can be used to embed Youtube video for instance.&lt;/p>
-&lt;h3 id="fields">Fields&lt;/h3>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Name&lt;/th>
-&lt;th>Machine name&lt;/th>
-&lt;th>Required&lt;/th>
-&lt;th>Description&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>Code&lt;/td>
-&lt;td>field_prgf_code_block&lt;/td>
-&lt;td>Yes&lt;/td>
-&lt;td>Block reference to Code block. Create a new one or pick up an existed Code block.&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table></description></item></channel></rss>
+&lt;/ul></description></item></channel></rss>
