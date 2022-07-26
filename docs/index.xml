@@ -32,14 +32,22 @@ See
 &lt;p>See
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content#development" target="_blank">https://github.com/YCloudYUSA/yusaopeny_gated_content#development&lt;/a>&lt;/p>
 &lt;h3 id="qa-sandboxes-for-virtual-y">QA sandboxes for Virtual Y&lt;/h3>
-&lt;p>
-&lt;a href="https://virtual-y-sandboxes.openy-d9.org/" target="_blank">https://virtual-y-sandboxes.openy-d9.org/&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://virtual-y-sandboxes-d9.openy.org/" target="_blank">https://virtual-y-sandboxes-d9.openy.org/&lt;/a> on development version of Open Y, development version of VY&lt;/li>
+&lt;li>
+&lt;a href="https://virtual-y-sandboxes.openy.org/" target="_blank">https://virtual-y-sandboxes.openy.org/&lt;/a> - on stable version of Open Y, stable version if VY&lt;/li>
+&lt;/ul>
 &lt;h2 id="how-to-start-developing-membership-framework">How to start developing Membership Framework&lt;/h2>
 &lt;p>See how to install/build it to your Open Y working project
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships/blob/master/README.md#installation" target="_blank">https://github.com/YCloudYUSA/yusaopeny_memberships/blob/master/README.md#installation&lt;/a>&lt;/p>
 &lt;h3 id="qa-sandboxes-for-mf">QA sandboxes for MF&lt;/h3>
-&lt;p>
-&lt;a href="https://membership-framework-sandboxes-d9.openy.org/" target="_blank">https://membership-framework-sandboxes-d9.openy.org/&lt;/a>&lt;/p></description></item><item><title>Docs: 1 Column</title><link>/docs/content-structure/paragraphs/1c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/1c/</guid><description>
+&lt;ul>
+&lt;li>
+&lt;a href="https://membership-framework-sandboxes-d9.openy.org/" target="_blank">https://membership-framework-sandboxes-d9.openy.org/&lt;/a> - on development version of Open Y, development version of MF&lt;/li>
+&lt;li>
+&lt;a href="https://membership-framework-sandboxes.openy.org/" target="_blank">https://membership-framework-sandboxes.openy.org/&lt;/a> - on stable version of Open Y, stable version of MF&lt;/li>
+&lt;/ul></description></item><item><title>Docs: 1 Column</title><link>/docs/content-structure/paragraphs/1c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/1c/</guid><description>
 &lt;p>This is a paragraph type that will be used for implements a paragraph with 1 column.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
 &lt;table>
