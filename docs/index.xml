@@ -52,6 +52,17 @@ See
 &lt;a href="https://membership-framework-sandboxes-d9.openy.org/" target="_blank">https://membership-framework-sandboxes-d9.openy.org/&lt;/a> - on development version of Open Y, development version of MF&lt;/li>
 &lt;li>
 &lt;a href="https://membership-framework-sandboxes.openy.org/" target="_blank">https://membership-framework-sandboxes.openy.org/&lt;/a> - on stable version of Open Y, stable version of MF&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-start-developing-activity-finder">How to start developing Activity Finder&lt;/h2>
+&lt;p>Activity Finder is part of Open Y - so same process.&lt;/p>
+&lt;h3 id="qa-sandboxes-for-activity-finder">QA Sandboxes for Activity Finder&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;a href="https://sandbox-lily-cus-d9.openy.org/" target="_blank">https://sandbox-lily-cus-d9.openy.org/&lt;/a> - Lily Theme, Open Y Custom&lt;/li>
+&lt;li>
+&lt;a href="https://sandbox-rose-cus-d9.openy.org/" target="_blank">https://sandbox-rose-cus-d9.openy.org/&lt;/a> - Rose Theme, Open Y Custom&lt;/li>
+&lt;li>
+&lt;a href="https://sandbox-carnation-cus-d9.openy.org/" target="_blank">https://sandbox-carnation-cus-d9.openy.org/&lt;/a> - Carnation Theme, Open Y Custom&lt;/li>
 &lt;/ul></description></item><item><title>Docs: 1 Column</title><link>/docs/content-structure/paragraphs/1c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/1c/</guid><description>
 &lt;p>This is a paragraph type that will be used for implements a paragraph with 1 column.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
