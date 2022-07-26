@@ -16,7 +16,7 @@
 &lt;h2 id="how-to-start-developing-open-y">How to start developing Open Y&lt;/h2>
 &lt;p>In order to get copy of latest development version of Open Y, please follow steps from YUSA OpenY README.md
 See
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny#latest-development-version-drupal-9-2x" target="_blank">https://github.com/YCloudYUSA/yusaopeny#latest-development-version-drupal-9-2x&lt;/a>&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/README.md#latest-development-version-drupal-9-2x" target="_blank">https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/README.md#latest-development-version-drupal-9-2x&lt;/a>&lt;/p>
 &lt;p>Pay attention Open Y has a modular structure, so if you plan changes to specific component - create Pull Request/Merge Request in respective project or repository, based on component&amp;rsquo;s composer.json data.&lt;/p>
 &lt;p>In order to test specific component - create PR to Open Y
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny/pulls" target="_blank">https://github.com/YCloudYUSA/yusaopeny/pulls&lt;/a> with adding reference in composer.json of Open Y in order for the build system to start using updated component.&lt;/p>
