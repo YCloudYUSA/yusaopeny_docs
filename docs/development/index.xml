@@ -25,9 +25,14 @@ See
 &lt;h3 id="qa-sandboxes-for-open-y">QA sandboxes for Open Y&lt;/h3>
 &lt;p>See case study of sandboxes
 &lt;a href="https://www.drupal.org/case-study/open-y-sandboxes" target="_blank">https://www.drupal.org/case-study/open-y-sandboxes&lt;/a>&lt;/p>
-&lt;p>
+&lt;ul>
+&lt;li>
 &lt;a href="https://sandboxes-dev-php8.openy.org/" target="_blank">https://sandboxes-dev-php8.openy.org/&lt;/a> - PHP 8.1 and Latest Open Y development branch ( 9.x-2.x from
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">https://github.com/YCloudYUSA/yusaopeny&lt;/a> )&lt;/p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">https://github.com/YCloudYUSA/yusaopeny&lt;/a> )&lt;/li>
+&lt;li>
+&lt;a href="https://sandboxes-dev.openy.org/" target="_blank">https://sandboxes-dev.openy.org/&lt;/a> - PHP 7.4 and Latest Open Y stable release ( from
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">https://github.com/YCloudYUSA/yusaopeny&lt;/a> )&lt;/li>
+&lt;/ul>
 &lt;h2 id="how-to-start-developing-virtual-y">How to start developing Virtual Y&lt;/h2>
 &lt;p>See
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content#development" target="_blank">https://github.com/YCloudYUSA/yusaopeny_gated_content#development&lt;/a>&lt;/p>
