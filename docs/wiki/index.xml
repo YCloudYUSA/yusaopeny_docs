@@ -1681,7 +1681,7 @@ Basically - run a command under root&lt;/li>
 &lt;li>
 &lt;a href="#proceed-with-an-update-to-next-version-until-succeeded-start-from-item-1">Proceed with an update to next version until succeeded (Start from item 1)&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="upgrade-to-y-usa-open-y-92114-from-open-y-92113">Upgrade to Y USA Open Y 9.2.11.4 from Open Y 9.2.11.3&lt;/h2>
+&lt;h2 id="upgrade-to-y-usa-website-services-92114-from-open-y-92113">Upgrade to Y USA Website Services 9.2.11.4 from Open Y 9.2.11.3&lt;/h2>
 &lt;h3 id="prepare-dedicated-environment-for-upgrade-testing">Prepare dedicated environment for upgrade testing&lt;/h3>
 &lt;p>Ensure you have a working computer or virtual machine with:&lt;/p>
 &lt;ul>
