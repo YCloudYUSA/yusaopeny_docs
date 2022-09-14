@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Y USA Open Y – User Documentation</title><link>/docs/user-documentation/</link><description>Recent content in User Documentation on Y USA Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/user-documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Text Editor</title><link>/docs/user-documentation/text-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – User Documentation</title><link>/docs/user-documentation/</link><description>Recent content in User Documentation on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/user-documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Text Editor</title><link>/docs/user-documentation/text-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/</guid><description>
 &lt;p>
 &lt;figure class="image-caption">
 &lt;img alt="blog-description__text-editor|690x307" srcset="
@@ -21,7 +21,7 @@
 &lt;/figure>
 &lt;/p>
 &lt;p>
-&lt;a href="https://ckeditor.com/ckeditor-4/demo/#article" target="_blank">Y USA Open Y&amp;rsquo;s text editor (CKEditor)&lt;/a> provides a number of different buttons for styling and formatting, as well as a Source editor if you are so inclined to use HTML.&lt;/p></description></item><item><title>Docs: Page/Content Types</title><link>/docs/user-documentation/content-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/</guid><description/></item><item><title>Docs: Blocks</title><link>/docs/user-documentation/blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/blocks/</guid><description>
+&lt;a href="https://ckeditor.com/ckeditor-4/demo/#article" target="_blank">YMCA Website Services&amp;rsquo;s text editor (CKEditor)&lt;/a> provides a number of different buttons for styling and formatting, as well as a Source editor if you are so inclined to use HTML.&lt;/p></description></item><item><title>Docs: Page/Content Types</title><link>/docs/user-documentation/content-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/</guid><description/></item><item><title>Docs: Blocks</title><link>/docs/user-documentation/blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/blocks/</guid><description>
 &lt;h2 id="how-to-use-blocks">How to Use Blocks&lt;/h2>
 &lt;p>A block works like this - you choose a paragraph, and that paragraph asks you to create a block. You write a section of content inside that block.&lt;/p>
 &lt;p>
@@ -42,7 +42,7 @@
 &lt;p>
 &lt;img src="upload://uDDl7bJrFreiiN5nboh5MaOOWMF.png" alt="admin&amp;amp;ndash;code__block__cropped|690x155, 50%" />&lt;/p>
 &lt;h2 id="block-types">Block Types&lt;/h2>
-&lt;p>Y USA Open Y not only allows you to use blocks, but it supports different types of blocks for different types of content.&lt;/p>
+&lt;p>YMCA Website Services not only allows you to use blocks, but it supports different types of blocks for different types of content.&lt;/p>
 &lt;h3 id="basic-block">Basic Block&lt;/h3>
 &lt;p>A basic block gives you a
 &lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">basic text editor and that’s it&lt;/a>. This is great for embedding descriptions on cards across multiple pages.&lt;/p>
@@ -72,7 +72,7 @@
 &lt;p>This unformatted block allows you to use any type of HTML tag, great for for embedding scripts and iframes onto multiple pages. This block also allows more flexibility for technically-inclined content editors.&lt;/p>
 &lt;p>
 &lt;a href="https://community.openymca.org/t/code-paragraphs-open-y-user-docs/708" target="_blank">Using the Code Block Paragraph ⇒&lt;/a>&lt;/p></description></item><item><title>Docs: Paragraphs</title><link>/docs/user-documentation/paragraphs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/</guid><description>
-&lt;p>Y USA Open Y content editors use paragraphs to create unique layouts for their pages. Each paragraph is a section of content that comes with its own styling, functionality, and fields.&lt;/p>
+&lt;p>YMCA Website Services content editors use paragraphs to create unique layouts for their pages. Each paragraph is a section of content that comes with its own styling, functionality, and fields.&lt;/p>
 &lt;p>You can add a paragraph onto a page when you see the paragraphs dropdown field. These paragraphs will typically be inside one of the four main “Areas” inside a content type:&lt;/p>
 &lt;ul>
 &lt;li>&lt;em>Header Area&lt;/em> - Used for adding images and page titles&lt;/li>
@@ -90,13 +90,13 @@
 &lt;h3 id="admin-portal">Admin Portal&lt;/h3>
 &lt;p>To add a paragraph into an Area, open that area and select a paragraph from the dropdown. The button will usually be labeled with &amp;ldquo;Add [First Paragraph in List]&amp;rdquo; (the first paragraph in the list depends on the content type/area), and there will be some helper text above.&lt;/p>
 &lt;blockquote>
-&lt;p>The video below provides an example of the functionality of paragraphs; however, the specific layouts demoed are &lt;strong>not&lt;/strong> Y USA Open Y layouts.&lt;/p>
+&lt;p>The video below provides an example of the functionality of paragraphs; however, the specific layouts demoed are &lt;strong>not&lt;/strong> YMCA Website Services layouts.&lt;/p>
 &lt;/blockquote>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/6ti2l8HB5Qc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;h3 id="inline-editor">Inline Editor&lt;/h3>
-&lt;p>If you&amp;rsquo;ve upgraded to Y USA Open Y 2.4 or later, you can add a paragraph from the front-end by clicking on the Plus icon in a given region and selecting a paragraph from the pop-up window.&lt;/p>
+&lt;p>If you&amp;rsquo;ve upgraded to YMCA Website Services 2.4 or later, you can add a paragraph from the front-end by clicking on the Plus icon in a given region and selecting a paragraph from the pop-up window.&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;strong>Note:&lt;/strong> Not all paragraphs are available for inline editing yet. More paragraphs will be added to the inline content editor in later releases&lt;/p>
 &lt;/blockquote>
@@ -116,13 +116,13 @@
 &lt;h2 id="deleting-paragraphs">Deleting Paragraphs&lt;/h2>
 &lt;p>Maybe you didn’t need that section. Don’t worry: you can easily delete a paragraph by clicking on the remove option from the dropdown next to where it says “Edit.”&lt;/p>
 &lt;h3 id="choosing-the-right-paragraph-type">Choosing the Right Paragraph Type&lt;/h3>
-&lt;p>Y USA Open Y comes with more than 50 paragraph types, and depending on your partner’s customizations, you may have even more. This documentation will focus the types that come out of the box with Y USA Open Y and how to use them.&lt;/p></description></item><item><title>Docs: Taxonomy, Vocabularies, and Terms</title><link>/docs/user-documentation/taxonomy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/taxonomy/</guid><description>
-&lt;p>The Taxonomy feature in Y USA Open Y creates organized lists of categories, which allow you to group content, create folders for Images (
-&lt;a href="https://community.openymca.org/t/version-2-4-released-q1-2020-major-release/624" target="_blank">in Y USA Open Y 2.4 and later&lt;/a>) and create standard options for dropdown fields in your content.&lt;/p>
+&lt;p>YMCA Website Services comes with more than 50 paragraph types, and depending on your partner’s customizations, you may have even more. This documentation will focus the types that come out of the box with YMCA Website Services and how to use them.&lt;/p></description></item><item><title>Docs: Taxonomy, Vocabularies, and Terms</title><link>/docs/user-documentation/taxonomy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/taxonomy/</guid><description>
+&lt;p>The Taxonomy feature in YMCA Website Services creates organized lists of categories, which allow you to group content, create folders for Images (
+&lt;a href="https://community.openymca.org/t/version-2-4-released-q1-2020-major-release/624" target="_blank">in YMCA Website Services 2.4 and later&lt;/a>) and create standard options for dropdown fields in your content.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/upFz4WrJ1-Q" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
-&lt;p>Each list is called a &lt;em>Vocabulary&lt;/em>, while each item in your list is called a &lt;em>Term&lt;/em>. Terms comprise a Term Name and any additional data/settings for that particular vocabulary (see below in &lt;em>Vocabularies in Y USA Open Y&lt;/em> for details).&lt;/p>
+&lt;p>Each list is called a &lt;em>Vocabulary&lt;/em>, while each item in your list is called a &lt;em>Term&lt;/em>. Terms comprise a Term Name and any additional data/settings for that particular vocabulary (see below in &lt;em>Vocabularies in YMCA Website Services&lt;/em> for details).&lt;/p>
 &lt;h2 id="how-to-edit-vocabulary-lists">How to Edit Vocabulary Lists&lt;/h2>
 &lt;p>Go to Structure &amp;gt; Taxonomy. When you find the Vocabulary you want to edit, click &lt;em>List Terms&lt;/em>.&lt;/p>
 &lt;p>
@@ -151,7 +151,7 @@ To change your shade of grey, you would go to Structure &amp;gt; Taxonomy &amp;g
 &lt;p>
 &lt;img src="upload://dIrOibHH8SybbqhEhLrPHuUjxUW.png" alt="admin__taxonomy&amp;amp;ndash;color-vocabulary&amp;amp;ndash;grey-edit|358x500, 75%" />
 &lt;img src="upload://9fEEt5uojLqeXghql0KsL8X9aUv.png" alt="admin__taxonomy&amp;amp;ndash;color-vocabulary&amp;amp;ndash;grey-edit-1|690x365, 75%" />&lt;/p>
-&lt;h2 id="vocabularies-in-y-usa-open-y">Vocabularies in Y USA Open Y&lt;/h2>
+&lt;h2 id="vocabularies-in-ymca-website-services">Vocabularies in YMCA Website Services&lt;/h2>
 &lt;p>Because Vocabularies are lists of categories, how they will show up depends on which Vocabulary you use.&lt;/p>
 &lt;h3 id="amenities">Amenities&lt;/h3>
 &lt;p>Used for tagging
@@ -167,21 +167,21 @@ To change your shade of grey, you would go to Structure &amp;gt; Taxonomy &amp;g
 &lt;p>These taxonomies tag blog/news posts. Categories display in the sidebar and as filters in your
 &lt;a href="https://community.openymca.org/t/blog-posts-listing-paragraphs-open-y-user-docs/705/2" target="_blank">Blog Post Listing&lt;/a> and
 &lt;a href="https://community.openymca.org/t/news-posts-listing-paragraphs-open-y-user-docs/721" target="_blank">News Posts Listing&lt;/a> paragraphs, respectively.&lt;/p>
-&lt;h3 id="media-folders-y-usa-open-y-24-and-later">Media Folders (Y USA Open Y 2.4 and later)&lt;/h3>
+&lt;h3 id="media-folders-ymca-website-services-24-and-later">Media Folders (YMCA Website Services 2.4 and later)&lt;/h3>
 &lt;p>Creates folders for your images in the media browser.&lt;/p>
 &lt;p>
 &lt;a href="https://youtu.be/gcaBlhyPZEY" target="_blank">View Media Folders tutorial ⇒&lt;/a>&lt;/p>
 &lt;h3 id="media-tags">Media Tags&lt;/h3>
-&lt;p>Creates tags for filtering images (Y USA Open Y 2.3.3 and earlier), Documents and Videos in the media browser.&lt;/p>
+&lt;p>Creates tags for filtering images (YMCA Website Services 2.3.3 and earlier), Documents and Videos in the media browser.&lt;/p>
 &lt;p>
 &lt;a href="https://community.openymca.org/t/video-tutorials-for-images-and-documents/738" target="_blank">https://community.openymca.org/t/video-tutorials-for-images-and-documents/738&lt;/a>&lt;/p></description></item><item><title>Docs: Images and Documents</title><link>/docs/user-documentation/media/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/media/</guid><description>
 &lt;p>Here is a full list of tutorials on the topic.&lt;/p>
-&lt;h2 id="y-usa-open-y-24-and-later">Y USA Open Y 2.4 and later&lt;/h2>
+&lt;h2 id="ymca-website-services-24-and-later">YMCA Website Services 2.4 and later&lt;/h2>
 &lt;h3 id="using-the-new-media-directories-feature">Using the new Media Directories Feature&lt;/h3>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/gcaBlhyPZEY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
-&lt;h2 id="y-usa-open-y-235-and-earlier">Y USA Open Y 2.3.5 and earlier&lt;/h2>
+&lt;h2 id="ymca-website-services-235-and-earlier">YMCA Website Services 2.3.5 and earlier&lt;/h2>
 &lt;h3 id="images-tutorials">Images Tutorials&lt;/h3>
 &lt;p>
 &lt;a href="https://community.openymca.org/t/adding-images-open-y-2-3-5-and-earlier-text-editor-open-y-user-docs/662?u=dwells" target="_blank">https://community.openymca.org/t/adding-images-open-y-2-3-5-and-earlier-text-editor-open-y-user-docs/662?u=dwells&lt;/a>&lt;/p>

@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Y USA Open Y – Paragraphs</title><link>/docs/user-documentation/paragraphs/</link><description>Recent content in Paragraphs on Y USA Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/user-documentation/paragraphs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 1 Column</title><link>/docs/user-documentation/paragraphs/1c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/1c/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Paragraphs</title><link>/docs/user-documentation/paragraphs/</link><description>Recent content in Paragraphs on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/user-documentation/paragraphs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 1 Column</title><link>/docs/user-documentation/paragraphs/1c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/1c/</guid><description>
 &lt;blockquote>
 &lt;p>1 Column embeds a single column of content into an area/container on a page, with an option to embed reusable content. Similar to the code paragraph, this paragraph comes out of the box with styles and a text editor.&lt;/p>
 &lt;/blockquote>
@@ -280,7 +280,7 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;a href="/docs/user-documentation/text-editor/adding-links/">Learn more about the link field ⇒&lt;/a>&lt;/p>
 &lt;h2 id="advanced">Advanced&lt;/h2>
 &lt;h3 id="title-field-styling">Title Field Styling&lt;/h3>
-&lt;p>In all three themes currently in Y USA Open Y, the Title field displays in a font-size and color nearly identical to the body copy. To override, target &lt;code>.field-sb-title&lt;/code>.&lt;/p>
+&lt;p>In all three themes currently in YMCA Website Services, the Title field displays in a font-size and color nearly identical to the body copy. To override, target &lt;code>.field-sb-title&lt;/code>.&lt;/p>
 &lt;h3 id="carnation---columns-stack-in-desktop">Carnation -&amp;gt; Columns stack in desktop&lt;/h3>
 &lt;p>In order for this to work in Carnation, the &lt;code>.wrapper&lt;/code> containing the column elements needs to be changed to &lt;code>.row&lt;/code>; otherwise, each of the four columns expands to the full width of the Area it’s embedded in.&lt;/p>
 &lt;p>
@@ -313,7 +313,7 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;li>Bottom Area&lt;/li>
 &lt;/ul>
 &lt;p>How it Works&lt;/p>
-&lt;p>This paragraph type requires an integration into a CRM. Out-of-the-box, Y USA Open Y’s Activity Finder integrates with Daxko, ActiveNet, and Personify. Any other CRM will require custom developer work.&lt;/p>
+&lt;p>This paragraph type requires an integration into a CRM. Out-of-the-box, YMCA Website Services’s Activity Finder integrates with Daxko, ActiveNet, and Personify. Any other CRM will require custom developer work.&lt;/p>
 &lt;p>Read more about the Activity Finder feature &amp;gt;&lt;/p>
 &lt;p>How you use these paragraphs will depend on how your Association has structured its program data on the CRM and on how you decide to get people to program results.&lt;/p>
 &lt;p>There are three primary approaches to setting this up: a standard approach, a results-only approach, and a targeted approach.&lt;/p>
@@ -337,7 +337,7 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;li>Bottom Area&lt;/li>
 &lt;/ul>
 &lt;p>How to Use It&lt;/p>
-&lt;p>NOTE: This paragraph provides similar functionality to the Location filter by amenities, and is no longer recommended for use by the Y USA Open Y Core Team.&lt;/p>
+&lt;p>NOTE: This paragraph provides similar functionality to the Location filter by amenities, and is no longer recommended for use by the YMCA Website Services Core Team.&lt;/p>
 &lt;p>After selecting “All Amenities” from the paragraphs list, you can change the title that displays above the search checkboxes by entering text in the Title field.&lt;/p>
 &lt;p>Styling will differ greatly based on the theme. Use of this paragraph in Rose is not recommended.&lt;/p>
 &lt;p>Supported Content Types&lt;/p>
@@ -377,7 +377,7 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;p>
 &lt;img src="upload://3sSzX2tN1MLavjpM1pDSK3gsFEC.gif" alt="landing-page__banner-image-select|480x94" />&lt;/p>
 &lt;p>Use the image library to embed an image. You can upload a new image from your computer or reuse an existing image from your library. The image field is optional, but recommended.&lt;/p>
-&lt;p>For recommended image sizes for your Y USA Open Y site, talk to your agency partner.&lt;/p>
+&lt;p>For recommended image sizes for your YMCA Website Services site, talk to your agency partner.&lt;/p>
 &lt;p>&lt;strong>How to add/edit images &amp;gt;&lt;/strong>&lt;/p>
 &lt;/li>
 &lt;li>
@@ -428,7 +428,7 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;p>
 &lt;a href="https://www.youtube.com/watch?v=h39RyuMzfBU" target="_blank">https://www.youtube.com/watch?v=h39RyuMzfBU&lt;/a>&lt;/p>
 &lt;p>The view for the Blog Listings paragraph is not available for editing in the
-&lt;a href="https://sandbox.openymca.org" target="_blank">Y USA Open Y sandbox&lt;/a>, but you can edit the View
+&lt;a href="https://sandbox.openymca.org" target="_blank">YMCA Website Services sandbox&lt;/a>, but you can edit the View
 &lt;a href="https://www.youtube.com/watch?v=GpknEXv1IfA" target="_blank">using your own dedicated instance&lt;/a>. Doing so through the UI, however, could have implications for future upgrades.&lt;/p>
 &lt;h2 id="content-types-that-support-blog-posts">Content Types that Support Blog Posts&lt;/h2>
 &lt;ul>
@@ -693,7 +693,7 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &amp;gt;
 &amp;gt;
 &lt;img src="upload://rB0AOyzPIPVqX3ivE8BAKhsD2IQ.png" alt="admin__menu&amp;amp;ndash;gxp-account-settings|611x500, 75%" />&lt;/li>
-&lt;li>Go to Y USA Open Y &amp;gt; Integrations &amp;gt; GroupEx Pro &amp;gt; Group Ex Pro Account Settings. Add your account number to the field. That’s it!
+&lt;li>Go to YMCA Website Services &amp;gt; Integrations &amp;gt; GroupEx Pro &amp;gt; Group Ex Pro Account Settings. Add your account number to the field. That’s it!
 &amp;gt;
 &lt;img src="upload://uNJgKy1DAu5mYhqnijpzbSB8eAB.png" alt="admin__gxp-account-settings|690x259, 75%" />&lt;/li>
 &lt;/ul>
@@ -952,7 +952,7 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;/ul></description></item><item><title>Docs: Gallery</title><link>/docs/user-documentation/paragraphs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/gallery/</guid><description>
 &lt;blockquote>
 &lt;h2 id="what-is-gallery">&lt;strong>What Is Gallery?&lt;/strong>&lt;/h2>
-&lt;p>The Y USA Open Y gallery embeds a carousel or slider of images onto a page. The gallery can play on a loop, and users can click back and forth using the arrows.&lt;/p>
+&lt;p>The YMCA Website Services gallery embeds a carousel or slider of images onto a page. The gallery can play on a loop, and users can click back and forth using the arrows.&lt;/p>
 &lt;p>You can have a gallery with a simple title, and you can also add a description below the headline and/or a call to action button.&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="examples">Examples&lt;/h2>
@@ -993,7 +993,7 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;p>
 &lt;img src="upload://1zX6malPCRwSziaV0bMHJe210uI.png" alt="admin__gallery&amp;amp;ndash;link|690x217, 50%" />&lt;/p>
 &lt;p>
-&lt;a href="https://community.openymca.org/t/content-editing-basics-open-y-user-docs/732/2" target="_blank">How link fields work in Y USA Open Y ⇒&lt;/a>&lt;/p>
+&lt;a href="https://community.openymca.org/t/content-editing-basics-open-y-user-docs/732/2" target="_blank">How link fields work in YMCA Website Services ⇒&lt;/a>&lt;/p>
 &lt;p>Below the link field, you will add your images. Click on the &lt;em>Add images&lt;/em> button to select the pictures for your gallery. You can upload an image to the media library, or select multiple images from your library.&lt;/p>
 &lt;p>
 &lt;a href="https://community.openymca.org/t/video-tutorials-for-images-and-documents/738" target="_blank">Learn how to upload images in the media library ⇒&lt;/a>&lt;/p>
@@ -1075,19 +1075,19 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Icon Class&lt;/strong> -
-&lt;a href="https://fontawesome.com" target="_blank">A font awesome icon CSS class&lt;/a>. You can type in the name of the class, and Y USA Open Y will generate the icon.&lt;/p>
+&lt;a href="https://fontawesome.com" target="_blank">A font awesome icon CSS class&lt;/a>. You can type in the name of the class, and YMCA Website Services will generate the icon.&lt;/p>
 &lt;p>
-&lt;a href="http://#" target="_blank">Using Icon Fields in Y USA Open Y ⇒&lt;/a>&lt;/p>
+&lt;a href="http://#" target="_blank">Using Icon Fields in YMCA Website Services ⇒&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Description&lt;/strong> - A standard text editor field. Because of how each grid content item styles, it’s recommended that the text in this field be shorter than 200 characters.&lt;/p>
 &lt;p>
-&lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">How to use the Text Editor in Y USA Open Y ⇒&lt;/a>&lt;/p>
+&lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">How to use the Text Editor in YMCA Website Services ⇒&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Link&lt;/strong> - Two fields to add a URL and a link. Depending on your theme, the link will style either as a basic link or as a button.&lt;/p>
 &lt;p>
-&lt;a href="http://#" target="_blank">How link fields work in Y USA Open Y ⇒&lt;/a>&lt;/p>
+&lt;a href="http://#" target="_blank">How link fields work in YMCA Website Services ⇒&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;blockquote>
@@ -1243,7 +1243,7 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;/ul>
 &lt;p>Additional Screen Shots&lt;/p></description></item><item><title>Docs: Membership Calculator</title><link>/docs/user-documentation/paragraphs/membership-calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/membership-calculator/</guid><description>
 &lt;blockquote>
-&lt;p>Membership Calculator adds an interactive &amp;ldquo;membership wizard&amp;rdquo; to an Y USA Open Y site.&lt;/p>
+&lt;p>Membership Calculator adds an interactive &amp;ldquo;membership wizard&amp;rdquo; to an YMCA Website Services site.&lt;/p>
 &lt;/blockquote>
 &lt;hr>
 &lt;h2 id="areas-it-should-be-used">Areas it Should Be Used&lt;/h2>
@@ -1268,7 +1268,7 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;p>
 &lt;img src="upload://u6yyw4uFzZZCotOQd4pYtQCaAhQ.png" alt="Join___Drush_Site-Install|690x373" />&lt;/p>
 &lt;h3 id="primary-location">Primary Location&lt;/h3>
-&lt;p>This step provides a map with radio buttons for the member to select their primary location. Every location listed in the &lt;strong>Y USA Open Y Location Filter Settings&lt;/strong> (see Troubleshooting section below) is listed.&lt;/p>
+&lt;p>This step provides a map with radio buttons for the member to select their primary location. Every location listed in the &lt;strong>YMCA Website Services Location Filter Settings&lt;/strong> (see Troubleshooting section below) is listed.&lt;/p>
 &lt;p>
 &lt;img src="upload://6i4S8IF4qJvSPyb2ALReAUlGoLv.jpeg" alt="Join___Drush_Site-Install|690x442" />&lt;/p>
 &lt;h3 id="summary">Summary&lt;/h3>
@@ -1277,7 +1277,7 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;img src="upload://2Ee7kf0rgze3Zu9LJgI89y3wcWS.png" alt="Join___Drush_Site-Install|690x227" />
 &lt;img src="upload://oiNJgkNX0AF53v7fCMUSanEyg7.png" alt="Join___Drush_Site-Install|690x220" />&lt;/p>
 &lt;h2 id="heading--troubleshooting">Troubleshooting&lt;/h2>
-&lt;p>On some sites, the second step of the &lt;em>Membership Calculator&lt;/em> may not show any locations. In order to resolve this, visit &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Y USA Open Y&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Y USA Open Y Location Filter Settings&lt;/strong> and ensure that any Branches you want to use in the location search are checked.&lt;/p>
+&lt;p>On some sites, the second step of the &lt;em>Membership Calculator&lt;/em> may not show any locations. In order to resolve this, visit &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services Location Filter Settings&lt;/strong> and ensure that any Branches you want to use in the location search are checked.&lt;/p>
 &lt;p>
 &lt;img src="upload://wnoZu5d7zbclkYYCE9DbOGCKEn0.png" alt="Locations_filter_settings___Drush_Site-Install|689x287" />&lt;/p>
 &lt;h2 id="content-types-that-support-membership-calculator">Content Types that Support Membership Calculator&lt;/h2>
@@ -1455,7 +1455,7 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;ul>
 &lt;li>&lt;em>Note -&amp;gt; This does not work in Rose.&lt;/em>&lt;/li>
 &lt;/ul>
-&lt;p>For recommended image sizes for your Y USA Open Y site, talk to your agency partner.&lt;/p>
+&lt;p>For recommended image sizes for your YMCA Website Services site, talk to your agency partner.&lt;/p>
 &lt;p>
 &lt;a href="https://community.openymca.org/t/video-tutorials-for-images-and-documents/738" target="_blank">How to add/edit images ⇒&lt;/a>&lt;/p>
 &lt;blockquote>
@@ -1489,8 +1489,8 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;p>On the next page, select “Selected by you” and choose the social buttons you would like to appear. Then, click configure tool.&lt;/p>
 &lt;p>On the next screen, scroll down to the “Just Copy” section and grab your public id (the part after the &lt;code>/s7.addthis.com/js/300/addthis_widget.js#pubid=&lt;/code>&lt;/p>
 &lt;p>Your id should look something like this: &lt;code>ra-5e0fb44ead5eb04f&lt;/code>&lt;/p>
-&lt;p>** If you are having trouble with this, contact your Y USA Open Y agency partner, and they can help get this set up for you. You will still need to set up your account.&lt;/p>
-&lt;p>Go back to your Y USA Open Y site and then go to your admin toolbar: Y USA Open Y &amp;gt; Setting &amp;gt; AddThis Settings&lt;/p>
+&lt;p>** If you are having trouble with this, contact your YMCA Website Services agency partner, and they can help get this set up for you. You will still need to set up your account.&lt;/p>
+&lt;p>Go back to your YMCA Website Services site and then go to your admin toolbar: YMCA Website Services &amp;gt; Setting &amp;gt; AddThis Settings&lt;/p>
 &lt;p>Paste your public id into the field on the next page. Then click save.&lt;/p>
 &lt;p>Next, go to Configuration &amp;gt; Development &amp;gt; Performance. Click “Clear All Caches.”&lt;/p>
 &lt;p>Your new buttons should appear!&lt;/p>

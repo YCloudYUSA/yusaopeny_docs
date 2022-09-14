@@ -1,15 +1,15 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Y USA Open Y – Content Structure</title><link>/docs/content-structure/</link><description>Recent content in Content Structure on Y USA Open Y</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/content-structure/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Blocks</title><link>/docs/content-structure/blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/</guid><description/></item><item><title>Docs: Content Types</title><link>/docs/content-structure/content-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/</guid><description>
-&lt;p>Welcome to the Y USA Open Y Content Types documentation&lt;/p>
-&lt;p>In terms of Y USA Open Y - content types are &lt;code>bundles&lt;/code> of &lt;code>node&lt;/code> entity of the Drupal Framework.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Content Structure</title><link>/docs/content-structure/</link><description>Recent content in Content Structure on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/content-structure/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Blocks</title><link>/docs/content-structure/blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/</guid><description/></item><item><title>Docs: Content Types</title><link>/docs/content-structure/content-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/</guid><description>
+&lt;p>Welcome to the YMCA Website Services Content Types documentation&lt;/p>
+&lt;p>In terms of YMCA Website Services - content types are &lt;code>bundles&lt;/code> of &lt;code>node&lt;/code> entity of the Drupal Framework.
 You can find a much more low level documentation at
 &lt;a href="https://www.drupal.org/docs/8" target="_blank">drupal.org&lt;/a>.&lt;/p>
-&lt;p>Y USA Open Y has a bunch of content types shipped for the convenience of usage the resulting site.
+&lt;p>YMCA Website Services has a bunch of content types shipped for the convenience of usage the resulting site.
 We are not limiting amount of content types, could be added by developers, so the list is not final.
-The only rule we are trying to follow is to cover shipped list of content types by Y USA Open Y upgrade path.&lt;/p></description></item><item><title>Docs: Media</title><link>/docs/content-structure/media/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/media/</guid><description/></item><item><title>Docs: Paragraphs</title><link>/docs/content-structure/paragraphs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/</guid><description>
-&lt;p>Welcome to Y USA Open Y Paragraphs.&lt;/p>
+The only rule we are trying to follow is to cover shipped list of content types by YMCA Website Services upgrade path.&lt;/p></description></item><item><title>Docs: Media</title><link>/docs/content-structure/media/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/media/</guid><description/></item><item><title>Docs: Paragraphs</title><link>/docs/content-structure/paragraphs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/</guid><description>
+&lt;p>Welcome to YMCA Website Services Paragraphs.&lt;/p>
 &lt;p>Paragraphs are bits of content, components, from
 &lt;a href="https://en.wikipedia.org/wiki/Component-based_software_engineering#Software_component" target="_blank">component based design&lt;/a> ideology.
-In a scope of Y USA Open Y architecture paragraphs are based on
+In a scope of YMCA Website Services architecture paragraphs are based on
 &lt;a href="https://www.drupal.org/project/paragraphs" target="_blank">Paragraphs Drupal module&lt;/a>.&lt;/p>
 &lt;p>The core idea of paragraphs is to have a nice looking and behaving widget for adding predefined content blocks right in place,
 without referencing external entities. Keep in mind, that paragraphs are not reusable types. For having reusable type look for
