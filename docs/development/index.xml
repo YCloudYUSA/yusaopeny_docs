@@ -2,17 +2,17 @@
 &lt;h1 id="welcome-to-ymca-website-services">Welcome to YMCA Website Services&lt;/h1>
 &lt;h2 id="list-of-migrated-repositoriesprojects">List of migrated repositories/projects&lt;/h2>
 &lt;ul>
-&lt;li>Open Y
+&lt;li>YMCA Website Services ( formerly Open Y )
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">https://github.com/YCloudYUSA/yusaopeny&lt;/a>&lt;/li>
-&lt;li>Virtual Y
+&lt;li>YMCA Virtuak Experience ( formerly Virtual Y )
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content" target="_blank">https://github.com/YCloudYUSA/yusaopeny_gated_content&lt;/a>&lt;/li>
 &lt;li>Activity Finder
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">https://github.com/YCloudYUSA/yusaopeny_activity_finder&lt;/a>&lt;/li>
 &lt;li>Membership Framework
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships" target="_blank">https://github.com/YCloudYUSA/yusaopeny_memberships&lt;/a>&lt;/li>
-&lt;li>Open Y Docs
+&lt;li>YMCA Digital Services Docs
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_docs" target="_blank">https://github.com/YCloudYUSA/yusaopeny_docs&lt;/a>&lt;/li>
-&lt;li>Open Y project
+&lt;li>YMCA Website Services distribution ( formerly Open Y project )
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny-project" target="_blank">https://github.com/YCloudYUSA/yusaopeny-project&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-start-developing-open-y">How to start developing Open Y&lt;/h2>
