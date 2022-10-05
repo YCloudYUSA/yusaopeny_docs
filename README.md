@@ -11,7 +11,7 @@ You can find detailed theme instructions in the [Docsy user guide][].
 
 To contribute to this repo:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/open-y-subprojects/openy_docs)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/YCloudYUSA/yusaopeny_docs)
 
 OR (the old fashioned way)...
 
