@@ -1232,7 +1232,15 @@ Given the fact
 &lt;a href="https://youtube.com/watch?v=y2oI9-6DvYQ&amp;amp;list=PL_QVggMcFfKY_80g0z3UPZL7_wn-27UUg" target="_blank">For Y Associations&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="https://youtube.com/watch?v=RSsQLVVhldc&amp;amp;list=PL_QVggMcFfKZp05THV3dYlYOG3MsJ8xSf" target="_blank">For Developers&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: YMCA Website Services 2.0 root YAML files</title><link>/docs/wiki/open-y-2.0-root-yaml-files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-2.0-root-yaml-files/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Virtual Y Configuration</title><link>/docs/wiki/virtual-y-configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/virtual-y-configuration/</guid><description>
+&lt;h1 id="virtual-y-predefined-pages">Virtual Y predefined pages&lt;/h1>
+&lt;p>Once Virtual Y installed system creates set of required Landing pages with predefined URLs. These pages are:&lt;/p>
+&lt;ul>
+&lt;li>Virtual Y Landing page - &lt;code>/virtual-ymca&lt;/code>&lt;/li>
+&lt;li>Virtual Y Login Landing page - &lt;code>/virtual-y-login&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>URLs to pages above then set as configuration values at &lt;code>/admin/openy/virtual-ymca&lt;/code>.&lt;/p>
+&lt;p>Admin user is obligated to keep pages in the system or properly update configuration with new values to keep Virtual Y functionality working correctly.&lt;/p></description></item><item><title>Docs: YMCA Website Services 2.0 root YAML files</title><link>/docs/wiki/open-y-2.0-root-yaml-files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-2.0-root-yaml-files/</guid><description>
 &lt;p>There are plenty of
 &lt;a href="http://en.wikipedia.org/wiki/YAML" target="_blank">YAML&lt;/a> configuration files at the root of the profile. Some of them are standard Drupal configuration and others are YMCA Website Services specific.&lt;/p>
 &lt;h2 id="basic-yml-files">Basic .yml files&lt;/h2>
