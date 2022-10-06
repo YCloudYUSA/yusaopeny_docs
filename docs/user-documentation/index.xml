@@ -202,7 +202,10 @@ To change your shade of grey, you would go to Structure &amp;gt; Taxonomy &amp;g
 &lt;h3 id="embedding-documents-on-a-web-page">Embedding Documents on a Web Page&lt;/h3>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/5w-_bpHtTLI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div></description></item><item><title>Docs: Webforms</title><link>/docs/user-documentation/webforms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/webforms/</guid><description>
+&lt;/div>
+&lt;h3 id="bulk-upload">Bulk upload&lt;/h3>
+&lt;p>To use bulk media upload please install &lt;strong>Media Library Bulk Upload&lt;/strong> module at &lt;strong>Manage&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> admin menu screen. Then please navigate to &lt;code>/admin/config/media/media-library-bulk-upload-config&lt;/code> and select Media entities that should support Bulk upload.
+After that you will be able to upload multiple files via Media Browser (&lt;code>/admin/content/browser&lt;/code>)&lt;/p></description></item><item><title>Docs: Webforms</title><link>/docs/user-documentation/webforms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/webforms/</guid><description>
 &lt;p>Because this is one of the most well-documented applications in the Drupal community, we recommend using the documentation provided by the maintainer of the Webforms module, Jacob Rockowitz.&lt;/p>
 &lt;ul>
 &lt;li>
