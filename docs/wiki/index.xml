@@ -1240,7 +1240,14 @@ Given the fact
 &lt;li>Virtual Y Login Landing page - &lt;code>/virtual-y-login&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;p>URLs to pages above then set as configuration values at &lt;code>/admin/openy/virtual-ymca&lt;/code>.&lt;/p>
-&lt;p>Admin user is obligated to keep pages in the system or properly update configuration with new values to keep Virtual Y functionality working correctly.&lt;/p></description></item><item><title>Docs: YMCA Website Services 2.0 root YAML files</title><link>/docs/wiki/open-y-2.0-root-yaml-files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-2.0-root-yaml-files/</guid><description>
+&lt;p>Admin user is obligated to keep pages in the system or properly update configuration with new values to keep Virtual Y functionality working correctly.&lt;/p>
+&lt;h1 id="virtual-y-log-module">Virtual Y Log module&lt;/h1>
+&lt;p>Virtual Y Log module can be configured via configuration files. Available settings:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>activity_granularity_interval&lt;/code>: Default value &lt;code>600&lt;/code> - sets the interval in Seconds to track user activity on the site&lt;/li>
+&lt;li>&lt;code>archiver_enabled&lt;/code>: default value &lt;code>true&lt;/code> - enable / disable activity logs archiver cron execution&lt;/li>
+&lt;li>&lt;code>archiver_store_period&lt;/code>: default value &lt;code>1 year&lt;/code> - set the period when activity logs will be collected and placed to same archive. This value should be set to as Relative Date/Time PHP string, e.g. &lt;code>1 week&lt;/code>, &lt;code>2 months&lt;/code>, &lt;code>1 year&lt;/code>, etc.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: YMCA Website Services 2.0 root YAML files</title><link>/docs/wiki/open-y-2.0-root-yaml-files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-2.0-root-yaml-files/</guid><description>
 &lt;p>There are plenty of
 &lt;a href="http://en.wikipedia.org/wiki/YAML" target="_blank">YAML&lt;/a> configuration files at the root of the profile. Some of them are standard Drupal configuration and others are YMCA Website Services specific.&lt;/p>
 &lt;h2 id="basic-yml-files">Basic .yml files&lt;/h2>
