@@ -212,4 +212,105 @@ After that you will be able to upload multiple files via Media Browser (&lt;code
 &lt;a href="https://www.youtube.com/channel/UCuNY72GurNzdzXMsffs4VZw" target="_blank">Watch Webforms video documentation&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="https://www.drupal.org/docs/contributed-modules/webform" target="_blank">Read Webforms documentation&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>Docs: Virtual Y</title><link>/docs/user-documentation/virtual-ymca/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/</guid><description>
+&lt;p>After members login to your website, they can browse a diverse selection of gated content—on-demand videos, written content, and live events—from any device of their choosing.&lt;/p>
+&lt;p>Below are links to various videos and documents, depending on how you prefer to learn, on how to do some of the most basic set up and management of your new Virtual Y environment.&lt;/p></description></item><item><title>Docs: Content Editing Basics</title><link>/docs/user-documentation/content-editing-basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-editing-basics/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/CHFXTW5B93Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="adding-new-content">Adding New Content&lt;/h2>
+&lt;p>To add a new piece of content, select the content tab in the administration toolbar at the top left.&lt;/p>
+&lt;p>
+&lt;img src="./basics-content.png" alt="The content link in the admin menu" />&lt;/p>
+&lt;p>Click the blue button that says “Add New Content.”&lt;/p>
+&lt;p>On the next page, select the type of content you want to add. &lt;strong>
+&lt;a href="/docs/user-documentation/content-types/">Learn About Content Types ⇒&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>The fields on the next page marked with a red asterisk are required. To save your new piece of content, you must fill out the required fields.&lt;/p>
+&lt;p>If this is a page that you do not want to be published, deselect the checkbox at the bottom left titled “Published.” This will mark it as a draft.&lt;/p>
+&lt;p>To save your new content, click the blue “Save” button at the bottom of the page.&lt;/p>
+&lt;h2 id="search-for-a-piece-of-content">Search for a Piece of Content&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/YcXGfWfRTv8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>You can find a piece of content you want to edit two ways: using the front-end (what your user sees) or using the “Content” administration page.&lt;/p>
+&lt;p>If you’re navigating your site and you’re logged in, you will see the following options on the pages you have access to edit:&lt;/p>
+&lt;ul>
+&lt;li>View&lt;/li>
+&lt;li>Edit&lt;/li>
+&lt;li>Revisions&lt;/li>
+&lt;li>Delete&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;img src="./basics-tabs.png" alt="In-page Edit tab" />&lt;/p>
+&lt;p>You can edit a piece of content by clicking the “Edit” tab on that page.&lt;/p>
+&lt;p>To use the administration page, go to the top left button in your administration toolbar and select “Content.” This will take you to a page where you can search for content (particularly useful if you’re not sure where it is).
+&lt;img src="./basics-content-type.jpg" alt="Content type filtering" />&lt;/p>
+&lt;p>The text field on the left is a search field. Type in your content’s title to search.&lt;/p>
+&lt;p>If you’d like to narrow down the results, you can filter the results by&lt;/p>
+&lt;ul>
+&lt;li>Content type&lt;/li>
+&lt;li>Published Status&lt;/li>
+&lt;li>Language&lt;/li>
+&lt;/ul>
+&lt;p>Click the edit button on the right side of the row to make changes.&lt;/p>
+&lt;p>If you’re in the results of your search, still not sure which piece of content is the correct one, you can click on the title of the content in the left side of each results to view it.&lt;/p>
+&lt;h2 id="deleting-content">Deleting Content&lt;/h2>
+&lt;p>You can delete a content three ways:&lt;/p>
+&lt;ul>
+&lt;li>By clicking the Delete tab when you visit any page&lt;/li>
+&lt;li>By selecting the Delete tab when you’re editing any page.&lt;/li>
+&lt;li>By choosing Delete from the Dropdown on the results page.&lt;/li>
+&lt;/ul>
+&lt;p>You can also delete “in bulk” by ticking the checkmarks next to multiple rows of content on the content results page, selecting “Delete content” from the dropdown above the results table, and then clicking the “Apply to Selected” items.&lt;/p>
+&lt;p>This should only be done if you’re sure of which content you’re selecting to delete.&lt;/p>
+&lt;h2 id="how-to-use-open-y-fields">How to Use Open Y Fields&lt;/h2>
+&lt;p>Each content type will have different fields based on the information you need to enter, but they will generally fall into one of the following categories.&lt;/p>
+&lt;h3 id="unformattedstring-text">Unformatted/&amp;ldquo;String&amp;rdquo; Text&lt;/h3>
+&lt;p>These are one-line text boxes, such as page titles. Simply enter text into the box.&lt;/p>
+&lt;p>
+&lt;img src="./basics-title.png" alt="Title field" />&lt;/p>
+&lt;h3 id="unformatted-textbox">Unformatted Textbox&lt;/h3>
+&lt;p>A larger box that allows for line breaks/hard returns/paragraphs. As with the string text field, enter text in this box. These fields will typically allow you to enter longer amounts of text.&lt;/p>
+&lt;h3 id="dropdownsradio-buttons">Dropdowns/Radio Buttons&lt;/h3>
+&lt;p>Select one of the options provided. Occasionally, you’ll have to click a button to apply or submit your selection.&lt;/p>
+&lt;h3 id="multiselect-fields">Multiselect Fields&lt;/h3>
+&lt;p>
+&lt;img src="./basics-location.png" alt="Locations field" />&lt;/p>
+&lt;p>Like a dropdown, but you can select multiple options by holding Control (Windows) or Command (Mac) and clicking on two or more selections.&lt;/p>
+&lt;h3 id="wysiwygformatted-text-editor">WYSIWYG/Formatted Text Editor&lt;/h3>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/yyCsOP3GpQc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>A textbox that styles your text visually and allows you add links and embed different types of media.&lt;/p>
+&lt;p>
+&lt;a href="/docs/user-documentation/text-editor/">More on the Text Editor ⇒&lt;/a>&lt;/p>
+&lt;h3 id="autocomplete-field">Autocomplete Field&lt;/h3>
+&lt;p>Appears like a text field, but with a little circle off the right. Used for searching content, blocks or taxonomy terms on your website.&lt;/p>
+&lt;p>Type in what you wish to enter, and then select from one of the optional results that appear below. Results will narrow as you type.&lt;/p>
+&lt;p>
+&lt;img src="./basics-category.gif" alt="Category field" />&lt;/p>
+&lt;h3 id="linksbutton-fields">Links/Button Fields&lt;/h3>
+&lt;p>These will typically appear as a single box with two fields inside. They add a link onto a page, often as a button. The URL field is your link, which the Link Text is your call to action.’&lt;/p>
+&lt;p>
+&lt;img src="./basics-link.gif" alt="Link field" />&lt;/p>
+&lt;p>The URL field supports both relative URLs for links on your site (e.g., /join for
+&lt;a href="http://myymca.org/join" target="_blank">http://myymca.org/join&lt;/a>) and full URLs for links on other sites (e.g.,
+&lt;a href="http://someotherymca.org/join%29" target="_blank">http://someotherymca.org/join)&lt;/a>.&lt;/p>
+&lt;p>You can also search for the title of a piece of content on your website and select a piece of content like in any other autocomplete field.&lt;/p>
+&lt;h3 id="image-fieldsimage-library">Image Fields/Image Library&lt;/h3>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/4IC2h1hASF4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>You can add, edit and upload images any time you see a tab with Image in the title. To use the media browser, click the button in the image field.&lt;/p>
+&lt;p>
+&lt;a href="/docs/user-documentation/text-editor/adding-images/">More on Using the Image Library ⇒&lt;/a>&lt;/p>
+&lt;h2 id="cloning-content">Cloning Content&lt;/h2>
+&lt;p>You can clone content using the &amp;ldquo;Clone&amp;rdquo; button on many pages&amp;hellip;
+&lt;img src="./basics-clone-tabs.png" alt="" />&lt;/p>
+&lt;p>or on the Content list in the site administration.&lt;/p>
+&lt;p>
+&lt;img src="./basics-clone-content.png" alt="" />&lt;/p>
+&lt;p>Once you choose to clone a piece of content you will be presented with a complex screen asking which entities you would like to clone. In general, you can leave all of the checkboxes as they are. Changing the options could result in unintended consequences.&lt;/p>
+&lt;p>
+&lt;img src="./basics-clone-options.png" alt="" />&lt;/p>
+&lt;p>Scroll to the bottom of the checkbox options, choose &lt;strong>Take ownership&lt;/strong> if you would like your user to own the new content, then &lt;strong>Save&lt;/strong>.&lt;/p></description></item></channel></rss>
