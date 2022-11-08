@@ -1730,12 +1730,22 @@ Basically - run a command under root&lt;/li>
 &lt;h3 id="update-the-site">Update the site&lt;/h3>
 &lt;p>Go to the &lt;code>docroot&lt;/code> folder of your codebase and run:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>drush updatedb
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you have issues, the only way to avoid errors is to use Drupal&amp;rsquo;s &lt;code>hook_update_dependencies&lt;/code> API to change the order of running updates to eliminate issues.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="if-updatedb-fails">If updatedb fails&amp;hellip;&lt;/h4>
+&lt;p>you can use Drupal&amp;rsquo;s &lt;code>hook_update_dependencies&lt;/code> API to change the order of running updates to eliminate issues.
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/1560/files" target="_blank">See this example&lt;/a>.&lt;/p>
 &lt;p>Ensure commands above have finished with no error messages. The best way to check it is to run them one more time. If the next run shows:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ drush updatedb
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>No database updates required &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>success&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You have almost 100% proven updates were executed correctly.&lt;/p>
+&lt;h4 id="if-loading-the-site-fails">If loading the site fails&amp;hellip;&lt;/h4>
+&lt;p>you may receive an error like this:&lt;/p>
+&lt;blockquote>
+&lt;p>Error: Class &amp;hellip; not found in &amp;hellip;&lt;/p>
+&lt;/blockquote>
+&lt;p>This happens due to Drupal not finding the renamed modules. To resolve this, manually clear the Drupal caches:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>drush ev &amp;#34;drupal_flush_all_caches();&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush cr
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>which should clear up the errors.&lt;/p>
 &lt;h3 id="visit-openy-upgrade-tool-dashboard">Visit OpenY upgrade tool dashboard&lt;/h3>
 &lt;p>Review and revert or apply an updated version of the configs after the upgrade.&lt;/p>
 &lt;p>
