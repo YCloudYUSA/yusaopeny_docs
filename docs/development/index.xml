@@ -486,7 +486,60 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;p>You can set which preset must be installed by specifying it with &lt;code>openy_configure_profile.preset&lt;/code> variable, and theme with
 &lt;code>openy_theme_select.theme&lt;/code>variable e.g.:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>drush site-install openy --account-pass=password --db-url=&amp;#34;mysql://user:pass@host:3306/db&amp;#34; --root=/var/www/docroot openy_configure_profile.preset=extended openy_theme_select.theme=openy_rose
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Module Development</title><link>/docs/development/module-develompent/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/module-develompent/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Map Settings &amp; Configuration</title><link>/docs/development/map-settings-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/map-settings-config/</guid><description>
+&lt;p>YMCA Website Services includes robust mapping functionality defined in the
+&lt;a href="https://github.com/open-y-subprojects/openy_map" target="_blank">openy_map subproject&lt;/a>. Maps typically are displayed on the &lt;code>/locations&lt;/code> page and are highly customizable.&lt;/p>
+&lt;p>These are a few common customizations:&lt;/p>
+&lt;h2 id="changing-map-options">Changing Map Options&lt;/h2>
+&lt;p>By default, content types have these labels on the map:&lt;/p>
+&lt;ul>
+&lt;li>Branch = YMCAs&lt;/li>
+&lt;li>Camp = Camps&lt;/li>
+&lt;li>Facility = Facilities&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;img src="./map-labels.png" alt="Screenshot showing map labels" />&lt;/p>
+&lt;p>These labels can be customized in the Drupal administration pages to better suit your YMCA&amp;rsquo;s more member-focused terminology. To do so:&lt;/p>
+&lt;ul>
+&lt;li>In the Admin Menu, go to &lt;strong>YMCA Website Services&lt;/strong> (or &lt;strong>Open Y&lt;/strong> on prior versions) &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Map Settings&lt;/strong>&lt;/li>
+&lt;li>In the &lt;strong>Branch/Camp/Facility Content Type&lt;/strong> sections you can:
+&lt;ul>
+&lt;li>edit the label names,&lt;/li>
+&lt;li>show or hide the content type on the Locations page,&lt;/li>
+&lt;li>set the filter to be on or off by default, and&lt;/li>
+&lt;li>set the map icon.
+&lt;figure class="image-caption">
+&lt;img alt="Branch content type settings" srcset="
+/docs/development/map-settings-config/branch-content-type-map-settings_hu208caf786b9a37d078a724c84ce0a14a_56698_f4cb3315bb9bed861be1e35b0e233c44.png 458w,
+/docs/development/map-settings-config/branch-content-type-map-settings_hu208caf786b9a37d078a724c84ce0a14a_56698_682278bea94c1f4ab9b152c9b0334747.png 726w,
+/docs/development/map-settings-config/branch-content-type-map-settings_hu208caf786b9a37d078a724c84ce0a14a_56698_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/development/map-settings-config/branch-content-type-map-settings_hu208caf786b9a37d078a724c84ce0a14a_56698_f4cb3315bb9bed861be1e35b0e233c44.png" />
+&lt;figcaption>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Edit each content type as needed then &lt;strong>Save&lt;/strong> the form.&lt;/li>
+&lt;li>Reload &lt;code>/locations&lt;/code> and you should see your changes.&lt;/li>
+&lt;/ul>
+&lt;h2 id="adding-additional-location-types">Adding Additional Location Types&lt;/h2>
+&lt;p>You can add new content types to the map with a few steps. This may require some trial and error, so be sure to work in a testing environment first. You will need to have the &lt;strong>Field UI&lt;/strong> module enabled to do this through the Drupal admin UI.&lt;/p>
+&lt;ul>
+&lt;li>Create a new content type via &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Content types&lt;/strong> &amp;gt; &lt;strong>Add content type&lt;/strong>&lt;/li>
+&lt;li>Add these existing fields to the content type:
+&lt;ul>
+&lt;li>&lt;code>field_location_coordinates&lt;/code> - required&lt;/li>
+&lt;li>&lt;code>field_location_address&lt;/code> and &lt;code>field_location_phone&lt;/code> - suggested for display on the map and location teasers.&lt;/li>
+&lt;li>&lt;code>field_location_amenities&lt;/code> - if the location should be searchable with the Amenities search.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Set up the Teaser display on the new content type:
+&lt;ul>
+&lt;li>Navigate to &lt;strong>Manage display&lt;/strong> then &lt;strong>Teaser&lt;/strong>&lt;/li>
+&lt;li>Update these settings to match the Branch Teaser display at &lt;code>/admin/structure/types/manage/branch/display/teaser&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Go back to the Map Settings at &lt;code>admin/openy/settings/openy_map&lt;/code> and configure the options for your new location type.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Module Development</title><link>/docs/development/module-develompent/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/module-develompent/</guid><description>
 &lt;h3 id="module-content-removal">Module content removal&lt;/h3>
 &lt;p>When deleting an entity, where plugins or services of removing module are used,
 then content removal should be done in the hook_uninstall() of that module.
