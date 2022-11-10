@@ -1233,7 +1233,7 @@ Given the fact
 &lt;li>
 &lt;a href="https://youtube.com/watch?v=RSsQLVVhldc&amp;amp;list=PL_QVggMcFfKZp05THV3dYlYOG3MsJ8xSf" target="_blank">For Developers&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Virtual Y Configuration</title><link>/docs/wiki/virtual-y-configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/virtual-y-configuration/</guid><description>
-&lt;h1 id="virtual-y-predefined-pages">Virtual Y predefined pages&lt;/h1>
+&lt;h2 id="virtual-y-predefined-pages">Virtual Y predefined pages&lt;/h2>
 &lt;p>Once Virtual Y installed system creates set of required Landing pages with predefined URLs. These pages are:&lt;/p>
 &lt;ul>
 &lt;li>Virtual Y Landing page - &lt;code>/virtual-ymca&lt;/code>&lt;/li>
@@ -1241,7 +1241,17 @@ Given the fact
 &lt;/ul>
 &lt;p>URLs to pages above then set as configuration values at &lt;code>/admin/openy/virtual-ymca&lt;/code>.&lt;/p>
 &lt;p>Admin user is obligated to keep pages in the system or properly update configuration with new values to keep Virtual Y functionality working correctly.&lt;/p>
-&lt;h1 id="virtual-y-log-module">Virtual Y Log module&lt;/h1>
+&lt;h2 id="protecting-virtual-y-pages">Protecting Virtual Y Pages&lt;/h2>
+&lt;p>If content editors modify the alias or remove the Virtual Y pages above, the VY site may break. Site administrators may want to add additional protections to the site to prevent editors from making those changes. We recommend
+&lt;a href="https://www.drupal.org/project/node_keep" target="_blank">Node Keep&lt;/a> for this purpose:&lt;/p>
+&lt;ul>
+&lt;li>Add &lt;code>node_keep&lt;/code> to your repo with `composer require &amp;lsquo;drupal/node_keep&amp;rsquo;&lt;/li>
+&lt;li>Enable the module in Drupal&lt;/li>
+&lt;li>Edit each of the pages above and set the Node Keep options as you wish to protect the pages&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;img src="./vy-node-keep.png" alt="Screenshot displaying Node Keep options" />&lt;/p>
+&lt;h2 id="virtual-y-log-module">Virtual Y Log module&lt;/h2>
 &lt;p>Virtual Y Log module can be configured via configuration files. Available settings:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>activity_granularity_interval&lt;/code>: Default value &lt;code>600&lt;/code> - sets the interval in Seconds to track user activity on the site&lt;/li>
