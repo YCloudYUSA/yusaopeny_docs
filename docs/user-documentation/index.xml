@@ -313,4 +313,5 @@ After that you will be able to upload multiple files via Media Browser (&lt;code
 &lt;p>Once you choose to clone a piece of content you will be presented with a complex screen asking which entities you would like to clone. In general, you can leave all of the checkboxes as they are. Changing the options could result in unintended consequences.&lt;/p>
 &lt;p>
 &lt;img src="./basics-clone-options.png" alt="" />&lt;/p>
-&lt;p>Scroll to the bottom of the checkbox options, choose &lt;strong>Take ownership&lt;/strong> if you would like your user to own the new content, then &lt;strong>Save&lt;/strong>.&lt;/p></description></item></channel></rss>
+&lt;p>Scroll to the bottom of the checkbox options, choose &lt;strong>Take ownership&lt;/strong> if you would like your user to own the new content, then &lt;strong>Save&lt;/strong>.&lt;/p></description></item><item><title>Docs: Layout Builder</title><link>/docs/user-documentation/layout-builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/</guid><description>
+&lt;p>Layout Builder docs to come soon.&lt;/p></description></item></channel></rss>
