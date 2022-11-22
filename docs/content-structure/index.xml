@@ -5,7 +5,329 @@ You can find a much more low level documentation at
 &lt;a href="https://www.drupal.org/docs/8" target="_blank">drupal.org&lt;/a>.&lt;/p>
 &lt;p>YMCA Website Services has a bunch of content types shipped for the convenience of usage the resulting site.
 We are not limiting amount of content types, could be added by developers, so the list is not final.
-The only rule we are trying to follow is to cover shipped list of content types by YMCA Website Services upgrade path.&lt;/p></description></item><item><title>Docs: Media</title><link>/docs/content-structure/media/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/media/</guid><description/></item><item><title>Docs: Paragraphs</title><link>/docs/content-structure/paragraphs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/</guid><description>
+The only rule we are trying to follow is to cover shipped list of content types by YMCA Website Services upgrade path.&lt;/p></description></item><item><title>Docs: Layout Builder Blocks</title><link>/docs/content-structure/layout-builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/layout-builder/</guid><description>
+&lt;p>These custom block types exist to support page building with Layout Builder.&lt;/p>
+&lt;h2 id="global-fields">Global Fields&lt;/h2>
+&lt;p>These fields are reused across many of the below components.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section title&lt;/td>
+&lt;td>field_section_title&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section subtitle&lt;/td>
+&lt;td>field_section_subtitle&lt;/td>
+&lt;td>Text (plain, long)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="custom-blocks">Custom Blocks&lt;/h2>
+&lt;h3 id="accordion">Accordion&lt;/h3>
+&lt;p>Machine name: &lt;code>lb_accordion&lt;/code>&lt;/p>
+&lt;p>A component for adding custom Accordions.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Accordion Item&lt;/td>
+&lt;td>field_entity_reference_paragraph&lt;/td>
+&lt;td>Entity reference revisions&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>unlimited&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Bundle: accordion_item&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="accordion-item">Accordion Item&lt;/h4>
+&lt;p>Machine name: &lt;code>lb_accordion_item&lt;/code>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Title&lt;/td>
+&lt;td>field_title&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Body&lt;/td>
+&lt;td>field_body&lt;/td>
+&lt;td>Text (formatted, long, with summary)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="grid-cta">Grid CTA&lt;/h3>
+&lt;p>Machine name: &lt;code>lb_grid_cta&lt;/code>&lt;/p>
+&lt;p>Grid CTA Layout Builder component.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section title&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section subtitle&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Grid section CTA/link&lt;/td>
+&lt;td>field_grid_section_cta_link&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>A link button to be displayed below the grid content&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td># of columns&lt;/td>
+&lt;td>field_columns&lt;/td>
+&lt;td>List (text)&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Allows 2-4 columns, defaults to 4.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Grid Items&lt;/td>
+&lt;td>field_grid_items&lt;/td>
+&lt;td>Entity Reference&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;td>unlimited&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Bundle: Grid Item&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="grid-item">Grid Item&lt;/h4>
+&lt;p>Machine name: &lt;code>lb_cta_item&lt;/code>&lt;/p>
+&lt;p>The Grid Item paragraph is referenced by the Grid CTA.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Grid item title&lt;/td>
+&lt;td>field_grid_item_title&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Grid item description&lt;/td>
+&lt;td>field_grid_item_description&lt;/td>
+&lt;td>Text (formatted, long)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Grid item media&lt;/td>
+&lt;td>field_grid_item_icon&lt;/td>
+&lt;td>Entity reference&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Grid item CTA/link&lt;/td>
+&lt;td>field_grid_item_cta_link&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="ping-pong">Ping-pong&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section subtitle&lt;/td>
+&lt;td>field_subtitle&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section Title&lt;/td>
+&lt;td>field_title&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Item title&lt;/td>
+&lt;td>field_item_title&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Item Description&lt;/td>
+&lt;td>field_item_description&lt;/td>
+&lt;td>Text (formatted, long)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Item CTA\Link&lt;/td>
+&lt;td>field_item_cta&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>2&lt;/td>
+&lt;td>The first will use the primary style and the second, secondary.&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Item Image&lt;/td>
+&lt;td>field_item_image&lt;/td>
+&lt;td>Entity reference&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Item Image Position&lt;/td>
+&lt;td>field_item_image_position&lt;/td>
+&lt;td>List (text)&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>Places the image on this side of the page in the full-width display. Image will always be above Description on at narrow widths.&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Media</title><link>/docs/content-structure/media/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/media/</guid><description/></item><item><title>Docs: Paragraphs</title><link>/docs/content-structure/paragraphs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/</guid><description>
 &lt;p>Welcome to YMCA Website Services Paragraphs.&lt;/p>
 &lt;p>Paragraphs are bits of content, components, from
 &lt;a href="https://en.wikipedia.org/wiki/Component-based_software_engineering#Software_component" target="_blank">component based design&lt;/a> ideology.
