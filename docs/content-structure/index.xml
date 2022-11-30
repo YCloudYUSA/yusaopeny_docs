@@ -5,9 +5,9 @@ You can find a much more low level documentation at
 &lt;a href="https://www.drupal.org/docs/8" target="_blank">drupal.org&lt;/a>.&lt;/p>
 &lt;p>YMCA Website Services has a bunch of content types shipped for the convenience of usage the resulting site.
 We are not limiting amount of content types, could be added by developers, so the list is not final.
-The only rule we are trying to follow is to cover shipped list of content types by YMCA Website Services upgrade path.&lt;/p></description></item><item><title>Docs: Layout Builder Blocks</title><link>/docs/content-structure/layout-builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/layout-builder/</guid><description>
+The only rule we are trying to follow is to cover shipped list of content types by YMCA Website Services upgrade path.&lt;/p></description></item><item><title>Docs: Layout Builder</title><link>/docs/content-structure/layout-builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/layout-builder/</guid><description>
 &lt;p>These custom block types exist to support page building with Layout Builder.&lt;/p>
-&lt;h2 id="global-fields">Global Fields&lt;/h2>
+&lt;h3 id="global-fields">Global Fields&lt;/h3>
 &lt;p>These fields are reused across many of the below components.&lt;/p>
 &lt;table>
 &lt;thead>
@@ -45,10 +45,9 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h2 id="custom-blocks">Custom Blocks&lt;/h2>
-&lt;h3 id="accordion">Accordion&lt;/h3>
-&lt;p>Machine name: &lt;code>lb_accordion&lt;/code>&lt;/p>
-&lt;p>A component for adding custom Accordions.&lt;/p>
+&lt;h2 id="accordion">Accordion&lt;/h2>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_accordion&lt;/code>&lt;/p>
+&lt;p>Expandable pairs of question/answer or header/section fields.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -75,8 +74,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h4 id="accordion-item">Accordion Item&lt;/h4>
-&lt;p>Machine name: &lt;code>lb_accordion_item&lt;/code>&lt;/p>
+&lt;h3 id="accordion-item">Accordion Item&lt;/h3>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_accordion_item&lt;/code>&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -95,8 +94,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>Title&lt;/td>
 &lt;td>field_title&lt;/td>
 &lt;td>Text (plain)&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
@@ -105,17 +104,155 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>Body&lt;/td>
 &lt;td>field_body&lt;/td>
 &lt;td>Text (formatted, long, with summary)&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h3 id="grid-cta">Grid CTA&lt;/h3>
-&lt;p>Machine name: &lt;code>lb_grid_cta&lt;/code>&lt;/p>
-&lt;p>Grid CTA Layout Builder component.&lt;/p>
+&lt;h2 id="cards">Cards&lt;/h2>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_cards&lt;/code>&lt;/p>
+&lt;p>Flexible card-style components that allow up to 4 cards to display across the page depending on the chosen layout.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section title&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section subtitle&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section CTA/Link&lt;/td>
+&lt;td>field_cta&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td># of columns&lt;/td>
+&lt;td>field_columns&lt;/td>
+&lt;td>List (text)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>Choose &amp;ldquo;none&amp;rdquo; for one-column layout.&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cards&lt;/td>
+&lt;td>field_cards&lt;/td>
+&lt;td>Entity reference revisions&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>4&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Bundle: Card&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="card">Card&lt;/h3>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_card&lt;/code>&lt;/p>
+&lt;p>The Card paragraph is referenced by the Cards block.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Title&lt;/td>
+&lt;td>field_card_title&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Image&lt;/td>
+&lt;td>field_card_image&lt;/td>
+&lt;td>Entity reference&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Topic Tag&lt;/td>
+&lt;td>field_card_topic_tag&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>May be changed to term.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Description&lt;/td>
+&lt;td>field_card_description&lt;/td>
+&lt;td>Text (plain, long)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CTA/Link&lt;/td>
+&lt;td>field_card_cta&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="grid-cta">Grid CTA&lt;/h2>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_grid_cta&lt;/code>&lt;/p>
+&lt;p>Sets of content with a headline, description, and link displayed in 2 to 4-item wide rows, with the option to include icons or images.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -182,9 +319,9 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h4 id="grid-item">Grid Item&lt;/h4>
-&lt;p>Machine name: &lt;code>lb_cta_item&lt;/code>&lt;/p>
-&lt;p>The Grid Item paragraph is referenced by the Grid CTA.&lt;/p>
+&lt;h3 id="grid-item">Grid Item&lt;/h3>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_cta_item&lt;/code>&lt;/p>
+&lt;p>The Grid Item paragraph is referenced by the Grid CTA component.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -241,7 +378,68 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h3 id="ping-pong">Ping-pong&lt;/h3>
+&lt;h2 id="hero-banner">Hero Banner&lt;/h2>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_hero&lt;/code>&lt;/p>
+&lt;p>A full-width, almost full-height display with a header, description, and call to action overlaid on an image.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Title&lt;/td>
+&lt;td>field_title&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Description&lt;/td>
+&lt;td>field_description&lt;/td>
+&lt;td>Text (formatted, long)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Media&lt;/td>
+&lt;td>field_media&lt;/td>
+&lt;td>Entity reference&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Bundle: Image, Local Video, Video&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CTA\Link&lt;/td>
+&lt;td>field_hero_cta&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="ping-pong">Ping-pong&lt;/h2>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_ping_pong&lt;/code>&lt;/p>
+&lt;p>Usually paired sets of full-width page components that include media, header, description, and call to action arranged horizontally.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -322,7 +520,193 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>List (text)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
-&lt;td>Places the image on this side of the page in the full-width display. Image will always be above Description on at narrow widths.&lt;/td>
+&lt;td>Places the image on this side of the page in the full-width display. Image will stack above text at narrow widths.&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="promo-card">Promo Card&lt;/h2>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_promo&lt;/code>&lt;/p>
+&lt;p>A title, headline, description, and link that usually display in the right or left sidebar.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Title&lt;/td>
+&lt;td>field_title&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Body&lt;/td>
+&lt;td>body&lt;/td>
+&lt;td>Text (formatted, long, with summary)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Icon / Image&lt;/td>
+&lt;td>field_image&lt;/td>
+&lt;td>Entity reference&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Bundle: Image&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CTA / Link&lt;/td>
+&lt;td>field_cta&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="simple-menu">Simple Menu&lt;/h2>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_simple_menu&lt;/code>&lt;/p>
+&lt;p>A simple 1-level sidebar menu that can display in either the right or left sidebar area.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Icon&lt;/td>
+&lt;td>field_icon&lt;/td>
+&lt;td>Entity reference&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Bundle: Image&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Links&lt;/td>
+&lt;td>field_lb_simple_menu_links&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;td>unlimited&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="tabs">Tabs&lt;/h2>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_tabs&lt;/code>&lt;/p>
+&lt;p>Gives users the ability to switch page views by selecting tabs across the top of the page instead of having to navigate to a new page.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section title&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section subtitle&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Tabs&lt;/td>
+&lt;td>field_tabs&lt;/td>
+&lt;td>Entity reference revisions&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>unlimited&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Bundle: Tab&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="tab">Tab&lt;/h3>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>tab&lt;/code>&lt;/p>
+&lt;p>The Tab paragraph is referenced by the Tabs block.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Title&lt;/td>
+&lt;td>field_title&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Body&lt;/td>
+&lt;td>field_body&lt;/td>
+&lt;td>Text (formatted, long, with summary)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
