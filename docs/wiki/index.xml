@@ -661,47 +661,7 @@
 &lt;a href="https://www.abetterinternet.org/" target="_blank">Internet Security Research Group (ISRG)&lt;/a>.&amp;rdquo;
 &lt;a href="https://certbot.eff.org/" target="_blank">Certbot&lt;/a> is &amp;ldquo;a free, open source software tool for automatically using Let’s Encrypt certificates on manually-administrated websites to enable HTTPS.&amp;rdquo;&lt;/p>
 &lt;p>Certbot maintains detailed documentation for installing SSL certificates on a variety of systems. Simply
-&lt;a href="https://certbot.eff.org/instructions" target="_blank">visit Certbot&amp;rsquo;s instructions wizard&lt;/a> and follow the instructions to configure your server.&lt;/p></description></item><item><title>Docs: Open Y Terms of Use</title><link>/docs/wiki/open-y-terms-of-use/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-terms-of-use/</guid><description>
-&lt;p>Version 2.0, May 2018&lt;/p>
-&lt;p>This is a free service provided by Open Y, LLC (“&lt;strong>we&lt;/strong>,” “&lt;strong>us&lt;/strong>,” and “&lt;strong>our&lt;/strong>”) for users in the YMCA community (“&lt;strong>users&lt;/strong>,” “&lt;strong>you&lt;/strong>,” and “&lt;strong>your&lt;/strong>”). &lt;strong>By using the Open Y repository, you agree to these Terms of Use.&lt;/strong>&lt;/p>
-&lt;p>We reserve the right to modify or discontinue, temporarily or permanently any services or the Terms of Use at any time, with or without prior notice to users. Open Y, LLC is not liable for any damage to any user or other third party that may result from any such modification, suspension or discontinuance of the service or of the Terms of Use.&lt;/p>
-&lt;p>&lt;strong>Downloading&lt;/strong>&lt;/p>
-&lt;p>Open Y, LLC is not responsible for the content maintained in the repository. Any material downloaded or otherwise obtained through your use of our services is done at your own discretion and risk, and you will be solely responsible for any damage to your computer system or loss of data that results from the download of any such material. You agree that we have no responsibility or liability for the deletion of or the failure to store or to transmit, any content or communication maintained by the service. We retain the right to create limits on use and storage at our sole discretion at any time with or without notice.&lt;/p>
-&lt;p>We are not responsible for the content, data, or actions of third parties, and you release Open Y, LLC, our directors, officers, employees, and agents from any claims and damages, known and unknown, arising out of or in any way connected with any claim you have against any such third parties. No advice or information, whether oral or written, obtained by you from us or through or from our services creates any warranty not expressly stated in these Terms of Use.&lt;/p>
-&lt;p>All code downloaded from Open Y is based on the Drupal® code base, which is subject to the terms of the Drupal license (
-&lt;a href="www.drupal.org">www.drupal.org&lt;/a>). Open Y code is a derivative work of Drupal and any distribution must be under the terms of the
-&lt;a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" target="_blank">GNU General Public License&lt;/a> version 2 or later versions.&lt;/p>
-&lt;p>Unless otherwise stated, all content (excluding code), including user-generated content, such as comments and discussions on the Open Y web site, is licensed under
-&lt;a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">Creative Commons License, Attribution-ShareAlike 2.0&lt;/a>.&lt;/p>
-&lt;p>&lt;strong>Contributing&lt;/strong>&lt;/p>
-&lt;p>The term “contribution” means any source code, object code, patch, tool, sample, graphic, specification, manual, documentation, comments or any other content posted or submitted by you to Open Y. We welcome proposed contributions, however, all contributions are subject to review and approval, and potential modification, before inclusion in a release as part of Open Y.&lt;/p>
-&lt;p>It is your responsibility to obtain appropriate licensing and attribution for content that you submit to Open Y. Content without appropriate licensing or attribution will be removed.&lt;/p>
-&lt;p>You represent and warrant that:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>Each contribution that you submit is an original work of authorship and you can legally grant the rights set out in these Terms of Use;&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To the best of your knowledge, each contribution will not violate any third party&amp;rsquo;s copyrights, trademarks, patents, or other intellectual property rights;&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Each contribution shall be in compliance with U.S. export control laws and other applicable export and import laws.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>You agree to notify us if you become aware of any circumstance which would make any of the foregoing representations inaccurate in any respect.&lt;/p>
-&lt;p>All code must comply with the reasonable standards issued by Open Y, including architecture and security protocols. All code submitted to the repository that is a derivative work must be
-&lt;a href="https://www.gnu.org/licenses/license-list.en.html#GPLCompatibleLicenses" target="_blank">GPLv2+ compatible&lt;/a> and will automatically be redistributed as GPLv2+.&lt;/p>
-&lt;p>Open Y, LLC in its sole discretion will review, modify and determine whether to include code in its next release. We can refuse or remove any contributions at our discretion and without prior notice.&lt;/p>
-&lt;p>&lt;strong>Disclaimer&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>All content is provided “as is,” without any warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose and non-infringement; (ii) Open Y, LLC makes no other warranty that its services will meet your requirements, be safe, secure, uninterrupted, timely, accurate, or error-free, or that your information will be secure; and (iii) the entire risk as to the quality and performance of the content is with you.&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>Limit of Liability&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>In no event will Open Y, LLC, its affiliates or their licensors, service providers, employees, agents, officers, or directors be liable for any indirect, special, incidental, consequential or punitive damages, including but not limited to loss of revenue, loss of profits, loss of business or anticipated savings, loss of goodwill, and whether caused by tort (including negligence), breach of contract or otherwise, even if foreseeable. The foregoing does not affect any liability which cannot be excluded or limited under applicable law.&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>Copyright DMCA Notice&lt;/strong>&lt;/p>
-&lt;p>If a user or other third party believes that its content has been copied in a way that constitutes copyright infringement, that user or third party should provide Open Y, LLC with the following information: (a) an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright&lt;/p>
-&lt;p>interest; (b) a description of the copyrighted work that has been infringed; (c) a description of where the allegedly infringing material is located; (d) the affected user or third party&amp;rsquo;s address, telephone number and email address; (e) a statement by the affected user or third party that he or she has a good faith belief that the disputed use is not authorized by the copyright owner, its agent or the law; and (f) a statement by the affected user or third party, under penalty of perjury, that the above information is accurate and that such user or third party is the copyright owner or is otherwise authorized to act on the copyright owner&amp;rsquo;s behalf. Please report any alleged copyright infringements to
-&lt;a href="http://openy.org" target="_blank">http://openy.org&lt;/a>.&lt;/p>
-&lt;p>&lt;strong>Venue and Governing Law&lt;/strong>
-This Agreement shall be governed by, and construed in accordance with, the laws of the State of Minnesota, without reference to conflicts of laws principles. The parties agree that the federal and state courts in the county of Hennepin, Minnesota will have exclusive jurisdiction and venue under this Agreement, and each party hereby agrees to submit to such jurisdiction exclusively.&lt;/p></description></item><item><title>Docs: Open Y update sunset - opt out tutorial</title><link>/docs/wiki/open-y-update-sunset---opt-out-tutorial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-update-sunset---opt-out-tutorial/</guid><description>
+&lt;a href="https://certbot.eff.org/instructions" target="_blank">visit Certbot&amp;rsquo;s instructions wizard&lt;/a> and follow the instructions to configure your server.&lt;/p></description></item><item><title>Docs: Open Y update sunset - opt out tutorial</title><link>/docs/wiki/open-y-update-sunset---opt-out-tutorial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-update-sunset---opt-out-tutorial/</guid><description>
 &lt;h2 id="preamble">Preamble&lt;/h2>
 &lt;p>Back on 28 Jan 2020 Open Y decided to add an anonymous analytics module
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny/tree/9.x-2.x/modules/custom/openy_analytics" target="_blank">&lt;code>openy_analytics&lt;/code>&lt;/a> which was a free opt-in/opt-out solution for the Core team to gather stats from Open Y sites about the frequency of components used.&lt;/p>
@@ -1257,7 +1217,47 @@ Given the fact
 &lt;li>&lt;code>activity_granularity_interval&lt;/code>: Default value &lt;code>600&lt;/code> - sets the interval in Seconds to track user activity on the site&lt;/li>
 &lt;li>&lt;code>archiver_enabled&lt;/code>: default value &lt;code>true&lt;/code> - enable / disable activity logs archiver cron execution&lt;/li>
 &lt;li>&lt;code>archiver_store_period&lt;/code>: default value &lt;code>1 year&lt;/code> - set the period when activity logs will be collected and placed to same archive. This value should be set to as Relative Date/Time PHP string, e.g. &lt;code>1 week&lt;/code>, &lt;code>2 months&lt;/code>, &lt;code>1 year&lt;/code>, etc.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: YMCA Website Services 2.0 root YAML files</title><link>/docs/wiki/open-y-2.0-root-yaml-files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-2.0-root-yaml-files/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Website Services Terms of Use</title><link>/docs/wiki/ws-terms-of-use/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/ws-terms-of-use/</guid><description>
+&lt;p>Version 2.1, December 2022&lt;/p>
+&lt;p>This is a free service provided by YUSA (“&lt;strong>we&lt;/strong>,” “&lt;strong>us&lt;/strong>,” and “&lt;strong>our&lt;/strong>”) for users in the YMCA community (“&lt;strong>users&lt;/strong>,” “&lt;strong>you&lt;/strong>,” and “&lt;strong>your&lt;/strong>”). &lt;strong>By using the Website Services distribution repository, you agree to these Terms of Use.&lt;/strong>&lt;/p>
+&lt;p>We reserve the right to modify or discontinue, temporarily or permanently any services or the Terms of Use at any time, with or without prior notice to users. YUSA is not liable for any damage to any user or other third party that may result from any such modification, suspension or discontinuance of the service or of the Terms of Use.&lt;/p>
+&lt;p>&lt;strong>Downloading&lt;/strong>&lt;/p>
+&lt;p>YUSA is not responsible for the content maintained in the repository. Any material downloaded or otherwise obtained through your use of our services is done at your own discretion and risk, and you will be solely responsible for any damage to your computer system or loss of data that results from the download of any such material. You agree that we have no responsibility or liability for the deletion of or the failure to store or to transmit, any content or communication maintained by the service. We retain the right to create limits on use and storage at our sole discretion at any time with or without notice.&lt;/p>
+&lt;p>We are not responsible for the content, data, or actions of third parties, and you release YUSA, our directors, officers, employees, and agents from any claims and damages, known and unknown, arising out of or in any way connected with any claim you have against any such third parties. No advice or information, whether oral or written, obtained by you from us or through or from our services creates any warranty not expressly stated in these Terms of Use.&lt;/p>
+&lt;p>All code downloaded from Website Services distribution is based on the Drupal® code base, which is subject to the terms of the Drupal license (
+&lt;a href="www.drupal.org">www.drupal.org&lt;/a>). Website Services distribution code is a derivative work of Drupal and any distribution must be under the terms of the
+&lt;a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" target="_blank">GNU General Public License&lt;/a> version 2 or later versions.&lt;/p>
+&lt;p>Unless otherwise stated, all content (excluding code), including user-generated content, such as comments and discussions on the Website Services distribution web site, is licensed under
+&lt;a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">Creative Commons License, Attribution-ShareAlike 2.0&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Contributing&lt;/strong>&lt;/p>
+&lt;p>The term “contribution” means any source code, object code, patch, tool, sample, graphic, specification, manual, documentation, comments or any other content posted or submitted by you to Website Services distribution. We welcome proposed contributions, however, all contributions are subject to review and approval, and potential modification, before inclusion in a release as part of Website Services distribution.&lt;/p>
+&lt;p>It is your responsibility to obtain appropriate licensing and attribution for content that you submit to Website Services distribution. Content without appropriate licensing or attribution will be removed.&lt;/p>
+&lt;p>You represent and warrant that:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Each contribution that you submit is an original work of authorship and you can legally grant the rights set out in these Terms of Use;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To the best of your knowledge, each contribution will not violate any third party&amp;rsquo;s copyrights, trademarks, patents, or other intellectual property rights;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Each contribution shall be in compliance with U.S. export control laws and other applicable export and import laws.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>You agree to notify us if you become aware of any circumstance which would make any of the foregoing representations inaccurate in any respect.&lt;/p>
+&lt;p>All code must comply with the reasonable standards issued by Website Services distribution, including architecture and security protocols. All code submitted to the repository that is a derivative work must be
+&lt;a href="https://www.gnu.org/licenses/license-list.en.html#GPLCompatibleLicenses" target="_blank">GPLv2+ compatible&lt;/a> and will automatically be redistributed as GPLv2+.&lt;/p>
+&lt;p>YUSA in its sole discretion will review, modify and determine whether to include code in its next release. We can refuse or remove any contributions at our discretion and without prior notice.&lt;/p>
+&lt;p>&lt;strong>Disclaimer&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>All content is provided “as is,” without any warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose and non-infringement; (ii) YUSA makes no other warranty that its services will meet your requirements, be safe, secure, uninterrupted, timely, accurate, or error-free, or that your information will be secure; and (iii) the entire risk as to the quality and performance of the content is with you.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Limit of Liability&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>In no event will YUSA, its affiliates or their licensors, service providers, employees, agents, officers, or directors be liable for any indirect, special, incidental, consequential or punitive damages, including but not limited to loss of revenue, loss of profits, loss of business or anticipated savings, loss of goodwill, and whether caused by tort (including negligence), breach of contract or otherwise, even if foreseeable. The foregoing does not affect any liability which cannot be excluded or limited under applicable law.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Copyright DMCA Notice&lt;/strong>&lt;/p>
+&lt;p>If a user or other third party believes that its content has been copied in a way that constitutes copyright infringement, that user or third party should provide YUSA with the following information: (a) an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright&lt;/p>
+&lt;p>interest; (b) a description of the copyrighted work that has been infringed; (c) a description of where the allegedly infringing material is located; (d) the affected user or third party&amp;rsquo;s address, telephone number and email address; (e) a statement by the affected user or third party that he or she has a good faith belief that the disputed use is not authorized by the copyright owner, its agent or the law; and (f) a statement by the affected user or third party, under penalty of perjury, that the above information is accurate and that such user or third party is the copyright owner or is otherwise authorized to act on the copyright owner&amp;rsquo;s behalf. Please report any alleged copyright infringements to
+&lt;a href="https://ymca.org" target="_blank">https://ymca.org&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Venue and Governing Law&lt;/strong>
+This Agreement shall be governed by, and construed in accordance with, the laws of the State of Minnesota, without reference to conflicts of laws principles. The parties agree that the federal and state courts in the county of Hennepin, Minnesota will have exclusive jurisdiction and venue under this Agreement, and each party hereby agrees to submit to such jurisdiction exclusively.&lt;/p></description></item><item><title>Docs: YMCA Website Services 2.0 root YAML files</title><link>/docs/wiki/open-y-2.0-root-yaml-files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-2.0-root-yaml-files/</guid><description>
 &lt;p>There are plenty of
 &lt;a href="http://en.wikipedia.org/wiki/YAML" target="_blank">YAML&lt;/a> configuration files at the root of the profile. Some of them are standard Drupal configuration and others are YMCA Website Services specific.&lt;/p>
 &lt;h2 id="basic-yml-files">Basic .yml files&lt;/h2>
@@ -1499,8 +1499,8 @@ Given the fact
 &lt;a href="http://drupal.ua" target="_blank">Drupal Ukrainian community&lt;/a>.&lt;/p>
 &lt;h1 id="bylaws">Bylaws&lt;/h1>
 &lt;p>For the OpenY distribution we have
-&lt;a href="/docs/wiki/open-y-terms-of-use/">Terms of Use&lt;/a> and
-&lt;a href="/docs/wiki/open-y-participant-agreement/">Participant Agreement&lt;/a>.&lt;/p>
+&lt;a href="/docs/wiki/ws-terms-of-use/">Terms of Use&lt;/a> and
+&lt;a href="/docs/wiki/ws-participant-agreement/">Participant Agreement&lt;/a>.&lt;/p>
 &lt;h1 id="development">Development&lt;/h1>
 &lt;p>To understand how we use and develop technologies, refer to the documents below:&lt;/p>
 &lt;ul>
@@ -1554,7 +1554,7 @@ Basically - run a command under root&lt;/li>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>curl -Ls http://bit.ly/initopeny &lt;span style="color:#000;font-weight:bold">|&lt;/span> bash -s beta
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
 &lt;p>If you find any issues please post a message to the issue queue
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny/issues" target="_blank">https://github.com/YCloudYUSA/yusaopeny/issues&lt;/a>&lt;/p></description></item><item><title>Docs: YMCA Website Services Participant Agreement</title><link>/docs/wiki/open-y-participant-agreement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/open-y-participant-agreement/</guid><description>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/issues" target="_blank">https://github.com/YCloudYUSA/yusaopeny/issues&lt;/a>&lt;/p></description></item><item><title>Docs: YMCA Website Services Participant Agreement</title><link>/docs/wiki/ws-participant-agreement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/ws-participant-agreement/</guid><description>
 &lt;p>&lt;strong>YMCA Website Services PARTICIPATION AGREEMENT&lt;/strong>&lt;/p>
 &lt;p>This YMCA Website Services Participation Agreement (this “&lt;strong>Agreement&lt;/strong>”) is between Open Y, LLC, and participating YMCA member associations in the United States (“&lt;strong>Member Associations&lt;/strong>”). Open Y, LLC has received license rights from the National Council of Young Men’s Christian Associations of the United States of America, an Illinois not-for-profit corporation (“&lt;strong>YUSA&lt;/strong>”) to provide the Platform (as defined below) to you. Open Y is not a part of YUSA; Open Y is a part of the YMCA of the Greater Twin Cities.&lt;/p>
 &lt;p>The purpose of the YMCA Website Services community is to collectively advance YMCA web and online experiences to better serve the YMCA mission. The terms of this Agreement govern your use of YMCA Website Services’s open-source digital content management system, which facilitates the sharing of YUSA brand-compliant website templates, tools, applications, and related digital assets (“&lt;strong>Platform&lt;/strong>”). The community provides a collaborative environment for individuals to positively interact and participate in the Platform. These guidelines address the standards and expectations of those contributing to and participating in the YMCA Website Services community and are meant to help our YMCA community grow and thrive. Your participation in YMCA Website Services means that you agree to the following guidelines and to the YMCA Website Services Terms of Use.&lt;/p>
