@@ -1,1 +1,603 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Layout Builder</title><link>/docs/user-documentation/layout-builder/</link><description>Recent content in Layout Builder on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/user-documentation/layout-builder/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Layout Builder</title><link>/docs/user-documentation/layout-builder/</link><description>Recent content in Layout Builder on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/user-documentation/layout-builder/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Designs</title><link>/docs/user-documentation/layout-builder/designs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/designs/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Component&lt;/th>
+&lt;th>Mobile&lt;/th>
+&lt;th>Desktop&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Accordion&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Accordion Mobile design" srcset="
+/img/designs/lb/Accordion%20Mobile_hu73dab785aae55a3543a0f5a0dc2b9174_180692_1cb2376722cf7fedac4f0382ff0d4957.png 458w,
+/img/designs/lb/Accordion%20Mobile_hu73dab785aae55a3543a0f5a0dc2b9174_180692_600eff1d8a95a75853fc9745a74c0d63.png 726w,
+/img/designs/lb/Accordion%20Mobile_hu73dab785aae55a3543a0f5a0dc2b9174_180692_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Accordion%20Mobile_hu73dab785aae55a3543a0f5a0dc2b9174_180692_1cb2376722cf7fedac4f0382ff0d4957.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Accordion%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Accordion Desktop design" srcset="
+/img/designs/lb/Accordion%20Desktop_hua4e08931f3effcca4c3f51d509f14d8c_232050_934a82d65bd4df62d052e778b9bc475a.png 458w,
+/img/designs/lb/Accordion%20Desktop_hua4e08931f3effcca4c3f51d509f14d8c_232050_87d10050937a1d3fdea4d8c2d830fbbb.png 726w,
+/img/designs/lb/Accordion%20Desktop_hua4e08931f3effcca4c3f51d509f14d8c_232050_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Accordion%20Desktop_hua4e08931f3effcca4c3f51d509f14d8c_232050_934a82d65bd4df62d052e778b9bc475a.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Accordion%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cards&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Cards Mobile design" srcset="
+/img/designs/lb/Cards%20Mobile_hucf70d313fe8c92235e399794aaeff0a3_1466825_9f4f2f4246f2a1b637ce865480f872ba.png 458w,
+/img/designs/lb/Cards%20Mobile_hucf70d313fe8c92235e399794aaeff0a3_1466825_c24e6912f3a2123602d014ccae242ac1.png 726w,
+/img/designs/lb/Cards%20Mobile_hucf70d313fe8c92235e399794aaeff0a3_1466825_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Cards%20Mobile_hucf70d313fe8c92235e399794aaeff0a3_1466825_9f4f2f4246f2a1b637ce865480f872ba.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Cards%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Cards Desktop design" srcset="
+/img/designs/lb/Cards%20Desktop_hue0c73011beb07b6b9642683359ffb0f4_2851636_ad563e9843f7ce78bd312170bdcc1fbf.png 458w,
+/img/designs/lb/Cards%20Desktop_hue0c73011beb07b6b9642683359ffb0f4_2851636_c09492f673e4fa11e074ed4a297e6bd8.png 726w,
+/img/designs/lb/Cards%20Desktop_hue0c73011beb07b6b9642683359ffb0f4_2851636_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Cards%20Desktop_hue0c73011beb07b6b9642683359ffb0f4_2851636_ad563e9843f7ce78bd312170bdcc1fbf.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Cards%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Carousels&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Carousels Mobile design" srcset="
+/img/designs/lb/Carousels%20Mobile_hu3be4523fd56d8365a13495e59f790a08_583326_099b25432ea143896321e247436252ec.png 458w,
+/img/designs/lb/Carousels%20Mobile_hu3be4523fd56d8365a13495e59f790a08_583326_7a1d7dfff1489deda294a937b19cd262.png 726w,
+/img/designs/lb/Carousels%20Mobile_hu3be4523fd56d8365a13495e59f790a08_583326_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Carousels%20Mobile_hu3be4523fd56d8365a13495e59f790a08_583326_099b25432ea143896321e247436252ec.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Carousels%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Carousels Desktop design" srcset="
+/img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_d961ccc8bf72f42f0e82bcfe311f7799.png 458w,
+/img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_316726222e2549154d5fa14d09e0d756.png 726w,
+/img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_d961ccc8bf72f42f0e82bcfe311f7799.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Carousels%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Grid Content&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Grid Content Mobile design" srcset="
+/img/designs/lb/Grid%20Content%20Mobile_hu9f93d11168fe8592cd5078aa019307a3_575048_1aa6e2962831d7bc78c7a772d6f68fc6.png 458w,
+/img/designs/lb/Grid%20Content%20Mobile_hu9f93d11168fe8592cd5078aa019307a3_575048_161bea6a2382e0dab83785b16a575fe3.png 726w,
+/img/designs/lb/Grid%20Content%20Mobile_hu9f93d11168fe8592cd5078aa019307a3_575048_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Grid%20Content%20Mobile_hu9f93d11168fe8592cd5078aa019307a3_575048_1aa6e2962831d7bc78c7a772d6f68fc6.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Grid%20Content%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Grid Content Desktop design" srcset="
+/img/designs/lb/Grid%20Content%20Desktop_hu54f535cb30fdc75ac4d509d7226ec1a2_5328979_3ac320035e614f4272ffbb6de6c6c39f.png 458w,
+/img/designs/lb/Grid%20Content%20Desktop_hu54f535cb30fdc75ac4d509d7226ec1a2_5328979_4a5b81191de272414213f70cfed16dd6.png 726w,
+/img/designs/lb/Grid%20Content%20Desktop_hu54f535cb30fdc75ac4d509d7226ec1a2_5328979_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Grid%20Content%20Desktop_hu54f535cb30fdc75ac4d509d7226ec1a2_5328979_3ac320035e614f4272ffbb6de6c6c39f.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Grid%20Content%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Hero Banner&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Hero Banner Mobile design" srcset="
+/img/designs/lb/Hero%20Banner%20Mobile_huc987cfba0d9b95f34c83ba9dc3c03e82_583872_24f76074a96b62604e3b386cfc7cde5b.png 458w,
+/img/designs/lb/Hero%20Banner%20Mobile_huc987cfba0d9b95f34c83ba9dc3c03e82_583872_ea13571ef3c270bbe8327b6a4b3279a5.png 726w,
+/img/designs/lb/Hero%20Banner%20Mobile_huc987cfba0d9b95f34c83ba9dc3c03e82_583872_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Hero%20Banner%20Mobile_huc987cfba0d9b95f34c83ba9dc3c03e82_583872_24f76074a96b62604e3b386cfc7cde5b.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Hero%20Banner%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Hero Banner Desktop design" srcset="
+/img/designs/lb/Hero%20Banner%20Desktop_hue59165020c5288e385eb18a4c033bec7_1990416_86571fdf43a442a291831671e17816a8.png 458w,
+/img/designs/lb/Hero%20Banner%20Desktop_hue59165020c5288e385eb18a4c033bec7_1990416_50ef284b336037cb9cbdcec9bf21eb06.png 726w,
+/img/designs/lb/Hero%20Banner%20Desktop_hue59165020c5288e385eb18a4c033bec7_1990416_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Hero%20Banner%20Desktop_hue59165020c5288e385eb18a4c033bec7_1990416_86571fdf43a442a291831671e17816a8.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Hero%20Banner%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Modals&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Modals Mobile design" srcset="
+/img/designs/lb/Modals%20Mobile_huf75acbf313ade311e510848822cb8d7c_205921_5508ffe9d448ee3b72d86b72570ddd15.png 458w,
+/img/designs/lb/Modals%20Mobile_huf75acbf313ade311e510848822cb8d7c_205921_2020cd72bfa29946cc394aca79c6a3c7.png 726w,
+/img/designs/lb/Modals%20Mobile_huf75acbf313ade311e510848822cb8d7c_205921_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Mobile_huf75acbf313ade311e510848822cb8d7c_205921_5508ffe9d448ee3b72d86b72570ddd15.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Modals%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Modals Desktop design" srcset="
+/img/designs/lb/Modals%20Desktop_hud7326648408d5d8148dccf3e93c5461b_1315552_a06f30f0b76357f987b32cefa9c9a8b4.png 458w,
+/img/designs/lb/Modals%20Desktop_hud7326648408d5d8148dccf3e93c5461b_1315552_c4883a4d418cdb16acb7569d0fb43ec7.png 726w,
+/img/designs/lb/Modals%20Desktop_hud7326648408d5d8148dccf3e93c5461b_1315552_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Desktop_hud7326648408d5d8148dccf3e93c5461b_1315552_a06f30f0b76357f987b32cefa9c9a8b4.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Modals%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Ping Pong&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Ping Pong Mobile design" srcset="
+/img/designs/lb/Ping%20Pong%20Mobile_hu29e9a1c5561532e5b17f7283807c20d4_1173284_b9942a7b6251bb888f3c77777ea471e2.png 458w,
+/img/designs/lb/Ping%20Pong%20Mobile_hu29e9a1c5561532e5b17f7283807c20d4_1173284_87b1d3e712491036361ab69665ab848a.png 726w,
+/img/designs/lb/Ping%20Pong%20Mobile_hu29e9a1c5561532e5b17f7283807c20d4_1173284_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Ping%20Pong%20Mobile_hu29e9a1c5561532e5b17f7283807c20d4_1173284_b9942a7b6251bb888f3c77777ea471e2.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Ping%20Pong%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Ping Pong Desktop design" srcset="
+/img/designs/lb/Ping%20Pong%20Desktop_hu7a8d8dd6efac447707e87644ef9420f6_1867593_14aa5eda05e91e7b62bc9b453e86ea02.png 458w,
+/img/designs/lb/Ping%20Pong%20Desktop_hu7a8d8dd6efac447707e87644ef9420f6_1867593_6cc3855b3c6cb78fb109b878e19dbd0b.png 726w,
+/img/designs/lb/Ping%20Pong%20Desktop_hu7a8d8dd6efac447707e87644ef9420f6_1867593_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Ping%20Pong%20Desktop_hu7a8d8dd6efac447707e87644ef9420f6_1867593_14aa5eda05e91e7b62bc9b453e86ea02.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Ping%20Pong%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Promo Cards&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Promo Cards Mobile design" srcset="
+/img/designs/lb/Promo%20Cards%20Mobile_hu5fe4aedbc04312525213858fad4160c0_543504_4b87121367c24f0b9348d6253a9f7431.png 458w,
+/img/designs/lb/Promo%20Cards%20Mobile_hu5fe4aedbc04312525213858fad4160c0_543504_a8a572f293f8122f525d99a70332c866.png 726w,
+/img/designs/lb/Promo%20Cards%20Mobile_hu5fe4aedbc04312525213858fad4160c0_543504_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Promo%20Cards%20Mobile_hu5fe4aedbc04312525213858fad4160c0_543504_4b87121367c24f0b9348d6253a9f7431.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Promo%20Cards%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Promo Cards Desktop design" srcset="
+/img/designs/lb/Promo%20Cards%20Desktop_hu2f4a0ee5ed97802f71270cfbdc28ab9c_687025_23c02cddb564924d772a48edab9dc55f.png 458w,
+/img/designs/lb/Promo%20Cards%20Desktop_hu2f4a0ee5ed97802f71270cfbdc28ab9c_687025_3d4ffeff30dd4bf9c27a6934b3583625.png 726w,
+/img/designs/lb/Promo%20Cards%20Desktop_hu2f4a0ee5ed97802f71270cfbdc28ab9c_687025_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Promo%20Cards%20Desktop_hu2f4a0ee5ed97802f71270cfbdc28ab9c_687025_23c02cddb564924d772a48edab9dc55f.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Promo%20Cards%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Simple Menu&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Simple Menu Mobile design" srcset="
+/img/designs/lb/Simple%20Menu%20Mobile_hu0521dc0120a69db9e21296f504aa73fb_98130_aa2f62a9a4f345290cacc082c238a82f.png 458w,
+/img/designs/lb/Simple%20Menu%20Mobile_hu0521dc0120a69db9e21296f504aa73fb_98130_f7920dd8ee806c209fd1737e484fe922.png 726w,
+/img/designs/lb/Simple%20Menu%20Mobile_hu0521dc0120a69db9e21296f504aa73fb_98130_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Simple%20Menu%20Mobile_hu0521dc0120a69db9e21296f504aa73fb_98130_aa2f62a9a4f345290cacc082c238a82f.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Simple%20Menu%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Simple Menu Desktop design" srcset="
+/img/designs/lb/Simple%20Menu%20Desktop_hu552c4bc853c560ac2a86554ca3c702e4_169267_b8453d8ba72ea547281f19f4171e774e.png 458w,
+/img/designs/lb/Simple%20Menu%20Desktop_hu552c4bc853c560ac2a86554ca3c702e4_169267_af63891e0391ccc6bbc816a388af9fe4.png 726w,
+/img/designs/lb/Simple%20Menu%20Desktop_hu552c4bc853c560ac2a86554ca3c702e4_169267_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Simple%20Menu%20Desktop_hu552c4bc853c560ac2a86554ca3c702e4_169267_b8453d8ba72ea547281f19f4171e774e.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Simple%20Menu%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Statistics&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Statistics Mobile design" srcset="
+/img/designs/lb/Statistics%20Mobile_hu50642a223d92373dc2654a0f6a35f6f3_921154_74c13a9fd2e44fd9c754e176e96b549a.png 458w,
+/img/designs/lb/Statistics%20Mobile_hu50642a223d92373dc2654a0f6a35f6f3_921154_6682cf1c10c9d5beb6f4b018ac8fbf24.png 726w,
+/img/designs/lb/Statistics%20Mobile_hu50642a223d92373dc2654a0f6a35f6f3_921154_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Statistics%20Mobile_hu50642a223d92373dc2654a0f6a35f6f3_921154_74c13a9fd2e44fd9c754e176e96b549a.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Statistics%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Statistics Desktop design" srcset="
+/img/designs/lb/Statistics%20Desktop_hu304dff1a3b26733d8ebe2990fc439535_12070081_0241bd7a0078904c0e0069079ade59eb.png 458w,
+/img/designs/lb/Statistics%20Desktop_hu304dff1a3b26733d8ebe2990fc439535_12070081_778c62baf7ed80db000f539dd2b1dbef.png 726w,
+/img/designs/lb/Statistics%20Desktop_hu304dff1a3b26733d8ebe2990fc439535_12070081_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Statistics%20Desktop_hu304dff1a3b26733d8ebe2990fc439535_12070081_0241bd7a0078904c0e0069079ade59eb.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Statistics%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Tables&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Tables Mobile design" srcset="
+/img/designs/lb/Tables%20Mobile_hu1afadf09422e6f8e2663e78ff9b850aa_117182_bf023ca41ddf079430f2d1f67f45f612.png 458w,
+/img/designs/lb/Tables%20Mobile_hu1afadf09422e6f8e2663e78ff9b850aa_117182_41e541804591e8deb3b53be5179eb620.png 726w,
+/img/designs/lb/Tables%20Mobile_hu1afadf09422e6f8e2663e78ff9b850aa_117182_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tables%20Mobile_hu1afadf09422e6f8e2663e78ff9b850aa_117182_bf023ca41ddf079430f2d1f67f45f612.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Tables%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Tables Desktop design" srcset="
+/img/designs/lb/Tables%20Desktop_hue5f40edd8514fccc3340f9e9cf9ad1a4_186961_9e3a5d56b6b02f59be0028bfd6b9ee4c.png 458w,
+/img/designs/lb/Tables%20Desktop_hue5f40edd8514fccc3340f9e9cf9ad1a4_186961_8f02ab8f2439ec398c07eabdf2c903f6.png 726w,
+/img/designs/lb/Tables%20Desktop_hue5f40edd8514fccc3340f9e9cf9ad1a4_186961_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tables%20Desktop_hue5f40edd8514fccc3340f9e9cf9ad1a4_186961_9e3a5d56b6b02f59be0028bfd6b9ee4c.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Tables%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Tabs&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Tabs Mobile design" srcset="
+/img/designs/lb/Tabs%20Mobile_hu42f77dd489805da3db70e0af6e90d1ab_395861_161d00f62f19e9157541557b669171b3.png 458w,
+/img/designs/lb/Tabs%20Mobile_hu42f77dd489805da3db70e0af6e90d1ab_395861_27758e03693060a27683a609e6562055.png 726w,
+/img/designs/lb/Tabs%20Mobile_hu42f77dd489805da3db70e0af6e90d1ab_395861_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tabs%20Mobile_hu42f77dd489805da3db70e0af6e90d1ab_395861_161d00f62f19e9157541557b669171b3.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Tabs%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Tabs Desktop design" srcset="
+/img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_eeca88c39fb24a51ce759f23a7b2464d.png 458w,
+/img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_de6fc9916effed9e5ad88394cdeb35c3.png 726w,
+/img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_eeca88c39fb24a51ce759f23a7b2464d.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Tabs%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Webforms&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Webforms Mobile design" srcset="
+/img/designs/lb/Webforms%20Mobile_hu20b870d2c4ae8acddde2252b7cf1166d_168745_38259a77468d96d894f1c0adbf91342e.png 458w,
+/img/designs/lb/Webforms%20Mobile_hu20b870d2c4ae8acddde2252b7cf1166d_168745_f1901d0eb24a16c3210e1f0e14cdb682.png 726w,
+/img/designs/lb/Webforms%20Mobile_hu20b870d2c4ae8acddde2252b7cf1166d_168745_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Webforms%20Mobile_hu20b870d2c4ae8acddde2252b7cf1166d_168745_38259a77468d96d894f1c0adbf91342e.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Webforms%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Webforms Desktop design" srcset="
+/img/designs/lb/Webforms%20Desktop_hu22b9d3245b70fa1e985b1e7c61ebda32_254515_642e985ab89783f1e076ae742e4f67aa.png 458w,
+/img/designs/lb/Webforms%20Desktop_hu22b9d3245b70fa1e985b1e7c61ebda32_254515_1be6d17149ea9c1e119affe399a5bc6c.png 726w,
+/img/designs/lb/Webforms%20Desktop_hu22b9d3245b70fa1e985b1e7c61ebda32_254515_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Webforms%20Desktop_hu22b9d3245b70fa1e985b1e7c61ebda32_254515_642e985ab89783f1e076ae742e4f67aa.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Webforms%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Advanced Options</title><link>/docs/user-documentation/layout-builder/advanced-options/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/advanced-options/</guid><description>
+&lt;h2 id="layout-styles">Layout styles&lt;/h2>
+&lt;p>When creating or editing a &lt;strong>Section&lt;/strong> you have the option of configuring &lt;strong>Layout&lt;/strong>, &lt;strong>Style&lt;/strong>, and &lt;strong>Settings&lt;/strong>.&lt;/p>
+&lt;p>
+&lt;img src="../lb_section_settings.gif" alt="A screenshot of the &amp;amp;ldquo;Configure Section&amp;amp;rdquo; dialog with Layout, Style, and Settings options." />&lt;/p>
+&lt;p>Support for these options is a work in progress and may require involvement of your development partner. Feel free to experiment with the options. Be sure to follow proper brand guidelines and accessibility practices.&lt;/p>
+&lt;h2 id="block-styles">Block styles&lt;/h2>
+&lt;p>When creating or configuring a block you have the option of opening the &lt;strong>Style&lt;/strong> tab to access additional style options including:&lt;/p>
+&lt;ul>
+&lt;li>background,&lt;/li>
+&lt;li>typography,&lt;/li>
+&lt;li>spacing,&lt;/li>
+&lt;li>borders, and&lt;/li>
+&lt;li>animation.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot showing the style tab with options below." srcset="
+/docs/user-documentation/layout-builder/advanced-options/lb_block_style_hu2085bcfd7b99ea8c2678d196bb57ffe7_23246_e4f0b4efe5fc8788175bdbaac81bf012.png 458w,
+/docs/user-documentation/layout-builder/advanced-options/lb_block_style_hu2085bcfd7b99ea8c2678d196bb57ffe7_23246_a093176033d67367f911eb2112ed0cce.png 726w,
+/docs/user-documentation/layout-builder/advanced-options/lb_block_style_hu2085bcfd7b99ea8c2678d196bb57ffe7_23246_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/advanced-options/lb_block_style_hu2085bcfd7b99ea8c2678d196bb57ffe7_23246_e4f0b4efe5fc8788175bdbaac81bf012.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/advanced-options/lb_block_style.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>Support for these options is a work in progress and may require involvement of your development partner. Feel free to experiment with the options. Be sure to follow proper brand guidelines and accessibility practices.&lt;/p>
+&lt;p>After you have completed setting the &lt;strong>Style&lt;/strong> options, click back to &lt;strong>Content&lt;/strong> and &lt;strong>Save&lt;/strong> or &lt;strong>Update&lt;/strong> to commit your changes.&lt;/p></description></item><item><title>Docs: Accordion</title><link>/docs/user-documentation/layout-builder/accordion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/accordion/</guid><description>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Accordion%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Accordion%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>To use the Accordion block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Accordion&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Displayed if &lt;strong>Display title&lt;/strong> is checked, otherwise this is for administrative use.&lt;/li>
+&lt;li>&lt;strong>Accordion Item&lt;/strong>: Add as many items as you like using the &lt;strong>Add Accordion Item&lt;/strong> button. Each item contains:
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong>: The heading that will be used to expand/contract the accordion.&lt;/li>
+&lt;li>&lt;strong>Body&lt;/strong>: The content of the accordion.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Cards</title><link>/docs/user-documentation/layout-builder/cards/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/cards/</guid><description>
+&lt;p>The Cards block is similar to the
+&lt;a href="../grid-cta">Grid CTA&lt;/a> block, but has more fields and places the image behind the item content.&lt;/p>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Cards%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Cards%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>To use the Cards block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Cards&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Section title&lt;/strong>: Displayed as a heading above the cards.&lt;/li>
+&lt;li>&lt;strong>Section subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong>Section CTA/link&lt;/strong>: A link button displayed below the list of cards.&lt;/li>
+&lt;li>&lt;strong># of columns&lt;/strong>: Allows 1- to 4-columns of cards.&lt;/li>
+&lt;li>&lt;strong>Cards&lt;/strong>: Add up to 4. Each card has:
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required)&lt;/li>
+&lt;li>&lt;strong>Image&lt;/strong>: Chose from the library or add a new image to be displayed behind the card text.&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong>: A full text editor to add card content.&lt;/li>
+&lt;li>&lt;strong>Topic Tag&lt;/strong>: This is displayed at the top of the card and can be used to group cards visually.&lt;/li>
+&lt;li>&lt;strong>CTA&lt;/strong>: A link at the bottom of the card.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Carousel</title><link>/docs/user-documentation/layout-builder/carousel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/carousel/</guid><description>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Carousels%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Carousels%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>To use the Carousel block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Carousel&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Carousel title&lt;/strong>: Displayed as a heading above the carousel.&lt;/li>
+&lt;li>&lt;strong>Carousel subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong>Carousel Item&lt;/strong>: Add as many items as you like using the &lt;strong>Add Carousel Item&lt;/strong> button. Each item contains:
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Image&lt;/strong>: Chose from the library or add a new image.&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>CTA&lt;/strong>: A link at the bottom of the carousel item.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Grid CTA</title><link>/docs/user-documentation/layout-builder/grid-cta/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/grid-cta/</guid><description>
+&lt;p>The Grid CTA block is similar to the
+&lt;a href="../cards">Cards&lt;/a> block, but allows for more flexible items with a slightly more freeform design.&lt;/p>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Grid%20Content%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Grid%20Content%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>To use the Grid CTA block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Grid CTA&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Section title&lt;/strong>: Displayed as a heading above the cards.&lt;/li>
+&lt;li>&lt;strong>Section subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong>Grid section CTA/link&lt;/strong>: A link button displayed below the list of items.&lt;/li>
+&lt;li>&lt;strong># of columns&lt;/strong>: Allows 2- to 4-columns of items.&lt;/li>
+&lt;li>&lt;strong>Grid Items&lt;/strong>: Add up to 4. Each item has:
+&lt;ul>
+&lt;li>&lt;strong>Grid item title&lt;/strong> (required)&lt;/li>
+&lt;li>&lt;strong>Grid item description&lt;/strong>: A full text editor to add item content.&lt;/li>
+&lt;li>&lt;strong>Grid item media&lt;/strong>: Chose from the library or add a new image or icon to be displayed above the item text.&lt;/li>
+&lt;li>&lt;strong>Grid item CTA&lt;/strong>: A link at the bottom of the item.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Hero Banner</title><link>/docs/user-documentation/layout-builder/hero-banner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/hero-banner/</guid><description>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Hero%20Banner%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Hero%20Banner%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>To use the Hero Banner block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Hero Banner&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Banner Title&lt;/strong> (required): A heading to display on the banner.&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong>: A full text editor to add banner content.&lt;/li>
+&lt;li>&lt;strong>Media&lt;/strong>: Chose from the library or add a new image or icon to be displayed behind the banner text.&lt;/li>
+&lt;li>&lt;strong>CTA/Link&lt;/strong>: A link at the bottom of the banner text.&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Ping-Pong</title><link>/docs/user-documentation/layout-builder/ping-pong/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/ping-pong/</guid><description>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Ping%20Pong%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Ping%20Pong%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>To use the Ping-Pong block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Ping-Pong&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Section title&lt;/strong>: Displayed as a heading above the item.&lt;/li>
+&lt;li>&lt;strong>Section subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong>Item title&lt;/strong>: Displayed at the top of the ping-pong block.&lt;/li>
+&lt;li>&lt;strong>Item description&lt;/strong>: Displayed below the title.&lt;/li>
+&lt;li>&lt;strong>Item image&lt;/strong>: Chose from the library or add a new image to be displayed opposite the text.&lt;/li>
+&lt;li>&lt;strong>Item image position&lt;/strong>: Places the image on the left/right side of the page in full-width (desktop) displays.&lt;/li>
+&lt;li>&lt;strong>Item CTA/Link&lt;/strong>: Add up to two links. The first will be displayed with &amp;ldquo;primary&amp;rdquo; (solid) styling, the second will be &amp;ldquo;secondary&amp;rdquo; (outline) styling.&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Promo Card</title><link>/docs/user-documentation/layout-builder/promo-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/promo-card/</guid><description>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Promo%20Cards%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Promo%20Cards%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>To use the Promo Card block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Promo Card&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Card title&lt;/strong>: The displayed title of the promo card.&lt;/li>
+&lt;li>&lt;strong>Body&lt;/strong>: A full text editor to add card content.&lt;/li>
+&lt;li>&lt;strong>Icon/Image&lt;/strong>: Chose from the library or add a new icon or image to be displayed above the card text.&lt;/li>
+&lt;li>&lt;strong>CTA&lt;/strong>: A link at the bottom of the card.&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Simple Menu</title><link>/docs/user-documentation/layout-builder/simple-menu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/simple-menu/</guid><description>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Simple%20Menu%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Simple%20Menu%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>To use the Simple Menu block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Simple Menu&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Displayed if &lt;strong>Display title&lt;/strong> is checked, otherwise this is for administrative use.&lt;/li>
+&lt;li>&lt;strong>Icon&lt;/strong>: Optional icon (or small image) to be displayed to the left of the menu title.&lt;/li>
+&lt;li>&lt;strong>Links&lt;/strong>: An unlimited number of internal or external links.&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Statistics</title><link>/docs/user-documentation/layout-builder/statistics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/statistics/</guid><description>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Statistics%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Statistics%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>To use the Statistics block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Statistics&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Section title&lt;/strong>: Displayed as a heading above the item.&lt;/li>
+&lt;li>&lt;strong>Section subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong># of columns&lt;/strong>: Allows 1- to 4-columns of items.&lt;/li>
+&lt;li>&lt;strong>Section CTA/Link&lt;/strong>: Add a link below the statistics items.&lt;/li>
+&lt;li>&lt;strong>Statistics Items&lt;/strong>: Add as many items as you like using the &lt;strong>Add Statistics Item&lt;/strong> button. Each item contains:
+&lt;ul>
+&lt;li>&lt;strong>Number value&lt;/strong>: The number value for the statistic. Can include a prefix (&amp;quot;$100&amp;quot;) and/or suffix (&amp;quot;$100M&amp;quot;).&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong>: A description of the statistic.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Add an image or change the color of the block using the
+&lt;a href="../advanced-options">Styles tab&lt;/a>.&lt;/p>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Table</title><link>/docs/user-documentation/layout-builder/table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/table/</guid><description>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Tables%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Tables%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>To use the Table block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Section title&lt;/strong>: Displayed as a heading above the item.&lt;/li>
+&lt;li>&lt;strong>Section subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong>Body&lt;/strong>: A full text editor to add tables or other content to the page.
+&lt;ul>
+&lt;li>To add a table in the editor, click the &lt;strong>Table&lt;/strong> icon, then configure the table options in the popup.
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the table icon and properties popup." srcset="
+/docs/user-documentation/layout-builder/table/lb_table_icon_hu4bbf10d9b99c8dd3a6639057f7fae735_36026_9bdd685d4cf46a8c1f0fdde7854efea7.png 458w,
+/docs/user-documentation/layout-builder/table/lb_table_icon_hu4bbf10d9b99c8dd3a6639057f7fae735_36026_dd08a2abeae8024b0e99e41b188481e2.png 726w,
+/docs/user-documentation/layout-builder/table/lb_table_icon_hu4bbf10d9b99c8dd3a6639057f7fae735_36026_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/table/lb_table_icon_hu4bbf10d9b99c8dd3a6639057f7fae735_36026_9bdd685d4cf46a8c1f0fdde7854efea7.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/table/lb_table_icon.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;li>To edit an existing table properties, right click in the table and then choose an option from the menu.
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the table operations menu." srcset="
+/docs/user-documentation/layout-builder/table/lb_table_menu_hu1b39bdfc9eaa8ccae412758c5d9a5763_12000_e3413c58c8f18dc0d16c86c46b889deb.png 458w,
+/docs/user-documentation/layout-builder/table/lb_table_menu_hu1b39bdfc9eaa8ccae412758c5d9a5763_12000_296b37b5a0c8744e1b4715c3d9903c36.png 726w,
+/docs/user-documentation/layout-builder/table/lb_table_menu_hu1b39bdfc9eaa8ccae412758c5d9a5763_12000_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/table/lb_table_menu_hu1b39bdfc9eaa8ccae412758c5d9a5763_12000_e3413c58c8f18dc0d16c86c46b889deb.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/table/lb_table_menu.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Tabs</title><link>/docs/user-documentation/layout-builder/tabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/tabs/</guid><description>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Tabs%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Tabs%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>To use the Tabs block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Tabs&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Section title&lt;/strong>: Displayed as a heading above the item.&lt;/li>
+&lt;li>&lt;strong>Section subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong>Tabs&lt;/strong>: Add as many Tabs as you like using the &lt;strong>Add Tab&lt;/strong> button. Each item contains:
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong>: The heading that will be used to select the tab.&lt;/li>
+&lt;li>&lt;strong>Body&lt;/strong>: The content of the tab.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Webform</title><link>/docs/user-documentation/layout-builder/webform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/webform/</guid><description>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Webforms%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Webforms%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>To use the Webform block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Webform&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Form title&lt;/strong>: Displayed as a heading above the item.&lt;/li>
+&lt;li>&lt;strong>Form subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong>Webform&lt;/strong> (required): Choose the Webform to embed on the page from the list of existing forms.
+&lt;ul>
+&lt;li>Expand &lt;strong>Webform settings&lt;/strong> to access additional webform configuration, to open, close, or schedule the form.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;/ul></description></item></channel></rss>

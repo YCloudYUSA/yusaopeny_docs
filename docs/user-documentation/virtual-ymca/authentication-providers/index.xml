@@ -73,7 +73,7 @@
 &lt;li>Specify Permission Mappings
 &lt;ul>
 &lt;li>This is used for User Segmentation. User Segmentation will allow YMCAs to segment content to particular Virtual Y roles based on membership types. Refer to documentation from the Open Y Community for more information about
-&lt;a href="/docs/user-documentation/virtual-ymca/user-segmentation/">Setting up user segmentation&lt;/a>.
+&lt;a href="../../user-segmentation/">Setting up user segmentation&lt;/a>.
 &lt;img src="./reclique-sso-016.png" alt="" />&lt;/li>
 &lt;/ul>
 &lt;/li>

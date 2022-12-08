@@ -1,4 +1,288 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Distribution Documentation</title><link>/docs/</link><description>Recent content in YMCA Website Services Distribution Documentation on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Building Blocks &amp; Basics</title><link>/docs/user-documentation/virtual-ymca/building-blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/building-blocks/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Distribution Documentation</title><link>/docs/</link><description>Recent content in YMCA Website Services Distribution Documentation on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Designs</title><link>/docs/user-documentation/layout-builder/designs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/designs/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Component&lt;/th>
+&lt;th>Mobile&lt;/th>
+&lt;th>Desktop&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Accordion&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Accordion Mobile design" srcset="
+/img/designs/lb/Accordion%20Mobile_hu73dab785aae55a3543a0f5a0dc2b9174_180692_1cb2376722cf7fedac4f0382ff0d4957.png 458w,
+/img/designs/lb/Accordion%20Mobile_hu73dab785aae55a3543a0f5a0dc2b9174_180692_600eff1d8a95a75853fc9745a74c0d63.png 726w,
+/img/designs/lb/Accordion%20Mobile_hu73dab785aae55a3543a0f5a0dc2b9174_180692_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Accordion%20Mobile_hu73dab785aae55a3543a0f5a0dc2b9174_180692_1cb2376722cf7fedac4f0382ff0d4957.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Accordion%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Accordion Desktop design" srcset="
+/img/designs/lb/Accordion%20Desktop_hua4e08931f3effcca4c3f51d509f14d8c_232050_934a82d65bd4df62d052e778b9bc475a.png 458w,
+/img/designs/lb/Accordion%20Desktop_hua4e08931f3effcca4c3f51d509f14d8c_232050_87d10050937a1d3fdea4d8c2d830fbbb.png 726w,
+/img/designs/lb/Accordion%20Desktop_hua4e08931f3effcca4c3f51d509f14d8c_232050_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Accordion%20Desktop_hua4e08931f3effcca4c3f51d509f14d8c_232050_934a82d65bd4df62d052e778b9bc475a.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Accordion%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cards&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Cards Mobile design" srcset="
+/img/designs/lb/Cards%20Mobile_hucf70d313fe8c92235e399794aaeff0a3_1466825_9f4f2f4246f2a1b637ce865480f872ba.png 458w,
+/img/designs/lb/Cards%20Mobile_hucf70d313fe8c92235e399794aaeff0a3_1466825_c24e6912f3a2123602d014ccae242ac1.png 726w,
+/img/designs/lb/Cards%20Mobile_hucf70d313fe8c92235e399794aaeff0a3_1466825_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Cards%20Mobile_hucf70d313fe8c92235e399794aaeff0a3_1466825_9f4f2f4246f2a1b637ce865480f872ba.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Cards%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Cards Desktop design" srcset="
+/img/designs/lb/Cards%20Desktop_hue0c73011beb07b6b9642683359ffb0f4_2851636_ad563e9843f7ce78bd312170bdcc1fbf.png 458w,
+/img/designs/lb/Cards%20Desktop_hue0c73011beb07b6b9642683359ffb0f4_2851636_c09492f673e4fa11e074ed4a297e6bd8.png 726w,
+/img/designs/lb/Cards%20Desktop_hue0c73011beb07b6b9642683359ffb0f4_2851636_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Cards%20Desktop_hue0c73011beb07b6b9642683359ffb0f4_2851636_ad563e9843f7ce78bd312170bdcc1fbf.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Cards%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Carousels&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Carousels Mobile design" srcset="
+/img/designs/lb/Carousels%20Mobile_hu3be4523fd56d8365a13495e59f790a08_583326_099b25432ea143896321e247436252ec.png 458w,
+/img/designs/lb/Carousels%20Mobile_hu3be4523fd56d8365a13495e59f790a08_583326_7a1d7dfff1489deda294a937b19cd262.png 726w,
+/img/designs/lb/Carousels%20Mobile_hu3be4523fd56d8365a13495e59f790a08_583326_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Carousels%20Mobile_hu3be4523fd56d8365a13495e59f790a08_583326_099b25432ea143896321e247436252ec.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Carousels%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Carousels Desktop design" srcset="
+/img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_d961ccc8bf72f42f0e82bcfe311f7799.png 458w,
+/img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_316726222e2549154d5fa14d09e0d756.png 726w,
+/img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_d961ccc8bf72f42f0e82bcfe311f7799.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Carousels%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Grid Content&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Grid Content Mobile design" srcset="
+/img/designs/lb/Grid%20Content%20Mobile_hu9f93d11168fe8592cd5078aa019307a3_575048_1aa6e2962831d7bc78c7a772d6f68fc6.png 458w,
+/img/designs/lb/Grid%20Content%20Mobile_hu9f93d11168fe8592cd5078aa019307a3_575048_161bea6a2382e0dab83785b16a575fe3.png 726w,
+/img/designs/lb/Grid%20Content%20Mobile_hu9f93d11168fe8592cd5078aa019307a3_575048_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Grid%20Content%20Mobile_hu9f93d11168fe8592cd5078aa019307a3_575048_1aa6e2962831d7bc78c7a772d6f68fc6.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Grid%20Content%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Grid Content Desktop design" srcset="
+/img/designs/lb/Grid%20Content%20Desktop_hu54f535cb30fdc75ac4d509d7226ec1a2_5328979_3ac320035e614f4272ffbb6de6c6c39f.png 458w,
+/img/designs/lb/Grid%20Content%20Desktop_hu54f535cb30fdc75ac4d509d7226ec1a2_5328979_4a5b81191de272414213f70cfed16dd6.png 726w,
+/img/designs/lb/Grid%20Content%20Desktop_hu54f535cb30fdc75ac4d509d7226ec1a2_5328979_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Grid%20Content%20Desktop_hu54f535cb30fdc75ac4d509d7226ec1a2_5328979_3ac320035e614f4272ffbb6de6c6c39f.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Grid%20Content%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Hero Banner&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Hero Banner Mobile design" srcset="
+/img/designs/lb/Hero%20Banner%20Mobile_huc987cfba0d9b95f34c83ba9dc3c03e82_583872_24f76074a96b62604e3b386cfc7cde5b.png 458w,
+/img/designs/lb/Hero%20Banner%20Mobile_huc987cfba0d9b95f34c83ba9dc3c03e82_583872_ea13571ef3c270bbe8327b6a4b3279a5.png 726w,
+/img/designs/lb/Hero%20Banner%20Mobile_huc987cfba0d9b95f34c83ba9dc3c03e82_583872_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Hero%20Banner%20Mobile_huc987cfba0d9b95f34c83ba9dc3c03e82_583872_24f76074a96b62604e3b386cfc7cde5b.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Hero%20Banner%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Hero Banner Desktop design" srcset="
+/img/designs/lb/Hero%20Banner%20Desktop_hue59165020c5288e385eb18a4c033bec7_1990416_86571fdf43a442a291831671e17816a8.png 458w,
+/img/designs/lb/Hero%20Banner%20Desktop_hue59165020c5288e385eb18a4c033bec7_1990416_50ef284b336037cb9cbdcec9bf21eb06.png 726w,
+/img/designs/lb/Hero%20Banner%20Desktop_hue59165020c5288e385eb18a4c033bec7_1990416_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Hero%20Banner%20Desktop_hue59165020c5288e385eb18a4c033bec7_1990416_86571fdf43a442a291831671e17816a8.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Hero%20Banner%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Modals&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Modals Mobile design" srcset="
+/img/designs/lb/Modals%20Mobile_huf75acbf313ade311e510848822cb8d7c_205921_5508ffe9d448ee3b72d86b72570ddd15.png 458w,
+/img/designs/lb/Modals%20Mobile_huf75acbf313ade311e510848822cb8d7c_205921_2020cd72bfa29946cc394aca79c6a3c7.png 726w,
+/img/designs/lb/Modals%20Mobile_huf75acbf313ade311e510848822cb8d7c_205921_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Mobile_huf75acbf313ade311e510848822cb8d7c_205921_5508ffe9d448ee3b72d86b72570ddd15.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Modals%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Modals Desktop design" srcset="
+/img/designs/lb/Modals%20Desktop_hud7326648408d5d8148dccf3e93c5461b_1315552_a06f30f0b76357f987b32cefa9c9a8b4.png 458w,
+/img/designs/lb/Modals%20Desktop_hud7326648408d5d8148dccf3e93c5461b_1315552_c4883a4d418cdb16acb7569d0fb43ec7.png 726w,
+/img/designs/lb/Modals%20Desktop_hud7326648408d5d8148dccf3e93c5461b_1315552_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Desktop_hud7326648408d5d8148dccf3e93c5461b_1315552_a06f30f0b76357f987b32cefa9c9a8b4.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Modals%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Ping Pong&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Ping Pong Mobile design" srcset="
+/img/designs/lb/Ping%20Pong%20Mobile_hu29e9a1c5561532e5b17f7283807c20d4_1173284_b9942a7b6251bb888f3c77777ea471e2.png 458w,
+/img/designs/lb/Ping%20Pong%20Mobile_hu29e9a1c5561532e5b17f7283807c20d4_1173284_87b1d3e712491036361ab69665ab848a.png 726w,
+/img/designs/lb/Ping%20Pong%20Mobile_hu29e9a1c5561532e5b17f7283807c20d4_1173284_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Ping%20Pong%20Mobile_hu29e9a1c5561532e5b17f7283807c20d4_1173284_b9942a7b6251bb888f3c77777ea471e2.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Ping%20Pong%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Ping Pong Desktop design" srcset="
+/img/designs/lb/Ping%20Pong%20Desktop_hu7a8d8dd6efac447707e87644ef9420f6_1867593_14aa5eda05e91e7b62bc9b453e86ea02.png 458w,
+/img/designs/lb/Ping%20Pong%20Desktop_hu7a8d8dd6efac447707e87644ef9420f6_1867593_6cc3855b3c6cb78fb109b878e19dbd0b.png 726w,
+/img/designs/lb/Ping%20Pong%20Desktop_hu7a8d8dd6efac447707e87644ef9420f6_1867593_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Ping%20Pong%20Desktop_hu7a8d8dd6efac447707e87644ef9420f6_1867593_14aa5eda05e91e7b62bc9b453e86ea02.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Ping%20Pong%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Promo Cards&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Promo Cards Mobile design" srcset="
+/img/designs/lb/Promo%20Cards%20Mobile_hu5fe4aedbc04312525213858fad4160c0_543504_4b87121367c24f0b9348d6253a9f7431.png 458w,
+/img/designs/lb/Promo%20Cards%20Mobile_hu5fe4aedbc04312525213858fad4160c0_543504_a8a572f293f8122f525d99a70332c866.png 726w,
+/img/designs/lb/Promo%20Cards%20Mobile_hu5fe4aedbc04312525213858fad4160c0_543504_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Promo%20Cards%20Mobile_hu5fe4aedbc04312525213858fad4160c0_543504_4b87121367c24f0b9348d6253a9f7431.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Promo%20Cards%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Promo Cards Desktop design" srcset="
+/img/designs/lb/Promo%20Cards%20Desktop_hu2f4a0ee5ed97802f71270cfbdc28ab9c_687025_23c02cddb564924d772a48edab9dc55f.png 458w,
+/img/designs/lb/Promo%20Cards%20Desktop_hu2f4a0ee5ed97802f71270cfbdc28ab9c_687025_3d4ffeff30dd4bf9c27a6934b3583625.png 726w,
+/img/designs/lb/Promo%20Cards%20Desktop_hu2f4a0ee5ed97802f71270cfbdc28ab9c_687025_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Promo%20Cards%20Desktop_hu2f4a0ee5ed97802f71270cfbdc28ab9c_687025_23c02cddb564924d772a48edab9dc55f.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Promo%20Cards%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Simple Menu&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Simple Menu Mobile design" srcset="
+/img/designs/lb/Simple%20Menu%20Mobile_hu0521dc0120a69db9e21296f504aa73fb_98130_aa2f62a9a4f345290cacc082c238a82f.png 458w,
+/img/designs/lb/Simple%20Menu%20Mobile_hu0521dc0120a69db9e21296f504aa73fb_98130_f7920dd8ee806c209fd1737e484fe922.png 726w,
+/img/designs/lb/Simple%20Menu%20Mobile_hu0521dc0120a69db9e21296f504aa73fb_98130_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Simple%20Menu%20Mobile_hu0521dc0120a69db9e21296f504aa73fb_98130_aa2f62a9a4f345290cacc082c238a82f.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Simple%20Menu%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Simple Menu Desktop design" srcset="
+/img/designs/lb/Simple%20Menu%20Desktop_hu552c4bc853c560ac2a86554ca3c702e4_169267_b8453d8ba72ea547281f19f4171e774e.png 458w,
+/img/designs/lb/Simple%20Menu%20Desktop_hu552c4bc853c560ac2a86554ca3c702e4_169267_af63891e0391ccc6bbc816a388af9fe4.png 726w,
+/img/designs/lb/Simple%20Menu%20Desktop_hu552c4bc853c560ac2a86554ca3c702e4_169267_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Simple%20Menu%20Desktop_hu552c4bc853c560ac2a86554ca3c702e4_169267_b8453d8ba72ea547281f19f4171e774e.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Simple%20Menu%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Statistics&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Statistics Mobile design" srcset="
+/img/designs/lb/Statistics%20Mobile_hu50642a223d92373dc2654a0f6a35f6f3_921154_74c13a9fd2e44fd9c754e176e96b549a.png 458w,
+/img/designs/lb/Statistics%20Mobile_hu50642a223d92373dc2654a0f6a35f6f3_921154_6682cf1c10c9d5beb6f4b018ac8fbf24.png 726w,
+/img/designs/lb/Statistics%20Mobile_hu50642a223d92373dc2654a0f6a35f6f3_921154_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Statistics%20Mobile_hu50642a223d92373dc2654a0f6a35f6f3_921154_74c13a9fd2e44fd9c754e176e96b549a.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Statistics%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Statistics Desktop design" srcset="
+/img/designs/lb/Statistics%20Desktop_hu304dff1a3b26733d8ebe2990fc439535_12070081_0241bd7a0078904c0e0069079ade59eb.png 458w,
+/img/designs/lb/Statistics%20Desktop_hu304dff1a3b26733d8ebe2990fc439535_12070081_778c62baf7ed80db000f539dd2b1dbef.png 726w,
+/img/designs/lb/Statistics%20Desktop_hu304dff1a3b26733d8ebe2990fc439535_12070081_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Statistics%20Desktop_hu304dff1a3b26733d8ebe2990fc439535_12070081_0241bd7a0078904c0e0069079ade59eb.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Statistics%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Tables&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Tables Mobile design" srcset="
+/img/designs/lb/Tables%20Mobile_hu1afadf09422e6f8e2663e78ff9b850aa_117182_bf023ca41ddf079430f2d1f67f45f612.png 458w,
+/img/designs/lb/Tables%20Mobile_hu1afadf09422e6f8e2663e78ff9b850aa_117182_41e541804591e8deb3b53be5179eb620.png 726w,
+/img/designs/lb/Tables%20Mobile_hu1afadf09422e6f8e2663e78ff9b850aa_117182_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tables%20Mobile_hu1afadf09422e6f8e2663e78ff9b850aa_117182_bf023ca41ddf079430f2d1f67f45f612.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Tables%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Tables Desktop design" srcset="
+/img/designs/lb/Tables%20Desktop_hue5f40edd8514fccc3340f9e9cf9ad1a4_186961_9e3a5d56b6b02f59be0028bfd6b9ee4c.png 458w,
+/img/designs/lb/Tables%20Desktop_hue5f40edd8514fccc3340f9e9cf9ad1a4_186961_8f02ab8f2439ec398c07eabdf2c903f6.png 726w,
+/img/designs/lb/Tables%20Desktop_hue5f40edd8514fccc3340f9e9cf9ad1a4_186961_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tables%20Desktop_hue5f40edd8514fccc3340f9e9cf9ad1a4_186961_9e3a5d56b6b02f59be0028bfd6b9ee4c.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Tables%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Tabs&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Tabs Mobile design" srcset="
+/img/designs/lb/Tabs%20Mobile_hu42f77dd489805da3db70e0af6e90d1ab_395861_161d00f62f19e9157541557b669171b3.png 458w,
+/img/designs/lb/Tabs%20Mobile_hu42f77dd489805da3db70e0af6e90d1ab_395861_27758e03693060a27683a609e6562055.png 726w,
+/img/designs/lb/Tabs%20Mobile_hu42f77dd489805da3db70e0af6e90d1ab_395861_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tabs%20Mobile_hu42f77dd489805da3db70e0af6e90d1ab_395861_161d00f62f19e9157541557b669171b3.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Tabs%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Tabs Desktop design" srcset="
+/img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_eeca88c39fb24a51ce759f23a7b2464d.png 458w,
+/img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_de6fc9916effed9e5ad88394cdeb35c3.png 726w,
+/img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_eeca88c39fb24a51ce759f23a7b2464d.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Tabs%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Webforms&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Webforms Mobile design" srcset="
+/img/designs/lb/Webforms%20Mobile_hu20b870d2c4ae8acddde2252b7cf1166d_168745_38259a77468d96d894f1c0adbf91342e.png 458w,
+/img/designs/lb/Webforms%20Mobile_hu20b870d2c4ae8acddde2252b7cf1166d_168745_f1901d0eb24a16c3210e1f0e14cdb682.png 726w,
+/img/designs/lb/Webforms%20Mobile_hu20b870d2c4ae8acddde2252b7cf1166d_168745_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Webforms%20Mobile_hu20b870d2c4ae8acddde2252b7cf1166d_168745_38259a77468d96d894f1c0adbf91342e.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Webforms%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Webforms Desktop design" srcset="
+/img/designs/lb/Webforms%20Desktop_hu22b9d3245b70fa1e985b1e7c61ebda32_254515_642e985ab89783f1e076ae742e4f67aa.png 458w,
+/img/designs/lb/Webforms%20Desktop_hu22b9d3245b70fa1e985b1e7c61ebda32_254515_1be6d17149ea9c1e119affe399a5bc6c.png 726w,
+/img/designs/lb/Webforms%20Desktop_hu22b9d3245b70fa1e985b1e7c61ebda32_254515_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Webforms%20Desktop_hu22b9d3245b70fa1e985b1e7c61ebda32_254515_642e985ab89783f1e076ae742e4f67aa.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Webforms%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Building Blocks &amp; Basics</title><link>/docs/user-documentation/virtual-ymca/building-blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/building-blocks/</guid><description>
 &lt;p>Virtual YMCA is based on Open Y and was originally built as an extension for Open Y sites.&lt;/p>
 &lt;p>Virtual YMCA uses the same content editing tools as Open Y, except what you get out-of-the-box will be different than in Open Y.&lt;/p>
 &lt;h2 id="content-types">Content Types&lt;/h2>
@@ -6,7 +290,7 @@
 &lt;h3 id="virtual-y-video">Virtual Y Video&lt;/h3>
 &lt;p>Bring the Y to your members when they’re away. Provide on-demand classes, activities for kids, and other video content. Great for health seekers, families and Active Older Adults.&lt;/p>
 &lt;p>Add Virtual Y Videos
-&lt;a href="/docs/user-documentation/virtual-ymca/add-video/">one-by-one&lt;/a> or with the separate
+&lt;a href="./add-video.md">one-by-one&lt;/a> or with the separate
 &lt;a href="https://github.com/fivejars/vyva/wiki" target="_blank">Virtual Y Video Automation&lt;/a> application.&lt;/p>
 &lt;p>&lt;em>Integrates with:&lt;/em> YouTube and Vimeo&lt;/p>
 &lt;h3 id="live-streams">Live Streams&lt;/h3>
@@ -53,7 +337,7 @@
 &lt;li>If you’re using it, ensure you’ve set up Google Analytics at &lt;strong>Configuration&lt;/strong> &amp;gt; &lt;strong>System&lt;/strong> &amp;gt; &lt;strong>Google Analytics&lt;/strong>.&lt;/li>
 &lt;li>If you’re using any basic authentication to protect the site before it goes live (what Y Cloud calls “Site Lock”), ask your hosting partner to turn it off.&lt;/li>
 &lt;li>If you&amp;rsquo;d like to share content with other Ys, review
-&lt;a href="/docs/user-documentation/virtual-ymca/shared-content/">Shared Content // Virtual YMCA User Docs&lt;/a> and initiate a connection to the Open Y Shared Content server&lt;/li>
+&lt;a href="./shared-content/">Shared Content // Virtual YMCA User Docs&lt;/a> and initiate a connection to the Open Y Shared Content server&lt;/li>
 &lt;/ul></description></item><item><title>Docs: FAQs</title><link>/docs/user-documentation/virtual-ymca/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/faq/</guid><description>
 &lt;p>For up to the minute conversations and info on Virtual Y and its content, join us in the YUSA Slack.
 &lt;a href="mailto:ycloud@ymca.net">Request access to Slack&lt;/a>&lt;/p>
@@ -616,7 +900,7 @@ See
 /img/080e5435d89d994c773761dfe0196018fe63e8dc_hu673841aa836f370642286620b1ac60b1_23864_5fc5b61512ac0fcf93f7db7a114411ab.png 458w,
 /img/080e5435d89d994c773761dfe0196018fe63e8dc_hu673841aa836f370642286620b1ac60b1_23864_0222347eef3838e79eb7b2407fd09018.png 726w,
 /img/080e5435d89d994c773761dfe0196018fe63e8dc_hu673841aa836f370642286620b1ac60b1_23864_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/080e5435d89d994c773761dfe0196018fe63e8dc_hu673841aa836f370642286620b1ac60b1_23864_5fc5b61512ac0fcf93f7db7a114411ab.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/080e5435d89d994c773761dfe0196018fe63e8dc.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;h3 id="rose---with-block">Rose - With Block&lt;/h3>
@@ -626,7 +910,7 @@ See
 /img/12b8dda69f73758976d0789e5951db4661bc888b_hu55d6792d00367157bf78407ba1421057_38365_f5bf02c11289f650f407c8bb97705b3d.png 458w,
 /img/12b8dda69f73758976d0789e5951db4661bc888b_hu55d6792d00367157bf78407ba1421057_38365_4696e14c9e55335ea067dd99c3bc888d.png 726w,
 /img/12b8dda69f73758976d0789e5951db4661bc888b_hu55d6792d00367157bf78407ba1421057_38365_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/12b8dda69f73758976d0789e5951db4661bc888b_hu55d6792d00367157bf78407ba1421057_38365_f5bf02c11289f650f407c8bb97705b3d.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/12b8dda69f73758976d0789e5951db4661bc888b.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;h3 id="carnation---with-custom-block">Carnation - With Custom Block&lt;/h3>
@@ -636,7 +920,7 @@ See
 /img/8ae42dfa49156be5a11f1cc57112401004e16bf9_hua15713a93d43b7adb033c6a9298a7be7_39227_bcbb943ae50327ae6fc67c68f187ef52.png 458w,
 /img/8ae42dfa49156be5a11f1cc57112401004e16bf9_hua15713a93d43b7adb033c6a9298a7be7_39227_91ef3c0b74023d471d90bcd74a28be5c.png 726w,
 /img/8ae42dfa49156be5a11f1cc57112401004e16bf9_hua15713a93d43b7adb033c6a9298a7be7_39227_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/8ae42dfa49156be5a11f1cc57112401004e16bf9_hua15713a93d43b7adb033c6a9298a7be7_39227_bcbb943ae50327ae6fc67c68f187ef52.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/8ae42dfa49156be5a11f1cc57112401004e16bf9.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;hr>
@@ -653,13 +937,13 @@ See
 &lt;li>&lt;strong>Paragraph title&lt;/strong> adds an all-caps heading at the top of your paragraph. This is optional.&lt;/li>
 &lt;li>&lt;strong>The checkbox&lt;/strong> adds dual horizontal rules. Check this only if you’re planning on using the paragraph title&lt;/li>
 &lt;li>&lt;strong>Description (required)&lt;/strong> - Adds simple text
-&lt;a href="/docs/user-documentation/text-editor/">through a text editor.&lt;/a> Font color defaults to purple in Lily and Rose.&lt;/li>
+&lt;a href="../text-editor/_index.md">through a text editor.&lt;/a> Font color defaults to purple in Lily and Rose.&lt;/li>
 &lt;/ul>
 &lt;h3 id="custom-block-feature">Custom Block Feature&lt;/h3>
 &lt;p>While the paragraph be used only with the fields above, 1 column also supports custom blocks of content. For this paragraph type, it’s recommended that users stick with “Simple block” types.&lt;/p>
 &lt;p>When adding your custom block, use the font-awesome icon class instead of the custom icon image field. In Carnation, the image option tends to get too large.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/blocks/">Learn more about custom blocks ⇒&lt;/a>&lt;/p>
+&lt;a href="../blocks/_index.md">Learn more about custom blocks ⇒&lt;/a>&lt;/p>
 &lt;p>
 &lt;a href="https://fontawesome.com/cheatsheet?from=io" target="_blank">Read about the Font Awesome icon library ⇒&lt;/a>&lt;/p>
 &lt;h2 id="advanced">Advanced&lt;/h2>
@@ -675,21 +959,21 @@ color: inherit;
 &lt;h2 id="content-types-that-support-this-paragraph">Content Types that Support This Paragraph&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/landing-page/">Landing Page&lt;/a>&lt;/li>
+&lt;a href="../content-types/landing-page.md">Landing Page&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/branch/">Branch&lt;/a>&lt;/li>
+&lt;a href="../content-types/branch.md">Branch&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/camp/">Camp&lt;/a>&lt;/li>
+&lt;a href="../content-types/camp.md">Camp&lt;/a>&lt;/li>
 &lt;li>Facility&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/blog-post/">Blog Post&lt;/a>&lt;/li>
+&lt;a href="../content-types/blog-post.md">Blog Post&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/news-post/">News Post&lt;/a>&lt;/li>
+&lt;a href="../content-types/news-post.md">News Post&lt;/a>&lt;/li>
 &lt;li>Event&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/program/">Program&lt;/a>&lt;/li>
+&lt;a href="../content-types/program.md">Program&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/program-subcategory/">Program Subcategory&lt;/a>&lt;/li>
+&lt;a href="../content-types/program-subcategory.md">Program Subcategory&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: 2 Columns</title><link>/docs/content-structure/paragraphs/2c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/2c/</guid><description>
 &lt;p>This is a paragraph type that will be used for implements a paragraph with 2 column.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
@@ -738,7 +1022,7 @@ color: inherit;
 /img/5d6f9e69f64664e6a07ed9848abcc613fffc9af2_hu2af56d1fe897a31b5e733e4863a90f77_236906_a86829854a4654d6fe4150193bf69078.png 458w,
 /img/5d6f9e69f64664e6a07ed9848abcc613fffc9af2_hu2af56d1fe897a31b5e733e4863a90f77_236906_5cdda898f58da3725b8ec2cc61ab0566.png 726w,
 /img/5d6f9e69f64664e6a07ed9848abcc613fffc9af2_hu2af56d1fe897a31b5e733e4863a90f77_236906_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/5d6f9e69f64664e6a07ed9848abcc613fffc9af2_hu2af56d1fe897a31b5e733e4863a90f77_236906_a86829854a4654d6fe4150193bf69078.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/5d6f9e69f64664e6a07ed9848abcc613fffc9af2.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
@@ -748,7 +1032,7 @@ color: inherit;
 /img/e3459038736e6deb77a695c4dd8348f3a3e372d0_hu1eed53a8a7d416ee2edbd37cb33804b5_161432_555417bc30120b56c4168ee7626d3746.png 458w,
 /img/e3459038736e6deb77a695c4dd8348f3a3e372d0_hu1eed53a8a7d416ee2edbd37cb33804b5_161432_6c5df9daa0086a4570566dd953fcb966.png 726w,
 /img/e3459038736e6deb77a695c4dd8348f3a3e372d0_hu1eed53a8a7d416ee2edbd37cb33804b5_161432_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/e3459038736e6deb77a695c4dd8348f3a3e372d0_hu1eed53a8a7d416ee2edbd37cb33804b5_161432_555417bc30120b56c4168ee7626d3746.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/e3459038736e6deb77a695c4dd8348f3a3e372d0.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
@@ -758,7 +1042,7 @@ color: inherit;
 /img/a73d4e0d2a8e4c251de23a2641b8283134a006ec_hu2af56d1fe897a31b5e733e4863a90f77_280383_1f4dfcfb13854709489b38310846d63f.png 458w,
 /img/a73d4e0d2a8e4c251de23a2641b8283134a006ec_hu2af56d1fe897a31b5e733e4863a90f77_280383_fdb5d188a171dbe861c549a122286975.png 726w,
 /img/a73d4e0d2a8e4c251de23a2641b8283134a006ec_hu2af56d1fe897a31b5e733e4863a90f77_280383_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/a73d4e0d2a8e4c251de23a2641b8283134a006ec_hu2af56d1fe897a31b5e733e4863a90f77_280383_1f4dfcfb13854709489b38310846d63f.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/a73d4e0d2a8e4c251de23a2641b8283134a006ec.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;hr>
@@ -774,12 +1058,12 @@ color: inherit;
 &lt;li>Insert a custom block into the Left and Right Column&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/blocks/">Learn more about custom blocks ⇒&lt;/a>&lt;/p>
+&lt;a href="../blocks/_index.md">Learn more about custom blocks ⇒&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>Unlike similar paragraphs (such as
-&lt;a href="/docs/user-documentation/paragraphs/1c/">1 column paragraph&lt;/a> and
-&lt;a href="/docs/user-documentation/paragraphs/grid-content/">Grid Content&lt;/a>), there is no title field. To add a Title,
-&lt;a href="/docs/user-documentation/paragraphs/simple-content/">insert a &lt;em>Simple Content&lt;/em> paragraph&lt;/a> above your 2 columns paragraph.&lt;/p>
+&lt;a href="../paragraphs/1c.md">1 column paragraph&lt;/a> and
+&lt;a href="../paragraphs/grid-content.md">Grid Content&lt;/a>), there is no title field. To add a Title,
+&lt;a href="../paragraphs/simple-content.md">insert a &lt;em>Simple Content&lt;/em> paragraph&lt;/a> above your 2 columns paragraph.&lt;/p>
 &lt;/blockquote>
 &lt;hr>
 &lt;p>There is an optional checkbox to display a horizontal rule above the two columns.&lt;/p>
@@ -789,7 +1073,7 @@ color: inherit;
 /img/c081d0e3fc843873c40ea85ab7dbc329585909e7_huece645cbcc29a816389d2bf4bc60f91a_12164_3abb2fa86087869302dc312a38696bcf.png 458w,
 /img/c081d0e3fc843873c40ea85ab7dbc329585909e7_huece645cbcc29a816389d2bf4bc60f91a_12164_e4b88a6b5df06013979449424e993496.png 726w,
 /img/c081d0e3fc843873c40ea85ab7dbc329585909e7_huece645cbcc29a816389d2bf4bc60f91a_12164_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/c081d0e3fc843873c40ea85ab7dbc329585909e7_huece645cbcc29a816389d2bf4bc60f91a_12164_3abb2fa86087869302dc312a38696bcf.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/c081d0e3fc843873c40ea85ab7dbc329585909e7.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;hr>
@@ -804,21 +1088,21 @@ color: inherit;
 &lt;h2 id="content-types-that-support-this-paragraph">Content Types That Support this Paragraph&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/landing-page/">Landing Page&lt;/a>&lt;/li>
+&lt;a href="../content-types/landing-page.md">Landing Page&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/branch/">Branch (Not Supported in Carnation)&lt;/a>&lt;/li>
+&lt;a href="../content-types/branch.md">Branch (Not Supported in Carnation)&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/camp/">Camp&lt;/a>&lt;/li>
+&lt;a href="../content-types/camp.md">Camp&lt;/a>&lt;/li>
 &lt;li>Facility&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/program/">Program&lt;/a>&lt;/li>
+&lt;a href="../content-types/program.md">Program&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/program-subcategory/">Program Subcategory&lt;/a>&lt;/li>
+&lt;a href="../content-types/program-subcategory.md">Program Subcategory&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/blog-post/">Blog Post&lt;/a>&lt;/li>
+&lt;a href="../content-types/blog-post.md">Blog Post&lt;/a>&lt;/li>
 &lt;li>Event&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/news-post/">News Post&lt;/a>&lt;/li>
+&lt;a href="../content-types/news-post.md">News Post&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: 3 Columns</title><link>/docs/content-structure/paragraphs/3c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/3c/</guid><description>
 &lt;p>This is a paragraph type that will be used for implements a paragraph with 3 column.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
@@ -898,7 +1182,7 @@ color: inherit;
 &lt;li>Add custom blocks to the &lt;em>Left Column&lt;/em>, &lt;em>Center Column&lt;/em>, and &lt;em>Right Column&lt;/em> fields.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/blocks/">Learn more about custom blocks ⇒&lt;/a>&lt;/p>
+&lt;a href="../blocks/_index.md">Learn more about custom blocks ⇒&lt;/a>&lt;/p>
 &lt;p>
 &lt;img src="upload://qM1IaFTQvMqc1MD11pO4ZhJQT3q.png" alt="landing-page__3-columns-options|544x500, 75%" />&lt;/p>
 &lt;p>If you want to add multiple rows of content with 3 columns, add a new 3 columns paragraph for each set of two you want (e.g., if you have seven blocks of content, add three 3 columns paragraphs).&lt;/p>
@@ -906,21 +1190,21 @@ color: inherit;
 &lt;h2 id="content-types-that-support-this-paragraph">Content Types That Support this Paragraph&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/landing-page/">Landing Page&lt;/a>&lt;/li>
+&lt;a href="../content-types/landing-page.md">Landing Page&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/branch/">Branch&lt;/a>&lt;/li>
+&lt;a href="../content-types/branch.md">Branch&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/camp/">Camp&lt;/a>&lt;/li>
+&lt;a href="../content-types/camp.md">Camp&lt;/a>&lt;/li>
 &lt;li>Facility&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/program/">Program&lt;/a>&lt;/li>
+&lt;a href="../content-types/program.md">Program&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/program-subcategory/">Program Subcategory&lt;/a>&lt;/li>
+&lt;a href="../content-types/program-subcategory.md">Program Subcategory&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/blog-post/">Blog Post (Not Supported in Carnation)&lt;/a>&lt;/li>
+&lt;a href="../content-types/blog-post.md">Blog Post (Not Supported in Carnation)&lt;/a>&lt;/li>
 &lt;li>Event&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/news-post/">News Post&lt;/a>&lt;/li>
+&lt;a href="../content-types/news-post.md">News Post&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: 4 Columns</title><link>/docs/content-structure/paragraphs/4c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/4c/</guid><description>
 &lt;p>This is a paragraph type that will be used for implements a paragraph with 4 column.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
@@ -1000,8 +1284,8 @@ color: inherit;
 &lt;blockquote>
 &lt;p>&lt;strong>This paragraph does not work out of the box in Carnation (see Advanced).&lt;/strong>&lt;/p>
 &lt;p>Content editors can use
-&lt;a href="/docs/user-documentation/paragraphs/grid-content/">Grid Content&lt;/a> or
-&lt;a href="/docs/user-documentation/paragraphs/featured-content/">Featured Content&lt;/a> paragraphs to achieve a similar layout.&lt;/p>
+&lt;a href="../paragraphs/grid-content.md">Grid Content&lt;/a> or
+&lt;a href="../paragraphs/featured-content.md">Featured Content&lt;/a> paragraphs to achieve a similar layout.&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
@@ -1026,13 +1310,13 @@ color: inherit;
 &lt;img src="upload://nvaYHUXy4C2JTaLL9d0hxlGVdJv.png" alt="landing-page__line-above|615x120, 50%" />&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Description&lt;/strong>: A subheader/section description embedded below the title and above your titles.
-&lt;a href="/docs/user-documentation/text-editor/basic-text-formatting/">Uses the text editor&lt;/a> for styling.&lt;/li>
+&lt;a href="../text-editor/basic-text-formatting.md">Uses the text editor&lt;/a> for styling.&lt;/li>
 &lt;li>Add custom blocks to the First Column, Second Column, Third Column, Fourth Column.&lt;/li>
 &lt;/ul>
 &lt;p>
 &lt;img src="upload://5w09U86JkdvGcMYRLRLyMD6lwKw.png" alt="Screen Shot 2020-03-26 at 2.43.58 PM|580x500, 75%" />&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/blocks/">Learn more about custom blocks ⇒&lt;/a>&lt;/p>
+&lt;a href="../blocks/_index.md">Learn more about custom blocks ⇒&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;strong>Adding Headers to Individual Blocks&lt;/strong>
 Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/em> renders as plain text. To work around this, add your headers in the text editor.&lt;/p>
@@ -1040,7 +1324,7 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;/blockquote>
 &lt;p>If you want to add multiple rows of content with 4 columns, add a new 4 columns paragraph for each set of two you want (e.g., if you have seven blocks of content, add two 4 columns paragraphs).&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/adding-links/">Learn more about the link field ⇒&lt;/a>&lt;/p>
+&lt;a href="../text-editor/adding-links.md">Learn more about the link field ⇒&lt;/a>&lt;/p>
 &lt;h2 id="advanced">Advanced&lt;/h2>
 &lt;h3 id="title-field-styling">Title Field Styling&lt;/h3>
 &lt;p>In all three themes currently in YMCA Website Services, the Title field displays in a font-size and color nearly identical to the body copy. To override, target &lt;code>.field-sb-title&lt;/code>.&lt;/p>
@@ -1051,21 +1335,21 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;h2 id="content-types-that-support-this-paragraph">Content Types That Support this Paragraph&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/landing-page/">Landing Page&lt;/a>&lt;/li>
+&lt;a href="../content-types/landing-page.md">Landing Page&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/branch/">Branch&lt;/a>&lt;/li>
+&lt;a href="../content-types/branch.md">Branch&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/camp/">Camp&lt;/a>&lt;/li>
+&lt;a href="../content-types/camp.md">Camp&lt;/a>&lt;/li>
 &lt;li>Facility&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/program/">Program&lt;/a>&lt;/li>
+&lt;a href="../content-types/program.md">Program&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/program-subcategory/">Program Subcategory&lt;/a>&lt;/li>
+&lt;a href="../content-types/program-subcategory.md">Program Subcategory&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/blog-post/">Blog Post (Not Supported in Carnation)&lt;/a>&lt;/li>
+&lt;a href="../content-types/blog-post.md">Blog Post (Not Supported in Carnation)&lt;/a>&lt;/li>
 &lt;li>Event&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/news-post/">News Post&lt;/a>&lt;/li>
+&lt;a href="../content-types/news-post.md">News Post&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Acceptance Testing</title><link>/docs/development/acceptancetesting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/acceptancetesting/</guid><description>
 &lt;p>YMCA Website Services is a big distribution with a large amount of modules, components, subsystems, and business
 processes, therefore we have to take appropriate steps to ensure the stability of major functionality during development.&lt;/p>
@@ -1382,7 +1666,7 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 /img/23616117608ee734ee7496acf8f0ee1c958995f6_hu000ae0ed797dd920c05adc927e850cf2_35659_2140a9317cbe0ed3198adc517840f5f9.png 458w,
 /img/23616117608ee734ee7496acf8f0ee1c958995f6_hu000ae0ed797dd920c05adc927e850cf2_35659_c39d2a6770ae65fcc06b53004ad4a4b9.png 726w,
 /img/23616117608ee734ee7496acf8f0ee1c958995f6_hu000ae0ed797dd920c05adc927e850cf2_35659_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/23616117608ee734ee7496acf8f0ee1c958995f6_hu000ae0ed797dd920c05adc927e850cf2_35659_2140a9317cbe0ed3198adc517840f5f9.png" />
-&lt;figcaption>The link button in the CKEditor toolbar.&lt;/figcaption>
+&lt;figcaption>The link button in the CKEditor toolbar. &lt;a href="/img/23616117608ee734ee7496acf8f0ee1c958995f6.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;p>
@@ -1403,14 +1687,14 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 /img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe_hucfbf4e52e90d12872cf49d63c512215e_18049_ea980f35a11cf5ac5151c51f1fcf4650.png 458w,
 /img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe_hucfbf4e52e90d12872cf49d63c512215e_18049_0f9e1b30294101b9a1f4aabe536b17c7.png 726w,
 /img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe_hucfbf4e52e90d12872cf49d63c512215e_18049_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe_hucfbf4e52e90d12872cf49d63c512215e_18049_ea980f35a11cf5ac5151c51f1fcf4650.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;figure class="image-caption">
 &lt;img alt="landing-page_text-editor-link-attributes-popup|628x500, 50%" srcset="
 /img/6bbc2313b7b75f269c895aba35df2b9595304375_hu0415d5a791f47e8f7a058269c9c3a192_54218_0e0eb48385bdd3cdd1a703658806f348.png 458w,
 /img/6bbc2313b7b75f269c895aba35df2b9595304375_hu0415d5a791f47e8f7a058269c9c3a192_54218_fd320d5e13336dde15b15c4c3d7221a8.png 726w,
 /img/6bbc2313b7b75f269c895aba35df2b9595304375_hu0415d5a791f47e8f7a058269c9c3a192_54218_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/6bbc2313b7b75f269c895aba35df2b9595304375_hu0415d5a791f47e8f7a058269c9c3a192_54218_0e0eb48385bdd3cdd1a703658806f348.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/6bbc2313b7b75f269c895aba35df2b9595304375.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;p>&lt;strong>Linking Tips&lt;/strong>&lt;/p>
@@ -1658,7 +1942,7 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;p>Supported Content Types&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/landing-page/">Landing Page&lt;/a>&lt;/li>
+&lt;a href="../content-types/landing-page.md">Landing Page&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Related Paragraphs&lt;/p>
 &lt;ul>
@@ -1751,7 +2035,7 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Link/Button:&lt;/strong> Add a URL and a link to the button on the page. The button on your banner cannot be styled without custom CSS/code.
-&lt;a href="/docs/user-documentation/text-editor/building-buttons/">Using link/button fields ⇒&lt;/a>&lt;/p>
+&lt;a href="../text-editor/building-buttons.md">Using link/button fields ⇒&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;strong>Note:&lt;/strong> If you know a little CSS, you can have your agency partner
 &lt;a href="https://www.drupal.org/project/css_editor" target="_blank">install the CSS Editor &lt;/a>module, and you can target &lt;code>.btn.banner-btn&lt;/code> to change the default button.&lt;/p>
@@ -1761,13 +2045,13 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;h3 id="content-types-that-support-banner">Content Types that Support Banner&lt;/h3>
 &lt;ul>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/landing-page/">Landing Page&lt;/a>&lt;/li>
+&lt;a href="../content-types/landing-page.md">Landing Page&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/program/">Program (Works better in Carnation/Lily)&lt;/a>&lt;/li>
+&lt;a href="../content-types/program.md">Program (Works better in Carnation/Lily)&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/branch/">Branch&lt;/a>&lt;/li>
+&lt;a href="../content-types/branch.md">Branch&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/camp/">Camp&lt;/a>&lt;/li>
+&lt;a href="../content-types/camp.md">Camp&lt;/a>&lt;/li>
 &lt;li>Facility&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Basic</title><link>/docs/content-structure/blocks/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/basic/</guid><description>
 &lt;p>A simple block with a description.&lt;/p>
@@ -1801,7 +2085,7 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 /img/005bb7b2eb3fb5e7558f3b2d95462b797903decb_hufd2c19cdd355c3913065d216f9e7531c_32342_a26d4aca67369f0cee6753eb57950171.png 458w,
 /img/005bb7b2eb3fb5e7558f3b2d95462b797903decb_hufd2c19cdd355c3913065d216f9e7531c_32342_d7616af1155727849cda4b9dd2f16f29.png 726w,
 /img/005bb7b2eb3fb5e7558f3b2d95462b797903decb_hufd2c19cdd355c3913065d216f9e7531c_32342_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/005bb7b2eb3fb5e7558f3b2d95462b797903decb_hufd2c19cdd355c3913065d216f9e7531c_32342_a26d4aca67369f0cee6753eb57950171.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/005bb7b2eb3fb5e7558f3b2d95462b797903decb.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;p>
@@ -2103,17 +2387,17 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;h2 id="content-types-that-support-blog-posts">Content Types that Support Blog Posts&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/landing-page/">Landing Page&lt;/a>&lt;/li>
+&lt;a href="../content-types/landing-page.md">Landing Page&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="relatedalternative-paragraphs">Related/Alternative Paragraphs&lt;/h2>
 &lt;ul>
 &lt;li>Event Posts Listing&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/paragraphs/latest-blog-posts/">Latest Blog Posts/(Camp)/(Branch)&lt;/a>&lt;/li>
+&lt;a href="../paragraphs/latest-blog-posts.md">Latest Blog Posts/(Camp)/(Branch)&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/paragraphs/latest-news-posts/">Latest News Posts/(Camp)/(Branch)&lt;/a>&lt;/li>
+&lt;a href="../paragraphs/latest-news-posts.md">Latest News Posts/(Camp)/(Branch)&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="/docs/user-documentation/paragraphs/news-posts-listing/">News Posts Listing&lt;/a>&lt;/li>
+&lt;a href="../paragraphs/news-posts-listing.md">News Posts Listing&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Branch</title><link>/docs/content-structure/content-types/branch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/branch/</guid><description>
 &lt;p>Branch content type is used for adding Branches on the site.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
@@ -2461,7 +2745,7 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 /img/d5736f5507428b99030d5c88620d3f226f154cfc_hub3151a40bcb4772b48026f6f433e67a0_25715_fe9c8bb931eb18958f198dc0f1cc8a97.png 458w,
 /img/d5736f5507428b99030d5c88620d3f226f154cfc_hub3151a40bcb4772b48026f6f433e67a0_25715_30318e067f639c60e8dd98e74d6e4d32.png 726w,
 /img/d5736f5507428b99030d5c88620d3f226f154cfc_hub3151a40bcb4772b48026f6f433e67a0_25715_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/d5736f5507428b99030d5c88620d3f226f154cfc_hub3151a40bcb4772b48026f6f433e67a0_25715_fe9c8bb931eb18958f198dc0f1cc8a97.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/d5736f5507428b99030d5c88620d3f226f154cfc.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;blockquote>
@@ -2480,7 +2764,7 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 /img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf_huea5daba795073207cbe6ae0a666df1f3_8881_56f7b6c1bede74fad452104e7aba1a35.png 458w,
 /img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf_huea5daba795073207cbe6ae0a666df1f3_8881_844c57c855865d6aa6e15e3ef557cb4c.png 726w,
 /img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf_huea5daba795073207cbe6ae0a666df1f3_8881_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf_huea5daba795073207cbe6ae0a666df1f3_8881_56f7b6c1bede74fad452104e7aba1a35.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;hr>
@@ -2504,7 +2788,7 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 /img/450d40d931e05bc00fe0d3b6d15d951b0062793d_hu4882779c409839c86938ea8be56e5447_83269_42be687e77e4ecb49c5e74d195252012.png 458w,
 /img/450d40d931e05bc00fe0d3b6d15d951b0062793d_hu4882779c409839c86938ea8be56e5447_83269_dc3cba338992df9ed9defad32f87fb7a.png 726w,
 /img/450d40d931e05bc00fe0d3b6d15d951b0062793d_hu4882779c409839c86938ea8be56e5447_83269_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/450d40d931e05bc00fe0d3b6d15d951b0062793d_hu4882779c409839c86938ea8be56e5447_83269_42be687e77e4ecb49c5e74d195252012.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/450d40d931e05bc00fe0d3b6d15d951b0062793d.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;br>
 &lt;figure class="image-caption">
@@ -2512,7 +2796,7 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 /img/a27170cb92cff52b1a9bd2590993d413b62350c7_hu961d180292efe5a65096e2b3af1f7864_52529_dae3eb2a1f8001dfed27c42b470bd2aa.png 458w,
 /img/a27170cb92cff52b1a9bd2590993d413b62350c7_hu961d180292efe5a65096e2b3af1f7864_52529_4022479ae7ca1d4ab740e2c57c9e217b.png 726w,
 /img/a27170cb92cff52b1a9bd2590993d413b62350c7_hu961d180292efe5a65096e2b3af1f7864_52529_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/a27170cb92cff52b1a9bd2590993d413b62350c7_hu961d180292efe5a65096e2b3af1f7864_52529_dae3eb2a1f8001dfed27c42b470bd2aa.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/a27170cb92cff52b1a9bd2590993d413b62350c7.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;p>Add the text for your link/button in the bottom left. Enter your link in the URL field on the bottom right.&lt;/p>
@@ -2553,7 +2837,7 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 /img/4a18583fc355305c5175fe6333e5a5a4638bd07e_hu720c6e08ec75f1abb89171583b8b094b_25436_fa18d84cdf1dbdac66435f3fd74cfa7b.png 458w,
 /img/4a18583fc355305c5175fe6333e5a5a4638bd07e_hu720c6e08ec75f1abb89171583b8b094b_25436_5f33e19249a90e88d317e43e960cc3f6.png 726w,
 /img/4a18583fc355305c5175fe6333e5a5a4638bd07e_hu720c6e08ec75f1abb89171583b8b094b_25436_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/4a18583fc355305c5175fe6333e5a5a4638bd07e_hu720c6e08ec75f1abb89171583b8b094b_25436_fa18d84cdf1dbdac66435f3fd74cfa7b.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/4a18583fc355305c5175fe6333e5a5a4638bd07e.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;p>You can add icons to your buttons or links in the icons tab. On the right, you will have fields that integrate with the Font Awesome library. To have an icon show up on the left, use the Left Icon text field. For the right, use the Right Icon text field.&lt;/p>
@@ -2578,7 +2862,7 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 /img/4f4624d31c5ac550174bb49165287c9d93698ead_hu71ad5675bd1571d43574e9964cd15de6_22226_5e4b44e0a38253c52f6d0b137675eaf9.png 458w,
 /img/4f4624d31c5ac550174bb49165287c9d93698ead_hu71ad5675bd1571d43574e9964cd15de6_22226_5357cf80b402e3da233e638297366780.png 726w,
 /img/4f4624d31c5ac550174bb49165287c9d93698ead_hu71ad5675bd1571d43574e9964cd15de6_22226_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/4f4624d31c5ac550174bb49165287c9d93698ead_hu71ad5675bd1571d43574e9964cd15de6_22226_5e4b44e0a38253c52f6d0b137675eaf9.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/4f4624d31c5ac550174bb49165287c9d93698ead.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;figure class="image-caption">
 &lt;img alt="paragraph-simple-content__table-options|320x469, 50%" src="/img/29d8b4d51f19d6ddcb056a169c597a9e2901d53f.gif" />
@@ -2620,7 +2904,7 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 /img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f_hub4a8eee368410bba04a68ea4208686e3_24754_7c4311ce285f4949e636b63b55d28ea6.png 458w,
 /img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f_hub4a8eee368410bba04a68ea4208686e3_24754_e9c11b5b5c9d0b91a4a215086948ff4e.png 726w,
 /img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f_hub4a8eee368410bba04a68ea4208686e3_24754_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f_hub4a8eee368410bba04a68ea4208686e3_24754_7c4311ce285f4949e636b63b55d28ea6.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;p>You can also double-click inside a table cell.&lt;/p>
@@ -2638,7 +2922,7 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 /img/f6a82a1957f81cf57cba0e863bbe47044377e602_hu214c5c99a54469ec12bb75ca5b896faf_42851_17a28654c5bf419f3877c344064cd9d7.png 458w,
 /img/f6a82a1957f81cf57cba0e863bbe47044377e602_hu214c5c99a54469ec12bb75ca5b896faf_42851_127ce5ff7822008eff7ccd23f9d004d5.png 726w,
 /img/f6a82a1957f81cf57cba0e863bbe47044377e602_hu214c5c99a54469ec12bb75ca5b896faf_42851_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/f6a82a1957f81cf57cba0e863bbe47044377e602_hu214c5c99a54469ec12bb75ca5b896faf_42851_17a28654c5bf419f3877c344064cd9d7.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/f6a82a1957f81cf57cba0e863bbe47044377e602.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;p>This opens a dialogue box similar to the table properties. You can set the width/height for your cell (pixels only for height; pixels or percentages for your width) in the fields on the left.&lt;/p>
@@ -2659,7 +2943,7 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 /img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0_hu48e49a75cdf685730025926c2de945a5_36947_5653ab6c4d4e0fe8be7286cf9c9129b9.png 458w,
 /img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0_hu48e49a75cdf685730025926c2de945a5_36947_1e04115325512c2593545ece8356dbe3.png 726w,
 /img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0_hu48e49a75cdf685730025926c2de945a5_36947_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0_hu48e49a75cdf685730025926c2de945a5_36947_5653ab6c4d4e0fe8be7286cf9c9129b9.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">h2&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>Registration and Pricing&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">h2&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
@@ -2701,7 +2985,7 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 /img/609efb274c09d0d2635e57f376a68b3fa372eb76_hu43c36c030344367ee994f0da4e72fdb9_111365_26db651c17d6a1aba55bc97319564340.png 458w,
 /img/609efb274c09d0d2635e57f376a68b3fa372eb76_hu43c36c030344367ee994f0da4e72fdb9_111365_ffc9393dde87b5780c3034c740e77614.png 726w,
 /img/609efb274c09d0d2635e57f376a68b3fa372eb76_hu43c36c030344367ee994f0da4e72fdb9_111365_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/609efb274c09d0d2635e57f376a68b3fa372eb76_hu43c36c030344367ee994f0da4e72fdb9_111365_26db651c17d6a1aba55bc97319564340.png" />
-&lt;figcaption>&lt;/figcaption>
+&lt;figcaption> &lt;a href="/img/609efb274c09d0d2635e57f376a68b3fa372eb76.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">style&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
@@ -3094,7 +3378,7 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 &lt;h2 id="content-types-that-support-this-paragraph">Content Types That Support this Paragraph&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="/docs/user-documentation/content-types/camp/">Camp&lt;/a>&lt;/li>
+&lt;a href="../content-types/camp.md">Camp&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Categories Listing</title><link>/docs/content-structure/paragraphs/categories-listing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/categories-listing/</guid><description>
 &lt;p>This is dynamic paragraph that renders all published categories according to current program page.&lt;/p>
 &lt;p>It uses sticky at the top option and order items based on published date(newest at the top).&lt;/p>
@@ -3116,49 +3400,4 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 &lt;td>Block reference to the view/block. Should have default value and should be hidden in form display.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>Docs: Categories Listing</title><link>/docs/user-documentation/paragraphs/categories-listing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/categories-listing/</guid><description>
-&lt;blockquote>
-&lt;p>Embeds horizontal cards for program subcategories on a programs page.&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;h3 id="carnation">Carnation&lt;/h3>
-&lt;h4 id="desktop">Desktop&lt;/h4>
-&lt;p>
-&lt;img src="upload://xrlcIOa55e8fW3E1raw5hgOShZC.jpeg" alt="carnation&amp;amp;ndash;program__categories-listing|690x482, 75%" />&lt;/p>
-&lt;h4 id="mobile">Mobile&lt;/h4>
-&lt;p>
-&lt;img src="upload://io6AMAadCvHRaj49uJNdmKth9J5.jpeg" alt="carnation&amp;amp;ndash;program__categories-listing&amp;amp;ndash;mobile|430x500, 75%" />&lt;/p>
-&lt;h3 id="lily">Lily&lt;/h3>
-&lt;p>
-&lt;img src="upload://8Io8pXHVcadphB2D0Rd3ukiWMAq.jpeg" alt="lily&amp;amp;ndash;program__categories-listing|690x482, 75%" />&lt;/p>
-&lt;h3 id="rose">Rose&lt;/h3>
-&lt;p>
-&lt;img src="upload://2XvcBc6D2SLP6N445IYQujdRElf.jpeg" alt="rose&amp;amp;ndash;program__categories-listing|690x475, 75%" />&lt;/p>
-&lt;hr>
-&lt;h2 id="areas-it-should-be-used">Areas It Should Be Used&lt;/h2>
-&lt;ul>
-&lt;li>Content Area&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="how-to-use-it">How To Use It:&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;a href="/docs/user-documentation/content-types/program/">On a Programs page&lt;/a>, go to the content area and click to open it.&lt;/li>
-&lt;li>Select Categories listing.&lt;/li>
-&lt;/ul>
-&lt;p>
-&lt;img src="upload://fgGiiosW91RDrSYvP8zwfDlsP0P.png" alt="admin-program__programs-listing|690x170, 75%" />&lt;/p>
-&lt;blockquote>
-&lt;p>This paragraph can only used on programs pages that have
-&lt;a href="/docs/user-documentation/content-types/program-subcategory/">subcategories tied to them&lt;/a>. If a program has no subcategories tied to it or if it’s used on another content type, it will not work.&lt;/p>
-&lt;/blockquote>
-&lt;p>
-&lt;a href="/docs/user-documentation/content-types/program/">Learn more about programs content type ⇒&lt;/a>&lt;/p>
-&lt;p>
-&lt;a href="/docs/user-documentation/content-types/program-subcategory/">Learn more about programs subcategories content type ⇒&lt;/a>&lt;/p>
-&lt;hr>
-&lt;h2 id="content-types-that-support-categories-listing">Content Types that Support Categories Listing&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;a href="/docs/user-documentation/content-types/program/">Program&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/table></description></item></channel></rss>

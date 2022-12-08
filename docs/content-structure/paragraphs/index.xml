@@ -1460,7 +1460,7 @@
 &lt;/table></description></item><item><title>Docs: Social Share Icons</title><link>/docs/content-structure/paragraphs/social_share_icons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/social_share_icons/</guid><description>
 &lt;p>This is a paragraph type that will be used for the add social media share.
 See more
-&lt;a href="/docs/development/addthis/">How to configure AddThis&lt;/a>&lt;/p>
+&lt;a href="../../Development/AddThis.md">How to configure AddThis&lt;/a>&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
 &lt;table>
 &lt;thead>
