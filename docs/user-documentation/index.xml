@@ -317,9 +317,15 @@ After that you will be able to upload multiple files via Media Browser (&lt;code
 &lt;p>Layout Builder is a powerful new page-building addition to your YMCA website.&lt;/p>
 &lt;blockquote>
 &lt;p>Drupal&amp;rsquo;s Layout Builder allows content editors and site builders to easily and quickly create visual layouts for displaying content. Users can customize how content is arranged on a single page, across types of content, or even create custom landing pages with an easy-to-use drag-and-drop interface.&lt;/p>
+&lt;p>-
+&lt;a href="https://www.drupal.org/docs/8/core/modules/layout-builder" target="_blank">Layout Builder on Drupal.org&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="getting-started-with-layout-builder">Getting Started with Layout Builder&lt;/h2>
-&lt;p>YMCA Website Services 9.2.12 introduces a new Content Type: &lt;strong>Landing Page (Layout Builder)&lt;/strong>. This new page will allow you to utilize &amp;ldquo;Custom Blocks&amp;rdquo; in &amp;ldquo;Sections&amp;rdquo; with different &amp;ldquo;Layouts&amp;rdquo; to build pages. Please contact your development partner if you need assistance updating the latest version.&lt;/p>
+&lt;p>YMCA Website Services 9.2.12 introduces a new Content Type: &lt;strong>Landing Page (Layout Builder)&lt;/strong>. This new page will allow you to build pages using &lt;strong>
+&lt;a href="#sections">Sections&lt;/a>&lt;/strong> with different &lt;strong>
+&lt;a href="#layouts">Layouts&lt;/a>&lt;/strong> that contain &lt;strong>
+&lt;a href="#blocks">Custom Blocks&lt;/a>&lt;/strong>. Please contact your development partner if you need assistance updating the latest version.&lt;/p>
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PL6Wo-UX6nhySupPRWKqy0BFlzYLzYR8rB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
 &lt;h3 id="creating-a-new-page">Creating a new page&lt;/h3>
 &lt;p>To use Layout Builder, you&amp;rsquo;ll first have to create a new page:&lt;/p>
 &lt;ul>

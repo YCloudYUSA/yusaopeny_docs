@@ -308,12 +308,16 @@
 &lt;/p>
 &lt;p>Support for these options is a work in progress and may require involvement of your development partner. Feel free to experiment with the options. Be sure to follow proper brand guidelines and accessibility practices.&lt;/p>
 &lt;p>After you have completed setting the &lt;strong>Style&lt;/strong> options, click back to &lt;strong>Content&lt;/strong> and &lt;strong>Save&lt;/strong> or &lt;strong>Update&lt;/strong> to commit your changes.&lt;/p></description></item><item><title>Docs: Accordion</title><link>/docs/user-documentation/layout-builder/accordion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/accordion/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/QczjkFL23W0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>
 &lt;a href="/img/designs/lb/Accordion%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Accordion%20Desktop.png">Desktop&lt;/a>&lt;/p>
 &lt;p>To use the Accordion block:&lt;/p>
 &lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Accordion&lt;/strong>&lt;/li>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page &lt;strong>Accordion&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
@@ -329,6 +333,10 @@
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Cards</title><link>/docs/user-documentation/layout-builder/cards/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/cards/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/vrtcxXl31f4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
 &lt;p>The Cards block is similar to the
 &lt;a href="../grid-cta">Grid CTA&lt;/a> block, but has more fields and places the image behind the item content.&lt;/p>
 &lt;p>&lt;strong>Designs:&lt;/strong>
@@ -336,7 +344,7 @@
 &lt;a href="/img/designs/lb/Cards%20Desktop.png">Desktop&lt;/a>&lt;/p>
 &lt;p>To use the Cards block:&lt;/p>
 &lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Cards&lt;/strong>&lt;/li>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page &lt;strong>Cards&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
@@ -359,12 +367,16 @@
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Carousel</title><link>/docs/user-documentation/layout-builder/carousel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/carousel/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/zVT1St0UXsk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>
 &lt;a href="/img/designs/lb/Carousels%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Carousels%20Desktop.png">Desktop&lt;/a>&lt;/p>
 &lt;p>To use the Carousel block:&lt;/p>
 &lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Carousel&lt;/strong>&lt;/li>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page &lt;strong>Carousel&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
@@ -384,6 +396,10 @@
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Grid CTA</title><link>/docs/user-documentation/layout-builder/grid-cta/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/grid-cta/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/TtABGaClzPw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
 &lt;p>The Grid CTA block is similar to the
 &lt;a href="../cards">Cards&lt;/a> block, but allows for more flexible items with a slightly more freeform design.&lt;/p>
 &lt;p>&lt;strong>Designs:&lt;/strong>
@@ -391,7 +407,7 @@
 &lt;a href="/img/designs/lb/Grid%20Content%20Desktop.png">Desktop&lt;/a>&lt;/p>
 &lt;p>To use the Grid CTA block:&lt;/p>
 &lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Grid CTA&lt;/strong>&lt;/li>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page &lt;strong>Grid CTA&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
@@ -413,12 +429,16 @@
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Hero Banner</title><link>/docs/user-documentation/layout-builder/hero-banner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/hero-banner/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/kerfY3EBESA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>
 &lt;a href="/img/designs/lb/Hero%20Banner%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Hero%20Banner%20Desktop.png">Desktop&lt;/a>&lt;/p>
 &lt;p>To use the Hero Banner block:&lt;/p>
 &lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Hero Banner&lt;/strong>&lt;/li>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page &lt;strong>Hero Banner&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
@@ -432,12 +452,20 @@
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Ping-Pong</title><link>/docs/user-documentation/layout-builder/ping-pong/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/ping-pong/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/BgEL_YU-DiA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>
 &lt;a href="/img/designs/lb/Ping%20Pong%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Ping%20Pong%20Desktop.png">Desktop&lt;/a>&lt;/p>
 &lt;p>To use the Ping-Pong block:&lt;/p>
 &lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Ping-Pong&lt;/strong>&lt;/li>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
+&lt;li>Scroll to the location on the page where you want to add a block&lt;/li>
+&lt;li>Click &lt;strong>Add block&lt;/strong>&lt;/li>
+&lt;li>In the sidebar, click &lt;strong>Create custom block&lt;/strong>&lt;/li>
+&lt;li>Choose &lt;strong>Ping-Pong&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
@@ -454,12 +482,20 @@
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Promo Card</title><link>/docs/user-documentation/layout-builder/promo-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/promo-card/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/dybusSNmTPc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>
 &lt;a href="/img/designs/lb/Promo%20Cards%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Promo%20Cards%20Desktop.png">Desktop&lt;/a>&lt;/p>
 &lt;p>To use the Promo Card block:&lt;/p>
 &lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Promo Card&lt;/strong>&lt;/li>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
+&lt;li>Scroll to the location on the page where you want to add a block&lt;/li>
+&lt;li>Click &lt;strong>Add block&lt;/strong>&lt;/li>
+&lt;li>In the sidebar, click &lt;strong>Create custom block&lt;/strong>&lt;/li>
+&lt;li>Choose &lt;strong>Promo Card&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
@@ -473,12 +509,16 @@
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Simple Menu</title><link>/docs/user-documentation/layout-builder/simple-menu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/simple-menu/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/UZVurubBti8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>
 &lt;a href="/img/designs/lb/Simple%20Menu%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Simple%20Menu%20Desktop.png">Desktop&lt;/a>&lt;/p>
 &lt;p>To use the Simple Menu block:&lt;/p>
 &lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Simple Menu&lt;/strong>&lt;/li>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page &lt;strong>Simple Menu&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
@@ -490,12 +530,20 @@
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Statistics</title><link>/docs/user-documentation/layout-builder/statistics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/statistics/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/_RQcnMw4X5U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>
 &lt;a href="/img/designs/lb/Statistics%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Statistics%20Desktop.png">Desktop&lt;/a>&lt;/p>
 &lt;p>To use the Statistics block:&lt;/p>
 &lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Statistics&lt;/strong>&lt;/li>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
+&lt;li>Scroll to the location on the page where you want to add a block&lt;/li>
+&lt;li>Click &lt;strong>Add block&lt;/strong>&lt;/li>
+&lt;li>In the sidebar, click &lt;strong>Create custom block&lt;/strong>&lt;/li>
+&lt;li>Choose &lt;strong>Statistics&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
@@ -517,16 +565,25 @@
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Table</title><link>/docs/user-documentation/layout-builder/table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/table/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/buxLFLUhiMo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;p>The Table block also allows users to add simple content to the Landing Page (Layout Builder) content type.&lt;/p>
 &lt;p>&lt;strong>Designs:&lt;/strong>
 &lt;a href="/img/designs/lb/Tables%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Tables%20Desktop.png">Desktop&lt;/a>&lt;/p>
 &lt;p>To use the Table block:&lt;/p>
 &lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong>&lt;/li>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
+&lt;li>Scroll to the location on the page where you want to add a block&lt;/li>
+&lt;li>Click &lt;strong>Add block&lt;/strong>&lt;/li>
+&lt;li>In the sidebar, click &lt;strong>Create custom block&lt;/strong>&lt;/li>
+&lt;li>Choose &lt;strong>Table&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &lt;em>Display Title&lt;/em> is checked. For administrative use only.&lt;/li>
 &lt;li>&lt;strong>Section title&lt;/strong>: Displayed as a heading above the item.&lt;/li>
 &lt;li>&lt;strong>Section subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
 &lt;li>&lt;strong>Body&lt;/strong>: A full text editor to add tables or other content to the page.
@@ -556,12 +613,20 @@
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Tabs</title><link>/docs/user-documentation/layout-builder/tabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/tabs/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/I3GPm718hn8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>
 &lt;a href="/img/designs/lb/Tabs%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Tabs%20Desktop.png">Desktop&lt;/a>&lt;/p>
 &lt;p>To use the Tabs block:&lt;/p>
 &lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Tabs&lt;/strong>&lt;/li>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
+&lt;li>Scroll to the location on the page where you want to add a block&lt;/li>
+&lt;li>Click &lt;strong>Add block&lt;/strong>&lt;/li>
+&lt;li>In the sidebar, click &lt;strong>Create custom block&lt;/strong>&lt;/li>
+&lt;li>Choose &lt;strong>Tabs&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
@@ -579,12 +644,20 @@
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Webform</title><link>/docs/user-documentation/layout-builder/webform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/webform/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/dsHpcLDjLEo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>
 &lt;a href="/img/designs/lb/Webforms%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Webforms%20Desktop.png">Desktop&lt;/a>&lt;/p>
 &lt;p>To use the Webform block:&lt;/p>
 &lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> &amp;gt; &lt;strong>Create custom block&lt;/strong> &amp;gt; &lt;strong>Webform&lt;/strong>&lt;/li>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
+&lt;li>Scroll to the location on the page where you want to add a block&lt;/li>
+&lt;li>Click &lt;strong>Add block&lt;/strong>&lt;/li>
+&lt;li>In the sidebar, click &lt;strong>Create custom block&lt;/strong>&lt;/li>
+&lt;li>Choose &lt;strong>Webform&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
