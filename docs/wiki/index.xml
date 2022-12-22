@@ -942,7 +942,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;/ul>
 &lt;h2 id="stable-sandboxes">Stable Sandboxes&lt;/h2>
 &lt;p>
-&lt;a href="https://sandboxes.openy.org/" target="_blank">https://sandboxes.openy.org/&lt;/a>&lt;/p>
+&lt;a href="https://sandboxes.y.org/" target="_blank">https://sandboxes.y.org/&lt;/a>&lt;/p>
 &lt;p>These sandboxes are set to rebuild completely overnight and clear their database and files every 2 hours. To get access visit
 &lt;a href="https://community.openymca.org/t/how-can-i-try-or-get-a-demo-of-open-y/318" target="_blank">How can I try or get a demo of YMCA Website Services?&lt;/a>&lt;/p>
 &lt;p>These sandboxes contain 3 profile variations:&lt;/p>
@@ -958,7 +958,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ansible-playbook docroot/reinstall.yml -i /tmp/inventory5068801741271597001.ini -f &lt;span style="color:#0000cf;font-weight:bold">5&lt;/span> -e &lt;span style="color:#000">php_env_vars&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">APP_ENV&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>dev -e &lt;span style="color:#000">mysql_user&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_password&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_db&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>sandbox_carnation_custom -e &lt;span style="color:#000">drupal_folder&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>/var/www/sandbox_carnation_custom -e &lt;span style="color:#000">site_url&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>https://sandbox-carnation-cus.openy.org -e &lt;span style="color:#000">pp_environment&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>demo -e &lt;span style="color:#000">run_reinstall&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">true&lt;/span> -e &lt;span style="color:#4e9a06">&amp;#34;openy_profile_install_settings=&amp;#39;openy_configure_profile.preset=complete openy_theme_select.theme=openy_carnation&amp;#39;&amp;#34;&lt;/span> -e &lt;span style="color:#000">use_solr&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">false&lt;/span> -i localhost, --connection&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">local&lt;/span> -vvvv
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="development-sandboxes">Development Sandboxes&lt;/h2>
 &lt;p>
-&lt;a href="https://sandboxes-dev.openy.org/" target="_blank">https://sandboxes-dev.openy.org/&lt;/a>&lt;/p>
+&lt;a href="https://sandboxes-dev.y.org/" target="_blank">https://sandboxes-dev.y.org/&lt;/a>&lt;/p>
 &lt;p>These usually contain the latest development version of YMCA Website Services (the master branch of
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">openy&lt;/a>.&lt;/p>
 &lt;p>These sandboxes are built on CI by running:&lt;/p>
@@ -967,7 +967,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ansible-playbook docroot/reinstall.yml -i /tmp/inventory5068801741271597001.ini -f &lt;span style="color:#0000cf;font-weight:bold">5&lt;/span> -e &lt;span style="color:#000">php_env_vars&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">APP_ENV&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>dev -e &lt;span style="color:#000">mysql_user&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_password&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_db&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>sandbox_carnation_custom -e &lt;span style="color:#000">drupal_folder&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>/var/www/sandbox_carnation_custom -e &lt;span style="color:#000">site_url&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>https://sandbox-carnation-cus.openy.org -e &lt;span style="color:#000">pp_environment&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>demo -e &lt;span style="color:#000">run_reinstall&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">true&lt;/span> -e &lt;span style="color:#4e9a06">&amp;#34;openy_profile_install_settings=&amp;#39;openy_configure_profile.preset=complete openy_theme_select.theme=openy_carnation&amp;#39;&amp;#34;&lt;/span> -e &lt;span style="color:#000">use_solr&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">false&lt;/span> -i localhost, --connection&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">local&lt;/span> -vvvv
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="membership-framework-sandboxes">Membership Framework Sandboxes&lt;/h2>
 &lt;p>
-&lt;a href="https://membership-framework-sandboxes-d9.openy.org/" target="_blank">https://membership-framework-sandboxes-d9.openy.org/&lt;/a>&lt;/p>
+&lt;a href="https://membership-framework-sandboxes-d9.y.org/" target="_blank">https://membership-framework-sandboxes-d9.y.org/&lt;/a>&lt;/p>
 &lt;p>These are based on the YMCA Website Services stable Standard profile and the development version of the
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships" target="_blank">Membership Framework&lt;/a>.&lt;/p>
 &lt;p>To rebuild the sandbox, CI is running:&lt;/p>
@@ -993,7 +993,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;tr>
 &lt;td>Carnation&lt;/td>
 &lt;td>
-&lt;a href="https://sandbox-carnation-cus-d9.openy.org/activity-finder-v4" target="_blank">https://sandbox-carnation-cus-d9.openy.org/activity-finder-v4&lt;/a>&lt;/td>
+&lt;a href="https://sandbox-carnation-cus-d9.y.org/activity-finder-v4" target="_blank">https://sandbox-carnation-cus-d9.y.org/activity-finder-v4&lt;/a>&lt;/td>
 &lt;td>stable&lt;/td>
 &lt;td>Custom&lt;/td>
 &lt;td>v4 dev&lt;/td>
@@ -1003,7 +1003,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;tr>
 &lt;td>Rose&lt;/td>
 &lt;td>
-&lt;a href="https://sandbox-rose-cus-d9.openy.org/activity-finder-v4" target="_blank">https://sandbox-rose-cus-d9.openy.org/activity-finder-v4&lt;/a>&lt;/td>
+&lt;a href="https://sandbox-rose-cus-d9.y.org/activity-finder-v4" target="_blank">https://sandbox-rose-cus-d9.y.org/activity-finder-v4&lt;/a>&lt;/td>
 &lt;td>stable&lt;/td>
 &lt;td>Custom&lt;/td>
 &lt;td>v4 dev&lt;/td>
@@ -1013,7 +1013,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;tr>
 &lt;td>Lily&lt;/td>
 &lt;td>
-&lt;a href="https://sandbox-lily-cus-d9.openy.org/activity-finder-v4" target="_blank">https://sandbox-lily-cus-d9.openy.org/activity-finder-v4&lt;/a>&lt;/td>
+&lt;a href="https://sandbox-lily-cus-d9.y.org/activity-finder-v4" target="_blank">https://sandbox-lily-cus-d9.y.org/activity-finder-v4&lt;/a>&lt;/td>
 &lt;td>stable&lt;/td>
 &lt;td>Custom&lt;/td>
 &lt;td>v4 dev&lt;/td>
