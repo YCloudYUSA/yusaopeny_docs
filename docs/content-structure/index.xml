@@ -7,7 +7,7 @@ You can find a much more low level documentation at
 We are not limiting amount of content types, could be added by developers, so the list is not final.
 The only rule we are trying to follow is to cover shipped list of content types by YMCA Website Services upgrade path.&lt;/p></description></item><item><title>Docs: Layout Builder</title><link>/docs/content-structure/layout-builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/layout-builder/</guid><description>
 &lt;p>These custom block types exist to support page building with Layout Builder.&lt;/p>
-&lt;h3 id="global-fields">Global Fields&lt;/h3>
+&lt;h2 id="global-fields">Global Fields&lt;/h2>
 &lt;p>These fields are reused across many of the below components.&lt;/p>
 &lt;table>
 &lt;thead>
@@ -24,24 +24,24 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Section title&lt;/td>
-&lt;td>field_section_title&lt;/td>
+&lt;td>Section heading&lt;/td>
+&lt;td>field_section_heading&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Section subtitle&lt;/td>
-&lt;td>field_section_subtitle&lt;/td>
+&lt;td>Section subheading&lt;/td>
+&lt;td>field_section_subheading&lt;/td>
 &lt;td>Text (plain, long)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -70,13 +70,13 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Accordion Item&lt;/td>
+&lt;td>Accordion item&lt;/td>
 &lt;td>field_entity_reference_paragraph&lt;/td>
 &lt;td>Entity reference revisions&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>unlimited&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>Bundle: accordion_item&lt;/td>
+&lt;td>Bundle: lb_accordion_item&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
@@ -100,37 +100,36 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Title&lt;/td>
-&lt;td>field_title&lt;/td>
+&lt;td>Heading&lt;/td>
+&lt;td>field_heading&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H4&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Body&lt;/td>
-&lt;td>field_body&lt;/td>
+&lt;td>body&lt;/td>
 &lt;td>Text (formatted, long, with summary)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>WYSIWYG&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h2 id="cards">Cards&lt;/h2>
+&lt;h2 id="branch-amenities">Branch Amenities&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_cards&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Project:&lt;/strong>
-&lt;a href="https://www.drupal.org/project/lb_cards" target="_blank">lb_cards&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_branch_amenities&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong> [lb_branch_amenities]&lt;/li>
 &lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="/img/designs/lb/Cards%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Cards%20Mobile.png">Desktop&lt;/a>&lt;/li>
+&lt;a href="">Mobile&lt;/a> |
+&lt;a href="">Desktop&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>Flexible card-style components that allow up to 4 cards to display across the page depending on the chosen layout.&lt;/p>
+&lt;p>Display of all amenities available at a branch location.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -146,28 +145,84 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Section title&lt;/td>
+&lt;td>Section heading&lt;/td>
 &lt;td>(inherit)&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Section subtitle&lt;/td>
+&lt;td>Section subheading&lt;/td>
 &lt;td>(inherit)&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Section CTA/Link&lt;/td>
-&lt;td>field_cta&lt;/td>
+&lt;td>Amenity name&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>Entity reference&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;td>unlimited&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Taxonomy&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="cards">Cards&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_cards&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong>
+&lt;a href="https://www.drupal.org/project/lb_cards" target="_blank">lb_cards&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Cards%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Cards%20Mobile.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Flexible card-style components that allow up to 4 cards to display across a page depending on the chosen layout.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section heading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section subheading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section link&lt;/td>
+&lt;td>field_section_link&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -177,7 +232,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td># of columns&lt;/td>
-&lt;td>field_columns&lt;/td>
+&lt;td>field_section_columns&lt;/td>
 &lt;td>List (text)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
@@ -186,19 +241,19 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Cards&lt;/td>
-&lt;td>field_cards&lt;/td>
+&lt;td>Card items&lt;/td>
+&lt;td>field_card_items&lt;/td>
 &lt;td>Entity reference revisions&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>4&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>Bundle: Card&lt;/td>
+&lt;td>Bundle: lb_card_item&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h3 id="card">Card&lt;/h3>
-&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_card&lt;/code>&lt;/p>
+&lt;h3 id="card-item">Card Item&lt;/h3>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_card_item&lt;/code>&lt;/p>
 &lt;p>The Card paragraph is referenced by the Cards block.&lt;/p>
 &lt;table>
 &lt;thead>
@@ -215,18 +270,18 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Title&lt;/td>
-&lt;td>field_card_title&lt;/td>
+&lt;td>Heading&lt;/td>
+&lt;td>field_item_heading&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H4&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Image&lt;/td>
-&lt;td>field_card_image&lt;/td>
+&lt;td>field_item_image&lt;/td>
 &lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -235,18 +290,18 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Topic Tag&lt;/td>
-&lt;td>field_card_topic_tag&lt;/td>
-&lt;td>Text (plain)&lt;/td>
+&lt;td>Topic tag&lt;/td>
+&lt;td>field_item_topic_tag&lt;/td>
+&lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
+&lt;td>Bundle: blog_category, news_category&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>May be changed to term.&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Description&lt;/td>
-&lt;td>field_card_description&lt;/td>
+&lt;td>field_item_description&lt;/td>
 &lt;td>Text (plain, long)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -255,8 +310,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>CTA/Link&lt;/td>
-&lt;td>field_card_cta&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>field_item_link&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -291,33 +346,33 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Carousel title&lt;/td>
-&lt;td>field_section_title&lt;/td>
-&lt;td>Text (plain)&lt;/td>
-&lt;td>no&lt;/td>
-&lt;td>1&lt;/td>
+&lt;td>Section heading&lt;/td>
+&lt;td>(inherit)&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Carousel subtitle&lt;/td>
-&lt;td>field_subtitle&lt;/td>
-&lt;td>Text (plain)&lt;/td>
-&lt;td>no&lt;/td>
-&lt;td>1&lt;/td>
+&lt;td>Section subheading&lt;/td>
+&lt;td>(inherit)&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Carousel Items&lt;/td>
+&lt;td>Carousel items&lt;/td>
 &lt;td>field_carousel_items&lt;/td>
 &lt;td>Entity reference revisions&lt;/td>
 &lt;td>no&lt;/td>
-&lt;td>unlimited&lt;/td>
+&lt;td>6&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>Bundle: lb_carousel_item&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
@@ -339,18 +394,18 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Title&lt;/td>
-&lt;td>field_title&lt;/td>
+&lt;td>Heading&lt;/td>
+&lt;td>field_item_heading&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H4&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Image&lt;/td>
-&lt;td>field_carousel_image&lt;/td>
+&lt;td>field_item_image&lt;/td>
 &lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -360,7 +415,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Description&lt;/td>
-&lt;td>field_carousel_description&lt;/td>
+&lt;td>field_item_description&lt;/td>
 &lt;td>Text (formatted, long)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -369,8 +424,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>CTA \ Link&lt;/td>
-&lt;td>field_carousel_cta&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>field_item_link&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -405,28 +460,28 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Section title&lt;/td>
+&lt;td>Section heading&lt;/td>
 &lt;td>(inherit)&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Section subtitle&lt;/td>
+&lt;td>Section subheading&lt;/td>
 &lt;td>(inherit)&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Grid section CTA/link&lt;/td>
-&lt;td>field_grid_section_cta_link&lt;/td>
+&lt;td>Grid CTA section link&lt;/td>
+&lt;td>field_section_link&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -436,7 +491,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td># of columns&lt;/td>
-&lt;td>field_columns&lt;/td>
+&lt;td>field_section_columns&lt;/td>
 &lt;td>List (text)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
@@ -445,19 +500,19 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>Allows 2-4 columns, defaults to 4.&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Grid Items&lt;/td>
-&lt;td>field_grid_items&lt;/td>
+&lt;td>Grid CTA items&lt;/td>
+&lt;td>field_grid_cta_items&lt;/td>
 &lt;td>Entity Reference&lt;/td>
 &lt;td>yes&lt;/td>
-&lt;td>unlimited&lt;/td>
+&lt;td>4&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>Bundle: Grid Item&lt;/td>
+&lt;td>Bundle: lb_grid_cta_item&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h3 id="grid-item">Grid Item&lt;/h3>
-&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_cta_item&lt;/code>&lt;/p>
+&lt;h3 id="grid-cta-item">Grid CTA Item&lt;/h3>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_grid_cta_item&lt;/code>&lt;/p>
 &lt;p>The Grid Item paragraph is referenced by the Grid CTA component.&lt;/p>
 &lt;table>
 &lt;thead>
@@ -474,18 +529,18 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Grid item title&lt;/td>
-&lt;td>field_grid_item_title&lt;/td>
+&lt;td>Heading&lt;/td>
+&lt;td>field_item_heading&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H4&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Grid item description&lt;/td>
-&lt;td>field_grid_item_description&lt;/td>
+&lt;td>Description&lt;/td>
+&lt;td>field_item_description&lt;/td>
 &lt;td>Text (formatted, long)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -494,8 +549,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Grid item media&lt;/td>
-&lt;td>field_grid_item_icon&lt;/td>
+&lt;td>Media&lt;/td>
+&lt;td>field_item_icon&lt;/td>
 &lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -504,8 +559,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Grid item CTA/link&lt;/td>
-&lt;td>field_grid_item_cta_link&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>field_item_link&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -540,14 +595,14 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Title&lt;/td>
-&lt;td>field_title&lt;/td>
+&lt;td>Heading&lt;/td>
+&lt;td>field_heading&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Description&lt;/td>
@@ -570,11 +625,104 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>CTA\Link&lt;/td>
-&lt;td>field_hero_cta&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>field_link&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="partners">Partners&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_partners&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong> [lb_partners]&lt;/li>
+&lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;a href="">Mobile&lt;/a> |
+&lt;a href="">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>List of multiple partner / sponsor logos.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section heading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section subheading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Partner items&lt;/td>
+&lt;td>field_partner_items&lt;/td>
+&lt;td>Entity reference revisions&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>unlimited?&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Bundle: lb_partner_item&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="partner-item">Partner Item&lt;/h3>
+&lt;p>&lt;strong>Machine Name:&lt;/strong> &lt;code>lb_partner_item&lt;/code>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Heading&lt;/td>
+&lt;td>field_item_heading&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>Yes&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Image&lt;/td>
+&lt;td>field_item_image&lt;/td>
+&lt;td>Entity reference&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
@@ -606,48 +754,48 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Section subtitle&lt;/td>
-&lt;td>field_subtitle&lt;/td>
+&lt;td>Section heading&lt;/td>
 &lt;td>(inherit)&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Section Title&lt;/td>
-&lt;td>field_title&lt;/td>
+&lt;td>Section subheading&lt;/td>
 &lt;td>(inherit)&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Item title&lt;/td>
-&lt;td>field_item_title&lt;/td>
+&lt;td>Heading&lt;/td>
+&lt;td>field_item_heading&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H4&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Item Description&lt;/td>
+&lt;td>Description&lt;/td>
 &lt;td>field_item_description&lt;/td>
 &lt;td>Text (formatted, long)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>WYSIWYG&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Item CTA\Link&lt;/td>
-&lt;td>field_item_cta&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>field_item_link&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>2&lt;/td>
@@ -656,7 +804,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Item Image&lt;/td>
+&lt;td>Image&lt;/td>
 &lt;td>field_item_image&lt;/td>
 &lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
@@ -666,7 +814,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Item Image Position&lt;/td>
+&lt;td>Image position&lt;/td>
 &lt;td>field_item_image_position&lt;/td>
 &lt;td>List (text)&lt;/td>
 &lt;td>yes&lt;/td>
@@ -722,7 +870,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Icon / Image&lt;/td>
+&lt;td>Image&lt;/td>
 &lt;td>field_image&lt;/td>
 &lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
@@ -732,14 +880,106 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>CTA / Link&lt;/td>
-&lt;td>field_cta&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>field_link&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="related-articles">Related Articles&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_related_articles&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong>
+&lt;a href="">lb_related_articles&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;a href="">Mobile&lt;/a> |
+&lt;a href="">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Component for displaying related articles within a page.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section heading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section subheading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="related-events">Related Events&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_related_events&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong>
+&lt;a href="">lb_related_events&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;a href="">Mobile&lt;/a> |
+&lt;a href="">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Component for displaying related events within a page.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section heading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section subheading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -779,13 +1019,127 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Links&lt;/td>
-&lt;td>field_lb_simple_menu_links&lt;/td>
+&lt;td>field_links&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>unlimited&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="staff">Staff&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_staff&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong>
+&lt;a href="">lb_staff&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;a href="">Mobile&lt;/a> |
+&lt;a href="">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Displays simple staff member info cards with image, name, title, email&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section heading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section subheading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Staff items&lt;/td>
+&lt;td>field_staff_items&lt;/td>
+&lt;td>Entity reference revisions&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>unlimited?&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Bundle: lb_staff_item&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="staff-item">Staff Item&lt;/h3>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_staff_item&lt;/code>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Name&lt;/td>
+&lt;td>field_item_name&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>Yes&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Image&lt;/td>
+&lt;td>field_item_image&lt;/td>
+&lt;td>Entity reference&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>If no image uploaded, utilize default&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Job title&lt;/td>
+&lt;td>field_item_job_title&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>Yes&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Email&lt;/td>
+&lt;td>field_item_email&lt;/td>
+&lt;td>Text (formatted, mailto)&lt;/td>
+&lt;td>Yes&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Clicking on email should open users default email client&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -814,24 +1168,24 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Section title&lt;/td>
+&lt;td>Section heading&lt;/td>
 &lt;td>(inherit)&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Section subtitle&lt;/td>
+&lt;td>Section subheading&lt;/td>
 &lt;td>(inherit)&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td># of columns&lt;/td>
@@ -844,8 +1198,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Section CTA / Link&lt;/td>
-&lt;td>field_cta&lt;/td>
+&lt;td>Section link&lt;/td>
+&lt;td>field_link&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -854,19 +1208,19 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Statistics Items&lt;/td>
-&lt;td>field_items&lt;/td>
+&lt;td>Statistics items&lt;/td>
+&lt;td>field_statistics_ items&lt;/td>
 &lt;td>Entity reference revisions&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>unlimited&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>Bundle: lb_statistics_item&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h3 id="statistics-item">Statistics Item&lt;/h3>
-&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>statistics_item&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_statistics_item&lt;/code>&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -883,7 +1237,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;tbody>
 &lt;tr>
 &lt;td>Number value&lt;/td>
-&lt;td>field_number&lt;/td>
+&lt;td>field_item_number&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
@@ -893,64 +1247,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Description&lt;/td>
-&lt;td>field_description&lt;/td>
+&lt;td>field_item_description&lt;/td>
 &lt;td>Text (plain)&lt;/td>
-&lt;td>no&lt;/td>
-&lt;td>1&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="table">Table&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_table&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Project:&lt;/strong>
-&lt;a href="https://www.drupal.org/project/lb_table" target="_blank">lb_table&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="/img/designs/lb/Tables%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Tables%20Desktop.png">Desktop&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>Allows users to be able to view responsive tables within a page.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Label&lt;/th>
-&lt;th>Machine Name&lt;/th>
-&lt;th>Type&lt;/th>
-&lt;th>Required&lt;/th>
-&lt;th>Cardinality&lt;/th>
-&lt;th>Help text&lt;/th>
-&lt;th>Field Settings&lt;/th>
-&lt;th>Notes&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>Section title&lt;/td>
-&lt;td>(inherit)&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Section subtitle&lt;/td>
-&lt;td>(inherit)&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Body&lt;/td>
-&lt;td>body&lt;/td>
-&lt;td>Text (formatted, long, with summary)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
@@ -984,39 +1282,39 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Section title&lt;/td>
+&lt;td>Section heading&lt;/td>
 &lt;td>(inherit)&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Section subtitle&lt;/td>
+&lt;td>Section subheading&lt;/td>
 &lt;td>(inherit)&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Tabs&lt;/td>
-&lt;td>field_tabs&lt;/td>
+&lt;td>Tab items&lt;/td>
+&lt;td>field_tab_items&lt;/td>
 &lt;td>Entity reference revisions&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>unlimited&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>Bundle: Tab&lt;/td>
+&lt;td>Bundle: lb_tab_item&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h3 id="tab">Tab&lt;/h3>
-&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>tab&lt;/code>&lt;/p>
+&lt;h3 id="tab-item">Tab Item&lt;/h3>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_tab_item&lt;/code>&lt;/p>
 &lt;p>The Tab paragraph is referenced by the Tabs block.&lt;/p>
 &lt;table>
 &lt;thead>
@@ -1033,20 +1331,179 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Title&lt;/td>
-&lt;td>field_title&lt;/td>
+&lt;td>Heading&lt;/td>
+&lt;td>field_heading&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>H4&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Body&lt;/td>
-&lt;td>field_body&lt;/td>
+&lt;td>body&lt;/td>
 &lt;td>Text (formatted, long, with summary)&lt;/td>
 &lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>WYSIWYG&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="table">Table&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_table&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong>
+&lt;a href="https://www.drupal.org/project/lb_table" target="_blank">lb_table&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Tables%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Tables%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Allows users to be able to view responsive tables within a page.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section heading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section subheading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Body&lt;/td>
+&lt;td>body&lt;/td>
+&lt;td>Text (formatted, long, with summary)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="testimonials">Testimonials&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_testimonials&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong> [lb_testimonial]&lt;/li>
+&lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;a href="">Mobile&lt;/a> |
+&lt;a href="">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Display of short testimonials or quotes from Y members.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section heading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section subheading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Testimonial items&lt;/td>
+&lt;td>field_testimonial_items&lt;/td>
+&lt;td>Entity reference revisions&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>4&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Bundle: lb_testimonial_item&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="testimonial-item">Testimonial Item&lt;/h3>
+&lt;p>&lt;strong>Machine Name:&lt;/strong> &lt;code>lb_testimonial_item&lt;/code>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Name&lt;/td>
+&lt;td>field_item_name&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>Yes&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Firstname, Lastname&lt;/td>
+&lt;td>H4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Image&lt;/td>
+&lt;td>field_item_image&lt;/td>
+&lt;td>Entity reference&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>If no image uploaded, utilize default&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Quote&lt;/td>
+&lt;td>field_item_quote&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>Yes&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
