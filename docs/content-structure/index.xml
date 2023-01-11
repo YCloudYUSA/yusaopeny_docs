@@ -721,7 +721,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>Image&lt;/td>
 &lt;td>field_item_image&lt;/td>
 &lt;td>Entity reference&lt;/td>
-&lt;td>No&lt;/td>
+&lt;td>Yes&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
@@ -1115,7 +1115,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>Image&lt;/td>
 &lt;td>field_item_image&lt;/td>
 &lt;td>Entity reference&lt;/td>
-&lt;td>No&lt;/td>
+&lt;td>Yes&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
@@ -1493,7 +1493,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>Image&lt;/td>
 &lt;td>field_item_image&lt;/td>
 &lt;td>Entity reference&lt;/td>
-&lt;td>no&lt;/td>
+&lt;td>Yes&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
