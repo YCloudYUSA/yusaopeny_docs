@@ -280,7 +280,15 @@ As an YMCA Website Services site developer, I want to be able import posts from 
 &lt;p>Relates to:
 &lt;a href="/docs/content-structure/paragraphs/program-registration-daxko/">Program Registration (Daxko)&lt;/a>&lt;/p>
 &lt;p>Configuration setting at &lt;code>/admin/config/development/daxko&lt;/code>&lt;/p>
-&lt;p>Account configuration must be setup before the Program Registration paragraph will work.&lt;/p></description></item><item><title>Docs: Fonts</title><link>/docs/development/fonts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/fonts/</guid><description>
+&lt;p>Account configuration must be setup before the Program Registration paragraph will work.&lt;/p>
+&lt;h3 id="groupex-pro-apis">GroupEx PRO APIs&lt;/h3>
+&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Deprecation Notice&lt;/h4>
+On February 28, 2023, Daxko is planning to sunset the GroupEx PRO Public API in favor of their Daxko Group API v1.
+&lt;/div>
+&lt;p>YMCA Digital Services with the help of YMCA of the North have developed and adopted a Syncer for Repeat Application which helps to migrate from the GroupEx PRO Public API to the Daxko Group API v1 and pulls data from GroupEx PRO to Program Event Framework.&lt;/p>
+&lt;p>See
+&lt;a href="https://github.com/open-y-subprojects/openy_daxko_gxp_syncer" target="_blank">open-y-subprojects/openy_daxko_gxp_syncer&lt;/a> for how to configure the Syncer.&lt;/p></description></item><item><title>Docs: Fonts</title><link>/docs/development/fonts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/fonts/</guid><description>
 &lt;p>From
 &lt;a href="https://link.ymca.net/mlink/post/ODI2MA" target="_blank">YMCA Link&lt;/a>:&lt;/p>
 &lt;blockquote>
