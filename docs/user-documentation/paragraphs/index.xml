@@ -541,10 +541,24 @@ Unformatted, unrestricted text that supports any HTML tag and can be embedded an
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="ymca-of-central-kentucky--daxko-schedules-iframe">YMCA of Central Kentucky / Daxko Schedules iframe&lt;/h3>
 &lt;p>
-&lt;img src="upload://xWdxyZdejraNn7ve3qOLYxRGEbc.png" alt="y-example&amp;amp;ndash;code__daxko-iframe|690x362, 75%" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="y-example&amp;amp;ndash;code__daxko-iframe" srcset="
+/img/paragraphs-code-yck-daxko_hu3cdac538b9596dbb4cbb090b9fc069b3_129667_e04c6e48c9e1be32c49bb8db39ad616c.png 458w,
+/img/paragraphs-code-yck-daxko_hu3cdac538b9596dbb4cbb090b9fc069b3_129667_90df14f4d86e8cf5c2d35f270b24a2ad.png 726w,
+/img/paragraphs-code-yck-daxko_hu3cdac538b9596dbb4cbb090b9fc069b3_129667_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/paragraphs-code-yck-daxko_hu3cdac538b9596dbb4cbb090b9fc069b3_129667_e04c6e48c9e1be32c49bb8db39ad616c.png" />
+&lt;figcaption> &lt;a href="/img/paragraphs-code-yck-daxko.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;h3 id="ymca-of-middle-tennessee--groupex-pro-script">YMCA of Middle Tennessee / GroupEx Pro Script&lt;/h3>
 &lt;p>
-&lt;img src="upload://3QLx1QiF1ggw1xkbfc6djWPLUQM.png" alt="y-example&amp;amp;ndash;code__gxp-iframe|690x327, 75%" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="y-example&amp;amp;ndash;code__gxp-iframe" srcset="
+/img/paragraphs-code-ymt-gxp_hu32b7c44177059b6bd41303919bf8b11f_176498_fb9c73eab277364217faf0e5fed288e4.png 458w,
+/img/paragraphs-code-ymt-gxp_hu32b7c44177059b6bd41303919bf8b11f_176498_3d71721669756e071d11215110623b7d.png 726w,
+/img/paragraphs-code-ymt-gxp_hu32b7c44177059b6bd41303919bf8b11f_176498_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/paragraphs-code-ymt-gxp_hu32b7c44177059b6bd41303919bf8b11f_176498_fb9c73eab277364217faf0e5fed288e4.png" />
+&lt;figcaption> &lt;a href="/img/paragraphs-code-ymt-gxp.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;h2 id="areas-it-should-be-used">Areas it Should Be Used&lt;/h2>
 &lt;ul>
 &lt;li>Content Area&lt;/li>
@@ -556,7 +570,14 @@ Unformatted, unrestricted text that supports any HTML tag and can be embedded an
 &lt;li>
 &lt;p>Select “Add Code” from the paragraphs dropdown.&lt;/p>
 &lt;p>
-&lt;img src="upload://2v8ZmDflbxvdTdQfQkJCmbQrtFK.png" alt="admin&amp;amp;ndash;code__paragraph-dropdown|690x309, 50%" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="admin&amp;amp;ndash;code__paragraph-dropdown" srcset="
+/img/paragraphs-code-dropdown_hu407007c39ad390a3ffe221c18e7dfa41_45781_c87ff23a5782670c183c07291a5ec279.png 458w,
+/img/paragraphs-code-dropdown_hu407007c39ad390a3ffe221c18e7dfa41_45781_ed0abcc6d508561298d25f12bd6b89a7.png 726w,
+/img/paragraphs-code-dropdown_hu407007c39ad390a3ffe221c18e7dfa41_45781_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/paragraphs-code-dropdown_hu407007c39ad390a3ffe221c18e7dfa41_45781_c87ff23a5782670c183c07291a5ec279.png" />
+&lt;figcaption> &lt;a href="/img/paragraphs-code-dropdown.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>You will see two buttons - one to add a custom block, the other to search for a custom block.&lt;/p>
@@ -569,12 +590,19 @@ Unformatted, unrestricted text that supports any HTML tag and can be embedded an
 &lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="../blocks/_index.md">Learn more about blocks ⇒&lt;/a>&lt;/p>
+&lt;a href="../../blocks">Learn more about blocks ⇒&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>When you add your block, you will see a blank, unformatted text field. Type your HTML text into this field.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;img src="upload://5KrrpvVIFZVDrt4zrsoASTkTenJ.png" alt="admin&amp;amp;ndash;code__block|690x422, 75%" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="admin&amp;amp;ndash;code__block" srcset="
+/img/paragraphs-code-form-fields_hu678f7750bb702aed5be46d35c6c7fc73_50171_0a9d9473742397bd8b0164f3ee95b886.png 458w,
+/img/paragraphs-code-form-fields_hu678f7750bb702aed5be46d35c6c7fc73_50171_5363a3064cc06443317237bcad898571.png 726w,
+/img/paragraphs-code-form-fields_hu678f7750bb702aed5be46d35c6c7fc73_50171_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/paragraphs-code-form-fields_hu678f7750bb702aed5be46d35c6c7fc73_50171_0a9d9473742397bd8b0164f3ee95b886.png" />
+&lt;figcaption> &lt;a href="/img/paragraphs-code-form-fields.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;em>&lt;strong>To use code, you must add HTML tags.&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;em>Hard returns will be ignored, and text will be printed out in one long string.&lt;/em>&lt;/p>
@@ -587,25 +615,25 @@ Unformatted, unrestricted text that supports any HTML tag and can be embedded an
 &lt;h2 id="content-types-that-support-code">Content Types that Support Code&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="../content-types/landing-page.md">Landing Page&lt;/a>&lt;/li>
+&lt;a href="../../content-types/landing-page">Landing Page&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="../content-types/branch.md">Branch&lt;/a>&lt;/li>
+&lt;a href="../../content-types/branch">Branch&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="../content-types/camp.md">Camp&lt;/a>&lt;/li>
+&lt;a href="../../content-types/camp">Camp&lt;/a>&lt;/li>
 &lt;li>Facility&lt;/li>
 &lt;li>Event&lt;/li>
 &lt;li>
-&lt;a href="../content-types/activity-class-session.md">Activity&lt;/a>&lt;/li>
+&lt;a href="../../content-types/activity-class-session">Activity&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="../content-types/program.md">Program&lt;/a>&lt;/li>
+&lt;a href="../../content-types/program">Program&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="../content-types/program-subcategory.md">Program Subcategory&lt;/a>&lt;/li>
+&lt;a href="../../content-types/program-subcategory">Program Subcategory&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="../content-types/activity-class-session.md">Class&lt;/a>&lt;/li>
+&lt;a href="../../content-types/activity-class-session">Class&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="../content-types/blog-post.md">Blog Post&lt;/a>&lt;/li>
+&lt;a href="../../content-types/blog-post">Blog Post&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="../content-types/news-post.md">News Post&lt;/a>&lt;/li>
+&lt;a href="../../content-types/news-post">News Post&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Date Block</title><link>/docs/user-documentation/paragraphs/date-block/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/date-block/</guid><description>
 &lt;blockquote>
 &lt;p>A date block allow you to schedule different sections to show or hide on your pages.&lt;/p>

@@ -25,53 +25,73 @@
 &lt;h2 id="how-to-use-blocks">How to Use Blocks&lt;/h2>
 &lt;p>A block works like this - you choose a paragraph, and that paragraph asks you to create a block. You write a section of content inside that block.&lt;/p>
 &lt;p>
-&lt;img src="upload://oJpAbSjT6RA1hMjvOTQxUwdozRd.gif" alt="landing-page__2-column-block|690x290, 75%" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="landing-page__2-column-block" src="/img/blocks-add-block.gif" />
+&lt;figcaption>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;p>You can now embed that block on another page simply by typing its name and click on it from a list of results.&lt;/p>
 &lt;div class="alert alert-primary" role="alert">
 &lt;h3 id="site-wide-blocks">Site-wide Blocks&lt;/h3>
 &lt;p>While you will not need to edit these that often, blocks can also be added and configured on a site-wide level using the &lt;em>Block Layout.&lt;/em> These blocks contain certain features that are considered &amp;ldquo;Global&amp;rdquo;, such as your Menus.&lt;/p>
-&lt;p>
-&lt;p>&lt;a href="https://community.openymca.org/c/Resources-and-training-for-content-editors/taxonomy/18" target="_blank">Learn about block layouts ⇒&lt;/a>&lt;/p>&lt;/p>
+&lt;p>Themes are created with a set of Regions where certain section of content, or Blocks, can be placed. On a day-to-day basis, these regions are static in YMCA Website Services.&lt;/p>
+&lt;p>To view your site’s regions, head over to Structure &amp;gt; Block Layout and click on Demonstrate block regions. It is not recommended to change the configuration in your Block Layout.&lt;/p>
+&lt;p>To change layouts in individual pieces of content, editors and website managers typically use Paragraphs or Layout Builder.&lt;/p>
 &lt;/div>
-&lt;p>Paragraphs that support blocks will have two buttons - “Add New Custom Block” and “Add Existing Custom Block.”.&lt;/p>
-&lt;p>Adding a new custom block will allow you to retrieve it later on another page. When you go to retrieve a block, you will choose the “Existing Custom Block” option, type the Block Description in the search field, and choose from one of the options that appear.&lt;/p>
+&lt;p>Paragraphs that support blocks will have two buttons - &lt;strong>Add New Custom Block&lt;/strong> and &lt;strong>Add Existing Custom Block&lt;/strong>.&lt;/p>
+&lt;p>Adding a new custom block will allow you to retrieve it later on another page. When you go to retrieve a block, you will choose the &lt;strong>Existing Custom Block&lt;/strong> option, type the Block Description in the search field, and choose from one of the options that appear.&lt;/p>
 &lt;p>
-&lt;img src="upload://ktYOhlTNPOWqDCppafNF3eKl07r.gif" alt="admin__date-block&amp;amp;ndash;exsiting-block|690x143, 75%" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="admin__date-block&amp;amp;ndash;exsiting-block" src="/img/blocks-existing-block.gif" />
+&lt;figcaption>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;h3 id="block-descriptions">Block Descriptions&lt;/h3>
 &lt;p>Standard across all block types is the block description field, which serves as the name for your block. Use this description field to help identify your block when you are embedding it onto a page.&lt;/p>
 &lt;p>
-&lt;img src="upload://uDDl7bJrFreiiN5nboh5MaOOWMF.png" alt="admin&amp;amp;ndash;code__block__cropped|690x155, 50%" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="admin&amp;amp;ndash;code__block__cropped" srcset="
+/img/blocks-description_huf1d11b81b37b7f7966305719cdd17744_23863_fcf02cf79c1f01419e90d92ce93f1e7a.png 458w,
+/img/blocks-description_huf1d11b81b37b7f7966305719cdd17744_23863_846180f904c4d2004cc9d45aa57908e8.png 726w,
+/img/blocks-description_huf1d11b81b37b7f7966305719cdd17744_23863_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/blocks-description_huf1d11b81b37b7f7966305719cdd17744_23863_fcf02cf79c1f01419e90d92ce93f1e7a.png" />
+&lt;figcaption> &lt;a href="/img/blocks-description.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;h2 id="block-types">Block Types&lt;/h2>
 &lt;p>YMCA Website Services not only allows you to use blocks, but it supports different types of blocks for different types of content.&lt;/p>
 &lt;h3 id="basic-block">Basic Block&lt;/h3>
 &lt;p>A basic block gives you a
-&lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">basic text editor and that’s it&lt;/a>. This is great for embedding descriptions on cards across multiple pages.&lt;/p>
+&lt;a href="../text-editor">basic text editor and that’s it&lt;/a>. This is great for embedding descriptions on cards across multiple pages.&lt;/p>
 &lt;h3 id="simple-block">Simple Block&lt;/h3>
 &lt;p>The block type you will likely use most often is the simple block. A simple block gives you a
-&lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">basic text editor and that’s it.&lt;/a> This is great for embedding descriptions on cards across multiple pages.&lt;/p>
+&lt;a href="../text-editor">basic text editor and that’s it.&lt;/a> This is great for embedding descriptions on cards across multiple pages.&lt;/p>
 &lt;p>
-&lt;img src="upload://8ztiCyU8UuDvYi6E3SjEthQEFQ.gif" alt="landing-page__1-column-demo-block|690x474, 75%" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="landing-page__1-column-demo-block|690x474, 75%" src="/img/blocks-new-custom.gif" />
+&lt;figcaption>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;h4 id="paragraphs-that-support-simple-blocks">Paragraphs that Support Simple Blocks&lt;/h4>
 &lt;ul>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/1-column-paragraphs-open-y-user-docs/698" target="_blank">1 column&lt;/a>&lt;/li>
+&lt;a href="../paragraphs/1c">1 column&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/2-columns-paragraphs-open-y-user-docs/699" target="_blank">2 columns&lt;/a>&lt;/li>
+&lt;a href="../paragraphs/2c">2 columns&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/3-columns-paragraphs-open-y-user-docs/700" target="_blank">3 columns&lt;/a>&lt;/li>
+&lt;a href="../paragraphs/3c">3 columns&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/4-columns-paragraphs-open-y-user-docs/701" target="_blank">4 columns&lt;/a>&lt;/li>
+&lt;a href="../paragraphs/4c">4 columns&lt;/a>&lt;/li>
 &lt;li>Featured Highlights&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;h3 id="date-block">Date Block&lt;/h3>
 &lt;p>Use this block to schedule and unschedule sections/paragraphs on your page(s).&lt;/p>
 &lt;p>
-&lt;a href="https://community.openymca.org/t/date-block-paragraphs-open-y-user-docs/709" target="_blank">Using the Date Block Paragraph ⇒&lt;/a>&lt;/p>
+&lt;a href="../paragraphs/date-block">Using the Date Block Paragraph ⇒&lt;/a>&lt;/p>
 &lt;h3 id="code-block">Code Block&lt;/h3>
 &lt;p>This unformatted block allows you to use any type of HTML tag, great for for embedding scripts and iframes onto multiple pages. This block also allows more flexibility for technically-inclined content editors.&lt;/p>
 &lt;p>
-&lt;a href="https://community.openymca.org/t/code-paragraphs-open-y-user-docs/708" target="_blank">Using the Code Block Paragraph ⇒&lt;/a>&lt;/p></description></item><item><title>Docs: Paragraphs</title><link>/docs/user-documentation/paragraphs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/</guid><description>
+&lt;a href="../paragraphs/code">Using the Code Block Paragraph ⇒&lt;/a>&lt;/p></description></item><item><title>Docs: Paragraphs</title><link>/docs/user-documentation/paragraphs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/</guid><description>
 &lt;p>YMCA Website Services content editors use paragraphs to create unique layouts for their pages. Each paragraph is a section of content that comes with its own styling, functionality, and fields.&lt;/p>
 &lt;p>You can add a paragraph onto a page when you see the paragraphs dropdown field. These paragraphs will typically be inside one of the four main “Areas” inside a content type:&lt;/p>
 &lt;ul>
