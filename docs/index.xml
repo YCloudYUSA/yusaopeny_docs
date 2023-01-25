@@ -1952,7 +1952,86 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;p>This is a vocabulary that will be used for adding reference Branch amenities. We will use this for the Branch.&lt;/p>
 &lt;p>&lt;strong>Machine_name&lt;/strong>: amenities&lt;/p></description></item><item><title>Docs: Area</title><link>/docs/content-structure/taxonomy/area/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/area/</guid><description>
 &lt;p>This is a vocabulary that will be used for adding location areas on the site. We will use this for the Location Branch and Facility CTs.&lt;/p>
-&lt;p>&lt;strong>Machine_name&lt;/strong>: area&lt;/p></description></item><item><title>Docs: Banner</title><link>/docs/content-structure/paragraphs/banner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/banner/</guid><description>
+&lt;p>&lt;strong>Machine_name&lt;/strong>: area&lt;/p></description></item><item><title>Docs: Article</title><link>/docs/content-structure/content-types/article/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/article/</guid><description>
+&lt;p>Article content type is used for adding blog posts, news items, and press releases on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Name&lt;/th>
+&lt;th>Machine name&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Title&lt;/td>
+&lt;td>drupal&amp;rsquo;s default&lt;/td>
+&lt;td>Yes&lt;/td>
+&lt;td>Title of the article item.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Sub-title&lt;/td>
+&lt;td>default??&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>Sub-title of the article item&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Locations&lt;/td>
+&lt;td>field_article_location&lt;/td>
+&lt;td>Yes&lt;/td>
+&lt;td>Reference field to &lt;code>branch&lt;/code> and &lt;code>camp&lt;/code> nodes. Multiple Values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Category&lt;/td>
+&lt;td>field_article_category&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>Reference field for choosing the term from &amp;ldquo;Blog Category&amp;rdquo; vocabulary. Multiple Values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Meta Tags&lt;/td>
+&lt;td>field_meta_tags&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Type&lt;/td>
+&lt;td>field_article_type&lt;/td>
+&lt;td>Yes&lt;/td>
+&lt;td>Select list field with multiple options for choosing article type: &lt;ul>&lt;li>News Item (default)&lt;/li>&lt;li>Blog Post&lt;/li>&lt;li>Press Release&lt;/li>&lt;/ul>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Image&lt;/td>
+&lt;td>field_article_image&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>Image field for the Blog item. Entity reference to Media bundle.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Body&lt;/td>
+&lt;td>body&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>Textarea for the description/body with WYSIWYG, without summary.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Content&lt;/td>
+&lt;td>field_content&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>Filter list of available layout builder components&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Related Content&lt;/td>
+&lt;td>field_article_related&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>Reference field for choosing related Article nodes. Multiple Values.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/blog/[node:title]&lt;/code>
+&lt;code>/news/[node:title]&lt;/code>
+&lt;code>/press-release/[node:title]&lt;/code>&lt;/p></description></item><item><title>Docs: Banner</title><link>/docs/content-structure/paragraphs/banner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/banner/</guid><description>
 &lt;p>This is a paragraph type that will be used for the banner content.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
 &lt;table>
@@ -3379,25 +3458,4 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 &lt;ul>
 &lt;li>
 &lt;a href="../content-types/camp.md">Camp&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Categories Listing</title><link>/docs/content-structure/paragraphs/categories-listing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/categories-listing/</guid><description>
-&lt;p>This is dynamic paragraph that renders all published categories according to current program page.&lt;/p>
-&lt;p>It uses sticky at the top option and order items based on published date(newest at the top).&lt;/p>
-&lt;h3 id="fields">Fields&lt;/h3>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Name&lt;/th>
-&lt;th>Machine name&lt;/th>
-&lt;th>Required&lt;/th>
-&lt;th>Description&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>Block&lt;/td>
-&lt;td>field_prgf_block&lt;/td>
-&lt;td>Yes&lt;/td>
-&lt;td>Block reference to the view/block. Should have default value and should be hidden in form display.&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table></description></item></channel></rss>
+&lt;/ul></description></item></channel></rss>
