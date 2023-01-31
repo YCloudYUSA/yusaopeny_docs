@@ -983,6 +983,62 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;h2 id="simple-content">Simple Content&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_simple_content&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong>
+&lt;a href="">lb_simple_content&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Tables%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Tables%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Allows users to be able to view responsive tables within a page.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Section heading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Section subheading&lt;/td>
+&lt;td>(inherit)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>H3&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Body&lt;/td>
+&lt;td>body&lt;/td>
+&lt;td>Text (formatted, long, with summary)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Allows for responsive tables to be placed in the body.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;h2 id="simple-menu">Simple Menu&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_simple_menu&lt;/code>&lt;/li>
@@ -1349,62 +1405,6 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>WYSIWYG&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="table">Table&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_table&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Project:&lt;/strong>
-&lt;a href="https://www.drupal.org/project/lb_table" target="_blank">lb_table&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="/img/designs/lb/Tables%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Tables%20Desktop.png">Desktop&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>Allows users to be able to view responsive tables within a page.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Label&lt;/th>
-&lt;th>Machine Name&lt;/th>
-&lt;th>Type&lt;/th>
-&lt;th>Required&lt;/th>
-&lt;th>Cardinality&lt;/th>
-&lt;th>Help text&lt;/th>
-&lt;th>Field Settings&lt;/th>
-&lt;th>Notes&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>Section heading&lt;/td>
-&lt;td>(inherit)&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>H2&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Section subheading&lt;/td>
-&lt;td>(inherit)&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>H3&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Body&lt;/td>
-&lt;td>body&lt;/td>
-&lt;td>Text (formatted, long, with summary)&lt;/td>
-&lt;td>no&lt;/td>
-&lt;td>1&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
