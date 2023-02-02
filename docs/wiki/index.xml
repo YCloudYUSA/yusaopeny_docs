@@ -931,8 +931,14 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;/li>
 &lt;/ol>
 &lt;p>&amp;hellip;&lt;/p></description></item><item><title>Docs: Sandboxes</title><link>/docs/wiki/sandboxes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/sandboxes/</guid><description>
-&lt;h1 id="ymca-website-services-sandboxes-for-evaluation-and-qa">YMCA Website Services Sandboxes for Evaluation and QA&lt;/h1>
-&lt;p>The YMCA Website Services core team manages sandboxes for stable and development versions of YMCA Website Services to facilitate the evaluation of the product, to help with QA, and enable investigation of issues.&lt;/p>
+&lt;p>The YMCA Website Services core team manages sandboxes for various configurations of the distribution to facilitate evaluation, to help with QA, and enable investigation of issues.&lt;/p>
+&lt;h2 id="getting-started">Getting started&lt;/h2>
+&lt;p>Anyone can browse the sandboxes. Get started at
+&lt;a href="https://sandboxes.y.org/" target="_blank">sandboxes.y.org&lt;/a>.&lt;/p>
+&lt;h3 id="get-access-to-the-sandboxes">Get access to the sandboxes&lt;/h3>
+&lt;p>To test the content editor experience or dig into the Drupal configuration you need to request login access by
+&lt;a href="mailto:ycloud@ymca.net?subject=Sandbox%20Access%20Request">emailing us&lt;/a> or asking anyone on the project team in the Y-USA Slack.&lt;/p>
+&lt;h3 id="behind-the-scenes">Behind the scenes&lt;/h3>
 &lt;p>To learn more:&lt;/p>
 &lt;ul>
 &lt;li>Watch a
@@ -940,43 +946,77 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;li>Read a
 &lt;a href="https://www.drupal.org/case-study/open-y-sandboxes" target="_blank">case study on Drupal.org&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="stable-sandboxes">Stable Sandboxes&lt;/h2>
-&lt;p>
-&lt;a href="https://sandboxes.y.org/" target="_blank">https://sandboxes.y.org/&lt;/a>&lt;/p>
-&lt;p>These sandboxes are set to rebuild completely overnight and clear their database and files every 2 hours. To get access visit
-&lt;a href="https://community.openymca.org/t/how-can-i-try-or-get-a-demo-of-open-y/318" target="_blank">How can I try or get a demo of YMCA Website Services?&lt;/a>&lt;/p>
-&lt;p>These sandboxes contain 3 profile variations:&lt;/p>
+&lt;h2 id="whats-in-the-sandboxes">What&amp;rsquo;s in the sandboxes?&lt;/h2>
+&lt;p>Each set of sandboxes contains 3 profile variations:&lt;/p>
 &lt;ul>
 &lt;li>Standard&lt;/li>
 &lt;li>Extended&lt;/li>
 &lt;li>Custom&lt;/li>
 &lt;/ul>
-&lt;p>based on the latest stable release of YMCA Website Services.&lt;/p>
-&lt;p>These sandboxes are built on CI by running:&lt;/p>
+&lt;p>And three themes:&lt;/p>
+&lt;ul>
+&lt;li>Carnation&lt;/li>
+&lt;li>Lily&lt;/li>
+&lt;li>Rose&lt;/li>
+&lt;/ul>
+&lt;p>And there are multiple sandbox environments:&lt;/p>
+&lt;h3 id="stable-sandboxes">Stable Sandboxes&lt;/h3>
+&lt;p>
+&lt;a href="https://sandboxes.y.org/" target="_blank">sandboxes.y.org&lt;/a>&lt;/p>
+&lt;p>These sandboxes are based on the latest
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases" target="_blank">stable release&lt;/a> of YMCA Website Services. They are set to rebuild completely overnight and clear their database and files every 2 hours.&lt;/p>
+&lt;details>
+&lt;summary>These sandboxes are built on CI by running:&lt;/summary>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project YCloudYUSA/yusaopeny-project buildnew --no-interaction --prefer-dist
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ansible-playbook docroot/reinstall.yml -i /tmp/inventory5068801741271597001.ini -f &lt;span style="color:#0000cf;font-weight:bold">5&lt;/span> -e &lt;span style="color:#000">php_env_vars&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">APP_ENV&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>dev -e &lt;span style="color:#000">mysql_user&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_password&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_db&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>sandbox_carnation_custom -e &lt;span style="color:#000">drupal_folder&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>/var/www/sandbox_carnation_custom -e &lt;span style="color:#000">site_url&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>https://sandbox-carnation-cus.openy.org -e &lt;span style="color:#000">pp_environment&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>demo -e &lt;span style="color:#000">run_reinstall&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">true&lt;/span> -e &lt;span style="color:#4e9a06">&amp;#34;openy_profile_install_settings=&amp;#39;openy_configure_profile.preset=complete openy_theme_select.theme=openy_carnation&amp;#39;&amp;#34;&lt;/span> -e &lt;span style="color:#000">use_solr&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">false&lt;/span> -i localhost, --connection&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">local&lt;/span> -vvvv
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="development-sandboxes">Development Sandboxes&lt;/h2>
-&lt;p>
-&lt;a href="https://sandboxes-dev.y.org/" target="_blank">https://sandboxes-dev.y.org/&lt;/a>&lt;/p>
-&lt;p>These usually contain the latest development version of YMCA Website Services (the master branch of
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">openy&lt;/a>.&lt;/p>
-&lt;p>These sandboxes are built on CI by running:&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;h3 id="development-sandboxes">Development Sandboxes&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;a href="https://sandboxes-dev.y.org/" target="_blank">sandboxes-dev.y.org&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://sandboxes-d9.y.org/" target="_blank">sandboxes-d9.y.org&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://sandboxes-dev-php8.y.org/" target="_blank">sandboxes-dev-php8.y.org&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>These sandboxes are based on the
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">latest development version&lt;/a> of YMCA Website Services or other branches as necessary. They are set to rebuild daily. Development sandboxes are rebuilt at the needs of the team and are not guaranteed. If one is not working, try another.&lt;/p>
+&lt;details>
+&lt;summary>These sandboxes are built on CI by running:&lt;/summary>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project YCloudYUSA/yusaopeny-project:dev-9.2.x-development buildnew --no-interaction --prefer-dist
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ansible-playbook docroot/reinstall.yml -i /tmp/inventory5068801741271597001.ini -f &lt;span style="color:#0000cf;font-weight:bold">5&lt;/span> -e &lt;span style="color:#000">php_env_vars&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">APP_ENV&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>dev -e &lt;span style="color:#000">mysql_user&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_password&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_db&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>sandbox_carnation_custom -e &lt;span style="color:#000">drupal_folder&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>/var/www/sandbox_carnation_custom -e &lt;span style="color:#000">site_url&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>https://sandbox-carnation-cus.openy.org -e &lt;span style="color:#000">pp_environment&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>demo -e &lt;span style="color:#000">run_reinstall&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">true&lt;/span> -e &lt;span style="color:#4e9a06">&amp;#34;openy_profile_install_settings=&amp;#39;openy_configure_profile.preset=complete openy_theme_select.theme=openy_carnation&amp;#39;&amp;#34;&lt;/span> -e &lt;span style="color:#000">use_solr&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">false&lt;/span> -i localhost, --connection&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">local&lt;/span> -vvvv
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="membership-framework-sandboxes">Membership Framework Sandboxes&lt;/h2>
-&lt;p>
-&lt;a href="https://membership-framework-sandboxes-d9.y.org/" target="_blank">https://membership-framework-sandboxes-d9.y.org/&lt;/a>&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;h2 id="feature-based-sandboxes">Feature-based sandboxes&lt;/h2>
+&lt;p>We also maintain sandboxes with specific features enabled. Each of these builds&lt;/p>
+&lt;h3 id="virtual-y-sandboxes">Virtual Y Sandboxes&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;a href="https://virtual-y-sandboxes.y.org/" target="_blank">virtual-y-sandboxes.y.org&lt;/a>: latest release&lt;/li>
+&lt;li>
+&lt;a href="https://virtual-y-sandboxes-d9.openy.org/" target="_blank">virtual-y-sandboxes-d9.openy.org&lt;/a>: development version&lt;/li>
+&lt;/ul>
+&lt;p>These sandboxes are based on the YMCA Website Services stable Standard profile and the
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content" target="_blank">Virtual Experience Platform&lt;/a> (aka &amp;ldquo;Virtual Y&amp;rdquo;, aka &amp;ldquo;Open Y Gated Content&amp;rdquo;) project.&lt;/p>
+&lt;h3 id="membership-framework-sandboxes">Membership Framework Sandboxes&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;a href="https://membership-framework-sandboxes-d9.y.org/" target="_blank">membership-framework-sandboxes.y.org&lt;/a>: latest release&lt;/li>
+&lt;li>
+&lt;a href="https://membership-framework-sandboxes-d9.openy.org/" target="_blank">membership-framework-sandboxes-d9.y.org&lt;/a>: development version&lt;/li>
+&lt;/ul>
 &lt;p>These are based on the YMCA Website Services stable Standard profile and the development version of the
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships" target="_blank">Membership Framework&lt;/a>.&lt;/p>
-&lt;p>To rebuild the sandbox, CI is running:&lt;/p>
+&lt;details>
+&lt;summary>To rebuild the sandbox, CI is running:&lt;/summary>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project YCloudYUSA/yusaopeny-project buildnew --no-interaction --prefer-dist
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> buildnew
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer config minimum-stability dev
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require &lt;span style="color:#4e9a06">&amp;#34;openy/openy_memberships&amp;#34;&lt;/span>:&lt;span style="color:#4e9a06">&amp;#34;dev-master as 1.0.0&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ansible-playbook docroot/reinstall.yml -i /tmp/inventory13097841656330601319.ini -f &lt;span style="color:#0000cf;font-weight:bold">5&lt;/span> -e &lt;span style="color:#000">php_env_vars&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">APP_ENV&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>dev -e &lt;span style="color:#000">mysql_user&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_password&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>*** -e &lt;span style="color:#000">mysql_db&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>d9_sandbox_carnation_std_membership_framework -e &lt;span style="color:#000">drupal_folder&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>/var/www/d9_sandbox_carnation_std_membership_framework -e &lt;span style="color:#000">site_url&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>https://sandbox-carnation-std-membership-framework-d9.openy.org -e &lt;span style="color:#000">pp_environment&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>membership_framework -e &lt;span style="color:#000">run_reinstall&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">true&lt;/span> -e &lt;span style="color:#4e9a06">&amp;#34;openy_profile_install_settings=&amp;#39;openy_configure_profile.preset=standard openy_theme_select.theme=openy_carnation openy_select_content.content=0&amp;#39;&amp;#34;&lt;/span> -e &lt;span style="color:#000">use_solr&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">false&lt;/span> -i localhost, --connection&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">local&lt;/span> -vvvv
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="activity-finder-sandboxes---development-version">Activity Finder Sandboxes - development version&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;h3 id="activity-finder-sandboxes">Activity Finder Sandboxes&lt;/h3>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -1022,7 +1062,8 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>To rebuild the sandbox, CI is running:&lt;/p>
+&lt;details>
+&lt;summary>To rebuild the sandbox, CI is running:&lt;/summary>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>composer create-project YCloudYUSA/yusaopeny-project:dev-9.2.x-development-af4 build --no-interaction --prefer-dist
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> &lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">WORKSPACE&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>/build
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require YCloudYUSA/yusaopeny_activity_finder:&lt;span style="color:#4e9a06">&amp;#34;4.x-dev as 4.0&amp;#34;&lt;/span>
@@ -1040,7 +1081,7 @@ For previous versions the best way to check your version is to analyze creation 
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Solr 4.5-4.9, Activity Finder v4, Carnation theme, bootstrap v4&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush cset -y openy_activity_finder.settings bs_version &lt;span style="color:#0000cf;font-weight:bold">4&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#204a87">true&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Secure devops for composer 2 release</title><link>/docs/wiki/secure-devops-for-composer-2-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/secure-devops-for-composer-2-release/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details></description></item><item><title>Docs: Secure devops for composer 2 release</title><link>/docs/wiki/secure-devops-for-composer-2-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/secure-devops-for-composer-2-release/</guid><description>
 &lt;p>This article only applies to long-term users of YMCA Website Services. YMCA Website Services supports Composer 2
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/8.2.7" target="_blank">as of version 8.2.7 in November 2020&lt;/a> and new installs use Composer 2 by default.&lt;/p>
 &lt;hr>

@@ -1,4 +1,45 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Distribution Documentation</title><link>/docs/</link><description>Recent content in YMCA Website Services Distribution Documentation on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Designs</title><link>/docs/user-documentation/layout-builder/designs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/designs/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Distribution Documentation</title><link>/docs/</link><description>Recent content in YMCA Website Services Distribution Documentation on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Onboarding</title><link>/docs/development/onboarding_to_yusa_openy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/onboarding_to_yusa_openy/</guid><description>
+&lt;h2 id="list-of-migrated-repositoriesprojects">List of migrated repositories/projects&lt;/h2>
+&lt;p>In 2022, maintenance of the distribution moved from Open Y LLC to Y-USA. With this, repository locations have changed:&lt;/p>
+&lt;ul>
+&lt;li>YMCA Website Services (formerly Open Y):
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">YCloudYUSA/yusaopeny&lt;/a>&lt;/li>
+&lt;li>YMCA Virtual Experience (formerly Virtual Y):
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content" target="_blank">YCloudYUSA/yusaopeny_gated_content&lt;/a>&lt;/li>
+&lt;li>Activity Finder:
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">YCloudYUSA/yusaopeny_activity_finder&lt;/a>&lt;/li>
+&lt;li>Membership Framework:
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships" target="_blank">YCloudYUSA/yusaopeny_memberships&lt;/a>&lt;/li>
+&lt;li>YMCA Digital Services Docs:
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_docs" target="_blank">YCloudYUSA/yusaopeny_docs&lt;/a>&lt;/li>
+&lt;li>YMCA Website Services distribution (formerly Open Y project)
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project" target="_blank">YCloudYUSA/yusaopeny-project&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-start-developing-open-y">How to start developing Open Y&lt;/h2>
+&lt;p>In order to get a copy of the latest development version of the distribution, please follow steps from
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny#latest-development-version-drupal-9-2x" target="_blank">YUSA OpenY README&lt;/a>.&lt;/p>
+&lt;p>Pay attention Open Y has a modular structure, so if you plan changes to specific component - create Pull Request/Merge Request in respective project or repository, based on component&amp;rsquo;s composer.json data.&lt;/p>
+&lt;p>In order to test specific component, create a PR to
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pulls" target="_blank">yusaopeny&lt;/a> and add a reference in composer.json of Open Y in order for the build system to start using updated component.&lt;/p>
+&lt;h3 id="qa-sandboxes-for-open-y">QA sandboxes for Open Y&lt;/h3>
+&lt;p>The YMCA Website Services core team manages
+&lt;a href="../../wiki/sandboxes">sandboxes&lt;/a> for various configurations of the distribution to facilitate evaluation, to help with QA, and enable investigation of issues.&lt;/p>
+&lt;h2 id="how-to-start-developing-virtual-y">How to start developing Virtual Y&lt;/h2>
+&lt;p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content#development" target="_blank">Get started with the README&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="../../wiki/sandboxes/#virtual-y-sandboxes">QA sandboxes for Virtual Y&lt;/a>&lt;/p>
+&lt;h2 id="how-to-start-developing-membership-framework">How to start developing Membership Framework&lt;/h2>
+&lt;p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships#installation" target="_blank">Get started with the README&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="../../wiki/sandboxes/#membership-framework-sandboxes">QA sandboxes for Membership Framework&lt;/a>&lt;/p>
+&lt;h2 id="how-to-start-developing-activity-finder">How to start developing Activity Finder&lt;/h2>
+&lt;p>Activity Finder is installed with the distribution by default.&lt;/p>
+&lt;p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder#open-y-activity-finder" target="_blank">Get started with the README&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="../../wiki/sandboxes/#activity-finder-sandboxes">QA Sandboxes for Activity Finder&lt;/a>&lt;/p></description></item><item><title>Docs: Designs</title><link>/docs/user-documentation/layout-builder/designs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/designs/</guid><description>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -780,71 +821,6 @@
 &lt;a href="https://trello.com/b/0mogmd7N/virtual-ymca-product-roadmap" target="_blank">VY Roadmap&lt;/a> (web)&lt;/li>
 &lt;li>
 &lt;a href="https://community.openymca.org/c/Resources-and-training-for-content-editors/virtual-ymca-docs/21" target="_blank">Advanced Resources &amp;amp; Training for content editors&lt;/a> (message board post)&lt;/li>
-&lt;/ul></description></item><item><title>Docs:</title><link>/docs/development/onboarding_to_yusa_openy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/onboarding_to_yusa_openy/</guid><description>
-&lt;h1 id="welcome-to-ymca-website-services">Welcome to YMCA Website Services&lt;/h1>
-&lt;h2 id="list-of-migrated-repositoriesprojects">List of migrated repositories/projects&lt;/h2>
-&lt;ul>
-&lt;li>YMCA Website Services ( formerly Open Y )
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">https://github.com/YCloudYUSA/yusaopeny&lt;/a>&lt;/li>
-&lt;li>YMCA Virtual Experience ( formerly Virtual Y )
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content" target="_blank">https://github.com/YCloudYUSA/yusaopeny_gated_content&lt;/a>&lt;/li>
-&lt;li>Activity Finder
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">https://github.com/YCloudYUSA/yusaopeny_activity_finder&lt;/a>&lt;/li>
-&lt;li>Membership Framework
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships" target="_blank">https://github.com/YCloudYUSA/yusaopeny_memberships&lt;/a>&lt;/li>
-&lt;li>YMCA Digital Services Docs
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny_docs" target="_blank">https://github.com/YCloudYUSA/yusaopeny_docs&lt;/a>&lt;/li>
-&lt;li>YMCA Website Services distribution ( formerly Open Y project )
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny-project" target="_blank">https://github.com/YCloudYUSA/yusaopeny-project&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-start-developing-open-y">How to start developing Open Y&lt;/h2>
-&lt;p>In order to get copy of latest development version of Open Y, please follow steps from YUSA OpenY README.md
-See
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/README.md#latest-development-version-drupal-9-2x" target="_blank">https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/README.md#latest-development-version-drupal-9-2x&lt;/a>&lt;/p>
-&lt;p>Pay attention Open Y has a modular structure, so if you plan changes to specific component - create Pull Request/Merge Request in respective project or repository, based on component&amp;rsquo;s composer.json data.&lt;/p>
-&lt;p>In order to test specific component - create PR to Open Y
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pulls" target="_blank">https://github.com/YCloudYUSA/yusaopeny/pulls&lt;/a> with adding reference in composer.json of Open Y in order for the build system to start using updated component.&lt;/p>
-&lt;h3 id="qa-sandboxes-for-open-y">QA sandboxes for Open Y&lt;/h3>
-&lt;p>See case study of sandboxes
-&lt;a href="https://www.drupal.org/case-study/open-y-sandboxes" target="_blank">https://www.drupal.org/case-study/open-y-sandboxes&lt;/a>&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;a href="https://sandboxes-dev-php8.openy.org/" target="_blank">https://sandboxes-dev-php8.openy.org/&lt;/a> - PHP 8.1 and Latest Open Y development branch ( 9.x-2.x from
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">https://github.com/YCloudYUSA/yusaopeny&lt;/a> )&lt;/li>
-&lt;li>
-&lt;a href="https://sandboxes-dev.openy.org/" target="_blank">https://sandboxes-dev.openy.org/&lt;/a> - PHP 7.4 and Latest Open Y stable release ( from
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny" target="_blank">https://github.com/YCloudYUSA/yusaopeny&lt;/a> )&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-start-developing-virtual-y">How to start developing Virtual Y&lt;/h2>
-&lt;p>See
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content#development" target="_blank">https://github.com/YCloudYUSA/yusaopeny_gated_content#development&lt;/a>&lt;/p>
-&lt;h3 id="qa-sandboxes-for-virtual-y">QA sandboxes for Virtual Y&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;a href="https://virtual-y-sandboxes-d9.openy.org/" target="_blank">https://virtual-y-sandboxes-d9.openy.org/&lt;/a> on development version of Open Y, development version of VY&lt;/li>
-&lt;li>
-&lt;a href="https://virtual-y-sandboxes.openy.org/" target="_blank">https://virtual-y-sandboxes.openy.org/&lt;/a> - on stable version of Open Y, stable version if VY&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-start-developing-membership-framework">How to start developing Membership Framework&lt;/h2>
-&lt;p>See how to install/build it to your Open Y working project
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships/blob/master/README.md#installation" target="_blank">https://github.com/YCloudYUSA/yusaopeny_memberships/blob/master/README.md#installation&lt;/a>&lt;/p>
-&lt;h3 id="qa-sandboxes-for-mf">QA sandboxes for MF&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;a href="https://membership-framework-sandboxes-d9.openy.org/" target="_blank">https://membership-framework-sandboxes-d9.openy.org/&lt;/a> - on development version of Open Y, development version of MF&lt;/li>
-&lt;li>
-&lt;a href="https://membership-framework-sandboxes.openy.org/" target="_blank">https://membership-framework-sandboxes.openy.org/&lt;/a> - on stable version of Open Y, stable version of MF&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-start-developing-activity-finder">How to start developing Activity Finder&lt;/h2>
-&lt;p>Activity Finder is part of Open Y - so same process.&lt;/p>
-&lt;h3 id="qa-sandboxes-for-activity-finder">QA Sandboxes for Activity Finder&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;a href="https://sandbox-lily-cus-d9.openy.org/" target="_blank">https://sandbox-lily-cus-d9.openy.org/&lt;/a> - Lily Theme, Open Y Custom&lt;/li>
-&lt;li>
-&lt;a href="https://sandbox-rose-cus-d9.openy.org/" target="_blank">https://sandbox-rose-cus-d9.openy.org/&lt;/a> - Rose Theme, Open Y Custom&lt;/li>
-&lt;li>
-&lt;a href="https://sandbox-carnation-cus-d9.openy.org/" target="_blank">https://sandbox-carnation-cus-d9.openy.org/&lt;/a> - Carnation Theme, Open Y Custom&lt;/li>
 &lt;/ul></description></item><item><title>Docs: 1 Column</title><link>/docs/content-structure/paragraphs/1c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/1c/</guid><description>
 &lt;p>This is a paragraph type that will be used for implements a paragraph with 1 column.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
