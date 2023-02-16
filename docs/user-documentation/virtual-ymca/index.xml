@@ -586,7 +586,23 @@
 &lt;a href="https://trello.com/b/0mogmd7N/virtual-ymca-product-roadmap" target="_blank">VY Roadmap&lt;/a> (web)&lt;/li>
 &lt;li>
 &lt;a href="https://community.openymca.org/c/Resources-and-training-for-content-editors/virtual-ymca-docs/21" target="_blank">Advanced Resources &amp;amp; Training for content editors&lt;/a> (message board post)&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Add/Edit Video</title><link>/docs/user-documentation/virtual-ymca/add-video/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/add-video/</guid><description>
+&lt;/ul></description></item><item><title>Docs:</title><link>/docs/user-documentation/virtual-ymca/1on1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/1on1/</guid><description>
+&lt;h2 id="1on1-meetings-quick-start-tutorial">1on1 meetings quick start tutorial&lt;/h2>
+&lt;h3 id="pre-requirements">Pre requirements&lt;/h3>
+&lt;ol>
+&lt;li>Module &lt;code>openy_gc_personal_training&lt;/code> should be enabled&lt;/li>
+&lt;li>Visit &lt;code>/admin/virtual-y/personal_training/settings&lt;/code> and put &lt;code>signals.cibox.tools:8091&lt;/code> as Signalling PRL. You can have own signalling server installed, see
+&lt;a href="https://github.com/open-y-subprojects/virtual_y_signaling_server" target="_blank">https://github.com/open-y-subprojects/virtual_y_signaling_server&lt;/a>&lt;/li>
+&lt;li>Ensure your user has &lt;code>Virtual YMCA Editor&lt;/code> role added to user profile. Warning: admin(superuser) user should be added to this role if planned to be used as 1on1 meeting editor.&lt;/li>
+&lt;li>Ensure you have at least one user logged into Virtual Y at least once&lt;/li>
+&lt;li>Ensure you have at least one user added to role &lt;code>Virtual trainer&lt;/code>&lt;/li>
+&lt;li>Visit &lt;code>/admin/virtual-y/personal_training&lt;/code> - you should be able to see a dashboard with links to add 1on1 meeting&lt;/li>
+&lt;li>Add 1on1 meeting and fill in the form:
+&lt;img src="https://user-images.githubusercontent.com/563412/217875146-2ae15bff-582c-42b2-8696-e48c4d4cf276.png" alt="image" />&lt;/li>
+&lt;li>After 1on1 creation users, added as customer and trainer will see a card for the 1on1 call in Virtual Y dashboard on homepape
+&lt;img src="https://user-images.githubusercontent.com/563412/217876715-71051f1d-7f97-4f4d-8f4e-901fb5a7ecec.png" alt="image" />&lt;/li>
+&lt;li>Both Trainer and Customer should open this card, join meeting, provide user name and proceed with a call&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Add/Edit Video</title><link>/docs/user-documentation/virtual-ymca/add-video/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/add-video/</guid><description>
 &lt;p>View
 &lt;a href="https://www.youtube.com/watch?v=wrVbQA25IQU&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=5&amp;amp;t=0s" target="_blank">a video of this process&lt;/a>.&lt;/p>
 &lt;ul>

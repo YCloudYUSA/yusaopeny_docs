@@ -821,7 +821,23 @@
 &lt;a href="https://trello.com/b/0mogmd7N/virtual-ymca-product-roadmap" target="_blank">VY Roadmap&lt;/a> (web)&lt;/li>
 &lt;li>
 &lt;a href="https://community.openymca.org/c/Resources-and-training-for-content-editors/virtual-ymca-docs/21" target="_blank">Advanced Resources &amp;amp; Training for content editors&lt;/a> (message board post)&lt;/li>
-&lt;/ul></description></item><item><title>Docs: 1 Column</title><link>/docs/content-structure/paragraphs/1c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/1c/</guid><description>
+&lt;/ul></description></item><item><title>Docs:</title><link>/docs/user-documentation/virtual-ymca/1on1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/1on1/</guid><description>
+&lt;h2 id="1on1-meetings-quick-start-tutorial">1on1 meetings quick start tutorial&lt;/h2>
+&lt;h3 id="pre-requirements">Pre requirements&lt;/h3>
+&lt;ol>
+&lt;li>Module &lt;code>openy_gc_personal_training&lt;/code> should be enabled&lt;/li>
+&lt;li>Visit &lt;code>/admin/virtual-y/personal_training/settings&lt;/code> and put &lt;code>signals.cibox.tools:8091&lt;/code> as Signalling PRL. You can have own signalling server installed, see
+&lt;a href="https://github.com/open-y-subprojects/virtual_y_signaling_server" target="_blank">https://github.com/open-y-subprojects/virtual_y_signaling_server&lt;/a>&lt;/li>
+&lt;li>Ensure your user has &lt;code>Virtual YMCA Editor&lt;/code> role added to user profile. Warning: admin(superuser) user should be added to this role if planned to be used as 1on1 meeting editor.&lt;/li>
+&lt;li>Ensure you have at least one user logged into Virtual Y at least once&lt;/li>
+&lt;li>Ensure you have at least one user added to role &lt;code>Virtual trainer&lt;/code>&lt;/li>
+&lt;li>Visit &lt;code>/admin/virtual-y/personal_training&lt;/code> - you should be able to see a dashboard with links to add 1on1 meeting&lt;/li>
+&lt;li>Add 1on1 meeting and fill in the form:
+&lt;img src="https://user-images.githubusercontent.com/563412/217875146-2ae15bff-582c-42b2-8696-e48c4d4cf276.png" alt="image" />&lt;/li>
+&lt;li>After 1on1 creation users, added as customer and trainer will see a card for the 1on1 call in Virtual Y dashboard on homepape
+&lt;img src="https://user-images.githubusercontent.com/563412/217876715-71051f1d-7f97-4f4d-8f4e-901fb5a7ecec.png" alt="image" />&lt;/li>
+&lt;li>Both Trainer and Customer should open this card, join meeting, provide user name and proceed with a call&lt;/li>
+&lt;/ol></description></item><item><title>Docs: 1 Column</title><link>/docs/content-structure/paragraphs/1c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/1c/</guid><description>
 &lt;p>This is a paragraph type that will be used for implements a paragraph with 1 column.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
 &lt;table>
@@ -3390,48 +3406,4 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 &lt;a href="https://community.openymca.org/t/webform-paragraph-open-y-user-docs/729" target="_blank">Webform&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="https://community.openymca.org/t/limited-time-offer-paragraphs-open-y-user-docs/719" target="_blank">Limited Time Offer&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Camp Menu</title><link>/docs/user-documentation/paragraphs/camp-menu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/camp-menu/</guid><description>
-&lt;blockquote>
-&lt;p>Camp menu adds a horizontal menu beneath the Header Area on a camp page.&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;h3 id="carnation">Carnation&lt;/h3>
-&lt;p>
-&lt;img src="upload://yEu9UFLnGp7gH7aUeWphadUFzvC.jpeg" alt="carnation&amp;amp;ndash;camp__camp&amp;amp;ndash;menu|690x180, 75%" />&lt;/p>
-&lt;h3 id="lily">Lily&lt;/h3>
-&lt;p>
-&lt;img src="upload://8on2aI5cwXvu3scx8lkYVV8J5VM.jpeg" alt="lily&amp;amp;ndash;camp__camp-menu|690x242, 75%" />&lt;/p>
-&lt;h3 id="rose">Rose&lt;/h3>
-&lt;p>
-&lt;img src="upload://P1Snx7VCshybWHdZnlohJqRCbo.jpeg" alt="rose&amp;amp;ndash;camp__camp-menu|690x242, 75%" />&lt;/p>
-&lt;hr>
-&lt;h2 id="areas-it-can-be-used">Areas It Can Be Used:&lt;/h2>
-&lt;ul>
-&lt;li>Header Area&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="how-it-should-be-used">How It Should Be Used&lt;/h2>
-&lt;p>Before adding the paragraph, add the links you want on your menu by adding them on your Camp Page at General Info &amp;gt; Menu Links.&lt;/p>
-&lt;p>
-&lt;img src="upload://5mbjiHKdjq05hhVSvVIpFPVYbxu.png" alt="camp__camp-menu&amp;amp;ndash;menu-links|450x500, 75%" />&lt;/p>
-&lt;p>
-&lt;a href="https://community.openymca.org/t/content-editing-basics-open-y-user-docs/732" target="_blank">Learn More About Link Fields ⇒&lt;/a>&lt;/p>
-&lt;p>To add additional links to your menu, click on the Add Another Item button.&lt;/p>
-&lt;p>
-&lt;img src="upload://rJL5XswzqmWEFTEGhkkyr9MOk9N.gif" alt="camp__camp-menu&amp;amp;ndash;add-links|690x194" />&lt;/p>
-&lt;p>Once you’re done adding your menu links, scroll down to the Header Area and add “Camp Menu.” Click save.&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;em>Note - While it is technically possible to position the camp menu above your banner image, it is not recommended. The camp menu busts in desktop on Carnation, and in all themes it can be hard to distinguish the camp menu from your main navigation.&lt;/em>&lt;/p>
-&lt;/blockquote>
-&lt;hr>
-&lt;h3 id="mobile-considerations-for-camp-menu">Mobile Considerations for Camp Menu&lt;/h3>
-&lt;p>When a user views your camp menu in mobile, the menu doesn&amp;rsquo;t collapse; it merely shrinks. Menu items either disappear or wrap onto a new line if they do not fit the space.&lt;/p>
-&lt;p>It&amp;rsquo;s recommended you limit your menu items to no more than 3 or 4 unless you opt to customize.&lt;/p>
-&lt;p>
-&lt;img src="upload://hDr88t6d3ea0K3XoELLcOEkh2OK.jpeg" alt="carnation&amp;amp;ndash;camp__camp-menu&amp;amp;ndash;mobile|322x500, 75%" />&lt;/p>
-&lt;hr>
-&lt;h2 id="content-types-that-support-this-paragraph">Content Types That Support this Paragraph&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;a href="../content-types/camp.md">Camp&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>
