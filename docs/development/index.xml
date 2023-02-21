@@ -257,6 +257,13 @@ As an YMCA Website Services site developer, I want to be able import posts from 
 &lt;a href="/docs/content-structure/paragraphs/program-registration-daxko/">Program Registration (Daxko)&lt;/a>&lt;/p>
 &lt;p>Configuration setting at &lt;code>/admin/config/development/daxko&lt;/code>&lt;/p>
 &lt;p>Account configuration must be setup before the Program Registration paragraph will work.&lt;/p>
+&lt;h2 id="groupex-pro">GroupEx Pro&lt;/h2>
+&lt;p>There are three methods of integrating GroupEx Pro with your YMCA Website Services site. In order from most to least complex/customizable:&lt;/p>
+&lt;ul>
+&lt;li>API integration&lt;/li>
+&lt;li>Embedded schedules&lt;/li>
+&lt;li>Responsive schedule link&lt;/li>
+&lt;/ul>
 &lt;h3 id="groupex-pro-apis">GroupEx PRO APIs&lt;/h3>
 &lt;div class="alert alert-warning" role="alert">
 &lt;h4 class="alert-heading">Deprecation Notice&lt;/h4>
@@ -264,7 +271,53 @@ On February 28, 2023, Daxko is planning to sunset the GroupEx PRO Public API in 
 &lt;/div>
 &lt;p>YMCA Digital Services with the help of YMCA of the North have developed and adopted a Syncer for Repeat Application which helps to migrate from the GroupEx PRO Public API to the Daxko Group API v1 and pulls data from GroupEx PRO to Program Event Framework.&lt;/p>
 &lt;p>See
-&lt;a href="https://github.com/open-y-subprojects/openy_daxko_gxp_syncer" target="_blank">open-y-subprojects/openy_daxko_gxp_syncer&lt;/a> for how to configure the Syncer.&lt;/p></description></item><item><title>Docs: Fonts</title><link>/docs/development/fonts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/fonts/</guid><description>
+&lt;a href="https://github.com/open-y-subprojects/openy_daxko_gxp_syncer" target="_blank">open-y-subprojects/openy_daxko_gxp_syncer&lt;/a> for how to configure the Syncer.&lt;/p>
+&lt;h3 id="embedded-schedules">Embedded schedules&lt;/h3>
+&lt;p>This replaces the deprecated
+&lt;a href="/docs/user-documentation/paragraphs/embedded-gxp-schedule/">Embedded GroupEx Pro Schedule Paragraph&lt;/a>.&lt;/p>
+&lt;p>Embed code for GroupEx Pro schedules can be found in your GroupEx Pro admin interface.&lt;/p>
+&lt;ul>
+&lt;li>Look for the &amp;ldquo;New embed&amp;rdquo; toggle.
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot showing &amp;amp;ldquo;New Schedule&amp;amp;rdquo; and other options in the GroupEx Pro admin." srcset="
+/docs/development/daxko/gxp-embed-toggle-new_hu0ff6f1e76e34483a20984fa0fbb73352_173792_7de7ad911710d52538ca3f87b31d2cb7.png 458w,
+/docs/development/daxko/gxp-embed-toggle-new_hu0ff6f1e76e34483a20984fa0fbb73352_173792_df0559da15f35f60ee98ecb695a9a312.png 726w,
+/docs/development/daxko/gxp-embed-toggle-new_hu0ff6f1e76e34483a20984fa0fbb73352_173792_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/development/daxko/gxp-embed-toggle-new_hu0ff6f1e76e34483a20984fa0fbb73352_173792_7de7ad911710d52538ca3f87b31d2cb7.png" />
+&lt;figcaption> &lt;a href="/docs/development/daxko/gxp-embed-toggle-new.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;li>Expand the options and choose any filters or colors that you prefer.&lt;/li>
+&lt;li>Disable the &amp;ldquo;Fixed Header&amp;rdquo; option.
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot showing &amp;amp;ldquo;Schedule Hosting LInk / Embedded Code for New Schdule&amp;amp;rdquo; from Daxko" srcset="
+/docs/development/daxko/gxp-embed-settings_hu27165d478c2d50a118be45bb9ad8e2ec_183448_338bc17c433ab7fc297169f328ea8f2e.png 458w,
+/docs/development/daxko/gxp-embed-settings_hu27165d478c2d50a118be45bb9ad8e2ec_183448_03410041c0dc60ce110978d134963fc3.png 726w,
+/docs/development/daxko/gxp-embed-settings_hu27165d478c2d50a118be45bb9ad8e2ec_183448_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/development/daxko/gxp-embed-settings_hu27165d478c2d50a118be45bb9ad8e2ec_183448_338bc17c433ab7fc297169f328ea8f2e.png" />
+&lt;figcaption> &lt;a href="/docs/development/daxko/gxp-embed-settings.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;li>Copy the resulting code, that will look something like this, substituting &lt;code>000&lt;/code> for your own account number, and adding any location or category filters as needed:
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">script&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">var&lt;/span> &lt;span style="color:#000">acct&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;000&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">var&lt;/span> &lt;span style="color:#000">loc&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">var&lt;/span> &lt;span style="color:#000">cat&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">var&lt;/span> &lt;span style="color:#000">stylesheet&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">var&lt;/span> &lt;span style="color:#000">hideLastnames&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">true&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">var&lt;/span> &lt;span style="color:#000">jsHost&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000;font-weight:bold">((&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;https:&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">==&lt;/span> &lt;span style="color:#204a87">document&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">location&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">protocol&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">?&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;https://&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;http://&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">document&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">write&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;lt;scr&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ipt src=&amp;#39;&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#000">jsHost&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js&amp;#39; type=&amp;#39;text/javascript&amp;#39;&amp;gt;&amp;lt;/scr&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ipt&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">document&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">write&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;lt;scr&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ipt&amp;gt;var jQuery = jQuery.noConflict(true);&amp;lt;/scr&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ipt&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">document&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">write&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;lt;scr&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ipt src=&amp;#39;&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#000">jsHost&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;www.groupexpro.com/schedule/embed/schedule_embed_responsive.2.js.php?a=&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#000">acct&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;#39; type=&amp;#39;text/javascript&amp;#39;&amp;gt;&amp;lt;/scr&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ipt&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">script&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>Navigate to your YMCA website.&lt;/li>
+&lt;li>Follow the directions to add a
+&lt;a href="/docs/user-documentation/paragraphs/code/">Code Paragraph&lt;/a> or a
+&lt;a href="/docs/user-documentation/layout-builder/">Code Block&lt;/a>.&lt;/li>
+&lt;li>Paste the embed code into your block.&lt;/li>
+&lt;li>Save the paragraph/block and the page.&lt;/li>
+&lt;/ul>
+&lt;p>If the pasted code does not appear on the page, ensure your site is updated with
+&lt;a href="https://github.com/open-y-subprojects/openy_features/pull/29" target="_blank">this change&lt;/a> to enable direct copy/pasting of embed codes.&lt;/p>
+&lt;p>While the incoming code is controlled by Daxko/GroupEx Pro, many changes can be made with CSS. Try the
+&lt;a href="https://www.drupal.org/project/css_editor" target="_blank">CSS Editor module (≥2.0.1)&lt;/a> which is bundled with the distribution, or work with your development partner to make customizations.&lt;/p>
+&lt;h3 id="responsive-schedule-link">Responsive schedule link&lt;/h3>
+&lt;p>GroupEx Pro also provides direct links to the schedule page. These can be found in the &amp;ldquo;New Embed&amp;rdquo; section. Simply copy the link and add it to any link field or button on your site.&lt;/p></description></item><item><title>Docs: Fonts</title><link>/docs/development/fonts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/fonts/</guid><description>
 &lt;p>From
 &lt;a href="https://link.ymca.net/mlink/post/ODI2MA" target="_blank">YMCA Link&lt;/a>:&lt;/p>
 &lt;blockquote>
