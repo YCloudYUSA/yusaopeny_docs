@@ -586,22 +586,56 @@
 &lt;a href="https://trello.com/b/0mogmd7N/virtual-ymca-product-roadmap" target="_blank">VY Roadmap&lt;/a> (web)&lt;/li>
 &lt;li>
 &lt;a href="https://community.openymca.org/c/Resources-and-training-for-content-editors/virtual-ymca-docs/21" target="_blank">Advanced Resources &amp;amp; Training for content editors&lt;/a> (message board post)&lt;/li>
-&lt;/ul></description></item><item><title>Docs:</title><link>/docs/user-documentation/virtual-ymca/1on1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/1on1/</guid><description>
-&lt;h2 id="1on1-meetings-quick-start-tutorial">1on1 meetings quick start tutorial&lt;/h2>
-&lt;h3 id="pre-requirements">Pre requirements&lt;/h3>
+&lt;/ul></description></item><item><title>Docs: 1-on-1 Meetings</title><link>/docs/user-documentation/virtual-ymca/1on1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/1on1/</guid><description>
+&lt;p>This module is distributed as part of the YCMA Virtual Experience Platform (Virtual Y). Review
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content/tree/master/modules/openy_gc_personal_training" target="_blank">the README&lt;/a> for more technical information.&lt;/p>
+&lt;h2 id="initial-configuration">Initial configuration&lt;/h2>
 &lt;ol>
-&lt;li>Module &lt;code>openy_gc_personal_training&lt;/code> should be enabled&lt;/li>
-&lt;li>Visit &lt;code>/admin/virtual-y/personal_training/settings&lt;/code> and put &lt;code>signals.cibox.tools:8091&lt;/code> as Signalling PRL. You can have own signalling server installed, see
-&lt;a href="https://github.com/open-y-subprojects/virtual_y_signaling_server" target="_blank">https://github.com/open-y-subprojects/virtual_y_signaling_server&lt;/a>&lt;/li>
-&lt;li>Ensure your user has &lt;code>Virtual YMCA Editor&lt;/code> role added to user profile. Warning: admin(superuser) user should be added to this role if planned to be used as 1on1 meeting editor.&lt;/li>
-&lt;li>Ensure you have at least one user logged into Virtual Y at least once&lt;/li>
-&lt;li>Ensure you have at least one user added to role &lt;code>Virtual trainer&lt;/code>&lt;/li>
-&lt;li>Visit &lt;code>/admin/virtual-y/personal_training&lt;/code> - you should be able to see a dashboard with links to add 1on1 meeting&lt;/li>
-&lt;li>Add 1on1 meeting and fill in the form:
-&lt;img src="https://user-images.githubusercontent.com/563412/217875146-2ae15bff-582c-42b2-8696-e48c4d4cf276.png" alt="image" />&lt;/li>
-&lt;li>After 1on1 creation users, added as customer and trainer will see a card for the 1on1 call in Virtual Y dashboard on homepape
-&lt;img src="https://user-images.githubusercontent.com/563412/217876715-71051f1d-7f97-4f4d-8f4e-901fb5a7ecec.png" alt="image" />&lt;/li>
-&lt;li>Both Trainer and Customer should open this card, join meeting, provide user name and proceed with a call&lt;/li>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>) and enable the &lt;strong>Virtual Y 1on1 Meeting&lt;/strong> (&lt;code>openy_gc_personal_training&lt;/code>) module.&lt;/li>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Virtual Y&lt;/strong> &amp;gt; &lt;strong>1on1 Meeting&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> (&lt;code>/admin/virtual-y/personal_training/settings&lt;/code>) and put &lt;code>signals.cibox.tools:8091&lt;/code> as the Signaling PRL.&lt;/li>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>People&lt;/strong> (&lt;code>/admin/people&lt;/code>) and add the &lt;strong>Virtual YMCA Editor&lt;/strong> role to the user profile of any users who will create meetings.
+&lt;ul>
+&lt;li>&lt;strong>NOTE:&lt;/strong> The &lt;code>admin&lt;/code> user will also need to have this role set.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Also at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>People&lt;/strong> (&lt;code>/admin/people&lt;/code>), add the &lt;code>Virtual trainer&lt;/code> role to at least one user.&lt;/li>
+&lt;li>If you are starting a new site, log in as a Virtual Y member at least once.&lt;/li>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Virtual Y&lt;/strong> &amp;gt; &lt;strong>1on1 Meeting&lt;/strong> (&lt;code>/admin/virtual-y/personal_training&lt;/code>) and you should be able to see a dashboard with links to add a 1on1 meeting.
+&lt;ul>
+&lt;li>If you receive an &lt;code>Access denied&lt;/code> error, be sure to check that you have the &lt;strong>Virtual YMCA Editor&lt;/strong> role as noted in 3.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;div class="alert alert-info" role="alert">
+&lt;p>The community-maintained server, &lt;code>signals.cibox.tools&lt;/code>, will work for most sites at small to medium levels of 1-on-1 traffic. If you are planning to scale up this service you may need to maintain a separate
+&lt;p>&lt;a href="https://github.com/open-y-subprojects/virtual_y_signaling_server/blob/main/README.md" target="_blank">signaling server&lt;/a>&lt;/p>&lt;/p>
+&lt;/div>
+&lt;h2 id="creating-a-1on1-meeting">Creating a 1on1 meeting&lt;/h2>
+&lt;ol>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Virtual Y&lt;/strong> &amp;gt; &lt;strong>1on1 Meeting&lt;/strong> (&lt;code>/admin/virtual-y/personal_training&lt;/code>)&lt;/li>
+&lt;li>Add a single 1on1 meeting or a series and fill in the form.&lt;/li>
+&lt;/ol>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="img.png" srcset="
+/docs/user-documentation/virtual-ymca/1on1/1on1-add-personal-training_hu545fb731ba4df7493b7e1698e2e554b0_136140_47599bdb2959c436b55b7533ce6a1512.png 458w,
+/docs/user-documentation/virtual-ymca/1on1/1on1-add-personal-training_hu545fb731ba4df7493b7e1698e2e554b0_136140_ea5a7c7b558cb17a5f63f11c4b43d0f9.png 726w,
+/docs/user-documentation/virtual-ymca/1on1/1on1-add-personal-training_hu545fb731ba4df7493b7e1698e2e554b0_136140_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/1on1/1on1-add-personal-training_hu545fb731ba4df7493b7e1698e2e554b0_136140_47599bdb2959c436b55b7533ce6a1512.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/virtual-ymca/1on1/1on1-add-personal-training.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="joining-a-1on1-meeting">Joining a 1on1 meeting&lt;/h2>
+&lt;ol>
+&lt;li>Once a 1on1 meeting is created, the customer and trainer will see a card for the call in the Virtual Y dashboard.
+&lt;figure class="image-caption">
+&lt;img alt="img.png" srcset="
+/docs/user-documentation/virtual-ymca/1on1/1on1-view-personal-training_hubb71b8361ef91deb7255f4a3c67e53d0_340083_2abd983c238ae74047d8deb17719d2f2.png 458w,
+/docs/user-documentation/virtual-ymca/1on1/1on1-view-personal-training_hubb71b8361ef91deb7255f4a3c67e53d0_340083_9c0fa46d1dcdefc037f43b007a584919.png 726w,
+/docs/user-documentation/virtual-ymca/1on1/1on1-view-personal-training_hubb71b8361ef91deb7255f4a3c67e53d0_340083_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/1on1/1on1-view-personal-training_hubb71b8361ef91deb7255f4a3c67e53d0_340083_2abd983c238ae74047d8deb17719d2f2.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/virtual-ymca/1on1/1on1-view-personal-training.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;li>Both the Trainer and Customer should open this card, join the meeting, provide their names, and proceed with the call.&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Add/Edit Video</title><link>/docs/user-documentation/virtual-ymca/add-video/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/add-video/</guid><description>
 &lt;p>View
 &lt;a href="https://www.youtube.com/watch?v=wrVbQA25IQU&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=5&amp;amp;t=0s" target="_blank">a video of this process&lt;/a>.&lt;/p>
