@@ -71,6 +71,153 @@
 &lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;td>Article (/News /Blog /Press Release)&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Article Mobile design" srcset="
+/img/designs/lb/Article%20Mobile_hu59451c4b6eac89ba9e13f2e1f67dea4a_3333059_f8d87522d935f8894f1e3b44edff49bb.png 458w,
+/img/designs/lb/Article%20Mobile_hu59451c4b6eac89ba9e13f2e1f67dea4a_3333059_9b74374a79fea53a897cf6f7a36712bc.png 726w,
+/img/designs/lb/Article%20Mobile_hu59451c4b6eac89ba9e13f2e1f67dea4a_3333059_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Article%20Mobile_hu59451c4b6eac89ba9e13f2e1f67dea4a_3333059_f8d87522d935f8894f1e3b44edff49bb.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Article%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Article Desktop design" srcset="
+/img/designs/lb/Article%20Desktop_hu6eef1f507211ed76f6dcdf1baa714e68_3841262_9233db5c747c4c51dcd8e74408d2aae3.png 458w,
+/img/designs/lb/Article%20Desktop_hu6eef1f507211ed76f6dcdf1baa714e68_3841262_7109fc08cc1f97f92edc24c7af72c2e0.png 726w,
+/img/designs/lb/Article%20Desktop_hu6eef1f507211ed76f6dcdf1baa714e68_3841262_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Article%20Desktop_hu6eef1f507211ed76f6dcdf1baa714e68_3841262_9233db5c747c4c51dcd8e74408d2aae3.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Article%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Branch&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Branch Location Mobile design" srcset="
+/img/designs/lb/Branch%20Location%20Mobile_hu5f8a9cc5d267816b268697c20933c2a3_5825807_a035f81441c689ee54e6a8f0d0f75bad.png 458w,
+/img/designs/lb/Branch%20Location%20Mobile_hu5f8a9cc5d267816b268697c20933c2a3_5825807_86d44977921351db3e2d87d3d38a2e21.png 726w,
+/img/designs/lb/Branch%20Location%20Mobile_hu5f8a9cc5d267816b268697c20933c2a3_5825807_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Location%20Mobile_hu5f8a9cc5d267816b268697c20933c2a3_5825807_a035f81441c689ee54e6a8f0d0f75bad.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Location%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Branch Location Desktop design" srcset="
+/img/designs/lb/Branch%20Location%20Desktop_hub6afe920a5d329e55816f693856b7142_5737218_b4ef3bb9666a27f613d9070fb20bf0aa.png 458w,
+/img/designs/lb/Branch%20Location%20Desktop_hub6afe920a5d329e55816f693856b7142_5737218_875178e9f31bbaf9aeec6a59c5085d0d.png 726w,
+/img/designs/lb/Branch%20Location%20Desktop_hub6afe920a5d329e55816f693856b7142_5737218_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Location%20Desktop_hub6afe920a5d329e55816f693856b7142_5737218_b4ef3bb9666a27f613d9070fb20bf0aa.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Location%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Branch Amenities&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Branch Amenities Mobile design" srcset="
+/img/designs/lb/Branch%20Amenities%20Mobile_huc5d9f10b7d9681520f2c494a4a3a4734_864596_982dd8a075cd5c93f6b351971111772b.png 458w,
+/img/designs/lb/Branch%20Amenities%20Mobile_huc5d9f10b7d9681520f2c494a4a3a4734_864596_3316e4ba94bc4db2eec84dd7c2e083fb.png 726w,
+/img/designs/lb/Branch%20Amenities%20Mobile_huc5d9f10b7d9681520f2c494a4a3a4734_864596_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Amenities%20Mobile_huc5d9f10b7d9681520f2c494a4a3a4734_864596_982dd8a075cd5c93f6b351971111772b.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Amenities%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Branch Amenities Desktop design" srcset="
+/img/designs/lb/Branch%20Amenities%20Desktop_hubc667dbde7e06c49d026fb7006980a8d_2030127_2fc4bcc52a75df225a385170f0872898.png 458w,
+/img/designs/lb/Branch%20Amenities%20Desktop_hubc667dbde7e06c49d026fb7006980a8d_2030127_14bc5ba3ac1c76733e021885cd4c2570.png 726w,
+/img/designs/lb/Branch%20Amenities%20Desktop_hubc667dbde7e06c49d026fb7006980a8d_2030127_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Amenities%20Desktop_hubc667dbde7e06c49d026fb7006980a8d_2030127_2fc4bcc52a75df225a385170f0872898.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Amenities%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Branch Hours&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Branch Hours Mobile design" srcset="
+/img/designs/lb/Branch%20Hours%20Mobile_hu2370e5096ba6b62d85c4b6612cd5c2f2_290523_c36f6606c4637b62f982cf064bbf6cba.png 458w,
+/img/designs/lb/Branch%20Hours%20Mobile_hu2370e5096ba6b62d85c4b6612cd5c2f2_290523_28808c0be7a95dccc56803585bd28d92.png 726w,
+/img/designs/lb/Branch%20Hours%20Mobile_hu2370e5096ba6b62d85c4b6612cd5c2f2_290523_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Hours%20Mobile_hu2370e5096ba6b62d85c4b6612cd5c2f2_290523_c36f6606c4637b62f982cf064bbf6cba.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Hours%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Branch Hours Desktop design" srcset="
+/img/designs/lb/Branch%20Hours%20Desktop_hu33837a044c1287bcf4a317f59ac63325_403156_fde494c17db466b006970f4ce2b6cd03.png 458w,
+/img/designs/lb/Branch%20Hours%20Desktop_hu33837a044c1287bcf4a317f59ac63325_403156_9d283f0a8435c150c9cd20c872d1486c.png 726w,
+/img/designs/lb/Branch%20Hours%20Desktop_hu33837a044c1287bcf4a317f59ac63325_403156_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Hours%20Desktop_hu33837a044c1287bcf4a317f59ac63325_403156_fde494c17db466b006970f4ce2b6cd03.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Hours%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Branch Menu&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Branch Menu Mobile design" srcset="
+/img/designs/lb/Branch%20Menu%20Mobile_hu34aa6b85e82d6d5852e3edffbed0f317_56369_08c06b5b762ad8dada48daab983b1407.png 458w,
+/img/designs/lb/Branch%20Menu%20Mobile_hu34aa6b85e82d6d5852e3edffbed0f317_56369_35bfb952d7be83b65e5a605cb1e01c6d.png 726w,
+/img/designs/lb/Branch%20Menu%20Mobile_hu34aa6b85e82d6d5852e3edffbed0f317_56369_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Menu%20Mobile_hu34aa6b85e82d6d5852e3edffbed0f317_56369_08c06b5b762ad8dada48daab983b1407.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Menu%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Branch Menu Desktop design" srcset="
+/img/designs/lb/Branch%20Menu%20Desktop_hu84bde213837553863fd6d0e73328762a_102856_31b9ff28b4bf4b82711aaa8aeb7c5cd4.png 458w,
+/img/designs/lb/Branch%20Menu%20Desktop_hu84bde213837553863fd6d0e73328762a_102856_041ef796b04f35df0fe4abce96851cf8.png 726w,
+/img/designs/lb/Branch%20Menu%20Desktop_hu84bde213837553863fd6d0e73328762a_102856_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Menu%20Desktop_hu84bde213837553863fd6d0e73328762a_102856_31b9ff28b4bf4b82711aaa8aeb7c5cd4.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Menu%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Branch Social Links&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Branch Social Links Mobile design" srcset="
+/img/designs/lb/Branch%20Social%20Links%20Mobile_huced83116683693757a95ec24dd3e4355_46173_d65e0fb64e3f28d5cf7abba4b17e0e9b.png 458w,
+/img/designs/lb/Branch%20Social%20Links%20Mobile_huced83116683693757a95ec24dd3e4355_46173_3bad59153472f93a66fbc04dc0638b06.png 726w,
+/img/designs/lb/Branch%20Social%20Links%20Mobile_huced83116683693757a95ec24dd3e4355_46173_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Social%20Links%20Mobile_huced83116683693757a95ec24dd3e4355_46173_d65e0fb64e3f28d5cf7abba4b17e0e9b.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Social%20Links%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Branch Social Links Desktop design" srcset="
+/img/designs/lb/Branch%20Social%20Links%20Desktop_hueb84d503c096147cb47593443113007d_161834_c6a90dd737fefd177aa49526e8d2607a.png 458w,
+/img/designs/lb/Branch%20Social%20Links%20Desktop_hueb84d503c096147cb47593443113007d_161834_3da3eae3d94af943d6ebe228017203fe.png 726w,
+/img/designs/lb/Branch%20Social%20Links%20Desktop_hueb84d503c096147cb47593443113007d_161834_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Social%20Links%20Desktop_hueb84d503c096147cb47593443113007d_161834_c6a90dd737fefd177aa49526e8d2607a.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Social%20Links%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Breadcrumbs&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Breadcrumbs Mobile design" srcset="
+/img/designs/lb/Breadcrumbs%20Mobile_hu1f3808b7cd6bfbf323196ae9d4b6dba0_702952_530978aad3e5454d62292b35bc1ef253.png 458w,
+/img/designs/lb/Breadcrumbs%20Mobile_hu1f3808b7cd6bfbf323196ae9d4b6dba0_702952_fee4f165e6d134f2f4794e474f9da944.png 726w,
+/img/designs/lb/Breadcrumbs%20Mobile_hu1f3808b7cd6bfbf323196ae9d4b6dba0_702952_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Breadcrumbs%20Mobile_hu1f3808b7cd6bfbf323196ae9d4b6dba0_702952_530978aad3e5454d62292b35bc1ef253.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Breadcrumbs%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Breadcrumbs Desktop design" srcset="
+/img/designs/lb/Breadcrumbs%20Desktop_hue9aa3ba4b40c8e9fe8850949446794de_4550844_7069bd56d6e11653a54e50862cec0785.png 458w,
+/img/designs/lb/Breadcrumbs%20Desktop_hue9aa3ba4b40c8e9fe8850949446794de_4550844_99367aa8f8e78dba3c37cd9905d1bee6.png 726w,
+/img/designs/lb/Breadcrumbs%20Desktop_hue9aa3ba4b40c8e9fe8850949446794de_4550844_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Breadcrumbs%20Desktop_hue9aa3ba4b40c8e9fe8850949446794de_4550844_7069bd56d6e11653a54e50862cec0785.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Breadcrumbs%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td>Cards&lt;/td>
 &lt;td>
 &lt;figure class="image-caption">
@@ -109,6 +256,27 @@
 /img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_316726222e2549154d5fa14d09e0d756.png 726w,
 /img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_d961ccc8bf72f42f0e82bcfe311f7799.png" />
 &lt;figcaption> &lt;a href="/img/designs/lb/Carousels%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Event&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Events Mobile design" srcset="
+/img/designs/lb/Events%20Mobile_hu488cc37e802f2c23f62e46fa1fcbf377_2344700_040b44fa47c4344b1bb83fc8d3d02ff8.png 458w,
+/img/designs/lb/Events%20Mobile_hu488cc37e802f2c23f62e46fa1fcbf377_2344700_e61dd224ebbaa71318d69f9dac24894c.png 726w,
+/img/designs/lb/Events%20Mobile_hu488cc37e802f2c23f62e46fa1fcbf377_2344700_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Events%20Mobile_hu488cc37e802f2c23f62e46fa1fcbf377_2344700_040b44fa47c4344b1bb83fc8d3d02ff8.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Events%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Event Desktop design" srcset="
+/img/designs/lb/Event%20Desktop_hu36e0c9550ee3fe411ca581bf2d5e1d28_2722806_cd6b24a6a945b205d3616e2d9090c63c.png 458w,
+/img/designs/lb/Event%20Desktop_hu36e0c9550ee3fe411ca581bf2d5e1d28_2722806_8644c585cf0baa4c52f476cd51ef56f9.png 726w,
+/img/designs/lb/Event%20Desktop_hu36e0c9550ee3fe411ca581bf2d5e1d28_2722806_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Event%20Desktop_hu36e0c9550ee3fe411ca581bf2d5e1d28_2722806_cd6b24a6a945b205d3616e2d9090c63c.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Event%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/td>
 &lt;/tr>
@@ -159,19 +327,61 @@
 &lt;td>
 &lt;figure class="image-caption">
 &lt;img alt="Modals Mobile design" srcset="
-/img/designs/lb/Modals%20Mobile_huf75acbf313ade311e510848822cb8d7c_205921_5508ffe9d448ee3b72d86b72570ddd15.png 458w,
-/img/designs/lb/Modals%20Mobile_huf75acbf313ade311e510848822cb8d7c_205921_2020cd72bfa29946cc394aca79c6a3c7.png 726w,
-/img/designs/lb/Modals%20Mobile_huf75acbf313ade311e510848822cb8d7c_205921_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Mobile_huf75acbf313ade311e510848822cb8d7c_205921_5508ffe9d448ee3b72d86b72570ddd15.png" />
+/img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_17fa638d6392df8b5e4f41c5eceb7c50.png 458w,
+/img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_5c8099144cd8b172ae12f5bef8f43679.png 726w,
+/img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_17fa638d6392df8b5e4f41c5eceb7c50.png" />
 &lt;figcaption> &lt;a href="/img/designs/lb/Modals%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/td>
 &lt;td>
 &lt;figure class="image-caption">
 &lt;img alt="Modals Desktop design" srcset="
-/img/designs/lb/Modals%20Desktop_hud7326648408d5d8148dccf3e93c5461b_1315552_a06f30f0b76357f987b32cefa9c9a8b4.png 458w,
-/img/designs/lb/Modals%20Desktop_hud7326648408d5d8148dccf3e93c5461b_1315552_c4883a4d418cdb16acb7569d0fb43ec7.png 726w,
-/img/designs/lb/Modals%20Desktop_hud7326648408d5d8148dccf3e93c5461b_1315552_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Desktop_hud7326648408d5d8148dccf3e93c5461b_1315552_a06f30f0b76357f987b32cefa9c9a8b4.png" />
+/img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_99e03f2ef6ad30db5a4e5aa35ac66ddd.png 458w,
+/img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_af27197ac7b4bb4289d255a4aa86b351.png 726w,
+/img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_99e03f2ef6ad30db5a4e5aa35ac66ddd.png" />
 &lt;figcaption> &lt;a href="/img/designs/lb/Modals%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Modals&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Modals Mobile design" srcset="
+/img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_17fa638d6392df8b5e4f41c5eceb7c50.png 458w,
+/img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_5c8099144cd8b172ae12f5bef8f43679.png 726w,
+/img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_17fa638d6392df8b5e4f41c5eceb7c50.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Modals%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Modals Desktop design" srcset="
+/img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_99e03f2ef6ad30db5a4e5aa35ac66ddd.png 458w,
+/img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_af27197ac7b4bb4289d255a4aa86b351.png 726w,
+/img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_99e03f2ef6ad30db5a4e5aa35ac66ddd.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Modals%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Partners (/Sponsors)&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Sponsors Mobile design" srcset="
+/img/designs/lb/Sponsors%20Mobile_hu0bb352489727c446a5c4e6327e1c4b02_176789_eeb5d42415f27d1e9d38f951ac976db3.png 458w,
+/img/designs/lb/Sponsors%20Mobile_hu0bb352489727c446a5c4e6327e1c4b02_176789_0abc75b4ba2d1ea7b0acb24ca5f5f696.png 726w,
+/img/designs/lb/Sponsors%20Mobile_hu0bb352489727c446a5c4e6327e1c4b02_176789_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Sponsors%20Mobile_hu0bb352489727c446a5c4e6327e1c4b02_176789_eeb5d42415f27d1e9d38f951ac976db3.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Sponsors%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Sponsors Desktop design" srcset="
+/img/designs/lb/Sponsors%20Desktop_hu9a0ef0f3f75a3d5178d1644198389139_467900_b8b5464ad9ce6cb6abff433674b4d6a7.png 458w,
+/img/designs/lb/Sponsors%20Desktop_hu9a0ef0f3f75a3d5178d1644198389139_467900_90428b8f8add5b701ff9cb9e9d9fee3b.png 726w,
+/img/designs/lb/Sponsors%20Desktop_hu9a0ef0f3f75a3d5178d1644198389139_467900_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Sponsors%20Desktop_hu9a0ef0f3f75a3d5178d1644198389139_467900_b8b5464ad9ce6cb6abff433674b4d6a7.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Sponsors%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/td>
 &lt;/tr>
@@ -239,6 +449,27 @@
 &lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;td>Staff&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Staff Mobile design" srcset="
+/img/designs/lb/Staff%20Mobile_hud30bab75291c07099680c09a3b604179_586153_ef35c62a41cbf668b25510dce8bee032.png 458w,
+/img/designs/lb/Staff%20Mobile_hud30bab75291c07099680c09a3b604179_586153_0c73ea15d8797e61cd2f6f1caa2fe744.png 726w,
+/img/designs/lb/Staff%20Mobile_hud30bab75291c07099680c09a3b604179_586153_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Staff%20Mobile_hud30bab75291c07099680c09a3b604179_586153_ef35c62a41cbf668b25510dce8bee032.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Staff%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Staff Desktop design" srcset="
+/img/designs/lb/Staff%20Desktop_hu15b81c9aa5d70a83423bb7dc24d7fa04_2172365_3afa025aacc078b8ade38a055a1dc4c6.png 458w,
+/img/designs/lb/Staff%20Desktop_hu15b81c9aa5d70a83423bb7dc24d7fa04_2172365_647349d91d9f6074f9199ac9d36a0a3d.png 726w,
+/img/designs/lb/Staff%20Desktop_hu15b81c9aa5d70a83423bb7dc24d7fa04_2172365_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Staff%20Desktop_hu15b81c9aa5d70a83423bb7dc24d7fa04_2172365_3afa025aacc078b8ade38a055a1dc4c6.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Staff%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td>Statistics&lt;/td>
 &lt;td>
 &lt;figure class="image-caption">
@@ -298,6 +529,27 @@
 /img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_de6fc9916effed9e5ad88394cdeb35c3.png 726w,
 /img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_eeca88c39fb24a51ce759f23a7b2464d.png" />
 &lt;figcaption> &lt;a href="/img/designs/lb/Tabs%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Testimonials&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Testimonials Mobile design" srcset="
+/img/designs/lb/Testimonials%20Mobile_hu72fe4b97233f2ba60823502cc819f6c2_150303_6b7d1d1d1fb27d442fb09f5598847e9e.png 458w,
+/img/designs/lb/Testimonials%20Mobile_hu72fe4b97233f2ba60823502cc819f6c2_150303_8d36dc1be06185a36341a68fb6c10d91.png 726w,
+/img/designs/lb/Testimonials%20Mobile_hu72fe4b97233f2ba60823502cc819f6c2_150303_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Testimonials%20Mobile_hu72fe4b97233f2ba60823502cc819f6c2_150303_6b7d1d1d1fb27d442fb09f5598847e9e.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Testimonials%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/td>
+&lt;td>
+&lt;figure class="image-caption">
+&lt;img alt="Testimonials Desktop design" srcset="
+/img/designs/lb/Testimonials%20Desktop_hue97e8bb1a33d9952bdb575225c7e6c5e_729311_eb89ba49e0da6e063ef946da743590f0.png 458w,
+/img/designs/lb/Testimonials%20Desktop_hue97e8bb1a33d9952bdb575225c7e6c5e_729311_439734e58170b442829e69e279de1d41.png 726w,
+/img/designs/lb/Testimonials%20Desktop_hue97e8bb1a33d9952bdb575225c7e6c5e_729311_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Testimonials%20Desktop_hue97e8bb1a33d9952bdb575225c7e6c5e_729311_eb89ba49e0da6e063ef946da743590f0.png" />
+&lt;figcaption> &lt;a href="/img/designs/lb/Testimonials%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
 &lt;/figure>
 &lt;/td>
 &lt;/tr>
@@ -2602,105 +2854,7 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;/table>
 &lt;h3 id="url-pattern">URL pattern&lt;/h3>
 &lt;p>Content type is using following pattern:
-&lt;code>/locations/[node:title]&lt;/code>&lt;/p></description></item><item><title>Docs: Branch</title><link>/docs/user-documentation/content-types/branch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/branch/</guid><description>
-&lt;p>&lt;strong>One of the first places members go when they visit a Y website is to their local Y’s page. In YMCA Website Services, you create pages for a wellness facility with the Branch content type.&lt;/strong>&lt;/p>
-&lt;hr>
-&lt;p>
-&lt;img src="upload://qaEmMaGxttuNKYSzZRH4IrVvTc5.png" alt="carnation&amp;amp;ndash;branch&amp;amp;ndash;tablet_1|375x500, 75%" />&lt;/p>
-&lt;p>
-&lt;img src="upload://iQD92lirDJvqK5np1vuQ0M2Ar4p.jpeg" alt="lily&amp;amp;ndash;branch&amp;amp;ndash;tablet.PNG|375x500, 75%" />&lt;/p>
-&lt;h2 id="collecting-standard-information-for-your-branch">Collecting Standard Information for Your Branch&lt;/h2>
-&lt;p>When you create a branch, you create a page for that branch, a card listing on your locations page, and a tag for blogs, sessions, events, membership types and news posts.&lt;/p>
-&lt;p>Most of your general information will display in your header.&lt;/p>
-&lt;p>Your branch amenities will only display if you add a “Branch Amenities with Icons” paragraph in your bottom or content Area&lt;/p>
-&lt;hr>
-&lt;h2 id="branch-information-fields">Branch Information Fields&lt;/h2>
-&lt;h3 id="general-information">General Information&lt;/h3>
-&lt;h4 id="--title">-&amp;gt; Title&lt;/h4>
-&lt;p>This is the name of your branch, which will display as your page title and the title in the location card.&lt;/p>
-&lt;p>There is no separate field for the full name of your facility (e.g., Downtown Nashville YMCA Burkholder Center) versus the common name (Downtown YMCA). The best practice would be to use the shorter, more common name for readability.&lt;/p>
-&lt;h4 id="--neighborhood">-&amp;gt; Neighborhood&lt;/h4>
-&lt;p>An optional reference to specify which neighborhood your Y is located in (e.g., “East Nashville” for the Margaret Maddox YMCA). Start typing and select from the list of neighborhoods that appear.&lt;/p>
-&lt;p>To add a new neighborhood, add it to the “Area” vocabulary under Structure &amp;gt; Taxonomy.&lt;/p>
-&lt;hr>
-&lt;h3 id="contact-info">Contact Info&lt;/h3>
-&lt;h4 id="--address">-&amp;gt; Address:&lt;/h4>
-&lt;p>The physical address of your location. Be sure to include all address fields.&lt;/p>
-&lt;h4 id="---branch-coordinates">-&amp;gt; Branch coordinates&lt;/h4>
-&lt;p>This field pins your branch on the locations map.&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>How to Get Your Branch Coordinates from Google Maps&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>Right click on your Y and select “What’s here?” Click on the latitude/longitude number at the bottom of the card.
-&amp;gt;
-&amp;gt;
-&lt;img src="upload://4KumwfEfMol8v7BE7kFXceiBGOH.png" alt="admin__google-maps&amp;amp;ndash;whats-here|573x500, 75%" />&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Below the headline, copy the first number (the non-negative number) into the latitude field. Copy the second number (the negative number) into the longitude field.
-&amp;gt;
-&amp;gt;
-&lt;img src="upload://hqLgdeW9w9ZEsDIxMm36NNZPjq8.png" alt="admin__google-maps&amp;amp;ndash;geo|573x500, 75%" />&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/blockquote>
-&lt;h4 id="--phonefaxemail">-&amp;gt; Phone/Fax/Email&lt;/h4>
-&lt;p>The fax is optional, but add the main line for your branch in the phone field.&lt;/p>
-&lt;p>Add a main contact email, such as
-&lt;a href="mailto:contactmyy@anytownymca.org">contactmyy@anytownymca.org&lt;/a>, rather than the email for an individual staff member.&lt;/p>
-&lt;h4 id="--directions">-&amp;gt; Directions&lt;/h4>
-&lt;p>Link to your Google Places. Add “Get Directions” in the Link Text section.&lt;/p>
-&lt;h4 id="--branch-hours">-&amp;gt; Branch Hours&lt;/h4>
-&lt;p>Add the main hours for your facility. Use the 7am-5pm format to save space. Displays in the header and on the card.&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Note&lt;/strong> - Some Ys have set up the branch hours field to include holiday hours, as well as hours for multiple parts of your facility. This is an advanced feature; talk to your agency partner if you would like this.&lt;/p>
-&lt;/blockquote>
-&lt;hr>
-&lt;h3 id="header-area">Header Area&lt;/h3>
-&lt;p>There is no image field for the Branch content type, so you will need to add one of the following paragraphs to add an image and title at the top of your page:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;a href="https://community.openymca.org/t/banner-open-y-paragraphs-user-documentation/665" target="_blank">Banner&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://community.openymca.org/t/small-banner-paragraphs-open-y-user-docs/725" target="_blank">Small Banner&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://community.openymca.org/t/gallery-paragraphs-open-y-user-docs/715" target="_blank">Gallery&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="content-area">Content Area&lt;/h3>
-&lt;p>The Branch Content Type only has one layout option—one column—and no description field. Add in almost any paragraph you want into the body of you page.&lt;/p>
-&lt;p>The following paragraph types integrate directly with Branch:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;a href="https://community.openymca.org/t/latest-blog-posts-including-camp-branch-paragraphs-open-y-user-docs/717" target="_blank">Latest Blog Posts (Branch)&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://community.openymca.org/t/latest-news-branch-including-camp-branch-paragraphs-open-y-user-docs/718" target="_blank">Latest News Posts (Branch)&lt;/a>&lt;/li>
-&lt;li>Branch Amenities with Icons (see Branch Amenities below)&lt;/li>
-&lt;/ul>
-&lt;h3 id="bottom-area">Bottom Area&lt;/h3>
-&lt;p>Use the bottom area for anchoring elements on your page. The following paragraphs are great for this area:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;a href="https://community.openymca.org/t/small-banner-paragraphs-open-y-user-docs/725" target="_blank">Small Banner&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://community.openymca.org/t/gallery-paragraphs-open-y-user-docs/715" target="_blank">Gallery&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://community.openymca.org/t/webform-paragraph-open-y-user-docs/729" target="_blank">Webform&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://community.openymca.org/t/limited-time-offer-paragraphs-open-y-user-docs/719" target="_blank">Limited Time Offer&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h3 id="branch-amenities">Branch Amenities&lt;/h3>
-&lt;p>Type in and select which amenities are available at your branch using the autocomplete field.&lt;/p>
-&lt;p>
-&lt;img src="upload://y2bWNI9tEnxS53cfvzDcOKtXbVC.png" alt="admin&amp;amp;ndash;branch__amenities|690x213, 75%" />&lt;/p>
-&lt;p>If you embed a Branch Amenities with Icons paragraph on your page, the amenities will display in your content. The Amenities will also serve as filters for branches on your locations page.&lt;/p>
-&lt;p>If you don&amp;rsquo;t see an option available or would like to rename a branch amenity, go to Structure &amp;gt; Taxonomy &amp;gt; Amenities.&lt;/p>
-&lt;p>&lt;strong>####&lt;/strong> Closed Amenities
-Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that have closed. Content editors will see a &amp;ldquo;Closed Amenities&amp;rdquo; field.&lt;/p>
-&lt;p>
-&lt;img src="upload://1H6H8xKzjCpEMYDKfZe7it4R40Y.png" alt="carnation&amp;amp;ndash;branch&amp;amp;ndash;closed-amenities|442x499, 50%" />
-&lt;img src="upload://a4WrDjPoqlMgnP5OtobiCzpvrZg.png" alt="admin&amp;amp;ndash;branch__amenities&amp;amp;ndash;closed-amenities|690x341, 50%" />&lt;/p></description></item><item><title>Docs: Branch Amenities</title><link>/docs/content-structure/blocks/branch-amenities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/branch-amenities/</guid><description>
+&lt;code>/locations/[node:title]&lt;/code>&lt;/p></description></item><item><title>Docs: Branch Amenities</title><link>/docs/content-structure/blocks/branch-amenities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/branch-amenities/</guid><description>
 &lt;p>A block with amenities list of the current branch.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
 &lt;table>
@@ -3434,4 +3588,25 @@ Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that ha
 &lt;ul>
 &lt;li>
 &lt;a href="../content-types/camp.md">Camp&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>Docs: Categories Listing</title><link>/docs/content-structure/paragraphs/categories-listing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/categories-listing/</guid><description>
+&lt;p>This is dynamic paragraph that renders all published categories according to current program page.&lt;/p>
+&lt;p>It uses sticky at the top option and order items based on published date(newest at the top).&lt;/p>
+&lt;h3 id="fields">Fields&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Name&lt;/th>
+&lt;th>Machine name&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Block&lt;/td>
+&lt;td>field_prgf_block&lt;/td>
+&lt;td>Yes&lt;/td>
+&lt;td>Block reference to the view/block. Should have default value and should be hidden in form display.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>

@@ -124,10 +124,11 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;h2 id="branch-amenities">Branch Amenities&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_branch_amenities&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Project:&lt;/strong> [lb_branch_amenities]&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong>
+&lt;a href="https://www.drupal.org/project/lb_branch_amenities_blocks" target="_blank">lb_branch_amenities_blocks&lt;/a>&lt;/li>
 &lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="">Mobile&lt;/a> |
-&lt;a href="">Desktop&lt;/a>&lt;/li>
+&lt;a href="/img/designs/lb/Branch%20Amenities%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Branch%20Amenities%20Desktop.png">Desktop&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Display of all amenities available at a branch location.&lt;/p>
 &lt;table>
@@ -639,10 +640,11 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;h2 id="partners">Partners&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_partners&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Project:&lt;/strong> [lb_partners]&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong>
+&lt;a href="https://www.drupal.org/project/lb_partners_blocks" target="_blank">lb_partners_blocks&lt;/a>&lt;/li>
 &lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="">Mobile&lt;/a> |
-&lt;a href="">Desktop&lt;/a>&lt;/li>
+&lt;a href="/img/designs/lb/Sponsors%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Sponsors%20Desktop.png">Desktop&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>List of multiple partner / sponsor logos.&lt;/p>
 &lt;table>
@@ -895,10 +897,10 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;ul>
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_related_articles&lt;/code>&lt;/li>
 &lt;li>&lt;strong>Project:&lt;/strong>
-&lt;a href="">lb_related_articles&lt;/a>&lt;/li>
+&lt;a href="https://www.drupal.org/project/lb_related_articles_blocks" target="_blank">lb_related_articles_blocks&lt;/a>&lt;/li>
 &lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="">Mobile&lt;/a> |
-&lt;a href="">Desktop&lt;/a>&lt;/li>
+&lt;a href="/img/designs/lb/Article%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Article%20Desktop.png">Desktop&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Component for displaying related articles within a page.&lt;/p>
 &lt;table>
@@ -941,10 +943,10 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;ul>
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_related_events&lt;/code>&lt;/li>
 &lt;li>&lt;strong>Project:&lt;/strong>
-&lt;a href="">lb_related_events&lt;/a>&lt;/li>
+&lt;a href="https://www.drupal.org/project/lb_related_events_blocks" target="_blank">lb_related_events_blocks&lt;/a>&lt;/li>
 &lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="">Mobile&lt;/a> |
-&lt;a href="">Desktop&lt;/a>&lt;/li>
+&lt;a href="/img/designs/lb/Events%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Event%20Desktop.png">Desktop&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Component for displaying related events within a page.&lt;/p>
 &lt;table>
@@ -1089,10 +1091,10 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;ul>
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_staff&lt;/code>&lt;/li>
 &lt;li>&lt;strong>Project:&lt;/strong>
-&lt;a href="">lb_staff&lt;/a>&lt;/li>
+&lt;a href="https://www.drupal.org/project/lb_staff_members_blocks" target="_blank">lb_staff_members_blocks&lt;/a>&lt;/li>
 &lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="">Mobile&lt;/a> |
-&lt;a href="">Desktop&lt;/a>&lt;/li>
+&lt;a href="/img/designs/lb/Staff%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Staff%20Desktop.png">Desktop&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Displays simple staff member info cards with image, name, title, email&lt;/p>
 &lt;table>
@@ -1411,10 +1413,11 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;h2 id="testimonials">Testimonials&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_testimonials&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Project:&lt;/strong> [lb_testimonial]&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong>
+&lt;a href="https://www.drupal.org/project/lb_testimonial_blocks" target="_blank">lb_testimonial_blocks&lt;/a>&lt;/li>
 &lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="">Mobile&lt;/a> |
-&lt;a href="">Desktop&lt;/a>&lt;/li>
+&lt;a href="/img/designs/lb/Testimonials%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Testimonials%20Desktop.png">Desktop&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Display of short testimonials or quotes from Y members.&lt;/p>
 &lt;table>

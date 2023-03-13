@@ -1,0 +1,393 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Digital Services Updates</title><link>/blog/</link><description>Recent content in Digital Services Updates on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Layout Builder Roadmap</title><link>/blog/2023/03/09/layout-builder-roadmap/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>/blog/2023/03/09/layout-builder-roadmap/</guid><description>
+&lt;p>Skip to:
+&lt;a href="#layout-builder-v1">v1&lt;/a> |
+&lt;a href="#layout-builder-v2">v2&lt;/a> |
+&lt;a href="#layout-builder-v3">v3&lt;/a>&lt;/p>
+&lt;h2 id="layout-builder-v1">Layout Builder v1&lt;/h2>
+&lt;p>Released in
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.12" target="_blank">9.2.12&lt;/a>, December 2022&lt;/p>
+&lt;h3 id="page-components">Page components&lt;/h3>
+&lt;dl>
+&lt;dt>Accordions&lt;/dt>
+&lt;dd>Expandable pairs of question/answer or header/section fields.&lt;/dd>
+&lt;dt>Cards (Horizontal &amp;amp; Vertical)&lt;/dt>
+&lt;dd>Flexible cards style components.&lt;/dd>
+&lt;dt>Carousels&lt;/dt>
+&lt;dd>A full-width display with multiple sets of a header, description, and call to action overlaid on an image&lt;/dd>
+&lt;dt>Grid CTA Content&lt;/dt>
+&lt;dd>Sets of headline, description, and link displayed in n-item wide rows. Sometimes icons or images are added&lt;/dd>
+&lt;dt>Hero Banners&lt;/dt>
+&lt;dd>A full-width, almost full-height display with a header, description, and call to action overlaid on an image&lt;/dd>
+&lt;dt>Ping Pong Blocks&lt;/dt>
+&lt;dd>Usually paired, sets of media, header, description, and call to action arranged horizontally&lt;/dd>
+&lt;dt>Promo Cards (sidebar only)&lt;/dt>
+&lt;dd>A title, headline, description, and link that usually display in the sidebar&lt;/dd>
+&lt;dt>Statistics&lt;/dt>
+&lt;dd>Infographic-like display to highlight relevant stats&lt;/dd>
+&lt;dt>Tabs&lt;/dt>
+&lt;dd>Allows users to switch page views by selecting tabs across the top of the page instead of having to navigate to a new page.&lt;/dd>
+&lt;dt>Simple Content (w/ responsive tables)&lt;/dt>
+&lt;dd>Allows for the management of responsive tables within a page.&lt;/dd>
+&lt;dt>Webforms&lt;/dt>
+&lt;dd>Basic webform that can be embedded within a page.&lt;/dd>
+&lt;/dl>
+&lt;h3 id="menu--navigation">Menu / Navigation&lt;/h3>
+&lt;dl>
+&lt;dt>Simple Menu (sidebar only)&lt;/dt>
+&lt;dd>A simple 1-level sidebar menu that can display in either the right or left sidebar area.&lt;/dd>
+&lt;/dl>
+&lt;h2 id="layout-builder-v2">Layout Builder v2&lt;/h2>
+&lt;p>Planned for release 9.2.13, March 2023.&lt;/p>
+&lt;h3 id="content-types">Content types&lt;/h3>
+&lt;dl>
+&lt;dt>Articles (News / Blog / Press Release)&lt;/dt>
+&lt;dd>Ability to include Layout Builder components in Article pages; combining existing like-content types into a single CT.&lt;/dd>
+&lt;dt>Events&lt;/dt>
+&lt;dd>Ability to include Layout Builder components in Event pages.&lt;/dd>
+&lt;dt>Branch&lt;/dt>
+&lt;dd>Ability to include Layout Builder components in Branch pages.&lt;/dd>
+&lt;/dl>
+&lt;h3 id="menu--navigation-1">Menu / Navigation&lt;/h3>
+&lt;dl>
+&lt;dt>Breadcrumbs&lt;/dt>
+&lt;dd>Secondary navigation that allows users to understand where they are located within a site.&lt;/dd>
+&lt;dt>Branch Menu (microsite menu)&lt;/dt>
+&lt;dd>Sub-menu that displays within a branch page (and sub-pages) that allows users to drill down to additional content specific to that branch.&lt;/dd>
+&lt;/dl>
+&lt;h3 id="page-components-1">Page components&lt;/h3>
+&lt;dl>
+&lt;dt>Modals&lt;/dt>
+&lt;dd>Modals can be triggered on page load or when a button is clicked (i.e. confirmation screen).&lt;/dd>
+&lt;dt>Testimonials&lt;/dt>
+&lt;dd>Display of short testimonials or quotes from Y members&lt;/dd>
+&lt;dt>Partners / Sponsors&lt;/dt>
+&lt;dd>Displays logos / info of partners or sponsors&lt;/dd>
+&lt;dt>Staff Members&lt;/dt>
+&lt;dd>Displays simple staff member info cards with image, name, title&lt;/dd>
+&lt;dt>Related Articles&lt;/dt>
+&lt;dd>Component for displaying related articles within an article node page and within other pages using layout builder.&lt;/dd>
+&lt;dt>Related Events&lt;/dt>
+&lt;dd>Component for displaying related events within an event node page and within other pages using layout builder.&lt;/dd>
+&lt;dt>Branch Hours&lt;/dt>
+&lt;dd>Banner display individual branch hours and other branch-related info&lt;/dd>
+&lt;dt>Branch Amenities&lt;/dt>
+&lt;dd>All Amenities available at an individual branch.
+&lt;p>There is a version of branch amenities that includes open vs closed amenities. For this version, going ot keep it simple and only implement the version that displays available/open amenities. Will come back to the one that lists open vs closed (see Middle Tennessee).&lt;/p>
+&lt;/dd>
+&lt;dt>Branch Social Links&lt;/dt>
+&lt;dd>Should we include an area for social sharing links on individual branch / location pages in v2 or v3?&lt;/dd>
+&lt;/dl>
+&lt;h2 id="layout-builder-v3">Layout Builder v3&lt;/h2>
+&lt;p>Planned for June 2023.&lt;/p>
+&lt;h3 id="content-types-1">Content Types&lt;/h3>
+&lt;dl>
+&lt;dt>Camp&lt;/dt>
+&lt;dd>Content type for camp locations. Allows for flexibility to include Layout Builder components in the Camp CT pages. Additional items to consider including within the Camp CT template are: Pricing Charts, Schedules (see links for Camp Hanes)&lt;/dd>
+&lt;dt>Facility&lt;/dt>
+&lt;dd>Flexible CT for other location types, such as Child Cares. Allows for ability to include layout builder components in Facility CT pages.&lt;/dd>
+&lt;dt>Alerts&lt;/dt>
+&lt;dd>Ensure Alerts are working with the Layout Builder landing page content type, and other content types that might use alerts (Branches, Camps, etc)&lt;/dd>
+&lt;/dl>
+&lt;h3 id="custom-pages--applications">Custom Pages / Applications&lt;/h3>
+&lt;dl>
+&lt;dt>Locations Page&lt;/dt>
+&lt;dd>Ability to include Layout Builder components into the Location finder page, below the locations listing.&lt;/dd>
+&lt;dt>Membership Calculator&lt;/dt>
+&lt;dd>Ability to include Layout Builder components within the Membership Calculator landing pages&lt;/dd>
+&lt;dt>Virtual Y&lt;/dt>
+&lt;dd>Ability to include Layout Builder components into VirtualY pages&lt;/dd>
+&lt;dt>Activity Finder&lt;/dt>
+&lt;dd>Ability to include Layout Builder components within pages that display Activity Finder content&lt;/dd>
+&lt;/dl>
+&lt;h3 id="menu--navigation-2">Menu / Navigation&lt;/h3>
+&lt;dl>
+&lt;dt>Global Header&lt;/dt>
+&lt;dd>Global header elements&lt;/dd>
+&lt;dt>Global Footer&lt;/dt>
+&lt;dd>Global footer elements&lt;/dd>
+&lt;dt>Utility Menu&lt;/dt>
+&lt;dd>Utility menu links&lt;/dd>
+&lt;dt>Mega Menu&lt;/dt>
+&lt;dd>Multi-level interactive menu (up to 3 levels)&lt;/dd>
+&lt;dt>Home / Preferred Branch&lt;/dt>
+&lt;dd>Allow for users to select a single branch location as their home / preferred branch via a modal that displays on the associations&amp;rsquo; home page when the user first arrives on the site. Selecting a home branch will have a link to the Branch display in the user&amp;rsquo;s utility menu for easier access to the Branch page(s). Users can also select their home / preferred branch by checking the &amp;ldquo;My Home Branch&amp;rdquo; checkbox once on a Branch page. They can also deselect a Branch as their home Branch, and can click on the &amp;ldquo;Change&amp;rdquo; link to select another location from a modal.&lt;/dd>
+&lt;dt>Camp Menu&lt;/dt>
+&lt;dd>Menu for camp-specific pages; similar to Branch menu, but allows for 2 levels instead of a single level.&lt;/dd>
+&lt;dt>Camp Quick Links&lt;/dt>
+&lt;dd>Additional menu for camps that will allow for the placement of up to 6 additional links in addition to the camp menu&lt;/dd>
+&lt;/dl>
+&lt;h3 id="page-components-2">Page Components&lt;/h3>
+&lt;dl>
+&lt;dt>Event Views &amp;amp; Filters&lt;/dt>
+&lt;dd>Views &amp;amp; filters for event listings that allow users to sort events by location and search by keyword.&lt;/dd>
+&lt;dt>Article Views &amp;amp; Filters&lt;/dt>
+&lt;dd>Views &amp;amp; filters for article listings that allow users to sort articles by location and topic tag, and search by keyword.&lt;/dd>
+&lt;dt>Location Amenities Filter (sidebar filter)&lt;/dt>
+&lt;dd>Amenities filter on Location finder page where users can select one or more amenities and have the location results display locations where those amenities are available. Amenities can be placed into categories, and those categories can be related to location content types (Branches, Camps, Facilities)&lt;/dd>
+&lt;dt>Camp Video Banner&lt;/dt>
+&lt;dd>Hero banner that displays an auto-playing video in desktop views, and a video on-click in mobile views.
+Code Block Need to move the Code Block into a Layout Builder component.&lt;/dd>
+&lt;/dl></description></item><item><title>Blog: Virtual Y 1.6.5</title><link>/blog/2022/12/16/virtual-y-1.6.5/</link><pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate><guid>/blog/2022/12/16/virtual-y-1.6.5/</guid><description>
+&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;/h2>
+&lt;h3 id="94-virtual-y-update">9.4 Virtual Y Update&lt;/h3>
+&lt;ul>
+&lt;li>Updated Virtual Y to version 9.4&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-fixes">Bug Fixes&lt;/h2>
+&lt;h3 id="virtual-y-in-event-series-hosts-name-is-not-editable">Virtual Y: In Event Series, Host&amp;rsquo;s Name is not editable&lt;/h3>
+&lt;ul>
+&lt;li>The Host&amp;rsquo;s Name is now included as an editable field when updating an existing Event Series, or it should always copy the values from the editable Instructor field&amp;rsquo;s upon each Save.&lt;/li>
+&lt;/ul>
+&lt;h3 id="virtual-y-released-bug-fixes---april-2022">Virtual Y: Released bug fixes - April 2022&lt;/h3>
+&lt;ul>
+&lt;li>Removed additional styling below the menu&lt;/li>
+&lt;li>Chat - Fixed an issue with Chat to remove message history/previous chat&lt;/li>
+&lt;li>Fixed an issue with the page layout breaking for small videos&lt;/li>
+&lt;li>Resolved error that was displaying when admin tried to install Virtual 1:1 Meeting module&lt;/li>
+&lt;li>Fixed an issue with megamenu links going to the secondary menu&lt;/li>
+&lt;li>Resolved an error that was displaying when admin tried to create an export file with logs&lt;/li>
+&lt;li>Resolved an error that was displaying when admin tried to install Open Y Virtual YMCA Search module&lt;/li>
+&lt;li>Resolved an error that was displaying when admin tried to install Open Y Virtual Y shared content server module&lt;/li>
+&lt;li>Resolved an error that was displaying when admin tried to install Virtual Y Shared Content module&lt;/li>
+&lt;li>Resolved an error that was displaying when admin tried to export Users logs&lt;/li>
+&lt;li>Fixed an issue where the time of a 1:1 meeting doesn’t match on the Schedules and 1:1 meeting page&lt;/li>
+&lt;li>Fixed an issue where users weren’t able to join the 1:1 meeting&lt;/li>
+&lt;li>Fixed an issue where admins could not index searches&lt;/li>
+&lt;li>Fixed a problem with the secondary menu shifting&lt;/li>
+&lt;li>Resolved an issue in Lily where page titles were partially hidden on mobile devices&lt;/li>
+&lt;/ul>
+&lt;h3 id="virtualy-164---additional-bulk-fixes">VirtualY 1.6.4 - Additional Bulk Fixes&lt;/h3>
+&lt;ul>
+&lt;li>Migrate to YUSA&lt;/li>
+&lt;li>Improved error handling for Reclique SSO&lt;/li>
+&lt;li>Resolved an issue where VY is hidden for users that have the admin toolbar&lt;/li>
+&lt;li>Small fix to icon paths&lt;/li>
+&lt;li>Added option for dummy provider to &amp;ldquo;auto-login&amp;rdquo;, providing a kind of &amp;ldquo;demo mode&amp;rdquo; for VY&lt;/li>
+&lt;li>Added permissions mapping to gc_auth_reclique_sso&lt;/li>
+&lt;li>Added on|off toggle for log_archiver cron job in config
+rnings for alert requests&lt;/li>
+&lt;/ul></description></item><item><title>Blog: Website Services 9.2.12</title><link>/blog/2022/12/14/website-services-9.2.12/</link><pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate><guid>/blog/2022/12/14/website-services-9.2.12/</guid><description>
+&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;/h2>
+&lt;h3 id="layout-builder-version-1">Layout Builder (version 1)&lt;/h3>
+&lt;p>Content editors now have a new tool in their toolbelt for building dynamic landing pages - Layout Builder! The “Landing Page (Layout Builder)” content type enables editors to build custom landing pages with a new drag-and-drop interface.
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/" target="_blank">Learn more in our docs&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Accordion Components - Layout Builder v 1.0&lt;/p>
+&lt;ul>
+&lt;li>Pairs of question / answer or header / body components that expand or collapse on-click to either hide or reveal content.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/accordion/" target="_blank">Accordion Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Card Components - Layout Builder v 1.0&lt;/p>
+&lt;ul>
+&lt;li>Flexible card-style components that allow for up to 4 cards with images to display across a page, depending on the chosen layout.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/cards/" target="_blank">Cards Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Carousel Components - Layout Builder v 1.0&lt;/p>
+&lt;ul>
+&lt;li>A full-width interactive page component that displays multiple images for users to scroll through.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/carousel/" target="_blank">Carousel Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Grid CTA Components - Layout Builder v 1.0&lt;/p>
+&lt;ul>
+&lt;li>Flexible grid-style components that allow for up to 4 grid items to display across a page, with the option to include icons in place of images.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/grid-cta/" target="_blank">Grid CTA Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Hero Banner Components - Layout Builder v 1.0&lt;/p>
+&lt;ul>
+&lt;li>A full-width, almost full-height banner displaying at the top of a page, with a title/header, description, and call to action overlaying an image.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/hero-banner/" target="_blank">Hero Banner Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Ping Pong Components - Layout Builder v 1.0&lt;/p>
+&lt;ul>
+&lt;li>Paired sets of full-width page components that allow for an image and text to display either right or left aligned (i.e. image on right, text on left; text on right, image on left)&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/ping-pong/" target="_blank">Ping-pong Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Promo Card Components (Sidebar) - Layout Builder v 1.0&lt;/p>
+&lt;ul>
+&lt;li>A component with a title, headline, description, and link that can be placed in the right or left sidebar of a page.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/promo-card/" target="_blank">Promo Card Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Simple Menu Components (Sidebar) - Layout Builder v 1.0&lt;/p>
+&lt;ul>
+&lt;li>A simple 1-level sidebar menu that can display in either the right or left sidebar of a page.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/simple-menu/" target="_blank">Simple Menu Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Statistics Components - Layout Builder v 1.0&lt;/p>
+&lt;ul>
+&lt;li>A full-width infographic-like display that highlights relevant figures and statistics to front end users.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/statistics/" target="_blank">Statistics Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Table Components - Layout Builder v 1.0&lt;/p>
+&lt;ul>
+&lt;li>A component for organizing and displaying content in rows and columns.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/table/" target="_blank">Table Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Tabs Components - Layout Builder v 1.0&lt;/p>
+&lt;ul>
+&lt;li>A component with tabs displaying at the top that allows users to see more content by selecting a new tab.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/tabs/" target="_blank">Tabs Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Webform Components - Layout Builder v 1.0&lt;/p>
+&lt;ul>
+&lt;li>Embed an existing webform on a page.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/webform/" target="_blank">Webform Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="94-drupal-core-update">9.4 Drupal Core Update&lt;/h3>
+&lt;ul>
+&lt;li>Updated the YUSA Distribution to the most recent stable version of Drupal Core.&lt;/li>
+&lt;/ul>
+&lt;h3 id="gated-content---private-pages">Gated Content - Private Pages&lt;/h3>
+&lt;ul>
+&lt;li>Allows for Y’s to have one or more pages of their website to be gated so that only association employees, or members of their board of directors, are allowed access.&lt;/li>
+&lt;/ul>
+&lt;h3 id="branches---improvements-for-displaying-branch-location-holiday-hours">Branches - Improvements for displaying Branch location Holiday hours&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>In the Branch Hours section, the day of the week labels (Mon, Tue, Wed, etc) can be overridden with custom text.&lt;/p>
+&lt;ul>
+&lt;li>Gives branches the ability to overwrite “Mon” with “Monday, July 4th” and/or “Sat” with “Christmas Day”.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="activity-finder--schedules">Activity Finder / Schedules&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Disabled &amp;ldquo;View PDF&amp;rdquo; button when schedule page returns no results&lt;/p>
+&lt;ul>
+&lt;li>When no results are returned in Activity Finder, the “Download Weekly PDF” button does not display on the page&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Improvements to file names for PDF schedule downloads&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>PDF Schedule download files have been given more user-friendly names&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Example: “West YMCA October 24 - October 30”&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Drupal 10 support&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>PHP 8.1 compatibility fixes&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="locations--maps">Locations &amp;amp; Maps&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Location Page Improvement on Tablet Breakpoint&lt;/p>
+&lt;ul>
+&lt;li>On tablets, users will now be able to see the list of amenities displaying below the content, rather than in the sidebar.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Filter Locations by ID instead of title&lt;/p>
+&lt;ul>
+&lt;li>Locations are now filtered by ID instead of title/name. This resolves an issue where duplicate location names were causing problems with results when filtering by amenities.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="ux-improvements---previous-story--next-story-for-blogs">UX Improvements - Previous story / Next story (for Blogs)&lt;/h3>
+&lt;ul>
+&lt;li>Users can view suggested blog posts at the bottom of a blog post page, and can click through to view the previous or next blog post.&lt;/li>
+&lt;/ul>
+&lt;h3 id="admin--content-editor-updates">Admin / Content Editor Updates&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Show &amp;ldquo;Add Content&amp;rdquo; in Admin Menu&lt;/p>
+&lt;ul>
+&lt;li>Made the “Add Content” menu item available by default for site administrators.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Ability to quickly clone a node or entity&lt;/p>
+&lt;ul>
+&lt;li>Gives site admins the ability to clone a node or entity so they can create new content quickly without having to create each node from scratch.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Batch Upload of Media Files&lt;/p>
+&lt;ul>
+&lt;li>Content editors can now upload multiple images and PDFs in a single step to streamline their workflows.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Update to Admin menu items&lt;/p>
+&lt;ul>
+&lt;li>Renamed OpenY admin menu to YMCA Website Services&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-fixes">Bug Fixes&lt;/h2>
+&lt;h3 id="unpublished-branches-show-restricted-access-in-blog-posts-listing-block">Unpublished Branches show &amp;ldquo;Restricted Access&amp;rdquo; in &amp;ldquo;Blog Posts Listing&amp;rdquo; Block&lt;/h3>
+&lt;ul>
+&lt;li>Resolves an issue where unpublished branches were displaying as “Restricted Access” in the blog post listing locations filter&lt;/li>
+&lt;/ul>
+&lt;h3 id="status-page-is-partially-empty">Status page is partially empty&lt;/h3>
+&lt;ul>
+&lt;li>Fixed an issue where the Status Report page was missing information&lt;/li>
+&lt;/ul>
+&lt;h3 id="membership-builder---the-button-label-isnt-changed-to-the-selected-on-the-membership-page">Membership Builder - The button label isn&amp;rsquo;t changed to the &amp;ldquo;Selected&amp;rdquo; on the membership page&lt;/h3>
+&lt;ul>
+&lt;li>Resolved a UX issue where buttons were missing indicators (“selected” text or button color changes) that a membership type had been selected.&lt;/li>
+&lt;/ul>
+&lt;h3 id="reduce-z-index-of-fixed-header">Reduce z-index of fixed header&lt;/h3>
+&lt;ul>
+&lt;li>Prevents unwanted side effects in layout builder&lt;/li>
+&lt;/ul>
+&lt;h3 id="openy_custom-fixeschanges-minor-release">Openy_custom fixes/changes minor release&lt;/h3>
+&lt;ul>
+&lt;li>Resolved ‘failed to open stream error’ on Drupal backend&lt;/li>
+&lt;li>Renamed admin menu to YMCA Website Services&lt;/li>
+&lt;li>Updated home branch module learn more help text&lt;/li>
+&lt;li>Made home branch popup configurable&lt;/li>
+&lt;li>Enabled translation of form buttons with extra submit check&lt;/li>
+&lt;/ul>
+&lt;h3 id="alerts-updates--bug-fixes">Alerts updates &amp;amp; bug fixes&lt;/h3>
+&lt;ul>
+&lt;li>Ensured &amp;lt;front&amp;gt; or / work for setting homepage Alert visibility&lt;/li>
+&lt;li>Cleaned up help text for Alert visibility section&lt;/li>
+&lt;li>Resolved PHP 8 deprecation warnings&lt;/li>
+&lt;li>Handled edge case for missing alert_location field&lt;/li>
+&lt;li>Cleaned up backend warnings for alert requests&lt;/li>
+&lt;/ul></description></item></channel></rss>

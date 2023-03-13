@@ -1,0 +1,130 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – News</title><link>/blog/news/</link><description>Recent content in News on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/blog/news/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Layout Builder Roadmap</title><link>/blog/2023/03/09/layout-builder-roadmap/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>/blog/2023/03/09/layout-builder-roadmap/</guid><description>
+&lt;p>Skip to:
+&lt;a href="#layout-builder-v1">v1&lt;/a> |
+&lt;a href="#layout-builder-v2">v2&lt;/a> |
+&lt;a href="#layout-builder-v3">v3&lt;/a>&lt;/p>
+&lt;h2 id="layout-builder-v1">Layout Builder v1&lt;/h2>
+&lt;p>Released in
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.12" target="_blank">9.2.12&lt;/a>, December 2022&lt;/p>
+&lt;h3 id="page-components">Page components&lt;/h3>
+&lt;dl>
+&lt;dt>Accordions&lt;/dt>
+&lt;dd>Expandable pairs of question/answer or header/section fields.&lt;/dd>
+&lt;dt>Cards (Horizontal &amp;amp; Vertical)&lt;/dt>
+&lt;dd>Flexible cards style components.&lt;/dd>
+&lt;dt>Carousels&lt;/dt>
+&lt;dd>A full-width display with multiple sets of a header, description, and call to action overlaid on an image&lt;/dd>
+&lt;dt>Grid CTA Content&lt;/dt>
+&lt;dd>Sets of headline, description, and link displayed in n-item wide rows. Sometimes icons or images are added&lt;/dd>
+&lt;dt>Hero Banners&lt;/dt>
+&lt;dd>A full-width, almost full-height display with a header, description, and call to action overlaid on an image&lt;/dd>
+&lt;dt>Ping Pong Blocks&lt;/dt>
+&lt;dd>Usually paired, sets of media, header, description, and call to action arranged horizontally&lt;/dd>
+&lt;dt>Promo Cards (sidebar only)&lt;/dt>
+&lt;dd>A title, headline, description, and link that usually display in the sidebar&lt;/dd>
+&lt;dt>Statistics&lt;/dt>
+&lt;dd>Infographic-like display to highlight relevant stats&lt;/dd>
+&lt;dt>Tabs&lt;/dt>
+&lt;dd>Allows users to switch page views by selecting tabs across the top of the page instead of having to navigate to a new page.&lt;/dd>
+&lt;dt>Simple Content (w/ responsive tables)&lt;/dt>
+&lt;dd>Allows for the management of responsive tables within a page.&lt;/dd>
+&lt;dt>Webforms&lt;/dt>
+&lt;dd>Basic webform that can be embedded within a page.&lt;/dd>
+&lt;/dl>
+&lt;h3 id="menu--navigation">Menu / Navigation&lt;/h3>
+&lt;dl>
+&lt;dt>Simple Menu (sidebar only)&lt;/dt>
+&lt;dd>A simple 1-level sidebar menu that can display in either the right or left sidebar area.&lt;/dd>
+&lt;/dl>
+&lt;h2 id="layout-builder-v2">Layout Builder v2&lt;/h2>
+&lt;p>Planned for release 9.2.13, March 2023.&lt;/p>
+&lt;h3 id="content-types">Content types&lt;/h3>
+&lt;dl>
+&lt;dt>Articles (News / Blog / Press Release)&lt;/dt>
+&lt;dd>Ability to include Layout Builder components in Article pages; combining existing like-content types into a single CT.&lt;/dd>
+&lt;dt>Events&lt;/dt>
+&lt;dd>Ability to include Layout Builder components in Event pages.&lt;/dd>
+&lt;dt>Branch&lt;/dt>
+&lt;dd>Ability to include Layout Builder components in Branch pages.&lt;/dd>
+&lt;/dl>
+&lt;h3 id="menu--navigation-1">Menu / Navigation&lt;/h3>
+&lt;dl>
+&lt;dt>Breadcrumbs&lt;/dt>
+&lt;dd>Secondary navigation that allows users to understand where they are located within a site.&lt;/dd>
+&lt;dt>Branch Menu (microsite menu)&lt;/dt>
+&lt;dd>Sub-menu that displays within a branch page (and sub-pages) that allows users to drill down to additional content specific to that branch.&lt;/dd>
+&lt;/dl>
+&lt;h3 id="page-components-1">Page components&lt;/h3>
+&lt;dl>
+&lt;dt>Modals&lt;/dt>
+&lt;dd>Modals can be triggered on page load or when a button is clicked (i.e. confirmation screen).&lt;/dd>
+&lt;dt>Testimonials&lt;/dt>
+&lt;dd>Display of short testimonials or quotes from Y members&lt;/dd>
+&lt;dt>Partners / Sponsors&lt;/dt>
+&lt;dd>Displays logos / info of partners or sponsors&lt;/dd>
+&lt;dt>Staff Members&lt;/dt>
+&lt;dd>Displays simple staff member info cards with image, name, title&lt;/dd>
+&lt;dt>Related Articles&lt;/dt>
+&lt;dd>Component for displaying related articles within an article node page and within other pages using layout builder.&lt;/dd>
+&lt;dt>Related Events&lt;/dt>
+&lt;dd>Component for displaying related events within an event node page and within other pages using layout builder.&lt;/dd>
+&lt;dt>Branch Hours&lt;/dt>
+&lt;dd>Banner display individual branch hours and other branch-related info&lt;/dd>
+&lt;dt>Branch Amenities&lt;/dt>
+&lt;dd>All Amenities available at an individual branch.
+&lt;p>There is a version of branch amenities that includes open vs closed amenities. For this version, going ot keep it simple and only implement the version that displays available/open amenities. Will come back to the one that lists open vs closed (see Middle Tennessee).&lt;/p>
+&lt;/dd>
+&lt;dt>Branch Social Links&lt;/dt>
+&lt;dd>Should we include an area for social sharing links on individual branch / location pages in v2 or v3?&lt;/dd>
+&lt;/dl>
+&lt;h2 id="layout-builder-v3">Layout Builder v3&lt;/h2>
+&lt;p>Planned for June 2023.&lt;/p>
+&lt;h3 id="content-types-1">Content Types&lt;/h3>
+&lt;dl>
+&lt;dt>Camp&lt;/dt>
+&lt;dd>Content type for camp locations. Allows for flexibility to include Layout Builder components in the Camp CT pages. Additional items to consider including within the Camp CT template are: Pricing Charts, Schedules (see links for Camp Hanes)&lt;/dd>
+&lt;dt>Facility&lt;/dt>
+&lt;dd>Flexible CT for other location types, such as Child Cares. Allows for ability to include layout builder components in Facility CT pages.&lt;/dd>
+&lt;dt>Alerts&lt;/dt>
+&lt;dd>Ensure Alerts are working with the Layout Builder landing page content type, and other content types that might use alerts (Branches, Camps, etc)&lt;/dd>
+&lt;/dl>
+&lt;h3 id="custom-pages--applications">Custom Pages / Applications&lt;/h3>
+&lt;dl>
+&lt;dt>Locations Page&lt;/dt>
+&lt;dd>Ability to include Layout Builder components into the Location finder page, below the locations listing.&lt;/dd>
+&lt;dt>Membership Calculator&lt;/dt>
+&lt;dd>Ability to include Layout Builder components within the Membership Calculator landing pages&lt;/dd>
+&lt;dt>Virtual Y&lt;/dt>
+&lt;dd>Ability to include Layout Builder components into VirtualY pages&lt;/dd>
+&lt;dt>Activity Finder&lt;/dt>
+&lt;dd>Ability to include Layout Builder components within pages that display Activity Finder content&lt;/dd>
+&lt;/dl>
+&lt;h3 id="menu--navigation-2">Menu / Navigation&lt;/h3>
+&lt;dl>
+&lt;dt>Global Header&lt;/dt>
+&lt;dd>Global header elements&lt;/dd>
+&lt;dt>Global Footer&lt;/dt>
+&lt;dd>Global footer elements&lt;/dd>
+&lt;dt>Utility Menu&lt;/dt>
+&lt;dd>Utility menu links&lt;/dd>
+&lt;dt>Mega Menu&lt;/dt>
+&lt;dd>Multi-level interactive menu (up to 3 levels)&lt;/dd>
+&lt;dt>Home / Preferred Branch&lt;/dt>
+&lt;dd>Allow for users to select a single branch location as their home / preferred branch via a modal that displays on the associations&amp;rsquo; home page when the user first arrives on the site. Selecting a home branch will have a link to the Branch display in the user&amp;rsquo;s utility menu for easier access to the Branch page(s). Users can also select their home / preferred branch by checking the &amp;ldquo;My Home Branch&amp;rdquo; checkbox once on a Branch page. They can also deselect a Branch as their home Branch, and can click on the &amp;ldquo;Change&amp;rdquo; link to select another location from a modal.&lt;/dd>
+&lt;dt>Camp Menu&lt;/dt>
+&lt;dd>Menu for camp-specific pages; similar to Branch menu, but allows for 2 levels instead of a single level.&lt;/dd>
+&lt;dt>Camp Quick Links&lt;/dt>
+&lt;dd>Additional menu for camps that will allow for the placement of up to 6 additional links in addition to the camp menu&lt;/dd>
+&lt;/dl>
+&lt;h3 id="page-components-2">Page Components&lt;/h3>
+&lt;dl>
+&lt;dt>Event Views &amp;amp; Filters&lt;/dt>
+&lt;dd>Views &amp;amp; filters for event listings that allow users to sort events by location and search by keyword.&lt;/dd>
+&lt;dt>Article Views &amp;amp; Filters&lt;/dt>
+&lt;dd>Views &amp;amp; filters for article listings that allow users to sort articles by location and topic tag, and search by keyword.&lt;/dd>
+&lt;dt>Location Amenities Filter (sidebar filter)&lt;/dt>
+&lt;dd>Amenities filter on Location finder page where users can select one or more amenities and have the location results display locations where those amenities are available. Amenities can be placed into categories, and those categories can be related to location content types (Branches, Camps, Facilities)&lt;/dd>
+&lt;dt>Camp Video Banner&lt;/dt>
+&lt;dd>Hero banner that displays an auto-playing video in desktop views, and a video on-click in mobile views.
+Code Block Need to move the Code Block into a Layout Builder component.&lt;/dd>
+&lt;/dl></description></item></channel></rss>
