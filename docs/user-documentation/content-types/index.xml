@@ -12,8 +12,8 @@
 &lt;li>&lt;strong>Subtitle&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Type&lt;/strong>: Select &amp;ldquo;Blog&amp;rdquo;, &amp;ldquo;News&amp;rdquo;, or &amp;ldquo;Press Release&amp;rdquo;. Each type has the same fields, but allows admins to group articles for display on different pages (i.e. Blog types will display on a Blog page, Press Releases on a Press Release page, etc.)&lt;/li>
 &lt;li>&lt;strong>Header image&lt;/strong>: This image is displayed on the Article page and in listing views.&lt;/li>
-&lt;li>&lt;strong>Tags&lt;/strong>: References terms in the Tags vocabulary.
-&lt;a href="../../taxonomy">Terms must be created&lt;/a> by an admin before being referenced.&lt;/li>
+&lt;li>&lt;strong>Tags&lt;/strong>: References terms in the Tags vocabulary. See
+&lt;a href="../../taxonomy">Taxonomy&lt;/a> for more information on tags.&lt;/li>
 &lt;li>&lt;strong>Body&lt;/strong> (required): Add text with the
 &lt;a href="../../text-editor">WYSIWYG editor&lt;/a>&lt;/li>
 &lt;li>&lt;strong>Locations&lt;/strong>: If the Article relates to a
@@ -26,7 +26,39 @@
 &lt;ul>
 &lt;li>
 &lt;a href="../../layout-builder/related-articles">Related Articles&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Event (Layout Builder)</title><link>/docs/user-documentation/content-types/lb-event/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/lb-event/</guid><description/></item><item><title>Docs: Activity, Class, and Session</title><link>/docs/user-documentation/content-types/activity-class-session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/activity-class-session/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Event (Layout Builder)</title><link>/docs/user-documentation/content-types/lb-event/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/lb-event/</guid><description>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="../../../../../../assets/img/designs/lb/Event%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Event%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;h2 id="creating-an-event">Creating an Event&lt;/h2>
+&lt;p>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Event (Layout Builder)&lt;/strong>&lt;/p>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required)&lt;/li>
+&lt;li>&lt;strong>Subtitle&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Location info&lt;/strong>: Select the event location either by choosing from your list of locations or adding the address manually. You must either fill out the &lt;strong>Event location&lt;/strong> OR &lt;strong>Address&lt;/strong> fields.
+&lt;ul>
+&lt;li>&lt;strong>Event Location&lt;/strong>: A list of Branch, Camp, and Facilities. Select any number of these.&lt;/li>
+&lt;li>&lt;strong>Address&lt;/strong>: If your event does not happen at an existing location, you can add the address directly. Any content in this field will cause the &lt;strong>Event Location&lt;/strong> to be overridden. To clear out the field, reset &lt;strong>Country&lt;/strong> to &amp;ldquo;- None -&amp;rdquo;.&lt;/li>
+&lt;li>&lt;strong>Directions&lt;/strong>: By default, a link with directions is auto-generated using the address field of either the Event Location or Address. Use this field to substitute your own directions link.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Event Date(s)&lt;/strong>: Add a start and end date and time for the event. If the event does not have an end time, choose the start time for both the start and end.&lt;/li>
+&lt;li>&lt;strong>Header image&lt;/strong>: This image is displayed on the Article page and in listing views.&lt;/li>
+&lt;li>&lt;strong>Tags&lt;/strong>: References terms in the Tags vocabulary. See
+&lt;a href="../../taxonomy">Taxonomy&lt;/a> for more information on tags.&lt;/li>
+&lt;li>&lt;strong>Body&lt;/strong> (required): Add text with the
+&lt;a href="../../text-editor">WYSIWYG editor&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Locations&lt;/strong>: If the event relates to a
+&lt;a href="../branch">Branch&lt;/a> then select it here so that the event shows in listings on the Branch page.&lt;/li>
+&lt;/ul>
+&lt;h2 id="customizing-events">Customizing Events&lt;/h2>
+&lt;p>Once you create an Event you can customize the layout with
+&lt;a href="../../layout-builder">Layout Builder&lt;/a>. These components are built specifically to work with the Event content type:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="../../layout-builder/related-events">Related Events&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Activity, Class, and Session</title><link>/docs/user-documentation/content-types/activity-class-session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/activity-class-session/</guid><description>
 &lt;blockquote>
 &lt;p>These content types format data/content pulled from third parties, such as Daxko, Personify and ActiveNet, for display in YMCA Website Services.&lt;/p>
 &lt;/blockquote>

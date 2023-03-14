@@ -1,4 +1,164 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Digital Services Updates</title><link>/blog/</link><description>Recent content in Digital Services Updates on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Layout Builder Roadmap</title><link>/blog/2023/03/09/layout-builder-roadmap/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>/blog/2023/03/09/layout-builder-roadmap/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Digital Services Updates</title><link>/blog/</link><description>Recent content in Digital Services Updates on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Digital Services Release 9.2.13</title><link>/blog/2023/03/14/digital-services-release-9.2.13/</link><pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate><guid>/blog/2023/03/14/digital-services-release-9.2.13/</guid><description>
+&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;/h2>
+&lt;h3 id="layout-builder-v2">Layout Builder (v2)&lt;/h3>
+&lt;p>Expanding upon the December release, we are making additional components and content types compatible with Layout Builder.
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/" target="_blank">Learn more in our docs&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Modals&lt;/p>
+&lt;ul>
+&lt;li>A pop-up / modal that can display on page load.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/modal/" target="_blank">Modal Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Breadcrumbs&lt;/p>
+&lt;ul>
+&lt;li>Secondary navigation that allows users to understand where they are located within a site.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/breadcrumbs/" target="_blank">Breadcrumb Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Testimonials component&lt;/p>
+&lt;ul>
+&lt;li>Component for displaying short testimonials or quotes from Y members in an interactive carousel-style format.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/testimonials/" target="_blank">Testimonials Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Partners component&lt;/p>
+&lt;ul>
+&lt;li>Component for displaying logos / info of partners or sponsors within a page using Layout Builder.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/partners/" target="_blank">Partners Documentation &amp;amp; Training&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Staff Members component&lt;/p>
+&lt;ul>
+&lt;li>Component for displaying simple staff member info cards (with image, name, title) within a page using Layout Builder.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/staff-members/" target="_blank">Staff Members Training &amp;amp; Documentation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Articles&lt;/p>
+&lt;ul>
+&lt;li>A new Article content type combines all news-related content types into a flexible content type and allows content editors to include Layout Builder components within an article page.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/content-types/lb-article/" target="_blank">Articles Training &amp;amp; Documentation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Related Articles&lt;/p>
+&lt;ul>
+&lt;li>Component for displaying related articles within an article node page and within other pages (i.e. landing pages) using layout builder.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/related-articles/" target="_blank">Related Articles Training &amp;amp; Documentation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Events&lt;/p>
+&lt;ul>
+&lt;li>A new Event content type that allows content editors to include Layout Builder components within an event page.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/content-types/lb-event/" target="_blank">Events Training &amp;amp; Documentation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Related Events&lt;/p>
+&lt;ul>
+&lt;li>Component for displaying related events within an event node page and within other pages using layout builder.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/related-events/" target="_blank">Related Events Training &amp;amp; Documentation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Branches&lt;/p>
+&lt;ul>
+&lt;li>Updated Branch content type that allows for layout builder components to be included within a Branch page, in addition to branch-specific content.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/content-types/branch/" target="_blank">Branch Training &amp;amp; Documentation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Branch Hours&lt;/p>
+&lt;ul>
+&lt;li>Banner for displaying individual branch hours with a breakdown by day and space for highlighting variable hours such as Holiday hours.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/content-types/branch/#--branch-hours" target="_blank">Branch Hours Training &amp;amp; Documentation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Branch Menu&lt;/p>
+&lt;ul>
+&lt;li>Single level sub-menu that displays within a branch page (and sub-pages) that allows users to drill down to additional content specific to that branch.&lt;/li>
+&lt;li>Branch Menu Training &amp;amp; Documentation &lt;strong>ADD LINK&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Branch Amenities&lt;/p>
+&lt;ul>
+&lt;li>A component for displaying all Amenities available at an individual branch.&lt;/li>
+&lt;li>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/content-types/branch/#branch-amenities" target="_blank">Branch Amenities Training &amp;amp; Documentation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Branch Social Links&lt;/p>
+&lt;ul>
+&lt;li>Component for placing Branch-specific social media links on a Branch page.&lt;/li>
+&lt;li>Branch Social Links Training &amp;amp; Documentation &lt;strong>ADD LINK&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Additional Layout Builder improvements, update,s and documentation:&lt;/p>
+&lt;ul>
+&lt;li>Added Layout Builder roadmap summary to docs&lt;/li>
+&lt;li>Standardized and updated existing component field names for consistency&lt;/li>
+&lt;li>Resolved issues with low contrast of text over images&lt;/li>
+&lt;li>Updated documentation to include
+&lt;a href="https://ds-docs.y.org/docs/content-structure/layout-builder/" target="_blank">new components&lt;/a> and
+&lt;a href="https://ds-docs.y.org/docs/content-structure/content-types/" target="_blank">updates to content types&lt;/a>&lt;/li>
+&lt;li>Included node_revision_delete in distribution w/ default settings&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="drupal-core-update">Drupal Core Update&lt;/h3>
+&lt;ul>
+&lt;li>Updated the YUSA Distribution to the most recent stable version of Drupal Core - &lt;strong>Drupal Core 9.5.&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="activity-finder--schedules">Activity Finder / Schedules&lt;/h3>
+&lt;ul>
+&lt;li>Resolved an issue with the guided flow for Activity Finder not showing results if users skip a step&lt;/li>
+&lt;li>Admin alert for Daxko API updates - Created an alert message for admins that directs Y admins to update from GroupEx to the newer version of the Daxko API, along with
+&lt;a href="https://ds-docs.y.org/docs/development/daxko/" target="_blank">documentation on how to make the update&lt;/a>.&lt;/li>
+&lt;li>Removed a filter within the Code block that was preventing direct pasting of GroupEx Pro embed codes.&lt;/li>
+&lt;/ul>
+&lt;h3 id="locations--maps">Locations &amp;amp; Maps&lt;/h3>
+&lt;ul>
+&lt;li>Allow “Directions” link text to be customized by content editors&lt;/li>
+&lt;/ul>
+&lt;h3 id="ux-improvements">UX Improvements&lt;/h3>
+&lt;ul>
+&lt;li>404 Page Improvements - users who reach a 404 page will see a 404 page with the association’s basic contact information and a contact webform&lt;/li>
+&lt;/ul>
+&lt;h3 id="admin--content-editor-updates">Admin / Content Editor Updates&lt;/h3>
+&lt;ul>
+&lt;li>Created documentation for all YUSA Sandbox environments.&lt;/li>
+&lt;li>Added a
+&lt;a href="https://ds-docs.y.org/docs/glossary/" target="_blank">Glossary&lt;/a> to Website Services documentation.&lt;/li>
+&lt;li>Sandboxes, Event Content Type - ensure dates for demo event content are always set to be in the future.&lt;/li>
+&lt;li>Included node_revision_delete in distribution w/ default settings&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-fixes">Bug Fixes&lt;/h2>
+&lt;ul>
+&lt;li>Resolved an issue with H2 text size not displaying correctly&lt;/li>
+&lt;li>Removed Google Translate logo from Select Language menu&lt;/li>
+&lt;/ul></description></item><item><title>Blog: Layout Builder Roadmap</title><link>/blog/2023/03/09/layout-builder-roadmap/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>/blog/2023/03/09/layout-builder-roadmap/</guid><description>
 &lt;p>Skip to:
 &lt;a href="#layout-builder-v1">v1&lt;/a> |
 &lt;a href="#layout-builder-v2">v2&lt;/a> |
