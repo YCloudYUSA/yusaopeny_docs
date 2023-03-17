@@ -1,4 +1,19 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Digital Services Updates</title><link>/blog/</link><description>Recent content in Digital Services Updates on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Digital Services Release 9.2.13</title><link>/blog/2023/03/14/digital-services-release-9.2.13/</link><pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate><guid>/blog/2023/03/14/digital-services-release-9.2.13/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Digital Services Updates</title><link>/blog/</link><description>Recent content in Digital Services Updates on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Virtual Y 1.6.6</title><link>/blog/2023/03/15/virtual-y-1.6.6/</link><pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate><guid>/blog/2023/03/15/virtual-y-1.6.6/</guid><description>
+&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;/h2>
+&lt;ul>
+&lt;li>Updated documentation for VY
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/virtual-ymca/1on1/" target="_blank">1:1 Meetings&lt;/a>&lt;/li>
+&lt;li>VY custom provider trims spaces from email addresses on CSV import.&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-fixes">Bug Fixes&lt;/h2>
+&lt;ul>
+&lt;li>Resolved issue with users not being able to join 1:1 Meetings&lt;/li>
+&lt;li>Fixed broken previews for Shared Content.&lt;/li>
+&lt;li>Applied a Gated Content patch to remove errors.&lt;/li>
+&lt;li>Fixed menu styling issues.&lt;/li>
+&lt;li>Resolved an issue with YouTube videos not displaying after JS is recompiled.&lt;/li>
+&lt;li>Fixed VY Daxko SSO so that it does not intentionally overwrite the API whitelist URL.&lt;/li>
+&lt;/ul></description></item><item><title>Blog: Digital Services Release 9.2.13</title><link>/blog/2023/03/14/digital-services-release-9.2.13/</link><pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate><guid>/blog/2023/03/14/digital-services-release-9.2.13/</guid><description>
 &lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;/h2>
 &lt;h3 id="layout-builder-v2">Layout Builder (v2)&lt;/h3>
 &lt;p>Expanding upon the December release, we are making additional components and content types compatible with Layout Builder.

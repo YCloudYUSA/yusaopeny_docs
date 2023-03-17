@@ -222,104 +222,278 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;p>The sidebar area also allows you embed paragraphs below a section that links to the centers tagged in the post, the categories and a &lt;em>Related Content field&lt;/em> that allows you to promote other Blog Posts by tagging them with the autocomplete widget.&lt;/p>
 &lt;h3 id="layouts">Layouts&lt;/h3>
 &lt;p>While you have the option to build layouts in blog posts using paragraphs, all blog posts are strictly two-column layouts. The Content Area displays on the left while the Sidebar Area displays on the right.&lt;/p></description></item><item><title>Docs: Branch</title><link>/docs/user-documentation/content-types/branch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/branch/</guid><description>
-&lt;p>&lt;strong>One of the first places members go when they visit a Y website is to their local Y’s page. In YMCA Website Services, you create pages for a wellness facility with the Branch content type.&lt;/strong>&lt;/p>
-&lt;hr>
-&lt;p>
-&lt;img src="upload://qaEmMaGxttuNKYSzZRH4IrVvTc5.png" alt="carnation&amp;amp;ndash;branch&amp;amp;ndash;tablet_1|375x500, 75%" />&lt;/p>
-&lt;p>
-&lt;img src="upload://iQD92lirDJvqK5np1vuQ0M2Ar4p.jpeg" alt="lily&amp;amp;ndash;branch&amp;amp;ndash;tablet.PNG|375x500, 75%" />&lt;/p>
-&lt;h2 id="collecting-standard-information-for-your-branch">Collecting Standard Information for Your Branch&lt;/h2>
-&lt;p>When you create a branch, you create a page for that branch, a card listing on your locations page, and a tag for blogs, sessions, events, membership types and news posts.&lt;/p>
-&lt;p>Most of your general information will display in your header.&lt;/p>
-&lt;p>Your branch amenities will only display if you add a “Branch Amenities with Icons” paragraph in your bottom or content Area&lt;/p>
-&lt;hr>
-&lt;h2 id="branch-information-fields">Branch Information Fields&lt;/h2>
-&lt;h3 id="general-information">General Information&lt;/h3>
-&lt;h4 id="--title">-&amp;gt; Title&lt;/h4>
-&lt;p>This is the name of your branch, which will display as your page title and the title in the location card.&lt;/p>
-&lt;p>There is no separate field for the full name of your facility (e.g., Downtown Nashville YMCA Burkholder Center) versus the common name (Downtown YMCA). The best practice would be to use the shorter, more common name for readability.&lt;/p>
-&lt;h4 id="--neighborhood">-&amp;gt; Neighborhood&lt;/h4>
-&lt;p>An optional reference to specify which neighborhood your Y is located in (e.g., “East Nashville” for the Margaret Maddox YMCA). Start typing and select from the list of neighborhoods that appear.&lt;/p>
-&lt;p>To add a new neighborhood, add it to the “Area” vocabulary under Structure &amp;gt; Taxonomy.&lt;/p>
-&lt;hr>
+&lt;p>Branch pages contain multiple data fields that work together to help members find the right location, hours, and amenities that fits their needs.&lt;/p>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Branch Page -
+&lt;a href="/img/designs/lb/Branch%20Location%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Branch%20Location%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>Branch Amenities -
+&lt;a href="/img/designs/lb/Branch%20Amenities%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Branch%20Amenities%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>Branch Hours -
+&lt;a href="/img/designs/lb/Branch%20Location%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Branch%20Location%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>Branch Menu -
+&lt;a href="/img/designs/lb/Branch%20Menu%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Branch%20Menu%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>Branch Social Links -
+&lt;a href="/img/designs/lb/Branch%20Social%20Links%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Branch%20Social%20Links%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="../../../../../../assets/img/branch-carnation-old.png">Legacy Branch Page (Carnation theme)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="../../../../../../assets/img/branch-lily-old.jpeg">Legacy Branch Page (Lily theme)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="creating-a-branch">Creating a Branch&lt;/h2>
+&lt;p>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Branch&lt;/strong>&lt;/p>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;h3 id="general-info">General Info&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): This is the name of your branch, which will display as your page title and the title in the location card. If your branch has a longer formal name we recommend using the shorter, more common name for readability.&lt;/li>
+&lt;li>&lt;strong>Neighborhood&lt;/strong>: An optional reference to specify which neighborhood your Y is located in. Start typing and select from the list. To add a new neighborhood, add it to the “Area” vocabulary under &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Taxonomy&lt;/strong> (see
+&lt;a href="../../taxonomy">Taxonomy&lt;/a>).&lt;/li>
+&lt;li>&lt;strong>Coming Soon&lt;/strong>: Use this flag to indicate a newly opening branch on the Locations page.
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of a page showing &amp;amp;ldquo;Downtown YMCA&amp;amp;rdquo; with a &amp;amp;ldquo;Coming Soon&amp;amp;rdquo; flag." srcset="
+/docs/user-documentation/content-types/branch/branch-coming-soon_hu29ed1d2969befb5f9f9f9237ddcf79cc_8255_774cb96088e27eedb5df0d0ff040809e.png 458w,
+/docs/user-documentation/content-types/branch/branch-coming-soon_hu29ed1d2969befb5f9f9f9237ddcf79cc_8255_24b4eb395a68131939be91960693e4d5.png 726w,
+/docs/user-documentation/content-types/branch/branch-coming-soon_hu29ed1d2969befb5f9f9f9237ddcf79cc_8255_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-coming-soon_hu29ed1d2969befb5f9f9f9237ddcf79cc_8255_774cb96088e27eedb5df0d0ff040809e.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-coming-soon.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;li>&lt;strong>Temporary URL&lt;/strong>: Overrides the &amp;ldquo;Branch info&amp;rdquo; link on the Locations page, allowing you to link to a different internal or external page.&lt;/li>
+&lt;/ul>
 &lt;h3 id="contact-info">Contact Info&lt;/h3>
-&lt;h4 id="--address">-&amp;gt; Address:&lt;/h4>
-&lt;p>The physical address of your location. Be sure to include all address fields.&lt;/p>
-&lt;h4 id="---branch-coordinates">-&amp;gt; Branch coordinates&lt;/h4>
-&lt;p>This field pins your branch on the locations map.&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>How to Get Your Branch Coordinates from Google Maps&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>Right click on your Y and select “What’s here?” Click on the latitude/longitude number at the bottom of the card.
-&amp;gt;
-&amp;gt;
-&lt;img src="upload://4KumwfEfMol8v7BE7kFXceiBGOH.png" alt="admin__google-maps&amp;amp;ndash;whats-here|573x500, 75%" />&lt;/p>
+&lt;p>&lt;strong>Address&lt;/strong>: The physical address of your location. Be sure to include all address fields.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Below the headline, copy the first number (the non-negative number) into the latitude field. Copy the second number (the negative number) into the longitude field.
-&amp;gt;
-&amp;gt;
-&lt;img src="upload://hqLgdeW9w9ZEsDIxMm36NNZPjq8.png" alt="admin__google-maps&amp;amp;ndash;geo|573x500, 75%" />&lt;/p>
+&lt;p>&lt;strong>Branch Coordinates&lt;/strong> (required): This field pins your branch on the locations map. &lt;details>&lt;summary>To get your branch&amp;rsquo;s coordinates (
+&lt;a href="https://support.google.com/maps/answer/18539?hl=en&amp;amp;co=GENIE.Platform%3DDesktop" target="_blank">with Google Maps&lt;/a>):&lt;/summary>&lt;/p>
+&lt;ul>
+&lt;li>Search for your Y location&lt;/li>
+&lt;li>Right-click the location in the map
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of Google Maps showing the right-click menu with the latitude/longitude item selected." srcset="
+/docs/user-documentation/content-types/branch/branch-lat-long-copy_hu50e3cebd0e20c17a7f104431ff738902_20828_ffe19008376c90c2fdceee2f38339b39.png 458w,
+/docs/user-documentation/content-types/branch/branch-lat-long-copy_hu50e3cebd0e20c17a7f104431ff738902_20828_66946b5729e93638378a09503165e89f.png 726w,
+/docs/user-documentation/content-types/branch/branch-lat-long-copy_hu50e3cebd0e20c17a7f104431ff738902_20828_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-lat-long-copy_hu50e3cebd0e20c17a7f104431ff738902_20828_ffe19008376c90c2fdceee2f38339b39.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-lat-long-copy.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;li>To copy the coordinates, left-click on the latitude and longitude.&lt;/li>
+&lt;li>Paste the &lt;code>lat, long&lt;/code> into one of the fields, then cut and paste to separate them.
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Drupal Branch admin screen with the latitude and longitude separated into different fields." srcset="
+/docs/user-documentation/content-types/branch/branch-lat-long-paste_hu7e1215fb132a919b602eba944b1eefa0_29921_6c2a7e265fc64c304178fd6458fab40b.png 458w,
+/docs/user-documentation/content-types/branch/branch-lat-long-paste_hu7e1215fb132a919b602eba944b1eefa0_29921_f6f8852d55d6cb95a1baa7e766ab342f.png 726w,
+/docs/user-documentation/content-types/branch/branch-lat-long-paste_hu7e1215fb132a919b602eba944b1eefa0_29921_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-lat-long-paste_hu7e1215fb132a919b602eba944b1eefa0_29921_6c2a7e265fc64c304178fd6458fab40b.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-lat-long-paste.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
 &lt;/li>
 &lt;/ul>
-&lt;/blockquote>
-&lt;h4 id="--phonefaxemail">-&amp;gt; Phone/Fax/Email&lt;/h4>
-&lt;p>The fax is optional, but add the main line for your branch in the phone field.&lt;/p>
-&lt;p>Add a main contact email, such as
-&lt;a href="mailto:contactmyy@anytownymca.org">contactmyy@anytownymca.org&lt;/a>, rather than the email for an individual staff member.&lt;/p>
-&lt;h4 id="--directions">-&amp;gt; Directions&lt;/h4>
-&lt;p>Link to your Google Places. Add “Get Directions” in the Link Text section.&lt;/p>
-&lt;h4 id="--branch-hours">-&amp;gt; Branch Hours&lt;/h4>
-&lt;p>Add the main hours for your facility. Use the 7am-5pm format to save space. Displays in the header and on the card.&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Note&lt;/strong> - Some Ys have set up the branch hours field to include holiday hours, as well as hours for multiple parts of your facility. This is an advanced feature; talk to your agency partner if you would like this.&lt;/p>
-&lt;/blockquote>
-&lt;hr>
+&lt;/li>
+&lt;/ul>
+&lt;/details>
+&lt;ul>
+&lt;li>&lt;strong>Phone&lt;/strong> (required): The main phone line for your branch. Will be displayed as it is entered and linked to allow mobile users to tap to call.&lt;/li>
+&lt;li>&lt;strong>Fax&lt;/strong>: Optional.&lt;/li>
+&lt;li>&lt;strong>Email&lt;/strong>: We recommend you use a main contact email, such as
+&lt;a href="mailto:info@anytownymca.org">info@anytownymca.org&lt;/a>, rather than the email for an individual staff member.&lt;/li>
+&lt;li>&lt;strong>Directions&lt;/strong>: By default, a link with directions is auto-generated using the Address field. Use this field to substitute your own directions link.&lt;/li>
+&lt;/ul>
+&lt;h3 id="branch-hours">Branch Hours&lt;/h3>
+&lt;p>Add the main hours for your facility. These are displayed in the header and on the Locations page.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Custom hours label&lt;/strong>: The title displayed in the &amp;ldquo;All hours&amp;rdquo; dropdown. Clearing this field will hide the section from the Branch page.&lt;/li>
+&lt;li>&lt;strong>Mon, Tue, &amp;hellip;&lt;/strong>: Add the hours for each day of the current week. Use the format &lt;code>7am-5pm&lt;/code> to save space.&lt;/li>
+&lt;li>&lt;strong>Branch Holiday Hours&lt;/strong>: Add special hours for any upcoming holidays. These will be displayed on the site when the holiday is less than two weeks away. Add as many holiday entries as you like.
+&lt;ul>
+&lt;li>&lt;strong>Holiday Title&lt;/strong>: The displayed title of the holiday.&lt;/li>
+&lt;li>&lt;strong>Holiday Hours&lt;/strong>: The displayed hours for the holiday.&lt;/li>
+&lt;li>&lt;strong>Date&lt;/strong>: The date of the holiday. When this day is in the current week &amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>More Hours Link&lt;/strong>: An link to show additional location hours information, like another page or a PDF.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Branch Hours popup in the Branch Header" srcset="
+/docs/user-documentation/content-types/branch/branch-hours-fields_hudde2d0a4918ab851bb052266789fa24b_39518_6af88f6fcfe77300f749107a05c2f5c7.png 458w,
+/docs/user-documentation/content-types/branch/branch-hours-fields_hudde2d0a4918ab851bb052266789fa24b_39518_26b271099f0eef4c484afff9eac71788.png 726w,
+/docs/user-documentation/content-types/branch/branch-hours-fields_hudde2d0a4918ab851bb052266789fa24b_39518_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-hours-fields_hudde2d0a4918ab851bb052266789fa24b_39518_6af88f6fcfe77300f749107a05c2f5c7.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-hours-fields.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;h3 id="header-area">Header Area&lt;/h3>
+&lt;blockquote>
+&lt;p>This section is not displayed when &amp;ldquo;Use Layout Builder&amp;rdquo; is selected.&lt;/p>
+&lt;/blockquote>
 &lt;p>There is no image field for the Branch content type, so you will need to add one of the following paragraphs to add an image and title at the top of your page:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/banner-open-y-paragraphs-user-documentation/665" target="_blank">Banner&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/banner">Banner&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/small-banner-paragraphs-open-y-user-docs/725" target="_blank">Small Banner&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/small-banner">Small Banner&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/gallery-paragraphs-open-y-user-docs/715" target="_blank">Gallery&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/gallery">Gallery&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="content-area">Content Area&lt;/h3>
-&lt;p>The Branch Content Type only has one layout option—one column—and no description field. Add in almost any paragraph you want into the body of you page.&lt;/p>
+&lt;blockquote>
+&lt;p>This section is not displayed when &amp;ldquo;Use Layout Builder&amp;rdquo; is selected.&lt;/p>
+&lt;/blockquote>
+&lt;p>The Branch Content Type only has one layout option—one column—and no description field. Paragraphs will form the body of the page.&lt;/p>
 &lt;p>The following paragraph types integrate directly with Branch:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/latest-blog-posts-including-camp-branch-paragraphs-open-y-user-docs/717" target="_blank">Latest Blog Posts (Branch)&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/latest-blog-posts">Latest Blog Posts (Branch)&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/latest-news-branch-including-camp-branch-paragraphs-open-y-user-docs/718" target="_blank">Latest News Posts (Branch)&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/latest-news-posts">Latest News Posts (Branch)&lt;/a>&lt;/li>
 &lt;li>Branch Amenities with Icons (see Branch Amenities below)&lt;/li>
 &lt;/ul>
 &lt;h3 id="bottom-area">Bottom Area&lt;/h3>
+&lt;blockquote>
+&lt;p>This section is not displayed when &amp;ldquo;Use Layout Builder&amp;rdquo; is selected.&lt;/p>
+&lt;/blockquote>
 &lt;p>Use the bottom area for anchoring elements on your page. The following paragraphs are great for this area:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/small-banner-paragraphs-open-y-user-docs/725" target="_blank">Small Banner&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/small-banner">Small Banner&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/gallery-paragraphs-open-y-user-docs/715" target="_blank">Gallery&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/gallery">Gallery&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/webform-paragraph-open-y-user-docs/729" target="_blank">Webform&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/webform">Webform&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/limited-time-offer-paragraphs-open-y-user-docs/719" target="_blank">Limited Time Offer&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/limited-time-offer">Limited Time Offer&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;hr>
 &lt;h3 id="branch-amenities">Branch Amenities&lt;/h3>
-&lt;p>Type in and select which amenities are available at your branch using the autocomplete field.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Branch Amenities&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Closed Amenities&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Type in and select which amenities are available or not available at your branch using the autocomplete field.&lt;/p>
 &lt;p>
-&lt;img src="upload://y2bWNI9tEnxS53cfvzDcOKtXbVC.png" alt="admin&amp;amp;ndash;branch__amenities|690x213, 75%" />&lt;/p>
-&lt;p>If you embed a Branch Amenities with Icons paragraph on your page, the amenities will display in your content. The Amenities will also serve as filters for branches on your locations page.&lt;/p>
-&lt;p>If you don&amp;rsquo;t see an option available or would like to rename a branch amenity, go to Structure &amp;gt; Taxonomy &amp;gt; Amenities.&lt;/p>
-&lt;p>&lt;strong>####&lt;/strong> Closed Amenities
-Ys with YMCA Website Services 2.5 or later can tag amenities at a branch that have closed. Content editors will see a &amp;ldquo;Closed Amenities&amp;rdquo; field.&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot showing the Branch amenities field with autocomplete dropdown." srcset="
+/docs/user-documentation/content-types/branch/branch-select-amenities_hu7a9a4bec6c25eb13ee66e3c4d53209ff_22605_252e9e5ba0ec8189a4490a83b1c97f17.png 458w,
+/docs/user-documentation/content-types/branch/branch-select-amenities_hu7a9a4bec6c25eb13ee66e3c4d53209ff_22605_240b258e01b68e3eb7fba97cfefdf1ba.png 726w,
+/docs/user-documentation/content-types/branch/branch-select-amenities_hu7a9a4bec6c25eb13ee66e3c4d53209ff_22605_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-select-amenities_hu7a9a4bec6c25eb13ee66e3c4d53209ff_22605_252e9e5ba0ec8189a4490a83b1c97f17.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-select-amenities.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>If you embed a Branch Amenities with Icons paragraph or Branch Amenities block on your page, the amenities will display in your content. The Amenities will also serve as filters for branches on your locations page.&lt;/p>
 &lt;p>
-&lt;img src="upload://1H6H8xKzjCpEMYDKfZe7it4R40Y.png" alt="carnation&amp;amp;ndash;branch&amp;amp;ndash;closed-amenities|442x499, 50%" />
-&lt;img src="upload://a4WrDjPoqlMgnP5OtobiCzpvrZg.png" alt="admin&amp;amp;ndash;branch__amenities&amp;amp;ndash;closed-amenities|690x341, 50%" />&lt;/p></description></item><item><title>Docs: Camp</title><link>/docs/user-documentation/content-types/camp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/camp/</guid><description>
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot showing the branch amenities block with open emenities and closed amenities labeled." srcset="
+/docs/user-documentation/content-types/branch/branch-amenities-block_hu761b89c7cff04c3110690d7ef321025a_52830_f96b2f443e50ed78e0e93519d65ac711.png 458w,
+/docs/user-documentation/content-types/branch/branch-amenities-block_hu761b89c7cff04c3110690d7ef321025a_52830_f22a0dec7f791800249d6857aa515796.png 726w,
+/docs/user-documentation/content-types/branch/branch-amenities-block_hu761b89c7cff04c3110690d7ef321025a_52830_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-amenities-block_hu761b89c7cff04c3110690d7ef321025a_52830_f96b2f443e50ed78e0e93519d65ac711.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-amenities-block.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>If you don&amp;rsquo;t see an option available or would like to rename a branch amenity, go to &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Taxonomy&lt;/strong> &amp;gt; &lt;strong>Amenities&lt;/strong>. See
+&lt;a href="../../taxonomy">Taxonomy&lt;/a> for more info.&lt;/p>
+&lt;h3 id="menu">Menu&lt;/h3>
+&lt;p>The Branch Menu is a single level sub-menu that displays within a branch page (and sub-pages) that allows users to drill down to additional content specific to that branch. The Branch Menu always shows &amp;ldquo;Branch Home&amp;rdquo; as its first link.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Menu links&lt;/strong>: A list of menu links to be displayed in the menu. Allows unlimited items but we recommend a maximum of 6-8 depending on the Link text length.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the branch menu block." srcset="
+/docs/user-documentation/content-types/branch/branch-menu_hub24de2972b9bf2adac3b3b635c15a0f8_6366_cb0ffd049ca467681a92b16a7cffb8e2.png 458w,
+/docs/user-documentation/content-types/branch/branch-menu_hub24de2972b9bf2adac3b3b635c15a0f8_6366_5de4af058805b1ba32845754685d3a34.png 726w,
+/docs/user-documentation/content-types/branch/branch-menu_hub24de2972b9bf2adac3b3b635c15a0f8_6366_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-menu_hub24de2972b9bf2adac3b3b635c15a0f8_6366_cb0ffd049ca467681a92b16a7cffb8e2.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-menu.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="customizing-with-layout-builder">Customizing with Layout Builder&lt;/h2>
+&lt;p>Beginning in
+&lt;a href="/blog/2023/03/14/digital-services-release-9.2.13/">Website Services 9.2.13&lt;/a> content editors have the option of customizing the Branch page with
+&lt;a href="../../layout-builder">Layout Builder&lt;/a>. You can migrate from using Paragraphs to using Layout Builder on a branch-by-branch basis in order to ease the transition.&lt;/p>
+&lt;p>The &lt;strong>Use Layout Builder&lt;/strong> checkbox on the Branch edit page non-destructively switches between Paragraphs and Layout Builder.&lt;/p>
+&lt;h3 id="layout-builder-blocks">Layout Builder Blocks&lt;/h3>
+&lt;p>Branch pages have a number of specialized components that utilize the structured data (fields) that already exist on your branch page in newly designed Layout Builder Blocks.&lt;/p>
+&lt;p>In addition to using many of the standard Layout Builder components, Branch pages also use a number of components that display fields described above:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Branch Hours&lt;/strong>: Combines the branch title, contact information, hours, and more into a dynamic page header.
+&lt;ul>
+&lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Branch%20Hours%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Branch%20Hours%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>An image can be added to the background of this block using
+&lt;a href="../../layout-builder/advanced-options#block-styles">the Style tab&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Branch Amenities&lt;/strong>: Displays
+&lt;a href="#branch-amenities">open and closed amenities&lt;/a> in an easy-to-read grid.
+&lt;ul>
+&lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Branch%20Amenities%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Branch%20Amenities%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>An image can be added to the background of this block using
+&lt;a href="../../layout-builder/advanced-options#block-styles">the Style tab&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Branch Menu&lt;/strong>: Displays the
+&lt;a href="#menu">Branch Menu&lt;/a> links.
+&lt;ul>
+&lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Branch%20Menu%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Branch%20Menu%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>One additional component is available that requires additional information:&lt;/p>
+&lt;h4 id="branch-social-links">Branch Social Links&lt;/h4>
+&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;a href="/img/designs/lb/Branch%20Social%20Links%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Branch%20Social%20Links%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>This component allows you to place up to 6 social media links on a branch page.&lt;/p>
+&lt;ul>
+&lt;li>Add the &lt;strong>Branch Social Links&lt;/strong> block to the pre-configured &lt;strong>Social links&lt;/strong> section of your page using
+&lt;a href="../../layout-builder#blocks">the standard process&lt;/a>.&lt;/li>
+&lt;li>Add up to 6 links in the &lt;strong>Links&lt;/strong> field. Icons for each social media platform will be populated automatically.
+&lt;ul>
+&lt;li>Currently supported platforms include: Facebook, Instagram, Linkedin, Twitter, and YouTube.
+&lt;a href="https://www.drupal.org/node/add/project-issue/lb_branch_social_links_blocks" target="_blank">Request a new platform&lt;/a> if you need.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>After adding or updating the block, be sure to
+&lt;a href="../../layout-builder#saving-and-publishing">save and publish your branch&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="migrating-to-layout-builder">Migrating to Layout Builder&lt;/h3>
+&lt;p>Migrating Branches to Layout builder involves recreating some content on the page. The process is similar to
+&lt;a href="../../layout-builder#creating-a-new-page">building a new Landing Page with Layout Builder&lt;/a>, but with a lot of the work done for you!&lt;/p>
+&lt;p>Once you are ready to migrate a Branch:&lt;/p>
+&lt;ol>
+&lt;li>Either clone the page or open it in a separate tab so that it&amp;rsquo;s easier to compare content.&lt;/li>
+&lt;li>Prepare the Branch for Layout Builder:
+&lt;ul>
+&lt;li>&lt;strong>Edit&lt;/strong> the Branch,&lt;/li>
+&lt;li>Add links in the &lt;strong>Menu&lt;/strong> section if you&amp;rsquo;d like,&lt;/li>
+&lt;li>click &lt;strong>Use Layout Builder&lt;/strong>,&lt;/li>
+&lt;li>if you&amp;rsquo;d like, &lt;strong>uncheck Published&lt;/strong> while you do the migration to temporarily hide the page, then&lt;/li>
+&lt;li>&lt;strong>Save&lt;/strong>.
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Branch edit screen." srcset="
+/docs/user-documentation/content-types/branch/branch-migrate-use-lb_huf96ddf16c3fd7759c6bf2c5588225bfd_17981_249620ba76697c99541b52ed997575a4.png 458w,
+/docs/user-documentation/content-types/branch/branch-migrate-use-lb_huf96ddf16c3fd7759c6bf2c5588225bfd_17981_01277b04f28b0d10da3f32c4acca6fd4.png 726w,
+/docs/user-documentation/content-types/branch/branch-migrate-use-lb_huf96ddf16c3fd7759c6bf2c5588225bfd_17981_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-migrate-use-lb_huf96ddf16c3fd7759c6bf2c5588225bfd_17981_249620ba76697c99541b52ed997575a4.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-migrate-use-lb.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Your Branch will now display a set of default blocks: Hours (and header), Menu, Social Links, and Amenities.&lt;/li>
+&lt;li>From here, you can
+&lt;a href="../../layout-builder#updating-an-existing-page">use Layout Builder&lt;/a> to move your old content from Paragraphs into Blocks. Review the
+&lt;a href="../../layout-builder/designs">full list of designs&lt;/a> or the
+&lt;a href="/blog/2023/03/09/layout-builder-roadmap/">list of components&lt;/a> if you need help deciding how to place things. Your old content will still be available to reference in the &lt;strong>Edit&lt;/strong> tab in the old Header/Content/Footer sections.&lt;/li>
+&lt;li>When you&amp;rsquo;re finished, &lt;strong>Save&lt;/strong> the layout and &lt;strong>Publish&lt;/strong> the Branch!&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Camp</title><link>/docs/user-documentation/content-types/camp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/camp/</guid><description>
 &lt;blockquote>
 &lt;p>Camps in YMCA Website Services are physical locations where outdoor camp programming takes place.&lt;/p>
 &lt;p>&lt;em>Note: Camp is similar to the
