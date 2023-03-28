@@ -10,6 +10,7 @@
 &lt;dl>
 &lt;dt>Accordions&lt;/dt>
 &lt;dd>Expandable pairs of question/answer or header/section fields.&lt;/dd>
+&lt;dd>Maps to paragraphs: &lt;code>accordion_section, faq, ymca_accordion&lt;/code>&lt;/dd>
 &lt;dt>Cards (Horizontal &amp;amp; Vertical)&lt;/dt>
 &lt;dd>Flexible cards style components.&lt;/dd>
 &lt;dt>Carousels&lt;/dt>
@@ -125,6 +126,7 @@
 &lt;dt>Location Amenities Filter (sidebar filter)&lt;/dt>
 &lt;dd>Amenities filter on Location finder page where users can select one or more amenities and have the location results display locations where those amenities are available. Amenities can be placed into categories, and those categories can be related to location content types (Branches, Camps, Facilities)&lt;/dd>
 &lt;dt>Camp Video Banner&lt;/dt>
-&lt;dd>Hero banner that displays an auto-playing video in desktop views, and a video on-click in mobile views.
-Code Block Need to move the Code Block into a Layout Builder component.&lt;/dd>
+&lt;dd>Hero banner that displays an auto-playing video in desktop views, and a video on-click in mobile views.&lt;/dd>
+&lt;dt>Code Block&lt;/dt>
+&lt;dd>Need to move the Code Block into a Layout Builder component.&lt;/dd>
 &lt;/dl></description></item></channel></rss>

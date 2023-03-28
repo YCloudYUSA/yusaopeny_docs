@@ -4,6 +4,9 @@
 &lt;p>&lt;strong>Designs:&lt;/strong>
 &lt;a href="/img/designs/lb/Article%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Article%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/FBtQmfy9C7Q" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
 &lt;h2 id="creating-an-article">Creating an Article&lt;/h2>
 &lt;p>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Article (Layout Builder)&lt;/strong>&lt;/p>
 &lt;p>Fill in the content fields:&lt;/p>
@@ -30,6 +33,9 @@
 &lt;p>&lt;strong>Designs:&lt;/strong>
 &lt;a href="../../../../../../assets/img/designs/lb/Event%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Event%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/cxRxuYkWy-4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
 &lt;h2 id="creating-an-event">Creating an Event&lt;/h2>
 &lt;p>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Event (Layout Builder)&lt;/strong>&lt;/p>
 &lt;p>Fill in the content fields:&lt;/p>
@@ -245,6 +251,9 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;li>
 &lt;a href="../../../../../../assets/img/branch-lily-old.jpeg">Legacy Branch Page (Lily theme)&lt;/a>&lt;/li>
 &lt;/ul>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/dspC2NopTj8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
 &lt;h2 id="creating-a-branch">Creating a Branch&lt;/h2>
 &lt;p>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Branch&lt;/strong>&lt;/p>
 &lt;p>Fill in the content fields:&lt;/p>

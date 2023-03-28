@@ -91,7 +91,126 @@
 &lt;h3 id="code-block">Code Block&lt;/h3>
 &lt;p>This unformatted block allows you to use any type of HTML tag, great for for embedding scripts and iframes onto multiple pages. This block also allows more flexibility for technically-inclined content editors.&lt;/p>
 &lt;p>
-&lt;a href="../paragraphs/code">Using the Code Block Paragraph ⇒&lt;/a>&lt;/p></description></item><item><title>Docs: Paragraphs</title><link>/docs/user-documentation/paragraphs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/</guid><description>
+&lt;a href="../paragraphs/code">Using the Code Block Paragraph ⇒&lt;/a>&lt;/p></description></item><item><title>Docs: Layout Builder</title><link>/docs/user-documentation/layout-builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/</guid><description>
+&lt;p>Layout Builder is a powerful new page-building addition to your YMCA website.&lt;/p>
+&lt;blockquote>
+&lt;p>Drupal&amp;rsquo;s Layout Builder allows content editors and site builders to easily and quickly create visual layouts for displaying content. Users can customize how content is arranged on a single page, across types of content, or even create custom landing pages with an easy-to-use drag-and-drop interface.&lt;/p>
+&lt;p>-
+&lt;a href="https://www.drupal.org/docs/8/core/modules/layout-builder" target="_blank">Layout Builder on Drupal.org&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="getting-started-with-layout-builder">Getting Started with Layout Builder&lt;/h2>
+&lt;p>YMCA Website Services 9.2.12 introduces a new Content Type: &lt;strong>Landing Page (Layout Builder)&lt;/strong>. This new page will allow you to build pages using &lt;strong>
+&lt;a href="#sections">Sections&lt;/a>&lt;/strong> with different &lt;strong>
+&lt;a href="#layouts">Layouts&lt;/a>&lt;/strong> that contain &lt;strong>
+&lt;a href="#blocks">Custom Blocks&lt;/a>&lt;/strong>. Please contact your development partner if you need assistance updating the latest version.&lt;/p>
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PL6Wo-UX6nhySupPRWKqy0BFlzYLzYR8rB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;h3 id="creating-a-new-page">Creating a new page&lt;/h3>
+&lt;p>To use Layout Builder, you&amp;rsquo;ll first have to create a new page:&lt;/p>
+&lt;ul>
+&lt;li>Go to &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Landing Page (Layout Builder)&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;p>This creation page will look different from others—there are no fields!&lt;/p>
+&lt;ul>
+&lt;li>Set a page &lt;strong>Title&lt;/strong> and configure any &lt;strong>Menu settings&lt;/strong> or &lt;strong>URL alias&lt;/strong> that you&amp;rsquo;d like.&lt;/li>
+&lt;li>Ensure that &lt;strong>Published&lt;/strong> is unchecked.&lt;/li>
+&lt;li>Then &lt;strong>Save&lt;/strong> the page.&lt;/li>
+&lt;/ul>
+&lt;p>Once you&amp;rsquo;ve saved, you will see an empty page. Click the &lt;strong>Layout&lt;/strong> tab to enter Layout Builder.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="Drupal admin tabs with an arrow pointing to &amp;amp;ldquo;Layout&amp;amp;rdquo;" srcset="
+/docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_d6e919f2e030e457400498d2b9b60cc1.png 458w,
+/docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_02ea27cd664f5663be059015a1bd0c06.png 726w,
+/docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_d6e919f2e030e457400498d2b9b60cc1.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/lb_layout_tab.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="updating-an-existing-page">Updating an existing page&lt;/h3>
+&lt;p>Navigate to the page you&amp;rsquo;d like to update, then click the &lt;strong>Layout&lt;/strong> tab, like above.&lt;/p>
+&lt;p>Once you are in the Layout editor, you can create, edit, rearrange, and delete sections and blocks while viewing the page in a what-you-see-is-what-you-get preview mode.&lt;/p>
+&lt;h3 id="saving-and-publishing">Saving and publishing&lt;/h3>
+&lt;p>Changes to the page are not displayed to site viewers until you &lt;strong>Save Layout&lt;/strong> on the page and &lt;strong>Publish&lt;/strong> it.&lt;/p>
+&lt;p>When in the &lt;strong>Layout&lt;/strong> editor, you will have these options at the top of the page:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Save Layout&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Discard Changes&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Revert to Defaults&lt;/strong> will reset your page to an empty Header and Body section.&lt;/li>
+&lt;/ul>
+&lt;p>After saving your changes, be sure your page is published:&lt;/p>
+&lt;ul>
+&lt;li>Click the &lt;strong>Edit&lt;/strong> tab.&lt;/li>
+&lt;li>Check &lt;strong>Published&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Save&lt;/strong> the page.&lt;/li>
+&lt;/ul>
+&lt;h2 id="fundamentals">Fundamentals&lt;/h2>
+&lt;p>In Layout Builder, you will see the page divided up into Sections and Blocks. Your page may already be populated with a &lt;strong>Header&lt;/strong> and &lt;strong>Body&lt;/strong> section to get you started building, and you can change or edit those to fit your page.&lt;/p>
+&lt;h3 id="sections">Sections&lt;/h3>
+&lt;p>Sections create the structure of the page and contain blocks. You can drag and drop blocks between sections, but you cannot move sections themselves—you can only create sections above or below existing sections.&lt;/p>
+&lt;p>You can remove sections by clicking the small &amp;ldquo;X&amp;rdquo; link at the top left of the section. Click on &amp;ldquo;Configure &lt;Name of Section>&amp;rdquo; to edit the section layout and other options.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of a Layout Builder page with Remove, Configure, and Add buttons labeled." srcset="
+/docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_d6f703264b05f21aac6aae25a802247b.png 458w,
+/docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_dd40dfa3ce4c532a2dfa06322e777661.png 726w,
+/docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_d6f703264b05f21aac6aae25a802247b.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/lb_section_crud.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h4 id="layouts">Layouts&lt;/h4>
+&lt;p>Layouts define the structure of a section. YMCA Website Services comes with 1-, 2-, 3-, and 4-column layouts, and each layout has additional configuration options once it&amp;rsquo;s created. See
+&lt;a href="advanced-options">advanced options&lt;/a> for more details.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the &amp;amp;ldquo;Choose a layout for this section&amp;amp;rdquo; dialog with options for 1 to 4 columns." srcset="
+/docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_0e825a5cbfa066c5c0857c1c2d53df04.png 458w,
+/docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_47f8b7b6c35018a92141b4295740e8ab.png 726w,
+/docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_0e825a5cbfa066c5c0857c1c2d53df04.png" />
+&lt;figcaption>Choose a layout &lt;a href="/docs/user-documentation/layout-builder/lb_choose_layout.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the &amp;amp;ldquo;Configure Section&amp;amp;rdquo; dialog with Layout, Style, and Settings options." src="/docs/user-documentation/layout-builder/lb_section_settings.gif" />
+&lt;figcaption>Then configure the advanced Layout, Styles, and Settings.&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>Some options in this configuration may not yet be fully supported.&lt;/p>
+&lt;h3 id="blocks">Blocks&lt;/h3>
+&lt;p>While &lt;strong>Sections&lt;/strong> contain the page&amp;rsquo;s &lt;strong>structure&lt;/strong>, &lt;strong>Blocks&lt;/strong> contain its &lt;strong>content&lt;/strong>.&lt;/p>
+&lt;p>To create a block, click Add Block in any section of the page, then Create Custom Block.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot showing the Add Block and Create Custom Block buttons." srcset="
+/docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_1a1f637b48643b898a8dbad0bf8b5e1c.png 458w,
+/docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_67be2fd4b61a7e4bb0f2de565a1e7a26.png 726w,
+/docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_1a1f637b48643b898a8dbad0bf8b5e1c.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/lb_add_block.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>Your YMCA website has a wide array of blocks to choose from. In this section, you will find detailed descriptions of those blocks.&lt;/p>
+&lt;h2 id="tips-and-tricks">Tips and Tricks&lt;/h2>
+&lt;h3 id="get-more-space-for-writing">Get more space for writing&lt;/h3>
+&lt;p>The Content Editing Pane—the sidebar where you edit blocks —can sometimes be too small to get all of your content in there nicely. Simply drag anywhere on its left border to expand the pane.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="Animation showing a user dragging the border of the content editing pane to expand it." src="/docs/user-documentation/layout-builder/lb_drag_content_pane.gif" />
+&lt;figcaption>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="rearrange-blocks-easily">Rearrange blocks easily&lt;/h3>
+&lt;p>When rearranging large blocks on the page it can often be challenging to drag them around. To make this easier, uncheck &lt;strong>Show content preview&lt;/strong> at the top of the page. This will substitute the &amp;ldquo;WYSIWYG&amp;rdquo; preview for block titles, making the content much more compact.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="Animation showing the show content preview checkbox being unchecked and a block being moved." src="/docs/user-documentation/layout-builder/lb_show_content_preview.gif" />
+&lt;figcaption>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;hr>
+&lt;p>If you run into a problem,
+&lt;a href="../../../community">get in touch&lt;/a>.&lt;/p>
+&lt;p>&lt;small>Content on this page is adapted from
+&lt;a href="https://www.drupal.org/docs/8/core/modules/layout-builder" target="_blank">Drupal.org&lt;/a> and
+&lt;a href="https://brand.wwu.edu/layout-builder" target="_blank">Western Washington University&lt;/a>&lt;/small>&lt;/p></description></item><item><title>Docs: Paragraphs</title><link>/docs/user-documentation/paragraphs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/</guid><description>
 &lt;p>YMCA Website Services content editors use paragraphs to create unique layouts for their pages. Each paragraph is a section of content that comes with its own styling, functionality, and fields.&lt;/p>
 &lt;p>You can add a paragraph onto a page when you see the paragraphs dropdown field. These paragraphs will typically be inside one of the four main “Areas” inside a content type:&lt;/p>
 &lt;ul>
@@ -333,123 +452,4 @@ After that you will be able to upload multiple files via Media Browser (&lt;code
 &lt;p>Once you choose to clone a piece of content you will be presented with a complex screen asking which entities you would like to clone. In general, you can leave all of the checkboxes as they are. Changing the options could result in unintended consequences.&lt;/p>
 &lt;p>
 &lt;img src="./basics-clone-options.png" alt="" />&lt;/p>
-&lt;p>Scroll to the bottom of the checkbox options, choose &lt;strong>Take ownership&lt;/strong> if you would like your user to own the new content, then &lt;strong>Save&lt;/strong>.&lt;/p></description></item><item><title>Docs: Layout Builder</title><link>/docs/user-documentation/layout-builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/</guid><description>
-&lt;p>Layout Builder is a powerful new page-building addition to your YMCA website.&lt;/p>
-&lt;blockquote>
-&lt;p>Drupal&amp;rsquo;s Layout Builder allows content editors and site builders to easily and quickly create visual layouts for displaying content. Users can customize how content is arranged on a single page, across types of content, or even create custom landing pages with an easy-to-use drag-and-drop interface.&lt;/p>
-&lt;p>-
-&lt;a href="https://www.drupal.org/docs/8/core/modules/layout-builder" target="_blank">Layout Builder on Drupal.org&lt;/a>&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="getting-started-with-layout-builder">Getting Started with Layout Builder&lt;/h2>
-&lt;p>YMCA Website Services 9.2.12 introduces a new Content Type: &lt;strong>Landing Page (Layout Builder)&lt;/strong>. This new page will allow you to build pages using &lt;strong>
-&lt;a href="#sections">Sections&lt;/a>&lt;/strong> with different &lt;strong>
-&lt;a href="#layouts">Layouts&lt;/a>&lt;/strong> that contain &lt;strong>
-&lt;a href="#blocks">Custom Blocks&lt;/a>&lt;/strong>. Please contact your development partner if you need assistance updating the latest version.&lt;/p>
-&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PL6Wo-UX6nhySupPRWKqy0BFlzYLzYR8rB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
-&lt;h3 id="creating-a-new-page">Creating a new page&lt;/h3>
-&lt;p>To use Layout Builder, you&amp;rsquo;ll first have to create a new page:&lt;/p>
-&lt;ul>
-&lt;li>Go to &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Landing Page (Layout Builder)&lt;/strong>.&lt;/li>
-&lt;/ul>
-&lt;p>This creation page will look different from others—there are no fields!&lt;/p>
-&lt;ul>
-&lt;li>Set a page &lt;strong>Title&lt;/strong> and configure any &lt;strong>Menu settings&lt;/strong> or &lt;strong>URL alias&lt;/strong> that you&amp;rsquo;d like.&lt;/li>
-&lt;li>Ensure that &lt;strong>Published&lt;/strong> is unchecked.&lt;/li>
-&lt;li>Then &lt;strong>Save&lt;/strong> the page.&lt;/li>
-&lt;/ul>
-&lt;p>Once you&amp;rsquo;ve saved, you will see an empty page. Click the &lt;strong>Layout&lt;/strong> tab to enter Layout Builder.&lt;/p>
-&lt;p>
-&lt;figure class="image-caption">
-&lt;img alt="Drupal admin tabs with an arrow pointing to &amp;amp;ldquo;Layout&amp;amp;rdquo;" srcset="
-/docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_d6e919f2e030e457400498d2b9b60cc1.png 458w,
-/docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_02ea27cd664f5663be059015a1bd0c06.png 726w,
-/docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_d6e919f2e030e457400498d2b9b60cc1.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/lb_layout_tab.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
-&lt;/figure>
-&lt;/p>
-&lt;h3 id="updating-an-existing-page">Updating an existing page&lt;/h3>
-&lt;p>Navigate to the page you&amp;rsquo;d like to update, then click the &lt;strong>Layout&lt;/strong> tab, like above.&lt;/p>
-&lt;p>Once you are in the Layout editor, you can create, edit, rearrange, and delete sections and blocks while viewing the page in a what-you-see-is-what-you-get preview mode.&lt;/p>
-&lt;h3 id="saving-and-publishing">Saving and publishing&lt;/h3>
-&lt;p>Changes to the page are not displayed to site viewers until you &lt;strong>Save Layout&lt;/strong> on the page and &lt;strong>Publish&lt;/strong> it.&lt;/p>
-&lt;p>When in the &lt;strong>Layout&lt;/strong> editor, you will have these options at the top of the page:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Save Layout&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Discard Changes&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Revert to Defaults&lt;/strong> will reset your page to an empty Header and Body section.&lt;/li>
-&lt;/ul>
-&lt;p>After saving your changes, be sure your page is published:&lt;/p>
-&lt;ul>
-&lt;li>Click the &lt;strong>Edit&lt;/strong> tab.&lt;/li>
-&lt;li>Check &lt;strong>Published&lt;/strong>.&lt;/li>
-&lt;li>&lt;strong>Save&lt;/strong> the page.&lt;/li>
-&lt;/ul>
-&lt;h2 id="fundamentals">Fundamentals&lt;/h2>
-&lt;p>In Layout Builder, you will see the page divided up into Sections and Blocks. Your page may already be populated with a &lt;strong>Header&lt;/strong> and &lt;strong>Body&lt;/strong> section to get you started building, and you can change or edit those to fit your page.&lt;/p>
-&lt;h3 id="sections">Sections&lt;/h3>
-&lt;p>Sections create the structure of the page and contain blocks. You can drag and drop blocks between sections, but you cannot move sections themselves—you can only create sections above or below existing sections.&lt;/p>
-&lt;p>You can remove sections by clicking the small &amp;ldquo;X&amp;rdquo; link at the top left of the section. Click on &amp;ldquo;Configure &lt;Name of Section>&amp;rdquo; to edit the section layout and other options.&lt;/p>
-&lt;p>
-&lt;figure class="image-caption">
-&lt;img alt="A screenshot of a Layout Builder page with Remove, Configure, and Add buttons labeled." srcset="
-/docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_d6f703264b05f21aac6aae25a802247b.png 458w,
-/docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_dd40dfa3ce4c532a2dfa06322e777661.png 726w,
-/docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_d6f703264b05f21aac6aae25a802247b.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/lb_section_crud.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
-&lt;/figure>
-&lt;/p>
-&lt;h4 id="layouts">Layouts&lt;/h4>
-&lt;p>Layouts define the structure of a section. YMCA Website Services comes with 1-, 2-, 3-, and 4-column layouts, and each layout has additional configuration options once it&amp;rsquo;s created. See
-&lt;a href="advanced-options">advanced options&lt;/a> for more details.&lt;/p>
-&lt;p>
-&lt;figure class="image-caption">
-&lt;img alt="A screenshot of the &amp;amp;ldquo;Choose a layout for this section&amp;amp;rdquo; dialog with options for 1 to 4 columns." srcset="
-/docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_0e825a5cbfa066c5c0857c1c2d53df04.png 458w,
-/docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_47f8b7b6c35018a92141b4295740e8ab.png 726w,
-/docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_0e825a5cbfa066c5c0857c1c2d53df04.png" />
-&lt;figcaption>Choose a layout &lt;a href="/docs/user-documentation/layout-builder/lb_choose_layout.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
-&lt;/figure>
-&lt;/p>
-&lt;p>
-&lt;figure class="image-caption">
-&lt;img alt="A screenshot of the &amp;amp;ldquo;Configure Section&amp;amp;rdquo; dialog with Layout, Style, and Settings options." src="/docs/user-documentation/layout-builder/lb_section_settings.gif" />
-&lt;figcaption>Then configure the advanced Layout, Styles, and Settings.&lt;/figcaption>
-&lt;/figure>
-&lt;/p>
-&lt;p>Some options in this configuration may not yet be fully supported.&lt;/p>
-&lt;h3 id="blocks">Blocks&lt;/h3>
-&lt;p>While &lt;strong>Sections&lt;/strong> contain the page&amp;rsquo;s &lt;strong>structure&lt;/strong>, &lt;strong>Blocks&lt;/strong> contain its &lt;strong>content&lt;/strong>.&lt;/p>
-&lt;p>To create a block, click Add Block in any section of the page, then Create Custom Block.&lt;/p>
-&lt;p>
-&lt;figure class="image-caption">
-&lt;img alt="A screenshot showing the Add Block and Create Custom Block buttons." srcset="
-/docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_1a1f637b48643b898a8dbad0bf8b5e1c.png 458w,
-/docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_67be2fd4b61a7e4bb0f2de565a1e7a26.png 726w,
-/docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_1a1f637b48643b898a8dbad0bf8b5e1c.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/lb_add_block.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
-&lt;/figure>
-&lt;/p>
-&lt;p>Your YMCA website has a wide array of blocks to choose from. In this section, you will find detailed descriptions of those blocks.&lt;/p>
-&lt;h2 id="tips-and-tricks">Tips and Tricks&lt;/h2>
-&lt;h3 id="get-more-space-for-writing">Get more space for writing&lt;/h3>
-&lt;p>The Content Editing Pane—the sidebar where you edit blocks —can sometimes be too small to get all of your content in there nicely. Simply drag anywhere on its left border to expand the pane.&lt;/p>
-&lt;p>
-&lt;figure class="image-caption">
-&lt;img alt="Animation showing a user dragging the border of the content editing pane to expand it." src="/docs/user-documentation/layout-builder/lb_drag_content_pane.gif" />
-&lt;figcaption>&lt;/figcaption>
-&lt;/figure>
-&lt;/p>
-&lt;h3 id="rearrange-blocks-easily">Rearrange blocks easily&lt;/h3>
-&lt;p>When rearranging large blocks on the page it can often be challenging to drag them around. To make this easier, uncheck &lt;strong>Show content preview&lt;/strong> at the top of the page. This will substitute the &amp;ldquo;WYSIWYG&amp;rdquo; preview for block titles, making the content much more compact.&lt;/p>
-&lt;p>
-&lt;figure class="image-caption">
-&lt;img alt="Animation showing the show content preview checkbox being unchecked and a block being moved." src="/docs/user-documentation/layout-builder/lb_show_content_preview.gif" />
-&lt;figcaption>&lt;/figcaption>
-&lt;/figure>
-&lt;/p>
-&lt;hr>
-&lt;p>If you run into a problem,
-&lt;a href="../../../community">get in touch&lt;/a>.&lt;/p>
-&lt;p>&lt;small>Content on this page is adapted from
-&lt;a href="https://www.drupal.org/docs/8/core/modules/layout-builder" target="_blank">Drupal.org&lt;/a> and
-&lt;a href="https://brand.wwu.edu/layout-builder" target="_blank">Western Washington University&lt;/a>&lt;/small>&lt;/p></description></item></channel></rss>
+&lt;p>Scroll to the bottom of the checkbox options, choose &lt;strong>Take ownership&lt;/strong> if you would like your user to own the new content, then &lt;strong>Save&lt;/strong>.&lt;/p></description></item></channel></rss>
