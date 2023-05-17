@@ -725,6 +725,105 @@
 &lt;li>Use landscape-orientation images with a 4:3 or 16:9 ratio. These are common formats so often no cropping is necessary.&lt;/li>
 &lt;li>Square images are NOT recommended, as they are often cropped in unexpected ways.&lt;/li>
 &lt;li>Images are sometimes cropped from the top and bottom, so ensure faces or other focal points are in the vertical center of the image.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Live Chat</title><link>/docs/user-documentation/virtual-ymca/live-chat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/live-chat/</guid><description>
+&lt;p>This module is distributed as part of the YCMA Virtual Experience Platform (Virtual Y). Review
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content/tree/master/modules/openy_gc_livechat" target="_blank">the openy_gc_livechat README&lt;/a> for more technical information.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="The Virtual Y live chat window displaying a conversation between two users." srcset="
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-window_hu2623ba92fcb27c1b57c95331196aea93_22610_079090f8529e723a4a68b45ae3be8ba6.png 458w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-window_hu2623ba92fcb27c1b57c95331196aea93_22610_2b3ae0a08e9d98f70d4e2c43def6c3ce.png 726w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-window_hu2623ba92fcb27c1b57c95331196aea93_22610_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-window_hu2623ba92fcb27c1b57c95331196aea93_22610_079090f8529e723a4a68b45ae3be8ba6.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-window.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="initial-configuration">Initial configuration&lt;/h2>
+&lt;ol>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>) and enable the &lt;strong>Virtual Y Livechat&lt;/strong> (&lt;code>openy_gc_livechat&lt;/code>) module.&lt;/li>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Virtual Y&lt;/strong> &amp;gt; &lt;strong>Virtual YMCA Settings&lt;/strong> &amp;gt; &lt;strong>Livechat Settings&lt;/strong> (&lt;code>/admin/openy/virtual-ymca/gc-livechat-settings&lt;/code>). Review the settings, and modify if necessary.&lt;/li>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>People&lt;/strong> &amp;gt; &lt;strong>Roles&lt;/strong> &amp;gt; &lt;strong>Add role&lt;/strong> (&lt;code>/admin/people/roles/add&lt;/code>) and add a role entitled &lt;strong>Virtual Trainer&lt;/strong> if it does not exist.
+&lt;ul>
+&lt;li>Assign this role to any user who should have the ability to disable chat.&lt;/li>
+&lt;li>&lt;strong>NOTE:&lt;/strong> The &lt;code>admin&lt;/code> user will also need to have this role set.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="joining-a-live-chat">Joining a Live Chat&lt;/h2>
+&lt;ol>
+&lt;li>Visit any Live Stream event. &lt;strong>At the time that the event starts&lt;/strong>, a Live Chat button will appear below the video.
+&lt;figure class="image-caption">
+&lt;img alt="The Virtual Y Live Chat button" srcset="
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-button_hu832343de43bd6559a95bde50560491e5_7804_af38608e0332adbefc81623b3589f5a2.png 458w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-button_hu832343de43bd6559a95bde50560491e5_7804_9680d7654fb900b1b56559f55e06a53d.png 726w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-button_hu832343de43bd6559a95bde50560491e5_7804_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-button_hu832343de43bd6559a95bde50560491e5_7804_af38608e0332adbefc81623b3589f5a2.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-button.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;ul>
+&lt;li>The button &lt;strong>will not&lt;/strong> be visible before the event start time. To allow attendees to join before the meeting, set the start time to a few minutes before your actual start.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>All participants can enter the chat, set their name, and chat throughout the entire Live Stream event.
+&lt;figure class="image-caption">
+&lt;img alt="A dialog with &amp;amp;ldquo;Specify your name&amp;amp;rdquo; in a modal popup. In the upper right an arrow points to an icon with people and a gear to open this setting." srcset="
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-set-name_huab19313f6557c74d8566bc41d7583f5b_59290_464417671b4f4ab2bb941bd6f9ae2790.png 458w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-set-name_huab19313f6557c74d8566bc41d7583f5b_59290_dbd6486bf9ab0f9e4e8ec2a67c021bba.png 726w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-set-name_huab19313f6557c74d8566bc41d7583f5b_59290_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-set-name_huab19313f6557c74d8566bc41d7583f5b_59290_464417671b4f4ab2bb941bd6f9ae2790.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-set-name.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="moderating-a-live-chat">Moderating a Live Chat&lt;/h2>
+&lt;ul>
+&lt;li>At any point during a chat session, users with the &lt;strong>Virtual Trainer&lt;/strong> role have the ability to disable the chat using the &lt;strong>Disable Chat&lt;/strong> button.
+&lt;figure class="image-caption">
+&lt;img alt="The Virtual Y chat window with an arrow pointing to a button labeled &amp;amp;ldquo;Disable Chat&amp;amp;rdquo;." srcset="
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-disable-chat_huc35e9d1bdd5ba0ea801915d861d94139_20930_2291be3fac5b4adbcadaaf28dcca0ef8.png 458w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-disable-chat_huc35e9d1bdd5ba0ea801915d861d94139_20930_d5ecf59c354e04a4a73c96c1b18063a4.png 726w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-disable-chat_huc35e9d1bdd5ba0ea801915d861d94139_20930_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-disable-chat_huc35e9d1bdd5ba0ea801915d861d94139_20930_2291be3fac5b4adbcadaaf28dcca0ef8.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-disable-chat.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;li>Users will see a message saying &amp;ldquo;Instructor disabled chat for users&amp;rdquo;
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot with the text &amp;amp;ldquo;Instructor disabled chat for users&amp;amp;rdquo;" srcset="
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-instructor-disabled_hua39f88f90202257637ae811e1062d3d6_7500_3ce1af91c7b7db2be022258d1cd3a121.png 458w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-instructor-disabled_hua39f88f90202257637ae811e1062d3d6_7500_1136320c27ef2169d38a6cf46bbc7b9f.png 726w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-instructor-disabled_hua39f88f90202257637ae811e1062d3d6_7500_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-instructor-disabled_hua39f88f90202257637ae811e1062d3d6_7500_3ce1af91c7b7db2be022258d1cd3a121.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-instructor-disabled.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;li>Chat can be restarted using the &lt;strong>Restart Livechat&lt;/strong> button on the event page, next to the chat icon.
+&lt;figure class="image-caption">
+&lt;img alt="A chat icon and the text &amp;amp;ldquo;Restart livechat&amp;amp;rdquo;" srcset="
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-restart_hufe7df514085b7ef96003e03f87ae6d36_7288_2c7b5122917b5dda6f8fa88b9aa7c806.png 458w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-restart_hufe7df514085b7ef96003e03f87ae6d36_7288_29452ca30cb3d9fe8f13e9a2b14490e4.png 726w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-restart_hufe7df514085b7ef96003e03f87ae6d36_7288_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-restart_hufe7df514085b7ef96003e03f87ae6d36_7288_2c7b5122917b5dda6f8fa88b9aa7c806.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-restart.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;li>Disabling chat will remove the history of that chat from the server.&lt;/li>
+&lt;/ul>
+&lt;h2 id="chat-history">Chat History&lt;/h2>
+&lt;ul>
+&lt;li>Each Livestream saves its history for a certain amount of time.
+&lt;ul>
+&lt;li>The default is 30 days and can be configured in the &lt;strong>Live Chat Settings&lt;/strong> (&lt;code>/admin/openy/virtual-ymca/gc-livechat-settings&lt;/code>).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Chat history is saved and can be viewed at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Virtual Y&lt;/strong> &amp;gt; &lt;strong>Virtual Meeting Chat Logs&lt;/strong> (&lt;code>/admin/virtual-y/chats&lt;/code>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="troubleshooting">Troubleshooting&lt;/h2>
+&lt;ul>
+&lt;li>If the chat button is not appearing or the dialog displays &amp;ldquo;Chat is not available&amp;rdquo; or &amp;ldquo;Chat is not working at the moment&amp;rdquo; you will need to check with your development partner to ensure the
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content/tree/master/modules/openy_gc_livechat#livechat-feature-for-virtual-y" target="_blank">Livechat service&lt;/a> is properly configured on your server.
+&lt;figure class="image-caption">
+&lt;img alt="A dialog with the message &amp;amp;ldquo;Sorry, chat is not working at current moment&amp;amp;rdquo;" srcset="
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-not-working_hu802d6f5da5487dbf29521e4d55ff85bb_8124_13891201bb886e7cecb1de0b47281ccd.png 458w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-not-working_hu802d6f5da5487dbf29521e4d55ff85bb_8124_b8c92f3a030b92c1a55a4e50143e2c58.png 726w,
+/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-not-working_hu802d6f5da5487dbf29521e4d55ff85bb_8124_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-not-working_hu802d6f5da5487dbf29521e4d55ff85bb_8124_13891201bb886e7cecb1de0b47281ccd.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-not-working.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Logging</title><link>/docs/user-documentation/virtual-ymca/logging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/logging/</guid><description>
 &lt;p>Introduced in
 &lt;a href="https://github.com/ymcatwincities/openy_gated_content/releases/tag/0.7" target="_blank">Virtual Y 0.7&lt;/a>, the &amp;ldquo;Open Y Virtual YMCA Log&amp;rdquo; module generates logs to record user behavior on Virtual Y sites.&lt;/p>
