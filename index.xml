@@ -1,4 +1,36 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Docs</title><link>/</link><description>Recent content in YMCA Website Services Docs on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Virtual Y 1.6.6</title><link>/blog/2023/03/15/virtual-y-1.6.6/</link><pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate><guid>/blog/2023/03/15/virtual-y-1.6.6/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Docs</title><link>/</link><description>Recent content in YMCA Website Services Docs on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Activity Finder Security Notice</title><link>/blog/2023/04/18/activity-finder-security-notice/</link><pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate><guid>/blog/2023/04/18/activity-finder-security-notice/</guid><description>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>Activity Finder could provide an attack vector where a malicious site could use the “trusted” YMCA domain to redirect users to an untrusted site.&lt;/p>
+&lt;p>Sites using Activity Finder should immediately ensure they have &lt;code>activity_finder_trusted_redirect_host_patterns&lt;/code> configured in settings.php as per
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder#trusted-redirect-host-patterns" target="_blank">the documentation&lt;/a> and update to the
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/" target="_blank">latest release of Activity Finder&lt;/a>.&lt;/p>
+&lt;h2 id="what-is-the-problem">What is the problem?&lt;/h2>
+&lt;p>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">Activity Finder&lt;/a> provides a method for sites to redirect users to register for activities. The method passes a URL in a query string, like &lt;code>exampleymca.org/af/register-redirect/1234?url=https://exampleactivities.com...&lt;/code>.&lt;/p>
+&lt;p>Activity Finder provides a method to
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder#trusted-redirect-host-patterns" target="_blank">only allow trusted hosts&lt;/a> to be redirected, but &lt;strong>if no trusted host is configured then any host was previously allowed through&lt;/strong>.&lt;/p>
+&lt;p>This could provide an attack vector where a malicious site could use the &amp;ldquo;trusted&amp;rdquo; YMCA domain to redirect users to an untrusted site, like &lt;code>exampleymca.org/af/register-redirect/1234?url=https://examplephishers.net&lt;/code>.&lt;br>&lt;/p>
+&lt;h2 id="how-bad-is-it">How bad is it?&lt;/h2>
+&lt;p>Using the
+&lt;a href="https://security.drupal.org/riskcalc" target="_blank">Drupal Security Risk Calculator&lt;/a> this risk has been assessed as 12/25 (Moderately Critical): &lt;code>AC:Basic/A:None/CI:None/II:None/E:Exploit/TD:Default&lt;/code>.&lt;/p>
+&lt;p>Here&amp;rsquo;s what that means:&lt;/p>
+&lt;ul>
+&lt;li>Access complexity: It is trivial for an attacker to leverage the vulnerability.&lt;/li>
+&lt;li>Authentication: No authentication is needed for an exploit to be successful.&lt;/li>
+&lt;li>Confidentiality Impact: The vulnerability does not cause non-public data to become accessible.&lt;/li>
+&lt;li>Integrity Impact: The vulnerability can not allow system data to be compromised.&lt;/li>
+&lt;li>Zero-day Impact: An documented exploit does exist in the wild.&lt;/li>
+&lt;li>Target Distribution: Default module configurations are exploitable, but a config change can disable the exploit.&lt;/li>
+&lt;/ul>
+&lt;h2 id="what-do-we-do">What do we do?&lt;/h2>
+&lt;p>There are two mitigations, available to you to use immediately:&lt;/p>
+&lt;ol>
+&lt;li>If your site is actively using Activity Finder, you should immediately ensure your site has the &lt;code>activity_finder_trusted_redirect_host_patterns&lt;/code>configured in &lt;code>settings.php&lt;/code> as per
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder#trusted-redirect-host-patterns" target="_blank">the documentation&lt;/a>. After deploying this change and clearing caches, your site will be secure. &lt;strong>If you do not make this change&lt;/strong>, your Activity Finder links may stop redirecting on your next code update.&lt;/li>
+&lt;li>If your site is not actively using Activity Finder, update to the
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/4.1.15" target="_blank">latest release of Activity Finder&lt;/a> or
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder/pull/9" target="_blank">include this patch&lt;/a> to enforce the security of your site, as the Activity Finder code could still be active even though it&amp;rsquo;s not being used.&lt;/li>
+&lt;/ol></description></item><item><title>Blog: Virtual Y 1.6.6</title><link>/blog/2023/03/15/virtual-y-1.6.6/</link><pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate><guid>/blog/2023/03/15/virtual-y-1.6.6/</guid><description>
 &lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;/h2>
 &lt;ul>
 &lt;li>Updated documentation for VY
