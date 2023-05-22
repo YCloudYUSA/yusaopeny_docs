@@ -727,6 +727,61 @@ The Breadcrumbs block may not show the correct path while editing the page layou
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;li>
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Code</title><link>/docs/user-documentation/layout-builder/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/code/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;figure class="image-caption">
+&lt;img alt="" srcset="
+/docs/user-documentation/layout-builder/code/lb-code_hu41c26d7933bec0ddb12f61f18e6d43d6_33233_2c2d8f90a5d0884c66da12f28ca4d310.png 458w,
+/docs/user-documentation/layout-builder/code/lb-code_hu41c26d7933bec0ddb12f61f18e6d43d6_33233_06429e99ff55e992003b140d257a9521.png 726w,
+/docs/user-documentation/layout-builder/code/lb-code_hu41c26d7933bec0ddb12f61f18e6d43d6_33233_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/code/lb-code_hu41c26d7933bec0ddb12f61f18e6d43d6_33233_2c2d8f90a5d0884c66da12f28ca4d310.png" />
+&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/code/lb-code.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;strong>Designs:&lt;/strong> This block provides no additional presentation outside of the embedded content.&lt;/p>
+&lt;p>To use the block:&lt;/p>
+&lt;ul>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
+&lt;li>Scroll to the location on the page where you want to add a block&lt;/li>
+&lt;li>Click &lt;strong>Add block&lt;/strong>&lt;/li>
+&lt;li>In the sidebar, click &lt;strong>Create custom block&lt;/strong>&lt;/li>
+&lt;li>Choose the block to add.&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Code&lt;/strong>: Paste in the code to be embedded on the page.&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;li>
+&lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Grid CTA</title><link>/docs/user-documentation/layout-builder/grid-cta/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/grid-cta/</guid><description>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/TtABGaClzPw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>

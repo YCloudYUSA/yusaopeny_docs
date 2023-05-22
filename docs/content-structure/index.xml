@@ -436,6 +436,40 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;h2 id="code">Code&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>ws_code_block&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Project:&lt;/strong>
+&lt;a href="https://www.drupal.org/project/ws_code_block" target="_blank">ws_code_block&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Designs:&lt;/strong> This block provides no additional presentation outside of the embedded content.&lt;/li>
+&lt;/ul>
+&lt;p>Embed unfiltered HTML code in a page.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Cardinality&lt;/th>
+&lt;th>Help text&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Code&lt;/td>
+&lt;td>field_code&lt;/td>
+&lt;td>Text (formatted, long)&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Text format: &amp;ldquo;Code&amp;rdquo;&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;h2 id="grid-cta">Grid CTA&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_grid_cta&lt;/code>&lt;/li>
