@@ -1,0 +1,265 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Decoupled Applications</title><link>/tags/decoupled-applications/</link><description>Recent content in Decoupled Applications on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/tags/decoupled-applications/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Membership Calculator</title><link>/docs/user-documentation/membership/calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/calculator/</guid><description>
+&lt;p>The Membership Calculator is bundled with the distribution in the
+&lt;a href="https://github.com/open-y-subprojects/openy_custom/tree/main/openy_calc" target="_blank">&lt;code>openy_calc&lt;/code> module&lt;/a>.&lt;/p>
+&lt;h2 id="configuring-the-calculator">Configuring the Calculator&lt;/h2>
+&lt;p>The &lt;strong>Membership Calculator&lt;/strong> uses
+&lt;a href="../../content-types/membership">Membership&lt;/a> content items. Those will need to be created in order for the &lt;strong>Membership Calculator&lt;/strong> to function.&lt;/p>
+&lt;p>First, create a Membership node for each membership type your Branch or Association offers. Then, inside each Membership node, add a Membership Info Paragraph with the details of that membership at each of your Locations.&lt;/p>
+&lt;p>The Membership Calculator is a three-step process:&lt;/p>
+&lt;ol>
+&lt;li>Membership Type&lt;/li>
+&lt;li>Primary Location&lt;/li>
+&lt;li>Summary&lt;/li>
+&lt;/ol>
+&lt;h3 id="membership-type">Membership Type&lt;/h3>
+&lt;p>This step lists the Title, Image, and Description of each published Member node.&lt;/p>
+&lt;p>
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--type.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the membership calculator Type step." srcset="
+/docs/user-documentation/membership/calculator/membership-calculator--type_hube6a02be8fe484982a911e46759d1960_121074_154088b546a9980d47369d032fc7d5ed.png 458w,
+/docs/user-documentation/membership/calculator/membership-calculator--type_hube6a02be8fe484982a911e46759d1960_121074_83544fd3f62992a57d9e94d6fa282636.png 726w,
+/docs/user-documentation/membership/calculator/membership-calculator--type_hube6a02be8fe484982a911e46759d1960_121074_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--type_hube6a02be8fe484982a911e46759d1960_121074_154088b546a9980d47369d032fc7d5ed.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h3 id="primary-location">Primary Location&lt;/h3>
+&lt;p>This step provides a map with radio buttons for the member to select their primary location. Every location listed in the &lt;strong>YMCA Website Services Location Filter Settings&lt;/strong> (see Troubleshooting section below) is listed.&lt;/p>
+&lt;p>
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--location.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the membership calculator Location step." srcset="
+/docs/user-documentation/membership/calculator/membership-calculator--location_huf3bc0af79b124cc4e5ac46e05715b5e5_1125990_e910b9af30c4af7881e3b744c9b61c3f.png 458w,
+/docs/user-documentation/membership/calculator/membership-calculator--location_huf3bc0af79b124cc4e5ac46e05715b5e5_1125990_da1a25e0ca309a8a59d25f79207f841b.png 726w,
+/docs/user-documentation/membership/calculator/membership-calculator--location_huf3bc0af79b124cc4e5ac46e05715b5e5_1125990_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--location_huf3bc0af79b124cc4e5ac46e05715b5e5_1125990_e910b9af30c4af7881e3b744c9b61c3f.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h3 id="summary">Summary&lt;/h3>
+&lt;p>This page provides a link for the member to continue their registration, or a message indicating the selected membership is not provided at the selected location.&lt;/p>
+&lt;p>
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--summary-price.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the membership calculator summary step with a price listed." srcset="
+/docs/user-documentation/membership/calculator/membership-calculator--summary-price_hu2900ef33df3a05b2af3e60a6ac67985d_43812_585178b4d6b3eeb4038399fc8d6c4c80.png 458w,
+/docs/user-documentation/membership/calculator/membership-calculator--summary-price_hu2900ef33df3a05b2af3e60a6ac67985d_43812_1e51f9ab54af7137dcfa990d466a3228.png 726w,
+/docs/user-documentation/membership/calculator/membership-calculator--summary-price_hu2900ef33df3a05b2af3e60a6ac67985d_43812_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--summary-price_hu2900ef33df3a05b2af3e60a6ac67985d_43812_585178b4d6b3eeb4038399fc8d6c4c80.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--summary-none.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the membership calculator summary step showing no membership available." srcset="
+/docs/user-documentation/membership/calculator/membership-calculator--summary-none_hu1de91f018fc9b2905bae4c7a4bf6892b_43857_42b52ceaf10770390921df0029aa813f.png 458w,
+/docs/user-documentation/membership/calculator/membership-calculator--summary-none_hu1de91f018fc9b2905bae4c7a4bf6892b_43857_a5690abdf3352806722e96a239a80264.png 726w,
+/docs/user-documentation/membership/calculator/membership-calculator--summary-none_hu1de91f018fc9b2905bae4c7a4bf6892b_43857_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--summary-none_hu1de91f018fc9b2905bae4c7a4bf6892b_43857_42b52ceaf10770390921df0029aa813f.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h2 id="placing-the-calculator-on-a-page">Placing the Calculator on a page&lt;/h2>
+&lt;p>Once configured, the Membership Calculator can be placed on a page using:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="../../paragraphs/membership-calculator">Paragraphs&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="../../layout-builder">Layout Builder&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="troubleshooting">Troubleshooting&lt;/h2>
+&lt;p>On some sites, the second step of the &lt;em>Membership Calculator&lt;/em> may not show any locations. In order to resolve this, visit &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services Location Filter Settings&lt;/strong> and ensure that any Branches you want to use in the location search are checked.&lt;/p>
+&lt;p>
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--locations-filter.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot displaying the Location Filter settings." srcset="
+/docs/user-documentation/membership/calculator/membership-calculator--locations-filter_hu9192bf623bffd1c32187978f3ad5fb0e_74165_d4e411ee5d5c705a51b3ad09ce1f75fb.png 458w,
+/docs/user-documentation/membership/calculator/membership-calculator--locations-filter_hu9192bf623bffd1c32187978f3ad5fb0e_74165_87ea9ac40f26cffd09d0f5a45b3430f2.png 726w,
+/docs/user-documentation/membership/calculator/membership-calculator--locations-filter_hu9192bf623bffd1c32187978f3ad5fb0e_74165_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--locations-filter_hu9192bf623bffd1c32187978f3ad5fb0e_74165_d4e411ee5d5c705a51b3ad09ce1f75fb.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p></description></item><item><title>Docs: Membership Framework</title><link>/docs/user-documentation/membership/framework/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/framework/</guid><description>
+&lt;p>The Membership Framework is distributed in the
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships" target="_blank">&lt;code>openy_memberships&lt;/code> repository&lt;/a> and must be
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships#installation" target="_blank">added and installed&lt;/a> on top of the base distribution. We recommend working with your development partner if you wish to go this route.&lt;/p>
+&lt;p>Check out the
+&lt;a href="../../../wiki/sandboxes/#membership-framework-sandboxes">Membership Framework sandboxes&lt;/a> for a demonstration.&lt;/p>
+&lt;h2 id="membership-landing-pages">Membership Landing Pages&lt;/h2>
+&lt;p>To get started with the Membership Framework you will first need to create a number of landing pages.&lt;/p>
+&lt;p>The examples below use Paragraphs, but similar pages can be created using
+&lt;a href="../../layout-builder">Layout Builder blocks&lt;/a> and the &lt;strong>Membership Framework&lt;/strong> custom block.&lt;/p>
+&lt;h3 id="membership-builder">Membership Builder&lt;/h3>
+&lt;ul>
+&lt;li>Go to &lt;code>/node/add/landing_page&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Title:&lt;/strong> Membership Builder&lt;/li>
+&lt;li>&lt;strong>Layout:&lt;/strong> Two Columns with left sidebar&lt;/li>
+&lt;li>&lt;strong>Header Area:&lt;/strong> add “Small banner” paragraph and fill the fields&lt;/li>
+&lt;li>&lt;strong>Content area:&lt;/strong> add “Memberships” paragraph (it has pre-filled fields)&lt;/li>
+&lt;li>&lt;strong>Sidebar Area:&lt;/strong> add “Block Container” paragraph with “Memberships Desktop Sidebar” skin
+&lt;ul>
+&lt;li>&lt;strong>Block_ref:&lt;/strong> choose “Paragraph container” with “Memberships Menu Container” title&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Sidebar Area:&lt;/strong> add “Simple content” with “Memberships Button” skin and link to builder in content:&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>&amp;lt;p&amp;gt;&amp;lt;a class=&amp;#34;btn btn-primary&amp;#34; href=&amp;#34;/membership-builder&amp;#34;&amp;gt;&amp;lt;span class=&amp;#34;text&amp;#34;&amp;gt;JOIN THE Y&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Sidebar Area: add “Sidebar Menu” with &amp;ldquo;Memberships Sidebar Menu&amp;rdquo; skin to create your Memberships Menu with these items:
+&lt;ul>
+&lt;li>Membership Types&lt;/li>
+&lt;li>Member Benefits&lt;/li>
+&lt;li>Discounts&lt;/li>
+&lt;li>Corporate wellness&lt;/li>
+&lt;li>Free Trial&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;a href="/docs/user-documentation/membership/framework/membership-framework--sidebar-menu.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of memberships menu settings page." srcset="
+/docs/user-documentation/membership/framework/membership-framework--sidebar-menu_hufbde93c4cc4d24684d0cdf8caa933372_288979_3416ddce79a44ab2291e4607d95ee456.png 458w,
+/docs/user-documentation/membership/framework/membership-framework--sidebar-menu_hufbde93c4cc4d24684d0cdf8caa933372_288979_55dabdcc392e8182e8c35f3f673405ca.png 726w,
+/docs/user-documentation/membership/framework/membership-framework--sidebar-menu_hufbde93c4cc4d24684d0cdf8caa933372_288979_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/framework/membership-framework--sidebar-menu_hufbde93c4cc4d24684d0cdf8caa933372_288979_3416ddce79a44ab2291e4607d95ee456.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;ul>
+&lt;li>Sidebar Area: add “Block container” with &amp;ldquo;Memberships Feature card&amp;rdquo; skin. Use “Feature Card” block type with any content allowed in this block&lt;/li>
+&lt;li>Save the landing page&lt;/li>
+&lt;/ul>
+&lt;h3 id="membership-types">Membership Types&lt;/h3>
+&lt;ul>
+&lt;li>Go to &lt;code>/node/add/landing_page&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Title:&lt;/strong> Membership Types&lt;/li>
+&lt;li>&lt;strong>Layout:&lt;/strong> Two Columns with left sidebar&lt;/li>
+&lt;li>&lt;strong>Header Area:&lt;/strong> add “Small banner” paragraph and fill the fields&lt;/li>
+&lt;li>&lt;strong>Content Area:&lt;/strong>
+&lt;ul>
+&lt;li>add “Simple content” paragraph with “Membership Simple Content” skin and text&lt;/li>
+&lt;li>add “Membership Types Listing” with “Membership Types” skin&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Sidebar Area:&lt;/strong> follow the same steps for “Membership Builder” page&lt;/li>
+&lt;li>Save the landing page&lt;/li>
+&lt;/ul>
+&lt;h4 id="member-benefits">Member Benefits&lt;/h4>
+&lt;ul>
+&lt;li>Go to &lt;code>/node/add/landing_page&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Title:&lt;/strong> Membership Types&lt;/li>
+&lt;li>&lt;strong>Layout:&lt;/strong> Two Columns with left sidebar&lt;/li>
+&lt;li>&lt;strong>Header Area:&lt;/strong> add “Small banner” paragraph and fill the fields&lt;/li>
+&lt;li>&lt;strong>Content Area:&lt;/strong> fill the area with content. An example is shown in the next screenshot&lt;/li>
+&lt;li>&lt;strong>Sidebar Area:&lt;/strong> follow the same steps for “Membership Builder” page&lt;/li>
+&lt;li>Save the landing page&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;a href="/docs/user-documentation/membership/framework/membership-framework--benefits.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the member benefits landing page creation." srcset="
+/docs/user-documentation/membership/framework/membership-framework--benefits_huee032b7492f05bb5ab23588777355a0b_1433643_bea1bdce7a106da5a4502da654e1c80f.png 458w,
+/docs/user-documentation/membership/framework/membership-framework--benefits_huee032b7492f05bb5ab23588777355a0b_1433643_247b042166da2d0bd45a2d02f9873a38.png 726w,
+/docs/user-documentation/membership/framework/membership-framework--benefits_huee032b7492f05bb5ab23588777355a0b_1433643_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/framework/membership-framework--benefits_huee032b7492f05bb5ab23588777355a0b_1433643_bea1bdce7a106da5a4502da654e1c80f.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h3 id="discounts">Discounts&lt;/h3>
+&lt;ul>
+&lt;li>Go to &lt;code>/node/add/landing_page&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Title:&lt;/strong> Corporate wellness&lt;/li>
+&lt;li>&lt;strong>Layout:&lt;/strong> Two Columns with left sidebar&lt;/li>
+&lt;li>&lt;strong>Header Area:&lt;/strong> add “Small banner” paragraph and fill the fields&lt;/li>
+&lt;li>&lt;strong>Content Area:&lt;/strong> fill the area with content. An example is shown in the next screenshot&lt;/li>
+&lt;li>&lt;strong>Sidebar Area:&lt;/strong> follow the same steps for “Membership Builder” page&lt;/li>
+&lt;li>Save the landing page&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;a href="/docs/user-documentation/membership/framework/membership-framework--discounts.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the discounts page creation." srcset="
+/docs/user-documentation/membership/framework/membership-framework--discounts_hub4378a85b0f44d41d0cf14c319d7caca_1220045_1868ec7e10c0b9e8d4557274b175d4bc.png 458w,
+/docs/user-documentation/membership/framework/membership-framework--discounts_hub4378a85b0f44d41d0cf14c319d7caca_1220045_a7ec178aee7f14c10d25b64985badce8.png 726w,
+/docs/user-documentation/membership/framework/membership-framework--discounts_hub4378a85b0f44d41d0cf14c319d7caca_1220045_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/framework/membership-framework--discounts_hub4378a85b0f44d41d0cf14c319d7caca_1220045_1868ec7e10c0b9e8d4557274b175d4bc.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h3 id="corporate-wellness">Corporate Wellness&lt;/h3>
+&lt;ul>
+&lt;li>Go to &lt;code>/node/add/landing_page&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Title:&lt;/strong> Corporate wellness&lt;/li>
+&lt;li>&lt;strong>Layout:&lt;/strong> Two Columns with left sidebar&lt;/li>
+&lt;li>&lt;strong>Header Area:&lt;/strong> add “Small banner” paragraph and fill the fields&lt;/li>
+&lt;li>&lt;strong>Content Area:&lt;/strong> fill the area with content. An example is shown in the next screenshot&lt;/li>
+&lt;li>&lt;strong>Sidebar Area:&lt;/strong> follow the same steps for “Membership Builder” page&lt;/li>
+&lt;li>Save the landing page&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;a href="/docs/user-documentation/membership/framework/membership-framework--corporate-wellness.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the corporate wellness page creation." srcset="
+/docs/user-documentation/membership/framework/membership-framework--corporate-wellness_hu3919ba82353d370a3e6fd7a4d85d3c0c_1449597_3197d4de2f2337d8ad180a467ef069a6.png 458w,
+/docs/user-documentation/membership/framework/membership-framework--corporate-wellness_hu3919ba82353d370a3e6fd7a4d85d3c0c_1449597_0afb0aab72135ab77b2f1be9132644db.png 726w,
+/docs/user-documentation/membership/framework/membership-framework--corporate-wellness_hu3919ba82353d370a3e6fd7a4d85d3c0c_1449597_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/framework/membership-framework--corporate-wellness_hu3919ba82353d370a3e6fd7a4d85d3c0c_1449597_3197d4de2f2337d8ad180a467ef069a6.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h3 id="free-trial">Free Trial&lt;/h3>
+&lt;ul>
+&lt;li>Go to &lt;code>/node/add/landing_page&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Title:&lt;/strong> Free Trial&lt;/li>
+&lt;li>&lt;strong>Layout:&lt;/strong> Two Columns with left sidebar&lt;/li>
+&lt;li>&lt;strong>Header Area:&lt;/strong> add “Small banner” paragraph and fill the fields&lt;/li>
+&lt;li>&lt;strong>Content Area:&lt;/strong> add “Simple content” with a description&lt;/li>
+&lt;li>&lt;strong>Content Area:&lt;/strong> add ”Webform” with “Memberships Free Trial Webform” skin and “Memberships Free Trial” webform&lt;/li>
+&lt;li>&lt;strong>Sidebar Area:&lt;/strong> follow the same steps for “Membership Builder” page&lt;/li>
+&lt;/ul>
+&lt;h4 id="2-membership-products">2. Membership Products:&lt;/h4>
+&lt;ul>
+&lt;li>Go to &lt;code>/admin/commerce/products&lt;/code>&lt;/li>
+&lt;li>Click on &lt;strong>+ Add product&lt;/strong>, then choose &lt;strong>Membership&lt;/strong>&lt;/li>
+&lt;li>You&amp;rsquo;ll see these fields:
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Add-ons&lt;/strong> (used in specific cases, skip for default setup)&lt;/li>
+&lt;li>&lt;strong>Total Available&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Subfields:
+&lt;ul>
+&lt;li>&lt;strong>Related Add-on&lt;/strong> (skip for default functionality)&lt;/li>
+&lt;li>&lt;strong>Age groups&lt;/strong> (select age groups, usually Adults, Youth, Seniors)&lt;/li>
+&lt;li>&lt;strong>Total Available&lt;/strong> (number of people allowed for age group selected above for the membership product. You can add multiple groups by clicking “Add another item” for Family memberships)&lt;/li>
+&lt;li>&lt;strong>Total Free&lt;/strong> (designed for cases where extra people are allowed in the membership, but with an additional fee. Fill with the same value as Total Available for default functionality)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Branches in the product (use if a membership is specific to a branch. If &amp;ldquo;None&amp;rdquo; is selected, the membership will appear for all branches)&lt;/li>
+&lt;li>A typical setup is shown in the following screenshot
+&lt;a href="/docs/user-documentation/membership/framework/membership-framework--family-product.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the product creation display." srcset="
+/docs/user-documentation/membership/framework/membership-framework--family-product_hu2f7ecf955e1b45e7dd4b773a8d1a1f62_423411_e76b0c1d5f6c84a61e8dbdbb73e2e197.png 458w,
+/docs/user-documentation/membership/framework/membership-framework--family-product_hu2f7ecf955e1b45e7dd4b773a8d1a1f62_423411_40a5f80a75f7b4a3a66e7ecd41b2d93a.png 726w,
+/docs/user-documentation/membership/framework/membership-framework--family-product_hu2f7ecf955e1b45e7dd4b773a8d1a1f62_423411_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/framework/membership-framework--family-product_hu2f7ecf955e1b45e7dd4b773a8d1a1f62_423411_e76b0c1d5f6c84a61e8dbdbb73e2e197.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/li>
+&lt;li>Click on the “Save and add variations” button (or go to the “Variations” tab if editing a previously created product)&lt;/li>
+&lt;li>A typical setup for variations of a membership is shown in the following screenshot
+&lt;a href="/docs/user-documentation/membership/framework/membership-framework--product-variations.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of a product variations configuration." srcset="
+/docs/user-documentation/membership/framework/membership-framework--product-variations_hu418198285d7b87972ab9784408e64a5f_243456_ce17be54a74feece1c696e25d7ff4bdc.png 458w,
+/docs/user-documentation/membership/framework/membership-framework--product-variations_hu418198285d7b87972ab9784408e64a5f_243456_b11872add2f900e10d4a447ca1934993.png 726w,
+/docs/user-documentation/membership/framework/membership-framework--product-variations_hu418198285d7b87972ab9784408e64a5f_243456_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/framework/membership-framework--product-variations_hu418198285d7b87972ab9784408e64a5f_243456_ce17be54a74feece1c696e25d7ff4bdc.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

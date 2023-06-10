@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Text Editor</title><link>/docs/user-documentation/text-editor/</link><description>Recent content in Text Editor on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/user-documentation/text-editor/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Adding and Embedding Videos</title><link>/docs/user-documentation/text-editor/adding-embedding-videos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/adding-embedding-videos/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Text Editor</title><link>/docs/user-documentation/text-editor/</link><description>Recent content in Text Editor on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/user-documentation/text-editor/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Adding and Embedding Videos</title><link>/docs/user-documentation/text-editor/adding-embedding-videos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/adding-embedding-videos/</guid><description>
 &lt;h1 id="addingembedding-videos-with-the-ymca-website-services-text-editor">Adding/Embedding Videos with the YMCA Website Services Text Editor&lt;/h1>
 &lt;p>YMCA Website Services allows you to upload and embed images directly into a block of text, either from your computer or from the YMCA Website Services media library and browser.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -97,13 +97,15 @@
 &lt;p>&lt;strong>Using Links with the Text Editor&lt;/strong>
 Links are simple in YMCA Website Services - just highlight your text and click the link icon or type Ctrl+K (Windows)/Command(⌘)+K (Mac). Once the pop-up appears, type your URL into the field and click “Save.”&lt;/p>
 &lt;p>
+&lt;a href="/img/23616117608ee734ee7496acf8f0ee1c958995f6.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-description_text-editor-links" srcset="
 /img/23616117608ee734ee7496acf8f0ee1c958995f6_hu000ae0ed797dd920c05adc927e850cf2_35659_2140a9317cbe0ed3198adc517840f5f9.png 458w,
 /img/23616117608ee734ee7496acf8f0ee1c958995f6_hu000ae0ed797dd920c05adc927e850cf2_35659_c39d2a6770ae65fcc06b53004ad4a4b9.png 726w,
 /img/23616117608ee734ee7496acf8f0ee1c958995f6_hu000ae0ed797dd920c05adc927e850cf2_35659_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/23616117608ee734ee7496acf8f0ee1c958995f6_hu000ae0ed797dd920c05adc927e850cf2_35659_2140a9317cbe0ed3198adc517840f5f9.png" />
-&lt;figcaption>The link button in the CKEditor toolbar. &lt;a href="/img/23616117608ee734ee7496acf8f0ee1c958995f6.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption>The link button in the CKEditor toolbar. &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>
 &lt;figure class="image-caption">
@@ -118,20 +120,24 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 &lt;p>Ys with newer versions of YMCA Website Services can add attributes to their links, including a title (
 &lt;a href="https://en.wikipedia.org/wiki/Tooltip" target="_blank">for tooltips&lt;/a>) HTML ID, HTML rel and CSS classes. You can also opt to have your link open in a new window/tab.&lt;/p>
 &lt;p>
+&lt;a href="/img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page_text-editor-link-and-title-popup|690x300, 50%" srcset="
 /img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe_hucfbf4e52e90d12872cf49d63c512215e_18049_ea980f35a11cf5ac5151c51f1fcf4650.png 458w,
 /img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe_hucfbf4e52e90d12872cf49d63c512215e_18049_0f9e1b30294101b9a1f4aabe536b17c7.png 726w,
 /img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe_hucfbf4e52e90d12872cf49d63c512215e_18049_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe_hucfbf4e52e90d12872cf49d63c512215e_18049_ea980f35a11cf5ac5151c51f1fcf4650.png" />
-&lt;figcaption> &lt;a href="/img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
+&lt;a href="/img/6bbc2313b7b75f269c895aba35df2b9595304375.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page_text-editor-link-attributes-popup|628x500, 50%" srcset="
 /img/6bbc2313b7b75f269c895aba35df2b9595304375_hu0415d5a791f47e8f7a058269c9c3a192_54218_0e0eb48385bdd3cdd1a703658806f348.png 458w,
 /img/6bbc2313b7b75f269c895aba35df2b9595304375_hu0415d5a791f47e8f7a058269c9c3a192_54218_fd320d5e13336dde15b15c4c3d7221a8.png 726w,
 /img/6bbc2313b7b75f269c895aba35df2b9595304375_hu0415d5a791f47e8f7a058269c9c3a192_54218_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/6bbc2313b7b75f269c895aba35df2b9595304375_hu0415d5a791f47e8f7a058269c9c3a192_54218_0e0eb48385bdd3cdd1a703658806f348.png" />
-&lt;figcaption> &lt;a href="/img/6bbc2313b7b75f269c895aba35df2b9595304375.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>&lt;strong>Linking Tips&lt;/strong>&lt;/p>
 &lt;ul>
@@ -197,13 +203,15 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 &lt;h2 id="basic-text-formatting-in-text-editor">Basic Text Formatting in Text Editor&lt;/h2>
 &lt;p>Choose any of the options for your text below by clicking on the icon/performing the keyboard shortcut indicated. To format text you’ve previously typed, just highlight the text and then click on the button in the editor.&lt;/p>
 &lt;p>
+&lt;a href="/img/005bb7b2eb3fb5e7558f3b2d95462b797903decb.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-description__text-editor-buttons|690x56" srcset="
 /img/005bb7b2eb3fb5e7558f3b2d95462b797903decb_hufd2c19cdd355c3913065d216f9e7531c_32342_a26d4aca67369f0cee6753eb57950171.png 458w,
 /img/005bb7b2eb3fb5e7558f3b2d95462b797903decb_hufd2c19cdd355c3913065d216f9e7531c_32342_d7616af1155727849cda4b9dd2f16f29.png 726w,
 /img/005bb7b2eb3fb5e7558f3b2d95462b797903decb_hufd2c19cdd355c3913065d216f9e7531c_32342_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/005bb7b2eb3fb5e7558f3b2d95462b797903decb_hufd2c19cdd355c3913065d216f9e7531c_32342_a26d4aca67369f0cee6753eb57950171.png" />
-&lt;figcaption> &lt;a href="/img/005bb7b2eb3fb5e7558f3b2d95462b797903decb.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>
 &lt;a href="https://ckeditor.com/ckeditor-4/demo/#article" target="_blank">Demo Basic Text Formatting on CKEditor 4 &amp;gt;&lt;/a>&lt;/p>
@@ -236,13 +244,15 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 &lt;p>
 &lt;a href="https://community.openymca.org/t/adding-links-in-the-text-editor/645" target="_blank">As an alternate to using the link tool&lt;/a>, you can easily create buttons with YMCA Website Services using the button editor. When you click on the button icon, it will open a pop-up.&lt;/p>
 &lt;p>
+&lt;a href="/img/d5736f5507428b99030d5c88620d3f226f154cfc.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="WYSIWYG Editor options with the button tab highlighted in green." srcset="
 /img/d5736f5507428b99030d5c88620d3f226f154cfc_hub3151a40bcb4772b48026f6f433e67a0_25715_fe9c8bb931eb18958f198dc0f1cc8a97.png 458w,
 /img/d5736f5507428b99030d5c88620d3f226f154cfc_hub3151a40bcb4772b48026f6f433e67a0_25715_30318e067f639c60e8dd98e74d6e4d32.png 726w,
 /img/d5736f5507428b99030d5c88620d3f226f154cfc_hub3151a40bcb4772b48026f6f433e67a0_25715_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/d5736f5507428b99030d5c88620d3f226f154cfc_hub3151a40bcb4772b48026f6f433e67a0_25715_fe9c8bb931eb18958f198dc0f1cc8a97.png" />
-&lt;figcaption> &lt;a href="/img/d5736f5507428b99030d5c88620d3f226f154cfc.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;blockquote>
 &lt;p>You can also edit a button you&amp;rsquo;ve created previously by clicking on the link in the text editor.&lt;/p>
@@ -255,13 +265,15 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 &lt;/p>
 &lt;p>There are three tabs for creating your button: an info tab, a target tab, and an icon tab.&lt;/p>
 &lt;p>
+&lt;a href="/img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-description__text-editor-button-tabs|690x137,50%" srcset="
 /img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf_huea5daba795073207cbe6ae0a666df1f3_8881_56f7b6c1bede74fad452104e7aba1a35.png 458w,
 /img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf_huea5daba795073207cbe6ae0a666df1f3_8881_844c57c855865d6aa6e15e3ef557cb4c.png 726w,
 /img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf_huea5daba795073207cbe6ae0a666df1f3_8881_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf_huea5daba795073207cbe6ae0a666df1f3_8881_56f7b6c1bede74fad452104e7aba1a35.png" />
-&lt;figcaption> &lt;a href="/img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="info-tab">Info Tab&lt;/h2>
@@ -279,21 +291,25 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 &lt;/blockquote>
 &lt;p>The top right “Size” dropdown four options for your button size. If you chose “Link” style option, the Size option will not affect your link.&lt;/p>
 &lt;p>
+&lt;a href="/img/450d40d931e05bc00fe0d3b6d15d951b0062793d.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-destiption__text-editor-button_style|166x500,50%" srcset="
 /img/450d40d931e05bc00fe0d3b6d15d951b0062793d_hu4882779c409839c86938ea8be56e5447_83269_42be687e77e4ecb49c5e74d195252012.png 458w,
 /img/450d40d931e05bc00fe0d3b6d15d951b0062793d_hu4882779c409839c86938ea8be56e5447_83269_dc3cba338992df9ed9defad32f87fb7a.png 726w,
 /img/450d40d931e05bc00fe0d3b6d15d951b0062793d_hu4882779c409839c86938ea8be56e5447_83269_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/450d40d931e05bc00fe0d3b6d15d951b0062793d_hu4882779c409839c86938ea8be56e5447_83269_42be687e77e4ecb49c5e74d195252012.png" />
-&lt;figcaption> &lt;a href="/img/450d40d931e05bc00fe0d3b6d15d951b0062793d.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;br>
+&lt;a href="/img/a27170cb92cff52b1a9bd2590993d413b62350c7.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-destiption__text-editor-button_size|282x200,50%" srcset="
 /img/a27170cb92cff52b1a9bd2590993d413b62350c7_hu961d180292efe5a65096e2b3af1f7864_52529_dae3eb2a1f8001dfed27c42b470bd2aa.png 458w,
 /img/a27170cb92cff52b1a9bd2590993d413b62350c7_hu961d180292efe5a65096e2b3af1f7864_52529_4022479ae7ca1d4ab740e2c57c9e217b.png 726w,
 /img/a27170cb92cff52b1a9bd2590993d413b62350c7_hu961d180292efe5a65096e2b3af1f7864_52529_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/a27170cb92cff52b1a9bd2590993d413b62350c7_hu961d180292efe5a65096e2b3af1f7864_52529_dae3eb2a1f8001dfed27c42b470bd2aa.png" />
-&lt;figcaption> &lt;a href="/img/a27170cb92cff52b1a9bd2590993d413b62350c7.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>Add the text for your link/button in the bottom left. Enter your link in the URL field on the bottom right.&lt;/p>
 &lt;ul>
@@ -328,13 +344,15 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 &lt;hr>
 &lt;h2 id="icons-tab">Icons Tab&lt;/h2>
 &lt;p>
+&lt;a href="/img/4a18583fc355305c5175fe6333e5a5a4638bd07e.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-destiption__text-editor-button_icons|388x500,50%" srcset="
 /img/4a18583fc355305c5175fe6333e5a5a4638bd07e_hu720c6e08ec75f1abb89171583b8b094b_25436_fa18d84cdf1dbdac66435f3fd74cfa7b.png 458w,
 /img/4a18583fc355305c5175fe6333e5a5a4638bd07e_hu720c6e08ec75f1abb89171583b8b094b_25436_5f33e19249a90e88d317e43e960cc3f6.png 726w,
 /img/4a18583fc355305c5175fe6333e5a5a4638bd07e_hu720c6e08ec75f1abb89171583b8b094b_25436_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/4a18583fc355305c5175fe6333e5a5a4638bd07e_hu720c6e08ec75f1abb89171583b8b094b_25436_fa18d84cdf1dbdac66435f3fd74cfa7b.png" />
-&lt;figcaption> &lt;a href="/img/4a18583fc355305c5175fe6333e5a5a4638bd07e.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>You can add icons to your buttons or links in the icons tab. On the right, you will have fields that integrate with the Font Awesome library. To have an icon show up on the left, use the Left Icon text field. For the right, use the Right Icon text field.&lt;/p>
 &lt;p>&lt;em>Example:&lt;/em> For a Right Chevron, type &lt;code>fa-chevron-right&lt;/code>.&lt;/p>
@@ -353,13 +371,15 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 &lt;h2 id="adding-a-new-table">Adding a New Table&lt;/h2>
 &lt;p>To add a table, click on the table icon. A popup will appear with your initial setup options:&lt;/p>
 &lt;p>
+&lt;a href="/img/4f4624d31c5ac550174bb49165287c9d93698ead.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page-simple-content__table|586x176, 50%" srcset="
 /img/4f4624d31c5ac550174bb49165287c9d93698ead_hu71ad5675bd1571d43574e9964cd15de6_22226_5e4b44e0a38253c52f6d0b137675eaf9.png 458w,
 /img/4f4624d31c5ac550174bb49165287c9d93698ead_hu71ad5675bd1571d43574e9964cd15de6_22226_5357cf80b402e3da233e638297366780.png 726w,
 /img/4f4624d31c5ac550174bb49165287c9d93698ead_hu71ad5675bd1571d43574e9964cd15de6_22226_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/4f4624d31c5ac550174bb49165287c9d93698ead_hu71ad5675bd1571d43574e9964cd15de6_22226_5e4b44e0a38253c52f6d0b137675eaf9.png" />
-&lt;figcaption> &lt;a href="/img/4f4624d31c5ac550174bb49165287c9d93698ead.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;figure class="image-caption">
 &lt;img alt="paragraph-simple-content__table-options|320x469, 50%" src="/img/29d8b4d51f19d6ddcb056a169c597a9e2901d53f.gif" />
 &lt;figcaption>&lt;/figcaption>
@@ -395,13 +415,15 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 &lt;h2 id="editing-the-table">Editing the Table&lt;/h2>
 &lt;p>To edit a table after you’ve built one, right click on the table. To access the basic table options, click on “Table Properties.”&lt;/p>
 &lt;p>
+&lt;a href="/img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page-|296x500, 50%" srcset="
 /img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f_hub4a8eee368410bba04a68ea4208686e3_24754_7c4311ce285f4949e636b63b55d28ea6.png 458w,
 /img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f_hub4a8eee368410bba04a68ea4208686e3_24754_e9c11b5b5c9d0b91a4a215086948ff4e.png 726w,
 /img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f_hub4a8eee368410bba04a68ea4208686e3_24754_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f_hub4a8eee368410bba04a68ea4208686e3_24754_7c4311ce285f4949e636b63b55d28ea6.png" />
-&lt;figcaption> &lt;a href="/img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>You can also double-click inside a table cell.&lt;/p>
 &lt;h2 id="adding-rowscolumns">Adding Rows/Columns&lt;/h2>
@@ -413,13 +435,15 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 &lt;p>The “Cell” option from the right-click menu gives you same options as Row and Column, including inserting cells and deleting cells. You can also merge cells or split cells as you would in an excel table by selecting those options from the right-click menu.&lt;/p>
 &lt;p>However, there is another option called “Cell Properties” that allows you to style your cells as well. Just right-click &amp;gt; Cell &amp;gt; Cell Properties.&lt;/p>
 &lt;p>
+&lt;a href="/img/f6a82a1957f81cf57cba0e863bbe47044377e602.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="A sample of the available cell options when you right click on a cell, 75%" srcset="
 /img/f6a82a1957f81cf57cba0e863bbe47044377e602_hu214c5c99a54469ec12bb75ca5b896faf_42851_17a28654c5bf419f3877c344064cd9d7.png 458w,
 /img/f6a82a1957f81cf57cba0e863bbe47044377e602_hu214c5c99a54469ec12bb75ca5b896faf_42851_127ce5ff7822008eff7ccd23f9d004d5.png 726w,
 /img/f6a82a1957f81cf57cba0e863bbe47044377e602_hu214c5c99a54469ec12bb75ca5b896faf_42851_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/f6a82a1957f81cf57cba0e863bbe47044377e602_hu214c5c99a54469ec12bb75ca5b896faf_42851_17a28654c5bf419f3877c344064cd9d7.png" />
-&lt;figcaption> &lt;a href="/img/f6a82a1957f81cf57cba0e863bbe47044377e602.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>This opens a dialogue box similar to the table properties. You can set the width/height for your cell (pixels only for height; pixels or percentages for your width) in the fields on the left.&lt;/p>
 &lt;p>Farther down on the left, you can choose from a dropdown whether or not to wrap the text in a cell.&lt;/p>
@@ -434,13 +458,15 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 &lt;p>To see an example of what a table might look like on your site, open the &amp;ldquo;Source&amp;rdquo; tab on your text editor and insert the HTML. You can then edit the content inside using the WYSIWYG text editor.&lt;/p>
 &lt;h3 id="-pricing-table">// Pricing Table&lt;/h3>
 &lt;p>
+&lt;a href="/img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page-simple-content__pricing-example|690x426, 75%" srcset="
 /img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0_hu48e49a75cdf685730025926c2de945a5_36947_5653ab6c4d4e0fe8be7286cf9c9129b9.png 458w,
 /img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0_hu48e49a75cdf685730025926c2de945a5_36947_1e04115325512c2593545ece8356dbe3.png 726w,
 /img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0_hu48e49a75cdf685730025926c2de945a5_36947_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0_hu48e49a75cdf685730025926c2de945a5_36947_5653ab6c4d4e0fe8be7286cf9c9129b9.png" />
-&lt;figcaption> &lt;a href="/img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">h2&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>Registration and Pricing&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">h2&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">table&lt;/span> &lt;span style="color:#c4a000">align&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;left&amp;#34;&lt;/span> &lt;span style="color:#c4a000">border&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;1&amp;#34;&lt;/span> &lt;span style="color:#c4a000">cellpadding&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;5&amp;#34;&lt;/span> &lt;span style="color:#c4a000">cellspacing&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;1&amp;#34;&lt;/span> &lt;span style="color:#c4a000">style&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;width: 500px;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
@@ -476,13 +502,15 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">table&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="-camp-locations">// Camp Locations&lt;/h3>
 &lt;p>
+&lt;a href="/img/609efb274c09d0d2635e57f376a68b3fa372eb76.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page-simple-content__camp-locations-example|690x386" srcset="
 /img/609efb274c09d0d2635e57f376a68b3fa372eb76_hu43c36c030344367ee994f0da4e72fdb9_111365_26db651c17d6a1aba55bc97319564340.png 458w,
 /img/609efb274c09d0d2635e57f376a68b3fa372eb76_hu43c36c030344367ee994f0da4e72fdb9_111365_ffc9393dde87b5780c3034c740e77614.png 726w,
 /img/609efb274c09d0d2635e57f376a68b3fa372eb76_hu43c36c030344367ee994f0da4e72fdb9_111365_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/609efb274c09d0d2635e57f376a68b3fa372eb76_hu43c36c030344367ee994f0da4e72fdb9_111365_26db651c17d6a1aba55bc97319564340.png" />
-&lt;figcaption> &lt;a href="/img/609efb274c09d0d2635e57f376a68b3fa372eb76.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">style&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">//&lt;/span> &lt;span style="color:#204a87;font-weight:bold">To&lt;/span> &lt;span style="color:#204a87;font-weight:bold">achieve&lt;/span> &lt;span style="color:#204a87;font-weight:bold">the&lt;/span> &lt;span style="color:#204a87;font-weight:bold">full&lt;/span> &lt;span style="color:#204a87;font-weight:bold">effect&lt;/span> &lt;span style="color:#204a87;font-weight:bold">of&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span> &lt;span style="color:#204a87;font-weight:bold">table&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">,&lt;/span> &lt;span style="color:#204a87;font-weight:bold">insert&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span> &lt;span style="color:#204a87;font-weight:bold">style&lt;/span> &lt;span style="color:#204a87;font-weight:bold">tag&lt;/span> &lt;span style="color:#204a87;font-weight:bold">above&lt;/span> &lt;span style="color:#204a87;font-weight:bold">the&lt;/span> &lt;span style="color:#204a87;font-weight:bold">table&lt;/span> &lt;span style="color:#204a87;font-weight:bold">or&lt;/span> &lt;span style="color:#204a87;font-weight:bold">insert&lt;/span> &lt;span style="color:#204a87;font-weight:bold">it&lt;/span> &lt;span style="color:#204a87;font-weight:bold">into&lt;/span> &lt;span style="color:#204a87;font-weight:bold">the&lt;/span> &lt;span style="color:#204a87;font-weight:bold">CSS&lt;/span> &lt;span style="color:#204a87;font-weight:bold">Editor&lt;/span> &lt;span style="color:#204a87;font-weight:bold">module&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>

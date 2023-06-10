@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Wiki</title><link>/docs/wiki/</link><description>Recent content in Wiki on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/wiki/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Code Review Quality Best Practices</title><link>/docs/wiki/code-review-quality-best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/code-review-quality-best-practices/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Wiki</title><link>/docs/wiki/</link><description>Recent content in Wiki on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/wiki/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Code Review Quality Best Practices</title><link>/docs/wiki/code-review-quality-best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/wiki/code-review-quality-best-practices/</guid><description>
 &lt;p>This document serves as an addition to our
 &lt;a href="/docs/wiki/open-y-code-of-conduct-and-best-practices/">Code of Conduct and Best Practices&lt;/a>. It is more technical and in-depth for specific cases that were discussed during code quality review processes the YMCA Website Services team has in place. During this process, all code should be reviewed by 1-2 developers before being merged into the YMCA Website Services codebase.&lt;/p>
 &lt;h1 id="general-rules">General Rules&lt;/h1>
@@ -394,13 +394,15 @@
 &lt;a href="https://www.drupal.org/node/3215042" target="_blank">&lt;code>lifecycle&lt;/code> and &lt;code>lifecycle_link&lt;/code>&lt;/a> to the documentation in every deprecated module in order to provide enough information for the community. See
 &lt;a href="https://git.drupalcode.org/project/groupexpro/-/commit/67e7234257abe5f9107f9f5d4a0736e044879dc7" target="_blank">Deprecate openy_gxp.info.yml&lt;/a>.&lt;/li>
 &lt;li>All titles of deprecated components in the Content Editing interface should be renamed to add the suffix &lt;code>(deprecated)&lt;/code> to help Content Managers on a daily basis to not chose an old component and use a new one.
+&lt;a href="/../assets/img/deprecated_naming.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Naming Example" srcset="
 /../assets/img/deprecated_naming_hu7f920a8cae3ccb7f1e4bb0447cf70e6a_823070_6cfa2673e754b2fc9265faa283248a93.png 458w,
 /../assets/img/deprecated_naming_hu7f920a8cae3ccb7f1e4bb0447cf70e6a_823070_8e3c911f9fcfd54a9bd3cda68639d19f.png 726w,
 /../assets/img/deprecated_naming_hu7f920a8cae3ccb7f1e4bb0447cf70e6a_823070_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/../assets/img/deprecated_naming_hu7f920a8cae3ccb7f1e4bb0447cf70e6a_823070_6cfa2673e754b2fc9265faa283248a93.png" />
-&lt;figcaption> &lt;a href="/../assets/img/deprecated_naming.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/li>
 &lt;li>For the majority of content components an automated migration path is expensive and sometimes even impossible, so we have a &amp;ldquo;lazy migration&amp;rdquo; practice in our community which puts the responsibility of migration on Content Managers and Strategists. Once new components are available in the distribution all editors should start using them and rebuild old pages by replacing old components with new ones. After the communicated timeframe (6-18 months) old components are removed from the distribution, but if an association needs it the component will be available as an independent—but unsupported—project. It can be supported by a 3rd-party agency or developer as long as it is needed.&lt;/li>
 &lt;li>After the communicated timeframe (6-18 months) the Core team will remove the component from the distribution and keep it in an independent project for archival reasons. Usually, the project is marked as archived/obsolete in order to clarify that it is not supported and is possibly insecure.&lt;/li>

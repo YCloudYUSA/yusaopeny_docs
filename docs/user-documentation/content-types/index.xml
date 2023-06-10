@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Page/Content Types</title><link>/docs/user-documentation/content-types/</link><description>Recent content in Page/Content Types on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/user-documentation/content-types/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Article (Layout Builder)</title><link>/docs/user-documentation/content-types/lb-article/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/lb-article/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Page/Content Types</title><link>/docs/user-documentation/content-types/</link><description>Recent content in Page/Content Types on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/user-documentation/content-types/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Article (Layout Builder)</title><link>/docs/user-documentation/content-types/lb-article/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/lb-article/</guid><description>
 &lt;p>This gives content editors the ability to vary the layout and views display depending on the type of article created (news item, blog post, or press release). This way, if an association wants to display news items on a news page, and blog posts on a blog page, they can differentiate based on where they would like the article to display on the site.&lt;/p>
 &lt;p>Article also allows content editors to include Layout Builder components within the page.&lt;/p>
 &lt;p>&lt;strong>Designs:&lt;/strong>
@@ -263,13 +263,15 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;li>&lt;strong>Neighborhood&lt;/strong>: An optional reference to specify which neighborhood your Y is located in. Start typing and select from the list. To add a new neighborhood, add it to the “Area” vocabulary under &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Taxonomy&lt;/strong> (see
 &lt;a href="../../taxonomy">Taxonomy&lt;/a>).&lt;/li>
 &lt;li>&lt;strong>Coming Soon&lt;/strong>: Use this flag to indicate a newly opening branch on the Locations page.
+&lt;a href="/docs/user-documentation/content-types/branch/branch-coming-soon.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Screenshot of a page showing &amp;amp;ldquo;Downtown YMCA&amp;amp;rdquo; with a &amp;amp;ldquo;Coming Soon&amp;amp;rdquo; flag." srcset="
 /docs/user-documentation/content-types/branch/branch-coming-soon_hu29ed1d2969befb5f9f9f9237ddcf79cc_8255_774cb96088e27eedb5df0d0ff040809e.png 458w,
 /docs/user-documentation/content-types/branch/branch-coming-soon_hu29ed1d2969befb5f9f9f9237ddcf79cc_8255_24b4eb395a68131939be91960693e4d5.png 726w,
 /docs/user-documentation/content-types/branch/branch-coming-soon_hu29ed1d2969befb5f9f9f9237ddcf79cc_8255_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-coming-soon_hu29ed1d2969befb5f9f9f9237ddcf79cc_8255_774cb96088e27eedb5df0d0ff040809e.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-coming-soon.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/li>
 &lt;li>&lt;strong>Temporary URL&lt;/strong>: Overrides the &amp;ldquo;Branch info&amp;rdquo; link on the Locations page, allowing you to link to a different internal or external page.&lt;/li>
 &lt;/ul>
@@ -284,23 +286,27 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;ul>
 &lt;li>Search for your Y location&lt;/li>
 &lt;li>Right-click the location in the map
+&lt;a href="/docs/user-documentation/content-types/branch/branch-lat-long-copy.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Screenshot of Google Maps showing the right-click menu with the latitude/longitude item selected." srcset="
 /docs/user-documentation/content-types/branch/branch-lat-long-copy_hu50e3cebd0e20c17a7f104431ff738902_20828_ffe19008376c90c2fdceee2f38339b39.png 458w,
 /docs/user-documentation/content-types/branch/branch-lat-long-copy_hu50e3cebd0e20c17a7f104431ff738902_20828_66946b5729e93638378a09503165e89f.png 726w,
 /docs/user-documentation/content-types/branch/branch-lat-long-copy_hu50e3cebd0e20c17a7f104431ff738902_20828_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-lat-long-copy_hu50e3cebd0e20c17a7f104431ff738902_20828_ffe19008376c90c2fdceee2f38339b39.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-lat-long-copy.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/li>
 &lt;li>To copy the coordinates, left-click on the latitude and longitude.&lt;/li>
 &lt;li>Paste the &lt;code>lat, long&lt;/code> into one of the fields, then cut and paste to separate them.
+&lt;a href="/docs/user-documentation/content-types/branch/branch-lat-long-paste.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Screenshot of the Drupal Branch admin screen with the latitude and longitude separated into different fields." srcset="
 /docs/user-documentation/content-types/branch/branch-lat-long-paste_hu7e1215fb132a919b602eba944b1eefa0_29921_6c2a7e265fc64c304178fd6458fab40b.png 458w,
 /docs/user-documentation/content-types/branch/branch-lat-long-paste_hu7e1215fb132a919b602eba944b1eefa0_29921_f6f8852d55d6cb95a1baa7e766ab342f.png 726w,
 /docs/user-documentation/content-types/branch/branch-lat-long-paste_hu7e1215fb132a919b602eba944b1eefa0_29921_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-lat-long-paste_hu7e1215fb132a919b602eba944b1eefa0_29921_6c2a7e265fc64c304178fd6458fab40b.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-lat-long-paste.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -328,13 +334,15 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;li>&lt;strong>More Hours Link&lt;/strong>: An link to show additional location hours information, like another page or a PDF.&lt;/li>
 &lt;/ul>
 &lt;p>
+&lt;a href="/docs/user-documentation/content-types/branch/branch-hours-fields.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Screenshot of the Branch Hours popup in the Branch Header" srcset="
 /docs/user-documentation/content-types/branch/branch-hours-fields_hudde2d0a4918ab851bb052266789fa24b_39518_6af88f6fcfe77300f749107a05c2f5c7.png 458w,
 /docs/user-documentation/content-types/branch/branch-hours-fields_hudde2d0a4918ab851bb052266789fa24b_39518_26b271099f0eef4c484afff9eac71788.png 726w,
 /docs/user-documentation/content-types/branch/branch-hours-fields_hudde2d0a4918ab851bb052266789fa24b_39518_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-hours-fields_hudde2d0a4918ab851bb052266789fa24b_39518_6af88f6fcfe77300f749107a05c2f5c7.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-hours-fields.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;h3 id="header-area">Header Area&lt;/h3>
 &lt;blockquote>
@@ -384,23 +392,27 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;/ul>
 &lt;p>Type in and select which amenities are available or not available at your branch using the autocomplete field.&lt;/p>
 &lt;p>
+&lt;a href="/docs/user-documentation/content-types/branch/branch-select-amenities.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Screenshot showing the Branch amenities field with autocomplete dropdown." srcset="
 /docs/user-documentation/content-types/branch/branch-select-amenities_hu7a9a4bec6c25eb13ee66e3c4d53209ff_22605_252e9e5ba0ec8189a4490a83b1c97f17.png 458w,
 /docs/user-documentation/content-types/branch/branch-select-amenities_hu7a9a4bec6c25eb13ee66e3c4d53209ff_22605_240b258e01b68e3eb7fba97cfefdf1ba.png 726w,
 /docs/user-documentation/content-types/branch/branch-select-amenities_hu7a9a4bec6c25eb13ee66e3c4d53209ff_22605_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-select-amenities_hu7a9a4bec6c25eb13ee66e3c4d53209ff_22605_252e9e5ba0ec8189a4490a83b1c97f17.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-select-amenities.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>If you embed a Branch Amenities with Icons paragraph or Branch Amenities block on your page, the amenities will display in your content. The Amenities will also serve as filters for branches on your locations page.&lt;/p>
 &lt;p>
+&lt;a href="/docs/user-documentation/content-types/branch/branch-amenities-block.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Screenshot showing the branch amenities block with open emenities and closed amenities labeled." srcset="
 /docs/user-documentation/content-types/branch/branch-amenities-block_hu761b89c7cff04c3110690d7ef321025a_52830_f96b2f443e50ed78e0e93519d65ac711.png 458w,
 /docs/user-documentation/content-types/branch/branch-amenities-block_hu761b89c7cff04c3110690d7ef321025a_52830_f22a0dec7f791800249d6857aa515796.png 726w,
 /docs/user-documentation/content-types/branch/branch-amenities-block_hu761b89c7cff04c3110690d7ef321025a_52830_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-amenities-block_hu761b89c7cff04c3110690d7ef321025a_52830_f96b2f443e50ed78e0e93519d65ac711.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-amenities-block.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>If you don&amp;rsquo;t see an option available or would like to rename a branch amenity, go to &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Taxonomy&lt;/strong> &amp;gt; &lt;strong>Amenities&lt;/strong>. See
 &lt;a href="../../taxonomy">Taxonomy&lt;/a> for more info.&lt;/p>
@@ -410,13 +422,15 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;li>&lt;strong>Menu links&lt;/strong>: A list of menu links to be displayed in the menu. Allows unlimited items but we recommend a maximum of 6-8 depending on the Link text length.&lt;/li>
 &lt;/ul>
 &lt;p>
+&lt;a href="/docs/user-documentation/content-types/branch/branch-menu.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Screenshot of the branch menu block." srcset="
 /docs/user-documentation/content-types/branch/branch-menu_hub24de2972b9bf2adac3b3b635c15a0f8_6366_cb0ffd049ca467681a92b16a7cffb8e2.png 458w,
 /docs/user-documentation/content-types/branch/branch-menu_hub24de2972b9bf2adac3b3b635c15a0f8_6366_5de4af058805b1ba32845754685d3a34.png 726w,
 /docs/user-documentation/content-types/branch/branch-menu_hub24de2972b9bf2adac3b3b635c15a0f8_6366_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-menu_hub24de2972b9bf2adac3b3b635c15a0f8_6366_cb0ffd049ca467681a92b16a7cffb8e2.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-menu.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;h2 id="customizing-with-layout-builder">Customizing with Layout Builder&lt;/h2>
 &lt;p>Beginning in
@@ -486,13 +500,15 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;li>click &lt;strong>Use Layout Builder&lt;/strong>,&lt;/li>
 &lt;li>if you&amp;rsquo;d like, &lt;strong>uncheck Published&lt;/strong> while you do the migration to temporarily hide the page, then&lt;/li>
 &lt;li>&lt;strong>Save&lt;/strong>.
+&lt;a href="/docs/user-documentation/content-types/branch/branch-migrate-use-lb.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Screenshot of the Branch edit screen." srcset="
 /docs/user-documentation/content-types/branch/branch-migrate-use-lb_huf96ddf16c3fd7759c6bf2c5588225bfd_17981_249620ba76697c99541b52ed997575a4.png 458w,
 /docs/user-documentation/content-types/branch/branch-migrate-use-lb_huf96ddf16c3fd7759c6bf2c5588225bfd_17981_01277b04f28b0d10da3f32c4acca6fd4.png 726w,
 /docs/user-documentation/content-types/branch/branch-migrate-use-lb_huf96ddf16c3fd7759c6bf2c5588225bfd_17981_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-migrate-use-lb_huf96ddf16c3fd7759c6bf2c5588225bfd_17981_249620ba76697c99541b52ed997575a4.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/content-types/branch/branch-migrate-use-lb.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -639,42 +655,66 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;li>&lt;strong>Content Area&lt;/strong>: The main body of your content.&lt;/li>
 &lt;li>&lt;strong>Sidebar Area&lt;/strong> [i](Two Column Layouts Only)[/i]: For aside pieces of content, such as side navigations, promotional cards and content related to the main part of your page.&lt;/li>
 &lt;li>&lt;strong>Bottom Area&lt;/strong>: Add an anchoring element to your page, such as a promotional banner or webform.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Membership</title><link>/docs/user-documentation/content-types/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/membership/</guid><description>
-&lt;p>Membership items are the building blocks of the
-&lt;a href="https://community.openymca.org/t/membership-calculator-paragraphs-open-y-user-docs/908" target="_blank">Membership Calculator&lt;/a> and are only displayed within the Membership Calculator Paragraph.&lt;/p>
+&lt;/ul></description></item><item><title>Docs: Membership Content Type</title><link>/docs/user-documentation/content-types/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/membership/</guid><description>
 &lt;hr>
 &lt;h2 id="membership-fields">Membership Fields&lt;/h2>
 &lt;h3 id="general-information">General Information&lt;/h3>
-&lt;h4 id="--title">-&amp;gt; Title&lt;/h4>
-&lt;p>The title of the membership type to be didsplayed on the first step of the Membership Calculator.&lt;/p>
-&lt;h4 id="--description">-&amp;gt; Description&lt;/h4>
-&lt;p>A short description to be displayed on the first step of the Membership Calculator.&lt;/p>
-&lt;h4 id="--image">-&amp;gt; Image&lt;/h4>
-&lt;p>An reusable image field to be displayed on the first step of the Membership Calculator.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title:&lt;/strong> The title of the membership type to be displayed on the first step of the Membership Calculator.&lt;/li>
+&lt;li>&lt;strong>Description:&lt;/strong> A short description to be displayed on the first step of the Membership Calculator.&lt;/li>
+&lt;li>&lt;strong>Image:&lt;/strong> A reusable image field to be displayed on the first step of the Membership Calculator.&lt;/li>
+&lt;/ul>
 &lt;p>
-&lt;img src="upload://uOUfNzIlLGAbBO4XDdIBsSaceBE.png" alt="Join___Drush_Site-Install|295x479, 50%" />&lt;/p>
+&lt;a href="/docs/user-documentation/content-types/membership/membership--general-info.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot with the Membership content title, image, and description." srcset="
+/docs/user-documentation/content-types/membership/membership--general-info_hu4de17496cf5b37a0095c933c6a10d36c_41760_2313a79ca0647c2d22a9311881133dd0.png 458w,
+/docs/user-documentation/content-types/membership/membership--general-info_hu4de17496cf5b37a0095c933c6a10d36c_41760_fd88c57983d91bdc6fd81a5d67bbfe73.png 726w,
+/docs/user-documentation/content-types/membership/membership--general-info_hu4de17496cf5b37a0095c933c6a10d36c_41760_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/membership/membership--general-info_hu4de17496cf5b37a0095c933c6a10d36c_41760_2313a79ca0647c2d22a9311881133dd0.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
 &lt;h3 id="membership-info">Membership Info&lt;/h3>
 &lt;p>The Membership Info Paragraph lists detailed membership information per location. Add one &amp;ldquo;Membership Info&amp;rdquo; section for each location that your membership applies to. If a location does not offer a membership type, you can leave it out.&lt;/p>
-&lt;h4 id="--location">-&amp;gt; Location&lt;/h4>
-&lt;p>A reference to an already-existing
-&lt;a href="https://community.openymca.org/t/branch-content-types-open-y-user-docs/685" target="_blank">Branch&lt;/a>. If the branch does not exist, you&amp;rsquo;ll need to create it first.&lt;/p>
-&lt;h4 id="--link">-&amp;gt; Link&lt;/h4>
 &lt;ul>
-&lt;li>&lt;strong>URL&lt;/strong> - The link a member should be taken to to sign up for this membership at this location. See below for tips on finding this URL.&lt;/li>
-&lt;li>&lt;strong>Link Text&lt;/strong> - This field is not used.&lt;/li>
+&lt;li>&lt;strong>Location:&lt;/strong> A reference to an already-existing
+&lt;a href="../branch">Branch&lt;/a>. If the branch does not exist, you&amp;rsquo;ll need to create it first.&lt;/li>
+&lt;li>&lt;strong>Link:&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>URL:&lt;/strong> The link a member should be taken to to sign up for this membership at this location. See below for tips on finding this URL.&lt;/li>
+&lt;li>&lt;strong>Link Text:&lt;/strong> This field is not used.&lt;/li>
 &lt;/ul>
-&lt;h4 id="--join-fee">-&amp;gt; Join Fee&lt;/h4>
-&lt;p>Dollar value for how much someone has to pay to join.&lt;/p>
-&lt;h4 id="--monthly-rate">-&amp;gt; Monthly Rate&lt;/h4>
-&lt;p>Dollar value for the monthly fee of the membership.&lt;/p>
+&lt;/li>
+&lt;li>&lt;strong>Join Fee:&lt;/strong> Dollar value for how much someone has to pay to join.&lt;/li>
+&lt;li>&lt;strong>Monthly Rate:&lt;/strong> Dollar value for the monthly fee of the membership.&lt;/li>
+&lt;/ul>
 &lt;p>
-&lt;img src="upload://aWgqYAaagtge4U99ocyt6EPLU9G.png" alt="Join___Drush_Site-Install|690x234" />&lt;/p>
-&lt;h2 id="heading--find-your-link">Finding your registration link&lt;/h2>
+&lt;a href="/docs/user-documentation/content-types/membership/membership--membership-info.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot labeling the membership info section fields." srcset="
+/docs/user-documentation/content-types/membership/membership--membership-info_hu0bea3810850a9696a70cdb050ed3354a_76278_a700f99b7e596907129d548ffb5e090f.png 458w,
+/docs/user-documentation/content-types/membership/membership--membership-info_hu0bea3810850a9696a70cdb050ed3354a_76278_9179827759db4355fd6000a26d4858b8.png 726w,
+/docs/user-documentation/content-types/membership/membership--membership-info_hu0bea3810850a9696a70cdb050ed3354a_76278_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/membership/membership--membership-info_hu0bea3810850a9696a70cdb050ed3354a_76278_a700f99b7e596907129d548ffb5e090f.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h2 id="finding-your-registration-link">Finding your registration link&lt;/h2>
 &lt;p>Every membership management system will have different ways of linking in for members to complete their registration. Here are a few we know about. If you have tips for a MMS not listed here, feel free to leave them in the comments.&lt;/p>
 &lt;h3 id="daxko-operations">Daxko Operations&lt;/h3>
 &lt;p>Navigate to: &lt;strong>Membership&lt;/strong> &amp;gt; &lt;strong>Membership Types&lt;/strong> &amp;gt; &lt;strong>Edit&lt;/strong> &amp;gt; &lt;strong>Online Settings&lt;/strong>. This provides the deep link to the specific membership types.&lt;/p>
 &lt;p>
-&lt;img src="upload://ytHFsuQTZGI0iEGQkJm6zwo1yhX.png" alt="image (4)|690x475" />&lt;/p></description></item><item><title>Docs: News Post</title><link>/docs/user-documentation/content-types/news-post/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/news-post/</guid><description>
+&lt;a href="/docs/user-documentation/content-types/membership/membership--daxko-link.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot showing the General Information screen of Daxko Operations" srcset="
+/docs/user-documentation/content-types/membership/membership--daxko-link_hud78bda0d6b71cc1c70b0148a32a407a8_209211_bb874d96a8ad0c3eda20ecaddf33bd0c.png 458w,
+/docs/user-documentation/content-types/membership/membership--daxko-link_hud78bda0d6b71cc1c70b0148a32a407a8_209211_4474bce5768bce57f23e086d5eb19f6c.png 726w,
+/docs/user-documentation/content-types/membership/membership--daxko-link_hud78bda0d6b71cc1c70b0148a32a407a8_209211_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/membership/membership--daxko-link_hud78bda0d6b71cc1c70b0148a32a407a8_209211_bb874d96a8ad0c3eda20ecaddf33bd0c.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p></description></item><item><title>Docs: News Post</title><link>/docs/user-documentation/content-types/news-post/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/news-post/</guid><description>
 &lt;blockquote>
 &lt;p>Designed for timely content, articles and news pieces tagged with one or more physical locations.&lt;/p>
 &lt;p>&lt;em>Note: This Content Type is

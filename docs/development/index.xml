@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Development</title><link>/docs/development/</link><description>Recent content in Development on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Onboarding</title><link>/docs/development/onboarding_to_yusa_openy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/onboarding_to_yusa_openy/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Development</title><link>/docs/development/</link><description>Recent content in Development on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Onboarding</title><link>/docs/development/onboarding_to_yusa_openy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/onboarding_to_yusa_openy/</guid><description>
 &lt;h2 id="list-of-migrated-repositoriesprojects">List of migrated repositories/projects&lt;/h2>
 &lt;p>In 2022, maintenance of the distribution moved from Open Y LLC to Y-USA. With this, repository locations have changed:&lt;/p>
 &lt;ul>
@@ -278,23 +278,27 @@ On February 28, 2023, Daxko is planning to sunset the GroupEx PRO Public API in 
 &lt;p>Embed code for GroupEx Pro schedules can be found in your GroupEx Pro admin interface.&lt;/p>
 &lt;ul>
 &lt;li>Look for the &amp;ldquo;New embed&amp;rdquo; toggle.
+&lt;a href="/docs/development/daxko/gxp-embed-toggle-new.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Screenshot showing &amp;amp;ldquo;New Schedule&amp;amp;rdquo; and other options in the GroupEx Pro admin." srcset="
 /docs/development/daxko/gxp-embed-toggle-new_hu0ff6f1e76e34483a20984fa0fbb73352_173792_7de7ad911710d52538ca3f87b31d2cb7.png 458w,
 /docs/development/daxko/gxp-embed-toggle-new_hu0ff6f1e76e34483a20984fa0fbb73352_173792_df0559da15f35f60ee98ecb695a9a312.png 726w,
 /docs/development/daxko/gxp-embed-toggle-new_hu0ff6f1e76e34483a20984fa0fbb73352_173792_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/development/daxko/gxp-embed-toggle-new_hu0ff6f1e76e34483a20984fa0fbb73352_173792_7de7ad911710d52538ca3f87b31d2cb7.png" />
-&lt;figcaption> &lt;a href="/docs/development/daxko/gxp-embed-toggle-new.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/li>
 &lt;li>Expand the options and choose any filters or colors that you prefer.&lt;/li>
 &lt;li>Disable the &amp;ldquo;Fixed Header&amp;rdquo; option.
+&lt;a href="/docs/development/daxko/gxp-embed-settings.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Screenshot showing &amp;amp;ldquo;Schedule Hosting LInk / Embedded Code for New Schdule&amp;amp;rdquo; from Daxko" srcset="
 /docs/development/daxko/gxp-embed-settings_hu27165d478c2d50a118be45bb9ad8e2ec_183448_338bc17c433ab7fc297169f328ea8f2e.png 458w,
 /docs/development/daxko/gxp-embed-settings_hu27165d478c2d50a118be45bb9ad8e2ec_183448_03410041c0dc60ce110978d134963fc3.png 726w,
 /docs/development/daxko/gxp-embed-settings_hu27165d478c2d50a118be45bb9ad8e2ec_183448_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/development/daxko/gxp-embed-settings_hu27165d478c2d50a118be45bb9ad8e2ec_183448_338bc17c433ab7fc297169f328ea8f2e.png" />
-&lt;figcaption> &lt;a href="/docs/development/daxko/gxp-embed-settings.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/li>
 &lt;li>Copy the resulting code, that will look something like this, substituting &lt;code>000&lt;/code> for your own account number, and adding any location or category filters as needed:
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">script&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
@@ -545,13 +549,15 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;li>show or hide the content type on the Locations page,&lt;/li>
 &lt;li>set the filter to be on or off by default, and&lt;/li>
 &lt;li>set the map icon.
+&lt;a href="/docs/development/map-settings-config/branch-content-type-map-settings.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Branch content type settings" srcset="
 /docs/development/map-settings-config/branch-content-type-map-settings_hu208caf786b9a37d078a724c84ce0a14a_56698_f4cb3315bb9bed861be1e35b0e233c44.png 458w,
 /docs/development/map-settings-config/branch-content-type-map-settings_hu208caf786b9a37d078a724c84ce0a14a_56698_682278bea94c1f4ab9b152c9b0334747.png 726w,
 /docs/development/map-settings-config/branch-content-type-map-settings_hu208caf786b9a37d078a724c84ce0a14a_56698_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/development/map-settings-config/branch-content-type-map-settings_hu208caf786b9a37d078a724c84ce0a14a_56698_f4cb3315bb9bed861be1e35b0e233c44.png" />
-&lt;figcaption> &lt;a href="/docs/development/map-settings-config/branch-content-type-map-settings.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/li>
 &lt;/ul>
 &lt;/li>

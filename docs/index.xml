@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Distribution Documentation</title><link>/docs/</link><description>Recent content in YMCA Website Services Distribution Documentation on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Onboarding</title><link>/docs/development/onboarding_to_yusa_openy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/onboarding_to_yusa_openy/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Distribution Documentation</title><link>/docs/</link><description>Recent content in YMCA Website Services Distribution Documentation on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Onboarding</title><link>/docs/development/onboarding_to_yusa_openy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/onboarding_to_yusa_openy/</guid><description>
 &lt;h2 id="list-of-migrated-repositoriesprojects">List of migrated repositories/projects&lt;/h2>
 &lt;p>In 2022, maintenance of the distribution moved from Open Y LLC to Y-USA. With this, repository locations have changed:&lt;/p>
 &lt;ul>
@@ -40,6 +40,627 @@
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder#open-y-activity-finder" target="_blank">Get started with the README&lt;/a>&lt;/p>
 &lt;p>
 &lt;a href="../../wiki/sandboxes/#activity-finder-sandboxes">QA Sandboxes for Activity Finder&lt;/a>&lt;/p></description></item><item><title>Docs: Designs</title><link>/docs/user-documentation/layout-builder/designs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/designs/</guid><description>
+&lt;p>The distribution has shipped with two versions of Layout Builder component designs. The first-generation &amp;ldquo;Pre-release&amp;rdquo; designs were shipped with version
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.12.1" target="_blank">9.2.12 (December 2022)&lt;/a> and
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.13.0" target="_blank">9.2.13 (March 2023)&lt;/a>. The revised and feature-complete &amp;ldquo;Design System&amp;rdquo; designs shipped with the June 2023 release.&lt;/p>
+&lt;h2 id="design-system">Design System&lt;/h2>
+&lt;h3 id="colorways">Colorways&lt;/h3>
+&lt;p>Based on the YMCA Brand Guide, the distribution contains four &amp;ldquo;colorways&amp;rdquo; that allow content editors to apply accessible, brand-compliant styles to all components on a Layout Builder-based page.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Blue&lt;/th>
+&lt;th>Green&lt;/th>
+&lt;th>Red&lt;/th>
+&lt;th>Purple&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Blue%20Colourway.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Blue Colorway Design" srcset="
+/img/designs/lb-ui-kit/Blue%20Colourway_hu1303877b727f57106771b38871faee81_1885234_c8fbe3cdbb072953e3b907b8600e494e.jpg 458w,
+/img/designs/lb-ui-kit/Blue%20Colourway_hu1303877b727f57106771b38871faee81_1885234_b714d64de135e5ff3e2ccd406c47fa08.jpg 726w,
+/img/designs/lb-ui-kit/Blue%20Colourway_hu1303877b727f57106771b38871faee81_1885234_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Blue%20Colourway_hu1303877b727f57106771b38871faee81_1885234_c8fbe3cdbb072953e3b907b8600e494e.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Green%20Colourway.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Green Colorway Design" srcset="
+/img/designs/lb-ui-kit/Green%20Colourway_hu6508f8742298089c1b59b3418c4eece5_1895864_c8f2c6f329666d7da03e11f2fd3a2adb.jpg 458w,
+/img/designs/lb-ui-kit/Green%20Colourway_hu6508f8742298089c1b59b3418c4eece5_1895864_edc5dc5f1b2287258f30907a4986d15e.jpg 726w,
+/img/designs/lb-ui-kit/Green%20Colourway_hu6508f8742298089c1b59b3418c4eece5_1895864_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Green%20Colourway_hu6508f8742298089c1b59b3418c4eece5_1895864_c8f2c6f329666d7da03e11f2fd3a2adb.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Purple%20Colourway.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Purple Colorway Design" srcset="
+/img/designs/lb-ui-kit/Purple%20Colourway_huabe449ae76cd29c9b4853634b0a04470_1859320_946db4f5b5f9d020a041f53fda3a9c1d.jpg 458w,
+/img/designs/lb-ui-kit/Purple%20Colourway_huabe449ae76cd29c9b4853634b0a04470_1859320_823feb9dab4313cc676589fc7b74af5a.jpg 726w,
+/img/designs/lb-ui-kit/Purple%20Colourway_huabe449ae76cd29c9b4853634b0a04470_1859320_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Purple%20Colourway_huabe449ae76cd29c9b4853634b0a04470_1859320_946db4f5b5f9d020a041f53fda3a9c1d.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Red%20Colourway.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Red Colorway Design" srcset="
+/img/designs/lb-ui-kit/Red%20Colourway_hu7b22d4befdbe5892f7dc524843a48367_1869546_4e206afc60283f04fe8a168ae445a6b2.jpg 458w,
+/img/designs/lb-ui-kit/Red%20Colourway_hu7b22d4befdbe5892f7dc524843a48367_1869546_d1232877a50b0fd2e183b4500e04b4fa.jpg 726w,
+/img/designs/lb-ui-kit/Red%20Colourway_hu7b22d4befdbe5892f7dc524843a48367_1869546_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Red%20Colourway_hu7b22d4befdbe5892f7dc524843a48367_1869546_4e206afc60283f04fe8a168ae445a6b2.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="content-types">Content Types&lt;/h3>
+&lt;p>The distribution provides new
+&lt;a href="../../content-types">Content Types&lt;/a> for use with Layout Builder components.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>
+&lt;a href="../../content-types/lb-article">Article&lt;/a>&lt;/th>
+&lt;th>
+&lt;a href="../../content-types/lb-branch">Branch&lt;/a>&lt;/th>
+&lt;th>
+&lt;a href="../../content-types/lb-branch">Camp&lt;/a>&lt;/th>
+&lt;th>
+&lt;a href="../../content-types/lb-event">Event&lt;/a>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Article%20CT.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Article Content Type Design" srcset="
+/img/designs/lb-ui-kit/Article%20CT_hu8b78c802ef23d72a1f175f8afba741c2_2059657_d1ae7a2ccf573fd78caed285fe0ed7d3.jpg 458w,
+/img/designs/lb-ui-kit/Article%20CT_hu8b78c802ef23d72a1f175f8afba741c2_2059657_839c49a4814022b86e60c169009da01e.jpg 726w,
+/img/designs/lb-ui-kit/Article%20CT_hu8b78c802ef23d72a1f175f8afba741c2_2059657_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Article%20CT_hu8b78c802ef23d72a1f175f8afba741c2_2059657_d1ae7a2ccf573fd78caed285fe0ed7d3.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Branch%20CT.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Branch Content Type Design" srcset="
+/img/designs/lb-ui-kit/Branch%20CT_hu9c7fe2f37c7778f8c693ac64f1fee719_1295871_d750f4bc97b9998fbbafd4746688db0e.jpg 458w,
+/img/designs/lb-ui-kit/Branch%20CT_hu9c7fe2f37c7778f8c693ac64f1fee719_1295871_687801d736c5ac769f8faf81bb2b79bc.jpg 726w,
+/img/designs/lb-ui-kit/Branch%20CT_hu9c7fe2f37c7778f8c693ac64f1fee719_1295871_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Branch%20CT_hu9c7fe2f37c7778f8c693ac64f1fee719_1295871_d750f4bc97b9998fbbafd4746688db0e.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Camp%20CT.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Camp Content Type Design" srcset="
+/img/designs/lb-ui-kit/Camp%20CT_hu7edcab8f5db6aaadf486cf9b68091115_1218802_4557d43aa85aa7c5e7e7ddf7685e489c.jpg 458w,
+/img/designs/lb-ui-kit/Camp%20CT_hu7edcab8f5db6aaadf486cf9b68091115_1218802_b46ef314ae41ac58127830fef5e22a9f.jpg 726w,
+/img/designs/lb-ui-kit/Camp%20CT_hu7edcab8f5db6aaadf486cf9b68091115_1218802_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Camp%20CT_hu7edcab8f5db6aaadf486cf9b68091115_1218802_4557d43aa85aa7c5e7e7ddf7685e489c.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Event.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Event Design" srcset="
+/img/designs/lb-ui-kit/Event_hu8b78c802ef23d72a1f175f8afba741c2_1185391_0dd2fc1950f90068fed86272eee01e52.jpg 458w,
+/img/designs/lb-ui-kit/Event_hu8b78c802ef23d72a1f175f8afba741c2_1185391_91f5661c279e74c8e8bb21c85680fbd0.jpg 726w,
+/img/designs/lb-ui-kit/Event_hu8b78c802ef23d72a1f175f8afba741c2_1185391_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Event_hu8b78c802ef23d72a1f175f8afba741c2_1185391_0dd2fc1950f90068fed86272eee01e52.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="components">Components&lt;/h3>
+&lt;p>Each of these components is available on
+&lt;a href="../">Layout Builder&lt;/a> pages via the &lt;strong>Create custom block&lt;/strong> selector.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Component&lt;/th>
+&lt;th>Design&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Accordion&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Accordion.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Accordion Design" srcset="
+/img/designs/lb-ui-kit/Accordion_hu8b78c802ef23d72a1f175f8afba741c2_298369_a3bbfc3ec7c3ab672ab45a647350e293.jpg 458w,
+/img/designs/lb-ui-kit/Accordion_hu8b78c802ef23d72a1f175f8afba741c2_298369_c37f883522a0610117f04de0cd2b5c70.jpg 726w,
+/img/designs/lb-ui-kit/Accordion_hu8b78c802ef23d72a1f175f8afba741c2_298369_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Accordion_hu8b78c802ef23d72a1f175f8afba741c2_298369_a3bbfc3ec7c3ab672ab45a647350e293.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Amenities&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Amenities.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Amenities Design" srcset="
+/img/designs/lb-ui-kit/Amenities_hu8b78c802ef23d72a1f175f8afba741c2_711041_35c1d924b3815b61807654f7d6857308.jpg 458w,
+/img/designs/lb-ui-kit/Amenities_hu8b78c802ef23d72a1f175f8afba741c2_711041_4a2ea715d525d09061941f9a306ebc8a.jpg 726w,
+/img/designs/lb-ui-kit/Amenities_hu8b78c802ef23d72a1f175f8afba741c2_711041_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Amenities_hu8b78c802ef23d72a1f175f8afba741c2_711041_35c1d924b3815b61807654f7d6857308.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Article List&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Article%20List.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Article List Design" srcset="
+/img/designs/lb-ui-kit/Article%20List_hu8b78c802ef23d72a1f175f8afba741c2_1250811_c8142261d5a8fd49760c741e62fa54dd.jpg 458w,
+/img/designs/lb-ui-kit/Article%20List_hu8b78c802ef23d72a1f175f8afba741c2_1250811_f28fcba1caa7c1d651da321309e7d9bc.jpg 726w,
+/img/designs/lb-ui-kit/Article%20List_hu8b78c802ef23d72a1f175f8afba741c2_1250811_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Article%20List_hu8b78c802ef23d72a1f175f8afba741c2_1250811_c8142261d5a8fd49760c741e62fa54dd.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>(Hero) Banner&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Banner.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="(Hero) Banner Design" srcset="
+/img/designs/lb-ui-kit/Banner_hu8b78c802ef23d72a1f175f8afba741c2_2035803_0c2ba280f477d08bec00acde90ae60cb.jpg 458w,
+/img/designs/lb-ui-kit/Banner_hu8b78c802ef23d72a1f175f8afba741c2_2035803_ddc760d3f80e81cfb53991ba7fd632b7.jpg 726w,
+/img/designs/lb-ui-kit/Banner_hu8b78c802ef23d72a1f175f8afba741c2_2035803_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Banner_hu8b78c802ef23d72a1f175f8afba741c2_2035803_0c2ba280f477d08bec00acde90ae60cb.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Branch Hours&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Branch%20Hours.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Branch Hours Design" srcset="
+/img/designs/lb-ui-kit/Branch%20Hours_hu8b78c802ef23d72a1f175f8afba741c2_270856_6c0a3014083d019e3c51e8a43622028c.jpg 458w,
+/img/designs/lb-ui-kit/Branch%20Hours_hu8b78c802ef23d72a1f175f8afba741c2_270856_7162c36717fc278683a8e05c8030c824.jpg 726w,
+/img/designs/lb-ui-kit/Branch%20Hours_hu8b78c802ef23d72a1f175f8afba741c2_270856_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Branch%20Hours_hu8b78c802ef23d72a1f175f8afba741c2_270856_6c0a3014083d019e3c51e8a43622028c.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Branch Menu&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Branch%20Menu.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Branch Menu Design" srcset="
+/img/designs/lb-ui-kit/Branch%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_253858_6dbca836218aabcd65f07f4f90ad76cf.jpg 458w,
+/img/designs/lb-ui-kit/Branch%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_253858_a7ef6da06ec3813a8f27253a49df97bd.jpg 726w,
+/img/designs/lb-ui-kit/Branch%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_253858_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Branch%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_253858_6dbca836218aabcd65f07f4f90ad76cf.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Branch Preferred Branch&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Branch%20Preferred%20Branch.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Branch Preferred Branch Design" srcset="
+/img/designs/lb-ui-kit/Branch%20Preferred%20Branch_hu8b78c802ef23d72a1f175f8afba741c2_1088231_aa194269d47d8cb19fafc9667599375f.jpg 458w,
+/img/designs/lb-ui-kit/Branch%20Preferred%20Branch_hu8b78c802ef23d72a1f175f8afba741c2_1088231_d6d6ec069426e10fa07d10f24862fbc1.jpg 726w,
+/img/designs/lb-ui-kit/Branch%20Preferred%20Branch_hu8b78c802ef23d72a1f175f8afba741c2_1088231_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Branch%20Preferred%20Branch_hu8b78c802ef23d72a1f175f8afba741c2_1088231_aa194269d47d8cb19fafc9667599375f.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Branch Social Links&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Branch%20Social%20Links.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Branch Social Links Design" srcset="
+/img/designs/lb-ui-kit/Branch%20Social%20Links_hu8b78c802ef23d72a1f175f8afba741c2_192870_745c89003574404eb865cfe5ed3a8798.jpg 458w,
+/img/designs/lb-ui-kit/Branch%20Social%20Links_hu8b78c802ef23d72a1f175f8afba741c2_192870_99526d9fa2fdfc48ea3751da8ead11a5.jpg 726w,
+/img/designs/lb-ui-kit/Branch%20Social%20Links_hu8b78c802ef23d72a1f175f8afba741c2_192870_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Branch%20Social%20Links_hu8b78c802ef23d72a1f175f8afba741c2_192870_745c89003574404eb865cfe5ed3a8798.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Breadcrumbs&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Breadcrumbs.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Breadcrumbs Design" srcset="
+/img/designs/lb-ui-kit/Breadcrumbs_hu8b78c802ef23d72a1f175f8afba741c2_335150_183125cd88d4fbaeab6bd7dcaf9c9ff0.jpg 458w,
+/img/designs/lb-ui-kit/Breadcrumbs_hu8b78c802ef23d72a1f175f8afba741c2_335150_46f59c219d3151c5941885609da4a4ab.jpg 726w,
+/img/designs/lb-ui-kit/Breadcrumbs_hu8b78c802ef23d72a1f175f8afba741c2_335150_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Breadcrumbs_hu8b78c802ef23d72a1f175f8afba741c2_335150_183125cd88d4fbaeab6bd7dcaf9c9ff0.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Camp Menu&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Camp%20Menu.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Camp Menu Design" srcset="
+/img/designs/lb-ui-kit/Camp%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_1682613_fcbb0c1af42a79ee154f0b868e5fba20.jpg 458w,
+/img/designs/lb-ui-kit/Camp%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_1682613_05b9a2ac095947450c29e412f1571091.jpg 726w,
+/img/designs/lb-ui-kit/Camp%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_1682613_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Camp%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_1682613_fcbb0c1af42a79ee154f0b868e5fba20.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Camp Video Banner&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Camp%20Video%20Banner.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Camp Video Banner Design" srcset="
+/img/designs/lb-ui-kit/Camp%20Video%20Banner_hu8b78c802ef23d72a1f175f8afba741c2_1922074_33d64b10ba3389022b4cb43ba56c058c.jpg 458w,
+/img/designs/lb-ui-kit/Camp%20Video%20Banner_hu8b78c802ef23d72a1f175f8afba741c2_1922074_8a8a760ce74b8f35aa403a5854d9aadf.jpg 726w,
+/img/designs/lb-ui-kit/Camp%20Video%20Banner_hu8b78c802ef23d72a1f175f8afba741c2_1922074_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Camp%20Video%20Banner_hu8b78c802ef23d72a1f175f8afba741c2_1922074_33d64b10ba3389022b4cb43ba56c058c.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Card&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Card.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Card Design" srcset="
+/img/designs/lb-ui-kit/Card_hu8b78c802ef23d72a1f175f8afba741c2_1924674_d8e4e461377e6b4a9336ed28a742b75f.jpg 458w,
+/img/designs/lb-ui-kit/Card_hu8b78c802ef23d72a1f175f8afba741c2_1924674_0e8d83e79f42d48abf4f3484f0e3aa66.jpg 726w,
+/img/designs/lb-ui-kit/Card_hu8b78c802ef23d72a1f175f8afba741c2_1924674_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Card_hu8b78c802ef23d72a1f175f8afba741c2_1924674_d8e4e461377e6b4a9336ed28a742b75f.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Card - Column Variations&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Card%20-%20Column%20Variations.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Card - Column Variations Design" srcset="
+/img/designs/lb-ui-kit/Card%20-%20Column%20Variations_hu8b78c802ef23d72a1f175f8afba741c2_3840580_aaf704552afc96d96bb39deecedfbcd7.jpg 458w,
+/img/designs/lb-ui-kit/Card%20-%20Column%20Variations_hu8b78c802ef23d72a1f175f8afba741c2_3840580_a074a86b1421ba1d41e17e75df1432f9.jpg 726w,
+/img/designs/lb-ui-kit/Card%20-%20Column%20Variations_hu8b78c802ef23d72a1f175f8afba741c2_3840580_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Card%20-%20Column%20Variations_hu8b78c802ef23d72a1f175f8afba741c2_3840580_aaf704552afc96d96bb39deecedfbcd7.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Carousel&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Carousel.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Carousel Design" srcset="
+/img/designs/lb-ui-kit/Carousel_hu8b78c802ef23d72a1f175f8afba741c2_419800_a77e463dd7e2cba5582c251cdc8e6cda.jpg 458w,
+/img/designs/lb-ui-kit/Carousel_hu8b78c802ef23d72a1f175f8afba741c2_419800_c9749f647418337fb8b7d99db43604a9.jpg 726w,
+/img/designs/lb-ui-kit/Carousel_hu8b78c802ef23d72a1f175f8afba741c2_419800_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Carousel_hu8b78c802ef23d72a1f175f8afba741c2_419800_a77e463dd7e2cba5582c251cdc8e6cda.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Donate&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Donate.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Donate Design" srcset="
+/img/designs/lb-ui-kit/Donate_hu8b78c802ef23d72a1f175f8afba741c2_596069_5f513af04d49e4f75352dd13f1c54ef1.jpg 458w,
+/img/designs/lb-ui-kit/Donate_hu8b78c802ef23d72a1f175f8afba741c2_596069_6a27c6b65d523fb105875a18d29498d8.jpg 726w,
+/img/designs/lb-ui-kit/Donate_hu8b78c802ef23d72a1f175f8afba741c2_596069_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Donate_hu8b78c802ef23d72a1f175f8afba741c2_596069_5f513af04d49e4f75352dd13f1c54ef1.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Event List&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Event%20List.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Event List Design" srcset="
+/img/designs/lb-ui-kit/Event%20List_hu8b78c802ef23d72a1f175f8afba741c2_766372_948893e958c988da9005b4c748f3c372.jpg 458w,
+/img/designs/lb-ui-kit/Event%20List_hu8b78c802ef23d72a1f175f8afba741c2_766372_2b3137c301942f6ea3af066b50cdb86e.jpg 726w,
+/img/designs/lb-ui-kit/Event%20List_hu8b78c802ef23d72a1f175f8afba741c2_766372_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Event%20List_hu8b78c802ef23d72a1f175f8afba741c2_766372_948893e958c988da9005b4c748f3c372.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Forms&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Forms.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Forms Design" srcset="
+/img/designs/lb-ui-kit/Forms_hu8b78c802ef23d72a1f175f8afba741c2_214132_539c22fac2a5bdaaed8a10c0d732ff9f.jpg 458w,
+/img/designs/lb-ui-kit/Forms_hu8b78c802ef23d72a1f175f8afba741c2_214132_3e0d8a276c2a09e9a7e3e49a5636d262.jpg 726w,
+/img/designs/lb-ui-kit/Forms_hu8b78c802ef23d72a1f175f8afba741c2_214132_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Forms_hu8b78c802ef23d72a1f175f8afba741c2_214132_539c22fac2a5bdaaed8a10c0d732ff9f.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Global Footer&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Global%20Footer.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Global Footer Design" srcset="
+/img/designs/lb-ui-kit/Global%20Footer_hu8b78c802ef23d72a1f175f8afba741c2_224008_d5aaf18536cea1a8f921c0775d701b9b.jpg 458w,
+/img/designs/lb-ui-kit/Global%20Footer_hu8b78c802ef23d72a1f175f8afba741c2_224008_531ad14cc3462aaa6299e234da6cefe7.jpg 726w,
+/img/designs/lb-ui-kit/Global%20Footer_hu8b78c802ef23d72a1f175f8afba741c2_224008_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Global%20Footer_hu8b78c802ef23d72a1f175f8afba741c2_224008_d5aaf18536cea1a8f921c0775d701b9b.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Global Header&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Global%20Header.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Global Header Design" srcset="
+/img/designs/lb-ui-kit/Global%20Header_hu8b78c802ef23d72a1f175f8afba741c2_74904_9815061d4d1458aef0e036211865bc61.jpg 458w,
+/img/designs/lb-ui-kit/Global%20Header_hu8b78c802ef23d72a1f175f8afba741c2_74904_7115b4ba33c6b21c315f587f7454c8ee.jpg 726w,
+/img/designs/lb-ui-kit/Global%20Header_hu8b78c802ef23d72a1f175f8afba741c2_74904_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Global%20Header_hu8b78c802ef23d72a1f175f8afba741c2_74904_9815061d4d1458aef0e036211865bc61.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Grid Content&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Grid%20Content.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Grid Content Design" srcset="
+/img/designs/lb-ui-kit/Grid%20Content_hu8b78c802ef23d72a1f175f8afba741c2_533302_68207acca803d5a9740b98954a52973b.jpg 458w,
+/img/designs/lb-ui-kit/Grid%20Content_hu8b78c802ef23d72a1f175f8afba741c2_533302_138961cba16d15361aa0690211e892f1.jpg 726w,
+/img/designs/lb-ui-kit/Grid%20Content_hu8b78c802ef23d72a1f175f8afba741c2_533302_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Grid%20Content_hu8b78c802ef23d72a1f175f8afba741c2_533302_68207acca803d5a9740b98954a52973b.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Icons and Logos&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Icons%20_%20Other%20Branded%20Assets.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Icons and Logos Design" srcset="
+/img/designs/lb-ui-kit/Icons%20_%20Other%20Branded%20Assets_hu8b78c802ef23d72a1f175f8afba741c2_43468_0bc2f1d83feb8aa701dc1f36522e796e.jpg 458w,
+/img/designs/lb-ui-kit/Icons%20_%20Other%20Branded%20Assets_hu8b78c802ef23d72a1f175f8afba741c2_43468_80837c9425e286db36f56cc52cffb3ab.jpg 726w,
+/img/designs/lb-ui-kit/Icons%20_%20Other%20Branded%20Assets_hu8b78c802ef23d72a1f175f8afba741c2_43468_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Icons%20_%20Other%20Branded%20Assets_hu8b78c802ef23d72a1f175f8afba741c2_43468_0bc2f1d83feb8aa701dc1f36522e796e.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Locations&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Locations.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Locations Design" srcset="
+/img/designs/lb-ui-kit/Locations_hu8b78c802ef23d72a1f175f8afba741c2_1485773_e5bc24212d3f04c21a5b0550b45fe0e5.jpg 458w,
+/img/designs/lb-ui-kit/Locations_hu8b78c802ef23d72a1f175f8afba741c2_1485773_a5485c81a31cdefc2a29b8525def1483.jpg 726w,
+/img/designs/lb-ui-kit/Locations_hu8b78c802ef23d72a1f175f8afba741c2_1485773_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Locations_hu8b78c802ef23d72a1f175f8afba741c2_1485773_e5bc24212d3f04c21a5b0550b45fe0e5.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Menu and Search&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Menu%20and%20Search.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Menu and Search Design" srcset="
+/img/designs/lb-ui-kit/Menu%20and%20Search_hu8b78c802ef23d72a1f175f8afba741c2_1912158_0f67679974c926224a557f7d40a90304.jpg 458w,
+/img/designs/lb-ui-kit/Menu%20and%20Search_hu8b78c802ef23d72a1f175f8afba741c2_1912158_14bf4c76cb0971f329995d75d02dc653.jpg 726w,
+/img/designs/lb-ui-kit/Menu%20and%20Search_hu8b78c802ef23d72a1f175f8afba741c2_1912158_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Menu%20and%20Search_hu8b78c802ef23d72a1f175f8afba741c2_1912158_0f67679974c926224a557f7d40a90304.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Modal&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Modal.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Modal Design" srcset="
+/img/designs/lb-ui-kit/Modal_hu8b78c802ef23d72a1f175f8afba741c2_286299_e01bd0dd31bfb63c617f930931dd35d3.jpg 458w,
+/img/designs/lb-ui-kit/Modal_hu8b78c802ef23d72a1f175f8afba741c2_286299_35b8de26d7710e4b0b11d763a4e5534d.jpg 726w,
+/img/designs/lb-ui-kit/Modal_hu8b78c802ef23d72a1f175f8afba741c2_286299_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Modal_hu8b78c802ef23d72a1f175f8afba741c2_286299_e01bd0dd31bfb63c617f930931dd35d3.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Ping Pong&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Ping%20Pong.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Ping Pong Design" srcset="
+/img/designs/lb-ui-kit/Ping%20Pong_hu8b78c802ef23d72a1f175f8afba741c2_704125_35fc2913aa339314b40e13d27a70eaa1.jpg 458w,
+/img/designs/lb-ui-kit/Ping%20Pong_hu8b78c802ef23d72a1f175f8afba741c2_704125_9e4eaed4d26cf46f7cc686e147b7693d.jpg 726w,
+/img/designs/lb-ui-kit/Ping%20Pong_hu8b78c802ef23d72a1f175f8afba741c2_704125_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Ping%20Pong_hu8b78c802ef23d72a1f175f8afba741c2_704125_35fc2913aa339314b40e13d27a70eaa1.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Promo Cards&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Promo%20Cards.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Promo Cards Design" srcset="
+/img/designs/lb-ui-kit/Promo%20Cards_hu8b78c802ef23d72a1f175f8afba741c2_400453_24faac933bf7a1fcd9147e4994227d45.jpg 458w,
+/img/designs/lb-ui-kit/Promo%20Cards_hu8b78c802ef23d72a1f175f8afba741c2_400453_33cc69aafe7dd00d6a71865f919a96e7.jpg 726w,
+/img/designs/lb-ui-kit/Promo%20Cards_hu8b78c802ef23d72a1f175f8afba741c2_400453_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Promo%20Cards_hu8b78c802ef23d72a1f175f8afba741c2_400453_24faac933bf7a1fcd9147e4994227d45.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Side Menu&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Side%20Menu.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Side Menu Design" srcset="
+/img/designs/lb-ui-kit/Side%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_182178_8b1c61bea1a3ce307f4e02c32f56035f.jpg 458w,
+/img/designs/lb-ui-kit/Side%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_182178_2505e631e5476b42b3c1e9de6b2e5471.jpg 726w,
+/img/designs/lb-ui-kit/Side%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_182178_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Side%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_182178_8b1c61bea1a3ce307f4e02c32f56035f.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Sponsors&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Sponsors.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Sponsors Design" srcset="
+/img/designs/lb-ui-kit/Sponsors_hu8b78c802ef23d72a1f175f8afba741c2_268928_907520b4a2921d2a0c9a7d254043c8ea.jpg 458w,
+/img/designs/lb-ui-kit/Sponsors_hu8b78c802ef23d72a1f175f8afba741c2_268928_5fe0fa6aa06b8bf363ee557ebdf367c5.jpg 726w,
+/img/designs/lb-ui-kit/Sponsors_hu8b78c802ef23d72a1f175f8afba741c2_268928_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Sponsors_hu8b78c802ef23d72a1f175f8afba741c2_268928_907520b4a2921d2a0c9a7d254043c8ea.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Staff&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Staff.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Staff Design" srcset="
+/img/designs/lb-ui-kit/Staff_hu8b78c802ef23d72a1f175f8afba741c2_443187_59331849ac89e48ee9a6f2512c10e7fa.jpg 458w,
+/img/designs/lb-ui-kit/Staff_hu8b78c802ef23d72a1f175f8afba741c2_443187_3ee2ea664a52cabdbca98cc838507864.jpg 726w,
+/img/designs/lb-ui-kit/Staff_hu8b78c802ef23d72a1f175f8afba741c2_443187_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Staff_hu8b78c802ef23d72a1f175f8afba741c2_443187_59331849ac89e48ee9a6f2512c10e7fa.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Statistics&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Statistics.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Statistics Design" srcset="
+/img/designs/lb-ui-kit/Statistics_hu8b78c802ef23d72a1f175f8afba741c2_1885285_48407dd31cd35665bd1c07213916e6c0.jpg 458w,
+/img/designs/lb-ui-kit/Statistics_hu8b78c802ef23d72a1f175f8afba741c2_1885285_45bef4d61f6f07f36a1736963d93665c.jpg 726w,
+/img/designs/lb-ui-kit/Statistics_hu8b78c802ef23d72a1f175f8afba741c2_1885285_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Statistics_hu8b78c802ef23d72a1f175f8afba741c2_1885285_48407dd31cd35665bd1c07213916e6c0.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Table (Simple Content)&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Table.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Table (Simple Content) Design" srcset="
+/img/designs/lb-ui-kit/Table_hu8b78c802ef23d72a1f175f8afba741c2_184715_f17fedce287ed281303a1e84ece4d965.jpg 458w,
+/img/designs/lb-ui-kit/Table_hu8b78c802ef23d72a1f175f8afba741c2_184715_4fc8b068c000a8c5ba8774b4a590edac.jpg 726w,
+/img/designs/lb-ui-kit/Table_hu8b78c802ef23d72a1f175f8afba741c2_184715_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Table_hu8b78c802ef23d72a1f175f8afba741c2_184715_f17fedce287ed281303a1e84ece4d965.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Tabs&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Tabs.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Tabs Design" srcset="
+/img/designs/lb-ui-kit/Tabs_hu8b78c802ef23d72a1f175f8afba741c2_547312_4ea43fcee9b917d0994ca061fa1504eb.jpg 458w,
+/img/designs/lb-ui-kit/Tabs_hu8b78c802ef23d72a1f175f8afba741c2_547312_66c1de564e5dd34997453d8e7c868980.jpg 726w,
+/img/designs/lb-ui-kit/Tabs_hu8b78c802ef23d72a1f175f8afba741c2_547312_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Tabs_hu8b78c802ef23d72a1f175f8afba741c2_547312_4ea43fcee9b917d0994ca061fa1504eb.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Testimonials&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Testimonials.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Testimonials Design" srcset="
+/img/designs/lb-ui-kit/Testimonials_hu8b78c802ef23d72a1f175f8afba741c2_237727_37e92250450b54df9c8b7db4fa9111f2.jpg 458w,
+/img/designs/lb-ui-kit/Testimonials_hu8b78c802ef23d72a1f175f8afba741c2_237727_c9f05809d2ccbeec7fab1f96d71a0669.jpg 726w,
+/img/designs/lb-ui-kit/Testimonials_hu8b78c802ef23d72a1f175f8afba741c2_237727_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Testimonials_hu8b78c802ef23d72a1f175f8afba741c2_237727_37e92250450b54df9c8b7db4fa9111f2.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Utility Menu&lt;/td>
+&lt;td>
+&lt;a href="/img/designs/lb-ui-kit/Utility%20Menu.jpg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Utility Menu Design" srcset="
+/img/designs/lb-ui-kit/Utility%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_127628_4a51c53cf05615255121e75411c09f2c.jpg 458w,
+/img/designs/lb-ui-kit/Utility%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_127628_9e6222af20ba4342bd26ef8bb6838812.jpg 726w,
+/img/designs/lb-ui-kit/Utility%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_127628_1200x664_fit_q75_catmullrom.jpg 1200w" sizes="50vw" src="/img/designs/lb-ui-kit/Utility%20Menu_hu8b78c802ef23d72a1f175f8afba741c2_127628_4a51c53cf05615255121e75411c09f2c.jpg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="pre-release">Pre-release&lt;/h2>
+&lt;details>
+&lt;summary>View the designs&lt;/summary>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -52,530 +673,631 @@
 &lt;tr>
 &lt;td>Accordion&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Accordion%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Accordion Mobile design" srcset="
+&lt;img alt="Accordion Mobile Design" srcset="
 /img/designs/lb/Accordion%20Mobile_hu73dab785aae55a3543a0f5a0dc2b9174_180692_1cb2376722cf7fedac4f0382ff0d4957.png 458w,
 /img/designs/lb/Accordion%20Mobile_hu73dab785aae55a3543a0f5a0dc2b9174_180692_600eff1d8a95a75853fc9745a74c0d63.png 726w,
 /img/designs/lb/Accordion%20Mobile_hu73dab785aae55a3543a0f5a0dc2b9174_180692_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Accordion%20Mobile_hu73dab785aae55a3543a0f5a0dc2b9174_180692_1cb2376722cf7fedac4f0382ff0d4957.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Accordion%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Accordion%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Accordion Desktop design" srcset="
+&lt;img alt="Accordion Desktop Design" srcset="
 /img/designs/lb/Accordion%20Desktop_hua4e08931f3effcca4c3f51d509f14d8c_232050_934a82d65bd4df62d052e778b9bc475a.png 458w,
 /img/designs/lb/Accordion%20Desktop_hua4e08931f3effcca4c3f51d509f14d8c_232050_87d10050937a1d3fdea4d8c2d830fbbb.png 726w,
 /img/designs/lb/Accordion%20Desktop_hua4e08931f3effcca4c3f51d509f14d8c_232050_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Accordion%20Desktop_hua4e08931f3effcca4c3f51d509f14d8c_232050_934a82d65bd4df62d052e778b9bc475a.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Accordion%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Article (/News /Blog /Press Release)&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Article%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Article Mobile design" srcset="
+&lt;img alt="Article Mobile Design" srcset="
 /img/designs/lb/Article%20Mobile_hu59451c4b6eac89ba9e13f2e1f67dea4a_3333059_f8d87522d935f8894f1e3b44edff49bb.png 458w,
 /img/designs/lb/Article%20Mobile_hu59451c4b6eac89ba9e13f2e1f67dea4a_3333059_9b74374a79fea53a897cf6f7a36712bc.png 726w,
 /img/designs/lb/Article%20Mobile_hu59451c4b6eac89ba9e13f2e1f67dea4a_3333059_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Article%20Mobile_hu59451c4b6eac89ba9e13f2e1f67dea4a_3333059_f8d87522d935f8894f1e3b44edff49bb.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Article%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Article%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Article Desktop design" srcset="
+&lt;img alt="Article Desktop Design" srcset="
 /img/designs/lb/Article%20Desktop_hu6eef1f507211ed76f6dcdf1baa714e68_3841262_9233db5c747c4c51dcd8e74408d2aae3.png 458w,
 /img/designs/lb/Article%20Desktop_hu6eef1f507211ed76f6dcdf1baa714e68_3841262_7109fc08cc1f97f92edc24c7af72c2e0.png 726w,
 /img/designs/lb/Article%20Desktop_hu6eef1f507211ed76f6dcdf1baa714e68_3841262_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Article%20Desktop_hu6eef1f507211ed76f6dcdf1baa714e68_3841262_9233db5c747c4c51dcd8e74408d2aae3.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Article%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Branch&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Branch%20Location%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Branch Location Mobile design" srcset="
+&lt;img alt="Branch Location Mobile Design" srcset="
 /img/designs/lb/Branch%20Location%20Mobile_hu5f8a9cc5d267816b268697c20933c2a3_5825807_a035f81441c689ee54e6a8f0d0f75bad.png 458w,
 /img/designs/lb/Branch%20Location%20Mobile_hu5f8a9cc5d267816b268697c20933c2a3_5825807_86d44977921351db3e2d87d3d38a2e21.png 726w,
 /img/designs/lb/Branch%20Location%20Mobile_hu5f8a9cc5d267816b268697c20933c2a3_5825807_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Location%20Mobile_hu5f8a9cc5d267816b268697c20933c2a3_5825807_a035f81441c689ee54e6a8f0d0f75bad.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Location%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Branch%20Location%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Branch Location Desktop design" srcset="
+&lt;img alt="Branch Location Desktop Design" srcset="
 /img/designs/lb/Branch%20Location%20Desktop_hub6afe920a5d329e55816f693856b7142_5737218_b4ef3bb9666a27f613d9070fb20bf0aa.png 458w,
 /img/designs/lb/Branch%20Location%20Desktop_hub6afe920a5d329e55816f693856b7142_5737218_875178e9f31bbaf9aeec6a59c5085d0d.png 726w,
 /img/designs/lb/Branch%20Location%20Desktop_hub6afe920a5d329e55816f693856b7142_5737218_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Location%20Desktop_hub6afe920a5d329e55816f693856b7142_5737218_b4ef3bb9666a27f613d9070fb20bf0aa.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Location%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Branch Amenities&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Branch%20Amenities%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Branch Amenities Mobile design" srcset="
+&lt;img alt="Branch Amenities Mobile Design" srcset="
 /img/designs/lb/Branch%20Amenities%20Mobile_huc5d9f10b7d9681520f2c494a4a3a4734_864596_982dd8a075cd5c93f6b351971111772b.png 458w,
 /img/designs/lb/Branch%20Amenities%20Mobile_huc5d9f10b7d9681520f2c494a4a3a4734_864596_3316e4ba94bc4db2eec84dd7c2e083fb.png 726w,
 /img/designs/lb/Branch%20Amenities%20Mobile_huc5d9f10b7d9681520f2c494a4a3a4734_864596_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Amenities%20Mobile_huc5d9f10b7d9681520f2c494a4a3a4734_864596_982dd8a075cd5c93f6b351971111772b.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Amenities%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Branch%20Amenities%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Branch Amenities Desktop design" srcset="
+&lt;img alt="Branch Amenities Desktop Design" srcset="
 /img/designs/lb/Branch%20Amenities%20Desktop_hubc667dbde7e06c49d026fb7006980a8d_2030127_2fc4bcc52a75df225a385170f0872898.png 458w,
 /img/designs/lb/Branch%20Amenities%20Desktop_hubc667dbde7e06c49d026fb7006980a8d_2030127_14bc5ba3ac1c76733e021885cd4c2570.png 726w,
 /img/designs/lb/Branch%20Amenities%20Desktop_hubc667dbde7e06c49d026fb7006980a8d_2030127_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Amenities%20Desktop_hubc667dbde7e06c49d026fb7006980a8d_2030127_2fc4bcc52a75df225a385170f0872898.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Amenities%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Branch Hours&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Branch%20Hours%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Branch Hours Mobile design" srcset="
+&lt;img alt="Branch Hours Mobile Design" srcset="
 /img/designs/lb/Branch%20Hours%20Mobile_hu2370e5096ba6b62d85c4b6612cd5c2f2_290523_c36f6606c4637b62f982cf064bbf6cba.png 458w,
 /img/designs/lb/Branch%20Hours%20Mobile_hu2370e5096ba6b62d85c4b6612cd5c2f2_290523_28808c0be7a95dccc56803585bd28d92.png 726w,
 /img/designs/lb/Branch%20Hours%20Mobile_hu2370e5096ba6b62d85c4b6612cd5c2f2_290523_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Hours%20Mobile_hu2370e5096ba6b62d85c4b6612cd5c2f2_290523_c36f6606c4637b62f982cf064bbf6cba.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Hours%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Branch%20Hours%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Branch Hours Desktop design" srcset="
+&lt;img alt="Branch Hours Desktop Design" srcset="
 /img/designs/lb/Branch%20Hours%20Desktop_hu33837a044c1287bcf4a317f59ac63325_403156_fde494c17db466b006970f4ce2b6cd03.png 458w,
 /img/designs/lb/Branch%20Hours%20Desktop_hu33837a044c1287bcf4a317f59ac63325_403156_9d283f0a8435c150c9cd20c872d1486c.png 726w,
 /img/designs/lb/Branch%20Hours%20Desktop_hu33837a044c1287bcf4a317f59ac63325_403156_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Hours%20Desktop_hu33837a044c1287bcf4a317f59ac63325_403156_fde494c17db466b006970f4ce2b6cd03.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Hours%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Branch Menu&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Branch%20Menu%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Branch Menu Mobile design" srcset="
+&lt;img alt="Branch Menu Mobile Design" srcset="
 /img/designs/lb/Branch%20Menu%20Mobile_hu34aa6b85e82d6d5852e3edffbed0f317_56369_08c06b5b762ad8dada48daab983b1407.png 458w,
 /img/designs/lb/Branch%20Menu%20Mobile_hu34aa6b85e82d6d5852e3edffbed0f317_56369_35bfb952d7be83b65e5a605cb1e01c6d.png 726w,
 /img/designs/lb/Branch%20Menu%20Mobile_hu34aa6b85e82d6d5852e3edffbed0f317_56369_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Menu%20Mobile_hu34aa6b85e82d6d5852e3edffbed0f317_56369_08c06b5b762ad8dada48daab983b1407.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Menu%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Branch%20Menu%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Branch Menu Desktop design" srcset="
+&lt;img alt="Branch Menu Desktop Design" srcset="
 /img/designs/lb/Branch%20Menu%20Desktop_hu84bde213837553863fd6d0e73328762a_102856_31b9ff28b4bf4b82711aaa8aeb7c5cd4.png 458w,
 /img/designs/lb/Branch%20Menu%20Desktop_hu84bde213837553863fd6d0e73328762a_102856_041ef796b04f35df0fe4abce96851cf8.png 726w,
 /img/designs/lb/Branch%20Menu%20Desktop_hu84bde213837553863fd6d0e73328762a_102856_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Menu%20Desktop_hu84bde213837553863fd6d0e73328762a_102856_31b9ff28b4bf4b82711aaa8aeb7c5cd4.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Menu%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Branch Social Links&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Branch%20Social%20Links%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Branch Social Links Mobile design" srcset="
+&lt;img alt="Branch Social Links Mobile Design" srcset="
 /img/designs/lb/Branch%20Social%20Links%20Mobile_huced83116683693757a95ec24dd3e4355_46173_d65e0fb64e3f28d5cf7abba4b17e0e9b.png 458w,
 /img/designs/lb/Branch%20Social%20Links%20Mobile_huced83116683693757a95ec24dd3e4355_46173_3bad59153472f93a66fbc04dc0638b06.png 726w,
 /img/designs/lb/Branch%20Social%20Links%20Mobile_huced83116683693757a95ec24dd3e4355_46173_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Social%20Links%20Mobile_huced83116683693757a95ec24dd3e4355_46173_d65e0fb64e3f28d5cf7abba4b17e0e9b.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Social%20Links%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Branch%20Social%20Links%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Branch Social Links Desktop design" srcset="
+&lt;img alt="Branch Social Links Desktop Design" srcset="
 /img/designs/lb/Branch%20Social%20Links%20Desktop_hueb84d503c096147cb47593443113007d_161834_c6a90dd737fefd177aa49526e8d2607a.png 458w,
 /img/designs/lb/Branch%20Social%20Links%20Desktop_hueb84d503c096147cb47593443113007d_161834_3da3eae3d94af943d6ebe228017203fe.png 726w,
 /img/designs/lb/Branch%20Social%20Links%20Desktop_hueb84d503c096147cb47593443113007d_161834_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Branch%20Social%20Links%20Desktop_hueb84d503c096147cb47593443113007d_161834_c6a90dd737fefd177aa49526e8d2607a.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Branch%20Social%20Links%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Breadcrumbs&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Breadcrumbs%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Breadcrumbs Mobile design" srcset="
+&lt;img alt="Breadcrumbs Mobile Design" srcset="
 /img/designs/lb/Breadcrumbs%20Mobile_hu1f3808b7cd6bfbf323196ae9d4b6dba0_702952_530978aad3e5454d62292b35bc1ef253.png 458w,
 /img/designs/lb/Breadcrumbs%20Mobile_hu1f3808b7cd6bfbf323196ae9d4b6dba0_702952_fee4f165e6d134f2f4794e474f9da944.png 726w,
 /img/designs/lb/Breadcrumbs%20Mobile_hu1f3808b7cd6bfbf323196ae9d4b6dba0_702952_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Breadcrumbs%20Mobile_hu1f3808b7cd6bfbf323196ae9d4b6dba0_702952_530978aad3e5454d62292b35bc1ef253.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Breadcrumbs%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Breadcrumbs%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Breadcrumbs Desktop design" srcset="
+&lt;img alt="Breadcrumbs Desktop Design" srcset="
 /img/designs/lb/Breadcrumbs%20Desktop_hue9aa3ba4b40c8e9fe8850949446794de_4550844_7069bd56d6e11653a54e50862cec0785.png 458w,
 /img/designs/lb/Breadcrumbs%20Desktop_hue9aa3ba4b40c8e9fe8850949446794de_4550844_99367aa8f8e78dba3c37cd9905d1bee6.png 726w,
 /img/designs/lb/Breadcrumbs%20Desktop_hue9aa3ba4b40c8e9fe8850949446794de_4550844_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Breadcrumbs%20Desktop_hue9aa3ba4b40c8e9fe8850949446794de_4550844_7069bd56d6e11653a54e50862cec0785.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Breadcrumbs%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Cards&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Cards%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Cards Mobile design" srcset="
+&lt;img alt="Cards Mobile Design" srcset="
 /img/designs/lb/Cards%20Mobile_hucf70d313fe8c92235e399794aaeff0a3_1466825_9f4f2f4246f2a1b637ce865480f872ba.png 458w,
 /img/designs/lb/Cards%20Mobile_hucf70d313fe8c92235e399794aaeff0a3_1466825_c24e6912f3a2123602d014ccae242ac1.png 726w,
 /img/designs/lb/Cards%20Mobile_hucf70d313fe8c92235e399794aaeff0a3_1466825_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Cards%20Mobile_hucf70d313fe8c92235e399794aaeff0a3_1466825_9f4f2f4246f2a1b637ce865480f872ba.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Cards%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Cards%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Cards Desktop design" srcset="
+&lt;img alt="Cards Desktop Design" srcset="
 /img/designs/lb/Cards%20Desktop_hue0c73011beb07b6b9642683359ffb0f4_2851636_ad563e9843f7ce78bd312170bdcc1fbf.png 458w,
 /img/designs/lb/Cards%20Desktop_hue0c73011beb07b6b9642683359ffb0f4_2851636_c09492f673e4fa11e074ed4a297e6bd8.png 726w,
 /img/designs/lb/Cards%20Desktop_hue0c73011beb07b6b9642683359ffb0f4_2851636_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Cards%20Desktop_hue0c73011beb07b6b9642683359ffb0f4_2851636_ad563e9843f7ce78bd312170bdcc1fbf.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Cards%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Carousels&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Carousels%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Carousels Mobile design" srcset="
+&lt;img alt="Carousels Mobile Design" srcset="
 /img/designs/lb/Carousels%20Mobile_hu3be4523fd56d8365a13495e59f790a08_583326_099b25432ea143896321e247436252ec.png 458w,
 /img/designs/lb/Carousels%20Mobile_hu3be4523fd56d8365a13495e59f790a08_583326_7a1d7dfff1489deda294a937b19cd262.png 726w,
 /img/designs/lb/Carousels%20Mobile_hu3be4523fd56d8365a13495e59f790a08_583326_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Carousels%20Mobile_hu3be4523fd56d8365a13495e59f790a08_583326_099b25432ea143896321e247436252ec.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Carousels%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Carousels%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Carousels Desktop design" srcset="
+&lt;img alt="Carousels Desktop Design" srcset="
 /img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_d961ccc8bf72f42f0e82bcfe311f7799.png 458w,
 /img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_316726222e2549154d5fa14d09e0d756.png 726w,
 /img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Carousels%20Desktop_hu68f989e971dbe84a4dc30f41bc85f162_1459340_d961ccc8bf72f42f0e82bcfe311f7799.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Carousels%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Event&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Events%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Events Mobile design" srcset="
+&lt;img alt="Events Mobile Design" srcset="
 /img/designs/lb/Events%20Mobile_hu488cc37e802f2c23f62e46fa1fcbf377_2344700_040b44fa47c4344b1bb83fc8d3d02ff8.png 458w,
 /img/designs/lb/Events%20Mobile_hu488cc37e802f2c23f62e46fa1fcbf377_2344700_e61dd224ebbaa71318d69f9dac24894c.png 726w,
 /img/designs/lb/Events%20Mobile_hu488cc37e802f2c23f62e46fa1fcbf377_2344700_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Events%20Mobile_hu488cc37e802f2c23f62e46fa1fcbf377_2344700_040b44fa47c4344b1bb83fc8d3d02ff8.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Events%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Event%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Event Desktop design" srcset="
+&lt;img alt="Event Desktop Design" srcset="
 /img/designs/lb/Event%20Desktop_hu36e0c9550ee3fe411ca581bf2d5e1d28_2722806_cd6b24a6a945b205d3616e2d9090c63c.png 458w,
 /img/designs/lb/Event%20Desktop_hu36e0c9550ee3fe411ca581bf2d5e1d28_2722806_8644c585cf0baa4c52f476cd51ef56f9.png 726w,
 /img/designs/lb/Event%20Desktop_hu36e0c9550ee3fe411ca581bf2d5e1d28_2722806_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Event%20Desktop_hu36e0c9550ee3fe411ca581bf2d5e1d28_2722806_cd6b24a6a945b205d3616e2d9090c63c.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Event%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Grid Content&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Grid%20Content%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Grid Content Mobile design" srcset="
+&lt;img alt="Grid Content Mobile Design" srcset="
 /img/designs/lb/Grid%20Content%20Mobile_hu9f93d11168fe8592cd5078aa019307a3_575048_1aa6e2962831d7bc78c7a772d6f68fc6.png 458w,
 /img/designs/lb/Grid%20Content%20Mobile_hu9f93d11168fe8592cd5078aa019307a3_575048_161bea6a2382e0dab83785b16a575fe3.png 726w,
 /img/designs/lb/Grid%20Content%20Mobile_hu9f93d11168fe8592cd5078aa019307a3_575048_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Grid%20Content%20Mobile_hu9f93d11168fe8592cd5078aa019307a3_575048_1aa6e2962831d7bc78c7a772d6f68fc6.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Grid%20Content%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Grid%20Content%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Grid Content Desktop design" srcset="
+&lt;img alt="Grid Content Desktop Design" srcset="
 /img/designs/lb/Grid%20Content%20Desktop_hu54f535cb30fdc75ac4d509d7226ec1a2_5328979_3ac320035e614f4272ffbb6de6c6c39f.png 458w,
 /img/designs/lb/Grid%20Content%20Desktop_hu54f535cb30fdc75ac4d509d7226ec1a2_5328979_4a5b81191de272414213f70cfed16dd6.png 726w,
 /img/designs/lb/Grid%20Content%20Desktop_hu54f535cb30fdc75ac4d509d7226ec1a2_5328979_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Grid%20Content%20Desktop_hu54f535cb30fdc75ac4d509d7226ec1a2_5328979_3ac320035e614f4272ffbb6de6c6c39f.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Grid%20Content%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Hero Banner&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Hero%20Banner%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Hero Banner Mobile design" srcset="
+&lt;img alt="Hero Banner Mobile Design" srcset="
 /img/designs/lb/Hero%20Banner%20Mobile_huc987cfba0d9b95f34c83ba9dc3c03e82_583872_24f76074a96b62604e3b386cfc7cde5b.png 458w,
 /img/designs/lb/Hero%20Banner%20Mobile_huc987cfba0d9b95f34c83ba9dc3c03e82_583872_ea13571ef3c270bbe8327b6a4b3279a5.png 726w,
 /img/designs/lb/Hero%20Banner%20Mobile_huc987cfba0d9b95f34c83ba9dc3c03e82_583872_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Hero%20Banner%20Mobile_huc987cfba0d9b95f34c83ba9dc3c03e82_583872_24f76074a96b62604e3b386cfc7cde5b.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Hero%20Banner%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Hero%20Banner%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Hero Banner Desktop design" srcset="
+&lt;img alt="Hero Banner Desktop Design" srcset="
 /img/designs/lb/Hero%20Banner%20Desktop_hue59165020c5288e385eb18a4c033bec7_1990416_86571fdf43a442a291831671e17816a8.png 458w,
 /img/designs/lb/Hero%20Banner%20Desktop_hue59165020c5288e385eb18a4c033bec7_1990416_50ef284b336037cb9cbdcec9bf21eb06.png 726w,
 /img/designs/lb/Hero%20Banner%20Desktop_hue59165020c5288e385eb18a4c033bec7_1990416_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Hero%20Banner%20Desktop_hue59165020c5288e385eb18a4c033bec7_1990416_86571fdf43a442a291831671e17816a8.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Hero%20Banner%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Modals&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Modals%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Modals Mobile design" srcset="
+&lt;img alt="Modals Mobile Design" srcset="
 /img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_17fa638d6392df8b5e4f41c5eceb7c50.png 458w,
 /img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_5c8099144cd8b172ae12f5bef8f43679.png 726w,
 /img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_17fa638d6392df8b5e4f41c5eceb7c50.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Modals%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Modals%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Modals Desktop design" srcset="
+&lt;img alt="Modals Desktop Design" srcset="
 /img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_99e03f2ef6ad30db5a4e5aa35ac66ddd.png 458w,
 /img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_af27197ac7b4bb4289d255a4aa86b351.png 726w,
 /img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_99e03f2ef6ad30db5a4e5aa35ac66ddd.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Modals%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Modals&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Modals%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Modals Mobile design" srcset="
+&lt;img alt="Modals Mobile Design" srcset="
 /img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_17fa638d6392df8b5e4f41c5eceb7c50.png 458w,
 /img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_5c8099144cd8b172ae12f5bef8f43679.png 726w,
 /img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Mobile_hu2ec6815a5316f735bf2e24b7dffcd734_200422_17fa638d6392df8b5e4f41c5eceb7c50.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Modals%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Modals%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Modals Desktop design" srcset="
+&lt;img alt="Modals Desktop Design" srcset="
 /img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_99e03f2ef6ad30db5a4e5aa35ac66ddd.png 458w,
 /img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_af27197ac7b4bb4289d255a4aa86b351.png 726w,
 /img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Modals%20Desktop_hu9d723cd432ca4154db73a2631ded4271_2632367_99e03f2ef6ad30db5a4e5aa35ac66ddd.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Modals%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Partners (/Sponsors)&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Sponsors%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Sponsors Mobile design" srcset="
+&lt;img alt="Sponsors Mobile Design" srcset="
 /img/designs/lb/Sponsors%20Mobile_hu0bb352489727c446a5c4e6327e1c4b02_176789_eeb5d42415f27d1e9d38f951ac976db3.png 458w,
 /img/designs/lb/Sponsors%20Mobile_hu0bb352489727c446a5c4e6327e1c4b02_176789_0abc75b4ba2d1ea7b0acb24ca5f5f696.png 726w,
 /img/designs/lb/Sponsors%20Mobile_hu0bb352489727c446a5c4e6327e1c4b02_176789_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Sponsors%20Mobile_hu0bb352489727c446a5c4e6327e1c4b02_176789_eeb5d42415f27d1e9d38f951ac976db3.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Sponsors%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Sponsors%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Sponsors Desktop design" srcset="
+&lt;img alt="Sponsors Desktop Design" srcset="
 /img/designs/lb/Sponsors%20Desktop_hu9a0ef0f3f75a3d5178d1644198389139_467900_b8b5464ad9ce6cb6abff433674b4d6a7.png 458w,
 /img/designs/lb/Sponsors%20Desktop_hu9a0ef0f3f75a3d5178d1644198389139_467900_90428b8f8add5b701ff9cb9e9d9fee3b.png 726w,
 /img/designs/lb/Sponsors%20Desktop_hu9a0ef0f3f75a3d5178d1644198389139_467900_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Sponsors%20Desktop_hu9a0ef0f3f75a3d5178d1644198389139_467900_b8b5464ad9ce6cb6abff433674b4d6a7.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Sponsors%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Ping Pong&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Ping%20Pong%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Ping Pong Mobile design" srcset="
+&lt;img alt="Ping Pong Mobile Design" srcset="
 /img/designs/lb/Ping%20Pong%20Mobile_hu29e9a1c5561532e5b17f7283807c20d4_1173284_b9942a7b6251bb888f3c77777ea471e2.png 458w,
 /img/designs/lb/Ping%20Pong%20Mobile_hu29e9a1c5561532e5b17f7283807c20d4_1173284_87b1d3e712491036361ab69665ab848a.png 726w,
 /img/designs/lb/Ping%20Pong%20Mobile_hu29e9a1c5561532e5b17f7283807c20d4_1173284_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Ping%20Pong%20Mobile_hu29e9a1c5561532e5b17f7283807c20d4_1173284_b9942a7b6251bb888f3c77777ea471e2.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Ping%20Pong%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Ping%20Pong%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Ping Pong Desktop design" srcset="
+&lt;img alt="Ping Pong Desktop Design" srcset="
 /img/designs/lb/Ping%20Pong%20Desktop_hu7a8d8dd6efac447707e87644ef9420f6_1867593_14aa5eda05e91e7b62bc9b453e86ea02.png 458w,
 /img/designs/lb/Ping%20Pong%20Desktop_hu7a8d8dd6efac447707e87644ef9420f6_1867593_6cc3855b3c6cb78fb109b878e19dbd0b.png 726w,
 /img/designs/lb/Ping%20Pong%20Desktop_hu7a8d8dd6efac447707e87644ef9420f6_1867593_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Ping%20Pong%20Desktop_hu7a8d8dd6efac447707e87644ef9420f6_1867593_14aa5eda05e91e7b62bc9b453e86ea02.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Ping%20Pong%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Promo Cards&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Promo%20Cards%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Promo Cards Mobile design" srcset="
+&lt;img alt="Promo Cards Mobile Design" srcset="
 /img/designs/lb/Promo%20Cards%20Mobile_hu5fe4aedbc04312525213858fad4160c0_543504_4b87121367c24f0b9348d6253a9f7431.png 458w,
 /img/designs/lb/Promo%20Cards%20Mobile_hu5fe4aedbc04312525213858fad4160c0_543504_a8a572f293f8122f525d99a70332c866.png 726w,
 /img/designs/lb/Promo%20Cards%20Mobile_hu5fe4aedbc04312525213858fad4160c0_543504_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Promo%20Cards%20Mobile_hu5fe4aedbc04312525213858fad4160c0_543504_4b87121367c24f0b9348d6253a9f7431.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Promo%20Cards%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Promo%20Cards%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Promo Cards Desktop design" srcset="
+&lt;img alt="Promo Cards Desktop Design" srcset="
 /img/designs/lb/Promo%20Cards%20Desktop_hu2f4a0ee5ed97802f71270cfbdc28ab9c_687025_23c02cddb564924d772a48edab9dc55f.png 458w,
 /img/designs/lb/Promo%20Cards%20Desktop_hu2f4a0ee5ed97802f71270cfbdc28ab9c_687025_3d4ffeff30dd4bf9c27a6934b3583625.png 726w,
 /img/designs/lb/Promo%20Cards%20Desktop_hu2f4a0ee5ed97802f71270cfbdc28ab9c_687025_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Promo%20Cards%20Desktop_hu2f4a0ee5ed97802f71270cfbdc28ab9c_687025_23c02cddb564924d772a48edab9dc55f.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Promo%20Cards%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Simple Menu&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Simple%20Menu%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Simple Menu Mobile design" srcset="
+&lt;img alt="Simple Menu Mobile Design" srcset="
 /img/designs/lb/Simple%20Menu%20Mobile_hu0521dc0120a69db9e21296f504aa73fb_98130_aa2f62a9a4f345290cacc082c238a82f.png 458w,
 /img/designs/lb/Simple%20Menu%20Mobile_hu0521dc0120a69db9e21296f504aa73fb_98130_f7920dd8ee806c209fd1737e484fe922.png 726w,
 /img/designs/lb/Simple%20Menu%20Mobile_hu0521dc0120a69db9e21296f504aa73fb_98130_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Simple%20Menu%20Mobile_hu0521dc0120a69db9e21296f504aa73fb_98130_aa2f62a9a4f345290cacc082c238a82f.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Simple%20Menu%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Simple%20Menu%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Simple Menu Desktop design" srcset="
+&lt;img alt="Simple Menu Desktop Design" srcset="
 /img/designs/lb/Simple%20Menu%20Desktop_hu552c4bc853c560ac2a86554ca3c702e4_169267_b8453d8ba72ea547281f19f4171e774e.png 458w,
 /img/designs/lb/Simple%20Menu%20Desktop_hu552c4bc853c560ac2a86554ca3c702e4_169267_af63891e0391ccc6bbc816a388af9fe4.png 726w,
 /img/designs/lb/Simple%20Menu%20Desktop_hu552c4bc853c560ac2a86554ca3c702e4_169267_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Simple%20Menu%20Desktop_hu552c4bc853c560ac2a86554ca3c702e4_169267_b8453d8ba72ea547281f19f4171e774e.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Simple%20Menu%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Staff&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Staff%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Staff Mobile design" srcset="
+&lt;img alt="Staff Mobile Design" srcset="
 /img/designs/lb/Staff%20Mobile_hud30bab75291c07099680c09a3b604179_586153_ef35c62a41cbf668b25510dce8bee032.png 458w,
 /img/designs/lb/Staff%20Mobile_hud30bab75291c07099680c09a3b604179_586153_0c73ea15d8797e61cd2f6f1caa2fe744.png 726w,
 /img/designs/lb/Staff%20Mobile_hud30bab75291c07099680c09a3b604179_586153_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Staff%20Mobile_hud30bab75291c07099680c09a3b604179_586153_ef35c62a41cbf668b25510dce8bee032.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Staff%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Staff%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Staff Desktop design" srcset="
+&lt;img alt="Staff Desktop Design" srcset="
 /img/designs/lb/Staff%20Desktop_hu15b81c9aa5d70a83423bb7dc24d7fa04_2172365_3afa025aacc078b8ade38a055a1dc4c6.png 458w,
 /img/designs/lb/Staff%20Desktop_hu15b81c9aa5d70a83423bb7dc24d7fa04_2172365_647349d91d9f6074f9199ac9d36a0a3d.png 726w,
 /img/designs/lb/Staff%20Desktop_hu15b81c9aa5d70a83423bb7dc24d7fa04_2172365_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Staff%20Desktop_hu15b81c9aa5d70a83423bb7dc24d7fa04_2172365_3afa025aacc078b8ade38a055a1dc4c6.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Staff%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Statistics&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Statistics%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Statistics Mobile design" srcset="
+&lt;img alt="Statistics Mobile Design" srcset="
 /img/designs/lb/Statistics%20Mobile_hu50642a223d92373dc2654a0f6a35f6f3_921154_74c13a9fd2e44fd9c754e176e96b549a.png 458w,
 /img/designs/lb/Statistics%20Mobile_hu50642a223d92373dc2654a0f6a35f6f3_921154_6682cf1c10c9d5beb6f4b018ac8fbf24.png 726w,
 /img/designs/lb/Statistics%20Mobile_hu50642a223d92373dc2654a0f6a35f6f3_921154_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Statistics%20Mobile_hu50642a223d92373dc2654a0f6a35f6f3_921154_74c13a9fd2e44fd9c754e176e96b549a.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Statistics%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Statistics%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Statistics Desktop design" srcset="
+&lt;img alt="Statistics Desktop Design" srcset="
 /img/designs/lb/Statistics%20Desktop_hu304dff1a3b26733d8ebe2990fc439535_12070081_0241bd7a0078904c0e0069079ade59eb.png 458w,
 /img/designs/lb/Statistics%20Desktop_hu304dff1a3b26733d8ebe2990fc439535_12070081_778c62baf7ed80db000f539dd2b1dbef.png 726w,
 /img/designs/lb/Statistics%20Desktop_hu304dff1a3b26733d8ebe2990fc439535_12070081_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Statistics%20Desktop_hu304dff1a3b26733d8ebe2990fc439535_12070081_0241bd7a0078904c0e0069079ade59eb.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Statistics%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Tables&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Tables%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Tables Mobile design" srcset="
+&lt;img alt="Tables Mobile Design" srcset="
 /img/designs/lb/Tables%20Mobile_hu1afadf09422e6f8e2663e78ff9b850aa_117182_bf023ca41ddf079430f2d1f67f45f612.png 458w,
 /img/designs/lb/Tables%20Mobile_hu1afadf09422e6f8e2663e78ff9b850aa_117182_41e541804591e8deb3b53be5179eb620.png 726w,
 /img/designs/lb/Tables%20Mobile_hu1afadf09422e6f8e2663e78ff9b850aa_117182_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tables%20Mobile_hu1afadf09422e6f8e2663e78ff9b850aa_117182_bf023ca41ddf079430f2d1f67f45f612.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Tables%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Tables%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Tables Desktop design" srcset="
+&lt;img alt="Tables Desktop Design" srcset="
 /img/designs/lb/Tables%20Desktop_hue5f40edd8514fccc3340f9e9cf9ad1a4_186961_9e3a5d56b6b02f59be0028bfd6b9ee4c.png 458w,
 /img/designs/lb/Tables%20Desktop_hue5f40edd8514fccc3340f9e9cf9ad1a4_186961_8f02ab8f2439ec398c07eabdf2c903f6.png 726w,
 /img/designs/lb/Tables%20Desktop_hue5f40edd8514fccc3340f9e9cf9ad1a4_186961_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tables%20Desktop_hue5f40edd8514fccc3340f9e9cf9ad1a4_186961_9e3a5d56b6b02f59be0028bfd6b9ee4c.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Tables%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Tabs&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Tabs%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Tabs Mobile design" srcset="
+&lt;img alt="Tabs Mobile Design" srcset="
 /img/designs/lb/Tabs%20Mobile_hu42f77dd489805da3db70e0af6e90d1ab_395861_161d00f62f19e9157541557b669171b3.png 458w,
 /img/designs/lb/Tabs%20Mobile_hu42f77dd489805da3db70e0af6e90d1ab_395861_27758e03693060a27683a609e6562055.png 726w,
 /img/designs/lb/Tabs%20Mobile_hu42f77dd489805da3db70e0af6e90d1ab_395861_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tabs%20Mobile_hu42f77dd489805da3db70e0af6e90d1ab_395861_161d00f62f19e9157541557b669171b3.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Tabs%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Tabs%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Tabs Desktop design" srcset="
+&lt;img alt="Tabs Desktop Design" srcset="
 /img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_eeca88c39fb24a51ce759f23a7b2464d.png 458w,
 /img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_de6fc9916effed9e5ad88394cdeb35c3.png 726w,
 /img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Tabs%20Desktop_huff20948859e62d6f32f516bdf0a84041_1174566_eeca88c39fb24a51ce759f23a7b2464d.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Tabs%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Testimonials&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Testimonials%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Testimonials Mobile design" srcset="
+&lt;img alt="Testimonials Mobile Design" srcset="
 /img/designs/lb/Testimonials%20Mobile_hu72fe4b97233f2ba60823502cc819f6c2_150303_6b7d1d1d1fb27d442fb09f5598847e9e.png 458w,
 /img/designs/lb/Testimonials%20Mobile_hu72fe4b97233f2ba60823502cc819f6c2_150303_8d36dc1be06185a36341a68fb6c10d91.png 726w,
 /img/designs/lb/Testimonials%20Mobile_hu72fe4b97233f2ba60823502cc819f6c2_150303_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Testimonials%20Mobile_hu72fe4b97233f2ba60823502cc819f6c2_150303_6b7d1d1d1fb27d442fb09f5598847e9e.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Testimonials%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Testimonials%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Testimonials Desktop design" srcset="
+&lt;img alt="Testimonials Desktop Design" srcset="
 /img/designs/lb/Testimonials%20Desktop_hue97e8bb1a33d9952bdb575225c7e6c5e_729311_eb89ba49e0da6e063ef946da743590f0.png 458w,
 /img/designs/lb/Testimonials%20Desktop_hue97e8bb1a33d9952bdb575225c7e6c5e_729311_439734e58170b442829e69e279de1d41.png 726w,
 /img/designs/lb/Testimonials%20Desktop_hue97e8bb1a33d9952bdb575225c7e6c5e_729311_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Testimonials%20Desktop_hue97e8bb1a33d9952bdb575225c7e6c5e_729311_eb89ba49e0da6e063ef946da743590f0.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Testimonials%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Webforms&lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Webforms%20Mobile.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Webforms Mobile design" srcset="
+&lt;img alt="Webforms Mobile Design" srcset="
 /img/designs/lb/Webforms%20Mobile_hu20b870d2c4ae8acddde2252b7cf1166d_168745_38259a77468d96d894f1c0adbf91342e.png 458w,
 /img/designs/lb/Webforms%20Mobile_hu20b870d2c4ae8acddde2252b7cf1166d_168745_f1901d0eb24a16c3210e1f0e14cdb682.png 726w,
 /img/designs/lb/Webforms%20Mobile_hu20b870d2c4ae8acddde2252b7cf1166d_168745_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Webforms%20Mobile_hu20b870d2c4ae8acddde2252b7cf1166d_168745_38259a77468d96d894f1c0adbf91342e.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Webforms%20Mobile.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;td>
+&lt;a href="/img/designs/lb/Webforms%20Desktop.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="Webforms Desktop design" srcset="
+&lt;img alt="Webforms Desktop Design" srcset="
 /img/designs/lb/Webforms%20Desktop_hu22b9d3245b70fa1e985b1e7c61ebda32_254515_642e985ab89783f1e076ae742e4f67aa.png 458w,
 /img/designs/lb/Webforms%20Desktop_hu22b9d3245b70fa1e985b1e7c61ebda32_254515_1be6d17149ea9c1e119affe399a5bc6c.png 726w,
 /img/designs/lb/Webforms%20Desktop_hu22b9d3245b70fa1e985b1e7c61ebda32_254515_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/designs/lb/Webforms%20Desktop_hu22b9d3245b70fa1e985b1e7c61ebda32_254515_642e985ab89783f1e076ae742e4f67aa.png" />
-&lt;figcaption> &lt;a href="/img/designs/lb/Webforms%20Desktop.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>Docs: Building Blocks &amp; Basics</title><link>/docs/user-documentation/virtual-ymca/building-blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/building-blocks/</guid><description>
+&lt;/table>
+&lt;/details></description></item><item><title>Docs: Building Blocks &amp; Basics</title><link>/docs/user-documentation/virtual-ymca/building-blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/building-blocks/</guid><description>
 &lt;p>Virtual YMCA is based on Open Y and was originally built as an extension for Open Y sites.&lt;/p>
 &lt;p>Virtual YMCA uses the same content editing tools as Open Y, except what you get out-of-the-box will be different than in Open Y.&lt;/p>
 &lt;h2 id="content-types">Content Types&lt;/h2>
@@ -1123,33 +1845,39 @@
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="rose---without-block">Rose - Without Block&lt;/h3>
 &lt;p>
+&lt;a href="/img/080e5435d89d994c773761dfe0196018fe63e8dc.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="rose&amp;amp;ndash;landing-page_1-column-no-block" srcset="
 /img/080e5435d89d994c773761dfe0196018fe63e8dc_hu673841aa836f370642286620b1ac60b1_23864_5fc5b61512ac0fcf93f7db7a114411ab.png 458w,
 /img/080e5435d89d994c773761dfe0196018fe63e8dc_hu673841aa836f370642286620b1ac60b1_23864_0222347eef3838e79eb7b2407fd09018.png 726w,
 /img/080e5435d89d994c773761dfe0196018fe63e8dc_hu673841aa836f370642286620b1ac60b1_23864_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/080e5435d89d994c773761dfe0196018fe63e8dc_hu673841aa836f370642286620b1ac60b1_23864_5fc5b61512ac0fcf93f7db7a114411ab.png" />
-&lt;figcaption> &lt;a href="/img/080e5435d89d994c773761dfe0196018fe63e8dc.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;h3 id="rose---with-block">Rose - With Block&lt;/h3>
 &lt;p>
+&lt;a href="/img/12b8dda69f73758976d0789e5951db4661bc888b.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="rose&amp;amp;ndash;landing-page__1-column-with-block" srcset="
 /img/12b8dda69f73758976d0789e5951db4661bc888b_hu55d6792d00367157bf78407ba1421057_38365_f5bf02c11289f650f407c8bb97705b3d.png 458w,
 /img/12b8dda69f73758976d0789e5951db4661bc888b_hu55d6792d00367157bf78407ba1421057_38365_4696e14c9e55335ea067dd99c3bc888d.png 726w,
 /img/12b8dda69f73758976d0789e5951db4661bc888b_hu55d6792d00367157bf78407ba1421057_38365_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/12b8dda69f73758976d0789e5951db4661bc888b_hu55d6792d00367157bf78407ba1421057_38365_f5bf02c11289f650f407c8bb97705b3d.png" />
-&lt;figcaption> &lt;a href="/img/12b8dda69f73758976d0789e5951db4661bc888b.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;h3 id="carnation---with-custom-block">Carnation - With Custom Block&lt;/h3>
 &lt;p>
+&lt;a href="/img/8ae42dfa49156be5a11f1cc57112401004e16bf9.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="carnation&amp;amp;ndash;landing-page_1-column-with-block|690x186" srcset="
 /img/8ae42dfa49156be5a11f1cc57112401004e16bf9_hua15713a93d43b7adb033c6a9298a7be7_39227_bcbb943ae50327ae6fc67c68f187ef52.png 458w,
 /img/8ae42dfa49156be5a11f1cc57112401004e16bf9_hua15713a93d43b7adb033c6a9298a7be7_39227_91ef3c0b74023d471d90bcd74a28be5c.png 726w,
 /img/8ae42dfa49156be5a11f1cc57112401004e16bf9_hua15713a93d43b7adb033c6a9298a7be7_39227_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/8ae42dfa49156be5a11f1cc57112401004e16bf9_hua15713a93d43b7adb033c6a9298a7be7_39227_bcbb943ae50327ae6fc67c68f187ef52.png" />
-&lt;figcaption> &lt;a href="/img/8ae42dfa49156be5a11f1cc57112401004e16bf9.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-1-column-should-be-used">Areas 1 Column Should Be Used&lt;/h2>
@@ -1245,33 +1973,39 @@ color: inherit;
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;p>
+&lt;a href="/img/5d6f9e69f64664e6a07ed9848abcc613fffc9af2.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="carnation&amp;amp;ndash;landing-page__2-columns" srcset="
 /img/5d6f9e69f64664e6a07ed9848abcc613fffc9af2_hu2af56d1fe897a31b5e733e4863a90f77_236906_a86829854a4654d6fe4150193bf69078.png 458w,
 /img/5d6f9e69f64664e6a07ed9848abcc613fffc9af2_hu2af56d1fe897a31b5e733e4863a90f77_236906_5cdda898f58da3725b8ec2cc61ab0566.png 726w,
 /img/5d6f9e69f64664e6a07ed9848abcc613fffc9af2_hu2af56d1fe897a31b5e733e4863a90f77_236906_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/5d6f9e69f64664e6a07ed9848abcc613fffc9af2_hu2af56d1fe897a31b5e733e4863a90f77_236906_a86829854a4654d6fe4150193bf69078.png" />
-&lt;figcaption> &lt;a href="/img/5d6f9e69f64664e6a07ed9848abcc613fffc9af2.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
+&lt;a href="/img/e3459038736e6deb77a695c4dd8348f3a3e372d0.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="lily&amp;amp;ndash;landing-page__2-columns" srcset="
 /img/e3459038736e6deb77a695c4dd8348f3a3e372d0_hu1eed53a8a7d416ee2edbd37cb33804b5_161432_555417bc30120b56c4168ee7626d3746.png 458w,
 /img/e3459038736e6deb77a695c4dd8348f3a3e372d0_hu1eed53a8a7d416ee2edbd37cb33804b5_161432_6c5df9daa0086a4570566dd953fcb966.png 726w,
 /img/e3459038736e6deb77a695c4dd8348f3a3e372d0_hu1eed53a8a7d416ee2edbd37cb33804b5_161432_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/e3459038736e6deb77a695c4dd8348f3a3e372d0_hu1eed53a8a7d416ee2edbd37cb33804b5_161432_555417bc30120b56c4168ee7626d3746.png" />
-&lt;figcaption> &lt;a href="/img/e3459038736e6deb77a695c4dd8348f3a3e372d0.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
+&lt;a href="/img/a73d4e0d2a8e4c251de23a2641b8283134a006ec.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="rose&amp;amp;ndash;landing-page__2-columns" srcset="
 /img/a73d4e0d2a8e4c251de23a2641b8283134a006ec_hu2af56d1fe897a31b5e733e4863a90f77_280383_1f4dfcfb13854709489b38310846d63f.png 458w,
 /img/a73d4e0d2a8e4c251de23a2641b8283134a006ec_hu2af56d1fe897a31b5e733e4863a90f77_280383_fdb5d188a171dbe861c549a122286975.png 726w,
 /img/a73d4e0d2a8e4c251de23a2641b8283134a006ec_hu2af56d1fe897a31b5e733e4863a90f77_280383_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/a73d4e0d2a8e4c251de23a2641b8283134a006ec_hu2af56d1fe897a31b5e733e4863a90f77_280383_1f4dfcfb13854709489b38310846d63f.png" />
-&lt;figcaption> &lt;a href="/img/a73d4e0d2a8e4c251de23a2641b8283134a006ec.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-can-be-used">Areas it Can Be Used:&lt;/h2>
@@ -1296,13 +2030,15 @@ color: inherit;
 &lt;hr>
 &lt;p>There is an optional checkbox to display a horizontal rule above the two columns.&lt;/p>
 &lt;p>
+&lt;a href="/img/c081d0e3fc843873c40ea85ab7dbc329585909e7.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page__2-columns-line-above" srcset="
 /img/c081d0e3fc843873c40ea85ab7dbc329585909e7_huece645cbcc29a816389d2bf4bc60f91a_12164_3abb2fa86087869302dc312a38696bcf.png 458w,
 /img/c081d0e3fc843873c40ea85ab7dbc329585909e7_huece645cbcc29a816389d2bf4bc60f91a_12164_e4b88a6b5df06013979449424e993496.png 726w,
 /img/c081d0e3fc843873c40ea85ab7dbc329585909e7_huece645cbcc29a816389d2bf4bc60f91a_12164_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/c081d0e3fc843873c40ea85ab7dbc329585909e7_huece645cbcc29a816389d2bf4bc60f91a_12164_3abb2fa86087869302dc312a38696bcf.png" />
-&lt;figcaption> &lt;a href="/img/c081d0e3fc843873c40ea85ab7dbc329585909e7.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;hr>
 &lt;p>If you want to add multiple rows of content with 2 columns, add a new 2 columns paragraph for each set of two you want (e.g., if you have five blocks of content, add three 2 columns paragraphs).&lt;/p>
@@ -1675,30 +2411,30 @@ request, on every CI build in the future.&lt;/p>
 &lt;h3 id="url-pattern">URL pattern&lt;/h3>
 &lt;p>Content type is using following pattern:
 &lt;code>/programs/[node:field_activity_category:entity:field_category_program:entity:title]/[node:field_activity_category:entity:title]/[node:title]&lt;/code>&lt;/p></description></item><item><title>Docs: Activity Finder</title><link>/docs/user-documentation/paragraphs/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/activity-finder/</guid><description>
-&lt;h2 id="documentation-in-progress">&lt;strong>Documentation in Progress&lt;/strong>&lt;/h2>
-&lt;p>Activity Finder&lt;/p>
-&lt;p>What It Does: Embeds the Activity Finder program search experience on your website, which helps users pre-filter the activities they want to search for.&lt;/p>
-&lt;p>Areas It Should Be Used&lt;/p>
+&lt;p>&lt;strong>What It Does:&lt;/strong> Embeds the Activity Finder program search experience on your website, which helps users pre-filter the activities they want to search for.&lt;/p>
+&lt;p>&lt;strong>Areas It Should Be Used&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>Content Area&lt;/li>
 &lt;li>Bottom Area&lt;/li>
 &lt;/ul>
-&lt;p>How it Works&lt;/p>
+&lt;h2 id="how-it-works">How it Works&lt;/h2>
 &lt;p>This paragraph type requires an integration into a CRM. Out-of-the-box, YMCA Website Services’s Activity Finder integrates with Daxko, ActiveNet, and Personify. Any other CRM will require custom developer work.&lt;/p>
-&lt;p>Read more about the Activity Finder feature &amp;gt;&lt;/p>
 &lt;p>How you use these paragraphs will depend on how your Association has structured its program data on the CRM and on how you decide to get people to program results.&lt;/p>
 &lt;p>There are three primary approaches to setting this up: a standard approach, a results-only approach, and a targeted approach.&lt;/p>
-&lt;p>Standard Approach&lt;/p>
-&lt;p>Create two Landing Pages. Title one “Find a Program” and the other “Program Search.”&lt;/p>
-&lt;p>On the “Find a Program” page, add the “Activity Finder” paragraph. Type in “Program Search” and select your Program Search in the “Activity Finder Search Results Page Reference” field.&lt;/p>
-&lt;p>At the bottom, you will see a field called “Title.” Change the title to “Find a Program.” Save the page.&lt;/p>
-&lt;p>Next, on the “Program Search” page, add the “Activity Finder Search Results” paragraph into the Content Area. Type in “Find a Program” on the “Activity Finder Page Reference” page.&lt;/p>
-&lt;p>Results-Only Approach&lt;/p>
+&lt;h3 id="standard-approach">Standard Approach&lt;/h3>
+&lt;ul>
+&lt;li>Create two Landing Pages. Title one “Find a Program” and the other “Program Search.”&lt;/li>
+&lt;li>On the “Find a Program” page, add the “Activity Finder” paragraph. Type in “Program Search” and select your Program Search in the “Activity Finder Search Results Page Reference” field.&lt;/li>
+&lt;li>At the bottom, you will see a field called “Title” Change the title to “Find a Program” Save the page.&lt;/li>
+&lt;li>Next, on the “Program Search” page, add the “Activity Finder Search Results” paragraph into the Content Area. Type in “Find a Program” on the “Activity Finder Page Reference” page.&lt;/li>
+&lt;/ul>
+&lt;h3 id="results-only-approach">Results-Only Approach&lt;/h3>
 &lt;p>If you plan on using deep-linking or want to forgo the guided search experience, you can use the “Activity Finder Search Results.” Create a Landing Page called “Program Search” using the One Column (Full Width) layout.&lt;/p>
-&lt;p>Add the “Activity Finder Search Results” paragraph into your content area and leave the “Activity Finder Page Reference” field blank. Save your page.&lt;/p>
-&lt;p>Read: Deep-linking to an Activity Finder Program Search results page &amp;gt;&lt;/p>
-&lt;p>Targeted Approach&lt;/p>
-&lt;p>Activity Finder can also be used on multiple pages on your site, specifically on your Program Subcategory pages. On a Subcategory page, add the “Activity Finder” paragraph&lt;/p></description></item><item><title>Docs: Activity, Class, and Session</title><link>/docs/user-documentation/content-types/activity-class-session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/activity-class-session/</guid><description>
+&lt;ul>
+&lt;li>Add the “Activity Finder Search Results” paragraph into your content area and leave the “Activity Finder Page Reference” field blank. Save your page.&lt;/li>
+&lt;/ul>
+&lt;h3 id="targeted-approach">Targeted Approach&lt;/h3>
+&lt;p>Activity Finder can also be used on multiple pages on your site, specifically on your Program Subcategory pages.&lt;/p></description></item><item><title>Docs: Activity, Class, and Session</title><link>/docs/user-documentation/content-types/activity-class-session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/activity-class-session/</guid><description>
 &lt;blockquote>
 &lt;p>These content types format data/content pulled from third parties, such as Daxko, Personify and ActiveNet, for display in YMCA Website Services.&lt;/p>
 &lt;/blockquote>
@@ -1889,13 +2625,15 @@ request, on every CI build in the future.&lt;/p>
 &lt;p>&lt;strong>Using Links with the Text Editor&lt;/strong>
 Links are simple in YMCA Website Services - just highlight your text and click the link icon or type Ctrl+K (Windows)/Command(⌘)+K (Mac). Once the pop-up appears, type your URL into the field and click “Save.”&lt;/p>
 &lt;p>
+&lt;a href="/img/23616117608ee734ee7496acf8f0ee1c958995f6.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-description_text-editor-links" srcset="
 /img/23616117608ee734ee7496acf8f0ee1c958995f6_hu000ae0ed797dd920c05adc927e850cf2_35659_2140a9317cbe0ed3198adc517840f5f9.png 458w,
 /img/23616117608ee734ee7496acf8f0ee1c958995f6_hu000ae0ed797dd920c05adc927e850cf2_35659_c39d2a6770ae65fcc06b53004ad4a4b9.png 726w,
 /img/23616117608ee734ee7496acf8f0ee1c958995f6_hu000ae0ed797dd920c05adc927e850cf2_35659_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/23616117608ee734ee7496acf8f0ee1c958995f6_hu000ae0ed797dd920c05adc927e850cf2_35659_2140a9317cbe0ed3198adc517840f5f9.png" />
-&lt;figcaption>The link button in the CKEditor toolbar. &lt;a href="/img/23616117608ee734ee7496acf8f0ee1c958995f6.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption>The link button in the CKEditor toolbar. &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>
 &lt;figure class="image-caption">
@@ -1910,20 +2648,24 @@ Links are simple in YMCA Website Services - just highlight your text and click t
 &lt;p>Ys with newer versions of YMCA Website Services can add attributes to their links, including a title (
 &lt;a href="https://en.wikipedia.org/wiki/Tooltip" target="_blank">for tooltips&lt;/a>) HTML ID, HTML rel and CSS classes. You can also opt to have your link open in a new window/tab.&lt;/p>
 &lt;p>
+&lt;a href="/img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page_text-editor-link-and-title-popup|690x300, 50%" srcset="
 /img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe_hucfbf4e52e90d12872cf49d63c512215e_18049_ea980f35a11cf5ac5151c51f1fcf4650.png 458w,
 /img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe_hucfbf4e52e90d12872cf49d63c512215e_18049_0f9e1b30294101b9a1f4aabe536b17c7.png 726w,
 /img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe_hucfbf4e52e90d12872cf49d63c512215e_18049_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe_hucfbf4e52e90d12872cf49d63c512215e_18049_ea980f35a11cf5ac5151c51f1fcf4650.png" />
-&lt;figcaption> &lt;a href="/img/780e5a6d9c2b4f7a0bff8606f40807800d9f28fe.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
+&lt;a href="/img/6bbc2313b7b75f269c895aba35df2b9595304375.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page_text-editor-link-attributes-popup|628x500, 50%" srcset="
 /img/6bbc2313b7b75f269c895aba35df2b9595304375_hu0415d5a791f47e8f7a058269c9c3a192_54218_0e0eb48385bdd3cdd1a703658806f348.png 458w,
 /img/6bbc2313b7b75f269c895aba35df2b9595304375_hu0415d5a791f47e8f7a058269c9c3a192_54218_fd320d5e13336dde15b15c4c3d7221a8.png 726w,
 /img/6bbc2313b7b75f269c895aba35df2b9595304375_hu0415d5a791f47e8f7a058269c9c3a192_54218_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/6bbc2313b7b75f269c895aba35df2b9595304375_hu0415d5a791f47e8f7a058269c9c3a192_54218_0e0eb48385bdd3cdd1a703658806f348.png" />
-&lt;figcaption> &lt;a href="/img/6bbc2313b7b75f269c895aba35df2b9595304375.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>&lt;strong>Linking Tips&lt;/strong>&lt;/p>
 &lt;ul>
@@ -2387,13 +3129,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;h2 id="basic-text-formatting-in-text-editor">Basic Text Formatting in Text Editor&lt;/h2>
 &lt;p>Choose any of the options for your text below by clicking on the icon/performing the keyboard shortcut indicated. To format text you’ve previously typed, just highlight the text and then click on the button in the editor.&lt;/p>
 &lt;p>
+&lt;a href="/img/005bb7b2eb3fb5e7558f3b2d95462b797903decb.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-description__text-editor-buttons|690x56" srcset="
 /img/005bb7b2eb3fb5e7558f3b2d95462b797903decb_hufd2c19cdd355c3913065d216f9e7531c_32342_a26d4aca67369f0cee6753eb57950171.png 458w,
 /img/005bb7b2eb3fb5e7558f3b2d95462b797903decb_hufd2c19cdd355c3913065d216f9e7531c_32342_d7616af1155727849cda4b9dd2f16f29.png 726w,
 /img/005bb7b2eb3fb5e7558f3b2d95462b797903decb_hufd2c19cdd355c3913065d216f9e7531c_32342_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/005bb7b2eb3fb5e7558f3b2d95462b797903decb_hufd2c19cdd355c3913065d216f9e7531c_32342_a26d4aca67369f0cee6753eb57950171.png" />
-&lt;figcaption> &lt;a href="/img/005bb7b2eb3fb5e7558f3b2d95462b797903decb.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>
 &lt;a href="https://ckeditor.com/ckeditor-4/demo/#article" target="_blank">Demo Basic Text Formatting on CKEditor 4 &amp;gt;&lt;/a>&lt;/p>
@@ -2949,13 +3693,15 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;p>
 &lt;a href="https://community.openymca.org/t/adding-links-in-the-text-editor/645" target="_blank">As an alternate to using the link tool&lt;/a>, you can easily create buttons with YMCA Website Services using the button editor. When you click on the button icon, it will open a pop-up.&lt;/p>
 &lt;p>
+&lt;a href="/img/d5736f5507428b99030d5c88620d3f226f154cfc.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="WYSIWYG Editor options with the button tab highlighted in green." srcset="
 /img/d5736f5507428b99030d5c88620d3f226f154cfc_hub3151a40bcb4772b48026f6f433e67a0_25715_fe9c8bb931eb18958f198dc0f1cc8a97.png 458w,
 /img/d5736f5507428b99030d5c88620d3f226f154cfc_hub3151a40bcb4772b48026f6f433e67a0_25715_30318e067f639c60e8dd98e74d6e4d32.png 726w,
 /img/d5736f5507428b99030d5c88620d3f226f154cfc_hub3151a40bcb4772b48026f6f433e67a0_25715_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/d5736f5507428b99030d5c88620d3f226f154cfc_hub3151a40bcb4772b48026f6f433e67a0_25715_fe9c8bb931eb18958f198dc0f1cc8a97.png" />
-&lt;figcaption> &lt;a href="/img/d5736f5507428b99030d5c88620d3f226f154cfc.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;blockquote>
 &lt;p>You can also edit a button you&amp;rsquo;ve created previously by clicking on the link in the text editor.&lt;/p>
@@ -2968,13 +3714,15 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;/p>
 &lt;p>There are three tabs for creating your button: an info tab, a target tab, and an icon tab.&lt;/p>
 &lt;p>
+&lt;a href="/img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-description__text-editor-button-tabs|690x137,50%" srcset="
 /img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf_huea5daba795073207cbe6ae0a666df1f3_8881_56f7b6c1bede74fad452104e7aba1a35.png 458w,
 /img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf_huea5daba795073207cbe6ae0a666df1f3_8881_844c57c855865d6aa6e15e3ef557cb4c.png 726w,
 /img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf_huea5daba795073207cbe6ae0a666df1f3_8881_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf_huea5daba795073207cbe6ae0a666df1f3_8881_56f7b6c1bede74fad452104e7aba1a35.png" />
-&lt;figcaption> &lt;a href="/img/2564a2a399f57c0b0a1cffd8e69b4e4174a9fbaf.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="info-tab">Info Tab&lt;/h2>
@@ -2992,21 +3740,25 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;/blockquote>
 &lt;p>The top right “Size” dropdown four options for your button size. If you chose “Link” style option, the Size option will not affect your link.&lt;/p>
 &lt;p>
+&lt;a href="/img/450d40d931e05bc00fe0d3b6d15d951b0062793d.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-destiption__text-editor-button_style|166x500,50%" srcset="
 /img/450d40d931e05bc00fe0d3b6d15d951b0062793d_hu4882779c409839c86938ea8be56e5447_83269_42be687e77e4ecb49c5e74d195252012.png 458w,
 /img/450d40d931e05bc00fe0d3b6d15d951b0062793d_hu4882779c409839c86938ea8be56e5447_83269_dc3cba338992df9ed9defad32f87fb7a.png 726w,
 /img/450d40d931e05bc00fe0d3b6d15d951b0062793d_hu4882779c409839c86938ea8be56e5447_83269_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/450d40d931e05bc00fe0d3b6d15d951b0062793d_hu4882779c409839c86938ea8be56e5447_83269_42be687e77e4ecb49c5e74d195252012.png" />
-&lt;figcaption> &lt;a href="/img/450d40d931e05bc00fe0d3b6d15d951b0062793d.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;br>
+&lt;a href="/img/a27170cb92cff52b1a9bd2590993d413b62350c7.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-destiption__text-editor-button_size|282x200,50%" srcset="
 /img/a27170cb92cff52b1a9bd2590993d413b62350c7_hu961d180292efe5a65096e2b3af1f7864_52529_dae3eb2a1f8001dfed27c42b470bd2aa.png 458w,
 /img/a27170cb92cff52b1a9bd2590993d413b62350c7_hu961d180292efe5a65096e2b3af1f7864_52529_4022479ae7ca1d4ab740e2c57c9e217b.png 726w,
 /img/a27170cb92cff52b1a9bd2590993d413b62350c7_hu961d180292efe5a65096e2b3af1f7864_52529_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/a27170cb92cff52b1a9bd2590993d413b62350c7_hu961d180292efe5a65096e2b3af1f7864_52529_dae3eb2a1f8001dfed27c42b470bd2aa.png" />
-&lt;figcaption> &lt;a href="/img/a27170cb92cff52b1a9bd2590993d413b62350c7.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>Add the text for your link/button in the bottom left. Enter your link in the URL field on the bottom right.&lt;/p>
 &lt;ul>
@@ -3041,13 +3793,15 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;hr>
 &lt;h2 id="icons-tab">Icons Tab&lt;/h2>
 &lt;p>
+&lt;a href="/img/4a18583fc355305c5175fe6333e5a5a4638bd07e.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-destiption__text-editor-button_icons|388x500,50%" srcset="
 /img/4a18583fc355305c5175fe6333e5a5a4638bd07e_hu720c6e08ec75f1abb89171583b8b094b_25436_fa18d84cdf1dbdac66435f3fd74cfa7b.png 458w,
 /img/4a18583fc355305c5175fe6333e5a5a4638bd07e_hu720c6e08ec75f1abb89171583b8b094b_25436_5f33e19249a90e88d317e43e960cc3f6.png 726w,
 /img/4a18583fc355305c5175fe6333e5a5a4638bd07e_hu720c6e08ec75f1abb89171583b8b094b_25436_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/4a18583fc355305c5175fe6333e5a5a4638bd07e_hu720c6e08ec75f1abb89171583b8b094b_25436_fa18d84cdf1dbdac66435f3fd74cfa7b.png" />
-&lt;figcaption> &lt;a href="/img/4a18583fc355305c5175fe6333e5a5a4638bd07e.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>You can add icons to your buttons or links in the icons tab. On the right, you will have fields that integrate with the Font Awesome library. To have an icon show up on the left, use the Left Icon text field. For the right, use the Right Icon text field.&lt;/p>
 &lt;p>&lt;em>Example:&lt;/em> For a Right Chevron, type &lt;code>fa-chevron-right&lt;/code>.&lt;/p>
@@ -3066,13 +3820,15 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;h2 id="adding-a-new-table">Adding a New Table&lt;/h2>
 &lt;p>To add a table, click on the table icon. A popup will appear with your initial setup options:&lt;/p>
 &lt;p>
+&lt;a href="/img/4f4624d31c5ac550174bb49165287c9d93698ead.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page-simple-content__table|586x176, 50%" srcset="
 /img/4f4624d31c5ac550174bb49165287c9d93698ead_hu71ad5675bd1571d43574e9964cd15de6_22226_5e4b44e0a38253c52f6d0b137675eaf9.png 458w,
 /img/4f4624d31c5ac550174bb49165287c9d93698ead_hu71ad5675bd1571d43574e9964cd15de6_22226_5357cf80b402e3da233e638297366780.png 726w,
 /img/4f4624d31c5ac550174bb49165287c9d93698ead_hu71ad5675bd1571d43574e9964cd15de6_22226_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/4f4624d31c5ac550174bb49165287c9d93698ead_hu71ad5675bd1571d43574e9964cd15de6_22226_5e4b44e0a38253c52f6d0b137675eaf9.png" />
-&lt;figcaption> &lt;a href="/img/4f4624d31c5ac550174bb49165287c9d93698ead.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;figure class="image-caption">
 &lt;img alt="paragraph-simple-content__table-options|320x469, 50%" src="/img/29d8b4d51f19d6ddcb056a169c597a9e2901d53f.gif" />
 &lt;figcaption>&lt;/figcaption>
@@ -3108,13 +3864,15 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;h2 id="editing-the-table">Editing the Table&lt;/h2>
 &lt;p>To edit a table after you’ve built one, right click on the table. To access the basic table options, click on “Table Properties.”&lt;/p>
 &lt;p>
+&lt;a href="/img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page-|296x500, 50%" srcset="
 /img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f_hub4a8eee368410bba04a68ea4208686e3_24754_7c4311ce285f4949e636b63b55d28ea6.png 458w,
 /img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f_hub4a8eee368410bba04a68ea4208686e3_24754_e9c11b5b5c9d0b91a4a215086948ff4e.png 726w,
 /img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f_hub4a8eee368410bba04a68ea4208686e3_24754_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f_hub4a8eee368410bba04a68ea4208686e3_24754_7c4311ce285f4949e636b63b55d28ea6.png" />
-&lt;figcaption> &lt;a href="/img/a0d80e4672ca10fedb2a4c3bbf53f2a439c8229f.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>You can also double-click inside a table cell.&lt;/p>
 &lt;h2 id="adding-rowscolumns">Adding Rows/Columns&lt;/h2>
@@ -3126,13 +3884,15 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;p>The “Cell” option from the right-click menu gives you same options as Row and Column, including inserting cells and deleting cells. You can also merge cells or split cells as you would in an excel table by selecting those options from the right-click menu.&lt;/p>
 &lt;p>However, there is another option called “Cell Properties” that allows you to style your cells as well. Just right-click &amp;gt; Cell &amp;gt; Cell Properties.&lt;/p>
 &lt;p>
+&lt;a href="/img/f6a82a1957f81cf57cba0e863bbe47044377e602.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="A sample of the available cell options when you right click on a cell, 75%" srcset="
 /img/f6a82a1957f81cf57cba0e863bbe47044377e602_hu214c5c99a54469ec12bb75ca5b896faf_42851_17a28654c5bf419f3877c344064cd9d7.png 458w,
 /img/f6a82a1957f81cf57cba0e863bbe47044377e602_hu214c5c99a54469ec12bb75ca5b896faf_42851_127ce5ff7822008eff7ccd23f9d004d5.png 726w,
 /img/f6a82a1957f81cf57cba0e863bbe47044377e602_hu214c5c99a54469ec12bb75ca5b896faf_42851_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/f6a82a1957f81cf57cba0e863bbe47044377e602_hu214c5c99a54469ec12bb75ca5b896faf_42851_17a28654c5bf419f3877c344064cd9d7.png" />
-&lt;figcaption> &lt;a href="/img/f6a82a1957f81cf57cba0e863bbe47044377e602.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>This opens a dialogue box similar to the table properties. You can set the width/height for your cell (pixels only for height; pixels or percentages for your width) in the fields on the left.&lt;/p>
 &lt;p>Farther down on the left, you can choose from a dropdown whether or not to wrap the text in a cell.&lt;/p>
@@ -3147,13 +3907,15 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;p>To see an example of what a table might look like on your site, open the &amp;ldquo;Source&amp;rdquo; tab on your text editor and insert the HTML. You can then edit the content inside using the WYSIWYG text editor.&lt;/p>
 &lt;h3 id="-pricing-table">// Pricing Table&lt;/h3>
 &lt;p>
+&lt;a href="/img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page-simple-content__pricing-example|690x426, 75%" srcset="
 /img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0_hu48e49a75cdf685730025926c2de945a5_36947_5653ab6c4d4e0fe8be7286cf9c9129b9.png 458w,
 /img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0_hu48e49a75cdf685730025926c2de945a5_36947_1e04115325512c2593545ece8356dbe3.png 726w,
 /img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0_hu48e49a75cdf685730025926c2de945a5_36947_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0_hu48e49a75cdf685730025926c2de945a5_36947_5653ab6c4d4e0fe8be7286cf9c9129b9.png" />
-&lt;figcaption> &lt;a href="/img/f917638b631b58e8faa0fc9dd6824b9e6d19b4a0.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">h2&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>Registration and Pricing&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">h2&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">table&lt;/span> &lt;span style="color:#c4a000">align&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;left&amp;#34;&lt;/span> &lt;span style="color:#c4a000">border&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;1&amp;#34;&lt;/span> &lt;span style="color:#c4a000">cellpadding&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;5&amp;#34;&lt;/span> &lt;span style="color:#c4a000">cellspacing&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;1&amp;#34;&lt;/span> &lt;span style="color:#c4a000">style&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;width: 500px;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
@@ -3189,13 +3951,15 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">table&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="-camp-locations">// Camp Locations&lt;/h3>
 &lt;p>
+&lt;a href="/img/609efb274c09d0d2635e57f376a68b3fa372eb76.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="landing-page-simple-content__camp-locations-example|690x386" srcset="
 /img/609efb274c09d0d2635e57f376a68b3fa372eb76_hu43c36c030344367ee994f0da4e72fdb9_111365_26db651c17d6a1aba55bc97319564340.png 458w,
 /img/609efb274c09d0d2635e57f376a68b3fa372eb76_hu43c36c030344367ee994f0da4e72fdb9_111365_ffc9393dde87b5780c3034c740e77614.png 726w,
 /img/609efb274c09d0d2635e57f376a68b3fa372eb76_hu43c36c030344367ee994f0da4e72fdb9_111365_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/609efb274c09d0d2635e57f376a68b3fa372eb76_hu43c36c030344367ee994f0da4e72fdb9_111365_26db651c17d6a1aba55bc97319564340.png" />
-&lt;figcaption> &lt;a href="/img/609efb274c09d0d2635e57f376a68b3fa372eb76.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">style&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">//&lt;/span> &lt;span style="color:#204a87;font-weight:bold">To&lt;/span> &lt;span style="color:#204a87;font-weight:bold">achieve&lt;/span> &lt;span style="color:#204a87;font-weight:bold">the&lt;/span> &lt;span style="color:#204a87;font-weight:bold">full&lt;/span> &lt;span style="color:#204a87;font-weight:bold">effect&lt;/span> &lt;span style="color:#204a87;font-weight:bold">of&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span> &lt;span style="color:#204a87;font-weight:bold">table&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">,&lt;/span> &lt;span style="color:#204a87;font-weight:bold">insert&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span> &lt;span style="color:#204a87;font-weight:bold">style&lt;/span> &lt;span style="color:#204a87;font-weight:bold">tag&lt;/span> &lt;span style="color:#204a87;font-weight:bold">above&lt;/span> &lt;span style="color:#204a87;font-weight:bold">the&lt;/span> &lt;span style="color:#204a87;font-weight:bold">table&lt;/span> &lt;span style="color:#204a87;font-weight:bold">or&lt;/span> &lt;span style="color:#204a87;font-weight:bold">insert&lt;/span> &lt;span style="color:#204a87;font-weight:bold">it&lt;/span> &lt;span style="color:#204a87;font-weight:bold">into&lt;/span> &lt;span style="color:#204a87;font-weight:bold">the&lt;/span> &lt;span style="color:#204a87;font-weight:bold">CSS&lt;/span> &lt;span style="color:#204a87;font-weight:bold">Editor&lt;/span> &lt;span style="color:#204a87;font-weight:bold">module&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>

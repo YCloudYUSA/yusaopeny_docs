@@ -1,24 +1,28 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – User Documentation</title><link>/docs/user-documentation/</link><description>Recent content in User Documentation on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/user-documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Text Editor</title><link>/docs/user-documentation/text-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – User Documentation</title><link>/docs/user-documentation/</link><description>Recent content in User Documentation on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/user-documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Text Editor</title><link>/docs/user-documentation/text-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/</guid><description>
 &lt;p>
+&lt;a href="/img/dd630632ed4ea5876a15d65709946e420ffb84d1.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-description__text-editor|690x307" srcset="
 /img/dd630632ed4ea5876a15d65709946e420ffb84d1_huc1ff945e4c07bb7c06e5b311f9206b5e_163594_8a5d01c472a380d37a48f3257e676a80.png 458w,
 /img/dd630632ed4ea5876a15d65709946e420ffb84d1_huc1ff945e4c07bb7c06e5b311f9206b5e_163594_e724d9cfbc23d9c821319870092c8531.png 726w,
 /img/dd630632ed4ea5876a15d65709946e420ffb84d1_huc1ff945e4c07bb7c06e5b311f9206b5e_163594_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/dd630632ed4ea5876a15d65709946e420ffb84d1_huc1ff945e4c07bb7c06e5b311f9206b5e_163594_8a5d01c472a380d37a48f3257e676a80.png" />
-&lt;figcaption> &lt;a href="/img/dd630632ed4ea5876a15d65709946e420ffb84d1.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>&lt;em>The description field inside a blog is an example of the WYISWYG Editor in action.&lt;/em>&lt;/p>
 &lt;p>
 &lt;a href="https://www.optimizely.com/optimization-glossary/content-management-system/" target="_blank">If you have worked in a Content Management System&lt;/a> like Drupal, Wordpress or Joomla!, you are likely familiar with what a text editor does. This tool allows you the flexibility to format content however you want within a certain container or area.&lt;/p>
 &lt;p>
+&lt;a href="/img/4e7d30e968474e737d679c2f2a9081a91bc8d9c0.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="blog-description_text-editor-example|690x385" srcset="
 /img/4e7d30e968474e737d679c2f2a9081a91bc8d9c0_hubd96fbbe88e1289c7af25253e3128047_431817_0106eba4be64b7d777a5a0097ab1df28.png 458w,
 /img/4e7d30e968474e737d679c2f2a9081a91bc8d9c0_hubd96fbbe88e1289c7af25253e3128047_431817_63491b4903511dc0a84bc9bb191d101a.png 726w,
 /img/4e7d30e968474e737d679c2f2a9081a91bc8d9c0_hubd96fbbe88e1289c7af25253e3128047_431817_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/4e7d30e968474e737d679c2f2a9081a91bc8d9c0_hubd96fbbe88e1289c7af25253e3128047_431817_0106eba4be64b7d777a5a0097ab1df28.png" />
-&lt;figcaption> &lt;a href="/img/4e7d30e968474e737d679c2f2a9081a91bc8d9c0.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>
 &lt;a href="https://ckeditor.com/ckeditor-4/demo/#article" target="_blank">YMCA Website Services&amp;rsquo;s text editor (CKEditor)&lt;/a> provides a number of different buttons for styling and formatting, as well as a Source editor if you are so inclined to use HTML.&lt;/p></description></item><item><title>Docs: Page/Content Types</title><link>/docs/user-documentation/content-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/</guid><description/></item><item><title>Docs: Blocks</title><link>/docs/user-documentation/blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/blocks/</guid><description>
@@ -49,13 +53,15 @@
 &lt;h3 id="block-descriptions">Block Descriptions&lt;/h3>
 &lt;p>Standard across all block types is the block description field, which serves as the name for your block. Use this description field to help identify your block when you are embedding it onto a page.&lt;/p>
 &lt;p>
+&lt;a href="/img/blocks-description.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="admin&amp;amp;ndash;code__block__cropped" srcset="
 /img/blocks-description_huf1d11b81b37b7f7966305719cdd17744_23863_fcf02cf79c1f01419e90d92ce93f1e7a.png 458w,
 /img/blocks-description_huf1d11b81b37b7f7966305719cdd17744_23863_846180f904c4d2004cc9d45aa57908e8.png 726w,
 /img/blocks-description_huf1d11b81b37b7f7966305719cdd17744_23863_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/blocks-description_huf1d11b81b37b7f7966305719cdd17744_23863_fcf02cf79c1f01419e90d92ce93f1e7a.png" />
-&lt;figcaption> &lt;a href="/img/blocks-description.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;h2 id="block-types">Block Types&lt;/h2>
 &lt;p>YMCA Website Services not only allows you to use blocks, but it supports different types of blocks for different types of content.&lt;/p>
@@ -117,13 +123,15 @@
 &lt;/ul>
 &lt;p>Once you&amp;rsquo;ve saved, you will see an empty page. Click the &lt;strong>Layout&lt;/strong> tab to enter Layout Builder.&lt;/p>
 &lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/lb_layout_tab.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="Drupal admin tabs with an arrow pointing to &amp;amp;ldquo;Layout&amp;amp;rdquo;" srcset="
 /docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_d6e919f2e030e457400498d2b9b60cc1.png 458w,
 /docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_02ea27cd664f5663be059015a1bd0c06.png 726w,
 /docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_d6e919f2e030e457400498d2b9b60cc1.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/lb_layout_tab.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;h3 id="updating-an-existing-page">Updating an existing page&lt;/h3>
 &lt;p>Navigate to the page you&amp;rsquo;d like to update, then click the &lt;strong>Layout&lt;/strong> tab, like above.&lt;/p>
@@ -148,25 +156,29 @@
 &lt;p>Sections create the structure of the page and contain blocks. You can drag and drop blocks between sections, but you cannot move sections themselves—you can only create sections above or below existing sections.&lt;/p>
 &lt;p>You can remove sections by clicking the small &amp;ldquo;X&amp;rdquo; link at the top left of the section. Click on &amp;ldquo;Configure &lt;Name of Section>&amp;rdquo; to edit the section layout and other options.&lt;/p>
 &lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/lb_section_crud.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="A screenshot of a Layout Builder page with Remove, Configure, and Add buttons labeled." srcset="
 /docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_d6f703264b05f21aac6aae25a802247b.png 458w,
 /docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_dd40dfa3ce4c532a2dfa06322e777661.png 726w,
 /docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_d6f703264b05f21aac6aae25a802247b.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/lb_section_crud.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;h4 id="layouts">Layouts&lt;/h4>
 &lt;p>Layouts define the structure of a section. YMCA Website Services comes with 1-, 2-, 3-, and 4-column layouts, and each layout has additional configuration options once it&amp;rsquo;s created. See
 &lt;a href="advanced-options">advanced options&lt;/a> for more details.&lt;/p>
 &lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/lb_choose_layout.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="A screenshot of the &amp;amp;ldquo;Choose a layout for this section&amp;amp;rdquo; dialog with options for 1 to 4 columns." srcset="
 /docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_0e825a5cbfa066c5c0857c1c2d53df04.png 458w,
 /docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_47f8b7b6c35018a92141b4295740e8ab.png 726w,
 /docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_0e825a5cbfa066c5c0857c1c2d53df04.png" />
-&lt;figcaption>Choose a layout &lt;a href="/docs/user-documentation/layout-builder/lb_choose_layout.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption>Choose a layout &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>
 &lt;figure class="image-caption">
@@ -179,13 +191,15 @@
 &lt;p>While &lt;strong>Sections&lt;/strong> contain the page&amp;rsquo;s &lt;strong>structure&lt;/strong>, &lt;strong>Blocks&lt;/strong> contain its &lt;strong>content&lt;/strong>.&lt;/p>
 &lt;p>To create a block, click Add Block in any section of the page, then Create Custom Block.&lt;/p>
 &lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/lb_add_block.png" title="View original image">
 &lt;figure class="image-caption">
 &lt;img alt="A screenshot showing the Add Block and Create Custom Block buttons." srcset="
 /docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_1a1f637b48643b898a8dbad0bf8b5e1c.png 458w,
 /docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_67be2fd4b61a7e4bb0f2de565a1e7a26.png 726w,
 /docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_1a1f637b48643b898a8dbad0bf8b5e1c.png" />
-&lt;figcaption> &lt;a href="/docs/user-documentation/layout-builder/lb_add_block.png" class="fa-solid fa-external-link fa-fw" title="View original image">&lt;/a>&lt;/figcaption>
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
+&lt;/a>
 &lt;/p>
 &lt;p>Your YMCA website has a wide array of blocks to choose from. In this section, you will find detailed descriptions of those blocks.&lt;/p>
 &lt;h2 id="tips-and-tricks">Tips and Tricks&lt;/h2>
@@ -452,4 +466,5 @@ After that you will be able to upload multiple files via Media Browser (&lt;code
 &lt;p>Once you choose to clone a piece of content you will be presented with a complex screen asking which entities you would like to clone. In general, you can leave all of the checkboxes as they are. Changing the options could result in unintended consequences.&lt;/p>
 &lt;p>
 &lt;img src="./basics-clone-options.png" alt="" />&lt;/p>
-&lt;p>Scroll to the bottom of the checkbox options, choose &lt;strong>Take ownership&lt;/strong> if you would like your user to own the new content, then &lt;strong>Save&lt;/strong>.&lt;/p></description></item></channel></rss>
+&lt;p>Scroll to the bottom of the checkbox options, choose &lt;strong>Take ownership&lt;/strong> if you would like your user to own the new content, then &lt;strong>Save&lt;/strong>.&lt;/p></description></item><item><title>Docs: Membership</title><link>/docs/user-documentation/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/</guid><description>
+&lt;p>The distribution has two methods for informing visitors of membership options and driving them to the member management system for sign-up&lt;/p></description></item></channel></rss>
