@@ -1363,9 +1363,14 @@
 &lt;iframe src="https://www.youtube.com/embed/QczjkFL23W0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Accordion.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Accordion%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Accordion%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Accordion%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -1505,7 +1510,41 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;p>This block has no other options.&lt;/p>
 &lt;hr>
 &lt;p>When you are finished adding blocks,
-&lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/p></description></item><item><title>Docs: Breadcrumbs</title><link>/docs/user-documentation/layout-builder/breadcrumbs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/breadcrumbs/</guid><description>
+&lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/p></description></item><item><title>Docs: Banner</title><link>/docs/user-documentation/layout-builder/banner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/banner/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/kerfY3EBESA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Banner.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
+&lt;a href="/img/designs/lb/Hero%20Banner%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Hero%20Banner%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>To use the block:&lt;/p>
+&lt;ul>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
+&lt;li>Scroll to the location on the page where you want to add a block&lt;/li>
+&lt;li>Click &lt;strong>Add block&lt;/strong>&lt;/li>
+&lt;li>In the sidebar, click &lt;strong>Create custom block&lt;/strong>&lt;/li>
+&lt;li>Choose the block to add.&lt;/li>
+&lt;/ul>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
+&lt;li>&lt;strong>Banner Title&lt;/strong> (required): A heading to display on the banner.&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong>: A full text editor to add banner content.&lt;/li>
+&lt;li>&lt;strong>Media&lt;/strong>: Chose from the library or add a new image or icon to be displayed behind the banner text.&lt;/li>
+&lt;li>&lt;strong>CTA/Link&lt;/strong>: A link at the bottom of the banner text.&lt;/li>
+&lt;/ul>
+&lt;p>Then save the block:&lt;/p>
+&lt;ul>
+&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
+&lt;li>
+&lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Breadcrumbs</title><link>/docs/user-documentation/layout-builder/breadcrumbs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/breadcrumbs/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
 &lt;a class="nav-link active persistLang-vid"
@@ -1544,9 +1583,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/div>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Breadcrumbs.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Breadcrumbs%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Breadcrumbs%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Breadcrumbs%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use Breadcrumbs:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -1576,9 +1620,15 @@ The Breadcrumbs block may not show the correct path while editing the page layou
 &lt;hr>
 &lt;p>The Cards block is similar to the
 &lt;a href="../grid-cta">Grid CTA&lt;/a> block, but has more fields and places the image behind the item content.&lt;/p>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Card.jpg">Design System&lt;/a> |
+&lt;a href="/img/designs/lb-ui-kit/Card%20-%20Column%20Variations.jpg">Variations&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Cards%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Cards%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Cards%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -1614,9 +1664,14 @@ The Breadcrumbs block may not show the correct path while editing the page layou
 &lt;iframe src="https://www.youtube.com/embed/zVT1St0UXsk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Carousel.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Carousels%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Carousels%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Carousels%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -1889,9 +1944,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;hr>
 &lt;p>The Grid CTA block is similar to the
 &lt;a href="../cards">Cards&lt;/a> block, but allows for more flexible items with a slightly more freeform design.&lt;/p>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Grid%20Content.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Grid%20Content%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Grid%20Content%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Grid%20Content%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -2169,35 +2229,6 @@ Refer to the Drupal User Guide for more information about
 &lt;p>&lt;strong>Content&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>Menu items can be managed under &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Menus&lt;/strong> &amp;gt; &lt;strong>Footer&lt;/strong>.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Hero Banner</title><link>/docs/user-documentation/layout-builder/hero-banner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/hero-banner/</guid><description>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/kerfY3EBESA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div>
-&lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
-&lt;a href="/img/designs/lb/Hero%20Banner%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Hero%20Banner%20Desktop.png">Desktop&lt;/a>&lt;/p>
-&lt;p>To use the block:&lt;/p>
-&lt;ul>
-&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
-&lt;li>Scroll to the location on the page where you want to add a block&lt;/li>
-&lt;li>Click &lt;strong>Add block&lt;/strong>&lt;/li>
-&lt;li>In the sidebar, click &lt;strong>Create custom block&lt;/strong>&lt;/li>
-&lt;li>Choose the block to add.&lt;/li>
-&lt;/ul>
-&lt;p>Fill in the content fields:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
-&lt;li>&lt;strong>Banner Title&lt;/strong> (required): A heading to display on the banner.&lt;/li>
-&lt;li>&lt;strong>Description&lt;/strong>: A full text editor to add banner content.&lt;/li>
-&lt;li>&lt;strong>Media&lt;/strong>: Chose from the library or add a new image or icon to be displayed behind the banner text.&lt;/li>
-&lt;li>&lt;strong>CTA/Link&lt;/strong>: A link at the bottom of the banner text.&lt;/li>
-&lt;/ul>
-&lt;p>Then save the block:&lt;/p>
-&lt;ul>
-&lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
-&lt;li>
-&lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Location Finder</title><link>/docs/user-documentation/layout-builder/location-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/location-finder/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
@@ -2354,9 +2385,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/div>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Modal.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Modals%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Modals%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Modals%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -2421,9 +2457,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/div>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Sponsors.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Sponsors%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Sponsors%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Sponsors%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -2455,9 +2496,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;iframe src="https://www.youtube.com/embed/BgEL_YU-DiA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Ping%20Pong.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Ping%20Pong%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Ping%20Pong%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Ping%20Pong%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -2487,9 +2533,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;iframe src="https://www.youtube.com/embed/dybusSNmTPc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Promo%20Cards.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Promo%20Cards%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Promo%20Cards%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Promo%20Cards%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -2550,9 +2601,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/div>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Article%20CT.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Related%20Articles%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Related%20Articles%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Related%20Articles%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -2652,9 +2708,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/div>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Event.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Related%20Events%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Related%20Events%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Related%20Events%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -2711,9 +2772,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;iframe src="https://www.youtube.com/embed/UZVurubBti8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Side%20Menu.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Simple%20Menu%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Simple%20Menu%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Simple%20Menu%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -2772,9 +2838,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/div>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Staff.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Staff%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Staff%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Staff%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -2809,9 +2880,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;iframe src="https://www.youtube.com/embed/_RQcnMw4X5U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Statistics.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Statistics%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Statistics%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Statistics%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -2847,9 +2923,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/div>
 &lt;hr>
 &lt;p>The Table block also allows users to add simple content to the Landing Page (Layout Builder) content type.&lt;/p>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Table.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Tables%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Tables%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Tables%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>Then save the block:&lt;/p>
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
@@ -2898,9 +2979,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;iframe src="https://www.youtube.com/embed/I3GPm718hn8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Tabs.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Tabs%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Tabs%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Tabs%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -2965,9 +3051,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/div>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Testimonials.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Testimonials%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Testimonials%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Testimonials%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
@@ -3001,9 +3092,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;iframe src="https://www.youtube.com/embed/dsHpcLDjLEo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;hr>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Forms.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Webforms%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Webforms%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Webforms%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>To use the block:&lt;/p>
 &lt;ul>
 &lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
