@@ -184,7 +184,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;a href="https://www.drupal.org/project/lb_cards" target="_blank">lb_cards&lt;/a>&lt;/li>
 &lt;li>&lt;strong>Designs:&lt;/strong>
 &lt;a href="/img/designs/lb/Cards%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Cards%20Mobile.png">Desktop&lt;/a>&lt;/li>
+&lt;a href="/img/designs/lb/Cards%20Desktop.png">Desktop&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Flexible card-style components that allow up to 4 cards to display across a page depending on the chosen layout.&lt;/p>
 &lt;table>
