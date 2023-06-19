@@ -1359,8 +1359,42 @@
 &lt;/p>
 &lt;p>Support for these options is a work in progress and may require involvement of your development partner. Feel free to experiment with the options. Be sure to follow proper brand guidelines and accessibility practices.&lt;/p>
 &lt;p>After you have completed setting the &lt;strong>Style&lt;/strong> options, click back to &lt;strong>Content&lt;/strong> and &lt;strong>Save&lt;/strong> or &lt;strong>Update&lt;/strong> to commit your changes.&lt;/p></description></item><item><title>Docs: Accordion</title><link>/docs/user-documentation/layout-builder/accordion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/accordion/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/QczjkFL23W0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/accordion/lb-accordion.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Accordion component with block labels" srcset="
+/docs/user-documentation/layout-builder/accordion/lb-accordion_hu72515199cab03d6c5111e50a5a8bb2ba_84529_85be80ea77860582c41ba12769a1db96.png 458w,
+/docs/user-documentation/layout-builder/accordion/lb-accordion_hu72515199cab03d6c5111e50a5a8bb2ba_84529_e7a7e9ef331b81d892c6ef15315a57be.png 726w,
+/docs/user-documentation/layout-builder/accordion/lb-accordion_hu72515199cab03d6c5111e50a5a8bb2ba_84529_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/accordion/lb-accordion_hu72515199cab03d6c5111e50a5a8bb2ba_84529_85be80ea77860582c41ba12769a1db96.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;/div>
 &lt;/div>
 &lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
@@ -1437,7 +1471,7 @@ Diagram
 &lt;div class="tab-body tab-pane fade show active"
 id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;iframe src="https://www.youtube.com/embed/LGW0oPOnKVw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
@@ -1511,8 +1545,42 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;hr>
 &lt;p>When you are finished adding blocks,
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/p></description></item><item><title>Docs: Banner</title><link>/docs/user-documentation/layout-builder/banner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/banner/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/kerfY3EBESA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/banner/lb--banner.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Banner component with block labels" srcset="
+/docs/user-documentation/layout-builder/banner/lb--banner_hu7ad89972278a2a5273df5319dd299a1d_324113_ed0ec6b59958e4d3c31cacfa848a0aa0.png 458w,
+/docs/user-documentation/layout-builder/banner/lb--banner_hu7ad89972278a2a5273df5319dd299a1d_324113_7aca07e3bb5d94c400c274b924be14f4.png 726w,
+/docs/user-documentation/layout-builder/banner/lb--banner_hu7ad89972278a2a5273df5319dd299a1d_324113_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/banner/lb--banner_hu7ad89972278a2a5273df5319dd299a1d_324113_ed0ec6b59958e4d3c31cacfa848a0aa0.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;/div>
 &lt;/div>
 &lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
@@ -1614,8 +1682,42 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;h4 class="alert-heading">Note:&lt;/h4>
 The Breadcrumbs block may not show the correct path while editing the page layout, but it will display properly for viewers.
 &lt;/div></description></item><item><title>Docs: Cards</title><link>/docs/user-documentation/layout-builder/cards/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/cards/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/vrtcxXl31f4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/cards/lb-cards.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Cards component with block labels" srcset="
+/docs/user-documentation/layout-builder/cards/lb-cards_huded13c78f69acb85ff3d26e55b74f4af_533932_25259db99de58260985186e3dae1c100.png 458w,
+/docs/user-documentation/layout-builder/cards/lb-cards_huded13c78f69acb85ff3d26e55b74f4af_533932_a36968e042bba8c917c2220d762e28f3.png 726w,
+/docs/user-documentation/layout-builder/cards/lb-cards_huded13c78f69acb85ff3d26e55b74f4af_533932_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/cards/lb-cards_huded13c78f69acb85ff3d26e55b74f4af_533932_25259db99de58260985186e3dae1c100.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;/div>
 &lt;/div>
 &lt;hr>
 &lt;p>The Cards block is similar to the
@@ -1660,8 +1762,42 @@ The Breadcrumbs block may not show the correct path while editing the page layou
 &lt;li>
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Carousel</title><link>/docs/user-documentation/layout-builder/carousel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/carousel/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/zVT1St0UXsk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/carousel/lb-carousel.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Carousel component with block labels" srcset="
+/docs/user-documentation/layout-builder/carousel/lb-carousel_hu817f80d766732896e41e505a65d89e50_544155_db9fa437fa3b37d39ed3f387b4b347c9.png 458w,
+/docs/user-documentation/layout-builder/carousel/lb-carousel_hu817f80d766732896e41e505a65d89e50_544155_cefc5253cad206f93d88d5e9cbe7a094.png 726w,
+/docs/user-documentation/layout-builder/carousel/lb-carousel_hu817f80d766732896e41e505a65d89e50_544155_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/carousel/lb-carousel_hu817f80d766732896e41e505a65d89e50_544155_db9fa437fa3b37d39ed3f387b4b347c9.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;/div>
 &lt;/div>
 &lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
@@ -1719,7 +1855,7 @@ Diagram
 &lt;div class="tab-body tab-pane fade show active"
 id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;iframe src="https://www.youtube.com/embed/YVjg-0PjsOM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
@@ -1776,7 +1912,7 @@ Diagram
 &lt;div class="tab-body tab-pane fade show active"
 id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;iframe src="https://www.youtube.com/embed/wPHimaZOprw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
@@ -1865,7 +2001,7 @@ Diagram
 &lt;div class="tab-body tab-pane fade show active"
 id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/cxRxuYkWy-4?start=183" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;iframe src="https://www.youtube.com/embed/LGW0oPOnKVw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
@@ -1938,8 +2074,42 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;hr>
 &lt;p>When you are finished adding blocks,
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/p></description></item><item><title>Docs: Grid CTA</title><link>/docs/user-documentation/layout-builder/grid-cta/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/grid-cta/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/TtABGaClzPw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/grid-cta/lb-grid-cta.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Grid CTA component with block labels" srcset="
+/docs/user-documentation/layout-builder/grid-cta/lb-grid-cta_hu5e90f7538619069ffaad95a3c7ae59e1_526531_1f6945f9ec06a04f3cfa6d4b6e152749.png 458w,
+/docs/user-documentation/layout-builder/grid-cta/lb-grid-cta_hu5e90f7538619069ffaad95a3c7ae59e1_526531_1a883d16ec6f15d2859047792475d520.png 726w,
+/docs/user-documentation/layout-builder/grid-cta/lb-grid-cta_hu5e90f7538619069ffaad95a3c7ae59e1_526531_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/grid-cta/lb-grid-cta_hu5e90f7538619069ffaad95a3c7ae59e1_526531_1f6945f9ec06a04f3cfa6d4b6e152749.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;/div>
 &lt;/div>
 &lt;hr>
 &lt;p>The Grid CTA block is similar to the
@@ -2001,7 +2171,7 @@ Diagram
 &lt;div class="tab-body tab-pane fade show active"
 id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;iframe src="https://www.youtube.com/embed/Z_-ZbGz8Suk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
@@ -2249,7 +2419,7 @@ Diagram
 &lt;div class="tab-body tab-pane fade show active"
 id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;iframe src="https://www.youtube.com/embed/UyOI3ubns8k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
@@ -2492,8 +2662,42 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;li>
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Ping-Pong</title><link>/docs/user-documentation/layout-builder/ping-pong/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/ping-pong/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/BgEL_YU-DiA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/ping-pong/lb-ping-pong.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Ping-pong component with block labels" srcset="
+/docs/user-documentation/layout-builder/ping-pong/lb-ping-pong_hu377adbf9780c7b51b1caf03af444d8ae_1002016_c928867698e66b89c92973cefcf1dd0c.png 458w,
+/docs/user-documentation/layout-builder/ping-pong/lb-ping-pong_hu377adbf9780c7b51b1caf03af444d8ae_1002016_4f8a86ad91b320652405293278295f66.png 726w,
+/docs/user-documentation/layout-builder/ping-pong/lb-ping-pong_hu377adbf9780c7b51b1caf03af444d8ae_1002016_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/ping-pong/lb-ping-pong_hu377adbf9780c7b51b1caf03af444d8ae_1002016_c928867698e66b89c92973cefcf1dd0c.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;/div>
 &lt;/div>
 &lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
@@ -2529,8 +2733,42 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;li>
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Promo Card</title><link>/docs/user-documentation/layout-builder/promo-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/promo-card/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/dybusSNmTPc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/promo-card/lb-promo-card.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Promo Card component with block labels" srcset="
+/docs/user-documentation/layout-builder/promo-card/lb-promo-card_hua1c09ae30e006f7bc63aa9b5ae1a75b3_56327_de5278dc9cf5e700fcbba26046d70bd7.png 458w,
+/docs/user-documentation/layout-builder/promo-card/lb-promo-card_hua1c09ae30e006f7bc63aa9b5ae1a75b3_56327_355a11d33738ba11ffd9e5a35eb73720.png 726w,
+/docs/user-documentation/layout-builder/promo-card/lb-promo-card_hua1c09ae30e006f7bc63aa9b5ae1a75b3_56327_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/promo-card/lb-promo-card_hua1c09ae30e006f7bc63aa9b5ae1a75b3_56327_de5278dc9cf5e700fcbba26046d70bd7.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;/div>
 &lt;/div>
 &lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
@@ -2768,8 +3006,42 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;li>
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Simple Menu</title><link>/docs/user-documentation/layout-builder/simple-menu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/simple-menu/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/UZVurubBti8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/simple-menu/lb-simple-menu.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Simple Menu component with block labels" srcset="
+/docs/user-documentation/layout-builder/simple-menu/lb-simple-menu_hu8dc180277af834cbfb60251ecb8f4c6c_31360_febd00499891dfceb96e4d942791989c.png 458w,
+/docs/user-documentation/layout-builder/simple-menu/lb-simple-menu_hu8dc180277af834cbfb60251ecb8f4c6c_31360_3ff25617e2de47956d56348393a832d4.png 726w,
+/docs/user-documentation/layout-builder/simple-menu/lb-simple-menu_hu8dc180277af834cbfb60251ecb8f4c6c_31360_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/simple-menu/lb-simple-menu_hu8dc180277af834cbfb60251ecb8f4c6c_31360_febd00499891dfceb96e4d942791989c.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;/div>
 &lt;/div>
 &lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
@@ -2876,8 +3148,42 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;li>
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Statistics</title><link>/docs/user-documentation/layout-builder/statistics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/statistics/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/_RQcnMw4X5U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/statistics/lb-statistics.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Statistics component with block labels" srcset="
+/docs/user-documentation/layout-builder/statistics/lb-statistics_hu3ec608f8d8ed577ae9ac4e10aae62385_553750_e41f93b69cd05a2a34f58c19fe0226da.png 458w,
+/docs/user-documentation/layout-builder/statistics/lb-statistics_hu3ec608f8d8ed577ae9ac4e10aae62385_553750_187f45ff2506a657b9df3b44ce46909b.png 726w,
+/docs/user-documentation/layout-builder/statistics/lb-statistics_hu3ec608f8d8ed577ae9ac4e10aae62385_553750_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/statistics/lb-statistics_hu3ec608f8d8ed577ae9ac4e10aae62385_553750_e41f93b69cd05a2a34f58c19fe0226da.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;/div>
 &lt;/div>
 &lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
@@ -2901,7 +3207,7 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
 &lt;li>&lt;strong>Section title&lt;/strong>: Displayed as a heading above the item.&lt;/li>
 &lt;li>&lt;strong>Section subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
-&lt;li>&lt;strong># of columns&lt;/strong>: Allows 1- to 4-columns of items.&lt;/li>
+&lt;li>&lt;strong>Media&lt;/strong>: Chose from the library or add a new image to be displayed to the left of the statistics.&lt;/li>
 &lt;li>&lt;strong>Section CTA/Link&lt;/strong>: Add a link below the statistics items.&lt;/li>
 &lt;li>&lt;strong>Statistics Items&lt;/strong>: Add as many items as you like using the &lt;strong>Add Statistics Item&lt;/strong> button. Each item contains:
 &lt;ul>
@@ -2910,16 +3216,48 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>Add an image or change the color of the block using the
-&lt;a href="../advanced-options">Styles tab&lt;/a>.&lt;/p>
 &lt;p>Then save the block:&lt;/p>
 &lt;ul>
 &lt;li>Click &lt;strong>Add block&lt;/strong> in the editing pane.&lt;/li>
 &lt;li>
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Table</title><link>/docs/user-documentation/layout-builder/table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/table/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/buxLFLUhiMo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/table/lb-table.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Table component with block labels" srcset="
+/docs/user-documentation/layout-builder/table/lb-table_huc350e57fff2206164b8d9f5f836027b4_38352_32c4261097bc217e6c2b1eff9ff3a287.png 458w,
+/docs/user-documentation/layout-builder/table/lb-table_huc350e57fff2206164b8d9f5f836027b4_38352_01bd2c08f5424bfdb057876ab74d9ac7.png 726w,
+/docs/user-documentation/layout-builder/table/lb-table_huc350e57fff2206164b8d9f5f836027b4_38352_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/table/lb-table_huc350e57fff2206164b8d9f5f836027b4_38352_32c4261097bc217e6c2b1eff9ff3a287.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;/div>
 &lt;/div>
 &lt;hr>
 &lt;p>The Table block also allows users to add simple content to the Landing Page (Layout Builder) content type.&lt;/p>
@@ -2975,8 +3313,42 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;li>
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Tabs</title><link>/docs/user-documentation/layout-builder/tabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/tabs/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/I3GPm718hn8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/tabs/lb-tabs.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Tabs component with block labels" srcset="
+/docs/user-documentation/layout-builder/tabs/lb-tabs_hu4569dbc1afc2be05ab62b1ead7f122c1_52318_d382e557bd94d8b46ac25037f4a221ac.png 458w,
+/docs/user-documentation/layout-builder/tabs/lb-tabs_hu4569dbc1afc2be05ab62b1ead7f122c1_52318_602763e4968e76ad615c8d2f7e5f9b6d.png 726w,
+/docs/user-documentation/layout-builder/tabs/lb-tabs_hu4569dbc1afc2be05ab62b1ead7f122c1_52318_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/tabs/lb-tabs_hu4569dbc1afc2be05ab62b1ead7f122c1_52318_d382e557bd94d8b46ac25037f4a221ac.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;/div>
 &lt;/div>
 &lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
@@ -3088,8 +3460,42 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;li>
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Webform</title><link>/docs/user-documentation/layout-builder/webform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/webform/</guid><description>
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+&lt;li class="nav-item">
+&lt;a class="nav-link active persistLang-vid"
+id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
+onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+Video
+&lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link persistLang-pic"
+id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
+onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+Diagram
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content" id="tabs-0-content">
+&lt;div class="tab-body tab-pane fade show active"
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/dsHpcLDjLEo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-body tab-pane fade"
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+&lt;p>
+&lt;a href="/docs/user-documentation/layout-builder/webform/lb-webform.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="Screenshot of the Webform component with block labels" srcset="
+/docs/user-documentation/layout-builder/webform/lb-webform_hu384dc719d93deeefe542923003fbce7d_50109_a8fedb97b051ef051102b017bd6dd0a0.png 458w,
+/docs/user-documentation/layout-builder/webform/lb-webform_hu384dc719d93deeefe542923003fbce7d_50109_a126e3d37aef45a46af8eaa0d22eae3d.png 726w,
+/docs/user-documentation/layout-builder/webform/lb-webform_hu384dc719d93deeefe542923003fbce7d_50109_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/webform/lb-webform_hu384dc719d93deeefe542923003fbce7d_50109_a8fedb97b051ef051102b017bd6dd0a0.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;/div>
 &lt;/div>
 &lt;hr>
 &lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
