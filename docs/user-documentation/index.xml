@@ -1,31 +1,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – User Documentation</title><link>/docs/user-documentation/</link><description>Recent content in User Documentation on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/user-documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Text Editor</title><link>/docs/user-documentation/text-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/</guid><description>
 &lt;p>
-&lt;a href="/img/dd630632ed4ea5876a15d65709946e420ffb84d1.png" title="View original image">
+&lt;a href="/docs/user-documentation/text-editor/text-editor--example.png" title="View original image">
 &lt;figure class="image-caption">
-&lt;img alt="blog-description__text-editor|690x307" srcset="
-/img/dd630632ed4ea5876a15d65709946e420ffb84d1_huc1ff945e4c07bb7c06e5b311f9206b5e_163594_8a5d01c472a380d37a48f3257e676a80.png 458w,
-/img/dd630632ed4ea5876a15d65709946e420ffb84d1_huc1ff945e4c07bb7c06e5b311f9206b5e_163594_e724d9cfbc23d9c821319870092c8531.png 726w,
-/img/dd630632ed4ea5876a15d65709946e420ffb84d1_huc1ff945e4c07bb7c06e5b311f9206b5e_163594_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/dd630632ed4ea5876a15d65709946e420ffb84d1_huc1ff945e4c07bb7c06e5b311f9206b5e_163594_8a5d01c472a380d37a48f3257e676a80.png" />
+&lt;img alt="An example of the WYSIWYG text editor." srcset="
+/docs/user-documentation/text-editor/text-editor--example_hu331e82bbf6a3a5b7cd64e8eb37e859c9_39297_68d4fd4b7205eafae5b9788bc138a515.png 458w,
+/docs/user-documentation/text-editor/text-editor--example_hu331e82bbf6a3a5b7cd64e8eb37e859c9_39297_410cfec7f468535772da02097d3a296a.png 726w,
+/docs/user-documentation/text-editor/text-editor--example_hu331e82bbf6a3a5b7cd64e8eb37e859c9_39297_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/text-editor--example_hu331e82bbf6a3a5b7cd64e8eb37e859c9_39297_68d4fd4b7205eafae5b9788bc138a515.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/figure>
 &lt;/a>
 &lt;/p>
-&lt;p>&lt;em>The description field inside a blog is an example of the WYISWYG Editor in action.&lt;/em>&lt;/p>
-&lt;p>
-&lt;a href="https://www.optimizely.com/optimization-glossary/content-management-system/" target="_blank">If you have worked in a Content Management System&lt;/a> like Drupal, Wordpress or Joomla!, you are likely familiar with what a text editor does. This tool allows you the flexibility to format content however you want within a certain container or area.&lt;/p>
-&lt;p>
-&lt;a href="/img/4e7d30e968474e737d679c2f2a9081a91bc8d9c0.png" title="View original image">
-&lt;figure class="image-caption">
-&lt;img alt="blog-description_text-editor-example|690x385" srcset="
-/img/4e7d30e968474e737d679c2f2a9081a91bc8d9c0_hubd96fbbe88e1289c7af25253e3128047_431817_0106eba4be64b7d777a5a0097ab1df28.png 458w,
-/img/4e7d30e968474e737d679c2f2a9081a91bc8d9c0_hubd96fbbe88e1289c7af25253e3128047_431817_63491b4903511dc0a84bc9bb191d101a.png 726w,
-/img/4e7d30e968474e737d679c2f2a9081a91bc8d9c0_hubd96fbbe88e1289c7af25253e3128047_431817_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/4e7d30e968474e737d679c2f2a9081a91bc8d9c0_hubd96fbbe88e1289c7af25253e3128047_431817_0106eba4be64b7d777a5a0097ab1df28.png" />
-&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
-&lt;/a>
-&lt;/p>
-&lt;p>
-&lt;a href="https://ckeditor.com/ckeditor-4/demo/#article" target="_blank">YMCA Website Services&amp;rsquo;s text editor (CKEditor)&lt;/a> provides a number of different buttons for styling and formatting, as well as a Source editor if you are so inclined to use HTML.&lt;/p></description></item><item><title>Docs: Page/Content Types</title><link>/docs/user-documentation/content-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/</guid><description/></item><item><title>Docs: Blocks</title><link>/docs/user-documentation/blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/blocks/</guid><description>
+&lt;p>This tool allows you the flexibility to format content however you want within a certain container or area.&lt;/p>
+&lt;p>Bundled with the Drupal core and the distribution,
+&lt;a href="https://ckeditor.com/ckeditor-5/demo/feature-rich/" target="_blank">CKEditor&lt;/a> provides a number of different buttons for styling and formatting, as well as a Source editor if you are so inclined to edit HTML directly.&lt;/p>
+&lt;p>CKEditor has been
+&lt;a href="https://www.drupal.org/node/3308362" target="_blank">upgraded to version 5&lt;/a> as of Drupal 10, and is a big improvement over CKEditor 4 — the linking experience is much smoother, uploading images is much faster, and more.&lt;/p>
+&lt;p>For more info on CKEditor 5, check out these resources (not all features may be implemented in the distribution):&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://imagexmedia.com/blog/five-cant-miss-articles-on-ckeditor-5-in-drupal" target="_blank">Five Can’t-Miss Articles on CKEditor 5 in Drupal (ImageX Blog)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.youtube.com/watch?v=YwDFCLaQVbY" target="_blank">CKEditor 5 in Drupal 10: What is there to be excited about? (DrupalCon Portland 2022)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://ckeditor.com/blog/drupal-10-launched-taking-content-editing-to-the-next-level-with-ckeditor-5/" target="_blank">Drupal 10 launched: taking content editing to the next level with CKEditor 5 (CKEditor Blog)&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Page/Content Types</title><link>/docs/user-documentation/content-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/</guid><description/></item><item><title>Docs: Blocks</title><link>/docs/user-documentation/blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/blocks/</guid><description>
 &lt;h2 id="how-to-use-blocks">How to Use Blocks&lt;/h2>
 &lt;p>A block works like this - you choose a paragraph, and that paragraph asks you to create a block. You write a section of content inside that block.&lt;/p>
 &lt;p>
