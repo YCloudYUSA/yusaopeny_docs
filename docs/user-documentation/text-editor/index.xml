@@ -753,7 +753,7 @@ This document applies to the legacy WYSIWYG editor, CKEditor 4. See
 &lt;h3 id="note-to-users-of-ymca-website-services-24">NOTE TO USERS OF YMCA Website Services 2.4+&lt;/h3>
 &lt;blockquote>
 &lt;p>This documentation is not up-to-date if you are using
-&lt;a href="https://community.openymca.org/t/version-2-4-released-q1-2020-major-release/624" target="_blank">YMCA Website Services 2.4&lt;/a> and later.&lt;/p>
+&lt;a href="https://github.com/ymcatwincities/openy/releases/tag/8.2.4.0" target="_blank">YMCA Website Services 2.4&lt;/a> and later.&lt;/p>
 &lt;p>
 &lt;a href="https://www.youtube.com/watch?v=gcaBlhyPZEY" target="_blank">View video tutorial for Open 2.4 and later ⇒&lt;/a>&lt;/p>
 &lt;/blockquote>
@@ -799,9 +799,9 @@ This document applies to the legacy WYSIWYG editor, CKEditor 4. See
 &lt;h2 id="more-on-images">More on Images&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/video-tutorials-for-images-and-documents/738" target="_blank">View all image tutorial videos ⇒&lt;/a>&lt;/li>
+&lt;a href="../../media">View all image tutorial videos ⇒&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/taxonomy-vocabularies-and-terms-website-structure-open-y-user-docs/734" target="_blank">Learn how to create media tags and folders with Taxonomies ⇒&lt;/a>&lt;/li>
+&lt;a href="../../taxonomy">Learn how to create media tags and folders with Taxonomies ⇒&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: CKEditor 4: Adding/Embedding Documents</title><link>/docs/user-documentation/text-editor/adding-documents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/adding-documents/</guid><description>
 &lt;div class="alert alert-warning" role="alert">
 This document applies to the legacy WYSIWYG editor, CKEditor 4. See

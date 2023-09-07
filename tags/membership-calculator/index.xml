@@ -80,7 +80,9 @@
 &lt;/figure>
 &lt;/a>
 &lt;/p></description></item><item><title>Docs: Membership Calculator Paragraph</title><link>/docs/user-documentation/paragraphs/membership-calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/membership-calculator/</guid><description>
-&lt;hr>
+&lt;p>See
+&lt;a href="../../membership/calculator">Membership Calculator&lt;/a> and
+&lt;a href="../../content-types/membership">Membership Content Type&lt;/a> for more information.&lt;/p>
 &lt;h2 id="areas-it-should-be-used">Areas it Should Be Used&lt;/h2>
 &lt;ul>
 &lt;li>Content Area&lt;/li>

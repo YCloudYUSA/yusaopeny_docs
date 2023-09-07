@@ -65,9 +65,6 @@
 &lt;li>
 &lt;a href="../../layout-builder/related-events">Related Events&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Activity, Class, and Session</title><link>/docs/user-documentation/content-types/activity-class-session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/activity-class-session/</guid><description>
-&lt;blockquote>
-&lt;p>These content types format data/content pulled from third parties, such as Daxko, Personify and ActiveNet, for display in YMCA Website Services.&lt;/p>
-&lt;/blockquote>
 &lt;p>Content editors rarely, if ever, enter information directly into these content types on a day-to-day basis. However, it is important to know how they work and how they relate to manually-entered content.&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;strong>Example - Swim Lessons&lt;/strong>&lt;/p>
@@ -85,7 +82,7 @@
 &lt;ul>
 &lt;li>&lt;strong>Title&lt;/strong>: The name of the Activity (and the filter in Activity Finder).&lt;/li>
 &lt;li>&lt;strong>Program subcategory&lt;/strong>: An &lt;em>entity reference&lt;/em> to or tag for a
-&lt;a href="https://community.openymca.org/t/program-subcategory-content-types-open-y-user-docs/692" target="_blank">Program Subcategory&lt;/a>. Maps the Activity to higher-levels of user-entered content.
+&lt;a href="../program-subcategory">Program Subcategory&lt;/a>. Maps the Activity to higher-levels of user-entered content.
 *&lt;strong>Description:&lt;/strong> A description for the Activity. Usually pulled from a description in a CRM through an API.&lt;/li>
 &lt;/ul>
 &lt;h2 id="class">Class&lt;/h2>
@@ -96,12 +93,18 @@
 &lt;/blockquote>
 &lt;h2 id="session">Session&lt;/h2>
 &lt;p>An individual program offering. Contains fields for pricing, session date/time, instructor, ages and a registration link. This are the individual rows/instances in Repeat Schedules and
-&lt;a href="https://community.openymca.org/t/activity-finder-activity-finder-search-paragraphs-open-y-user-docs/702" target="_blank">Activity Finder&lt;/a>.&lt;/p></description></item><item><title>Docs: Alert</title><link>/docs/user-documentation/content-types/alert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/alert/</guid><description>
-&lt;blockquote>
-&lt;p>Alerts display timely information in a thin banner across your site, just below the header or above the footer.&lt;/p>
-&lt;/blockquote>
+&lt;a href="../../paragraphs/activity-finder">Activity Finder&lt;/a>.&lt;/p></description></item><item><title>Docs: Alert</title><link>/docs/user-documentation/content-types/alert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/alert/</guid><description>
 &lt;p>
-&lt;img src="upload://4xCXyDaACMFdZrLgm2X88iV7AEY.png" alt="Screen Shot 2020-03-24 at 10.07.11 PM|690x67" />&lt;/p>
+&lt;a href="/docs/user-documentation/content-types/alert/alert--example.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="An alert" srcset="
+/docs/user-documentation/content-types/alert/alert--example_hud4971a57bdba14b504d50e42badc3d44_110312_1061f10295da5f166489b372b5ac5ec7.png 458w,
+/docs/user-documentation/content-types/alert/alert--example_hud4971a57bdba14b504d50e42badc3d44_110312_64afefc37b6e2f5f046c5e8de54853d4.png 726w,
+/docs/user-documentation/content-types/alert/alert--example_hud4971a57bdba14b504d50e42badc3d44_110312_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/alert/alert--example_hud4971a57bdba14b504d50e42badc3d44_110312_1061f10295da5f166489b372b5ac5ec7.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
 &lt;p>Unlike most content types in YMCA Website Services, you don&amp;rsquo;t use Alert to create pages. Instead, Alerts display as a &lt;em>rendered entity&lt;/em> or a section of content on other pages.&lt;/p>
 &lt;p>Alerts also don&amp;rsquo;t use paragraphs. By design, the layout of Alerts are rigid; however, text editor and the the color options listed below allow content editors some flexibility.&lt;/p>
 &lt;h2 id="when-should-you-use-an-alert">When Should You Use an Alert?&lt;/h2>
@@ -117,11 +120,11 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Description&lt;/strong>: The main body of your alert. Sentences should be short and minimally styled in this section. Uses
-&lt;a href="https://community.openymca.org/c/Resources-and-training-for-content-editors/Learn-how-to-use-the-basic-text-editing-functions-available-to-content-editors" target="_blank">the YMCA Website Services Text Editor&lt;/a>.&lt;/p>
+&lt;a href="../../text-editor">the Text Editor&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Color Fields&lt;/strong>: These three dropdown fields control different aspects of color in your alert. All three dropdowns reference the
-&lt;a href="http://#" target="_blank">the YMCA Website Services color vocabulary&lt;/a>.&lt;/p>
+&lt;a href="../../taxonomy/#color">color vocabulary&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>&lt;em>&lt;strong>Background Color&lt;/strong>&lt;/em>: The color of your alert.&lt;/li>
 &lt;li>&lt;em>&lt;strong>Text Color&lt;/strong>&lt;/em>: Stick to using either black or white for accessibility.&lt;/li>
@@ -129,37 +132,51 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Link&lt;/strong>: Adds a button with a call to action to the alert on the right. Button color defaults to black.
-&lt;a href="http://#" target="_blank">Learn more about the link field ⇒&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Link&lt;/strong>: Adds a button with a call to action to the alert on the right. Button color defaults to black.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Placement&lt;/strong>: Choose &amp;ldquo;Header&amp;rdquo; to show your alert above your main content or &amp;ldquo;Footer&amp;rdquo; to show below your main content.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;img src="upload://akUU32T0jawWJ1Q3y5ez8zDaQfT.gif" alt="admin__alert&amp;amp;ndash;dropdowns|662x396, 75%" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="The alert admin fields" src="/docs/user-documentation/content-types/alert/alert--fields.gif" />
+&lt;figcaption>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Visibility pages&lt;/strong>: This is where you control where the alert displays on your site. In the large text field, you write the relative path of the pages where you want this to appear or not appear. Enter each path on a new line.&lt;/p>
-&lt;p>You also have the option to use an asterisk character &lt;code>*&lt;/code> as a wildcard so you don&amp;rsquo;t have to enter in a large number of relative paths. For example, if you wanted to add an alert to a &lt;code>/health-and-fitness&lt;/code> section, you would enter &lt;code>/health-and-fitness*&lt;/code> in the text area.&lt;/p>
+&lt;p>You also have the option to use an asterisk character &lt;code>*&lt;/code> as a wildcard so you don&amp;rsquo;t have to enter a large number of relative paths. For example, if you wanted to add an alert to a &lt;code>/health-and-fitness&lt;/code> section, you would enter &lt;code>/health-and-fitness*&lt;/code> in the text area.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;img src="upload://epmNM8LN0t7cT4thANWpfOP0mge.gif" alt="admin__alert&amp;amp;ndash;visibility-pages|320x191" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="The alert visibility dialog" src="/docs/user-documentation/content-types/alert/alert--visibility.gif" />
+&lt;figcaption>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;strong>What is a relative path?&lt;/strong>
 A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain name.&lt;/em>&lt;/p>
-&lt;p>At
-&lt;a href="https://ycloud.y.org/open-y-association-websites/community" target="_blank">https://ycloud.y.org/open-y-association-websites/community&lt;/a>, for example, the &lt;em>domain name&lt;/em> is &lt;strong>&lt;code>openy.org&lt;/code>&lt;/strong>, while the &lt;em>relative path&lt;/em> is &lt;strong>&lt;code>/community&lt;/code>&lt;/strong>.&lt;/p>
+&lt;p>At &lt;code>https://example.com/community&lt;/code>, for example, the &lt;em>domain name&lt;/em> is &lt;strong>&lt;code>example.com&lt;/code>&lt;/strong>, while the &lt;em>relative path&lt;/em> is &lt;strong>&lt;code>/community&lt;/code>&lt;/strong>.&lt;/p>
 &lt;/blockquote>
 &lt;p>Using the &lt;strong>Alert visibility state&lt;/strong> radio buttons at the bottom, you can either show or hide your alert from the page paths listed in the text area above.&lt;/p></description></item><item><title>Docs: Blog Post</title><link>/docs/user-documentation/content-types/blog-post/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/blog-post/</guid><description>
 &lt;blockquote>
-&lt;p>Designed for timely content, articles and news pieces tagged with one or more physical locations.&lt;/p>
 &lt;p>&lt;em>Note: This Content Type is
-&lt;a href="https://community.openymca.org/t/news-post-content-types-open-y-user-docs/694" target="_blank">similar to the News Post content type&lt;/a>.&lt;/em>&lt;/p>
+&lt;a href="../news-post">similar to the News Post content type&lt;/a>.&lt;/em>&lt;/p>
 &lt;/blockquote>
 &lt;p>
-&lt;img src="upload://Rkgdb0hjyEt9lLUjFxWtTDGmZE.jpeg" alt="carnation&amp;amp;ndash;blog&amp;amp;ndash;desktop|690x479, 75%" />&lt;/p>
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--example.jpeg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="An example of a blog post page" srcset="
+/docs/user-documentation/content-types/blog-post/blog-post--example_hue7105b8443b98ebc10b263811d261030_398515_bda9544080a50a5f6736aa56568c91c7.jpeg 458w,
+/docs/user-documentation/content-types/blog-post/blog-post--example_hue7105b8443b98ebc10b263811d261030_398515_3dbdb8f42237a46f8ec0613d2023a5d7.jpeg 726w,
+/docs/user-documentation/content-types/blog-post/blog-post--example_hue7105b8443b98ebc10b263811d261030_398515_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--example_hue7105b8443b98ebc10b263811d261030_398515_bda9544080a50a5f6736aa56568c91c7.jpeg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
 &lt;p>Blog posts in YMCA Website Services allow you the flexibility to both create simple posts using only the text editor and more robust layouts with paragraphs.&lt;/p>
 &lt;h2 id="when-should-i-use-a-blog-post">When Should I Use a Blog Post?&lt;/h2>
 &lt;p>When you decide to use a blog post
@@ -176,7 +193,7 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong>: The name of the blog. Displays in the header area on your blog post and in
-&lt;a href="https://community.openymca.org/t/blog-posts-paragraphs-open-y-user-docs/705" target="_blank">the cards that display in a list of blogs&lt;/a>.&lt;/p>
+&lt;a href="../../paragraphs/blog-posts-listing">the cards that display in a list of blogs&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Locations&lt;/strong>: An &lt;em>option select&lt;/em> for you to tag a post with one or more locations (Camp or Branch). Use Ctrl+Click (Windows) or Cmd⌘+Click (Mac) to select multiple locations.&lt;/p>
@@ -187,41 +204,160 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;/blockquote>
 &lt;ul>
 &lt;li>&lt;strong>Category&lt;/strong>: An &lt;em>entity reference&lt;/em> to
-&lt;a href="https://community.openymca.org/t/taxonomy-vocabularies-and-terms-website-structure-open-y-user-docs/734" target="_blank">the Blog Category vocabulary&lt;/a>. Type in the name of the category and select from the options that appear, or create a new category/term by typing in a new one.&lt;/li>
+&lt;a href="../../taxonomy/#blognews-category">the Blog Category vocabulary&lt;/a>. Type in the name of the category and select from the options that appear, or create a new category/term by typing in a new one.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;img src="upload://jwO81z5xCJqqZQwPTRIoyRgNmwW.gif" alt="admin&amp;amp;ndash;blog-posts__category|662x204, 75%" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="Selecting a category in the blog post admin" src="/docs/user-documentation/content-types/blog-post/blog-post--category.gif" />
+&lt;figcaption>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;h3 id="style">Style&lt;/h3>
 &lt;p>This dropdown changes the style of the post&amp;rsquo;s card when it appears in a listing format. This dropdown does not affect any layouts on the page.&lt;/p>
 &lt;p>
-&lt;img src="upload://cPN5q42rJ6WDOnkaQJ9eLyTdlZO.png" alt="admin&amp;amp;ndash;blog-post__style|564x434, 50%" />
-&lt;strong>####&lt;/strong> Story Card
-&lt;img src="upload://oJLrZIvtwSuBB7Jpu5nB8zki5X9.png" alt="carnation&amp;amp;ndash;landing-page__blog-posts&amp;amp;ndash;story-card|610x500, 50%" />
-&lt;img src="upload://i3yBTJgILl00OKqXi5fWd6VAmT8.png" alt="lily&amp;amp;ndash;landing-page__blog-posts&amp;amp;ndash;story-card|394x500, 50%" />&lt;/p>
-&lt;p>&lt;strong>####&lt;/strong> Photo Card
-&lt;img src="upload://tCqVbj1a1LnF1vt47REP84d7LYA.png" alt="carnation&amp;amp;ndash;landing-page__blog-listing&amp;amp;ndash;photo-card|590x500, 50%" />
-&lt;img src="upload://5FmyMqI53U1GhHWF7ehlqyQq8hg.png" alt="lily&amp;amp;ndash;landing-page__blog-posts&amp;amp;ndash;photo-card|434x500, 50%" />&lt;/p>
-&lt;p>&lt;strong>####&lt;/strong> News Card
-&lt;img src="upload://z5Ez1sNgStJPfGzD6lKSzwLFeii.png" alt="carnation&amp;amp;ndash;landing-page__blog-listing&amp;amp;ndash;news-card|590x500, 50%" />&lt;/p>
-&lt;p>&lt;strong>####&lt;/strong> Color Card
-When choosing color card, you are presented with two styling options in dropdowns. Both are &lt;em>entity references&lt;/em> to
-&lt;a href="https://community.openymca.org/t/taxonomy-vocabularies-and-terms-website-structure-open-y-user-docs/734" target="_blank">the Color vocabulary&lt;/a>:&lt;/p>
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--style.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The blog post style dropdown" srcset="
+/docs/user-documentation/content-types/blog-post/blog-post--style_hu5746a04c9a410d60d4bd14cd761e8326_84054_ce6726edc4cdf0c7adb0fb22d230a21c.png 458w,
+/docs/user-documentation/content-types/blog-post/blog-post--style_hu5746a04c9a410d60d4bd14cd761e8326_84054_7d0b801b921888b7531161b52ce37986.png 726w,
+/docs/user-documentation/content-types/blog-post/blog-post--style_hu5746a04c9a410d60d4bd14cd761e8326_84054_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--style_hu5746a04c9a410d60d4bd14cd761e8326_84054_ce6726edc4cdf0c7adb0fb22d230a21c.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h4 id="story-card">Story Card&lt;/h4>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Carnation&lt;/th>
+&lt;th>Lily&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--carnation-story.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A blog story card in Carnation" srcset="
+/docs/user-documentation/content-types/blog-post/blog-post--carnation-story_huc6b93bfa501dad35830b879221716d61_25993_1d8ce25018b5fd5941b60f4f9722ffae.png 458w,
+/docs/user-documentation/content-types/blog-post/blog-post--carnation-story_huc6b93bfa501dad35830b879221716d61_25993_5befcbbe12fe512e4da094c8ebda0885.png 726w,
+/docs/user-documentation/content-types/blog-post/blog-post--carnation-story_huc6b93bfa501dad35830b879221716d61_25993_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--carnation-story_huc6b93bfa501dad35830b879221716d61_25993_1d8ce25018b5fd5941b60f4f9722ffae.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--lily-story.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A blog story card in Lily" srcset="
+/docs/user-documentation/content-types/blog-post/blog-post--lily-story_hu8b5bec711c9d102476abba3662922d8a_26939_42dc8671fe8a5824fef15672f2ca23e4.png 458w,
+/docs/user-documentation/content-types/blog-post/blog-post--lily-story_hu8b5bec711c9d102476abba3662922d8a_26939_6b5ef609a407c783062d0303991c6511.png 726w,
+/docs/user-documentation/content-types/blog-post/blog-post--lily-story_hu8b5bec711c9d102476abba3662922d8a_26939_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--lily-story_hu8b5bec711c9d102476abba3662922d8a_26939_42dc8671fe8a5824fef15672f2ca23e4.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="photo-card">Photo Card&lt;/h4>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Carnation&lt;/th>
+&lt;th>Lily&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--carnation-photo.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A blog photo card in Carnation" srcset="
+/docs/user-documentation/content-types/blog-post/blog-post--carnation-photo_hued2445af525f28e0637ce29b611bbc5c_199868_ca2b76850021461fa2f1913cd6a08c4b.png 458w,
+/docs/user-documentation/content-types/blog-post/blog-post--carnation-photo_hued2445af525f28e0637ce29b611bbc5c_199868_63480a6ed4c6e0d24b68d7aee68d18f6.png 726w,
+/docs/user-documentation/content-types/blog-post/blog-post--carnation-photo_hued2445af525f28e0637ce29b611bbc5c_199868_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--carnation-photo_hued2445af525f28e0637ce29b611bbc5c_199868_ca2b76850021461fa2f1913cd6a08c4b.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--lily-photo.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A blog photo card in Lily" srcset="
+/docs/user-documentation/content-types/blog-post/blog-post--lily-photo_hu7e8de3055e8f91bbcd6d1ddeadfc0c40_272868_c46784c186a0f3180863248660c8b83f.png 458w,
+/docs/user-documentation/content-types/blog-post/blog-post--lily-photo_hu7e8de3055e8f91bbcd6d1ddeadfc0c40_272868_91cea819232d044cb12f11192dcbba67.png 726w,
+/docs/user-documentation/content-types/blog-post/blog-post--lily-photo_hu7e8de3055e8f91bbcd6d1ddeadfc0c40_272868_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--lily-photo_hu7e8de3055e8f91bbcd6d1ddeadfc0c40_272868_c46784c186a0f3180863248660c8b83f.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="news-card">News Card&lt;/h4>
+&lt;p>
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--carnation-news.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A blog news card in Carnation" srcset="
+/docs/user-documentation/content-types/blog-post/blog-post--carnation-news_hua5c3e1f33f1297d979f0402e9582becd_22290_88517b186acc3e7719d202c6d5a0b638.png 458w,
+/docs/user-documentation/content-types/blog-post/blog-post--carnation-news_hua5c3e1f33f1297d979f0402e9582becd_22290_3052d3480d08d0df5aabc866d27c9f29.png 726w,
+/docs/user-documentation/content-types/blog-post/blog-post--carnation-news_hua5c3e1f33f1297d979f0402e9582becd_22290_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--carnation-news_hua5c3e1f33f1297d979f0402e9582becd_22290_88517b186acc3e7719d202c6d5a0b638.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h4 id="color-card">Color Card&lt;/h4>
+&lt;p>When choosing color card, you are presented with two styling options in dropdowns. Both are &lt;em>entity references&lt;/em> to
+&lt;a href="../../taxonomy/#color">the Color vocabulary&lt;/a>:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Background color&lt;/strong>: Changes the color of the card.&lt;/li>
 &lt;li>&lt;strong>Text color&lt;/strong>: Changes the color of the text. It&amp;rsquo;s recommended you only use white or black.&lt;/li>
 &lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Carnation&lt;/th>
+&lt;th>Lily&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--carnation-color.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A blog color card in Carnation" srcset="
+/docs/user-documentation/content-types/blog-post/blog-post--carnation-color_hude2b6ede33d6caa07edce44d0b29e805_21471_cf050c84d73b84d377eff3f6efbdd18c.png 458w,
+/docs/user-documentation/content-types/blog-post/blog-post--carnation-color_hude2b6ede33d6caa07edce44d0b29e805_21471_4475f3c84b9e7283d7b26d46025cfdb5.png 726w,
+/docs/user-documentation/content-types/blog-post/blog-post--carnation-color_hude2b6ede33d6caa07edce44d0b29e805_21471_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--carnation-color_hude2b6ede33d6caa07edce44d0b29e805_21471_cf050c84d73b84d377eff3f6efbdd18c.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--lily-color.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A blog color card in Lily" srcset="
+/docs/user-documentation/content-types/blog-post/blog-post--lily-color_hu4332b294c068f0d2921ed00a644f0734_20307_7dd408b10a9ee0962fb00991e70ba287.png 458w,
+/docs/user-documentation/content-types/blog-post/blog-post--lily-color_hu4332b294c068f0d2921ed00a644f0734_20307_e04895b1aaf34236ed773a5312e20003.png 726w,
+/docs/user-documentation/content-types/blog-post/blog-post--lily-color_hu4332b294c068f0d2921ed00a644f0734_20307_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--lily-color_hu4332b294c068f0d2921ed00a644f0734_20307_7dd408b10a9ee0962fb00991e70ba287.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;h3 id="content-area">Content Area&lt;/h3>
 &lt;p>The content area is the main body of your page. You can use the default fields entered below for a simple block post or build a more robust layout using paragraphs.&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Image&lt;/strong>: Displays above your description and inside a Photo Card. Not required. Uses the
-&lt;a href="https://community.openymca.org/t/video-tutorials-for-images-and-documents/738" target="_blank">media browser and image field.&lt;/a>&lt;/p>
+&lt;a href="../../media">media browser and image field.&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Description&lt;/strong>:
-&lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">Using the YMCA Website Services text editor&lt;/a>, you can enter anything from a brief summary to the entire body of your text.
-&lt;img src="upload://zhby7Do2LGR6ZscauU8bVJdUB8h.png" alt="carnation&amp;amp;ndash;landing-page__blog-posts&amp;amp;ndash;color-card&amp;amp;ndash;green|590x500, 50%" />
-&lt;img src="upload://48cFIYzzKbvW4UQushKjT8etmSS.png" alt="lily&amp;amp;ndash;landing-page__blog-posts&amp;amp;ndash;color-card&amp;amp;ndash;green|434x500, 50%" />&lt;/p>
+&lt;a href="../../text-editor">Using the text editor&lt;/a>, you can enter anything from a brief summary to the entire body of your text.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="sidebar-area">Sidebar Area&lt;/h3>
@@ -281,10 +417,13 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;p>&lt;strong>Address&lt;/strong>: The physical address of your location. Be sure to include all address fields.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Branch Coordinates&lt;/strong> (required): This field pins your branch on the locations map. &lt;details>&lt;summary>To get your branch&amp;rsquo;s coordinates (
-&lt;a href="https://support.google.com/maps/answer/18539?hl=en&amp;amp;co=GENIE.Platform%3DDesktop" target="_blank">with Google Maps&lt;/a>):&lt;/summary>&lt;/p>
+&lt;p>&lt;strong>Branch Coordinates&lt;/strong> (required): This field pins your branch on the locations map.&lt;/p>
+&lt;details>&lt;summary>To get your branch's coordinates:&lt;/summary>
+&lt;p>(
+&lt;a href="https://support.google.com/maps/answer/18539?hl=en&amp;amp;co=GENIE.Platform%3DDesktop" target="_blank">with Google Maps&lt;/a>)&lt;/p>
 &lt;ul>
-&lt;li>Search for your Y location&lt;/li>
+&lt;li>
+&lt;a href="https://www.google.com/maps" target="_blank">Search&lt;/a> for your Y location&lt;/li>
 &lt;li>Right-click the location in the map
 &lt;a href="/docs/user-documentation/content-types/branch/branch-lat-long-copy.png" title="View original image">
 &lt;figure class="image-caption">
@@ -315,8 +454,7 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;ul>
 &lt;li>&lt;strong>Phone&lt;/strong> (required): The main phone line for your branch. Will be displayed as it is entered and linked to allow mobile users to tap to call.&lt;/li>
 &lt;li>&lt;strong>Fax&lt;/strong>: Optional.&lt;/li>
-&lt;li>&lt;strong>Email&lt;/strong>: We recommend you use a main contact email, such as
-&lt;a href="mailto:info@anytownymca.org">info@anytownymca.org&lt;/a>, rather than the email for an individual staff member.&lt;/li>
+&lt;li>&lt;strong>Email&lt;/strong>: We recommend you use a main contact email, such as &lt;code>info@example.com&lt;/code>, rather than the email for an individual staff member.&lt;/li>
 &lt;li>&lt;strong>Directions&lt;/strong>: By default, a link with directions is auto-generated using the Address field. Use this field to substitute your own directions link.&lt;/li>
 &lt;/ul>
 &lt;h3 id="branch-hours">Branch Hours&lt;/h3>
@@ -519,20 +657,23 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;a href="/blog/2023/03/09/layout-builder-roadmap/">list of components&lt;/a> if you need help deciding how to place things. Your old content will still be available to reference in the &lt;strong>Edit&lt;/strong> tab in the old Header/Content/Footer sections.&lt;/li>
 &lt;li>When you&amp;rsquo;re finished, &lt;strong>Save&lt;/strong> the layout and &lt;strong>Publish&lt;/strong> the Branch!&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Camp</title><link>/docs/user-documentation/content-types/camp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/camp/</guid><description>
-&lt;blockquote>
-&lt;p>Camps in YMCA Website Services are physical locations where outdoor camp programming takes place.&lt;/p>
-&lt;p>&lt;em>Note: Camp is similar to the
-&lt;a href="https://community.openymca.org/t/branch-content-types-open-y-user-docs/685" target="_blank">Branch content type&lt;/a>.&lt;/em>&lt;/p>
-&lt;/blockquote>
 &lt;p>While
-&lt;a href="https://community.openymca.org/t/branch-content-types-open-y-user-docs/685" target="_blank">YMCA Branches&lt;/a> may offer some form of summer day camp, they differ from facilities that primarily host programs related to outdoor camps.&lt;/p>
-&lt;p>
-&lt;img src="upload://6BYympxpxhtqF8I7QdaDdbr9s3X.jpeg" alt="carnation&amp;amp;ndash;camp&amp;amp;ndash;tablet.PNG|375x500, 100%" />&lt;/p>
-&lt;hr>
+&lt;a href="../branch">YMCA Branches&lt;/a> may offer some form of summer day camp, they differ from facilities that primarily host programs related to outdoor camps. The Camp content type also enables editors to create sub-sites or &amp;ldquo;microsites&amp;rdquo; using a separate menu structure.&lt;/p>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Camp%20CT.jpg">Camp Content Type&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Camp%20Menu.jpg">Camp Menus&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Camp%20Video%20Banner.jpg">Camp Video Banner&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="camp--example.jpeg">Legacy Carnation paragraphs-based layout&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="when-should-i-use-camp">When Should I Use Camp?&lt;/h2>
 &lt;p>If you are an independent YMCA camp or you&amp;rsquo;re an Association with one or more locations dedicated to outdoor camp, the Camp Content Type serves well as a landing page for those locations.&lt;/p>
+&lt;h3 id="what-about-branch-day-camps">What about Branch Day Camps?&lt;/h3>
 &lt;blockquote>
-&lt;h3 id="-what-about-branch-day-camps">// What about Branch Day Camps?&lt;/h3>
 &lt;p>There are several considerations for Branches that host Day Camps in the center:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -549,111 +690,402 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;p>&lt;strong>Recommended Content Types for Branch Day Camps&lt;/strong>
--&amp;gt;
-&lt;a href="https://community.openymca.org/t/program-subcategory-content-types-open-y-user-docs/692" target="_blank">Learn how to use the Program Subcategory content type ⇒&lt;/a>
--&amp;gt;
-&lt;a href="https://community.openymca.org/t/landing-page-content-types-open-y-user-docs/667" target="_blank">Read about Landing Pages ⇒&lt;/a>&lt;/p>
-&lt;/blockquote>
-&lt;hr>
-&lt;h2 id="how-do-i-use-camp">How Do I Use Camp?&lt;/h2>
-&lt;h3 id="general-info">General Info&lt;/h3>
-&lt;h4 id="--title">-&amp;gt; Title&lt;/h4>
-&lt;p>This is the name of your branch, which will display as your page title and the title in the location card.&lt;/p>
-&lt;p>There is no separate field for the full name of your facility (e.g., Joe C. Davis YMCA Outdoor Center) versus the common name (Camp Widjiwagan). The best practice would be to use the shorter, more common name for readability.&lt;/p>
-&lt;h4 id="--menu-links">-&amp;gt; Menu Links&lt;/h4>
-&lt;p>Add in the URL or name of the content you want to link your
-&lt;a href="https://community.openymca.org/t/camp-menu-paragraphs-open-y-user-docs/706" target="_blank">Camp Menu&lt;/a> to (must use
-&lt;a href="https://community.openymca.org/t/camp-menu-paragraphs-open-y-user-docs/706" target="_blank">Camp Menu&lt;/a> for this to work).&lt;/p>
-&lt;p>
-&lt;img src="upload://5mbjiHKdjq05hhVSvVIpFPVYbxu.png" alt="camp__camp-menu&amp;amp;ndash;menu-links|450x500, 75%" />&lt;/p>
-&lt;p>
-&lt;a href="https://community.openymca.org/t/camp-menu-paragraphs-open-y-user-docs/706" target="_blank">Read more about Camp Menu ⇒&lt;/a>&lt;/p>
-&lt;hr>
-&lt;h3 id="contact-info">Contact Info&lt;/h3>
-&lt;h4 id="--address">-&amp;gt; Address:&lt;/h4>
-&lt;p>The physical address of your location. Be sure to include all address fields.&lt;/p>
-&lt;h4 id="---camp-coordinates">-&amp;gt; Camp coordinates&lt;/h4>
-&lt;p>This field pins your camp on the locations map.&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>How to Get Your Camp Coordinates from Google Maps&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Recommended Content Types for Branch Day Camps&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>Right click on your camp and select “What’s here?” Click on the latitude/longitude number at the bottom of the card.
-&amp;gt;
-&amp;gt;
-&lt;img src="upload://4KumwfEfMol8v7BE7kFXceiBGOH.png" alt="admin__google-maps&amp;amp;ndash;whats-here|573x500, 50%" />&lt;/p>
-&lt;/li>
+&lt;a href="../program-subcategory">Learn how to use the Program Subcategory content type ⇒&lt;/a>&lt;/li>
 &lt;li>
-&lt;p>Below the headline, copy the first number (the non-negative number) into the latitude field. Copy the second number (the negative number) into the longitude field.
-&amp;gt;
-&amp;gt;
-&lt;img src="upload://hqLgdeW9w9ZEsDIxMm36NNZPjq8.png" alt="admin__google-maps&amp;amp;ndash;geo|573x500, 75%" />&lt;/p>
-&lt;/li>
+&lt;a href="../landing-page">Read about Landing Pages ⇒&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/blockquote>
-&lt;h4 id="--phonefaxemail">-&amp;gt; Phone/Fax/Email&lt;/h4>
-&lt;p>The fax is optional, but add the main line for your branch in the phone field.&lt;/p>
-&lt;p>Add a main contact email, such as
-&lt;a href="mailto:contactmyy@anytownymca.org">contactmyy@anytownymca.org&lt;/a>, rather than the email for an individual staff member.&lt;/p>
-&lt;h4 id="--directions">-&amp;gt; Directions&lt;/h4>
-&lt;p>Link to your Google Places. Add “Get Directions” in the Link Text section.&lt;/p>
+&lt;h2 id="creating-a-camp">Creating a Camp&lt;/h2>
+&lt;h3 id="general-info">General Info&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): This is the name of your branch, which will display as your page title and the title in the location card.
+&lt;ul>
+&lt;li>There is no separate field for the full name of your facility (e.g., Joe C. Davis YMCA Outdoor Center) versus the common name (Camp Widjiwagan). The best practice would be to use the shorter, more common name for readability.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Menu Links&lt;/strong> (required): Add in the URL or name of the content you want to link your
+&lt;a href="../../paragraphs/camp-menu">Camp Menu&lt;/a> to (you must use the Camp Menu paragraph for this to work). This field &lt;em>is not used&lt;/em> with Layout Builder.
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-links.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The camp menu links field" srcset="
+/docs/user-documentation/content-types/camp/camp--menu-links_hu7a8770865c53c85248aa4a561e455609_103320_ce0f69fe35e0b7d6bbc68024254f229e.png 458w,
+/docs/user-documentation/content-types/camp/camp--menu-links_hu7a8770865c53c85248aa4a561e455609_103320_27d2c7b3e469e0c035c50d2aba362fed.png 726w,
+/docs/user-documentation/content-types/camp/camp--menu-links_hu7a8770865c53c85248aa4a561e455609_103320_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu-links_hu7a8770865c53c85248aa4a561e455609_103320_ce0f69fe35e0b7d6bbc68024254f229e.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;a href="../../paragraphs/camp-menu">Read more about Camp Menu ⇒&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="contact-info">Contact Info&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Address&lt;/strong> (required): The physical address of your location. Be sure to include all address fields.&lt;/li>
+&lt;li>&lt;strong>Camp coordinates&lt;/strong> (required): This field pins your camp on the locations map.
+&lt;ul>
+&lt;li>See
+&lt;a href="../branch/#contact-info">Branch&lt;/a> for details on how to find your camp coordinates.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Phone&lt;/strong> (required): The main phone line for your branch. Will be displayed as it is entered and linked to allow mobile users to tap to call.&lt;/li>
+&lt;li>&lt;strong>Fax&lt;/strong>: Optional.&lt;/li>
+&lt;li>&lt;strong>Email&lt;/strong>: We recommend you use a main contact email, such as &lt;code>info@example.com&lt;/code>, rather than the email for an individual staff member.&lt;/li>
+&lt;li>&lt;strong>Directions&lt;/strong>: By default, a link with directions is auto-generated using the Address field. Use this field to substitute your own directions link.&lt;/li>
+&lt;/ul>
 &lt;h3 id="header-area">Header Area&lt;/h3>
 &lt;p>There is no image field for the Camp content type, so you will need to add one of the following paragraphs to add an image and title at the top of your page:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/banner-open-y-paragraphs-user-documentation/665" target="_blank">Banner&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/banner">Banner&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/small-banner-paragraphs-open-y-user-docs/725" target="_blank">Small Banner&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/small-banner">Small Banner&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/gallery-paragraphs-open-y-user-docs/715" target="_blank">Gallery&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/gallery">Gallery&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Below your header image,
-&lt;a href="https://community.openymca.org/t/camp-menu-paragraphs-open-y-user-docs/706" target="_blank">add in a Camp Menu paragraph&lt;/a> for a secondary, full-width navigation.&lt;/p>
+&lt;a href="../../paragraphs/camp-menu">add in a Camp Menu paragraph&lt;/a> for a secondary, full-width navigation.&lt;/p>
 &lt;h3 id="content-area">Content Area&lt;/h3>
 &lt;p>The Camp Content Type only has one layout option—one column—and no description field. Add in almost any paragraph you want into the body of you page.&lt;/p>
 &lt;p>The following paragraph types integrate directly with Camp:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/latest-blog-posts-including-camp-branch-paragraphs-open-y-user-docs/717" target="_blank">Latest Blog Posts (Camp)&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/latest-blog-posts">Latest Blog Posts (Camp)&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/latest-news-branch-including-camp-branch-paragraphs-open-y-user-docs/718" target="_blank">Latest News Posts (Camp)&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/latest-news-posts">Latest News Posts (Camp)&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="bottom-area">Bottom Area&lt;/h3>
 &lt;p>Use the bottom area for anchoring elements on your page. The following paragraphs are great for this area:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/small-banner-paragraphs-open-y-user-docs/725" target="_blank">Small Banner&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/small-banner">Small Banner&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/gallery-paragraphs-open-y-user-docs/715" target="_blank">Gallery&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/gallery">Gallery&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/webform-paragraph-open-y-user-docs/729" target="_blank">Webform&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/webform">Webform&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/limited-time-offer-paragraphs-open-y-user-docs/719" target="_blank">Limited Time Offer&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Facility</title><link>/docs/user-documentation/content-types/facility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/facility/</guid><description/></item><item><title>Docs: Landing Page</title><link>/docs/user-documentation/content-types/landing-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/landing-page/</guid><description>
-&lt;h4 id="landing-pages-are-the-most-flexible-content-type-in-ymca-website-services-with-no-unique-fields-other-than-a-layout-selector">Landing pages are the most flexible content type in YMCA Website Services, with no unique fields other than a layout selector.&lt;/h4>
+&lt;a href="../../paragraphs/limited-time-offer">Limited Time Offer&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="customizing-with-layout-builder">Customizing with Layout Builder&lt;/h2>
+&lt;p>Beginning in Website Services 9.3, content editors have the option of customizing the Camp page with
+&lt;a href="../../layout-builder">Layout Builder&lt;/a>. You can migrate from using Paragraphs to using Layout Builder on a camp-by-camp basis in order to ease the transition.&lt;/p>
+&lt;p>The &lt;strong>Use Layout Builder&lt;/strong> checkbox on the Camp edit page non-destructively switches between Paragraphs and Layout Builder.&lt;/p>
+&lt;h3 id="camp-menus">Camp Menus&lt;/h3>
+&lt;p>The Camp page is often used as a landing page for a microsite with additional information - schedules, packing lists, and other camp-specific pages.&lt;/p>
+&lt;p>We have two camp-specific menus that help build this structure.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Camp Menus&lt;/strong> allow you to provide a two-level menu in the header of each Camp page and subpage.
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the Camp Menu design" srcset="
+/docs/user-documentation/content-types/camp/camp--menu_hu92a9da48c8477cb706f22e6e86e33859_229633_3ec52cad2b8219039145c987fde36c33.png 458w,
+/docs/user-documentation/content-types/camp/camp--menu_hu92a9da48c8477cb706f22e6e86e33859_229633_3f3ec511297ec2468db1031868ef677a.png 726w,
+/docs/user-documentation/content-types/camp/camp--menu_hu92a9da48c8477cb706f22e6e86e33859_229633_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu_hu92a9da48c8477cb706f22e6e86e33859_229633_3ec52cad2b8219039145c987fde36c33.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/li>
+&lt;li>&lt;strong>Camp Quick Links&lt;/strong> provide a single-level utility menu for additional camp information.
+&lt;a href="/docs/user-documentation/content-types/camp/camp--quick-links.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the Camp Quick Links design" srcset="
+/docs/user-documentation/content-types/camp/camp--quick-links_hu0d333bb19a75f3031aa14b33783c8490_72868_f99894956441cc07805d43db66aa7676.png 458w,
+/docs/user-documentation/content-types/camp/camp--quick-links_hu0d333bb19a75f3031aa14b33783c8490_72868_a4600723cf4db15eec0cd5fd673229ac.png 726w,
+/docs/user-documentation/content-types/camp/camp--quick-links_hu0d333bb19a75f3031aa14b33783c8490_72868_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--quick-links_hu0d333bb19a75f3031aa14b33783c8490_72868_f99894956441cc07805d43db66aa7676.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="camp-quick-links">Camp Quick Links&lt;/h4>
+&lt;p>After setting &lt;strong>Use Layout Builder&lt;/strong> for your Camp page, navigate to the &lt;strong>Layout&lt;/strong> tab. You need to configure the Camp Quick Links in two blocks in order for them to properly display on desktop and tablet/mobile.&lt;/p>
+&lt;h5 id="configure-the-first-block">Configure the first block&lt;/h5>
+&lt;ul>
+&lt;li>In the &lt;strong>Configure Camp Header&lt;/strong> section, you will see placeholders for each of the menu blocks that say &lt;code>Please select the menu to display in this Camp Quick Links block&lt;/code>.
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-placeholders.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The camp page admin with menu placeholders" srcset="
+/docs/user-documentation/content-types/camp/camp--menu-placeholders_hu653118b8183afe4856f80404f103e2b3_49212_012e3e70b25ad7bbceee56ddc40c615e.png 458w,
+/docs/user-documentation/content-types/camp/camp--menu-placeholders_hu653118b8183afe4856f80404f103e2b3_49212_121bfa100dea63632409bf9f3fa10813.png 726w,
+/docs/user-documentation/content-types/camp/camp--menu-placeholders_hu653118b8183afe4856f80404f103e2b3_49212_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu-placeholders_hu653118b8183afe4856f80404f103e2b3_49212_012e3e70b25ad7bbceee56ddc40c615e.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/li>
+&lt;li>Using the &lt;kbd>&lt;i class="fas fa-pencil">&lt;/i>&lt;/kbd> on the first Camp Quick Links block, click &lt;strong>Configure&lt;/strong>.
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-configure.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The camp menu block edit menu." srcset="
+/docs/user-documentation/content-types/camp/camp--menu-configure_hu863e4dbc9144ad10aa2854594f1ab9f0_18924_4061c9acfcc58d39db2b5665d6da5c69.png 458w,
+/docs/user-documentation/content-types/camp/camp--menu-configure_hu863e4dbc9144ad10aa2854594f1ab9f0_18924_8817ee4cca3f5d1bad85ed0a17378190.png 726w,
+/docs/user-documentation/content-types/camp/camp--menu-configure_hu863e4dbc9144ad10aa2854594f1ab9f0_18924_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu-configure_hu863e4dbc9144ad10aa2854594f1ab9f0_18924_4061c9acfcc58d39db2b5665d6da5c69.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/li>
+&lt;li>In this menu, you can create a new menu or add an existing one that you&amp;rsquo;ve made in the Menus administration (&lt;code>/admin/structure/menu&lt;/code>). To create a new menu, fill in these fields:
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required) - the title of the Quick Links menu to be displayed in the Utility Navigation.&lt;/li>
+&lt;li>&lt;strong>Display title&lt;/strong> - &lt;strong>must be checked&lt;/strong> in order for the Quick links to display properly.&lt;/li>
+&lt;li>Click &lt;strong>Add new menu&lt;/strong>, then set up the new menu:
+&lt;ul>
+&lt;li>&lt;strong>Menu Title&lt;/strong> (required) - the administrative name of the menu. Like &lt;code>Camp Coleman Quick Links&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>Menu Name&lt;/strong> (required) - the machine name of the menu, using only lowercase letters, numbers, and hyphens. Like &lt;code>camp-coleman-quick-links&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>Administrative summary&lt;/strong> - is optional and only used in the menu admin.
+&lt;a href="/docs/user-documentation/content-types/camp/camp--quick-links-fields.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The camp quick links fields admin" srcset="
+/docs/user-documentation/content-types/camp/camp--quick-links-fields_hu9d7b8b024220266047e3d074c9a54928_33371_5cad52bdd93b8a702172090fd42629b1.png 458w,
+/docs/user-documentation/content-types/camp/camp--quick-links-fields_hu9d7b8b024220266047e3d074c9a54928_33371_5c52b7da5ba1266fa44fa1f3d9f295f0.png 726w,
+/docs/user-documentation/content-types/camp/camp--quick-links-fields_hu9d7b8b024220266047e3d074c9a54928_33371_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--quick-links-fields_hu9d7b8b024220266047e3d074c9a54928_33371_5cad52bdd93b8a702172090fd42629b1.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Click &lt;strong>Create menu&lt;/strong>, then click &lt;strong>Edit links&lt;/strong> to add items to the menu.&lt;/li>
+&lt;li>In the &lt;strong>Edit links&lt;/strong> popup you can add and reorder links in the menu.
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-edit-links.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The &amp;amp;ldquo;Edit links&amp;amp;rdquo; dialog in the Camp admin" srcset="
+/docs/user-documentation/content-types/camp/camp--menu-edit-links_hu531e1d81f9fa29970170cf74b3e6a701_30362_d626f469165b6d916db0aa2144a2e8ea.png 458w,
+/docs/user-documentation/content-types/camp/camp--menu-edit-links_hu531e1d81f9fa29970170cf74b3e6a701_30362_bb6af032b6ace2280e027e5242d20585.png 726w,
+/docs/user-documentation/content-types/camp/camp--menu-edit-links_hu531e1d81f9fa29970170cf74b3e6a701_30362_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu-edit-links_hu531e1d81f9fa29970170cf74b3e6a701_30362_d626f469165b6d916db0aa2144a2e8ea.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-add-link.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The &amp;amp;ldquo;Add new link&amp;amp;rdquo; dialog&amp;amp;quot;" srcset="
+/docs/user-documentation/content-types/camp/camp--menu-add-link_hu926765475e4de455bf6d8c5fda2bcf24_74637_2b25146bcd9b71177d389c66899c7d24.png 458w,
+/docs/user-documentation/content-types/camp/camp--menu-add-link_hu926765475e4de455bf6d8c5fda2bcf24_74637_f4cda1d59dd894731e22ec77d50381c3.png 726w,
+/docs/user-documentation/content-types/camp/camp--menu-add-link_hu926765475e4de455bf6d8c5fda2bcf24_74637_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu-add-link_hu926765475e4de455bf6d8c5fda2bcf24_74637_2b25146bcd9b71177d389c66899c7d24.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;ul>
+&lt;li>For each new link:
+&lt;ul>
+&lt;li>Click &lt;strong>Add new link&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Menu link title&lt;/strong> is the text displayed.&lt;/li>
+&lt;li>&lt;strong>Link&lt;/strong> is the internal page or external url that the link points to.&lt;/li>
+&lt;li>&lt;strong>Enabled&lt;/strong> allows you to temporarily hide a menu item.&lt;/li>
+&lt;li>&lt;strong>Show as expanded&lt;/strong> should be checked for any parent items. There is no harm in always checking this.&lt;/li>
+&lt;li>Other fields can be ignored.&lt;/li>
+&lt;li>&lt;strong>Save&lt;/strong> when you are finished.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Use the drag handles &lt;kbd>&lt;i class="fas fa-arrows-up-down-left-right">&lt;/i>&lt;/kbd> to rearrange or nest menu items.
+&lt;ul>
+&lt;li>&lt;em>&lt;strong>Note:&lt;/strong> Parent items must have &lt;strong>Show as expanded&lt;/strong> checked in order to display child items.&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>When you are finished adding and rearranging menu links, &lt;strong>Save&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Finally, save all the changes with &lt;strong>Update&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h5 id="configure-the-second-block">Configure the second block&lt;/h5>
+&lt;ul>
+&lt;li>Find the second place that says &lt;code>Please select the menu to display in this Camp Quick Links block&lt;/code> in the Header Section.&lt;/li>
+&lt;li>Using the &lt;kbd>&lt;i class="fas fa-pencil">&lt;/i>&lt;/kbd> on this block, click &lt;strong>Configure&lt;/strong>.&lt;/li>
+&lt;li>As before, configure the block:
+&lt;ul>
+&lt;li>Add the same &lt;strong>Title&lt;/strong> as the first block.&lt;/li>
+&lt;li>Ensure &lt;strong>Display title&lt;/strong> is checked.&lt;/li>
+&lt;li>Click &lt;strong>Add existing menu&lt;/strong> then start typing the name of the menu you created in the previous block and select it in the autocomplete dropdown.
+&lt;a href="/docs/user-documentation/content-types/camp/camp--second-block.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot displaying the above steps." srcset="
+/docs/user-documentation/content-types/camp/camp--second-block_hu65596261e8e224a3ed470291620deb73_138403_373d9f00b3795aafe62f15e994c10422.png 458w,
+/docs/user-documentation/content-types/camp/camp--second-block_hu65596261e8e224a3ed470291620deb73_138403_3a29baa48562bc43c555562df1b59e3e.png 726w,
+/docs/user-documentation/content-types/camp/camp--second-block_hu65596261e8e224a3ed470291620deb73_138403_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--second-block_hu65596261e8e224a3ed470291620deb73_138403_373d9f00b3795aafe62f15e994c10422.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/li>
+&lt;li>Click &lt;strong>Add menu&lt;/strong> to save the selection.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Once the existing menu has been added, you will see the &lt;em>Edit&lt;/em>, &lt;em>Remove&lt;/em>, and &lt;em>Edit Links&lt;/em> options. Once you see those, you can &lt;strong>Update&lt;/strong> to save these changes.
+&lt;a href="/docs/user-documentation/content-types/camp/camp--second-block-save.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot showing the completed &amp;amp;ldquo;Add existing menu&amp;amp;rdquo; dialog" srcset="
+/docs/user-documentation/content-types/camp/camp--second-block-save_hud3d32509019d4a84ab94b55a66db0459_15955_2c3bed8948b82093ed8985b7f9aca042.png 458w,
+/docs/user-documentation/content-types/camp/camp--second-block-save_hud3d32509019d4a84ab94b55a66db0459_15955_0e76555c2623a9432b120f04b890a81f.png 726w,
+/docs/user-documentation/content-types/camp/camp--second-block-save_hud3d32509019d4a84ab94b55a66db0459_15955_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--second-block-save_hud3d32509019d4a84ab94b55a66db0459_15955_2c3bed8948b82093ed8985b7f9aca042.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;p>Once you have completed the process you will see your Quick Links menu displayed in two sections of the Header. This will ensure that the menu is displayed properly across all displays.&lt;/p>
+&lt;p>
+&lt;a href="/docs/user-documentation/content-types/camp/camp--quick-links-success.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="camp&amp;amp;ndash;quick-links-success.png" srcset="
+/docs/user-documentation/content-types/camp/camp--quick-links-success_hufa484f03e308c85041d9ab9e3bea9da9_50120_1f902420d52a08284603ae5654b401f5.png 458w,
+/docs/user-documentation/content-types/camp/camp--quick-links-success_hufa484f03e308c85041d9ab9e3bea9da9_50120_e7502b76014bae9dbcfd8520a9bf0ebb.png 726w,
+/docs/user-documentation/content-types/camp/camp--quick-links-success_hufa484f03e308c85041d9ab9e3bea9da9_50120_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--quick-links-success_hufa484f03e308c85041d9ab9e3bea9da9_50120_1f902420d52a08284603ae5654b401f5.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h4 id="camp-menu">Camp Menu&lt;/h4>
+&lt;ul>
+&lt;li>Find the final placeholder that says &lt;code>... Camp Menu ...&lt;/code>&lt;/li>
+&lt;li>&lt;kbd>&lt;i class="fas fa-pencil">&lt;/i>&lt;/kbd> &lt;strong>Configure&lt;/strong> the block.&lt;/li>
+&lt;li>Create a new menu or choose an existing one using
+&lt;a href="#configure-the-first-block">the steps above&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Update&lt;/strong>, then &lt;strong>Save Layout&lt;/strong> at the top of the page.&lt;/li>
+&lt;li>Now your Camp page is populated with all of its menus!&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-display.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot showing the expanded Camp Quick Links menu and Camp Menu" srcset="
+/docs/user-documentation/content-types/camp/camp--menu-display_huf7049926cb5dac8ae694e4a4e700a850_41181_fb3f3ed87c3889ae6fca190064c9d4e3.png 458w,
+/docs/user-documentation/content-types/camp/camp--menu-display_huf7049926cb5dac8ae694e4a4e700a850_41181_4c7b51e4560e0adfc99e4a7e90c6710c.png 726w,
+/docs/user-documentation/content-types/camp/camp--menu-display_huf7049926cb5dac8ae694e4a4e700a850_41181_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu-display_huf7049926cb5dac8ae694e4a4e700a850_41181_fb3f3ed87c3889ae6fca190064c9d4e3.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h3 id="camp-landing-pages">Camp Landing Pages&lt;/h3>
+&lt;p>The &lt;strong>Camp Landing Page&lt;/strong> content type allows you to create internal pages for your camp section or microsite. Once you&amp;rsquo;ve created the parent &lt;strong>Camp&lt;/strong> page, you are ready to creat additional &lt;strong>Camp Landing Page&lt;/strong> pages.&lt;/p>
+&lt;ul>
+&lt;li>Go to &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Camp Landing Page&lt;/strong>&lt;/li>
+&lt;li>Set the &lt;strong>Title&lt;/strong>&lt;/li>
+&lt;li>In the &lt;strong>Camp&lt;/strong> field, begin typing the name of the &lt;strong>Camp&lt;/strong> page that will be the parent page, then select the item from the autocomplete dropdown.
+&lt;a href="/docs/user-documentation/content-types/camp/camp--lp-select.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The Camp Landing Page admin fields" srcset="
+/docs/user-documentation/content-types/camp/camp--lp-select_hu5ced4d248fa9da96f0b85850075d967c_15159_439dffe0b57745eceb80fb130c4fa640.png 458w,
+/docs/user-documentation/content-types/camp/camp--lp-select_hu5ced4d248fa9da96f0b85850075d967c_15159_15a8fbf29cc0315329798bd55a4f026c.png 726w,
+/docs/user-documentation/content-types/camp/camp--lp-select_hu5ced4d248fa9da96f0b85850075d967c_15159_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--lp-select_hu5ced4d248fa9da96f0b85850075d967c_15159_439dffe0b57745eceb80fb130c4fa640.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/li>
+&lt;li>Click &lt;strong>Save and edit layout&lt;/strong>.&lt;/li>
+&lt;li>You will now see the Layout Builder editor with the menus from your &lt;strong>Camp&lt;/strong> page pre-populated in the layout.
+&lt;a href="/docs/user-documentation/content-types/camp/camp--lp-menus.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The Camp Landing Page layout builder interface" srcset="
+/docs/user-documentation/content-types/camp/camp--lp-menus_hu43309ef9ee9d674c95ee80b59471c6a0_56462_9b4a96a61c72099e6464ae5411a51bfb.png 458w,
+/docs/user-documentation/content-types/camp/camp--lp-menus_hu43309ef9ee9d674c95ee80b59471c6a0_56462_a97cb68e0b31490564458b3adc512904.png 726w,
+/docs/user-documentation/content-types/camp/camp--lp-menus_hu43309ef9ee9d674c95ee80b59471c6a0_56462_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--lp-menus_hu43309ef9ee9d674c95ee80b59471c6a0_56462_9b4a96a61c72099e6464ae5411a51bfb.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/li>
+&lt;li>Add additional content using
+&lt;a href="../../layout-builder">Layout Builder&lt;/a>, then click &lt;strong>Save layout&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;strong>Note:&lt;/strong> The menu references on Camp Landing Pages are copied to the header when the page is created. Any updates to those menus (new items, reordering) will be reflected on all subpages, but later changes to the blocks (removing the menu altogether, changing the linked menu) will need to be made on both &lt;strong>Camp&lt;/strong> and &lt;strong>Camp Landing Page&lt;/strong> pages separately.&lt;/p>
+&lt;/blockquote>
+&lt;p>Camp Landing Pages are not automatically added to the Camp Menu of their corresponding &lt;strong>Camp&lt;/strong>. Be sure to add the newly created &lt;strong>Camp Landing Page&lt;/strong> to the &lt;strong>Camp Menu&lt;/strong> so that it&amp;rsquo;s properly linked.&lt;/p>
+&lt;h3 id="layout-builder-blocks">Layout Builder Blocks&lt;/h3>
+&lt;p>Camp pages have a number of specialized components that utilize the structured data (fields) that already exist on your branch page in newly designed Layout Builder Blocks.&lt;/p>
+&lt;p>In addition to using many of the standard
+&lt;a href="../../layout-builder">Layout Builder&lt;/a> components, Camp pages also use a number of components that display fields described above.&lt;/p>
+&lt;h4 id="camp-info-block">Camp Info Block&lt;/h4>
+&lt;p>The &lt;strong>Camp Info Block&lt;/strong> is automatically added to the Body section of each &lt;strong>Camp&lt;/strong> page. It displays content from the Contact Info section. It can be rearranged on the page but is not otherwise configurable.&lt;/p></description></item><item><title>Docs: Facility</title><link>/docs/user-documentation/content-types/facility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/facility/</guid><description>
+&lt;p>The Facility content type is used for locations where programming might take place that are not a full YMCA Branch. This might be a childcare facility, a shared-use space, or an office.&lt;/p>
+&lt;h2 id="creating-a-facility">Creating a Facility&lt;/h2>
+&lt;h3 id="general-info">General info&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Neighborhood&lt;/strong> - If it is used, select an item from the Neighborhood
+&lt;a href="../../taxonomy">Taxonomy&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Type&lt;/strong> - Choose from a predefined list of types.&lt;/li>
+&lt;li>&lt;strong>Facility Branch&lt;/strong> - Using autocomplete, select the
+&lt;a href="../branch">Branch&lt;/a> that this facility is associated with.&lt;/li>
+&lt;/ul>
+&lt;h3 id="contact-info">Contact Info&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Address&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Facility Coordinates&lt;/strong> - See
+&lt;a href="../branch/#contact-info">Branch&lt;/a> for details on how to find your facility coordinates.&lt;/li>
+&lt;li>&lt;strong>Phone&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Fax&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Email&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Directions&lt;/strong> - Link to your Google Places. Add “Get Directions” in the Link Text section.&lt;/li>
+&lt;/ul>
+&lt;h3 id="content">Content&lt;/h3>
+&lt;blockquote>
+&lt;p>These sections are not displayed when &amp;ldquo;Use Layout Builder&amp;rdquo; is selected.&lt;/p>
+&lt;/blockquote>
+&lt;p>Use
+&lt;a href="../../paragraphs">Paragraphs&lt;/a> to add content to your Facility page.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Sidebar Area&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Content Area&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Landing Page</title><link>/docs/user-documentation/content-types/landing-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/landing-page/</guid><description>
 &lt;h3 id="fields-in-landing-page">Fields in Landing Page&lt;/h3>
-&lt;h4 id="---title-required">&amp;ndash;&amp;gt; Title (Required)&lt;/h4>
+&lt;h4 id="title-required">Title (Required)&lt;/h4>
 &lt;p>This is what you will see in your admin portal as your content&amp;rsquo;s name. it will also show as the page title in the Header unless you add a paragraph in the &lt;em>Header Area&lt;/em>.&lt;/p>
-&lt;h4 id="---layout-required">&amp;ndash;&amp;gt; Layout (Required)&lt;/h4>
+&lt;h4 id="layout-required">Layout (Required)&lt;/h4>
 &lt;p>Landing Pages come with four basic layouts for desktop. For mobile, all layouts display in a single column, with the &lt;em>Sidebar Area&lt;/em> stacking below the &lt;em>Content Area&lt;/em>.&lt;/p>
-&lt;h4 id="-one-column-layout">=&amp;gt; One Column Layout&lt;/h4>
+&lt;h4 id="one-column-layout">One Column Layout&lt;/h4>
 &lt;p>
-&lt;img src="upload://kNN6D8N7DjXh5hsXeZLjLd3wpXP.jpeg" alt="landing-page-layouts__one-column|690x431, 50%" />&lt;/p>
-&lt;h4 id="-one-column-full-width">=&amp;gt; One Column (Full Width)&lt;/h4>
+&lt;a href="/docs/user-documentation/content-types/landing-page/landing-page--1col.jpeg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The one column landing page layout" srcset="
+/docs/user-documentation/content-types/landing-page/landing-page--1col_hud29a80aacebc4f9ce18e4b04e28efa95_572947_11b4aade043d152c847bad3822468e8e.jpeg 458w,
+/docs/user-documentation/content-types/landing-page/landing-page--1col_hud29a80aacebc4f9ce18e4b04e28efa95_572947_ab1c2ee5437fe6c1d3510418430e16b0.jpeg 726w,
+/docs/user-documentation/content-types/landing-page/landing-page--1col_hud29a80aacebc4f9ce18e4b04e28efa95_572947_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/landing-page/landing-page--1col_hud29a80aacebc4f9ce18e4b04e28efa95_572947_11b4aade043d152c847bad3822468e8e.jpeg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h4 id="one-column-full-width">One Column (Full Width)&lt;/h4>
 &lt;p>
-&lt;img src="upload://jxhHeBWOxvP7ibjnNHxZxxdPyT5.jpeg" alt="landing-page-layout__one-column-full|690x431, 50%" />&lt;/p>
-&lt;h3 id="-two-columns">=&amp;gt; Two Columns&lt;/h3>
+&lt;a href="/docs/user-documentation/content-types/landing-page/landing-page--1col-full.jpeg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The one column (full width) landing page layout" srcset="
+/docs/user-documentation/content-types/landing-page/landing-page--1col-full_hud29a80aacebc4f9ce18e4b04e28efa95_833636_1470a2dc8c8ea27d203949b8c76ed45a.jpeg 458w,
+/docs/user-documentation/content-types/landing-page/landing-page--1col-full_hud29a80aacebc4f9ce18e4b04e28efa95_833636_fb48a615aacece47242915bea66a2940.jpeg 726w,
+/docs/user-documentation/content-types/landing-page/landing-page--1col-full_hud29a80aacebc4f9ce18e4b04e28efa95_833636_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/landing-page/landing-page--1col-full_hud29a80aacebc4f9ce18e4b04e28efa95_833636_1470a2dc8c8ea27d203949b8c76ed45a.jpeg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h3 id="two-columns">Two Columns&lt;/h3>
 &lt;p>
-&lt;img src="upload://k3lf061BcM99Fyyh7N3oMrhfN6i.jpeg" alt="landing-page-layout__two-columns|690x431, 50%" />&lt;/p>
-&lt;h3 id="-two-columns-fixed-sidebar">=&amp;gt; Two Columns (Fixed Sidebar)&lt;/h3>
+&lt;a href="/docs/user-documentation/content-types/landing-page/landing-page--2col.jpeg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The two column landing page layout" srcset="
+/docs/user-documentation/content-types/landing-page/landing-page--2col_hu8e7e95a08f8947e70e10cf961d179821_759086_54591df728014763278aa058d6f55ef6.jpeg 458w,
+/docs/user-documentation/content-types/landing-page/landing-page--2col_hu8e7e95a08f8947e70e10cf961d179821_759086_f211c13ef2ce8700db1d5292b35f6352.jpeg 726w,
+/docs/user-documentation/content-types/landing-page/landing-page--2col_hu8e7e95a08f8947e70e10cf961d179821_759086_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/landing-page/landing-page--2col_hu8e7e95a08f8947e70e10cf961d179821_759086_54591df728014763278aa058d6f55ef6.jpeg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h3 id="two-columns-fixed-sidebar">Two Columns (Fixed Sidebar)&lt;/h3>
 &lt;p>
-&lt;img src="upload://nqve5I4p7xiw2bTQZPcFgBYuyrD.jpeg" alt="landing-page-layout__two-columns-fixed|690x431, 50%" />&lt;/p>
-&lt;h3 id="---paragraph-areas">&amp;ndash;&amp;gt; Paragraph Areas&lt;/h3>
+&lt;a href="/docs/user-documentation/content-types/landing-page/landing-page--2col-fixed.jpeg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The two column (fixed sidebar) landing page layout" srcset="
+/docs/user-documentation/content-types/landing-page/landing-page--2col-fixed_hu6593b05c092429d39597c4b98a77951b_647359_34e30c3ceeb80b1f67cf1f807c7a394c.jpeg 458w,
+/docs/user-documentation/content-types/landing-page/landing-page--2col-fixed_hu6593b05c092429d39597c4b98a77951b_647359_9867c594a0b5715397701545d5b9ea17.jpeg 726w,
+/docs/user-documentation/content-types/landing-page/landing-page--2col-fixed_hu6593b05c092429d39597c4b98a77951b_647359_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/landing-page/landing-page--2col-fixed_hu6593b05c092429d39597c4b98a77951b_647359_34e30c3ceeb80b1f67cf1f807c7a394c.jpeg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h3 id="paragraph-areas">Paragraph Areas&lt;/h3>
+&lt;p>You can use any number of
+&lt;a href="../../paragraphs">Paragraphs&lt;/a> in these fields.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Header Area&lt;/strong>: Used for inserting banners, small banners and galleries. Date blocks are also great in this area for scheduled content.&lt;/li>
 &lt;li>&lt;strong>Content Area&lt;/strong>: The main body of your content.&lt;/li>
-&lt;li>&lt;strong>Sidebar Area&lt;/strong> [i](Two Column Layouts Only)[/i]: For aside pieces of content, such as side navigations, promotional cards and content related to the main part of your page.&lt;/li>
+&lt;li>&lt;strong>Sidebar Area&lt;/strong> &lt;em>(Two Column Layouts Only)&lt;/em>: For aside pieces of content, such as side navigations, promotional cards and content related to the main part of your page.&lt;/li>
 &lt;li>&lt;strong>Bottom Area&lt;/strong>: Add an anchoring element to your page, such as a promotional banner or webform.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Membership Content Type</title><link>/docs/user-documentation/content-types/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/membership/</guid><description>
 &lt;hr>
@@ -716,12 +1148,20 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;/a>
 &lt;/p></description></item><item><title>Docs: News Post</title><link>/docs/user-documentation/content-types/news-post/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/news-post/</guid><description>
 &lt;blockquote>
-&lt;p>Designed for timely content, articles and news pieces tagged with one or more physical locations.&lt;/p>
 &lt;p>&lt;em>Note: This Content Type is
-&lt;a href="https://community.openymca.org/t/blog-post-content-types-open-y-user-docs/693" target="_blank">similar to the Blog Post content type&lt;/a>.&lt;/em>&lt;/p>
+&lt;a href="../blog-post">similar to the Blog Post content type&lt;/a>.&lt;/em>&lt;/p>
 &lt;/blockquote>
 &lt;p>
-&lt;img src="upload://s0DLIEjlMW9Tt8s68bV3168YsnA.png" alt="carnation&amp;amp;ndash;news&amp;amp;ndash;desktop|690x479, 75%" />&lt;/p>
+&lt;a href="/docs/user-documentation/content-types/news-post/news-post--example.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="An example news post page" srcset="
+/docs/user-documentation/content-types/news-post/news-post--example_hucd0996abf94ad51f1f473d62f46b870c_331396_15d4649b3d77ccab7626574bed744130.png 458w,
+/docs/user-documentation/content-types/news-post/news-post--example_hucd0996abf94ad51f1f473d62f46b870c_331396_81cf960a8a0e60d2239b0859b4b4b368.png 726w,
+/docs/user-documentation/content-types/news-post/news-post--example_hucd0996abf94ad51f1f473d62f46b870c_331396_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/news-post/news-post--example_hucd0996abf94ad51f1f473d62f46b870c_331396_15d4649b3d77ccab7626574bed744130.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
 &lt;p>News posts in YMCA Website Services allow you the flexibility to both create simple posts using only the text editor and more robust layouts with paragraphs.&lt;/p>
 &lt;h2 id="when-should-i-use-a-news-post">When Should I Use a News Post?&lt;/h2>
 &lt;p>When you decide to use a news post
@@ -735,24 +1175,28 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;/ul>
 &lt;h2 id="how-do-i-use-a-news-post">How Do I Use a News Post?&lt;/h2>
 &lt;p>
-&lt;img src="upload://nFeEVZi9ubWFFBqOwNT6iJQnQ5N.gif" alt="admin&amp;amp;ndash;news-posts__category|662x204, 75%" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="The news posts category field" src="/docs/user-documentation/content-types/news-post/news-post--category.gif" />
+&lt;figcaption>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;p>There are three fields that appear above the accordion tabs below:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong>: The name of the news post. Displays in the header area on your news post and in
-&lt;a href="https://community.openymca.org/t/news-posts-listing-paragraphs-open-y-user-docs/721" target="_blank">a list view of news posts&lt;/a>.&lt;/p>
+&lt;a href="../../paragraphs/news-posts-listing">a list view of news posts&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Locations&lt;/strong>: An &lt;em>option select&lt;/em> for you to tag a post with one or more locations (Camp or Branch). Use Ctrl+Click (Windows) or Cmd⌘+Click (Mac) to select multiple locations.&lt;/p>
 &lt;blockquote>
 &lt;p>Each time you create a new
-&lt;a href="https://community.openymca.org/t/branch-content-types-open-y-user-docs/685" target="_blank">Branch Page&lt;/a> or
-&lt;a href="https://community.openymca.org/t/camp-content-types-user-docs/690" target="_blank">Camp Page&lt;/a>, that location&amp;rsquo;s name populates into the locations field automatically&lt;/p>
+&lt;a href="../branch">Branch Page&lt;/a> or
+&lt;a href="../camp">Camp Page&lt;/a>, that location&amp;rsquo;s name populates into the locations field automatically&lt;/p>
 &lt;/blockquote>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Category&lt;/strong>: An &lt;em>entity reference&lt;/em> to
-&lt;a href="http://#" target="_blank">the News Category vocabulary&lt;/a>. Type in the name of the category and select from the options that appear, or create a new category/term by typing in a new one.&lt;/p>
+&lt;a href="../../taxonomy/#blognews-category">the News Category vocabulary&lt;/a>. Type in the name of the category and select from the options that appear, or create a new category/term by typing in a new one.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="content-area">Content Area&lt;/h3>
@@ -760,31 +1204,46 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Image&lt;/strong>: Displays above your description and inside a News Post listing. Not required. Uses the
-&lt;a href="https://community.openymca.org/t/taxonomy-vocabularies-and-terms-website-structure-open-y-user-docs/734" target="_blank">media browser and image field.&lt;/a>&lt;/p>
+&lt;a href="../../media">media browser and image field.&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Description&lt;/strong>:
-&lt;a href="https://community.openymca.org/t/introduction-text-editor-open-y-user-docs/643" target="_blank">Using the YMCA Website Services text editor&lt;/a>, you can enter anything from a brief summary to the entire body of your text.&lt;/p>
+&lt;a href="../../text-editor">Using the text editor&lt;/a>, you can enter anything from a brief summary to the entire body of your text.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="sidebar-area">Sidebar Area&lt;/h3>
 &lt;p>The sidebar area also allows you embed paragraphs below a section that links to the centers tagged in the post, the categories and a &lt;em>Related Content field&lt;/em> that allows you to promote other News Posts by tagging them with the autocomplete widget.&lt;/p>
 &lt;h3 id="layouts">Layouts&lt;/h3>
-&lt;p>While you have the option to build layouts in news posts using paragraphs, all bnews posts are strictly two-column layouts. The Content Area displays on the left while the Sidebar Area displays on the right.&lt;/p>
+&lt;p>While you have the option to build layouts in news posts using paragraphs, all news posts are strictly two-column layouts. The Content Area displays on the left while the Sidebar Area displays on the right.&lt;/p>
 &lt;h3 id="other-settings">Other Settings&lt;/h3>
-&lt;p>In the right column, make sure the &amp;ldquo;promoted to front page&amp;rdquo; item is checked so it will appear in any listings.&lt;/p></description></item><item><title>Docs: Program</title><link>/docs/user-documentation/content-types/program/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/program/</guid><description>
-&lt;blockquote>
-&lt;p>In YMCA Website Services, a Program doesn&amp;rsquo;t refer to specific offering or format, but to a content type that serves as a large, generic category page for program offerings.&lt;/p>
-&lt;/blockquote>
+&lt;p>In the right column, make sure the &amp;ldquo;promoted to front page&amp;rdquo; item is checked, so it will appear in any listings.&lt;/p></description></item><item><title>Docs: Program</title><link>/docs/user-documentation/content-types/program/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/program/</guid><description>
 &lt;p>
-&lt;img src="upload://bpcGydlHcEsAnc6KAQpcR3Xou4i.jpeg" alt="lily&amp;amp;ndash;program&amp;amp;ndash;desktop|690x454, 75%" />&lt;/p>
+&lt;a href="/docs/user-documentation/content-types/program/program--example.jpeg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="An example of a program page" srcset="
+/docs/user-documentation/content-types/program/program--example_hu423eab57bdd9cbde11a4c70b3b7c6ac1_509522_530b3c16f74e020a32449dbd5df8b135.jpeg 458w,
+/docs/user-documentation/content-types/program/program--example_hu423eab57bdd9cbde11a4c70b3b7c6ac1_509522_44c597653f9789b4822b4208d9d51a95.jpeg 726w,
+/docs/user-documentation/content-types/program/program--example_hu423eab57bdd9cbde11a4c70b3b7c6ac1_509522_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--example_hu423eab57bdd9cbde11a4c70b3b7c6ac1_509522_530b3c16f74e020a32449dbd5df8b135.jpeg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
 &lt;p>The Program content type is a high-level page that directs people to more specific program offerings.&lt;/p>
 &lt;p>An example of a Program in YMCA Website Services would be a Swimming &amp;amp; Aquatics page that directs people to more specific offerings, such as swim lessons or clinics.&lt;/p>
 &lt;hr>
 &lt;h2 id="when-should-i-use-a-program">When Should I Use a Program?&lt;/h2>
 &lt;p>Programs are pages that should link to more specific offering pages. Most often in YMCA Website Services sites, they are the main program pages in an YMCA Website Services mega menu setup.&lt;/p>
 &lt;p>
-&lt;img src="upload://wFIrGVZ4jOvjo2BCVy4bqrdjKyO.png" alt="carnation__mega-menu&amp;amp;ndash;desktop|684x500, 75%" />&lt;/p>
+&lt;a href="/docs/user-documentation/content-types/program/program--menu.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The site mega menu with program pages indicated" srcset="
+/docs/user-documentation/content-types/program/program--menu_hu852bf4d405ae2010ecb0ed956d6ef017_561862_6dfa30ecb7aebd3b99a29cdb1811cc4f.png 458w,
+/docs/user-documentation/content-types/program/program--menu_hu852bf4d405ae2010ecb0ed956d6ef017_561862_74adef99b0c03516302abe5e4806b4f4.png 726w,
+/docs/user-documentation/content-types/program/program--menu_hu852bf4d405ae2010ecb0ed956d6ef017_561862_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--menu_hu852bf4d405ae2010ecb0ed956d6ef017_561862_6dfa30ecb7aebd3b99a29cdb1811cc4f.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
 &lt;hr>
 &lt;h2 id="how-to-use-program">How to Use Program&lt;/h2>
 &lt;h3 id="header-area">Header Area&lt;/h3>
@@ -794,17 +1253,42 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;li>&lt;strong>Color&lt;/strong>: A background color for the header.&lt;/li>
 &lt;li>&lt;strong>Paragraph Section&lt;/strong>: Area to enter paragraphs in the Header, such as a Gallery, Small Banner or Microsites menu. Paragraphs entered in this area replace the image/background color&lt;/li>
 &lt;/ul>
-&lt;blockquote>
-&lt;h4 id="-standard-title-with-light-blue">/// Standard Title with Light Blue&lt;/h4>
+&lt;h4 id="standard-title-with-light-blue">Standard Title with Light Blue&lt;/h4>
 &lt;p>
-&lt;img src="upload://xo1lSNZJvORKlmD9QgjomMPFCWy.png" alt="carnation&amp;amp;ndash;program&amp;amp;ndash;light-blue-color|690x135, 75%" />&lt;/p>
-&lt;h4 id="-standard-title-with-purple">/// Standard Title with Purple&lt;/h4>
+&lt;a href="/docs/user-documentation/content-types/program/program--carnation-light-blue.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A program page with a light blue banner" srcset="
+/docs/user-documentation/content-types/program/program--carnation-light-blue_hu4b4318458df83ac7a8d538aac2f5ec5c_50264_2895b3a72a297cead685589d22b3f307.png 458w,
+/docs/user-documentation/content-types/program/program--carnation-light-blue_hu4b4318458df83ac7a8d538aac2f5ec5c_50264_0056035028e9373bdadf61c69f8d5bc4.png 726w,
+/docs/user-documentation/content-types/program/program--carnation-light-blue_hu4b4318458df83ac7a8d538aac2f5ec5c_50264_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--carnation-light-blue_hu4b4318458df83ac7a8d538aac2f5ec5c_50264_2895b3a72a297cead685589d22b3f307.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h4 id="standard-title-with-purple">Standard Title with Purple&lt;/h4>
 &lt;p>
-&lt;img src="upload://zlRi8HDlsPa4VR8z7sr06qWfxpS.png" alt="carnation&amp;amp;ndash;program&amp;amp;ndash;purple-color|690x135, 75%" />&lt;/p>
-&lt;h4 id="-small-banner">/// Small Banner&lt;/h4>
+&lt;a href="/docs/user-documentation/content-types/program/program--carnation-purple.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A program page with a purple banner" srcset="
+/docs/user-documentation/content-types/program/program--carnation-purple_hu9508c9067e60d6f92f4253de3a8f93e8_50271_36eeddcf40b644351cb0b0d3466c7621.png 458w,
+/docs/user-documentation/content-types/program/program--carnation-purple_hu9508c9067e60d6f92f4253de3a8f93e8_50271_845391872f32b7b386d00f65c5160e31.png 726w,
+/docs/user-documentation/content-types/program/program--carnation-purple_hu9508c9067e60d6f92f4253de3a8f93e8_50271_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--carnation-purple_hu9508c9067e60d6f92f4253de3a8f93e8_50271_36eeddcf40b644351cb0b0d3466c7621.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h4 id="small-banner">Small Banner&lt;/h4>
 &lt;p>
-&lt;img src="upload://AoohqAs6zBpZQlr0IBMosmAs0xS.jpeg" alt="carnation&amp;amp;ndash;program__small-banner|690x135, 75%" />&lt;/p>
-&lt;/blockquote>
+&lt;a href="/docs/user-documentation/content-types/program/program--carnation-small-banner.jpeg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A program page with a small banner and an image background" srcset="
+/docs/user-documentation/content-types/program/program--carnation-small-banner_hu61c3671675498aa2c3687704368da0bc_480902_6c63ffa86634a7cd4e2120e0892684c2.jpeg 458w,
+/docs/user-documentation/content-types/program/program--carnation-small-banner_hu61c3671675498aa2c3687704368da0bc_480902_4a72234978be2c145acfad69fad90e16.jpeg 726w,
+/docs/user-documentation/content-types/program/program--carnation-small-banner_hu61c3671675498aa2c3687704368da0bc_480902_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--carnation-small-banner_hu61c3671675498aa2c3687704368da0bc_480902_6c63ffa86634a7cd4e2120e0892684c2.jpeg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
 &lt;h3 id="content-area">Content Area&lt;/h3>
 &lt;ul>
 &lt;li>
@@ -812,19 +1296,19 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Content&lt;/strong>: The main body of your content. Use paragraphs to build your page layout. Designed to integrate
-&lt;a href="https://community.openymca.org/t/categories-listing-paragraphs-open-y-user-docs/707" target="_blank">with the Categories Listing&lt;/a> paragraph, but that is not required.&lt;/p>
+&lt;a href="../../paragraphs/categories-listing">with the Categories Listing&lt;/a> paragraph, but that is not required.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="sidebar-area">Sidebar Area&lt;/h3>
 &lt;p>For aside pieces of content, such as side navigations, promotional cards and content related to the main part of your page.&lt;/p>
 &lt;h3 id="layouts">Layouts&lt;/h3>
 &lt;p>
-&lt;a href="https://community.openymca.org/t/landing-page-content-types-open-y-user-docs/667" target="_blank">Similar to landing pages&lt;/a>, Program pages are designed for flexible layouts, with a couple key differences:&lt;/p>
+&lt;a href="../landing-page">Similar to landing pages&lt;/a>, Program pages are designed for flexible layouts, with a couple key differences:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>Program pages are designed for
-&lt;a href="https://community.openymca.org/t/categories-listing-paragraphs-open-y-user-docs/707" target="_blank">integration with the Categories Listing&lt;/a> paragraph type.
-&lt;a href="https://community.openymca.org/t/program-subcategory-content-types-open-y-user-docs/692" target="_blank">Program subcategory pages&lt;/a> are tagged with a Program, and those subcategories are displayed as long cards on that Program page.&lt;/p>
+&lt;a href="../../paragraphs/categories-listing">integration with the Categories Listing&lt;/a> paragraph type.
+&lt;a href="../program-subcategory">Program subcategory pages&lt;/a> are tagged with a Program, and those subcategories are displayed as long cards on that Program page.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>There is no layout dropdown. How your content displays depends on your theme.&lt;/p>
@@ -832,31 +1316,50 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;li>Lily/Rose will always display Programs in a two-column layout in desktop.&lt;/li>
 &lt;li>Carnation will display desktop in One Column without content in the &lt;em>Sidebar Area&lt;/em> and in Two Columns with content in the &lt;em>Sidebar Area.&lt;/em>&lt;/li>
 &lt;/ul>
-&lt;blockquote>
-&lt;h4 id="-carnation-without-content-in-the-sidebar">/// Carnation: Without Content in the Sidebar&lt;/h4>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="carnation-without-content-in-the-sidebar">Carnation: Without Content in the Sidebar&lt;/h4>
 &lt;p>
-&lt;img src="upload://yPi6qeCY9ICWIhTC3SR6OZt6bpR.jpeg" alt="carnation&amp;amp;ndash;program__one-column&amp;amp;ndash;desktop|690x406, 75%" />&lt;/p>
-&lt;hr>
-&lt;h4 id="-carnation-desktop-with-content-in-the-sidebar">/// Carnation: Desktop With Content in the Sidebar&lt;/h4>
+&lt;a href="/docs/user-documentation/content-types/program/program--carnation-no-sidebar.jpeg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A program page without content in the sidebar" srcset="
+/docs/user-documentation/content-types/program/program--carnation-no-sidebar_hu9f1d0a1f740b04c5a6a4cb1fdf35ee7e_410075_45c1c798a8ae34304e721ea682ce24fc.jpeg 458w,
+/docs/user-documentation/content-types/program/program--carnation-no-sidebar_hu9f1d0a1f740b04c5a6a4cb1fdf35ee7e_410075_ac3c3438d0edc797637b114fd38f379d.jpeg 726w,
+/docs/user-documentation/content-types/program/program--carnation-no-sidebar_hu9f1d0a1f740b04c5a6a4cb1fdf35ee7e_410075_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--carnation-no-sidebar_hu9f1d0a1f740b04c5a6a4cb1fdf35ee7e_410075_45c1c798a8ae34304e721ea682ce24fc.jpeg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;h4 id="carnation-desktop-with-content-in-the-sidebar">Carnation: Desktop With Content in the Sidebar&lt;/h4>
 &lt;p>
-&lt;img src="upload://hfK8xJyzFInKkcwKWSrmXEeXwfi.jpeg" alt="carnation&amp;amp;ndash;program&amp;amp;ndash;desktop|690x399, 75%" />&lt;/p>
-&lt;/blockquote>
-&lt;/li>
-&lt;li>
-&lt;p>The &lt;em>Description&lt;/em> field always displays above the paragraphs you enter.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>There is no bottom area for you to add an anchoring element.&lt;/p>
-&lt;/li>
+&lt;a href="/docs/user-documentation/content-types/program/program--carnation-sidebar.jpeg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A program page with content in the sidebar" srcset="
+/docs/user-documentation/content-types/program/program--carnation-sidebar_hu6c8bbb7f2970b0b48db9a461432eb94a_448593_f1d789e0a7098ef20c4e1ef87824d429.jpeg 458w,
+/docs/user-documentation/content-types/program/program--carnation-sidebar_hu6c8bbb7f2970b0b48db9a461432eb94a_448593_bba1bcb0ccc03e80a410184a581b2e4f.jpeg 726w,
+/docs/user-documentation/content-types/program/program--carnation-sidebar_hu6c8bbb7f2970b0b48db9a461432eb94a_448593_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--carnation-sidebar_hu6c8bbb7f2970b0b48db9a461432eb94a_448593_f1d789e0a7098ef20c4e1ef87824d429.jpeg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;ul>
+&lt;li>The &lt;em>Description&lt;/em> field always displays above the paragraphs you enter.&lt;/li>
+&lt;li>There is no bottom area for you to add an anchoring element.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Program Subcategory</title><link>/docs/user-documentation/content-types/program-subcategory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/program-subcategory/</guid><description>
-&lt;blockquote>
 &lt;p>A subset of a
-&lt;a href="https://community.openymca.org/t/program-content-types-open-y-user-docs/691" target="_blank">Program&lt;/a>, Program Subcategory pages list different types of program offerings, grouped into
-&lt;a href="https://community.openymca.org/t/activity-class-and-session-content-types-open-y-user-docs/697" target="_blank">Activities&lt;/a>.&lt;/p>
-&lt;/blockquote>
-&lt;p>Subcategory pages refine broad Programs into more concrete options.&lt;/p>
+&lt;a href="../program">Program&lt;/a>, Program Subcategory pages list different types of program offerings, grouped into
+&lt;a href="../activity-class-session">Activities&lt;/a>.&lt;/p>
 &lt;p>
-&lt;img src="upload://fqRl8unsXpobHOHKoKbipntV3n2.jpeg" alt="Screen Shot 2020-04-07 at 10.31.43 AM|690x338, 75%" />&lt;/p>
+&lt;a href="/docs/user-documentation/content-types/program-subcategory/program-subcategory--example.jpeg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="An example of a program subcategory page" srcset="
+/docs/user-documentation/content-types/program-subcategory/program-subcategory--example_huc5ad288dca628893ef8e523ba6152cd0_513379_790777088fe15955c2aa7c571e0e662c.jpeg 458w,
+/docs/user-documentation/content-types/program-subcategory/program-subcategory--example_huc5ad288dca628893ef8e523ba6152cd0_513379_86b36ea6cf8c7ed10e6e75248168bbb2.jpeg 726w,
+/docs/user-documentation/content-types/program-subcategory/program-subcategory--example_huc5ad288dca628893ef8e523ba6152cd0_513379_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program-subcategory/program-subcategory--example_huc5ad288dca628893ef8e523ba6152cd0_513379_790777088fe15955c2aa7c571e0e662c.jpeg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
 &lt;p>Whereas a Program page would describe a Y&amp;rsquo;s Health &amp;amp; Fitness offerings in general, a Program Subcategory would break that down into subcategories such as &amp;hellip;&lt;/p>
 &lt;ul>
 &lt;li>Personal Training&lt;/li>
@@ -866,22 +1369,44 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;h2 id="when-should-i-use-subcategory">When Should I Use Subcategory?&lt;/h2>
 &lt;p>Most Ys have opted to use Program pages as the top-level categories in their Programs mega menu. Subcategories are then the items underneath each category.&lt;/p>
 &lt;p>
-&lt;img src="upload://7X9KZ8emLieSg38c0ZK49aeG4Bd.png" alt="rose__menu&amp;amp;ndash;subcategories|690x363, 75%" />&lt;/p>
+&lt;a href="/docs/user-documentation/content-types/program-subcategory/program-subcategory--menu.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The mega menu with program subcategory items indicated" srcset="
+/docs/user-documentation/content-types/program-subcategory/program-subcategory--menu_huf24263f9307b80cd2433dfee61ea2a8d_219324_64818a4b0852ad5f268125a66bba6073.png 458w,
+/docs/user-documentation/content-types/program-subcategory/program-subcategory--menu_huf24263f9307b80cd2433dfee61ea2a8d_219324_6cc3334d059a6348dc8a394e8da3ddf4.png 726w,
+/docs/user-documentation/content-types/program-subcategory/program-subcategory--menu_huf24263f9307b80cd2433dfee61ea2a8d_219324_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program-subcategory/program-subcategory--menu_huf24263f9307b80cd2433dfee61ea2a8d_219324_64818a4b0852ad5f268125a66bba6073.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
 &lt;p>Subcategories, likewise, appear as horizontal cards on Program pages.&lt;/p>
 &lt;p>
-&lt;img src="upload://8Io8pXHVcadphB2D0Rd3ukiWMAq.jpeg" alt="lily&amp;amp;ndash;program__categories-listing|690x482, 75%" />&lt;/p>
+&lt;a href="/docs/user-documentation/content-types/program-subcategory/program-subcategory--cards.jpeg" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The program subcategories as displayed on program pages" srcset="
+/docs/user-documentation/content-types/program-subcategory/program-subcategory--cards_hu8b3b2ddd7f7725476fb5c2bd570ed233_329512_a2f7521d47cc7ac722ced402ea6fc44e.jpeg 458w,
+/docs/user-documentation/content-types/program-subcategory/program-subcategory--cards_hu8b3b2ddd7f7725476fb5c2bd570ed233_329512_3349cdd4c3d52f958b0840d4588d15cf.jpeg 726w,
+/docs/user-documentation/content-types/program-subcategory/program-subcategory--cards_hu8b3b2ddd7f7725476fb5c2bd570ed233_329512_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program-subcategory/program-subcategory--cards_hu8b3b2ddd7f7725476fb5c2bd570ed233_329512_a2f7521d47cc7ac722ced402ea6fc44e.jpeg" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
 &lt;p>
-&lt;a href="https://community.openymca.org/t/categories-listing-paragraphs-open-y-user-docs/707?u=dwells" target="_blank">Learn about the Categories Listing Paragraph ⇒&lt;/a>&lt;/p>
+&lt;a href="../../paragraphs/categories-listing">Learn about the Categories Listing Paragraph ⇒&lt;/a>&lt;/p>
 &lt;h2 id="how-do-i-use-the-program-subcategory-content-type">How Do I Use the Program Subcategory Content Type?&lt;/h2>
 &lt;p>Start by adding a &lt;em>Title&lt;/em> for your Program Subcategory and tag it with a &lt;em>Program.&lt;/em>&lt;/p>
 &lt;p>
-&lt;img src="upload://AqDdtacgdgOIZNS7a7OszXvDk6.gif" alt="admin&amp;amp;ndash;program-subcategory__program-select|662x204, 75%" />&lt;/p>
+&lt;figure class="image-caption">
+&lt;img alt="The program subcategory fields" src="/docs/user-documentation/content-types/program-subcategory/program-subcategory--admin.gif" />
+&lt;figcaption>&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;p>The Program tag will pull your Program Subcategory in as a horizontal card on a Program page. &lt;strong>You can only tag a Subcategory with &lt;strong>one&lt;/strong> Program.&lt;/strong>&lt;/p>
 &lt;h3 id="header-area">Header Area&lt;/h3>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Image&lt;/strong>: Using an image field, select an image from the media browser. Displays in the header and as a thumbnail in
-&lt;a href="https://community.openymca.org/t/categories-listing-paragraphs-open-y-user-docs/707?u=dwells" target="_blank">Categories Listing&lt;/a>.&lt;/p>
+&lt;a href="../../paragraphs/categories-listing">Categories Listing&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Color&lt;/strong>: A dropdown to select a background color for your header.&lt;/p>
@@ -893,7 +1418,7 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;blockquote>
 &lt;p>Subcategory was originally designed to work with the &lt;em>Classes Listing Filters&lt;/em> paragraph in the Header Area and the &lt;em>Classes Listing&lt;/em> paragraph in the Content Area.&lt;/p>
 &lt;p>&lt;strong>
-&lt;a href="https://sandbox-rose-cus.openy.org/programs/health-and-fitness/small-group-specialty-training?location=All" target="_blank">View Subcategory Demo on YMCA Website Services Sandbox ⇒&lt;/a>&lt;/strong>&lt;/p>
+&lt;a href="https://sandbox-carnation-cus.y.org/programs/health-and-fitness/small-group-specialty-training?location=All" target="_blank">View Subcategory Demo on YMCA Website Services Sandbox ⇒&lt;/a>&lt;/strong>&lt;/p>
 &lt;hr>
 &lt;p>With the integration of Activity Finder into YMCA Website Services, Classes Listing and Classes Listing Filters are becoming less popular among YMCA Website Services sites.&lt;/p>
 &lt;/blockquote>
@@ -901,13 +1426,21 @@ When choosing color card, you are presented with two styling options in dropdown
 &lt;p>The Content Area includes a &lt;em>Description&lt;/em> that displays full-width just below the Header Area.&lt;/p>
 &lt;p>When your Subcategory is showed in a &lt;em>Categories Listing&lt;/em> on a Program page, the &lt;em>Description&lt;/em> is the text inside the card.&lt;/p>
 &lt;p>You can embed content inside the Content Area, all of which will display below the Description.&lt;/p>
-&lt;h4 id="ymca-of-greater-brandywine-examplehttpsymcagbworgprogramschildcare-education-programs-ymcapreschool-childcare">
-&lt;a href="https://ymcagbw.org/programs/childcare-education-programs-ymca/preschool-childcare" target="_blank">YMCA of Greater Brandywine Example&lt;/a>&lt;/h4>
+&lt;h4 id="ymca-of-greater-brandywine-example">YMCA of Greater Brandywine Example&lt;/h4>
 &lt;p>
-&lt;img src="upload://1wajdheW6mntjgaUe3nFZqraI1A.png" alt="Screen Shot 2020-04-07 at 10.34.22 AM|690x324, 75%" />&lt;/p>
+&lt;a href="/docs/user-documentation/content-types/program-subcategory/program-subcategory--brandywine.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="An example of program listings" srcset="
+/docs/user-documentation/content-types/program-subcategory/program-subcategory--brandywine_hu97c88ec4d6f4ededf58232e1dfbb4dab_212443_cc677330cd0361172d3f4df6a8f76acf.png 458w,
+/docs/user-documentation/content-types/program-subcategory/program-subcategory--brandywine_hu97c88ec4d6f4ededf58232e1dfbb4dab_212443_da0532c65426e9252ba1cb5dbfe63cea.png 726w,
+/docs/user-documentation/content-types/program-subcategory/program-subcategory--brandywine_hu97c88ec4d6f4ededf58232e1dfbb4dab_212443_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program-subcategory/program-subcategory--brandywine_hu97c88ec4d6f4ededf58232e1dfbb4dab_212443_cc677330cd0361172d3f4df6a8f76acf.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
 &lt;h3 id="sidebar-area">Sidebar Area&lt;/h3>
 &lt;p>The Sidebar Area will change the layout of the page into two columns once you enter content.&lt;/p>
 &lt;h3 id="bottom-area">Bottom Area&lt;/h3>
 &lt;p>Use the Bottom Area for anchoring elements, such as
-&lt;a href="https://community.openymca.org/t/small-banner-paragraphs-open-y-user-docs/725" target="_blank">small banners&lt;/a> and
-&lt;a href="https://community.openymca.org/t/webform-paragraph-open-y-user-docs/729" target="_blank">webforms.&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;a href="../../paragraphs/small-banner">small banners&lt;/a> and
+&lt;a href="../../paragraphs/webform">webforms&lt;/a>.&lt;/p></description></item></channel></rss>

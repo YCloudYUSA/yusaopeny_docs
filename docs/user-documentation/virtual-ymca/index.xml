@@ -6,7 +6,7 @@
 &lt;h3 id="virtual-y-video">Virtual Y Video&lt;/h3>
 &lt;p>Bring the Y to your members when they’re away. Provide on-demand classes, activities for kids, and other video content. Great for health seekers, families and Active Older Adults.&lt;/p>
 &lt;p>Add Virtual Y Videos
-&lt;a href="./add-video.md">one-by-one&lt;/a> or with the separate
+&lt;a href="../add-video/_index.md">one-by-one&lt;/a> or with the separate
 &lt;a href="https://github.com/fivejars/vyva/wiki" target="_blank">Virtual Y Video Automation&lt;/a> application.&lt;/p>
 &lt;p>&lt;em>Integrates with:&lt;/em> YouTube and Vimeo&lt;/p>
 &lt;h3 id="live-streams">Live Streams&lt;/h3>
@@ -115,13 +115,13 @@
 &lt;h2 id="review-your-content">Review your content&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/virtual-y-0-14-update-flexible-virtual-y-content-types/834" target="_blank">Disable any Virtual Y sections&lt;/a> that you’re not using.
+&lt;a href="https://github.com/ymcatwincities/openy_gated_content/releases/tag/1.4" target="_blank">Disable any Virtual Y sections&lt;/a> that you’re not using.
 &lt;ul>
 &lt;li>Ensure that you’ve disabled links to those sections in your Main Navigation.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Review and click through Main Navigation and
-&lt;a href="https://community.openymca.org/t/managing-footer-links-virtual-ymca-user-docs/843/2" target="_blank">Footer links&lt;/a> to ensure they’re all valid.&lt;/li>
+&lt;a href="../managing-footer-links">Footer links&lt;/a> to ensure they’re all valid.&lt;/li>
 &lt;li>Visit &lt;code>/admin/content&lt;/code> and ensure any demo content is deleted or unpublished.&lt;/li>
 &lt;li>Visit &lt;strong>Virtual Y&lt;/strong> &amp;gt; &lt;strong>Event Series&lt;/strong> and ensure any demo content is deleted.&lt;/li>
 &lt;li>Ensure that Virtual Y content is displaying as you expect.
@@ -148,7 +148,7 @@
 &lt;p>For up to the minute conversations and info on Virtual Y and its content, join us in the YUSA Slack.
 &lt;a href="mailto:ycloud@ymca.net">Request access to Slack&lt;/a>&lt;/p>
 &lt;p>For even more Virtual Y FAQs,
-&lt;a href="https://ycloud.y.org/y-cloud-faq" target="_blank">check out Y-USA’s post.&lt;/a>&lt;/p>
+&lt;a href="https://ds.ymca.org/frequently-asked-questions" target="_blank">check out Y-USA’s post.&lt;/a>&lt;/p>
 &lt;h2 id="evaluating-vy">Evaluating VY&lt;/h2>
 &lt;ul>
 &lt;li>How do I learn the basics?
@@ -156,8 +156,8 @@
 &lt;li>
 &lt;a href="https://youtu.be/Ae_R6Q0ojqs" target="_blank">Demo Recording&lt;/a>
 &lt;ul>
-&lt;li>1.2 VY Update Video:
-&lt;a href="https://www.youtube.com/watch?v=YD6RKnZIvtw" target="_blank">https://www.youtube.com/watch?v=YD6RKnZIvtw&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.youtube.com/watch?v=YD6RKnZIvtw" target="_blank">1.2 VY Update Video&lt;/a>&lt;/li>
 &lt;li>Virtual Y Features overview video&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -172,28 +172,26 @@
 &lt;a href="https://public.3.basecamp.com/p/BDNvZLtTBw3rjRXCnGVF9FUH" target="_blank">slide deck&lt;/a>, here’s what we suggest:
 &lt;ul>
 &lt;li>Join the
-&lt;a href="https://openy.slack.com/archives/C01715RK630" target="_blank">#virtual_ymca &lt;/a>Slack channel to where you can talk with other Y associations, the Open Y team, and partners on how to quickly get your Virtual Y experience launched.&lt;/li>
+&lt;a href="https://yusaslackinstance.slack.com/archives/C03ENDNMNQH" target="_blank">#virtual_ymca&lt;/a> Slack channel to where you can talk with other Y associations, the YMCA Website Services team, and partners on how to quickly get your Virtual Y experience launched.&lt;/li>
 &lt;li>Not on Slack?
-&lt;a href="https://openy.org/contact/slack_access_request" target="_blank">Request access &lt;/a>&lt;/li>
-&lt;li>Join the
-&lt;a href="https://openy.org/blog/open-y-meet-ups" target="_blank">Virtual Y Help Desk Meet-ups &lt;/a> to learn about new feature review and ask questions&lt;/li>
+&lt;a href="mailto:ycloud@ymca.net">Request access&lt;/a>.&lt;/li>
 &lt;li>Contact your developer partner or one of our
-&lt;a href="https://openy.org/partners" target="_blank">featured partners &lt;/a>&lt;/li>
+&lt;a href="https://ds.ymca.org/partners" target="_blank">featured partners&lt;/a>.&lt;/li>
 &lt;li>If you didn’t find the answer (or the droids) you were looking for,
-&lt;a href="https://openy.org/contact/general_inquiries" target="_blank">let us know &lt;/a> and we’ll point you in the right direction&lt;/li>
+&lt;a href="https://ds.ymca.org/get-more-information" target="_blank">let us know&lt;/a> and we’ll point you in the right direction&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Can I see a live example?
 &lt;ul>
 &lt;li>Yes. Please
-&lt;a href="https://openy.org/contact/general_inquiries" target="_blank">contact us &lt;/a> and we can provide you with links and information.&lt;/li>
+&lt;a href="https://ds.ymca.org/get-more-information" target="_blank">contact us&lt;/a> and we can provide you with links and information.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Can I see a demo?
 &lt;ul>
 &lt;li>Yes. In this
 &lt;a href="https://youtu.be/Ae_R6Q0ojqs" target="_blank">Recording of the 7/16 Virtual Y Meet-up&lt;/a>, Paige and David demo Virtual Y. You can also test drive it yourself in the
-&lt;a href="https://virtual-y-sandboxes.openy.org/" target="_blank">Virtual Y Sandbox&lt;/a>&lt;/li>
+&lt;a href="../../wiki/sandboxes/#virtual-y-sandboxes">Virtual Y Sandbox&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>How much will it cost?
@@ -209,16 +207,16 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="im-not-on-open-y">I’m not on Open Y&lt;/h3>
+&lt;h3 id="im-not-on-ymca-website-services">I’m not on YMCA Website Services&lt;/h3>
 &lt;ul>
-&lt;li>Can I use it if I’m not on Open Y? Yes!
+&lt;li>Can I use it if I’m not on YMCA Website Services? Yes!
 &lt;ul>
-&lt;li>Our website is built in Wordpress. Will Virtual YMCA integrate with Wordpress?
+&lt;li>Our website is built in WordPress. Will Virtual YMCA integrate with WordPress?
 &lt;ul>
-&lt;li>Virtual Y is built on Open Y (Drupal). You would build a stand-alone instance of Virtual Y (see agency partner next steps) that could be linked to from your current site. You can work with an agency of your choice or talk with one of our core partners if your current partner does not develop on Drupal. Time estimate is &amp;lt;30 hours if you stick close to the distribution and don’t customize.&lt;/li>
+&lt;li>Virtual Y is built on YMCA Website Services (Drupal). You would build a stand-alone instance of Virtual Y (see agency partner next steps) that could be linked to from your current site. You can work with an agency of your choice or talk with one of our core partners if your current partner does not develop on Drupal. Time estimate is &amp;lt;30 hours if you stick close to the distribution and don’t customize.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>What is my next step for Virtual Y if I’m not on Open Y?
+&lt;li>What is my next step for Virtual Y if I’m not on YMCA Website Services?
 &lt;ul>
 &lt;li>Have a conversation with your current developer or contact one of our featured partners. You may work with your current web developer if they know Drupal. If not, one of our partners or Y-USA will likely be more economical.&lt;/li>
 &lt;/ul>
@@ -228,21 +226,22 @@
 &lt;li>Here are the Agency Partner/Internal Developer Steps:
 &lt;ul>
 &lt;li>Get the code and analyze the readme files and
-&lt;a href="https://github.com/ymcatwincities/openy_gated_content" target="_blank">other documentation in GitHub&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content" target="_blank">other documentation in GitHub&lt;/a>&lt;/li>
 &lt;li>Follow the
-&lt;a href="https://github.com/ymcatwincities/openy_gated_content/tree/master/modules/openy_gc_auth/modules/openy_gc_auth_custom" target="_blank">technical documentation in GitHub&lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content/tree/master/modules/openy_gc_auth/modules/openy_gc_auth_custom" target="_blank">technical documentation in GitHub&lt;/a>&lt;/li>
 &lt;li>Watch the installation
 &lt;a href="https://www.youtube.com/playlist?list=PL_QVggMcFfKZbY1kXOmChB_rQz2PAJGLM" target="_blank">walkthrough video&lt;/a> (4 and 5)&lt;/li>
 &lt;li>Join the
-&lt;a href="https://openy.slack.com/archives/C01715RK630" target="_blank">#virtual_ymca&lt;/a> Slack channel for troubleshooting&lt;/li>
+&lt;a href="https://yusaslackinstance.slack.com/archives/C03ENDNMNQH" target="_blank">#virtual_ymca&lt;/a> Slack channel for troubleshooting&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>How do I add Virtual Y to my main website’s domain?
 &lt;ul>
-&lt;li>View this
-&lt;a href="https://community.openymca.org/t/how-to-add-virtual-y-to-your-main-website-s-domain-web-address-non-open-y-sites/808" target="_blank">Message Board post&lt;/a> with instructions by David Wells.&lt;/li>
+&lt;li>Ys who don’t have Open Y for their association’s main site can install a standalone Virtual Y site and put on their web address using
+&lt;a href="https://www.godaddy.com/help/what-is-a-subdomain-296" target="_blank">a subdomain&lt;/a>.&lt;/li>
+&lt;li>Example: &lt;code>virtual.ymcaname.org&lt;/code> would point to your Virtual Y site. To your members and other website users, it would appear to be part of your site.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -250,117 +249,94 @@
 &lt;li>Where do I ask questions?
 &lt;ul>
 &lt;li>Slack
-&lt;a href="https://openy.slack.com/archives/C01715RK630" target="_blank">#virtual_ymca&lt;/a> channel&lt;/li>
+&lt;a href="https://yusaslackinstance.slack.com/archives/C03ENDNMNQH" target="_blank">#virtual_ymca&lt;/a> channel&lt;/li>
 &lt;li>
-&lt;a href="https://openy.org/blog/open-y-meet-ups" target="_blank">Monthly Virtual Y Help Desk Meet-up &lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://openy.org/contact/monthly_calls_sign" target="_blank">Open Y monthly calls &lt;/a>&lt;/li>
+&lt;a href="https://ds.ymca.org/get-more-information" target="_blank">YMCA Website Services monthly calls&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Can I try it?
 &lt;ul>
 &lt;li>Yes! You can use it yourself in the
-&lt;a href="https://virtual-y-sandboxes.openy.org/" target="_blank">Sandbox&lt;/a> (web)&lt;/li>
-&lt;li>The login is the same as for the standard Open Y sandboxes so
-&lt;a href="https://community.openymca.org/t/how-can-i-try-or-get-a-demo-of-open-y/318" target="_blank">let us know &lt;/a>if you need that information.&lt;/li>
+&lt;a href="../../wiki/sandboxes/#virtual-y-sandboxes">Sandbox&lt;/a>&lt;/li>
+&lt;li>The login is the same as for the standard YMCA Website Services sandboxes so
+&lt;a href="https://ds.ymca.org/get-more-information" target="_blank">let us know &lt;/a>if you need that information.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="committed-to-vy---initial-technical-set-up">Committed to VY - Initial Technical Set-Up&lt;/h3>
 &lt;ul>
-&lt;li>
-&lt;p>I already have an Open Y site, do I need to upgrade to get Virtual Y?&lt;/p>
+&lt;li>I already have an YMCA Website Services site, do I need to upgrade to get Virtual Y?
 &lt;ul>
 &lt;li>Nope, unless you’re more than a couple of upgrades behind. Our incredible developer team established a structure to allow Ys to obtain Virtual Y without undergoing a full site upgrade, saving both time and $$$. If it has been 12+ months since your last upgrade, we recommend you proceed to keep your site current with the latest features and security. This will reduce future upgrade costs (it’s more expensive to update a site that is multiple versions behind) and help prepare you for Drupal 9, which was released in February 2021.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>
-&lt;a href="https://www.youtube.com/watch?v=2hyLCBanX30&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=2" target="_blank">Drupal CMS &lt;/a>(Video)&lt;/p>
-&lt;/li>
+&lt;a href="https://www.youtube.com/watch?v=2hyLCBanX30&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=2" target="_blank">Drupal CMS &lt;/a>(Video)&lt;/li>
 &lt;li>
-&lt;p>
-&lt;a href="https://community.openymca.org/t/software-requirements-virtual-ymca-user-docs/791" target="_blank">Software requirements &lt;/a>(message board post)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>There’s not much here for technical documentation. What’s up?&lt;/p>
+&lt;a href="../software-requirements">Software requirements &lt;/a>&lt;/li>
+&lt;li>There’s not much here for technical documentation. What’s up?
 &lt;ul>
 &lt;li>Most of the technical conversations take place on Slack in
-&lt;a href="https://openy.slack.com/archives/C01715RK630" target="_blank">#virtual_ymca &lt;/a> and
-&lt;a href="https://openy.slack.com/archives/C6G4ZTLVC" target="_blank">#developers&lt;/a>&lt;/li>
+&lt;a href="https://yusaslackinstance.slack.com/archives/C03ENDNMNQH" target="_blank">#virtual_ymca&lt;/a> and
+&lt;a href="https://yusaslackinstance.slack.com/archives/C03E6SQQ0Q5" target="_blank">#developers&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>Implementation&lt;/p>
+&lt;li>Implementation
 &lt;ul>
 &lt;li>Watch the
 &lt;a href="https://www.youtube.com/playlist?list=PL_QVggMcFfKZbY1kXOmChB_rQz2PAJGLM" target="_blank">installation walkthrough video &lt;/a>&lt;/li>
 &lt;li>Get the code and analyze the readme files and other
-&lt;a href="https://github.com/ymcatwincities/openy_gated_content" target="_blank"> documentation in GitHub &lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content" target="_blank"> documentation in GitHub&lt;/a>&lt;/li>
 &lt;li>Follow the
-&lt;a href="https://github.com/ymcatwincities/openy_gated_content/tree/master/modules/openy_gc_auth/modules/openy_gc_auth_custom" target="_blank"> technical documentation in GitHub &lt;/a>&lt;/li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content/tree/master/modules/openy_gc_auth/modules/openy_gc_auth_custom" target="_blank">technical documentation in GitHub&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://3.basecamp.com/4043381/buckets/8109997/messages/3227979272" target="_blank">Implementation discussion on Basecamp&lt;/a> (message board post)&lt;/li>
-&lt;li>
-&lt;a href="https://community.openymca.org/t/go-live-checklist-virtual-ymca-user-docs/840" target="_blank">Go Live Check List &lt;/a>(message board post)&lt;/li>
+&lt;a href="../go-live">Go Live Check List &lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>Which CRMs is Virtual Y compatible with?&lt;/p>
+&lt;li>Which CRMs is Virtual Y compatible with?
 &lt;ul>
 &lt;li>Personify&lt;/li>
-&lt;li>Daxko
-&lt;ul>
-&lt;li>More details about Daxko Barcode Authentication here:
-&lt;a href="https://community.openymca.org/t/virtual-y-daxko-barcode-authentication/825" target="_blank">https://community.openymca.org/t/virtual-y-daxko-barcode-authentication/825&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
+&lt;li>
+&lt;a href="../authentication-providers/daxko-barcode">Daxko&lt;/a>&lt;/li>
 &lt;li>CSV authentication available for ActiveNet and other CRMs&lt;/li>
-&lt;li>Avocado (Salesforce) - coming&lt;/li>
+&lt;li>Avocado (Salesforce)&lt;/li>
 &lt;li>Y-USA’s Nationwide Membership database&lt;/li>
+&lt;li>
+&lt;a href="../authentication-providers/reclique-sso">ReClique Core&lt;/a>&lt;/li>
 &lt;li>If your CRM is not listed, we have a workaround solution where you can upload a CSV file of your active members’ email addresses into your Virtual Y site to grant your Virtual Y visitors access to your content. As long as you can export a basic spreadsheet of your active members, your data is likely compatible with Virtual Y.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>Will there be impacts to the domain?&lt;/p>
+&lt;li>Will there be impacts to the domain?
 &lt;ul>
-&lt;li>There should not be any impact from your domain if you already use Open Y. If you do not use Open Y, you can create a subdomain of your choosing, such as ‘
-&lt;a href="http://virtualy.yourassociationname.org/" target="_blank">virtualy.yourassociationname.org&lt;/a>’ where ‘virtualy’ is the subdomain.&lt;/li>
+&lt;li>There should not be any impact from your domain if you already use YMCA Website Services. If you do not use YMCA Website Services, you can create a subdomain of your choosing, such as &lt;code>virtualy.yourassociationname.org&lt;/code> where &lt;code>virtualy&lt;/code> is the subdomain.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>What Web Browsers are compatible with Virtual Y?&lt;/p>
+&lt;li>What Web Browsers are compatible with Virtual Y?
 &lt;ul>
 &lt;li>Virtual Y supports the most recent versions of all modern web browsers such as
 &lt;a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Edge&lt;/a>,
 &lt;a href="http://www.mozilla.com/firefox/upgrade.html" target="_blank">Firefox&lt;/a>,
 &lt;a href="http://www.google.com/chrome" target="_blank">Chrome&lt;/a>,
 &lt;a href="http://www.apple.com/safari/" target="_blank">Safari&lt;/a>, and
-&lt;a href="http://www.opera.com/" target="_blank">Opera &lt;/a>&lt;/li>
+&lt;a href="http://www.opera.com/" target="_blank">Opera&lt;/a>&lt;/li>
 &lt;li>Internet Explorer 11 and earlier are not supported due to the inability of that browser to play videos from services such as
 &lt;a href="https://youtube.com/" target="_blank">https://youtube.com&lt;/a>. Here is
 &lt;a href="https://support.google.com/youtube/answer/175292?hl=en" target="_blank">YouTube’s official statement&lt;/a> on not supporting Internet Explorer.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>
-&lt;a href="https://community.openymca.org/t/logging-virtual-ymca-user-docs/837" target="_blank">User Activity Logs Documentation&lt;/a> (message board post)&lt;/p>
-&lt;/li>
+&lt;a href="../logging">User Activity Logs Documentation&lt;/a>&lt;/li>
 &lt;li>
-&lt;p>
-&lt;a href="https://ycloud.y.org/sites/virtual.y.org/files/2020-08/Virtual-Y-8-Google-Analytics.pdf" target="_blank">Setting up Google Analytics for Virtual Y &lt;/a>(web)&lt;/p>
-&lt;/li>
+&lt;a href="https://ycloud.y.org/sites/virtual.y.org/files/2020-08/Virtual-Y-8-Google-Analytics.pdf" target="_blank">Setting up Google Analytics for Virtual Y &lt;/a>(web)&lt;/li>
 &lt;/ul>
 &lt;h3 id="committed-to-vy---content-editors">Committed to VY - Content Editors&lt;/h3>
 &lt;ul>
-&lt;li>
-&lt;p>Does Virtual Y come with content?&lt;/p>
+&lt;li>Does Virtual Y come with content?
 &lt;ul>
 &lt;li>There is demo content for you to test with, but you need to create and post your own content via the platforms mentioned in the next question. Some Ys have shared their content for all to use.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>Which platforms can I use to host my content for Virtual Y?&lt;/p>
+&lt;li>Which platforms can I use to host my content for Virtual Y?
 &lt;ul>
 &lt;li>Virtual Y works* with:
 &lt;ul>
@@ -373,62 +349,47 @@
 &lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>*Note: “Works with” means technically functional. Each video provider service, such as YouTube, manages their their own terms of use, which will guide what’s okay and what’s not.
-&lt;a href="https://openy.slack.com/archives/C01715RK630/p1595522703020700" target="_blank">View the Open Y Team’s overview &lt;/a>on Slack.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>For Vimeo, is a specific account level needed to host videos to stream/pass through Virtual Y?&lt;/p>
+&lt;li>*Note: “Works with” means technically functional. Each video provider service, such as YouTube, manages their own terms of use, which will guide what’s okay and what’s not.&lt;/li>
+&lt;li>For Vimeo, is a specific account level needed to host videos to stream/pass through Virtual Y?
 &lt;ul>
-&lt;li>Many associations have been buying the Premium level to get access to unlimited livestreaming. Again, the Open Y Team has no control over Vimeo’s terms of use, and Vimeo’s terms of use are subject to change at any point without prior notice.&lt;/li>
-&lt;li>More
-&lt;a href="https://3.basecamp.com/4043381/buckets/8109997/messages/2869057207#__recording_3259659682" target="_blank">details about Vimeo&lt;/a> (message board post)&lt;/li>
+&lt;li>Many associations have been buying the Premium level to get access to unlimited livestreaming. Again, the YMCA Website Services Team has no control over Vimeo’s terms of use, and Vimeo’s terms of use are subject to change at any point without prior notice.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>Can we keep our YouTube videos unlisted on our channel but still have them play in our Virtual Y?&lt;/p>
+&lt;li>Can we keep our YouTube videos unlisted on our channel but still have them play in our Virtual Y?
 &lt;ul>
 &lt;li>Yes.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>Can we use Facebook video links?&lt;/p>
+&lt;li>Can we use Facebook video links?
 &lt;ul>
-&lt;li>No. Due to restrictions/limitations enforced by Facebook, private videos or videos from a private group cannot be embedded on an external (non-Facebook) site. This means the only option would be to use publicly-facing Facebook Live video within Virtual Y, which can be seen by anyone on Facebook, not just your members. This weakens the case for paying for exclusive access to Virtual Y as a member, and YMCA associations were not interested in Open Y pursuing this type of Facebook integration.&lt;/li>
+&lt;li>No. Due to restrictions/limitations enforced by Facebook, private videos or videos from a private group cannot be embedded on an external (non-Facebook) site. This means the only option would be to use publicly-facing Facebook Live video within Virtual Y, which can be seen by anyone on Facebook, not just your members. This weakens the case for paying for exclusive access to Virtual Y as a member, and YMCA associations were not interested in YMCA Website Services pursuing this type of Facebook integration.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>Can I host Les Mills classes on our Y’s YouTube channel?&lt;/p>
+&lt;li>Can I host Les Mills classes on our Y’s YouTube channel?
 &lt;ul>
 &lt;li>Unfortunately, Les Mills licensing does not cover recording the class for rebroadcasting.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>Can we use Y360 videos?&lt;/p>
+&lt;li>Can we use Y360 videos?
 &lt;ul>
-&lt;li>Y360 videos are owned exclusively by Y360 and then licensed by Ys. A Y would need to obtain explicit permission from them for usage within Virtual Y. Additionally, Open Y would first have to build a new integration to accept those videos as on-demand content, because Y360 uses a video hosting service other than YouTube or Vimeo.&lt;/li>
+&lt;li>Y360 videos are owned exclusively by Y360 and then licensed by Ys. A Y would need to obtain explicit permission from them for usage within Virtual Y. Additionally, YMCA Website Services would first have to build a new integration to accept those videos as on-demand content, because Y360 uses a video hosting service other than YouTube or Vimeo.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>Music Licensing&lt;/p>
+&lt;li>Music Licensing
 &lt;ul>
 &lt;li>How does music licensing work with this platform?
 &lt;ul>
 &lt;li>Music licensing copyrights and restrictions originate with the video platform used (e.g., YouTube, Vimeo) so you need to follow those guidelines. Be very careful to investigate whether the music you use within your branches is OK on livestream workouts.&lt;/li>
-&lt;li>Check out the
-&lt;a href="https://3.basecamp.com/4043381/buckets/8109997/messages/3257800357#__recording_3257870087" target="_blank">music licensing discussion &lt;/a> (message board post)&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Is YouTube strict about licensing?
 &lt;ul>
-&lt;li>YES. Do not put your Y at risk. See Nathan Hippenmeyer’s comments on the
-&lt;a href="https://3.basecamp.com/4043381/buckets/8109997/messages/2928573391#__recording_2929926852" target="_blank">CMO basecamp&lt;/a>, which includes links to service providers for licensed music subscriptions.&lt;/li>
+&lt;li>YES. Do not put your Y at risk.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>How do I learn the basics of content editing:&lt;/p>
+&lt;li>How do I learn the basics of content editing:
 &lt;ul>
 &lt;li>
 &lt;a href="https://www.youtube.com/watch?v=Ae_R6Q0ojqs" target="_blank">Virtual Y Basics - Content Management How To&lt;/a>&lt;/li>
@@ -442,15 +403,14 @@
 &lt;li>Live Streams Management&lt;/li>
 &lt;li>Online Meetings&lt;/li>
 &lt;li>Blog Post Management&lt;/li>
-&lt;li>How to Install Cachet Font for Open Y&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Content editing tutorials:
-&lt;a href="https://community.openymca.org/t/virtual-y-basic-content-editing-tutorials/828" target="_blank">https://community.openymca.org/t/virtual-y-basic-content-editing-tutorials/828&lt;/a>&lt;/li>
+&lt;li>How to Install Cachet Font for YMCA Website Services&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>Editing your content categories listings via Drupal taxonomies&lt;/p>
+&lt;a href="../building-blocks">Content editing tutorials&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Editing your content categories listings via Drupal taxonomies
 &lt;ul>
 &lt;li>
 &lt;a href="https://www.youtube.com/watch?v=2hyLCBanX30&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=2" target="_blank">Video&lt;/a>&lt;/li>
@@ -458,8 +418,7 @@
 &lt;a href="https://ycloud.y.org/sites/virtual.y.org/files/2020-08/Virtual-Y-3-Change-Site-Taxonomy.pdf" target="_blank">Documentation&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>Adding new content to VY:&lt;/p>
+&lt;li>Adding new content to VY:
 &lt;ul>
 &lt;li>Add a New On Demand Video:
 &lt;ul>
@@ -472,17 +431,14 @@
 &lt;li>
 &lt;a href="https://www.youtube.com/watch?v=XLluB8EdVAc&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=6" target="_blank">Add New Virtual Event&lt;/a> (video)&lt;/li>
 &lt;li>
-&lt;a href="https://www.youtube.com/watch?v=IBvVhHdpkDs&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=7" target="_blank">Add a new blog post &lt;/a>(video)&lt;/li>
+&lt;a href="https://www.youtube.com/watch?v=IBvVhHdpkDs&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=7" target="_blank">Add a new blog post&lt;/a>(video)&lt;/li>
 &lt;li>
-&lt;a href="https://www.youtube.com/watch?v=nsCtzkeCz84&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=5" target="_blank">Add a new live stream &lt;/a>(video)&lt;/li>
+&lt;a href="https://www.youtube.com/watch?v=nsCtzkeCz84&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=5" target="_blank">Add a new live stream&lt;/a>(video)&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>
-&lt;a href="https://community.openymca.org/t/image-guidelines-virtual-ymca-user-docs/853" target="_blank">Image Guidelines&lt;/a> (message board post)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Setting up your Virtual Y&lt;/p>
+&lt;a href="../image-guidelines">Image Guidelines&lt;/a>&lt;/li>
+&lt;li>Setting up your Virtual Y
 &lt;ul>
 &lt;li>
 &lt;a href="https://youtu.be/Rz1NgtEUA00" target="_blank">Y North Set Up&lt;/a> (video)&lt;/li>
@@ -496,8 +452,7 @@
 &lt;a href="https://www.youtube.com/watch?v=ukhUDhGZNp0&amp;amp;t=352s&amp;amp;ab_channel=OpenY%20" target="_blank">Southeast Ventura approach to VY &lt;/a>(video)&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>Virtual Y Experience Map &amp;amp; Rollout Plan&lt;/p>
+&lt;li>Virtual Y Experience Map &amp;amp; Rollout Plan
 &lt;ul>
 &lt;li>
 &lt;a href="https://www.youtube.com/watch?v=wKq1drQQ538&amp;amp;feature=youtu.be" target="_blank">Video of the meetup &lt;/a>with Austin and West Cook (video)&lt;/li>
@@ -512,20 +467,16 @@
 &lt;/ul>
 &lt;h2 id="live-streaming">Live Streaming&lt;/h2>
 &lt;ul>
-&lt;li>Want to ask questions and connect with the community about live streaming? Join the
-&lt;a href="https://openy.slack.com/archives/C019NHASKEY" target="_blank">Live Streaming slack channel&lt;/a> (web)&lt;/li>
+&lt;li>Want to ask questions and connect with the community about live-streaming?&lt;/li>
 &lt;li>
 &lt;a href="https://www.youtube.com/watch?v=nEUqg3l0-Ak" target="_blank">Live Streaming &amp;amp; Video Meetup&lt;/a> (video)&lt;/li>
 &lt;li>
 &lt;a href="https://www.youtube.com/watch?v=h2M7M3c2fuI" target="_blank">Live Streaming 101&lt;/a> (video)&lt;/li>
 &lt;li>
 &lt;a href="https://www.youtube.com/watch?v=JoE7C4EJupc" target="_blank">The YMCA Live Streaming Fitness Studio&lt;/a> (video)&lt;/li>
-&lt;li>I’m a live streaming novice. How do I learn about it?
+&lt;li>I’m a live-streaming novice. How do I learn about it?
 &lt;ul>
-&lt;li>We’ve got your back. Check out
-&lt;a href="https://openy.org/blog/livestreaming-ys" target="_blank">Livestreaming Resources&lt;/a> on our blog. It’s up to you how much you want to invest in your streaming setup. It’s technically possible to do a reasonably good stream with just a smartphone camera. Some associations have opted to invest in more professional technology per the Livestreaming resource guide on our blog.&lt;/li>
-&lt;li>
-&lt;a href="https://openy.org/blog/livestreaming-ys" target="_blank">Live Streaming Guide&lt;/a> (web)&lt;/li>
+&lt;li>We’ve got your back. It’s technically possible to do a reasonably good stream with just a smartphone camera. Some associations have opted to invest in more professional technology.&lt;/li>
 &lt;li>
 &lt;a href="https://www.ymcamn.org/live-streaming-gear-guide" target="_blank">Livestreaming Gear Guide&lt;/a> (web)&lt;/li>
 &lt;/ul>
@@ -534,14 +485,14 @@
 &lt;h2 id="shared-content">Shared Content&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="https://community.openymca.org/t/shared-content-virtual-ymca-user-docs/861" target="_blank">Getting started &lt;/a>(message board post)&lt;/li>
+&lt;a href="../shared-content">Getting started&lt;/a>&lt;/li>
 &lt;li>More to come on this in the near future!&lt;/li>
 &lt;/ul>
 &lt;h2 id="y-usas-role">Y-USA’s Role&lt;/h2>
 &lt;ul>
 &lt;li>I just heard Y-USA is building a Virtual Y platform. What if I’m already building this with a developer?
 &lt;ul>
-&lt;li>Virtual Y is open source software built by the Open Y. Because this software is open source, it is free for any YMCA to download and use. The Y-USA’s Y Cloud platform uses the Virtual Y module as a plug-and-play standalone micro-site that Open Y created. Y-USA’s Y Cloud provides Virtual Y as Software-as-a-Service (SaaS) that includes hosting, maintenance and general support of the Virtual Y stand-alone microsite for a low monthly fee. Y-USA provides this as an opt-in option to any YMCA that may be interested. For any further questions, you can contact Y-USA at
+&lt;li>Virtual Y is open source software built by the YMCA Website Services. Because this software is open source, it is free for any YMCA to download and use. The Y-USA’s Y Cloud platform uses the Virtual Y module as a plug-and-play standalone micro-site that YMCA Website Services created. Y-USA’s Y Cloud provides Virtual Y as Software-as-a-Service (SaaS) that includes hosting, maintenance and general support of the Virtual Y stand-alone microsite for a low monthly fee. Y-USA provides this as an opt-in option to any YMCA that may be interested. For any further questions, you can contact Y-USA at
 &lt;a href="http://mailto:ycloud@ymca.net/" target="_blank">ycloud@ymca.net&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -566,10 +517,7 @@
 &lt;li>Will there be a marketing toolkit?
 &lt;ul>
 &lt;li>Ys are responsible for marketing virtual offerings. We encourage associations to share helpful tips on what marketing tactics have worked best for them on the
-&lt;a href="https://community.openymca.org/" target="_blank">Open Y message board&lt;/a>, and
-&lt;a href="https://openy.slack.com/" target="_blank">Open Y Slack&lt;/a>&lt;/li>
-&lt;li>You can see what other Ys are doing by visiting our
-&lt;a href="https://community.openymca.org/t/virtual-y-resources-list-recordings-meetups-getting-help/878" target="_blank">resources post&lt;/a>. It includes recordings and decks from a number of Ys.&lt;/li>
+&lt;a href="https://community.ycloud.y.org/" target="_blank">YMCA Website Services message board&lt;/a>, and YMCA Website Services Slack&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Do you have slides or a pitch deck I can use?
@@ -582,10 +530,8 @@
 &lt;/ul>
 &lt;h2 id="virtual-y---taking-it-to-11">Virtual Y - Taking it to 11&lt;/h2>
 &lt;ul>
-&lt;li>What’s coming up for VY?
-&lt;a href="https://trello.com/b/0mogmd7N/virtual-ymca-product-roadmap" target="_blank">VY Roadmap&lt;/a> (web)&lt;/li>
-&lt;li>
-&lt;a href="https://community.openymca.org/c/Resources-and-training-for-content-editors/virtual-ymca-docs/21" target="_blank">Advanced Resources &amp;amp; Training for content editors&lt;/a> (message board post)&lt;/li>
+&lt;li>Review the rest of
+&lt;a href="../">our docs&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: 1-on-1 Meetings</title><link>/docs/user-documentation/virtual-ymca/1on1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/1on1/</guid><description>
 &lt;p>This module is distributed as part of the YCMA Virtual Experience Platform (Virtual Y). Review
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content/tree/master/modules/openy_gc_personal_training" target="_blank">the README&lt;/a> for more technical information.&lt;/p>
@@ -936,75 +882,7 @@
 &lt;/ul>
 &lt;p>
 &lt;img src="./footer-links-edit.png" alt="A screenshot of the &amp;amp;ldquo;Edit Link&amp;amp;rdquo; dialog" />&lt;/p>
-&lt;p>When you are finished, &lt;strong>Save&lt;/strong>.&lt;/p></description></item><item><title>Docs: Resources</title><link>/docs/user-documentation/virtual-ymca/resources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/resources/</guid><description>
-&lt;h2 id="getting-started">Getting Started&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;a href="https://www.youtube.com/watch?v=zr6MnmbAJas&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Virtual YMCA Features Overview)&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.youtube.com/watch?v=2hyLCBanX30&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=2" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Drupal CMS Overview&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.youtube.com/watch?v=2hyLCBanX30&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=2" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Editing your Content Categories Listings via Drupal Taxonomies&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://ycloud.y.org/sites/virtual.y.org/files/2020-08/Virtual-Y-3-Change-Site-Taxonomy.pdf" target="_blank">&lt;i class="fa fa-file-pdf" title="PDF">&lt;/i> Editing your Content Categories Listings via Drupal Taxonomies&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://ycloud.y.org/sites/virtual.y.org/files/2020-08/Virtual-Y-6-Editing-Menus.pdf" target="_blank">&lt;i class="fa fa-file-pdf" title="PDF">&lt;/i> Editing your Virtual Y Menu&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.youtube.com/watch?v=wrVbQA25IQU&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=4" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Add a New On Demand Video&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://ycloud.y.org/sites/virtual.y.org/files/2020-08/Virtual-Y-4-Add-blog-content-on-demand-videos-livestreams-or-meetings-content.pdf" target="_blank">&lt;i class="fa fa-file-pdf" title="PDF">&lt;/i> Add a New On Demand Video&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.youtube.com/watch?v=XLluB8EdVAc&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=6" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Add a New Virtual Event&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.youtube.com/watch?v=IBvVhHdpkDs&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=7" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Add a New Virtual Y Blog Post&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.youtube.com/watch?v=nsCtzkeCz84&amp;amp;list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&amp;amp;index=5" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Add a New Live Stream&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://ycloud.y.org/sites/virtual.y.org/files/2020-08/Virtual-Y-8-Google-Analytics.pdf" target="_blank">&lt;i class="fa fa-file-pdf" title="PDF">&lt;/i> Setting up Google Analytics for your Standalone Virtual Y Site&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="case-studies--implementations">Case Studies &amp;amp; Implementations&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;a href="https://youtu.be/wKq1drQQ538" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Virtual Y Meetup West Cook YMCA and Austin Virtual Y&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://youtu.be/Rz1NgtEUA00" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Virtual Y Meetup Y North Virtual Studio and Workflow with Nathan Hippenmeyer&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://youtu.be/uH_EoK67J5s" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Setting Up Your Virtual Y with Akron Area YMCA&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.youtube.com/playlist?list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Virtual Y Tutorials&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://youtu.be/KlS9Dxn3T8w" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Virtual Y Q&amp;amp;A with YMCA of Western North Carolina&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://youtu.be/oi0NN-gg-ZU" target="_blank">Set Up Google Analytics in Virtual Y&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.youtube.com/watch?v=ukhUDhGZNp0&amp;amp;t=352s&amp;amp;ab_channel=OpenY%20" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> Southeast Ventura approach to Virtual Y&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://drive.google.com/drive/folders/17JrSpIlZ50AygJRq0xZQ_73-aVksyVWs?usp=sharing" target="_blank">&lt;i class="fa fa-file-powerpoint">&lt;/i> Y North set up&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://drive.google.com/file/d/1XvgsA7B47EBU1x4LTBGrbp8thSbHU9F8/view?usp=sharing" target="_blank">&lt;i class="fa fa-file-powerpoint">&lt;/i> West Cook&amp;rsquo;s Virtual Y Plan&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://drive.google.com/file/d/1tX2xFZPcj25aWvAMKdS1e8GDURYEkTue/view?usp=sharing" target="_blank">&lt;i class="fa fa-file-powerpoint">&lt;/i> Austin&amp;rsquo;s Virtual Y Experience Map&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.ymcanorth.org/live-streaming-gear-guide" target="_blank">&lt;i class="fa fa-globe" title="Web page">&lt;/i> Y North Gear Guide &lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h1 id="further-learning">Further Learning&lt;/h1>
-&lt;ul>
-&lt;li>
-&lt;a href="https://ycloud.y.org/y-cloud-faq" target="_blank">&lt;i class="fa fa-globe" title="Web page">&lt;/i> Y-USA Virtual Y FAQs&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://virtual-y-sandboxes.y.org/" target="_blank">&lt;i class="fa fa-globe" title="Web page">&lt;/i> Virtual Y sandboxes&lt;/a>&lt;/li>
-&lt;li>Visit our
-&lt;a href="https://www.youtube.com/channel/UC4hp3K9JFptqPZyNjJLvkJg" target="_blank">&lt;i class="fa fa-video" title="Video">&lt;/i> YouTube channel&lt;/a> for even more!&lt;/li>
-&lt;/ul>
-&lt;p>(Resources to be migrated)&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;a href="https://3.basecamp.com/4043381/buckets/8109997/messages/3257800357#__recording_3257870087" target="_blank">Music information &lt;/a>(basecamp)&lt;/li>
-&lt;li>
-&lt;a href="https://3.basecamp.com/4043381/buckets/8109997/messages/2869057207#__recording_3259659682" target="_blank">Vimeo information&lt;/a> (basecamp)&lt;/li>
-&lt;li>
-&lt;a href="https://3.basecamp.com/4043381/buckets/8109997/messages/3227979272" target="_blank">Implementation&lt;/a> (basecamp)&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Shared Content</title><link>/docs/user-documentation/virtual-ymca/shared-content/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/shared-content/</guid><description>
+&lt;p>When you are finished, &lt;strong>Save&lt;/strong>.&lt;/p></description></item><item><title>Docs: Shared Content</title><link>/docs/user-documentation/virtual-ymca/shared-content/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/shared-content/</guid><description>
 &lt;p>
 &lt;a href="#requirements">Requirements&lt;/a> |
 &lt;a href="#getting-started">Getting Started&lt;/a> |
@@ -1012,7 +890,7 @@
 &lt;a href="#publishing">Publishing Shared Content&lt;/a> |
 &lt;a href="#faq">FAQ&lt;/a>&lt;/p>
 &lt;p>
-&lt;a href="https://community.openymca.org/t/virtual-y-shared-content/822" target="_blank">Released in 0.12&lt;/a>, Virtual Y&amp;rsquo;s Shared Content module allows Y&amp;rsquo;s to share their content with other associations/branches and to pull shared content to use on their own site.&lt;/p>
+&lt;a href="https://github.com/ymcatwincities/openy_gated_content/releases/tag/1.2" target="_blank">Released in 0.12&lt;/a>, Virtual Y&amp;rsquo;s Shared Content module allows Y&amp;rsquo;s to share their content with other associations/branches and to pull shared content to use on their own site.&lt;/p>
 &lt;p>&lt;a name="requirements">&lt;/a>&lt;/p>
 &lt;h2 id="requirements">Requirements&lt;/h2>
 &lt;h3 id="open-y-gated-content-module">Open Y Gated Content Module&lt;/h3>

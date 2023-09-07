@@ -49,4 +49,25 @@
 &lt;div class="alert alert-primary" role="alert">
 &lt;h4 class="alert-heading">Warning&lt;/h4>
 This is a warning.
-&lt;/div></description></item></channel></rss>
+&lt;/div></description></item><item><title>Docs: Linting</title><link>/docs/contribution-guidelines/linting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/contribution-guidelines/linting/</guid><description>
+&lt;blockquote>
+&lt;p>lint•er : &lt;em>noun&lt;/em>&lt;/p>
+&lt;ul>
+&lt;li>a machine for removing the short fibers from cotton seeds after ginning&lt;/li>
+&lt;li>a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h2 id="checking-for-broken-links">Checking for broken links&lt;/h2>
+&lt;p>Using
+&lt;a href="https://github.com/filiph/linkcheck" target="_blank">linkcheck&lt;/a>:&lt;/p>
+&lt;p>Linkcheck has some issues with localhost that we&amp;rsquo;re working on resolving. Until then, you can set up your local site to run through
+&lt;a href="https://developers.cloudflare.com/pages/how-to/preview-with-cloudflare-tunnel/" target="_blank">Cloudflare Tunnel&lt;/a> and then run it.&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>linkcheck -e https://your-site-url.example.com/docs/some/path --skip-file .linkcheck_skip.txt&lt;/code> - run the linkchecker on internal (default) and external (&lt;code>-e&lt;/code>) links with our custom ignore file (&lt;code>--skip-file&lt;/code>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="checking-markdown">Checking markdown&lt;/h2>
+&lt;p>Using
+&lt;a href="https://github.com/DavidAnson/markdownlint-cli2" target="_blank">markdownlint&lt;/a>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>markdownlint-cli2 --fix &amp;quot;content/en/docs/user-documentation/paragraphs/**/*.md&amp;quot;&lt;/code> - lint and fix the Paragraphs directory&lt;/li>
+&lt;/ul></description></item></channel></rss>
