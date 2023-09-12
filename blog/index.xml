@@ -1,4 +1,114 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Digital Services Updates</title><link>/blog/</link><description>Recent content in Digital Services Updates on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Digital Services Release 10.2.14.1</title><link>/blog/2023/06/27/digital-services-release-10.2.14.1/</link><pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate><guid>/blog/2023/06/27/digital-services-release-10.2.14.1/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Digital Services Updates</title><link>/blog/</link><description>Recent content in Digital Services Updates on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Digital Services Release 10.3.0</title><link>/blog/2023/09/12/digital-services-release-10.3.0/</link><pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate><guid>/blog/2023/09/12/digital-services-release-10.3.0/</guid><description>
+&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;/h2>
+&lt;h3 id="layout-builder">Layout Builder&lt;/h3>
+&lt;p>Expanding upon the June 2023 release, we are making the final set of page components and content types compatible with Layout Builder. We have also improved the design and functionality of some existing components and content types.&lt;/p>
+&lt;p>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/" target="_blank">Learn more in our docs&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>Home / Preferred Branch&lt;/li>
+&lt;li>Camp Content Type&lt;/li>
+&lt;li>Camp Menu (Microsite Menu)&lt;/li>
+&lt;li>Camp Quick Links&lt;/li>
+&lt;li>Facility Content Type&lt;/li>
+&lt;li>Alerts&lt;/li>
+&lt;li>VirtualY&lt;/li>
+&lt;li>Small Banner&lt;/li>
+&lt;li>Branch Amenities component redesign&lt;/li>
+&lt;li>Icon Grid component redesign&lt;/li>
+&lt;/ul>
+&lt;h4 id="lb-events">LB Events&lt;/h4>
+&lt;ul>
+&lt;li>Allow Content Editors to customize Branch Contact info on Layout Builder Event node pages.&lt;/li>
+&lt;/ul>
+&lt;h4 id="lb-locations">LB Locations&lt;/h4>
+&lt;ul>
+&lt;li>Modified the front end display of Location hours used in the Location cards on the Layout Builder Location Finder page.&lt;/li>
+&lt;/ul>
+&lt;h3 id="admin--content-editor-enhancements">Admin / Content Editor Enhancements&lt;/h3>
+&lt;ul>
+&lt;li>Made Paragraphs Type help available to content editors and site admins so that they can easily learn more about how to use Paragraph components.&lt;/li>
+&lt;li>Created Standard and Custom install packages for Layout Builder components.
+&lt;ul>
+&lt;li>More about
+&lt;a href="/docs/wiki/open-y-2.0-root-yaml-files/#openyinstallation_typesyml">installation types&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Improved the revision functionality in Layout Builder.&lt;/li>
+&lt;li>Gave administrators the ability to resolve Upgrade conflicts from within the Upgrade Dashboard UI.&lt;/li>
+&lt;li>Updated Meta tags to version 2.&lt;/li>
+&lt;li>Turned off a default Carnation setting that was making buttons display text in all caps.&lt;/li>
+&lt;/ul>
+&lt;h3 id="ckeditor-5-upgrade">CKEditor 5 Upgrade&lt;/h3>
+&lt;ul>
+&lt;li>Updated the YUSA Distribution from CKEditor 4 to CKEditor 5.&lt;/li>
+&lt;li>Added Full HTML Configuration to CKEditor 5.&lt;/li>
+&lt;li>Deprecated old media CKEditor 4 plugins in favor of new Media CKEditor5 button.&lt;/li>
+&lt;/ul>
+&lt;h3 id="seo">SEO&lt;/h3>
+&lt;ul>
+&lt;li>Article Content Type - Set up Meta Tags &amp;amp; Schema.org configuration&lt;/li>
+&lt;li>Landing Page Content Type - Set up Meta Tags&lt;/li>
+&lt;li>Branch Content Type - Set up Meta Tags and &amp;amp; Schema.org configuration for Locations.&lt;/li>
+&lt;li>Accordion component - Allow content editors to designate an accordion as an FAQ item so that FAQ schema can be added to the component when relevant.&lt;/li>
+&lt;/ul>
+&lt;h3 id="accessibility">Accessibility&lt;/h3>
+&lt;ul>
+&lt;li>Resolved accessibility issues found in audits from Spring 2023:
+&lt;ul>
+&lt;li>WAVE browser tool&lt;/li>
+&lt;li>Keyboard accessibility&lt;/li>
+&lt;li>Screen Reader&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="design-system---y-styles">Design System - Y Styles&lt;/h3>
+&lt;p>“Y Styles” helps site builders customize their sites in an accessible and brand-compliant manner.&lt;/p>
+&lt;p>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/advanced-options/" target="_blank">Documentation for Y Styles&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Created Border style variations&lt;/li>
+&lt;li>Created Corner radius variations&lt;/li>
+&lt;li>Created Button fill style variations&lt;/li>
+&lt;li>Created Button position variations&lt;/li>
+&lt;li>Created Text/Button alignment variations&lt;/li>
+&lt;li>Created variations of page components and content types to match the 4 brand compliant color schemes (Green, Blue, Purple, Red), including:
+&lt;ul>
+&lt;li>Article Content Type&lt;/li>
+&lt;li>Article Filters &amp;amp; Views&lt;/li>
+&lt;li>Branch Content Type&lt;/li>
+&lt;li>Branch Amenities&lt;/li>
+&lt;li>Branch Hours&lt;/li>
+&lt;li>Branch Menu&lt;/li>
+&lt;li>Branch Social Links&lt;/li>
+&lt;li>Home / Preferred Branch&lt;/li>
+&lt;li>Camp Content Type&lt;/li>
+&lt;li>Camp Menu&lt;/li>
+&lt;li>Camp Quick Links&lt;/li>
+&lt;li>Event Content Type&lt;/li>
+&lt;li>Event Filters &amp;amp; Views&lt;/li>
+&lt;li>Facility Content Type&lt;/li>
+&lt;li>Icon Grid&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="documentation">Documentation&lt;/h3>
+&lt;ul>
+&lt;li>How to upgrade your Y association website to Drupal 10.&lt;/li>
+&lt;li>How to resolve upgrade conflicts within the Upgrade Dashboard UI.&lt;/li>
+&lt;li>How to allow UTM codes in Activity Finder.&lt;/li>
+&lt;li>Updates to Layout Builder advanced help links for all Layout Builder compatible components and content types.&lt;/li>
+&lt;li>How to include a social media feed on a Camp page.&lt;/li>
+&lt;li>How to use CKEditor 5 updates including new media buttons, new button interface, new color plugins, etc.&lt;/li>
+&lt;li>How to use global style settings for the Design System.&lt;/li>
+&lt;li>How to batch upload media files.&lt;/li>
+&lt;li>How to use Linkit Module.&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-fixes">Bug Fixes&lt;/h2>
+&lt;ul>
+&lt;li>Fixed Preferred Location in Drupal 10.&lt;/li>
+&lt;li>Fixed an issue where memory consumption was too high.&lt;/li>
+&lt;li>Fixed CKEditor 4 to 5 upgrade path for use cases when an association uses a customized Full Html WYSIWYG editor configuration.&lt;/li>
+&lt;/ul></description></item><item><title>Blog: Digital Services Release 10.2.14.1</title><link>/blog/2023/06/27/digital-services-release-10.2.14.1/</link><pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate><guid>/blog/2023/06/27/digital-services-release-10.2.14.1/</guid><description>
 &lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;/h2>
 &lt;h3 id="layout-builder">Layout Builder&lt;/h3>
 &lt;ul>

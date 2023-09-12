@@ -1,4 +1,35 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – How-to</title><link>/docs/howto/</link><description>Recent content in How-to on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/howto/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: How to migrate content into Layout Builder</title><link>/docs/howto/migrate-to-lb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/migrate-to-lb/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – How-to</title><link>/docs/howto/</link><description>Recent content in How-to on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/howto/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: How to embed social media in your site</title><link>/docs/howto/add-social-feeds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/add-social-feeds/</guid><description>
+&lt;p>Social media is a great platform for communicating with your Y community, and it&amp;rsquo;s often helpful to embed feeds or posts in a page to share topical content with users.&lt;/p>
+&lt;p>The distribution has used a number of methods over the years to add social content to sites, but all of them are dependent on the specific platforms maintaining open APIs. Unfortunately many social networks are now locking down and restricting their APIs.&lt;/p>
+&lt;h2 id="how-to-embed-social-content-in-your-ymca-website-in-2023">How to embed social content in your YMCA website (in 2023)&lt;/h2>
+&lt;p>Currently, we recommend using embed codes from the specific platform in order to embed social posts or feeds on your YMCA Website Services website.&lt;/p>
+&lt;h3 id="find-the-embed-code">Find the embed code&lt;/h3>
+&lt;p>Each platform has its own way of doing embeds. For posts, you can often find an &amp;ldquo;Embed&amp;rdquo; button in the options or share menu. For feeds, you often need to use a separate builder. Here are some options we&amp;rsquo;ve found:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://publish.twitter.com/" target="_blank">Twitter / 𝕏 Publish&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://developers.facebook.com/docs/plugins" target="_blank">Meta (Facebook/Instagram) Social Plugins&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;strong>Note:&lt;/strong> Social platforms may break these embeds at their whim. Use at your own risk.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="embeds-using-paragraphs">Embeds using Paragraphs&lt;/h3>
+&lt;ul>
+&lt;li>Navigate to a content page on your site, then click &lt;strong>Edit&lt;/strong>.&lt;/li>
+&lt;li>Add a
+&lt;a href="../../user-documentation/paragraphs/code">Code Paragraph&lt;/a> to the section where you&amp;rsquo;d like to do the embed.&lt;/li>
+&lt;li>Paste in the embed code generated above.&lt;/li>
+&lt;li>&lt;strong>Save&lt;/strong> the page.&lt;/li>
+&lt;/ul>
+&lt;h3 id="embeds-using-layout-builder">Embeds using Layout Builder&lt;/h3>
+&lt;ul>
+&lt;li>Navigate to a content page on your site, then click &lt;strong>Layout&lt;/strong>.&lt;/li>
+&lt;li>Add a
+&lt;a href="../../user-documentation/layout-builder/code">Code Block&lt;/a>to the section where you&amp;rsquo;d like to do the embed.&lt;/li>
+&lt;li>Paste in the embed code generated above.&lt;/li>
+&lt;li>&lt;strong>Save&lt;/strong> the block, then &lt;strong>Save layout&lt;/strong> on the page.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: How to migrate content into Layout Builder</title><link>/docs/howto/migrate-to-lb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/migrate-to-lb/</guid><description>
 &lt;p>Before you start your migration, we recommend getting a better understanding of your current site with a
 &lt;a href="../content-audit">Content Audit&lt;/a>.&lt;/p>
 &lt;h2 id="plan-your-migration">Plan your migration&lt;/h2>

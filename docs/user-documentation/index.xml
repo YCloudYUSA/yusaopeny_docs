@@ -364,35 +364,65 @@ To change your shade of grey, you would go to &lt;strong>Structure&lt;/strong> &
 &lt;p>Creates tags for filtering images (YMCA Website Services 2.3.3 and earlier), Documents and Videos in the media browser.&lt;/p>
 &lt;p>
 &lt;a href="../media">View Image and Document tutorials&lt;/a>&lt;/p></description></item><item><title>Docs: Images and Documents</title><link>/docs/user-documentation/media/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/media/</guid><description>
-&lt;p>Here is a full list of tutorials on the topic.&lt;/p>
-&lt;h2 id="ymca-website-services-24-and-later">YMCA Website Services 2.4 and later&lt;/h2>
-&lt;h3 id="using-the-new-media-directories-feature">Using the new Media Directories Feature&lt;/h3>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/gcaBlhyPZEY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div>
-&lt;h2 id="ymca-website-services-235-and-earlier">YMCA Website Services 2.3.5 and earlier&lt;/h2>
-&lt;h3 id="images-tutorials">Images Tutorials&lt;/h3>
+&lt;h2 id="video-tutorials">Video tutorials&lt;/h2>
+&lt;p>Learn more about media management in the distribution. Some of these videos use older versions of the distribution.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="https://www.youtube.com/watch?v=xogdtPEYxgg" target="_blank">Embedding Images onto a Web Page ⇒&lt;/a>&lt;/li>
+&lt;a href="https://www.youtube.com/watch?v=gcaBlhyPZEY" target="_blank">Using Media Directories&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://www.youtube.com/watch?v=mr6HA7KvXK0" target="_blank">Tagging your images ⇒&lt;/a>&lt;/li>
+&lt;a href="https://www.youtube.com/watch?v=xogdtPEYxgg" target="_blank">Embedding Images onto a Web Page&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://www.youtube.com/watch?v=5xWzAwww740" target="_blank">Replacing Images ⇒&lt;/a>&lt;/li>
+&lt;a href="https://www.youtube.com/watch?v=mr6HA7KvXK0" target="_blank">Tagging your images&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://www.youtube.com/watch?v=4IC2h1hASF4" target="_blank">Using the Media Folder ⇒&lt;/a>&lt;/li>
+&lt;a href="https://www.youtube.com/watch?v=5xWzAwww740" target="_blank">Replacing Images&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.youtube.com/watch?v=4IC2h1hASF4" target="_blank">Using the Media Folder&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.youtube.com/watch?v=nC414txq3F8" target="_blank">Embedding Videos in the WYSIWYG&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.youtube.com/watch?v=5w-_bpHtTLI" target="_blank">Embedding Documents on a Web Page&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="embedding-videos-in-the-wysiwyg">Embedding Videos in the WYSIWYG&lt;/h3>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/nC414txq3F8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div>
-&lt;h3 id="embedding-documents-on-a-web-page">Embedding Documents on a Web Page&lt;/h3>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/5w-_bpHtTLI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div>
-&lt;h3 id="bulk-upload">Bulk upload&lt;/h3>
-&lt;p>To use bulk media upload please install &lt;strong>Media Library Bulk Upload&lt;/strong> module at &lt;strong>Manage&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> admin menu screen. Then please navigate to &lt;code>/admin/config/media/media-library-bulk-upload-config&lt;/code> and select Media entities that should support Bulk upload.
-After that you will be able to upload multiple files via Media Browser (&lt;code>/admin/content/browser&lt;/code>)&lt;/p></description></item><item><title>Docs: Webforms</title><link>/docs/user-documentation/webforms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/webforms/</guid><description>
+&lt;h2 id="bulk-upload">Bulk upload&lt;/h2>
+&lt;p>Your YMCA website has the ability to upload media (images, documents, videos) in bulk (since
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.12" target="_blank">9.2.12 - December 2022&lt;/a>).&lt;/p>
+&lt;p>You can batch/bulk upload from &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Media&lt;/strong> (&lt;code>/admin/content/media&lt;/code>) or &lt;strong>Media Browser&lt;/strong> (&lt;code>/admin/content/browser&lt;/code>). After uploading media, it will be available from the Media list and browser in any component on your site.&lt;/p>
+&lt;h4 id="from-the-media-list">From the Media list&lt;/h4>
+&lt;p>
+&lt;a href="/docs/user-documentation/media/media--bulk-upload.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The &amp;amp;ldquo;Upload media in bulk&amp;amp;rdquo; button" srcset="
+/docs/user-documentation/media/media--bulk-upload_hu3885adbe8544c3857f91da111ee57fd4_18804_5ad2b5bbd05a32d0546e2b60d7fd3907.png 458w,
+/docs/user-documentation/media/media--bulk-upload_hu3885adbe8544c3857f91da111ee57fd4_18804_8603432102a9eb7d6d1eedc4c0e77133.png 726w,
+/docs/user-documentation/media/media--bulk-upload_hu3885adbe8544c3857f91da111ee57fd4_18804_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/media/media--bulk-upload_hu3885adbe8544c3857f91da111ee57fd4_18804_5ad2b5bbd05a32d0546e2b60d7fd3907.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;ul>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Media&lt;/strong> (&lt;code>/admin/content/media&lt;/code>)&lt;/li>
+&lt;li>Click &lt;strong>Upload media in bulk&lt;/strong>&lt;/li>
+&lt;li>Choose your media type&lt;/li>
+&lt;li>Drag or choose the media to upload&lt;/li>
+&lt;li>Fill in the required fields in the resulting form.&lt;/li>
+&lt;/ul>
+&lt;h4 id="from-the-media-browser">From the Media browser&lt;/h4>
+&lt;p>
+&lt;a href="/docs/user-documentation/media/media--bulk-upload-browser.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="The media browser upload dialog with an arrow point to the &amp;amp;ldquo;Upload files&amp;amp;rdquo; button and the description &amp;amp;ldquo;Drop multiple files on this button&amp;amp;rdquo;" srcset="
+/docs/user-documentation/media/media--bulk-upload-browser_hu6ffa1db3e83674407599b7ed3b101280_59930_2c74379fccafcaa79dd2aa7e194512c4.png 458w,
+/docs/user-documentation/media/media--bulk-upload-browser_hu6ffa1db3e83674407599b7ed3b101280_59930_cccd09d0ac4e602ca3e9d5482da310a2.png 726w,
+/docs/user-documentation/media/media--bulk-upload-browser_hu6ffa1db3e83674407599b7ed3b101280_59930_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/media/media--bulk-upload-browser_hu6ffa1db3e83674407599b7ed3b101280_59930_2c74379fccafcaa79dd2aa7e194512c4.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Media Browser&lt;/strong> (&lt;code>/admin/content/browser&lt;/code>)&lt;/li>
+&lt;li>Click &lt;strong>Add media&lt;/strong>&lt;/li>
+&lt;li>Choose your media type in the sidebar, then use the &lt;strong>Choose Files&lt;/strong> button to choose or drop files.&lt;/li>
+&lt;li>Fill in the required fields in the resulting form.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Webforms</title><link>/docs/user-documentation/webforms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/webforms/</guid><description>
 &lt;p>Because this is one of the most well-documented applications in the Drupal community, we recommend using the documentation provided by the maintainer of the Webforms module, Jacob Rockowitz.&lt;/p>
 &lt;ul>
 &lt;li>
@@ -501,4 +531,4 @@ After that you will be able to upload multiple files via Media Browser (&lt;code
 &lt;p>
 &lt;img src="./basics-clone-options.png" alt="" />&lt;/p>
 &lt;p>Scroll to the bottom of the checkbox options, choose &lt;strong>Take ownership&lt;/strong> if you would like your user to own the new content, then &lt;strong>Save&lt;/strong>.&lt;/p></description></item><item><title>Docs: Membership</title><link>/docs/user-documentation/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/</guid><description>
-&lt;p>The distribution has two methods for informing visitors of membership options and driving them to the member management system for sign-up&lt;/p></description></item></channel></rss>
+&lt;p>The distribution has two methods for informing visitors of membership options and driving them to the member management system for sign-up&lt;/p></description></item><item><title>Docs: Schedules</title><link>/docs/user-documentation/schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/</guid><description/></item></channel></rss>

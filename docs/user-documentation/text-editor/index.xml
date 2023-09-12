@@ -133,7 +133,16 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;li>For email links, add &lt;code>&amp;quot;mailto:example@example.org.&amp;quot;&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;p>To update/change a link, click on the link text then click the link icon or use the popup options (in CKEditor 5).&lt;/p>
-&lt;p>To remove a link, highlight the link text and click the unlink icon.&lt;/p></description></item><item><title>Docs: Adding Media with CKEditor 5</title><link>/docs/user-documentation/text-editor/adding-media/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/adding-media/</guid><description>
+&lt;p>To remove a link, highlight the link text and click the unlink icon.&lt;/p>
+&lt;h2 id="improving-internal-linking-with-linkit">Improving internal linking with Linkit&lt;/h2>
+&lt;p>A community-contributed module,
+&lt;a href="https://www.drupal.org/project/linkit" target="_blank">Linkit&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>provides an autocomplete interface for internal and external linking in rich-text editors. Linkit supports nodes, users, taxonomy terms, files, comments and basic support for all types of entities that define a canonical link template.&lt;/p>
+&lt;/blockquote>
+&lt;p>Drupal core will
+&lt;a href="https://www.drupal.org/project/drupal/issues/3317769" target="_blank">soon provide link autocomplete suggestions&lt;/a> in CKEditor similar to what this module does. Until that issue is complete, developers may want to
+&lt;a href="https://www.drupal.org/project/linkit" target="_blank">install and configure Linkit&lt;/a> to improve the linking experience in the WYSIWYG editor.&lt;/p></description></item><item><title>Docs: Adding Media with CKEditor 5</title><link>/docs/user-documentation/text-editor/adding-media/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/adding-media/</guid><description>
 &lt;p>Once your site is updated to use CKEditor 5 you will see a new &lt;strong>Insert Media&lt;/strong> button that unifies the processes for embedding Images, Documents, and Videos.
 &lt;a href="/docs/user-documentation/text-editor/adding-media/adding-media--button.png" title="View original image">
 &lt;figure class="image-caption">

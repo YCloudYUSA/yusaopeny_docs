@@ -1,4 +1,53 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Decoupled Applications</title><link>/tags/decoupled-applications/</link><description>Recent content in Decoupled Applications on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/tags/decoupled-applications/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Membership Calculator</title><link>/docs/user-documentation/membership/calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/calculator/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Decoupled Applications</title><link>/tags/decoupled-applications/</link><description>Recent content in Decoupled Applications on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/tags/decoupled-applications/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Activity Finder</title><link>/docs/user-documentation/schedules/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/activity-finder/</guid><description>
+&lt;p>Activity Finder combines data from
+&lt;a href="../../content-types/activity-class-session">the Activity, Class, and Session&lt;/a> content types into an interactive tool that can be used with
+&lt;a href="../../paragraphs/activity-finder">Paragraphs&lt;/a> or
+&lt;a href="../../layout-builder/activity-finder">Layout Builder&lt;/a> pages.&lt;/p>
+&lt;p>Out-of-the-box, YMCA Website Services’s Activity Finder integrates with
+&lt;a href="https://www.daxko.com/" target="_blank">Daxko&lt;/a>,
+&lt;a href="https://www.activenetwork.com/activenet" target="_blank">ActiveNet&lt;/a>, and
+&lt;a href="https://personifycorp.com/solutions/ymcas-and-jccs/" target="_blank">Personify&lt;/a>. Configuring these integrations is mostly user-friendly, but often is supported by a partner development team. Any other CRM will require custom developer work.&lt;/p>
+&lt;h2 id="related-modules">Related modules&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">Activity Finder&lt;/a> - this repo contains in-depth developer documentation.&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/openy_daxko2" target="_blank">Extended Daxko API Integration&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/daxko" target="_blank">Simple Daxko Integration (deprecated)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/activenet" target="_blank">ActiveNet Integration&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/personify" target="_blank">Personify Integration&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="additional-topics">Additional topics&lt;/h2>
+&lt;h3 id="allowing-utm-codes-in-activity-finder">Allowing UTM codes in Activity Finder&lt;/h3>
+&lt;p>
+&lt;a href="https://en.wikipedia.org/wiki/UTM_parameters" target="_blank">UTM codes&lt;/a> can be used to track the effectiveness of marketing campaigns. Activity Finder uses query strings as filters, but as of
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/4.2.0" target="_blank">version 4.2.0&lt;/a> it will also maintain UTM codes in the URL.&lt;/p>
+&lt;p>Activity Finder begins with a number of preset arguments, and those can be modified at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Activity Finder Settings&lt;/strong> (&lt;code>/admin/openy/settings/activity-finder&lt;/code>) in the &lt;strong>Allowed Query Arguments&lt;/strong> field.&lt;/p>
+&lt;p>
+&lt;a href="/docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes.png" title="View original image">
+&lt;figure class="image-caption">
+&lt;img alt="A screenshot of the Activity Finder settings, focused on the &amp;amp;ldquo;Allowed Query Arguments&amp;amp;rdquo; field" srcset="
+/docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes_hu2d30f52e356db279c91ea8dbc5c038d0_24256_9b36d85367bc064ebd6ac418b11e242e.png 458w,
+/docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes_hu2d30f52e356db279c91ea8dbc5c038d0_24256_f9b7373cff916a41c897eef99fbcd73f.png 726w,
+/docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes_hu2d30f52e356db279c91ea8dbc5c038d0_24256_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes_hu2d30f52e356db279c91ea8dbc5c038d0_24256_9b36d85367bc064ebd6ac418b11e242e.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/figure>
+&lt;/a>
+&lt;/p>
+&lt;p>Once those settings are saved, you can visit an Activity Finder page with UTM codes attached, for example:&lt;/p>
+&lt;p>&lt;code>https://example.com/activity_finder?step=results&amp;amp;selectedAges=24&amp;amp;selectedLocations=1541437&amp;amp;selectedActivities=2786027,2786083&amp;amp;utm_source=promotional_member&amp;amp;utm_medium=email&amp;amp;utm_content=button_register_now&amp;amp;utm_campaign=fall_group_swim_lessons_2021&lt;/code>&lt;/p>
+&lt;p>and see that the codes are maintained as the filters are changed.&lt;/p></description></item><item><title>Docs: Group Schedules</title><link>/docs/user-documentation/schedules/group-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/group-schedules/</guid><description>
+&lt;p>More documentation:&lt;/p>
+&lt;h2 id="related-modules">Related modules&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/groupexpro" target="_blank">GroupEx Pro (Daxko) Integration&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync" target="_blank">PEF (Program Event Framework) GXP (GroupEx Pro) Sync&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Membership Calculator</title><link>/docs/user-documentation/membership/calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/calculator/</guid><description>
 &lt;p>The Membership Calculator is bundled with the distribution in the
 &lt;a href="https://github.com/open-y-subprojects/openy_custom/tree/main/openy_calc" target="_blank">&lt;code>openy_calc&lt;/code> module&lt;/a>.&lt;/p>
 &lt;h2 id="configuring-the-calculator">Configuring the Calculator&lt;/h2>

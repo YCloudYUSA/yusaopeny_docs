@@ -1,0 +1,9 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Group Schedules</title><link>/tags/group-schedules/</link><description>Recent content in Group Schedules on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/tags/group-schedules/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Group Schedules</title><link>/docs/user-documentation/schedules/group-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/group-schedules/</guid><description>
+&lt;p>More documentation:&lt;/p>
+&lt;h2 id="related-modules">Related modules&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/groupexpro" target="_blank">GroupEx Pro (Daxko) Integration&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync" target="_blank">PEF (Program Event Framework) GXP (GroupEx Pro) Sync&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
