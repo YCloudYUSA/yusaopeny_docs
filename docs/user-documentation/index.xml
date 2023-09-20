@@ -1,14 +1,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – User Documentation</title><link>/docs/user-documentation/</link><description>Recent content in User Documentation on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/user-documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Text Editor</title><link>/docs/user-documentation/text-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/</guid><description>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/text-editor--example.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/text-editor--example.png" title="View original image">
 &lt;img alt="An example of the WYSIWYG text editor." srcset="
 /docs/user-documentation/text-editor/text-editor--example_hu331e82bbf6a3a5b7cd64e8eb37e859c9_39297_68d4fd4b7205eafae5b9788bc138a515.png 458w,
 /docs/user-documentation/text-editor/text-editor--example_hu331e82bbf6a3a5b7cd64e8eb37e859c9_39297_410cfec7f468535772da02097d3a296a.png 726w,
 /docs/user-documentation/text-editor/text-editor--example_hu331e82bbf6a3a5b7cd64e8eb37e859c9_39297_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/text-editor--example_hu331e82bbf6a3a5b7cd64e8eb37e859c9_39297_68d4fd4b7205eafae5b9788bc138a515.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>This tool allows you the flexibility to format content however you want within a certain container or area.&lt;/p>
 &lt;p>Bundled with the Drupal core and the distribution,
@@ -51,15 +51,15 @@
 &lt;h3 id="block-descriptions">Block Descriptions&lt;/h3>
 &lt;p>Standard across all block types is the block description field, which serves as the name for your block. Use this description field to help identify your block when you are embedding it onto a page.&lt;/p>
 &lt;p>
-&lt;a href="/img/blocks-description.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/img/blocks-description.png" title="View original image">
 &lt;img alt="admin&amp;amp;ndash;code__block__cropped" srcset="
 /img/blocks-description_huf1d11b81b37b7f7966305719cdd17744_23863_fcf02cf79c1f01419e90d92ce93f1e7a.png 458w,
 /img/blocks-description_huf1d11b81b37b7f7966305719cdd17744_23863_846180f904c4d2004cc9d45aa57908e8.png 726w,
 /img/blocks-description_huf1d11b81b37b7f7966305719cdd17744_23863_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/blocks-description_huf1d11b81b37b7f7966305719cdd17744_23863_fcf02cf79c1f01419e90d92ce93f1e7a.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="block-types">Block Types&lt;/h2>
 &lt;p>YMCA Website Services not only allows you to use blocks, but it supports different types of blocks for different types of content.&lt;/p>
@@ -121,15 +121,15 @@
 &lt;/ul>
 &lt;p>Once you&amp;rsquo;ve saved, you will see an empty page. Click the &lt;strong>Layout&lt;/strong> tab to enter Layout Builder.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/layout-builder/lb_layout_tab.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/lb_layout_tab.png" title="View original image">
 &lt;img alt="Drupal admin tabs with an arrow pointing to &amp;amp;ldquo;Layout&amp;amp;rdquo;" srcset="
 /docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_d6e919f2e030e457400498d2b9b60cc1.png 458w,
 /docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_02ea27cd664f5663be059015a1bd0c06.png 726w,
 /docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_layout_tab_hua1f8c81467a5a6696a6a4a359c992a86_17263_d6e919f2e030e457400498d2b9b60cc1.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="updating-an-existing-page">Updating an existing page&lt;/h3>
 &lt;p>Navigate to the page you&amp;rsquo;d like to update, then click the &lt;strong>Layout&lt;/strong> tab, like above.&lt;/p>
@@ -154,29 +154,29 @@
 &lt;p>Sections create the structure of the page and contain blocks. You can drag and drop blocks between sections, but you cannot move sections themselves—you can only create sections above or below existing sections.&lt;/p>
 &lt;p>You can remove sections by clicking the small &amp;ldquo;X&amp;rdquo; link at the top left of the section. Click on &amp;ldquo;Configure &lt;Name of Section>&amp;rdquo; to edit the section layout and other options.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/layout-builder/lb_section_crud.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/lb_section_crud.png" title="View original image">
 &lt;img alt="A screenshot of a Layout Builder page with Remove, Configure, and Add buttons labeled." srcset="
 /docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_d6f703264b05f21aac6aae25a802247b.png 458w,
 /docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_dd40dfa3ce4c532a2dfa06322e777661.png 726w,
 /docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_section_crud_huebb23a6904eff33cde9f324b1e2f6e56_22403_d6f703264b05f21aac6aae25a802247b.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="layouts">Layouts&lt;/h4>
 &lt;p>Layouts define the structure of a section. YMCA Website Services comes with 1-, 2-, 3-, and 4-column layouts, and each layout has additional configuration options once it&amp;rsquo;s created. See
 &lt;a href="advanced-options">advanced options&lt;/a> for more details.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/layout-builder/lb_choose_layout.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/lb_choose_layout.png" title="View original image">
 &lt;img alt="A screenshot of the &amp;amp;ldquo;Choose a layout for this section&amp;amp;rdquo; dialog with options for 1 to 4 columns." srcset="
 /docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_0e825a5cbfa066c5c0857c1c2d53df04.png 458w,
 /docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_47f8b7b6c35018a92141b4295740e8ab.png 726w,
 /docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_choose_layout_hu5d8ea8f2a3435745384653e47c13c4ae_17808_0e825a5cbfa066c5c0857c1c2d53df04.png" />
 &lt;figcaption>Choose a layout &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>
 &lt;figure class="image-caption">
@@ -189,15 +189,15 @@
 &lt;p>While &lt;strong>Sections&lt;/strong> contain the page&amp;rsquo;s &lt;strong>structure&lt;/strong>, &lt;strong>Blocks&lt;/strong> contain its &lt;strong>content&lt;/strong>.&lt;/p>
 &lt;p>To create a block, click Add Block in any section of the page, then Create Custom Block.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/layout-builder/lb_add_block.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/lb_add_block.png" title="View original image">
 &lt;img alt="A screenshot showing the Add Block and Create Custom Block buttons." srcset="
 /docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_1a1f637b48643b898a8dbad0bf8b5e1c.png 458w,
 /docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_67be2fd4b61a7e4bb0f2de565a1e7a26.png 726w,
 /docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/lb_add_block_hu4e4a6a91ecf4df20da1f0e7e327136e8_24521_1a1f637b48643b898a8dbad0bf8b5e1c.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Your YMCA website has a wide array of blocks to choose from. In this section, you will find detailed descriptions of those blocks.&lt;/p>
 &lt;h2 id="tips-and-tricks">Tips and Tricks&lt;/h2>
@@ -281,15 +281,15 @@
 &lt;h2 id="how-to-edit-vocabulary-lists">How to Edit Vocabulary Lists&lt;/h2>
 &lt;p>Go to &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Taxonomy&lt;/strong>. When you find the Vocabulary you want to edit, click &lt;em>List Terms&lt;/em>.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/taxonomy/taxonomy--list-terms.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/taxonomy/taxonomy--list-terms.png" title="View original image">
 &lt;img alt="The taxonomy item options" srcset="
 /docs/user-documentation/taxonomy/taxonomy--list-terms_hu696fc1c96630029aceea8aa30d1fa160_19139_167fc0cfe4e11e75bf44e6915e1919db.png 458w,
 /docs/user-documentation/taxonomy/taxonomy--list-terms_hu696fc1c96630029aceea8aa30d1fa160_19139_bb08dacce8f0d4ba95715f16f814059e.png 726w,
 /docs/user-documentation/taxonomy/taxonomy--list-terms_hu696fc1c96630029aceea8aa30d1fa160_19139_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/taxonomy/taxonomy--list-terms_hu696fc1c96630029aceea8aa30d1fa160_19139_167fc0cfe4e11e75bf44e6915e1919db.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>You can rearrange your terms by hovering your mouse over the cross icon and dragging them. This will determine the order in which they appear. By default these are alphabetical.&lt;/p>
 &lt;p>
@@ -307,29 +307,29 @@
 &lt;blockquote>
 &lt;p>The &lt;em>Color&lt;/em> Vocabulary provides a standard list of color options across your website, such as in a background color for your header.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/taxonomy/taxonomy--color-list.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/taxonomy/taxonomy--color-list.png" title="View original image">
 &lt;img alt="The list of color taxonomy items in a dropdown" srcset="
 /docs/user-documentation/taxonomy/taxonomy--color-list_hu97865b6030274334ef06d3903ae0695e_256705_7a533761d7c2424bc1c14251ba2f22e3.png 458w,
 /docs/user-documentation/taxonomy/taxonomy--color-list_hu97865b6030274334ef06d3903ae0695e_256705_90312b7c6c4fa552283ab32c61a274c2.png 726w,
 /docs/user-documentation/taxonomy/taxonomy--color-list_hu97865b6030274334ef06d3903ae0695e_256705_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/taxonomy/taxonomy--color-list_hu97865b6030274334ef06d3903ae0695e_256705_7a533761d7c2424bc1c14251ba2f22e3.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 To change your shade of grey, you would go to &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Taxonomy&lt;/strong> &amp;gt; &lt;strong>Color&lt;/strong> &amp;gt; &lt;strong>Grey&lt;/strong>.&lt;/p>
 &lt;p>Below the name of your Grey term, you&amp;rsquo;ll find a color widget where you can change your standard shade of Grey across your site.&lt;/p>
 &lt;p>In this example, you can change the color of the &lt;em>Grey&lt;/em> term in the &lt;em>Color&lt;/em> Vocabulary using a Color widget.&lt;/p>
 &lt;/blockquote>
 &lt;p>
-&lt;a href="/docs/user-documentation/taxonomy/taxonomy--color-fields.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/taxonomy/taxonomy--color-fields.png" title="View original image">
 &lt;img alt="The field admin for a taxonomy color item" srcset="
 /docs/user-documentation/taxonomy/taxonomy--color-fields_hubda019a771785aec0898c388d287c826_40367_8109b339e752c764527387c4e648a526.png 458w,
 /docs/user-documentation/taxonomy/taxonomy--color-fields_hubda019a771785aec0898c388d287c826_40367_800fa92e6bbc84d58f328fec4adf1f3f.png 726w,
 /docs/user-documentation/taxonomy/taxonomy--color-fields_hubda019a771785aec0898c388d287c826_40367_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/taxonomy/taxonomy--color-fields_hubda019a771785aec0898c388d287c826_40367_8109b339e752c764527387c4e648a526.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="vocabularies">Vocabularies&lt;/h2>
 &lt;p>Because Vocabularies are lists of categories, how they will show up depends on which Vocabulary you use.&lt;/p>
@@ -337,15 +337,15 @@ To change your shade of grey, you would go to &lt;strong>Structure&lt;/strong> &
 &lt;p>Used for tagging
 &lt;a href="../content-types/branch">branches&lt;/a> with amenities. Amenities display on a branch page and as a filter on a locations page.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/taxonomy/taxonomy--amenities.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/taxonomy/taxonomy--amenities.png" title="View original image">
 &lt;img alt="The locations page with a list of amenities" srcset="
 /docs/user-documentation/taxonomy/taxonomy--amenities_hu43bf0fe4648d1c0f9e381f250aeaedf6_332861_7d84ffc7acd2f99b06f49e8f1a5175df.png 458w,
 /docs/user-documentation/taxonomy/taxonomy--amenities_hu43bf0fe4648d1c0f9e381f250aeaedf6_332861_f5b3a261dd31396727ea8458141514ed.png 726w,
 /docs/user-documentation/taxonomy/taxonomy--amenities_hu43bf0fe4648d1c0f9e381f250aeaedf6_332861_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/taxonomy/taxonomy--amenities_hu43bf0fe4648d1c0f9e381f250aeaedf6_332861_7d84ffc7acd2f99b06f49e8f1a5175df.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="color">Color&lt;/h3>
 &lt;p>As mentioned above, Color is a list of colors you can use across your site, primarily in your page headers,
@@ -388,15 +388,15 @@ To change your shade of grey, you would go to &lt;strong>Structure&lt;/strong> &
 &lt;p>You can batch/bulk upload from &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Media&lt;/strong> (&lt;code>/admin/content/media&lt;/code>) or &lt;strong>Media Browser&lt;/strong> (&lt;code>/admin/content/browser&lt;/code>). After uploading media, it will be available from the Media list and browser in any component on your site.&lt;/p>
 &lt;h4 id="from-the-media-list">From the Media list&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/media/media--bulk-upload.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/media/media--bulk-upload.png" title="View original image">
 &lt;img alt="The &amp;amp;ldquo;Upload media in bulk&amp;amp;rdquo; button" srcset="
 /docs/user-documentation/media/media--bulk-upload_hu3885adbe8544c3857f91da111ee57fd4_18804_5ad2b5bbd05a32d0546e2b60d7fd3907.png 458w,
 /docs/user-documentation/media/media--bulk-upload_hu3885adbe8544c3857f91da111ee57fd4_18804_8603432102a9eb7d6d1eedc4c0e77133.png 726w,
 /docs/user-documentation/media/media--bulk-upload_hu3885adbe8544c3857f91da111ee57fd4_18804_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/media/media--bulk-upload_hu3885adbe8544c3857f91da111ee57fd4_18804_5ad2b5bbd05a32d0546e2b60d7fd3907.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;ul>
 &lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Media&lt;/strong> (&lt;code>/admin/content/media&lt;/code>)&lt;/li>
@@ -407,15 +407,15 @@ To change your shade of grey, you would go to &lt;strong>Structure&lt;/strong> &
 &lt;/ul>
 &lt;h4 id="from-the-media-browser">From the Media browser&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/media/media--bulk-upload-browser.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/media/media--bulk-upload-browser.png" title="View original image">
 &lt;img alt="The media browser upload dialog with an arrow point to the &amp;amp;ldquo;Upload files&amp;amp;rdquo; button and the description &amp;amp;ldquo;Drop multiple files on this button&amp;amp;rdquo;" srcset="
 /docs/user-documentation/media/media--bulk-upload-browser_hu6ffa1db3e83674407599b7ed3b101280_59930_2c74379fccafcaa79dd2aa7e194512c4.png 458w,
 /docs/user-documentation/media/media--bulk-upload-browser_hu6ffa1db3e83674407599b7ed3b101280_59930_cccd09d0ac4e602ca3e9d5482da310a2.png 726w,
 /docs/user-documentation/media/media--bulk-upload-browser_hu6ffa1db3e83674407599b7ed3b101280_59930_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/media/media--bulk-upload-browser_hu6ffa1db3e83674407599b7ed3b101280_59930_2c74379fccafcaa79dd2aa7e194512c4.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Media Browser&lt;/strong> (&lt;code>/admin/content/browser&lt;/code>)&lt;/li>

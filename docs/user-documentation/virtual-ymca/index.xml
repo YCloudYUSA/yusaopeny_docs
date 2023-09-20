@@ -562,28 +562,28 @@
 &lt;li>Add a single 1on1 meeting or a series and fill in the form.&lt;/li>
 &lt;/ol>
 &lt;p>
-&lt;a href="/docs/user-documentation/virtual-ymca/1on1/1on1-add-personal-training.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/virtual-ymca/1on1/1on1-add-personal-training.png" title="View original image">
 &lt;img alt="img.png" srcset="
 /docs/user-documentation/virtual-ymca/1on1/1on1-add-personal-training_hu545fb731ba4df7493b7e1698e2e554b0_136140_47599bdb2959c436b55b7533ce6a1512.png 458w,
 /docs/user-documentation/virtual-ymca/1on1/1on1-add-personal-training_hu545fb731ba4df7493b7e1698e2e554b0_136140_ea5a7c7b558cb17a5f63f11c4b43d0f9.png 726w,
 /docs/user-documentation/virtual-ymca/1on1/1on1-add-personal-training_hu545fb731ba4df7493b7e1698e2e554b0_136140_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/1on1/1on1-add-personal-training_hu545fb731ba4df7493b7e1698e2e554b0_136140_47599bdb2959c436b55b7533ce6a1512.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="joining-a-1on1-meeting">Joining a 1on1 meeting&lt;/h2>
 &lt;ol>
 &lt;li>Once a 1on1 meeting is created, the customer and trainer will see a card for the call in the Virtual Y dashboard.
-&lt;a href="/docs/user-documentation/virtual-ymca/1on1/1on1-view-personal-training.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/virtual-ymca/1on1/1on1-view-personal-training.png" title="View original image">
 &lt;img alt="img.png" srcset="
 /docs/user-documentation/virtual-ymca/1on1/1on1-view-personal-training_hubb71b8361ef91deb7255f4a3c67e53d0_340083_2abd983c238ae74047d8deb17719d2f2.png 458w,
 /docs/user-documentation/virtual-ymca/1on1/1on1-view-personal-training_hubb71b8361ef91deb7255f4a3c67e53d0_340083_9c0fa46d1dcdefc037f43b007a584919.png 726w,
 /docs/user-documentation/virtual-ymca/1on1/1on1-view-personal-training_hubb71b8361ef91deb7255f4a3c67e53d0_340083_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/1on1/1on1-view-personal-training_hubb71b8361ef91deb7255f4a3c67e53d0_340083_2abd983c238ae74047d8deb17719d2f2.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>Both the Trainer and Customer should open this card, join the meeting, provide their names, and proceed with the call.&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Add/Edit Video</title><link>/docs/user-documentation/virtual-ymca/add-video/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/add-video/</guid><description>
@@ -679,15 +679,15 @@
 &lt;p>This module is distributed as part of the YCMA Virtual Experience Platform (Virtual Y). Review
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content/tree/master/modules/openy_gc_livechat" target="_blank">the openy_gc_livechat README&lt;/a> for more technical information.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-window.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-window.png" title="View original image">
 &lt;img alt="The Virtual Y live chat window displaying a conversation between two users." srcset="
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-window_hu2623ba92fcb27c1b57c95331196aea93_22610_079090f8529e723a4a68b45ae3be8ba6.png 458w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-window_hu2623ba92fcb27c1b57c95331196aea93_22610_2b3ae0a08e9d98f70d4e2c43def6c3ce.png 726w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-window_hu2623ba92fcb27c1b57c95331196aea93_22610_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-window_hu2623ba92fcb27c1b57c95331196aea93_22610_079090f8529e723a4a68b45ae3be8ba6.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="initial-configuration">Initial configuration&lt;/h2>
 &lt;ol>
@@ -703,65 +703,65 @@
 &lt;h2 id="joining-a-live-chat">Joining a Live Chat&lt;/h2>
 &lt;ol>
 &lt;li>Visit any Live Stream event. &lt;strong>At the time that the event starts&lt;/strong>, a Live Chat button will appear below the video.
-&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-button.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-button.png" title="View original image">
 &lt;img alt="The Virtual Y Live Chat button" srcset="
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-button_hu832343de43bd6559a95bde50560491e5_7804_af38608e0332adbefc81623b3589f5a2.png 458w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-button_hu832343de43bd6559a95bde50560491e5_7804_9680d7654fb900b1b56559f55e06a53d.png 726w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-button_hu832343de43bd6559a95bde50560491e5_7804_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-button_hu832343de43bd6559a95bde50560491e5_7804_af38608e0332adbefc81623b3589f5a2.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;ul>
 &lt;li>The button &lt;strong>will not&lt;/strong> be visible before the event start time. To allow attendees to join before the meeting, set the start time to a few minutes before your actual start.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>All participants can enter the chat, set their name, and chat throughout the entire Live Stream event.
-&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-set-name.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-set-name.png" title="View original image">
 &lt;img alt="A dialog with &amp;amp;ldquo;Specify your name&amp;amp;rdquo; in a modal popup. In the upper right an arrow points to an icon with people and a gear to open this setting." srcset="
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-set-name_huab19313f6557c74d8566bc41d7583f5b_59290_464417671b4f4ab2bb941bd6f9ae2790.png 458w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-set-name_huab19313f6557c74d8566bc41d7583f5b_59290_dbd6486bf9ab0f9e4e8ec2a67c021bba.png 726w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-set-name_huab19313f6557c74d8566bc41d7583f5b_59290_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-set-name_huab19313f6557c74d8566bc41d7583f5b_59290_464417671b4f4ab2bb941bd6f9ae2790.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="moderating-a-live-chat">Moderating a Live Chat&lt;/h2>
 &lt;ul>
 &lt;li>At any point during a chat session, users with the &lt;strong>Virtual Trainer&lt;/strong> role have the ability to disable the chat using the &lt;strong>Disable Chat&lt;/strong> button.
-&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-disable-chat.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-disable-chat.png" title="View original image">
 &lt;img alt="The Virtual Y chat window with an arrow pointing to a button labeled &amp;amp;ldquo;Disable Chat&amp;amp;rdquo;." srcset="
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-disable-chat_huc35e9d1bdd5ba0ea801915d861d94139_20930_2291be3fac5b4adbcadaaf28dcca0ef8.png 458w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-disable-chat_huc35e9d1bdd5ba0ea801915d861d94139_20930_d5ecf59c354e04a4a73c96c1b18063a4.png 726w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-disable-chat_huc35e9d1bdd5ba0ea801915d861d94139_20930_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-disable-chat_huc35e9d1bdd5ba0ea801915d861d94139_20930_2291be3fac5b4adbcadaaf28dcca0ef8.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>Users will see a message saying &amp;ldquo;Instructor disabled chat for users&amp;rdquo;
-&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-instructor-disabled.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-instructor-disabled.png" title="View original image">
 &lt;img alt="A screenshot with the text &amp;amp;ldquo;Instructor disabled chat for users&amp;amp;rdquo;" srcset="
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-instructor-disabled_hua39f88f90202257637ae811e1062d3d6_7500_3ce1af91c7b7db2be022258d1cd3a121.png 458w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-instructor-disabled_hua39f88f90202257637ae811e1062d3d6_7500_1136320c27ef2169d38a6cf46bbc7b9f.png 726w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-instructor-disabled_hua39f88f90202257637ae811e1062d3d6_7500_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-instructor-disabled_hua39f88f90202257637ae811e1062d3d6_7500_3ce1af91c7b7db2be022258d1cd3a121.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>Chat can be restarted using the &lt;strong>Restart Livechat&lt;/strong> button on the event page, next to the chat icon.
-&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-restart.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-restart.png" title="View original image">
 &lt;img alt="A chat icon and the text &amp;amp;ldquo;Restart livechat&amp;amp;rdquo;" srcset="
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-restart_hufe7df514085b7ef96003e03f87ae6d36_7288_2c7b5122917b5dda6f8fa88b9aa7c806.png 458w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-restart_hufe7df514085b7ef96003e03f87ae6d36_7288_29452ca30cb3d9fe8f13e9a2b14490e4.png 726w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-restart_hufe7df514085b7ef96003e03f87ae6d36_7288_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-restart_hufe7df514085b7ef96003e03f87ae6d36_7288_2c7b5122917b5dda6f8fa88b9aa7c806.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>Disabling chat will remove the history of that chat from the server.&lt;/li>
 &lt;/ul>
@@ -778,15 +778,15 @@
 &lt;ul>
 &lt;li>If the chat button is not appearing or the dialog displays &amp;ldquo;Chat is not available&amp;rdquo; or &amp;ldquo;Chat is not working at the moment&amp;rdquo; you will need to check with your development partner to ensure the
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content/tree/master/modules/openy_gc_livechat#livechat-feature-for-virtual-y" target="_blank">Livechat service&lt;/a> is properly configured on your server.
-&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-not-working.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-not-working.png" title="View original image">
 &lt;img alt="A dialog with the message &amp;amp;ldquo;Sorry, chat is not working at current moment&amp;amp;rdquo;" srcset="
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-not-working_hu802d6f5da5487dbf29521e4d55ff85bb_8124_13891201bb886e7cecb1de0b47281ccd.png 458w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-not-working_hu802d6f5da5487dbf29521e4d55ff85bb_8124_b8c92f3a030b92c1a55a4e50143e2c58.png 726w,
 /docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-not-working_hu802d6f5da5487dbf29521e4d55ff85bb_8124_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/virtual-ymca/live-chat/live-chat-chat-not-working_hu802d6f5da5487dbf29521e4d55ff85bb_8124_13891201bb886e7cecb1de0b47281ccd.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;/ul></description></item><item><title>Docs: Logging</title><link>/docs/user-documentation/virtual-ymca/logging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/virtual-ymca/logging/</guid><description>
 &lt;p>Introduced in

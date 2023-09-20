@@ -19,15 +19,15 @@
 &lt;p>Image files should be placed in the &lt;code>/assets/img&lt;/code> directory at the root of the project, then they can be embedded with relative paths with Markdown:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>![&lt;span style="color:#204a87;font-weight:bold">Alt text&lt;/span>](&lt;span style="color:#c4a000">../../../../assets/img/llama.png &amp;#34;This is a caption.&amp;#34;&lt;/span>)
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
-&lt;a href="/img/llama.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/img/llama.png" title="View original image">
 &lt;img alt="A very adorable llama." srcset="
 /img/llama_hu3de79a2561c6492a3180473eca7533d6_597460_fa5a47394bd75279542596ead36dabc1.png 458w,
 /img/llama_hu3de79a2561c6492a3180473eca7533d6_597460_e8af417743fd37dc66eae9aea4fa446c.png 726w,
 /img/llama_hu3de79a2561c6492a3180473eca7533d6_597460_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/img/llama_hu3de79a2561c6492a3180473eca7533d6_597460_fa5a47394bd75279542596ead36dabc1.png" />
 &lt;figcaption>A very adorable llama &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Image processing is brought to you by
 &lt;a href="https://gohugo.io/templates/render-hooks/" target="_blank">Hugo Markdown Render Hooks&lt;/a>, editable in &lt;code>layouts/_default/_markup&lt;/code>.&lt;/p>

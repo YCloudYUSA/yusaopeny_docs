@@ -95,48 +95,49 @@
 &lt;p>An individual program offering. Contains fields for pricing, session date/time, instructor, ages and a registration link. This are the individual rows/instances in Repeat Schedules and
 &lt;a href="../../paragraphs/activity-finder">Activity Finder&lt;/a>.&lt;/p></description></item><item><title>Docs: Alert</title><link>/docs/user-documentation/content-types/alert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/alert/</guid><description>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/alert/alert--example.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/alert/alert--example.png" title="View original image">
 &lt;img alt="An alert" srcset="
 /docs/user-documentation/content-types/alert/alert--example_hud4971a57bdba14b504d50e42badc3d44_110312_1061f10295da5f166489b372b5ac5ec7.png 458w,
 /docs/user-documentation/content-types/alert/alert--example_hud4971a57bdba14b504d50e42badc3d44_110312_64afefc37b6e2f5f046c5e8de54853d4.png 726w,
 /docs/user-documentation/content-types/alert/alert--example_hud4971a57bdba14b504d50e42badc3d44_110312_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/alert/alert--example_hud4971a57bdba14b504d50e42badc3d44_110312_1061f10295da5f166489b372b5ac5ec7.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Unlike most content types in YMCA Website Services, you don&amp;rsquo;t use Alert to create pages. Instead, Alerts display as a &lt;em>rendered entity&lt;/em> or a section of content on other pages.&lt;/p>
-&lt;p>Alerts also don&amp;rsquo;t use paragraphs. By design, the layout of Alerts are rigid; however, text editor and the the color options listed below allow content editors some flexibility.&lt;/p>
+&lt;p>Alerts also don&amp;rsquo;t use Paragraphs or Layout Builder. By design, the layout of Alerts are rigid; however, the text editor and the color options listed below allow content editors some flexibility.&lt;/p>
 &lt;h2 id="when-should-you-use-an-alert">When Should You Use an Alert?&lt;/h2>
 &lt;ul>
 &lt;li>Timely updates for centers, such as when your hours change or facilities close.&lt;/li>
 &lt;li>Marketing promotions, such as for membership campaigns or even promotions.&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-use-an-alert">How to Use an Alert&lt;/h2>
-&lt;p>Click on &amp;ldquo;Content&amp;rdquo; from your admin toolbar, and then click on the blue &amp;ldquo;Add Content&amp;rdquo; button.&amp;quot; Select &amp;ldquo;Alert&amp;rdquo; on the next page.&lt;/p>
+&lt;p>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Alert&lt;/strong> (&lt;code>/node/add/alert&lt;/code>).&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong>: Displays as the headline for your alert.&lt;/p>
+&lt;li>&lt;strong>Title&lt;/strong>: Displays as the headline for your alert.&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong>: The main body of your alert. Sentences should be short and minimally styled in this section. Uses
+&lt;a href="../../text-editor">the Text Editor&lt;/a>.
+&lt;ul>
+&lt;li>Alert descriptions over 150 characters will be collapsed on mobile devices as of
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/10.3.0" target="_blank">version 10.3.0 (September 2023)&lt;/a>.
+&lt;figure class="image-caption">
+&lt;img alt="An animation of an alert being expanded and collapsed" src="/docs/user-documentation/content-types/alert/alert--expand-mobile.gif" />
+&lt;figcaption>&lt;/figcaption>
+&lt;/figure>
 &lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Description&lt;/strong>: The main body of your alert. Sentences should be short and minimally styled in this section. Uses
-&lt;a href="../../text-editor">the Text Editor&lt;/a>.&lt;/p>
+&lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Color Fields&lt;/strong>: These three dropdown fields control different aspects of color in your alert. All three dropdowns reference the
-&lt;a href="../../taxonomy/#color">color vocabulary&lt;/a>.&lt;/p>
+&lt;li>&lt;strong>Color Fields&lt;/strong>: These three dropdown fields control different aspects of color in your alert. All three dropdowns reference the
+&lt;a href="../../taxonomy/#color">color vocabulary&lt;/a>.
 &lt;ul>
 &lt;li>&lt;em>&lt;strong>Background Color&lt;/strong>&lt;/em>: The color of your alert.&lt;/li>
 &lt;li>&lt;em>&lt;strong>Text Color&lt;/strong>&lt;/em>: Stick to using either black or white for accessibility.&lt;/li>
 &lt;li>&lt;em>&lt;strong>Icon Color&lt;/strong>&lt;/em>: Changes the appearance of the icon to the left of the title.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Link&lt;/strong>: Adds a button with a call to action to the alert on the right. Button color defaults to black.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Placement&lt;/strong>: Choose &amp;ldquo;Header&amp;rdquo; to show your alert above your main content or &amp;ldquo;Footer&amp;rdquo; to show below your main content.&lt;/p>
-&lt;/li>
+&lt;li>&lt;strong>Link&lt;/strong>: Adds a button with a call to action to the alert on the right. The button color defaults to black.&lt;/li>
+&lt;li>&lt;strong>Placement&lt;/strong>: Choose &amp;ldquo;Header&amp;rdquo; to show your alert above your main content or &amp;ldquo;Footer&amp;rdquo; to show below your main content.&lt;/li>
 &lt;/ul>
 &lt;p>
 &lt;figure class="image-caption">
@@ -144,12 +145,11 @@
 &lt;figcaption>&lt;/figcaption>
 &lt;/figure>
 &lt;/p>
+&lt;h3 id="setting-visibility">Setting visibility&lt;/h3>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Visibility pages&lt;/strong>: This is where you control where the alert displays on your site. In the large text field, you write the relative path of the pages where you want this to appear or not appear. Enter each path on a new line.&lt;/p>
+&lt;p>&lt;strong>Visibility pages&lt;/strong>: This is where you control where the alert displays on your site. In the large text field, you write the relative path of the pages where you want this to appear or not appear. Enter each path on a new line. Each path should start with a slash, &lt;code>/&lt;/code>.&lt;/p>
 &lt;p>You also have the option to use an asterisk character &lt;code>*&lt;/code> as a wildcard so you don&amp;rsquo;t have to enter a large number of relative paths. For example, if you wanted to add an alert to a &lt;code>/health-and-fitness&lt;/code> section, you would enter &lt;code>/health-and-fitness*&lt;/code> in the text area.&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;p>
 &lt;figure class="image-caption">
 &lt;img alt="The alert visibility dialog" src="/docs/user-documentation/content-types/alert/alert--visibility.gif" />
@@ -158,24 +158,113 @@
 &lt;/p>
 &lt;blockquote>
 &lt;p>&lt;strong>What is a relative path?&lt;/strong>
-A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain name.&lt;/em>&lt;/p>
+A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain name.&lt;/em>&lt;/p>
 &lt;p>At &lt;code>https://example.com/community&lt;/code>, for example, the &lt;em>domain name&lt;/em> is &lt;strong>&lt;code>example.com&lt;/code>&lt;/strong>, while the &lt;em>relative path&lt;/em> is &lt;strong>&lt;code>/community&lt;/code>&lt;/strong>.&lt;/p>
 &lt;/blockquote>
-&lt;p>Using the &lt;strong>Alert visibility state&lt;/strong> radio buttons at the bottom, you can either show or hide your alert from the page paths listed in the text area above.&lt;/p></description></item><item><title>Docs: Blog Post</title><link>/docs/user-documentation/content-types/blog-post/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/blog-post/</guid><description>
+&lt;p>Using the &lt;strong>Alert visibility state&lt;/strong> radio buttons at the bottom, you can either show or hide your alert from the page paths listed in the text area above.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Location&lt;/strong>: This field provides additional flexibility for controlling where the Alert will display. Selecting a Location from this field will display the alert on the Location page &lt;strong>and&lt;/strong> any related page (blog posts, news, landing pages) that has the corresponding Location selected.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="rearranging-alerts">Rearranging alerts&lt;/h2>
+&lt;p>Alerts can be rearranged to control the order in which they display if multiple appear on a page. The &lt;strong>Alerts Rearrange&lt;/strong> page can be accessed via its link on the &lt;strong>Content&lt;/strong> page or at &lt;code>/admin/content/alerts-rearrange&lt;/code>. It might not appear in the Admin menu.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/alert/alerts--rearrange.png" title="View original image">
+&lt;img alt="A screenshot of the Rearrange Alerts display with labels corresponding to the below steps" srcset="
+/docs/user-documentation/content-types/alert/alerts--rearrange_hu251bbedb42eed5a7098123320cc5ee7a_90416_bd2391850cf11a448b917da279231437.png 458w,
+/docs/user-documentation/content-types/alert/alerts--rearrange_hu251bbedb42eed5a7098123320cc5ee7a_90416_e374edcf7bdbad7c743aa969297fef50.png 726w,
+/docs/user-documentation/content-types/alert/alerts--rearrange_hu251bbedb42eed5a7098123320cc5ee7a_90416_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/alert/alerts--rearrange_hu251bbedb42eed5a7098123320cc5ee7a_90416_bd2391850cf11a448b917da279231437.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>To rearrange alerts:&lt;/p>
+&lt;ul>
+&lt;li>Go to the &lt;strong>Alerts Rearrange&lt;/strong> page&lt;/li>
+&lt;li>Rearrange alerts with the drag handle (&lt;kbd>&lt;i class="fas fa-arrows-up-down-left-right">&lt;/i>&lt;/kbd>) or the &amp;ldquo;Show row weights&amp;rdquo; option.&lt;/li>
+&lt;li>&lt;strong>Save order&lt;/strong> when finished.&lt;/li>
+&lt;/ul>
+&lt;h2 id="alert-visibility-examples">Alert visibility examples&lt;/h2>
+&lt;p>Figuring out exactly how to show an alert on the right pages can be a challenge. The &lt;strong>Visibility pages&lt;/strong>, &lt;strong>Alert visibility state&lt;/strong>, and &lt;strong>Location&lt;/strong> selectors work together to control where an alert is displayed. Here are some tips on how to get just what you want.&lt;/p>
+&lt;h3 id="related-to-a-location">Related to a location&lt;/h3>
+&lt;p>To show an alert &lt;em>only on a single Location page&lt;/em>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Visibility pages&lt;/strong>: add the path to the Location, like &lt;code>/locations/downtown-ymca&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Alert visibility state&lt;/strong>: &amp;ldquo;Show for the listed pages&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>Location&lt;/strong>: &amp;ldquo;None&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;p>To show an alert on &lt;em>a location and any related pages&lt;/em>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Visibility pages&lt;/strong>:&lt;/li>
+&lt;li>&lt;strong>Alert visibility state&lt;/strong>:&lt;/li>
+&lt;li>&lt;strong>Location&lt;/strong>: select the Location, or select more than one using &lt;kbd>Shift&lt;/kbd> or &lt;kbd>Command/Ctrl&lt;/kbd>.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&amp;ldquo;Related pages&amp;rdquo; in this case means any page with a specific location selected in its &lt;strong>Location&lt;/strong> field.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="on-groups-of-pages">On groups of pages&lt;/h3>
+&lt;p>The wildcard &lt;code>*&lt;/code> can be used to specify any page in a section of the site.&lt;/p>
+&lt;p>To show an alert on &lt;em>every page on the site&lt;/em>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Visibility pages&lt;/strong>: &lt;code>*&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Alert visibility state&lt;/strong>: &amp;ldquo;Show for the listed pages&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>Location&lt;/strong>: &amp;ldquo;None&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;p>To show an alert on &lt;em>every swimming page&lt;/em>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Visibility pages&lt;/strong>: &lt;code>/programs/swimming*&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Alert visibility state&lt;/strong>: &amp;ldquo;Show for the listed pages&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>Location&lt;/strong>: &amp;ldquo;None&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>The position of the &lt;code>*&lt;/code> wildcard is important. Consider &lt;code>/programs/swimming*&lt;/code> versus &lt;code>/programs/swimming/*&lt;/code>:&lt;/p>
+&lt;p>Show for &lt;code>/programs/swimming*&lt;/code>:&lt;/p>
+&lt;ul>
+&lt;li>✅&lt;code>/programs/swimming&lt;/code>&lt;/li>
+&lt;li>✅&lt;code>/programs/swimming/drop-in&lt;/code>&lt;/li>
+&lt;li>✅&lt;code>/programs/swimming/swim-lessons&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>Show for &lt;code>/programs/swimming/*&lt;/code>:&lt;/p>
+&lt;ul>
+&lt;li>❌&lt;code>/programs/swimming&lt;/code>&lt;/li>
+&lt;li>✅&lt;code>/programs/swimming/drop-in&lt;/code>&lt;/li>
+&lt;li>✅&lt;code>/programs/swimming/swim-lessons&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h3 id="on-the-home-page">On the home page&lt;/h3>
+&lt;p>You can use &lt;code>/&lt;/code> OR &lt;code>&amp;lt;front&amp;gt;&lt;/code> to show an alert on the home page. &lt;code>&amp;lt;front&amp;gt;&lt;/code> is a special token and should always be listed on its own line.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Visibility pages&lt;/strong>: &lt;code>/&lt;/code> OR &lt;code>&amp;lt;front&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Alert visibility state&lt;/strong>: &amp;ldquo;Show for the listed pages&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>Location&lt;/strong>: &amp;ldquo;None&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;h3 id="with-exceptions">With exceptions&lt;/h3>
+&lt;p>Sometimes you want to show an alert on all pages &lt;em>except&lt;/em> a few. Maybe you have an alert for a fundraising campaign but don&amp;rsquo;t want to show it on the &amp;ldquo;Join&amp;rdquo; or the &amp;ldquo;Give&amp;rdquo; page. The &lt;strong>Hide for the listed pages&lt;/strong> option can help in this case.&lt;/p>
+&lt;p>To show an alert on &lt;em>all pages except &amp;ldquo;Join&amp;rdquo; and &amp;ldquo;Give&amp;rdquo;&lt;/em>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Visibility pages&lt;/strong>:
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>/join
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>/give
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>&lt;strong>Alert visibility state&lt;/strong>: &amp;ldquo;Hide for the listed pages&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>Location&lt;/strong>: &amp;ldquo;None&amp;rdquo;&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Blog Post</title><link>/docs/user-documentation/content-types/blog-post/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/blog-post/</guid><description>
 &lt;blockquote>
 &lt;p>&lt;em>Note: This Content Type is
 &lt;a href="../news-post">similar to the News Post content type&lt;/a>.&lt;/em>&lt;/p>
 &lt;/blockquote>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--example.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--example.jpeg" title="View original image">
 &lt;img alt="An example of a blog post page" srcset="
 /docs/user-documentation/content-types/blog-post/blog-post--example_hue7105b8443b98ebc10b263811d261030_398515_bda9544080a50a5f6736aa56568c91c7.jpeg 458w,
 /docs/user-documentation/content-types/blog-post/blog-post--example_hue7105b8443b98ebc10b263811d261030_398515_3dbdb8f42237a46f8ec0613d2023a5d7.jpeg 726w,
 /docs/user-documentation/content-types/blog-post/blog-post--example_hue7105b8443b98ebc10b263811d261030_398515_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--example_hue7105b8443b98ebc10b263811d261030_398515_bda9544080a50a5f6736aa56568c91c7.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Blog posts in YMCA Website Services allow you the flexibility to both create simple posts using only the text editor and more robust layouts with paragraphs.&lt;/p>
 &lt;h2 id="when-should-i-use-a-blog-post">When Should I Use a Blog Post?&lt;/h2>
@@ -215,15 +304,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;h3 id="style">Style&lt;/h3>
 &lt;p>This dropdown changes the style of the post&amp;rsquo;s card when it appears in a listing format. This dropdown does not affect any layouts on the page.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--style.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--style.png" title="View original image">
 &lt;img alt="The blog post style dropdown" srcset="
 /docs/user-documentation/content-types/blog-post/blog-post--style_hu5746a04c9a410d60d4bd14cd761e8326_84054_ce6726edc4cdf0c7adb0fb22d230a21c.png 458w,
 /docs/user-documentation/content-types/blog-post/blog-post--style_hu5746a04c9a410d60d4bd14cd761e8326_84054_7d0b801b921888b7531161b52ce37986.png 726w,
 /docs/user-documentation/content-types/blog-post/blog-post--style_hu5746a04c9a410d60d4bd14cd761e8326_84054_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--style_hu5746a04c9a410d60d4bd14cd761e8326_84054_ce6726edc4cdf0c7adb0fb22d230a21c.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="story-card">Story Card&lt;/h4>
 &lt;table>
@@ -236,26 +325,26 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;tbody>
 &lt;tr>
 &lt;td>
-&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--carnation-story.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--carnation-story.png" title="View original image">
 &lt;img alt="A blog story card in Carnation" srcset="
 /docs/user-documentation/content-types/blog-post/blog-post--carnation-story_huc6b93bfa501dad35830b879221716d61_25993_1d8ce25018b5fd5941b60f4f9722ffae.png 458w,
 /docs/user-documentation/content-types/blog-post/blog-post--carnation-story_huc6b93bfa501dad35830b879221716d61_25993_5befcbbe12fe512e4da094c8ebda0885.png 726w,
 /docs/user-documentation/content-types/blog-post/blog-post--carnation-story_huc6b93bfa501dad35830b879221716d61_25993_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--carnation-story_huc6b93bfa501dad35830b879221716d61_25993_1d8ce25018b5fd5941b60f4f9722ffae.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/td>
 &lt;td>
-&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--lily-story.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--lily-story.png" title="View original image">
 &lt;img alt="A blog story card in Lily" srcset="
 /docs/user-documentation/content-types/blog-post/blog-post--lily-story_hu8b5bec711c9d102476abba3662922d8a_26939_42dc8671fe8a5824fef15672f2ca23e4.png 458w,
 /docs/user-documentation/content-types/blog-post/blog-post--lily-story_hu8b5bec711c9d102476abba3662922d8a_26939_6b5ef609a407c783062d0303991c6511.png 726w,
 /docs/user-documentation/content-types/blog-post/blog-post--lily-story_hu8b5bec711c9d102476abba3662922d8a_26939_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--lily-story_hu8b5bec711c9d102476abba3662922d8a_26939_42dc8671fe8a5824fef15672f2ca23e4.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/td>
 &lt;/tr>
 &lt;/tbody>
@@ -271,41 +360,41 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;tbody>
 &lt;tr>
 &lt;td>
-&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--carnation-photo.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--carnation-photo.png" title="View original image">
 &lt;img alt="A blog photo card in Carnation" srcset="
 /docs/user-documentation/content-types/blog-post/blog-post--carnation-photo_hued2445af525f28e0637ce29b611bbc5c_199868_ca2b76850021461fa2f1913cd6a08c4b.png 458w,
 /docs/user-documentation/content-types/blog-post/blog-post--carnation-photo_hued2445af525f28e0637ce29b611bbc5c_199868_63480a6ed4c6e0d24b68d7aee68d18f6.png 726w,
 /docs/user-documentation/content-types/blog-post/blog-post--carnation-photo_hued2445af525f28e0637ce29b611bbc5c_199868_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--carnation-photo_hued2445af525f28e0637ce29b611bbc5c_199868_ca2b76850021461fa2f1913cd6a08c4b.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/td>
 &lt;td>
-&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--lily-photo.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--lily-photo.png" title="View original image">
 &lt;img alt="A blog photo card in Lily" srcset="
 /docs/user-documentation/content-types/blog-post/blog-post--lily-photo_hu7e8de3055e8f91bbcd6d1ddeadfc0c40_272868_c46784c186a0f3180863248660c8b83f.png 458w,
 /docs/user-documentation/content-types/blog-post/blog-post--lily-photo_hu7e8de3055e8f91bbcd6d1ddeadfc0c40_272868_91cea819232d044cb12f11192dcbba67.png 726w,
 /docs/user-documentation/content-types/blog-post/blog-post--lily-photo_hu7e8de3055e8f91bbcd6d1ddeadfc0c40_272868_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--lily-photo_hu7e8de3055e8f91bbcd6d1ddeadfc0c40_272868_c46784c186a0f3180863248660c8b83f.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h4 id="news-card">News Card&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--carnation-news.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--carnation-news.png" title="View original image">
 &lt;img alt="A blog news card in Carnation" srcset="
 /docs/user-documentation/content-types/blog-post/blog-post--carnation-news_hua5c3e1f33f1297d979f0402e9582becd_22290_88517b186acc3e7719d202c6d5a0b638.png 458w,
 /docs/user-documentation/content-types/blog-post/blog-post--carnation-news_hua5c3e1f33f1297d979f0402e9582becd_22290_3052d3480d08d0df5aabc866d27c9f29.png 726w,
 /docs/user-documentation/content-types/blog-post/blog-post--carnation-news_hua5c3e1f33f1297d979f0402e9582becd_22290_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--carnation-news_hua5c3e1f33f1297d979f0402e9582becd_22290_88517b186acc3e7719d202c6d5a0b638.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="color-card">Color Card&lt;/h4>
 &lt;p>When choosing color card, you are presented with two styling options in dropdowns. Both are &lt;em>entity references&lt;/em> to
@@ -324,26 +413,26 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;tbody>
 &lt;tr>
 &lt;td>
-&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--carnation-color.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--carnation-color.png" title="View original image">
 &lt;img alt="A blog color card in Carnation" srcset="
 /docs/user-documentation/content-types/blog-post/blog-post--carnation-color_hude2b6ede33d6caa07edce44d0b29e805_21471_cf050c84d73b84d377eff3f6efbdd18c.png 458w,
 /docs/user-documentation/content-types/blog-post/blog-post--carnation-color_hude2b6ede33d6caa07edce44d0b29e805_21471_4475f3c84b9e7283d7b26d46025cfdb5.png 726w,
 /docs/user-documentation/content-types/blog-post/blog-post--carnation-color_hude2b6ede33d6caa07edce44d0b29e805_21471_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--carnation-color_hude2b6ede33d6caa07edce44d0b29e805_21471_cf050c84d73b84d377eff3f6efbdd18c.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/td>
 &lt;td>
-&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--lily-color.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/blog-post/blog-post--lily-color.png" title="View original image">
 &lt;img alt="A blog color card in Lily" srcset="
 /docs/user-documentation/content-types/blog-post/blog-post--lily-color_hu4332b294c068f0d2921ed00a644f0734_20307_7dd408b10a9ee0962fb00991e70ba287.png 458w,
 /docs/user-documentation/content-types/blog-post/blog-post--lily-color_hu4332b294c068f0d2921ed00a644f0734_20307_e04895b1aaf34236ed773a5312e20003.png 726w,
 /docs/user-documentation/content-types/blog-post/blog-post--lily-color_hu4332b294c068f0d2921ed00a644f0734_20307_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/blog-post/blog-post--lily-color_hu4332b294c068f0d2921ed00a644f0734_20307_7dd408b10a9ee0962fb00991e70ba287.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/td>
 &lt;/tr>
 &lt;/tbody>
@@ -399,15 +488,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>&lt;strong>Neighborhood&lt;/strong>: An optional reference to specify which neighborhood your Y is located in. Start typing and select from the list. To add a new neighborhood, add it to the “Area” vocabulary under &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Taxonomy&lt;/strong> (see
 &lt;a href="../../taxonomy">Taxonomy&lt;/a>).&lt;/li>
 &lt;li>&lt;strong>Coming Soon&lt;/strong>: Use this flag to indicate a newly opening branch on the Locations page.
-&lt;a href="/docs/user-documentation/content-types/branch/branch-coming-soon.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/branch/branch-coming-soon.png" title="View original image">
 &lt;img alt="Screenshot of a page showing &amp;amp;ldquo;Downtown YMCA&amp;amp;rdquo; with a &amp;amp;ldquo;Coming Soon&amp;amp;rdquo; flag." srcset="
 /docs/user-documentation/content-types/branch/branch-coming-soon_hu29ed1d2969befb5f9f9f9237ddcf79cc_8255_774cb96088e27eedb5df0d0ff040809e.png 458w,
 /docs/user-documentation/content-types/branch/branch-coming-soon_hu29ed1d2969befb5f9f9f9237ddcf79cc_8255_24b4eb395a68131939be91960693e4d5.png 726w,
 /docs/user-documentation/content-types/branch/branch-coming-soon_hu29ed1d2969befb5f9f9f9237ddcf79cc_8255_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-coming-soon_hu29ed1d2969befb5f9f9f9237ddcf79cc_8255_774cb96088e27eedb5df0d0ff040809e.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>&lt;strong>Temporary URL&lt;/strong>: Overrides the &amp;ldquo;Branch info&amp;rdquo; link on the Locations page, allowing you to link to a different internal or external page.&lt;/li>
 &lt;/ul>
@@ -425,27 +514,27 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>
 &lt;a href="https://www.google.com/maps" target="_blank">Search&lt;/a> for your Y location&lt;/li>
 &lt;li>Right-click the location in the map
-&lt;a href="/docs/user-documentation/content-types/branch/branch-lat-long-copy.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/branch/branch-lat-long-copy.png" title="View original image">
 &lt;img alt="Screenshot of Google Maps showing the right-click menu with the latitude/longitude item selected." srcset="
 /docs/user-documentation/content-types/branch/branch-lat-long-copy_hu50e3cebd0e20c17a7f104431ff738902_20828_ffe19008376c90c2fdceee2f38339b39.png 458w,
 /docs/user-documentation/content-types/branch/branch-lat-long-copy_hu50e3cebd0e20c17a7f104431ff738902_20828_66946b5729e93638378a09503165e89f.png 726w,
 /docs/user-documentation/content-types/branch/branch-lat-long-copy_hu50e3cebd0e20c17a7f104431ff738902_20828_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-lat-long-copy_hu50e3cebd0e20c17a7f104431ff738902_20828_ffe19008376c90c2fdceee2f38339b39.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>To copy the coordinates, left-click on the latitude and longitude.&lt;/li>
 &lt;li>Paste the &lt;code>lat, long&lt;/code> into one of the fields, then cut and paste to separate them.
-&lt;a href="/docs/user-documentation/content-types/branch/branch-lat-long-paste.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/branch/branch-lat-long-paste.png" title="View original image">
 &lt;img alt="Screenshot of the Drupal Branch admin screen with the latitude and longitude separated into different fields." srcset="
 /docs/user-documentation/content-types/branch/branch-lat-long-paste_hu7e1215fb132a919b602eba944b1eefa0_29921_6c2a7e265fc64c304178fd6458fab40b.png 458w,
 /docs/user-documentation/content-types/branch/branch-lat-long-paste_hu7e1215fb132a919b602eba944b1eefa0_29921_f6f8852d55d6cb95a1baa7e766ab342f.png 726w,
 /docs/user-documentation/content-types/branch/branch-lat-long-paste_hu7e1215fb132a919b602eba944b1eefa0_29921_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-lat-long-paste_hu7e1215fb132a919b602eba944b1eefa0_29921_6c2a7e265fc64c304178fd6458fab40b.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -472,15 +561,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>&lt;strong>More Hours Link&lt;/strong>: An link to show additional location hours information, like another page or a PDF.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/branch/branch-hours-fields.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/branch/branch-hours-fields.png" title="View original image">
 &lt;img alt="Screenshot of the Branch Hours popup in the Branch Header" srcset="
 /docs/user-documentation/content-types/branch/branch-hours-fields_hudde2d0a4918ab851bb052266789fa24b_39518_6af88f6fcfe77300f749107a05c2f5c7.png 458w,
 /docs/user-documentation/content-types/branch/branch-hours-fields_hudde2d0a4918ab851bb052266789fa24b_39518_26b271099f0eef4c484afff9eac71788.png 726w,
 /docs/user-documentation/content-types/branch/branch-hours-fields_hudde2d0a4918ab851bb052266789fa24b_39518_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-hours-fields_hudde2d0a4918ab851bb052266789fa24b_39518_6af88f6fcfe77300f749107a05c2f5c7.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="header-area">Header Area&lt;/h3>
 &lt;blockquote>
@@ -530,27 +619,27 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;/ul>
 &lt;p>Type in and select which amenities are available or not available at your branch using the autocomplete field.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/branch/branch-select-amenities.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/branch/branch-select-amenities.png" title="View original image">
 &lt;img alt="Screenshot showing the Branch amenities field with autocomplete dropdown." srcset="
 /docs/user-documentation/content-types/branch/branch-select-amenities_hu7a9a4bec6c25eb13ee66e3c4d53209ff_22605_252e9e5ba0ec8189a4490a83b1c97f17.png 458w,
 /docs/user-documentation/content-types/branch/branch-select-amenities_hu7a9a4bec6c25eb13ee66e3c4d53209ff_22605_240b258e01b68e3eb7fba97cfefdf1ba.png 726w,
 /docs/user-documentation/content-types/branch/branch-select-amenities_hu7a9a4bec6c25eb13ee66e3c4d53209ff_22605_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-select-amenities_hu7a9a4bec6c25eb13ee66e3c4d53209ff_22605_252e9e5ba0ec8189a4490a83b1c97f17.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>If you embed a Branch Amenities with Icons paragraph or Branch Amenities block on your page, the amenities will display in your content. The Amenities will also serve as filters for branches on your locations page.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/branch/branch-amenities-block.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/branch/branch-amenities-block.png" title="View original image">
 &lt;img alt="Screenshot showing the branch amenities block with open emenities and closed amenities labeled." srcset="
 /docs/user-documentation/content-types/branch/branch-amenities-block_hu761b89c7cff04c3110690d7ef321025a_52830_f96b2f443e50ed78e0e93519d65ac711.png 458w,
 /docs/user-documentation/content-types/branch/branch-amenities-block_hu761b89c7cff04c3110690d7ef321025a_52830_f22a0dec7f791800249d6857aa515796.png 726w,
 /docs/user-documentation/content-types/branch/branch-amenities-block_hu761b89c7cff04c3110690d7ef321025a_52830_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-amenities-block_hu761b89c7cff04c3110690d7ef321025a_52830_f96b2f443e50ed78e0e93519d65ac711.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>If you don&amp;rsquo;t see an option available or would like to rename a branch amenity, go to &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Taxonomy&lt;/strong> &amp;gt; &lt;strong>Amenities&lt;/strong>. See
 &lt;a href="../../taxonomy">Taxonomy&lt;/a> for more info.&lt;/p>
@@ -560,15 +649,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>&lt;strong>Menu links&lt;/strong>: A list of menu links to be displayed in the menu. Allows unlimited items but we recommend a maximum of 6-8 depending on the Link text length.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/branch/branch-menu.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/branch/branch-menu.png" title="View original image">
 &lt;img alt="Screenshot of the branch menu block." srcset="
 /docs/user-documentation/content-types/branch/branch-menu_hub24de2972b9bf2adac3b3b635c15a0f8_6366_cb0ffd049ca467681a92b16a7cffb8e2.png 458w,
 /docs/user-documentation/content-types/branch/branch-menu_hub24de2972b9bf2adac3b3b635c15a0f8_6366_5de4af058805b1ba32845754685d3a34.png 726w,
 /docs/user-documentation/content-types/branch/branch-menu_hub24de2972b9bf2adac3b3b635c15a0f8_6366_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-menu_hub24de2972b9bf2adac3b3b635c15a0f8_6366_cb0ffd049ca467681a92b16a7cffb8e2.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="customizing-with-layout-builder">Customizing with Layout Builder&lt;/h2>
 &lt;p>Beginning in
@@ -638,15 +727,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>click &lt;strong>Use Layout Builder&lt;/strong>,&lt;/li>
 &lt;li>if you&amp;rsquo;d like, &lt;strong>uncheck Published&lt;/strong> while you do the migration to temporarily hide the page, then&lt;/li>
 &lt;li>&lt;strong>Save&lt;/strong>.
-&lt;a href="/docs/user-documentation/content-types/branch/branch-migrate-use-lb.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/branch/branch-migrate-use-lb.png" title="View original image">
 &lt;img alt="Screenshot of the Branch edit screen." srcset="
 /docs/user-documentation/content-types/branch/branch-migrate-use-lb_huf96ddf16c3fd7759c6bf2c5588225bfd_17981_249620ba76697c99541b52ed997575a4.png 458w,
 /docs/user-documentation/content-types/branch/branch-migrate-use-lb_huf96ddf16c3fd7759c6bf2c5588225bfd_17981_01277b04f28b0d10da3f32c4acca6fd4.png 726w,
 /docs/user-documentation/content-types/branch/branch-migrate-use-lb_huf96ddf16c3fd7759c6bf2c5588225bfd_17981_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch-migrate-use-lb_huf96ddf16c3fd7759c6bf2c5588225bfd_17981_249620ba76697c99541b52ed997575a4.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -708,15 +797,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;/li>
 &lt;li>&lt;strong>Menu Links&lt;/strong> (required): Add in the URL or name of the content you want to link your
 &lt;a href="../../paragraphs/camp-menu">Camp Menu&lt;/a> to (you must use the Camp Menu paragraph for this to work). This field &lt;em>is not used&lt;/em> with Layout Builder.
-&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-links.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-links.png" title="View original image">
 &lt;img alt="The camp menu links field" srcset="
 /docs/user-documentation/content-types/camp/camp--menu-links_hu7a8770865c53c85248aa4a561e455609_103320_ce0f69fe35e0b7d6bbc68024254f229e.png 458w,
 /docs/user-documentation/content-types/camp/camp--menu-links_hu7a8770865c53c85248aa4a561e455609_103320_27d2c7b3e469e0c035c50d2aba362fed.png 726w,
 /docs/user-documentation/content-types/camp/camp--menu-links_hu7a8770865c53c85248aa4a561e455609_103320_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu-links_hu7a8770865c53c85248aa4a561e455609_103320_ce0f69fe35e0b7d6bbc68024254f229e.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;a href="../../paragraphs/camp-menu">Read more about Camp Menu ⇒&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="contact-info">Contact Info&lt;/h3>
@@ -775,26 +864,26 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;p>We have two camp-specific menus that help build this structure.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Camp Menus&lt;/strong> allow you to provide a two-level menu in the header of each Camp page and subpage.
-&lt;a href="/docs/user-documentation/content-types/camp/camp--menu.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu.png" title="View original image">
 &lt;img alt="A screenshot of the Camp Menu design" srcset="
 /docs/user-documentation/content-types/camp/camp--menu_hu92a9da48c8477cb706f22e6e86e33859_229633_3ec52cad2b8219039145c987fde36c33.png 458w,
 /docs/user-documentation/content-types/camp/camp--menu_hu92a9da48c8477cb706f22e6e86e33859_229633_3f3ec511297ec2468db1031868ef677a.png 726w,
 /docs/user-documentation/content-types/camp/camp--menu_hu92a9da48c8477cb706f22e6e86e33859_229633_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu_hu92a9da48c8477cb706f22e6e86e33859_229633_3ec52cad2b8219039145c987fde36c33.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>&lt;strong>Camp Quick Links&lt;/strong> provide a single-level utility menu for additional camp information.
-&lt;a href="/docs/user-documentation/content-types/camp/camp--quick-links.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--quick-links.png" title="View original image">
 &lt;img alt="A screenshot of the Camp Quick Links design" srcset="
 /docs/user-documentation/content-types/camp/camp--quick-links_hu0d333bb19a75f3031aa14b33783c8490_72868_f99894956441cc07805d43db66aa7676.png 458w,
 /docs/user-documentation/content-types/camp/camp--quick-links_hu0d333bb19a75f3031aa14b33783c8490_72868_a4600723cf4db15eec0cd5fd673229ac.png 726w,
 /docs/user-documentation/content-types/camp/camp--quick-links_hu0d333bb19a75f3031aa14b33783c8490_72868_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--quick-links_hu0d333bb19a75f3031aa14b33783c8490_72868_f99894956441cc07805d43db66aa7676.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;/ul>
 &lt;h4 id="camp-quick-links">Camp Quick Links&lt;/h4>
@@ -802,26 +891,26 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;h5 id="configure-the-first-block">Configure the first block&lt;/h5>
 &lt;ul>
 &lt;li>In the &lt;strong>Configure Camp Header&lt;/strong> section, you will see placeholders for each of the menu blocks that say &lt;code>Please select the menu to display in this Camp Quick Links block&lt;/code>.
-&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-placeholders.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-placeholders.png" title="View original image">
 &lt;img alt="The camp page admin with menu placeholders" srcset="
 /docs/user-documentation/content-types/camp/camp--menu-placeholders_hu653118b8183afe4856f80404f103e2b3_49212_012e3e70b25ad7bbceee56ddc40c615e.png 458w,
 /docs/user-documentation/content-types/camp/camp--menu-placeholders_hu653118b8183afe4856f80404f103e2b3_49212_121bfa100dea63632409bf9f3fa10813.png 726w,
 /docs/user-documentation/content-types/camp/camp--menu-placeholders_hu653118b8183afe4856f80404f103e2b3_49212_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu-placeholders_hu653118b8183afe4856f80404f103e2b3_49212_012e3e70b25ad7bbceee56ddc40c615e.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>Using the &lt;kbd>&lt;i class="fas fa-pencil">&lt;/i>&lt;/kbd> on the first Camp Quick Links block, click &lt;strong>Configure&lt;/strong>.
-&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-configure.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-configure.png" title="View original image">
 &lt;img alt="The camp menu block edit menu." srcset="
 /docs/user-documentation/content-types/camp/camp--menu-configure_hu863e4dbc9144ad10aa2854594f1ab9f0_18924_4061c9acfcc58d39db2b5665d6da5c69.png 458w,
 /docs/user-documentation/content-types/camp/camp--menu-configure_hu863e4dbc9144ad10aa2854594f1ab9f0_18924_8817ee4cca3f5d1bad85ed0a17378190.png 726w,
 /docs/user-documentation/content-types/camp/camp--menu-configure_hu863e4dbc9144ad10aa2854594f1ab9f0_18924_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu-configure_hu863e4dbc9144ad10aa2854594f1ab9f0_18924_4061c9acfcc58d39db2b5665d6da5c69.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>In this menu, you can create a new menu or add an existing one that you&amp;rsquo;ve made in the Menus administration (&lt;code>/admin/structure/menu&lt;/code>). To create a new menu, fill in these fields:
 &lt;ul>
@@ -832,38 +921,38 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>&lt;strong>Menu Title&lt;/strong> (required) - the administrative name of the menu. Like &lt;code>Camp Coleman Quick Links&lt;/code>.&lt;/li>
 &lt;li>&lt;strong>Menu Name&lt;/strong> (required) - the machine name of the menu, using only lowercase letters, numbers, and hyphens. Like &lt;code>camp-coleman-quick-links&lt;/code>.&lt;/li>
 &lt;li>&lt;strong>Administrative summary&lt;/strong> - is optional and only used in the menu admin.
-&lt;a href="/docs/user-documentation/content-types/camp/camp--quick-links-fields.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--quick-links-fields.png" title="View original image">
 &lt;img alt="The camp quick links fields admin" srcset="
 /docs/user-documentation/content-types/camp/camp--quick-links-fields_hu9d7b8b024220266047e3d074c9a54928_33371_5cad52bdd93b8a702172090fd42629b1.png 458w,
 /docs/user-documentation/content-types/camp/camp--quick-links-fields_hu9d7b8b024220266047e3d074c9a54928_33371_5c52b7da5ba1266fa44fa1f3d9f295f0.png 726w,
 /docs/user-documentation/content-types/camp/camp--quick-links-fields_hu9d7b8b024220266047e3d074c9a54928_33371_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--quick-links-fields_hu9d7b8b024220266047e3d074c9a54928_33371_5cad52bdd93b8a702172090fd42629b1.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Click &lt;strong>Create menu&lt;/strong>, then click &lt;strong>Edit links&lt;/strong> to add items to the menu.&lt;/li>
 &lt;li>In the &lt;strong>Edit links&lt;/strong> popup you can add and reorder links in the menu.
-&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-edit-links.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-edit-links.png" title="View original image">
 &lt;img alt="The &amp;amp;ldquo;Edit links&amp;amp;rdquo; dialog in the Camp admin" srcset="
 /docs/user-documentation/content-types/camp/camp--menu-edit-links_hu531e1d81f9fa29970170cf74b3e6a701_30362_d626f469165b6d916db0aa2144a2e8ea.png 458w,
 /docs/user-documentation/content-types/camp/camp--menu-edit-links_hu531e1d81f9fa29970170cf74b3e6a701_30362_bb6af032b6ace2280e027e5242d20585.png 726w,
 /docs/user-documentation/content-types/camp/camp--menu-edit-links_hu531e1d81f9fa29970170cf74b3e6a701_30362_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu-edit-links_hu531e1d81f9fa29970170cf74b3e6a701_30362_d626f469165b6d916db0aa2144a2e8ea.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
-&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-add-link.png" title="View original image">
+&lt;/figure>
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-add-link.png" title="View original image">
 &lt;img alt="The &amp;amp;ldquo;Add new link&amp;amp;rdquo; dialog&amp;amp;quot;" srcset="
 /docs/user-documentation/content-types/camp/camp--menu-add-link_hu926765475e4de455bf6d8c5fda2bcf24_74637_2b25146bcd9b71177d389c66899c7d24.png 458w,
 /docs/user-documentation/content-types/camp/camp--menu-add-link_hu926765475e4de455bf6d8c5fda2bcf24_74637_f4cda1d59dd894731e22ec77d50381c3.png 726w,
 /docs/user-documentation/content-types/camp/camp--menu-add-link_hu926765475e4de455bf6d8c5fda2bcf24_74637_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu-add-link_hu926765475e4de455bf6d8c5fda2bcf24_74637_2b25146bcd9b71177d389c66899c7d24.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;ul>
 &lt;li>For each new link:
 &lt;ul>
@@ -897,42 +986,42 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>Add the same &lt;strong>Title&lt;/strong> as the first block.&lt;/li>
 &lt;li>Ensure &lt;strong>Display title&lt;/strong> is checked.&lt;/li>
 &lt;li>Click &lt;strong>Add existing menu&lt;/strong> then start typing the name of the menu you created in the previous block and select it in the autocomplete dropdown.
-&lt;a href="/docs/user-documentation/content-types/camp/camp--second-block.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--second-block.png" title="View original image">
 &lt;img alt="A screenshot displaying the above steps." srcset="
 /docs/user-documentation/content-types/camp/camp--second-block_hu65596261e8e224a3ed470291620deb73_138403_373d9f00b3795aafe62f15e994c10422.png 458w,
 /docs/user-documentation/content-types/camp/camp--second-block_hu65596261e8e224a3ed470291620deb73_138403_3a29baa48562bc43c555562df1b59e3e.png 726w,
 /docs/user-documentation/content-types/camp/camp--second-block_hu65596261e8e224a3ed470291620deb73_138403_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--second-block_hu65596261e8e224a3ed470291620deb73_138403_373d9f00b3795aafe62f15e994c10422.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>Click &lt;strong>Add menu&lt;/strong> to save the selection.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Once the existing menu has been added, you will see the &lt;em>Edit&lt;/em>, &lt;em>Remove&lt;/em>, and &lt;em>Edit Links&lt;/em> options. Once you see those, you can &lt;strong>Update&lt;/strong> to save these changes.
-&lt;a href="/docs/user-documentation/content-types/camp/camp--second-block-save.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--second-block-save.png" title="View original image">
 &lt;img alt="A screenshot showing the completed &amp;amp;ldquo;Add existing menu&amp;amp;rdquo; dialog" srcset="
 /docs/user-documentation/content-types/camp/camp--second-block-save_hud3d32509019d4a84ab94b55a66db0459_15955_2c3bed8948b82093ed8985b7f9aca042.png 458w,
 /docs/user-documentation/content-types/camp/camp--second-block-save_hud3d32509019d4a84ab94b55a66db0459_15955_0e76555c2623a9432b120f04b890a81f.png 726w,
 /docs/user-documentation/content-types/camp/camp--second-block-save_hud3d32509019d4a84ab94b55a66db0459_15955_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--second-block-save_hud3d32509019d4a84ab94b55a66db0459_15955_2c3bed8948b82093ed8985b7f9aca042.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;/ul>
 &lt;p>Once you have completed the process you will see your Quick Links menu displayed in two sections of the Header. This will ensure that the menu is displayed properly across all displays.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/camp/camp--quick-links-success.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--quick-links-success.png" title="View original image">
 &lt;img alt="camp&amp;amp;ndash;quick-links-success.png" srcset="
 /docs/user-documentation/content-types/camp/camp--quick-links-success_hufa484f03e308c85041d9ab9e3bea9da9_50120_1f902420d52a08284603ae5654b401f5.png 458w,
 /docs/user-documentation/content-types/camp/camp--quick-links-success_hufa484f03e308c85041d9ab9e3bea9da9_50120_e7502b76014bae9dbcfd8520a9bf0ebb.png 726w,
 /docs/user-documentation/content-types/camp/camp--quick-links-success_hufa484f03e308c85041d9ab9e3bea9da9_50120_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--quick-links-success_hufa484f03e308c85041d9ab9e3bea9da9_50120_1f902420d52a08284603ae5654b401f5.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="camp-menu">Camp Menu&lt;/h4>
 &lt;ul>
@@ -944,15 +1033,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>Now your Camp page is populated with all of its menus!&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-display.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--menu-display.png" title="View original image">
 &lt;img alt="A screenshot showing the expanded Camp Quick Links menu and Camp Menu" srcset="
 /docs/user-documentation/content-types/camp/camp--menu-display_huf7049926cb5dac8ae694e4a4e700a850_41181_fb3f3ed87c3889ae6fca190064c9d4e3.png 458w,
 /docs/user-documentation/content-types/camp/camp--menu-display_huf7049926cb5dac8ae694e4a4e700a850_41181_4c7b51e4560e0adfc99e4a7e90c6710c.png 726w,
 /docs/user-documentation/content-types/camp/camp--menu-display_huf7049926cb5dac8ae694e4a4e700a850_41181_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--menu-display_huf7049926cb5dac8ae694e4a4e700a850_41181_fb3f3ed87c3889ae6fca190064c9d4e3.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="camp-landing-pages">Camp Landing Pages&lt;/h3>
 &lt;p>The &lt;strong>Camp Landing Page&lt;/strong> content type allows you to create internal pages for your camp section or microsite. Once you&amp;rsquo;ve created the parent &lt;strong>Camp&lt;/strong> page, you are ready to creat additional &lt;strong>Camp Landing Page&lt;/strong> pages.&lt;/p>
@@ -960,27 +1049,27 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>Go to &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Camp Landing Page&lt;/strong>&lt;/li>
 &lt;li>Set the &lt;strong>Title&lt;/strong>&lt;/li>
 &lt;li>In the &lt;strong>Camp&lt;/strong> field, begin typing the name of the &lt;strong>Camp&lt;/strong> page that will be the parent page, then select the item from the autocomplete dropdown.
-&lt;a href="/docs/user-documentation/content-types/camp/camp--lp-select.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--lp-select.png" title="View original image">
 &lt;img alt="The Camp Landing Page admin fields" srcset="
 /docs/user-documentation/content-types/camp/camp--lp-select_hu5ced4d248fa9da96f0b85850075d967c_15159_439dffe0b57745eceb80fb130c4fa640.png 458w,
 /docs/user-documentation/content-types/camp/camp--lp-select_hu5ced4d248fa9da96f0b85850075d967c_15159_15a8fbf29cc0315329798bd55a4f026c.png 726w,
 /docs/user-documentation/content-types/camp/camp--lp-select_hu5ced4d248fa9da96f0b85850075d967c_15159_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--lp-select_hu5ced4d248fa9da96f0b85850075d967c_15159_439dffe0b57745eceb80fb130c4fa640.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>Click &lt;strong>Save and edit layout&lt;/strong>.&lt;/li>
 &lt;li>You will now see the Layout Builder editor with the menus from your &lt;strong>Camp&lt;/strong> page pre-populated in the layout.
-&lt;a href="/docs/user-documentation/content-types/camp/camp--lp-menus.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--lp-menus.png" title="View original image">
 &lt;img alt="The Camp Landing Page layout builder interface" srcset="
 /docs/user-documentation/content-types/camp/camp--lp-menus_hu43309ef9ee9d674c95ee80b59471c6a0_56462_9b4a96a61c72099e6464ae5411a51bfb.png 458w,
 /docs/user-documentation/content-types/camp/camp--lp-menus_hu43309ef9ee9d674c95ee80b59471c6a0_56462_a97cb68e0b31490564458b3adc512904.png 726w,
 /docs/user-documentation/content-types/camp/camp--lp-menus_hu43309ef9ee9d674c95ee80b59471c6a0_56462_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--lp-menus_hu43309ef9ee9d674c95ee80b59471c6a0_56462_9b4a96a61c72099e6464ae5411a51bfb.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>Add additional content using
 &lt;a href="../../layout-builder">Layout Builder&lt;/a>, then click &lt;strong>Save layout&lt;/strong>&lt;/li>
@@ -996,26 +1085,52 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;h4 id="camp-info-block">Camp Info Block&lt;/h4>
 &lt;p>The &lt;strong>Camp Info Block&lt;/strong> is automatically added to the Body section of each &lt;strong>Camp&lt;/strong> page. It displays content from the Contact Info section. It can be rearranged on the page but is not otherwise configurable.&lt;/p></description></item><item><title>Docs: Facility</title><link>/docs/user-documentation/content-types/facility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/facility/</guid><description>
 &lt;p>The Facility content type is used for locations where programming might take place that are not a full YMCA Branch. This might be a childcare facility, a shared-use space, or an office.&lt;/p>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;p>Facilities share their design with the
+&lt;a href="../branch">Branch&lt;/a> content type.&lt;/p>
+&lt;ul>
+&lt;li>Branch Page -
+&lt;a href="/img/designs/lb/Branch%20Location%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Branch%20Location%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="facility--carnation.png">Legacy Facility Page (Carnation theme)&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="creating-a-facility">Creating a Facility&lt;/h2>
 &lt;h3 id="general-info">General info&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Neighborhood&lt;/strong> - If it is used, select an item from the Neighborhood
+&lt;li>&lt;strong>Title&lt;/strong> (required): This is the name of your branch, which will display as your page title and the title in the location card.&lt;/li>
+&lt;li>&lt;strong>Neighborhood&lt;/strong>: If it is used, select an item from the Neighborhood
 &lt;a href="../../taxonomy">Taxonomy&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>Type&lt;/strong> - Choose from a predefined list of types.&lt;/li>
+&lt;li>&lt;strong>Type&lt;/strong>: Choose from a predefined list of types.
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/facility/facility--types.png" title="View original image">
+&lt;img alt="A screenshot listing the preset Type options" srcset="
+/docs/user-documentation/content-types/facility/facility--types_hud88b4e35de51b171e019d4f70da5ccdc_43167_c2cf3c1f59e34e54c6fdd49ee1786a12.png 458w,
+/docs/user-documentation/content-types/facility/facility--types_hud88b4e35de51b171e019d4f70da5ccdc_43167_4c8fdc26b8a5347c34fc8e018eb4ce3a.png 726w,
+/docs/user-documentation/content-types/facility/facility--types_hud88b4e35de51b171e019d4f70da5ccdc_43167_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/facility/facility--types_hud88b4e35de51b171e019d4f70da5ccdc_43167_c2cf3c1f59e34e54c6fdd49ee1786a12.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/li>
 &lt;li>&lt;strong>Facility Branch&lt;/strong> - Using autocomplete, select the
 &lt;a href="../branch">Branch&lt;/a> that this facility is associated with.&lt;/li>
 &lt;/ul>
 &lt;h3 id="contact-info">Contact Info&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>Address&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Facility Coordinates&lt;/strong> - See
+&lt;li>&lt;strong>Address&lt;/strong> (required): The physical address of your location. Be sure to include all address fields.&lt;/li>
+&lt;li>&lt;strong>Facility coordinates&lt;/strong> (required): This field pins your facility on the locations map.
+&lt;ul>
+&lt;li>See
 &lt;a href="../branch/#contact-info">Branch&lt;/a> for details on how to find your facility coordinates.&lt;/li>
-&lt;li>&lt;strong>Phone&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Fax&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Email&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Directions&lt;/strong> - Link to your Google Places. Add “Get Directions” in the Link Text section.&lt;/li>
 &lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Phone&lt;/strong> (required): The main phone line for your facility. Will be displayed as it is entered and linked to allow mobile users to tap to call.&lt;/li>
+&lt;li>&lt;strong>Fax&lt;/strong>: Optional.&lt;/li>
+&lt;li>&lt;strong>Email&lt;/strong>: We recommend you use a main contact email, such as &lt;code>info@example.com&lt;/code>, rather than the email for an individual staff member.&lt;/li>
+&lt;li>&lt;strong>Directions&lt;/strong>: By default, a link with directions is auto-generated using the Address field. Use this field to substitute your own directions link.&lt;/li>
+&lt;/ul>
+&lt;h3 id="sidebar-area">Sidebar area&lt;/h3>
+&lt;p>For aside pieces of content, such as side navigations, promotional cards and content related to the main part of your page.&lt;/p>
 &lt;h3 id="content">Content&lt;/h3>
 &lt;blockquote>
 &lt;p>These sections are not displayed when &amp;ldquo;Use Layout Builder&amp;rdquo; is selected.&lt;/p>
@@ -1025,7 +1140,14 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;ul>
 &lt;li>&lt;strong>Sidebar Area&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Content Area&lt;/strong>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Landing Page</title><link>/docs/user-documentation/content-types/landing-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/landing-page/</guid><description>
+&lt;/ul>
+&lt;h2 id="customizing-with-layout-builder">Customizing with Layout Builder&lt;/h2>
+&lt;p>Beginning in
+&lt;a href="/blog/2023/09/12/digital-services-release-10.3.0/">Website Services 10.3.0&lt;/a> content editors have the option of customizing the Facility page with
+&lt;a href="../../layout-builder">Layout Builder&lt;/a>. You can migrate from using Paragraphs to using Layout Builder on a facility-by-facility basis in order to ease the transition.&lt;/p>
+&lt;p>The &lt;strong>Use Layout Builder&lt;/strong> checkbox on the Facility edit page non-destructively switches between Paragraphs and Layout Builder.&lt;/p>
+&lt;p>The migration process is identical to
+&lt;a href="../branch/#migrating-to-layout-builder">Migrating Branches to Layout Builder&lt;/a>.&lt;/p></description></item><item><title>Docs: Landing Page</title><link>/docs/user-documentation/content-types/landing-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/landing-page/</guid><description>
 &lt;h3 id="fields-in-landing-page">Fields in Landing Page&lt;/h3>
 &lt;h4 id="title-required">Title (Required)&lt;/h4>
 &lt;p>This is what you will see in your admin portal as your content&amp;rsquo;s name. it will also show as the page title in the Header unless you add a paragraph in the &lt;em>Header Area&lt;/em>.&lt;/p>
@@ -1033,51 +1155,51 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;p>Landing Pages come with four basic layouts for desktop. For mobile, all layouts display in a single column, with the &lt;em>Sidebar Area&lt;/em> stacking below the &lt;em>Content Area&lt;/em>.&lt;/p>
 &lt;h4 id="one-column-layout">One Column Layout&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/landing-page/landing-page--1col.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/landing-page/landing-page--1col.jpeg" title="View original image">
 &lt;img alt="The one column landing page layout" srcset="
 /docs/user-documentation/content-types/landing-page/landing-page--1col_hud29a80aacebc4f9ce18e4b04e28efa95_572947_11b4aade043d152c847bad3822468e8e.jpeg 458w,
 /docs/user-documentation/content-types/landing-page/landing-page--1col_hud29a80aacebc4f9ce18e4b04e28efa95_572947_ab1c2ee5437fe6c1d3510418430e16b0.jpeg 726w,
 /docs/user-documentation/content-types/landing-page/landing-page--1col_hud29a80aacebc4f9ce18e4b04e28efa95_572947_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/landing-page/landing-page--1col_hud29a80aacebc4f9ce18e4b04e28efa95_572947_11b4aade043d152c847bad3822468e8e.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="one-column-full-width">One Column (Full Width)&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/landing-page/landing-page--1col-full.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/landing-page/landing-page--1col-full.jpeg" title="View original image">
 &lt;img alt="The one column (full width) landing page layout" srcset="
 /docs/user-documentation/content-types/landing-page/landing-page--1col-full_hud29a80aacebc4f9ce18e4b04e28efa95_833636_1470a2dc8c8ea27d203949b8c76ed45a.jpeg 458w,
 /docs/user-documentation/content-types/landing-page/landing-page--1col-full_hud29a80aacebc4f9ce18e4b04e28efa95_833636_fb48a615aacece47242915bea66a2940.jpeg 726w,
 /docs/user-documentation/content-types/landing-page/landing-page--1col-full_hud29a80aacebc4f9ce18e4b04e28efa95_833636_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/landing-page/landing-page--1col-full_hud29a80aacebc4f9ce18e4b04e28efa95_833636_1470a2dc8c8ea27d203949b8c76ed45a.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="two-columns">Two Columns&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/landing-page/landing-page--2col.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/landing-page/landing-page--2col.jpeg" title="View original image">
 &lt;img alt="The two column landing page layout" srcset="
 /docs/user-documentation/content-types/landing-page/landing-page--2col_hu8e7e95a08f8947e70e10cf961d179821_759086_54591df728014763278aa058d6f55ef6.jpeg 458w,
 /docs/user-documentation/content-types/landing-page/landing-page--2col_hu8e7e95a08f8947e70e10cf961d179821_759086_f211c13ef2ce8700db1d5292b35f6352.jpeg 726w,
 /docs/user-documentation/content-types/landing-page/landing-page--2col_hu8e7e95a08f8947e70e10cf961d179821_759086_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/landing-page/landing-page--2col_hu8e7e95a08f8947e70e10cf961d179821_759086_54591df728014763278aa058d6f55ef6.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="two-columns-fixed-sidebar">Two Columns (Fixed Sidebar)&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/landing-page/landing-page--2col-fixed.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/landing-page/landing-page--2col-fixed.jpeg" title="View original image">
 &lt;img alt="The two column (fixed sidebar) landing page layout" srcset="
 /docs/user-documentation/content-types/landing-page/landing-page--2col-fixed_hu6593b05c092429d39597c4b98a77951b_647359_34e30c3ceeb80b1f67cf1f807c7a394c.jpeg 458w,
 /docs/user-documentation/content-types/landing-page/landing-page--2col-fixed_hu6593b05c092429d39597c4b98a77951b_647359_9867c594a0b5715397701545d5b9ea17.jpeg 726w,
 /docs/user-documentation/content-types/landing-page/landing-page--2col-fixed_hu6593b05c092429d39597c4b98a77951b_647359_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/landing-page/landing-page--2col-fixed_hu6593b05c092429d39597c4b98a77951b_647359_34e30c3ceeb80b1f67cf1f807c7a394c.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="paragraph-areas">Paragraph Areas&lt;/h3>
 &lt;p>You can use any number of
@@ -1097,15 +1219,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>&lt;strong>Image:&lt;/strong> A reusable image field to be displayed on the first step of the Membership Calculator.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/membership/membership--general-info.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/membership/membership--general-info.png" title="View original image">
 &lt;img alt="A screenshot with the Membership content title, image, and description." srcset="
 /docs/user-documentation/content-types/membership/membership--general-info_hu4de17496cf5b37a0095c933c6a10d36c_41760_2313a79ca0647c2d22a9311881133dd0.png 458w,
 /docs/user-documentation/content-types/membership/membership--general-info_hu4de17496cf5b37a0095c933c6a10d36c_41760_fd88c57983d91bdc6fd81a5d67bbfe73.png 726w,
 /docs/user-documentation/content-types/membership/membership--general-info_hu4de17496cf5b37a0095c933c6a10d36c_41760_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/membership/membership--general-info_hu4de17496cf5b37a0095c933c6a10d36c_41760_2313a79ca0647c2d22a9311881133dd0.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="membership-info">Membership Info&lt;/h3>
 &lt;p>The Membership Info Paragraph lists detailed membership information per location. Add one &amp;ldquo;Membership Info&amp;rdquo; section for each location that your membership applies to. If a location does not offer a membership type, you can leave it out.&lt;/p>
@@ -1122,45 +1244,45 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;li>&lt;strong>Monthly Rate:&lt;/strong> Dollar value for the monthly fee of the membership.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/membership/membership--membership-info.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/membership/membership--membership-info.png" title="View original image">
 &lt;img alt="A screenshot labeling the membership info section fields." srcset="
 /docs/user-documentation/content-types/membership/membership--membership-info_hu0bea3810850a9696a70cdb050ed3354a_76278_a700f99b7e596907129d548ffb5e090f.png 458w,
 /docs/user-documentation/content-types/membership/membership--membership-info_hu0bea3810850a9696a70cdb050ed3354a_76278_9179827759db4355fd6000a26d4858b8.png 726w,
 /docs/user-documentation/content-types/membership/membership--membership-info_hu0bea3810850a9696a70cdb050ed3354a_76278_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/membership/membership--membership-info_hu0bea3810850a9696a70cdb050ed3354a_76278_a700f99b7e596907129d548ffb5e090f.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="finding-your-registration-link">Finding your registration link&lt;/h2>
 &lt;p>Every membership management system will have different ways of linking in for members to complete their registration. Here are a few we know about. If you have tips for a MMS not listed here, feel free to leave them in the comments.&lt;/p>
 &lt;h3 id="daxko-operations">Daxko Operations&lt;/h3>
 &lt;p>Navigate to: &lt;strong>Membership&lt;/strong> &amp;gt; &lt;strong>Membership Types&lt;/strong> &amp;gt; &lt;strong>Edit&lt;/strong> &amp;gt; &lt;strong>Online Settings&lt;/strong>. This provides the deep link to the specific membership types.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/membership/membership--daxko-link.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/membership/membership--daxko-link.png" title="View original image">
 &lt;img alt="A screenshot showing the General Information screen of Daxko Operations" srcset="
 /docs/user-documentation/content-types/membership/membership--daxko-link_hud78bda0d6b71cc1c70b0148a32a407a8_209211_bb874d96a8ad0c3eda20ecaddf33bd0c.png 458w,
 /docs/user-documentation/content-types/membership/membership--daxko-link_hud78bda0d6b71cc1c70b0148a32a407a8_209211_4474bce5768bce57f23e086d5eb19f6c.png 726w,
 /docs/user-documentation/content-types/membership/membership--daxko-link_hud78bda0d6b71cc1c70b0148a32a407a8_209211_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/membership/membership--daxko-link_hud78bda0d6b71cc1c70b0148a32a407a8_209211_bb874d96a8ad0c3eda20ecaddf33bd0c.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p></description></item><item><title>Docs: News Post</title><link>/docs/user-documentation/content-types/news-post/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/news-post/</guid><description>
 &lt;blockquote>
 &lt;p>&lt;em>Note: This Content Type is
 &lt;a href="../blog-post">similar to the Blog Post content type&lt;/a>.&lt;/em>&lt;/p>
 &lt;/blockquote>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/news-post/news-post--example.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/news-post/news-post--example.png" title="View original image">
 &lt;img alt="An example news post page" srcset="
 /docs/user-documentation/content-types/news-post/news-post--example_hucd0996abf94ad51f1f473d62f46b870c_331396_15d4649b3d77ccab7626574bed744130.png 458w,
 /docs/user-documentation/content-types/news-post/news-post--example_hucd0996abf94ad51f1f473d62f46b870c_331396_81cf960a8a0e60d2239b0859b4b4b368.png 726w,
 /docs/user-documentation/content-types/news-post/news-post--example_hucd0996abf94ad51f1f473d62f46b870c_331396_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/news-post/news-post--example_hucd0996abf94ad51f1f473d62f46b870c_331396_15d4649b3d77ccab7626574bed744130.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>News posts in YMCA Website Services allow you the flexibility to both create simple posts using only the text editor and more robust layouts with paragraphs.&lt;/p>
 &lt;h2 id="when-should-i-use-a-news-post">When Should I Use a News Post?&lt;/h2>
@@ -1218,15 +1340,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;h3 id="other-settings">Other Settings&lt;/h3>
 &lt;p>In the right column, make sure the &amp;ldquo;promoted to front page&amp;rdquo; item is checked, so it will appear in any listings.&lt;/p></description></item><item><title>Docs: Program</title><link>/docs/user-documentation/content-types/program/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/program/</guid><description>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/program/program--example.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/program/program--example.jpeg" title="View original image">
 &lt;img alt="An example of a program page" srcset="
 /docs/user-documentation/content-types/program/program--example_hu423eab57bdd9cbde11a4c70b3b7c6ac1_509522_530b3c16f74e020a32449dbd5df8b135.jpeg 458w,
 /docs/user-documentation/content-types/program/program--example_hu423eab57bdd9cbde11a4c70b3b7c6ac1_509522_44c597653f9789b4822b4208d9d51a95.jpeg 726w,
 /docs/user-documentation/content-types/program/program--example_hu423eab57bdd9cbde11a4c70b3b7c6ac1_509522_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--example_hu423eab57bdd9cbde11a4c70b3b7c6ac1_509522_530b3c16f74e020a32449dbd5df8b135.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>The Program content type is a high-level page that directs people to more specific program offerings.&lt;/p>
 &lt;p>An example of a Program in YMCA Website Services would be a Swimming &amp;amp; Aquatics page that directs people to more specific offerings, such as swim lessons or clinics.&lt;/p>
@@ -1234,15 +1356,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;h2 id="when-should-i-use-a-program">When Should I Use a Program?&lt;/h2>
 &lt;p>Programs are pages that should link to more specific offering pages. Most often in YMCA Website Services sites, they are the main program pages in an YMCA Website Services mega menu setup.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/program/program--menu.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/program/program--menu.png" title="View original image">
 &lt;img alt="The site mega menu with program pages indicated" srcset="
 /docs/user-documentation/content-types/program/program--menu_hu852bf4d405ae2010ecb0ed956d6ef017_561862_6dfa30ecb7aebd3b99a29cdb1811cc4f.png 458w,
 /docs/user-documentation/content-types/program/program--menu_hu852bf4d405ae2010ecb0ed956d6ef017_561862_74adef99b0c03516302abe5e4806b4f4.png 726w,
 /docs/user-documentation/content-types/program/program--menu_hu852bf4d405ae2010ecb0ed956d6ef017_561862_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--menu_hu852bf4d405ae2010ecb0ed956d6ef017_561862_6dfa30ecb7aebd3b99a29cdb1811cc4f.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="how-to-use-program">How to Use Program&lt;/h2>
@@ -1255,39 +1377,39 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;/ul>
 &lt;h4 id="standard-title-with-light-blue">Standard Title with Light Blue&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/program/program--carnation-light-blue.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/program/program--carnation-light-blue.png" title="View original image">
 &lt;img alt="A program page with a light blue banner" srcset="
 /docs/user-documentation/content-types/program/program--carnation-light-blue_hu4b4318458df83ac7a8d538aac2f5ec5c_50264_2895b3a72a297cead685589d22b3f307.png 458w,
 /docs/user-documentation/content-types/program/program--carnation-light-blue_hu4b4318458df83ac7a8d538aac2f5ec5c_50264_0056035028e9373bdadf61c69f8d5bc4.png 726w,
 /docs/user-documentation/content-types/program/program--carnation-light-blue_hu4b4318458df83ac7a8d538aac2f5ec5c_50264_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--carnation-light-blue_hu4b4318458df83ac7a8d538aac2f5ec5c_50264_2895b3a72a297cead685589d22b3f307.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="standard-title-with-purple">Standard Title with Purple&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/program/program--carnation-purple.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/program/program--carnation-purple.png" title="View original image">
 &lt;img alt="A program page with a purple banner" srcset="
 /docs/user-documentation/content-types/program/program--carnation-purple_hu9508c9067e60d6f92f4253de3a8f93e8_50271_36eeddcf40b644351cb0b0d3466c7621.png 458w,
 /docs/user-documentation/content-types/program/program--carnation-purple_hu9508c9067e60d6f92f4253de3a8f93e8_50271_845391872f32b7b386d00f65c5160e31.png 726w,
 /docs/user-documentation/content-types/program/program--carnation-purple_hu9508c9067e60d6f92f4253de3a8f93e8_50271_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--carnation-purple_hu9508c9067e60d6f92f4253de3a8f93e8_50271_36eeddcf40b644351cb0b0d3466c7621.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="small-banner">Small Banner&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/program/program--carnation-small-banner.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/program/program--carnation-small-banner.jpeg" title="View original image">
 &lt;img alt="A program page with a small banner and an image background" srcset="
 /docs/user-documentation/content-types/program/program--carnation-small-banner_hu61c3671675498aa2c3687704368da0bc_480902_6c63ffa86634a7cd4e2120e0892684c2.jpeg 458w,
 /docs/user-documentation/content-types/program/program--carnation-small-banner_hu61c3671675498aa2c3687704368da0bc_480902_4a72234978be2c145acfad69fad90e16.jpeg 726w,
 /docs/user-documentation/content-types/program/program--carnation-small-banner_hu61c3671675498aa2c3687704368da0bc_480902_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--carnation-small-banner_hu61c3671675498aa2c3687704368da0bc_480902_6c63ffa86634a7cd4e2120e0892684c2.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="content-area">Content Area&lt;/h3>
 &lt;ul>
@@ -1320,27 +1442,27 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;/ul>
 &lt;h4 id="carnation-without-content-in-the-sidebar">Carnation: Without Content in the Sidebar&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/program/program--carnation-no-sidebar.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/program/program--carnation-no-sidebar.jpeg" title="View original image">
 &lt;img alt="A program page without content in the sidebar" srcset="
 /docs/user-documentation/content-types/program/program--carnation-no-sidebar_hu9f1d0a1f740b04c5a6a4cb1fdf35ee7e_410075_45c1c798a8ae34304e721ea682ce24fc.jpeg 458w,
 /docs/user-documentation/content-types/program/program--carnation-no-sidebar_hu9f1d0a1f740b04c5a6a4cb1fdf35ee7e_410075_ac3c3438d0edc797637b114fd38f379d.jpeg 726w,
 /docs/user-documentation/content-types/program/program--carnation-no-sidebar_hu9f1d0a1f740b04c5a6a4cb1fdf35ee7e_410075_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--carnation-no-sidebar_hu9f1d0a1f740b04c5a6a4cb1fdf35ee7e_410075_45c1c798a8ae34304e721ea682ce24fc.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="carnation-desktop-with-content-in-the-sidebar">Carnation: Desktop With Content in the Sidebar&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/program/program--carnation-sidebar.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/program/program--carnation-sidebar.jpeg" title="View original image">
 &lt;img alt="A program page with content in the sidebar" srcset="
 /docs/user-documentation/content-types/program/program--carnation-sidebar_hu6c8bbb7f2970b0b48db9a461432eb94a_448593_f1d789e0a7098ef20c4e1ef87824d429.jpeg 458w,
 /docs/user-documentation/content-types/program/program--carnation-sidebar_hu6c8bbb7f2970b0b48db9a461432eb94a_448593_bba1bcb0ccc03e80a410184a581b2e4f.jpeg 726w,
 /docs/user-documentation/content-types/program/program--carnation-sidebar_hu6c8bbb7f2970b0b48db9a461432eb94a_448593_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program/program--carnation-sidebar_hu6c8bbb7f2970b0b48db9a461432eb94a_448593_f1d789e0a7098ef20c4e1ef87824d429.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;ul>
 &lt;li>The &lt;em>Description&lt;/em> field always displays above the paragraphs you enter.&lt;/li>
@@ -1350,15 +1472,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;a href="../program">Program&lt;/a>, Program Subcategory pages list different types of program offerings, grouped into
 &lt;a href="../activity-class-session">Activities&lt;/a>.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/program-subcategory/program-subcategory--example.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/program-subcategory/program-subcategory--example.jpeg" title="View original image">
 &lt;img alt="An example of a program subcategory page" srcset="
 /docs/user-documentation/content-types/program-subcategory/program-subcategory--example_huc5ad288dca628893ef8e523ba6152cd0_513379_790777088fe15955c2aa7c571e0e662c.jpeg 458w,
 /docs/user-documentation/content-types/program-subcategory/program-subcategory--example_huc5ad288dca628893ef8e523ba6152cd0_513379_86b36ea6cf8c7ed10e6e75248168bbb2.jpeg 726w,
 /docs/user-documentation/content-types/program-subcategory/program-subcategory--example_huc5ad288dca628893ef8e523ba6152cd0_513379_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program-subcategory/program-subcategory--example_huc5ad288dca628893ef8e523ba6152cd0_513379_790777088fe15955c2aa7c571e0e662c.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Whereas a Program page would describe a Y&amp;rsquo;s Health &amp;amp; Fitness offerings in general, a Program Subcategory would break that down into subcategories such as &amp;hellip;&lt;/p>
 &lt;ul>
@@ -1369,27 +1491,27 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;h2 id="when-should-i-use-subcategory">When Should I Use Subcategory?&lt;/h2>
 &lt;p>Most Ys have opted to use Program pages as the top-level categories in their Programs mega menu. Subcategories are then the items underneath each category.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/program-subcategory/program-subcategory--menu.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/program-subcategory/program-subcategory--menu.png" title="View original image">
 &lt;img alt="The mega menu with program subcategory items indicated" srcset="
 /docs/user-documentation/content-types/program-subcategory/program-subcategory--menu_huf24263f9307b80cd2433dfee61ea2a8d_219324_64818a4b0852ad5f268125a66bba6073.png 458w,
 /docs/user-documentation/content-types/program-subcategory/program-subcategory--menu_huf24263f9307b80cd2433dfee61ea2a8d_219324_6cc3334d059a6348dc8a394e8da3ddf4.png 726w,
 /docs/user-documentation/content-types/program-subcategory/program-subcategory--menu_huf24263f9307b80cd2433dfee61ea2a8d_219324_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program-subcategory/program-subcategory--menu_huf24263f9307b80cd2433dfee61ea2a8d_219324_64818a4b0852ad5f268125a66bba6073.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Subcategories, likewise, appear as horizontal cards on Program pages.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/program-subcategory/program-subcategory--cards.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/program-subcategory/program-subcategory--cards.jpeg" title="View original image">
 &lt;img alt="The program subcategories as displayed on program pages" srcset="
 /docs/user-documentation/content-types/program-subcategory/program-subcategory--cards_hu8b3b2ddd7f7725476fb5c2bd570ed233_329512_a2f7521d47cc7ac722ced402ea6fc44e.jpeg 458w,
 /docs/user-documentation/content-types/program-subcategory/program-subcategory--cards_hu8b3b2ddd7f7725476fb5c2bd570ed233_329512_3349cdd4c3d52f958b0840d4588d15cf.jpeg 726w,
 /docs/user-documentation/content-types/program-subcategory/program-subcategory--cards_hu8b3b2ddd7f7725476fb5c2bd570ed233_329512_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program-subcategory/program-subcategory--cards_hu8b3b2ddd7f7725476fb5c2bd570ed233_329512_a2f7521d47cc7ac722ced402ea6fc44e.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>
 &lt;a href="../../paragraphs/categories-listing">Learn about the Categories Listing Paragraph ⇒&lt;/a>&lt;/p>
@@ -1428,15 +1550,15 @@ A &lt;em>relative path&lt;/em> is the part of your url after your &lt;em>domain 
 &lt;p>You can embed content inside the Content Area, all of which will display below the Description.&lt;/p>
 &lt;h4 id="ymca-of-greater-brandywine-example">YMCA of Greater Brandywine Example&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/program-subcategory/program-subcategory--brandywine.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/program-subcategory/program-subcategory--brandywine.png" title="View original image">
 &lt;img alt="An example of program listings" srcset="
 /docs/user-documentation/content-types/program-subcategory/program-subcategory--brandywine_hu97c88ec4d6f4ededf58232e1dfbb4dab_212443_cc677330cd0361172d3f4df6a8f76acf.png 458w,
 /docs/user-documentation/content-types/program-subcategory/program-subcategory--brandywine_hu97c88ec4d6f4ededf58232e1dfbb4dab_212443_da0532c65426e9252ba1cb5dbfe63cea.png 726w,
 /docs/user-documentation/content-types/program-subcategory/program-subcategory--brandywine_hu97c88ec4d6f4ededf58232e1dfbb4dab_212443_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/program-subcategory/program-subcategory--brandywine_hu97c88ec4d6f4ededf58232e1dfbb4dab_212443_cc677330cd0361172d3f4df6a8f76acf.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="sidebar-area">Sidebar Area&lt;/h3>
 &lt;p>The Sidebar Area will change the layout of the page into two columns once you enter content.&lt;/p>

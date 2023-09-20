@@ -1,4 +1,165 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – How-to</title><link>/docs/howto/</link><description>Recent content in How-to on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/howto/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: How to embed social media in your site</title><link>/docs/howto/add-social-feeds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/add-social-feeds/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – How-to</title><link>/docs/howto/</link><description>Recent content in How-to on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/howto/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: How to customize your locations map</title><link>/docs/howto/map-settings-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/map-settings-config/</guid><description>
+&lt;p>YMCA Website Services includes robust mapping functionality defined in the
+&lt;a href="https://github.com/open-y-subprojects/openy_map" target="_blank">openy_map subproject&lt;/a>. Maps typically are displayed on the &lt;code>/locations&lt;/code> page using the
+&lt;a href="../../user-documentation/layout-builder/location-finder">Location Finder component&lt;/a> and are highly customizable.&lt;/p>
+&lt;p>These are a few common customizations:&lt;/p>
+&lt;h2 id="changing-map-options">Changing Map Options&lt;/h2>
+&lt;p>By default, content types have these labels on the map:&lt;/p>
+&lt;ul>
+&lt;li>Branch = YMCAs&lt;/li>
+&lt;li>Camp = Camps&lt;/li>
+&lt;li>Facility = Facilities&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/howto/map-settings-config/map-labels.png" title="View original image">
+&lt;img alt="Screenshot showing map labels" srcset="
+/docs/howto/map-settings-config/map-labels_hu0f2f9c7f089b545a5412d24de9595e34_9451_c4db45da63e3ead48855a2a35ac79845.png 458w,
+/docs/howto/map-settings-config/map-labels_hu0f2f9c7f089b545a5412d24de9595e34_9451_b611c4f51f6aa37b80489f6a6f37ee99.png 726w,
+/docs/howto/map-settings-config/map-labels_hu0f2f9c7f089b545a5412d24de9595e34_9451_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/howto/map-settings-config/map-labels_hu0f2f9c7f089b545a5412d24de9595e34_9451_c4db45da63e3ead48855a2a35ac79845.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>These labels can be customized in the Drupal administration pages to better suit your YMCA&amp;rsquo;s more member-focused terminology. To do so:&lt;/p>
+&lt;ul>
+&lt;li>In the Admin Menu, go to &lt;strong>YMCA Website Services&lt;/strong> (or &lt;strong>Open Y&lt;/strong> on prior versions) &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Map Settings&lt;/strong>&lt;/li>
+&lt;li>In the &lt;strong>Branch/Camp/Facility Content Type&lt;/strong> sections you can:
+&lt;ul>
+&lt;li>edit the label names,&lt;/li>
+&lt;li>show or hide the content type on the Locations page,&lt;/li>
+&lt;li>set the filter to be on or off by default, and&lt;/li>
+&lt;li>set the map icon.
+&lt;figure class="image-caption">
+&lt;a href="/docs/howto/map-settings-config/branch-content-type-map-settings.png" title="View original image">
+&lt;img alt="Branch content type settings" srcset="
+/docs/howto/map-settings-config/branch-content-type-map-settings_hu208caf786b9a37d078a724c84ce0a14a_56698_f4cb3315bb9bed861be1e35b0e233c44.png 458w,
+/docs/howto/map-settings-config/branch-content-type-map-settings_hu208caf786b9a37d078a724c84ce0a14a_56698_682278bea94c1f4ab9b152c9b0334747.png 726w,
+/docs/howto/map-settings-config/branch-content-type-map-settings_hu208caf786b9a37d078a724c84ce0a14a_56698_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/howto/map-settings-config/branch-content-type-map-settings_hu208caf786b9a37d078a724c84ce0a14a_56698_f4cb3315bb9bed861be1e35b0e233c44.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Edit each content type as needed then &lt;strong>Save&lt;/strong> the form.&lt;/li>
+&lt;li>Reload &lt;code>/locations&lt;/code> and you should see your changes.&lt;/li>
+&lt;/ul>
+&lt;h2 id="adding-additional-location-types">Adding Additional Location Types&lt;/h2>
+&lt;p>You can add new content types to the map with a few steps. This may require some trial and error, so be sure to work in a testing environment first. You will need to have the &lt;strong>Field UI&lt;/strong> module enabled to do this through the Drupal admin UI.&lt;/p>
+&lt;ul>
+&lt;li>Create a new content type via &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Content types&lt;/strong> &amp;gt; &lt;strong>Add content type&lt;/strong>&lt;/li>
+&lt;li>Add these existing fields to the content type:
+&lt;ul>
+&lt;li>&lt;code>field_location_coordinates&lt;/code> - required&lt;/li>
+&lt;li>&lt;code>field_location_address&lt;/code> and &lt;code>field_location_phone&lt;/code> - suggested for display on the map and location teasers.&lt;/li>
+&lt;li>&lt;code>field_location_amenities&lt;/code> - if the location should be searchable with the Amenities search.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Set up the Teaser display on the new content type:
+&lt;ul>
+&lt;li>Navigate to &lt;strong>Manage display&lt;/strong> then &lt;strong>Teaser&lt;/strong>&lt;/li>
+&lt;li>Update these settings to match the Branch Teaser display at &lt;code>/admin/structure/types/manage/branch/display/teaser&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Go back to the Map Settings at &lt;code>admin/openy/settings/openy_map&lt;/code> and configure the options for your new location type.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: How to install Cachet (the official Y Font)</title><link>/docs/howto/install-cachet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/install-cachet/</guid><description>
+&lt;p>From
+&lt;a href="https://link.ymca.net/mlink/post/ODI2MA" target="_blank">YMCA Link&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>Typography is an important element of our brand identity. Cachet and Verdana, the only two fonts used on YMCA collateral, help provide our words with a distinctive look and welcoming feel. And Cachet, as our primary font, should be used for all internal and external materials whenever possible.&lt;/p>
+&lt;p>To help Ys incorporate the Cachet font into their online applications, &lt;strong>Y-USA is now licensing the web font version of Cachet for all YMCAs.&lt;/strong> Previously, Ys could only access the desktop version of the font from the Brand Resource Center (BRC).&lt;/p>
+&lt;p>Visit the BRC to:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://theybrand.org/wordpress/cachet" target="_blank">Download Cachet as a Web Font &lt;/a> (requires YMCA Link login)&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h2 id="for-developers">For developers&lt;/h2>
+&lt;p>YMCA development partners can take advantage of a custom module which allows for automation of this process.
+&lt;a href="mailto:ycloud@ymca.net">Get in touch&lt;/a> or reach out in &lt;code>#developers&lt;/code> on the YUSA Slack for more details.&lt;/p>
+&lt;h2 id="for-site-builders">For site builders&lt;/h2>
+&lt;p>Once you&amp;rsquo;ve downloaded the WOFF files, you&amp;rsquo;ll need to add them to your site. These instructions mirror the
+&lt;a href="https://www.youtube.com/watch?v=Kl1lwYSg3ww&amp;amp;feature=youtu.be" target="_blank">walkthrough in this video&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>Visit &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> and ensure the &amp;ldquo;@fontyourface&amp;rdquo; and &amp;ldquo;@fontyourface - Local Fonts&amp;rdquo; modules are enabled.&lt;/li>
+&lt;li>Visit &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Appearance&lt;/strong> &amp;gt; &lt;strong>@font-your-face&lt;/strong> &amp;gt; &lt;strong>Custom Fonts&lt;/strong>&lt;/li>
+&lt;li>Click &lt;strong>+ Add Custom Font&lt;/strong> and add each of the Cachet font files you downloaded above with the following settings:&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Font Family&lt;/th>
+&lt;th>Font Style&lt;/th>
+&lt;th>Font Weight&lt;/th>
+&lt;th>Font Classification&lt;/th>
+&lt;th>Font File&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Cachet Extra Light&lt;/td>
+&lt;td>Cachet&lt;/td>
+&lt;td>Normal&lt;/td>
+&lt;td>300&lt;/td>
+&lt;td>Sans Serif&lt;/td>
+&lt;td>CachetW05-ExtraLight.woff&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cachet Book&lt;/td>
+&lt;td>Cachet&lt;/td>
+&lt;td>Normal&lt;/td>
+&lt;td>400&lt;/td>
+&lt;td>Sans Serif&lt;/td>
+&lt;td>CachetW05-Book.woff&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cachet Medium&lt;/td>
+&lt;td>Cachet&lt;/td>
+&lt;td>Normal&lt;/td>
+&lt;td>500&lt;/td>
+&lt;td>Sans Serif&lt;/td>
+&lt;td>CachetW05-Medium.woff&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cachet Bold&lt;/td>
+&lt;td>Cachet&lt;/td>
+&lt;td>Normal&lt;/td>
+&lt;td>700&lt;/td>
+&lt;td>Sans Serif&lt;/td>
+&lt;td>CachetW05-Bold.woff&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/howto/install-cachet/Add_custom_font.png" title="View original image">
+&lt;img alt="Add_custom_font|591x500" srcset="
+/docs/howto/install-cachet/Add_custom_font_hu2b1c220789784040ffe61488c64907b0_44341_34704751d71ad24dedcc4626d5dd28ae.png 458w,
+/docs/howto/install-cachet/Add_custom_font_hu2b1c220789784040ffe61488c64907b0_44341_5c931cc3799ece6475ad2696b46653cc.png 726w,
+/docs/howto/install-cachet/Add_custom_font_hu2b1c220789784040ffe61488c64907b0_44341_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/howto/install-cachet/Add_custom_font_hu2b1c220789784040ffe61488c64907b0_44341_34704751d71ad24dedcc4626d5dd28ae.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>After you&amp;rsquo;ve added each font, &lt;strong>Enable&lt;/strong> them.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/howto/install-cachet/Custom_Font.png" title="View original image">
+&lt;img alt="Custom_Font|690x156, 100%" srcset="
+/docs/howto/install-cachet/Custom_Font_hu289c982bbdbfab415861a36f62d1612d_32580_725bd631f699facdcadaa82633b94ffd.png 458w,
+/docs/howto/install-cachet/Custom_Font_hu289c982bbdbfab415861a36f62d1612d_32580_c912dda10065ff687ce756f8794db698.png 726w,
+/docs/howto/install-cachet/Custom_Font_hu289c982bbdbfab415861a36f62d1612d_32580_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/howto/install-cachet/Custom_Font_hu289c982bbdbfab415861a36f62d1612d_32580_725bd631f699facdcadaa82633b94ffd.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Your site should now use the Cachet font in headers and other areas. Usage is dependent on the YMCA Website Services theme you choose.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: How to integrate with social media</title><link>/docs/howto/add-social-feeds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/add-social-feeds/</guid><description>
 &lt;p>Social media is a great platform for communicating with your Y community, and it&amp;rsquo;s often helpful to embed feeds or posts in a page to share topical content with users.&lt;/p>
 &lt;p>The distribution has used a number of methods over the years to add social content to sites, but all of them are dependent on the specific platforms maintaining open APIs. Unfortunately many social networks are now locking down and restricting their APIs.&lt;/p>
 &lt;h2 id="how-to-embed-social-content-in-your-ymca-website-in-2023">How to embed social content in your YMCA website (in 2023)&lt;/h2>
@@ -29,7 +190,27 @@
 &lt;a href="../../user-documentation/layout-builder/code">Code Block&lt;/a>to the section where you&amp;rsquo;d like to do the embed.&lt;/li>
 &lt;li>Paste in the embed code generated above.&lt;/li>
 &lt;li>&lt;strong>Save&lt;/strong> the block, then &lt;strong>Save layout&lt;/strong> on the page.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: How to migrate content into Layout Builder</title><link>/docs/howto/migrate-to-lb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/migrate-to-lb/</guid><description>
+&lt;/ul>
+&lt;h3 id="alternatively-try-social-feeds-fetcher">Alternatively, try Social Feeds Fetcher&lt;/h3>
+&lt;p>The
+&lt;a href="https://www.drupal.org/project/social_feed_fetcher" target="_blank">Social Feeds Fetcher module&lt;/a> that comes with the distribution allows your site to import social media content for syndication.&lt;/p>
+&lt;p>To configure fetching:&lt;/p>
+&lt;ul>
+&lt;li>Open the configuration page at &lt;code>/admin/config/social_feed_fetcher_settings&lt;/code> or &lt;strong>Configuration&lt;/strong> &amp;gt; &lt;strong>Web Services&lt;/strong> &amp;gt; &lt;strong>Social Feed Fetcher Settings&lt;/strong>&lt;/li>
+&lt;li>Select the checkbox for your chosen social networks and add additional settings. Every social network has their own API and requires different configuration.&lt;/li>
+&lt;li>When all settings are completed, click &lt;strong>Run Cron&lt;/strong>. The import is started and if the configuration is correct, items will appear in the content list.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-share-content-from-your-site-to-social-media">How to share content from your site to social media&lt;/h2>
+&lt;blockquote>
+&lt;p>All mobile browsers — Firefox, Edge, Safari, Chrome, Opera Mini, UC Browser, Samsung Internet — make it easy to share content directly from their native platforms.&lt;/p>
+&lt;p>&amp;ndash;
+&lt;a href="https://css-tricks.com/ux-considerations-for-web-sharing/" target="_blank">UX Considerations for Web Sharing&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="using-addthis">Using AddThis&lt;/h3>
+&lt;p>This
+&lt;a href="../../user-documentation/paragraphs/social-share-icons">Social Share Icons&lt;/a> paragraph and the
+&lt;a href="https://www.drupal.org/project/openy_addthis" target="_blank">AddThis module&lt;/a> ceased functioning on May 31, 2023, with the discontinuation of
+&lt;a href="https://www.addthis.com/" target="_blank">AddThis&lt;/a> services.&lt;/p></description></item><item><title>Docs: How to migrate content into Layout Builder</title><link>/docs/howto/migrate-to-lb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/migrate-to-lb/</guid><description>
 &lt;p>Before you start your migration, we recommend getting a better understanding of your current site with a
 &lt;a href="../content-audit">Content Audit&lt;/a>.&lt;/p>
 &lt;h2 id="plan-your-migration">Plan your migration&lt;/h2>
@@ -67,4 +248,130 @@
 &lt;li>Locate content that is outdated, duplicated, needs further review, consolidation etc.&lt;/li>
 &lt;li>Find content gaps - what might be missing?&lt;/li>
 &lt;li>Identify commonly used page components (i.e. Cards, Carousels, Accordions, Ping Pongs, etc.)&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>Docs: How to track &amp; analyze user actions</title><link>/docs/howto/track-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/track-users/</guid><description>
+&lt;h2 id="google-analytics">Google Analytics&lt;/h2>
+&lt;p>YMCA Website Services uses the Drupal contrib
+&lt;a href="https://www.drupal.org/project/google_analytics" target="_blank">Google Analytics module&lt;/a> to enable
+&lt;a href="https://marketingplatform.google.com/about/analytics/" target="_blank">Google Analytics&lt;/a> tracking on your YMCA Website Services site.&lt;/p>
+&lt;p>To get started, you should first create a GA property. Use the
+&lt;a href="https://support.google.com/analytics/#topic=10737980" target="_blank">Analytics Help&lt;/a> for assistance.&lt;/p>
+&lt;h3 id="configuration">Configuration&lt;/h3>
+&lt;p>Configuration is done at the standard module configuration page: &lt;code>/admin/config/services/google-analytics&lt;/code>.&lt;/p>
+&lt;h3 id="google-analytics-version-compatibility">Google Analytics Version Compatibility&lt;/h3>
+&lt;p>In the
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.11" target="_blank">9.2.11&lt;/a> release in November 2021, YMCA Website Services
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/2400" target="_blank">added support for Google Analytics 4&lt;/a>. If your site has been updated to YMCA Website Services 9.2.11 or greater AND the &lt;code>google_analytics&lt;/code> module has been updated to 4.x you should be able to use GA4. Otherwise you&amp;rsquo;ll need to stick with GA3.&lt;/p>
+&lt;h2 id="search-tracking-with-google-analytics">Search Tracking with Google Analytics&lt;/h2>
+&lt;h3 id="prerequisites">Prerequisites&lt;/h3>
+&lt;ul>
+&lt;li>Google Analytics account to track you site should be created.&lt;/li>
+&lt;li>Google Analytics contrib module should be enabled and configured to use existing GA account.&lt;/li>
+&lt;/ul>
+&lt;h3 id="steps">Steps&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Log in to Google Analytics account that configured to track your YMCA Website Services site.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click Admin button in bottom right corner of main screen
+&lt;figure class="image-caption">
+&lt;a href="/docs/howto/track-users/ga_search_1.png" title="View original image">
+&lt;img alt="Google Analytics Main Screen" srcset="
+/docs/howto/track-users/ga_search_1_hub2d1bc7bdffa0ec15366b0d64c0a5139_268386_418082039823a6778deb28574afc4f8b.png 458w,
+/docs/howto/track-users/ga_search_1_hub2d1bc7bdffa0ec15366b0d64c0a5139_268386_e82e3573a94c7a035a9a3afb62863fbe.png 726w,
+/docs/howto/track-users/ga_search_1_hub2d1bc7bdffa0ec15366b0d64c0a5139_268386_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/howto/track-users/ga_search_1_hub2d1bc7bdffa0ec15366b0d64c0a5139_268386_418082039823a6778deb28574afc4f8b.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click View Settings
+&lt;figure class="image-caption">
+&lt;a href="/docs/howto/track-users/ga_search_2.png" title="View original image">
+&lt;img alt="Google Analytics View Settings" srcset="
+/docs/howto/track-users/ga_search_2_hu547920b2c87f619394641a81f7305439_232218_8644325bb0da0e231da8f77c04fd3eb2.png 458w,
+/docs/howto/track-users/ga_search_2_hu547920b2c87f619394641a81f7305439_232218_1b6e38f0fe4642f25dc8f6c69bf76e4f.png 726w,
+/docs/howto/track-users/ga_search_2_hu547920b2c87f619394641a81f7305439_232218_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/howto/track-users/ga_search_2_hu547920b2c87f619394641a81f7305439_232218_8644325bb0da0e231da8f77c04fd3eb2.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Scroll to “Site Search Settings” section and enable “Site Search Tracking” switch
+&lt;figure class="image-caption">
+&lt;a href="/docs/howto/track-users/ga_search_3.png" title="View original image">
+&lt;img alt="Google Analytics Site Search Settings" srcset="
+/docs/howto/track-users/ga_search_3_huc9168b538e0b326845697107efa32604_119026_25056e8e8cd4350d9895475cce4a6c44.png 458w,
+/docs/howto/track-users/ga_search_3_huc9168b538e0b326845697107efa32604_119026_a6ccd90cd69c1bbcac53c2ba7753726a.png 726w,
+/docs/howto/track-users/ga_search_3_huc9168b538e0b326845697107efa32604_119026_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/howto/track-users/ga_search_3_huc9168b538e0b326845697107efa32604_119026_25056e8e8cd4350d9895475cce4a6c44.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill query parameter field with &lt;code>q, query&lt;/code> values and click Save&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Reports about the search tracking you can find at main screen in Behavior → Site Search Section&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>Attention: Data processing latency for search tracking reports is 24-48 hours
+(see
+&lt;a href="https://support.google.com/analytics/answer/1070983?hl=en#DataProcessingLatency" target="_blank">Google&amp;rsquo;s support doc&lt;/a>).&lt;/p>
+&lt;h2 id="data-layer">Data Layer&lt;/h2>
+&lt;p>See also the
+&lt;a href="https://git.drupalcode.org/project/datalayer/#introduction" target="_blank">Data Layer module README&lt;/a>.&lt;/p>
+&lt;p>The Data Layers module output data on the page in a json format. By default it will output properties (langcode, vid, name, uid, created, status, roles) and related taxonomy for any node, user, or any route based entity.&lt;/p>
+&lt;p>A limited set of properties are available via the Data Layers configuration form at &lt;code>/admin/config/search/datalayer&lt;/code> (langcode, vid, name, uid, created, status, roles).&lt;/p>
+&lt;p>Adding additional properties can be done through use of hook_datalayer_meta().&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">function&lt;/span> &lt;span style="color:#000">my_module_datalayer_meta&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">return&lt;/span> &lt;span style="color:#204a87;font-weight:bold">array&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#39;property&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>It will be added to the page as:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;entityProperty&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;whatever the value is&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Altering which properties will be output can be done via hook_datalayer_meta_alter().&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">function&lt;/span> &lt;span style="color:#000">my_module_datalayer_meta_alter&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">&amp;amp;&lt;/span>&lt;span style="color:#000">$properties&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8f5902;font-style:italic">// Override module norm in all cases.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#000">unset&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$properties&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;entityUid&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8f5902;font-style:italic">// Specific situation alteration...
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#000">$type&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">false&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$obj&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">_datalayer_menu_get_any_object&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$type&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$type&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">===&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;node&amp;#39;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#000">in_array&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#204a87;font-weight:bold">array&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;my_bundle&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;my_nodetype&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">),&lt;/span> &lt;span style="color:#000">$obj&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&amp;gt;&lt;/span>&lt;span style="color:#c4a000">type&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8f5902;font-style:italic">// Remove author names on some content type.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$key&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">array_search&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;name&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">$properties&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">unset&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$properties&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#000">$key&lt;/span>&lt;span style="color:#000;font-weight:bold">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">elseif&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$type&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">===&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;my_entity_type&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8f5902;font-style:italic">// Remove some property on some entity type.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$key&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">array_search&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;my_property&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">$properties&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">unset&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$properties&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#000">$key&lt;/span>&lt;span style="color:#000;font-weight:bold">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Adding additional data can be done using datalayer_add().&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">function&lt;/span> &lt;span style="color:#000">_my_module_myevent_func&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$argument&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">FALSE&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$argument&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">datalayer_add&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#204a87;font-weight:bold">array&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#39;drupalMyProperty&amp;#39;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&amp;gt;&lt;/span> &lt;span style="color:#000">$argument&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#39;userAnotherProperty&amp;#39;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&amp;gt;&lt;/span> &lt;span style="color:#000">_my_module_other_funct&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$argument&lt;/span>&lt;span style="color:#000;font-weight:bold">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To alter the data to be output use hook_datalayer_alter().&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">function&lt;/span> &lt;span style="color:#000">my_module_datalayer_alter&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">&amp;amp;&lt;/span>&lt;span style="color:#000">$data_layer&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8f5902;font-style:italic">// Make the title lowercase on some node type.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">isset&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$data_layer&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;entityBundle&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">])&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#000">$data_layer&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;entityBundle&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">==&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;mytype&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">$data_layer&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;entityLabel&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">strtolower&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$data_layer&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;entityLabel&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

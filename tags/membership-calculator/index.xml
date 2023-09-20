@@ -14,50 +14,50 @@
 &lt;h3 id="membership-type">Membership Type&lt;/h3>
 &lt;p>This step lists the Title, Image, and Description of each published Member node.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--type.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--type.png" title="View original image">
 &lt;img alt="A screenshot of the membership calculator Type step." srcset="
 /docs/user-documentation/membership/calculator/membership-calculator--type_hube6a02be8fe484982a911e46759d1960_121074_154088b546a9980d47369d032fc7d5ed.png 458w,
 /docs/user-documentation/membership/calculator/membership-calculator--type_hube6a02be8fe484982a911e46759d1960_121074_83544fd3f62992a57d9e94d6fa282636.png 726w,
 /docs/user-documentation/membership/calculator/membership-calculator--type_hube6a02be8fe484982a911e46759d1960_121074_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--type_hube6a02be8fe484982a911e46759d1960_121074_154088b546a9980d47369d032fc7d5ed.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="primary-location">Primary Location&lt;/h3>
 &lt;p>This step provides a map with radio buttons for the member to select their primary location. Every location listed in the &lt;strong>YMCA Website Services Location Filter Settings&lt;/strong> (see Troubleshooting section below) is listed.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--location.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--location.png" title="View original image">
 &lt;img alt="A screenshot of the membership calculator Location step." srcset="
 /docs/user-documentation/membership/calculator/membership-calculator--location_huf3bc0af79b124cc4e5ac46e05715b5e5_1125990_e910b9af30c4af7881e3b744c9b61c3f.png 458w,
 /docs/user-documentation/membership/calculator/membership-calculator--location_huf3bc0af79b124cc4e5ac46e05715b5e5_1125990_da1a25e0ca309a8a59d25f79207f841b.png 726w,
 /docs/user-documentation/membership/calculator/membership-calculator--location_huf3bc0af79b124cc4e5ac46e05715b5e5_1125990_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--location_huf3bc0af79b124cc4e5ac46e05715b5e5_1125990_e910b9af30c4af7881e3b744c9b61c3f.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="summary">Summary&lt;/h3>
 &lt;p>This page provides a link for the member to continue their registration, or a message indicating the selected membership is not provided at the selected location.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--summary-price.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--summary-price.png" title="View original image">
 &lt;img alt="A screenshot of the membership calculator summary step with a price listed." srcset="
 /docs/user-documentation/membership/calculator/membership-calculator--summary-price_hu2900ef33df3a05b2af3e60a6ac67985d_43812_585178b4d6b3eeb4038399fc8d6c4c80.png 458w,
 /docs/user-documentation/membership/calculator/membership-calculator--summary-price_hu2900ef33df3a05b2af3e60a6ac67985d_43812_1e51f9ab54af7137dcfa990d466a3228.png 726w,
 /docs/user-documentation/membership/calculator/membership-calculator--summary-price_hu2900ef33df3a05b2af3e60a6ac67985d_43812_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--summary-price_hu2900ef33df3a05b2af3e60a6ac67985d_43812_585178b4d6b3eeb4038399fc8d6c4c80.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
-&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--summary-none.png" title="View original image">
+&lt;/figure>
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--summary-none.png" title="View original image">
 &lt;img alt="A screenshot of the membership calculator summary step showing no membership available." srcset="
 /docs/user-documentation/membership/calculator/membership-calculator--summary-none_hu1de91f018fc9b2905bae4c7a4bf6892b_43857_42b52ceaf10770390921df0029aa813f.png 458w,
 /docs/user-documentation/membership/calculator/membership-calculator--summary-none_hu1de91f018fc9b2905bae4c7a4bf6892b_43857_a5690abdf3352806722e96a239a80264.png 726w,
 /docs/user-documentation/membership/calculator/membership-calculator--summary-none_hu1de91f018fc9b2905bae4c7a4bf6892b_43857_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--summary-none_hu1de91f018fc9b2905bae4c7a4bf6892b_43857_42b52ceaf10770390921df0029aa813f.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="placing-the-calculator-on-a-page">Placing the Calculator on a page&lt;/h2>
 &lt;p>Once configured, the Membership Calculator can be placed on a page using:&lt;/p>
@@ -70,15 +70,15 @@
 &lt;h2 id="troubleshooting">Troubleshooting&lt;/h2>
 &lt;p>On some sites, the second step of the &lt;em>Membership Calculator&lt;/em> may not show any locations. In order to resolve this, visit &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services Location Filter Settings&lt;/strong> and ensure that any Branches you want to use in the location search are checked.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--locations-filter.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--locations-filter.png" title="View original image">
 &lt;img alt="A screenshot displaying the Location Filter settings." srcset="
 /docs/user-documentation/membership/calculator/membership-calculator--locations-filter_hu9192bf623bffd1c32187978f3ad5fb0e_74165_d4e411ee5d5c705a51b3ad09ce1f75fb.png 458w,
 /docs/user-documentation/membership/calculator/membership-calculator--locations-filter_hu9192bf623bffd1c32187978f3ad5fb0e_74165_87ea9ac40f26cffd09d0f5a45b3430f2.png 726w,
 /docs/user-documentation/membership/calculator/membership-calculator--locations-filter_hu9192bf623bffd1c32187978f3ad5fb0e_74165_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--locations-filter_hu9192bf623bffd1c32187978f3ad5fb0e_74165_d4e411ee5d5c705a51b3ad09ce1f75fb.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p></description></item><item><title>Docs: Membership Calculator Paragraph</title><link>/docs/user-documentation/paragraphs/membership-calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/membership-calculator/</guid><description>
 &lt;p>See
 &lt;a href="../../membership/calculator">Membership Calculator&lt;/a> and
@@ -100,15 +100,15 @@
 &lt;li>&lt;strong>Image:&lt;/strong> A reusable image field to be displayed on the first step of the Membership Calculator.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/membership/membership--general-info.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/membership/membership--general-info.png" title="View original image">
 &lt;img alt="A screenshot with the Membership content title, image, and description." srcset="
 /docs/user-documentation/content-types/membership/membership--general-info_hu4de17496cf5b37a0095c933c6a10d36c_41760_2313a79ca0647c2d22a9311881133dd0.png 458w,
 /docs/user-documentation/content-types/membership/membership--general-info_hu4de17496cf5b37a0095c933c6a10d36c_41760_fd88c57983d91bdc6fd81a5d67bbfe73.png 726w,
 /docs/user-documentation/content-types/membership/membership--general-info_hu4de17496cf5b37a0095c933c6a10d36c_41760_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/membership/membership--general-info_hu4de17496cf5b37a0095c933c6a10d36c_41760_2313a79ca0647c2d22a9311881133dd0.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="membership-info">Membership Info&lt;/h3>
 &lt;p>The Membership Info Paragraph lists detailed membership information per location. Add one &amp;ldquo;Membership Info&amp;rdquo; section for each location that your membership applies to. If a location does not offer a membership type, you can leave it out.&lt;/p>
@@ -125,28 +125,28 @@
 &lt;li>&lt;strong>Monthly Rate:&lt;/strong> Dollar value for the monthly fee of the membership.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/membership/membership--membership-info.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/membership/membership--membership-info.png" title="View original image">
 &lt;img alt="A screenshot labeling the membership info section fields." srcset="
 /docs/user-documentation/content-types/membership/membership--membership-info_hu0bea3810850a9696a70cdb050ed3354a_76278_a700f99b7e596907129d548ffb5e090f.png 458w,
 /docs/user-documentation/content-types/membership/membership--membership-info_hu0bea3810850a9696a70cdb050ed3354a_76278_9179827759db4355fd6000a26d4858b8.png 726w,
 /docs/user-documentation/content-types/membership/membership--membership-info_hu0bea3810850a9696a70cdb050ed3354a_76278_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/membership/membership--membership-info_hu0bea3810850a9696a70cdb050ed3354a_76278_a700f99b7e596907129d548ffb5e090f.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="finding-your-registration-link">Finding your registration link&lt;/h2>
 &lt;p>Every membership management system will have different ways of linking in for members to complete their registration. Here are a few we know about. If you have tips for a MMS not listed here, feel free to leave them in the comments.&lt;/p>
 &lt;h3 id="daxko-operations">Daxko Operations&lt;/h3>
 &lt;p>Navigate to: &lt;strong>Membership&lt;/strong> &amp;gt; &lt;strong>Membership Types&lt;/strong> &amp;gt; &lt;strong>Edit&lt;/strong> &amp;gt; &lt;strong>Online Settings&lt;/strong>. This provides the deep link to the specific membership types.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/content-types/membership/membership--daxko-link.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/membership/membership--daxko-link.png" title="View original image">
 &lt;img alt="A screenshot showing the General Information screen of Daxko Operations" srcset="
 /docs/user-documentation/content-types/membership/membership--daxko-link_hud78bda0d6b71cc1c70b0148a32a407a8_209211_bb874d96a8ad0c3eda20ecaddf33bd0c.png 458w,
 /docs/user-documentation/content-types/membership/membership--daxko-link_hud78bda0d6b71cc1c70b0148a32a407a8_209211_4474bce5768bce57f23e086d5eb19f6c.png 726w,
 /docs/user-documentation/content-types/membership/membership--daxko-link_hud78bda0d6b71cc1c70b0148a32a407a8_209211_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/membership/membership--daxko-link_hud78bda0d6b71cc1c70b0148a32a407a8_209211_bb874d96a8ad0c3eda20ecaddf33bd0c.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p></description></item></channel></rss>

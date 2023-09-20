@@ -27,15 +27,15 @@
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/4.2.0" target="_blank">version 4.2.0&lt;/a> it will also maintain UTM codes in the URL.&lt;/p>
 &lt;p>Activity Finder begins with a number of preset arguments, and those can be modified at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Activity Finder Settings&lt;/strong> (&lt;code>/admin/openy/settings/activity-finder&lt;/code>) in the &lt;strong>Allowed Query Arguments&lt;/strong> field.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes.png" title="View original image">
 &lt;img alt="A screenshot of the Activity Finder settings, focused on the &amp;amp;ldquo;Allowed Query Arguments&amp;amp;rdquo; field" srcset="
 /docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes_hu2d30f52e356db279c91ea8dbc5c038d0_24256_9b36d85367bc064ebd6ac418b11e242e.png 458w,
 /docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes_hu2d30f52e356db279c91ea8dbc5c038d0_24256_f9b7373cff916a41c897eef99fbcd73f.png 726w,
 /docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes_hu2d30f52e356db279c91ea8dbc5c038d0_24256_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes_hu2d30f52e356db279c91ea8dbc5c038d0_24256_9b36d85367bc064ebd6ac418b11e242e.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Once those settings are saved, you can visit an Activity Finder page with UTM codes attached, for example:&lt;/p>
 &lt;p>&lt;code>https://example.com/activity_finder?step=results&amp;amp;selectedAges=24&amp;amp;selectedLocations=1541437&amp;amp;selectedActivities=2786027,2786083&amp;amp;utm_source=promotional_member&amp;amp;utm_medium=email&amp;amp;utm_content=button_register_now&amp;amp;utm_campaign=fall_group_swim_lessons_2021&lt;/code>&lt;/p>

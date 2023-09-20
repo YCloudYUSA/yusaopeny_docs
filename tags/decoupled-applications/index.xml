@@ -27,15 +27,15 @@
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/4.2.0" target="_blank">version 4.2.0&lt;/a> it will also maintain UTM codes in the URL.&lt;/p>
 &lt;p>Activity Finder begins with a number of preset arguments, and those can be modified at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Activity Finder Settings&lt;/strong> (&lt;code>/admin/openy/settings/activity-finder&lt;/code>) in the &lt;strong>Allowed Query Arguments&lt;/strong> field.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes.png" title="View original image">
 &lt;img alt="A screenshot of the Activity Finder settings, focused on the &amp;amp;ldquo;Allowed Query Arguments&amp;amp;rdquo; field" srcset="
 /docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes_hu2d30f52e356db279c91ea8dbc5c038d0_24256_9b36d85367bc064ebd6ac418b11e242e.png 458w,
 /docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes_hu2d30f52e356db279c91ea8dbc5c038d0_24256_f9b7373cff916a41c897eef99fbcd73f.png 726w,
 /docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes_hu2d30f52e356db279c91ea8dbc5c038d0_24256_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/schedules/activity-finder/activity-finder--utm-codes_hu2d30f52e356db279c91ea8dbc5c038d0_24256_9b36d85367bc064ebd6ac418b11e242e.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Once those settings are saved, you can visit an Activity Finder page with UTM codes attached, for example:&lt;/p>
 &lt;p>&lt;code>https://example.com/activity_finder?step=results&amp;amp;selectedAges=24&amp;amp;selectedLocations=1541437&amp;amp;selectedActivities=2786027,2786083&amp;amp;utm_source=promotional_member&amp;amp;utm_medium=email&amp;amp;utm_content=button_register_now&amp;amp;utm_campaign=fall_group_swim_lessons_2021&lt;/code>&lt;/p>
@@ -63,50 +63,50 @@
 &lt;h3 id="membership-type">Membership Type&lt;/h3>
 &lt;p>This step lists the Title, Image, and Description of each published Member node.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--type.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--type.png" title="View original image">
 &lt;img alt="A screenshot of the membership calculator Type step." srcset="
 /docs/user-documentation/membership/calculator/membership-calculator--type_hube6a02be8fe484982a911e46759d1960_121074_154088b546a9980d47369d032fc7d5ed.png 458w,
 /docs/user-documentation/membership/calculator/membership-calculator--type_hube6a02be8fe484982a911e46759d1960_121074_83544fd3f62992a57d9e94d6fa282636.png 726w,
 /docs/user-documentation/membership/calculator/membership-calculator--type_hube6a02be8fe484982a911e46759d1960_121074_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--type_hube6a02be8fe484982a911e46759d1960_121074_154088b546a9980d47369d032fc7d5ed.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="primary-location">Primary Location&lt;/h3>
 &lt;p>This step provides a map with radio buttons for the member to select their primary location. Every location listed in the &lt;strong>YMCA Website Services Location Filter Settings&lt;/strong> (see Troubleshooting section below) is listed.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--location.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--location.png" title="View original image">
 &lt;img alt="A screenshot of the membership calculator Location step." srcset="
 /docs/user-documentation/membership/calculator/membership-calculator--location_huf3bc0af79b124cc4e5ac46e05715b5e5_1125990_e910b9af30c4af7881e3b744c9b61c3f.png 458w,
 /docs/user-documentation/membership/calculator/membership-calculator--location_huf3bc0af79b124cc4e5ac46e05715b5e5_1125990_da1a25e0ca309a8a59d25f79207f841b.png 726w,
 /docs/user-documentation/membership/calculator/membership-calculator--location_huf3bc0af79b124cc4e5ac46e05715b5e5_1125990_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--location_huf3bc0af79b124cc4e5ac46e05715b5e5_1125990_e910b9af30c4af7881e3b744c9b61c3f.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="summary">Summary&lt;/h3>
 &lt;p>This page provides a link for the member to continue their registration, or a message indicating the selected membership is not provided at the selected location.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--summary-price.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--summary-price.png" title="View original image">
 &lt;img alt="A screenshot of the membership calculator summary step with a price listed." srcset="
 /docs/user-documentation/membership/calculator/membership-calculator--summary-price_hu2900ef33df3a05b2af3e60a6ac67985d_43812_585178b4d6b3eeb4038399fc8d6c4c80.png 458w,
 /docs/user-documentation/membership/calculator/membership-calculator--summary-price_hu2900ef33df3a05b2af3e60a6ac67985d_43812_1e51f9ab54af7137dcfa990d466a3228.png 726w,
 /docs/user-documentation/membership/calculator/membership-calculator--summary-price_hu2900ef33df3a05b2af3e60a6ac67985d_43812_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--summary-price_hu2900ef33df3a05b2af3e60a6ac67985d_43812_585178b4d6b3eeb4038399fc8d6c4c80.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
-&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--summary-none.png" title="View original image">
+&lt;/figure>
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--summary-none.png" title="View original image">
 &lt;img alt="A screenshot of the membership calculator summary step showing no membership available." srcset="
 /docs/user-documentation/membership/calculator/membership-calculator--summary-none_hu1de91f018fc9b2905bae4c7a4bf6892b_43857_42b52ceaf10770390921df0029aa813f.png 458w,
 /docs/user-documentation/membership/calculator/membership-calculator--summary-none_hu1de91f018fc9b2905bae4c7a4bf6892b_43857_a5690abdf3352806722e96a239a80264.png 726w,
 /docs/user-documentation/membership/calculator/membership-calculator--summary-none_hu1de91f018fc9b2905bae4c7a4bf6892b_43857_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--summary-none_hu1de91f018fc9b2905bae4c7a4bf6892b_43857_42b52ceaf10770390921df0029aa813f.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="placing-the-calculator-on-a-page">Placing the Calculator on a page&lt;/h2>
 &lt;p>Once configured, the Membership Calculator can be placed on a page using:&lt;/p>
@@ -119,15 +119,15 @@
 &lt;h2 id="troubleshooting">Troubleshooting&lt;/h2>
 &lt;p>On some sites, the second step of the &lt;em>Membership Calculator&lt;/em> may not show any locations. In order to resolve this, visit &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services Location Filter Settings&lt;/strong> and ensure that any Branches you want to use in the location search are checked.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--locations-filter.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/calculator/membership-calculator--locations-filter.png" title="View original image">
 &lt;img alt="A screenshot displaying the Location Filter settings." srcset="
 /docs/user-documentation/membership/calculator/membership-calculator--locations-filter_hu9192bf623bffd1c32187978f3ad5fb0e_74165_d4e411ee5d5c705a51b3ad09ce1f75fb.png 458w,
 /docs/user-documentation/membership/calculator/membership-calculator--locations-filter_hu9192bf623bffd1c32187978f3ad5fb0e_74165_87ea9ac40f26cffd09d0f5a45b3430f2.png 726w,
 /docs/user-documentation/membership/calculator/membership-calculator--locations-filter_hu9192bf623bffd1c32187978f3ad5fb0e_74165_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/calculator/membership-calculator--locations-filter_hu9192bf623bffd1c32187978f3ad5fb0e_74165_d4e411ee5d5c705a51b3ad09ce1f75fb.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p></description></item><item><title>Docs: Membership Framework</title><link>/docs/user-documentation/membership/framework/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/framework/</guid><description>
 &lt;p>The Membership Framework is distributed in the
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships" target="_blank">&lt;code>openy_memberships&lt;/code> repository&lt;/a> and must be
@@ -165,15 +165,15 @@
 &lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/membership/framework/membership-framework--sidebar-menu.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/framework/membership-framework--sidebar-menu.png" title="View original image">
 &lt;img alt="A screenshot of memberships menu settings page." srcset="
 /docs/user-documentation/membership/framework/membership-framework--sidebar-menu_hufbde93c4cc4d24684d0cdf8caa933372_288979_3416ddce79a44ab2291e4607d95ee456.png 458w,
 /docs/user-documentation/membership/framework/membership-framework--sidebar-menu_hufbde93c4cc4d24684d0cdf8caa933372_288979_55dabdcc392e8182e8c35f3f673405ca.png 726w,
 /docs/user-documentation/membership/framework/membership-framework--sidebar-menu_hufbde93c4cc4d24684d0cdf8caa933372_288979_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/framework/membership-framework--sidebar-menu_hufbde93c4cc4d24684d0cdf8caa933372_288979_3416ddce79a44ab2291e4607d95ee456.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;ul>
 &lt;li>Sidebar Area: add “Block container” with &amp;ldquo;Memberships Feature card&amp;rdquo; skin. Use “Feature Card” block type with any content allowed in this block&lt;/li>
@@ -205,15 +205,15 @@
 &lt;li>Save the landing page&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/membership/framework/membership-framework--benefits.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/framework/membership-framework--benefits.png" title="View original image">
 &lt;img alt="A screenshot of the member benefits landing page creation." srcset="
 /docs/user-documentation/membership/framework/membership-framework--benefits_huee032b7492f05bb5ab23588777355a0b_1433643_bea1bdce7a106da5a4502da654e1c80f.png 458w,
 /docs/user-documentation/membership/framework/membership-framework--benefits_huee032b7492f05bb5ab23588777355a0b_1433643_247b042166da2d0bd45a2d02f9873a38.png 726w,
 /docs/user-documentation/membership/framework/membership-framework--benefits_huee032b7492f05bb5ab23588777355a0b_1433643_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/framework/membership-framework--benefits_huee032b7492f05bb5ab23588777355a0b_1433643_bea1bdce7a106da5a4502da654e1c80f.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="discounts">Discounts&lt;/h3>
 &lt;ul>
@@ -226,15 +226,15 @@
 &lt;li>Save the landing page&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/membership/framework/membership-framework--discounts.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/framework/membership-framework--discounts.png" title="View original image">
 &lt;img alt="A screenshot of the discounts page creation." srcset="
 /docs/user-documentation/membership/framework/membership-framework--discounts_hub4378a85b0f44d41d0cf14c319d7caca_1220045_1868ec7e10c0b9e8d4557274b175d4bc.png 458w,
 /docs/user-documentation/membership/framework/membership-framework--discounts_hub4378a85b0f44d41d0cf14c319d7caca_1220045_a7ec178aee7f14c10d25b64985badce8.png 726w,
 /docs/user-documentation/membership/framework/membership-framework--discounts_hub4378a85b0f44d41d0cf14c319d7caca_1220045_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/framework/membership-framework--discounts_hub4378a85b0f44d41d0cf14c319d7caca_1220045_1868ec7e10c0b9e8d4557274b175d4bc.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="corporate-wellness">Corporate Wellness&lt;/h3>
 &lt;ul>
@@ -247,15 +247,15 @@
 &lt;li>Save the landing page&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/membership/framework/membership-framework--corporate-wellness.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/framework/membership-framework--corporate-wellness.png" title="View original image">
 &lt;img alt="A screenshot of the corporate wellness page creation." srcset="
 /docs/user-documentation/membership/framework/membership-framework--corporate-wellness_hu3919ba82353d370a3e6fd7a4d85d3c0c_1449597_3197d4de2f2337d8ad180a467ef069a6.png 458w,
 /docs/user-documentation/membership/framework/membership-framework--corporate-wellness_hu3919ba82353d370a3e6fd7a4d85d3c0c_1449597_0afb0aab72135ab77b2f1be9132644db.png 726w,
 /docs/user-documentation/membership/framework/membership-framework--corporate-wellness_hu3919ba82353d370a3e6fd7a4d85d3c0c_1449597_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/framework/membership-framework--corporate-wellness_hu3919ba82353d370a3e6fd7a4d85d3c0c_1449597_3197d4de2f2337d8ad180a467ef069a6.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="free-trial">Free Trial&lt;/h3>
 &lt;ul>
@@ -289,26 +289,26 @@
 &lt;/li>
 &lt;li>Branches in the product (use if a membership is specific to a branch. If &amp;ldquo;None&amp;rdquo; is selected, the membership will appear for all branches)&lt;/li>
 &lt;li>A typical setup is shown in the following screenshot
-&lt;a href="/docs/user-documentation/membership/framework/membership-framework--family-product.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/framework/membership-framework--family-product.png" title="View original image">
 &lt;img alt="A screenshot of the product creation display." srcset="
 /docs/user-documentation/membership/framework/membership-framework--family-product_hu2f7ecf955e1b45e7dd4b773a8d1a1f62_423411_e76b0c1d5f6c84a61e8dbdbb73e2e197.png 458w,
 /docs/user-documentation/membership/framework/membership-framework--family-product_hu2f7ecf955e1b45e7dd4b773a8d1a1f62_423411_40a5f80a75f7b4a3a66e7ecd41b2d93a.png 726w,
 /docs/user-documentation/membership/framework/membership-framework--family-product_hu2f7ecf955e1b45e7dd4b773a8d1a1f62_423411_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/framework/membership-framework--family-product_hu2f7ecf955e1b45e7dd4b773a8d1a1f62_423411_e76b0c1d5f6c84a61e8dbdbb73e2e197.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>Click on the “Save and add variations” button (or go to the “Variations” tab if editing a previously created product)&lt;/li>
 &lt;li>A typical setup for variations of a membership is shown in the following screenshot
-&lt;a href="/docs/user-documentation/membership/framework/membership-framework--product-variations.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/membership/framework/membership-framework--product-variations.png" title="View original image">
 &lt;img alt="A screenshot of a product variations configuration." srcset="
 /docs/user-documentation/membership/framework/membership-framework--product-variations_hu418198285d7b87972ab9784408e64a5f_243456_ce17be54a74feece1c696e25d7ff4bdc.png 458w,
 /docs/user-documentation/membership/framework/membership-framework--product-variations_hu418198285d7b87972ab9784408e64a5f_243456_b11872add2f900e10d4a447ca1934993.png 726w,
 /docs/user-documentation/membership/framework/membership-framework--product-variations_hu418198285d7b87972ab9784408e64a5f_243456_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/membership/framework/membership-framework--product-variations_hu418198285d7b87972ab9784408e64a5f_243456_ce17be54a74feece1c696e25d7ff4bdc.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;/ul></description></item></channel></rss>

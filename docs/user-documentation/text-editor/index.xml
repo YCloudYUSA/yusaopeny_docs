@@ -25,47 +25,47 @@ CKEditor 4
 &lt;div class="tab-body tab-pane fade show active"
 id="tabs-01-00" role="tabpanel" aria-labelled-by="tabs-01-00-tab">
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke5-toolbar.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke5-toolbar.png" title="View original image">
 &lt;img alt="The link button in the CKEditor 5 toolbar." srcset="
 /docs/user-documentation/text-editor/adding-links/adding-links--cke5-toolbar_hud7b6c91703dab653675de100740dee94_15139_b65542afeab2c23741a86f4a16c4df2e.png 458w,
 /docs/user-documentation/text-editor/adding-links/adding-links--cke5-toolbar_hud7b6c91703dab653675de100740dee94_15139_f4c83b7dcb0a23549fb22dba01679b7b.png 726w,
 /docs/user-documentation/text-editor/adding-links/adding-links--cke5-toolbar_hud7b6c91703dab653675de100740dee94_15139_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-links/adding-links--cke5-toolbar_hud7b6c91703dab653675de100740dee94_15139_b65542afeab2c23741a86f4a16c4df2e.png" />
 &lt;figcaption>The link button in the CKEditor 5 toolbar. &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
-&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke5-popup.png" title="View original image">
+&lt;/figure>
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke5-popup.png" title="View original image">
 &lt;img alt="The link popup in CKEditor 5." srcset="
 /docs/user-documentation/text-editor/adding-links/adding-links--cke5-popup_hu0283b7001299da770c3b0b280140a898_63282_f982226f5075158b6262c4cbd90adfca.png 458w,
 /docs/user-documentation/text-editor/adding-links/adding-links--cke5-popup_hu0283b7001299da770c3b0b280140a898_63282_f3a2d73ee86e8b960033d58daa784749.png 726w,
 /docs/user-documentation/text-editor/adding-links/adding-links--cke5-popup_hu0283b7001299da770c3b0b280140a898_63282_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-links/adding-links--cke5-popup_hu0283b7001299da770c3b0b280140a898_63282_f982226f5075158b6262c4cbd90adfca.png" />
 &lt;figcaption>The link popup in CKEditor 5. &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
 id="tabs-01-01" role="tabpanel" aria-labelled-by="tabs-01-01-tab">
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke4-toolbar.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke4-toolbar.png" title="View original image">
 &lt;img alt="The link button in the CKEditor 4 toolbar." srcset="
 /docs/user-documentation/text-editor/adding-links/adding-links--cke4-toolbar_hu000ae0ed797dd920c05adc927e850cf2_35659_e286a1f8a108068b7d37e029372e14e4.png 458w,
 /docs/user-documentation/text-editor/adding-links/adding-links--cke4-toolbar_hu000ae0ed797dd920c05adc927e850cf2_35659_089370e7f92b0eae174974cf589616ec.png 726w,
 /docs/user-documentation/text-editor/adding-links/adding-links--cke4-toolbar_hu000ae0ed797dd920c05adc927e850cf2_35659_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-links/adding-links--cke4-toolbar_hu000ae0ed797dd920c05adc927e850cf2_35659_e286a1f8a108068b7d37e029372e14e4.png" />
 &lt;figcaption>The link button in the CKEditor 4 toolbar. &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
-&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke4-popup.png" title="View original image">
+&lt;/figure>
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke4-popup.png" title="View original image">
 &lt;img alt="The link popup in CKEditor 4." srcset="
 /docs/user-documentation/text-editor/adding-links/adding-links--cke4-popup_hu2f421db2f6c1e02a7b28ab8fbad643b2_16242_8d4113ce8317a0918eaadcc4d771c5dd.png 458w,
 /docs/user-documentation/text-editor/adding-links/adding-links--cke4-popup_hu2f421db2f6c1e02a7b28ab8fbad643b2_16242_6c6a8e1fd3245f1523807621cd5c2924.png 726w,
 /docs/user-documentation/text-editor/adding-links/adding-links--cke4-popup_hu2f421db2f6c1e02a7b28ab8fbad643b2_16242_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-links/adding-links--cke4-popup_hu2f421db2f6c1e02a7b28ab8fbad643b2_16242_8d4113ce8317a0918eaadcc4d771c5dd.png" />
 &lt;figcaption>The link popup in CKEditor 4. &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;/div>
 &lt;/div>
@@ -91,29 +91,29 @@ CKEditor 4
 &lt;div class="tab-body tab-pane fade show active"
 id="tabs-02-00" role="tabpanel" aria-labelled-by="tabs-02-00-tab">
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke5-advanced.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke5-advanced.png" title="View original image">
 &lt;img alt="The advanced link options in CKEditor 5." srcset="
 /docs/user-documentation/text-editor/adding-links/adding-links--cke5-advanced_hu68ce75e0c5b8842fdd3f82b491175484_17510_4c31e9919e3f4dc4979dccf9db2a827b.png 458w,
 /docs/user-documentation/text-editor/adding-links/adding-links--cke5-advanced_hu68ce75e0c5b8842fdd3f82b491175484_17510_4224903ebdc30fd4e6a6ebccdb236d6b.png 726w,
 /docs/user-documentation/text-editor/adding-links/adding-links--cke5-advanced_hu68ce75e0c5b8842fdd3f82b491175484_17510_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-links/adding-links--cke5-advanced_hu68ce75e0c5b8842fdd3f82b491175484_17510_4c31e9919e3f4dc4979dccf9db2a827b.png" />
 &lt;figcaption>The advanced link options in CKEditor 5. &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
 id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke4-advanced.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke4-advanced.png" title="View original image">
 &lt;img alt="The advanced link options in CKEditor 4." srcset="
 /docs/user-documentation/text-editor/adding-links/adding-links--cke4-advanced_hu0415d5a791f47e8f7a058269c9c3a192_54218_d0ad5f63bce84a625ee783c82634861f.png 458w,
 /docs/user-documentation/text-editor/adding-links/adding-links--cke4-advanced_hu0415d5a791f47e8f7a058269c9c3a192_54218_5fa32cc4059a60684294df34248a821d.png 726w,
 /docs/user-documentation/text-editor/adding-links/adding-links--cke4-advanced_hu0415d5a791f47e8f7a058269c9c3a192_54218_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-links/adding-links--cke4-advanced_hu0415d5a791f47e8f7a058269c9c3a192_54218_d0ad5f63bce84a625ee783c82634861f.png" />
 &lt;figcaption>The advanced link options in CKEditor 4. &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;/div>
 &lt;/div>
@@ -144,28 +144,28 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;a href="https://www.drupal.org/project/drupal/issues/3317769" target="_blank">soon provide link autocomplete suggestions&lt;/a> in CKEditor similar to what this module does. Until that issue is complete, developers may want to
 &lt;a href="https://www.drupal.org/project/linkit" target="_blank">install and configure Linkit&lt;/a> to improve the linking experience in the WYSIWYG editor.&lt;/p></description></item><item><title>Docs: Adding Media with CKEditor 5</title><link>/docs/user-documentation/text-editor/adding-media/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/adding-media/</guid><description>
 &lt;p>Once your site is updated to use CKEditor 5 you will see a new &lt;strong>Insert Media&lt;/strong> button that unifies the processes for embedding Images, Documents, and Videos.
-&lt;a href="/docs/user-documentation/text-editor/adding-media/adding-media--button.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/adding-media/adding-media--button.png" title="View original image">
 &lt;img alt="The new Insert Media button in CKEditor 5." srcset="
 /docs/user-documentation/text-editor/adding-media/adding-media--button_huc3c72525eae69a8eb605d921fa93ef4a_3892_5e673b77b18853eea32d19901dcc492d.png 458w,
 /docs/user-documentation/text-editor/adding-media/adding-media--button_huc3c72525eae69a8eb605d921fa93ef4a_3892_1439235627d8d4d2c0fc3130b289b6d9.png 726w,
 /docs/user-documentation/text-editor/adding-media/adding-media--button_huc3c72525eae69a8eb605d921fa93ef4a_3892_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-media/adding-media--button_huc3c72525eae69a8eb605d921fa93ef4a_3892_5e673b77b18853eea32d19901dcc492d.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="add-or-select-media">Add or select media&lt;/h2>
 &lt;ol>
 &lt;li>To get started, click &lt;strong>Insert Media&lt;/strong> in the CKEditor toolbar (or try the &lt;abbr title="Show more items">&lt;kbd> ⋮ &lt;/kbd>&lt;/abbr> button if it&amp;rsquo;s hidden). You will be presented with the &lt;strong>Add or select media&lt;/strong> dialog.
-&lt;a href="/docs/user-documentation/text-editor/adding-media/adding-media--dialog.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/adding-media/adding-media--dialog.png" title="View original image">
 &lt;img alt="The &amp;amp;ldquo;Add or select media&amp;amp;rdquo; dialog" srcset="
 /docs/user-documentation/text-editor/adding-media/adding-media--dialog_hu849fe87b8132e83dba17dd55f6c487b6_38417_cebbcd8c6055cd7116370264ed187a58.png 458w,
 /docs/user-documentation/text-editor/adding-media/adding-media--dialog_hu849fe87b8132e83dba17dd55f6c487b6_38417_3f65c16bcb74ef1a585c460b3ed498b5.png 726w,
 /docs/user-documentation/text-editor/adding-media/adding-media--dialog_hu849fe87b8132e83dba17dd55f6c487b6_38417_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-media/adding-media--dialog_hu849fe87b8132e83dba17dd55f6c487b6_38417_cebbcd8c6055cd7116370264ed187a58.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>Choose the media type (Image, Document, etc.) that you would like to embed from the list on the left.&lt;/li>
 &lt;li>Add or upload your media:
@@ -184,15 +184,15 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;h2 id="customizing-your-media">Customizing your media&lt;/h2>
 &lt;p>Once your media has been inserted into the field, you can hover over the media to choose from a variety of options.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/adding-media/adding-media--options.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/adding-media/adding-media--options.png" title="View original image">
 &lt;img alt="The embedded media options with labels for &amp;amp;ldquo;Toggle caption on&amp;amp;rdquo;, &amp;amp;ldquo;Link media&amp;amp;rdquo;, &amp;amp;ldquo;Add alt text&amp;amp;rdquo;, &amp;amp;ldquo;Choose view mode&amp;amp;rdquo;, and &amp;amp;ldquo;Set alignment&amp;amp;rdquo;" srcset="
 /docs/user-documentation/text-editor/adding-media/adding-media--options_hub3d59a416910e97e490be5ca46ad7206_75467_25a8da0546935884f2cc7e3a01a16649.png 458w,
 /docs/user-documentation/text-editor/adding-media/adding-media--options_hub3d59a416910e97e490be5ca46ad7206_75467_b70e99d17894d4ad99945950d1175e9b.png 726w,
 /docs/user-documentation/text-editor/adding-media/adding-media--options_hub3d59a416910e97e490be5ca46ad7206_75467_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-media/adding-media--options_hub3d59a416910e97e490be5ca46ad7206_75467_25a8da0546935884f2cc7e3a01a16649.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="toggle-caption-on">Toggle caption on&lt;/h3>
 &lt;p>Displays a &lt;strong>Caption&lt;/strong> area below your image. Once toggled, type your caption below the image.&lt;/p>
@@ -226,15 +226,15 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;a href="https://ckeditor.com/docs/ckeditor5/latest/features/keyboard-support.html" target="_blank">keyboard shortcuts&lt;/a>.&lt;/p>
 &lt;h2 id="ckeditor-5-toolbar">CKEditor 5 Toolbar&lt;/h2>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/basic-text-formatting/basics--cke5-toolbar.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/basic-text-formatting/basics--cke5-toolbar.png" title="View original image">
 &lt;img alt="The CKEditor 5 toolbar." srcset="
 /docs/user-documentation/text-editor/basic-text-formatting/basics--cke5-toolbar_hu65fc3e8c12719d13cbd77386662385a6_30033_e36125385f84fdcfdf7722b4a143b34d.png 458w,
 /docs/user-documentation/text-editor/basic-text-formatting/basics--cke5-toolbar_hu65fc3e8c12719d13cbd77386662385a6_30033_d510269f5176a42bba665a3bbe9d2cfb.png 726w,
 /docs/user-documentation/text-editor/basic-text-formatting/basics--cke5-toolbar_hu65fc3e8c12719d13cbd77386662385a6_30033_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/basic-text-formatting/basics--cke5-toolbar_hu65fc3e8c12719d13cbd77386662385a6_30033_e36125385f84fdcfdf7722b4a143b34d.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>
 &lt;a href="https://ckeditor.com/ckeditor-5/demo/feature-rich/" target="_blank">Demo Basic Text Formatting on CKEditor 5.&lt;/a> or read
@@ -281,15 +281,15 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;/ol>
 &lt;h2 id="ckeditor-4-toolbar">CKEditor 4 toolbar&lt;/h2>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/basic-text-formatting/basics--cke4-toolbar.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/basic-text-formatting/basics--cke4-toolbar.png" title="View original image">
 &lt;img alt="The CKEditor 4 toolbar." srcset="
 /docs/user-documentation/text-editor/basic-text-formatting/basics--cke4-toolbar_hufd2c19cdd355c3913065d216f9e7531c_32342_1d7358392388aa3bfb4294e40971a480.png 458w,
 /docs/user-documentation/text-editor/basic-text-formatting/basics--cke4-toolbar_hufd2c19cdd355c3913065d216f9e7531c_32342_15d9e0e70290d319cb3ec963c8e2723c.png 726w,
 /docs/user-documentation/text-editor/basic-text-formatting/basics--cke4-toolbar_hufd2c19cdd355c3913065d216f9e7531c_32342_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/basic-text-formatting/basics--cke4-toolbar_hufd2c19cdd355c3913065d216f9e7531c_32342_1d7358392388aa3bfb4294e40971a480.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>
 &lt;a href="https://ckeditor.com/ckeditor-4/demo/#article" target="_blank">Demo Basic Text Formatting on CKEditor 4 &amp;gt;&lt;/a>&lt;/p>
@@ -319,15 +319,15 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;p>
 &lt;a href="../adding-links">As an alternate to using the link tool&lt;/a>, you can easily create buttons with YMCA Website Services using the button editor. When you click on the button icon, it will open a pop-up.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/building-buttons/buttons--toolbar.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/building-buttons/buttons--toolbar.png" title="View original image">
 &lt;img alt="WYSIWYG Editor options with the button tab highlighted in green." srcset="
 /docs/user-documentation/text-editor/building-buttons/buttons--toolbar_hub3151a40bcb4772b48026f6f433e67a0_25715_2d92e9a178f5ce6d3fd3639894a4b8e1.png 458w,
 /docs/user-documentation/text-editor/building-buttons/buttons--toolbar_hub3151a40bcb4772b48026f6f433e67a0_25715_b5db5a14793125b65cf50a4f6d474f0c.png 726w,
 /docs/user-documentation/text-editor/building-buttons/buttons--toolbar_hub3151a40bcb4772b48026f6f433e67a0_25715_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/building-buttons/buttons--toolbar_hub3151a40bcb4772b48026f6f433e67a0_25715_2d92e9a178f5ce6d3fd3639894a4b8e1.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;blockquote>
 &lt;p>You can also edit a button you&amp;rsquo;ve created previously by clicking on the link in the text editor.&lt;/p>
@@ -340,15 +340,15 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;/p>
 &lt;p>There are three tabs for creating your button: an info tab, a target tab, and an icon tab.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/building-buttons/buttons--tabs.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/building-buttons/buttons--tabs.png" title="View original image">
 &lt;img alt="blog-description__text-editor-button-tabs|690x137,50%" srcset="
 /docs/user-documentation/text-editor/building-buttons/buttons--tabs_huea5daba795073207cbe6ae0a666df1f3_8881_209567670a459f3f2e53cc5c1a182549.png 458w,
 /docs/user-documentation/text-editor/building-buttons/buttons--tabs_huea5daba795073207cbe6ae0a666df1f3_8881_16a91c0e4146363c37e5148e3379f242.png 726w,
 /docs/user-documentation/text-editor/building-buttons/buttons--tabs_huea5daba795073207cbe6ae0a666df1f3_8881_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/building-buttons/buttons--tabs_huea5daba795073207cbe6ae0a666df1f3_8881_209567670a459f3f2e53cc5c1a182549.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="info-tab">Info Tab&lt;/h2>
@@ -366,24 +366,24 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;/blockquote>
 &lt;p>The top right “Size” dropdown four options for your button size. If you chose “Link” style option, the Size option will not affect your link.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/building-buttons/buttons--style.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/building-buttons/buttons--style.png" title="View original image">
 &lt;img alt="blog-destiption__text-editor-button_style|166x500,50%" srcset="
 /docs/user-documentation/text-editor/building-buttons/buttons--style_hu4882779c409839c86938ea8be56e5447_83269_f9e07d2a63e769b49a8ad5e86d32efd4.png 458w,
 /docs/user-documentation/text-editor/building-buttons/buttons--style_hu4882779c409839c86938ea8be56e5447_83269_771a9fa65f812d497ae767074ed6e7a8.png 726w,
 /docs/user-documentation/text-editor/building-buttons/buttons--style_hu4882779c409839c86938ea8be56e5447_83269_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/building-buttons/buttons--style_hu4882779c409839c86938ea8be56e5447_83269_f9e07d2a63e769b49a8ad5e86d32efd4.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
-&lt;a href="/docs/user-documentation/text-editor/building-buttons/buttons--size.png" title="View original image">
+&lt;/figure>
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/building-buttons/buttons--size.png" title="View original image">
 &lt;img alt="blog-destiption__text-editor-button_size|282x200,50%" srcset="
 /docs/user-documentation/text-editor/building-buttons/buttons--size_hu961d180292efe5a65096e2b3af1f7864_52529_794e7feb802d734de162c0b4ceccfddf.png 458w,
 /docs/user-documentation/text-editor/building-buttons/buttons--size_hu961d180292efe5a65096e2b3af1f7864_52529_2a743057eed896f30c2cb8d9927695fd.png 726w,
 /docs/user-documentation/text-editor/building-buttons/buttons--size_hu961d180292efe5a65096e2b3af1f7864_52529_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/building-buttons/buttons--size_hu961d180292efe5a65096e2b3af1f7864_52529_794e7feb802d734de162c0b4ceccfddf.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Add the text for your link/button in the bottom left. Enter your link in the URL field on the bottom right.&lt;/p>
 &lt;ul>
@@ -418,15 +418,15 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;hr>
 &lt;h2 id="icons-tab">Icons Tab&lt;/h2>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/building-buttons/buttons--icons.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/building-buttons/buttons--icons.png" title="View original image">
 &lt;img alt="blog-destiption__text-editor-button_icons|388x500,50%" srcset="
 /docs/user-documentation/text-editor/building-buttons/buttons--icons_hu720c6e08ec75f1abb89171583b8b094b_25436_2aea30a82daa4dbd5fe68c194082b9ba.png 458w,
 /docs/user-documentation/text-editor/building-buttons/buttons--icons_hu720c6e08ec75f1abb89171583b8b094b_25436_c64222b4b53154a896036b19cbd24461.png 726w,
 /docs/user-documentation/text-editor/building-buttons/buttons--icons_hu720c6e08ec75f1abb89171583b8b094b_25436_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/building-buttons/buttons--icons_hu720c6e08ec75f1abb89171583b8b094b_25436_2aea30a82daa4dbd5fe68c194082b9ba.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>You can add icons to your buttons or links in the icons tab. On the right, you will have fields that integrate with the Font Awesome library. To have an icon show up on the left, use the Left Icon text field. For the right, use the Right Icon text field.&lt;/p>
 &lt;p>&lt;em>Example:&lt;/em> For a Right Chevron, type &lt;code>fa-chevron-right&lt;/code>.&lt;/p>
@@ -447,15 +447,15 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;h3 id="adding-a-new-table">Adding a New Table&lt;/h3>
 &lt;p>To add a table, click on the table icon. A popup will appear with your initial setup options:&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/building-tables/tables--cke4-toolbar.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/building-tables/tables--cke4-toolbar.png" title="View original image">
 &lt;img alt="The table icon in the CKEditor 4 toolbar." srcset="
 /docs/user-documentation/text-editor/building-tables/tables--cke4-toolbar_hu71ad5675bd1571d43574e9964cd15de6_22226_a9cb5ac2d1577d00d93e8b1fb8673adf.png 458w,
 /docs/user-documentation/text-editor/building-tables/tables--cke4-toolbar_hu71ad5675bd1571d43574e9964cd15de6_22226_f266d9eff3db1c6e7c7bab6161018017.png 726w,
 /docs/user-documentation/text-editor/building-tables/tables--cke4-toolbar_hu71ad5675bd1571d43574e9964cd15de6_22226_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/building-tables/tables--cke4-toolbar_hu71ad5675bd1571d43574e9964cd15de6_22226_a9cb5ac2d1577d00d93e8b1fb8673adf.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;br>
 &lt;figure class="image-caption">
 &lt;img alt="The table properties dialog." src="/docs/user-documentation/text-editor/building-tables/tables--cke4-properties.gif" />
@@ -492,15 +492,15 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;h3 id="editing-the-table">Editing the Table&lt;/h3>
 &lt;p>To edit a table after you’ve built one, right click on the table. To access the basic table options, click on “Table Properties.”&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/building-tables/tables--cke4-menu.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/building-tables/tables--cke4-menu.png" title="View original image">
 &lt;img alt="The table properties option in the CKEditor 4 menu." srcset="
 /docs/user-documentation/text-editor/building-tables/tables--cke4-menu_hub4a8eee368410bba04a68ea4208686e3_24754_c51f808fe32cf809c4e04e1e93ab6292.png 458w,
 /docs/user-documentation/text-editor/building-tables/tables--cke4-menu_hub4a8eee368410bba04a68ea4208686e3_24754_5540a8519452f5ce1747005b77b3ff59.png 726w,
 /docs/user-documentation/text-editor/building-tables/tables--cke4-menu_hub4a8eee368410bba04a68ea4208686e3_24754_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/building-tables/tables--cke4-menu_hub4a8eee368410bba04a68ea4208686e3_24754_c51f808fe32cf809c4e04e1e93ab6292.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>You can also double-click inside a table cell.&lt;/p>
 &lt;h3 id="adding-rowscolumns">Adding Rows/Columns&lt;/h3>
@@ -512,15 +512,15 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;p>The “Cell” option from the right-click menu gives you same options as Row and Column, including inserting cells and deleting cells. You can also merge cells or split cells as you would in an excel table by selecting those options from the right-click menu.&lt;/p>
 &lt;p>However, there is another option called “Cell Properties” that allows you to style your cells as well. Just right-click &amp;gt; Cell &amp;gt; Cell Properties.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/building-tables/tables--cke4-cell.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/building-tables/tables--cke4-cell.png" title="View original image">
 &lt;img alt="A sample of the available cell options when you right click on a cell" srcset="
 /docs/user-documentation/text-editor/building-tables/tables--cke4-cell_hu214c5c99a54469ec12bb75ca5b896faf_42851_05081dd70f75cc07a4666b7b88ea5273.png 458w,
 /docs/user-documentation/text-editor/building-tables/tables--cke4-cell_hu214c5c99a54469ec12bb75ca5b896faf_42851_cfb9ae77963f57334e7ec0df7ef6a893.png 726w,
 /docs/user-documentation/text-editor/building-tables/tables--cke4-cell_hu214c5c99a54469ec12bb75ca5b896faf_42851_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/building-tables/tables--cke4-cell_hu214c5c99a54469ec12bb75ca5b896faf_42851_05081dd70f75cc07a4666b7b88ea5273.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>This opens a dialogue box similar to the table properties. You can set the width/height for your cell (pixels only for height; pixels or percentages for your width) in the fields on the left.&lt;/p>
 &lt;p>Farther down on the left, you can choose from a dropdown whether or not to wrap the text in a cell.&lt;/p>
@@ -535,15 +535,15 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;p>To see an example of what a table might look like on your site, open the &amp;ldquo;Source&amp;rdquo; tab on your text editor and insert the HTML. You can then edit the content inside using the WYSIWYG text editor.&lt;/p>
 &lt;h4 id="-pricing-table">// Pricing Table&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/building-tables/tables--cke4-example-pricing.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/building-tables/tables--cke4-example-pricing.png" title="View original image">
 &lt;img alt="An example table with Registration and Pricing information." srcset="
 /docs/user-documentation/text-editor/building-tables/tables--cke4-example-pricing_hu48e49a75cdf685730025926c2de945a5_36947_7634db02e5b7b2c9da626caafbc0f657.png 458w,
 /docs/user-documentation/text-editor/building-tables/tables--cke4-example-pricing_hu48e49a75cdf685730025926c2de945a5_36947_67e2ce1e9afdb41863b1f02482c024d4.png 726w,
 /docs/user-documentation/text-editor/building-tables/tables--cke4-example-pricing_hu48e49a75cdf685730025926c2de945a5_36947_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/building-tables/tables--cke4-example-pricing_hu48e49a75cdf685730025926c2de945a5_36947_7634db02e5b7b2c9da626caafbc0f657.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">h2&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>Registration and Pricing&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">h2&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">table&lt;/span> &lt;span style="color:#c4a000">align&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;left&amp;#34;&lt;/span> &lt;span style="color:#c4a000">border&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;1&amp;#34;&lt;/span> &lt;span style="color:#c4a000">cellpadding&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;5&amp;#34;&lt;/span> &lt;span style="color:#c4a000">cellspacing&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;1&amp;#34;&lt;/span> &lt;span style="color:#c4a000">style&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;width: 500px;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
@@ -579,15 +579,15 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">table&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="-camp-locations">// Camp Locations&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/text-editor/building-tables/tables--cke4-example-camps.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/building-tables/tables--cke4-example-camps.png" title="View original image">
 &lt;img alt="An example table with Camp Location data." srcset="
 /docs/user-documentation/text-editor/building-tables/tables--cke4-example-camps_hu43c36c030344367ee994f0da4e72fdb9_111365_37492ae4f005eacb79bcbddb3e994b74.png 458w,
 /docs/user-documentation/text-editor/building-tables/tables--cke4-example-camps_hu43c36c030344367ee994f0da4e72fdb9_111365_8df1a7201bd251f42ec8afaa7bd50489.png 726w,
 /docs/user-documentation/text-editor/building-tables/tables--cke4-example-camps_hu43c36c030344367ee994f0da4e72fdb9_111365_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/building-tables/tables--cke4-example-camps_hu43c36c030344367ee994f0da4e72fdb9_111365_37492ae4f005eacb79bcbddb3e994b74.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">style&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">//&lt;/span> &lt;span style="color:#204a87;font-weight:bold">To&lt;/span> &lt;span style="color:#204a87;font-weight:bold">achieve&lt;/span> &lt;span style="color:#204a87;font-weight:bold">the&lt;/span> &lt;span style="color:#204a87;font-weight:bold">full&lt;/span> &lt;span style="color:#204a87;font-weight:bold">effect&lt;/span> &lt;span style="color:#204a87;font-weight:bold">of&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span> &lt;span style="color:#204a87;font-weight:bold">table&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">,&lt;/span> &lt;span style="color:#204a87;font-weight:bold">insert&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span> &lt;span style="color:#204a87;font-weight:bold">style&lt;/span> &lt;span style="color:#204a87;font-weight:bold">tag&lt;/span> &lt;span style="color:#204a87;font-weight:bold">above&lt;/span> &lt;span style="color:#204a87;font-weight:bold">the&lt;/span> &lt;span style="color:#204a87;font-weight:bold">table&lt;/span> &lt;span style="color:#204a87;font-weight:bold">or&lt;/span> &lt;span style="color:#204a87;font-weight:bold">insert&lt;/span> &lt;span style="color:#204a87;font-weight:bold">it&lt;/span> &lt;span style="color:#204a87;font-weight:bold">into&lt;/span> &lt;span style="color:#204a87;font-weight:bold">the&lt;/span> &lt;span style="color:#204a87;font-weight:bold">CSS&lt;/span> &lt;span style="color:#204a87;font-weight:bold">Editor&lt;/span> &lt;span style="color:#204a87;font-weight:bold">module&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>

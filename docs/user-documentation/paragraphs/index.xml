@@ -2,39 +2,39 @@
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="rose---without-block">Rose - Without Block&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/1c/paragraphs--1c--rose-without.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/1c/paragraphs--1c--rose-without.png" title="View original image">
 &lt;img alt="rose&amp;amp;ndash;landing-page_1-column-no-block" srcset="
 /docs/user-documentation/paragraphs/1c/paragraphs--1c--rose-without_hu673841aa836f370642286620b1ac60b1_23864_d8d2c7112da36fd1354d8b80693ededc.png 458w,
 /docs/user-documentation/paragraphs/1c/paragraphs--1c--rose-without_hu673841aa836f370642286620b1ac60b1_23864_50bc49a0faa6c40eb2b1ecf3a39a4f70.png 726w,
 /docs/user-documentation/paragraphs/1c/paragraphs--1c--rose-without_hu673841aa836f370642286620b1ac60b1_23864_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/1c/paragraphs--1c--rose-without_hu673841aa836f370642286620b1ac60b1_23864_d8d2c7112da36fd1354d8b80693ededc.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose---with-block">Rose - With Block&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/1c/paragraphs--1c--rose-with.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/1c/paragraphs--1c--rose-with.png" title="View original image">
 &lt;img alt="rose&amp;amp;ndash;landing-page__1-column-with-block" srcset="
 /docs/user-documentation/paragraphs/1c/paragraphs--1c--rose-with_hu55d6792d00367157bf78407ba1421057_38365_1e5a30ba24286162f93c43b05ed0275a.png 458w,
 /docs/user-documentation/paragraphs/1c/paragraphs--1c--rose-with_hu55d6792d00367157bf78407ba1421057_38365_cbe380a4e06d488e95df78108155bfcb.png 726w,
 /docs/user-documentation/paragraphs/1c/paragraphs--1c--rose-with_hu55d6792d00367157bf78407ba1421057_38365_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/1c/paragraphs--1c--rose-with_hu55d6792d00367157bf78407ba1421057_38365_1e5a30ba24286162f93c43b05ed0275a.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="carnation---with-custom-block">Carnation - With Custom Block&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/1c/paragraphs--1c--carnation.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/1c/paragraphs--1c--carnation.png" title="View original image">
 &lt;img alt="carnation&amp;amp;ndash;landing-page_1-column-with-block|690x186" srcset="
 /docs/user-documentation/paragraphs/1c/paragraphs--1c--carnation_hua15713a93d43b7adb033c6a9298a7be7_39227_1719ffa25c97ad7c70d7a1c5cbd40066.png 458w,
 /docs/user-documentation/paragraphs/1c/paragraphs--1c--carnation_hua15713a93d43b7adb033c6a9298a7be7_39227_225226de6b52f7b1eac57f7dd2a8167e.png 726w,
 /docs/user-documentation/paragraphs/1c/paragraphs--1c--carnation_hua15713a93d43b7adb033c6a9298a7be7_39227_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/1c/paragraphs--1c--carnation_hua15713a93d43b7adb033c6a9298a7be7_39227_1719ffa25c97ad7c70d7a1c5cbd40066.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-1-column-should-be-used">Areas 1 Column Should Be Used&lt;/h2>
@@ -90,39 +90,39 @@ color: inherit;
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/2c/paragraphs--2c--carnation.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/2c/paragraphs--2c--carnation.png" title="View original image">
 &lt;img alt="carnation&amp;amp;ndash;landing-page__2-columns" srcset="
 /docs/user-documentation/paragraphs/2c/paragraphs--2c--carnation_hu2af56d1fe897a31b5e733e4863a90f77_236906_5d00b8b13c992a055fcb9557fb49a99e.png 458w,
 /docs/user-documentation/paragraphs/2c/paragraphs--2c--carnation_hu2af56d1fe897a31b5e733e4863a90f77_236906_c9747a51ec38c30b80d4c4b937d1fdee.png 726w,
 /docs/user-documentation/paragraphs/2c/paragraphs--2c--carnation_hu2af56d1fe897a31b5e733e4863a90f77_236906_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/2c/paragraphs--2c--carnation_hu2af56d1fe897a31b5e733e4863a90f77_236906_5d00b8b13c992a055fcb9557fb49a99e.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/2c/paragraphs--2c--lily.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/2c/paragraphs--2c--lily.png" title="View original image">
 &lt;img alt="lily&amp;amp;ndash;landing-page__2-columns" srcset="
 /docs/user-documentation/paragraphs/2c/paragraphs--2c--lily_hu1eed53a8a7d416ee2edbd37cb33804b5_161432_04747c1152156ea7ab5099d52a610e63.png 458w,
 /docs/user-documentation/paragraphs/2c/paragraphs--2c--lily_hu1eed53a8a7d416ee2edbd37cb33804b5_161432_074ef2404b438ad8bb6e7eaf8bf8e003.png 726w,
 /docs/user-documentation/paragraphs/2c/paragraphs--2c--lily_hu1eed53a8a7d416ee2edbd37cb33804b5_161432_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/2c/paragraphs--2c--lily_hu1eed53a8a7d416ee2edbd37cb33804b5_161432_04747c1152156ea7ab5099d52a610e63.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/2c/paragraphs--2c--rose.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/2c/paragraphs--2c--rose.png" title="View original image">
 &lt;img alt="rose&amp;amp;ndash;landing-page__2-columns" srcset="
 /docs/user-documentation/paragraphs/2c/paragraphs--2c--rose_hu2af56d1fe897a31b5e733e4863a90f77_280383_1a35d60496687b2cde1d35ff6580f693.png 458w,
 /docs/user-documentation/paragraphs/2c/paragraphs--2c--rose_hu2af56d1fe897a31b5e733e4863a90f77_280383_35a539ac9328dc8d1f08f19e42a61166.png 726w,
 /docs/user-documentation/paragraphs/2c/paragraphs--2c--rose_hu2af56d1fe897a31b5e733e4863a90f77_280383_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/2c/paragraphs--2c--rose_hu2af56d1fe897a31b5e733e4863a90f77_280383_1a35d60496687b2cde1d35ff6580f693.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-can-be-used">Areas it Can Be Used&lt;/h2>
@@ -147,15 +147,15 @@ color: inherit;
 &lt;hr>
 &lt;p>There is an optional checkbox to display a horizontal rule above the two columns.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/2c/paragraphs--2c--line-above.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/2c/paragraphs--2c--line-above.png" title="View original image">
 &lt;img alt="landing-page__2-columns-line-above" srcset="
 /docs/user-documentation/paragraphs/2c/paragraphs--2c--line-above_huece645cbcc29a816389d2bf4bc60f91a_12164_f5b6de2fcc7288cf614a88c81e641224.png 458w,
 /docs/user-documentation/paragraphs/2c/paragraphs--2c--line-above_huece645cbcc29a816389d2bf4bc60f91a_12164_0d647e7e790cbe18777c5aa153ddd1a2.png 726w,
 /docs/user-documentation/paragraphs/2c/paragraphs--2c--line-above_huece645cbcc29a816389d2bf4bc60f91a_12164_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/2c/paragraphs--2c--line-above_huece645cbcc29a816389d2bf4bc60f91a_12164_f5b6de2fcc7288cf614a88c81e641224.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;p>If you want to add multiple rows of content with 2 columns, add a new 2 columns paragraph for each set of two you want (e.g., if you have five blocks of content, add three 2 columns paragraphs).&lt;/p>
@@ -188,39 +188,39 @@ color: inherit;
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/3c/paragraphs--3c--carnation.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/3c/paragraphs--3c--carnation.png" title="View original image">
 &lt;img alt="carnation&amp;amp;ndash;landing-page__3-columns" srcset="
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--carnation_hu2ca2bf9569e019664fe0a738ac0334ed_279713_82fc550bbe31161b60bbf67cfce5f48e.png 458w,
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--carnation_hu2ca2bf9569e019664fe0a738ac0334ed_279713_a7867f7061cd3be13f4d33f5525660cc.png 726w,
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--carnation_hu2ca2bf9569e019664fe0a738ac0334ed_279713_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/3c/paragraphs--3c--carnation_hu2ca2bf9569e019664fe0a738ac0334ed_279713_82fc550bbe31161b60bbf67cfce5f48e.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/3c/paragraphs--3c--lily.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/3c/paragraphs--3c--lily.png" title="View original image">
 &lt;img alt="lily&amp;amp;ndash;landing-page__3-columns" srcset="
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--lily_hu2ca2bf9569e019664fe0a738ac0334ed_321522_90caaca991acaf26c5a5e0361cd83b50.png 458w,
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--lily_hu2ca2bf9569e019664fe0a738ac0334ed_321522_a48ae64e14c10d1d83cb71be9b65c9a1.png 726w,
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--lily_hu2ca2bf9569e019664fe0a738ac0334ed_321522_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/3c/paragraphs--3c--lily_hu2ca2bf9569e019664fe0a738ac0334ed_321522_90caaca991acaf26c5a5e0361cd83b50.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/3c/paragraphs--3c--rose.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/3c/paragraphs--3c--rose.png" title="View original image">
 &lt;img alt="rose&amp;amp;ndash;landing-page__3-columns" srcset="
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--rose_hu2ca2bf9569e019664fe0a738ac0334ed_370739_73ade175014ec9281981865158d3ec12.png 458w,
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--rose_hu2ca2bf9569e019664fe0a738ac0334ed_370739_7427bef6fd396d90767578129a47c1d6.png 726w,
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--rose_hu2ca2bf9569e019664fe0a738ac0334ed_370739_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/3c/paragraphs--3c--rose_hu2ca2bf9569e019664fe0a738ac0334ed_370739_73ade175014ec9281981865158d3ec12.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-can-be-used">Areas it Can Be Used&lt;/h2>
@@ -231,15 +231,15 @@ color: inherit;
 &lt;hr>
 &lt;h2 id="how-it-works">How it Works&lt;/h2>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/3c/paragraphs--3c--dropdown.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/3c/paragraphs--3c--dropdown.png" title="View original image">
 &lt;img alt="landing-page__3-columns-dropdown" srcset="
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--dropdown_huf611d623869a34365752098638dfd2fc_94361_cd68be4f15c2de9bdd8c4ad429656f5c.png 458w,
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--dropdown_huf611d623869a34365752098638dfd2fc_94361_9e00dde2ffa73a7604d5e2791ccadac0.png 726w,
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--dropdown_huf611d623869a34365752098638dfd2fc_94361_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/3c/paragraphs--3c--dropdown_huf611d623869a34365752098638dfd2fc_94361_cd68be4f15c2de9bdd8c4ad429656f5c.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;ul>
 &lt;li>Select 3 Columns from the Paragraphs dropdown.&lt;/li>
@@ -249,15 +249,15 @@ color: inherit;
 &lt;p>
 &lt;a href="../../blocks">Learn more about custom blocks ⇒&lt;/a>&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/3c/paragraphs--3c--options.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/3c/paragraphs--3c--options.png" title="View original image">
 &lt;img alt="landing-page__3-columns-options" srcset="
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--options_hu04d7b1ec29ad2cef14679edf5ec011e0_71871_e826147d2bb67c875b2dbcdd896ad3d4.png 458w,
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--options_hu04d7b1ec29ad2cef14679edf5ec011e0_71871_405129fb54b7a9eb38b698a200d05fbe.png 726w,
 /docs/user-documentation/paragraphs/3c/paragraphs--3c--options_hu04d7b1ec29ad2cef14679edf5ec011e0_71871_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/3c/paragraphs--3c--options_hu04d7b1ec29ad2cef14679edf5ec011e0_71871_e826147d2bb67c875b2dbcdd896ad3d4.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>If you want to add multiple rows of content with 3 columns, add a new 3 columns paragraph for each set of two you want (e.g., if you have seven blocks of content, add three 3 columns paragraphs).&lt;/p>
 &lt;hr>
@@ -289,27 +289,27 @@ color: inherit;
 &lt;/blockquote>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/4c/paragraphs--4c--lily.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/4c/paragraphs--4c--lily.png" title="View original image">
 &lt;img alt="lily&amp;amp;ndash;landing-page__4-columns" srcset="
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--lily_hu48a03982dee64f46740f3db8c754000b_237900_9d65442a17a0e890b17beae3858dc4ce.png 458w,
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--lily_hu48a03982dee64f46740f3db8c754000b_237900_bc4b5b0118a3ed80a3258498028285e1.png 726w,
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--lily_hu48a03982dee64f46740f3db8c754000b_237900_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/4c/paragraphs--4c--lily_hu48a03982dee64f46740f3db8c754000b_237900_9d65442a17a0e890b17beae3858dc4ce.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/4c/paragraphs--4c--rose.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/4c/paragraphs--4c--rose.png" title="View original image">
 &lt;img alt="rose&amp;amp;ndash;landing-page__4-columns" srcset="
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--rose_hu31819565c6e7c30c6a2f93e576c8d1eb_72158_40fc39c934b922ba88438ad7edc099cc.png 458w,
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--rose_hu31819565c6e7c30c6a2f93e576c8d1eb_72158_6b955613abce8f630f0e760349eae34f.png 726w,
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--rose_hu31819565c6e7c30c6a2f93e576c8d1eb_72158_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/4c/paragraphs--4c--rose_hu31819565c6e7c30c6a2f93e576c8d1eb_72158_40fc39c934b922ba88438ad7edc099cc.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-can-be-used">Areas it Can Be Used&lt;/h2>
@@ -325,15 +325,15 @@ color: inherit;
 &lt;li>&lt;strong>Line Above&lt;/strong>: Adds a horizontal rule above each column.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/4c/paragraphs--4c--line-above.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/4c/paragraphs--4c--line-above.png" title="View original image">
 &lt;img alt="landing-page__line-above" srcset="
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--line-above_hu4fae4f33ef2798746c472fb20fb0dfb3_9863_615a0895fe9193afe2ac14b192ec4065.png 458w,
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--line-above_hu4fae4f33ef2798746c472fb20fb0dfb3_9863_e492cac30966d49205391ee7ee21b508.png 726w,
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--line-above_hu4fae4f33ef2798746c472fb20fb0dfb3_9863_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/4c/paragraphs--4c--line-above_hu4fae4f33ef2798746c472fb20fb0dfb3_9863_615a0895fe9193afe2ac14b192ec4065.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Description&lt;/strong>: A subheader/section description embedded below the title and above your titles.
@@ -341,15 +341,15 @@ color: inherit;
 &lt;li>Add custom blocks to the First Column, Second Column, Third Column, Fourth Column.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/4c/paragraphs--4c--options.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/4c/paragraphs--4c--options.png" title="View original image">
 &lt;img alt="4 column paragraph options" srcset="
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--options_huc2253bdd194965c5b689ec9e0528c88d_111988_90f58403620c22258b50c8fdf46db6c0.png 458w,
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--options_huc2253bdd194965c5b689ec9e0528c88d_111988_901112fff74502737cf7e1903eb2a239.png 726w,
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--options_huc2253bdd194965c5b689ec9e0528c88d_111988_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/4c/paragraphs--4c--options_huc2253bdd194965c5b689ec9e0528c88d_111988_90f58403620c22258b50c8fdf46db6c0.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>
 &lt;a href="../../blocks">Learn more about custom blocks ⇒&lt;/a>&lt;/p>
@@ -367,15 +367,15 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;h3 id="carnation---columns-stack-in-desktop">Carnation -&amp;gt; Columns stack in desktop&lt;/h3>
 &lt;p>In order for this to work in Carnation, the &lt;code>.wrapper&lt;/code> containing the column elements needs to be changed to &lt;code>.row&lt;/code>; otherwise, each of the four columns expands to the full width of the Area it’s embedded in.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/4c/paragraphs--4c--carnation.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/4c/paragraphs--4c--carnation.png" title="View original image">
 &lt;img alt="carnation&amp;amp;ndash;landing-page__4-columns" srcset="
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--carnation_hu48a03982dee64f46740f3db8c754000b_188165_592132a501331e50dd5dfdf95121d9f1.png 458w,
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--carnation_hu48a03982dee64f46740f3db8c754000b_188165_f8513155cc5f2825222c14a61494b911.png 726w,
 /docs/user-documentation/paragraphs/4c/paragraphs--4c--carnation_hu48a03982dee64f46740f3db8c754000b_188165_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/4c/paragraphs--4c--carnation_hu48a03982dee64f46740f3db8c754000b_188165_592132a501331e50dd5dfdf95121d9f1.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="content-types-that-support-this-paragraph">Content Types That Support this Paragraph&lt;/h2>
 &lt;ul>
@@ -442,15 +442,15 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;li>Locations&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Banner</title><link>/docs/user-documentation/paragraphs/banner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/banner/</guid><description>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/banner/paragraphs--banner-carnation.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/banner/paragraphs--banner-carnation.jpeg" title="View original image">
 &lt;img alt="Landing page in Carnation on desktop" srcset="
 /docs/user-documentation/paragraphs/banner/paragraphs--banner-carnation_hu28117a66675a9406f1b712cbaf8815ae_921748_ebaac4e0c88366bc719f74e55b63ca21.jpeg 458w,
 /docs/user-documentation/paragraphs/banner/paragraphs--banner-carnation_hu28117a66675a9406f1b712cbaf8815ae_921748_deede631694baa160a0afad5f95e8e87.jpeg 726w,
 /docs/user-documentation/paragraphs/banner/paragraphs--banner-carnation_hu28117a66675a9406f1b712cbaf8815ae_921748_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/banner/paragraphs--banner-carnation_hu28117a66675a9406f1b712cbaf8815ae_921748_ebaac4e0c88366bc719f74e55b63ca21.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="how-to-use-a-banner">How to Use a Banner&lt;/h3>
 &lt;p>In the Header Area of your content, select “Add Banner” from the dropdown. Then, fill out the following fields:&lt;/p>
@@ -509,39 +509,39 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--carnation.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--carnation.jpeg" title="View original image">
 &lt;img alt="Carnation blog post listing" srcset="
 /docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--carnation_hufc6003594802119f431a21f0c1cffd83_414293_ff2a6050b5897c70837e8346918bf27c.jpeg 458w,
 /docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--carnation_hufc6003594802119f431a21f0c1cffd83_414293_07960fdbf032d4c830dc3f41191aa336.jpeg 726w,
 /docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--carnation_hufc6003594802119f431a21f0c1cffd83_414293_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--carnation_hufc6003594802119f431a21f0c1cffd83_414293_ff2a6050b5897c70837e8346918bf27c.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--lily.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--lily.jpeg" title="View original image">
 &lt;img alt="Lily blog post listing" srcset="
 /docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--lily_hud920ffc211053068a066f4ee07c735dd_568292_a8d459ce8817299acc39aa353668a796.jpeg 458w,
 /docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--lily_hud920ffc211053068a066f4ee07c735dd_568292_15c885575deb7f7a32de35bf3188020d.jpeg 726w,
 /docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--lily_hud920ffc211053068a066f4ee07c735dd_568292_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--lily_hud920ffc211053068a066f4ee07c735dd_568292_a8d459ce8817299acc39aa353668a796.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--rose.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--rose.jpeg" title="View original image">
 &lt;img alt="Rose blog post listing" srcset="
 /docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--rose_hu34d288725465386f7605654beffa47b4_467281_1893595addc61e9b4517ddcfdf8359e1.jpeg 458w,
 /docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--rose_hu34d288725465386f7605654beffa47b4_467281_2524877e14297e33769574a4475baa56.jpeg 726w,
 /docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--rose_hu34d288725465386f7605654beffa47b4_467281_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--rose_hu34d288725465386f7605654beffa47b4_467281_1893595addc61e9b4517ddcfdf8359e1.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="areas-it-should-be-used">Areas it Should Be Used&lt;/h2>
 &lt;ul>
@@ -551,15 +551,15 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;h2 id="how-to-use-blog-posts">How to Use Blog Posts&lt;/h2>
 &lt;p>From the paragraphs dropdown, add &lt;em>Blog Posts Listing&lt;/em>. Enter a header title for the section in the text field and hit &lt;em>Save&lt;/em>.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--fields.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--fields.png" title="View original image">
 &lt;img alt="BLog posts listing admin fields" srcset="
 /docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--fields_hue6655792779600f865ab9ae8a6fe3b73_40833_e82b2b38dbd0cac3cba3b54f66731274.png 458w,
 /docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--fields_hue6655792779600f865ab9ae8a6fe3b73_40833_30cc83ace9c7fc9f239b4b0c47f22c95.png 726w,
 /docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--fields_hue6655792779600f865ab9ae8a6fe3b73_40833_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/blog-posts-listing/paragraphs--blog-posts-listing--fields_hue6655792779600f865ab9ae8a6fe3b73_40833_e82b2b38dbd0cac3cba3b54f66731274.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="content-types-that-support-blog-posts">Content Types that Support Blog Posts&lt;/h2>
 &lt;ul>
@@ -579,39 +579,39 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--carnation.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--carnation.jpeg" title="View original image">
 &lt;img alt="Carnation camp menu" srcset="
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--carnation_hu5711ff97080af01c51f58a7400a5175f_344366_370b75c683eac2ad563e192ccd7dcb36.jpeg 458w,
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--carnation_hu5711ff97080af01c51f58a7400a5175f_344366_cb29fe042ff9c57b646d4cbdebdbc0af.jpeg 726w,
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--carnation_hu5711ff97080af01c51f58a7400a5175f_344366_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--carnation_hu5711ff97080af01c51f58a7400a5175f_344366_370b75c683eac2ad563e192ccd7dcb36.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--lily.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--lily.jpeg" title="View original image">
 &lt;img alt="Lily camp menu" srcset="
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--lily_huc70f8c720a4cd77583d1b0d1b7c9d9c8_1044740_06df4f802f58559ff24e87eb941dda45.jpeg 458w,
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--lily_huc70f8c720a4cd77583d1b0d1b7c9d9c8_1044740_93ef7cd7897dbe88ca23c3c2a95b5013.jpeg 726w,
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--lily_huc70f8c720a4cd77583d1b0d1b7c9d9c8_1044740_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--lily_huc70f8c720a4cd77583d1b0d1b7c9d9c8_1044740_06df4f802f58559ff24e87eb941dda45.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--rose.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--rose.jpeg" title="View original image">
 &lt;img alt="Rose camp menu" srcset="
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--rose_huf5db3fa6bd44742625aa60575d6cc3ef_708814_6756e4fe92b4d3fa9abc730cb3637eb8.jpeg 458w,
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--rose_huf5db3fa6bd44742625aa60575d6cc3ef_708814_2ae107df3421d49630ea50b5a58a14ac.jpeg 726w,
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--rose_huf5db3fa6bd44742625aa60575d6cc3ef_708814_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--rose_huf5db3fa6bd44742625aa60575d6cc3ef_708814_6756e4fe92b4d3fa9abc730cb3637eb8.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-can-be-used">Areas It Can Be Used&lt;/h2>
@@ -622,15 +622,15 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;h2 id="how-it-should-be-used">How It Should Be Used&lt;/h2>
 &lt;p>Before adding the paragraph, add the links you want on your menu by adding them on your Camp Page at General Info &amp;gt; Menu Links.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--links.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--links.png" title="View original image">
 &lt;img alt="Camp menu paragraph links" srcset="
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--links_hu7a8770865c53c85248aa4a561e455609_103320_df8916c458e8e44fdb9e1dc7cad64224.png 458w,
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--links_hu7a8770865c53c85248aa4a561e455609_103320_534943cbc4ff4b8e4ed495af5559b652.png 726w,
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--links_hu7a8770865c53c85248aa4a561e455609_103320_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--links_hu7a8770865c53c85248aa4a561e455609_103320_df8916c458e8e44fdb9e1dc7cad64224.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>
 &lt;a href="../../content-editing-basics/#linksbutton-fields">Learn More About Link Fields ⇒&lt;/a>&lt;/p>
@@ -650,15 +650,15 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;p>When a user views your camp menu in mobile, the menu doesn&amp;rsquo;t collapse; it merely shrinks. Menu items either disappear or wrap onto a new line if they do not fit the space.&lt;/p>
 &lt;p>It&amp;rsquo;s recommended you limit your menu items to no more than 3 or 4 unless you opt to customize.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--mobile.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--mobile.jpeg" title="View original image">
 &lt;img alt="Carnation camp menu mobile display" srcset="
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--mobile_hucd1252191429d2c79735946499705b92_200600_1a22efcad22e20d4a82132b4522a205d.jpeg 458w,
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--mobile_hucd1252191429d2c79735946499705b92_200600_57200224809bc1290c166480c5369688.jpeg 726w,
 /docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--mobile_hucd1252191429d2c79735946499705b92_200600_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/camp-menu/paragraphs--camp-menu--mobile_hucd1252191429d2c79735946499705b92_200600_1a22efcad22e20d4a82132b4522a205d.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="content-types-that-support-this-paragraph">Content Types That Support this Paragraph&lt;/h2>
@@ -670,51 +670,51 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;h4 id="desktop">Desktop&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--carnation.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--carnation.jpeg" title="View original image">
 &lt;img alt="Categories listing in Carnation on desktop" srcset="
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--carnation_hu7311d127bd3ca5a58c5ffe8a335857fa_364749_8dae2d32e9ac49df5cc0578d62d87bc2.jpeg 458w,
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--carnation_hu7311d127bd3ca5a58c5ffe8a335857fa_364749_d25a2c54b53878abea4ca5728680b490.jpeg 726w,
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--carnation_hu7311d127bd3ca5a58c5ffe8a335857fa_364749_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--carnation_hu7311d127bd3ca5a58c5ffe8a335857fa_364749_8dae2d32e9ac49df5cc0578d62d87bc2.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="mobile">Mobile&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--carnation-mobile.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--carnation-mobile.jpeg" title="View original image">
 &lt;img alt="Categories listing in Carnation on mobile" srcset="
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--carnation-mobile_hu12ea4b6e432a9115720c7dc9f40ffb5c_275909_b5c042ec321707a4699ddbb79db3186f.jpeg 458w,
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--carnation-mobile_hu12ea4b6e432a9115720c7dc9f40ffb5c_275909_85e93eb93cfea0dbd101ec6fe6558d18.jpeg 726w,
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--carnation-mobile_hu12ea4b6e432a9115720c7dc9f40ffb5c_275909_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--carnation-mobile_hu12ea4b6e432a9115720c7dc9f40ffb5c_275909_b5c042ec321707a4699ddbb79db3186f.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--lily.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--lily.jpeg" title="View original image">
 &lt;img alt="Categories listing in Lily" srcset="
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--lily_hu8b3b2ddd7f7725476fb5c2bd570ed233_329512_7a53bf291d543835b8dda8087f4f73ce.jpeg 458w,
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--lily_hu8b3b2ddd7f7725476fb5c2bd570ed233_329512_815c88aaffcbd0dbc0be3d6224e18a27.jpeg 726w,
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--lily_hu8b3b2ddd7f7725476fb5c2bd570ed233_329512_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--lily_hu8b3b2ddd7f7725476fb5c2bd570ed233_329512_7a53bf291d543835b8dda8087f4f73ce.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--rose.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--rose.jpeg" title="View original image">
 &lt;img alt="Categories listing in Rose" srcset="
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--rose_hua1f72e1c5c036bbb2cd4da84a2910bf1_361051_5537aabf8b53a198e6d4aa72fbed65cb.jpeg 458w,
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--rose_hua1f72e1c5c036bbb2cd4da84a2910bf1_361051_a6b13152f00bfd89e14a005944d18c86.jpeg 726w,
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--rose_hua1f72e1c5c036bbb2cd4da84a2910bf1_361051_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--rose_hua1f72e1c5c036bbb2cd4da84a2910bf1_361051_5537aabf8b53a198e6d4aa72fbed65cb.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-should-be-used">Areas It Should Be Used&lt;/h2>
@@ -729,15 +729,15 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;li>Select Categories listing.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--fields.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--fields.png" title="View original image">
 &lt;img alt="Categories list admin" srcset="
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--fields_huf3e1e390c06b73df09a6cff8a51f959f_42537_4d591cef474302f9addcace15583a1ff.png 458w,
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--fields_huf3e1e390c06b73df09a6cff8a51f959f_42537_c06f21fa4a237f321eab8c9944f6ea0d.png 726w,
 /docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--fields_huf3e1e390c06b73df09a6cff8a51f959f_42537_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/categories-listing/paragraphs--categories-listing--fields_huf3e1e390c06b73df09a6cff8a51f959f_42537_4d591cef474302f9addcace15583a1ff.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;blockquote>
 &lt;p>This paragraph can only used on programs pages that have
@@ -756,27 +756,27 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="ymca-of-central-kentucky--daxko-schedules-iframe">YMCA of Central Kentucky / Daxko Schedules iframe&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/code/paragraphs-code-yck-daxko.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/code/paragraphs-code-yck-daxko.png" title="View original image">
 &lt;img alt="y-example&amp;amp;ndash;code__daxko-iframe" srcset="
 /docs/user-documentation/paragraphs/code/paragraphs-code-yck-daxko_hu3cdac538b9596dbb4cbb090b9fc069b3_129667_e04c6e48c9e1be32c49bb8db39ad616c.png 458w,
 /docs/user-documentation/paragraphs/code/paragraphs-code-yck-daxko_hu3cdac538b9596dbb4cbb090b9fc069b3_129667_90df14f4d86e8cf5c2d35f270b24a2ad.png 726w,
 /docs/user-documentation/paragraphs/code/paragraphs-code-yck-daxko_hu3cdac538b9596dbb4cbb090b9fc069b3_129667_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/code/paragraphs-code-yck-daxko_hu3cdac538b9596dbb4cbb090b9fc069b3_129667_e04c6e48c9e1be32c49bb8db39ad616c.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="ymca-of-middle-tennessee--groupex-pro-script">YMCA of Middle Tennessee / GroupEx Pro Script&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/code/paragraphs-code-ymt-gxp.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/code/paragraphs-code-ymt-gxp.png" title="View original image">
 &lt;img alt="y-example&amp;amp;ndash;code__gxp-iframe" srcset="
 /docs/user-documentation/paragraphs/code/paragraphs-code-ymt-gxp_hu32b7c44177059b6bd41303919bf8b11f_176498_fb9c73eab277364217faf0e5fed288e4.png 458w,
 /docs/user-documentation/paragraphs/code/paragraphs-code-ymt-gxp_hu32b7c44177059b6bd41303919bf8b11f_176498_3d71721669756e071d11215110623b7d.png 726w,
 /docs/user-documentation/paragraphs/code/paragraphs-code-ymt-gxp_hu32b7c44177059b6bd41303919bf8b11f_176498_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/code/paragraphs-code-ymt-gxp_hu32b7c44177059b6bd41303919bf8b11f_176498_fb9c73eab277364217faf0e5fed288e4.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="areas-it-should-be-used">Areas it Should Be Used&lt;/h2>
 &lt;ul>
@@ -789,15 +789,15 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;li>
 &lt;p>Select “Add Code” from the paragraphs dropdown.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/code/paragraphs-code-dropdown.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/code/paragraphs-code-dropdown.png" title="View original image">
 &lt;img alt="admin&amp;amp;ndash;code__paragraph-dropdown" srcset="
 /docs/user-documentation/paragraphs/code/paragraphs-code-dropdown_hu407007c39ad390a3ffe221c18e7dfa41_45781_c87ff23a5782670c183c07291a5ec279.png 458w,
 /docs/user-documentation/paragraphs/code/paragraphs-code-dropdown_hu407007c39ad390a3ffe221c18e7dfa41_45781_ed0abcc6d508561298d25f12bd6b89a7.png 726w,
 /docs/user-documentation/paragraphs/code/paragraphs-code-dropdown_hu407007c39ad390a3ffe221c18e7dfa41_45781_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/code/paragraphs-code-dropdown_hu407007c39ad390a3ffe221c18e7dfa41_45781_c87ff23a5782670c183c07291a5ec279.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;/li>
 &lt;li>
@@ -816,15 +816,15 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;li>When you add your block, you will see a blank, unformatted text field. Type your HTML text into this field.&lt;/li>
 &lt;/ul>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/code/paragraphs-code-form-fields.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/code/paragraphs-code-form-fields.png" title="View original image">
 &lt;img alt="admin&amp;amp;ndash;code__block" srcset="
 /docs/user-documentation/paragraphs/code/paragraphs-code-form-fields_hu678f7750bb702aed5be46d35c6c7fc73_50171_0a9d9473742397bd8b0164f3ee95b886.png 458w,
 /docs/user-documentation/paragraphs/code/paragraphs-code-form-fields_hu678f7750bb702aed5be46d35c6c7fc73_50171_5363a3064cc06443317237bcad898571.png 726w,
 /docs/user-documentation/paragraphs/code/paragraphs-code-form-fields_hu678f7750bb702aed5be46d35c6c7fc73_50171_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/code/paragraphs-code-form-fields_hu678f7750bb702aed5be46d35c6c7fc73_50171_0a9d9473742397bd8b0164f3ee95b886.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;blockquote>
 &lt;p>&lt;em>&lt;strong>To use code, you must add HTML tags.&lt;/strong>&lt;/em>&lt;/p>
@@ -879,27 +879,27 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;p>Enter a label for your date block in the block description field. If and when you’d like to reuse this section on multiple pages, this is what you’ll use to search for it.&lt;/p>
 &lt;p>Below the block description field, you will enter a start date and an end date for your block. This schedules content in your date block to publish and unpublish, just like with a content type.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/date-block/paragraphs--date-block--start-end.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/date-block/paragraphs--date-block--start-end.png" title="View original image">
 &lt;img alt="Date block start and end dates" srcset="
 /docs/user-documentation/paragraphs/date-block/paragraphs--date-block--start-end_hu8731e6deb143b33dce807621954ccf4e_12339_6f91e1ba1f40b08733ab5018cd6f1b07.png 458w,
 /docs/user-documentation/paragraphs/date-block/paragraphs--date-block--start-end_hu8731e6deb143b33dce807621954ccf4e_12339_b9e2eec298dcb2853c95dbb3012d3b4f.png 726w,
 /docs/user-documentation/paragraphs/date-block/paragraphs--date-block--start-end_hu8731e6deb143b33dce807621954ccf4e_12339_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/date-block/paragraphs--date-block--start-end_hu8731e6deb143b33dce807621954ccf4e_12339_6f91e1ba1f40b08733ab5018cd6f1b07.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Below this you can add in paragraphs to display &lt;em>Before, During and After&lt;/em> your scheduled dates. Add paragraphs into these fields as you normally would.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/date-block/paragraphs--date-block--add-content.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/date-block/paragraphs--date-block--add-content.png" title="View original image">
 &lt;img alt="Adding content to the date block" srcset="
 /docs/user-documentation/paragraphs/date-block/paragraphs--date-block--add-content_hud98892cb6f76bfa507c525149e911e30_56562_27ba37f036b8fcd45aa31dde3fa7e872.png 458w,
 /docs/user-documentation/paragraphs/date-block/paragraphs--date-block--add-content_hud98892cb6f76bfa507c525149e911e30_56562_399dc8e1e19b219009f5155ab890d833.png 726w,
 /docs/user-documentation/paragraphs/date-block/paragraphs--date-block--add-content_hud98892cb6f76bfa507c525149e911e30_56562_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/date-block/paragraphs--date-block--add-content_hud98892cb6f76bfa507c525149e911e30_56562_27ba37f036b8fcd45aa31dde3fa7e872.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>If you don&amp;rsquo;t want content to display before, during or after your time period, leave it blank.&lt;/p>
 &lt;p>Hit “Create custom block” to add your block.&lt;/p>
@@ -945,15 +945,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;/ul></description></item><item><title>Docs: Embedded GroupEx Pro Schedule</title><link>/docs/user-documentation/paragraphs/embedded-gxp-schedule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/embedded-gxp-schedule/</guid><description>
 &lt;h2 id="example">Example&lt;/h2>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/embedded-gxp-schedule/paragraph--gxp--example.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/embedded-gxp-schedule/paragraph--gxp--example.png" title="View original image">
 &lt;img alt="An example of the GXP embed paragraph" srcset="
 /docs/user-documentation/paragraphs/embedded-gxp-schedule/paragraph--gxp--example_huf421c686185d1ebe10cc5e89d8b51e97_249114_5cd52c6a7ed8dce0ffd9810b7a432851.png 458w,
 /docs/user-documentation/paragraphs/embedded-gxp-schedule/paragraph--gxp--example_huf421c686185d1ebe10cc5e89d8b51e97_249114_8b077b857e22aecbc9f900156b3c5980.png 726w,
 /docs/user-documentation/paragraphs/embedded-gxp-schedule/paragraph--gxp--example_huf421c686185d1ebe10cc5e89d8b51e97_249114_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/embedded-gxp-schedule/paragraph--gxp--example_huf421c686185d1ebe10cc5e89d8b51e97_249114_5cd52c6a7ed8dce0ffd9810b7a432851.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-should-be-used">Areas it Should Be Used&lt;/h2>
@@ -969,27 +969,27 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;li>To integrate you GroupEx Pro account, go to the admin toolbar.
 &amp;gt;
 &amp;gt;
-&lt;a href="/docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--settings.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--settings.png" title="View original image">
 &lt;img alt="Navigating to the GroupEx Pro account settings" srcset="
 /docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--settings_hu45570b73a7122378cf525e7466c20258_95818_1a6a560e9ac92d54c8b52ba99e6fcbbb.png 458w,
 /docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--settings_hu45570b73a7122378cf525e7466c20258_95818_08fc159e17f8d0f133bdcdcbc629e268.png 726w,
 /docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--settings_hu45570b73a7122378cf525e7466c20258_95818_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--settings_hu45570b73a7122378cf525e7466c20258_95818_1a6a560e9ac92d54c8b52ba99e6fcbbb.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;li>Go to YMCA Website Services &amp;gt; Integrations &amp;gt; GroupEx Pro &amp;gt; Group Ex Pro Account Settings. Add your account number to the field. That’s it!
 &amp;gt;
-&lt;a href="/docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--account.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--account.png" title="View original image">
 &lt;img alt="Setting the GroupEx Pro account" srcset="
 /docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--account_hu94d5898bf759be93a8c2df3375fd895d_47868_354a455192b7dda2d31151c010da86d1.png 458w,
 /docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--account_hu94d5898bf759be93a8c2df3375fd895d_47868_9db7c2692a1006a79f90b762f2cd157a.png 726w,
 /docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--account_hu94d5898bf759be93a8c2df3375fd895d_47868_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--account_hu94d5898bf759be93a8c2df3375fd895d_47868_354a455192b7dda2d31151c010da86d1.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/li>
 &lt;/ul>
 &lt;hr>
@@ -1000,15 +1000,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h3 id="adding-the-paragraph-to-your-page">Adding the Paragraph to Your Page&lt;/h3>
 &lt;p>Select &lt;em>Embedded GroupEx Pro Schedule&lt;/em> from the paragraphs dropdown. Hit save.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--admin.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--admin.png" title="View original image">
 &lt;img alt="The GXP embed paragraph admin" srcset="
 /docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--admin_hub0fe537bcbf9c4e47f8228684f023063_10718_b1e6e58258bf5c1c3a35643b9f04224a.png 458w,
 /docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--admin_hub0fe537bcbf9c4e47f8228684f023063_10718_44bfbebf6141abef0f275854009d93be.png 726w,
 /docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--admin_hub0fe537bcbf9c4e47f8228684f023063_10718_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/embedded-gxp-schedule/parargraphs--gxp--admin_hub0fe537bcbf9c4e47f8228684f023063_10718_b1e6e58258bf5c1c3a35643b9f04224a.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="content-types-that-support-embedded-groupex-pro-schedule">Content Types That Support Embedded GroupEx Pro Schedule&lt;/h2>
@@ -1026,15 +1026,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;/ul></description></item><item><title>Docs: FAQ</title><link>/docs/user-documentation/paragraphs/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/faq/</guid><description>
 &lt;h2 id="example">Example&lt;/h2>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/faq/paragraphs--faq--example.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/faq/paragraphs--faq--example.png" title="View original image">
 &lt;img alt="An example of the FAQ paragraph" srcset="
 /docs/user-documentation/paragraphs/faq/paragraphs--faq--example_hu3767d031b7cc4bd8f003d5d5c3c89c31_41136_3c9ff23368f6b98c7c9b3a7a9d38310a.png 458w,
 /docs/user-documentation/paragraphs/faq/paragraphs--faq--example_hu3767d031b7cc4bd8f003d5d5c3c89c31_41136_b8a4627d87021f548e3cd3aaaf69918e.png 726w,
 /docs/user-documentation/paragraphs/faq/paragraphs--faq--example_hu3767d031b7cc4bd8f003d5d5c3c89c31_41136_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/faq/paragraphs--faq--example_hu3767d031b7cc4bd8f003d5d5c3c89c31_41136_3c9ff23368f6b98c7c9b3a7a9d38310a.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="where-it-can-be-used">Where it Can Be Used&lt;/h2>
@@ -1048,15 +1048,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;li>
 &lt;p>Select &lt;em>FAQ&lt;/em> from the paragraph dropdown&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/faq/paragraphs--faq--dropdown.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/faq/paragraphs--faq--dropdown.png" title="View original image">
 &lt;img alt="The FAQ in the Paragraphs dropdown" srcset="
 /docs/user-documentation/paragraphs/faq/paragraphs--faq--dropdown_hu232561c2e974d8c9aedad01dbfb57c77_63263_eee4c5cc45abea1dfd3a07904b921afb.png 458w,
 /docs/user-documentation/paragraphs/faq/paragraphs--faq--dropdown_hu232561c2e974d8c9aedad01dbfb57c77_63263_9cc293d9a317371d0e4bb6b5c0f3d2b5.png 726w,
 /docs/user-documentation/paragraphs/faq/paragraphs--faq--dropdown_hu232561c2e974d8c9aedad01dbfb57c77_63263_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/faq/paragraphs--faq--dropdown_hu232561c2e974d8c9aedad01dbfb57c77_63263_eee4c5cc45abea1dfd3a07904b921afb.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;/li>
 &lt;li>
@@ -1066,15 +1066,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;p>
 &lt;a href="../../text-editor">Use the text editor&lt;/a> to provide an answer/expanded section of content once the user clicks on your section.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/faq/paragraphs--faq--fields.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/faq/paragraphs--faq--fields.png" title="View original image">
 &lt;img alt="FAQ paragraph fields" srcset="
 /docs/user-documentation/paragraphs/faq/paragraphs--faq--fields_hu1ee7adbb5399d65c862d680ab01288db_54906_192f0f8bbfd73b54c4b34b4cf8718a76.png 458w,
 /docs/user-documentation/paragraphs/faq/paragraphs--faq--fields_hu1ee7adbb5399d65c862d680ab01288db_54906_82dc21bd18b7d8f0975af3d7814c97d2.png 726w,
 /docs/user-documentation/paragraphs/faq/paragraphs--faq--fields_hu1ee7adbb5399d65c862d680ab01288db_54906_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/faq/paragraphs--faq--fields_hu1ee7adbb5399d65c862d680ab01288db_54906_192f0f8bbfd73b54c4b34b4cf8718a76.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>&lt;strong>
 &lt;a href="../../text-editor">Learn how to use the text editor ⇒&lt;/a>&lt;/strong>&lt;/p>
@@ -1084,15 +1084,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h3 id="add-another-section">Add Another Section&lt;/h3>
 &lt;p>To add another Question and Answer, click the &lt;em>Add another item&lt;/em> button at the bottom of your paragraph.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/faq/paragraphs--faq--add-another.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/faq/paragraphs--faq--add-another.png" title="View original image">
 &lt;img alt="The &amp;amp;ldquo;add another&amp;amp;rdquo; button" srcset="
 /docs/user-documentation/paragraphs/faq/paragraphs--faq--add-another_hub7d366e3e0e2926c82ad43c5b1f45e7c_6528_cc125852c9deef9bd24a9b3073ec4997.png 458w,
 /docs/user-documentation/paragraphs/faq/paragraphs--faq--add-another_hub7d366e3e0e2926c82ad43c5b1f45e7c_6528_3ceef7eaaac349b04c93259d17055d16.png 726w,
 /docs/user-documentation/paragraphs/faq/paragraphs--faq--add-another_hub7d366e3e0e2926c82ad43c5b1f45e7c_6528_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/faq/paragraphs--faq--add-another_hub7d366e3e0e2926c82ad43c5b1f45e7c_6528_cc125852c9deef9bd24a9b3073ec4997.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="content-types-that-support-this-paragraph">Content Types that Support this Paragraph&lt;/h2>
@@ -1119,77 +1119,77 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;h4 id="desktop">Desktop&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--carnation.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--carnation.jpeg" title="View original image">
 &lt;img alt="Featured blog posts in Carnation on desktop" srcset="
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--carnation_hu6c8bbb7f2970b0b48db9a461432eb94a_268385_8802c678a18c1692617daa7f65dd64f2.jpeg 458w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--carnation_hu6c8bbb7f2970b0b48db9a461432eb94a_268385_ac46bceebffed41749ae851fc38275be.jpeg 726w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--carnation_hu6c8bbb7f2970b0b48db9a461432eb94a_268385_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--carnation_hu6c8bbb7f2970b0b48db9a461432eb94a_268385_8802c678a18c1692617daa7f65dd64f2.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="mobile">Mobile&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--carnation-mobile.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--carnation-mobile.png" title="View original image">
 &lt;img alt="Featured blog posts in Carnation on mobile" srcset="
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--carnation-mobile_hu92df29f784d982c0b695f5cd4f1772a8_46206_bffd6c70230d9c5ea943fc55797f01b6.png 458w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--carnation-mobile_hu92df29f784d982c0b695f5cd4f1772a8_46206_eebc72579839e20492868b174504765a.png 726w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--carnation-mobile_hu92df29f784d982c0b695f5cd4f1772a8_46206_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--carnation-mobile_hu92df29f784d982c0b695f5cd4f1772a8_46206_bffd6c70230d9c5ea943fc55797f01b6.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;h4 id="desktop-1">Desktop&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--lily.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--lily.jpeg" title="View original image">
 &lt;img alt="Featured blog posts in Lily on desktop" srcset="
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--lily_hu094222941d755c4bbf90f71672020b9b_301184_f6c3b10aef4da15ff9018c112b4996f1.jpeg 458w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--lily_hu094222941d755c4bbf90f71672020b9b_301184_ad4181d740c1ac92f6c9c87055e043ae.jpeg 726w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--lily_hu094222941d755c4bbf90f71672020b9b_301184_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--lily_hu094222941d755c4bbf90f71672020b9b_301184_f6c3b10aef4da15ff9018c112b4996f1.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="mobile-1">Mobile&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--lily-mobile.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--lily-mobile.png" title="View original image">
 &lt;img alt="Featured blog posts in Lily on mobile" srcset="
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--lily-mobile_hua8a6636ba550c919ad4a906bfa8d6f88_43735_e483c09e739d819cfca08c8564ec403c.png 458w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--lily-mobile_hua8a6636ba550c919ad4a906bfa8d6f88_43735_4de27fcb6d5cf3a605f6e53fcc929ef9.png 726w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--lily-mobile_hua8a6636ba550c919ad4a906bfa8d6f88_43735_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--lily-mobile_hua8a6636ba550c919ad4a906bfa8d6f88_43735_e483c09e739d819cfca08c8564ec403c.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;h4 id="desktop-2">Desktop&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--rose.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--rose.jpeg" title="View original image">
 &lt;img alt="Featured blog posts in Rose on desktop" srcset="
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--rose_hue2460a7e660d6cc6b1aeee4c27a048c3_334043_59b01923cde096c5dccabb66aaa04a43.jpeg 458w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--rose_hue2460a7e660d6cc6b1aeee4c27a048c3_334043_524b009e1f17694ac1703ed1c1e81be2.jpeg 726w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--rose_hue2460a7e660d6cc6b1aeee4c27a048c3_334043_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--rose_hue2460a7e660d6cc6b1aeee4c27a048c3_334043_59b01923cde096c5dccabb66aaa04a43.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="mobile-2">Mobile&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--rose-mobile.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--rose-mobile.png" title="View original image">
 &lt;img alt="Featured blog posts in Rose on mobile" srcset="
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--rose-mobile_hu9362d711e41581799123049d2b7a9ff9_49014_bcc7735de5185afe53ecb6df83d480d8.png 458w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--rose-mobile_hu9362d711e41581799123049d2b7a9ff9_49014_66b738015940681e5fff9ee325562019.png 726w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--rose-mobile_hu9362d711e41581799123049d2b7a9ff9_49014_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--rose-mobile_hu9362d711e41581799123049d2b7a9ff9_49014_bcc7735de5185afe53ecb6df83d480d8.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-can-be-used">Areas It Can Be Used&lt;/h2>
@@ -1202,15 +1202,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;p>Add a headline for this section of content in the &lt;em>Headline&lt;/em> field.&lt;/p>
 &lt;p>Next, type in the name of the blog you would like to feature in the autocomplete field. Click on the post when it shows up below.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--admin.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--admin.png" title="View original image">
 &lt;img alt="Featured blog posts admin" srcset="
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--admin_hu45b0506d580fd308766564081674048e_108448_83766f23ea8dc786308c82aa6d702121.png 458w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--admin_hu45b0506d580fd308766564081674048e_108448_dba3a28044c71fa1917b16a6a7ecbfad.png 726w,
 /docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--admin_hu45b0506d580fd308766564081674048e_108448_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-blog-posts/paragraphs--features-blogs--admin_hu45b0506d580fd308766564081674048e_108448_83766f23ea8dc786308c82aa6d702121.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>To add another blog post, click the &lt;em>Add another item&lt;/em> button. Click the blue save button at the bottom when you’re finished.&lt;/p>
 &lt;hr>
@@ -1234,39 +1234,39 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--carnation.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--carnation.png" title="View original image">
 &lt;img alt="Featured content in Carnation" srcset="
 /docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--carnation_hu3f3a9e22a646f25dcd7fd106f1b99105_174642_a11a4626ac1b1fdd33e82f7f85ad85be.png 458w,
 /docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--carnation_hu3f3a9e22a646f25dcd7fd106f1b99105_174642_c6b7e5467edb4f2e495d22f89a6c94be.png 726w,
 /docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--carnation_hu3f3a9e22a646f25dcd7fd106f1b99105_174642_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--carnation_hu3f3a9e22a646f25dcd7fd106f1b99105_174642_a11a4626ac1b1fdd33e82f7f85ad85be.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--lily.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--lily.png" title="View original image">
 &lt;img alt="Featured content in Lily" srcset="
 /docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--lily_hu3f3a9e22a646f25dcd7fd106f1b99105_199970_2f62267f02020375d644db1e792bbaca.png 458w,
 /docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--lily_hu3f3a9e22a646f25dcd7fd106f1b99105_199970_6ddcbd7b467fec4dc75189b428f42ec1.png 726w,
 /docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--lily_hu3f3a9e22a646f25dcd7fd106f1b99105_199970_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--lily_hu3f3a9e22a646f25dcd7fd106f1b99105_199970_2f62267f02020375d644db1e792bbaca.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--rose.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--rose.png" title="View original image">
 &lt;img alt="Featured content in Rose" srcset="
 /docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--rose_hu3f3a9e22a646f25dcd7fd106f1b99105_254932_3e10e756f75ec3d12fa0d269a17baf38.png 458w,
 /docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--rose_hu3f3a9e22a646f25dcd7fd106f1b99105_254932_3a2603d47e091ff22b27bd07541ab7fc.png 726w,
 /docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--rose_hu3f3a9e22a646f25dcd7fd106f1b99105_254932_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-content/paragraphs--featured-content--rose_hu3f3a9e22a646f25dcd7fd106f1b99105_254932_3e10e756f75ec3d12fa0d269a17baf38.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-can-be-used">Areas It Can Be Used&lt;/h2>
@@ -1333,39 +1333,39 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;h4 id="desktop">Desktop&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--carnation.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--carnation.jpeg" title="View original image">
 &lt;img alt="Featured News Posts in Carnation on desktop" srcset="
 /docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--carnation_hu40a80766b00adb9f2dfb73df9c81623f_417316_262292a124125bbcfe69dd519a7a0ad6.jpeg 458w,
 /docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--carnation_hu40a80766b00adb9f2dfb73df9c81623f_417316_4228563cb42a42755af4134dc8ba8f9d.jpeg 726w,
 /docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--carnation_hu40a80766b00adb9f2dfb73df9c81623f_417316_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--carnation_hu40a80766b00adb9f2dfb73df9c81623f_417316_262292a124125bbcfe69dd519a7a0ad6.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="mobile">Mobile&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--carnation-mobile.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--carnation-mobile.jpeg" title="View original image">
 &lt;img alt="Featured News Posts in Carnation on mobile" srcset="
 /docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--carnation-mobile_hub5cd37cbc12ea4f428e83256d2d45e66_334478_2c07d744375ea26e59669a7fd346065e.jpeg 458w,
 /docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--carnation-mobile_hub5cd37cbc12ea4f428e83256d2d45e66_334478_30945bedc346903fac10d841875d88c8.jpeg 726w,
 /docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--carnation-mobile_hub5cd37cbc12ea4f428e83256d2d45e66_334478_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--carnation-mobile_hub5cd37cbc12ea4f428e83256d2d45e66_334478_2c07d744375ea26e59669a7fd346065e.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--rose.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--rose.jpeg" title="View original image">
 &lt;img alt="Featured News Posts in Rose" srcset="
 /docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--rose_huc1777d4b3e7f735d03dee4bd597220d5_349733_7d3bf9d38ed1f8290aa0313380786a7e.jpeg 458w,
 /docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--rose_huc1777d4b3e7f735d03dee4bd597220d5_349733_d139b3abec248d365d320d6dce00e7f5.jpeg 726w,
 /docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--rose_huc1777d4b3e7f735d03dee4bd597220d5_349733_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--rose_huc1777d4b3e7f735d03dee4bd597220d5_349733_7d3bf9d38ed1f8290aa0313380786a7e.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-can-be-used">Areas It Can Be Used&lt;/h2>
@@ -1378,15 +1378,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;p>Add a &lt;em>Headline&lt;/em> for this section of content in the Title field.&lt;/p>
 &lt;p>Next, type in the name of the news post you would like to feature in the autocomplete field. Click on the post when it shows up below.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--admin.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--admin.png" title="View original image">
 &lt;img alt="Featured News Posts admin fields" srcset="
 /docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--admin_hu3f3a9e22a646f25dcd7fd106f1b99105_472225_730d11e6e4200bf849b3194dd27987f7.png 458w,
 /docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--admin_hu3f3a9e22a646f25dcd7fd106f1b99105_472225_edb2f3a8149b7c5821489d888317819d.png 726w,
 /docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--admin_hu3f3a9e22a646f25dcd7fd106f1b99105_472225_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/featured-news-posts/paragraphs--featured-news--admin_hu3f3a9e22a646f25dcd7fd106f1b99105_472225_730d11e6e4200bf849b3194dd27987f7.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>To add another news post, click the &lt;em>Add another item&lt;/em> button. Click the blue save button at the bottom when you’re finished.&lt;/p>
 &lt;h2 id="content-types-that-support-featured-news-posts">Content Types that Support Featured News Posts&lt;/h2>
@@ -1411,64 +1411,64 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;h4 id="desktop">Desktop&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--carnation.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--carnation.jpeg" title="View original image">
 &lt;img alt="Gallery in Carnation on desktop" srcset="
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--carnation_hu3aef34bcf07971f6848aed1982c6e5a1_637951_7874a08085c00ffcefaf30184ee23913.jpeg 458w,
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--carnation_hu3aef34bcf07971f6848aed1982c6e5a1_637951_b07207a862719c7afe7cc53b1e404bf7.jpeg 726w,
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--carnation_hu3aef34bcf07971f6848aed1982c6e5a1_637951_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--carnation_hu3aef34bcf07971f6848aed1982c6e5a1_637951_7874a08085c00ffcefaf30184ee23913.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="mobile">Mobile&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--carnation-mobile.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--carnation-mobile.jpeg" title="View original image">
 &lt;img alt="Gallery in Carnation on mobile" srcset="
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--carnation-mobile_huf957e30b607c20ecee61fa9b7f7640b6_229779_f9aa24e10a01b09fc0e6e8c59e12c6ce.jpeg 458w,
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--carnation-mobile_huf957e30b607c20ecee61fa9b7f7640b6_229779_c11fef1444c8410056773414343e6aad.jpeg 726w,
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--carnation-mobile_huf957e30b607c20ecee61fa9b7f7640b6_229779_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--carnation-mobile_huf957e30b607c20ecee61fa9b7f7640b6_229779_f9aa24e10a01b09fc0e6e8c59e12c6ce.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;h4 id="desktop-1">Desktop&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--lily.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--lily.jpeg" title="View original image">
 &lt;img alt="Gallery in Lily on desktop" srcset="
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--lily_huc898e62d969252f75479e3fadc9f5a4a_959732_919da28874a2a300bf9d5c2e364dc6de.jpeg 458w,
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--lily_huc898e62d969252f75479e3fadc9f5a4a_959732_a69e26c7bd2de2e1b6beb11d2e993adb.jpeg 726w,
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--lily_huc898e62d969252f75479e3fadc9f5a4a_959732_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--lily_huc898e62d969252f75479e3fadc9f5a4a_959732_919da28874a2a300bf9d5c2e364dc6de.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="mobile-1">Mobile&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--lily-mobile.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--lily-mobile.jpeg" title="View original image">
 &lt;img alt="Gallery in Lily on mobile" srcset="
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--lily-mobile_hu36ef767ca62f85013563f174b8fb0ab9_370783_ebff8b87d63f3bdf144fd01fbd671cef.jpeg 458w,
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--lily-mobile_hu36ef767ca62f85013563f174b8fb0ab9_370783_b49e3a657a59c60657ae4214b5b7f4c4.jpeg 726w,
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--lily-mobile_hu36ef767ca62f85013563f174b8fb0ab9_370783_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--lily-mobile_hu36ef767ca62f85013563f174b8fb0ab9_370783_ebff8b87d63f3bdf144fd01fbd671cef.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--rose.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--rose.jpeg" title="View original image">
 &lt;img alt="Gallery in Rose on desktop" srcset="
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--rose_hu56105ee3fd44c75c3eb3a106f224c1d0_400131_4894c9e520fb5a7649520ce709b3cc28.jpeg 458w,
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--rose_hu56105ee3fd44c75c3eb3a106f224c1d0_400131_27974085562a3e8cb515ea2f5b263d03.jpeg 726w,
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--rose_hu56105ee3fd44c75c3eb3a106f224c1d0_400131_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--rose_hu56105ee3fd44c75c3eb3a106f224c1d0_400131_4894c9e520fb5a7649520ce709b3cc28.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-can-be-used">Areas It Can Be Used&lt;/h2>
@@ -1488,15 +1488,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;/blockquote>
 &lt;p>Optionally, you can add a Link in the link field.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--link.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--link.png" title="View original image">
 &lt;img alt="The Gallery link field" srcset="
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--link_hu12977b24ef9e1cf5a258b5961266b598_46501_d0503f7a2c383816819f487bad12c877.png 458w,
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--link_hu12977b24ef9e1cf5a258b5961266b598_46501_04c72a516e3213fa15e05d4f143d1d07.png 726w,
 /docs/user-documentation/paragraphs/gallery/paragraphs--gallery--link_hu12977b24ef9e1cf5a258b5961266b598_46501_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/gallery/paragraphs--gallery--link_hu12977b24ef9e1cf5a258b5961266b598_46501_d0503f7a2c383816819f487bad12c877.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>
 &lt;a href="../../content-editing-basics/#linksbutton-fields">How link fields work in YMCA Website Services ⇒&lt;/a>&lt;/p>
@@ -1527,39 +1527,39 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--carnation.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--carnation.png" title="View original image">
 &lt;img alt="Grid content in Carnation" srcset="
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--carnation_huff2e168147f2cb31805d53e4c8191f5b_260907_85e85c027c2f545b3eb00623333f6d77.png 458w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--carnation_huff2e168147f2cb31805d53e4c8191f5b_260907_5315492531c3e316f2fe46fec93016aa.png 726w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--carnation_huff2e168147f2cb31805d53e4c8191f5b_260907_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--carnation_huff2e168147f2cb31805d53e4c8191f5b_260907_85e85c027c2f545b3eb00623333f6d77.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--lily.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--lily.png" title="View original image">
 &lt;img alt="Grid content in Lily" srcset="
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--lily_huff2e168147f2cb31805d53e4c8191f5b_240462_da421f48b8320a083499776106241b37.png 458w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--lily_huff2e168147f2cb31805d53e4c8191f5b_240462_345eee76a6e330d82b4fd77934127d41.png 726w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--lily_huff2e168147f2cb31805d53e4c8191f5b_240462_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--lily_huff2e168147f2cb31805d53e4c8191f5b_240462_da421f48b8320a083499776106241b37.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--rose.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--rose.png" title="View original image">
 &lt;img alt="Grid content in Rose" srcset="
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--rose_hu552f4d97d60726985a9b97544e3dc3f0_79082_a85eff5f1f1712599c8f59e3c3d63398.png 458w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--rose_hu552f4d97d60726985a9b97544e3dc3f0_79082_b7db9aad141fe9e4be9bd60759ca86c6.png 726w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--rose_hu552f4d97d60726985a9b97544e3dc3f0_79082_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--rose_hu552f4d97d60726985a9b97544e3dc3f0_79082_a85eff5f1f1712599c8f59e3c3d63398.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-should-be-used">Areas It Should Be Used&lt;/h2>
@@ -1573,15 +1573,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;p>&lt;em>Note on Grid Content: This paragraph’s style will vary greatly depending on your theme. The docs outline how to use the fields.&lt;/em>&lt;/p>
 &lt;/blockquote>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--select.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--select.png" title="View original image">
 &lt;img alt="Select grid content from the list of paragraphs" srcset="
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--select_huf83db953aedab8af22f2990e04d2fd12_70944_7993aa7923ed03041c613b93567b6ae7.png 458w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--select_huf83db953aedab8af22f2990e04d2fd12_70944_a836e81571a293078d1cb68a0242e52d.png 726w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--select_huf83db953aedab8af22f2990e04d2fd12_70944_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--select_huf83db953aedab8af22f2990e04d2fd12_70944_7993aa7923ed03041c613b93567b6ae7.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>First, choose &lt;em>Grid Content&lt;/em> from the Paragraphs dropdown. You will then see a dropdown with four options under &lt;em>Style&lt;/em>:&lt;/p>
 &lt;ul>
@@ -1593,47 +1593,47 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h3 id="examples-1">Examples&lt;/h3>
 &lt;h4 id="2-items-per-row-w-2-grid-columns">2 items per row w/ 2 Grid Columns&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--admin.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--admin.png" title="View original image">
 &lt;img alt="Grid content admin with 2 items selected" srcset="
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--admin_hue4f3b5519d10aaf2e526f954f30a754a_49647_a53b89d4a2bb3e47647e7ec92b5a0113.png 458w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--admin_hue4f3b5519d10aaf2e526f954f30a754a_49647_8b5a49661bc5bd9a1f8217faa0e84111.png 726w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--admin_hue4f3b5519d10aaf2e526f954f30a754a_49647_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--admin_hue4f3b5519d10aaf2e526f954f30a754a_49647_a53b89d4a2bb3e47647e7ec92b5a0113.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--2-col.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--2-col.png" title="View original image">
 &lt;img alt="Grid content example with two items" srcset="
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--2-col_hu8a293c7e0c536a4b4434bebf84ed4cdb_219623_d9ab702f005b85478504fda3bc8dee53.png 458w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--2-col_hu8a293c7e0c536a4b4434bebf84ed4cdb_219623_210ec5aa13c9b4fc31b69d6a6faa46ef.png 726w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--2-col_hu8a293c7e0c536a4b4434bebf84ed4cdb_219623_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--2-col_hu8a293c7e0c536a4b4434bebf84ed4cdb_219623_d9ab702f005b85478504fda3bc8dee53.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="3-items-per-row-w-2-grid-columns">3 items per row w/ 2 grid columns&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--admin-3col.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--admin-3col.png" title="View original image">
 &lt;img alt="Grid content admin with 3 items selected" srcset="
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--admin-3col_hue807d0c9dffaee89b446c044238737fd_76575_fcf1c704e35669b1247ff9b86aba8fc1.png 458w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--admin-3col_hue807d0c9dffaee89b446c044238737fd_76575_ace54f0bd2d8a45470a5e45d453a3c4d.png 726w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--admin-3col_hue807d0c9dffaee89b446c044238737fd_76575_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--admin-3col_hue807d0c9dffaee89b446c044238737fd_76575_fcf1c704e35669b1247ff9b86aba8fc1.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
-&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--3-col.png" title="View original image">
+&lt;/figure>
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--3-col.png" title="View original image">
 &lt;img alt="Grid content example with 3 items selected" srcset="
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--3-col_huc972c82f3fa6aa2bce2ff1f35b62938f_226802_04d367b15d4d2b6f848e1d6296da8a23.png 458w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--3-col_huc972c82f3fa6aa2bce2ff1f35b62938f_226802_8df7907c7a60c0288f4d1f53275202bb.png 726w,
 /docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--3-col_huc972c82f3fa6aa2bce2ff1f35b62938f_226802_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/grid-content/paragraphs--grid-content--3-col_huc972c82f3fa6aa2bce2ff1f35b62938f_226802_04d367b15d4d2b6f848e1d6296da8a23.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Next, you will see a button that says &lt;em>Add Grid Columns.&lt;/em> This is where you will start adding your individual sections/cards.&lt;/p>
 &lt;p>For each item you add, you will have the following fields:&lt;/p>
@@ -1729,27 +1729,27 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--carnation.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--carnation.png" title="View original image">
 &lt;img alt="Latest blog posts in Carnation" srcset="
 /docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--carnation_hu8c1676493f80d25fe4ae40b378a28e45_170631_f5402fe5d1a858b535e7fd835902886f.png 458w,
 /docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--carnation_hu8c1676493f80d25fe4ae40b378a28e45_170631_1304ac3459cf7d56cb29367fc7be09b1.png 726w,
 /docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--carnation_hu8c1676493f80d25fe4ae40b378a28e45_170631_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--carnation_hu8c1676493f80d25fe4ae40b378a28e45_170631_f5402fe5d1a858b535e7fd835902886f.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--rose.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--rose.png" title="View original image">
 &lt;img alt="Latest blog posts in Rose" srcset="
 /docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--rose_hu12d1271008459cd42d6a0fd20686557b_46106_7748503a9ef1a0211df9898ab4669a23.png 458w,
 /docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--rose_hu12d1271008459cd42d6a0fd20686557b_46106_01df3c49e0fcae7589020f462dc4b0ec.png 726w,
 /docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--rose_hu12d1271008459cd42d6a0fd20686557b_46106_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--rose_hu12d1271008459cd42d6a0fd20686557b_46106_7748503a9ef1a0211df9898ab4669a23.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-should-be-used">Areas it Should Be Used&lt;/h2>
@@ -1761,15 +1761,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h2 id="how-to-use-latest-news-posts">How to Use Latest News Posts&lt;/h2>
 &lt;p>From the paragraphs dropdown, add the “Latest News Posts.” Enter a header title for the section in the text field and hit save.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--admin.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--admin.png" title="View original image">
 &lt;img alt="Latest news posts admin fields" srcset="
 /docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--admin_hubd63b63dddb7673ede6e990a5ce7ad11_14743_007110fd4bbf505f021aac824d1ed7df.png 458w,
 /docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--admin_hubd63b63dddb7673ede6e990a5ce7ad11_14743_8fcd0cd8b9ea6412c4d90dfe2fec95fd.png 726w,
 /docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--admin_hubd63b63dddb7673ede6e990a5ce7ad11_14743_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/latest-news-posts/paragraphs--latest-news-posts--admin_hubd63b63dddb7673ede6e990a5ce7ad11_14743_007110fd4bbf505f021aac824d1ed7df.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="content-types-that-support-latest-news-posts">Content Types that Support Latest News Posts&lt;/h2>
@@ -1800,15 +1800,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;/ul></description></item><item><title>Docs: Limited Time Offer</title><link>/docs/user-documentation/paragraphs/limited-time-offer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/limited-time-offer/</guid><description>
 &lt;h2 id="example">Example&lt;/h2>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/limited-time-offer/paragraphs--limited-time--carnation.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/limited-time-offer/paragraphs--limited-time--carnation.png" title="View original image">
 &lt;img alt="The limited time offer paragraph" srcset="
 /docs/user-documentation/paragraphs/limited-time-offer/paragraphs--limited-time--carnation_hudd28a8d1a4bf9aac4121ccf0be5bae5d_14057_b498f85ab993e5edb4b15542b4d27e98.png 458w,
 /docs/user-documentation/paragraphs/limited-time-offer/paragraphs--limited-time--carnation_hudd28a8d1a4bf9aac4121ccf0be5bae5d_14057_436977ade59a3fb214555143aaf81f3b.png 726w,
 /docs/user-documentation/paragraphs/limited-time-offer/paragraphs--limited-time--carnation_hudd28a8d1a4bf9aac4121ccf0be5bae5d_14057_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/limited-time-offer/paragraphs--limited-time--carnation_hudd28a8d1a4bf9aac4121ccf0be5bae5d_14057_b498f85ab993e5edb4b15542b4d27e98.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="areas-where-it-can-be-used">Areas Where It Can Be Used&lt;/h2>
 &lt;ul>
@@ -1860,15 +1860,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;hr>
 &lt;h2 id="how-to-use-news-posts">How to Use News Posts&lt;/h2>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/news-posts-listing/paragraphs--news-posts-listing--admin.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/news-posts-listing/paragraphs--news-posts-listing--admin.png" title="View original image">
 &lt;img alt="The news posts listing admin" srcset="
 /docs/user-documentation/paragraphs/news-posts-listing/paragraphs--news-posts-listing--admin_hu18c038d6dfeb0aa8dabf878bd4c26e3e_14773_864910dc067b1d9fe8de46fdf733cb34.png 458w,
 /docs/user-documentation/paragraphs/news-posts-listing/paragraphs--news-posts-listing--admin_hu18c038d6dfeb0aa8dabf878bd4c26e3e_14773_cb073c26163ed32c60e7a066a3130a88.png 726w,
 /docs/user-documentation/paragraphs/news-posts-listing/paragraphs--news-posts-listing--admin_hu18c038d6dfeb0aa8dabf878bd4c26e3e_14773_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/news-posts-listing/paragraphs--news-posts-listing--admin_hu18c038d6dfeb0aa8dabf878bd4c26e3e_14773_864910dc067b1d9fe8de46fdf733cb34.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>From the paragraphs dropdown, add the &lt;em>News Posts Listing&lt;/em>. Enter a header title for the section in the text field and hit &lt;em>Save&lt;/em>.&lt;/p>
 &lt;blockquote>
@@ -1897,39 +1897,39 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--carnation.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--carnation.png" title="View original image">
 &lt;img alt="Promo card in Carnation" srcset="
 /docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--carnation_hud8021433824fa69e42d7511ee6b62481_32633_574c9b557513041f32b8e8c7c305ed45.png 458w,
 /docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--carnation_hud8021433824fa69e42d7511ee6b62481_32633_12b71d025630d19a71507d4b804d558e.png 726w,
 /docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--carnation_hud8021433824fa69e42d7511ee6b62481_32633_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--carnation_hud8021433824fa69e42d7511ee6b62481_32633_574c9b557513041f32b8e8c7c305ed45.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--lily.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--lily.png" title="View original image">
 &lt;img alt="Promo card in Lily" srcset="
 /docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--lily_hu87745618d3a70519e676b2438440aa21_23711_b964148c750cbd90c86c6d0c84eb7862.png 458w,
 /docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--lily_hu87745618d3a70519e676b2438440aa21_23711_90f160ad86db0bd275a77d385561bfc7.png 726w,
 /docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--lily_hu87745618d3a70519e676b2438440aa21_23711_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--lily_hu87745618d3a70519e676b2438440aa21_23711_b964148c750cbd90c86c6d0c84eb7862.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--rose.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--rose.png" title="View original image">
 &lt;img alt="Promo card in Rose" srcset="
 /docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--rose_hu28e156a55bb715c37ff25cba6dd60b6c_29502_9cb995f5a7cb881fc4dcdfcdea1bbdf2.png 458w,
 /docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--rose_hu28e156a55bb715c37ff25cba6dd60b6c_29502_1292a0e6887d39c33d6b2f70e1835b4a.png 726w,
 /docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--rose_hu28e156a55bb715c37ff25cba6dd60b6c_29502_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/promo-card/paragraphs--promo-card--rose_hu28e156a55bb715c37ff25cba6dd60b6c_29502_9cb995f5a7cb881fc4dcdfcdea1bbdf2.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-should-be-used">Areas It Should be Used&lt;/h2>
@@ -1967,39 +1967,39 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h2 id="example">Example&lt;/h2>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--carnation.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--carnation.png" title="View original image">
 &lt;img alt="The secondary description and sidebar in Carnation" srcset="
 /docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--carnation_hue06274f837b80bf2353d235f4bc860f9_21853_0c48793a5184ba1ab941fcc3dbbfff25.png 458w,
 /docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--carnation_hue06274f837b80bf2353d235f4bc860f9_21853_855228a6959e117630ef5a9831c1e12e.png 726w,
 /docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--carnation_hue06274f837b80bf2353d235f4bc860f9_21853_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--carnation_hue06274f837b80bf2353d235f4bc860f9_21853_0c48793a5184ba1ab941fcc3dbbfff25.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--lily.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--lily.png" title="View original image">
 &lt;img alt="The secondary description and sidebar in Lily" srcset="
 /docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--lily_hu247e853837eb10998a43993bbd31a401_35626_27d1ca11f26134c04696d3f46914b318.png 458w,
 /docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--lily_hu247e853837eb10998a43993bbd31a401_35626_3dd49fbc9bb79b28254ac42ce63bda15.png 726w,
 /docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--lily_hu247e853837eb10998a43993bbd31a401_35626_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--lily_hu247e853837eb10998a43993bbd31a401_35626_27d1ca11f26134c04696d3f46914b318.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--rose.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--rose.png" title="View original image">
 &lt;img alt="The secondary description and sidebar in Rose" srcset="
 /docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--rose_hu7c6422aa3c638e6abcaaea08fbc36aba_25563_73280f8eea44706062ab5f332b54c577.png 458w,
 /docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--rose_hu7c6422aa3c638e6abcaaea08fbc36aba_25563_0682eb97140448f3ca5da9c06ec7371b.png 726w,
 /docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--rose_hu7c6422aa3c638e6abcaaea08fbc36aba_25563_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--rose_hu7c6422aa3c638e6abcaaea08fbc36aba_25563_73280f8eea44706062ab5f332b54c577.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="areas-it-should-be-used">Areas it Should Be Used&lt;/h2>
 &lt;ul>
@@ -2008,15 +2008,15 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h2 id="how-to-use-secondary-description-and-sidebar">How to Use Secondary Description and Sidebar&lt;/h2>
 &lt;p>Insert the paragraph from the dropdown into the Bottom Area.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--admin.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--admin.png" title="View original image">
 &lt;img alt="Secondary description with sidebar admin fields" srcset="
 /docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--admin_hu6fef4e64bff93e3fef411bcf691989cf_41209_66459d1ee496e02441a5e70ce1ab7eb0.png 458w,
 /docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--admin_hu6fef4e64bff93e3fef411bcf691989cf_41209_4f62bb249f4e9c1476b42ea7b4e2736a.png 726w,
 /docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--admin_hu6fef4e64bff93e3fef411bcf691989cf_41209_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/secondary-description/paragraphs--secondary-description--admin_hu6fef4e64bff93e3fef411bcf691989cf_41209_66459d1ee496e02441a5e70ce1ab7eb0.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>You will have two fields to insert blocks - a Left Column and a Right Column. Select from one of four different custom block types, and either add a new custom block or reuse an existing block type.&lt;/p>
 &lt;p>
@@ -2042,77 +2042,77 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;h4 id="desktop">Desktop&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--carnation.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--carnation.jpeg" title="View original image">
 &lt;img alt="Small banner in Carnation on desktop" srcset="
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--carnation_hu6a2b7287ac687f9240e6b82f09eff369_767102_90eebe8b2bc3ec81596f4fae6d00fc55.jpeg 458w,
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--carnation_hu6a2b7287ac687f9240e6b82f09eff369_767102_1aa46aa87e5dd7e094e7f4a8d4580a7c.jpeg 726w,
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--carnation_hu6a2b7287ac687f9240e6b82f09eff369_767102_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--carnation_hu6a2b7287ac687f9240e6b82f09eff369_767102_90eebe8b2bc3ec81596f4fae6d00fc55.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="mobile">Mobile&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--carnation-mobile.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--carnation-mobile.jpeg" title="View original image">
 &lt;img alt="Small banner in Carnation on mobile" srcset="
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--carnation-mobile_hubc0754a8468eaaa09e7ec51260fe0bcd_163395_6a4a9ebdbb1ee313d3731743e4e1794b.jpeg 458w,
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--carnation-mobile_hubc0754a8468eaaa09e7ec51260fe0bcd_163395_7c99a52435232400c69edefaacf4f850.jpeg 726w,
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--carnation-mobile_hubc0754a8468eaaa09e7ec51260fe0bcd_163395_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--carnation-mobile_hubc0754a8468eaaa09e7ec51260fe0bcd_163395_6a4a9ebdbb1ee313d3731743e4e1794b.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;h4 id="desktop-1">Desktop&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--lily.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--lily.jpeg" title="View original image">
 &lt;img alt="Small banner in Lily on desktop" srcset="
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--lily_hu89d8dae4b3abe92b656eccd2813282dc_463523_17a83f936723fbc27986577797c40f7c.jpeg 458w,
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--lily_hu89d8dae4b3abe92b656eccd2813282dc_463523_db77bfaab48aea029d5b96dcd66cf1a8.jpeg 726w,
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--lily_hu89d8dae4b3abe92b656eccd2813282dc_463523_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--lily_hu89d8dae4b3abe92b656eccd2813282dc_463523_17a83f936723fbc27986577797c40f7c.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="mobile-1">Mobile&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--lily-mobile.jpeg" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--lily-mobile.jpeg" title="View original image">
 &lt;img alt="Small banner in Lily on mobile" srcset="
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--lily-mobile_hu65ff24244107b3fde8f51836c17a398c_491674_5f5368584f120ea43a23a70b2954ef74.jpeg 458w,
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--lily-mobile_hu65ff24244107b3fde8f51836c17a398c_491674_ff84074881d6393ff30e9091cd912806.jpeg 726w,
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--lily-mobile_hu65ff24244107b3fde8f51836c17a398c_491674_1200x664_fit_q75_catmullrom.jpeg 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--lily-mobile_hu65ff24244107b3fde8f51836c17a398c_491674_5f5368584f120ea43a23a70b2954ef74.jpeg" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;h4 id="desktop-2">Desktop&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--rose.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--rose.png" title="View original image">
 &lt;img alt="Small banner in Rose on desktop" srcset="
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--rose_hua8b4b3d7b35742f31d1193cee01a554f_252306_406e843451d8a808bf6aed436d0dd027.png 458w,
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--rose_hua8b4b3d7b35742f31d1193cee01a554f_252306_1627c944f7bead53a508f51dc13fed06.png 726w,
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--rose_hua8b4b3d7b35742f31d1193cee01a554f_252306_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--rose_hua8b4b3d7b35742f31d1193cee01a554f_252306_406e843451d8a808bf6aed436d0dd027.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h4 id="mobile-2">Mobile&lt;/h4>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--rose.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--rose.png" title="View original image">
 &lt;img alt="Small banner in Rose on mobile" srcset="
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--rose_hua8b4b3d7b35742f31d1193cee01a554f_252306_406e843451d8a808bf6aed436d0dd027.png 458w,
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--rose_hua8b4b3d7b35742f31d1193cee01a554f_252306_1627c944f7bead53a508f51dc13fed06.png 726w,
 /docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--rose_hua8b4b3d7b35742f31d1193cee01a554f_252306_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/small-banner/paragraphs--small-banner--rose_hua8b4b3d7b35742f31d1193cee01a554f_252306_406e843451d8a808bf6aed436d0dd027.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;hr>
 &lt;h2 id="areas-it-can-be-used">Areas it Can be Used&lt;/h2>
@@ -2205,39 +2205,39 @@ For recommended image sizes for your YMCA Website Services site, talk to your ag
 &lt;h2 id="example">Example&lt;/h2>
 &lt;h3 id="carnation">Carnation&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/teaser/paragraphs--teaser--carnation.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/teaser/paragraphs--teaser--carnation.png" title="View original image">
 &lt;img alt="The teaser in Carnation" srcset="
 /docs/user-documentation/paragraphs/teaser/paragraphs--teaser--carnation_hu9f964bf368d614017d976c12c32f4b65_304987_a321214c3f0d41154a82368996eee0b4.png 458w,
 /docs/user-documentation/paragraphs/teaser/paragraphs--teaser--carnation_hu9f964bf368d614017d976c12c32f4b65_304987_ce98abd0eeeac6489676b1a0e95e84e1.png 726w,
 /docs/user-documentation/paragraphs/teaser/paragraphs--teaser--carnation_hu9f964bf368d614017d976c12c32f4b65_304987_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/teaser/paragraphs--teaser--carnation_hu9f964bf368d614017d976c12c32f4b65_304987_a321214c3f0d41154a82368996eee0b4.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="lily">Lily&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/teaser/paragraphs--teaser--lily.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/teaser/paragraphs--teaser--lily.png" title="View original image">
 &lt;img alt="The teaser in Lily" srcset="
 /docs/user-documentation/paragraphs/teaser/paragraphs--teaser--lily_huc8840f5f33903f187b1c5dd920667233_110633_a424a3a20327626c994fc3c3ec474f48.png 458w,
 /docs/user-documentation/paragraphs/teaser/paragraphs--teaser--lily_huc8840f5f33903f187b1c5dd920667233_110633_251f8632c67ab9a14692e9b5a219d0af.png 726w,
 /docs/user-documentation/paragraphs/teaser/paragraphs--teaser--lily_huc8840f5f33903f187b1c5dd920667233_110633_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/teaser/paragraphs--teaser--lily_huc8840f5f33903f187b1c5dd920667233_110633_a424a3a20327626c994fc3c3ec474f48.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h3 id="rose">Rose&lt;/h3>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/teaser/paragraphs--teaser--rose.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/teaser/paragraphs--teaser--rose.png" title="View original image">
 &lt;img alt="The teaser in Rose" srcset="
 /docs/user-documentation/paragraphs/teaser/paragraphs--teaser--rose_hu3592efc22a9693efedbb1c364ad9f222_219679_2b77e1193da0ec55679916578c654906.png 458w,
 /docs/user-documentation/paragraphs/teaser/paragraphs--teaser--rose_hu3592efc22a9693efedbb1c364ad9f222_219679_a6bb1eb15c53a5d2902434ffb1dd6d04.png 726w,
 /docs/user-documentation/paragraphs/teaser/paragraphs--teaser--rose_hu3592efc22a9693efedbb1c364ad9f222_219679_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/teaser/paragraphs--teaser--rose_hu3592efc22a9693efedbb1c364ad9f222_219679_2b77e1193da0ec55679916578c654906.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;h2 id="areas-it-should-be-used">Areas it should be used&lt;/h2>
 &lt;ul>
@@ -2246,15 +2246,15 @@ For recommended image sizes for your YMCA Website Services site, talk to your ag
 &lt;h2 id="how-to-use-teaser">How to use Teaser&lt;/h2>
 &lt;p>Insert the paragraph from the dropdown into the Content Area.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/teaser/paragraphs--teaser--admin.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/teaser/paragraphs--teaser--admin.png" title="View original image">
 &lt;img alt="Teaser admin fields" srcset="
 /docs/user-documentation/paragraphs/teaser/paragraphs--teaser--admin_hu2612cd82481a0aec83dadc2c6c960364_64271_0e7619095d71e51033a8c3b334b07035.png 458w,
 /docs/user-documentation/paragraphs/teaser/paragraphs--teaser--admin_hu2612cd82481a0aec83dadc2c6c960364_64271_6caf5b7054d9aafce5aa27ba4e390e8e.png 726w,
 /docs/user-documentation/paragraphs/teaser/paragraphs--teaser--admin_hu2612cd82481a0aec83dadc2c6c960364_64271_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/teaser/paragraphs--teaser--admin_hu2612cd82481a0aec83dadc2c6c960364_64271_0e7619095d71e51033a8c3b334b07035.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Fill out the content fields:&lt;/p>
 &lt;ul>
@@ -2280,15 +2280,15 @@ For recommended image sizes for your YMCA Website Services site, talk to your ag
 &lt;/blockquote>
 &lt;p>Once you’ve selected &lt;em>Webform&lt;/em> from the paragraphs dropdown, select the name of the webform you want to embed onto your page.&lt;/p>
 &lt;p>
-&lt;a href="/docs/user-documentation/paragraphs/webform/paragraphs--webform--admin.png" title="View original image">
 &lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/webform/paragraphs--webform--admin.png" title="View original image">
 &lt;img alt="Webform paragraph admin fields" srcset="
 /docs/user-documentation/paragraphs/webform/paragraphs--webform--admin_hu4f13edadada6598d16012ecc56908bbd_107532_b22bf5df15a8bf624821fb52f27557a9.png 458w,
 /docs/user-documentation/paragraphs/webform/paragraphs--webform--admin_hu4f13edadada6598d16012ecc56908bbd_107532_25695544fef411bb06c93c8380022c75.png 726w,
 /docs/user-documentation/paragraphs/webform/paragraphs--webform--admin_hu4f13edadada6598d16012ecc56908bbd_107532_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/webform/paragraphs--webform--admin_hu4f13edadada6598d16012ecc56908bbd_107532_b22bf5df15a8bf624821fb52f27557a9.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
-&lt;/figure>
 &lt;/a>
+&lt;/figure>
 &lt;/p>
 &lt;p>Next, you will have the option to open, close or schedule your open/close dates for your webform.&lt;/p>
 &lt;blockquote>
