@@ -1083,7 +1083,54 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;p>In addition to using many of the standard
 &lt;a href="../../layout-builder">Layout Builder&lt;/a> components, Camp pages also use a number of components that display fields described above.&lt;/p>
 &lt;h4 id="camp-info-block">Camp Info Block&lt;/h4>
-&lt;p>The &lt;strong>Camp Info Block&lt;/strong> is automatically added to the Body section of each &lt;strong>Camp&lt;/strong> page. It displays content from the Contact Info section. It can be rearranged on the page but is not otherwise configurable.&lt;/p></description></item><item><title>Docs: Facility</title><link>/docs/user-documentation/content-types/facility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/facility/</guid><description>
+&lt;p>The &lt;strong>Camp Info Block&lt;/strong> is automatically added to the Body section of each &lt;strong>Camp&lt;/strong> page. It displays content from the Contact Info section. It can be rearranged on the page but is not otherwise configurable.&lt;/p>
+&lt;h3 id="camp-header-layout">Camp Header Layout&lt;/h3>
+&lt;p>When you create a new Camp page or switch an existing one to use Layout Builder, it will come with a pre-set &lt;strong>Camp Header&lt;/strong> Section, which enables the configuration steps above. If you find some of those blocks are missing, you can restore them manually.&lt;/p>
+&lt;p>To completely start over, use the &lt;kbd>x&lt;/kbd> to the left of &lt;strong>Configure Camp Header&lt;/strong> to delete the section. Add a new Section and choose the &lt;strong>WS Camp Header&lt;/strong> layout. Then, add the following blocks by selecting &lt;strong>Add block&lt;/strong> in the corresponding region.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/camp/camp--lb-header.png" title="View original image">
+&lt;img alt="A screenshot of the Camp Header Layout Builder configuration with labels for the Utility menu at the top and the Main Menu in the center" srcset="
+/docs/user-documentation/content-types/camp/camp--lb-header_hud6c5d292ab86e874018cd26e85ad84d8_67550_c0ebfdbe59d9181640a1697c07e84181.png 458w,
+/docs/user-documentation/content-types/camp/camp--lb-header_hud6c5d292ab86e874018cd26e85ad84d8_67550_74c5bb644843274b77a533dd7fcbad9d.png 726w,
+/docs/user-documentation/content-types/camp/camp--lb-header_hud6c5d292ab86e874018cd26e85ad84d8_67550_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--lb-header_hud6c5d292ab86e874018cd26e85ad84d8_67550_c0ebfdbe59d9181640a1697c07e84181.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>The default configuration for a the Camp Header block should be:&lt;/p>
+&lt;ul>
+&lt;li>Utility Menu
+&lt;ul>
+&lt;li>Left
+&lt;ul>
+&lt;li>All system blocks &amp;gt; Camp blocks &amp;gt; &lt;strong>Camp Back Link&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Right
+&lt;ul>
+&lt;li>Create custom block &amp;gt; &lt;strong>Camp Quick Links&lt;/strong>&lt;/li>
+&lt;li>All system blocks &amp;gt; OpenY &amp;gt; &lt;strong>Open Y Google Translate&lt;/strong> (optional)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Main Menu
+&lt;ul>
+&lt;li>Left
+&lt;ul>
+&lt;li>All system blocks &amp;gt; Common blocks &amp;gt; &lt;strong>Site Logo Block&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Right
+&lt;ul>
+&lt;li>Create custom block &amp;gt; &lt;strong>Camp menu&lt;/strong>&lt;/li>
+&lt;li>Create custom block &amp;gt; &lt;strong>Camp quick links&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Facility</title><link>/docs/user-documentation/content-types/facility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/facility/</guid><description>
 &lt;p>The Facility content type is used for locations where programming might take place that are not a full YMCA Branch. This might be a childcare facility, a shared-use space, or an office.&lt;/p>
 &lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
 &lt;p>Facilities share their design with the
