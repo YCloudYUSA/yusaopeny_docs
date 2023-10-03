@@ -3323,7 +3323,67 @@ This is a warning.
 &lt;/table>
 &lt;h3 id="url-pattern">URL pattern&lt;/h3>
 &lt;p>Content type is using following pattern:
-&lt;code>[node:title]&lt;/code>&lt;/p></description></item><item><title>Docs: Latest Blog Posts</title><link>/docs/content-structure/paragraphs/latest-blog-posts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/latest-blog-posts/</guid><description>
+&lt;code>[node:title]&lt;/code>&lt;/p></description></item><item><title>Docs: Landing Page (Layout Builder)</title><link>/docs/content-structure/content-types/lb-landing-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/lb-landing-page/</guid><description>
+&lt;p>Landing Page content type is used to add Landing Pages to your website using Layout Builder widgets.&lt;/p>
+&lt;p>This page is managed with Layout Builder. You may want to uncheck &amp;ldquo;Publish Content&amp;rdquo; before creating a page, use the &amp;ldquo;Layout&amp;rdquo; tab to build the content, then Publish when the page is complete. See our
+&lt;a href="../../user-documentation/layout-builder">User Guide&lt;/a> for help.&lt;/p>
+&lt;h2 id="fields">Fields&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Label&lt;/th>
+&lt;th>Machine Name&lt;/th>
+&lt;th>Required&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;th>Field Settings&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Title&lt;/td>
+&lt;td>title&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;td>Title of Landing Page&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Metadata&lt;/strong>&lt;/td>
+&lt;td>Field group&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Meta description&lt;/td>
+&lt;td>field_meta_description&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>Short text used for metatags and cards&lt;/td>
+&lt;td>Text (plain, long)&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Meta image&lt;/td>
+&lt;td>field_meta_image&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>Media image reference for use in metatags and cards&lt;/td>
+&lt;td>Entity reference (Media image)&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Meta tags&lt;/td>
+&lt;td>field_meta_tags&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>Provided by Metatag module&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="url-pattern">URL pattern&lt;/h2>
+&lt;p>Content type is using following pattern: &lt;code>[node:title]&lt;/code>&lt;/p></description></item><item><title>Docs: Latest Blog Posts</title><link>/docs/content-structure/paragraphs/latest-blog-posts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/latest-blog-posts/</guid><description>
 &lt;p>This is dynamic paragraph that renders the latest blog posts that are promoted to the front page.&lt;/p>
 &lt;p>It uses sticky at the top option and order items based on published date (newest at the top).&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
@@ -3409,27 +3469,6 @@ This is a warning.
 &lt;/tbody>
 &lt;/table></description></item><item><title>Docs: Latest News Posts (Branch)</title><link>/docs/content-structure/paragraphs/latest-news-posts-branch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/latest-news-posts-branch/</guid><description>
 &lt;p>This is dynamic paragraph that renders the latest news posts associated with a branch.&lt;/p>
-&lt;p>It uses sticky at the top option and order items based on published date (newest at the top).&lt;/p>
-&lt;h3 id="fields">Fields&lt;/h3>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Name&lt;/th>
-&lt;th>Machine name&lt;/th>
-&lt;th>Required&lt;/th>
-&lt;th>Description&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>Block&lt;/td>
-&lt;td>field_prgf_block&lt;/td>
-&lt;td>Yes&lt;/td>
-&lt;td>Block reference to the view/block. Should have default value and should be hidden in form display.&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table></description></item><item><title>Docs: Latest News Posts (Camp)</title><link>/docs/content-structure/paragraphs/latest-news-posts-camp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/latest-news-posts-camp/</guid><description>
-&lt;p>This is dynamic paragraph that renders the latest news posts associated with a camp.&lt;/p>
 &lt;p>It uses sticky at the top option and order items based on published date (newest at the top).&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
 &lt;table>

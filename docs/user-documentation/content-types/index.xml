@@ -1256,7 +1256,42 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;li>&lt;strong>Content Area&lt;/strong>: The main body of your content.&lt;/li>
 &lt;li>&lt;strong>Sidebar Area&lt;/strong> &lt;em>(Two Column Layouts Only)&lt;/em>: For aside pieces of content, such as side navigations, promotional cards and content related to the main part of your page.&lt;/li>
 &lt;li>&lt;strong>Bottom Area&lt;/strong>: Add an anchoring element to your page, such as a promotional banner or webform.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Membership Content Type</title><link>/docs/user-documentation/content-types/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/membership/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Landing Page (Layout Builder)</title><link>/docs/user-documentation/content-types/lb-landing-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/lb-landing-page/</guid><description>
+&lt;p>This page is the base for building pages with
+&lt;a href="../../layout-builder">Layout Builder&lt;/a>.&lt;/p>
+&lt;h2 id="creating-a-landing-page">Creating a Landing Page&lt;/h2>
+&lt;p>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Landing Page (Layout Builder)&lt;/strong>&lt;/p>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required): The title of the page. It will not be added to the page and should be added manually with a block in the
+&lt;a href="#customizing-a-landing-page">Banner section&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Metadata&lt;/strong>: This content is used to provide context to search engines and page previews. For the best user experience create
+&lt;a href="https://backlinko.com/on-page-seo#optimize-title-and-description-tags" target="_blank">clickable titles&lt;/a>,
+&lt;a href="https://moz.com/learn/seo/meta-description" target="_blank">write a compelling description&lt;/a>, and
+&lt;a href="https://yoast.com/image-seo/#always" target="_blank">add a descriptive image&lt;/a>.
+&lt;ul>
+&lt;li>&lt;strong>Meta description&lt;/strong>: A brief and concise summary of the page&amp;rsquo;s content that is a maximum of 160 characters in length.&lt;/li>
+&lt;li>&lt;strong>Meta image&lt;/strong>: Choose or upload an image to be used as a thumbnail for social sharing and preview cards.&lt;/li>
+&lt;li>&lt;strong>Meta tags&lt;/strong>: Advanced meta tag configuration. This section should not be edited unless you know what you&amp;rsquo;re doing.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="customizing-a-landing-page">Customizing a Landing Page&lt;/h2>
+&lt;p>Once you create a Landing Page you can customize it with
+&lt;a href="../../layout-builder">Layout Builder&lt;/a>.&lt;/p>
+&lt;p>Landing Pages come with these pre-configured sections:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="../../layout-builder/header-footer/#header-section">&lt;strong>Header&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Banner&lt;/strong>: An edge-to-edge, no gutters section that works best with a single
+&lt;a href="../../layout-builder/banner">Banner&lt;/a> or
+&lt;a href="../../layout-builder/carousel">Carousel&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Body&lt;/strong>: A section with left and right margins. This can contain the bulk of your page content.&lt;/li>
+&lt;li>
+&lt;a href="../../layout-builder/header-footer/#footer-section">&lt;strong>Footer&lt;/strong>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Sections can be
+&lt;a href="../../layout-builder/#sections">edited, reordered, or removed&lt;/a> to configure your page as you like. You can even remove the header and footer altogether if you need to create content for a digital display or other embedded system.&lt;/p></description></item><item><title>Docs: Membership Content Type</title><link>/docs/user-documentation/content-types/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/membership/</guid><description>
 &lt;hr>
 &lt;h2 id="membership-fields">Membership Fields&lt;/h2>
 &lt;h3 id="general-information">General Information&lt;/h3>

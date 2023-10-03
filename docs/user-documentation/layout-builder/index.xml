@@ -1273,10 +1273,37 @@
 &lt;/details></description></item><item><title>Docs: Advanced Options</title><link>/docs/user-documentation/layout-builder/advanced-options/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/advanced-options/</guid><description>
 &lt;p>A huge amount of configuration is available with Layout Builder components using the contributed
 &lt;a href="https://www.drupal.org/project/layout_builder_blocks" target="_blank">Layout Builder Blocks&lt;/a> module, which is included with the distribution. In addition to those configuration options, we provide an extra layer of &amp;ldquo;Y Styles&amp;rdquo; that help site builders customize their sites in an accessible and brand-compliant manner.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/S9QninI7ydM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
 &lt;h2 id="y-styles">Y Styles&lt;/h2>
-&lt;p>These options provide customizations of Layout Builder-enabled pages at the Content Type, Page, and Component level.&lt;/p>
+&lt;p>These options provide customizations of Layout Builder-enabled pages at the Content Type, Page, and Component(/Block) level.&lt;/p>
+&lt;p>Styles inherit from content types, to pages, to components. Some styles can also be overridden at each level - block styles can override page styles, which can override content type styles.&lt;/p>
+&lt;div class="mermaid">flowchart
+classDef ct fill:#5C2E9133;
+classDef page fill:#92278F33;
+classDef block fill:#C6168D33;
+subgraph ct[Content Type]
+direction LR
+subgraph page[Page]
+direction LR
+subgraph block[Block]
+blockStyles[Block Styles]
+end
+pageStyles[Page Styles]
+end
+ctStyles[Content Type Styles]
+end
+blockStyles -- override --> pageStyles
+pageStyles -- override --> ctStyles
+class ct ct
+class page page
+class block block
+&lt;/div>
 &lt;h3 id="content-type-styles">Content Type styles&lt;/h3>
+&lt;blockquote>
 &lt;p>&lt;strong>Note:&lt;/strong> This configuration may not be accessible to all content editors. Ask an administrator for assistance if necessary.&lt;/p>
+&lt;/blockquote>
 &lt;details>&lt;summary>The default values for page-level Y Styles options are set in the Content Type display options.&lt;/summary>
 &lt;p>To access them:&lt;/p>
 &lt;ul>
@@ -1298,14 +1325,14 @@
 &lt;/ul>
 &lt;/details>
 &lt;h3 id="page-styles">Page styles&lt;/h3>
-&lt;p>Every Layout Builder-enabled page that you create will allow you to override the default settings.&lt;/p>
+&lt;p>Every Layout Builder-enabled page that you create will allow you to override the default settings. All of these settings will affect all items on a page, unless they are overridden at the component level.&lt;/p>
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/advanced-options/lb--advanced--y-styles.png" title="View original image">
-&lt;img alt="A screenshot displayinf the &amp;amp;ldquo;Y Styles&amp;amp;rdquo; configuration section." srcset="
-/docs/user-documentation/layout-builder/advanced-options/lb--advanced--y-styles_hue31cb9512a47aa69406df10cf1f4ff41_65445_da8f9d97c84857a927696193eedcb5ca.png 458w,
-/docs/user-documentation/layout-builder/advanced-options/lb--advanced--y-styles_hue31cb9512a47aa69406df10cf1f4ff41_65445_df81190b5fb78086e343158a0b0dad0d.png 726w,
-/docs/user-documentation/layout-builder/advanced-options/lb--advanced--y-styles_hue31cb9512a47aa69406df10cf1f4ff41_65445_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/advanced-options/lb--advanced--y-styles_hue31cb9512a47aa69406df10cf1f4ff41_65445_da8f9d97c84857a927696193eedcb5ca.png" />
+&lt;img alt="A screenshot displaying the &amp;amp;ldquo;Y Styles&amp;amp;rdquo; configuration section." srcset="
+/docs/user-documentation/layout-builder/advanced-options/lb--advanced--y-styles_hu08fc19567119cb71e9f4fa86c6a35bc9_15081_a56deb3a61f6bb3f03ccb825f74e5716.png 458w,
+/docs/user-documentation/layout-builder/advanced-options/lb--advanced--y-styles_hu08fc19567119cb71e9f4fa86c6a35bc9_15081_498904fe3fc04db66978290df86b71fe.png 726w,
+/docs/user-documentation/layout-builder/advanced-options/lb--advanced--y-styles_hu08fc19567119cb71e9f4fa86c6a35bc9_15081_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/advanced-options/lb--advanced--y-styles_hu08fc19567119cb71e9f4fa86c6a35bc9_15081_a56deb3a61f6bb3f03ccb825f74e5716.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/a>
 &lt;/figure>
@@ -1313,12 +1340,167 @@
 &lt;ul>
 &lt;li>Edit the &lt;strong>Layout&lt;/strong> on a page&lt;/li>
 &lt;li>Expand the &lt;strong>Y Styles&lt;/strong> section&lt;/li>
-&lt;li>Choose your configuration options.&lt;/li>
+&lt;li>Choose your configuration options.
+&lt;ul>
+&lt;li>&lt;strong>Color scheme&lt;/strong>:
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--color.png" title="View original image">
+&lt;img alt="The color scheme options" srcset="
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--color_hua644d012b260ca665c97c9e63becc8ec_17719_5102ce6c8a5c496464d13ff34423540b.png 458w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--color_hua644d012b260ca665c97c9e63becc8ec_17719_3b09bfca70b394ce0f67a21a12c8a89c.png 726w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--color_hua644d012b260ca665c97c9e63becc8ec_17719_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--color_hua644d012b260ca665c97c9e63becc8ec_17719_5102ce6c8a5c496464d13ff34423540b.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+The color scheme of all components on the page. Choose from four brand-compliant and accessible options:
+&lt;ul>
+&lt;li>Blue/Purple&lt;/li>
+&lt;li>Green/Blue&lt;/li>
+&lt;li>Purple/Red&lt;/li>
+&lt;li>Red/Orange&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Border radius&lt;/strong>:
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--border-radius.png" title="View original image">
+&lt;img alt="The border radius options" srcset="
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--border-radius_hu17b37556b98e9a24680b9eea1d6d96a2_6055_dd99dccfaa893407487ca27d1c451b9e.png 458w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--border-radius_hu17b37556b98e9a24680b9eea1d6d96a2_6055_08552af3cffde52fd13d2cf9feb1f251.png 726w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--border-radius_hu17b37556b98e9a24680b9eea1d6d96a2_6055_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--border-radius_hu17b37556b98e9a24680b9eea1d6d96a2_6055_dd99dccfaa893407487ca27d1c451b9e.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+The curvature of container corners.
+&lt;ul>
+&lt;li>0px (square)&lt;/li>
+&lt;li>10px (small curve)&lt;/li>
+&lt;li>20px (larger curve)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Border style&lt;/strong>:
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--border-style.png" title="View original image">
+&lt;img alt="The border style options" srcset="
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--border-style_huc872f302a870378ac8ce3f2c5d7b0afb_5699_15f0672c9912be6c23eeb571682f6218.png 458w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--border-style_huc872f302a870378ac8ce3f2c5d7b0afb_5699_d6f3f48b6cfe195a522dedc5fbb37258.png 726w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--border-style_huc872f302a870378ac8ce3f2c5d7b0afb_5699_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--border-style_huc872f302a870378ac8ce3f2c5d7b0afb_5699_15f0672c9912be6c23eeb571682f6218.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+The style of container borders.
+&lt;ul>
+&lt;li>No border&lt;/li>
+&lt;li>1px border&lt;/li>
+&lt;li>Drop shadow&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Text/Button alignment&lt;/strong>:
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-alignment.png" title="View original image">
+&lt;img alt="The text/button alignment options" srcset="
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-alignment_huae032fce714e870b18d249486f487fde_4045_d0ff934cef64add268bd97935b94e000.png 458w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-alignment_huae032fce714e870b18d249486f487fde_4045_e97e01703996bd745952ba2f57de39bb.png 726w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-alignment_huae032fce714e870b18d249486f487fde_4045_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-alignment_huae032fce714e870b18d249486f487fde_4045_d0ff934cef64add268bd97935b94e000.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+The vertical placement of elements in containers.
+&lt;ul>
+&lt;li>Left&lt;/li>
+&lt;li>Center&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Button position&lt;/strong>:
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-position.png" title="View original image">
+&lt;img alt="The button position options" srcset="
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-position_hub037823ff0916060fcb214c1a2e63b73_4029_87e0c995e9e09bc9fbd8d5e5dc006661.png 458w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-position_hub037823ff0916060fcb214c1a2e63b73_4029_8dd04eaca08575e618592ccdd5e9264d.png 726w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-position_hub037823ff0916060fcb214c1a2e63b73_4029_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-position_hub037823ff0916060fcb214c1a2e63b73_4029_87e0c995e9e09bc9fbd8d5e5dc006661.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+Where buttons sit in containers.
+&lt;ul>
+&lt;li>Inside container&lt;/li>
+&lt;li>Overlapping container&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Button fill&lt;/strong>:
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-fill.png" title="View original image">
+&lt;img alt="The button fill options" srcset="
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-fill_hu2b300ab237d7a60b211ef89803a4ee3e_3839_74eff34226634b0bbdc2a1bbd1d45d97.png 458w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-fill_hu2b300ab237d7a60b211ef89803a4ee3e_3839_ceebe49142e252d550160964cd189f2c.png 726w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-fill_hu2b300ab237d7a60b211ef89803a4ee3e_3839_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--button-fill_hu2b300ab237d7a60b211ef89803a4ee3e_3839_74eff34226634b0bbdc2a1bbd1d45d97.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+How buttons are colored.
+&lt;ul>
+&lt;li>Filled by default, outlined on hover&lt;/li>
+&lt;li>Outlined by default, filled on hover&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>Click &lt;strong>Save layout&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;h3 id="y-block-styles">Y Block styles&lt;/h3>
 &lt;p>Some blocks have additional styles that can be configured per-block. For these blocks (e.g. Banner, Cards), look for the &lt;strong>Y Styles&lt;/strong> section in the
 &lt;a href="#block-styles">block styles section&lt;/a> and set the options accordingly.&lt;/p>
+&lt;ul>
+&lt;li>Banner
+&lt;ul>
+&lt;li>&lt;strong>Variant&lt;/strong>:
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--banner-variants.png" title="View original image">
+&lt;img alt="The Banner variants" srcset="
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--banner-variants_hu1080e79925881f1cd67ce8f05a0005a3_9545_65807033ead9130100e98b2d4a642c8a.png 458w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--banner-variants_hu1080e79925881f1cd67ce8f05a0005a3_9545_0c5314449e1eb6e759cdec39b1761037.png 726w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--banner-variants_hu1080e79925881f1cd67ce8f05a0005a3_9545_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--banner-variants_hu1080e79925881f1cd67ce8f05a0005a3_9545_65807033ead9130100e98b2d4a642c8a.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+Choose from five designs.
+&lt;ul>
+&lt;li>Standard&lt;/li>
+&lt;li>Overlay&lt;/li>
+&lt;li>Chevron&lt;/li>
+&lt;li>Frame&lt;/li>
+&lt;li>Small - This variant hides all but the title and description and does not use an image background.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Button fill&lt;/strong>: Override the page-level styles.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Card
+&lt;ul>
+&lt;li>&lt;strong>Variant&lt;/strong>:
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--card-variants.png" title="View original image">
+&lt;img alt="The card variants" srcset="
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--card-variants_hu6b0ac6dc7734a841a3c542e9f4373eb3_12132_5d93b00e418b89b1ea47f2b36da8ab09.png 458w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--card-variants_hu6b0ac6dc7734a841a3c542e9f4373eb3_12132_36c8f298c04d1530cac1fb1dec0a1c06.png 726w,
+/docs/user-documentation/layout-builder/advanced-options/lb-advanced--card-variants_hu6b0ac6dc7734a841a3c542e9f4373eb3_12132_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--card-variants_hu6b0ac6dc7734a841a3c542e9f4373eb3_12132_5d93b00e418b89b1ea47f2b36da8ab09.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+Choose from four designs.
+&lt;ul>
+&lt;li>Standard&lt;/li>
+&lt;li>Overlay&lt;/li>
+&lt;li>Chevron&lt;/li>
+&lt;li>Color&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Border style&lt;/strong>: Override the page-level styles.&lt;/li>
+&lt;li>&lt;strong>Text/Button alignment&lt;/strong>: Override the page-level styles.&lt;/li>
+&lt;li>&lt;strong>Button position&lt;/strong>: Override the page-level styles.&lt;/li>
+&lt;li>&lt;strong>Button fill&lt;/strong>: Override the page-level styles.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="section-styles">Section styles&lt;/h2>
 &lt;p>When creating or editing a &lt;strong>Section&lt;/strong> you have the option of configuring &lt;strong>Layout&lt;/strong>, &lt;strong>Style&lt;/strong>, and &lt;strong>Settings&lt;/strong>.&lt;/p>
 &lt;p>
@@ -1341,7 +1523,7 @@
 &lt;ul>
 &lt;li>&lt;strong>Boxed:&lt;/strong> Section is narrower than the header of the page. Good for text-heavy layouts.&lt;/li>
 &lt;li>&lt;strong>Full:&lt;/strong> Section extends to the edges of the main content container.&lt;/li>
-&lt;li>&lt;strong>Edge to Edge:&lt;/strong> Section extends to the edges of the page. Good for full-width components like Banners and Ping Pong blocks.&lt;/li>
+&lt;li>&lt;strong>Edge to Edge:&lt;/strong> Section extends to the edges of the page. Good for full-width components like Banners and Ping-Pong blocks.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;strong>Gutters&lt;/strong>

@@ -211,24 +211,136 @@
 &lt;a href="../../user-documentation/paragraphs/social-share-icons">Social Share Icons&lt;/a> paragraph and the
 &lt;a href="https://www.drupal.org/project/openy_addthis" target="_blank">AddThis module&lt;/a> ceased functioning on May 31, 2023, with the discontinuation of
 &lt;a href="https://www.addthis.com/" target="_blank">AddThis&lt;/a> services.&lt;/p></description></item><item><title>Docs: How to migrate content into Layout Builder</title><link>/docs/howto/migrate-to-lb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/migrate-to-lb/</guid><description>
-&lt;p>Before you start your migration, we recommend getting a better understanding of your current site with a
-&lt;a href="../content-audit">Content Audit&lt;/a>.&lt;/p>
+&lt;p>Before you start your migration, we recommend you:&lt;/p>
+&lt;ul>
+&lt;li>understand your current site with a
+&lt;a href="../content-audit">Content Audit&lt;/a>,&lt;/li>
+&lt;li>familiarize yourself with the
+&lt;a href="../../user-documentation/layout-builder/">new Layout Builder Components&lt;/a>,&lt;/li>
+&lt;li>watch our
+&lt;a href="https://youtu.be/YdYaYE0bd6w?t=794&amp;amp;si=xPvRoLM0O-VxABDZ" target="_blank">comparison of Paragraphs and Layout Builder&lt;/a>, and&lt;/li>
+&lt;li>see a side-by-side demo of the
+&lt;a href="https://youtu.be/jrRY3q2lP4s" target="_blank">old vs. new page building experiences&lt;/a>.&lt;/li>
+&lt;/ul>
 &lt;h2 id="plan-your-migration">Plan your migration&lt;/h2>
+&lt;p>The migration from Paragraphs to Layout Builder is not a small one, but it can be done in bite-sized pieces and spread out over some time if necessary. We recommend working with a
+&lt;a href="https://ds.ymca.org/partners" target="_blank">partner agency&lt;/a> to assist you through the process.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>TIP&lt;/strong>: As you work through the migration, the new pieces of your site &lt;em>will&lt;/em> look different than others. Help members through the process with some messaging in an
+&lt;a href="../../user-documentation/content-types/alert">Alert&lt;/a> or
+&lt;a href="../../user-documentation/content-types/lb-article">news post&lt;/a> letting them know that things will be changing.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="decide-where-to-start">Decide where to start&lt;/h2>
+&lt;p>If you&amp;rsquo;re doing your migration throughout your regular business, without starting from scratch (sometimes called a &amp;ldquo;lazy migration&amp;rdquo;), it helps to identify a strategy for planning the migration. These are a few possible strategies:&lt;/p>
+&lt;h3 id="a-campaign-or-goal">A campaign or goal&lt;/h3>
+&lt;p>If you have an upcoming marketing campaign you could build one or a few brand new Landing Pages with Layout Builder to try out the process. This way you&amp;rsquo;re easing both your editors and members into the new designs without getting too deep.&lt;/p>
+&lt;p>If you have a natural pause in events (maybe over a holiday) or a big series coming up you could use that as the break point for new events. Old events don&amp;rsquo;t necessarily have to be converted to the new design as they&amp;rsquo;re not often viewed after their date has passed.&lt;/p>
+&lt;h3 id="a-section-of-the-site">A section of the site&lt;/h3>
+&lt;p>Maybe you want to ease into the process with some lesser-used pages, maybe you want to change the home page and top-level menu items to show off the new designs right from the outset. Either way, you can decide on a section and carve off a few pages at a time.&lt;/p>
+&lt;h3 id="a-content-type">A content type&lt;/h3>
+&lt;p>Events or News articles are a good option to try out the new designs, although you&amp;rsquo;ll need to ensure any Landing Pages that display lists of that content are also updated. Branch pages can be converted one by one without changing their listing on the Locations page.&lt;/p>
+&lt;h2 id="prepare-your-content">Prepare your content&lt;/h2>
+&lt;p>Once you know what you&amp;rsquo;re going to move, you&amp;rsquo;ll want to get the content ready to migrate. Most text will need to be copied and pasted to the new pages (this is a great opportunity for review), but images and documents will be able to be re-used from the
+&lt;a href="../../user-documentation/media">Media Library&lt;/a>.&lt;/p>
+&lt;p>It could be helpful to print or screenshot pages (Firefox can capture a
+&lt;a href="https://support.mozilla.org/en-US/kb/take-screenshots-firefox" target="_blank">full-page screenshot&lt;/a>) and then annotate them to decide how each section of the page will map to its Layout Builder component. You could even use the
+&lt;a href="https://web.archive.org/" target="_blank">Wayback Machine&lt;/a> to save a snapshot of the page.&lt;/p>
+&lt;h3 id="component-mapping">Component mapping&lt;/h3>
+&lt;p>While the exact mappings are up to each site&amp;rsquo;s content editors, here are some possible mappings from Paragraphs to Layout Builder&lt;/p>
+&lt;blockquote>
+&lt;dl>
+&lt;dt>Paragraph&lt;/dt>
+&lt;dd>the Layout Builder component it maps to.&lt;/dd>
+&lt;/dl>
+&lt;/blockquote>
+&lt;dl>
+&lt;dt>1 Column&lt;/dt>
+&lt;dt>2 Columns&lt;/dt>
+&lt;dt>3 Columns&lt;/dt>
+&lt;dt>4 Columns&lt;/dt>
+&lt;dt>Secondary Description and Sidebar&lt;/dt>
+&lt;dd>These paragraphs can be replicated using 1-4 column
+&lt;a href="../../user-documentation/layout-builder/#layouts">Layouts&lt;/a>&lt;/dd>
+&lt;dt>Activity Finder&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/layout-builder/activity-finder">Activity Finder&lt;/a>&lt;/dd>
+&lt;dt>All Amenities&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/content-types/branch/#layout-builder-blocks">Branch Amenities&lt;/a>&lt;/dd>
+&lt;dt>Banner&lt;/dt>
+&lt;dt>Small Banner&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/layout-builder/banner">Banner&lt;/a>&lt;/dd>
+&lt;dt>Blog Posts Listing&lt;/dt>
+&lt;dt>Featured Blog Posts&lt;/dt>
+&lt;dt>Featured News Posts&lt;/dt>
+&lt;dt>Latest Blog Posts&lt;/dt>
+&lt;dt>Latest News Posts&lt;/dt>
+&lt;dt>News Posts Listing&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/layout-builder/article-views">Articles Filter, Articles Listing, Featured Articles&lt;/a>&lt;/dd>
+&lt;dt>Camp Menu&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/content-types/camp/#camp-menus">Camp Menu&lt;/a>&lt;/dd>
+&lt;dt>Categories Listing&lt;/dt>
+&lt;dd>TBD&lt;/dd>
+&lt;dt>Code&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/layout-builder/code">Code&lt;/a>&lt;/dd>
+&lt;dt>Date Block&lt;/dt>
+&lt;dd>None&lt;/dd>
+&lt;dt>Embedded GroupEx Pro Schedule&lt;/dt>
+&lt;dd>Due to changes in the GroupEx Pro embed functionality, we recommend moving to a
+&lt;a href="../../user-documentation/layout-builder/code">Code&lt;/a> block.&lt;/dd>
+&lt;dt>FAQ&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/layout-builder/accordion">Accordion&lt;/a>&lt;/dd>
+&lt;dt>Featured Content&lt;/dt>
+&lt;dt>Story Card&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/layout-builder/cards">Cards&lt;/a> or
+&lt;a href="../../user-documentation/layout-builder/grid-cta">Grid CTA&lt;/a>&lt;/dd>
+&lt;dt>Gallery&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/layout-builder/carousel">Carousel&lt;/a>&lt;/dd>
+&lt;dt>Grid Content&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/layout-builder/grid-cta">Grid CTA&lt;/a> or
+&lt;a href="../../user-documentation/layout-builder/icon-grid">Icon Grid&lt;/a>&lt;/dd>
+&lt;dt>Limited Time Offer&lt;/dt>
+&lt;dd>Banner (small variant) or Alert&lt;/dd>
+&lt;dt>Membership Calculator Paragraph&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/membership">Membership Calculator&lt;/a>&lt;/dd>
+&lt;dt>Promo Card&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/layout-builder/promo-card">Promo Card&lt;/a>&lt;/dd>
+&lt;dt>Simple Content&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/layout-builder/table">Table&lt;/a>&lt;/dd>
+&lt;dt>Social Share Icons&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/paragraphs/social-share-icons">Deprecated&lt;/a>&lt;/dd>
+&lt;dt>Teaser&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/layout-builder/ping-pong">Ping-pong&lt;/a>&lt;/dd>
+&lt;dt>Webform&lt;/dt>
+&lt;dd>
+&lt;a href="../../user-documentation/layout-builder/webform">Webform&lt;/a>&lt;/dd>
+&lt;/dl>
+&lt;h2 id="build-it">Build it&lt;/h2>
+&lt;p>Once you have a plan, go build it! Use the
+&lt;a href="../../user-documentation/layout-builder">Layout Builder&lt;/a> documentation to help you through the process. Building each page might look something like this:&lt;/p>
 &lt;ul>
-&lt;li>Familiarize yourself with
-&lt;a href="../../user-documentation/layout-builder/">new Layout Builder Components&lt;/a>&lt;/li>
-&lt;li>Get organized - Write new content, complete audit spreadsheet, identify components you will need&lt;/li>
-&lt;li>Identify key pages - start with your home page and important top-level pages
-&lt;ul>
-&lt;li>Programs, Locations (Branches, Camps, etc.), Memberships, Articles/Blogs, Events, Schedules, etc.&lt;/li>
+&lt;li>Create a new, unpublished, Landing Page (with Layout Builder)&lt;/li>
+&lt;li>Add blocks and content to the new page&lt;/li>
+&lt;li>Ensure the URL Alias of the new page matches that of the old page&lt;/li>
+&lt;li>Un-publish the old page and publish the new page.&lt;/li>
+&lt;li>Test out the new page in a new browser, an incognito window, or your phone or tablet&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;li>Create a plan - decide which pages you want to build first
-&lt;ul>
-&lt;li>Most → Least complex&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul></description></item><item><title>Docs: How to perform a content audit</title><link>/docs/howto/content-audit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/content-audit/</guid><description>
+&lt;h2 id="get-help">Get help&lt;/h2>
+&lt;p>If at any point in this process you need help, be sure to reach out to
+&lt;a href="../../../community">our community&lt;/a>. The functionality is always being improved, and we have a wide variety of developers and builders from other Ys who are happy to help.&lt;/p></description></item><item><title>Docs: How to perform a content audit</title><link>/docs/howto/content-audit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/content-audit/</guid><description>
 &lt;p>Doing a content audit is a useful first step to planning a migration. You can use our
 &lt;a href="https://docs.google.com/spreadsheets/d/1kP4JuXEKP6SFZHzqkUmv1KoTGECFOYaTPzgOc0Lyo-c/edit#gid=0" target="_blank">content audit template&lt;/a> and watch our walkthrough on the
 &lt;a href="https://youtu.be/Dtaeo9Mf6Ac?t=251" target="_blank">May Monthly Call&lt;/a> to get started, then follow these steps:&lt;/p>
@@ -374,4 +486,56 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">$data_layer&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;entityLabel&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">strtolower&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$data_layer&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;entityLabel&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">]);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: How to leverage structured data</title><link>/docs/howto/use-structured-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/use-structured-data/</guid><description>
+&lt;blockquote>
+&lt;p>Adding structured data can enable search results that are more engaging to users and might encourage them to interact more with your website&lt;/p>
+&lt;p>&amp;ndash;
+&lt;a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data#why" target="_blank">Why add structured data to a page (Google)&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>The distribution (as of
+&lt;a href="/blog/2023/09/12/digital-services-release-10.3.0/">version 10.3.0&lt;/a>) leverages the community contributed
+&lt;a href="https://www.drupal.org/project/schema_metatag" target="_blank">Schema.org metatag module&lt;/a> and custom code to integrate structured data into many content types. You can test if your page is outputting structured data by using the
+&lt;a href="https://validator.schema.org/" target="_blank">Schema.org Validator&lt;/a> or
+&lt;a href="https://search.google.com/test/rich-results" target="_blank">Google&amp;rsquo;s Rich Results Test&lt;/a>&lt;/p>
+&lt;p>Once your site is updated, structured data will be &lt;em>automatically generated&lt;/em> 🎉 with no additional work from content editors.&lt;/p>
+&lt;h2 id="articles">Articles&lt;/h2>
+&lt;p>The
+&lt;a href="../../user-documentation/content-types/lb-article">Article (Layout Builder)&lt;/a> content type implements the
+&lt;a href="https://schema.org/Article" target="_blank">Article Schema&lt;/a> as per
+&lt;a href="https://developers.google.com/search/docs/appearance/structured-data/article" target="_blank">Google&amp;rsquo;s Article structured data docs&lt;/a>.&lt;/p>
+&lt;p>Articles have three options for the &lt;strong>Type&lt;/strong>, which map to their appropriate Schema:&lt;/p>
+&lt;ul>
+&lt;li>Blog →
+&lt;a href="https://schema.org/BlogPosting" target="_blank">BlogPosting&lt;/a>&lt;/li>
+&lt;li>News →
+&lt;a href="https://schema.org/NewsArticle" target="_blank">NewsArticle&lt;/a>&lt;/li>
+&lt;li>Press Release →
+&lt;a href="https://schema.org/Article" target="_blank">Article&lt;/a> (there is currently no other appropriate Schema)&lt;/li>
+&lt;/ul>
+&lt;h3 id="customizing-articles">Customizing Articles&lt;/h3>
+&lt;p>This mapping is set in code (&lt;code>y_lb_article_metatags_alter&lt;/code> in
+&lt;a href="https://git.drupalcode.org/project/y_lb_article/-/blob/1.1.x/y_lb_article.module" target="_blank">y_lb_article.module&lt;/a>), but all other settings are configurable via the Metatag configuration (&lt;code>/admin/config/search/metatag/node__article_lb&lt;/code>).&lt;/p>
+&lt;h2 id="branches">Branches&lt;/h2>
+&lt;p>The
+&lt;a href="../../user-documentation/content-types/branch">Branch&lt;/a> content type implements the
+&lt;a href="https://schema.org/LocalBusiness" target="_blank">LocalBusiness Schema&lt;/a> as per
+&lt;a href="https://developers.google.com/search/docs/appearance/structured-data/local-business" target="_blank">Google&amp;rsquo;s Local business structured data docs&lt;/a>.&lt;/p>
+&lt;p>Any time the Branch Hours are updated, that content will also be reflected in the Structured Data that&amp;rsquo;s read by search engines.&lt;/p>
+&lt;h3 id="customizing-branches">Customizing Branches&lt;/h3>
+&lt;p>The mapping is configurable in the Metatag configuration (&lt;code>/admin/config/search/metatag/node__branch&lt;/code>). Hours configuration uses the
+&lt;a href="https://github.com/open-y-subprojects/openy_hours_formatter#open-y-hours-metatag-tokens" target="_blank">Open Y Hours_metatag tokens&lt;/a>.&lt;/p>
+&lt;h2 id="faqs">FAQs&lt;/h2>
+&lt;p>The
+&lt;a href="../../user-documentation/layout-builder/accordion">Accordion Layout Builder Block&lt;/a> has an option to implement the
+&lt;a href="https://schema.org/FAQPage" target="_blank">FAQPage Schema&lt;/a> as per
+&lt;a href="https://developers.google.com/search/docs/appearance/structured-data/faqpage" target="_blank">Google&amp;rsquo;s FAQ structured data docs&lt;/a>.&lt;/p>
+&lt;p>If an Accordion section contains Frequently Asked Questions, check the &lt;strong>FAQ?&lt;/strong> checkbox to output them as structured data.&lt;/p>
+&lt;p>Tips for writing good FAQ content:&lt;/p>
+&lt;ul>
+&lt;li>Ensure the content contains individual sets of questions (&amp;ldquo;How old does my child need to be to swim at the YMCA?&amp;rdquo;) and answers (&amp;ldquo;The YMCA offers swim classes starting at age 3 and the pool is open to children of all ages with parental supervision&amp;rdquo;).&lt;/li>
+&lt;li>Only one FAQ should be added to a page. If more than one is added, only the first will be output to the structured data.&lt;/li>
+&lt;/ul>
+&lt;h3 id="customizing-faqs">Customizing FAQs&lt;/h3>
+&lt;p>Due to the complexity of the FAQ data, the structured data is
+&lt;a href="https://git.drupalcode.org/project/lb_accordion/-/blob/1.0.x/lb_accordion.module?ref_type=heads#L40" target="_blank">managed entirely in code&lt;/a> and is not customizable via the Drupal admin. If you need specific customizations, please post your ideas in Slack or suggest them on
+&lt;a href="/roadmap">the Roadmap&lt;/a> for the core team to discuss and implement.&lt;/p></description></item></channel></rss>

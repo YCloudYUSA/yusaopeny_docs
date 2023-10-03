@@ -111,15 +111,11 @@
 &lt;h3 id="creating-a-new-page">Creating a new page&lt;/h3>
 &lt;p>To use Layout Builder, you&amp;rsquo;ll first have to create a new page:&lt;/p>
 &lt;ul>
-&lt;li>Go to &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Landing Page (Layout Builder)&lt;/strong>.&lt;/li>
+&lt;li>Choose any Layout Builder-enabled content type, or start with a basic
+&lt;a href="../content-types/lb-landing-page">Landing Page&lt;/a>&lt;/li>
+&lt;li>Go to &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>The Content Type&lt;/strong>.&lt;/li>
 &lt;/ul>
-&lt;p>This creation page will look different from others—there are no fields!&lt;/p>
-&lt;ul>
-&lt;li>Set a page &lt;strong>Title&lt;/strong> and configure any &lt;strong>Menu settings&lt;/strong> or &lt;strong>URL alias&lt;/strong> that you&amp;rsquo;d like.&lt;/li>
-&lt;li>Ensure that &lt;strong>Published&lt;/strong> is unchecked.&lt;/li>
-&lt;li>Then &lt;strong>Save&lt;/strong> the page.&lt;/li>
-&lt;/ul>
-&lt;p>Once you&amp;rsquo;ve saved, you will see an empty page. Click the &lt;strong>Layout&lt;/strong> tab to enter Layout Builder.&lt;/p>
+&lt;p>Once you&amp;rsquo;ve saved, you will see an empty page. Click the &lt;strong>Layout&lt;/strong> tab to enter Layout Builder or go directly there with &lt;strong>Save and edit layout&lt;/strong>.&lt;/p>
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/lb_layout_tab.png" title="View original image">
@@ -138,9 +134,10 @@
 &lt;p>Changes to the page are not displayed to site viewers until you &lt;strong>Save Layout&lt;/strong> on the page and &lt;strong>Publish&lt;/strong> it.&lt;/p>
 &lt;p>When in the &lt;strong>Layout&lt;/strong> editor, you will have these options at the top of the page:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Save Layout&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Save Layout&lt;/strong> will save your changes and return you to the main page view.&lt;/li>
+&lt;li>&lt;strong>Save and edit layout&lt;/strong> will save your changes and keep you in Layout Builder.&lt;/li>
 &lt;li>&lt;strong>Discard Changes&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Revert to Defaults&lt;/strong> will reset your page to an empty Header and Body section.&lt;/li>
+&lt;li>&lt;strong>Revert to Defaults&lt;/strong> will reset your page to the default empty layout.&lt;/li>
 &lt;/ul>
 &lt;p>After saving your changes, be sure your page is published:&lt;/p>
 &lt;ul>
@@ -149,7 +146,7 @@
 &lt;li>&lt;strong>Save&lt;/strong> the page.&lt;/li>
 &lt;/ul>
 &lt;h2 id="fundamentals">Fundamentals&lt;/h2>
-&lt;p>In Layout Builder, you will see the page divided up into Sections and Blocks. Your page may already be populated with a &lt;strong>Header&lt;/strong> and &lt;strong>Body&lt;/strong> section to get you started building, and you can change or edit those to fit your page.&lt;/p>
+&lt;p>In Layout Builder, you will see the page divided up into Sections and Blocks. Your page may already be populated with some sections to get you started building, and you can change or edit those to fit your page.&lt;/p>
 &lt;h3 id="sections">Sections&lt;/h3>
 &lt;p>Sections create the structure of the page and contain blocks. You can drag and drop blocks between sections, but you cannot move sections themselves—you can only create sections above or below existing sections.&lt;/p>
 &lt;p>You can remove sections by clicking the small &amp;ldquo;X&amp;rdquo; link at the top left of the section. Click on &amp;ldquo;Configure &lt;Name of Section>&amp;rdquo; to edit the section layout and other options.&lt;/p>
