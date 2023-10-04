@@ -2705,7 +2705,7 @@
 &lt;h4 class="alert-heading">Warning&lt;/h4>
 This is a warning.
 &lt;/div></description></item><item><title>Docs: Event</title><link>/docs/content-structure/content-types/event/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/event/</guid><description>
-&lt;p>Event content type is used for&lt;/p>
+&lt;p>Event content type is used for adding events on the site.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
 &lt;table>
 &lt;thead>
@@ -2741,7 +2741,7 @@ This is a warning.
 &lt;td>Yes&lt;/td>
 &lt;td>Reference field to &lt;code>branch&lt;/code> and &lt;code>camp&lt;/code> nodes. Multiple Values.&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>Address for event; can be either a branch or non-branch location.&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Category&lt;/td>
@@ -2763,7 +2763,7 @@ This is a warning.
 &lt;td>Image&lt;/td>
 &lt;td>field_event_image&lt;/td>
 &lt;td>No&lt;/td>
-&lt;td>Image field for the Blog item. Entity reference to Media bundle.&lt;/td>
+&lt;td>Image field for the Event item. Entity reference to Media bundle.&lt;/td>
 &lt;td>media&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
@@ -2771,17 +2771,9 @@ This is a warning.
 &lt;td>Date&lt;/td>
 &lt;td>field_event_date&lt;/td>
 &lt;td>Yes&lt;/td>
-&lt;td>Copy field settings from existing event CT in the profile.&lt;/td>
+&lt;td>This will use Drupal date/time fields.&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Location&lt;/td>
-&lt;td>field_event_location&lt;/td>
-&lt;td>Yes&lt;/td>
-&lt;td>Copy field settings from existing event CT in the profile.&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>Address for event; can be either a branch or non-branch location.&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>Add to Calendar&lt;/td>
