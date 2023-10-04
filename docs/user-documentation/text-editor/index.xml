@@ -8,22 +8,22 @@
 &lt;a href="https://ckeditor.com/docs/ckeditor5/latest/features/link.html" target="_blank">Read more and demo this on CKEditor Site.&lt;/a>&lt;/em>&lt;/p>
 &lt;ul class="nav nav-tabs" id="tabs-1" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-cke5"
-id="tabs-01-00-tab" data-toggle="tab" href="#tabs-01-00" role="tab"
-onclick="persistLang(&amp;#34;cke5&amp;#34;);"aria-controls="tabs-01-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-01-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-01-00" role="tab"
+data-td-tp-persist="ckeditor 5" aria-controls="tabs-01-00" aria-selected="true">
 CKEditor 5
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-cke4"
-id="tabs-01-01-tab" data-toggle="tab" href="#tabs-01-01" role="tab"
-onclick="persistLang(&amp;#34;cke4&amp;#34;);"aria-controls="tabs-01-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-01-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-01-01" role="tab"
+data-td-tp-persist="ckeditor 4" aria-controls="tabs-01-01" aria-selected="false">
 CKEditor 4
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-1-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-01-00" role="tabpanel" aria-labelled-by="tabs-01-00-tab">
+id="tabs-01-00" role="tabpanel" aria-labelled-by="tabs-01-00-tab" tabindex="1">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke5-toolbar.png" title="View original image">
@@ -46,7 +46,7 @@ id="tabs-01-00" role="tabpanel" aria-labelled-by="tabs-01-00-tab">
 &lt;/p>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-01-01" role="tabpanel" aria-labelled-by="tabs-01-01-tab">
+id="tabs-01-01" role="tabpanel" aria-labelled-by="tabs-01-01-tab" tabindex="1">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke4-toolbar.png" title="View original image">
@@ -74,22 +74,22 @@ id="tabs-01-01" role="tabpanel" aria-labelled-by="tabs-01-01-tab">
 &lt;p>In the Advanced options of the link dialog, you can add attributes to links, including a label, HTML ID, and CSS classes. You can also opt to have your link open in a new window/tab.&lt;/p>
 &lt;ul class="nav nav-tabs" id="tabs-2" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-cke5"
-id="tabs-02-00-tab" data-toggle="tab" href="#tabs-02-00" role="tab"
-onclick="persistLang(&amp;#34;cke5&amp;#34;);"aria-controls="tabs-02-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-02-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-00" role="tab"
+data-td-tp-persist="ckeditor 5" aria-controls="tabs-02-00" aria-selected="true">
 CKEditor 5
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-cke4"
-id="tabs-02-01-tab" data-toggle="tab" href="#tabs-02-01" role="tab"
-onclick="persistLang(&amp;#34;cke4&amp;#34;);"aria-controls="tabs-02-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-02-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-01" role="tab"
+data-td-tp-persist="ckeditor 4" aria-controls="tabs-02-01" aria-selected="false">
 CKEditor 4
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-2-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-02-00" role="tabpanel" aria-labelled-by="tabs-02-00-tab">
+id="tabs-02-00" role="tabpanel" aria-labelled-by="tabs-02-00-tab" tabindex="2">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke5-advanced.png" title="View original image">
@@ -103,7 +103,7 @@ id="tabs-02-00" role="tabpanel" aria-labelled-by="tabs-02-00-tab">
 &lt;/p>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab">
+id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab" tabindex="2">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--cke4-advanced.png" title="View original image">

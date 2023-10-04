@@ -1279,7 +1279,7 @@
 &lt;h2 id="y-styles">Y Styles&lt;/h2>
 &lt;p>These options provide customizations of Layout Builder-enabled pages at the Content Type, Page, and Component(/Block) level.&lt;/p>
 &lt;p>Styles inherit from content types, to pages, to components. Some styles can also be overridden at each level - block styles can override page styles, which can override content type styles.&lt;/p>
-&lt;div class="mermaid">flowchart
+&lt;pre class="mermaid">flowchart
 classDef ct fill:#5C2E9133;
 classDef page fill:#92278F33;
 classDef block fill:#C6168D33;
@@ -1294,12 +1294,11 @@ pageStyles[Page Styles]
 end
 ctStyles[Content Type Styles]
 end
-blockStyles -- override --> pageStyles
-pageStyles -- override --> ctStyles
+blockStyles -- override --&amp;gt; pageStyles
+pageStyles -- override --&amp;gt; ctStyles
 class ct ct
 class page page
-class block block
-&lt;/div>
+class block block&lt;/pre>
 &lt;h3 id="content-type-styles">Content Type styles&lt;/h3>
 &lt;blockquote>
 &lt;p>&lt;strong>Note:&lt;/strong> This configuration may not be accessible to all content editors. Ask an administrator for assistance if necessary.&lt;/p>
@@ -1557,28 +1556,28 @@ Choose from four designs.
 &lt;p>After you have completed setting the &lt;strong>Style&lt;/strong> options, click back to &lt;strong>Content&lt;/strong> and &lt;strong>Save&lt;/strong> or &lt;strong>Update&lt;/strong> to commit your changes.&lt;/p></description></item><item><title>Docs: Accordion</title><link>/docs/user-documentation/layout-builder/accordion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/accordion/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/QczjkFL23W0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/accordion/lb-accordion.png" title="View original image">
@@ -1650,28 +1649,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;img src="/docs/user-documentation/layout-builder/article-views/article-views--featured_hu7c671adef92ca1c659a4af592edc4409_494702_640x0_resize_catmullrom_3.png" width="640" height="316"/>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/LGW0oPOnKVw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/article-views/article-views--featured.png" title="View original image">
@@ -1743,28 +1742,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/p></description></item><item><title>Docs: Banner</title><link>/docs/user-documentation/layout-builder/banner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/banner/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/kerfY3EBESA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/banner/lb--banner.png" title="View original image">
@@ -1811,28 +1810,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Breadcrumbs</title><link>/docs/user-documentation/layout-builder/breadcrumbs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/breadcrumbs/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/bQxO1E2OFeE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/breadcrumbs/lb-breadcrumbs-add.png" title="View original image">
@@ -1880,28 +1879,28 @@ The Breadcrumbs block may not show the correct path while editing the page layou
 &lt;/div></description></item><item><title>Docs: Cards</title><link>/docs/user-documentation/layout-builder/cards/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/cards/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/vrtcxXl31f4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/cards/lb-cards.png" title="View original image">
@@ -1960,28 +1959,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Carousel</title><link>/docs/user-documentation/layout-builder/carousel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/carousel/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/zVT1St0UXsk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/carousel/lb-carousel.png" title="View original image">
@@ -2034,28 +2033,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Code</title><link>/docs/user-documentation/layout-builder/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/code/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/YVjg-0PjsOM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/code/lb-code.png" title="View original image">
@@ -2091,28 +2090,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Donate</title><link>/docs/user-documentation/layout-builder/donate/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/donate/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/wPHimaZOprw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/donate/lb-donate--block.png" title="View original image">
@@ -2180,28 +2179,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;img src="/docs/user-documentation/layout-builder/event-views/event-views--featured_huab2e75c296f00f4e1c931d35b76f0838_602729_640x0_resize_catmullrom_3.png" width="640" height="324"/>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/LGW0oPOnKVw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/event-views/event-views--featured.png" title="View original image">
@@ -2272,28 +2271,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/p></description></item><item><title>Docs: Grid CTA</title><link>/docs/user-documentation/layout-builder/grid-cta/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/grid-cta/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/TtABGaClzPw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/grid-cta/lb-grid-cta.png" title="View original image">
@@ -2350,28 +2349,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Header/Footer</title><link>/docs/user-documentation/layout-builder/header-footer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/header-footer/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/Z_-ZbGz8Suk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/header-footer/lb-header-footer--header.png" title="View original image">
@@ -2675,28 +2674,28 @@ Refer to the Drupal User Guide for more information about
 &lt;/blockquote></description></item><item><title>Docs: Icon Grid</title><link>/docs/user-documentation/layout-builder/icon-grid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/icon-grid/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/cYbSqcoOMWg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/icon-grid/lb-icon-grid.png" title="View original image">
@@ -2750,28 +2749,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Location Finder</title><link>/docs/user-documentation/layout-builder/location-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/location-finder/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/UyOI3ubns8k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/location-finder/lb-location-finder--filters-map.png" title="View original image">
@@ -2867,28 +2866,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Modal</title><link>/docs/user-documentation/layout-builder/modal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/modal/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/2vsqLGy-I8Q" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/modal/lb-modal-fields.png" title="View original image">
@@ -2939,28 +2938,28 @@ The position on the page does not matter for the Modal block. It will always dis
 &lt;/ul></description></item><item><title>Docs: Partners</title><link>/docs/user-documentation/layout-builder/partners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/partners/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/nHxIX6fuTAM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/partners/lb-partners-fields.png" title="View original image">
@@ -3012,28 +3011,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Ping-Pong</title><link>/docs/user-documentation/layout-builder/ping-pong/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/ping-pong/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/BgEL_YU-DiA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/ping-pong/lb-ping-pong.png" title="View original image">
@@ -3083,28 +3082,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Promo Card</title><link>/docs/user-documentation/layout-builder/promo-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/promo-card/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/dybusSNmTPc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/promo-card/lb-promo-card.png" title="View original image">
@@ -3151,28 +3150,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Related Articles</title><link>/docs/user-documentation/layout-builder/related-articles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/related-articles/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/FBtQmfy9C7Q" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/related-articles/lb-related-articles-fields.png" title="View original image">
@@ -3258,28 +3257,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Related Events</title><link>/docs/user-documentation/layout-builder/related-events/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/related-events/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/cxRxuYkWy-4?start=183" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/related-events/lb-related-events-fields.png" title="View original image">
@@ -3356,28 +3355,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Simple Menu</title><link>/docs/user-documentation/layout-builder/simple-menu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/simple-menu/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/UZVurubBti8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/simple-menu/lb-simple-menu.png" title="View original image">
@@ -3422,28 +3421,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Staff Members</title><link>/docs/user-documentation/layout-builder/staff-members/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/staff-members/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/h2fq9FNdMco" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/staff-members/lb-staff-fields.png" title="View original image">
@@ -3498,28 +3497,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Statistics</title><link>/docs/user-documentation/layout-builder/statistics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/statistics/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/_RQcnMw4X5U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/statistics/lb-statistics.png" title="View original image">
@@ -3572,28 +3571,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Table</title><link>/docs/user-documentation/layout-builder/table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/table/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/buxLFLUhiMo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/table/lb-table.png" title="View original image">
@@ -3663,28 +3662,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Tabs</title><link>/docs/user-documentation/layout-builder/tabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/tabs/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/I3GPm718hn8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/tabs/lb-tabs.png" title="View original image">
@@ -3735,28 +3734,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Testimonials</title><link>/docs/user-documentation/layout-builder/testimonials/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/testimonials/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/ZSbsro02ZrM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/testimonials/lb-testimonials-fields.png" title="View original image">
@@ -3810,28 +3809,28 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
 &lt;/ul></description></item><item><title>Docs: Webform</title><link>/docs/user-documentation/layout-builder/webform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/webform/</guid><description>
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
 &lt;li class="nav-item">
-&lt;a class="nav-link active persistLang-vid"
-id="tabs-00-00-tab" data-toggle="tab" href="#tabs-00-00" role="tab"
-onclick="persistLang(&amp;#34;vid&amp;#34;);"aria-controls="tabs-00-00" aria-selected="false">
+&lt;button class="nav-link active"
+id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+data-td-tp-persist="video" aria-controls="tabs-00-00" aria-selected="true">
 Video
-&lt;/a>
+&lt;/button>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link persistLang-pic"
-id="tabs-00-01-tab" data-toggle="tab" href="#tabs-00-01" role="tab"
-onclick="persistLang(&amp;#34;pic&amp;#34;);"aria-controls="tabs-00-01" aria-selected="false">
+&lt;button class="nav-link"
+id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+data-td-tp-persist="diagram" aria-controls="tabs-00-01" aria-selected="false">
 Diagram
-&lt;/a>
+&lt;/button>
 &lt;/li>
 &lt;/ul>
 &lt;div class="tab-content" id="tabs-0-content">
 &lt;div class="tab-body tab-pane fade show active"
-id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab">
+id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/dsHpcLDjLEo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-body tab-pane fade"
-id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab">
+id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/layout-builder/webform/lb-webform.png" title="View original image">
