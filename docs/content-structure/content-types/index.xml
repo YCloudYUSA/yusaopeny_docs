@@ -98,7 +98,7 @@
 &lt;td>Reference&lt;/td>
 &lt;td>field_alert_belongs&lt;/td>
 &lt;td>No&lt;/td>
-&lt;td>Entityreference with autocomplete to any node. Description for field: &amp;ldquo;Reference to node (branch, camp, landing page and etc.), where local alert will be displayed.&amp;rdquo;&lt;/td>
+&lt;td>Entity reference with autocomplete to any node. Description for field: &amp;ldquo;Reference to node (branch, camp, landing page and etc.), where local alert will be displayed.&amp;rdquo;&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
