@@ -63,6 +63,20 @@
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;h3 id="canadian-colourways">Canadian Colourways&lt;/h3>
+&lt;p>YMCA of the USA has partnered with
+&lt;a href="https://www.ymca.ca/" target="_blank">YMCA Canada&lt;/a> to create a brand-compliant and accessible colourway for use by Canadian YMCAs.&lt;/p>
+&lt;p>The colourway is packaged as the
+&lt;a href="https://www.drupal.org/project/ws_colorway_canada" target="_blank">Canada Layout Builder Colorway&lt;/a> on Drupal.org and is included with the full
+&lt;a href="https://github.com/YCloudYUSA/y_lb" target="_blank">YMCA Layout Builder&lt;/a> package.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://www.figma.com/proto/nQ8GfYR5CXkkaOxYAlITeC/YMCA-Canada-Design-System?type=design&amp;amp;node-id=614-11498&amp;amp;t=aGKtr2E2dDMfsYsF-1&amp;amp;scaling=min-zoom&amp;amp;page-id=614%3A11497&amp;amp;mode=design" target="_blank">YMCA Canada UI Kit&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.figma.com/proto/nQ8GfYR5CXkkaOxYAlITeC/YMCA-Canada-Design-System?type=design&amp;amp;node-id=1640-14094&amp;amp;t=H3ljPnNvxOWrGqhd-0&amp;amp;scaling=scale-down&amp;amp;page-id=1640%3A10978&amp;amp;starting-point-node-id=1640%3A14094" target="_blank">YMCA Canada Components&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.figma.com/proto/nQ8GfYR5CXkkaOxYAlITeC/YMCA-Canada-Design-System?type=design&amp;amp;node-id=2201-21973&amp;amp;t=feeJM61aY5EhpgKl-1&amp;amp;scaling=min-zoom&amp;amp;page-id=2201%3A20920&amp;amp;mode=design" target="_blank">YMCA Canada Demo Pages&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h3 id="content-types">Content Types&lt;/h3>
 &lt;p>The distribution provides new
 &lt;a href="../../content-types">Content Types&lt;/a> for use with Layout Builder components.&lt;/p>
@@ -1611,10 +1625,10 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Title&lt;/strong> (required): Displayed if &lt;strong>Display title&lt;/strong> is checked, otherwise this is for administrative use.&lt;/li>
-&lt;li>&lt;strong>Accordion Item&lt;/strong>: Add as many items as you like using the &lt;strong>Add Accordion Item&lt;/strong> button. Each item contains:
+&lt;li>&lt;strong>Accordion Item&lt;/strong>: Add as many items as you like using the *&lt;em>Add Accordion Item&lt;/em> or &lt;strong>Add new custom block&lt;/strong> button. When you are finished adding or editing each item, be sure to click &lt;strong>Create/Update tab&lt;/strong> or &lt;strong>Create/Update custom block&lt;/strong> to finalize the item. Each item contains:
 &lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong>: The heading that will be used to expand/contract the accordion.&lt;/li>
-&lt;li>&lt;strong>Body&lt;/strong>: The content of the accordion.&lt;/li>
+&lt;li>&lt;strong>Heading&lt;/strong> (required): The heading that will be used to expand/contract the accordion.&lt;/li>
+&lt;li>&lt;strong>Body&lt;/strong> (required): The content of the accordion.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -1937,17 +1951,17 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
-&lt;li>&lt;strong>Section title&lt;/strong>: Displayed as a heading above the cards.&lt;/li>
-&lt;li>&lt;strong>Section subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
-&lt;li>&lt;strong>Section CTA/link&lt;/strong>: A link button displayed below the list of cards.&lt;/li>
+&lt;li>&lt;strong>Section heading&lt;/strong>: Displayed as a heading above the cards.&lt;/li>
+&lt;li>&lt;strong>Section subheading&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong>Section link&lt;/strong>: A link button displayed below the list of cards.&lt;/li>
 &lt;li>&lt;strong># of columns&lt;/strong>: Allows 1- to 4-columns of cards.&lt;/li>
-&lt;li>&lt;strong>Cards&lt;/strong>: Add up to 4. Each card has:
+&lt;li>&lt;strong>Card items&lt;/strong>: Add up to 4. When you are finished adding or editing each item, be sure to click &lt;strong>Create/Update tab&lt;/strong> or &lt;strong>Create/Update custom block&lt;/strong> to finalize the item. Each card has:
 &lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong> (required)&lt;/li>
+&lt;li>&lt;strong>Heading&lt;/strong> (required)&lt;/li>
 &lt;li>&lt;strong>Image&lt;/strong>: Chose from the library or add a new image to be displayed behind the card text.&lt;/li>
 &lt;li>&lt;strong>Description&lt;/strong>: A full text editor to add card content.&lt;/li>
+&lt;li>&lt;strong>Link&lt;/strong>: A link at the bottom of the card.&lt;/li>
 &lt;li>&lt;strong>Topic Tag&lt;/strong>: This is displayed at the top of the card and can be used to group cards visually.&lt;/li>
-&lt;li>&lt;strong>CTA&lt;/strong>: A link at the bottom of the card.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -2014,14 +2028,14 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
-&lt;li>&lt;strong>Carousel title&lt;/strong>: Displayed as a heading above the carousel.&lt;/li>
-&lt;li>&lt;strong>Carousel subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
-&lt;li>&lt;strong>Carousel Item&lt;/strong>: Add as many items as you like using the &lt;strong>Add Carousel Item&lt;/strong> button. Each item contains:
+&lt;li>&lt;strong>Carousel heading&lt;/strong>: Displayed as a heading above the carousel.&lt;/li>
+&lt;li>&lt;strong>Carousel subheading&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong>Carousel Item&lt;/strong>: Add as many items as you like using the &lt;strong>Add Carousel Item&lt;/strong> or &lt;strong>Add new custom block&lt;/strong> button. When you are finished adding or editing each item, be sure to click &lt;strong>Create/Update tab&lt;/strong> or &lt;strong>Create/Update custom block&lt;/strong> to finalize the item. Each item contains:
 &lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Heading&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Image&lt;/strong>: Chose from the library or add a new image.&lt;/li>
 &lt;li>&lt;strong>Description&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>CTA&lt;/strong>: A link at the bottom of the carousel item.&lt;/li>
+&lt;li>&lt;strong>Link&lt;/strong>: A link at the bottom of the carousel item.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -2328,16 +2342,16 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
-&lt;li>&lt;strong>Section title&lt;/strong>: Displayed as a heading above the cards.&lt;/li>
-&lt;li>&lt;strong>Section subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
-&lt;li>&lt;strong>Grid section CTA/link&lt;/strong>: A link button displayed below the list of items.&lt;/li>
+&lt;li>&lt;strong>Section heading&lt;/strong>: Displayed as a heading above the cards.&lt;/li>
+&lt;li>&lt;strong>Section subheading&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong>Grid CTA section link&lt;/strong>: A link button displayed below the list of items.&lt;/li>
 &lt;li>&lt;strong># of columns&lt;/strong>: Allows 2- to 4-columns of items.&lt;/li>
-&lt;li>&lt;strong>Grid Items&lt;/strong>: Add up to 4. Each item has:
+&lt;li>&lt;strong>Grid Item&lt;/strong>: Add up to 4. When you are finished adding or editing each item, be sure to click &lt;strong>Create/Update tab&lt;/strong> or &lt;strong>Create/Update custom block&lt;/strong> to finalize the item. Each item has:
 &lt;ul>
-&lt;li>&lt;strong>Grid item title&lt;/strong> (required)&lt;/li>
-&lt;li>&lt;strong>Grid item description&lt;/strong>: A full text editor to add item content.&lt;/li>
-&lt;li>&lt;strong>Grid item media&lt;/strong>: Chose from the library or add a new image or icon to be displayed above the item text.&lt;/li>
-&lt;li>&lt;strong>Grid item CTA&lt;/strong>: A link at the bottom of the item.&lt;/li>
+&lt;li>&lt;strong>Heading&lt;/strong> (required)&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong>: A full text editor to add item content.&lt;/li>
+&lt;li>&lt;strong>Media&lt;/strong>: Chose from the library or add a new image or icon to be displayed above the item text.&lt;/li>
+&lt;li>&lt;strong>Link&lt;/strong>: A link at the bottom of the item.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -3552,11 +3566,11 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
-&lt;li>&lt;strong>Section title&lt;/strong>: Displayed as a heading above the item.&lt;/li>
-&lt;li>&lt;strong>Section subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong>Section heading&lt;/strong>: Displayed as a heading above the item.&lt;/li>
+&lt;li>&lt;strong>Section subheading&lt;/strong>: Displayed below the heading.&lt;/li>
 &lt;li>&lt;strong>Media&lt;/strong>: Chose from the library or add a new image to be displayed to the left of the statistics.&lt;/li>
-&lt;li>&lt;strong>Section CTA/Link&lt;/strong>: Add a link below the statistics items.&lt;/li>
-&lt;li>&lt;strong>Statistics Items&lt;/strong>: Add as many items as you like using the &lt;strong>Add Statistics Item&lt;/strong> button. Each item contains:
+&lt;li>&lt;strong>Section link&lt;/strong>: Add a link below the statistics items.&lt;/li>
+&lt;li>&lt;strong>Statistics items&lt;/strong>: Add as many items as you like using the &lt;strong>Add Statistics Item&lt;/strong> or &lt;strong>Add new custom block&lt;/strong> button. When you are finished adding or editing each item, be sure to click &lt;strong>Create/Update tab&lt;/strong> or &lt;strong>Create/Update custom block&lt;/strong> to finalize the item. Each item contains:
 &lt;ul>
 &lt;li>&lt;strong>Number value&lt;/strong>: The number value for the statistic. Can include a prefix (&amp;quot;$100&amp;quot;) and/or suffix (&amp;quot;$100M&amp;quot;).&lt;/li>
 &lt;li>&lt;strong>Description&lt;/strong>: A description of the statistic.&lt;/li>
@@ -3717,11 +3731,11 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Title&lt;/strong> (required): Never displayed, even if &amp;ldquo;Display Title&amp;rdquo; is checked. For administrative use only.&lt;/li>
-&lt;li>&lt;strong>Section title&lt;/strong>: Displayed as a heading above the item.&lt;/li>
-&lt;li>&lt;strong>Section subtitle&lt;/strong>: Displayed below the heading.&lt;/li>
-&lt;li>&lt;strong>Tabs&lt;/strong>: Add as many Tabs as you like using the &lt;strong>Add Tab&lt;/strong> button. Each item contains:
+&lt;li>&lt;strong>Section heading&lt;/strong>: Displayed as a heading above the item.&lt;/li>
+&lt;li>&lt;strong>Section subheading&lt;/strong>: Displayed below the heading.&lt;/li>
+&lt;li>&lt;strong>Tab Item&lt;/strong>: Add as many Tabs as you like using the &lt;strong>Add Tab&lt;/strong> or &lt;strong>Add new custom block&lt;/strong> button (depending on your version). When you are finished adding or editing each item, be sure to click &lt;strong>Create/Update tab&lt;/strong> or &lt;strong>Create/Update custom block&lt;/strong> to finalize the item. Each item contains:
 &lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong>: The heading that will be used to select the tab.&lt;/li>
+&lt;li>&lt;strong>Heading&lt;/strong>: The heading that will be used to select the tab.&lt;/li>
 &lt;li>&lt;strong>Body&lt;/strong>: The content of the tab.&lt;/li>
 &lt;/ul>
 &lt;/li>

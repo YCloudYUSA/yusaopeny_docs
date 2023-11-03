@@ -527,5 +527,15 @@ To change your shade of grey, you would go to &lt;strong>Structure&lt;/strong> &
 &lt;p>Once you choose to clone a piece of content you will be presented with a complex screen asking which entities you would like to clone. In general, you can leave all of the checkboxes as they are. Changing the options could result in unintended consequences.&lt;/p>
 &lt;p>
 &lt;img src="./basics-clone-options.png" alt="" />&lt;/p>
-&lt;p>Scroll to the bottom of the checkbox options, choose &lt;strong>Take ownership&lt;/strong> if you would like your user to own the new content, then &lt;strong>Save&lt;/strong>.&lt;/p></description></item><item><title>Docs: Membership</title><link>/docs/user-documentation/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/</guid><description>
+&lt;p>Scroll to the bottom of the checkbox options, choose &lt;strong>Take ownership&lt;/strong> if you would like your user to own the new content, then &lt;strong>Save&lt;/strong>.&lt;/p></description></item><item><title>Docs: Demo Content</title><link>/docs/user-documentation/demo-content/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/demo-content/</guid><description>
+&lt;p>Two sets of demo content are available for the distribution:&lt;/p>
+&lt;ul>
+&lt;li>For Paragraphs-based sites:
+&lt;a href="https://github.com/open-y-subprojects/openy_demo_content" target="_blank">openy_demo_content&lt;/a>&lt;/li>
+&lt;li>For Layout Builder-based sites:
+&lt;a href="https://github.com/YCloudYUSA/y_lb_demo_content" target="_blank">y_lb_demo_content&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>These modules also contain significant boilerplate migration code that a developer would need to migrate content from an older Drupal site or different CMS into the distribution.&lt;/p>
+&lt;p>Demo content is also installed on the
+&lt;a href="../../development/sandboxes">Sandboxes&lt;/a>.&lt;/p></description></item><item><title>Docs: Membership</title><link>/docs/user-documentation/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/</guid><description>
 &lt;p>The distribution has two methods for informing visitors of membership options and driving them to the member management system for sign-up&lt;/p></description></item><item><title>Docs: Schedules</title><link>/docs/user-documentation/schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/</guid><description/></item></channel></rss>

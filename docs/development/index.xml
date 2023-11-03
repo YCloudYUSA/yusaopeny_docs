@@ -2577,7 +2577,26 @@ Installer path will look like this:&lt;/p>
 &lt;a href="https://www.youtube.com/watch?v=RSsQLVVhldc&amp;amp;list=PL_QVggMcFfKZp05THV3dYlYOG3MsJ8xSf" target="_blank">YouTube playlist for Developers&lt;/a>&lt;/li>
 &lt;li>A list of
 &lt;a href="/docs/development/open-y-3rd-party-dependencies/">3rd party dependencies&lt;/a> which are reviewed periodically for new features and deprecations.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Testing YMCA Website Services for PHP 7.4 version support</title><link>/docs/development/testing-open-y-for-php-7.4-version-support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/testing-open-y-for-php-7.4-version-support/</guid><description>
+&lt;/ol></description></item><item><title>Docs: Terms and Conditions</title><link>/docs/development/ws-terms-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/ws-terms-conditions/</guid><description>
+&lt;p>These terms are maintained in
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/blob/main/src/Form/TermsOfUseForm.php" target="_blank">the distribution codebase at TermsOfUseForm.php&lt;/a> and are subject to change at any time. Any change in the terms will require site owners to agree to the new terms and a record of the date of agreement is maintained in the site database. Terms can be viewed on your site at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Terms and Conditions&lt;/strong> (&lt;code>/admin/openy/terms-and-conditions&lt;/code>).&lt;/p>
+&lt;hr>
+&lt;ul>
+&lt;li>We agree to the
+&lt;a href="../WS-Participant-Agreement">Participant Agreement&lt;/a> and
+&lt;a href="../WS-Terms-of-Use">Terms of Use&lt;/a>&lt;/li>
+&lt;li>YMCA of the USA supports the Website Services platform with respect to use by its Member Associations but is not responsible for and does not control the services provided by 3rd party agencies, which are using and modifying YMCA Website Service distribution.&lt;/li>
+&lt;li>YMCA of the USA recommends that each participating YMCA association develop and implement its own cybersecurity policies and obtain cyber liability and data privacy insurance.&lt;/li>
+&lt;li>I acknowledge that YMCA Website Service is open source content and that all content is provided “as is” without any warranty of any kind. YMCA of the USA makes no warranty that its services will meet your requirements, be safe, secure, uninterrupted, timely, accurate, or error-free, or that your information will be secure. YMCA of the USA will not maintain and support YMCA Website Service templates indefinitely. The entire risk as to the quality and performance of the content is with you.&lt;/li>
+&lt;li>YMCA of the USA recommends obtaining a reputable agency to assist with the implementation of the YMCA Website Service platform and further development for your specific needs.&lt;/li>
+&lt;li>All demonstration content, including but not limited to text, images, graphics, videos, audio, and any other materials displayed on this website, is the exclusive property of YMCA of the USA. The demonstration content is provided solely for illustrative purposes and to showcase the capabilities of YMCA&amp;rsquo;s Website Service. Nonetheless, YMCA member associations may use demonstration content for their websites, as applicable.
+&lt;ul>
+&lt;li>By accessing and/or using this website, you agree to respect the ownership and intellectual property rights of YMCA of the USA over the demonstration content. Users and visitors are strictly prohibited from reproducing, distributing, modifying, or otherwise using the demonstration content without explicit written permission from YMCA of the USA.&lt;/li>
+&lt;li>Any unauthorized use or misuse of the demonstration content is a violation of these Terms and Conditions and may be subject to applicable laws and regulations, result in your access being revoked, and/or legal action taken, if applicable.&lt;/li>
+&lt;li>YMCA of the USA reserves the right to change, modify, or remove the demonstration content from the website at any time without prior notice. We are not responsible for any inaccuracies or errors in the demonstration content and make no guarantees about its accuracy or completeness.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Testing YMCA Website Services for PHP 7.4 version support</title><link>/docs/development/testing-open-y-for-php-7.4-version-support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/testing-open-y-for-php-7.4-version-support/</guid><description>
 &lt;h2 id="requirements">Requirements&lt;/h2>
 &lt;ul>
 &lt;li>php-cli 7.4 ( memory_limit value should be large ( 2000M ) or unlimiter ( -1 ) in order to not fail&lt;/li>
@@ -2882,91 +2901,4 @@ Given the fact
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#39;views.view.images_library&amp;#39;,
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#39;views.view.example_view&amp;#39;,
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>]);
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Upgrade to Open Y 1.x</title><link>/docs/development/openy-upgrade-for-developers.-upgrade-to-old-openy-1.x-version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/openy-upgrade-for-developers.-upgrade-to-old-openy-1.x-version/</guid><description>
-&lt;p>This document is archived but may contain useful information for troubleshooting future updates. For updated update steps, visit
-&lt;a href="/docs/development/openy-upgrade-how-to-for-developers/">How to upgrade YMCA Website Services&lt;/a>.&lt;/p>
-&lt;hr>
-&lt;h1 id="upgrade-to-old-open-y-1x-version--tested-on-upgrading-802-to-81114-">Upgrade to old, Open Y 1.x version ( tested on upgrading 8.0.2 to 8.1.1.14 )&lt;/h1>
-&lt;p>See
-&lt;a href="/docs/development/upgrade-openy-8.1.3-to-8.2.2.1/">upgrade from 8.1.3 to 8.2.2.1&lt;/a>&lt;/p>
-&lt;p>We found the oldest OpenY instance working on 8.0.2 version of OpenY so this document should cover all the way of updating it to the latest version.&lt;/p>
-&lt;h3 id="prepare-dedicated-environment-for-upgrade-testing">Prepare dedicated environment for upgrade testing&lt;/h3>
-&lt;p>Ensure you have working computer or virtual machine with&lt;/p>
-&lt;ul>
-&lt;li>Ubuntu 14.04(16.04 or any decent Ubuntu LTS versions) 64 bit&lt;/li>
-&lt;li>MySQL 5.5+&lt;/li>
-&lt;li>Apache 2.4&lt;/li>
-&lt;li>PHP 5.6-7.1 (7.2 is not supported yet)&lt;/li>
-&lt;/ul>
-&lt;p>OpenY team maintains
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm" target="_blank">Vagrant preconfigured Virtualbox based virtual machine with OpenY&lt;/a>. Feel free to use it to get working virtual environment.
-Your own OpenY instance should have Virtual machine injected into your site codebase. Just find &lt;code>Vagrantfile&lt;/code> and proceed with &lt;code>vagrant up&lt;/code>
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm/blob/master/README.md" target="_blank">accordingly to the documentation&lt;/a>.&lt;/p>
-&lt;h3 id="obtain-local-copy-of-your-production-site">Obtain local copy of your production site&lt;/h3>
-&lt;p>You have to create local copy of your site locally to be able to proceed with the upgrade.
-For that&lt;/p>
-&lt;ul>
-&lt;li>Make a backup of your production database and copy it to your local machine&lt;/li>
-&lt;li>Make a copy of your production site codebase and copy it to your local machine&lt;/li>
-&lt;/ul>
-&lt;p>&amp;hellip;&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;h3 id="detect-version-of-your-openy">Detect version of your OpenY&lt;/h3>
-&lt;/li>
-&lt;/ol>
-&lt;p>Starting from OpenY 1.10 release you should see a version of OpenY in your site reports dashboard.
-For previous versions the best way to check your version is to analyze creation date of index.php pr README.txt file in the docroot folder of your site and compare it to the release date from
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases" target="_blank">https://github.com/YCloudYUSA/yusaopeny/releases&lt;/a> . Your OpenY version should be the one which is older than creation date of the files.&lt;/p>
-&lt;ol start="2">
-&lt;li>
-&lt;h3 id="run-command-with-next-never-version">Run command with next never version&lt;/h3>
-&lt;/li>
-&lt;/ol>
-&lt;p>In a same folder where is your &lt;code>docroot&lt;/code> folder run&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>mv composer.json composer.json.bak &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#204a87">true&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/composer.json
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> docroot/profiles/contrib/openy/
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm -f yparse*
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/yparse.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush cr
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh yparse.sh &lt;span style="color:#000;font-weight:bold">|&lt;/span> xargs drush en -y
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> ../../../../
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer require YCloudYUSA/yusaopeny:NEW_VERSION_HERE --no-update
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>composer update --prefer-dist --with-dependencies --prefer-stable --update-with-all-dependencies --no-suggest
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
-&lt;li>
-&lt;h3 id="update-the-site">Update the site&lt;/h3>
-&lt;/li>
-&lt;/ol>
-&lt;p>Go to docroot folder of your codebase and run&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>drush updatedb
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush entup
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Sometimes, when &lt;code>updatedb&lt;/code> fails, it is important to get stable version of some modules we found causing problems&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>drush dl -y plugin-8.x-2.5 contribute-8.x-1.0-beta7 scheduler-8.x-1.0 views_block_filter_block datalayer simple_menu_icons rabbit_hole metatag simple_sitemap-8.x-2.9 easy_breadcrumb-8.x-1.6
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush en -y plugin contribute scheduler views_block_filter_block datalayer simple_menu_icons rabbit_hole metatag simple_sitemap &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#204a87">true&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>drush ev &lt;span style="color:#4e9a06">&amp;#34;Drupal::service(&amp;#39;module_installer&amp;#39;)-&amp;gt;install([&amp;#39;content_moderation&amp;#39;,&amp;#39;openy&amp;#39;]);&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Ensure commands above finished with no error messages. Best way to check it - run them one more time. If next run shows&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ drush updatedb
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>No database updates required &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>success&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ drush entup
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>No entity schema updates required &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>success&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You almost 100% proved updated were executed correctly.&lt;/p>
-&lt;ol start="4">
-&lt;li>
-&lt;h3 id="check-for-regressions">Check for regressions&lt;/h3>
-&lt;/li>
-&lt;/ol>
-&lt;p>&amp;hellip;&lt;/p>
-&lt;ol start="5">
-&lt;li>
-&lt;h3 id="backup-current-state-of-the-updated-site">Backup current state of the updated site&lt;/h3>
-&lt;/li>
-&lt;/ol>
-&lt;p>&amp;hellip;&lt;/p>
-&lt;ol start="6">
-&lt;li>
-&lt;h3 id="proceed-with-an-update-to-next-version-until-succeeded-start-from-item-1">Proceed with an update to next version until succeeded (Start from item 1)&lt;/h3>
-&lt;/li>
-&lt;/ol>
-&lt;p>&amp;hellip;&lt;/p></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

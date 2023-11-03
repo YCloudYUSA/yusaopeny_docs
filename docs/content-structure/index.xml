@@ -50,9 +50,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_accordion&lt;/code>&lt;/li>
 &lt;li>&lt;strong>Project:&lt;/strong>
 &lt;a href="https://www.drupal.org/project/lb_accordion" target="_blank">lb_accordion&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="/img/designs/lb/Accordion%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Accordion%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>&lt;strong>
+&lt;a href="../../user-documentation/layout-builder/accordion">User Docs &amp;amp; Designs&lt;/a>&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Expandable pairs of question/answer or header/section fields.&lt;/p>
 &lt;table>
@@ -71,19 +70,29 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;tbody>
 &lt;tr>
 &lt;td>Accordion item&lt;/td>
-&lt;td>field_entity_reference_paragraph&lt;/td>
-&lt;td>Entity reference revisions&lt;/td>
+&lt;td>field_block_item&lt;/td>
+&lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>unlimited&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>Bundle: lb_accordion_item&lt;/td>
+&lt;td>Bundle: accordion_item&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>FAQ?&lt;/td>
+&lt;td>field_is_faq&lt;/td>
+&lt;td>Boolean&lt;/td>
+&lt;td>no&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>If this section contains Frequently Asked Questions, check this box to output them as &amp;ldquo;structured data&amp;rdquo;&amp;hellip;&lt;/td>
+&lt;td>&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h3 id="accordion-item">Accordion Item&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_accordion_item&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>accordion_item&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;table>
 &lt;thead>
@@ -101,7 +110,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;tbody>
 &lt;tr>
 &lt;td>Heading&lt;/td>
-&lt;td>field_heading&lt;/td>
+&lt;td>field_title&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
@@ -113,7 +122,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>Body&lt;/td>
 &lt;td>body&lt;/td>
 &lt;td>Text (formatted, long, with summary)&lt;/td>
-&lt;td>no&lt;/td>
+&lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
@@ -182,9 +191,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_cards&lt;/code>&lt;/li>
 &lt;li>&lt;strong>Project:&lt;/strong>
 &lt;a href="https://www.drupal.org/project/lb_cards" target="_blank">lb_cards&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="/img/designs/lb/Cards%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Cards%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>&lt;strong>
+&lt;a href="../../user-documentation/layout-builder/cards">User Docs &amp;amp; Designs&lt;/a>&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Flexible card-style components that allow up to 4 cards to display across a page depending on the chosen layout.&lt;/p>
 &lt;table>
@@ -223,7 +231,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Section link&lt;/td>
-&lt;td>field_section_link&lt;/td>
+&lt;td>field_cta&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -233,7 +241,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td># of columns&lt;/td>
-&lt;td>field_section_columns&lt;/td>
+&lt;td>field_columns&lt;/td>
 &lt;td>List (text)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
@@ -243,19 +251,19 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Card items&lt;/td>
-&lt;td>field_card_items&lt;/td>
-&lt;td>Entity reference revisions&lt;/td>
+&lt;td>field_block_item&lt;/td>
+&lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>4&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>Bundle: lb_card_item&lt;/td>
+&lt;td>Bundle: card_item&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h3 id="card-item">Card Item&lt;/h3>
-&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_card_item&lt;/code>&lt;/p>
-&lt;p>The Card paragraph is referenced by the Cards block.&lt;/p>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>card_item&lt;/code>&lt;/p>
+&lt;p>The Card item block is referenced by the Cards block.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -272,7 +280,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;tbody>
 &lt;tr>
 &lt;td>Heading&lt;/td>
-&lt;td>field_item_heading&lt;/td>
+&lt;td>field_title&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
@@ -282,7 +290,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Image&lt;/td>
-&lt;td>field_item_image&lt;/td>
+&lt;td>field_media&lt;/td>
 &lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -292,7 +300,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Topic tag&lt;/td>
-&lt;td>field_item_topic_tag&lt;/td>
+&lt;td>field_topic_tag&lt;/td>
 &lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -302,7 +310,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Description&lt;/td>
-&lt;td>field_item_description&lt;/td>
+&lt;td>field_body&lt;/td>
 &lt;td>Text (plain, long)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -312,7 +320,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Link&lt;/td>
-&lt;td>field_item_link&lt;/td>
+&lt;td>field_cta&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -327,9 +335,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_carousel&lt;/code>&lt;/li>
 &lt;li>&lt;strong>Project:&lt;/strong>
 &lt;a href="https://www.drupal.org/project/lb_carousel" target="_blank">lb_carousel&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="/img/designs/lb/Carousels%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Carousels%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>&lt;strong>
+&lt;a href="../../user-documentation/layout-builder/carousel">User Docs &amp;amp; Designs&lt;/a>&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>A full-width display with multiple sets of a header, description, and call to action overlaid on top of an image.&lt;/p>
 &lt;table>
@@ -368,18 +375,18 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Carousel items&lt;/td>
-&lt;td>field_carousel_items&lt;/td>
-&lt;td>Entity reference revisions&lt;/td>
+&lt;td>field_block_item&lt;/td>
+&lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>6&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>Bundle: lb_carousel_item&lt;/td>
+&lt;td>Bundle: carousel_item&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h3 id="carousel-item">Carousel Item&lt;/h3>
-&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_carousel_item&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>carousel_item&lt;/code>&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -396,7 +403,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;tbody>
 &lt;tr>
 &lt;td>Heading&lt;/td>
-&lt;td>field_item_heading&lt;/td>
+&lt;td>field_title&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -406,9 +413,9 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Image&lt;/td>
-&lt;td>field_item_image&lt;/td>
+&lt;td>field_media&lt;/td>
 &lt;td>Entity reference&lt;/td>
-&lt;td>no&lt;/td>
+&lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>&lt;/td>
@@ -416,7 +423,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Description&lt;/td>
-&lt;td>field_item_description&lt;/td>
+&lt;td>field_description&lt;/td>
 &lt;td>Text (formatted, long)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -426,7 +433,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Link&lt;/td>
-&lt;td>field_item_link&lt;/td>
+&lt;td>field_cta&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -475,9 +482,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_grid_cta&lt;/code>&lt;/li>
 &lt;li>&lt;strong>Project:&lt;/strong>
 &lt;a href="https://www.drupal.org/project/lb_grid_cta" target="_blank">lb_grid_cta&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="/img/designs/lb/Grid%20Content%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Grid%20Content%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>&lt;strong>
+&lt;a href="../../user-documentation/layout-builder/grid-cta">User Docs &amp;amp; Designs&lt;/a>&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Sets of content with a headline, description, and link displayed in 2 to 4-item wide rows, with the option to include icons or images.&lt;/p>
 &lt;table>
@@ -516,7 +522,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Grid CTA section link&lt;/td>
-&lt;td>field_section_link&lt;/td>
+&lt;td>field_section_cta_link&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -526,7 +532,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td># of columns&lt;/td>
-&lt;td>field_section_columns&lt;/td>
+&lt;td>field_columns&lt;/td>
 &lt;td>List (text)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
@@ -535,20 +541,20 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>Allows 2-4 columns, defaults to 4.&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Grid CTA items&lt;/td>
-&lt;td>field_grid_cta_items&lt;/td>
+&lt;td>Grid item&lt;/td>
+&lt;td>field_block_item&lt;/td>
 &lt;td>Entity Reference&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>4&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>Bundle: lb_grid_cta_item&lt;/td>
+&lt;td>Bundle: grid_item&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h3 id="grid-cta-item">Grid CTA Item&lt;/h3>
-&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_grid_cta_item&lt;/code>&lt;/p>
-&lt;p>The Grid Item paragraph is referenced by the Grid CTA component.&lt;/p>
+&lt;h3 id="grid-item">Grid Item&lt;/h3>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>grid_item&lt;/code>&lt;/p>
+&lt;p>The Grid Item block is referenced by the Grid CTA component.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -565,7 +571,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;tbody>
 &lt;tr>
 &lt;td>Heading&lt;/td>
-&lt;td>field_item_heading&lt;/td>
+&lt;td>field_title&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -575,7 +581,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Description&lt;/td>
-&lt;td>field_item_description&lt;/td>
+&lt;td>field_description&lt;/td>
 &lt;td>Text (formatted, long)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -585,7 +591,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Media&lt;/td>
-&lt;td>field_item_icon&lt;/td>
+&lt;td>field_media&lt;/td>
 &lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -595,7 +601,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Link&lt;/td>
-&lt;td>field_item_link&lt;/td>
+&lt;td>field_cta&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -1240,9 +1246,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_statistics&lt;/code>&lt;/li>
 &lt;li>&lt;strong>Project:&lt;/strong>
 &lt;a href="https://www.drupal.org/project/lb_statistics" target="_blank">lb_statistics&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="/img/designs/lb/Statistics%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Statistics%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>&lt;strong>
+&lt;a href="../../user-documentation/layout-builder/statistics">User Docs &amp;amp; Designs&lt;/a>&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Infographic-like display that highlights relevant statistics to users.&lt;/p>
 &lt;table>
@@ -1291,7 +1296,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Section link&lt;/td>
-&lt;td>field_link&lt;/td>
+&lt;td>field_cta&lt;/td>
 &lt;td>Link&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -1300,19 +1305,19 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Statistics items&lt;/td>
-&lt;td>field_statistics_ items&lt;/td>
-&lt;td>Entity reference revisions&lt;/td>
+&lt;td>Statistics item&lt;/td>
+&lt;td>field_block_item&lt;/td>
+&lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>unlimited&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>Bundle: lb_statistics_item&lt;/td>
+&lt;td>Bundle: statistics_item&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h3 id="statistics-item">Statistics Item&lt;/h3>
-&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_statistics_item&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>statistics_item&lt;/code>&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -1329,7 +1334,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;tbody>
 &lt;tr>
 &lt;td>Number value&lt;/td>
-&lt;td>field_item_number&lt;/td>
+&lt;td>field_subtitle&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>yes&lt;/td>
 &lt;td>1&lt;/td>
@@ -1339,7 +1344,7 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Description&lt;/td>
-&lt;td>field_item_description&lt;/td>
+&lt;td>field_description&lt;/td>
 &lt;td>Text (plain)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
@@ -1354,9 +1359,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;li>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_tabs&lt;/code>&lt;/li>
 &lt;li>&lt;strong>Project:&lt;/strong>
 &lt;a href="https://www.drupal.org/project/ws_lb_tabs" target="_blank">ws_lb_tabs&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Designs:&lt;/strong>
-&lt;a href="/img/designs/lb/Tabs%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Tabs%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;li>&lt;strong>
+&lt;a href="../../user-documentation/layout-builder/tabs">User Docs &amp;amp; Designs&lt;/a>&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;p>Gives users the ability to switch page views by selecting tabs across the top of the page instead of having to navigate to a new page.&lt;/p>
 &lt;table>
@@ -1394,20 +1398,20 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;td>H3&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Tab items&lt;/td>
-&lt;td>field_tab_items&lt;/td>
-&lt;td>Entity reference revisions&lt;/td>
+&lt;td>Tab item&lt;/td>
+&lt;td>field_block_item&lt;/td>
+&lt;td>Entity reference&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>unlimited&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>Bundle: lb_tab_item&lt;/td>
+&lt;td>Bundle: tab_item&lt;/td>
 &lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h3 id="tab-item">Tab Item&lt;/h3>
-&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>lb_tab_item&lt;/code>&lt;/p>
-&lt;p>The Tab paragraph is referenced by the Tabs block.&lt;/p>
+&lt;p>&lt;strong>Machine name:&lt;/strong> &lt;code>tab_item&lt;/code>&lt;/p>
+&lt;p>The Tab Item block is referenced by the Tabs block.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -1434,8 +1438,8 @@ The only rule we are trying to follow is to cover shipped list of content types 
 &lt;/tr>
 &lt;tr>
 &lt;td>Body&lt;/td>
-&lt;td>body&lt;/td>
-&lt;td>Text (formatted, long, with summary)&lt;/td>
+&lt;td>field_description&lt;/td>
+&lt;td>Text (formatted, long)&lt;/td>
 &lt;td>no&lt;/td>
 &lt;td>1&lt;/td>
 &lt;td>&lt;/td>

@@ -63,6 +63,20 @@
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;h3 id="canadian-colourways">Canadian Colourways&lt;/h3>
+&lt;p>YMCA of the USA has partnered with
+&lt;a href="https://www.ymca.ca/" target="_blank">YMCA Canada&lt;/a> to create a brand-compliant and accessible colourway for use by Canadian YMCAs.&lt;/p>
+&lt;p>The colourway is packaged as the
+&lt;a href="https://www.drupal.org/project/ws_colorway_canada" target="_blank">Canada Layout Builder Colorway&lt;/a> on Drupal.org and is included with the full
+&lt;a href="https://github.com/YCloudYUSA/y_lb" target="_blank">YMCA Layout Builder&lt;/a> package.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://www.figma.com/proto/nQ8GfYR5CXkkaOxYAlITeC/YMCA-Canada-Design-System?type=design&amp;amp;node-id=614-11498&amp;amp;t=aGKtr2E2dDMfsYsF-1&amp;amp;scaling=min-zoom&amp;amp;page-id=614%3A11497&amp;amp;mode=design" target="_blank">YMCA Canada UI Kit&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.figma.com/proto/nQ8GfYR5CXkkaOxYAlITeC/YMCA-Canada-Design-System?type=design&amp;amp;node-id=1640-14094&amp;amp;t=H3ljPnNvxOWrGqhd-0&amp;amp;scaling=scale-down&amp;amp;page-id=1640%3A10978&amp;amp;starting-point-node-id=1640%3A14094" target="_blank">YMCA Canada Components&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.figma.com/proto/nQ8GfYR5CXkkaOxYAlITeC/YMCA-Canada-Design-System?type=design&amp;amp;node-id=2201-21973&amp;amp;t=feeJM61aY5EhpgKl-1&amp;amp;scaling=min-zoom&amp;amp;page-id=2201%3A20920&amp;amp;mode=design" target="_blank">YMCA Canada Demo Pages&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h3 id="content-types">Content Types&lt;/h3>
 &lt;p>The distribution provides new
 &lt;a href="../../content-types">Content Types&lt;/a> for use with Layout Builder components.&lt;/p>
@@ -2863,7 +2877,7 @@ This is a warning.
 &lt;tr>
 &lt;td>Address&lt;/td>
 &lt;td>field_location_address&lt;/td>
-&lt;td>Yes&lt;/td>
+&lt;td>No&lt;/td>
 &lt;td>An address field that will provide the ability to add details about the locations. Details to be completed: &lt;ul>&lt;li>Address&lt;/li>&lt;li>City&lt;/li>&lt;li>State&lt;/li>&lt;li>Zip Code&lt;/li>&lt;/ul>&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -2895,6 +2909,18 @@ This is a warning.
 &lt;td>field_location_directions&lt;/td>
 &lt;td>No&lt;/td>
 &lt;td>A link field for adding the directions link.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Facility Hours&lt;/td>
+&lt;td>field_branch_hours&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>The facility hours&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Facility Holiday Hours&lt;/td>
+&lt;td>field_branch_holiday_hours&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>Any special holiday hours for the facility.&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;strong>Content Area&lt;/strong>&lt;/td>

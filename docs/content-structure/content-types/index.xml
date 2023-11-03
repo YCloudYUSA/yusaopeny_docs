@@ -800,7 +800,7 @@
 &lt;tr>
 &lt;td>Address&lt;/td>
 &lt;td>field_location_address&lt;/td>
-&lt;td>Yes&lt;/td>
+&lt;td>No&lt;/td>
 &lt;td>An address field that will provide the ability to add details about the locations. Details to be completed: &lt;ul>&lt;li>Address&lt;/li>&lt;li>City&lt;/li>&lt;li>State&lt;/li>&lt;li>Zip Code&lt;/li>&lt;/ul>&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -832,6 +832,18 @@
 &lt;td>field_location_directions&lt;/td>
 &lt;td>No&lt;/td>
 &lt;td>A link field for adding the directions link.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Facility Hours&lt;/td>
+&lt;td>field_branch_hours&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>The facility hours&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Facility Holiday Hours&lt;/td>
+&lt;td>field_branch_holiday_hours&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>Any special holiday hours for the facility.&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;strong>Content Area&lt;/strong>&lt;/td>

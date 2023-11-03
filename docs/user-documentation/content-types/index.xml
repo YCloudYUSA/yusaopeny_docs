@@ -168,7 +168,7 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="rearranging-alerts">Rearranging alerts&lt;/h2>
-&lt;p>Alerts can be rearranged to control the order in which they display if multiple appear on a page. The &lt;strong>Alerts Rearrange&lt;/strong> page can be accessed via its link on the &lt;strong>Content&lt;/strong> page or at &lt;code>/admin/content/alerts-rearrange&lt;/code>. It might not appear in the Admin menu.&lt;/p>
+&lt;p>Alerts can be rearranged to control the order in which they display if multiple appear on a page. The &lt;strong>Alerts Rearrange&lt;/strong> page can be accessed via its link on the &lt;strong>Content&lt;/strong> page or at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Alerts Rearrange&lt;/strong> (&lt;code>/admin/content/alerts-rearrange&lt;/code>). The link might not appear in the Admin menu prior to version &lt;code>10.3.1&lt;/code>.&lt;/p>
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/content-types/alert/alerts--rearrange.png" title="View original image">
@@ -550,7 +550,12 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;p>Add the main hours for your facility. These are displayed in the header and on the Locations page.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Custom hours label&lt;/strong>: The title displayed in the &amp;ldquo;All hours&amp;rdquo; dropdown. Clearing this field will hide the section from the Branch page.&lt;/li>
-&lt;li>&lt;strong>Mon, Tue, &amp;hellip;&lt;/strong>: Add the hours for each day of the current week. Use the format &lt;code>7am-5pm&lt;/code> to save space.&lt;/li>
+&lt;li>&lt;strong>Mon, Tue, &amp;hellip;&lt;/strong>: Add the hours for each day of the current week.
+&lt;ul>
+&lt;li>Most formatting like &lt;code>&amp;lt;open time&amp;gt; &amp;lt;separator&amp;gt; &amp;lt;end time&amp;gt;&lt;/code> should work, but we recommend something like &lt;code>7am-5pm&lt;/code>&lt;/li>
+&lt;li>Leaving a day empty will show the hours as &amp;ldquo;Closed&amp;rdquo; but you can enter any other text as well, like &amp;ldquo;Wednesday: &amp;lsquo;Temporarily closed&amp;rsquo;&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>&lt;strong>Branch Holiday Hours&lt;/strong>: Add special hours for any upcoming holidays. These will be displayed on the site when the holiday is less than two weeks away. Add as many holiday entries as you like.
 &lt;ul>
 &lt;li>&lt;strong>Holiday Title&lt;/strong>: The displayed title of the holiday.&lt;/li>
@@ -1164,7 +1169,11 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;/ul>
 &lt;h3 id="contact-info">Contact Info&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>Address&lt;/strong> (required): The physical address of your location. Be sure to include all address fields.&lt;/li>
+&lt;li>&lt;strong>Address&lt;/strong>: The physical address of your location. Be sure to include all address fields.
+&lt;ul>
+&lt;li>If you do not set an address (or clear the address by resetting &lt;strong>Country&lt;/strong> to &amp;ldquo;- None -&amp;rdquo;) then the facility will display the address of its associated &lt;strong>Branch&lt;/strong>. (Added in version &lt;code>10.3.1&lt;/code>, December 2023.)&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>&lt;strong>Facility coordinates&lt;/strong> (required): This field pins your facility on the locations map.
 &lt;ul>
 &lt;li>See
@@ -1175,6 +1184,13 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;li>&lt;strong>Fax&lt;/strong>: Optional.&lt;/li>
 &lt;li>&lt;strong>Email&lt;/strong>: We recommend you use a main contact email, such as &lt;code>info@example.com&lt;/code>, rather than the email for an individual staff member.&lt;/li>
 &lt;li>&lt;strong>Directions&lt;/strong>: By default, a link with directions is auto-generated using the Address field. Use this field to substitute your own directions link.&lt;/li>
+&lt;li>&lt;strong>Facility Hours&lt;/strong>: Set the hours for the Facility. (Added in version &lt;code>10.3.1&lt;/code>, December 2023.)
+&lt;ul>
+&lt;li>This field follows the same rules as &lt;strong>Address&lt;/strong> - if it is empty, the associated &lt;strong>Branch&lt;/strong> hours will be displayed.&lt;/li>
+&lt;li>See
+&lt;a href="../branch/#branch-hours">Branch Hours&lt;/a> for details on how to set the Facility Hours.&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul>
 &lt;h3 id="sidebar-area">Sidebar area&lt;/h3>
 &lt;p>For aside pieces of content, such as side navigations, promotional cards and content related to the main part of your page.&lt;/p>
