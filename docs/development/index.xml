@@ -177,7 +177,7 @@ request, on every CI build in the future.&lt;/p>
 &lt;p>Every release of YMCA Website Services since 8.1.9 should include list of subsystems, changed in release for the community to be aware of the possible regressions on their end.&lt;/p></description></item><item><title>Docs: anti spam protection</title><link>/docs/development/openy-anti-spam-protection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/openy-anti-spam-protection/</guid><description>
 &lt;p>In order to protect YMCA Website Services customers, we have added anti-spam protection based on CAPTCHA and Google reCAPTCHA out of the box in YMCA Website Services core&lt;/p>
 &lt;p>You can check
-&lt;a href="https://www.youtube.com/watch?v=nHo2uL-bPyM" target="_blank">the tutorial for how to install and configure reCaptcha on your site&lt;/a>.&lt;/p>
+&lt;a href="https://www.youtube.com/watch?v=sx36hoDj4Wc" target="_blank">the tutorial for how to install and configure reCaptcha on your site&lt;/a>.&lt;/p>
 &lt;p>In the majority of cases having the above configuration in place will protect you from 99% of spam, unless there is human-entered spam that has no protection. To overcome some human-based spam you should use blacklist logic for blocking email domains, used in spam messages.&lt;/p>
 &lt;p>For that, you can use
 &lt;a href="https://www.drupal.org/project/protected_submissions" target="_blank">the Protected Submissions module&lt;/a> module, which allows you to harden all submissions on a site with a list of stop words as well as per-language settings.&lt;/p>
@@ -769,7 +769,7 @@ On February 28, 2023, Daxko is planning to sunset the GroupEx PRO Public API in 
 &lt;p>To start developing you need to obtain the latest YMCA Website Services codebase. See the
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny-project#latest-development-version-drupal-9-2x" target="_blank">&lt;code>openy-project&lt;/code> repository&lt;/a> for the full process.&lt;/p>
 &lt;p>
-&lt;a href="https://www.youtube.com/watch?v=jRlinjpTl0c" target="_blank">This video tutorial&lt;/a> will walk you through how to initiate a local development environment.&lt;/p>
+&lt;a href="https://www.youtube.com/watch?v=0XbqXlDyDCY" target="_blank">This video tutorial&lt;/a> will walk you through how to initiate a local development environment.&lt;/p>
 &lt;p>The YMCA Website Services team has pre-built environments and walkthroughs using either
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny-cibox-vm#drupal-vagrant-dev-box-for-openy-support" target="_blank">Vagrant and VirtualBox&lt;/a> or
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny-docksal#get-started" target="_blank">Docker and Docksal&lt;/a>. Choose the method that you&amp;rsquo;re most comfortable with and get started!&lt;/p>
@@ -1715,7 +1715,7 @@ repository, as on this example:&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">description&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Blog package provides a set of modules to maintain and create different blog post listings.&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">help&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#a40000">&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">p&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#000">Using&lt;/span> &lt;span style="color:#000">Blog&lt;/span> &lt;span style="color:#204a87;font-weight:bold">package&lt;/span> &lt;span style="color:#000">you&lt;/span> &lt;span style="color:#000">can&lt;/span> &lt;span style="color:#000">create&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000">maintain&lt;/span> &lt;span style="color:#000">blog&lt;/span> &lt;span style="color:#000">posts&lt;/span> &lt;span style="color:#000">and&lt;/span> &lt;span style="color:#000">create&lt;/span> &lt;span style="color:#000">flexible&lt;/span> &lt;span style="color:#000">listings&lt;/span> &lt;span style="color:#000">of&lt;/span> &lt;span style="color:#000">blog&lt;/span> &lt;span style="color:#000">posts&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span> &lt;span style="color:#000">Watch&lt;/span> &lt;span style="color:#000">a&lt;/span> &lt;span style="color:#000">video&lt;/span> &lt;span style="color:#000">below&lt;/span> &lt;span style="color:#000">to&lt;/span> &lt;span style="color:#000">learn&lt;/span> &lt;span style="color:#000">more&lt;/span> &lt;span style="color:#000">about&lt;/span> &lt;span style="color:#000">blog&lt;/span> &lt;span style="color:#000">anatomy&lt;/span>&lt;span style="color:#000;font-weight:bold">.&amp;lt;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">/&lt;/span>&lt;span style="color:#000">p&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">iframe&lt;/span> &lt;span style="color:#000">width&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;560&amp;#34;&lt;/span> &lt;span style="color:#000">height&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;315&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">src&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;https://www.youtube.com/embed/PTZkgOb8CFE&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">src&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;https://www.youtube.com/embed/Vg1fy29DhdQ&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">frameborder&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;0&amp;#34;&lt;/span> &lt;span style="color:#000">allow&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;autoplay; encrypted-media&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">allowfullscreen&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&amp;lt;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">/&lt;/span>&lt;span style="color:#000">iframe&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#a40000">&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">modules&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>
@@ -2574,7 +2574,7 @@ Installer path will look like this:&lt;/p>
 &lt;li>A Slack Team
 &lt;a href="mailto:ycloud@ymca.net?subject=Slack%20Access%20Request">by invite&lt;/a> with a #developers channel where we discuss technical issues with our partners and YUSA.&lt;/li>
 &lt;li>A
-&lt;a href="https://www.youtube.com/watch?v=RSsQLVVhldc&amp;amp;list=PL_QVggMcFfKZp05THV3dYlYOG3MsJ8xSf" target="_blank">YouTube playlist for Developers&lt;/a>&lt;/li>
+&lt;a href="https://www.youtube.com/playlist?list=PL_QVggMcFfKZp05THV3dYlYOG3MsJ8xSf" target="_blank">YouTube playlist for Developers&lt;/a>&lt;/li>
 &lt;li>A list of
 &lt;a href="/docs/development/open-y-3rd-party-dependencies/">3rd party dependencies&lt;/a> which are reviewed periodically for new features and deprecations.&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Terms and Conditions</title><link>/docs/development/ws-terms-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/ws-terms-conditions/</guid><description>
@@ -2672,8 +2672,8 @@ Installer path will look like this:&lt;/p>
 &lt;/ol>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>$ bin/behat
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
-&lt;a href="https://youtu.be/RSsQLVVhldc" target="_blank">
-&lt;img src="https://img.youtube.com/vi/RSsQLVVhldc/0.jpg" alt="Debugging JavaScript Behat tests" />&lt;/a>&lt;/p>
+&lt;a href="https://youtu.be/__ZJlWOK2JM" target="_blank">
+&lt;img src="https://img.youtube.com/vi/__ZJlWOK2JM/0.jpg" alt="Debugging JavaScript Behat tests" />&lt;/a>&lt;/p>
 &lt;h3 id="custom-behat-functionality">Custom Behat functionality&lt;/h3>
 &lt;ul>
 &lt;li>Create entities in table forms, with key to use in reference and reference entities by key.

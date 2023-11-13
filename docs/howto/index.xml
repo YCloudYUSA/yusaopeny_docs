@@ -80,7 +80,7 @@
 &lt;a href="mailto:ycloud@ymca.net">Get in touch&lt;/a> or reach out in &lt;code>#developers&lt;/code> on the YUSA Slack for more details.&lt;/p>
 &lt;h2 id="for-site-builders">For site builders&lt;/h2>
 &lt;p>Once you&amp;rsquo;ve downloaded the WOFF files, you&amp;rsquo;ll need to add them to your site. These instructions mirror the
-&lt;a href="https://www.youtube.com/watch?v=Kl1lwYSg3ww&amp;amp;feature=youtu.be" target="_blank">walkthrough in this video&lt;/a>.&lt;/p>
+&lt;a href="https://www.youtube.com/watch?v=AGlOmmy_GUw" target="_blank">walkthrough in this video&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>Visit &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> and ensure the &amp;ldquo;@fontyourface&amp;rdquo; and &amp;ldquo;@fontyourface - Local Fonts&amp;rdquo; modules are enabled.&lt;/li>
 &lt;li>Visit &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Appearance&lt;/strong> &amp;gt; &lt;strong>@font-your-face&lt;/strong> &amp;gt; &lt;strong>Custom Fonts&lt;/strong>&lt;/li>

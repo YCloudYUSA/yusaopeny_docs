@@ -453,28 +453,55 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;p>The sidebar area also allows you embed paragraphs below a section that links to the centers tagged in the post, the categories and a &lt;em>Related Content field&lt;/em> that allows you to promote other Blog Posts by tagging them with the autocomplete widget.&lt;/p>
 &lt;h3 id="layouts">Layouts&lt;/h3>
 &lt;p>While you have the option to build layouts in blog posts using paragraphs, all blog posts are strictly two-column layouts. The Content Area displays on the left while the Sidebar Area displays on the right.&lt;/p></description></item><item><title>Docs: Branch</title><link>/docs/user-documentation/content-types/branch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/branch/</guid><description>
-&lt;p>Branch pages contain multiple data fields that work together to help members find the right location, hours, and amenities that fits their needs.&lt;/p>
+&lt;p>Branch pages contain multiple data fields that work together to help members find the right location, hours, and amenities that fit their needs.&lt;/p>
 &lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>Branch Page -
+&lt;a href="/img/designs/lb-ui-kit/Branch%20CT.jpg">Design System&lt;/a>
+&lt;ul>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Branch%20Location%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Branch%20Location%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>Branch Amenities -
+&lt;a href="/img/designs/lb-ui-kit/Branch%20CT.jpg">Design System&lt;/a>
+&lt;ul>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Branch%20Amenities%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Branch%20Amenities%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>Branch Hours -
+&lt;a href="/img/designs/lb-ui-kit/Branch%20Hours.jpg">Design System&lt;/a>
+&lt;ul>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Branch%20Location%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Branch%20Location%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>Branch Menu -
+&lt;a href="/img/designs/lb-ui-kit/Branch%20Menu.jpg">Design System&lt;/a>
+&lt;ul>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Branch%20Menu%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Branch%20Menu%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Branch Preferred Branch -
+&lt;a href="/img/designs/lb-ui-kit/Branch%20Preferred%20Branch.jpg">Design System&lt;/a>&lt;/li>
 &lt;li>Branch Social Links -
+&lt;a href="/img/designs/lb-ui-kit/Branch%20Social%20Links.jpg">Design System&lt;/a>
+&lt;ul>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Branch%20Social%20Links%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Branch%20Social%20Links%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>
-&lt;a href="../../../../../../assets/img/branch-carnation-old.png">Legacy Branch Page (Carnation theme)&lt;/a>&lt;/li>
+&lt;a href="branch-carnation-old.png">Legacy Branch Page (Carnation theme)&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="../../../../../../assets/img/branch-lily-old.jpeg">Legacy Branch Page (Lily theme)&lt;/a>&lt;/li>
+&lt;a href="branch-lily-old.jpeg">Legacy Branch Page (Lily theme)&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/dspC2NopTj8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
@@ -484,10 +511,10 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;p>Fill in the content fields:&lt;/p>
 &lt;h3 id="general-info">General Info&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong> (required): This is the name of your branch, which will display as your page title and the title in the location card. If your branch has a longer formal name we recommend using the shorter, more common name for readability.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> (required): This is the name of your branch which will display as your page title and the title on the location card. If your branch has a longer formal name we recommend using the shorter, more common name for readability.&lt;/li>
 &lt;li>&lt;strong>Neighborhood&lt;/strong>: An optional reference to specify which neighborhood your Y is located in. Start typing and select from the list. To add a new neighborhood, add it to the “Area” vocabulary under &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Taxonomy&lt;/strong> (see
 &lt;a href="../../taxonomy">Taxonomy&lt;/a>).&lt;/li>
-&lt;li>&lt;strong>Coming Soon&lt;/strong>: Use this flag to indicate a newly opening branch on the Locations page.
+&lt;li>&lt;strong>Coming Soon&lt;/strong>: This flag indicates a newly opening branch on the Locations page.
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/content-types/branch/branch-coming-soon.png" title="View original image">
 &lt;img alt="Screenshot of a page showing &amp;amp;ldquo;Downtown YMCA&amp;amp;rdquo; with a &amp;amp;ldquo;Coming Soon&amp;amp;rdquo; flag." srcset="
@@ -513,7 +540,7 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;ul>
 &lt;li>
 &lt;a href="https://www.google.com/maps" target="_blank">Search&lt;/a> for your Y location&lt;/li>
-&lt;li>Right-click the location in the map
+&lt;li>Right-click the location on the map.
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/content-types/branch/branch-lat-long-copy.png" title="View original image">
 &lt;img alt="Screenshot of Google Maps showing the right-click menu with the latitude/longitude item selected." srcset="
@@ -549,7 +576,7 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;h3 id="branch-hours">Branch Hours&lt;/h3>
 &lt;p>Add the main hours for your facility. These are displayed in the header and on the Locations page.&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Custom hours label&lt;/strong>: The title displayed in the &amp;ldquo;All hours&amp;rdquo; dropdown. Clearing this field will hide the section from the Branch page.&lt;/li>
+&lt;li>&lt;strong>Custom hours label&lt;/strong>: The title that is displayed in the &amp;ldquo;All hours&amp;rdquo; dropdown. Clearing this field will hide the section from the Branch page.&lt;/li>
 &lt;li>&lt;strong>Mon, Tue, &amp;hellip;&lt;/strong>: Add the hours for each day of the current week.
 &lt;ul>
 &lt;li>Most formatting like &lt;code>&amp;lt;open time&amp;gt; &amp;lt;separator&amp;gt; &amp;lt;end time&amp;gt;&lt;/code> should work, but we recommend something like &lt;code>7am-5pm&lt;/code>&lt;/li>
@@ -563,7 +590,7 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;li>&lt;strong>Date&lt;/strong>: The date of the holiday. When this day is in the current week &amp;hellip;&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>More Hours Link&lt;/strong>: An link to show additional location hours information, like another page or a PDF.&lt;/li>
+&lt;li>&lt;strong>More Hours Link&lt;/strong>: A link to show additional location hours information, like another page or a PDF.&lt;/li>
 &lt;/ul>
 &lt;p>
 &lt;figure class="image-caption">
@@ -594,7 +621,7 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;p>This section is not displayed when &amp;ldquo;Use Layout Builder&amp;rdquo; is selected.&lt;/p>
 &lt;/blockquote>
 &lt;p>The Branch Content Type only has one layout option—one column—and no description field. Paragraphs will form the body of the page.&lt;/p>
-&lt;p>The following paragraph types integrate directly with Branch:&lt;/p>
+&lt;p>The following paragraph types integrate directly with Branch pages:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;a href="../../paragraphs/latest-blog-posts">Latest Blog Posts (Branch)&lt;/a>&lt;/li>
@@ -634,7 +661,7 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;/a>
 &lt;/figure>
 &lt;/p>
-&lt;p>If you embed a Branch Amenities with Icons paragraph or Branch Amenities block on your page, the amenities will display in your content. The Amenities will also serve as filters for branches on your locations page.&lt;/p>
+&lt;p>If you embed a Branch Amenities with the Icons paragraph or Branch Amenities block on your page, the amenities will be displayed in your content. The Amenities will also serve as filters for branches on your locations page.&lt;/p>
 &lt;p>
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/content-types/branch/branch-amenities-block.png" title="View original image">
@@ -649,7 +676,7 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;p>If you don&amp;rsquo;t see an option available or would like to rename a branch amenity, go to &lt;strong>Structure&lt;/strong> &amp;gt; &lt;strong>Taxonomy&lt;/strong> &amp;gt; &lt;strong>Amenities&lt;/strong>. See
 &lt;a href="../../taxonomy">Taxonomy&lt;/a> for more info.&lt;/p>
 &lt;h3 id="menu">Menu&lt;/h3>
-&lt;p>The Branch Menu is a single level sub-menu that displays within a branch page (and sub-pages) that allows users to drill down to additional content specific to that branch. The Branch Menu always shows &amp;ldquo;Branch Home&amp;rdquo; as its first link.&lt;/p>
+&lt;p>The Branch Menu is a single-level sub-menu that displays within a branch page (and sub-pages) that allows users to drill down to additional content specific to that branch. The Branch Menu always shows &amp;ldquo;Branch Home&amp;rdquo; as its first link.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Menu links&lt;/strong>: A list of menu links to be displayed in the menu. Allows unlimited items but we recommend a maximum of 6-8 depending on the Link text length.&lt;/li>
 &lt;/ul>
@@ -667,17 +694,23 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;h2 id="customizing-with-layout-builder">Customizing with Layout Builder&lt;/h2>
 &lt;p>Beginning in
 &lt;a href="/blog/2023/03/14/digital-services-release-9.2.13/">Website Services 9.2.13&lt;/a> content editors have the option of customizing the Branch page with
-&lt;a href="../../layout-builder">Layout Builder&lt;/a>. You can migrate from using Paragraphs to using Layout Builder on a branch-by-branch basis in order to ease the transition.&lt;/p>
+&lt;a href="../../layout-builder">Layout Builder&lt;/a>. You can migrate from using Paragraphs to using Layout Builder on a branch-by-branch basis to ease the transition.&lt;/p>
 &lt;p>The &lt;strong>Use Layout Builder&lt;/strong> checkbox on the Branch edit page non-destructively switches between Paragraphs and Layout Builder.&lt;/p>
 &lt;h3 id="layout-builder-blocks">Layout Builder Blocks&lt;/h3>
-&lt;p>Branch pages have a number of specialized components that utilize the structured data (fields) that already exist on your branch page in newly designed Layout Builder Blocks.&lt;/p>
-&lt;p>In addition to using many of the standard Layout Builder components, Branch pages also use a number of components that display fields described above:&lt;/p>
+&lt;p>Branch pages have several specialized components that utilize the structured data (fields) that already exist on your branch page in newly designed Layout Builder Blocks.&lt;/p>
+&lt;p>In addition to using many of the standard Layout Builder components, Branch pages also use several components that display the fields described above:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Branch Hours&lt;/strong>: Combines the branch title, contact information, hours, and more into a dynamic page header.
 &lt;ul>
 &lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Branch%20Hours.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Branch%20Hours%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Branch%20Hours%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>An image can be added to the background of this block using
 &lt;a href="../../layout-builder/advanced-options#block-styles">the Style tab&lt;/a>.&lt;/li>
 &lt;/ul>
@@ -686,8 +719,14 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;a href="#branch-amenities">open and closed amenities&lt;/a> in an easy-to-read grid.
 &lt;ul>
 &lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Branch%20CT.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Branch%20Amenities%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Branch%20Amenities%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>An image can be added to the background of this block using
 &lt;a href="../../layout-builder/advanced-options#block-styles">the Style tab&lt;/a>.&lt;/li>
 &lt;/ul>
@@ -696,41 +735,104 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;a href="#menu">Branch Menu&lt;/a> links.
 &lt;ul>
 &lt;li>&lt;strong>Designs:&lt;/strong>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Branch%20Menu.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Branch%20Menu%20Mobile.png">Mobile&lt;/a> |
 &lt;a href="/img/designs/lb/Branch%20Menu%20Desktop.png">Desktop&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;p>One additional component is available that requires additional information:&lt;/p>
-&lt;h4 id="branch-social-links">Branch Social Links&lt;/h4>
-&lt;p>&lt;strong>Designs:&lt;/strong>
+&lt;h3 id="branch-social-links">Branch Social Links&lt;/h3>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Branch%20Social%20Links.jpg">Design System&lt;/a>&lt;/li>
+&lt;li>Pre-release:
 &lt;a href="/img/designs/lb/Branch%20Social%20Links%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Branch%20Social%20Links%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;a href="/img/designs/lb/Branch%20Social%20Links%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>This component allows you to place up to 6 social media links on a branch page.&lt;/p>
 &lt;ul>
 &lt;li>Add the &lt;strong>Branch Social Links&lt;/strong> block to the pre-configured &lt;strong>Social links&lt;/strong> section of your page using
 &lt;a href="../../layout-builder#blocks">the standard process&lt;/a>.&lt;/li>
 &lt;li>Add up to 6 links in the &lt;strong>Links&lt;/strong> field. Icons for each social media platform will be populated automatically.
 &lt;ul>
-&lt;li>Currently supported platforms include: Facebook, Instagram, Linkedin, Twitter, and YouTube.
+&lt;li>Currently supported platforms include Facebook, Instagram, Linkedin, Twitter, and YouTube.
 &lt;a href="https://www.drupal.org/node/add/project-issue/lb_branch_social_links_blocks" target="_blank">Request a new platform&lt;/a> if you need.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>After adding or updating the block, be sure to
 &lt;a href="../../layout-builder#saving-and-publishing">save and publish your branch&lt;/a>.&lt;/li>
 &lt;/ul>
-&lt;h3 id="migrating-to-layout-builder">Migrating to Layout Builder&lt;/h3>
-&lt;p>Migrating Branches to Layout builder involves recreating some content on the page. The process is similar to
-&lt;a href="../../layout-builder#creating-a-new-page">building a new Landing Page with Layout Builder&lt;/a>, but with a lot of the work done for you!&lt;/p>
+&lt;h3 id="home-branch-selector">Home Branch Selector&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb-ui-kit/Branch%20Preferred%20Branch.jpg">Designs&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>This feature allows users to select a single branch location as their home / preferred branch so that they can easily access branch-specific content across the site.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/branch/branch--home-branch-selector.png" title="View original image">
+&lt;img alt="A screenshot of the Home Branch selector with a label and a n arrow pointing to a downward-pointing chevron with the label &amp;amp;ldquo;Link to bring back the popup&amp;amp;rdquo;" srcset="
+/docs/user-documentation/content-types/branch/branch--home-branch-selector_hu4e1c93405b84b0235c8d72f2a0f005de_97291_e32a417fde314b391b6b6e41a93c574b.png 458w,
+/docs/user-documentation/content-types/branch/branch--home-branch-selector_hu4e1c93405b84b0235c8d72f2a0f005de_97291_feda8610786151e4d0748efab031a5db.png 726w,
+/docs/user-documentation/content-types/branch/branch--home-branch-selector_hu4e1c93405b84b0235c8d72f2a0f005de_97291_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/branch/branch--home-branch-selector_hu4e1c93405b84b0235c8d72f2a0f005de_97291_e32a417fde314b391b6b6e41a93c574b.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>The Home Branch selector popup will appear to users who arrive at the site and:&lt;/p>
+&lt;ul>
+&lt;li>are new to the site,&lt;/li>
+&lt;li>have not selected a Home Branch, and&lt;/li>
+&lt;li>have not checked the &amp;ldquo;Do not ask me again&amp;rdquo; checkbox in the modal.&lt;/li>
+&lt;/ul>
+&lt;p>Users can select a Home Branch by:&lt;/p>
+&lt;ul>
+&lt;li>choosing a branch from the modal popup,&lt;/li>
+&lt;li>using the &amp;ldquo;Set Preferred Branch&amp;rdquo; link in the Utility menu,&lt;/li>
+&lt;li>choosing &amp;ldquo;My preferred branch&amp;rdquo; on a Branch page or in
+&lt;a href="../../layout-builder/location-finder">Location Finder&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>Users can remove a Home Branch by:&lt;/p>
+&lt;ul>
+&lt;li>summoning the popup with the down arrow next to the set branch in the Utility menu, or&lt;/li>
+&lt;li>unchecking &amp;ldquo;My preferred branch&amp;rdquo; on a Branch page or in Location Finder.&lt;/li>
+&lt;/ul>
+&lt;p>Selecting a home branch will:&lt;/p>
+&lt;ul>
+&lt;li>add a link to the Branch’s home page to the user&amp;rsquo;s utility menu,&lt;/li>
+&lt;li>show the Branch as the Home Branch on Branch Pages and Location Finder, and&lt;/li>
+&lt;li>populate the Branch options in other sections of the site like the
+&lt;a href="../../membership">Membership Apps&lt;/a> and
+&lt;a href="../../schedules">Schedules&lt;/a> (coming soon).&lt;/li>
+&lt;/ul>
+&lt;h4 id="disabling-the-home-branch-selector">Disabling the Home Branch Selector&lt;/h4>
+&lt;p>If you want to completely remove the Home Branch selector from your site:&lt;/p>
+&lt;ul>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> &amp;gt; &lt;strong>Uninstall module&lt;/strong> (&lt;code>/admin/modules/uninstall&lt;/code>)&lt;/li>
+&lt;li>Disable &lt;strong>WS Home Branch&lt;/strong>, then disable &lt;strong>Open Y Home Branch&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Alternatively, developers can run:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>drush pmu ws_home_branch openy_home_branch
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="migrating-to-layout-builder">Migrating to Layout Builder&lt;/h3>
+&lt;p>Migrating Branches to Layout Builder involves recreating some content on the page. The process is similar to
+&lt;a href="../../layout-builder#creating-a-new-page">building a new Landing Page with Layout Builder&lt;/a> but with a lot of the work done for you!&lt;/p>
 &lt;p>Once you are ready to migrate a Branch:&lt;/p>
 &lt;ol>
 &lt;li>Either clone the page or open it in a separate tab so that it&amp;rsquo;s easier to compare content.&lt;/li>
-&lt;li>Prepare the Branch for Layout Builder:
+&lt;li>Prepare the Branch for Layout Builder:&lt;/li>
+&lt;/ol>
 &lt;ul>
 &lt;li>&lt;strong>Edit&lt;/strong> the Branch,&lt;/li>
 &lt;li>Add links in the &lt;strong>Menu&lt;/strong> section if you&amp;rsquo;d like,&lt;/li>
 &lt;li>click &lt;strong>Use Layout Builder&lt;/strong>,&lt;/li>
-&lt;li>if you&amp;rsquo;d like, &lt;strong>uncheck Published&lt;/strong> while you do the migration to temporarily hide the page, then&lt;/li>
+&lt;li>if you&amp;rsquo;d like, &lt;strong>uncheck Published&lt;/strong> while you migrate to hide the page temporarily, then&lt;/li>
 &lt;li>&lt;strong>Save&lt;/strong>.
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/content-types/branch/branch-migrate-use-lb.png" title="View original image">
@@ -743,7 +845,7 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;/figure>
 &lt;/li>
 &lt;/ul>
-&lt;/li>
+&lt;ol start="3">
 &lt;li>Your Branch will now display a set of default blocks: Hours (and header), Menu, Social Links, and Amenities.&lt;/li>
 &lt;li>From here, you can
 &lt;a href="../../layout-builder#updating-an-existing-page">use Layout Builder&lt;/a> to move your old content from Paragraphs into Blocks. Review the

@@ -117,6 +117,64 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab" tabindex="2">
 &lt;/p>
 &lt;/div>
 &lt;/div>
+&lt;h3 id="using-button-classes">Using button classes&lt;/h3>
+&lt;p>The
+&lt;a href="../building-buttons">Button editor&lt;/a> that existed in the prior version of the text editor (CKEditor 4) has
+&lt;a href="https://www.drupal.org/project/ckeditor_bootstrap_buttons/issues/3308035" target="_blank">not yet been ported to CKEditor 5 and Drupal 10&lt;/a>. Until that work is complete, content editors can add button classes in the Advanced Link Options.&lt;/p>
+&lt;p>Create a button by adding
+&lt;a href="https://getbootstrap.com/docs/4.6/components/buttons/" target="_blank">Bootstrap classes&lt;/a> to a link:&lt;/p>
+&lt;ul>
+&lt;li>Create a regular link in a Layout Builder block.
+&lt;ul>
+&lt;li>We recommend only using custom buttons in large text blocks, like the
+&lt;a href="../../layout-builder/table">Table&lt;/a> or
+&lt;a href="../../layout-builder/code">Code&lt;/a> blocks.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Open the Advanced Options.&lt;/li>
+&lt;li>Add &lt;code>btn&lt;/code> plus a class from the list below to the &lt;strong>CSS classes&lt;/strong> field.
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--button-classes.png" title="View original image">
+&lt;img alt="The advanced link options dialog with the CSS classes field outlined. In the field is the text &amp;amp;ldquo;btn btn-primary&amp;amp;rdquo;" srcset="
+/docs/user-documentation/text-editor/adding-links/adding-links--button-classes_hu111e122695e75164ba4dee4de4f7d88d_7062_2c10d3efe930f9d4d5cc4a4d03c1e788.png 458w,
+/docs/user-documentation/text-editor/adding-links/adding-links--button-classes_hu111e122695e75164ba4dee4de4f7d88d_7062_7821fe95ef18eaae97bfda52029fface.png 726w,
+/docs/user-documentation/text-editor/adding-links/adding-links--button-classes_hu111e122695e75164ba4dee4de4f7d88d_7062_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-links/adding-links--button-classes_hu111e122695e75164ba4dee4de4f7d88d_7062_2c10d3efe930f9d4d5cc4a4d03c1e788.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;ul>
+&lt;li>Button styles in the editor may not match the displayed styles.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Save the block.&lt;/li>
+&lt;/ul>
+&lt;h4 id="button-classes">Button classes&lt;/h4>
+&lt;p>The distribution combines the default
+&lt;a href="https://getbootstrap.com/docs/4.6/components/buttons/" target="_blank">Boostrap button component&lt;/a> with some custom styles as demonstrated at
+&lt;a href="https://www.ymcalincoln.org/buttons" target="_blank">YMCA Lincoln, NE&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--button-example.png" title="View original image">
+&lt;img alt="An example of button styles with five buttons using the primary, success, info, warning, and danger styles." srcset="
+/docs/user-documentation/text-editor/adding-links/adding-links--button-example_hu3826db520ac0a1262d3baff97bb12be3_11058_e56f85c0759646bada853280bc7b1b3c.png 458w,
+/docs/user-documentation/text-editor/adding-links/adding-links--button-example_hu3826db520ac0a1262d3baff97bb12be3_11058_f0363b2228d9b68ddfbdb18fee7400c6.png 726w,
+/docs/user-documentation/text-editor/adding-links/adding-links--button-example_hu3826db520ac0a1262d3baff97bb12be3_11058_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-links/adding-links--button-example_hu3826db520ac0a1262d3baff97bb12be3_11058_e56f85c0759646bada853280bc7b1b3c.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Any time you are making a button, your &lt;strong>CSS classes&lt;/strong> should begin with &lt;code>btn &lt;/code>. That sets up the default button styles.&lt;/li>
+&lt;li>Then, choose a button style, like &lt;code>btn-primary&lt;/code> or &lt;code>btn-light&lt;/code>.
+&lt;ul>
+&lt;li>Button styles should generally not be combined.&lt;/li>
+&lt;li>Some Bootstrap styles may be overridden by our theme.&lt;/li>
+&lt;li>The &lt;code>btn-primary&lt;/code> style will use the selected colorway for its color, but all other options may use other colors that are not brand compliant.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The &lt;strong>CSS classes&lt;/strong> field should have at least two space-separated items when you&amp;rsquo;re finished, like &lt;code>btn btn-primary&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;p>It&amp;rsquo;s best to experiment with styles and make sure to check that your button displays as expected before saving the page.&lt;/p>
 &lt;h2 id="anchor-links">Anchor links&lt;/h2>
 &lt;p>If you&amp;rsquo;re building a long landing page, you may want to be able to link users directly to a specific section of the page. We do this using an &amp;ldquo;anchor&amp;rdquo; link or &amp;ldquo;in-page&amp;rdquo;
 &lt;a href="https://en.wikipedia.org/wiki/URI_fragment" target="_blank">URI fragment&lt;/a>.&lt;/p>
@@ -367,6 +425,10 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab" tabindex="2">
 &lt;ol start="12">
 &lt;li>&lt;strong>Bulleted/Numbered lists -&lt;/strong> Click the numbered or bulleted list icon to create a list. You can create indented bullets by hitting your tab key or clicking on the indent icon&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Building Buttons</title><link>/docs/user-documentation/text-editor/building-buttons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/text-editor/building-buttons/</guid><description>
+&lt;blockquote>
+&lt;p>&lt;strong>Note:&lt;/strong> The Button editor for CKEditor 5 in Drupal 10 is not yet complete. We have documented
+&lt;a href="../adding-links#using-button-classes">an alternative process&lt;/a>.&lt;/p>
+&lt;/blockquote>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/lJmhRo99uuM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
