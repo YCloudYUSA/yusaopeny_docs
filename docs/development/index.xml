@@ -1349,6 +1349,12 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;li>Upgrade all contrib modules on the Drupal 10 site to their latest versions (&lt;code>composer update&lt;/code>).&lt;/li>
 &lt;/ol>
 &lt;/li>
+&lt;li>
+&lt;p>&lt;code>10.3.0.1&lt;/code> - Drupal 10|9 release, before New Demo Content and Initial Replacement Paragraphs to Blocks for Native Layout Builder Experience&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>10.3.1&lt;/code> - Drupal 10|9 release, New Demo Content and Initial Replacement Paragraphs to Blocks for Native Layout Builder Experience. In this release we bumped a lot of dependencies to become up to date&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;p>See
 &lt;a href="/docs/development/composer-version-constraints-for-open-y/">Version Constraints practices for YMCA Website Services&lt;/a>&lt;/p>
