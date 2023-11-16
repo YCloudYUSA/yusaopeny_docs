@@ -1,4 +1,116 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Digital Services Updates</title><link>/blog/</link><description>Recent content in Digital Services Updates on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Digital Services Release 10.3.0</title><link>/blog/2023/09/12/digital-services-release-10.3.0/</link><pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate><guid>/blog/2023/09/12/digital-services-release-10.3.0/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Digital Services Updates</title><link>/blog/</link><description>Recent content in Digital Services Updates on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Digital Services Release 10.3.0.1</title><link>/blog/2023/11/14/digital-services-release-10.3.0.1/</link><pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate><guid>/blog/2023/11/14/digital-services-release-10.3.0.1/</guid><description>
+&lt;h2 id="sandbox-demo-content-pages">Sandbox Demo Content Pages&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/" target="_blank">Home page&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-who-we-are" target="_blank">Who We Are (About)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-programs-overview" target="_blank">Programs Overview&lt;/a>
+&lt;ul>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-programs-category" target="_blank">Programs Category&lt;/a> (i.e. Youth Sports)&lt;/li>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-program-individual" target="_blank">Individual Program&lt;/a> (i.e. Soccer)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-membership" target="_blank">Membership&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-join-y" target="_blank">Join&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-donate" target="_blank">Donate&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-location-finder?type=ymca,camps&amp;amp;amenities" target="_blank">Location Finder&lt;/a>
+&lt;ul>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/locations/downtown-springfield" target="_blank">Location page&lt;/a> (i.e. YMCA Springfield)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-schedules" target="_blank">Schedules&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-events" target="_blank">Events&lt;/a>
+&lt;ul>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/events/forever-young-picnic-lunch-cruise" target="_blank">Individual Event&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-contact-us" target="_blank">Contact Us&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-jobs" target="_blank">Jobs&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://carnation-ws.y.org/demo-volunteer-opportunities" target="_blank">Volunteer Opportunities&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="documentation-updates">Documentation Updates&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;a href="/docs/development/drupal-10-update/">Drupal 10&lt;/a> update assistance. (#787)&lt;/li>
+&lt;li>Documentation for Layout Builder
+&lt;a href="/docs/user-documentation/content-types/facility/">Facility Content Type&lt;/a>. (#1034)&lt;/li>
+&lt;li>Documentation for Layout Builder
+&lt;a href="/docs/user-documentation/layout-builder/icon-grid/">Icon Grid component&lt;/a>. (#1041)&lt;/li>
+&lt;li>Documentation for
+&lt;a href="/docs/user-documentation/content-types/alert/">Alerts&lt;/a>. (#1035)&lt;/li>
+&lt;li>Added instructions for adding/restoring the
+&lt;a href="/docs/user-documentation/content-types/camp/#camp-header-layout">Camp Header&lt;/a> block state. (#1054)&lt;/li>
+&lt;li>Documentation for adding the
+&lt;a href="/docs/user-documentation/layout-builder/header-footer/#main-menu-cta-block">2nd level main menu CTA&lt;/a>. (#796)&lt;/li>
+&lt;li>Documenting how to use the Layout Builder
+&lt;a href="/docs/user-documentation/layout-builder/advanced-options/">advanced style settings&lt;/a>. (#811)&lt;/li>
+&lt;li>Documentation discussing
+&lt;a href="/docs/howto/use-structured-data/">Schema.org/ ”Rich Results”&lt;/a> features in the distribution. (#1072)&lt;/li>
+&lt;li>Updated documentation for the
+&lt;a href="/docs/content-structure/content-types/landing-page/">Landing Page content type&lt;/a> (non-Layout Builder). (#1050)&lt;/li>
+&lt;li>Merged
+&lt;a href="/docs/development/">Development&lt;/a> and Wiki sections, removed duplicate information. (#1066)&lt;/li>
+&lt;li>Updated documentation tool to Docsy 0.7 &amp;amp; Bootstrap 5. (#1107)&lt;/li>
+&lt;li>Documentation for how to
+&lt;a href="/docs/howto/migrate-to-lb/">migrate content into Layout Builder&lt;/a>. (#820)&lt;/li>
+&lt;li>Documentation for how to
+&lt;a href="/docs/user-documentation/text-editor/adding-links/#anchor-links">create anchor links.&lt;/a> (#1118)&lt;/li>
+&lt;li>
+&lt;a href="/docs/development/ws-terms-conditions/">Updated Terms &amp;amp; Conditions&lt;/a> to include verbiage for demo content. (#926)&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-fixes">Bug Fixes&lt;/h2>
+&lt;ul>
+&lt;li>Resolved an error occurring during a full profile installation. (#1084)&lt;/li>
+&lt;li>Layout Builder - Google Translate block - Google Translate block showed a double placeholder when editors uncheck &amp;ldquo;Show content preview&amp;rdquo;. (#1078)&lt;/li>
+&lt;li>Layout Builder - Branch Content Type - Fixed button icon position issue. (#1069)&lt;/li>
+&lt;li>Layout Builder - Camp Quick Links - Resolved styling and alignment issues. (#1051)&lt;/li>
+&lt;li>Layout Builder - Resolved watchdog errors when saving/editing landing pages. (#1040)&lt;/li>
+&lt;li>Ensured Alert previews display only selected paths. (#1059)&lt;/li>
+&lt;li>CKEditor 5 - Fixed issue where Selecting “Source” made WYSIWYG text invisible. (#1063)&lt;/li>
+&lt;li>Layout Builder - Resolved issue with the live site UI menu displaying on top of the admin UI, preventing content editors from accessing the admin UI. (#1060)&lt;/li>
+&lt;li>Layout Builder - Preferred / Home Location feature - Resolved issue with button alignment (#1052)&lt;/li>
+&lt;li>Layout Builder - Preferred / Home Location feature - Linked Home Branch link in header to selected Branch page, and the chevron/drop down to the modal to select a different Branch. (#1053)&lt;/li>
+&lt;li>Resolved an issue with menu items with icons not saving. (#1067)&lt;/li>
+&lt;li>Added missing config to Articles and Events Content Types. (#1068)&lt;/li>
+&lt;li>Included Alert Rearrange in Admin menu. (#1074)&lt;/li>
+&lt;li>Set up schema_article module to be enabled with config. (#1062)&lt;/li>
+&lt;li>Removed a duplicate instance of media_entity_document in composer.json. (#1113)&lt;/li>
+&lt;li>Ensured there are no failed patches on composer install. (#1039)&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync/pull/6#issuecomment-1791633131" target="_blank">Resolved an error&lt;/a> when upgrading from Drupal 9.5.9 to 10.3.0 (#1131)
+&lt;ul>
+&lt;li>Credit: Kerry Knopp&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Fixed &lt;code>openy_hours_formatter&lt;/code> so it can handle non-time entries, i.e. ‘Closed’. (#1105)&lt;/li>
+&lt;/ul></description></item><item><title>Blog: Virtual Y 1.8.12</title><link>/blog/2023/11/14/virtual-y-1.8.12/</link><pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate><guid>/blog/2023/11/14/virtual-y-1.8.12/</guid><description>
+&lt;h2 id="bug-fixes-only">Bug fixes only&lt;/h2>
+&lt;ul>
+&lt;li>Resolved an issue with the Avocado welcome email resulting in a fatal error. (#1184)&lt;/li>
+&lt;li>Fixed an issue with Log Exports failing under D10 (#904)&lt;/li>
+&lt;li>Under VY 1.8.1 and Drupal 10.0.10 VY content didn’t load on the dashboard or on individual items. (#924)&lt;/li>
+&lt;li>Top menu was overlapping the main menu for admin users. (#1103)
+&lt;ul>
+&lt;li>Credit: Kairamkonda Rajesh&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Virtual Meeting/Live Stream Description was missing in D10. (#1166)&lt;/li>
+&lt;/ul></description></item><item><title>Blog: Digital Services Release 10.3.0</title><link>/blog/2023/09/12/digital-services-release-10.3.0/</link><pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate><guid>/blog/2023/09/12/digital-services-release-10.3.0/</guid><description>
 &lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;/h2>
 &lt;h3 id="layout-builder">Layout Builder&lt;/h3>
 &lt;p>Expanding upon the June 2023 release, we are making the final set of page components and content types compatible with Layout Builder. We have also improved the design and functionality of some existing components and content types.&lt;/p>
