@@ -160,10 +160,10 @@
 &lt;ul>
 &lt;li>Your site should now use the Cachet font in headers and other areas. Usage is dependent on the YMCA Website Services theme you choose.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: How to integrate with social media</title><link>/docs/howto/add-social-feeds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/add-social-feeds/</guid><description>
-&lt;p>Social media is a great platform for communicating with your Y community, and it&amp;rsquo;s often helpful to embed feeds or posts in a page to share topical content with users.&lt;/p>
-&lt;p>The distribution has used a number of methods over the years to add social content to sites, but all of them are dependent on the specific platforms maintaining open APIs. Unfortunately many social networks are now locking down and restricting their APIs.&lt;/p>
+&lt;p>Social media is a great platform for communicating with your Y community, and it&amp;rsquo;s often helpful to embed feeds or posts on a page to share topical content with users.&lt;/p>
+&lt;p>The distribution has used several methods over the years to add social content to sites, but all of them are dependent on the specific platforms maintaining open APIs. Unfortunately, many social networks are now locking down and restricting their APIs.&lt;/p>
 &lt;h2 id="how-to-embed-social-content-in-your-ymca-website-in-2023">How to embed social content in your YMCA website (in 2023)&lt;/h2>
-&lt;p>Currently, we recommend using embed codes from the specific platform in order to embed social posts or feeds on your YMCA Website Services website.&lt;/p>
+&lt;p>Currently, we recommend using embed codes from the specific platform to embed social posts or feeds on your YMCA Website Services website.&lt;/p>
 &lt;h3 id="find-the-embed-code">Find the embed code&lt;/h3>
 &lt;p>Each platform has its own way of doing embeds. For posts, you can often find an &amp;ldquo;Embed&amp;rdquo; button in the options or share menu. For feeds, you often need to use a separate builder. Here are some options we&amp;rsquo;ve found:&lt;/p>
 &lt;ul>
@@ -197,7 +197,7 @@
 &lt;p>To configure fetching:&lt;/p>
 &lt;ul>
 &lt;li>Open the configuration page at &lt;code>/admin/config/social_feed_fetcher_settings&lt;/code> or &lt;strong>Configuration&lt;/strong> &amp;gt; &lt;strong>Web Services&lt;/strong> &amp;gt; &lt;strong>Social Feed Fetcher Settings&lt;/strong>&lt;/li>
-&lt;li>Select the checkbox for your chosen social networks and add additional settings. Every social network has their own API and requires different configuration.&lt;/li>
+&lt;li>Select the checkbox for your chosen social networks and add additional settings. Every social network has its own API and requires different configuration.&lt;/li>
 &lt;li>When all settings are completed, click &lt;strong>Run Cron&lt;/strong>. The import is started and if the configuration is correct, items will appear in the content list.&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-share-content-from-your-site-to-social-media">How to share content from your site to social media&lt;/h2>
@@ -206,6 +206,74 @@
 &lt;p>&amp;ndash;
 &lt;a href="https://css-tricks.com/ux-considerations-for-web-sharing/" target="_blank">UX Considerations for Web Sharing&lt;/a>&lt;/p>
 &lt;/blockquote>
+&lt;h3 id="using-addtoany">Using AddToAny&lt;/h3>
+&lt;p>According to their
+&lt;a href="https://www.addtoany.com/blog/replace-addthis-with-addtoany-the-addthis-alternative/" target="_blank">introductory blog post&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>AddToAny is the perfect drop-in replacement for AddThis.&lt;/p>
+&lt;/blockquote>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/howto/add-social-feeds/addtoany--popup.png" title="View original image">
+&lt;img alt="A screenshot of the AddToAny popup." srcset="
+/docs/howto/add-social-feeds/addtoany--popup_hu62aa34d03297c2b0b85c58f5950aa2c8_42360_2684a5bd805999b475f9be6c33d8d2cb.png 458w,
+/docs/howto/add-social-feeds/addtoany--popup_hu62aa34d03297c2b0b85c58f5950aa2c8_42360_673e6be4542b856f55f5499c7beba0f7.png 726w,
+/docs/howto/add-social-feeds/addtoany--popup_hu62aa34d03297c2b0b85c58f5950aa2c8_42360_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/howto/add-social-feeds/addtoany--popup_hu62aa34d03297c2b0b85c58f5950aa2c8_42360_2684a5bd805999b475f9be6c33d8d2cb.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>As of December 2023, the
+&lt;a href="https://www.drupal.org/project/addtoany" target="_blank">AddToAny module&lt;/a> is included in the YMCA Website Services distribution. It is not enabled out of the box, but if you need to supplement native platforms&amp;rsquo; sharing services, here&amp;rsquo;s how:&lt;/p>
+&lt;ul>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>) and enable the &lt;strong>AddToAny&lt;/strong> module.&lt;/li>
+&lt;li>Configure the module at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Configuration&lt;/strong> &amp;gt; &lt;strong>Web Services&lt;/strong> &amp;gt; &lt;strong>AddToAny&lt;/strong> (&lt;code>/admin/config/services/addtoany&lt;/code>)&lt;/li>
+&lt;/ul>
+&lt;p>Full documentation on AddToAny is available on
+&lt;a href="https://www.drupal.org/docs/contributed-modules/addtoany-share-buttons/configuring-addtoany" target="_blank">Drupal.org&lt;/a> and
+&lt;a href="https://www.addtoany.com/buttons/customize/drupal/standalone_services" target="_blank">AddToAny&amp;rsquo;s Drupal Sharing Customization&lt;/a>.&lt;/p>
+&lt;h4 id="addtoany-with-layout-builder">AddToAny with Layout Builder&lt;/h4>
+&lt;p>To integrate AddToAny with the Layout Builder Design System:&lt;/p>
+&lt;ul>
+&lt;li>Set the following configuration options for AddToAny:
+&lt;ul>
+&lt;li>&lt;strong>Icon size&lt;/strong>: 36 pixels&lt;/li>
+&lt;li>&lt;strong>Service Buttons&lt;/strong>: Change to any number of
+&lt;a href="https://www.addtoany.com/buttons/customize/drupal/standalone_services" target="_blank">standalone service buttons&lt;/a> that you would like.&lt;/li>
+&lt;li>&lt;strong>Additional JavaScript&lt;/strong>: Add this code to have the buttons follow the configured colorway:
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">a2a_config&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">icon_color&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;var(--wsPrimaryColor),white&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>Save the configuration&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Add the &lt;strong>AddToAny share buttons&lt;/strong> to the
+&lt;a href="../../user-documentation/layout-builder/advanced-options/#content-type-styles">default Layout Builder display&lt;/a>.
+&lt;ul>
+&lt;li>Edit a single Page Layout or the Content Type Layout.&lt;/li>
+&lt;li>Decide where to add the share block. We recommend the right side of the footer, above or below the &amp;ldquo;Stay Connected&amp;rdquo; block, but any section of the page would work.&lt;/li>
+&lt;li>In Layout Builder, &lt;strong>Add block&lt;/strong>, then choose &lt;strong>All system blocks&lt;/strong> &amp;gt; &lt;strong>AddToAny share buttons&lt;/strong>.
+&lt;ul>
+&lt;li>Set a &lt;strong>Title&lt;/strong> like &amp;ldquo;Share this&amp;rdquo;.&lt;/li>
+&lt;li>Choose to &lt;strong>Display title&lt;/strong>.&lt;/li>
+&lt;li>Leave other configuration as their defaults.&lt;/li>
+&lt;li>In the &lt;strong>Style&lt;/strong> settings, expand &lt;strong>Spacing&lt;/strong> and add a top or bottom margin of 32px to ensure the block is spaced properly from the block above or below it.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Save the Block and the Layout.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/howto/add-social-feeds/addtoany--footer.png" title="View original image">
+&lt;img alt="A screenshot of the AddToAny share block in the footer of a page." srcset="
+/docs/howto/add-social-feeds/addtoany--footer_hue243f8391baa2bd0be8f90aaf1d4642f_9951_66a8dc772cd1add29fead305c8ac06a4.png 458w,
+/docs/howto/add-social-feeds/addtoany--footer_hue243f8391baa2bd0be8f90aaf1d4642f_9951_5588a9a3fff5bdbe2a7ef42a9a9817cb.png 726w,
+/docs/howto/add-social-feeds/addtoany--footer_hue243f8391baa2bd0be8f90aaf1d4642f_9951_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/howto/add-social-feeds/addtoany--footer_hue243f8391baa2bd0be8f90aaf1d4642f_9951_66a8dc772cd1add29fead305c8ac06a4.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
 &lt;h3 id="using-addthis">Using AddThis&lt;/h3>
 &lt;p>This
 &lt;a href="../../user-documentation/paragraphs/social-share-icons">Social Share Icons&lt;/a> paragraph and the
