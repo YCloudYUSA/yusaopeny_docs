@@ -799,7 +799,7 @@ On February 28, 2023, Daxko is planning to sunset the GroupEx PRO Public API in 
 &lt;h2 id="build-automation--ci">Build Automation &amp;amp; CI&lt;/h2>
 &lt;h3 id="what-ci-processes-does-ymca-website-services-have-in-place">What CI processes does YMCA Website Services have in place?&lt;/h3>
 &lt;p>To get a fully working YMCA Website Services site for the code change you are about to push for review there is a build generating system installed for the YMCA Website Services GitHub repository that automatically generates a dedicated temporary website with your changes applied.&lt;/p>
-&lt;h2 id="why-are-some-builds-created-automatically-and-some-not">Why are some builds created automatically and some not?&lt;/h2>
+&lt;h3 id="why-are-some-builds-created-automatically-and-some-not">Why are some builds created automatically and some not?&lt;/h3>
 &lt;p>By default, builds are configured for trusted users, so if you are getting a message from the bot like&lt;/p>
 &lt;blockquote>
 &lt;p>&amp;ldquo;Can one of the admins verify this patch? Use &amp;ldquo;o+k to test&amp;rdquo; or &amp;lsquo;&amp;rsquo;t+est this please&amp;rdquo; for manual build execution.&amp;quot;&lt;/p>
@@ -817,7 +817,61 @@ On February 28, 2023, Daxko is planning to sunset the GroupEx PRO Public API in 
 &lt;p>See
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny/issues/2004" target="_blank">request from a community&lt;/a>. The solution is described in
 &lt;a href="https://pantheon.io/docs/nested-docroot" target="_blank">Pantheon&amp;rsquo;s documentation on nested docroots&lt;/a>. We suggest that you maintain your own &lt;code>composer.json&lt;/code> with the specified web-root directory, as described in the
-&lt;a href="https://github.com/pantheon-systems/example-drops-8-composer/blob/master/composer.json#L94" target="_blank">Pantheon examples&lt;/a>.&lt;/p></description></item><item><title>Docs: Drupal 10 update</title><link>/docs/development/drupal-10-update/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/drupal-10-update/</guid><description>
+&lt;a href="https://github.com/pantheon-systems/example-drops-8-composer/blob/master/composer.json#L94" target="_blank">Pantheon examples&lt;/a>.&lt;/p>
+&lt;h2 id="upgrade-troubleshooting">Upgrade Troubleshooting&lt;/h2>
+&lt;p>See
+&lt;a href="/docs/development/openy-upgrade-how-to-for-developers/">Upgrading to a new version of the distribution&lt;/a> for full instructions.&lt;/p>
+&lt;h3 id="config-is-missing">Config is missing&lt;/h3>
+&lt;p>Occasionally, configuration will get removed or otherwise go missing in the upgrade process. For instance, the list of colors could go missing in the Layout Builder styles pane.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/development/development-faq/faq-config-missing-styles.png" title="View original image">
+&lt;img alt="A screenshot with missing colors." srcset="
+/docs/development/development-faq/faq-config-missing-styles_hu409eb5c11cfbebbf5e2ee2dfdcd4559d_60912_b78576dc6e1cf74552e8432a9aee918b.png 458w,
+/docs/development/development-faq/faq-config-missing-styles_hu409eb5c11cfbebbf5e2ee2dfdcd4559d_60912_10395bc2d8c22ae2447e1acdb36dbdcf.png 726w,
+/docs/development/development-faq/faq-config-missing-styles_hu409eb5c11cfbebbf5e2ee2dfdcd4559d_60912_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/development/development-faq/faq-config-missing-styles_hu409eb5c11cfbebbf5e2ee2dfdcd4559d_60912_b78576dc6e1cf74552e8432a9aee918b.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>Usually, these changes are resolved by update hooks that import new config, but on occasion, these too can fail or break. In that case, we have a few options for resolving the issue:&lt;/p>
+&lt;ol>
+&lt;li>Re-run the most recent related update hook.&lt;/li>
+&lt;li>Import the config with drush.&lt;/li>
+&lt;li>Import the config with the Drupal UI.&lt;/li>
+&lt;/ol>
+&lt;p>The first step in any of this troubleshooting is to try to find the offending config. In this case, searching your codebase for &amp;ldquo;text-color&amp;rdquo; might lead you to
+&lt;a href="https://github.com/YCloudYUSA/y_lb/blob/main/config/optional/bootstrap_styles.settings.yml" target="_blank">this config file in y_lb&lt;/a>. Now, we can try a few things&amp;hellip;&lt;/p>
+&lt;blockquote>
+&lt;p>NOTE: These methods could damage your site if not tested. Please take a backup before proceeding.&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="re-run-an-update-hook">Re-run an update hook&lt;/h4>
+&lt;p>Often, searching an adjacent &lt;code>.install&lt;/code> file can get you an existing
+&lt;a href="https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Extension%21module.api.php/function/hook_update_N/10" target="_blank">update hook&lt;/a> to import the missing configuration. In our example case,
+&lt;a href="https://github.com/YCloudYUSA/y_lb/blob/main/y_lb.install#L39-L50" target="_blank">y_lb_update_9001&lt;/a> imports the one settings file that we&amp;rsquo;re looking for. It doesn&amp;rsquo;t matter that the hook is old, if we re-run it, it will import the file in its current state in our file system.&lt;/p>
+&lt;p>To re-run the update hook (via
+&lt;a href="https://gist.github.com/bsingr/e3ff80534e9e4f7d50ba6b240e932c80?permalink_comment_id=4671780#gistcomment-4671780" target="_blank">gist&lt;/a>):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">drush&lt;/span> &lt;span style="color:#000">php&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#204a87;font-weight:bold">eval&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;\Drupal::moduleHandler()-&amp;gt;loadInclude(&amp;#39;y_lb&amp;#39;, &amp;#39;install&amp;#39;); y_lb_update_9001();&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Understanding this command:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://www.drush.org/12.x/commands/php_eval/" target="_blank">&lt;code>drush php-eval&lt;/code>&lt;/a> evaluates an arbitrary php command on the command line.&lt;/li>
+&lt;li>
+&lt;a href="https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Extension%21ModuleHandler.php/function/ModuleHandler%3A%3AloadInclude/10" target="_blank">&lt;code>\Drupal::moduleHandler()-&amp;gt;loadInclude($module, $type)&lt;/code>&lt;/a> loads the &lt;code>y_lb.install.php&lt;/code> file.&lt;/li>
+&lt;li>&lt;code>y_lb_update_9001();&lt;/code> runs the individual function from the file.&lt;/li>
+&lt;/ul>
+&lt;h4 id="import-config-with-drush">Import config with drush&lt;/h4>
+&lt;p>Suppose the target config exists mostly on its own, or you wish to import the entire config of a module (due to a failed install, for instance). In that case, you can use
+&lt;a href="https://www.drush.org/11.x/commands/config_import/" target="_blank">&lt;code>drush config:import&lt;/code>&lt;/a> with &lt;code>--partial&lt;/code> and &lt;code>--source&lt;/code> pointing to a module directory, relative to the Drupal root. In this case:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>drush config-import --partial --source&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>modules/contrib/y_lb/config/optional/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Be aware that all configs in that directory will be imported. Targeting a single config file with drush is impossible, although you could also temporarily move the config to its own directory.&lt;/p>
+&lt;h4 id="import-config-with-the-ui">Import config with the UI&lt;/h4>
+&lt;p>Another way to import a single configuration file is with the Drupal &amp;ldquo;Config Synchronization&amp;rdquo; admin pages. To import a single item:&lt;/p>
+&lt;ul>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Configuration&lt;/strong> &amp;gt; &lt;strong>Development&lt;/strong> &amp;gt; &lt;strong>Config Synchronization&lt;/strong> &amp;gt; &lt;strong>Import&lt;/strong> &amp;gt; &lt;strong>Single item&lt;/strong> (&lt;code>admin/config/development/configuration/single/import&lt;/code>).&lt;/li>
+&lt;li>Choose the &lt;strong>Configuration type&lt;/strong> (if you are unsure, choose &amp;ldquo;Simple Configuration&amp;rdquo;)&lt;/li>
+&lt;li>Paste in the configuration from the file and click &lt;strong>Import&lt;/strong>.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Drupal 10 update</title><link>/docs/development/drupal-10-update/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/drupal-10-update/</guid><description>
 &lt;p>The distribution core team has gone through these steps to ensure as smooth of a transition as possible. If your site is up-to-date and using no additional dependencies you may be able to skip right to the update, but otherwise you&amp;rsquo;ll want to review these steps.&lt;/p>
 &lt;h2 id="resources">Resources&lt;/h2>
 &lt;ul>

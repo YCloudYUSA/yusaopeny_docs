@@ -23,7 +23,51 @@
 &lt;a href="https://www.youtube.com/watch?v=YwDFCLaQVbY" target="_blank">CKEditor 5 in Drupal 10: What is there to be excited about? (DrupalCon Portland 2022)&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="https://ckeditor.com/blog/drupal-10-launched-taking-content-editing-to-the-next-level-with-ckeditor-5/" target="_blank">Drupal 10 launched: taking content editing to the next level with CKEditor 5 (CKEditor Blog)&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Page/Content Types</title><link>/docs/user-documentation/content-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/</guid><description/></item><item><title>Docs: Blocks</title><link>/docs/user-documentation/blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/blocks/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Page/Content Types</title><link>/docs/user-documentation/content-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/</guid><description>
+&lt;p>There are two different kinds of Content Types in the distribution:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>&amp;ldquo;Standalone types&amp;rdquo;&lt;/strong> are content that is displayed directly to users, like Landing Pages and Branches. They may also be displayed in views or other groupings.&lt;/li>
+&lt;li>&lt;strong>&amp;ldquo;Helper types&amp;rdquo;&lt;/strong> are content that is never displayed on its own to users. It is displayed in aggregate or as part of a supporting application like Activity Finder or Membership Calculator.&lt;/li>
+&lt;/ul>
+&lt;h2 id="standalone-content-types">Standalone Content Types&lt;/h2>
+&lt;p>These content types are built for Layout Builder or are Layout Builder-compatible when the supporting module is enabled:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="./lb-article">Article (Layout Builder)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="./lb-event">Event (Layout Builder)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="./branch">Branch&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="./camp">Camp&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="./facility">Facility&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="./lb-landing-page">Landing Page (Layout Builder)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>These content types use the legacy Paragraphs page builder:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="./blog-post">Blog Post&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="./landing-page">Landing Page&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="./news-post">News Post&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="./program">Program&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="./program-subcategory">Program Subcategory&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="helper-content-types">Helper Content Types&lt;/h2>
+&lt;p>These content types help are not displayed on their own, but are used in supporting applications:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="./activity-class-session">Activity, Class, and Session&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="./alert">Alert&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="./membership">Membership&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Blocks</title><link>/docs/user-documentation/blocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/blocks/</guid><description>
 &lt;h2 id="how-to-use-blocks">How to Use Blocks&lt;/h2>
 &lt;p>A block works like this - you choose a paragraph, and that paragraph asks you to create a block. You write a section of content inside that block.&lt;/p>
 &lt;p>
