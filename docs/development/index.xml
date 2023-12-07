@@ -1125,22 +1125,20 @@ In case if all good proceed with a command below, which will patch your site:&lt
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>bash &amp;lt; &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>curl -s https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/runSA-CORE-2018-004.sh&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and hit Enter.
 You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p></description></item><item><title>Docs: Google Custom Search Configuration</title><link>/docs/development/googlecustomsearchconfiguration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/googlecustomsearchconfiguration/</guid><description>
-&lt;p>The YMCA Website Services release &lt;strong>8.2.4&lt;/strong> introduces Google Custom Search for the website out of the box.&lt;/p>
+&lt;p>The YMCA Website Services release &lt;strong>8.2.4&lt;/strong> introduces Google Custom Search (aka Google Programmable Search Engine) for the website out of the box.&lt;/p>
 &lt;h2 id="enabling-the-module">Enabling the module&lt;/h2>
 &lt;h3 id="fresh-installations">Fresh installations&lt;/h3>
-&lt;p>The search feature is included in the &lt;code>Extended&lt;/code> installation type.
-For &lt;code>Standard&lt;/code> see the &lt;a href="#existing-websites">Existing websites&lt;/a> section.&lt;/p>
-&lt;p>If you are installing a fresh YMCA Website Services website and going through the installation process via the Web interface, on the 3rd party integration step you can specify Google Search ID. If you specify the Google Search ID in this form your site&amp;rsquo;s search feature is up.&lt;/p>
+&lt;p>The search feature is included in the &lt;code>Extended&lt;/code> installation type. For &lt;code>Standard&lt;/code> see the &lt;a href="#existing-websites">Existing websites&lt;/a> section.&lt;/p>
+&lt;p>If you are installing a fresh YMCA Website Services website and going through the installation process via the web interface, on the third-party integration step, you can specify a Google Search ID. If you specify the Google Search ID in this form, your site&amp;rsquo;s search feature will be up and running.&lt;/p>
 &lt;h3 id="existing-websites">Existing websites&lt;/h3>
-&lt;p>The search feature is not automatically enabled after upgrading an YMCA Website Services website. You have to manually enable it.&lt;/p>
-&lt;p>In order to do that:&lt;/p>
+&lt;p>The search feature is not automatically enabled after upgrading a YMCA Website Services website. You have to manually enable it.&lt;/p>
+&lt;p>To do that:&lt;/p>
 &lt;ol>
 &lt;li>Log in as an admin (or a user with the &lt;code>administrator&lt;/code> role).&lt;/li>
 &lt;li>Go to the YMCA Website Services package install page (Admin menu &amp;gt; YMCA Website Services &amp;gt; Extend &amp;gt; Install, or &lt;code>/admin/openy/extend/list&lt;/code>)&lt;/li>
-&lt;li>Find the &lt;code>SEARCH&lt;/code> package there, tick the checkbox and submit the form.&lt;/li>
+&lt;li>Find the &lt;code>Search&lt;/code> package there, tick the checkbox, and submit the form.&lt;/li>
 &lt;/ol>
-&lt;p>Now the search modules are enabled and the header of the website should have a search field.
-Upon installation, the modules create a Landing page for search results and point the header search form to the page.&lt;/p>
+&lt;p>Now, the search modules are enabled, and the website header should have a search field. Upon installation, the modules create a Landing page for search results and point the header search form to the page.&lt;/p>
 &lt;h2 id="configuring-the-google-search-modules">Configuring the Google Search modules&lt;/h2>
 &lt;ol>
 &lt;li>Go to the Google Search settings form (Admin menu &amp;gt; YMCA Website Services &amp;gt; Settings &amp;gt; Google Search settings, or &lt;code>/admin/openy/settings/google-search&lt;/code>).&lt;/li>
@@ -1149,9 +1147,9 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;h3 id="obtaining-search-engine-id">Obtaining Search Engine ID&lt;/h3>
 &lt;ol>
 &lt;li>Go to
-&lt;a href="https://cse.google.com/" target="_blank">https://cse.google.com/&lt;/a>, register if you haven&amp;rsquo;t yet, log in if you aren&amp;rsquo;t logged in.&lt;/li>
-&lt;li>Create the Search Engine (this process is explained in Google documentation
-&lt;a href="https://support.google.com/customsearch/answer/4513882?hl=en&amp;amp;ref_topic=4513742%29" target="_blank">https://support.google.com/customsearch/answer/4513882?hl=en&amp;ref_topic=4513742)&lt;/a>:
+&lt;a href="https://cse.google.com/" target="_blank">https://cse.google.com/&lt;/a>, register if you haven&amp;rsquo;t yet, and log in if you aren&amp;rsquo;t logged in.&lt;/li>
+&lt;li>Create the Search Engine (this process is explained in
+&lt;a href="https://support.google.com/programmable-search/answer/11082370?hl=en&amp;amp;ref_topic=4513742&amp;amp;sjid=719872083080201556-NC" target="_blank">Google&amp;rsquo;s documentation&lt;/a>:
 &lt;ol>
 &lt;li>Click &amp;ldquo;New Search Engine&amp;rdquo;.&lt;/li>
 &lt;li>Specify the domain of your website (e.g. &lt;code>www.example.com&lt;/code>).&lt;/li>
@@ -1163,35 +1161,81 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;/ol>
 &lt;h2 id="configuring-the-search-engine-look-and-feel">Configuring the Search Engine look and feel&lt;/h2>
 &lt;ol>
-&lt;li>Go to &lt;code>Look and feel&lt;/code> section of the Search Engine&lt;/li>
-&lt;li>In the &lt;code>Layout&lt;/code> tab, select &lt;code>Full width&lt;/code> option and click &lt;code>Save&lt;/code>&lt;/li>
+&lt;li>Go to the &lt;code>Look and feel&lt;/code> section of the Search Engine&lt;/li>
+&lt;li>In the &lt;code>Layout&lt;/code> tab, select the &lt;code>Full width&lt;/code> option and click &lt;code>Save&lt;/code>&lt;/li>
 &lt;/ol>
-&lt;p>If this change hasn&amp;rsquo;t made, the search results on the website are shown in a popup window.&lt;/p>
+&lt;p>If this change hasn&amp;rsquo;t been made, the search results on the website are shown in a popup window.&lt;/p>
 &lt;h3 id="dealing-with-ads">Dealing with ads&lt;/h3>
-&lt;p>By default, newly created Search engines use Free Edition (with ads) of the service. As YMCAs are non-profit organizations they have the option to switch to Non-profit Edition of the CSE, where it is possible to disable ads.&lt;/p>
-&lt;p>Take a look here
-&lt;a href="https://support.google.com/customsearch/answer/4542102?hl=en&amp;amp;ctx=topic" target="_blank">https://support.google.com/customsearch/answer/4542102?hl=en&amp;ctx=topic&lt;/a>&lt;/p>
+&lt;p>By default, newly created Search engines use the Free Edition (with ads) of the service. As YMCAs are non-profit organizations they have the option to
+&lt;a href="https://support.google.com/programmable-search/answer/11082370?hl=en&amp;amp;ref_topic=4513742&amp;amp;sjid=719872083080201556-NC" target="_blank">switch to Non-profit Edition&lt;/a> of the CSE, where it is possible to disable ads.&lt;/p>
 &lt;p>If you are already registered as a Non-profit in Google:&lt;/p>
 &lt;ol>
 &lt;li>From the
 &lt;a href="https://cse.google.com" target="_blank">CSE Control Panel&lt;/a>, select the search engine you want to change.&lt;/li>
-&lt;li>Click &lt;strong>Setup&lt;/strong> then &lt;strong>Make Money&lt;/strong>&lt;/li>
+&lt;li>Click &lt;strong>Overview&lt;/strong> then &lt;strong>Ads&lt;/strong>&lt;/li>
 &lt;li>Toggle the &lt;strong>Show Ads&lt;/strong> option to off.&lt;/li>
 &lt;/ol>
+&lt;h3 id="layout-builder-and-google-search">Layout Builder and Google Search&lt;/h3>
+&lt;p>The Google Custom Search Engine can also be used with
+&lt;a href="../../user-documentation/layout-builder">Layout Builder&lt;/a>:&lt;/p>
+&lt;ol>
+&lt;li>If you have an existing site, disable the old search page:
+&lt;ul>
+&lt;li>Go to &lt;code>/search&lt;/code>.&lt;/li>
+&lt;li>Remove the URL alias by unchecking &lt;strong>Generate automatic URL alias&lt;/strong> in the sidebar then deleting &lt;code>/search&lt;/code>.&lt;/li>
+&lt;li>Uncheck &lt;strong>Published&lt;/strong> and &lt;strong>Save&lt;/strong> to un-publish the page.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Create a new &lt;strong>Landing Page (Layout Builder)&lt;/strong> (&lt;code>node/add/landing_page_lb&lt;/code>):
+&lt;ul>
+&lt;li>Set the &lt;strong>Title&lt;/strong> to &amp;ldquo;Search&amp;rdquo;.&lt;/li>
+&lt;li>Ensure &lt;strong>Generate automatic URL alias&lt;/strong> is unchecked in the sidebar and set the alias to &lt;code>/search&lt;/code>.
+&lt;ul>
+&lt;li>If that alias results in an error, you can remove the old one at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Configuration&lt;/strong> &amp;gt; &lt;strong>Search and metadata&lt;/strong> &amp;gt; &lt;strong>URL aliases&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Check &lt;strong>Published&lt;/strong> then &lt;strong>Save and edit layout&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Add a
+&lt;a href="../../user-documentation/layout-builder/banner">Small Banner&lt;/a> to the header with a title for the page, like &amp;ldquo;Search&amp;rdquo;.&lt;/li>
+&lt;li>Add the search results code to the page:
+&lt;ul>
+&lt;li>In the &lt;strong>Body&lt;/strong> section, &lt;strong>Add block&lt;/strong> and choose &lt;strong>Code Block&lt;/strong>&lt;/li>
+&lt;li>In &lt;strong>Code&lt;/strong>, add the embed code from the CSE configuration. You may need to add an outer div to fit your page layout, for example:
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">div&lt;/span> &lt;span style="color:#c4a000">class&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;paragraph paragraph--type--google-search py-4&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">script&lt;/span> &lt;span style="color:#c4a000">async&lt;/span> &lt;span style="color:#c4a000">src&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;https://cse.google.com/cse.js?cx=[id]&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">script&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">div&lt;/span> &lt;span style="color:#c4a000">class&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;gcse-search&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">div&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">div&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>&lt;strong>Save layout&lt;/strong> and check your page&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Change the Google Search config to use your new page:
+&lt;ul>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Google Search settings&lt;/strong> (&lt;code>/admin/openy/settings/google-search&lt;/code>) and set the &lt;strong>Search page id&lt;/strong> to the node id of your new page.&lt;/li>
+&lt;li>Or, change the config with drush:
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>drush cset openy_google_search.settings search_page_id &amp;lt;nid&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Test the search box in the Layout Builder page header to ensure the new configuration works as expected.&lt;/li>
+&lt;/ol>
 &lt;h2 id="advanced-setup">Advanced setup&lt;/h2>
-&lt;p>Official Google documentation
-&lt;a href="https://support.google.com/customsearch/topic/4542213?hl=en&amp;amp;ref_topic=4513868" target="_blank">https://support.google.com/customsearch/topic/4542213?hl=en&amp;ref_topic=4513868&lt;/a>&lt;/p>
+&lt;p>Google maintains documentation on
+&lt;a href="https://support.google.com/customsearch/topic/4542213?hl=en&amp;amp;ref_topic=4513868" target="_blank">how to configure advanced search features&lt;/a>&lt;/p>
 &lt;h3 id="mutli-site-search">Mutli-site search&lt;/h3>
-&lt;p>You can add not only your website&amp;rsquo;s domain but other domains as well if you have other websites dedicated to your Association but split from the main website.&lt;/p>
-&lt;p>You can also add not only the whole websites but their parts by specifying patterns like &lt;code>example.com/blog/*&lt;/code>.&lt;/p>
+&lt;p>You can add multiple domains to the custom search engine if your association maintains multiple websites, for example, if your camps run at different website domains&lt;/p>
+&lt;p>You can also add not only the whole website but its parts by specifying patterns like &lt;code>example.com/blog/*&lt;/code>. See
+&lt;a href="https://support.google.com/programmable-search/answer/12397162?hl=en&amp;amp;ref_topic=4513742&amp;amp;sjid=719872083080201556-NC" target="_blank">Update sites in your search engine&lt;/a> for details.&lt;/p>
 &lt;h3 id="refinements-and-facets">Refinements and facets&lt;/h3>
 &lt;p>
-&lt;a href="https://support.google.com/customsearch/answer/4542637?hl=en&amp;amp;ctx=topic&amp;amp;topic=2642564&amp;amp;visit_id=637166170019174137-3540762397&amp;amp;rd=1" target="_blank">https://support.google.com/customsearch/answer/4542637?hl=en&amp;ctx=topic&amp;topic=2642564&amp;visit_id=637166170019174137-3540762397&amp;rd=1&lt;/a>&lt;/p>
-&lt;p>Refinements let users filter results according to categories you provide.&lt;/p>
-&lt;p>Refinements appear in the search results page as tabs. The content of each tab is configured in Search features &amp;gt; Refinement section of the Custom Search Control panel.&lt;/p>
+&lt;a href="https://support.google.com/programmable-search/answer/12425418?hl=en&amp;amp;ref_topic=4542213&amp;amp;sjid=719872083080201556-NC" target="_blank">Use Refinements to narrow the scope of search&lt;/a>&lt;/p>
+&lt;p>Refinements let users filter results according to the categories you provide.&lt;/p>
+&lt;p>Refinements appear in the search results page as tabs. The content of each tab is configured in the Search features &amp;gt; Refinement section of the Custom Search Control panel.&lt;/p>
 &lt;p>To set up a dedicated tab in search results for Blog posts do the following:&lt;/p>
 &lt;ol>
-&lt;li>In Control panel, go to &lt;code>Search features&lt;/code> &amp;gt; &lt;code>Refinements&lt;/code>&lt;/li>
+&lt;li>In the Control panel, go to &lt;code>Search features&lt;/code> &amp;gt; &lt;code>Refinements&lt;/code>&lt;/li>
 &lt;li>Click &lt;code>Add&lt;/code>
 &lt;ol>
 &lt;li>Set the name of the refinement to &lt;code>Blog&lt;/code>&lt;/li>
@@ -1202,7 +1246,7 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;li>Go to &lt;code>Setup&lt;/code>&lt;/li>
 &lt;li>Find &lt;code>Sites to search&lt;/code>, click &lt;code>Add&lt;/code>
 &lt;ol>
-&lt;li>Add the &lt;code>yourymcadomain.org/blog/*&lt;/code> in the text field&lt;/li>
+&lt;li>Add the &lt;code>example.org/blog/*&lt;/code> in the text field&lt;/li>
 &lt;li>Select &lt;code>Blog&lt;/code> in the Label dropdown&lt;/li>
 &lt;li>Select &lt;code>Include just this specific page or URL pattern I have entered&lt;/code>&lt;/li>
 &lt;li>Click &lt;code>Save&lt;/code>&lt;/li>
@@ -1211,8 +1255,8 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;/ol>
 &lt;p>The search results page now shows the &lt;code>Blog&lt;/code> tab that only shows blog entries relevant to the search term.&lt;/p>
 &lt;h3 id="promotions">Promotions&lt;/h3>
-&lt;p>Official Google documentation
-&lt;a href="https://support.google.com/customsearch/answer/4542640?hl=en&amp;amp;ref_topic=4542213" target="_blank">https://support.google.com/customsearch/answer/4542640?hl=en&amp;ref_topic=4542213&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://support.google.com/programmable-search/answer/13280560?hl=en&amp;amp;ref_topic=4542213&amp;amp;sjid=719872083080201556-NC" target="_blank">Use Promotions to highlight a page in searches&lt;/a>&lt;/p>
 &lt;h2 id="information-for-developers">Information for developers&lt;/h2>
 &lt;p>
 &lt;a href="https://developers.google.com/custom-search/docs/overview" target="_blank">Google Custom Search Developers documentation &lt;/a>&lt;/p>
@@ -1426,36 +1470,48 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;/ul>
 &lt;h2 id="quick-start--upgrade-path">Quick Start / Upgrade path&lt;/h2>
 &lt;ul>
-&lt;li>Log in as admin.&lt;/li>
-&lt;li>Go to &lt;code>admin/modules&lt;/code> and enable the YMCA Website Services Search API module.&lt;/li>
-&lt;/ul>
+&lt;li>
+&lt;p>Log in as admin.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Go to &lt;code>admin/modules&lt;/code> and enable the YMCA Website Services Search API module.&lt;/p>
 &lt;p>
 &lt;img src="https://user-images.githubusercontent.com/563412/142628630-b412aa4b-8f2b-42f6-ba06-c5bb6a78469c.png" alt="image" />&lt;/p>
-&lt;ul>
-&lt;li>Approve the next step for enabling Database Search.&lt;/li>
-&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Approve the next step for enabling Database Search.&lt;/p>
 &lt;p>
 &lt;img src="https://user-images.githubusercontent.com/563412/142628735-6aa409bd-5ff5-4305-a0f0-7f6bc96d0740.png" alt="image" />&lt;/p>
-&lt;ul>
-&lt;li>Go to the Search API configuration page &lt;code>admin/config/search/search-api&lt;/code>.&lt;/li>
-&lt;li>Verify that the &amp;ldquo;OpenY Database Search&amp;rdquo; server is enabled.&lt;/li>
-&lt;li>Visit &amp;ldquo;Search content&amp;rdquo; index.&lt;/li>
-&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Go to the Search API configuration page &lt;code>admin/config/search/search-api&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Verify that the &amp;ldquo;OpenY Database Search&amp;rdquo; server is enabled.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Visit &amp;ldquo;Search content&amp;rdquo; index.&lt;/p>
 &lt;p>
 &lt;img src="https://user-images.githubusercontent.com/563412/142629065-e13c8bb4-cad8-436f-93c6-30fa6ac6fdf7.png" alt="image" />&lt;/p>
-&lt;p>tip: Admins can enable and the Solr search and switch the index between servers.&lt;/p>
-&lt;ul>
-&lt;li>Index content by clicking &amp;ldquo;Index now&amp;rdquo;.&lt;/li>
+&lt;/li>
 &lt;/ul>
+&lt;blockquote>
+&lt;p>TIP: Admins can enable and the Solr search and switch the index between servers.&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>Index content by clicking &amp;ldquo;Index now&amp;rdquo;.&lt;/p>
 &lt;p>
 &lt;img src="https://user-images.githubusercontent.com/563412/142629227-8607eeca-4022-47c4-b5fd-6e38ccfb7bab.png" alt="image" />&lt;/p>
-&lt;ul>
-&lt;li>Go to the homepage and search for any keyword.&lt;/li>
-&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Go to the homepage and search for any keyword.&lt;/p>
 &lt;p>
 &lt;img src="https://user-images.githubusercontent.com/563412/142629467-e275b536-2505-4ddf-8d78-7c6f4ae0e716.png" alt="image" />&lt;/p>
-&lt;ul>
-&lt;li>Verify search results are displayed correctly.&lt;/li>
+&lt;/li>
+&lt;li>
+&lt;p>Verify search results are displayed correctly.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;h2 id="starting-from-the-ymca-website-services-installer">Starting from the YMCA Website Services installer&lt;/h2>
 &lt;ul>
@@ -1505,11 +1561,52 @@ Upon installation, the modules create a Landing page for search results and poin
 &lt;li>Edit the &amp;ldquo;Search content&amp;rdquo; index and change the &amp;ldquo;Server&amp;rdquo; field to the newly configured &amp;ldquo;Solr Search&amp;rdquo; index.&lt;/li>
 &lt;li>Visit the &amp;ldquo;Search content&amp;rdquo; index and click &amp;ldquo;Index now&amp;rdquo; to re-index the content.&lt;/li>
 &lt;/ul>
+&lt;h2 id="layout-builder-and-solr-search">Layout Builder and Solr search&lt;/h2>
+&lt;p>Solr search can be used with
+&lt;a href="../../user-documentation/layout-builder">Layout Builder&lt;/a>, and requires a few extra steps:&lt;/p>
+&lt;ol>
+&lt;li>If you have an existing site, disable the old search page:
+&lt;ul>
+&lt;li>Go to &lt;code>/search&lt;/code>.&lt;/li>
+&lt;li>Remove the URL alias by unchecking &lt;strong>Generate automatic URL alias&lt;/strong> in the sidebar then deleting &lt;code>/search&lt;/code>.&lt;/li>
+&lt;li>Uncheck &lt;strong>Published&lt;/strong> and &lt;strong>Save&lt;/strong> to un-publish the page.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Create a new &lt;strong>Landing Page (Layout Builder)&lt;/strong> (&lt;code>node/add/landing_page_lb&lt;/code>):
+&lt;ul>
+&lt;li>Set the &lt;strong>Title&lt;/strong> to &amp;ldquo;Search&amp;rdquo;.&lt;/li>
+&lt;li>Ensure &lt;strong>Generate automatic URL alias&lt;/strong> is unchecked in the sidebar and set the alias to &lt;code>/search&lt;/code>.
+&lt;ul>
+&lt;li>If that alias results in an error, you can remove the old one at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Configuration&lt;/strong> &amp;gt; &lt;strong>Search and metadata&lt;/strong> &amp;gt; &lt;strong>URL aliases&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Check &lt;strong>Published&lt;/strong> then &lt;strong>Save and edit layout&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Add a
+&lt;a href="../../user-documentation/layout-builder/banner">Small Banner&lt;/a> to the header with a title for the page, like &amp;ldquo;Search&amp;rdquo;.&lt;/li>
+&lt;li>Add the search results block to the page:
+&lt;ul>
+&lt;li>In the &lt;strong>Body&lt;/strong> section, &lt;strong>Add block&lt;/strong>, then expand &lt;strong>All system block&lt;/strong> and choose &lt;strong>Content search block&lt;/strong> from the Paragraph Blocks section.&lt;/li>
+&lt;li>Optionally, choose to hide the title or change the number of items to display.&lt;/li>
+&lt;li>&lt;strong>Save layout&lt;/strong> and check your page.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Change the Search API config to use your new page:
+&lt;ul>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Search API settings&lt;/strong> (&lt;code>/admin/openy/settings/search-api&lt;/code>) and set the &lt;strong>Search page id&lt;/strong> to the node id of your new page.&lt;/li>
+&lt;li>Or, change the config with drush:
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>drush cset openy_search_api.settings search_page_id &amp;lt;nid&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Test the search box in the Layout Builder page header to ensure the new configuration works as expected.&lt;/li>
+&lt;/ol>
 &lt;h2 id="legacy-solr-support">Legacy Solr Support&lt;/h2>
 &lt;p>The contrib
-&lt;a href="https://www.drupal.org/project/search_api_solr" target="_blank">Search API Solr&lt;/a> module supports a broad swath of Solr versions, but occasionally old versions are dropped from support in the main module. If, when enabling YMCA Website Services Search API, you encounter errors that your version of Solr is out of date, you may need to enable the [Search API Solr Legacy module](
-&lt;a href="https://git.drupalcode.org/project/search_api_solr/-/blob/4.x/modules/search_api_solr_legacy/README.md]" target="_blank">https://git.drupalcode.org/project/search_api_solr/-/blob/4.x/modules/search_api_solr_legacy/README.md]&lt;/a>. As of January 2022, Search API Solr Legacy supports Solr 3.6 through 6.4.&lt;/p>
-&lt;p>The error message may look something like this:&lt;/p>
+&lt;a href="https://www.drupal.org/project/search_api_solr" target="_blank">Search API Solr&lt;/a> module supports a broad swath of Solr versions, but occasionally old versions are dropped from support in the main module. If, when enabling YMCA Website Services Search API, you encounter errors that your version of Solr is out of date, you may need to enable the
+&lt;a href="https://git.drupalcode.org/project/search_api_solr/-/blob/4.x/modules/search_api_solr_legacy/README.md" target="_blank">Search API Solr Legacy module&lt;/a>. As of January 2022, Search API Solr Legacy supports Solr 3.6 through 6.4.&lt;/p>
+&lt;p>The error message when using an old version of Solr may look something like this:&lt;/p>
 &lt;blockquote>
 &lt;p>Notice: Undefined index: 4.x in Drupal\search_api_solr\Controller\SolrConfigSetController-&amp;gt;getConfigFiles()&lt;/p>
 &lt;/blockquote></description></item><item><title>Docs: Install SSL certificate</title><link>/docs/development/install-ssl-certificate-for-the-openy-site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/install-ssl-certificate-for-the-openy-site/</guid><description>

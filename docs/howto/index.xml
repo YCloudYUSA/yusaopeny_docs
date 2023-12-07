@@ -438,7 +438,95 @@
 &lt;li>Locate content that is outdated, duplicated, needs further review, consolidation etc.&lt;/li>
 &lt;li>Find content gaps - what might be missing?&lt;/li>
 &lt;li>Identify commonly used page components (i.e. Cards, Carousels, Accordions, Ping Pongs, etc.)&lt;/li>
-&lt;/ul></description></item><item><title>Docs: How to track &amp; analyze user actions</title><link>/docs/howto/track-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/track-users/</guid><description>
+&lt;/ul></description></item><item><title>Docs: How to set up a Layout Builder site</title><link>/docs/howto/set-up-lb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/set-up-lb/</guid><description>
+&lt;h2 id="install-and-prepare">Install and prepare&lt;/h2>
+&lt;ol>
+&lt;li>Install YMCA Website Services 10.3.0 or higher.&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>If you are starting a new site, follow the
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny#installation" target="_blank">distribution install instructions&lt;/a>.&lt;/li>
+&lt;li>If you are starting with an internal toolchain, &lt;code>composer require ycloudyusa/yusaopeny&lt;/code> at the root of the project.&lt;/li>
+&lt;/ul>
+&lt;ol start="2">
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Configuration&lt;/strong> &amp;gt; &lt;strong>Basic site settings&lt;/strong> and configure the website name and slogan.&lt;/li>
+&lt;/ol>
+&lt;h2 id="enable-layout-builder-modules">Enable Layout Builder modules&lt;/h2>
+&lt;p>The core functionality of the Layout Builder features is packaged inside the
+&lt;a href="https://github.com/YCloudYUSA/y_lb" target="_blank">Y Layout Builder module (&lt;code>y_lb&lt;/code>)&lt;/a>. This module is required by the profile and comes with it out of the box.&lt;/p>
+&lt;p>Layout Builder modules could be disabled by default. The complete
+&lt;a href="https://github.com/YCloudYUSA/y_lb/blob/main/composer.json#L16" target="_blank">list of available components&lt;/a> is available in &lt;code>y_lb/composer.json&lt;/code>. There are two different methods to enable them:&lt;/p>
+&lt;ol>
+&lt;li>To install only selected modules: Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>) and enable only the components that you choose to use.&lt;/li>
+&lt;li>To install all the modules: Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> &amp;gt; &lt;strong>Install&lt;/strong> (&lt;code>/admin/openy/extend/list&lt;/code>). Check the box for &lt;strong>Layout Builder&lt;/strong>, then &lt;strong>Install&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;h2 id="configure-layouts--listings">Configure layouts &amp;amp; listings&lt;/h2>
+&lt;p>Layout Builder relies on a system of
+&lt;a href="https://www.drupal.org/docs/8/core/modules/layout-builder/creating-layout-defaults" target="_blank">Layout Defaults&lt;/a> and
+&lt;a href="https://www.drupal.org/docs/8/core/modules/layout-builder/creating-layout-overrides" target="_blank">Layout Overrides&lt;/a>. An important concept to understand from these pages is:&lt;/p>
+&lt;blockquote>
+&lt;p>Once a Layout is overridden on an entity, that entity will not be impacted by changes to Layout Defaults.&lt;/p>
+&lt;/blockquote>
+&lt;p>In building Landing Pages, we will override the Default Layout for every page (by placing content blocks). For this reason, it is important that we &lt;strong>configure the desired defaults before building pages&lt;/strong>.&lt;/p>
+&lt;h3 id="landing-pages">Landing Pages&lt;/h3>
+&lt;p>You will use the
+&lt;a href="../../user-documentation/content-types/lb-landing-page">Landing Page (with Layout Builder)&lt;/a> content type to build landing pages.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Configure its
+&lt;a href="../../user-documentation/layout-builder/advanced-options/#content-type-styles">content type styles&lt;/a> at &lt;code>/admin/structure/types/manage/landing_page_lb/display&lt;/code> first. Configure:&lt;/p>
+&lt;ul>
+&lt;li>Colorway&lt;/li>
+&lt;li>Border style&lt;/li>
+&lt;li>Border radius&lt;/li>
+&lt;li>Text/button alignment&lt;/li>
+&lt;li>Button position&lt;/li>
+&lt;li>Button fill&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="locations">Locations&lt;/h3>
+&lt;p>You will use the
+&lt;a href="../../user-documentation/content-types/branch">Branch&lt;/a>,
+&lt;a href="../../user-documentation/content-types/camp">Camp&lt;/a>, and
+&lt;a href="../../user-documentation/content-types/facility">Facility&lt;/a> content types to build pages that contain the contact and amenity details for each location.&lt;/p>
+&lt;ul>
+&lt;li>For new sites, you may set the &lt;strong>Use Layout Builder&lt;/strong> checkbox to be true by default at &lt;code>/admin/structure/types/manage/branch/fields/node.branch.field_use_layout_builder&lt;/code>.&lt;/li>
+&lt;li>Configure the default layout and settings for each type on their corresponding layout settings pages:
+&lt;ul>
+&lt;li>Branch: &lt;code>/admin/structure/types/manage/branch/display&lt;/code>&lt;/li>
+&lt;li>Camp: &lt;code>/admin/structure/types/manage/camp/display&lt;/code>&lt;/li>
+&lt;li>Facility: &lt;code>/admin/structure/types/manage/facility/display&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Create a locations page with the URL alias &lt;code>/locations&lt;/code> using
+&lt;a href="../../user-documentation/layout-builder/location-finder">Location Finder&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="events">Events&lt;/h3>
+&lt;p>Enable
+&lt;a href="https://www.drupal.org/project/ws_event" target="_blank">Events with Layout Builder (&lt;code>ws_event&lt;/code>)&lt;/a> to use Events with Layout Builder.&lt;/p>
+&lt;ul>
+&lt;li>Configure its default layout and settings at &lt;code>admin/structure/types/manage/lb_event/display&lt;/code>.&lt;/li>
+&lt;li>Create an events listing page with the URL alias &lt;code>/events&lt;/code> using
+&lt;a href="../../user-documentation/layout-builder/event-views">Events Views &amp;amp; Filters&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="articles">Articles&lt;/h3>
+&lt;p>Enable
+&lt;a href="https://www.drupal.org/project/y_lb_article" target="_blank">Articles with Layout Builder (&lt;code>y_lb_article&lt;/code>)&lt;/a> to use Articles with Layout Builder.&lt;/p>
+&lt;ul>
+&lt;li>Configure its default layout and settings at &lt;code>/admin/structure/types/manage/article_lb/display&lt;/code>.&lt;/li>
+&lt;li>Add an article listing page with the URL alias &lt;code>/news&lt;/code> using
+&lt;a href="../../user-documentation/layout-builder/article-views">Article Views &amp;amp; Filters&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="activity-finder">Activity Finder&lt;/h2>
+&lt;p>Enable &lt;code>openy_node_session&lt;/code>, &lt;code>openy_node_program&lt;/code>, &lt;code>openy_node_category&lt;/code>, &lt;code>openy_node_activity&lt;/code>, and &lt;code>openy_node_class&lt;/code> to set up the Program Event Framework (PEF) if you plan to use Schedules or Activity Finder on the project.&lt;/p>
+&lt;p>Then require and enable
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">&lt;code>yusaopeny_activity_finder&lt;/code>&lt;/a> to use
+&lt;a href="../../user-documentation/schedules/activity-finder">Activity Finder&lt;/a>.&lt;/p>
+&lt;h2 id="canadian-ymcas">Canadian YMCAs&lt;/h2>
+&lt;p>For Canadian YMCA sites, enable
+&lt;a href="https://www.drupal.org/project/ws_colorway_canada" target="_blank">&lt;code>ws_colorway_canada&lt;/code>&lt;/a>. This module contains
+&lt;a href="../../user-documentation/layout-builder/designs/#canadian-colourways">colorways and logos&lt;/a> approved by their local Y authorities.&lt;/p></description></item><item><title>Docs: How to track &amp; analyze user actions</title><link>/docs/howto/track-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/track-users/</guid><description>
 &lt;h2 id="google-analytics">Google Analytics&lt;/h2>
 &lt;p>YMCA Website Services uses the Drupal contrib
 &lt;a href="https://www.drupal.org/project/google_analytics" target="_blank">Google Analytics module&lt;/a> to enable
