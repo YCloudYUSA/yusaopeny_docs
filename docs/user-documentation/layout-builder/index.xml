@@ -2871,7 +2871,24 @@ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
 &lt;li>&lt;strong>Add term&lt;/strong> to create new parent terms if necessary.&lt;/li>
 &lt;li>Use the drag handle [✥] to arrange terms into nested groups.&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Note:&lt;/strong> Any terms more than two levels deep will be ignored. (That is, parents and children will be displayed, grandchildren will not.)&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>NOTE:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Any terms more than two levels deep will be ignored. (That is, parents and children will be displayed, grandchildren will not.)&lt;/li>
+&lt;li>When nesting is enabled, any amenities that are not grouped will be hidden from the filter list.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/layout-builder/location-finder/lb-location-finder--hidden-amenities.png" title="View original image">
+&lt;img alt="A screenshot showing amenities in a hierarchy with labels. Amenities greater than two levels deep are marked as hidden, amenities that do not have children are marked as hidden. All others are marked as shown." srcset="
+/docs/user-documentation/layout-builder/location-finder/lb-location-finder--hidden-amenities_hu98dcaaafd0b4b7eec03b9972cce9d8d8_96577_8e01d327f837b84ef72a67cc77047ebf.png 458w,
+/docs/user-documentation/layout-builder/location-finder/lb-location-finder--hidden-amenities_hu98dcaaafd0b4b7eec03b9972cce9d8d8_96577_46c0d2b8cfc7d269ec68a8c7667086fe.png 726w,
+/docs/user-documentation/layout-builder/location-finder/lb-location-finder--hidden-amenities_hu98dcaaafd0b4b7eec03b9972cce9d8d8_96577_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/layout-builder/location-finder/lb-location-finder--hidden-amenities_hu98dcaaafd0b4b7eec03b9972cce9d8d8_96577_8e01d327f837b84ef72a67cc77047ebf.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="using-location-finder">Using Location Finder&lt;/h2>
 &lt;p>The Location Finder block is best placed in an edge-to-edge Section with no gutters.&lt;/p>
 &lt;p>To use the block:&lt;/p>

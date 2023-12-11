@@ -652,7 +652,32 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">$data_layer&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;entityLabel&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">strtolower&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$data_layer&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;entityLabel&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">]);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: How to leverage structured data</title><link>/docs/howto/use-structured-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/use-structured-data/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="cross-domain-tracking">Cross-domain Tracking&lt;/h2>
+&lt;p>This configuration enables cross-domain tracking (also known as &amp;ldquo;cross-domain measurement&amp;rdquo;) to work through internal redirects like those in
+&lt;a href="../../user-documentation/membership/calculator">Membership Calculator&lt;/a> (that use &lt;code>TrustedRedirectResponse&lt;/code>).&lt;/p>
+&lt;p>When enabled, cookies matching any configured tag will be added to any redirect destination matching a configured domain. For example, a redirect to &lt;code>https://example.com&lt;/code> will be transformed to &lt;code>https://example.com/?_gl=....&lt;/code>.&lt;/p>
+&lt;p>This process is illustrated well by
+&lt;a href="https://web.archive.org/web/20231204093006/https://www.analyticsmania.com/post/cross-domain-tracking-in-google-analytics-4/#how-does-it-work" target="_blank">Analytics Mania&lt;/a>:&lt;/p>
+&lt;p>
+&lt;img src="https://web.archive.org/web/20231204093006im_/https://www.analyticsmania.com/wp-content/uploads/2021/03/cross-domain-ga4-2.jpg" alt="A diagram illustrating the successful user flow of a cookie from one domain to another, via analyticsmania.com" />&lt;/p>
+&lt;p>Analytics provides code that does this automatically with standard &lt;code>&amp;lt;a&amp;gt;&lt;/code> links, but this module is required to enable similar functionality with &amp;ldquo;server-side&amp;rdquo; links/redirects.&lt;/p>
+&lt;blockquote>
+&lt;p>NOTE: Configuration and testing of analytics is required outside the scope of this module, refer to
+&lt;a href="https://support.google.com/analytics/answer/10071811?hl=en" target="_blank">[GA4] Set up cross-domain measurement&lt;/a> for more information.&lt;/p>
+&lt;p>Successful cross-domain tracking also requires the destination application to retain the passed query strings and load them into the corresponding tracking property.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="configuration-1">Configuration&lt;/h3>
+&lt;ol>
+&lt;li>Enable the &amp;ldquo;YMCA Website Services Cross-domain Tracking (XDT)&amp;rdquo; module at &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong>, or via drush:
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>drush en openy_xdt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>Configure the module at &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Cross-domain Tracking Settings&lt;/strong> (&lt;code>/admin/openy/settings/xdt&lt;/code>)
+&lt;ul>
+&lt;li>The cookie defaults to the standard for GA4, but can be modified for use with different systems.&lt;/li>
+&lt;li>The module will not have any effect until a domain is configured. Add the domains of any external sites where you would like to enable tracking.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: How to leverage structured data</title><link>/docs/howto/use-structured-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/use-structured-data/</guid><description>
 &lt;blockquote>
 &lt;p>Adding structured data can enable search results that are more engaging to users and might encourage them to interact more with your website&lt;/p>
 &lt;p>&amp;ndash;
