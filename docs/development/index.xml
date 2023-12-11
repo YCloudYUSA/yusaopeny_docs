@@ -1417,7 +1417,7 @@ You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p></description
 &lt;p>&lt;code>8.2.2.1&lt;/code> - This is a very important step everyone should have. After this version, &lt;code>drush entup&lt;/code> stops working. In this version, we finally migrated to the core media subsystem, and before going further it is important to upgrade media by upgrading your site to this version first.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;code>8.2.7.3&lt;/code> - This is a very stable Drupal 8 based YMCA Website Services with a bunch of contrib module updates. This is one of the last Drupal 8 based YMCA Website Services versions before the upgrade to Drupal 9 core. Also, in 8.2.7.0 and 8.2.7.1 we started to introduce multiple version constraints in &lt;code>composer.json&lt;/code> to allow developers to choose between the minimum or latest dependency versions. This is for securing the upgrade path as well as adding flexibility for version selection if needed.&lt;/p>
+&lt;p>&lt;strong>&lt;code>8.2.7.3&lt;/code>&lt;/strong> - This is a very stable Drupal 8 based YMCA Website Services with a bunch of contrib module updates. This is one of the last Drupal 8 based YMCA Website Services versions before the upgrade to Drupal 9 core. Also, in 8.2.7.0 and 8.2.7.1 we started to introduce multiple version constraints in &lt;code>composer.json&lt;/code> to allow developers to choose between the minimum or latest dependency versions. This is for securing the upgrade path as well as adding flexibility for version selection if needed.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;code>9.2.8.0&lt;/code> - Drupal 9 version which must be used in the upgrade path before going to 9.2.8.1+. This version added 9.0-9.1 Drupal Core and disabled deprecated components.&lt;/p>
@@ -1426,13 +1426,13 @@ You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p></description
 &lt;p>&lt;code>9.2.10.0&lt;/code> - Removed a bunch of unused modules from distribution.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;code>9.2.11.3&lt;/code> - Last Open Y Drupal core 9.3.* release&lt;/p>
+&lt;p>&lt;strong>&lt;code>9.2.11.3&lt;/code>&lt;/strong> - Last Open Y Drupal core 9.3.* release&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;code>9.2.11.4&lt;/code> - Technical release of YMCA Website Services ( no diff with 9.2.11.3 )&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;code>9.2.13.0&lt;/code> - Pre Drupal 10 release, latest Drupal 9 release. Before going into Layout Builder era it is recommended to uninstall &lt;code>geysir&lt;/code>, &lt;code>openy_inline_editing&lt;/code>, &lt;code>quickedit&lt;/code>, &lt;code>rdf&lt;/code> modules.&lt;/p>
+&lt;p>&lt;strong>&lt;code>9.2.13.0&lt;/code>&lt;/strong> - Pre Drupal 10 release, latest Drupal 9 release. Before going into Layout Builder era it is recommended to uninstall &lt;code>geysir&lt;/code>, &lt;code>openy_inline_editing&lt;/code>, &lt;code>quickedit&lt;/code>, &lt;code>rdf&lt;/code> modules.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;code>10.2.14&lt;/code> - Drupal 10|9 release, where you may follow the recommendations below:&lt;/p>
@@ -1451,7 +1451,7 @@ You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p></description
 &lt;p>&lt;code>10.3.0.1&lt;/code> - Drupal 10|9 release, before New Demo Content and Initial Replacement Paragraphs to Blocks for Native Layout Builder Experience&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;code>10.3.1&lt;/code> - Drupal 10|9 release, New Demo Content and Initial Replacement Paragraphs to Blocks for Native Layout Builder Experience. In this release we bumped a lot of dependencies to become up to date&lt;/p>
+&lt;p>&lt;strong>&lt;code>10.3.1&lt;/code>&lt;/strong> - Drupal 10|9 release, New Demo Content and Initial Replacement Paragraphs to Blocks for Native Layout Builder Experience. In this release we bumped a lot of dependencies to become up to date&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;p>See
