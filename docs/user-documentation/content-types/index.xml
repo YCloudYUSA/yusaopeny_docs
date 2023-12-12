@@ -695,7 +695,7 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;p>Beginning in
 &lt;a href="/blog/2023/03/14/digital-services-release-9.2.13/">Website Services 9.2.13&lt;/a> content editors have the option of customizing the Branch page with
 &lt;a href="../../layout-builder">Layout Builder&lt;/a>. You can migrate from using Paragraphs to using Layout Builder on a branch-by-branch basis to ease the transition.&lt;/p>
-&lt;p>The &lt;strong>Use Layout Builder&lt;/strong> checkbox on the Branch edit page non-destructively switches between Paragraphs and Layout Builder.&lt;/p>
+&lt;p>The &lt;strong>Use Layout Builder&lt;/strong> checkbox on the Branch edit page non-destructively switches between Paragraphs and Layout Builder. If the checkbox does not appear, ensure the &lt;strong>Y Branch&lt;/strong> (&lt;code>y_branch&lt;/code>) module is installed at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>).&lt;/p>
 &lt;h3 id="layout-builder-blocks">Layout Builder Blocks&lt;/h3>
 &lt;p>Branch pages have several specialized components that utilize the structured data (fields) that already exist on your branch page in newly designed Layout Builder Blocks.&lt;/p>
 &lt;p>In addition to using many of the standard Layout Builder components, Branch pages also use several components that display the fields described above:&lt;/p>
@@ -965,7 +965,7 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;h2 id="customizing-with-layout-builder">Customizing with Layout Builder&lt;/h2>
 &lt;p>Beginning in Website Services 9.3, content editors have the option of customizing the Camp page with
 &lt;a href="../../layout-builder">Layout Builder&lt;/a>. You can migrate from using Paragraphs to using Layout Builder on a camp-by-camp basis in order to ease the transition.&lt;/p>
-&lt;p>The &lt;strong>Use Layout Builder&lt;/strong> checkbox on the Camp edit page non-destructively switches between Paragraphs and Layout Builder.&lt;/p>
+&lt;p>The &lt;strong>Use Layout Builder&lt;/strong> checkbox on the Camp edit page non-destructively switches between Paragraphs and Layout Builder. If the checkbox does not appear, ensure the &lt;strong>Y Camp&lt;/strong> (&lt;code>y_camp&lt;/code>) module is installed at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>).&lt;/p>
 &lt;h3 id="camp-menus">Camp Menus&lt;/h3>
 &lt;p>The Camp page is often used as a landing page for a microsite with additional information - schedules, packing lists, and other camp-specific pages.&lt;/p>
 &lt;p>We have two camp-specific menus that help build this structure.&lt;/p>
@@ -1310,7 +1310,7 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;p>Beginning in
 &lt;a href="/blog/2023/09/12/digital-services-release-10.3.0/">Website Services 10.3.0&lt;/a> content editors have the option of customizing the Facility page with
 &lt;a href="../../layout-builder">Layout Builder&lt;/a>. You can migrate from using Paragraphs to using Layout Builder on a facility-by-facility basis in order to ease the transition.&lt;/p>
-&lt;p>The &lt;strong>Use Layout Builder&lt;/strong> checkbox on the Facility edit page non-destructively switches between Paragraphs and Layout Builder.&lt;/p>
+&lt;p>The &lt;strong>Use Layout Builder&lt;/strong> checkbox on the Facility edit page non-destructively switches between Paragraphs and Layout Builder. If the checkbox does not appear, ensure the &lt;strong>Y Facility&lt;/strong> (&lt;code>y_facility&lt;/code>) module is installed at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>).&lt;/p>
 &lt;p>The migration process is identical to
 &lt;a href="../branch/#migrating-to-layout-builder">Migrating Branches to Layout Builder&lt;/a>.&lt;/p></description></item><item><title>Docs: Landing Page</title><link>/docs/user-documentation/content-types/landing-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/landing-page/</guid><description>
 &lt;h3 id="fields-in-landing-page">Fields in Landing Page&lt;/h3>
@@ -1667,7 +1667,34 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;ul>
 &lt;li>The &lt;em>Description&lt;/em> field always displays above the paragraphs you enter.&lt;/li>
 &lt;li>There is no bottom area for you to add an anchoring element.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Program Subcategory</title><link>/docs/user-documentation/content-types/program-subcategory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/program-subcategory/</guid><description>
+&lt;/ul>
+&lt;h2 id="customizing-with-layout-builder">Customizing with Layout Builder&lt;/h2>
+&lt;p>Beginning in
+&lt;a href="/blog/2023/12/12/digital-services-release-10.3.1.1/">Website Services 10.3.1.1&lt;/a> content editors have the option of customizing the Program page with
+&lt;a href="../../layout-builder">Layout Builder&lt;/a>. You can migrate from using Paragraphs to using Layout Builder on a program-by-program basis to ease the transition.&lt;/p>
+&lt;p>The &lt;strong>Use Layout Builder&lt;/strong> checkbox on the Program edit page non-destructively switches between Paragraphs and Layout Builder. If the checkbox does not appear, ensure the &lt;strong>Y Program&lt;/strong> (&lt;code>y_program&lt;/code>) module is installed at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>).&lt;/p>
+&lt;h3 id="layout-builder-blocks">Layout Builder Blocks&lt;/h3>
+&lt;p>Program pages can take advantage of the
+&lt;a href="../../paragraphs/categories-listing">Categories Listing&lt;/a> block to list child Program Subcategory pages. To add the block:&lt;/p>
+&lt;ul>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page.&lt;/li>
+&lt;li>Scroll to the location on the page where you want to add the block (usually the &lt;strong>Body&lt;/strong> section).&lt;/li>
+&lt;li>Click &lt;strong>Add block&lt;/strong>.&lt;/li>
+&lt;li>In the sidebar, expand &lt;strong>All system blocks&lt;/strong>.&lt;/li>
+&lt;li>Search for &amp;ldquo;Categories Listing&amp;rdquo; or scroll to &lt;strong>Lists (Views)&lt;/strong> &amp;gt; &lt;strong>Categories Listing&lt;/strong>.&lt;/li>
+&lt;li>Click on &lt;strong>Categories Listing&lt;/strong>.&lt;/li>
+&lt;li>Check &lt;strong>Override title&lt;/strong> to add a title to the block.&lt;/li>
+&lt;li>Click &lt;strong>Add block&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>NOTE: As of version 10.3.1.1 (December 2023) the &lt;strong>Categories Listing&lt;/strong> block styles have not been updated to be in line with the
+&lt;a href="../../layout-builder/designs/#design-system">Design System&lt;/a>. They will be updated as of the March 2024 release. Keep an eye on
+&lt;a href="https://www.drupal.org/project/y_program/releases" target="_blank">y_program releases&lt;/a> for details.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="migrating-to-layout-builder">Migrating to Layout Builder&lt;/h3>
+&lt;p>Migrating Program pages to Layout Builder uses the same process as
+&lt;a href="../../layout-builder/#creating-a-new-page">building a new Landing Page&lt;/a>. See
+&lt;a href="../../../howto/migrate-to-lb/#prepare-your-content">How to migrate to Layout Builder&lt;/a> for information about preparing for the migration.&lt;/p></description></item><item><title>Docs: Program Subcategory</title><link>/docs/user-documentation/content-types/program-subcategory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/program-subcategory/</guid><description>
 &lt;p>A subset of a
 &lt;a href="../program">Program&lt;/a>, Program Subcategory pages list different types of program offerings, grouped into
 &lt;a href="../activity-class-session">Activities&lt;/a>.&lt;/p>
@@ -1765,4 +1792,71 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;h3 id="bottom-area">Bottom Area&lt;/h3>
 &lt;p>Use the Bottom Area for anchoring elements, such as
 &lt;a href="../../paragraphs/small-banner">small banners&lt;/a> and
-&lt;a href="../../paragraphs/webform">webforms&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;a href="../../paragraphs/webform">webforms&lt;/a>.&lt;/p>
+&lt;h2 id="customizing-with-layout-builder">Customizing with Layout Builder&lt;/h2>
+&lt;p>Beginning in
+&lt;a href="/blog/2023/12/12/digital-services-release-10.3.1.1/">Website Services 10.3.1.1&lt;/a> content editors have the option of customizing the Program Subcategory page with
+&lt;a href="../../layout-builder">Layout Builder&lt;/a>. You can migrate from using Paragraphs to using Layout Builder on a program-by-program basis to ease the transition.&lt;/p>
+&lt;p>The &lt;strong>Use Layout Builder&lt;/strong> checkbox on the Program Subcategory edit page non-destructively switches between Paragraphs and Layout Builder. If the checkbox does not appear, ensure the &lt;strong>Y Program Subcategory&lt;/strong> (&lt;code>y_program_subcategory&lt;/code>) module is installed at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>).&lt;/p>
+&lt;h3 id="layout-builder-blocks">Layout Builder Blocks&lt;/h3>
+&lt;p>Program Subcategory pages do not utilize any specialized blocks. See
+&lt;a href="../../layout-builder">Layout Builder&lt;/a> for the list of all components.&lt;/p>
+&lt;h3 id="migrating-to-layout-builder">Migrating to Layout Builder&lt;/h3>
+&lt;p>Migrating Program pages to Layout Builder uses the same process as
+&lt;a href="../../layout-builder/#creating-a-new-page">building a new Landing Page&lt;/a>. See
+&lt;a href="../../../howto/migrate-to-lb/#prepare-your-content">How to migrate to Layout Builder&lt;/a> for information about preparing for the migration.&lt;/p></description></item><item><title>Docs: Promotion</title><link>/docs/user-documentation/content-types/promotion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/promotion/</guid><description>
+&lt;p>Promotions are timed pieces of content that allow content editors the flexibility to create a single item that can be placed in multiple locations on the site, without having to duplicate or manage content in multiple locations.&lt;/p>
+&lt;p>Version 1 of the Promotion functionality was released in
+&lt;a href="/blog/2023/12/12/digital-services-release-10.3.1.1/">version 10.3.1.1&lt;/a> (December 2023). This version supports swapping promos into:&lt;/p>
+&lt;ul>
+&lt;li>Activity Finder
+&lt;ul>
+&lt;li>by enabling the &lt;code>ws_promotion_activity_finder&lt;/code> module.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cards
+&lt;ul>
+&lt;li>by enabling the &lt;code>ws_promotion_cards&lt;/code> module.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Modals
+&lt;ul>
+&lt;li>by enabling the &lt;code>ws_promotion_modal&lt;/code> module.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Version 2 is planned for March 2024 and will support more components with more granular placement criteria.&lt;/p>
+&lt;h2 id="creating-a-promo">Creating a Promo&lt;/h2>
+&lt;p>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Promotion&lt;/strong> (&lt;code>/node/add/promo&lt;/code>)&lt;/p>
+&lt;p>Fill in the content fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> (required)&lt;/li>
+&lt;li>&lt;strong>Subtitle&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong>: The body text of the promo.&lt;/li>
+&lt;li>&lt;strong>Image&lt;/strong> (required): Choose an existing image from the library or upload a new one.&lt;/li>
+&lt;li>&lt;strong>CTA/link&lt;/strong>: Add a call to action to your promo.&lt;/li>
+&lt;li>&lt;strong>Promotion Category&lt;/strong>: Choose one item from the Activities
+&lt;a href="../../taxonomy">Taxonomy&lt;/a> to link the promo with related components (see below).&lt;/li>
+&lt;li>&lt;strong>Promotion Priority&lt;/strong>: Set how often the promo will appear. This setting will only have an effect &lt;em>if multiple promotions can appear on a page&lt;/em>.&lt;/li>
+&lt;li>&lt;strong>Visibility pages&lt;/strong>: This field is not yet in use.&lt;/li>
+&lt;/ul>
+&lt;p>Use the &lt;strong>Scheduling options&lt;/strong> section in the sidebar to set a &lt;strong>Publish on&lt;/strong> and &lt;strong>Unpublish on&lt;/strong> time for your Promo (this requires &lt;code>cron&lt;/code> to be running on your server - check with your hosting partner).&lt;/p>
+&lt;h2 id="placing-a-promo">Placing a Promo&lt;/h2>
+&lt;h3 id="version-1">Version 1&lt;/h3>
+&lt;p>In version 1, creating a Promotion and setting it as &lt;strong>Published&lt;/strong> will automatically enable the promo in any available components (corresponding to the modules enabled above).&lt;/p>
+&lt;p>To filter a component to only a certain set of Promotions, edit a Layout Builder block and set the new &lt;strong>Promotion Category&lt;/strong> field.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/promotion/promo--promo-category.png" title="View original image">
+&lt;img alt="A screenshot of the promotion category field." srcset="
+/docs/user-documentation/content-types/promotion/promo--promo-category_hu0dfab74edfc650e88098b4e4cc91c0f9_8318_85c4192c309898a657cbb56c5ba5b6f5.png 458w,
+/docs/user-documentation/content-types/promotion/promo--promo-category_hu0dfab74edfc650e88098b4e4cc91c0f9_8318_e97fda9a3e972c3119703939d21dffc6.png 726w,
+/docs/user-documentation/content-types/promotion/promo--promo-category_hu0dfab74edfc650e88098b4e4cc91c0f9_8318_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/promotion/promo--promo-category_hu0dfab74edfc650e88098b4e4cc91c0f9_8318_85c4192c309898a657cbb56c5ba5b6f5.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>If &lt;strong>Promotion Category&lt;/strong> &lt;em>is not&lt;/em> set on a block, then the block will be overridden by &lt;em>any available (published) promo&lt;/em>.&lt;/li>
+&lt;li>If &lt;strong>Promotion Category&lt;/strong> &lt;em>is&lt;/em> set on a block, then the block will be overridden by &lt;em>only matching promos&lt;/em> that have the same category set.&lt;/li>
+&lt;/ul></description></item></channel></rss>

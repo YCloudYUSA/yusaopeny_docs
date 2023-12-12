@@ -1,4 +1,126 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Docs</title><link>/</link><description>Recent content in YMCA Website Services Docs on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Digital Services Release 10.3.0.1</title><link>/blog/2023/11/14/digital-services-release-10.3.0.1/</link><pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate><guid>/blog/2023/11/14/digital-services-release-10.3.0.1/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Docs</title><link>/</link><description>Recent content in YMCA Website Services Docs on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Digital Services Release 10.3.1.1</title><link>/blog/2023/12/12/digital-services-release-10.3.1.1/</link><pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate><guid>/blog/2023/12/12/digital-services-release-10.3.1.1/</guid><description>
+&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;/h2>
+&lt;h3 id="promotion-content-type">Promotion Content Type&lt;/h3>
+&lt;p>&lt;strong>Promotions&lt;/strong> are pieces of content with scheduled start and end dates that can be used for displaying internal marketing and ad campaigns. Content editors can easily schedule, manage and place multiple promotions throughout their website via the Drupal admin interface.&lt;/p>
+&lt;p>The first version of this content type allows content editors to place promotions inside the Card component (for Layout Builder) and as interstitial content within Activity Finder.
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/content-types/promotion/" target="_blank">Learn more in our docs.&lt;/a>&lt;/p>
+&lt;h3 id="layout-builder-updates">Layout Builder Updates&lt;/h3>
+&lt;p>Continuing general cleanup, updated documentation, and improvements to the content editing experience for new Layout Builder components and content types.&lt;/p>
+&lt;p>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/" target="_blank">Learn more in our docs&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>Moved
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/content-types/program/#customizing-with-layout-builder" target="_blank">Program&lt;/a> &amp;amp;
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/content-types/program/#customizing-with-layout-builder" target="_blank">Program Sub-category&lt;/a> Content Types into Layout Builder. (#806)&lt;/li>
+&lt;li>Facility Content Type - Updated the behavior of Contact / Hours fields so that content editors can include custom contact and hour information for a facility. (#1057)&lt;/li>
+&lt;li>Facility Content Type - Included ability to add custom hours on Facilities, currently it is inherited from Branch CT. (#1119)&lt;/li>
+&lt;li>LB Location Finder - ‘Get Directions’ link on a Branch card should link to the Google Map of the location. (#1132)&lt;/li>
+&lt;li>Removed a dependency on lb_branch_hours_block. (#1071)
+&lt;ul>
+&lt;li>&lt;em>Credit - Andy Fowlston&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>LB Menus &amp;amp; Navigation - Clarified header / footer region display names so that each region has a unique, easy to understand title. (#1055)&lt;/li>
+&lt;li>LB Mega menu - Resolved hierarchical issues, making top level pages clickable and including indicators for parent / child relationships. (#1196)&lt;/li>
+&lt;li>Cleaned up error messages that were blocking content entry in the Layout Builder sidebar. (#827)&lt;/li>
+&lt;li>Resolved an issue with LB content types being excluded from the Default sitemap in the ‘Simple XML Sitemap’ module configurations. (#1197)
+&lt;ul>
+&lt;li>&lt;em>Credit - Jeremy Weedman&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>LB UX - Fixed display of Drupal admin warnings and messages. (#828)&lt;/li>
+&lt;li>Made vertical spacing between components more consistent. (#1167)&lt;/li>
+&lt;li>LB Cards - De-duplicated code in twig templates. (#1135)&lt;/li>
+&lt;li>Included Home Branch, Icon Grid, LB Facility and LB Camp in default standard install. (#1061)&lt;/li>
+&lt;/ul>
+&lt;h3 id="core-security--performance-updates">Core, Security &amp;amp; Performance Updates&lt;/h3>
+&lt;ul>
+&lt;li>Update to Drush v12. (#807)&lt;/li>
+&lt;li>Allowed plugin definitions caching to resolve a caching performance issue. (#1220)
+&lt;ul>
+&lt;li>&lt;em>Credit: Andrey Maximov&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="ckeditor-5">CKEditor 5&lt;/h3>
+&lt;ul>
+&lt;li>Upgraded from png to svg icons for CKEditor 5 compatibility. (#1194)&lt;/li>
+&lt;/ul>
+&lt;h3 id="admin--content-editor-enhancements">Admin / Content Editor Enhancements&lt;/h3>
+&lt;ul>
+&lt;li>Migration from old block + paragraph approach to block + block sub-item approach for Layout Builder. (#’s 301-306, #1087)&lt;/li>
+&lt;li>Replaced AddThis with AddToAny. (#1028)
+&lt;ul>
+&lt;li>&lt;em>Note:
+&lt;a href="https://www.addthis.com/" target="_blank">AddThis terminated all services&lt;/a> on May 1, 2023, which impacts all Website Services sites using the service.&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Removed duplicated code from twig templates for the LB Hero. (#1134)&lt;/li>
+&lt;/ul>
+&lt;h3 id="seo">SEO&lt;/h3>
+&lt;ul>
+&lt;li>Added cross-domain tracking module to ensure cross-domain tracking works with Google Analytics 4. (#280)&lt;/li>
+&lt;/ul>
+&lt;h3 id="accessibility">Accessibility&lt;/h3>
+&lt;ul>
+&lt;li>Resolved accessibility issues found in audits from Summer 2023:
+&lt;ul>
+&lt;li>WAVE browser tool&lt;/li>
+&lt;li>Keyboard accessibility&lt;/li>
+&lt;li>Screen Reader&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="design-system---y-styles">Design System - Y Styles&lt;/h3>
+&lt;p>“Y Styles” helps site builders customize their sites in an accessible and brand-compliant manner.&lt;/p>
+&lt;p>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/advanced-options/" target="_blank">Documentation for Y Styles&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Updated H1-H6 tags to match colorway styles. (#666)&lt;/li>
+&lt;li>Canadian Colorway - Canadian Y Associations can now select from a set of brand-compliant colors to use with Layout Builder components. (#589)&lt;/li>
+&lt;/ul>
+&lt;h2 id="documentation">Documentation&lt;/h2>
+&lt;ul>
+&lt;li>Videos from the Open Y channel that are referenced in code had their URLs updated to the new YUSA YouTube channel. (#834)&lt;/li>
+&lt;li>Document workaround for missing
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/text-editor/adding-links/#using-button-classes" target="_blank">CKEditor 5 button button&lt;/a>. (#1147)&lt;/li>
+&lt;li>Added documentation for
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/content-types/branch/#home-branch-selector" target="_blank">Home Branch selector&lt;/a> and how to disable it. (#1162)&lt;/li>
+&lt;li>Documented how to
+&lt;a href="https://ds-docs.y.org/docs/development/development-faq/#upgrade-troubleshooting" target="_blank">troubleshoot missing configurations&lt;/a> after upgrading to Drupal 10. (#1124)&lt;/li>
+&lt;li>Added
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/content-types/" target="_blank">Content type clarification&lt;/a>. (#1239)&lt;/li>
+&lt;li>Made
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/donate/" target="_blank">donate support&lt;/a> more prominent. (#1239)&lt;/li>
+&lt;li>Added
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/header-footer/#main-navigation" target="_blank">header menu length recommendations&lt;/a>. (#1239)&lt;/li>
+&lt;li>Included documentation for
+&lt;a href="https://ds-docs.y.org/docs/development/googlecustomsearchconfiguration/#layout-builder-and-google-search" target="_blank">installing Solr site search&lt;/a> and
+&lt;a href="https://ds-docs.y.org/docs/development/googlecustomsearchconfiguration/#layout-builder-and-google-search" target="_blank">Google Search Configuration&lt;/a> in Layout Builder. (#1198)&lt;/li>
+&lt;li>Updated documentation for how to set up a
+&lt;a href="https://ds-docs.y.org/docs/howto/set-up-lb/" target="_blank">Layout Builder site from scratch&lt;/a>. (#1241)&lt;/li>
+&lt;li>Added documentation for how to
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/location-finder/#hierarchical-parentchild-amenities" target="_blank">display amenities in the filter&lt;/a> on the LB Location Finder page. (#1252)&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-fixes">Bug Fixes&lt;/h2>
+&lt;ul>
+&lt;li>Fixed an issue with Layout Builder content types causing errors on Search or Webforms. (#1205)&lt;/li>
+&lt;li>Resolved an issue with Alert Rearrange not actually rearranging alerts. (#1228)
+&lt;ul>
+&lt;li>&lt;em>Credit: Serhii Zherebchuck&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Blog: Virtual Y 1.8.18</title><link>/blog/2023/12/12/virtual-y-1.8.18/</link><pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate><guid>/blog/2023/12/12/virtual-y-1.8.18/</guid><description>
+&lt;h2 id="bug-fixes">Bug Fixes&lt;/h2>
+&lt;ul>
+&lt;li>Fixed an issue with YV Logs using the old instructor name field. (#903)&lt;/li>
+&lt;li>Fixed the Header (utility menu and main nav) so that it does not overlap the content below. (#1076)&lt;/li>
+&lt;li>Fixed the empty description on Live Stream/Virtual Meeting causing the page to fail. (#1240)
+&lt;ul>
+&lt;li>&lt;em>Credit: Sathya Raja&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Blog: Digital Services Release 10.3.0.1</title><link>/blog/2023/11/14/digital-services-release-10.3.0.1/</link><pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate><guid>/blog/2023/11/14/digital-services-release-10.3.0.1/</guid><description>
 &lt;h2 id="sandbox-demo-content-pages">Sandbox Demo Content Pages&lt;/h2>
 &lt;ul>
 &lt;li>

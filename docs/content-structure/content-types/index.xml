@@ -1354,7 +1354,77 @@
 &lt;/table>
 &lt;h3 id="url-pattern">URL pattern&lt;/h3>
 &lt;p>Content type is using following pattern:
-&lt;code>/programs/[node:field_category_program:entity:title]/[node:title]&lt;/code>&lt;/p></description></item><item><title>Docs: Session</title><link>/docs/content-structure/content-types/session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/session/</guid><description>
+&lt;code>/programs/[node:field_category_program:entity:title]/[node:title]&lt;/code>&lt;/p></description></item><item><title>Docs: Promotion</title><link>/docs/content-structure/content-types/promotion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/promotion/</guid><description>
+&lt;p>Promotions are timed pieces of content that allow content editors the flexibility to create a single item that can be placed in multiple locations on the site, without having to duplicate or manage content in multiple locations.&lt;/p>
+&lt;h2 id="fields">Fields&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Name&lt;/th>
+&lt;th>Machine name&lt;/th>
+&lt;th>Field type&lt;/th>
+&lt;th>Required?&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Title&lt;/td>
+&lt;td>title&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Subtitle&lt;/td>
+&lt;td>field_subtitle&lt;/td>
+&lt;td>Text (plain)&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CTA / link&lt;/td>
+&lt;td>field_link&lt;/td>
+&lt;td>Link&lt;/td>
+&lt;td>no&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Description&lt;/td>
+&lt;td>field_promo_description&lt;/td>
+&lt;td>Text (formatted, long)&lt;/td>
+&lt;td>no&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Image&lt;/td>
+&lt;td>field_promo_media&lt;/td>
+&lt;td>Entity reference&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Pages&lt;/td>
+&lt;td>field_promo_visibility_pages&lt;/td>
+&lt;td>Text (plain, long)&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Promotion Category&lt;/td>
+&lt;td>field_promo_category&lt;/td>
+&lt;td>Entity reference&lt;/td>
+&lt;td>no&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Promotion Priority&lt;/td>
+&lt;td>field_promo_priority&lt;/td>
+&lt;td>List (text)&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Promotion visibility state&lt;/td>
+&lt;td>field_promo_visibility_state&lt;/td>
+&lt;td>List (text)&lt;/td>
+&lt;td>yes&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="url-pattern">URL pattern&lt;/h2>
+&lt;p>No URL pattern. This content should not be visible on its own.&lt;/p></description></item><item><title>Docs: Session</title><link>/docs/content-structure/content-types/session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/session/</guid><description>
 &lt;p>Session content type is used for adding Sessions on the site.&lt;/p>
 &lt;h3 id="fields">Fields&lt;/h3>
 &lt;table>
