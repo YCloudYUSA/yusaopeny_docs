@@ -1466,7 +1466,7 @@ You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p></description
 &lt;li>
 &lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder/wiki" target="_blank">Activity Finder&lt;/a> requires Solr&lt;/li>
 &lt;li>Site search can &lt;em>optionally&lt;/em> use Solr as per
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/1967" target="_blank">this Pull Request&lt;/a>&lt;/li>
+&lt;a href="https://github.com/ymcatwincities/openy/pull/1967" target="_blank">this Pull Request&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="quick-start--upgrade-path">Quick Start / Upgrade path&lt;/h2>
 &lt;ul>

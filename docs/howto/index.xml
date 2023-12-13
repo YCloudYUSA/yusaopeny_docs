@@ -525,8 +525,13 @@
 &lt;a href="../../user-documentation/schedules/activity-finder">Activity Finder&lt;/a>.&lt;/p>
 &lt;h2 id="canadian-ymcas">Canadian YMCAs&lt;/h2>
 &lt;p>For Canadian YMCA sites, enable
-&lt;a href="https://www.drupal.org/project/ws_colorway_canada" target="_blank">&lt;code>ws_colorway_canada&lt;/code>&lt;/a>. This module contains
-&lt;a href="../../user-documentation/layout-builder/designs/#canadian-colourways">colorways and logos&lt;/a> approved by their local Y authorities.&lt;/p></description></item><item><title>Docs: How to track &amp; analyze user actions</title><link>/docs/howto/track-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/track-users/</guid><description>
+&lt;a href="https://www.drupal.org/project/ws_colorway_canada" target="_blank">&lt;code>ws_colorway_canada&lt;/code>&lt;/a> and its submodule &lt;code>lb_hero_canada&lt;/code>. These modules contain
+&lt;a href="../../user-documentation/layout-builder/designs/#canadian-colourways">colorways, logos, and banner styles&lt;/a> approved by their local Y authorities.&lt;/p>
+&lt;ul>
+&lt;li>After enabling the new colorway, be sure to set the
+&lt;a href="#configure-layouts--listings">default layout styles&lt;/a> to use the Canadian colorway of your choice.&lt;/li>
+&lt;li>Enabling &lt;code>ws_colorway_canada&lt;/code> will immediately change the site logo from the Y-USA logo to the Y Canada logo, so this should be done on a development environment first.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: How to track &amp; analyze user actions</title><link>/docs/howto/track-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/track-users/</guid><description>
 &lt;h2 id="google-analytics">Google Analytics&lt;/h2>
 &lt;p>YMCA Website Services uses the Drupal contrib
 &lt;a href="https://www.drupal.org/project/google_analytics" target="_blank">Google Analytics module&lt;/a> to enable
