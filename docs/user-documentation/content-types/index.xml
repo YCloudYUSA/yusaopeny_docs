@@ -1151,14 +1151,14 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;/figure>
 &lt;/p>
 &lt;h3 id="camp-landing-pages">Camp Landing Pages&lt;/h3>
-&lt;p>The &lt;strong>Camp Landing Page&lt;/strong> content type allows you to create internal pages for your camp section or microsite. Once you&amp;rsquo;ve created the parent &lt;strong>Camp&lt;/strong> page, you are ready to creat additional &lt;strong>Camp Landing Page&lt;/strong> pages.&lt;/p>
+&lt;p>The &lt;strong>Camp Subpage&lt;/strong> (formerly &amp;ldquo;Camp Landing Page&amp;rdquo;) content type allows you to create internal pages for your camp section or microsite. Once you&amp;rsquo;ve created the parent &lt;strong>Camp&lt;/strong> page, you are ready to creat additional &lt;strong>Camp Subpage&lt;/strong> pages.&lt;/p>
 &lt;ul>
-&lt;li>Go to &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Camp Landing Page&lt;/strong>&lt;/li>
+&lt;li>Go to &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> &amp;gt; &lt;strong>Camp Subpage&lt;/strong>&lt;/li>
 &lt;li>Set the &lt;strong>Title&lt;/strong>&lt;/li>
 &lt;li>In the &lt;strong>Camp&lt;/strong> field, begin typing the name of the &lt;strong>Camp&lt;/strong> page that will be the parent page, then select the item from the autocomplete dropdown.
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/content-types/camp/camp--lp-select.png" title="View original image">
-&lt;img alt="The Camp Landing Page admin fields" srcset="
+&lt;img alt="The Camp Subpage admin fields" srcset="
 /docs/user-documentation/content-types/camp/camp--lp-select_hu5ced4d248fa9da96f0b85850075d967c_15159_439dffe0b57745eceb80fb130c4fa640.png 458w,
 /docs/user-documentation/content-types/camp/camp--lp-select_hu5ced4d248fa9da96f0b85850075d967c_15159_15a8fbf29cc0315329798bd55a4f026c.png 726w,
 /docs/user-documentation/content-types/camp/camp--lp-select_hu5ced4d248fa9da96f0b85850075d967c_15159_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--lp-select_hu5ced4d248fa9da96f0b85850075d967c_15159_439dffe0b57745eceb80fb130c4fa640.png" />
@@ -1170,7 +1170,7 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;li>You will now see the Layout Builder editor with the menus from your &lt;strong>Camp&lt;/strong> page pre-populated in the layout.
 &lt;figure class="image-caption">
 &lt;a href="/docs/user-documentation/content-types/camp/camp--lp-menus.png" title="View original image">
-&lt;img alt="The Camp Landing Page layout builder interface" srcset="
+&lt;img alt="The Camp Subpage layout builder interface" srcset="
 /docs/user-documentation/content-types/camp/camp--lp-menus_hu43309ef9ee9d674c95ee80b59471c6a0_56462_9b4a96a61c72099e6464ae5411a51bfb.png 458w,
 /docs/user-documentation/content-types/camp/camp--lp-menus_hu43309ef9ee9d674c95ee80b59471c6a0_56462_a97cb68e0b31490564458b3adc512904.png 726w,
 /docs/user-documentation/content-types/camp/camp--lp-menus_hu43309ef9ee9d674c95ee80b59471c6a0_56462_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/camp/camp--lp-menus_hu43309ef9ee9d674c95ee80b59471c6a0_56462_9b4a96a61c72099e6464ae5411a51bfb.png" />
@@ -1182,9 +1182,9 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;a href="../../layout-builder">Layout Builder&lt;/a>, then click &lt;strong>Save layout&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>&lt;strong>Note:&lt;/strong> The menu references on Camp Landing Pages are copied to the header when the page is created. Any updates to those menus (new items, reordering) will be reflected on all subpages, but later changes to the blocks (removing the menu altogether, changing the linked menu) will need to be made on both &lt;strong>Camp&lt;/strong> and &lt;strong>Camp Landing Page&lt;/strong> pages separately.&lt;/p>
+&lt;p>&lt;strong>Note:&lt;/strong> The menu references on Camp Subpages are copied to the header when the page is created. Any updates to those menus (new items, reordering) will be reflected on all subpages, but later changes to the blocks (removing the menu altogether, changing the linked menu) will need to be made on both &lt;strong>Camp&lt;/strong> and &lt;strong>Camp Landing Page&lt;/strong> pages separately.&lt;/p>
 &lt;/blockquote>
-&lt;p>Camp Landing Pages are not automatically added to the Camp Menu of their corresponding &lt;strong>Camp&lt;/strong>. Be sure to add the newly created &lt;strong>Camp Landing Page&lt;/strong> to the &lt;strong>Camp Menu&lt;/strong> so that it&amp;rsquo;s properly linked.&lt;/p>
+&lt;p>Camp Subpage are not automatically added to the Camp Menu of their corresponding &lt;strong>Camp&lt;/strong>. Be sure to add the newly created &lt;strong>Camp Subpage&lt;/strong> to the &lt;strong>Camp Menu&lt;/strong> so that it&amp;rsquo;s properly linked.&lt;/p>
 &lt;h3 id="layout-builder-blocks">Layout Builder Blocks&lt;/h3>
 &lt;p>Camp pages have a number of specialized components that utilize the structured data (fields) that already exist on your branch page in newly designed Layout Builder Blocks.&lt;/p>
 &lt;p>In addition to using many of the standard

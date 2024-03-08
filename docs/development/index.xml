@@ -393,7 +393,160 @@ request, on every CI build in the future.&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">]);&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="javascript-includes">JavaScript includes&lt;/h1>
 &lt;p>
-&lt;img src="https://user-images.githubusercontent.com/563412/122801945-6f28b700-d2cd-11eb-8d0c-694432e8cbf0.png" alt="image" />&lt;/p></description></item><item><title>Docs: Composer</title><link>/docs/development/composer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/composer/</guid><description>
+&lt;img src="https://user-images.githubusercontent.com/563412/122801945-6f28b700-d2cd-11eb-8d0c-694432e8cbf0.png" alt="image" />&lt;/p></description></item><item><title>Docs: Colorways</title><link>/docs/development/colorways/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/colorways/</guid><description>
+&lt;h2 id="css-variables">CSS Variables&lt;/h2>
+&lt;h3 id="base-variables">Base variables&lt;/h3>
+&lt;p>We start by defining a base set of colors based on the &amp;ldquo;Y Color Wheel and Neighbored Color Zones&amp;rdquo; from the &amp;ldquo;Websites &amp;amp; Platforms Style Guide&amp;rdquo;, available in the
+&lt;a href="https://theybrand.org/" target="_blank">YMCA Brand Resource Center&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/development/colorways/colorways--colorwheel.png" title="View original image">
+&lt;img alt="A color wheel with labels corresponding to the official YMCA colors." srcset="
+/docs/development/colorways/colorways--colorwheel_hufde3497f9c9f7c2553bd44df6f912a4c_316980_bbd02a243acb039a14141212e74593fd.png 458w,
+/docs/development/colorways/colorways--colorwheel_hufde3497f9c9f7c2553bd44df6f912a4c_316980_474be4e52d9064b300a54b172e2e98cd.png 726w,
+/docs/development/colorways/colorways--colorwheel_hufde3497f9c9f7c2553bd44df6f912a4c_316980_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/development/colorways/colorways--colorwheel_hufde3497f9c9f7c2553bd44df6f912a4c_316980_bbd02a243acb039a14141212e74593fd.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Note:&lt;/strong> RGB variable values are not complete color definitions and must be wrapped in &lt;code>rgb{a}()&lt;/code>, like &lt;code>background-color: rgb(var(--ylb-color-rgb-red-dark), 0.5);&lt;/code>.&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-scss" data-lang="scss">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#5c35cc;font-weight:bold">:root&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-red-dark&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#a92b31&lt;span class="px-2 ms-1" style="background-color:#a92b31;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-red-dark&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">169, 43, 49&lt;span class="px-2 ms-1" style="background-color:rgb(169, 43, 49);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-red&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#ed1c24&lt;span class="px-2 ms-1" style="background-color:#ed1c24;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-red&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">237, 28, 36&lt;span class="px-2 ms-1" style="background-color:rgb(237, 28, 36);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-red-light&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#f15922&lt;span class="px-2 ms-1" style="background-color:#f15922;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-red-light&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">241, 89, 34&lt;span class="px-2 ms-1" style="background-color:rgb(241, 89, 34);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-orange-dark&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#dd5828&lt;span class="px-2 ms-1" style="background-color:#dd5828;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-orange-dark&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">221, 88, 40&lt;span class="px-2 ms-1" style="background-color:rgb(221, 88, 40);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-orange&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#f47920&lt;span class="px-2 ms-1" style="background-color:#f47920;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-orange&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">244, 121, 32&lt;span class="px-2 ms-1" style="background-color:rgb(244, 121, 32);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-orange-light&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#fcaf17&lt;span class="px-2 ms-1" style="background-color:#fcaf17;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-orange-light&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">252, 175, 23&lt;span class="px-2 ms-1" style="background-color:rgb(252, 175, 23);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-green-dark&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#006b6b&lt;span class="px-2 ms-1" style="background-color:#006b6b;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-green-dark&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">0, 107, 107&lt;span class="px-2 ms-1" style="background-color:rgb(0, 107, 107);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-green&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#01a490&lt;span class="px-2 ms-1" style="background-color:#01a490;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-green&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">1, 164, 144&lt;span class="px-2 ms-1" style="background-color:rgb(1, 164, 144);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-green-light&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#20bdbe&lt;span class="px-2 ms-1" style="background-color:#20bdbe;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-green-light&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">32, 189, 190&lt;span class="px-2 ms-1" style="background-color:rgb(32, 189, 190);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-blue-dark&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#0060af&lt;span class="px-2 ms-1" style="background-color:#0060af;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-blue-dark&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">0, 96, 175&lt;span class="px-2 ms-1" style="background-color:rgb(0, 96, 175);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-blue&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#0089d0&lt;span class="px-2 ms-1" style="background-color:#0089d0;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-blue&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">0, 137, 208&lt;span class="px-2 ms-1" style="background-color:rgb(0, 137, 208);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-blue-light&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#00aeef&lt;span class="px-2 ms-1" style="background-color:#00aeef;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-blue-light&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">0, 174, 239&lt;span class="px-2 ms-1" style="background-color:rgb(0, 174, 239);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-purple-dark&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#5c2e91&lt;span class="px-2 ms-1" style="background-color:#5c2e91;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-purple-dark&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">92, 46, 145&lt;span class="px-2 ms-1" style="background-color:rgb(92, 46, 145);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-purple&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#92278f&lt;span class="px-2 ms-1" style="background-color:#92278f;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-purple&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">146, 39, 143&lt;span class="px-2 ms-1" style="background-color:rgb(146, 39, 143);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-purple-light&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#c6168d&lt;span class="px-2 ms-1" style="background-color:#c6168d;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-purple-light&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">198, 22, 141&lt;span class="px-2 ms-1" style="background-color:rgb(198, 22, 141);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-white&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#FFFFFF&lt;span class="px-2 ms-1" style="background-color:#FFFFFF;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-white&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">255, 255, 255&lt;span class="px-2 ms-1" style="background-color:rgb(255, 255, 255);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-light-grey-1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#f2f2f2&lt;span class="px-2 ms-1" style="background-color:#f2f2f2;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-light-grey-1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">242, 242, 242&lt;span class="px-2 ms-1" style="background-color:rgb(242, 242, 242);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-light-grey-2&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#e7e7e7&lt;span class="px-2 ms-1" style="background-color:#e7e7e7;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-light-grey-2&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">231, 231, 231&lt;span class="px-2 ms-1" style="background-color:rgb(231, 231, 231);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-light-grey-3&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#cccccc&lt;span class="px-2 ms-1" style="background-color:#cccccc;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-light-grey-3&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">204, 204, 204&lt;span class="px-2 ms-1" style="background-color:rgb(204, 204, 204);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-grey-1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#636466&lt;span class="px-2 ms-1" style="background-color:#636466;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-grey-1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">99, 100, 102&lt;span class="px-2 ms-1" style="background-color:rgb(99, 100, 102);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-grey-2&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#4F4F4F&lt;span class="px-2 ms-1" style="background-color:#4F4F4F;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-grey-2&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">79, 79, 79&lt;span class="px-2 ms-1" style="background-color:rgb(79, 79, 79);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-grey-3&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#3F4042&lt;span class="px-2 ms-1" style="background-color:#3F4042;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-grey-3&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">63, 64, 66&lt;span class="px-2 ms-1" style="background-color:rgb(63, 64, 66);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-dark-grey-1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#2F2F2F&lt;span class="px-2 ms-1" style="background-color:#2F2F2F;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-dark-grey-1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">47, 47, 47&lt;span class="px-2 ms-1" style="background-color:rgb(47, 47, 47);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-dark-grey-2&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#231F20&lt;span class="px-2 ms-1" style="background-color:#231F20;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-dark-grey-2&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">35, 31, 32&lt;span class="px-2 ms-1" style="background-color:rgb(35, 31, 32);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-black&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#000000&lt;span class="px-2 ms-1" style="background-color:#000000;">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--ylb-color-rgb-black&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">0, 0, 0&lt;span class="px-2 ms-1" style="background-color:rgb(0, 0, 0);">&lt;/span>&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="colorway-variables">Colorway variables&lt;/h3>
+&lt;p>Each colorway begins with four initial colors, derived from the above color wheel:&lt;/p>
+&lt;ul>
+&lt;li>PrimaryColor&lt;/li>
+&lt;li>SecondaryColor&lt;/li>
+&lt;li>TertiaryColor&lt;/li>
+&lt;li>PartnerColor&lt;/li>
+&lt;/ul>
+&lt;p>All page elements should be composed of these four variables, with &amp;ldquo;primary/secondary/tertiary&amp;rdquo; providing complimentary colors and &amp;ldquo;partner&amp;rdquo; providing a complimentary option for buttons or other calls to action.&lt;/p>
+&lt;p>Each variable is prefixed with &lt;code>ws&lt;/code>. RGB versions of these four options are provided for use with &lt;code>rgba()&lt;/code> styles.&lt;/p>
+&lt;p>Additionally, 5 variables are used to more specifically define the gradients in the Y logo:&lt;/p>
+&lt;ul>
+&lt;li>LogoChevronDark&lt;/li>
+&lt;li>LogoChevronMid&lt;/li>
+&lt;li>LogoChevronLight&lt;/li>
+&lt;li>LogoTriangleDark&lt;/li>
+&lt;li>LogoTriangleLight&lt;/li>
+&lt;/ul>
+&lt;p>These variables should not be used in page components outside the logo. The Canadian Y logo does not change colors, and therefore these extra colors are not needed for Canadian colorways.&lt;/p>
+&lt;p>All together, these variables make up a colorway:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsPrimaryColor&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsPrimaryColorRGB&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsSecondaryColor&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsSecondaryColorRGB&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsTertiaryColor&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsTertiaryColorRGB&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsPartnerColor&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsPartnerColorRGB&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsLogoChevronDark&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsLogoChevronMid&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsLogoChevronLight&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsLogoTriangleDark&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">--wsLogoTriangleLight&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>These variables should reference base variables, or other colors provided. Once combined, the full colorway definition should look like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-scss" data-lang="scss">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#5c35cc;font-weight:bold">:root&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsPrimaryColor&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-blue-dark&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsPrimaryColorRGB&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-rgb-blue-dark&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsSecondaryColor&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-blue&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsSecondaryColorRGB&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-rgb-blue&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsTertiaryColor&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-blue-light&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsTertiaryColorRGB&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-rgb-blue-light&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsPartnerColor&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-purple-dark&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsPartnerColorRGB&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-rgb-purple-dark&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsLogoChevronDark&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-blue-dark&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsLogoChevronMid&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-blue&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsLogoChevronLight&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-blue-light&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsLogoTriangleDark&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-purple-dark&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">--wsLogoTriangleLight&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">var&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">ylb-color-purple-light&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="logo-colors">Logo Colors&lt;/h2>
+&lt;p>In order to provide consistency across colorways and reduce code duplication, the logo has been decomposed into 6 sections:&lt;/p>
+&lt;ul>
+&lt;li>&amp;ldquo;the&amp;rdquo;&lt;/li>
+&lt;li>&amp;ldquo;chevron&amp;rdquo;&lt;/li>
+&lt;li>&amp;ldquo;ymca&amp;rdquo;&lt;/li>
+&lt;li>&amp;ldquo;triangle&amp;rdquo;&lt;/li>
+&lt;li>&amp;ldquo;registeredtm&amp;rdquo;&lt;/li>
+&lt;li>&amp;ldquo;areas-of-impact&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;p>The &amp;ldquo;chevron&amp;rdquo; and &amp;ldquo;triangle&amp;rdquo; components are composed of &lt;code>radialGradient&lt;/code> elements which leverage the additional &lt;code>wsLogo&lt;/code> variables defined above. The other components use the existing colorway variables. Each component is a &lt;code>path&lt;/code> with an &lt;code>id&lt;/code> and the color defined in a &lt;code>fill&lt;/code>.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/development/colorways/colorways--logo-breakdown.png" title="View original image">
+&lt;img alt="The YMCA logo with labels corresponding to the colors used in each component as described in text below." srcset="
+/docs/development/colorways/colorways--logo-breakdown_hub1bc5513797e995a778dac422ab1ce69_99867_08f7df73006a33de5dd469cf3c53db7e.png 458w,
+/docs/development/colorways/colorways--logo-breakdown_hub1bc5513797e995a778dac422ab1ce69_99867_721d977d723983caf3f61bed7353238a.png 726w,
+/docs/development/colorways/colorways--logo-breakdown_hub1bc5513797e995a778dac422ab1ce69_99867_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/development/colorways/colorways--logo-breakdown_hub1bc5513797e995a778dac422ab1ce69_99867_08f7df73006a33de5dd469cf3c53db7e.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>#logo-the&lt;/code> uses &lt;code>--wsSecondaryColor&lt;/code>&lt;/li>
+&lt;li>&lt;code>#logo-chevron&lt;/code> uses a gradient composed of (from top to bottom) &lt;code>--wsLogoChevronLight&lt;/code>, &lt;code>--wsLogoChevronMid&lt;/code>, and &lt;code>--wsLogoChevronDark&lt;/code>&lt;/li>
+&lt;li>&lt;code>#logo-ymca&lt;/code> uses &lt;code>--wsPartnerColor&lt;/code>&lt;/li>
+&lt;li>&lt;code>#logo-triangle&lt;/code> uses a gradient composed of (from left to right) &lt;code>--wsLogoTriangleLight&lt;/code> and &lt;code>--wsLogoTriangleDark&lt;/code>&lt;/li>
+&lt;li>&lt;code>#logo-registeredtm uses &lt;/code>&amp;ndash;wsPartnerColor`&lt;/li>
+&lt;li>&lt;code>#logo-areas-of-interest&lt;/code> uses &lt;code>--wsSecondaryColor&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="y-styles">Y Styles&lt;/h2>
+&lt;p>Each &amp;ldquo;Y Styles&amp;rdquo; option enables a different library, as seen in
+&lt;a href="https://github.com/YCloudYUSA/y_lb/blob/main/y_lb.ws_style_option.yml" target="_blank">y_lb.ws_style_option.yml&lt;/a>. Those libraries
+&lt;a href="https://www.drupal.org/node/2497313" target="_blank">can be overridden by a custom theme&lt;/a> if necessary.&lt;/p></description></item><item><title>Docs: Composer</title><link>/docs/development/composer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/composer/</guid><description>
 &lt;p>Please always make sure &lt;code>composer.lock&lt;/code> file is updated after any changes in &lt;code>composer.json&lt;/code> file.
 You can use &lt;code>composer update&lt;/code> command to update any package, in this case composer will take care about updating of &lt;code>composer.lock&lt;/code> file.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>composer update drupal/metatag
@@ -3011,55 +3164,4 @@ Given the fact
 &lt;li>run &lt;code>drush updatedb -y&lt;/code> &amp;lt;- this will fail for the first time ( Media not installed yet ), disregard&lt;/li>
 &lt;li>run &lt;code>drush updatedb -y&lt;/code> &amp;lt;- this should run properly.&lt;/li>
 &lt;li>run &lt;code>drush entup&lt;/code>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Upgrade path</title><link>/docs/development/upgrade-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/upgrade-path/</guid><description>
-&lt;p>All changes in configurations should be added to appropriate hook_update_N in order to update already existing environments. We suggest to use
-&lt;a href="https://www.drupal.org/project/confi" target="_blank">https://www.drupal.org/project/confi&lt;/a> for working with hook_update_N.&lt;/p>
-&lt;h3 id="openyinstall-in-profile">&lt;code>openy.install&lt;/code> in profile&lt;/h3>
-&lt;p>In this file we should put updates that are related to the distribution in general and don&amp;rsquo;t fit into any feature.&lt;/p>
-&lt;ul>
-&lt;li>Enable/Disable module&lt;/li>
-&lt;li>General configs&lt;/li>
-&lt;/ul>
-&lt;h3 id="openy_install-in-modules">&lt;code>openy_*.install&lt;/code> in modules&lt;/h3>
-&lt;p>In case if you update some configuration for specific feature, make sure that you put updates into appropriate module.&lt;/p>
-&lt;h3 id="revert-only-specific-property-from-config">Revert only specific property from config&lt;/h3>
-&lt;p>With
-&lt;a href="https://www.drupal.org/project/confi" target="_blank">config_import module&lt;/a> help we can update only part from full config.&lt;/p>
-&lt;p>For updating specific property in config (use service &amp;lsquo;openy_upgrade_tool.param_updater&amp;rsquo;):&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>go to related to this config module&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>create new hook_update_N in openy_*.install file&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>in update add next code (this is example):&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>$config = drupal_get_path(&amp;#39;module&amp;#39;, &amp;#39;openy_media_image&amp;#39;) . &amp;#39;/config/install/views.view.images_library.yml&amp;#39;;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$config_importer = \Drupal::service(&amp;#39;openy_upgrade_tool.param_updater&amp;#39;);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$config_importer-&amp;gt;update($config, &amp;#39;views.view.images_library&amp;#39;, &amp;#39;display.default.display_options.pager&amp;#39;);
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Where:&lt;/p>
-&lt;ul>
-&lt;li>$config variable contains path to config with config name&lt;/li>
-&lt;li>&amp;ldquo;views.view.images_library&amp;rdquo; - config name&lt;/li>
-&lt;li>&amp;ldquo;display.default.display_options.pager&amp;rdquo; - config specific property (you can set value from a nested array with variable depth)&lt;/li>
-&lt;/ul>
-&lt;h3 id="revert-full-configs">Revert full configs&lt;/h3>
-&lt;p>For updating full config or several configs from directory use service &amp;lsquo;openy_upgrade_tool.importer&amp;rsquo;.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>$config_dir = drupal_get_path(&amp;#39;module&amp;#39;, &amp;#39;openy_media_image&amp;#39;) . &amp;#39;/config/install&amp;#39;;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$config_importer = \Drupal::service(&amp;#39;openy_upgrade_tool.importer&amp;#39;);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$config_importer-&amp;gt;setDirectory($config_dir);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$config_importer-&amp;gt;importConfigs([&amp;#39;views.view.images_library&amp;#39;]);
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Where:&lt;/p>
-&lt;ul>
-&lt;li>$config_dir - path to directory with config&lt;/li>
-&lt;li>&amp;ldquo;views.view.images_library&amp;rdquo; - config name&lt;/li>
-&lt;/ul>
-&lt;p>Also you can update several configs from directory:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>$config_importer-&amp;gt;importConfigs([
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#39;views.view.images_library&amp;#39;,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#39;views.view.example_view&amp;#39;,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>]);
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
+&lt;/ul></description></item></channel></rss>

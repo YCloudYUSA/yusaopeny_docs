@@ -49,7 +49,23 @@
 &lt;div class="alert alert-primary" role="alert">
 &lt;h4 class="alert-heading">Warning&lt;/h4>
 This is a warning.
-&lt;/div></description></item><item><title>Docs: Linting</title><link>/docs/contribution-guidelines/linting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/contribution-guidelines/linting/</guid><description>
+&lt;/div>
+&lt;p>Although blockquotes sometimes work just as well:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go-html-template" data-lang="go-html-template">&lt;span style="display:flex;">&lt;span>&amp;gt; **Warning:** This is a warning.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
+&lt;p>&lt;strong>Warning:&lt;/strong> This is a warning.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="color-swatches">Color swatches&lt;/h2>
+&lt;p>The &lt;code>color&lt;/code> shortcode can be used to display a small color swatch after a hex or RGB color value. Pass one quoted value for hex, or three numeric values for RGB.&lt;/p>
+&lt;p>When using this shortcode in code fences, use &lt;code>&amp;lt;&amp;gt;&lt;/code> instead of &lt;code>%%&lt;/code> as the shortcode delimiter so that the code is
+&lt;a href="https://gohugo.io/content-management/shortcodes/#shortcodes-without-markdown" target="_blank">not further rendered&lt;/a>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-txt" data-lang="txt">&lt;span style="display:flex;">&lt;span>```scss
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>color: {{&amp;lt; color &amp;#34;#a92b31&amp;#34; &amp;gt;}}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>color: {{&amp;lt; color 169 43 49 &amp;gt;}}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>```
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-scss" data-lang="scss">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c4a000">color&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">#a92b31&lt;span class="px-2 ms-1" style="background-color:#a92b31;">&lt;/span>&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c4a000">color&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">169, 43, 49&lt;span class="px-2 ms-1" style="background-color:rgb(169, 43, 49);">&lt;/span>&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Linting</title><link>/docs/contribution-guidelines/linting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/contribution-guidelines/linting/</guid><description>
 &lt;blockquote>
 &lt;p>lint•er : &lt;em>noun&lt;/em>&lt;/p>
 &lt;ul>
