@@ -1720,7 +1720,112 @@ You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p></description
 &lt;/ul>
 &lt;h2 id="layout-builder-and-solr-search">Layout Builder and Solr search&lt;/h2>
 &lt;p>Solr search can be used with
-&lt;a href="../../user-documentation/layout-builder">Layout Builder&lt;/a>, and requires a few extra steps:&lt;/p>
+&lt;a href="../../user-documentation/layout-builder">Layout Builder&lt;/a>, and requires a few extra steps.&lt;/p>
+&lt;h3 id="configure-solr-to-index-the-new-content-types">Configure Solr to index the new content types&lt;/h3>
+&lt;p>In order for Solr to index the new content types, they need to be added to the index.&lt;/p>
+&lt;ol>
+&lt;li>Enable the YMCA Website Services Search API (&lt;code>openy_search_api&lt;/code>) module if not already enabled.&lt;/li>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Configuration&lt;/strong> &amp;gt; &lt;strong>Search and metadata&lt;/strong> &amp;gt; &lt;strong>Search API&lt;/strong>, then &lt;strong>Edit&lt;/strong> the &lt;strong>Search content&lt;/strong> index. (&lt;code>/admin/config/search/search-api/index/search_content/edit&lt;/code>)&lt;/li>
+&lt;li>Configure Solr to index the Layout Builder content types:
+&lt;ul>
+&lt;li>Scroll down, expand &lt;strong>Configure the &lt;em>Content&lt;/em> datasource&lt;/strong>, and check the content types that should be indexed for search.
+&lt;figure class="image-caption">
+&lt;a href="/docs/development/install-solr-site-search-for-open-y/solr--choose-content-types.png" title="View original image">
+&lt;img alt="&amp;amp;ldquo;Configure the content datasource&amp;amp;rdquo; options" srcset="
+/docs/development/install-solr-site-search-for-open-y/solr--choose-content-types_hu6462e829d092bc726018de4c8840e9eb_79471_23bfa40c70449dcbf744266d31ff7cb6.png 458w,
+/docs/development/install-solr-site-search-for-open-y/solr--choose-content-types_hu6462e829d092bc726018de4c8840e9eb_79471_2ba0efe1a36a0fa0d939f11017731d43.png 726w,
+/docs/development/install-solr-site-search-for-open-y/solr--choose-content-types_hu6462e829d092bc726018de4c8840e9eb_79471_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/development/install-solr-site-search-for-open-y/solr--choose-content-types_hu6462e829d092bc726018de4c8840e9eb_79471_23bfa40c70449dcbf744266d31ff7cb6.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/li>
+&lt;li>Save the form.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Configure how Solr indexes the Layout Builder content types:
+&lt;ul>
+&lt;li>From the &lt;strong>Search API&lt;/strong> configuration, open the dropdown for the &lt;strong>Search content&lt;/strong> index and choose &lt;strong>Fields&lt;/strong>.
+&lt;figure class="image-caption">
+&lt;a href="/docs/development/install-solr-site-search-for-open-y/solr--edit-fields.png" title="View original image">
+&lt;img alt="The &amp;amp;ldquo;fields&amp;amp;rdquo; option in the options dropdown of the Search API configuration" srcset="
+/docs/development/install-solr-site-search-for-open-y/solr--edit-fields_hu7aae20c24d8cdfdf61c9d529bc271852_43932_76f1fe65bb95ac70d8ddfc28b422ee6b.png 458w,
+/docs/development/install-solr-site-search-for-open-y/solr--edit-fields_hu7aae20c24d8cdfdf61c9d529bc271852_43932_53ba67846d325dbcb906fbfef8320cee.png 726w,
+/docs/development/install-solr-site-search-for-open-y/solr--edit-fields_hu7aae20c24d8cdfdf61c9d529bc271852_43932_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/development/install-solr-site-search-for-open-y/solr--edit-fields_hu7aae20c24d8cdfdf61c9d529bc271852_43932_76f1fe65bb95ac70d8ddfc28b422ee6b.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/li>
+&lt;li>To the right of the &lt;strong>Rendered HTML output&lt;/strong> field options, choose &lt;strong>Edit&lt;/strong>.&lt;/li>
+&lt;li>For each newly added content type, switch &amp;ldquo;Don&amp;rsquo;t include the rendered item&amp;rdquo; to the right view mode.
+&lt;figure class="image-caption">
+&lt;a href="/docs/development/install-solr-site-search-for-open-y/solr--view-modes.png" title="View original image">
+&lt;img alt="Choose the view mode for each content type." srcset="
+/docs/development/install-solr-site-search-for-open-y/solr--view-modes_hu0b8b544dfe9bff43dc8cae213347fa08_105782_72f01b85209c035528c49988dec7c6f2.png 458w,
+/docs/development/install-solr-site-search-for-open-y/solr--view-modes_hu0b8b544dfe9bff43dc8cae213347fa08_105782_a9ef8fc90d34920febc66290d41ab2a0.png 726w,
+/docs/development/install-solr-site-search-for-open-y/solr--view-modes_hu0b8b544dfe9bff43dc8cae213347fa08_105782_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/development/install-solr-site-search-for-open-y/solr--view-modes_hu0b8b544dfe9bff43dc8cae213347fa08_105782_72f01b85209c035528c49988dec7c6f2.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;ul>
+&lt;li>
+&lt;p>In general, new Layout Builder specific content types will use the &amp;ldquo;Default&amp;rdquo; view mode, while older Layout Builder-compatible content types should use the &amp;ldquo;Full content&amp;rdquo; view mode.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Content type&lt;/th>
+&lt;th>View mode&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Article (LB)&lt;/td>
+&lt;td>Default&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Branch&lt;/td>
+&lt;td>Full&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Event (LB)&lt;/td>
+&lt;td>Default&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Camp&lt;/td>
+&lt;td>Full&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Camp Subpage&lt;/td>
+&lt;td>Full&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Facility&lt;/td>
+&lt;td>Full&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Landing Page (LB)&lt;/td>
+&lt;td>Default&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Program&lt;/td>
+&lt;td>Full&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Program Subcategory&lt;/td>
+&lt;td>Full&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/li>
+&lt;li>
+&lt;p>Save the page.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Once your changes have been saved, re-index the content to see the changes reflected in search results.&lt;/li>
+&lt;/ol>
+&lt;h3 id="set-up-a-layout-builder-search-page">Set up a Layout Builder search page&lt;/h3>
 &lt;ol>
 &lt;li>If you have an existing site, disable the old search page:
 &lt;ul>

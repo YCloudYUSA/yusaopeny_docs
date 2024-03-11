@@ -671,6 +671,14 @@
 &lt;a href="https://support.google.com/analytics/answer/10071811?hl=en" target="_blank">[GA4] Set up cross-domain measurement&lt;/a> for more information.&lt;/p>
 &lt;p>Successful cross-domain tracking also requires the destination application to retain the passed query strings and load them into the corresponding tracking property.&lt;/p>
 &lt;/blockquote>
+&lt;h3 id="requesting-cross-domain-tracking-support">Requesting cross-domain tracking support&lt;/h3>
+&lt;p>Many Customer Relation Management (CRM) systems and Member Management Systems integrate with YMCA websites. Those systems often need guidance on hwo to maintain cross-domain tracking support.&lt;/p>
+&lt;p>Entrance to the CRM/MMS often involves multiple redirects which may drop the required query strings.&lt;/p>
+&lt;p>When discussing cross-domain support with your vendor, we recommend requesting:&lt;/p>
+&lt;blockquote>
+&lt;p>Please support passing query strings/parameters through redirects, specifically maintaining the &lt;code>_gl&lt;/code> parameter.&lt;/p>
+&lt;/blockquote>
+&lt;p>You may also need to request that your GTM/GA code be added to the CRM/MMS to report back these parameters.&lt;/p>
 &lt;h3 id="configuration-1">Configuration&lt;/h3>
 &lt;ol>
 &lt;li>Enable the &amp;ldquo;YMCA Website Services Cross-domain Tracking (XDT)&amp;rdquo; module at &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong>, or via drush:
@@ -734,4 +742,28 @@
 &lt;h3 id="customizing-faqs">Customizing FAQs&lt;/h3>
 &lt;p>Due to the complexity of the FAQ data, the structured data is
 &lt;a href="https://git.drupalcode.org/project/lb_accordion/-/blob/1.0.x/lb_accordion.module?ref_type=heads#L40" target="_blank">managed entirely in code&lt;/a> and is not customizable via the Drupal admin. If you need specific customizations, please post your ideas in Slack or suggest them on
-&lt;a href="/roadmap">the Roadmap&lt;/a> for the core team to discuss and implement.&lt;/p></description></item></channel></rss>
+&lt;a href="/roadmap">the Roadmap&lt;/a> for the core team to discuss and implement.&lt;/p></description></item><item><title>Docs: How to use two-factor authentication</title><link>/docs/howto/use-2fa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/howto/use-2fa/</guid><description>
+&lt;p>Enabling two-factor authentication (2FA or TFA) adds a layer of security to selected roles like admin while allowing other users to log in to the site only with basic authentication with a Drupal username and password.&lt;/p>
+&lt;p>The community-contributed
+&lt;a href="https://www.drupal.org/project/tfa" target="_blank">TFA module&lt;/a> is the recommended path to requiring 2FA for users.&lt;/p>
+&lt;h2 id="requirements">Requirements&lt;/h2>
+&lt;p>The TFA module requires the PHP OpenSSL extension. This is installed with most modern stacks, but you can check to see if it is running with: &lt;code>php -i | grep openssl&lt;/code>.&lt;/p>
+&lt;p>Add the TFA module and its soft dependency:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>composer require drupal/tfa drupal/real_aes
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="installing">Installing&lt;/h2>
+&lt;p>We recommend you follow the full installation instructions
+&lt;a href="https://git.drupalcode.org/project/tfa/-/blob/8.x-1.x/README.md" target="_blank">for the 8.x branch&lt;/a> or
+&lt;a href="https://project.pages.drupalcode.org/tfa/" target="_blank">the 2.x branch&lt;/a>.&lt;/p>
+&lt;p>Once you configure an encryption key and an encryption profile, you will then be able to enable TFA at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Configuration&lt;/strong> &amp;gt; &lt;strong>People&lt;/strong> &amp;gt; &lt;strong>TFA&lt;/strong> (&lt;code>/admin/config/people/tfa&lt;/code>).&lt;/p>
+&lt;p>Once you enable TFA, you will have the option to require it for specific roles.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/howto/use-2fa/2fa-roles.png" title="View original image">
+&lt;img alt="A screenshot showing &amp;amp;ldquo;Roles required to set up TFA&amp;amp;rdquo; with checkboxes for each role on the site." srcset="
+/docs/howto/use-2fa/2fa-roles_hubb4345be40f354ab0d51b3cb27fbbc1e_21935_52747e140db7d1ca69ace21213df3a56.png 458w,
+/docs/howto/use-2fa/2fa-roles_hubb4345be40f354ab0d51b3cb27fbbc1e_21935_d9218d86dfe9b7129c7dee21ed667eb2.png 726w,
+/docs/howto/use-2fa/2fa-roles_hubb4345be40f354ab0d51b3cb27fbbc1e_21935_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/howto/use-2fa/2fa-roles_hubb4345be40f354ab0d51b3cb27fbbc1e_21935_52747e140db7d1ca69ace21213df3a56.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p></description></item></channel></rss>

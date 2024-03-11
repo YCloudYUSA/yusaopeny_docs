@@ -1,4 +1,41 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Docs</title><link>/</link><description>Recent content in YMCA Website Services Docs on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Digital Services Release 10.3.1.1</title><link>/blog/2023/12/12/digital-services-release-10.3.1.1/</link><pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate><guid>/blog/2023/12/12/digital-services-release-10.3.1.1/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Docs</title><link>/</link><description>Recent content in YMCA Website Services Docs on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Polyfill Security Notice</title><link>/blog/2024/02/29/polyfill-security-notice/</link><pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate><guid>/blog/2024/02/29/polyfill-security-notice/</guid><description>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>YMCA Website Services relies on some external code to provide broad browser support to JavaScript applications (like Virtual Y, Activity Finder, and Group Schedules). One of those codebases recently changed owners, which resulted in sporadic failures.&lt;/p>
+&lt;p>Users can incorporate the
+&lt;a href="https://github.com/open-y-subprojects/openy_custom/pull/66" target="_blank">use Fastly polyfill patch for the &lt;code>openy_custom&lt;/code> module&lt;/a> as soon as possible to mitigate the issue.&lt;/p>
+&lt;h2 id="what-is-the-problem">What is the problem?&lt;/h2>
+&lt;blockquote>
+&lt;p>Polyfill is a service that makes web development less frustrating by selectively polyfilling just what the browser needs.&lt;/p>
+&lt;/blockquote>
+&lt;p>In late February 2024, some YMCA websites reported sporadic outages in their Virtual Y applications. After some investigation, the core team discovered the outages were the result of the Polyfill library not being available, which temporarily caused Virtual Y not to load.&lt;/p>
+&lt;p>A full discussion of the problem can be found on:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://github.com/polyfillpolyfill/polyfill-service/issues/2834" target="_blank">Is it true that polyfill.io hosting is going to be owned by a Chinese company? (GitHub)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/polyfillpolyfill/polyfill-service/issues/2833" target="_blank">no-version scenario changed, maybe?&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://polykill.io/" target="_blank">Pollykill.io&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-bad-is-it">How bad is it?&lt;/h2>
+&lt;p>While the change could theoretically be exploited to inject malicious code, there is no known risk of data loss or the ability for third parties to compromise sites.&lt;/p>
+&lt;p>The only known impact is the sporadic loss of functionality of some pieces of YMCA sites.&lt;/p>
+&lt;p>Using the
+&lt;a href="https://security.drupal.org/riskcalc" target="_blank">Drupal Security Risk Calculator&lt;/a> this risk has been assessed as 8/25 (Less Critical) &lt;code>AC:Complex/A:None/CI:None/II:None/E:Theoretical/TD:Default&lt;/code>.&lt;/p>
+&lt;p>Here&amp;rsquo;s what that means:&lt;/p>
+&lt;ul>
+&lt;li>Access complexity: It is a complex/unintuitive process for an attacker to leverage the vulnerability.&lt;/li>
+&lt;li>Authentication: No authentication is needed for an exploit to be successful.&lt;/li>
+&lt;li>Confidentiality Impact: The vulnerability does not cause non-public data to become accessible.&lt;/li>
+&lt;li>Integrity Impact: The vulnerability can not allow system data to be compromised.&lt;/li>
+&lt;li>Zero-day Impact: An documented exploit does exist in the wild.&lt;/li>
+&lt;li>Target Distribution: Default module configurations are exploitable, but a config change can disable the exploit.&lt;/li>
+&lt;/ul>
+&lt;h2 id="what-do-we-do">What do we do?&lt;/h2>
+&lt;p>Fastly (a trusted CDN provider) has taken a snapshot of the code before it was sold and is
+&lt;a href="https://polyfill-fastly.io" target="_blank">hosting it independently&lt;/a>.&lt;/p>
+&lt;p>Please ask your agency partners to incorporate the
+&lt;a href="https://github.com/open-y-subprojects/openy_custom/pull/66" target="_blank">use Fastly polyfill patch for the &lt;code>openy_custom&lt;/code> module&lt;/a> as soon as possible. For those with Virtual Y websites hosted with YMCA’s Cloud Hosting Service, the team will roll out the patch for you and there is no action needed on your part.&lt;/p></description></item><item><title>Blog: Digital Services Release 10.3.1.1</title><link>/blog/2023/12/12/digital-services-release-10.3.1.1/</link><pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate><guid>/blog/2023/12/12/digital-services-release-10.3.1.1/</guid><description>
 &lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;/h2>
 &lt;h3 id="promotion-content-type">Promotion Content Type&lt;/h3>
 &lt;p>&lt;strong>Promotions&lt;/strong> are pieces of content with scheduled start and end dates that can be used for displaying internal marketing and ad campaigns. Content editors can easily schedule, manage and place multiple promotions throughout their website via the Drupal admin interface.&lt;/p>
