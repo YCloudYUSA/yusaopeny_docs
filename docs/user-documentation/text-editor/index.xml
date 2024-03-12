@@ -120,7 +120,7 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab" tabindex="2">
 &lt;h3 id="using-button-classes">Using button classes&lt;/h3>
 &lt;p>The
 &lt;a href="../building-buttons">Button editor&lt;/a> that existed in the prior version of the text editor (CKEditor 4) has
-&lt;a href="https://www.drupal.org/project/ckeditor_bootstrap_buttons/issues/3308035" target="_blank">not yet been ported to CKEditor 5 and Drupal 10&lt;/a>. Until that work is complete, content editors can add button classes in the Advanced Link Options.&lt;/p>
+&lt;a href="https://www.drupal.org/project/editor_advanced_link/issues/3423208" target="_blank">changed with CKEditor 5 and Drupal 10&lt;/a>. Content editors can now add button classes alongside the Advanced Link Options.&lt;/p>
 &lt;p>Create a button by adding
 &lt;a href="https://getbootstrap.com/docs/4.6/components/buttons/" target="_blank">Bootstrap classes&lt;/a> to a link:&lt;/p>
 &lt;ul>
@@ -131,14 +131,15 @@ id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab" tabindex="2">
 &lt;a href="../../layout-builder/code">Code&lt;/a> blocks.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Open the Advanced Options.&lt;/li>
-&lt;li>Add &lt;code>btn&lt;/code> plus a class from the list below to the &lt;strong>CSS classes&lt;/strong> field.
+&lt;li>Open the Bootstrap Button Options.&lt;/li>
+&lt;li>Add the button classes for Color, Size, and Style (see
+&lt;a href="#button-classes">Button Classes&lt;/a>). Do not use the &lt;code>btn&lt;/code> prefix when entering options in the Bootstrap Button fields, those will be added for you.
 &lt;figure class="image-caption">
-&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--button-classes.png" title="View original image">
-&lt;img alt="The advanced link options dialog with the CSS classes field outlined. In the field is the text &amp;amp;ldquo;btn btn-primary&amp;amp;rdquo;" srcset="
-/docs/user-documentation/text-editor/adding-links/adding-links--button-classes_hu111e122695e75164ba4dee4de4f7d88d_7062_2c10d3efe930f9d4d5cc4a4d03c1e788.png 458w,
-/docs/user-documentation/text-editor/adding-links/adding-links--button-classes_hu111e122695e75164ba4dee4de4f7d88d_7062_7821fe95ef18eaae97bfda52029fface.png 726w,
-/docs/user-documentation/text-editor/adding-links/adding-links--button-classes_hu111e122695e75164ba4dee4de4f7d88d_7062_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-links/adding-links--button-classes_hu111e122695e75164ba4dee4de4f7d88d_7062_2c10d3efe930f9d4d5cc4a4d03c1e788.png" />
+&lt;a href="/docs/user-documentation/text-editor/adding-links/adding-links--bootstrap-button-options.png" title="View original image">
+&lt;img alt="The bootstrap button options dialog. In the &amp;amp;ldquo;Color&amp;amp;rdquo; field is the text &amp;amp;ldquo;primary&amp;amp;rdquo;" srcset="
+/docs/user-documentation/text-editor/adding-links/adding-links--bootstrap-button-options_huab91987e30fecc39d14fadf11f7cec33_24623_3825a04312b227e67f44a83ee9a53512.png 458w,
+/docs/user-documentation/text-editor/adding-links/adding-links--bootstrap-button-options_huab91987e30fecc39d14fadf11f7cec33_24623_cacb03ade29774d299e3192a7a8555f2.png 726w,
+/docs/user-documentation/text-editor/adding-links/adding-links--bootstrap-button-options_huab91987e30fecc39d14fadf11f7cec33_24623_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/text-editor/adding-links/adding-links--bootstrap-button-options_huab91987e30fecc39d14fadf11f7cec33_24623_3825a04312b227e67f44a83ee9a53512.png" />
 &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
 &lt;/a>
 &lt;/figure>

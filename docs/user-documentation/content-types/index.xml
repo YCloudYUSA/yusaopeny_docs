@@ -49,7 +49,11 @@
 &lt;li>&lt;strong>Directions&lt;/strong>: By default, a link with directions is auto-generated using the address field of either the Event Location or Address. Use this field to substitute your own directions link.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Event Date(s)&lt;/strong>: Add a start and end date and time for the event. If the event does not have an end time, choose the start time for both the start and end.&lt;/li>
+&lt;li>&lt;strong>Event Date(s)&lt;/strong>: Add a start and end date and time for the event. If the event does not have an end time, choose the start time for both the start and end.
+&lt;ul>
+&lt;li>As of March 2023, this field supports recurring events.&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>&lt;strong>Header image&lt;/strong>: This image is displayed on the Article page and in listing views.&lt;/li>
 &lt;li>&lt;strong>Tags&lt;/strong>: References terms in the Tags vocabulary. See
 &lt;a href="../../taxonomy">Taxonomy&lt;/a> for more information on tags.&lt;/li>
