@@ -582,4 +582,8 @@ To change your shade of grey, you would go to &lt;strong>Structure&lt;/strong> &
 &lt;p>These modules also contain significant boilerplate migration code that a developer would need to migrate content from an older Drupal site or different CMS into the distribution.&lt;/p>
 &lt;p>Demo content is also installed on the
 &lt;a href="../../development/sandboxes">Sandboxes&lt;/a>.&lt;/p></description></item><item><title>Docs: Membership</title><link>/docs/user-documentation/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/</guid><description>
-&lt;p>The distribution has two methods for informing visitors of membership options and driving them to the member management system for sign-up&lt;/p></description></item><item><title>Docs: Schedules</title><link>/docs/user-documentation/schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/</guid><description/></item></channel></rss>
+&lt;p>The distribution has two methods for informing visitors of membership options and driving them to the member management system for sign-up&lt;/p></description></item><item><title>Docs: Schedules</title><link>/docs/user-documentation/schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/</guid><description>
+&lt;p>Under the hood, both of these applications use the
+&lt;a href="../content-types/activity-class-session">Activity/Class/Session Content Types&lt;/a> and the
+&lt;a href="https://github.com/ymcatwincities/ymca_sync" target="_blank">YMCA Sync&lt;/a> module to import content from an external API. These pieces together comprise the &amp;ldquo;Program Event Framework&amp;rdquo; which is highlighted in
+&lt;a href="https://www.drupal.org/case-study/schedules" target="_blank">a case study on drupal.org&lt;/a>.&lt;/p></description></item></channel></rss>

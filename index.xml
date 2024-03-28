@@ -1,4 +1,153 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Docs</title><link>/</link><description>Recent content in YMCA Website Services Docs on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Polyfill Security Notice</title><link>/blog/2024/02/29/polyfill-security-notice/</link><pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate><guid>/blog/2024/02/29/polyfill-security-notice/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – YMCA Website Services Docs</title><link>/</link><description>Recent content in YMCA Website Services Docs on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Digital Services Release 10.3.2.1</title><link>/blog/2024/03/28/digital-services-release-10.3.2.1/</link><pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate><guid>/blog/2024/03/28/digital-services-release-10.3.2.1/</guid><description>
+&lt;h2 id="bug-fixes">Bug Fixes&lt;/h2>
+&lt;ul>
+&lt;li>[Promotion Content Type] Admins can view a preview of promotion items before publishing. (#1333)&lt;/li>
+&lt;li>[Layout Builder] Fixed the button fill of the CTA button in the Program Categories listing view block. (#1334)&lt;/li>
+&lt;li>[Menus] Fixed issue with menu links with long text not wrapping on mobile devices. (#1337)&lt;/li>
+&lt;li>[Layout Builder] Made dropdown icons in the Article/Events filters clickable. (#1352)&lt;/li>
+&lt;li>Fixed broken Header in Lily theme. (#1353)&lt;/li>
+&lt;li>[Layout Builder] Fixed stretched body field inside Layout Builder components. (#1360)&lt;/li>
+&lt;li>[Layout Builder] Ensured .svg images are displayed in Icon Grid, Promo Card, and Simple Menu components. (#1361)&lt;/li>
+&lt;li>[Layout Builder] Fixed the description display for the Layout builder Staff Member component. (#1362)&lt;/li>
+&lt;li>[Layout Builder] Ensured primary design system color is applied to the heading of the Staff Members component. (#1363)&lt;/li>
+&lt;li>[Layout Builder] Fixed alignment of Ping-pong subheading. (#1364)&lt;/li>
+&lt;li>[Layout Builder] Fixed line height of the Testimonial component. (#1365)&lt;/li>
+&lt;li>[Layout Builder] Fixed styles of Donation component amount buttons. (#1366)&lt;/li>
+&lt;li>[Layout Builder] Fixed issues with subheading font styles. (#1367)&lt;/li>
+&lt;li>[Layout Builder] Fixed Primary button styles for the Ping Pong component. (#1368)&lt;/li>
+&lt;li>[Layout Builder] Fixed styles for WYSIWYG buttons. (#1370)&lt;/li>
+&lt;li>[Paragraphs] Long paragraph names aren&amp;rsquo;t fully visible in the admin select list. (#1371)&lt;/li>
+&lt;li>[Admin] Fixed an error on the admin/openy/integrations/daxko/programs-search page. (#1372)&lt;/li>
+&lt;li>[Layout Builder] Fixed issues with clickability in Accordion component UI. (#1374)&lt;/li>
+&lt;li>[Memberships] Resolved issue with Products not displaying in Membership Builder. (#1375)&lt;/li>
+&lt;li>[Layout Builder] Add to calendar link and + icon for LB Events have correct color. (#1382)&lt;/li>
+&lt;li>[Layout Builder] Resolved error on LB Event pages when a Canadian address is added. (#1385)&lt;/li>
+&lt;li>[Layout Builder] Applied Design System styles to the Related Events block. (#1387)&lt;/li>
+&lt;li>[Internal Schedules] Ensured users can filter schedule items by category. (#1389)&lt;/li>
+&lt;li>[Internal Schedules] PDF file now shows full calendar. (#1390)&lt;/li>
+&lt;li>[Internal Schedules] Events do not disappear from the calendar when an admin reloads the page. (#1395)&lt;/li>
+&lt;li>Removed instances of variables that were not referenced correctly. (#1404)&lt;/li>
+&lt;li>Ensured default styles are appearing on switchable content types. (#1408)&lt;/li>
+&lt;/ul></description></item><item><title>Blog: Digital Services Release 10.3.2</title><link>/blog/2024/03/12/digital-services-release-10.3.2/</link><pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate><guid>/blog/2024/03/12/digital-services-release-10.3.2/</guid><description>
+&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;/h2>
+&lt;h3 id="layout-builder-updates">Layout Builder Updates&lt;/h3>
+&lt;p>Continuing general cleanup, updated documentation, and improvements to the content editing experience for new Layout Builder components and content types.&lt;/p>
+&lt;p>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/" target="_blank">Learn more in our docs&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>Layout Builder - Program CT - Added styling for &amp;ldquo;Categories listing&amp;rdquo; view block to match the new styles for headers, buttons, etc. (#1273)&lt;/li>
+&lt;li>Layout Builder - Simple Content / WYSIWYG - Included approved brand headers colors into the default color selector. (#1256)&lt;/li>
+&lt;li>Layout Builder - Ping Pong - Created new default layout options for Ping Pongs (50/50, 33/66, 66/33) for admins to choose. (#1296)&lt;/li>
+&lt;li>Layout Builder - Branch Social Links - Added icons for X and Threads (#1286)&lt;/li>
+&lt;li>Layout Builder - Search - Ensured Layout Builder content types are
+&lt;a href="https://ds-docs.y.org/docs/development/install-solr-site-search-for-open-y/#configure-solr-to-index-the-new-content-types" target="_blank">indexed by internal search&lt;/a>. (#941)&lt;/li>
+&lt;li>Layout Builder - Made Membership Framework compatible with Layout Builder. (#900)&lt;/li>
+&lt;/ul>
+&lt;h3 id="activity-finder-updates">Activity Finder Updates&lt;/h3>
+&lt;ul>
+&lt;li>Allowed Activity Finder to use new location types that are created using the documented process of
+&lt;a href="https://ds-docs.y.org/docs/howto/map-settings-config/#adding-additional-location-types" target="_blank">adding additional location types&lt;/a>. (#1345)&lt;/li>
+&lt;/ul>
+&lt;h3 id="tractionrec-api-integration-for-activity-finder-1142">TractionRec API Integration for Activity Finder (#1142)&lt;/h3>
+&lt;ul>
+&lt;li>The
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec" target="_blank">project Readme&lt;/a> contains detailed instructions for the TractionRec API Integration configuration.
+&lt;ul>
+&lt;li>Written for Technical Team Member and Salesforce Administrator&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Setup will require coordination between both a development partner and a Salesforce admin. &lt;strong>&lt;em>Please work with your website Vendor.&lt;/em>&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="y360-schedules-integration">Y360 Schedules Integration&lt;/h3>
+&lt;ul>
+&lt;li>Included the
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/schedules/group-schedules/" target="_blank">Y360 Schedules Integration&lt;/a> into the YUSA Website Services Distribution. (#1099)&lt;/li>
+&lt;/ul>
+&lt;h3 id="admin--content-editor-enhancements">Admin / Content Editor Enhancements&lt;/h3>
+&lt;ul>
+&lt;li>Reviewed Branch, Camp, and Facility content types to reduce &amp;ldquo;CSS bleed&amp;rdquo; when Layout Builder is not used. (#1023)&lt;/li>
+&lt;li>Update build script to use the latest yusaopeny-project version on Sandboxes. (#1303)&lt;/li>
+&lt;li>Created upgrade path for btbutton ckeditor4 plugin. (#723)&lt;/li>
+&lt;li>Added new feature to handle internal weekly schedules, including:
+&lt;ul>
+&lt;li>Creating a front end admin interface for admins to edit / manage weekly schedules content. (#1266)&lt;/li>
+&lt;li>Added drag &amp;amp; drop functionality to the calendar for admins to manage weekly schedules content. (#1269)&lt;/li>
+&lt;li>Created weekly and daily calendar views for schedule content. (#1268)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Extended the functionality of the Promotion Content type to allow for use in more components and to allow admins to easily order promotional content. (#1175)&lt;/li>
+&lt;/ul>
+&lt;h3 id="event-lb-content-type-updates">Event (LB) Content Type Updates&lt;/h3>
+&lt;ul>
+&lt;li>Leveraging the
+&lt;a href="https://www.drupal.org/project/smart_date" target="_blank">Smart Date module&lt;/a> to allow for more flexibility for Event displays. (#910)&lt;/li>
+&lt;li>Improved front end display for a variety of event types all-day, single-day and multi-day events. (#495)&lt;/li>
+&lt;li>Made some front end design changes to the Event Content Type to include:
+&lt;ul>
+&lt;li>Updated icons for calendar and location.&lt;/li>
+&lt;li>Updated Event node page sidebar design.&lt;/li>
+&lt;li>Improved Event card linking UX.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Removed the redundant &amp;lsquo;Locations&amp;rsquo; section from the body area on the Event node page. (#1280)&lt;/li>
+&lt;li>Improved handling for recurring events. (#942)&lt;/li>
+&lt;/ul>
+&lt;h3 id="seo">SEO&lt;/h3>
+&lt;ul>
+&lt;li>Added configuration options for ‘search_page_id’ and ‘search_query_key’ to Google Search settings. (#1254)&lt;/li>
+&lt;li>Documented how to
+&lt;a href="https://ds-docs.y.org/docs/howto/track-users/#requesting-cross-domain-tracking-support" target="_blank">talk to your CRM provider&lt;/a> about handing queries in redirects (#877)&lt;/li>
+&lt;/ul>
+&lt;h3 id="demo-content">Demo Content&lt;/h3>
+&lt;ul>
+&lt;li>Added demo content to sandboxes for all Layout Builder Article types: Blog, Press Release, and News. (#1290)&lt;/li>
+&lt;li>Added demo content to sandboxes for new Promotion content type. (#1285)&lt;/li>
+&lt;li>Enabled Cachet on public Sandboxes. (#1306)&lt;/li>
+&lt;/ul>
+&lt;h3 id="design-system---y-styles">Design System - Y Styles&lt;/h3>
+&lt;p>“Y Styles” helps site builders customize their sites in an accessible and brand-compliant manner.&lt;/p>
+&lt;p>
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/layout-builder/advanced-options/" target="_blank">Documentation for Y Styles&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Updated the ‘Y Styles’ admin interface to include titles for icons, so that site builders can more easily understand the available style configuration options. (#1278)&lt;/li>
+&lt;/ul>
+&lt;h3 id="documentation">Documentation&lt;/h3>
+&lt;ul>
+&lt;li>Documented how
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_docs/pull/76" target="_blank">Colorways work&lt;/a> for developers. (#1301)&lt;/li>
+&lt;li>Documented how to set up
+&lt;a href="https://ds-docs.y.org/docs/howto/use-2fa/" target="_blank">multi-factor authentication for site administrators&lt;/a>. (#237)&lt;/li>
+&lt;li>Documented the
+&lt;a href="https://ds-docs.y.org/docs/user-documentation/text-editor/adding-links/" target="_blank">resulting new interface&lt;/a> of the Button plugin. (#728)&lt;/li>
+&lt;/ul>
+&lt;h3 id="bug-fixes">Bug Fixes&lt;/h3>
+&lt;ul>
+&lt;li>Layout Builder Articles Listing - Fixed issue where Articles Filter did not search article body. (#1288)
+&lt;ul>
+&lt;li>Credit: Carol Petrossi @ ImageX&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Layout Builder Programs CT - Fixed issue where Banners were not displaying edge-to-edge. (#1277)&lt;/li>
+&lt;li>Resolved the 500 error occurring on the /demo-location-finder path after installing the standard YUSAOpenY profile in the open-y-subprojects/openy_map repository. (#1298)&lt;/li>
+&lt;li>Fixed deprecation notice in strip_tags() function (#1344)
+&lt;ul>
+&lt;li>Credit: Roman Salo @ 5Jars&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Fixed openy_repeat so it can be used as a Schedules page filter. (#1100)&lt;/li>
+&lt;li>Applied javascript cookie patch. (#1346)
+&lt;ul>
+&lt;li>Credit: YMCA Denver&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Polyfill CDN Issue Affecting YMCA Schedules pages, which was experiencing errors due to issues with the polyfill CDN, resulting in JavaScript aggregation problems. More information can be
+&lt;a href="https://ds-docs.y.org/blog/2024/02/29/polyfill-security-notice/" target="_blank">found in our documentation&lt;/a>. (#1351)&lt;/li>
+&lt;/ul></description></item><item><title>Blog: Virtual Y 1.9.0</title><link>/blog/2024/03/12/virtual-y-1.9.0/</link><pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate><guid>/blog/2024/03/12/virtual-y-1.9.0/</guid><description>
+&lt;h2 id="updates">Updates&lt;/h2>
+&lt;ul>
+&lt;li>Upgraded Axios library for Virtual Y. (#889)&lt;/li>
+&lt;li>Polyfill Security update. (#1357)&lt;/li>
+&lt;/ul></description></item><item><title>Blog: Polyfill Security Notice</title><link>/blog/2024/02/29/polyfill-security-notice/</link><pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate><guid>/blog/2024/02/29/polyfill-security-notice/</guid><description>
 &lt;h2 id="summary">Summary&lt;/h2>
 &lt;p>YMCA Website Services relies on some external code to provide broad browser support to JavaScript applications (like Virtual Y, Activity Finder, and Group Schedules). One of those codebases recently changed owners, which resulted in sporadic failures.&lt;/p>
 &lt;p>Users can incorporate the

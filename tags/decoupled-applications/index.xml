@@ -47,6 +47,8 @@
 &lt;a href="https://www.drupal.org/project/groupexpro" target="_blank">GroupEx Pro (Daxko) Integration&lt;/a>&lt;/li>
 &lt;li>
 &lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync" target="_blank">PEF (Program Event Framework) GXP (GroupEx Pro) Sync&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/yusaopeny_ymca360" target="_blank">YMCA 360 (Y360) Integration&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Membership Calculator</title><link>/docs/user-documentation/membership/calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/calculator/</guid><description>
 &lt;p>The Membership Calculator is bundled with the distribution in the
 &lt;a href="https://github.com/open-y-subprojects/openy_custom/tree/main/openy_calc" target="_blank">&lt;code>openy_calc&lt;/code> module&lt;/a>.&lt;/p>
