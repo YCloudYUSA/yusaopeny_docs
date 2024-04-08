@@ -7,19 +7,8 @@
 &lt;a href="https://www.daxko.com/" target="_blank">Daxko&lt;/a>,
 &lt;a href="https://www.activenetwork.com/activenet" target="_blank">ActiveNet&lt;/a>, and
 &lt;a href="https://personifycorp.com/solutions/ymcas-and-jccs/" target="_blank">Personify&lt;/a>. Configuring these integrations is mostly user-friendly, but often is supported by a partner development team. Any other CRM will require custom developer work.&lt;/p>
-&lt;h2 id="related-modules">Related modules&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">Activity Finder&lt;/a> - this repo contains in-depth developer documentation.&lt;/li>
-&lt;li>
-&lt;a href="https://www.drupal.org/project/openy_daxko2" target="_blank">Extended Daxko API Integration&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.drupal.org/project/daxko" target="_blank">Simple Daxko Integration (deprecated)&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.drupal.org/project/activenet" target="_blank">ActiveNet Integration&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.drupal.org/project/personify" target="_blank">Personify Integration&lt;/a>&lt;/li>
-&lt;/ul>
+&lt;p>See the
+&lt;a href="../../../development/program-event-framework">Program Event Framework developer docs&lt;/a> for a full list of integrations.&lt;/p>
 &lt;h2 id="additional-topics">Additional topics&lt;/h2>
 &lt;h3 id="allowing-utm-codes-in-activity-finder">Allowing UTM codes in Activity Finder&lt;/h3>
 &lt;p>
@@ -40,15 +29,16 @@
 &lt;p>Once those settings are saved, you can visit an Activity Finder page with UTM codes attached, for example:&lt;/p>
 &lt;p>&lt;code>https://example.com/activity_finder?step=results&amp;amp;selectedAges=24&amp;amp;selectedLocations=1541437&amp;amp;selectedActivities=2786027,2786083&amp;amp;utm_source=promotional_member&amp;amp;utm_medium=email&amp;amp;utm_content=button_register_now&amp;amp;utm_campaign=fall_group_swim_lessons_2021&lt;/code>&lt;/p>
 &lt;p>and see that the codes are maintained as the filters are changed.&lt;/p></description></item><item><title>Docs: Group Schedules</title><link>/docs/user-documentation/schedules/group-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/group-schedules/</guid><description>
-&lt;p>More documentation:&lt;/p>
-&lt;h2 id="related-modules">Related modules&lt;/h2>
+&lt;p>Sometimes called &amp;ldquo;Group Exercise&amp;rdquo; or &amp;ldquo;Group Schedules&amp;rdquo;, the &lt;strong>Repeat Schedules&lt;/strong> block provides a similar view to Activity Finder, but focused more on recurring, often drop-in classes. You can see
+&lt;a href="https://sandbox-carnation-cus.y.org/schedules-0" target="_blank">an example of this on our sandbox site&lt;/a>.&lt;/p>
+&lt;p>Developers can find more information in
+&lt;a href="https://github.com/ynorth-projects/openy_repeat" target="_blank">&lt;code>ynorth-project/openy_repeat&lt;/code>&lt;/a> and
+&lt;a href="../../../development/program-event-framework">Program Event Framework&lt;/a>.&lt;/p>
+&lt;h2 id="using-group-schedules">Using Group Schedules&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="https://www.drupal.org/project/groupexpro" target="_blank">GroupEx Pro (Daxko) Integration&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync" target="_blank">PEF (Program Event Framework) GXP (GroupEx Pro) Sync&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.drupal.org/project/yusaopeny_ymca360" target="_blank">YMCA 360 (Y360) Integration&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/repeat-schedules">Repeat Schedules Paragraph&lt;/a>&lt;/li>
+&lt;li>Using Repeat Schedules in Layout Builder is not yet supported.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Membership Calculator</title><link>/docs/user-documentation/membership/calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/calculator/</guid><description>
 &lt;p>The Membership Calculator is bundled with the distribution in the
 &lt;a href="https://github.com/open-y-subprojects/openy_custom/tree/main/openy_calc" target="_blank">&lt;code>openy_calc&lt;/code> module&lt;/a>.&lt;/p>

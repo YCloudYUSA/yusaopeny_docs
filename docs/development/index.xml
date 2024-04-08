@@ -2170,7 +2170,157 @@ repository, as on this example:&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --root=/docroot \
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> openy_configure_profile.preset=extended \
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> openy_theme_select.theme=openy_rose
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Pull Requests review standard</title><link>/docs/development/open-y-pull-requests-review-standard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/open-y-pull-requests-review-standard/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Program Event Framework</title><link>/docs/development/program-event-framework/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/</guid><description>
+&lt;p>&amp;ldquo;Program Event Framework&amp;rdquo; refers to the entire ecosystem of content and modules in YMCA Website Services that work together to build Activity Finder, Group Schedules, and more.&lt;/p>
+&lt;h2 id="content-types">Content Types&lt;/h2>
+&lt;p>These provide the containers for PEF content in Drupal:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="../../user-documentation/content-types/program">Program&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="../../user-documentation/content-types/program-subcategory">Program Subcategory&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="../../user-documentation/content-types/activity-class-session">Activity, Class, Session&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="syncers">Syncers&lt;/h2>
+&lt;p>These provide integrations to pull content from external systems into the content types:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/openy_daxko2" target="_blank">Extended Daxko API Integration (&lt;code>drupal/openy_daxko2&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/daxko" target="_blank">Simple Daxko Integration (deprecated) (&lt;code>drupal/daxko&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/activenet" target="_blank">ActiveNet Integration (&lt;code>drupal/activenet&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/personify" target="_blank">Personify Integration (&lt;code>drupal/personify&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/groupexpro" target="_blank">GroupEx Pro (Daxko) Integration (&lt;code>drupal/groupexpro&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync" target="_blank">PEF (Program Event Framework) GXP (GroupEx Pro) Sync (&lt;code>ynorth-projects/openy_pef_gxp_sync&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/yusaopeny_ymca360" target="_blank">YMCA 360 (Y360) Integration (&lt;code>drupal/yusaopeny_ymca360&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec" target="_blank">Traction Rec Integration (&lt;code>ycloudyusa/openy_traction_rec&lt;/code>)&lt;/a>
+&lt;ul>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec?tab=readme-ov-file#ymca-website-services-traction-rec-integration" target="_blank">How to configure the Traction Rec integration&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec/blob/main/modules/openy_traction_rec_import/README.md#ymca-website-services-traction-rec-pef-integration" target="_blank">How to import data from Traction Rec&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="displays">Displays&lt;/h2>
+&lt;p>These display the content for users to discover:&lt;/p>
+&lt;ul>
+&lt;li>Activity Finder
+&lt;ul>
+&lt;li>
+&lt;a href="../../user-documentation/schedules/activity-finder">Activity Finder (User Docs)&lt;/a>
+&lt;ul>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">Activity Finder (&lt;code>ycloudyusa/yusaopeny_activity_finder&lt;/code>)&lt;/a> - this repo contains in-depth developer documentation.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Group Schedules
+&lt;ul>
+&lt;li>
+&lt;a href="../../user-documentation/schedules/group-schedules">Group Schedules (User Docs)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ynorth-projects/openy_repeat" target="_blank">Repeat Schedules (&lt;code>ynorth-projects/openy_repeat&lt;/code>)&lt;/a> - contains the &amp;ldquo;Repeat Schedules&amp;rdquo; block which is the basis for Group Schedules.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="data-model">Data model&lt;/h2>
+&lt;p>The network of data structures in PEF can be confusing. Here&amp;rsquo;s how it all works&lt;/p>
+&lt;pre class="mermaid">---
+title: PEF Relationships
+---
+erDiagram
+program {
+entityRefTerm field_program_color
+paragraph field_content
+paragraph field_header_content
+paragraph field_sidebar_content
+textFormattedLong field_program_description
+entityRefMedia field_program_icon
+entityRefMedia field_program_image
+layout layout_builder__layout
+meta field_meta_tags
+bool field_use_layout_builder
+}
+program_subcategory {
+paragraph field_bottom_content
+entityRefTerm field_category_color
+paragraph field_content
+paragraph field_sidebar_content
+textFormattedLong field_category_description
+paragraph field_header_content
+entityRefMedia field_category_image
+layout layout_builder__layout
+meta field_meta_tags
+entityRefProgram field_category_program
+bool field_use_layout_builder
+}
+program_subcategory }|--|| program : field_category_program
+activity {
+textFormattedLong field_activity_description
+entityRefProgSub field_activity_category
+}
+activity }o--|| program_subcategory : field_activity_category
+class {
+entityRefActivity field_class_activity
+paragraph field_bottom_content
+paragraph field_content
+textFormattedLong field_class_description
+paragraph field_header_content
+meta field_meta_tags
+paragraph field_sidebar_content
+}
+class }o--|| activity : field_class_activity
+session {
+listText field_activity_type
+entityRefClass field_session_class
+textFormattedLong field_session_description
+dateRange field_session_exclusions
+listText field_session_gender
+numberInt field_availability
+bool field_session_in_mbrsh
+textPlain field_session_instructor
+entityRefLoc field_session_location
+numberInt field_session_max_age
+listText field_session_max_grade
+numberDec field_session_mbr_price
+numberInt field_session_min_age
+listText field_session_min_grade
+numberDec field_session_nmbr_price
+bool field_session_online
+entityRef field_session_plocation
+numberInt field_productid
+link field_session_reg_link
+textPlain field_session_room
+paragraph field_session_time
+numberInt field_wait_list_availability
+}
+session }|--|| class : field_session_class
+session ||--o{ session_time_paragraph : field_session_type
+session_time_paragraph {
+dateRange field_session_time_date
+listText field_session_time_days
+textPlain field_session_time_override
+}
+branch {
+}
+camp {
+}
+facility {
+}
+session }o--|| branch : field_session_location
+session }o--|| camp : field_session_location
+session }o--|| facility : field_session_location
+session }o--|| facility : field_session_plocation&lt;/pre>
+&lt;p>More information on how this data gets out into each display will be coming soon.&lt;/p></description></item><item><title>Docs: Pull Requests review standard</title><link>/docs/development/open-y-pull-requests-review-standard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/open-y-pull-requests-review-standard/</guid><description>
 &lt;p>Check more
 &lt;a href="/docs/development/code-review-quality-best-practices/">technical guidelines about our best practices for code quality&lt;/a>.&lt;/p>
 &lt;h1 id="adherence-to-standards">Adherence to Standards&lt;/h1>
@@ -3213,60 +3363,4 @@ the theme configuration page - Custom CSS - check &amp;ldquo;Enable or disable c
 &lt;p>button_name - name of button when show in a tip;&lt;/p>
 &lt;p>selector - selector to be clicked.&lt;/p>
 &lt;p>Please see and use
-&lt;a href="https://www.w3schools.com/jquery/jquery_ref_selectors.asp" target="_blank">jQuery selectors&lt;/a>.&lt;/p></description></item><item><title>Docs: Upgrade OpenY 8.1.3 to 8.2.2.1</title><link>/docs/development/upgrade-openy-8.1.3-to-8.2.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/upgrade-openy-8.1.3-to-8.2.2.1/</guid><description>
-&lt;p>This document is archived but may contain useful information for troubleshooting future updates. For updated update steps, visit
-&lt;a href="/docs/development/openy-upgrade-how-to-for-developers/">How to upgrade YMCA Website Services&lt;/a>.&lt;/p>
-&lt;hr>
-&lt;h3 id="video-tutorials">Video tutorials&lt;/h3>
-&lt;p>Upgrade OpenY from 8.0.7 to 8.2.2.1 -
-&lt;a href="https://www.youtube.com/watch?v=U_mg0-yKGOI" target="_blank">https://www.youtube.com/watch?v=U_mg0-yKGOI&lt;/a>&lt;/p>
-&lt;h3 id="document-is-work-in-progress">Document is work in progress&lt;/h3>
-&lt;p>These are instructions for upgrading a very old version of YMCA Website Services to the latest version.
-Given the fact
-&lt;a href="https://www.drupal.org/node/3034742" target="_blank">Drupal 8.7+ has no support for automatic entity updates&lt;/a> ( BaseFieldDefinitions ) we have to upgrade to 8.2.2.1 of OpenY, which is still on 8.6 Drupal Core, and then update to the latest YMCA Website Services version as usual.&lt;/p>
-&lt;h1 id="environment">Environment&lt;/h1>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>vagrant@vagrant:/var/www/docroot$ uname -a
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Linux vagrant 4.15.0-29-generic &lt;span style="color:#8f5902;font-style:italic">#31-Ubuntu SMP Tue Jul 17 15:39:52 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>vagrant@vagrant:/var/www/docroot$ lsb_release -a
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>No LSB modules are available.
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Distributor ID: Ubuntu
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Description: Ubuntu 18.04.1 LTS
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Release: 18.04
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Codename: bionic
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>vagrant@vagrant:/var/www/docroot$ php -v
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>**PHP 7.1.31-1**+ubuntu18.04.1+deb.sury.org+1 &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>cli&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>built: Aug &lt;span style="color:#0000cf;font-weight:bold">7&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">2019&lt;/span> 10:23:12&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span> NTS &lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Copyright &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>c&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> 1997-2018 The PHP Group
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Zend Engine v3.1.0, Copyright &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>c&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> 1998-2018 Zend Technologies
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> with Zend OPcache v7.1.31-1+ubuntu18.04.1+deb.sury.org+1, Copyright &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>c&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> 1999-2018, by Zend Technologies
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> with Xdebug v2.7.2, Copyright &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>c&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> 2002-2019, by Derick Rethans
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>vagrant@vagrant:/var/www/docroot$ drush --version
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> **Drush Version : 8.2.3**
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>vagrant@vagrant:/var/www/docroot$ composer --version
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>**Composer version 1.7.2** 2018-08-16 16:57:12
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="step-by-step-guide-for-update">Step by step guide for update&lt;/h1>
-&lt;ul>
-&lt;li>Use PHP7.1 for upgrade and install &lt;code>php7.1-mysql php7.1-mcrypt php7.1-cli php7.1-common php7.1-curl php7.1-dev php7.1-fpm php7.1-gd php7.1-mysql php7.1-memcached php7.1-imagic php7.1-xml php7.1-xdebug php7.1-mbstring php7.1-soap php7.1-zip php7.1-xml&lt;/code>&lt;/li>
-&lt;li>Go to the folder of OpenY code tree where &lt;code>docroot&lt;/code> folder is contained&lt;/li>
-&lt;li>&lt;code>mv composer.json composer.json.orig&lt;/code>&lt;/li>
-&lt;li>&lt;code>wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.2.x/composer.json&lt;/code>&lt;/li>
-&lt;li>&lt;code>mkdir -p scripts ; cd scripts &amp;amp;&amp;amp; wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.2.x/scripts/remove_libraries_gitignore_files.sh &amp;amp;&amp;amp; cd ..&lt;/code>&lt;/li>
-&lt;li>&lt;code>composer require YCloudYUSA/yusaopeny:8.2.2.1 --no-suggest --no-update&lt;/code>&lt;/li>
-&lt;li>&lt;code>composer install --ignore-platform-reqs --no-suggest&lt;/code>&lt;/li>
-&lt;li>&lt;code>composer update --prefer-stable --no-suggest&lt;/code>&lt;/li>
-&lt;li>&lt;code>cd docroot&lt;/code>&lt;/li>
-&lt;li>&lt;code>drush dl -y plugin-8.x-2.5 contribute-8.x-1.0-beta7 scheduler-8.x-1.0 views_block_filter_block datalayer simple_menu_icons rabbit_hole metatag simple_sitemap-8.x-3.0 easy_breadcrumb-8.x-1.6&lt;/code>&lt;/li>
-&lt;li>&lt;code>drush en openy_upgrade_tool openy_er openy_prgf_loc_finder openy_map openy_data_wrapper openy_loc_branch content_moderation focal_point&lt;/code>&lt;/li>
-&lt;li>&lt;code>drush ev &amp;quot;Drupal::service('module_installer')-&amp;gt;install(['openy']);&amp;quot;&lt;/code> &amp;lt;- This steps fixes some hidden bug when &lt;code>openy&lt;/code> profile removed from &lt;code>core.extension&lt;/code> configuration for unknown reason.&lt;/li>
-&lt;li>Manual step (optional, if you have issues with &lt;code>drush updatedb&lt;/code>): Edit all yml files in &lt;code>profiles&lt;/code> folder to comment &lt;code>media.type.image&lt;/code> , &lt;code>field.field.node.program.field_header_content&lt;/code>, &lt;code>field.field.node.branch.field_location_amenities&lt;/code> in dependencies sections.&lt;/li>
-&lt;/ul>
-&lt;p>
-&lt;img src="https://user-images.githubusercontent.com/563412/64005803-bc94cc80-cb19-11e9-8137-702d141c48e5.png" alt="image" />&lt;/p>
-&lt;p>
-&lt;img src="https://user-images.githubusercontent.com/563412/64005817-c1598080-cb19-11e9-8a04-9be0c7f3a15a.png" alt="image" />&lt;/p>
-&lt;p>
-&lt;img src="https://user-images.githubusercontent.com/563412/64005820-c61e3480-cb19-11e9-9853-dbad3c17d851.png" alt="image" />&lt;/p>
-&lt;ul>
-&lt;li>run &lt;code>drush updatedb -y&lt;/code> &amp;lt;- this will fail for the first time ( Media not installed yet ), disregard&lt;/li>
-&lt;li>run &lt;code>drush updatedb -y&lt;/code> &amp;lt;- this should run properly.&lt;/li>
-&lt;li>run &lt;code>drush entup&lt;/code>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;a href="https://www.w3schools.com/jquery/jquery_ref_selectors.asp" target="_blank">jQuery selectors&lt;/a>.&lt;/p></description></item></channel></rss>

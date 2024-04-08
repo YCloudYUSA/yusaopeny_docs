@@ -30,9 +30,15 @@
 &lt;li>
 &lt;a href="../../layout-builder/related-articles">Related Articles&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Event (Layout Builder)</title><link>/docs/user-documentation/content-types/lb-event/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/lb-event/</guid><description>
-&lt;p>&lt;strong>Designs:&lt;/strong>
-&lt;a href="../../../../../../assets/img/designs/lb/Event%20Mobile.png">Mobile&lt;/a> |
-&lt;a href="/img/designs/lb/Event%20Desktop.png">Desktop&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Designs:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="/img/designs/lb/Event_Mobile_Recurring.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Event_Desktop_Recurring.png">Desktop&lt;/a>&lt;/li>
+&lt;li>(before March 2024)
+&lt;a href="/img/designs/lb/Events%20Mobile.png">Mobile&lt;/a> |
+&lt;a href="/img/designs/lb/Event%20Desktop.png">Desktop&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/cxRxuYkWy-4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
@@ -52,6 +58,25 @@
 &lt;li>&lt;strong>Event Date(s)&lt;/strong>: Add a start and end date and time for the event. If the event does not have an end time, choose the start time for both the start and end.
 &lt;ul>
 &lt;li>As of March 2023, this field supports recurring events.&lt;/li>
+&lt;li>To create a recurring event:
+&lt;ul>
+&lt;li>set the &lt;strong>Repeats&lt;/strong> option,&lt;/li>
+&lt;li>choose the &lt;strong>Number&lt;/strong> of recurrences and when to &lt;strong>End&lt;/strong>, then&lt;/li>
+&lt;li>expand the &lt;strong>Advanced&lt;/strong> options to select specific days.
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/content-types/lb-event/lb-event--recurring.png" title="View original image">
+&lt;img alt="The event recurrence configuration." srcset="
+/docs/user-documentation/content-types/lb-event/lb-event--recurring_hu9d9b58d447d16d1bd0e6a269f1ae6808_14134_8571c8c5ae3325fb4db31eb9df7fbd8a.png 458w,
+/docs/user-documentation/content-types/lb-event/lb-event--recurring_hu9d9b58d447d16d1bd0e6a269f1ae6808_14134_620e43e2169125d90f965494d19d03a8.png 726w,
+/docs/user-documentation/content-types/lb-event/lb-event--recurring_hu9d9b58d447d16d1bd0e6a269f1ae6808_14134_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/content-types/lb-event/lb-event--recurring_hu9d9b58d447d16d1bd0e6a269f1ae6808_14134_8571c8c5ae3325fb4db31eb9df7fbd8a.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Once you save the event, &lt;strong>Manage Instance&lt;/strong> will allow you to customize or remove individual instances.&lt;/li>
+&lt;li>To select multiple dates for your event that do not fit a regular rule, use &lt;strong>Add another item&lt;/strong> below the date selector.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;strong>Header image&lt;/strong>: This image is displayed on the Article page and in listing views.&lt;/li>
@@ -870,6 +895,9 @@ A &lt;em>relative path&lt;/em> is the part of your URL after your &lt;em>domain 
 &lt;li>
 &lt;a href="camp--example.jpeg">Legacy Carnation paragraphs-based layout&lt;/a>&lt;/li>
 &lt;/ul>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/UTIIs0zj6fg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
 &lt;h2 id="when-should-i-use-camp">When Should I Use Camp?&lt;/h2>
 &lt;p>If you are an independent YMCA camp or you&amp;rsquo;re an Association with one or more locations dedicated to outdoor camp, the Camp Content Type serves well as a landing page for those locations.&lt;/p>
 &lt;h3 id="what-about-branch-day-camps">What about Branch Day Camps?&lt;/h3>

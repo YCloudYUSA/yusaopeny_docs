@@ -1,11 +1,222 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YMCA Website Services – Group Schedules</title><link>/tags/group-schedules/</link><description>Recent content in Group Schedules on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/tags/group-schedules/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Group Schedules</title><link>/docs/user-documentation/schedules/group-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/group-schedules/</guid><description>
-&lt;p>More documentation:&lt;/p>
-&lt;h2 id="related-modules">Related modules&lt;/h2>
+&lt;p>Sometimes called &amp;ldquo;Group Exercise&amp;rdquo; or &amp;ldquo;Group Schedules&amp;rdquo;, the &lt;strong>Repeat Schedules&lt;/strong> block provides a similar view to Activity Finder, but focused more on recurring, often drop-in classes. You can see
+&lt;a href="https://sandbox-carnation-cus.y.org/schedules-0" target="_blank">an example of this on our sandbox site&lt;/a>.&lt;/p>
+&lt;p>Developers can find more information in
+&lt;a href="https://github.com/ynorth-projects/openy_repeat" target="_blank">&lt;code>ynorth-project/openy_repeat&lt;/code>&lt;/a> and
+&lt;a href="../../../development/program-event-framework">Program Event Framework&lt;/a>.&lt;/p>
+&lt;h2 id="using-group-schedules">Using Group Schedules&lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;a href="https://www.drupal.org/project/groupexpro" target="_blank">GroupEx Pro (Daxko) Integration&lt;/a>&lt;/li>
+&lt;a href="../../paragraphs/repeat-schedules">Repeat Schedules Paragraph&lt;/a>&lt;/li>
+&lt;li>Using Repeat Schedules in Layout Builder is not yet supported.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Program Event Framework</title><link>/docs/development/program-event-framework/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/</guid><description>
+&lt;p>&amp;ldquo;Program Event Framework&amp;rdquo; refers to the entire ecosystem of content and modules in YMCA Website Services that work together to build Activity Finder, Group Schedules, and more.&lt;/p>
+&lt;h2 id="content-types">Content Types&lt;/h2>
+&lt;p>These provide the containers for PEF content in Drupal:&lt;/p>
+&lt;ul>
 &lt;li>
-&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync" target="_blank">PEF (Program Event Framework) GXP (GroupEx Pro) Sync&lt;/a>&lt;/li>
+&lt;a href="../../user-documentation/content-types/program">Program&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://www.drupal.org/project/yusaopeny_ymca360" target="_blank">YMCA 360 (Y360) Integration&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;a href="../../user-documentation/content-types/program-subcategory">Program Subcategory&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="../../user-documentation/content-types/activity-class-session">Activity, Class, Session&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="syncers">Syncers&lt;/h2>
+&lt;p>These provide integrations to pull content from external systems into the content types:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/openy_daxko2" target="_blank">Extended Daxko API Integration (&lt;code>drupal/openy_daxko2&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/daxko" target="_blank">Simple Daxko Integration (deprecated) (&lt;code>drupal/daxko&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/activenet" target="_blank">ActiveNet Integration (&lt;code>drupal/activenet&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/personify" target="_blank">Personify Integration (&lt;code>drupal/personify&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/groupexpro" target="_blank">GroupEx Pro (Daxko) Integration (&lt;code>drupal/groupexpro&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync" target="_blank">PEF (Program Event Framework) GXP (GroupEx Pro) Sync (&lt;code>ynorth-projects/openy_pef_gxp_sync&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/yusaopeny_ymca360" target="_blank">YMCA 360 (Y360) Integration (&lt;code>drupal/yusaopeny_ymca360&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec" target="_blank">Traction Rec Integration (&lt;code>ycloudyusa/openy_traction_rec&lt;/code>)&lt;/a>
+&lt;ul>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec?tab=readme-ov-file#ymca-website-services-traction-rec-integration" target="_blank">How to configure the Traction Rec integration&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec/blob/main/modules/openy_traction_rec_import/README.md#ymca-website-services-traction-rec-pef-integration" target="_blank">How to import data from Traction Rec&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="displays">Displays&lt;/h2>
+&lt;p>These display the content for users to discover:&lt;/p>
+&lt;ul>
+&lt;li>Activity Finder
+&lt;ul>
+&lt;li>
+&lt;a href="../../user-documentation/schedules/activity-finder">Activity Finder (User Docs)&lt;/a>
+&lt;ul>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">Activity Finder (&lt;code>ycloudyusa/yusaopeny_activity_finder&lt;/code>)&lt;/a> - this repo contains in-depth developer documentation.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Group Schedules
+&lt;ul>
+&lt;li>
+&lt;a href="../../user-documentation/schedules/group-schedules">Group Schedules (User Docs)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ynorth-projects/openy_repeat" target="_blank">Repeat Schedules (&lt;code>ynorth-projects/openy_repeat&lt;/code>)&lt;/a> - contains the &amp;ldquo;Repeat Schedules&amp;rdquo; block which is the basis for Group Schedules.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="data-model">Data model&lt;/h2>
+&lt;p>The network of data structures in PEF can be confusing. Here&amp;rsquo;s how it all works&lt;/p>
+&lt;pre class="mermaid">---
+title: PEF Relationships
+---
+erDiagram
+program {
+entityRefTerm field_program_color
+paragraph field_content
+paragraph field_header_content
+paragraph field_sidebar_content
+textFormattedLong field_program_description
+entityRefMedia field_program_icon
+entityRefMedia field_program_image
+layout layout_builder__layout
+meta field_meta_tags
+bool field_use_layout_builder
+}
+program_subcategory {
+paragraph field_bottom_content
+entityRefTerm field_category_color
+paragraph field_content
+paragraph field_sidebar_content
+textFormattedLong field_category_description
+paragraph field_header_content
+entityRefMedia field_category_image
+layout layout_builder__layout
+meta field_meta_tags
+entityRefProgram field_category_program
+bool field_use_layout_builder
+}
+program_subcategory }|--|| program : field_category_program
+activity {
+textFormattedLong field_activity_description
+entityRefProgSub field_activity_category
+}
+activity }o--|| program_subcategory : field_activity_category
+class {
+entityRefActivity field_class_activity
+paragraph field_bottom_content
+paragraph field_content
+textFormattedLong field_class_description
+paragraph field_header_content
+meta field_meta_tags
+paragraph field_sidebar_content
+}
+class }o--|| activity : field_class_activity
+session {
+listText field_activity_type
+entityRefClass field_session_class
+textFormattedLong field_session_description
+dateRange field_session_exclusions
+listText field_session_gender
+numberInt field_availability
+bool field_session_in_mbrsh
+textPlain field_session_instructor
+entityRefLoc field_session_location
+numberInt field_session_max_age
+listText field_session_max_grade
+numberDec field_session_mbr_price
+numberInt field_session_min_age
+listText field_session_min_grade
+numberDec field_session_nmbr_price
+bool field_session_online
+entityRef field_session_plocation
+numberInt field_productid
+link field_session_reg_link
+textPlain field_session_room
+paragraph field_session_time
+numberInt field_wait_list_availability
+}
+session }|--|| class : field_session_class
+session ||--o{ session_time_paragraph : field_session_type
+session_time_paragraph {
+dateRange field_session_time_date
+listText field_session_time_days
+textPlain field_session_time_override
+}
+branch {
+}
+camp {
+}
+facility {
+}
+session }o--|| branch : field_session_location
+session }o--|| camp : field_session_location
+session }o--|| facility : field_session_location
+session }o--|| facility : field_session_plocation&lt;/pre>
+&lt;p>More information on how this data gets out into each display will be coming soon.&lt;/p></description></item><item><title>Docs: Repeat Schedules</title><link>/docs/user-documentation/paragraphs/repeat-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/repeat-schedules/</guid><description>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;p>
+&lt;a href="https://sandbox-carnation-cus.y.org/schedules-0" target="_blank">On the sandbox site&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example.png" title="View original image">
+&lt;img alt="The Repeat Schedules Paragraph in the Carnation theme." srcset="
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example_hu5714a633ad06f062e714a84f1ff39aff_51357_b64a7b453bf820aafa5c5aaf1c218afd.png 458w,
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example_hu5714a633ad06f062e714a84f1ff39aff_51357_3e4b9d217cc71867d5024a28941c941e.png 726w,
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example_hu5714a633ad06f062e714a84f1ff39aff_51357_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example_hu5714a633ad06f062e714a84f1ff39aff_51357_b64a7b453bf820aafa5c5aaf1c218afd.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
+&lt;p>To use the Repeat Schedules paragraph:&lt;/p>
+&lt;ul>
+&lt;li>Expand the &lt;strong>Content Area&lt;/strong> on a Landing Page.&lt;/li>
+&lt;li>Choose &lt;strong>Add Repeat Schedules&lt;/strong>.&lt;/li>
+&lt;li>Configure the options:
+&lt;ul>
+&lt;li>&lt;strong>PDF Schedule link&lt;/strong> - a link to a manually-generated PDF as an alternative to the automatically generated one.&lt;/li>
+&lt;li>&lt;strong>Clear All link&lt;/strong> - where the user is directed when they use the &amp;ldquo;Clear all&amp;rdquo; link.&lt;/li>
+&lt;li>&lt;strong>Limit by category&lt;/strong> - choose categories aith autocomplete to only show certain categories.&lt;/li>
+&lt;li>&lt;strong>Filters&lt;/strong> - choose the filters that show up in the sidebar.&lt;/li>
+&lt;li>&lt;strong>Limit by Location&lt;/strong> - choose a location to only show events from that location.&lt;/li>
+&lt;li>&lt;strong>Display instructor&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Display end time&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Categories Exclude&lt;/strong> - exclude any programs that are tagged with specific categories.&lt;/li>
+&lt;li>&lt;strong>PDF only view&lt;/strong> - only show the PDF link and not the schedule.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Save the page.&lt;/li>
+&lt;/ul>
+&lt;h2 id="what-fields-are-where">What fields are where&lt;/h2>
+&lt;p>Data from Session, Class, and Activities are all used to form the Repeat Schedules. Here&amp;rsquo;s what shows up where. Fields are noted with their relationships, so &lt;code>session.class.activity.title&lt;/code> means &amp;ldquo;the title of the Activity referenced by the Class referenced by the Session&amp;rdquo;.&lt;/p>
+&lt;p>Fields used in the table view:&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--table-fields.png" title="View original image">
+&lt;img alt="A diagram listing the relationships between the fields in Repeat Schedules table and their names." srcset="
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--table-fields_huf95bb649714aac7b6363a64a0065a2c7_56101_218e13139cc7b89096bc3bd366d052ec.png 458w,
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--table-fields_huf95bb649714aac7b6363a64a0065a2c7_56101_ab1c2c8635777dc456b9303e95e82998.png 726w,
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--table-fields_huf95bb649714aac7b6363a64a0065a2c7_56101_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--table-fields_huf95bb649714aac7b6363a64a0065a2c7_56101_218e13139cc7b89096bc3bd366d052ec.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>Fields used in the popup view:&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--modal-fields.png" title="View original image">
+&lt;img alt="A diagram listing the relationships between the fields in Repeat Schedules modal and their names." srcset="
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--modal-fields_hu3abb27b05c6ed9320e13fc2e964c3ece_53139_568af1e0f76365b03ee9f20767e60ab5.png 458w,
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--modal-fields_hu3abb27b05c6ed9320e13fc2e964c3ece_53139_c67165b555f05ac9a73e609b22bdfe13.png 726w,
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--modal-fields_hu3abb27b05c6ed9320e13fc2e964c3ece_53139_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--modal-fields_hu3abb27b05c6ed9320e13fc2e964c3ece_53139_568af1e0f76365b03ee9f20767e60ab5.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p></description></item></channel></rss>

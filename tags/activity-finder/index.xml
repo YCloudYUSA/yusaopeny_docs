@@ -21,29 +21,67 @@
 &lt;li>
 &lt;a href="../#saving-and-publishing">Save and publish&lt;/a> your changes.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Activity Finder</title><link>/docs/user-documentation/paragraphs/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/activity-finder/</guid><description>
-&lt;p>&lt;strong>Areas It Should Be Used&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Content Area&lt;/li>
-&lt;li>Bottom Area&lt;/li>
-&lt;/ul>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/activity-finder/activity-finder--example.png" title="View original image">
+&lt;img alt="A screenshot of the Activity Finder block." srcset="
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--example_huc7d60087f5004be73ed77a78d3e36fb8_75908_436296c707ac5de4707cc07a32cf466a.png 458w,
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--example_huc7d60087f5004be73ed77a78d3e36fb8_75908_5c5b91c1101515748ae9cf89e95d0304.png 726w,
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--example_huc7d60087f5004be73ed77a78d3e36fb8_75908_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/activity-finder/activity-finder--example_huc7d60087f5004be73ed77a78d3e36fb8_75908_436296c707ac5de4707cc07a32cf466a.png" />
+&lt;figcaption>A screenshot showing the Activity Finder block and a detail popup. &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>See a live example of Activity Finder in
+&lt;a href="https://sandbox-carnation-cus-d9.y.org/activity-finder-v4" target="_blank">our sandbox site&lt;/a>.&lt;/p>
 &lt;h2 id="how-it-works">How it Works&lt;/h2>
-&lt;p>This paragraph type requires an integration into a CRM. Out-of-the-box, YMCA Website Services’s Activity Finder integrates with Daxko, ActiveNet, and Personify. Any other CRM will require custom developer work.&lt;/p>
+&lt;p>This paragraph type requires an integration into a CRM. See
+&lt;a href="../../../development/program-event-framework">Program Activity Framework&lt;/a> for a list of existing integrations. Any other CRM will require custom developer work.&lt;/p>
 &lt;p>How you use these paragraphs will depend on how your Association has structured its program data on the CRM and on how you decide to get people to program results.&lt;/p>
-&lt;p>There are three primary approaches to setting this up: a standard approach, a results-only approach, and a targeted approach.&lt;/p>
-&lt;h3 id="standard-approach">Standard Approach&lt;/h3>
+&lt;p>To start, add the &lt;strong>Activity Finder&lt;/strong> Paragraph or Block to a page.&lt;/p>
+&lt;h2 id="block-configuration">Block configuration&lt;/h2>
+&lt;p>When you add the Activity Finder block to a page, you have a number of options. These are in addition to the configuration at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Activity Finder Settings&lt;/strong> (&lt;code>/admin/openy/settings/activity-finder&lt;/code>). See
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder?tab=readme-ov-file#open-y-activity-finder" target="_blank">the Activity Finder module README&lt;/a> for more information.&lt;/p>
 &lt;ul>
-&lt;li>Create two Landing Pages. Title one “Find a Program” and the other “Program Search.”&lt;/li>
-&lt;li>On the “Find a Program” page, add the “Activity Finder” paragraph. Type in “Program Search” and select your Program Search in the “Activity Finder Search Results Page Reference” field.&lt;/li>
-&lt;li>At the bottom, you will see a field called “Title” Change the title to “Find a Program” Save the page.&lt;/li>
-&lt;li>Next, on the “Program Search” page, add the “Activity Finder Search Results” paragraph into the Content Area. Type in “Find a Program” on the “Activity Finder Page Reference” page.&lt;/li>
-&lt;/ul>
-&lt;h3 id="results-only-approach">Results-Only Approach&lt;/h3>
-&lt;p>If you plan on using deep-linking or want to forgo the guided search experience, you can use the “Activity Finder Search Results.” Create a Landing Page called “Program Search” using the One Column (Full Width) layout.&lt;/p>
+&lt;li>&lt;strong>Exclude by location&lt;/strong> - Remove specific locations from the results.&lt;/li>
+&lt;li>&lt;strong>Limit by category&lt;/strong> - Only show specific categories in the results.&lt;/li>
+&lt;li>&lt;strong>Exclude by category&lt;/strong> - Remove specific categories from the results.&lt;/li>
+&lt;li>&lt;strong>Legacy mode&lt;/strong> - Shows some data as it was in the previous version of Activity Finder (v3):
 &lt;ul>
-&lt;li>Add the “Activity Finder Search Results” paragraph into your content area and leave the “Activity Finder Page Reference” field blank. Save your page.&lt;/li>
+&lt;li>Disables bookmark functionality on the results screen.&lt;/li>
+&lt;li>Doesn&amp;rsquo;t display the age indicator in the result card of activities.&lt;/li>
+&lt;li>Changes the days + times wizard step. Displays only days of week, but not times of each day (doesn&amp;rsquo;t support DaysTimes filter)&lt;/li>
 &lt;/ul>
-&lt;h3 id="targeted-approach">Targeted Approach&lt;/h3>
-&lt;p>Activity Finder can also be used on multiple pages on your site, specifically on your Program Subcategory pages.&lt;/p></description></item><item><title>Docs: Activity Finder</title><link>/docs/user-documentation/schedules/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/activity-finder/</guid><description>
+&lt;/li>
+&lt;li>&lt;strong>Weeks filter&lt;/strong> - Changes the Day/Time filter to use custom defined Week filters.
+&lt;ul>
+&lt;li>This requires setting the &lt;strong>Weeks&lt;/strong> configuration on &lt;code>/admin/openy/settings/activity-finder&lt;/code>.
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/activity-finder/activity-finder--weeks.png" title="View original image">
+&lt;img alt="Activity Finder Weeks configuration." srcset="
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--weeks_hu8c7717e1955746fa72975588ddda1546_57764_4af1c3c4e4cf2acb6abfc2b74bdc71c3.png 458w,
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--weeks_hu8c7717e1955746fa72975588ddda1546_57764_dbc467fb9237d84044a1ffa26adfb01f.png 726w,
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--weeks_hu8c7717e1955746fa72975588ddda1546_57764_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/activity-finder/activity-finder--weeks_hu8c7717e1955746fa72975588ddda1546_57764_4af1c3c4e4cf2acb6abfc2b74bdc71c3.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Hide Home Branch info block&lt;/strong> - Disables functionality related to the user&amp;rsquo;s selected home branch.&lt;/li>
+&lt;li>&lt;strong>Background image&lt;/strong> - An image that&amp;rsquo;s displayed in the background of the banner above Activity Finder.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/activity-finder/activity-finder--paragraph.png" title="View original image">
+&lt;img alt="The Activity Finder block configuration." srcset="
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--paragraph_hue944e5a3bed3f8051070f2ccc25eae20_44722_69c2b55700723c3fdf15326ae971bbd0.png 458w,
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--paragraph_hue944e5a3bed3f8051070f2ccc25eae20_44722_4eddfe57a8348566353bca9eccc2add9.png 726w,
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--paragraph_hue944e5a3bed3f8051070f2ccc25eae20_44722_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/activity-finder/activity-finder--paragraph_hue944e5a3bed3f8051070f2ccc25eae20_44722_69c2b55700723c3fdf15326ae971bbd0.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p></description></item><item><title>Docs: Activity Finder</title><link>/docs/user-documentation/schedules/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/activity-finder/</guid><description>
 &lt;p>Activity Finder combines data from
 &lt;a href="../../content-types/activity-class-session">the Activity, Class, and Session&lt;/a> content types into an interactive tool that can be used with
 &lt;a href="../../paragraphs/activity-finder">Paragraphs&lt;/a> or
@@ -52,19 +90,8 @@
 &lt;a href="https://www.daxko.com/" target="_blank">Daxko&lt;/a>,
 &lt;a href="https://www.activenetwork.com/activenet" target="_blank">ActiveNet&lt;/a>, and
 &lt;a href="https://personifycorp.com/solutions/ymcas-and-jccs/" target="_blank">Personify&lt;/a>. Configuring these integrations is mostly user-friendly, but often is supported by a partner development team. Any other CRM will require custom developer work.&lt;/p>
-&lt;h2 id="related-modules">Related modules&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">Activity Finder&lt;/a> - this repo contains in-depth developer documentation.&lt;/li>
-&lt;li>
-&lt;a href="https://www.drupal.org/project/openy_daxko2" target="_blank">Extended Daxko API Integration&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.drupal.org/project/daxko" target="_blank">Simple Daxko Integration (deprecated)&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.drupal.org/project/activenet" target="_blank">ActiveNet Integration&lt;/a>&lt;/li>
-&lt;li>
-&lt;a href="https://www.drupal.org/project/personify" target="_blank">Personify Integration&lt;/a>&lt;/li>
-&lt;/ul>
+&lt;p>See the
+&lt;a href="../../../development/program-event-framework">Program Event Framework developer docs&lt;/a> for a full list of integrations.&lt;/p>
 &lt;h2 id="additional-topics">Additional topics&lt;/h2>
 &lt;h3 id="allowing-utm-codes-in-activity-finder">Allowing UTM codes in Activity Finder&lt;/h3>
 &lt;p>
@@ -113,4 +140,154 @@
 &lt;/blockquote>
 &lt;h2 id="session">Session&lt;/h2>
 &lt;p>An individual program offering. Contains fields for pricing, session date/time, instructor, ages and a registration link. This are the individual rows/instances in Repeat Schedules and
-&lt;a href="../../paragraphs/activity-finder">Activity Finder&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;a href="../../paragraphs/activity-finder">Activity Finder&lt;/a>.&lt;/p></description></item><item><title>Docs: Program Event Framework</title><link>/docs/development/program-event-framework/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/</guid><description>
+&lt;p>&amp;ldquo;Program Event Framework&amp;rdquo; refers to the entire ecosystem of content and modules in YMCA Website Services that work together to build Activity Finder, Group Schedules, and more.&lt;/p>
+&lt;h2 id="content-types">Content Types&lt;/h2>
+&lt;p>These provide the containers for PEF content in Drupal:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="../../user-documentation/content-types/program">Program&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="../../user-documentation/content-types/program-subcategory">Program Subcategory&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="../../user-documentation/content-types/activity-class-session">Activity, Class, Session&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="syncers">Syncers&lt;/h2>
+&lt;p>These provide integrations to pull content from external systems into the content types:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/openy_daxko2" target="_blank">Extended Daxko API Integration (&lt;code>drupal/openy_daxko2&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/daxko" target="_blank">Simple Daxko Integration (deprecated) (&lt;code>drupal/daxko&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/activenet" target="_blank">ActiveNet Integration (&lt;code>drupal/activenet&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/personify" target="_blank">Personify Integration (&lt;code>drupal/personify&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/groupexpro" target="_blank">GroupEx Pro (Daxko) Integration (&lt;code>drupal/groupexpro&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync" target="_blank">PEF (Program Event Framework) GXP (GroupEx Pro) Sync (&lt;code>ynorth-projects/openy_pef_gxp_sync&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.drupal.org/project/yusaopeny_ymca360" target="_blank">YMCA 360 (Y360) Integration (&lt;code>drupal/yusaopeny_ymca360&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec" target="_blank">Traction Rec Integration (&lt;code>ycloudyusa/openy_traction_rec&lt;/code>)&lt;/a>
+&lt;ul>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec?tab=readme-ov-file#ymca-website-services-traction-rec-integration" target="_blank">How to configure the Traction Rec integration&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec/blob/main/modules/openy_traction_rec_import/README.md#ymca-website-services-traction-rec-pef-integration" target="_blank">How to import data from Traction Rec&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="displays">Displays&lt;/h2>
+&lt;p>These display the content for users to discover:&lt;/p>
+&lt;ul>
+&lt;li>Activity Finder
+&lt;ul>
+&lt;li>
+&lt;a href="../../user-documentation/schedules/activity-finder">Activity Finder (User Docs)&lt;/a>
+&lt;ul>
+&lt;li>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">Activity Finder (&lt;code>ycloudyusa/yusaopeny_activity_finder&lt;/code>)&lt;/a> - this repo contains in-depth developer documentation.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Group Schedules
+&lt;ul>
+&lt;li>
+&lt;a href="../../user-documentation/schedules/group-schedules">Group Schedules (User Docs)&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://github.com/ynorth-projects/openy_repeat" target="_blank">Repeat Schedules (&lt;code>ynorth-projects/openy_repeat&lt;/code>)&lt;/a> - contains the &amp;ldquo;Repeat Schedules&amp;rdquo; block which is the basis for Group Schedules.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="data-model">Data model&lt;/h2>
+&lt;p>The network of data structures in PEF can be confusing. Here&amp;rsquo;s how it all works&lt;/p>
+&lt;pre class="mermaid">---
+title: PEF Relationships
+---
+erDiagram
+program {
+entityRefTerm field_program_color
+paragraph field_content
+paragraph field_header_content
+paragraph field_sidebar_content
+textFormattedLong field_program_description
+entityRefMedia field_program_icon
+entityRefMedia field_program_image
+layout layout_builder__layout
+meta field_meta_tags
+bool field_use_layout_builder
+}
+program_subcategory {
+paragraph field_bottom_content
+entityRefTerm field_category_color
+paragraph field_content
+paragraph field_sidebar_content
+textFormattedLong field_category_description
+paragraph field_header_content
+entityRefMedia field_category_image
+layout layout_builder__layout
+meta field_meta_tags
+entityRefProgram field_category_program
+bool field_use_layout_builder
+}
+program_subcategory }|--|| program : field_category_program
+activity {
+textFormattedLong field_activity_description
+entityRefProgSub field_activity_category
+}
+activity }o--|| program_subcategory : field_activity_category
+class {
+entityRefActivity field_class_activity
+paragraph field_bottom_content
+paragraph field_content
+textFormattedLong field_class_description
+paragraph field_header_content
+meta field_meta_tags
+paragraph field_sidebar_content
+}
+class }o--|| activity : field_class_activity
+session {
+listText field_activity_type
+entityRefClass field_session_class
+textFormattedLong field_session_description
+dateRange field_session_exclusions
+listText field_session_gender
+numberInt field_availability
+bool field_session_in_mbrsh
+textPlain field_session_instructor
+entityRefLoc field_session_location
+numberInt field_session_max_age
+listText field_session_max_grade
+numberDec field_session_mbr_price
+numberInt field_session_min_age
+listText field_session_min_grade
+numberDec field_session_nmbr_price
+bool field_session_online
+entityRef field_session_plocation
+numberInt field_productid
+link field_session_reg_link
+textPlain field_session_room
+paragraph field_session_time
+numberInt field_wait_list_availability
+}
+session }|--|| class : field_session_class
+session ||--o{ session_time_paragraph : field_session_type
+session_time_paragraph {
+dateRange field_session_time_date
+listText field_session_time_days
+textPlain field_session_time_override
+}
+branch {
+}
+camp {
+}
+facility {
+}
+session }o--|| branch : field_session_location
+session }o--|| camp : field_session_location
+session }o--|| facility : field_session_location
+session }o--|| facility : field_session_plocation&lt;/pre>
+&lt;p>More information on how this data gets out into each display will be coming soon.&lt;/p></description></item></channel></rss>

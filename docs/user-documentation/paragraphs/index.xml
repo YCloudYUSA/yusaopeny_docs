@@ -396,29 +396,67 @@ Out of the box, the &lt;em>Title field&lt;/em> in each &lt;em>custom block&lt;/e
 &lt;li>
 &lt;a href="../../content-types/news-post">News Post&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Activity Finder</title><link>/docs/user-documentation/paragraphs/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/activity-finder/</guid><description>
-&lt;p>&lt;strong>Areas It Should Be Used&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Content Area&lt;/li>
-&lt;li>Bottom Area&lt;/li>
-&lt;/ul>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/activity-finder/activity-finder--example.png" title="View original image">
+&lt;img alt="A screenshot of the Activity Finder block." srcset="
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--example_huc7d60087f5004be73ed77a78d3e36fb8_75908_436296c707ac5de4707cc07a32cf466a.png 458w,
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--example_huc7d60087f5004be73ed77a78d3e36fb8_75908_5c5b91c1101515748ae9cf89e95d0304.png 726w,
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--example_huc7d60087f5004be73ed77a78d3e36fb8_75908_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/activity-finder/activity-finder--example_huc7d60087f5004be73ed77a78d3e36fb8_75908_436296c707ac5de4707cc07a32cf466a.png" />
+&lt;figcaption>A screenshot showing the Activity Finder block and a detail popup. &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>See a live example of Activity Finder in
+&lt;a href="https://sandbox-carnation-cus-d9.y.org/activity-finder-v4" target="_blank">our sandbox site&lt;/a>.&lt;/p>
 &lt;h2 id="how-it-works">How it Works&lt;/h2>
-&lt;p>This paragraph type requires an integration into a CRM. Out-of-the-box, YMCA Website Services’s Activity Finder integrates with Daxko, ActiveNet, and Personify. Any other CRM will require custom developer work.&lt;/p>
+&lt;p>This paragraph type requires an integration into a CRM. See
+&lt;a href="../../../development/program-event-framework">Program Activity Framework&lt;/a> for a list of existing integrations. Any other CRM will require custom developer work.&lt;/p>
 &lt;p>How you use these paragraphs will depend on how your Association has structured its program data on the CRM and on how you decide to get people to program results.&lt;/p>
-&lt;p>There are three primary approaches to setting this up: a standard approach, a results-only approach, and a targeted approach.&lt;/p>
-&lt;h3 id="standard-approach">Standard Approach&lt;/h3>
+&lt;p>To start, add the &lt;strong>Activity Finder&lt;/strong> Paragraph or Block to a page.&lt;/p>
+&lt;h2 id="block-configuration">Block configuration&lt;/h2>
+&lt;p>When you add the Activity Finder block to a page, you have a number of options. These are in addition to the configuration at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Activity Finder Settings&lt;/strong> (&lt;code>/admin/openy/settings/activity-finder&lt;/code>). See
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder?tab=readme-ov-file#open-y-activity-finder" target="_blank">the Activity Finder module README&lt;/a> for more information.&lt;/p>
 &lt;ul>
-&lt;li>Create two Landing Pages. Title one “Find a Program” and the other “Program Search.”&lt;/li>
-&lt;li>On the “Find a Program” page, add the “Activity Finder” paragraph. Type in “Program Search” and select your Program Search in the “Activity Finder Search Results Page Reference” field.&lt;/li>
-&lt;li>At the bottom, you will see a field called “Title” Change the title to “Find a Program” Save the page.&lt;/li>
-&lt;li>Next, on the “Program Search” page, add the “Activity Finder Search Results” paragraph into the Content Area. Type in “Find a Program” on the “Activity Finder Page Reference” page.&lt;/li>
-&lt;/ul>
-&lt;h3 id="results-only-approach">Results-Only Approach&lt;/h3>
-&lt;p>If you plan on using deep-linking or want to forgo the guided search experience, you can use the “Activity Finder Search Results.” Create a Landing Page called “Program Search” using the One Column (Full Width) layout.&lt;/p>
+&lt;li>&lt;strong>Exclude by location&lt;/strong> - Remove specific locations from the results.&lt;/li>
+&lt;li>&lt;strong>Limit by category&lt;/strong> - Only show specific categories in the results.&lt;/li>
+&lt;li>&lt;strong>Exclude by category&lt;/strong> - Remove specific categories from the results.&lt;/li>
+&lt;li>&lt;strong>Legacy mode&lt;/strong> - Shows some data as it was in the previous version of Activity Finder (v3):
 &lt;ul>
-&lt;li>Add the “Activity Finder Search Results” paragraph into your content area and leave the “Activity Finder Page Reference” field blank. Save your page.&lt;/li>
+&lt;li>Disables bookmark functionality on the results screen.&lt;/li>
+&lt;li>Doesn&amp;rsquo;t display the age indicator in the result card of activities.&lt;/li>
+&lt;li>Changes the days + times wizard step. Displays only days of week, but not times of each day (doesn&amp;rsquo;t support DaysTimes filter)&lt;/li>
 &lt;/ul>
-&lt;h3 id="targeted-approach">Targeted Approach&lt;/h3>
-&lt;p>Activity Finder can also be used on multiple pages on your site, specifically on your Program Subcategory pages.&lt;/p></description></item><item><title>Docs: All Amenities</title><link>/docs/user-documentation/paragraphs/all-amenities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/all-amenities/</guid><description>
+&lt;/li>
+&lt;li>&lt;strong>Weeks filter&lt;/strong> - Changes the Day/Time filter to use custom defined Week filters.
+&lt;ul>
+&lt;li>This requires setting the &lt;strong>Weeks&lt;/strong> configuration on &lt;code>/admin/openy/settings/activity-finder&lt;/code>.
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/activity-finder/activity-finder--weeks.png" title="View original image">
+&lt;img alt="Activity Finder Weeks configuration." srcset="
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--weeks_hu8c7717e1955746fa72975588ddda1546_57764_4af1c3c4e4cf2acb6abfc2b74bdc71c3.png 458w,
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--weeks_hu8c7717e1955746fa72975588ddda1546_57764_dbc467fb9237d84044a1ffa26adfb01f.png 726w,
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--weeks_hu8c7717e1955746fa72975588ddda1546_57764_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/activity-finder/activity-finder--weeks_hu8c7717e1955746fa72975588ddda1546_57764_4af1c3c4e4cf2acb6abfc2b74bdc71c3.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Hide Home Branch info block&lt;/strong> - Disables functionality related to the user&amp;rsquo;s selected home branch.&lt;/li>
+&lt;li>&lt;strong>Background image&lt;/strong> - An image that&amp;rsquo;s displayed in the background of the banner above Activity Finder.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/activity-finder/activity-finder--paragraph.png" title="View original image">
+&lt;img alt="The Activity Finder block configuration." srcset="
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--paragraph_hue944e5a3bed3f8051070f2ccc25eae20_44722_69c2b55700723c3fdf15326ae971bbd0.png 458w,
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--paragraph_hue944e5a3bed3f8051070f2ccc25eae20_44722_4eddfe57a8348566353bca9eccc2add9.png 726w,
+/docs/user-documentation/paragraphs/activity-finder/activity-finder--paragraph_hue944e5a3bed3f8051070f2ccc25eae20_44722_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/activity-finder/activity-finder--paragraph_hue944e5a3bed3f8051070f2ccc25eae20_44722_69c2b55700723c3fdf15326ae971bbd0.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p></description></item><item><title>Docs: All Amenities</title><link>/docs/user-documentation/paragraphs/all-amenities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/all-amenities/</guid><description>
 &lt;blockquote>
 &lt;p>This paragraph provides similar functionality to the&amp;quot; &amp;ldquo;Location filter by amenities&amp;rdquo;, and is no longer recommended for use by the YMCA Website Services Core Team.&lt;/p>
 &lt;/blockquote>
@@ -1960,7 +1998,67 @@ Make your changes inside the block and, when you’re done, click “Update Cust
 &lt;li>Facility&lt;/li>
 &lt;li>
 &lt;a href="../../content-types/program-subcategory">Program Subcategory&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Secondary Description and Sidebar</title><link>/docs/user-documentation/paragraphs/secondary-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/secondary-description/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Repeat Schedules</title><link>/docs/user-documentation/paragraphs/repeat-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/repeat-schedules/</guid><description>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;p>
+&lt;a href="https://sandbox-carnation-cus.y.org/schedules-0" target="_blank">On the sandbox site&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example.png" title="View original image">
+&lt;img alt="The Repeat Schedules Paragraph in the Carnation theme." srcset="
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example_hu5714a633ad06f062e714a84f1ff39aff_51357_b64a7b453bf820aafa5c5aaf1c218afd.png 458w,
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example_hu5714a633ad06f062e714a84f1ff39aff_51357_3e4b9d217cc71867d5024a28941c941e.png 726w,
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example_hu5714a633ad06f062e714a84f1ff39aff_51357_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example_hu5714a633ad06f062e714a84f1ff39aff_51357_b64a7b453bf820aafa5c5aaf1c218afd.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
+&lt;p>To use the Repeat Schedules paragraph:&lt;/p>
+&lt;ul>
+&lt;li>Expand the &lt;strong>Content Area&lt;/strong> on a Landing Page.&lt;/li>
+&lt;li>Choose &lt;strong>Add Repeat Schedules&lt;/strong>.&lt;/li>
+&lt;li>Configure the options:
+&lt;ul>
+&lt;li>&lt;strong>PDF Schedule link&lt;/strong> - a link to a manually-generated PDF as an alternative to the automatically generated one.&lt;/li>
+&lt;li>&lt;strong>Clear All link&lt;/strong> - where the user is directed when they use the &amp;ldquo;Clear all&amp;rdquo; link.&lt;/li>
+&lt;li>&lt;strong>Limit by category&lt;/strong> - choose categories aith autocomplete to only show certain categories.&lt;/li>
+&lt;li>&lt;strong>Filters&lt;/strong> - choose the filters that show up in the sidebar.&lt;/li>
+&lt;li>&lt;strong>Limit by Location&lt;/strong> - choose a location to only show events from that location.&lt;/li>
+&lt;li>&lt;strong>Display instructor&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Display end time&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Categories Exclude&lt;/strong> - exclude any programs that are tagged with specific categories.&lt;/li>
+&lt;li>&lt;strong>PDF only view&lt;/strong> - only show the PDF link and not the schedule.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Save the page.&lt;/li>
+&lt;/ul>
+&lt;h2 id="what-fields-are-where">What fields are where&lt;/h2>
+&lt;p>Data from Session, Class, and Activities are all used to form the Repeat Schedules. Here&amp;rsquo;s what shows up where. Fields are noted with their relationships, so &lt;code>session.class.activity.title&lt;/code> means &amp;ldquo;the title of the Activity referenced by the Class referenced by the Session&amp;rdquo;.&lt;/p>
+&lt;p>Fields used in the table view:&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--table-fields.png" title="View original image">
+&lt;img alt="A diagram listing the relationships between the fields in Repeat Schedules table and their names." srcset="
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--table-fields_huf95bb649714aac7b6363a64a0065a2c7_56101_218e13139cc7b89096bc3bd366d052ec.png 458w,
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--table-fields_huf95bb649714aac7b6363a64a0065a2c7_56101_ab1c2c8635777dc456b9303e95e82998.png 726w,
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--table-fields_huf95bb649714aac7b6363a64a0065a2c7_56101_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--table-fields_huf95bb649714aac7b6363a64a0065a2c7_56101_218e13139cc7b89096bc3bd366d052ec.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>Fields used in the popup view:&lt;/p>
+&lt;p>
+&lt;figure class="image-caption">
+&lt;a href="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--modal-fields.png" title="View original image">
+&lt;img alt="A diagram listing the relationships between the fields in Repeat Schedules modal and their names." srcset="
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--modal-fields_hu3abb27b05c6ed9320e13fc2e964c3ece_53139_568af1e0f76365b03ee9f20767e60ab5.png 458w,
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--modal-fields_hu3abb27b05c6ed9320e13fc2e964c3ece_53139_c67165b555f05ac9a73e609b22bdfe13.png 726w,
+/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--modal-fields_hu3abb27b05c6ed9320e13fc2e964c3ece_53139_1200x664_fit_catmullrom_3.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--modal-fields_hu3abb27b05c6ed9320e13fc2e964c3ece_53139_568af1e0f76365b03ee9f20767e60ab5.png" />
+&lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+&lt;/a>
+&lt;/figure>
+&lt;/p></description></item><item><title>Docs: Secondary Description and Sidebar</title><link>/docs/user-documentation/paragraphs/secondary-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/secondary-description/</guid><description>
 &lt;blockquote>
 &lt;p>Note: This element does not work properly in Carnation and is considered deprecated.&lt;/p>
 &lt;/blockquote>
