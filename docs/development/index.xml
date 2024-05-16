@@ -1611,7 +1611,7 @@ You should see &lt;code>OpenY was patched&lt;/code> message.&lt;/p></description
 &lt;a href="https://www.drupal.org/project/ws_event/issues/3409162" target="_blank">recurring event support in the Event Content Type&lt;/a> which requires an automated migration between &lt;code>date_range&lt;/code> and &lt;code>smart_date&lt;/code> fields. If possible, update to this version during the upgrade process.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>10.3.2.2 - Introduced before 10.1 and 10.2 Drupal core. This version ensures we support removed modules pre 10.1 for contrib modules&lt;/p>
+&lt;p>10.3.2.3 - Introduced before 10.1 and 10.2 Drupal core. Also upgraded openy_map.This version ensures we support removed modules pre 10.1 for contrib modules&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;p>See
