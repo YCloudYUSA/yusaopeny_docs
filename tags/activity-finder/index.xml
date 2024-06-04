@@ -66,6 +66,7 @@
 &lt;/a>
 &lt;/figure>
 &lt;/li>
+&lt;li>Note: Only sessions that have &amp;ldquo;Camp&amp;rdquo; in the title or room fields will return for this filter.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;strong>Hide Home Branch info block&lt;/strong> - Disables functionality related to the user&amp;rsquo;s selected home branch.&lt;/li>
