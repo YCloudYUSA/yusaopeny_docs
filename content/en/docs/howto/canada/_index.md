@@ -63,7 +63,9 @@ The [`ws_colorway_canada`](https://www.drupal.org/project/ws_colorway_canada) mo
 After enabling the new colorway, there are a few more steps to ensure the new colorways are used across your site:
 
 1. Set the [default layout styles](../set-up-lb#configure-layouts--listings) to use the Canadian colorway of your choice.
-2. For any existing demo content, change the banner style to one of the new [Y Canada Styles](../../user-documentation/layout-builder/advanced-options/#y-block-styles).
+2. For any existing demo content and pages:
+   - Set the page colorway to one of the new "Y Canada" options.
+   - Change the banner style to one of the new [Y Canada Styles](../../user-documentation/layout-builder/advanced-options/#y-block-styles).
 
 ### Hide YUSA Styles
 
