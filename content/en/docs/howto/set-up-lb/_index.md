@@ -75,3 +75,40 @@ Then require and enable [`yusaopeny_activity_finder`](https://github.com/YCloudY
 ## Canadian YMCAs
 
 See [How to use the Canadian Colorway for Layout Builder](../canada).
+
+## Configure Permissions
+
+By default (as of September 2024), Layout Builder content is only editable by the Administrator user. In order for Layout Builder to be used by the Contributor or Editor Roles (or any custom roles), a number of permissions must be set. To get started, go to **Admin** > **People** > **Permissions** (`/admin/people/permissions`).
+
+This list contains the relevant permissions for using Layout Builder in the YMCA Website Services distribution (out of the box). Assign permissions to roles on your site based on your individual content workflows.
+
+- In this **Permissions Section**...
+  - assign these permissions.
+- **Layout Builder** - These permissions allow users to use "layout overrides" (aka the "Layout tab"), which is how pages are composed with Layout Builder.
+  - Either give permission for all content types:
+    - **Configure any layout** - will give permission to edit layouts for ALL content types
+  - Or give permission to only specific content types:
+    - **Content - {Content Type}: Configure all layout overrides**
+  - **Create and edit content blocks** is required for anyone who needs to build Layout Builder pages.
+- **Block content** - These permissions allow users to create, edit, delete, or revert specific block types.
+  - Either give permission for all block types:
+    - **Administer block content**
+  - Or, give permissions to only specific block types:
+    - **{Block type}: {View/Edit/Delete/Revert} content block**
+- Add other necessary permissions for managing content:
+  - **Entity Browser**
+    - **Access Media Directories: Field widget pages**
+    - **Access Media Directories: Standalone pages**
+  - **Media Directories UI**
+    - **Access to Media Directories browser**
+  - **Contextual Links**
+    - **Use Contextual Links**
+- **Node** - These permissions allow users to create, edit, delete, or revert the Layout Builder _content types_.
+  - Either give permission for all content types:
+    - **Administer content**
+  - Or give permission for only specific content types:
+    - **{Content Type}: {Create/Edit/Delete/Revert} {Own} content**
+    - For example:
+      - **Landing Page (Layout Builder): Create new content**
+      - **Landing Page (Layout Builder): Delete any/own content**
+      - **Landing Page (Layout Builder): Edit any/own content**
