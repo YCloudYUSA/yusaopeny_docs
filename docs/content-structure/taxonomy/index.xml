@@ -1,9 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Taxonomy on YMCA Website Services</title><link>/docs/content-structure/taxonomy/</link><description>Recent content in Taxonomy on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/content-structure/taxonomy/index.xml" rel="self" type="application/rss+xml"/><item><title>Amenities</title><link>/docs/content-structure/taxonomy/amenities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/amenities/</guid><description>This is a vocabulary that will be used for adding reference Branch amenities. We will use this for the Branch.
-Machine_name: amenities</description></item><item><title>Area</title><link>/docs/content-structure/taxonomy/area/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/area/</guid><description>This is a vocabulary that will be used for adding location areas on the site. We will use this for the Location Branch and Facility CTs.
-Machine_name: area</description></item><item><title>Blog Category</title><link>/docs/content-structure/taxonomy/blog-category/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/blog-category/</guid><description>This is a vocabulary that will be used for adding blog categories on the site.
-Machine_name: blog_category</description></item><item><title>Color</title><link>/docs/content-structure/taxonomy/color/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/color/</guid><description>This is a vocabulary that will be used for adding colors on the site.
-Machine_name: color
-Fields Name Machine name Required Description Name drupal&amp;rsquo;s default Yes Color name. Color field_color Yes Color selector.</description></item><item><title>Facility Type</title><link>/docs/content-structure/taxonomy/facility-type/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/facility-type/</guid><description>This is a vocabulary that will be used for adding facility type on the site. We will use this for the Facility CT.
-Machine name: facility_type</description></item><item><title>Media Tags</title><link>/docs/content-structure/taxonomy/media-tags/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/media-tags/</guid><description>This is a vocabulary that will be used for adding media tags that will allow you to structure your media assets library.
-Machine name: media_tags</description></item><item><title>News Category</title><link>/docs/content-structure/taxonomy/news-category/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/news-category/</guid><description>This is a vocabulary that will be used for adding news categories on the site.
-Machine_name: news_category</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Taxonomy on YMCA Website Services</title><link>/docs/content-structure/taxonomy/</link><description>Recent content in Taxonomy on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/content-structure/taxonomy/index.xml" rel="self" type="application/rss+xml"/><item><title>Amenities</title><link>/docs/content-structure/taxonomy/amenities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/amenities/</guid><description>&lt;p>This is a vocabulary that will be used for adding reference Branch amenities. We will use this for the Branch.&lt;/p>
+&lt;p>&lt;strong>Machine_name&lt;/strong>: amenities&lt;/p></description></item><item><title>Area</title><link>/docs/content-structure/taxonomy/area/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/area/</guid><description>&lt;p>This is a vocabulary that will be used for adding location areas on the site. We will use this for the Location Branch and Facility CTs.&lt;/p>
+&lt;p>&lt;strong>Machine_name&lt;/strong>: area&lt;/p></description></item><item><title>Blog Category</title><link>/docs/content-structure/taxonomy/blog-category/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/blog-category/</guid><description>&lt;p>This is a vocabulary that will be used for adding blog categories on the site.&lt;/p>
+&lt;p>&lt;strong>Machine_name&lt;/strong>: blog_category&lt;/p></description></item><item><title>Color</title><link>/docs/content-structure/taxonomy/color/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/color/</guid><description>&lt;p>This is a vocabulary that will be used for adding colors on the site.&lt;/p>
+&lt;p>&lt;strong>Machine_name&lt;/strong>: color&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Name&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Color name.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Color&lt;/td>
+ &lt;td>field_color&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Color selector.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>Facility Type</title><link>/docs/content-structure/taxonomy/facility-type/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/facility-type/</guid><description>&lt;p>This is a vocabulary that will be used for adding facility type on the site. We will use this for the Facility CT.&lt;/p>
+&lt;p>&lt;strong>Machine name&lt;/strong>: facility_type&lt;/p></description></item><item><title>Media Tags</title><link>/docs/content-structure/taxonomy/media-tags/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/media-tags/</guid><description>&lt;p>This is a vocabulary that will be used for adding media tags that will allow you to structure your media assets library.&lt;/p>
+&lt;p>&lt;strong>Machine name&lt;/strong>: media_tags&lt;/p></description></item><item><title>News Category</title><link>/docs/content-structure/taxonomy/news-category/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/news-category/</guid><description>&lt;p>This is a vocabulary that will be used for adding news categories on the site.&lt;/p>
+&lt;p>&lt;strong>Machine_name&lt;/strong>: news_category&lt;/p></description></item></channel></rss>

@@ -1,13 +1,233 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Group Schedules on YMCA Website Services</title><link>/tags/group-schedules/</link><description>Recent content in Group Schedules on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/tags/group-schedules/index.xml" rel="self" type="application/rss+xml"/><item><title>Group Schedules</title><link>/docs/user-documentation/schedules/group-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/group-schedules/</guid><description>Sometimes called &amp;ldquo;Group Exercise&amp;rdquo; or &amp;ldquo;Group Schedules&amp;rdquo;, the Repeat Schedules block provides a similar view to Activity Finder, but focuses on recurring, often drop-in classes. You can see an example of this on our sandbox site.
-Developers can find more information in ynorth-project/openy_repeat and Program Event Framework.
-As of August 2024, the Schedules have an updated design with improved functionality and user experience. The improved design will also respond to the selected colorway and page styles.</description></item><item><title>Program Event Framework</title><link>/docs/development/program-event-framework/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/</guid><description>&amp;ldquo;Program Event Framework&amp;rdquo; refers to the entire ecosystem of content and modules in YMCA Website Services that work together to build Activity Finder, Group Schedules, and more.
-Content Types These provide the containers for PEF content in Drupal:
-Program Program Subcategory Activity, Class, Session Syncers These provide integrations to pull content from external systems into the content types:
-Extended Daxko API Integration (drupal/openy_daxko2) Simple Daxko Integration (deprecated) (drupal/daxko) ActiveNet Integration (drupal/activenet) Personify Integration (drupal/personify) GroupEx Pro (Daxko) Integration (drupal/groupexpro) PEF (Program Event Framework) GXP (GroupEx Pro) Sync (ynorth-projects/openy_pef_gxp_sync) YMCA 360 (Y360) Integration (drupal/yusaopeny_ymca360) Traction Rec Integration (ycloudyusa/openy_traction_rec) How to configure the Traction Rec integration How to import data from Traction Rec Displays These display the content for users to discover:</description></item><item><title>Repeat Schedules</title><link>/docs/user-documentation/layout-builder/repeat-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/repeat-schedules/</guid><description>Repeat Schedules combines data from the Activity, Class, and Session content types into an interactive tool. Learn more about Group Schedules.
-Before you can use the Repeat Schedules block, you will need to:
-Ensure the openy_repeat module is updated to at least 2.2.0. Enable the Repeat (Group) Schedules (lb_repeat_schedules) module at Admin &amp;gt; Extend (/admin/modules). To use the block:
-Click the Layout tab at the top of your page Scroll to the location on the page where you want to add a block Click Add block In the sidebar, click Create custom block Choose the block to add.</description></item><item><title>Repeat Schedules</title><link>/docs/user-documentation/paragraphs/repeat-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/repeat-schedules/</guid><description>Sometimes called “Group Exercise” or “Group Schedules”, the Repeat Schedules block provides a similar view to Activity Finder, but focused more on recurring, often drop-in classes.
-See Group Schedules for more details.
-Examples On the sandbox site.
-How to use To use the Repeat Schedules paragraph:
-Expand the Content Area on a Landing Page. Choose Add Repeat Schedules. See Group Schedules Block Configuration for configuration details. Save the page. What fields are where See Group Schedules Front-end.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Group Schedules on YMCA Website Services</title><link>/tags/group-schedules/</link><description>Recent content in Group Schedules on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/tags/group-schedules/index.xml" rel="self" type="application/rss+xml"/><item><title>Group Schedules</title><link>/docs/user-documentation/schedules/group-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/group-schedules/</guid><description>&lt;p>Sometimes called &amp;ldquo;Group Exercise&amp;rdquo; or &amp;ldquo;Group Schedules&amp;rdquo;, the &lt;strong>Repeat Schedules&lt;/strong> block provides a similar view to Activity Finder, but focuses on recurring, often drop-in classes. You can see 
+
+
+
+&lt;a href="https://sandbox-carnation-cus.y.org/schedules-0" target="_blank">an example of this on our sandbox site&lt;/a>.&lt;/p>
+&lt;p>Developers can find more information in 
+
+
+
+&lt;a href="https://github.com/ynorth-projects/openy_repeat" target="_blank">&lt;code>ynorth-project/openy_repeat&lt;/code>&lt;/a> and 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../../development/program-event-framework">Program Event Framework&lt;/a>.&lt;/p>
+&lt;p>As of August 2024, the Schedules have 
+
+
+
+&lt;a href="https://www.figma.com/design/wVbmVOI5zwOMDYRjI3GLEI/YUSA-Design-System?node-id=4980%3A17269&amp;amp;t=GBUj9iIBpCBJw6yW-1" target="_blank">an updated design&lt;/a> with improved functionality and user experience. The improved design will also respond to the selected 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../layout-builder/advanced-options/#page-styles">colorway and page styles&lt;/a>.&lt;/p></description></item><item><title>Program Event Framework</title><link>/docs/development/program-event-framework/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/</guid><description>&lt;p>&amp;ldquo;Program Event Framework&amp;rdquo; refers to the entire ecosystem of content and modules in YMCA Website Services that work together to build Activity Finder, Group Schedules, and more.&lt;/p>
+&lt;h2 id="content-types">Content Types&lt;a class="td-heading-self-link" href="#content-types" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>These provide the containers for PEF content in Drupal:&lt;/p>
+&lt;ul>
+&lt;li>
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../user-documentation/content-types/program">Program&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../user-documentation/content-types/program-subcategory">Program Subcategory&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../user-documentation/content-types/activity-class-session">Activity, Class, Session&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="syncers">Syncers&lt;a class="td-heading-self-link" href="#syncers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>These provide integrations to pull content from external systems into the content types:&lt;/p>
+&lt;ul>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/openy_daxko2" target="_blank">Extended Daxko API Integration (&lt;code>drupal/openy_daxko2&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/daxko" target="_blank">Simple Daxko Integration (deprecated) (&lt;code>drupal/daxko&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/activenet" target="_blank">ActiveNet Integration (&lt;code>drupal/activenet&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/personify" target="_blank">Personify Integration (&lt;code>drupal/personify&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/groupexpro" target="_blank">GroupEx Pro (Daxko) Integration (&lt;code>drupal/groupexpro&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync" target="_blank">PEF (Program Event Framework) GXP (GroupEx Pro) Sync (&lt;code>ynorth-projects/openy_pef_gxp_sync&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/yusaopeny_ymca360" target="_blank">YMCA 360 (Y360) Integration (&lt;code>drupal/yusaopeny_ymca360&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec" target="_blank">Traction Rec Integration (&lt;code>ycloudyusa/openy_traction_rec&lt;/code>)&lt;/a>
+&lt;ul>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec?tab=readme-ov-file#ymca-website-services-traction-rec-integration" target="_blank">How to configure the Traction Rec integration&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec/blob/main/modules/openy_traction_rec_import/README.md#ymca-website-services-traction-rec-pef-integration" target="_blank">How to import data from Traction Rec&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="displays">Displays&lt;a class="td-heading-self-link" href="#displays" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>These display the content for users to discover:&lt;/p></description></item><item><title>Repeat Schedules</title><link>/docs/user-documentation/layout-builder/repeat-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/repeat-schedules/</guid><description>&lt;p>Repeat Schedules combines data from 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../content-types/activity-class-session/">the Activity, Class, and Session&lt;/a> content types into an interactive tool. Learn more about 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../schedules/group-schedules">Group Schedules&lt;/a>.&lt;/p>
+&lt;p>Before you can use the Repeat Schedules block, you will need to:&lt;/p>
+&lt;ul>
+&lt;li>Ensure the &lt;code>openy_repeat&lt;/code> module is updated to 
+
+
+
+&lt;a href="https://github.com/ynorth-projects/openy_repeat/releases" target="_blank">at least 2.2.0&lt;/a>.&lt;/li>
+&lt;li>Enable the &lt;strong>Repeat (Group) Schedules&lt;/strong> (&lt;code>lb_repeat_schedules&lt;/code>) module at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>).&lt;/li>
+&lt;/ul>
+
+
+ 
+
+
+
+
+	
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+ &lt;p>To use the block:&lt;/p>
+&lt;ul>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
+&lt;li>Scroll to the location on the page where you want to add a block&lt;/li>
+&lt;li>Click &lt;strong>Add block&lt;/strong>&lt;/li>
+&lt;li>In the sidebar, click &lt;strong>Create custom block&lt;/strong>&lt;/li>
+&lt;li>Choose the block to add.&lt;/li>
+&lt;/ul>
+
+
+&lt;p>Configure the options:&lt;/p></description></item><item><title>Repeat Schedules</title><link>/docs/user-documentation/paragraphs/repeat-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/repeat-schedules/</guid><description>&lt;p>Sometimes called “Group Exercise” or “Group Schedules”, the Repeat Schedules block provides a similar view to Activity Finder, but focused more on recurring, often drop-in classes.&lt;/p>
+&lt;p>See 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../schedules/group-schedules">Group Schedules&lt;/a> for more details.&lt;/p>
+&lt;h2 id="examples">Examples&lt;a class="td-heading-self-link" href="#examples" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>
+
+
+
+&lt;a href="https://sandbox-carnation-cus.y.org/schedules-0" target="_blank">On the sandbox site&lt;/a>.&lt;/p>
+&lt;p>
+
+&lt;figure class="image-caption">
+ &lt;a href="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example.png" title="View original image">
+ &lt;img alt="The Repeat Schedules Paragraph in the Carnation theme." srcset="
+ /docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example_hu3753973564479989112.png 458w,
+ /docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example_hu5496674493549510667.png 726w,
+ /docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example_hu16881553627401950829.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/repeat-schedules/repeat-schedules--example_hu3753973564479989112.png" />
+ &lt;figcaption> &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+ &lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="how-to-use">How to use&lt;a class="td-heading-self-link" href="#how-to-use" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>To use the Repeat Schedules paragraph:&lt;/p>
+&lt;ul>
+&lt;li>Expand the &lt;strong>Content Area&lt;/strong> on a Landing Page.&lt;/li>
+&lt;li>Choose &lt;strong>Add Repeat Schedules&lt;/strong>.&lt;/li>
+&lt;li>See 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../schedules/group-schedules#block-configuration">Group Schedules Block Configuration&lt;/a> for configuration details.&lt;/li>
+&lt;li>Save the page.&lt;/li>
+&lt;/ul>
+&lt;h2 id="what-fields-are-where">What fields are where&lt;a class="td-heading-self-link" href="#what-fields-are-where" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>See 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../schedules/group-schedules#front-end">Group Schedules Front-end&lt;/a>.&lt;/p></description></item></channel></rss>

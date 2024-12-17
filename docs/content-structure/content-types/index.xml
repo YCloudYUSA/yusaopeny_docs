@@ -1,20 +1,1623 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Content Types on YMCA Website Services</title><link>/docs/content-structure/content-types/</link><description>Recent content in Content Types on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/content-structure/content-types/index.xml" rel="self" type="application/rss+xml"/><item><title>Activity</title><link>/docs/content-structure/content-types/activity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/activity/</guid><description>Activity content type is used for adding Activities on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the activity item. Program Subcategory field_activity_category Yes A reference field for selecting the program subcategory. Content Area Field group Description field_activity_description No Textarea for the description/body with WYSIWYG, without summary. URL pattern Content type is using following pattern: /programs/[node:field_activity_category:entity:field_category_program:entity:title]/[node:field_activity_category:entity:title]/[node:title]</description></item><item><title>Alert</title><link>/docs/content-structure/content-types/alert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/alert/</guid><description>Alert content type is used for adding alerts on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the activity item. Background color field_alert_color Yes Reference field for choosing the term from &amp;ldquo;Color&amp;rdquo; vocabulary. Text color field_alert_text_color Yes Reference field for choosing the term from &amp;ldquo;Color&amp;rdquo; vocabulary. Icon color field_alert_icon_color No Reference field for choosing the term from &amp;ldquo;Color&amp;rdquo; vocabulary. Description for field: &amp;ldquo;Leave empty to hide icon.</description></item><item><title>Article</title><link>/docs/content-structure/content-types/article/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/article/</guid><description>Article content type is used for adding blog posts, news items, and press releases on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the article item. Sub-title default?? No Sub-title of the article item Locations field_article_location Yes Reference field to branch and camp nodes. Multiple Values. Category field_article_category No Reference field for choosing the term from &amp;ldquo;Blog Category&amp;rdquo; vocabulary. Multiple Values. Meta Tags field_meta_tags No A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.</description></item><item><title>Blog</title><link>/docs/content-structure/content-types/blog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/blog/</guid><description>Blog Post content type is used for adding blog posts on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the blog item. Locations field_blog_location Yes Reference field to branch and camp nodes. Multiple Values. Category field_blog_category No Reference field for choosing the term from &amp;ldquo;Blog Category&amp;rdquo; vocabulary. Multiple Values. Meta Tags field_meta_tags No A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.</description></item><item><title>Branch</title><link>/docs/content-structure/content-types/branch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/branch/</guid><description>Branch content type is used for adding Branches on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the branch item. Neighborhood field_location_area No A taxonomy reference field using the &amp;ldquo;Area&amp;rdquo; vocabulary. Coming Soon field_location_state No A checkbox field to determine branches in development. Temporary URL field_location_temp_url No A link field to provide a temporary page URL (a blog post, or something else) if the branch is coming soon.</description></item><item><title>Camp</title><link>/docs/content-structure/content-types/camp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/camp/</guid><description>Camp content type is used for adding Camps on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the camp item. Menu links field_camp_menu_links Yes Link field with multiple values, that should have the Title and Link field. Based on it, we will complete the Camp Menu. Meta Tags field_meta_tags No A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.</description></item><item><title>Class</title><link>/docs/content-structure/content-types/class/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/class/</guid><description>Class content type is used for adding Classes on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the class item. Activity field_class_activity No A reference field for selecting the class. Meta Tags field_meta_tags No A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites. Header Area Field group Content field_header_content No A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.</description></item><item><title>Event</title><link>/docs/content-structure/content-types/event/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/event/</guid><description>Event content type is used for adding events on the site.
-Fields Label Machine Name Required Description Field Settings Notes Title drupal&amp;rsquo;s default Yes Title of the event item. Sub-title default?? No Sub-title of the event item. plain text Locations field_event_location Yes Reference field to branch and camp nodes. Multiple Values. Address for event; can be either a branch or non-branch location. Category field_event_category No Reference field for choosing the term from &amp;ldquo;Event Category&amp;rdquo; vocabulary.</description></item><item><title>Facility</title><link>/docs/content-structure/content-types/facility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/facility/</guid><description>Facility content type is used for adding facilities on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the facility item. Neighborhood field_location_area No A taxonomy reference field using the Area Vocabulary(area). Type field_facility_type No A taxonomy reference field using the &amp;ldquo;Facility Type&amp;rdquo; vocabulary. Facility Branch field_facility_loc No A entity reference field to reference the related Branch node. Meta Tags field_meta_tags No A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.</description></item><item><title>Landing Page</title><link>/docs/content-structure/content-types/landing-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/landing-page/</guid><description>Landing Page content type is used for adding landing pages on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the landing page item. Layout field_lp_layout Yes Select list with the options: one_column_clean|One Column - Full widthone_column|One Columntwo_column|Two Columnstwo_column_fixed|Two Columns with fixed sidebar (sticky at the top) Meta Tags field_meta_tags No A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.</description></item><item><title>Landing Page (Layout Builder)</title><link>/docs/content-structure/content-types/lb-landing-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/lb-landing-page/</guid><description>Landing Page content type is used to add Landing Pages to your website using Layout Builder widgets.
-This page is managed with Layout Builder. You may want to uncheck &amp;ldquo;Publish Content&amp;rdquo; before creating a page, use the &amp;ldquo;Layout&amp;rdquo; tab to build the content, then Publish when the page is complete. See our User Guide for help.
-Fields Label Machine Name Required Description Field Settings Notes Title title yes Title of Landing Page Metadata Field group Meta description field_meta_description no Short text used for metatags and cards Text (plain, long) Meta image field_meta_image no Media image reference for use in metatags and cards Entity reference (Media image) Meta tags field_meta_tags no Provided by Metatag module URL pattern Content type is using following pattern: [node:title]</description></item><item><title>Membership</title><link>/docs/content-structure/content-types/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/membership/</guid><description>Membership content type is used for adding membership on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the membership item. Description field_mbrshp_description Yes Textarea for the description/body with WYSIWYG, without summary. Image field_mbrshp_image Yes Media field to upload the image. Membership info field_mbrshp_info Paragraph Paragraph to indicate the location where the membership is available and the URL. Location field_mbrshp_location No Select list with locations (branches).</description></item><item><title>News</title><link>/docs/content-structure/content-types/news/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/news/</guid><description>News Post content type is used for adding news posts on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the news item. Locations field_news_location Yes Reference field to branch and camp nodes. Multiple Values. Category field_news_category No Reference field for choosing the term from &amp;ldquo;News Category&amp;rdquo; vocabulary. Multiple Values. Meta Tags field_meta_tags No A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.</description></item><item><title>Program</title><link>/docs/content-structure/content-types/program/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/program/</guid><description>Program content type is used for adding Programs on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the program item. Meta Tags field_meta_tags No A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites. Header Area Field group Icon field_program_icon No A image field, supporting .svg for uploading the program icon. Image field_program_image No A image field, for uploading the program image.</description></item><item><title>Program Subcategory</title><link>/docs/content-structure/content-types/program-subcategory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/program-subcategory/</guid><description>Program Subcategory content type is used for adding program subcategories on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the program subcategory item. Program field_category_program Yes A reference field for selecting the program. Meta Tags field_meta_tags No A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites. Header Area Field group Image field_category_image No A image field, for uploading the category image.</description></item><item><title>Promotion</title><link>/docs/content-structure/content-types/promotion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/promotion/</guid><description>Promotions are timed pieces of content that allow content editors the flexibility to create a single item that can be placed in multiple locations on the site, without having to duplicate or manage content in multiple locations.
-Fields Name Machine name Field type Required? Title title yes Subtitle field_subtitle Text (plain) CTA / link field_link Link no Description field_promo_description Text (formatted, long) no Image field_promo_media Entity reference yes Pages field_promo_visibility_pages Text (plain, long) Promotion Category field_promo_category Entity reference no Promotion Priority field_promo_priority List (text) yes Promotion visibility state field_promo_visibility_state List (text) yes URL pattern No URL pattern.</description></item><item><title>Session</title><link>/docs/content-structure/content-types/session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/session/</guid><description>Session content type is used for adding Sessions on the site.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the session item. Class field_session_class Yes A reference field for selecting the program subcategory. Session Info Field group - - Description field_session_description No Textarea for the description/body with WYSIWYG, without summary. Gender field_session_gender No Select List with Gender options: Coed, Male, Female. Online registration field_session_online No Boolean field that determines if the Register Now button/link gets displayed.</description></item><item><title>Social Post</title><link>/docs/content-structure/content-types/social-post/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/social-post/</guid><description>Social Post content type is used for adding Social Posts on the site. Social Posts are grabbed from social networks.
-Fields Name Machine name Required Description Title drupal&amp;rsquo;s default Yes Title of the program item. ID field_id Yes Post Id in social network. This is system field. Is used by post fetcher. Image field_image No Image field for saving post image. Can save jpg and png formats. Link field_link no Contains link to original post in social network.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Content Types on YMCA Website Services</title><link>/docs/content-structure/content-types/</link><description>Recent content in Content Types on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/content-structure/content-types/index.xml" rel="self" type="application/rss+xml"/><item><title>Activity</title><link>/docs/content-structure/content-types/activity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/activity/</guid><description>&lt;p>Activity content type is used for adding Activities on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the activity item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Program Subcategory&lt;/td>
+ &lt;td>field_activity_category&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>A reference field for selecting the program subcategory.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Content Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Description&lt;/td>
+ &lt;td>field_activity_description&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Textarea for the description/body with WYSIWYG, without summary.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/programs/[node:field_activity_category:entity:field_category_program:entity:title]/[node:field_activity_category:entity:title]/[node:title]&lt;/code>&lt;/p></description></item><item><title>Alert</title><link>/docs/content-structure/content-types/alert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/alert/</guid><description>&lt;p>Alert content type is used for adding alerts on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the activity item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Background color&lt;/td>
+ &lt;td>field_alert_color&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Reference field for choosing the term from &amp;ldquo;Color&amp;rdquo; vocabulary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Text color&lt;/td>
+ &lt;td>field_alert_text_color&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Reference field for choosing the term from &amp;ldquo;Color&amp;rdquo; vocabulary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Icon color&lt;/td>
+ &lt;td>field_alert_icon_color&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Reference field for choosing the term from &amp;ldquo;Color&amp;rdquo; vocabulary. Description for field: &amp;ldquo;Leave empty to hide icon.&amp;rdquo;&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Placement&lt;/td>
+ &lt;td>field_alert_place&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Select list field (singular) for choosing place: &lt;ul>&lt;li>Header&lt;/li>&lt;li>Footer&lt;/li>&lt;/ul>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Description&lt;/td>
+ &lt;td>field_alert_description&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Textarea for the description/body with WYSIWYG, without summary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Link&lt;/td>
+ &lt;td>field_alert_link&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Internal or external link.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Reference&lt;/td>
+ &lt;td>field_alert_belongs&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Entity reference with autocomplete to any node. Description for field: &amp;ldquo;Reference to node (branch, camp, landing page and etc.), where local alert will be displayed.&amp;rdquo;&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/alert/[node:title]&lt;/code>.&lt;/p></description></item><item><title>Article</title><link>/docs/content-structure/content-types/article/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/article/</guid><description>&lt;p>Article content type is used for adding blog posts, news items, and press releases on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the article item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Sub-title&lt;/td>
+ &lt;td>default??&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Sub-title of the article item&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Locations&lt;/td>
+ &lt;td>field_article_location&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Reference field to &lt;code>branch&lt;/code> and &lt;code>camp&lt;/code> nodes. Multiple Values.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Category&lt;/td>
+ &lt;td>field_article_category&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Reference field for choosing the term from &amp;ldquo;Blog Category&amp;rdquo; vocabulary. Multiple Values.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta Tags&lt;/td>
+ &lt;td>field_meta_tags&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Type&lt;/td>
+ &lt;td>field_article_type&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Select list field with multiple options for choosing article type: &lt;ul>&lt;li>News Item (default)&lt;/li>&lt;li>Blog Post&lt;/li>&lt;li>Press Release&lt;/li>&lt;/ul>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Image&lt;/td>
+ &lt;td>field_article_image&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Image field for the Blog item. Entity reference to Media bundle.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Body&lt;/td>
+ &lt;td>body&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Textarea for the description/body with WYSIWYG, without summary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Filter list of available layout builder components&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Related Content&lt;/td>
+ &lt;td>field_article_related&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Reference field for choosing related Article nodes. Multiple Values.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/blog/[node:title]&lt;/code>
+&lt;code>/news/[node:title]&lt;/code>
+&lt;code>/press-release/[node:title]&lt;/code>&lt;/p></description></item><item><title>Blog</title><link>/docs/content-structure/content-types/blog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/blog/</guid><description>&lt;p>Blog Post content type is used for adding blog posts on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the blog item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Locations&lt;/td>
+ &lt;td>field_blog_location&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Reference field to &lt;code>branch&lt;/code> and &lt;code>camp&lt;/code> nodes. Multiple Values.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Category&lt;/td>
+ &lt;td>field_blog_category&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Reference field for choosing the term from &amp;ldquo;Blog Category&amp;rdquo; vocabulary. Multiple Values.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta Tags&lt;/td>
+ &lt;td>field_meta_tags&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Styles&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Style&lt;/td>
+ &lt;td>field_blog_style&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Select list field with multiple options for choosing style: &lt;ul>&lt;li>Story Card&lt;/li>&lt;li>Photo Card&lt;/li>&lt;li>News Card (default)&lt;/li>&lt;li>Color Card&lt;/li>&lt;/ul>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Background color&lt;/td>
+ &lt;td>field_blog_color&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>teaser background color (used when Color Card style is selected.)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Text color&lt;/td>
+ &lt;td>field_blog_text_color&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>teaser text color (used when Color Card style is selected.)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Content Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Image&lt;/td>
+ &lt;td>field_blog_image&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Image field for the Blog item. Entity reference to Media bundle.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Description&lt;/td>
+ &lt;td>field_blog_description&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Textarea for the description/body with WYSIWYG, without summary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Sidebar Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Related content&lt;/td>
+ &lt;td>field_blog_related&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Reference field for choosing related Blog nodes. Multiple Values.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_sidebar_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/blog/[node:title]&lt;/code>&lt;/p></description></item><item><title>Branch</title><link>/docs/content-structure/content-types/branch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/branch/</guid><description>&lt;p>Branch content type is used for adding Branches on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the branch item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Neighborhood&lt;/td>
+ &lt;td>field_location_area&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A taxonomy reference field using the &amp;ldquo;Area&amp;rdquo; vocabulary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Coming Soon&lt;/td>
+ &lt;td>field_location_state&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A checkbox field to determine branches in development.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Temporary URL&lt;/td>
+ &lt;td>field_location_temp_url&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A link field to provide a temporary page URL (a blog post, or something else) if the branch is coming soon.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta Tags&lt;/td>
+ &lt;td>field_meta_tags&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Contact&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Address&lt;/td>
+ &lt;td>field_location_address&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>An address field that will provide the ability to add details about the locations. Details to be completed: &lt;ul>&lt;li>Address&lt;/li>&lt;li>City&lt;/li>&lt;li>State&lt;/li>&lt;li>Zip Code&lt;/li>&lt;/ul>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Branch Coordinates&lt;/td>
+ &lt;td>field_location_coordinates&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input for providing the latitude and longitude information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Phone&lt;/td>
+ &lt;td>field_location_phone&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Input for providing the phone information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Fax&lt;/td>
+ &lt;td>field_location_fax&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input for providing the fax information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Email&lt;/td>
+ &lt;td>field_location_email&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input for providing the email information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Directions&lt;/td>
+ &lt;td>field_location_directions&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A link field for adding the directions link.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Branch Hours&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Branch Hours&lt;/td>
+ &lt;td>field_branch_hours&lt;/td>
+ &lt;td>Paragraph&lt;/td>
+ &lt;td>Paragraph to indicate the branch hours.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Day of the week&lt;/td>
+ &lt;td>field_branch_hours_day&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Select list with following values: &lt;ul>&lt;li>sunday|Sunday&lt;/li>&lt;li>monday|Monday&lt;/li>&lt;li>tuesday|Tuesday&lt;/li>&lt;li>wednesday|Wednesday&lt;/li>&lt;li>thursday|Thursday&lt;/li>&lt;li>friday|Friday&lt;/li>&lt;li>saturday|Saturday&lt;/li>&lt;/ul>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Start/End Time&lt;/td>
+ &lt;td>field_branch_hours_time&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Textfield with description &amp;ldquo;e.g. 9am - 5pm, closed.&amp;rdquo;&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Header Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_header_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Content Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Bottom Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_bottom_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/locations/[node:title]&lt;/code>&lt;/p></description></item><item><title>Camp</title><link>/docs/content-structure/content-types/camp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/camp/</guid><description>&lt;p>Camp content type is used for adding Camps on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the camp item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Menu links&lt;/td>
+ &lt;td>field_camp_menu_links&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Link field with multiple values, that should have the Title and Link field. Based on it, we will complete the Camp Menu.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta Tags&lt;/td>
+ &lt;td>field_meta_tags&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Contact&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Address&lt;/td>
+ &lt;td>field_location_address&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>An address field that will provide the ability to add details about the locations. Details to be completed: &lt;ul>&lt;li>Address&lt;/li>&lt;li>City&lt;/li>&lt;li>State&lt;/li>&lt;li>Zip Code&lt;/li>&lt;/ul>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Camp Coordinates&lt;/td>
+ &lt;td>field_location_coordinates&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input for providing the latitude and longitude information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Phone&lt;/td>
+ &lt;td>field_location_phone&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Input for providing the phone information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Fax&lt;/td>
+ &lt;td>field_location_fax&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input for providing the fax information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Email&lt;/td>
+ &lt;td>field_location_email&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input for providing the email information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Directions&lt;/td>
+ &lt;td>field_location_directions&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A link field for adding the directions link.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Header Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_header_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Content Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Bottom Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_bottom_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/camps/[node:title]&lt;/code>&lt;/p></description></item><item><title>Class</title><link>/docs/content-structure/content-types/class/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/class/</guid><description>&lt;p>Class content type is used for adding Classes on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the class item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Activity&lt;/td>
+ &lt;td>field_class_activity&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A reference field for selecting the class.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta Tags&lt;/td>
+ &lt;td>field_meta_tags&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Header Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_header_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Content Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Description&lt;/td>
+ &lt;td>field_class_description&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Textarea for the description/body with WYSIWYG, without summary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Sidebar Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_sidebar_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Bottom Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_bottom_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/programs/[node:field_class_activity:entity:field_activity_category:entity:field_category_program:entity:title]/[node:field_class_activity:entity:field_activity_category:entity:title]/[node:title]/class-times&lt;/code>&lt;/p></description></item><item><title>Event</title><link>/docs/content-structure/content-types/event/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/event/</guid><description>&lt;p>Event content type is used for adding events on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Label&lt;/th>
+ &lt;th>Machine Name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Field Settings&lt;/th>
+ &lt;th>Notes&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the event item.&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Sub-title&lt;/td>
+ &lt;td>default??&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Sub-title of the event item.&lt;/td>
+ &lt;td>plain text&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Locations&lt;/td>
+ &lt;td>field_event_location&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Reference field to &lt;code>branch&lt;/code> and &lt;code>camp&lt;/code> nodes. Multiple Values.&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>Address for event; can be either a branch or non-branch location.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Category&lt;/td>
+ &lt;td>field_event_category&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Reference field for choosing the term from &amp;ldquo;Event Category&amp;rdquo; vocabulary. Multiple Values.&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta Tags&lt;/td>
+ &lt;td>field_meta_tags&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Image&lt;/td>
+ &lt;td>field_event_image&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Image field for the Event item. Entity reference to Media bundle.&lt;/td>
+ &lt;td>media&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Date&lt;/td>
+ &lt;td>field_event_date&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>This will use Drupal date/time fields.&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Add to Calendar&lt;/td>
+ &lt;td>field_add_to_calendar_link&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>link&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Body&lt;/td>
+ &lt;td>body&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Textarea for the description/body with WYSIWYG, without summary.&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Filter list of available layout builder components&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Related Content&lt;/td>
+ &lt;td>field_event_related&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Reference field for choosing related Event nodes. Multiple Values.&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/event/[node:title]&lt;/code>&lt;/p></description></item><item><title>Facility</title><link>/docs/content-structure/content-types/facility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/facility/</guid><description>&lt;p>Facility content type is used for adding facilities on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the facility item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Neighborhood&lt;/td>
+ &lt;td>field_location_area&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A taxonomy reference field using the Area Vocabulary(area).&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Type&lt;/td>
+ &lt;td>field_facility_type&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A taxonomy reference field using the &amp;ldquo;Facility Type&amp;rdquo; vocabulary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Facility Branch&lt;/td>
+ &lt;td>field_facility_loc&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A entity reference field to reference the related Branch node.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta Tags&lt;/td>
+ &lt;td>field_meta_tags&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Contact&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Address&lt;/td>
+ &lt;td>field_location_address&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>An address field that will provide the ability to add details about the locations. Details to be completed: &lt;ul>&lt;li>Address&lt;/li>&lt;li>City&lt;/li>&lt;li>State&lt;/li>&lt;li>Zip Code&lt;/li>&lt;/ul>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Facility Coordinates&lt;/td>
+ &lt;td>field_location_coordinates&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input for providing the latitude and longitude information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Phone&lt;/td>
+ &lt;td>field_location_phone&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Input for providing the phone information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Fax&lt;/td>
+ &lt;td>field_location_fax&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input for providing the fax information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Email&lt;/td>
+ &lt;td>field_location_email&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input for providing the email information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Directions&lt;/td>
+ &lt;td>field_location_directions&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A link field for adding the directions link.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Facility Hours&lt;/td>
+ &lt;td>field_branch_hours&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>The facility hours&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Facility Holiday Hours&lt;/td>
+ &lt;td>field_branch_holiday_hours&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Any special holiday hours for the facility.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Content Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Sidebar Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_sidebar_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/facility/[node:title]&lt;/code>&lt;/p></description></item><item><title>Landing Page</title><link>/docs/content-structure/content-types/landing-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/landing-page/</guid><description>&lt;p>Landing Page content type is used for adding landing pages on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the landing page item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Layout&lt;/td>
+ &lt;td>field_lp_layout&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Select list with the options: &lt;ul>&lt;li>one_column_clean|One Column - Full width&lt;/li>&lt;li>one_column|One Column&lt;/li>&lt;li>two_column|Two Columns&lt;/li>&lt;li>two_column_fixed|Two Columns with fixed sidebar (sticky at the top)&lt;/li>&lt;/ul>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta Tags&lt;/td>
+ &lt;td>field_meta_tags&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Header Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_header_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Content Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Sidebar Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_sidebar_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Bottom Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_bottom_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>[node:title]&lt;/code>&lt;/p></description></item><item><title>Landing Page (Layout Builder)</title><link>/docs/content-structure/content-types/lb-landing-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/lb-landing-page/</guid><description>&lt;p>Landing Page content type is used to add Landing Pages to your website using Layout Builder widgets.&lt;/p>
+&lt;p>This page is managed with Layout Builder. You may want to uncheck &amp;ldquo;Publish Content&amp;rdquo; before creating a page, use the &amp;ldquo;Layout&amp;rdquo; tab to build the content, then Publish when the page is complete. See our 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../user-documentation/layout-builder">User Guide&lt;/a> for help.&lt;/p>
+&lt;h2 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Label&lt;/th>
+ &lt;th>Machine Name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Field Settings&lt;/th>
+ &lt;th>Notes&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>title&lt;/td>
+ &lt;td>yes&lt;/td>
+ &lt;td>Title of Landing Page&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Metadata&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta description&lt;/td>
+ &lt;td>field_meta_description&lt;/td>
+ &lt;td>no&lt;/td>
+ &lt;td>Short text used for metatags and cards&lt;/td>
+ &lt;td>Text (plain, long)&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta image&lt;/td>
+ &lt;td>field_meta_image&lt;/td>
+ &lt;td>no&lt;/td>
+ &lt;td>Media image reference for use in metatags and cards&lt;/td>
+ &lt;td>Entity reference (Media image)&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta tags&lt;/td>
+ &lt;td>field_meta_tags&lt;/td>
+ &lt;td>no&lt;/td>
+ &lt;td>Provided by Metatag module&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Content type is using following pattern: &lt;code>[node:title]&lt;/code>&lt;/p></description></item><item><title>Membership</title><link>/docs/content-structure/content-types/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/membership/</guid><description>&lt;p>Membership content type is used for adding membership on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the membership item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Description&lt;/td>
+ &lt;td>field_mbrshp_description&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Textarea for the description/body with WYSIWYG, without summary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Image&lt;/td>
+ &lt;td>field_mbrshp_image&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Media field to upload the image.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Membership info&lt;/strong>&lt;/td>
+ &lt;td>field_mbrshp_info&lt;/td>
+ &lt;td>Paragraph&lt;/td>
+ &lt;td>Paragraph to indicate the location where the membership is available and the URL.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Location&lt;/td>
+ &lt;td>field_mbrshp_location&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Select list with locations (branches). Single value.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Link&lt;/td>
+ &lt;td>field_mbrshp_link&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Link field to provide the membership redirect URL.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Join Fee&lt;/td>
+ &lt;td>field_mbrshp_join_fee&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Dollar value for how much someone has to pay to join.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Monthly Rate&lt;/td>
+ &lt;td>field_mbrshp_monthly_rate&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Dollar value for the monthly fee of the membership.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/membership/[node:title]&lt;/code>&lt;/p></description></item><item><title>News</title><link>/docs/content-structure/content-types/news/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/news/</guid><description>&lt;p>News Post content type is used for adding news posts on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the news item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Locations&lt;/td>
+ &lt;td>field_news_location&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Reference field to &lt;code>branch&lt;/code> and &lt;code>camp&lt;/code> nodes. Multiple Values.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Category&lt;/td>
+ &lt;td>field_news_category&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Reference field for choosing the term from &amp;ldquo;News Category&amp;rdquo; vocabulary. Multiple Values.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta Tags&lt;/td>
+ &lt;td>field_meta_tags&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Content Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Image&lt;/td>
+ &lt;td>field_news_image&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Image field for the News item. Entity reference to Media bundle.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Description&lt;/td>
+ &lt;td>field_news_description&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Textarea for the description/body with WYSIWYG, without summary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Sidebar Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Related content&lt;/td>
+ &lt;td>field_news_related&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Reference field for choosing related News nodes. Multiple Values.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_sidebar_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/news/[node:title]&lt;/code>&lt;/p></description></item><item><title>Program</title><link>/docs/content-structure/content-types/program/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/program/</guid><description>&lt;p>Program content type is used for adding Programs on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the program item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta Tags&lt;/td>
+ &lt;td>field_meta_tags&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Header Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Icon&lt;/td>
+ &lt;td>field_program_icon&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A image field, supporting .svg for uploading the program icon.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Image&lt;/td>
+ &lt;td>field_program_image&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A image field, for uploading the program image.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Color&lt;/td>
+ &lt;td>field_program_color&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Reference field for choosing the term from &amp;ldquo;Color&amp;rdquo; vocabulary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_header_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types. If this field is not empty, then the image and icon are not displayed on the page.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Content Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Description&lt;/td>
+ &lt;td>field_program_description&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Textarea for the description/body with WYSIWYG, without summary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Sidebar Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_sidebar_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/programs/[node:title]&lt;/code>&lt;/p></description></item><item><title>Program Subcategory</title><link>/docs/content-structure/content-types/program-subcategory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/program-subcategory/</guid><description>&lt;p>Program Subcategory content type is used for adding program subcategories on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the program subcategory item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Program&lt;/td>
+ &lt;td>field_category_program&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>A reference field for selecting the program.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Meta Tags&lt;/td>
+ &lt;td>field_meta_tags&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A meta tags field allows us to provide structured metadata and Graph meta tags for Facebook, Pinterest, LinkedIn and other social networking sites.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Header Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Image&lt;/td>
+ &lt;td>field_category_image&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A image field, for uploading the category image.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Color&lt;/td>
+ &lt;td>field_category_color&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Reference field for choosing the term from &amp;ldquo;Color&amp;rdquo; vocabulary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_header_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Content Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Description&lt;/td>
+ &lt;td>field_category_description&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Textarea for the description/body with WYSIWYG, without summary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Sidebar Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_sidebar_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Bottom Area&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_bottom_content&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A paragraph embed field that will allow us to add various flexible content modules, from the predefined list of paragraph types.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/programs/[node:field_category_program:entity:title]/[node:title]&lt;/code>&lt;/p></description></item><item><title>Promotion</title><link>/docs/content-structure/content-types/promotion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/promotion/</guid><description>&lt;p>Promotions are timed pieces of content that allow content editors the flexibility to create a single item that can be placed in multiple locations on the site, without having to duplicate or manage content in multiple locations.&lt;/p>
+&lt;h2 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Field type&lt;/th>
+ &lt;th>Required?&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>title&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>yes&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Subtitle&lt;/td>
+ &lt;td>field_subtitle&lt;/td>
+ &lt;td>Text (plain)&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>CTA / link&lt;/td>
+ &lt;td>field_link&lt;/td>
+ &lt;td>Link&lt;/td>
+ &lt;td>no&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Description&lt;/td>
+ &lt;td>field_promo_description&lt;/td>
+ &lt;td>Text (formatted, long)&lt;/td>
+ &lt;td>no&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Image&lt;/td>
+ &lt;td>field_promo_media&lt;/td>
+ &lt;td>Entity reference&lt;/td>
+ &lt;td>yes&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Pages&lt;/td>
+ &lt;td>field_promo_visibility_pages&lt;/td>
+ &lt;td>Text (plain, long)&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Promotion Category&lt;/td>
+ &lt;td>field_promo_category&lt;/td>
+ &lt;td>Entity reference&lt;/td>
+ &lt;td>no&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Promotion Priority&lt;/td>
+ &lt;td>field_promo_priority&lt;/td>
+ &lt;td>List (text)&lt;/td>
+ &lt;td>yes&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Promotion visibility state&lt;/td>
+ &lt;td>field_promo_visibility_state&lt;/td>
+ &lt;td>List (text)&lt;/td>
+ &lt;td>yes&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>No URL pattern. This content should not be visible on its own.&lt;/p></description></item><item><title>Session</title><link>/docs/content-structure/content-types/session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/session/</guid><description>&lt;p>Session content type is used for adding Sessions on the site.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the session item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Class&lt;/td>
+ &lt;td>field_session_class&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>A reference field for selecting the program subcategory.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Session Info&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Description&lt;/td>
+ &lt;td>field_session_description&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Textarea for the description/body with WYSIWYG, without summary.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Gender&lt;/td>
+ &lt;td>field_session_gender&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Select List with Gender options: Coed, Male, Female.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Online registration&lt;/td>
+ &lt;td>field_session_online&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Boolean field that determines if the Register Now button/link gets displayed.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ticket required&lt;/td>
+ &lt;td>field_session_ticket&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Checkbox field to indicate that there is a ticket required.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Min Age&lt;/td>
+ &lt;td>field_session_min_age&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input field for adding the min age.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Max Age&lt;/td>
+ &lt;td>field_session_max_age&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input field for adding the max age.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Registration link&lt;/td>
+ &lt;td>field_session_reg_link&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A link field with the Registration link Value.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Membership&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>In membership&lt;/td>
+ &lt;td>field_session_in_mbrsh&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Boolean field that helps determine if the session is included into membership package.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Member price&lt;/td>
+ &lt;td>field_session_mbr_price&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input with with the price information for members.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Non Member Price&lt;/td>
+ &lt;td>field_session_nmbr_price&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Input with with the price information for members.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Location&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Location&lt;/td>
+ &lt;td>field_session_location&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>A reference field for selecting the branch or camp.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Physical Location&lt;/td>
+ &lt;td>field_session_plocation&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A reference field for selecting the facility.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Time&lt;/strong>&lt;/td>
+ &lt;td>Field group&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Exclusions&lt;/td>
+ &lt;td>field_session_exclusions&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>A date field that identifies dates that would normally have an instance of the session but won’t. Needs to be able to have multiple exclusions. Supports multiple values. Should be handled by a single date field with &amp;rsquo;end date&amp;rsquo; option enabled. Its widget should be adjust to not to show period end date, but show period end time (to keep period start/end date equal).&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Time&lt;/strong>&lt;/td>
+ &lt;td>field_session_time&lt;/td>
+ &lt;td>Paragraph&lt;/td>
+ &lt;td>Session schedule.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Date &amp;amp; Time&lt;/td>
+ &lt;td>field_session_time_date&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>This will use Drupal date/time fields &amp;amp; should be a single date field with &amp;rsquo;end date&amp;rsquo; and &amp;rsquo;end time&amp;rsquo; option enabled.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Days&lt;/td>
+ &lt;td>field_session_time_days&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Checkboxes with following values: &lt;ul>&lt;li>sunday|Sunday&lt;/li>&lt;li>monday|Monday&lt;/li>&lt;li>tuesday|Tuesday&lt;/li>&lt;li>wednesday|Wednesday&lt;/li>&lt;li>thursday|Thursday&lt;/li>&lt;li>friday|Friday&lt;/li>&lt;li>saturday|Saturday&lt;/li>&lt;/ul> Should support multiple values.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>No URL pattern. Eventually this content type shouldn&amp;rsquo;t be available for end users.&lt;/p></description></item><item><title>Social Post</title><link>/docs/content-structure/content-types/social-post/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/social-post/</guid><description>&lt;p>Social Post content type is used for adding Social Posts on the site. Social Posts are grabbed from social networks.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>drupal&amp;rsquo;s default&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Title of the program item.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ID&lt;/td>
+ &lt;td>field_id&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Post Id in social network. This is system field. Is used by post fetcher.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Image&lt;/td>
+ &lt;td>field_image&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Image field for saving post image. Can save jpg and png formats.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Link&lt;/td>
+ &lt;td>field_link&lt;/td>
+ &lt;td>no&lt;/td>
+ &lt;td>Contains link to original post in social network.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Platform&lt;/td>
+ &lt;td>field_platform&lt;/td>
+ &lt;td>no&lt;/td>
+ &lt;td>The name of platform where post was imported from.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Post&lt;/td>
+ &lt;td>field_post&lt;/td>
+ &lt;td>yes&lt;/td>
+ &lt;td>Text of post.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Posted&lt;/td>
+ &lt;td>field_posted&lt;/td>
+ &lt;td>no&lt;/td>
+ &lt;td>Date when post was posted in social network&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="url-pattern">URL pattern&lt;a class="td-heading-self-link" href="#url-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Content type is using following pattern:
+&lt;code>/social_post/[node:title]&lt;/code>&lt;/p></description></item></channel></rss>

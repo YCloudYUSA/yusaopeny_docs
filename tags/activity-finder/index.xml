@@ -1,16 +1,293 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Activity Finder on YMCA Website Services</title><link>/tags/activity-finder/</link><description>Recent content in Activity Finder on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/tags/activity-finder/index.xml" rel="self" type="application/rss+xml"/><item><title>Activity Finder</title><link>/docs/development/program-event-framework/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/activity-finder/</guid><description>YCloudYUSA/yusaopeny_activity_finder is bundled as a &amp;ldquo;decoupled application&amp;rdquo; that ships with the YMCA Website Services distribution.
-Requirements This module requires the following modules:
-openy_map (For pulling the list of location-related content types.) This module also requires one of the following to store data:
-A Solr server (preferably a server or index per-environment). A subscription with access to the Daxko API. Recommended modules Activity Finder is most often used with a syncer to pull data from an external source.</description></item><item><title>Activity Finder</title><link>/docs/user-documentation/layout-builder/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/activity-finder/</guid><description>Activity Finder combines data from the Activity, Class, and Session content types into an interactive tool. Learn more about Activity Finder.
-To use the block:
-Click the Layout tab at the top of your page Scroll to the location on the page where you want to add a block Click Add block In the sidebar, click Create custom block Choose the block to add. Configure the options:
-See Activity Finder Block Configuration for field details.</description></item><item><title>Activity Finder</title><link>/docs/user-documentation/paragraphs/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/activity-finder/</guid><description>A screenshot showing the Activity Finder block and a detail popup. See a live example of Activity Finder in our sandbox site.
-How it Works This paragraph type requires an integration into a CRM. See Program Activity Framework for a list of existing integrations. Any other CRM will require custom developer work.
-How you use these paragraphs will depend on how your Association has structured its program data on the CRM and on how you decide to get people to program results.</description></item><item><title>Activity Finder</title><link>/docs/user-documentation/schedules/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/activity-finder/</guid><description>Activity Finder combines data from the Activity, Class, and Session content types into an interactive tool that can be used with Paragraphs or Layout Builder pages.
-Out-of-the-box, YMCA Website Services’s Activity Finder integrates with Daxko, ActiveNet, and Personify. Configuring these integrations is mostly user-friendly, but often is supported by a partner development team. Any other CRM will require custom developer work.
-See the Program Event Framework developer docs for a full list of integrations.</description></item><item><title>Activity, Class, and Session</title><link>/docs/user-documentation/content-types/activity-class-session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/activity-class-session/</guid><description>Content editors rarely, if ever, enter information directly into these content types on a day-to-day basis. However, it is important to know how they work and how they relate to manually-entered content.
-Example - Swim Lessons
-Swimming and Aquatics (Program Page, manually entered) Swim Lessons (Program Subcategory Page, manually entered) Youth Group Swim Lessons (Activity, mapped from CRM or custom automation) Stage 3 (Class, mapped from CRM) Monday/Wednesday/Friday 9:30-10 a.m. at Franklin Family YMCA (Session, mapped from CRM) Note: This is an example only.</description></item><item><title>Program Event Framework</title><link>/docs/development/program-event-framework/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/</guid><description>&amp;ldquo;Program Event Framework&amp;rdquo; refers to the entire ecosystem of content and modules in YMCA Website Services that work together to build Activity Finder, Group Schedules, and more.
-Content Types These provide the containers for PEF content in Drupal:
-Program Program Subcategory Activity, Class, Session Syncers These provide integrations to pull content from external systems into the content types:
-Extended Daxko API Integration (drupal/openy_daxko2) Simple Daxko Integration (deprecated) (drupal/daxko) ActiveNet Integration (drupal/activenet) Personify Integration (drupal/personify) GroupEx Pro (Daxko) Integration (drupal/groupexpro) PEF (Program Event Framework) GXP (GroupEx Pro) Sync (ynorth-projects/openy_pef_gxp_sync) YMCA 360 (Y360) Integration (drupal/yusaopeny_ymca360) Traction Rec Integration (ycloudyusa/openy_traction_rec) How to configure the Traction Rec integration How to import data from Traction Rec Displays These display the content for users to discover:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Activity Finder on YMCA Website Services</title><link>/tags/activity-finder/</link><description>Recent content in Activity Finder on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/tags/activity-finder/index.xml" rel="self" type="application/rss+xml"/><item><title>Activity Finder</title><link>/docs/development/program-event-framework/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/activity-finder/</guid><description>&lt;p>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">YCloudYUSA/yusaopeny_activity_finder&lt;/a> is bundled as a &amp;ldquo;decoupled application&amp;rdquo; that ships with the YMCA Website Services distribution.&lt;/p>
+&lt;h2 id="requirements">Requirements&lt;a class="td-heading-self-link" href="#requirements" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>This module requires the following modules:&lt;/p>
+&lt;ul>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/open-y-subprojects/openy_map" target="_blank">openy_map&lt;/a> (For pulling the list of location-related content types.)&lt;/li>
+&lt;/ul>
+&lt;p>This module also requires one of the following to store data:&lt;/p>
+&lt;ul>
+&lt;li>A Solr server (preferably a server or index per-environment).&lt;/li>
+&lt;li>A subscription with access to the 
+
+
+
+&lt;a href="https://api.daxko.com/v3/docs" target="_blank">Daxko API&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="recommended-modules">Recommended modules&lt;a class="td-heading-self-link" href="#recommended-modules" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Activity Finder is most often used with a 
+
+
+
+&lt;a href="https://ds-docs.y.org/docs/development/program-event-framework/#syncers" target="_blank">syncer&lt;/a> to pull data from an external source.&lt;/p></description></item><item><title>Activity Finder</title><link>/docs/user-documentation/layout-builder/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/activity-finder/</guid><description>&lt;p>Activity Finder combines data from 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/user-documentation/content-types/activity-class-session/">the Activity, Class, and Session&lt;/a> content types into an interactive tool. Learn more about 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/user-documentation/paragraphs/activity-finder/">Activity Finder&lt;/a>.&lt;/p>
+
+
+ 
+
+
+
+
+	
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+ &lt;p>To use the block:&lt;/p>
+&lt;ul>
+&lt;li>Click the &lt;strong>Layout&lt;/strong> tab at the top of your page&lt;/li>
+&lt;li>Scroll to the location on the page where you want to add a block&lt;/li>
+&lt;li>Click &lt;strong>Add block&lt;/strong>&lt;/li>
+&lt;li>In the sidebar, click &lt;strong>Create custom block&lt;/strong>&lt;/li>
+&lt;li>Choose the block to add.&lt;/li>
+&lt;/ul>
+
+
+&lt;p>Configure the options:&lt;/p>
+&lt;ul>
+&lt;li>See 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../schedules/activity-finder#block-configuration">Activity Finder Block Configuration&lt;/a> for field details.&lt;/li>
+&lt;/ul>
+
+
+ 
+
+
+
+
+	
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+ &lt;p>Then save the block:&lt;/p></description></item><item><title>Activity Finder</title><link>/docs/user-documentation/paragraphs/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/paragraphs/activity-finder/</guid><description>&lt;p>
+
+&lt;figure class="image-caption">
+ &lt;a href="/docs/user-documentation/paragraphs/activity-finder/activity-finder--example.png" title="View original image">
+ &lt;img alt="A screenshot of the Activity Finder block." srcset="
+ /docs/user-documentation/paragraphs/activity-finder/activity-finder--example_hu16793275137298933853.png 458w,
+ /docs/user-documentation/paragraphs/activity-finder/activity-finder--example_hu12497549430896314860.png 726w,
+ /docs/user-documentation/paragraphs/activity-finder/activity-finder--example_hu14208123261764233562.png 1200w" sizes="50vw" src="/docs/user-documentation/paragraphs/activity-finder/activity-finder--example_hu16793275137298933853.png" />
+ &lt;figcaption>A screenshot showing the Activity Finder block and a detail popup. &lt;i class="fa-solid fa-external-link fa-fw">&lt;/i>&lt;/figcaption>
+ &lt;/a>
+&lt;/figure>
+&lt;/p>
+&lt;p>See a live example of Activity Finder in 
+
+
+
+&lt;a href="https://sandbox-carnation-cus-d9.y.org/activity-finder-v4" target="_blank">our sandbox site&lt;/a>.&lt;/p>
+&lt;h2 id="how-it-works">How it Works&lt;a class="td-heading-self-link" href="#how-it-works" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>This paragraph type requires an integration into a CRM. See 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../../development/program-event-framework">Program Activity Framework&lt;/a> for a list of existing integrations. Any other CRM will require custom developer work.&lt;/p>
+&lt;p>How you use these paragraphs will depend on how your Association has structured its program data on the CRM and on how you decide to get people to program results.&lt;/p></description></item><item><title>Activity Finder</title><link>/docs/user-documentation/schedules/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/activity-finder/</guid><description>&lt;p>Activity Finder combines data from 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../content-types/activity-class-session">the Activity, Class, and Session&lt;/a> content types into an interactive tool that can be used with 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../paragraphs/activity-finder">Paragraphs&lt;/a> or 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../layout-builder/activity-finder">Layout Builder&lt;/a> pages.&lt;/p>
+&lt;p>Out-of-the-box, YMCA Website Services’s Activity Finder integrates with 
+
+
+
+&lt;a href="https://www.daxko.com/" target="_blank">Daxko&lt;/a>, 
+
+
+
+&lt;a href="https://www.activenetwork.com/activenet" target="_blank">ActiveNet&lt;/a>, and 
+
+
+
+&lt;a href="https://personifycorp.com/solutions/ymcas-and-jccs/" target="_blank">Personify&lt;/a>. Configuring these integrations is mostly user-friendly, but often is supported by a partner development team. Any other CRM will require custom developer work.&lt;/p>
+&lt;p>See the 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../../development/program-event-framework">Program Event Framework developer docs&lt;/a> for a full list of integrations.&lt;/p>
+&lt;h2 id="block-configuration">Block configuration&lt;a class="td-heading-self-link" href="#block-configuration" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>When you add the Activity Finder block to a page, you have a number of options. These are in addition to the configuration at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Activity Finder Settings&lt;/strong> (&lt;code>/admin/openy/settings/activity-finder&lt;/code>). See 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder?tab=readme-ov-file#open-y-activity-finder" target="_blank">the Activity Finder module README&lt;/a> for more information.&lt;/p></description></item><item><title>Activity, Class, and Session</title><link>/docs/user-documentation/content-types/activity-class-session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/content-types/activity-class-session/</guid><description>&lt;p>Content editors rarely, if ever, enter information directly into these content types on a day-to-day basis. However, it is important to know how they work and how they relate to manually-entered content.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Example - Swim Lessons&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Swimming and Aquatics (Program Page, manually entered)&lt;/li>
+&lt;li>Swim Lessons (Program Subcategory Page, manually entered)&lt;/li>
+&lt;li>Youth Group Swim Lessons (Activity, mapped from CRM or custom automation)&lt;/li>
+&lt;li>Stage 3 (Class, mapped from CRM)&lt;/li>
+&lt;li>Monday/Wednesday/Friday 9:30-10 a.m. at Franklin Family YMCA (Session, mapped from CRM)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;em>Note: This is an example only. Depending on your CRM and any customizations you make, your setup for Swim Lessons or any program may look different that the example listed above.&lt;/em>&lt;/p></description></item><item><title>Program Event Framework</title><link>/docs/development/program-event-framework/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/</guid><description>&lt;p>&amp;ldquo;Program Event Framework&amp;rdquo; refers to the entire ecosystem of content and modules in YMCA Website Services that work together to build Activity Finder, Group Schedules, and more.&lt;/p>
+&lt;h2 id="content-types">Content Types&lt;a class="td-heading-self-link" href="#content-types" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>These provide the containers for PEF content in Drupal:&lt;/p>
+&lt;ul>
+&lt;li>
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../user-documentation/content-types/program">Program&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../user-documentation/content-types/program-subcategory">Program Subcategory&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../user-documentation/content-types/activity-class-session">Activity, Class, Session&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="syncers">Syncers&lt;a class="td-heading-self-link" href="#syncers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>These provide integrations to pull content from external systems into the content types:&lt;/p>
+&lt;ul>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/openy_daxko2" target="_blank">Extended Daxko API Integration (&lt;code>drupal/openy_daxko2&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/daxko" target="_blank">Simple Daxko Integration (deprecated) (&lt;code>drupal/daxko&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/activenet" target="_blank">ActiveNet Integration (&lt;code>drupal/activenet&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/personify" target="_blank">Personify Integration (&lt;code>drupal/personify&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/groupexpro" target="_blank">GroupEx Pro (Daxko) Integration (&lt;code>drupal/groupexpro&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync" target="_blank">PEF (Program Event Framework) GXP (GroupEx Pro) Sync (&lt;code>ynorth-projects/openy_pef_gxp_sync&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/yusaopeny_ymca360" target="_blank">YMCA 360 (Y360) Integration (&lt;code>drupal/yusaopeny_ymca360&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec" target="_blank">Traction Rec Integration (&lt;code>ycloudyusa/openy_traction_rec&lt;/code>)&lt;/a>
+&lt;ul>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec?tab=readme-ov-file#ymca-website-services-traction-rec-integration" target="_blank">How to configure the Traction Rec integration&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/openy_traction_rec/blob/main/modules/openy_traction_rec_import/README.md#ymca-website-services-traction-rec-pef-integration" target="_blank">How to import data from Traction Rec&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="displays">Displays&lt;a class="td-heading-self-link" href="#displays" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>These display the content for users to discover:&lt;/p></description></item></channel></rss>

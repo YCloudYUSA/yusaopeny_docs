@@ -1,6 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contribution Guidelines on YMCA Website Services</title><link>/docs/contribution-guidelines/</link><description>Recent content in Contribution Guidelines on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/contribution-guidelines/index.xml" rel="self" type="application/rss+xml"/><item><title>Documentation Tips &amp; Tricks</title><link>/docs/contribution-guidelines/docs-tips/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/contribution-guidelines/docs-tips/</guid><description>In addition to the full documentation, here are some commonly used functions in the YMCA Website Services Docs.
-General Styles The YMCA Website Services Docs are written in Markdown, an easy-to read and write formatting language.
-The old documentation made heavy use of horizontal rules --- and slashes in headings ## // Heading. We try to use standard Markdown headings for organization and remove those visual indicators for better accessibility.</description></item><item><title>Linting</title><link>/docs/contribution-guidelines/linting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/contribution-guidelines/linting/</guid><description>lint•er : noun
-a machine for removing the short fibers from cotton seeds after ginning a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs Checking for broken links Using linkcheck:
-Linkcheck has some issues with localhost that we&amp;rsquo;re working on resolving. Until then, you can set up your local site to run through Cloudflare Tunnel and then run it.
-linkcheck -e https://your-site-url.example.com/docs/some/path --skip-file .</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contribution Guidelines on YMCA Website Services</title><link>/docs/contribution-guidelines/</link><description>Recent content in Contribution Guidelines on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/contribution-guidelines/index.xml" rel="self" type="application/rss+xml"/><item><title>Documentation Tips &amp; Tricks</title><link>/docs/contribution-guidelines/docs-tips/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/contribution-guidelines/docs-tips/</guid><description>&lt;p>In addition to the 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/contribution-guidelines/#useful-resources">full documentation&lt;/a>, here are some commonly used functions in the YMCA Website Services Docs.&lt;/p>
+&lt;h2 id="general-styles">General Styles&lt;a class="td-heading-self-link" href="#general-styles" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The YMCA Website Services Docs are written in 
+
+
+
+&lt;a href="https://commonmark.org/help/" target="_blank">Markdown&lt;/a>, an easy-to read and write formatting language.&lt;/p>
+&lt;p>The old documentation made heavy use of horizontal rules &lt;code>---&lt;/code> and slashes in headings &lt;code>## // Heading&lt;/code>. We try to use standard Markdown headings for organization and remove those visual indicators for better accessibility.&lt;/p></description></item><item><title>Linting</title><link>/docs/contribution-guidelines/linting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/contribution-guidelines/linting/</guid><description>&lt;blockquote>
+&lt;p>lint•er : &lt;em>noun&lt;/em>&lt;/p>
+&lt;ul>
+&lt;li>a machine for removing the short fibers from cotton seeds after ginning&lt;/li>
+&lt;li>a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h2 id="checking-for-broken-links">Checking for broken links&lt;a class="td-heading-self-link" href="#checking-for-broken-links" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Using 
+
+
+
+&lt;a href="https://github.com/filiph/linkcheck" target="_blank">linkcheck&lt;/a>:&lt;/p>
+&lt;p>Linkcheck has some issues with localhost that we&amp;rsquo;re working on resolving. Until then, you can set up your local site to run through 
+
+
+
+&lt;a href="https://developers.cloudflare.com/pages/how-to/preview-with-cloudflare-tunnel/" target="_blank">Cloudflare Tunnel&lt;/a> and then run it.&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>linkcheck -e https://your-site-url.example.com/docs/some/path --skip-file .linkcheck_skip.txt&lt;/code> - run the linkchecker on internal (default) and external (&lt;code>-e&lt;/code>) links with our custom ignore file (&lt;code>--skip-file&lt;/code>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="checking-markdown">Checking markdown&lt;a class="td-heading-self-link" href="#checking-markdown" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Using 
+
+
+
+&lt;a href="https://github.com/DavidAnson/markdownlint-cli2" target="_blank">markdownlint&lt;/a>:&lt;/p></description></item></channel></rss>

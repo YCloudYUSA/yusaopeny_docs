@@ -1,20 +1,294 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Decoupled Applications on YMCA Website Services</title><link>/tags/decoupled-applications/</link><description>Recent content in Decoupled Applications on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/tags/decoupled-applications/index.xml" rel="self" type="application/rss+xml"/><item><title>Activity Finder</title><link>/docs/development/program-event-framework/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/activity-finder/</guid><description>YCloudYUSA/yusaopeny_activity_finder is bundled as a &amp;ldquo;decoupled application&amp;rdquo; that ships with the YMCA Website Services distribution.
-Requirements This module requires the following modules:
-openy_map (For pulling the list of location-related content types.) This module also requires one of the following to store data:
-A Solr server (preferably a server or index per-environment). A subscription with access to the Daxko API. Recommended modules Activity Finder is most often used with a syncer to pull data from an external source.</description></item><item><title>Activity Finder</title><link>/docs/user-documentation/schedules/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/activity-finder/</guid><description>Activity Finder combines data from the Activity, Class, and Session content types into an interactive tool that can be used with Paragraphs or Layout Builder pages.
-Out-of-the-box, YMCA Website Services’s Activity Finder integrates with Daxko, ActiveNet, and Personify. Configuring these integrations is mostly user-friendly, but often is supported by a partner development team. Any other CRM will require custom developer work.
-See the Program Event Framework developer docs for a full list of integrations.</description></item><item><title>Group Schedules</title><link>/docs/user-documentation/schedules/group-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/group-schedules/</guid><description>Sometimes called &amp;ldquo;Group Exercise&amp;rdquo; or &amp;ldquo;Group Schedules&amp;rdquo;, the Repeat Schedules block provides a similar view to Activity Finder, but focuses on recurring, often drop-in classes. You can see an example of this on our sandbox site.
-Developers can find more information in ynorth-project/openy_repeat and Program Event Framework.
-As of August 2024, the Schedules have an updated design with improved functionality and user experience. The improved design will also respond to the selected colorway and page styles.</description></item><item><title>Membership Calculator</title><link>/docs/user-documentation/membership/calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/calculator/</guid><description>The Membership Calculator is bundled with the distribution in the openy_calc module.
-As of August 2024, the Membership Calculator has an updated design with improved functionality and user experience. The improved design will also respond to the selected colorway and page styles.
-Configuring the Calculator The Membership Calculator uses Membership content items. Those will need to be created in order for the Membership Calculator to function.
-First, create a Membership node for each membership type your Branch or Association offers.</description></item><item><title>Membership Framework</title><link>/docs/user-documentation/membership/framework/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/framework/</guid><description>The Membership Framework is distributed in the openy_memberships repository and must be added and installed on top of the base distribution. We recommend working with your development partner if you wish to go this route.
-Check out the Membership Framework sandboxes for a demonstration.
-Membership Landing Pages To get started with the Membership Framework you will first need to create a number of landing pages.
-The examples below use Paragraphs, but similar pages can be created using Layout Builder blocks and the Membership Framework custom block.</description></item><item><title>PEF Schedules</title><link>/docs/development/program-event-framework/pef-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/pef-schedules/</guid><description>YCloudYUSA/y_pef_schedule
-The Y PEF Schedule module provides a calendar functionality for scheduling events. It includes a Vue.js component, fullcalendar-app, to display and interact with the calendar.
-Requirements Drupal Open Y Repeat Vue.js 3 Axios-HTTP FullCalendar Installation composer require ycloudyusa/y_pef_schedule drush en y_pef_schedule lb_simple_schedule Install as you would normally install a contributed Drupal module. For further information, see Installing Drupal Modules. Enable the module by navigating to Admin &amp;gt; Extend (/admin/modules) in your Drupal admin interface, then enabling &amp;ldquo;Y PEF Schedules Admin tool&amp;rdquo; and &amp;ldquo;LB Simple Schedule&amp;rdquo;.</description></item><item><title>Simple Schedules</title><link>/docs/user-documentation/schedules/simple-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/simple-schedules/</guid><description>YCloudYUSA/y_pef_schedule
-See PEF Schedules for installation instructions.
-Once you install the PEF Schedules module, you will be able to build schedules and add sessions via a calendar-based builder.
-Before you start Create schedule groupings The Schedule editor allows Content Editors to create Sessions on a &amp;ldquo;WYSIWYG&amp;rdquo; calendar interface. As described in the PEF data model, Sessions require Classes, which require Activities, which require Program Subcategories, which require Programs.
-flowchart LR subgraph &amp;#34;PEF Relationships&amp;#34; direction LR Session -- requires --&amp;gt; Class Class -- references --&amp;gt; Activity Activity -- references --&amp;gt; PS PS -- requires --&amp;gt; Program PS[&amp;#34;Program Subcategory&amp;#34;] end You will need to create at least a Class and Activity to start adding events to the calendar.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Decoupled Applications on YMCA Website Services</title><link>/tags/decoupled-applications/</link><description>Recent content in Decoupled Applications on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/tags/decoupled-applications/index.xml" rel="self" type="application/rss+xml"/><item><title>Activity Finder</title><link>/docs/development/program-event-framework/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/activity-finder/</guid><description>&lt;p>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">YCloudYUSA/yusaopeny_activity_finder&lt;/a> is bundled as a &amp;ldquo;decoupled application&amp;rdquo; that ships with the YMCA Website Services distribution.&lt;/p>
+&lt;h2 id="requirements">Requirements&lt;a class="td-heading-self-link" href="#requirements" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>This module requires the following modules:&lt;/p>
+&lt;ul>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/open-y-subprojects/openy_map" target="_blank">openy_map&lt;/a> (For pulling the list of location-related content types.)&lt;/li>
+&lt;/ul>
+&lt;p>This module also requires one of the following to store data:&lt;/p>
+&lt;ul>
+&lt;li>A Solr server (preferably a server or index per-environment).&lt;/li>
+&lt;li>A subscription with access to the 
+
+
+
+&lt;a href="https://api.daxko.com/v3/docs" target="_blank">Daxko API&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="recommended-modules">Recommended modules&lt;a class="td-heading-self-link" href="#recommended-modules" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Activity Finder is most often used with a 
+
+
+
+&lt;a href="https://ds-docs.y.org/docs/development/program-event-framework/#syncers" target="_blank">syncer&lt;/a> to pull data from an external source.&lt;/p></description></item><item><title>Activity Finder</title><link>/docs/user-documentation/schedules/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/activity-finder/</guid><description>&lt;p>Activity Finder combines data from 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../content-types/activity-class-session">the Activity, Class, and Session&lt;/a> content types into an interactive tool that can be used with 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../paragraphs/activity-finder">Paragraphs&lt;/a> or 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../layout-builder/activity-finder">Layout Builder&lt;/a> pages.&lt;/p>
+&lt;p>Out-of-the-box, YMCA Website Services’s Activity Finder integrates with 
+
+
+
+&lt;a href="https://www.daxko.com/" target="_blank">Daxko&lt;/a>, 
+
+
+
+&lt;a href="https://www.activenetwork.com/activenet" target="_blank">ActiveNet&lt;/a>, and 
+
+
+
+&lt;a href="https://personifycorp.com/solutions/ymcas-and-jccs/" target="_blank">Personify&lt;/a>. Configuring these integrations is mostly user-friendly, but often is supported by a partner development team. Any other CRM will require custom developer work.&lt;/p>
+&lt;p>See the 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../../development/program-event-framework">Program Event Framework developer docs&lt;/a> for a full list of integrations.&lt;/p>
+&lt;h2 id="block-configuration">Block configuration&lt;a class="td-heading-self-link" href="#block-configuration" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>When you add the Activity Finder block to a page, you have a number of options. These are in addition to the configuration at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Activity Finder Settings&lt;/strong> (&lt;code>/admin/openy/settings/activity-finder&lt;/code>). See 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder?tab=readme-ov-file#open-y-activity-finder" target="_blank">the Activity Finder module README&lt;/a> for more information.&lt;/p></description></item><item><title>Group Schedules</title><link>/docs/user-documentation/schedules/group-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/group-schedules/</guid><description>&lt;p>Sometimes called &amp;ldquo;Group Exercise&amp;rdquo; or &amp;ldquo;Group Schedules&amp;rdquo;, the &lt;strong>Repeat Schedules&lt;/strong> block provides a similar view to Activity Finder, but focuses on recurring, often drop-in classes. You can see 
+
+
+
+&lt;a href="https://sandbox-carnation-cus.y.org/schedules-0" target="_blank">an example of this on our sandbox site&lt;/a>.&lt;/p>
+&lt;p>Developers can find more information in 
+
+
+
+&lt;a href="https://github.com/ynorth-projects/openy_repeat" target="_blank">&lt;code>ynorth-project/openy_repeat&lt;/code>&lt;/a> and 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../../development/program-event-framework">Program Event Framework&lt;/a>.&lt;/p>
+&lt;p>As of August 2024, the Schedules have 
+
+
+
+&lt;a href="https://www.figma.com/design/wVbmVOI5zwOMDYRjI3GLEI/YUSA-Design-System?node-id=4980%3A17269&amp;amp;t=GBUj9iIBpCBJw6yW-1" target="_blank">an updated design&lt;/a> with improved functionality and user experience. The improved design will also respond to the selected 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../layout-builder/advanced-options/#page-styles">colorway and page styles&lt;/a>.&lt;/p></description></item><item><title>Membership Calculator</title><link>/docs/user-documentation/membership/calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/calculator/</guid><description>&lt;p>The Membership Calculator is bundled with the distribution in the 
+
+
+
+&lt;a href="https://github.com/open-y-subprojects/openy_custom/tree/main/openy_calc" target="_blank">&lt;code>openy_calc&lt;/code> module&lt;/a>.&lt;/p>
+&lt;p>As of August 2024, the Membership Calculator has 
+
+
+
+&lt;a href="https://www.figma.com/design/wVbmVOI5zwOMDYRjI3GLEI/YUSA-Design-System?node-id=5095-21390&amp;amp;t=R5aJZuowJGTQIvNk-1" target="_blank">an updated design&lt;/a> with improved functionality and user experience. The improved design will also respond to the selected 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../layout-builder/advanced-options/#page-styles">colorway and page styles&lt;/a>.&lt;/p>
+&lt;h2 id="configuring-the-calculator">Configuring the Calculator&lt;a class="td-heading-self-link" href="#configuring-the-calculator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The &lt;strong>Membership Calculator&lt;/strong> uses 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../content-types/membership">Membership&lt;/a> content items. Those will need to be created in order for the &lt;strong>Membership Calculator&lt;/strong> to function.&lt;/p>
+&lt;p>First, create a Membership node for each membership type your Branch or Association offers. Then, inside each Membership node, add a Membership Info Paragraph with the details of that membership at each of your Locations.&lt;/p></description></item><item><title>Membership Framework</title><link>/docs/user-documentation/membership/framework/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/membership/framework/</guid><description>&lt;p>The Membership Framework is distributed in the 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships" target="_blank">&lt;code>openy_memberships&lt;/code> repository&lt;/a> and must be 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_memberships#installation" target="_blank">added and installed&lt;/a> on top of the base distribution. We recommend working with your development partner if you wish to go this route.&lt;/p>
+&lt;p>Check out the 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../../wiki/sandboxes/#membership-framework-sandboxes">Membership Framework sandboxes&lt;/a> for a demonstration.&lt;/p>
+&lt;h2 id="membership-landing-pages">Membership Landing Pages&lt;a class="td-heading-self-link" href="#membership-landing-pages" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>To get started with the Membership Framework you will first need to create a number of landing pages.&lt;/p>
+&lt;p>The examples below use Paragraphs, but similar pages can be created using 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../layout-builder">Layout Builder blocks&lt;/a> and the &lt;strong>Membership Framework&lt;/strong> custom block.&lt;/p></description></item><item><title>PEF Schedules</title><link>/docs/development/program-event-framework/pef-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/pef-schedules/</guid><description>&lt;p>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/y_pef_schedule" target="_blank">YCloudYUSA/y_pef_schedule&lt;/a>&lt;/p>
+&lt;p>The Y PEF Schedule module provides a calendar functionality for scheduling events.
+It includes a Vue.js component, &lt;code>fullcalendar-app&lt;/code>, to display and interact with the calendar.&lt;/p>
+&lt;h3 id="requirements">Requirements&lt;a class="td-heading-self-link" href="#requirements" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>
+
+
+
+&lt;a href="https://www.drupal.org/project/drupal" target="_blank">Drupal&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/ynorth-projects/openy_repeat" target="_blank">Open Y Repeat&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://vuejs.org/" target="_blank">Vue.js 3&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://axios-http.com/" target="_blank">Axios-HTTP&lt;/a>&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://fullcalendar.io/" target="_blank">FullCalendar&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">composer require ycloudyusa/y_pef_schedule
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drush en y_pef_schedule lb_simple_schedule
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol>
+&lt;li>Install as you would normally install a contributed Drupal module. For further information, see
+
+
+
+
+&lt;a href="https://www.drupal.org/docs/extending-drupal/installing-drupal-modules" target="_blank">Installing Drupal Modules&lt;/a>.&lt;/li>
+&lt;li>Enable the module by navigating to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>) in your Drupal admin interface, then enabling &amp;quot;Y PEF Schedules Admin tool&amp;quot; and &amp;quot;LB Simple Schedule&amp;quot;.&lt;/li>
+&lt;/ol>
+&lt;h2 id="configuration">Configuration&lt;a class="td-heading-self-link" href="#configuration" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ol>
+&lt;li>Configure the calendar settings at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>YMCA Website Services&lt;/strong> &amp;gt; &lt;strong>Settings&lt;/strong> &amp;gt; &lt;strong>Schedules calendar settings&lt;/strong> (&lt;code>/admin/openy/settings/schedules-calendar&lt;/code>)&lt;/li>
+&lt;li>Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Schedules Calendar&lt;/strong> (&lt;code>/admin/openy/branch-schedules&lt;/code>) and select a branch.&lt;/li>
+&lt;/ol>
+&lt;p>After choosing a branch, you can view the calendar. The calendar features include:&lt;/p></description></item><item><title>Simple Schedules</title><link>/docs/user-documentation/schedules/simple-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/simple-schedules/</guid><description>&lt;p>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/y_pef_schedule" target="_blank">YCloudYUSA/y_pef_schedule&lt;/a>&lt;/p>
+&lt;p>See 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../../development/program-event-framework/pef-schedules">PEF Schedules&lt;/a> for installation instructions.&lt;/p>
+&lt;p>Once you install the PEF Schedules module, you will be able to build schedules and add sessions via a calendar-based builder.&lt;/p>
+&lt;h2 id="before-you-start">Before you start&lt;a class="td-heading-self-link" href="#before-you-start" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="create-schedule-groupings">Create schedule groupings&lt;a class="td-heading-self-link" href="#create-schedule-groupings" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>The Schedule editor allows Content Editors to create Sessions on a &amp;ldquo;WYSIWYG&amp;rdquo; calendar interface. As described in the 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../../development/program-event-framework#data-model">PEF data model&lt;/a>, 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../content-types/activity-class-session#session">Sessions&lt;/a> require 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../content-types/activity-class-session#class">Classes&lt;/a>, which require 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../content-types/activity-class-session#activity">Activities&lt;/a>, which require 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../content-types/program-subcategory">Program Subcategories&lt;/a>, which require 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="../../content-types/program">Programs&lt;/a>.&lt;/p>
+&lt;pre class="mermaid">flowchart LR
+ subgraph &amp;#34;PEF Relationships&amp;#34;
+ direction LR
+ Session -- requires --&amp;gt; Class
+ Class -- references --&amp;gt; Activity
+ Activity -- references --&amp;gt; PS
+ PS -- requires --&amp;gt; Program
+ PS[&amp;#34;Program Subcategory&amp;#34;]
+ end&lt;/pre>
+&lt;p>You will need to create &lt;strong>at least&lt;/strong> a Class and Activity to start adding events to the calendar. Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> (&lt;code>/node/add&lt;/code>) to start adding items.&lt;/p></description></item></channel></rss>

@@ -1,6 +1,150 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blocks on YMCA Website Services</title><link>/docs/content-structure/blocks/</link><description>Recent content in Blocks on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/content-structure/blocks/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic</title><link>/docs/content-structure/blocks/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/basic/</guid><description>A simple block with a description.
-Fields Name Machine name Required Description Content field_block_content Yes WYSIWYG field without summary.</description></item><item><title>Block Menu</title><link>/docs/content-structure/blocks/block-menu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/block-menu/</guid><description>Implements custom block type with a links.
-Fields Name Machine name Required Description Menu Links field_menu_block_links Yes The Menu Links. Color field_menu_block_color Yes Select colors for menu block background gradient. Text color field_menu_block_text_color Yes Select text color of the menu block.</description></item><item><title>Branch Amenities</title><link>/docs/content-structure/blocks/branch-amenities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/branch-amenities/</guid><description>A block with amenities list of the current branch.
-Fields Name Machine name Required Description Branch amenities field_branch_am Yes Uses only Custom Formatter to display a list of amenities within Paragraph block. Link field_sb_link No Link to display at the bottom of the block. Title field_sb_title No Title to display at top of block. Icon class field_icon_class No Provide a &amp;ldquo;Font Awesome&amp;rdquo; icon name, e.g. flag, car, info. Overrides image icon.</description></item><item><title>Custom Simple</title><link>/docs/content-structure/blocks/custom-simple/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/custom-simple/</guid><description>A simple block with a body.
-Fields Name Machine name Required Description Icon field_icon No Icon for block. Icon class field_icon_class No Provide a &amp;ldquo;Font Awesome&amp;rdquo; icon name, e.g. flag, car, info. Overrides image icon. Body field_sb_body No Enter body text. Link field_sb_link No Add link to the block. Title field_sb_title No Title to display at top of block.</description></item><item><title>Flexible</title><link>/docs/content-structure/blocks/flexible/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/flexible/</guid><description>A block with amenities list of the current branch.
-Fields Name Machine name Required Description Node reference field_node_ref Yes Provide reference to Node.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blocks on YMCA Website Services</title><link>/docs/content-structure/blocks/</link><description>Recent content in Blocks on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/content-structure/blocks/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic</title><link>/docs/content-structure/blocks/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/basic/</guid><description>&lt;p>A simple block with a description.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Content&lt;/td>
+ &lt;td>field_block_content&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>WYSIWYG field without summary.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>Block Menu</title><link>/docs/content-structure/blocks/block-menu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/block-menu/</guid><description>&lt;p>Implements custom block type with a links.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Menu Links&lt;/td>
+ &lt;td>field_menu_block_links&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>The Menu Links.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Color&lt;/td>
+ &lt;td>field_menu_block_color&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Select colors for menu block background gradient.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Text color&lt;/td>
+ &lt;td>field_menu_block_text_color&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Select text color of the menu block.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>Branch Amenities</title><link>/docs/content-structure/blocks/branch-amenities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/branch-amenities/</guid><description>&lt;p>A block with amenities list of the current branch.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Branch amenities&lt;/td>
+ &lt;td>field_branch_am&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Uses only Custom Formatter to display a list of amenities within Paragraph block.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Link&lt;/td>
+ &lt;td>field_sb_link&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Link to display at the bottom of the block.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>field_sb_title&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Title to display at top of block.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Icon class&lt;/td>
+ &lt;td>field_icon_class&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Provide a &amp;ldquo;Font Awesome&amp;rdquo; icon name, e.g. flag, car, info. Overrides image icon.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>Custom Simple</title><link>/docs/content-structure/blocks/custom-simple/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/custom-simple/</guid><description>&lt;p>A simple block with a body.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Icon&lt;/td>
+ &lt;td>field_icon&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Icon for block.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Icon class&lt;/td>
+ &lt;td>field_icon_class&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Provide a &amp;ldquo;Font Awesome&amp;rdquo; icon name, e.g. flag, car, info. Overrides image icon.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Body&lt;/td>
+ &lt;td>field_sb_body&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Enter body text.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Link&lt;/td>
+ &lt;td>field_sb_link&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Add link to the block.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Title&lt;/td>
+ &lt;td>field_sb_title&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Title to display at top of block.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>Flexible</title><link>/docs/content-structure/blocks/flexible/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/blocks/flexible/</guid><description>&lt;p>A block with amenities list of the current branch.&lt;/p>
+&lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Machine name&lt;/th>
+ &lt;th>Required&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Node reference&lt;/td>
+ &lt;td>field_node_ref&lt;/td>
+ &lt;td>Yes&lt;/td>
+ &lt;td>Provide reference to Node.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item></channel></rss>

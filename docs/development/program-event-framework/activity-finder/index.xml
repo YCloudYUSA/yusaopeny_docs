@@ -1,1 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Activity Finder on YMCA Website Services</title><link>/docs/development/program-event-framework/activity-finder/</link><description>Recent content in Activity Finder on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/development/program-event-framework/activity-finder/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Activity Finder on YMCA Website Services</title><link>/docs/development/program-event-framework/activity-finder/</link><description>Recent content in Activity Finder on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/development/program-event-framework/activity-finder/index.xml" rel="self" type="application/rss+xml"/><item><title>Bootstrap version support for Activity Finder</title><link>/docs/development/program-event-framework/activity-finder/bootstrap-versions/_index.md/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/program-event-framework/activity-finder/bootstrap-versions/_index.md/</guid><description>&lt;p>In the Carnation theme we use bootstrap v 4.6 and for this case we have a special option Bootstrap version in settings form for Activity Finder v4
+(/admin/openy/settings/activity-finder)&lt;/p>
+&lt;p>
+
+
+&lt;img src="https://user-images.githubusercontent.com/563412/130978526-fd949acf-1b00-4d20-93f0-cb339a23cb65.png" alt="image" />&lt;/p>
+&lt;p>Rose and Lily themes are using Bootstrap v3, Carnation theme is on Bootstrap v4
+And when we set it to 4 then the AF4 result page looks good for the tablet screen on Carnation
+
+
+
+&lt;img src="https://user-images.githubusercontent.com/563412/130978729-45954c96-2190-46c1-aa20-66cf596ab52d.png" alt="image" />
+
+
+
+&lt;img src="https://user-images.githubusercontent.com/563412/130978794-6d99e3cb-8794-4e13-bc9d-c181458b237f.png" alt="image" />&lt;/p></description></item></channel></rss>

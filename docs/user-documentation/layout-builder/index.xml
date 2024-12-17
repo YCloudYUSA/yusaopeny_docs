@@ -1,3 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Layout Builder on YMCA Website Services</title><link>/docs/user-documentation/layout-builder/</link><description>Recent content in Layout Builder on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/user-documentation/layout-builder/index.xml" rel="self" type="application/rss+xml"/><item><title>Designs</title><link>/docs/user-documentation/layout-builder/designs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/designs/</guid><description>The distribution has shipped with two versions of Layout Builder component designs. The first-generation &amp;ldquo;Pre-release&amp;rdquo; designs were shipped with version 9.2.12 (December 2022) and 9.2.13 (March 2023). The revised and feature-complete &amp;ldquo;Design System&amp;rdquo; designs shipped with the June 2023 release.
-Design System Discover our Design System in our interactive UI kit.
-Colorways Based on the YMCA Brand Guide, the distribution contains four &amp;ldquo;colorways&amp;rdquo; that allow content editors to apply accessible, brand-compliant styles to all components on a Layout Builder-based page.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Layout Builder on YMCA Website Services</title><link>/docs/user-documentation/layout-builder/</link><description>Recent content in Layout Builder on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/user-documentation/layout-builder/index.xml" rel="self" type="application/rss+xml"/><item><title>Designs</title><link>/docs/user-documentation/layout-builder/designs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/designs/</guid><description>&lt;p>The distribution has shipped with two versions of Layout Builder component designs. The first-generation &amp;ldquo;Pre-release&amp;rdquo; designs were shipped with version 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.12.1" target="_blank">9.2.12 (December 2022)&lt;/a> and 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.13.0" target="_blank">9.2.13 (March 2023)&lt;/a>. The revised and feature-complete &amp;ldquo;Design System&amp;rdquo; designs shipped with the June 2023 release.&lt;/p>
+&lt;h2 id="design-system">Design System&lt;a class="td-heading-self-link" href="#design-system" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Discover our Design System in our 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/ui-kit">interactive UI kit&lt;/a>.&lt;/p>
+&lt;h3 id="colorways">Colorways&lt;a class="td-heading-self-link" href="#colorways" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Based on the YMCA Brand Guide, the distribution contains four &amp;ldquo;colorways&amp;rdquo; that allow content editors to apply accessible, brand-compliant styles to all components on a Layout Builder-based page.&lt;/p></description></item></channel></rss>

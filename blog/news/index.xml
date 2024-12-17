@@ -1,7 +1,89 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>News on YMCA Website Services</title><link>/blog/news/</link><description>Recent content in News on YMCA Website Services</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/blog/news/index.xml" rel="self" type="application/rss+xml"/><item><title>Polyfill Security Notice</title><link>/blog/2024/02/29/polyfill-security-notice/</link><pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate><guid>/blog/2024/02/29/polyfill-security-notice/</guid><description>Summary YMCA Website Services relies on some external code to provide broad browser support to JavaScript applications (like Virtual Y, Activity Finder, and Group Schedules). One of those codebases recently changed owners, which resulted in sporadic failures.
-Users can incorporate the use Fastly polyfill patch for the openy_custom module as soon as possible to mitigate the issue.
-What is the problem? Polyfill is a service that makes web development less frustrating by selectively polyfilling just what the browser needs.</description></item><item><title>Activity Finder Security Notice</title><link>/blog/2023/04/18/activity-finder-security-notice/</link><pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate><guid>/blog/2023/04/18/activity-finder-security-notice/</guid><description>Summary Activity Finder could provide an attack vector where a malicious site could use the “trusted” YMCA domain to redirect users to an untrusted site.
-Sites using Activity Finder should immediately ensure they have activity_finder_trusted_redirect_host_patterns configured in settings.php as per the documentation and update to the latest release of Activity Finder.
-What is the problem? Activity Finder provides a method for sites to redirect users to register for activities. The method passes a URL in a query string, like exampleymca.</description></item><item><title>Layout Builder Roadmap</title><link>/blog/2023/03/09/layout-builder-roadmap/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>/blog/2023/03/09/layout-builder-roadmap/</guid><description>Skip to: v1 | v2 | v3
-Layout Builder v1 Released in 9.2.12, December 2022
-Page components Accordions Expandable pairs of question/answer or header/section fields. Maps to paragraphs: accordion_section, faq, ymca_accordion Cards (Horizontal &amp;amp; Vertical) Flexible cards style components. Carousels A full-width display with multiple sets of a header, description, and call to action overlaid on an image Grid CTA Content Sets of headline, description, and link displayed in n-item wide rows.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>News on YMCA Website Services</title><link>/blog/news/</link><description>Recent content in News on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/news/index.xml" rel="self" type="application/rss+xml"/><item><title>Polyfill Security Notice</title><link>/blog/2024/02/29/polyfill-security-notice/</link><pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate><guid>/blog/2024/02/29/polyfill-security-notice/</guid><description>&lt;h2 id="summary">Summary&lt;a class="td-heading-self-link" href="#summary" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>YMCA Website Services relies on some external code to provide broad browser support to JavaScript applications (like Virtual Y, Activity Finder, and Group Schedules). One of those codebases recently changed owners, which resulted in sporadic failures.&lt;/p>
+&lt;p>Users can incorporate the 
+
+
+
+&lt;a href="https://github.com/open-y-subprojects/openy_custom/pull/66" target="_blank">use Fastly polyfill patch for the &lt;code>openy_custom&lt;/code> module&lt;/a> as soon as possible to mitigate the issue.&lt;/p>
+&lt;h2 id="what-is-the-problem">What is the problem?&lt;a class="td-heading-self-link" href="#what-is-the-problem" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;blockquote>
+&lt;p>Polyfill is a service that makes web development less frustrating by selectively polyfilling just what the browser needs.&lt;/p></description></item><item><title>Activity Finder Security Notice</title><link>/blog/2023/04/18/activity-finder-security-notice/</link><pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate><guid>/blog/2023/04/18/activity-finder-security-notice/</guid><description>&lt;h2 id="summary">Summary&lt;a class="td-heading-self-link" href="#summary" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Activity Finder could provide an attack vector where a malicious site could use the “trusted” YMCA domain to redirect users to an untrusted site.&lt;/p>
+&lt;p>Sites using Activity Finder should immediately ensure they have &lt;code>activity_finder_trusted_redirect_host_patterns&lt;/code> configured in settings.php as per 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder#trusted-redirect-host-patterns" target="_blank">the documentation&lt;/a> and update to the 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/" target="_blank">latest release of Activity Finder&lt;/a>.&lt;/p>
+&lt;h2 id="what-is-the-problem">What is the problem?&lt;a class="td-heading-self-link" href="#what-is-the-problem" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_activity_finder" target="_blank">Activity Finder&lt;/a> provides a method for sites to redirect users to register for activities. The method passes a URL in a query string, like &lt;code>exampleymca.org/af/register-redirect/1234?url=https://exampleactivities.com...&lt;/code>.&lt;/p></description></item><item><title>Layout Builder Roadmap</title><link>/blog/2023/03/09/layout-builder-roadmap/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>/blog/2023/03/09/layout-builder-roadmap/</guid><description>&lt;p>Skip to: 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="#layout-builder-v1">v1&lt;/a> | 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="#layout-builder-v2">v2&lt;/a> | 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="#layout-builder-v3">v3&lt;/a>&lt;/p>
+&lt;h2 id="layout-builder-v1">Layout Builder v1&lt;a class="td-heading-self-link" href="#layout-builder-v1" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Released in 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.12" target="_blank">9.2.12&lt;/a>, December 2022&lt;/p>
+&lt;h3 id="page-components">Page components&lt;a class="td-heading-self-link" href="#page-components" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;dl>
+&lt;dt>Accordions&lt;/dt>
+&lt;dd>Expandable pairs of question/answer or header/section fields.&lt;/dd>
+&lt;dd>Maps to paragraphs: &lt;code>accordion_section, faq, ymca_accordion&lt;/code>&lt;/dd>
+&lt;dt>Cards (Horizontal &amp;amp; Vertical)&lt;/dt>
+&lt;dd>Flexible cards style components.&lt;/dd>
+&lt;dt>Carousels&lt;/dt>
+&lt;dd>A full-width display with multiple sets of a header, description, and call to action overlaid on an image&lt;/dd>
+&lt;dt>Grid CTA Content&lt;/dt>
+&lt;dd>Sets of headline, description, and link displayed in n-item wide rows. Sometimes icons or images are added&lt;/dd>
+&lt;dt>Hero Banners&lt;/dt>
+&lt;dd>A full-width, almost full-height display with a header, description, and call to action overlaid on an image&lt;/dd>
+&lt;dt>Ping Pong Blocks&lt;/dt>
+&lt;dd>Usually paired, sets of media, header, description, and call to action arranged horizontally&lt;/dd>
+&lt;dt>Promo Cards (sidebar only)&lt;/dt>
+&lt;dd>A title, headline, description, and link that usually display in the sidebar&lt;/dd>
+&lt;dt>Statistics&lt;/dt>
+&lt;dd>Infographic-like display to highlight relevant stats&lt;/dd>
+&lt;dt>Tabs&lt;/dt>
+&lt;dd>Allows users to switch page views by selecting tabs across the top of the page instead of having to navigate to a new page.&lt;/dd>
+&lt;dt>Simple Content (w/ responsive tables)&lt;/dt>
+&lt;dd>Allows for the management of responsive tables within a page.&lt;/dd>
+&lt;dt>Webforms&lt;/dt>
+&lt;dd>Basic webform that can be embedded within a page.&lt;/dd>
+&lt;/dl>
+&lt;h3 id="menu--navigation">Menu / Navigation&lt;a class="td-heading-self-link" href="#menu--navigation" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;dl>
+&lt;dt>Simple Menu (sidebar only)&lt;/dt>
+&lt;dd>A simple 1-level sidebar menu that can display in either the right or left sidebar area.&lt;/dd>
+&lt;/dl>
+&lt;h2 id="layout-builder-v2">Layout Builder v2&lt;a class="td-heading-self-link" href="#layout-builder-v2" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Planned for release 9.2.13, March 2023.&lt;/p></description></item></channel></rss>
