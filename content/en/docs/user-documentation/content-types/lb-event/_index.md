@@ -31,7 +31,7 @@ Fill in the content fields:
     ![The event recurrence configuration.](lb-event--recurring.png)
   - Once you save the event, **Manage Instance** will allow you to customize or remove individual instances.
   - To select multiple dates for your event that do not fit a regular rule, use **Add another item** below the date selector.
-- **Header image**: This image is displayed on the Article page and in listing views.
+- **Header image**: This image is displayed on the Event page and in listing views.
 - **Tags**: References terms in the Tags vocabulary. See [Taxonomy](../../taxonomy) for more information on tags.
 - **Body** (required): Add text with the [WYSIWYG editor](../../text-editor)
 - **Locations**: If the event relates to a [Branch](../branch) then select it here so that the event shows in listings on the Branch page.
