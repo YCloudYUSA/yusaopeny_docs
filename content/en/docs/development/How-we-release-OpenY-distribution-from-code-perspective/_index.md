@@ -22,9 +22,9 @@ When tagging a new release of YMCA Website Services, the Lead Architect takes th
 1. Change the YMCA Website Services version in major modules if there were changes to them (Activity Finder, PEF, etc).
 1. Create Changelog release notes as a draft and include Contributors as well as major issues fixed/introduced.
 1. Spin up a copy of an YMCA Website Services site and check top priority functionality for regressions.
-1. Send for review to Core Team (Craig Paulnock, Paige Kiecker), get approval.
-1. Change the YMCA Website Services version to next with -dev suffix for developers in [`openy.info.yml`](https://github.com/YCloudYUSA/yusaopeny/blob/8.x-2.x/openy.info.yml#L5).
+1. Send for review to Core Team, get approval.
+1. Change the YMCA Website Services version to next with -dev suffix for developers in [`openy.info.yml`](https://github.com/YCloudYUSA/yusaopeny/blob/main/openy.info.yml#L5).
 1. Refresh the YMCA Website Services private mirror on the `openy.cibox.tools` CI server.
-1. Check that the [one-click install](https://github.com/YCloudYUSA/yusaopeny-project/blob/8.2.x/scripts/openyonclickinstall.sh) is working on a fresh DigitalOcean instance ($10: 1CPU 2Gb RAM). Ensure the version of YMCA Website Services is the proper one in site info (`admin/reports/status`).
+1. Ensure the version of YMCA Website Services is the proper one in site info (`admin/reports/status`).
 1. Publish announcement in #developers YMCA Website Services Slack channel.
 1. Publish announcement in #general YMCA Website Services Slack channel.
