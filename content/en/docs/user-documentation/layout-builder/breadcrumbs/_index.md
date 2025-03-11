@@ -38,7 +38,7 @@ After adding the block, you will need to configure it:
 
 {{< readfile "../lb-save-block.partial" >}}
 
-{{% alert color=warning title=Important Note %}}
+{{% alert color=warning title="Important Note" %}}
 The Breadcrumbs block might not display the correct path while editing the page layout. However, it will display correctly for site viewers.
 {{% /alert %}}
 
