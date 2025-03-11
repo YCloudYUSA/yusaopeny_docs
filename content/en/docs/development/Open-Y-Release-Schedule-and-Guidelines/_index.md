@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Release Schedule and Guidelines
 aliases:

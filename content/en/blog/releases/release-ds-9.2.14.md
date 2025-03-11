@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Digital Services Release 10.2.14
 description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/10.2.14)

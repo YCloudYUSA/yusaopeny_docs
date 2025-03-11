@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Configuring Solr for Activity Finder
 ---

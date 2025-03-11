@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Drupal Core Dependencies Version Flexibility
 aliases:

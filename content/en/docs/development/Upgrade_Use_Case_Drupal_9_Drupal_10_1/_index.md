@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Upgrading from 9.2.11.5 to 10.3"
 ---
@@ -145,4 +144,3 @@ A YMCA website is currently running on Y USA Open Y (`openy-9.x-2.11.5`) using D
 *   **Clear Caches:** After each major step, clear Drupal's caches to ensure the changes are reflected. Use `drush cr` or navigate to *Configuration > Development > Performance > Clear all caches*.
 
 **Disclaimer:** This use case provides a general outline for upgrading the YMCA Website Services Drupal distribution. Specific steps and commands may vary depending on your site's configuration and any additional modules or customizations you have installed. Always refer to the official YMCA Website Services documentation and Drupal.org for the most up-to-date information and best practices.
-```

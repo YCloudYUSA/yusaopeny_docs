@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "How to set up a site with the Small Y template"
 linkTitle: "Set up a Small Y site"

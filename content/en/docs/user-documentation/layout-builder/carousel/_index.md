@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Carousel
 description: A full-width gallery with multiple sets of a header, description, and call to action overlaid on top of an image.
@@ -34,4 +33,3 @@ Fill in the content fields:
     *   **Link**:  This creates a link that appears at the bottom of the carousel item.
 
 {{< readfile "../lb-save-block.partial" >}}
-```

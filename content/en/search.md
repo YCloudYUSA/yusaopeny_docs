@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Search Results
 layout: search

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Simple Content
 description: Add a section of basic text onto a page.

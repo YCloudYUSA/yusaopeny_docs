@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Session
 ---
@@ -35,4 +34,3 @@ The Session content type is used for adding Sessions to the site. Sessions typic
 ### URL pattern
 
 No dedicated URL pattern is defined for the Session content type by default.  The intention is that this content type may not be directly accessed by end-users via a dedicated URL.
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: 'Building Buttons'
 weight: 1
@@ -80,4 +79,3 @@ You can add icons to your buttons or links using the **Icons** tab. Use the **Le
 **Browse free Font Awesome icons at [fontawesome.com](https://fontawesome.com/v5/search?m=free)**
 
 > **Note:** The left fields reference the Bootstrap Glyphicons library. This icon library has been deprecated, and the Glyphicons fields will not function correctly in YMCA Website Services. These fields will be removed once the code is updated by the tool's maintainer.
-```

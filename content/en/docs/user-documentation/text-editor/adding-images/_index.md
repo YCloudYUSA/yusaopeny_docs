@@ -1,4 +1,3 @@
-```markdown
 ---
 title: 'CKEditor 4: Adding Images'
 weight: 99

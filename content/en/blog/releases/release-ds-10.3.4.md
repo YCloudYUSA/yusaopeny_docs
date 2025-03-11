@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Digital Services Release 10.3.4"
 description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/10.3.4)
@@ -91,4 +90,3 @@ Continuing general cleanup, updated documentation, and improvements to the conte
 *   **Activity Finder** - Ensured if the solr server is unavailable Activity Finder will not throw a 500 error and WSOD (White Screen of Death). (#1753)
     *   Credit: YMCA Central Ohio
 *   Fixed an issue with y_camp module when attempting to upgrade Open Y from version 10.3.2 to 10.3.2.3. (#1765)
-```

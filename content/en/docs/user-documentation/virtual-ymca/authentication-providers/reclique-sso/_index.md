@@ -1,4 +1,3 @@
-```markdown
 ---
 title: ReClique SSO Configuration
 ---

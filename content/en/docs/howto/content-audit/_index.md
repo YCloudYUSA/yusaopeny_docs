@@ -1,4 +1,3 @@
-```markdown
 ---
 title: How to perform a content audit
 linkTitle: "Perform a content audit"

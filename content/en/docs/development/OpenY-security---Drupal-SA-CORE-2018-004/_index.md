@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Drupal-SA-CORE-2018-004 Security Update
 aliases:

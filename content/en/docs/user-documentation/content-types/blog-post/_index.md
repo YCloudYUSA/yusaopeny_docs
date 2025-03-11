@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Blog Post
 description: Timely content, articles, and news pieces tagged with one or more physical locations.

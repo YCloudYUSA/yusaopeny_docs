@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Latest Blog Posts
 ---
@@ -15,4 +14,3 @@ Key features:
 | Name  | Machine name        | Required | Description                                                                                                                                                                                                                                                           |
 | :---- | :------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Block | field\_prgf\_block | Yes      | This field holds a block reference to the view/block that provides the blog post listing. It is intended to have a default value set and is typically hidden from the form display to simplify content creation and prevent accidental modification of the listing source. |
-```

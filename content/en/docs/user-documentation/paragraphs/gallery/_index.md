@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Gallery
 description: Embed a carousel or slider of images onto a page.
@@ -76,4 +75,3 @@ You can have a gallery with a simple title. You can also add a description below
 *   [Branch](../../content-types/branch)
 *   [Camp](../../content-types/camp)
 *   Facility
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Promo Card
 description: Add a small individual card to the sidebar of a page with evergreen promotional content, such as links to join pages.
@@ -53,4 +52,3 @@ The Promo Card has the following fields:
 *   [Program](../../content-types/program)
 *   Facility
 *   [Program Subcategory](../../content-types/program-subcategory)
-```

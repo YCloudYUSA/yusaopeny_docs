@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Website Services Terms of Use
 aliases:

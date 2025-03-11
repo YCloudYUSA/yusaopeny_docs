@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Digital Services Release 10.3.2"
 description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/10.3.2)
@@ -94,4 +93,3 @@ Continuing general cleanup, updated documentation, and improvements to the conte
 *   Applied javascript cookie patch. (#1346)
     *   Credit: YMCA Denver
 *   Polyfill CDN Issue Affecting YMCA Schedules pages, which was experiencing errors due to issues with the polyfill CDN, resulting in JavaScript aggregation problems. More information can be [found in our documentation](https://ds-docs.y.org/blog/2024/02/29/polyfill-security-notice/). (#1351)
-```

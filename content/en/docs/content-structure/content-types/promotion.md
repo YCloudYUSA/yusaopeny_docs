@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Promotion
 description:
@@ -23,4 +22,3 @@ Promotions are timed pieces of content that allow content editors the flexibilit
 ## URL pattern
 
 Promotions are generally embedded within other pages and do not have their own dedicated URL. Therefore, no URL pattern is defined for this content type.
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Bootstrap version support for Activity Finder
 ---

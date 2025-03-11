@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Patch YMCA Website Services
 ---
@@ -51,4 +50,3 @@ If you followed the instructions in [docs/Development/Start new YMCA Website Ser
     Check that the changes from the patch are present in your YMCA Website Services installation.
 
 5.  **Enjoy!**
-```

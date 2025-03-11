@@ -1,4 +1,3 @@
-```markdown
 ---
 title: 1 Column
 description: Embeds a single column of content into a container, with an option to embed reusable content.
@@ -75,4 +74,3 @@ Content editors who want to edit this CSS can ask their developers to install th
 *   Event
 *   [Program](../../content-types/program)
 *   [Program Subcategory](../../content-types/program-subcategory)
-```

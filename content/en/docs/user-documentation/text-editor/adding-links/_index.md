@@ -1,4 +1,3 @@
-```markdown
 ---
 title: 'Adding Links'
 weight: 1

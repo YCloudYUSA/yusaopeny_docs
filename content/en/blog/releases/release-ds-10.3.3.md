@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Digital Services Release 10.3.3"
 description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/10.3.3)
@@ -103,4 +102,3 @@ Learn more in [Layout Builder](/docs/user-documentation/layout-builder/).
 *   **Virtual Y** - Fixed header on Virtual Y Sandboxes. (#1322)
 *   Fixed failing update hooks causing errors when updating distro versions. (#1510)
 *   Resolved some CMS login and content creation issues for admins. (#1471)
-```

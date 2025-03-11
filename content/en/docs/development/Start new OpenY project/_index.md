@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Start new YMCA Website Services project
 ---
@@ -373,4 +372,3 @@ In this section you can learn how to configure development environment and CI se
 
 ## End to end installation
 [![YMCA Website Services install - in 16 minutes end to end, no tutorial](https://img.youtube.com/vi/RT6kC38zgvo/0.jpg)](https://youtu.be/RT6kC38zgvo)
-```

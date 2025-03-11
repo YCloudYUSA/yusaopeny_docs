@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Theming and Design
 ---
@@ -53,4 +52,3 @@ To change the background color of all Camp pages to light blue, you would add th
 *   **Theme Updates:**  Custom CSS is stored in the database. Theme updates will not overwrite your CSS changes.
 *   **Performance:**  While Custom CSS provides flexibility, excessive use of custom CSS can impact site performance. Consider using a child theme for more extensive customizations.
 *   **Alternative approach:** If you are developing a new module or a small customization, consider using SASS following the info in `/docroot/modules/contrib/paragraphs/css/README.md` or `/docroot/modules/contrib/ws_small_y/README.md`.
-```

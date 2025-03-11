@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Membership Content Type
 description: Membership items are the building blocks of the Membership Calculator and are only displayed within the Membership Calculator Paragraph.

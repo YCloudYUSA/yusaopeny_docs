@@ -1,4 +1,3 @@
-```markdown
 ---
 title: How to Avoid Outdated Configuration
 linkTitle: Avoid Outdated Configuration

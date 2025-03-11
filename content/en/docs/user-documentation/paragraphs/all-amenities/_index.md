@@ -1,4 +1,3 @@
-```markdown
 ---
 title: All Amenities
 description: Displays a list of branches with amenities.

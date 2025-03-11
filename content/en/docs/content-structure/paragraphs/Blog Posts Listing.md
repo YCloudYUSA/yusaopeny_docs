@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Blog Posts Listing
 ---
@@ -33,4 +32,3 @@ This paragraph is dynamic and renders the latest blog posts, utilizing exposed f
 *   [Latest Blog Posts (Branch)](./Latest%20Blog%20Posts%20(Branch).md): Displays blog posts associated with a specific branch.
 *   [Latest Blog Posts (Camp)](./Latest%20Blog%20Posts%20(Camp).md): Displays blog posts associated with a specific camp.
 *   [News Posts Listing](./News%20Posts%20Listing.md)
-```

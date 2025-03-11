@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Basic
 ---
@@ -10,4 +9,3 @@ A simple block with a description.  This block type is commonly used for display
 | Name      | Machine name         | Required | Description                        |
 | ----------- | ---------------------- | -------- | ---------------------------------- |
 | Content     | `field_block_content` | Yes      | WYSIWYG field without summary.  Allows rich text formatting. |
-```

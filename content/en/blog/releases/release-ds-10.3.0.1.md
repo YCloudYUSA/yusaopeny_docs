@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Digital Services Release 10.3.0.1
 description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/10.3.0.1)
@@ -62,4 +61,3 @@ date: 2023-11-14
 *   [Resolved an error](https://github.com/ynorth-projects/openy_pef_gxp_sync/pull/6#issuecomment-1791633131) when upgrading from Drupal 9.5.9 to 10.3.0 (#1131)
     *   Credit: Kerry Knopp
 *   Fixed `openy_hours_formatter` so it can handle non-time entries, i.e. ‘Closed’. (#1105)
-```

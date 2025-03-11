@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Teaser
 ---
@@ -23,4 +22,3 @@ Teaser paragraphs are commonly used on landing pages, content hubs, and in listi
 *   **Image Dimensions:** Use appropriately sized images to ensure optimal display and page load times.
 *   **Concise Descriptions:** Keep descriptions brief and focused on highlighting the key benefits or features of the linked content.
 *   **Clear Call to Action:**  The link text should clearly indicate the destination and encourage user interaction (e.g., "Read More," "Learn More," "View Details").
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Simple Schedule
 description: A calendar-based schedule.
@@ -27,4 +26,3 @@ Fill in the content fields:
 -   **Location** (required): Select the location for which you would like to display scheduled events. This setting determines which sessions are included in the schedule.
 
 {{< readfile "../lb-save-block.partial" >}}
-```

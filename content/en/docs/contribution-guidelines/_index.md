@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Contribution Guidelines"
 linkTitle: "Contribution Guidelines"
@@ -59,4 +58,3 @@ If you've found a problem in the docs, but you're not sure how to fix it yoursel
 *   [Hugo documentation](https://gohugo.io/documentation/): Comprehensive reference for Hugo.
 *   [GitHub Hello World!](https://guides.github.com/activities/hello-world/): A basic introduction to GitHub concepts and workflow.
 *   [Markdown Help](https://commonmark.org/help/): A reference for markdown syntax.
-```

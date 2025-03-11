@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Decoupled (external) projects
 aliases:

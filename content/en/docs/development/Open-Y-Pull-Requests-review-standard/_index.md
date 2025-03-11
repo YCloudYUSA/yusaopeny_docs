@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Pull Request Review Standard
 aliases:

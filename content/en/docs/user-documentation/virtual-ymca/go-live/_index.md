@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Go-live Checklist"
 weight: 5

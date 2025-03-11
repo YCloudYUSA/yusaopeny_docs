@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Story Card
 description: Add a simple card to the sidebar with a title, headline, and call to action.
@@ -43,4 +42,3 @@ In Carnation, the Story Card works best inside the News Post, Event, and Blog Po
 *   [Facility](../../content-types/facility)
 *   [Program](../../content-types/program)
 *   [Program Subcategory](../../content-types/program-subcategory)
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Adding Activity Finder to your site
 ---
@@ -40,4 +39,3 @@ Sandbox Examples:
 -   Carnation: <https://sandbox-carnation-cus-d9.openy.org/activity-finder-v4>
 -   Lily: <https://sandbox-lily-cus-d9.openy.org/activity-finder-v4>
 -   Rose: <https://sandbox-rose-cus-d9.openy.org/activity-finder-v4>
-```

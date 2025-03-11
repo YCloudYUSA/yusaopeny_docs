@@ -1,4 +1,3 @@
-```markdown
 ---
 title: How to leverage structured data
 linkTitle: use structured data

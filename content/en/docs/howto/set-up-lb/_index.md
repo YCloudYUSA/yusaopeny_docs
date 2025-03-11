@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "How to set up a Layout Builder site"
 linkTitle: "Set up a Layout Builder site"

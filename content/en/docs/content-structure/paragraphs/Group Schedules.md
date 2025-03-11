@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Group Schedules
 ---
@@ -10,4 +9,3 @@ This is a dynamic paragraph that renders group schedules from the GroupEx Pro sy
 | Name              | Machine name        | Required | Description                                                                                                                               |
 | ----------------- | --------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | Block             | `field_prgf_block`    | Yes      | Block reference to the view/block that displays the GroupEx Pro schedule. A default value should be set and is configurable in the form display. |
-```

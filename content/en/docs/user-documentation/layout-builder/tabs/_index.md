@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Tabs
 description: Gives users the ability to switch page views by selecting in-page tabs. This component is built using the Paragraphs module and Entity Reference Revisions module.
@@ -31,4 +30,3 @@ Fill in the content fields:
     -   **Body**: The content of the tab. This corresponds to the `field_description` field of the `tab_item` block content type.
 
 {{< readfile "../lb-save-block.partial" >}}
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Paragraphs
 ---
@@ -29,4 +28,3 @@ To get started with Paragraphs:
 2.  Create Paragraphs types.
 3.  Add a Paragraph field to a content type.
 4.  Begin creating content and adding paragraphs.
-```

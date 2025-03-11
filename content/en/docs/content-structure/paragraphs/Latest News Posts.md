@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Latest News Posts
 ---
@@ -12,4 +11,3 @@ This paragraph leverages a block reference to display content.
 | Name  | Machine name | Required | Description |
 | ------------- | ------------- | ------------- | ------------- |
 | Block | `field_prgf_block` | Yes | A block reference to a view or block.  A default value should be configured, and the field should be hidden in the form display. This block will contain the actual list of news posts. |
-```

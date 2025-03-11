@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Simple Schedules
 description: The PEF Schedules module allows Ys to create and manage schedules with a simple, calendar-based view powered by FullCalendar.

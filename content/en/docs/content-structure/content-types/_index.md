@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Content Types
 ---
@@ -25,4 +24,3 @@ Several core modules are used to manage content structure:
 *   Field UI module: Provides a user interface for managing fields and their display on entities.
 *   Layout Builder module: Provides a user interface for configuring the display of entities.
 *   Filter, Responsive Image, and Path modules: Provide settings and display options for entities and fields.
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Program Event Framework
 description: A robust set of content types and syncer modules that build interactive tools to help members find and book activities.

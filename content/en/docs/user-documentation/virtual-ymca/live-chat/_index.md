@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Live Chat
 description: Enable group chat functionality on your live stream events.

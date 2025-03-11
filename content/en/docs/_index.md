@@ -1,4 +1,3 @@
-```markdown
 ---
 title: YMCA Website Services Distribution Documentation
 linkTitle: Documentation

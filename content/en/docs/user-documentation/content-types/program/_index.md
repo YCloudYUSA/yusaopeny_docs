@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Program
 description: A generic category page for program offerings.
@@ -97,4 +96,3 @@ Program pages can take advantage of the [Categories Listing](../../paragraphs/ca
 ### Migrating to Layout Builder
 
 Migrating Program pages to Layout Builder uses the same process as [building a new Landing Page](../../layout-builder/#creating-a-new-page). See [How to migrate to Layout Builder](../../../howto/migrate-to-lb/#prepare-your-content) for information about preparing for the migration.
-```

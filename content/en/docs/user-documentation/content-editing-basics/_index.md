@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Content Editing Basics
 ---

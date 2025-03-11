@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Latest News Posts (Branch)
 ---
@@ -27,4 +26,3 @@ This paragraph type is provided by the `openy_prgf_news_branch` module, which ha
 *   `user`: Part of Drupal core.
 *   `views`: Part of Drupal core.
 *   `views_infinite_scroll`: Views Infinite Scroll module for paginating results.
-```

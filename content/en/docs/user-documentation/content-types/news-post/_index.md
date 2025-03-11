@@ -1,4 +1,3 @@
-```markdown
 ---
 title: News Post
 description: Designed for timely content, articles, and news pieces tagged with one or more physical locations.

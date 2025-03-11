@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Media
 ---
@@ -29,4 +28,3 @@ See the related topics listed below for specific tasks.
 ## Additional Resources
 
 *   [Media module documentation](https://www.drupal.org/docs/8/core/modules/media)
-```

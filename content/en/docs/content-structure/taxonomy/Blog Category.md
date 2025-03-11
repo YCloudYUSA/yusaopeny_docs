@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Blog Category
 ---
@@ -13,4 +12,3 @@ This is a vocabulary that will be used for adding blog categories on the site. A
 
 *   [Taxonomy](https://www.drupal.org/docs/user_guide/en/structure-taxonomy.html) in the Drupal User Guide.
 *   [Taxonomy Overview](/docs/content-structure/taxonomy/)
-```

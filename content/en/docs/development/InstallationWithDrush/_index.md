@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Installation With Drush
 ---
@@ -32,4 +31,3 @@ drush site-install openy --account-pass=password --db-url="mysql://user:pass@hos
 *   `--root=/var/www/docroot`: Specifies the Drupal root directory.  Adjust this to the correct path on your server.
 *   `openy_configure_profile.preset=extended`: Selects the "extended" installation preset.
 *   `openy_theme_select.theme=openy_rose`:  Selects the "openy_rose" theme.
-```

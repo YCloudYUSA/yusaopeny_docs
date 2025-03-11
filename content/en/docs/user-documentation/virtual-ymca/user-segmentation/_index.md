@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "User Segmentation"
 ---
@@ -42,4 +41,3 @@ If you're unfamiliar with Drupal roles, consult with your agency partner for hel
     **Note:** The **Machine Name** for your role must begin with `virtual_y_`, or it won't be included in the permissions mapping table. To ensure this, either name your official role "Virtual Y [Desired Role Name]" or click the small **Edit** button link next to the **Machine Name** and edit the text.
 
     ![A screenshot showing the Role name and Machine-readable name fields](./segmentation-machine-name.png)
-```

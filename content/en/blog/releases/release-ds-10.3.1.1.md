@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Digital Services Release 10.3.1.1"
 description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/10.3.1.1)
@@ -90,4 +89,3 @@ Continuing general cleanup, updated documentation, and improvements to the conte
 *   Fixed an issue with Layout Builder content types causing errors on Search or Webforms. (#1205)
 *   Resolved an issue with Alert Rearrange not actually rearranging alerts. (#1228)
     *   _Credit: Serhii Zherebchuck_
-```

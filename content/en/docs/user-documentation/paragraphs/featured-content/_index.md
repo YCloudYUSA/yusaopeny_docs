@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Featured Content
 description: Add a section of simple columns onto a page with an optional call-to-action button on the bottom, an optional title, and optional description.
@@ -70,4 +69,3 @@ Finally, add content for each column of content using the text editor. To add ad
 *   [News Post](../../content-types/news-post)
 *   [Program](../../content-types/program)
 *   [Program Subcategory](../../content-types/program-subcategory)
-```

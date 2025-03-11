@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Event (Layout Builder)
 description: Updated Event content type that allows for Layout Builder components to be included within an event page.
@@ -45,4 +44,3 @@ Fill in the content fields:
 Once you create an Event you can customize the layout with [Layout Builder](../../layout-builder). These components are built specifically to work with the Event content type:
 
 *   [Related Events](../../layout-builder/related-events)
-```

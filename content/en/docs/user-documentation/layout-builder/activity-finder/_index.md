@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Activity Finder
 description: Place the Activity Finder application in a Layout Builder page.

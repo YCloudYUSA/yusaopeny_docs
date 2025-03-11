@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Classes Listing
 description: "Displays published classes and provides filtering options."

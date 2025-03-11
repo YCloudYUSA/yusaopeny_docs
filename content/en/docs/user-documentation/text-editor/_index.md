@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Text Editor"
 weight: 1
@@ -29,4 +28,3 @@ For more info on CKEditor 5, check out these resources (not all features may be 
 - [Five Can’t-Miss Articles on CKEditor 5 in Drupal (ImageX Blog)](https://imagexmedia.com/blog/five-cant-miss-articles-on-ckeditor-5-in-drupal)
 - [CKEditor 5 in Drupal 10: What is there to be excited about? (DrupalCon Portland 2022)](https://www.youtube.com/watch?v=YwDFCLaQVbY)
 - [Drupal 10 launched: taking content editing to the next level with CKEditor 5 (CKEditor Blog)](https://ckeditor.com/blog/drupal-10-launched-taking-content-editing-to-the-next-level-with-ckeditor-5/)
-```

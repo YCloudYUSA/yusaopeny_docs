@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Categories Listing
 ---
@@ -14,4 +13,3 @@ It typically includes a "sticky at the top" option and orders items based on the
 | Block | `field_prgf_block` | Yes | Block reference to the view/block. This field should have a default value and is typically hidden in the form display. |
 
 **Note:** The Categories Listing paragraph type displays taxonomy terms. Taxonomy terms are categorized under: plain text, number, reference, date and time and general.
-```

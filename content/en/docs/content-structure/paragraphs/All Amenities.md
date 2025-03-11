@@ -1,4 +1,3 @@
-```markdown
 ---
 title: All Amenities
 ---
@@ -17,4 +16,3 @@ This paragraph displays a list of amenities, typically in a table view. It's use
 *   **View Configuration:** The "All amenities" field relies on a pre-existing view. Ensure this view is properly configured to display the desired amenity information.
 *   **Paragraph Usage:** This paragraph type is generally intended for use within a larger page structure, like a landing page or a branch details page.
 *   **Alternative:** Consider using "Branch Amenities" block if you want to show the amenities for the *current* branch.
-```

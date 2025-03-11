@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Donate
 description: A call to action with donation buttons linking to an embedded form.
@@ -60,4 +59,3 @@ Fill in the content fields:
 *   **Background image**: Choose an image from the media library or upload a new image to be displayed behind the text and buttons.
 
 {{< readfile "../lb-save-block.partial" >}}
-```

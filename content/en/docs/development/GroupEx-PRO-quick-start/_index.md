@@ -1,4 +1,3 @@
-```markdown
 ---
 title: GroupEx PRO quick start
 aliases:

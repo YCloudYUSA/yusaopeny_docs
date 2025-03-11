@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Building Blocks & Basics
 weight: 1

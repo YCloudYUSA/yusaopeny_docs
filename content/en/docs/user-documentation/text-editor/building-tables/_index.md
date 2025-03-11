@@ -1,4 +1,3 @@
-```markdown
 ---
 title: 'Building Tables'
 description: Display contact information, pricing tables, and more using flexible, responsive tables.

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Decoupling components as independent modules
 aliases:

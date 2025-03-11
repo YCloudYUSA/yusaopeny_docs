@@ -1,4 +1,3 @@
-```markdown
 ---
 title: SA-CORE-2018-002 security update
 aliases:

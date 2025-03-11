@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Community
 menu:
@@ -20,4 +19,3 @@ Being an open-source project, YMCA Website Services depends on many projects acr
 -   [<i class="fab fa-drupal"></i> Drupal YMCA "Ecosystem"](https://www.drupal.org/project/openy/ecosystem): Themes and other modules that live on Drupal.org.
 
 {{% /blocks/section %}}
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Images and Documents"
 weight: 6
@@ -55,4 +54,3 @@ You can batch/bulk upload from **Admin** > **Content** > **Media** (`/admin/cont
 -   Click **Add media**
 -   Choose your media type in the sidebar, then use the **Choose Files** button to choose or drop files.
 -   Fill in the required fields in the resulting form.
-```

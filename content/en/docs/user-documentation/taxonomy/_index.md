@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Taxonomy, Vocabularies, and Terms"
 weight: 4

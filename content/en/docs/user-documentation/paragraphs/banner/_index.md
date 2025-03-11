@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Banner
 description: Add large, full width images to the top of your page, along with a title, optional description and optional link.
@@ -41,4 +40,3 @@ To add a banner, select **Add Banner** from the paragraphs dropdown in the Heade
 *   [Branch](../../content-types/branch)
 *   [Camp](../../content-types/camp)
 *   Facility
-```

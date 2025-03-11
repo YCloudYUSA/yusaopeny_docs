@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Upgrade to Open Y 1.x
 aliases:

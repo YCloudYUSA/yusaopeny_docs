@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Area
 ---
@@ -18,4 +17,3 @@ The Area vocabulary is used to categorize location areas on the site. This vocab
 
 *   [Location Branch](/docs/content-structure/content-types/branch)
 *   [Facility](/docs/content-structure/content-types/facility)
-```

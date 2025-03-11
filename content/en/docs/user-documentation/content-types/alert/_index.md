@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Alert
 description: Displays timely information in a thin banner across your site, just below the header or above the footer.
@@ -137,4 +136,3 @@ To show an alert on _all pages except "Join" and "Give"_:
     ```
 *   **Alert visibility state**: "Hide for the listed pages"
 *   **Location**: "None"
-```

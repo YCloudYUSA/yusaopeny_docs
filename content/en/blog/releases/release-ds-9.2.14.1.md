@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Digital Services Release 10.2.14.1
 description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/10.2.14.1)
@@ -32,4 +31,3 @@ date: 2023-06-27
 ### UX Improvements
 
 *   Included some additional UX improvements to the Layout Builder admin panel
-```

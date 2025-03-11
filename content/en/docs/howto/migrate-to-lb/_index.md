@@ -1,4 +1,3 @@
-```markdown
 ---
 title: How to migrate content into Layout Builder
 linkTitle: "Migrate to Layout Builder"

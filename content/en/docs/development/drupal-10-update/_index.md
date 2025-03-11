@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Drupal 10 update
 description: The update from Drupal 9 to 10 is easier than some, but still comes with some challenges.
@@ -142,4 +141,3 @@ Breaking down the error message:
 3.  Re-run `drush updb`.
 4.  If you run into other missing configs, add them to the list to be imported in `update` hook and re-run `updb`.
 5.  Consider backporting your customization which led to the challenge of doing this upgrade in order for it to be covered and tested by distribution developers.
-```

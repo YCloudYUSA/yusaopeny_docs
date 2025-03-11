@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Landing Page
 ---
@@ -26,4 +25,3 @@ The Landing Page content type is used for creating landing pages on the site.
 The content type uses the following pattern:
 
 `[node:title]`
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Designs
 weight: -10

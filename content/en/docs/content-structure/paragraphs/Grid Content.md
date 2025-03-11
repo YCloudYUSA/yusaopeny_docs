@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Grid Content
 ---
@@ -16,4 +15,3 @@ The Grid Content paragraph type is used to create grid layouts within stories.
 | Icon            | field\_prgf\_clm_icon           | No       | Entity reference to a media asset, typically an SVG image.  Allows uploading of new SVG files.                                                                                    |
 | Icon class      | field\_prgf\_clm_class          | No       | Input field for adding [Font Awesome](https://fontawesome.com/) icon classes (e.g., `flag`, `car`, `info`). This will override the image Icon.                               |
 | Link            | field\_prgf\_clm_link           | No       | Link field that supports both internal and external URLs.                                                                                                                            |
-```

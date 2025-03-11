@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Latest News Posts
 description: Embed a listing of news posts with optional filtering by Camp/Branch.
@@ -56,4 +55,3 @@ From the paragraphs dropdown, add the desired "Latest News Posts" paragraph type
 *   [Blog Posts Listing](../blog-posts-listing)
 *   [Latest News Posts/(Camp)/(Branch)](../latest-news-posts)
 *   [News Posts Listing](../news-posts-listing)
-```

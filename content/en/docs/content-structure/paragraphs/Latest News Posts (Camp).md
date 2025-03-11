@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Latest News Posts (Camp)
 ---
@@ -14,4 +13,3 @@ This paragraph is designed to be placed on a Camp page. When placed on a Camp pa
 | Name  | Machine name | Required | Description |
 | ------------- | ------------- | ------------- | ------------- |
 | Block | `field_prgf_block` | Yes | Block reference to the view/block that displays the news posts.  A default value should be configured for this field, and it should typically be hidden in the form display to prevent accidental modification. |
-```

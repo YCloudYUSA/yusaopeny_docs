@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Advanced Options
 description: Configuration for Layout Builder Sections and Blocks.

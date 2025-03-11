@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "How to use the Canadian Colourway for Layout Builder"
 linkTitle: "Use the Canadian Colourway"

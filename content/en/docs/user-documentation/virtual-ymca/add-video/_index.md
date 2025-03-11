@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Add/Edit Video"
 ---

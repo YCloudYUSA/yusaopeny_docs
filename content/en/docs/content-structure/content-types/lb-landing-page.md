@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Landing Page (Layout Builder)
 ---

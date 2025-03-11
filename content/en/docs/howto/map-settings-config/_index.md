@@ -1,4 +1,3 @@
-```markdown
 ---
 title: How to customize your locations map
 linkTitle: "Customize Your Map"

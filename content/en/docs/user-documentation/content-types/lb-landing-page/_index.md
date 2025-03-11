@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Landing Page (Layout Builder)
 description: A flexible content type that uses Sections and Blocks, managed with Layout Builder, to build content.

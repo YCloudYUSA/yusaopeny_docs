@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Camp Menu
 description: Add a horizontal menu beneath the Header Area on a camp page.
@@ -60,4 +59,3 @@ It's recommended you limit your menu items to no more than 3 or 4 unless you opt
 
 *   [Camp](../../content-types/camp)
 *   [Camp Subpage (Layout Builder)](../../content-types/camp/#camp-landing-pages)
-```

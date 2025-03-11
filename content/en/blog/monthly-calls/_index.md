@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Monthly Calls
 ---
@@ -16,4 +15,3 @@ Watch the latest call in our playlist:
 Review past calls below:
 
 <hr>
-```

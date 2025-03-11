@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Embedded GroupEx Pro Schedule
 description: Embed the out-of-box GroupEx Pro schedule script on a page with a single click.

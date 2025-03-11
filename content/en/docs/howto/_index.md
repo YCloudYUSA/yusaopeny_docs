@@ -1,4 +1,3 @@
-```markdown
 ---
 title: 'How-to'
 description: 'These guides will help you quickly accomplish common tasks.'
@@ -19,4 +18,3 @@ The following formatting conventions are used in How-to guides:
 *   **Code snippets:** Display code or configuration examples.
 *   **Screenshots:** Provide visual guidance.
 *   **Callouts:** Highlight important information or warnings.
-```

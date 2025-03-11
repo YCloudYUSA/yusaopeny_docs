@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Traction Rec Integration
 description: Instructions for configuring and importing data from Traction Rec into the Program Event Framework.
@@ -18,4 +17,3 @@ The [Traction Rec Integration module (`ycloudyusa/openy_traction_rec`)](https://
 ## Import Process
 
 {{% include-remote-md "https://github.com/YCloudYUSA/openy_traction_rec/raw/main/modules/openy_traction_rec_import/README.md" "# YMCA Website Services Traction Rec PEF integration" %}}
-```

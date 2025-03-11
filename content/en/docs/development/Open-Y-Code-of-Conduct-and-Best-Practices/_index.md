@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Code of Conduct and Best Practices
 aliases:
@@ -25,4 +24,3 @@ To understand how we use and develop technologies, refer to the documents below:
 
 - [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react) (for reviewing JavaScript ES5/ES6)
 - [Vue.js code style guide](https://vuejs.org/v2/style-guide/) (for Vue.js components)
-```

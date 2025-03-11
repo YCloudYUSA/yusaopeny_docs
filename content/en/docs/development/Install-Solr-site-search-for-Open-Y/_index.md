@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Install Solr site search
 aliases:

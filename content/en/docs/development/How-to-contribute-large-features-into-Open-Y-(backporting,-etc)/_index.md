@@ -1,4 +1,3 @@
-```markdown
 ---
 title: How to Contribute Large Features (Back-porting, etc.)
 aliases:
@@ -74,4 +73,3 @@ We recommend beginning development with an eye toward [these "abstracted" soluti
     *   If you identify any bugs or issues over time on your site that involve code that was contributed to YMCA Website Services, it would be awesome if you fixed that code and contributed the fix via a Pull request (step 5 above).
 
 To be clear, all of the above is only required if you want to get your code into the core YMCA Website Services distribution. You could always take your code as is, ensure any PII or secure information is scrubbed, and post it to your own GitHub repository -- however it would be difficult for others to use this code as is if it hasn't at least been decoupled. If you take this approach, please be sure to remove references to OpenY from the code so that the GitHub search engine does not confuse it with core YMCA Website Services. Further, please review the YMCA Website Services license agreement to make sure you are in alignment with GPL and Open Source sharing best practices.
-```

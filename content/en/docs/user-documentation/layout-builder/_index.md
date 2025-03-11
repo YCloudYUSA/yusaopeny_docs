@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Layout Builder
 weight: 3
@@ -101,4 +100,3 @@ When rearranging large blocks on the page it can often be challenging to drag th
 If you run into a problem, [get in touch](../../../community).
 
 <small>Content on this page is adapted from [Drupal.org](https://www.drupal.org/docs/8/core/modules/layout-builder) and [Western Washington University](https://brand.wwu.edu/layout-builder)</small>
-```

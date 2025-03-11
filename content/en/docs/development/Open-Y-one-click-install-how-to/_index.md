@@ -1,4 +1,3 @@
-```markdown
 ---
 title: One-Click Install How-To
 aliases:

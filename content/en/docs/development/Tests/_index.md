@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Tests
 ---
@@ -172,4 +171,3 @@ The first portion, `field_location_address`, represents the Drupal field machine
       | :lng                           | -122.238717      |
       | field_location_phone           | +1234567890      |
     ```
-```

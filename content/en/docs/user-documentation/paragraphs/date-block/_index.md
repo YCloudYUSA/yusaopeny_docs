@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Date Block
 description: Schedule different sections to show or hide on your pages based on date and time.
@@ -82,4 +81,3 @@ To edit a Date Block:
 *   [Program](../../content-types/program)
 *   [Program Subcategory](../../content-types/program-subcategory)
 *   Event
-```

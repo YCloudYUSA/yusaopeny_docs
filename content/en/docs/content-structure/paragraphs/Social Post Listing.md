@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Social Post Listing
 ---
@@ -20,4 +19,3 @@ This paragraph type renders the latest social posts imported from social network
 *   This view selects nodes of the `social_post` content type.
 *   The view provides an administrative interface at `admin/social-posts` to manage social posts.
 *   The view displays the platform, ID, post content, and posted date for each social post.
-```

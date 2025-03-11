@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Landing Page
 description: Flexible content types that use regions and paragraphs to build content.

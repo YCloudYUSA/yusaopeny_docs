@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Upgrade use case from 8.2.2.3 to 8.2.7.3
 aliases:

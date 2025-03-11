@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Virtual Y 1.6.5
 description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny_gated_content/releases/tag/1.6.5).

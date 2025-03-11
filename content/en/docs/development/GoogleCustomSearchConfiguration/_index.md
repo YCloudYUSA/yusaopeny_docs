@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Google Custom Search Configuration
 ---

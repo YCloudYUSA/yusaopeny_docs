@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Website Services 9.2.12
 description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.12.1)
@@ -145,4 +144,3 @@ The following components are available in Layout Builder v1.0:
 - Resolved PHP 8 deprecation warnings
 - Handled edge case for missing `alert_location` field
 - Cleaned up backend warnings for alert requests
-```

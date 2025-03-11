@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Article (Layout Builder)
 description: The Article content type combines news-related content into a single content type, offering flexible layout options with Layout Builder.

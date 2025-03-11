@@ -1,4 +1,3 @@
-```markdown
 ---
 title: News Posts Listing
 description: Add a filterable section of news posts to a page.
@@ -34,4 +33,3 @@ From the paragraphs dropdown, add the *News Posts Listing*. Enter a header title
 *   [Latest Blog Posts/(Camp)/(Branch)](../latest-blog-posts)
 *   [Latest News Posts/(Camp)/(Branch)](../latest-news-posts)
 *   [Blog Posts Listing](../blog-posts-listing)
-```

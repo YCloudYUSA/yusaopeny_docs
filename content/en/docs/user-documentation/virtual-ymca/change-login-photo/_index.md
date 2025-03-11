@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "How to change the Login page photo"
 ---

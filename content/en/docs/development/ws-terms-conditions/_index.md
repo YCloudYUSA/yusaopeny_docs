@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Terms and Conditions"
 description: These Terms & Conditions must be agreed to upon installing YMCA Website Services

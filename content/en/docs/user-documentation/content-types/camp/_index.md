@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Camp
 description: Physical locations where outdoor camp programming takes place.

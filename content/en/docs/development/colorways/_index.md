@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Colorways
 description: What goes into making the selectable colorways in Layout Builder.

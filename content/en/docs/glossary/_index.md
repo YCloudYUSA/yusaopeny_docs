@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Glossary
 weight: 0
@@ -127,4 +126,3 @@ YMCA’s Virtual Experience Platform
 
 YMCA’s Website Service
 : A collection of Drupal modules, themes, configuration, and content bundled together in a "distribution" to enable digital transformation for YMCAs across the country. A product of YMCA's Digital Services. Formerly known as _Open Y_. See [ds.ymca.org](https://ds.ymca.org/ymcas-website-service).
-```

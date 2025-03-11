@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Activity Finder
 description: Provides an interactive tool to help members find and book activities.
@@ -101,4 +100,3 @@ Once those settings are saved, you can visit an Activity Finder page with UTM co
 and see that the codes are maintained as the filters are changed.
 
 [comment]: <> (This file is imported from GitHub. It will be rebuilt from the source any time the repo is updated.)
-```

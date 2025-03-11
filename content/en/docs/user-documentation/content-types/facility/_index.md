@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Facility
 description: Locations that house YMCA programming outside of a Branch.

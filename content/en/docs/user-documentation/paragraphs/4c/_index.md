@@ -1,4 +1,3 @@
-```markdown
 ---
 title: 4 Columns
 description: Add four equal-width, reusable blocks of content, side-by-side. Columns stack left to right on mobile.

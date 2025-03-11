@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Simple Text / Table
 description: Allows users to add simple content and responsive tables within a page.

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Ping-Pong
 description: Usually paired sets of full-width page components that include media, header, description, and call to action arranged horizontally.

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Activity, Class, and Session
 description: Format data from third parties (e.g. Daxko, Personify, or ActiveNet), for display in Activity Finder.

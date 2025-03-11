@@ -1,4 +1,3 @@
-```markdown
 # YMCA Website Services Docs
 
 This repository stores documentation of the YMCA Website Services ecosystem. You can view the documentation [here](https://ds-docs.y.org/).
@@ -146,4 +145,3 @@ See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/instal
 [example.docsy.dev]: https://example.docsy.dev
 [Hugo theme module]: https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
 [Netlify]: https://netlify.com
-```

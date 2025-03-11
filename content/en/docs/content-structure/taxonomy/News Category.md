@@ -1,4 +1,3 @@
-```markdown
 ---
 title: News Category
 ---
@@ -22,4 +21,3 @@ This vocabulary is used for categorizing news articles on the site. Taxonomy ter
 
 *   [Managing taxonomy](https://www.drupal.org/docs/user_guide/en/structure-taxonomy.html)
 *   [Taxonomy overview](https://www.drupal.org/docs/user_guide/en/content-structure.html)
-```

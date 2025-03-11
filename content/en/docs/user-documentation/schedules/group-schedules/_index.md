@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Group Schedules
 description: Displays daily group exercise classes with filters and a PDF download.

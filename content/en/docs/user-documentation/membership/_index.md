@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Membership
 description: Guide prospective members through the join process.

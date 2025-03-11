@@ -1,4 +1,3 @@
-```markdown
 ---
 title: How to use two-factor authentication
 linkTitle: "Use Two-Factor Authentication"

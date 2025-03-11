@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Branch
 description: One of the first places members go when they visit a Y website is to their local Y’s page.
@@ -232,4 +231,3 @@ Once you are ready to migrate a Branch:
 3. Your Branch will now display a set of default blocks: Hours (and header), Menu, Social Links, and Amenities.
 4. From here, you can [use Layout Builder](../../layout-builder#updating-an-existing-page) to move your old content from Paragraphs into Blocks. Review the [full list of designs](../../layout-builder/designs) or the [list of components]({{% relref "lb-2023-roadmap.md" %}}) if you need help deciding how to place things. Your old content will still be available to reference in the **Edit** tab in the old Header/Content/Footer sections.
 5. When you're finished, **Save** the layout and **Publish** the Branch!
-```

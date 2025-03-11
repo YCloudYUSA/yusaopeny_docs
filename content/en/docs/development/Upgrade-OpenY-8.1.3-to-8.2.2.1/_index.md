@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Upgrade OpenY 8.1.3 to 8.2.2.1
 aliases:

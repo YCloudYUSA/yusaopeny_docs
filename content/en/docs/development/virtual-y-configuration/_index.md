@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Virtual Y Configuration
 aliases:

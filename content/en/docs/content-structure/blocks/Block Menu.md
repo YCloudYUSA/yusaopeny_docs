@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Block Menu
 ---
@@ -12,4 +11,3 @@ The Block Menu implements a custom block type with links. Blocks are boxes of co
 | Menu Links  | `field_menu_block_links` | Yes      | The menu links to be displayed in the block.                              |
 | Color       | `field_menu_block_color` | Yes      | Select the background gradient color for the menu block.                    |
 | Text color | `field_menu_block_text_color`| Yes| Select the text color for the menu block.|
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Staff Members
 description: Component for displaying simple staff member info cards (with image, name, title) within a page using Layout Builder.
@@ -36,4 +35,3 @@ Fill in the content fields:
     -   After filling in the fields for an item, click **Create custom block** to save the item.
 
 {{< readfile "../lb-save-block.partial" >}}
-```

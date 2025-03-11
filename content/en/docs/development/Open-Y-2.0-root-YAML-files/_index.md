@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Profile custom configuration
 description: The distribution supplements the Drupal install process with a number of custom additions.

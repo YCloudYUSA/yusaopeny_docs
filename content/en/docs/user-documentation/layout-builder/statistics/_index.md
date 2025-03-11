@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Statistics
 description: Infographic-like display that highlights relevant statistics to users.
@@ -34,4 +33,3 @@ Fill in the content fields:
     *   **Description**: A description of the statistic.
 
 {{< readfile "../lb-save-block.partial" >}}
-```

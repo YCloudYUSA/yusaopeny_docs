@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Page/Content Types"
 weight: 2

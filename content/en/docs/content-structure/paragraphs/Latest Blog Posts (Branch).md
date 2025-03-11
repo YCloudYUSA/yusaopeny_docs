@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Latest Blog Posts (Branch)
 ---
@@ -14,4 +13,3 @@ This paragraph type automatically filters and displays blog posts based on the b
 | Name  | Machine name | Required | Description |
 | ------------- | ------------- | ------------- | ------------- |
 | Block | field\_prgf_block | Yes | Block reference to the view/block.  This field should have a default value and be hidden in the form display. It determines the view or block used to render the blog posts. |
-```

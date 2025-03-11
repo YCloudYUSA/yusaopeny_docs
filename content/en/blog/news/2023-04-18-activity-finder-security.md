@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Activity Finder Security Notice
 date: 2023-04-18

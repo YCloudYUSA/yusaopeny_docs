@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Simple Menu
 description: A simple 1-level sidebar menu that can display in either the right or left sidebar area.
@@ -34,4 +33,3 @@ Fill in the content fields:
 The Simple Menu block is a useful way to display a list of links in a sidebar.  Menus are a collection of menu links that are used for site navigation.  You can create new menus and menu links, reorder links, and disable links provided by modules.  For more information about managing menus, refer to the [Drupal User Guide](https://www.drupal.org/docs/user_guide/en/menu-concept.html).
 
 To further customize the appearance of the menu, you can adjust the theme settings or use CSS to style the block. The administrative toolbar also provides a way to manage menus and their associated links. You can access it under *Structure > Menus*.
-```

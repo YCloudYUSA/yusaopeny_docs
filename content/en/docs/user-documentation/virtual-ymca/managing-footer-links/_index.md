@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Managing Footer Links
 ---

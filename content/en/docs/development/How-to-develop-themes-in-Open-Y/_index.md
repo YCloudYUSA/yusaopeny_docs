@@ -1,4 +1,3 @@
-```markdown
 ---
 title: How to Develop Themes in YMCA Website Services
 aliases:
@@ -29,4 +28,3 @@ As of December 2021, themes have been decoupled from the YMCA Website Services p
 
 -   [openy\_rose project](https://www.drupal.org/project/openy_rose) on Drupal.org
 -   [README](https://git.drupalcode.org/project/openy_rose) for getting started with development
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Code
 description: Unformatted, unrestricted text that supports any HTML tag and can be embedded anywhere. Great for embedding iframes, third-party scripts, and other custom HTML.

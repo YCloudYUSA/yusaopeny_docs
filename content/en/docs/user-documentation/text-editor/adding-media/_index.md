@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Adding Media with CKEditor 5
 description: Using the new unified Media editor.
@@ -62,4 +61,3 @@ Use the <kbd>⮐</kbd> button at the top or bottom of the media to insert a para
 ### Deleting your media
 
 Click to select the media, then type <kbd>Delete</kbd> to remove it.
-```

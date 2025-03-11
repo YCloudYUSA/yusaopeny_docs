@@ -1,4 +1,3 @@
-```markdown
 ---
 title: 'CKEditor 4: Adding and Embedding Videos'
 weight: 99
@@ -42,4 +41,3 @@ After embedding your video, you may be able to adjust additional options. *Note:
 When you are satisfied with the video's settings, click **Embed**.
 
 > *If you want to make changes to the video you just embedded after you've added it, double click on the video placeholder in the editor, and the "Embed media" dialogue will appear.*
-```

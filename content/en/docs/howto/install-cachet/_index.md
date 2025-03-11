@@ -1,4 +1,3 @@
-```markdown
 ---
 title: How to install Cachet (the official Y Font)
 description: Cachet, the Y's primary font, should be used for all internal and external materials whenever possible.

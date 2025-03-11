@@ -1,4 +1,3 @@
-```markdown
 ---
 title: FAQ
 description: Create an easy-to-read FAQ or policy section. FAQ adds an accordion tab that expands when users click on it.
@@ -60,4 +59,3 @@ If your FAQ contains Frequently Asked Questions, consider enabling the "FAQ?" op
 *   [Program](../../content-types/program)
 *   [Program Subcategory](../../content-types/program-subcategory)
 *   [Class (Not Recommended)](../../content-types/activity-class-session)
-```

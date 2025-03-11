@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Digital Services Release 9.2.13
 description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.13.0)
@@ -124,4 +123,3 @@ Expanding upon the December release, we are making additional components and con
 
 - Resolved an issue with H2 text size not displaying correctly
 - Removed Google Translate logo from Select Language menu
-```

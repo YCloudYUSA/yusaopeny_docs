@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Server Requirements
 ---
@@ -54,4 +53,3 @@ The following PHP modules are required:
     *   Varnish (for HTTP caching and acceleration)
 
 **Note:** Ensure that your firewall is properly configured and only necessary ports are open for security reasons. Regularly update your server software to patch security vulnerabilities.
-```
