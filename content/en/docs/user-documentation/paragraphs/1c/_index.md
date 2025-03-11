@@ -5,11 +5,11 @@ description: Embeds a single column of content into an container, with an option
 
 ## Examples
 
-### Rose - Without Block
+### [deprecated] Rose - Without Block
 
 ![rose--landing-page_1-column-no-block](paragraphs--1c--rose-without.png)
 
-### Rose - With Block
+### [deprecated] Rose - With Block
 
 ![rose--landing-page__1-column-with-block](paragraphs--1c--rose-with.png)
 
@@ -33,7 +33,7 @@ After selecting “1 Column” from the paragraphs dropdown, you will notice par
 
 * **Paragraph title** adds an all-caps heading at the top of your paragraph. This is optional.
 * **The checkbox** adds dual horizontal rules. Check this only if you’re planning on using the paragraph title
-* **Description (required)** - Adds simple text [through a text editor.](../../text-editor) Font color defaults to purple in Lily and Rose.
+* **Description (required)** - Adds simple text [through a text editor.](../../text-editor) Font color defaults to purple in [deprecated] Lily and [deprecated] Rose.
 
 ### Custom Block Feature
 
@@ -47,7 +47,7 @@ When adding your custom block, use the font-awesome icon class instead of the cu
 
 ## Advanced
 
-The purple font color for paragraph descriptions can be overridden in Lily and Rose by targeting .paragraph-1c-wrapper .field-prgf-1c-description.
+The purple font color for paragraph descriptions can be overridden in [deprecated] Lily and [deprecated] Rose by targeting .paragraph-1c-wrapper .field-prgf-1c-description.
 
 **Example:**
 

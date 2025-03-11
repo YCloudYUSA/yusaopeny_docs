@@ -155,5 +155,5 @@ If an YMCA Website Services site is installed using Drush then the theme can be 
     --db-url="mysql://user:pass@host:3306/db" \
     --root=/docroot \
     openy_configure_profile.preset=extended \
-    openy_theme_select.theme=openy_rose
+    openy_theme_select.theme=openy_carnation
 ```

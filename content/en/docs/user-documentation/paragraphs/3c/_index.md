@@ -9,11 +9,11 @@ description: Add three equal-width, reusable blocks of content, side-by-side. Co
 
 ![carnation--landing-page__3-columns](paragraphs--3c--carnation.png)
 
-### Lily
+### [deprecated] Lily
 
 ![lily--landing-page__3-columns](paragraphs--3c--lily.png)
 
-### Rose
+### [deprecated] Rose
 
 ![rose--landing-page__3-columns](paragraphs--3c--rose.png)
 

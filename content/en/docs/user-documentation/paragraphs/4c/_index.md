@@ -9,11 +9,11 @@ description: Add four equal-width, reusable blocks of content, side-by-side. Col
 >
 >Content editors can use [Grid Content](../../paragraphs/grid-content) or [Featured Content](../../paragraphs/featured-content) paragraphs to achieve a similar layout.
 >
-### Lily
+### [deprecated] Lily
 
 ![lily--landing-page__4-columns](paragraphs--4c--lily.png)
 
-### Rose
+### [deprecated] Rose
 
 ![rose--landing-page__4-columns](paragraphs--4c--rose.png)
 

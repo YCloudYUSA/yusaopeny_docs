@@ -24,7 +24,7 @@ To add a table, click on the table icon. A popup will appear with your initial s
   * Like the Height and Width fields, units default to pixels.
 * Align the values inside your cells using the Alignment dropdown.
 * Add a caption to your table using the Caption field
-  * Captions will display above the table in Lily and Rose.
+  * Captions will display above the table in [deprecated] Lily and [deprecated] Rose.
   * Captions display below the table in Carnation.
 * The summary field provides a brief description for your table for screen readers and accessibility devices. It does not print out visible text.
 
@@ -238,4 +238,3 @@ To see an example of what a table might look like on your site, open the "Source
     		</tr>
     </tbody>
     </table>
-```

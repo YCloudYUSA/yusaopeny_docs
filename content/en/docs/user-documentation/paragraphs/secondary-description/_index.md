@@ -11,11 +11,11 @@ description: Add a bottom area element with two columns of reusable content for 
 
 ![The secondary description and sidebar in Carnation](paragraphs--secondary-description--carnation.png)
 
-### Lily
+### [deprecated] Lily
 
 ![The secondary description and sidebar in Lily](paragraphs--secondary-description--lily.png)
 
-### Rose
+### [deprecated] Rose
 
 ![The secondary description and sidebar in Rose](paragraphs--secondary-description--rose.png)
 

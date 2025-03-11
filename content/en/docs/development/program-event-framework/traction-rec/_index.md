@@ -1,4 +1,4 @@
- ---
+---
 title: Traction Rec Integration
 description: Instructions for configuring and importing data from Traction Rec into the Program Event Framework
 ---

@@ -9,11 +9,11 @@ description: Add a small individual card to the sidebar of a page with evergreen
 
 ![Promo card in Carnation](paragraphs--promo-card--carnation.png)
 
-### Lily
+### [deprecated] Lily
 
 ![Promo card in Lily](paragraphs--promo-card--lily.png)
 
-### Rose
+### [deprecated] Rose
 
 ![Promo card in Rose](paragraphs--promo-card--rose.png)
 

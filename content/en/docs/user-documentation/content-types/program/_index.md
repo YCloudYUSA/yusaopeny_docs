@@ -58,7 +58,7 @@ For aside pieces of content, such as side navigations, promotional cards and con
 
 * There is no layout dropdown. How your content displays depends on your theme.
 
-  * Lily/Rose will always display Programs in a two-column layout in desktop.
+  * [deprecated] Lily/Rose will always display Programs in a two-column layout in desktop.
   * Carnation will display desktop in One Column without content in the *Sidebar Area* and in Two Columns with content in the *Sidebar Area.*
 
 #### Carnation: Without Content in the Sidebar

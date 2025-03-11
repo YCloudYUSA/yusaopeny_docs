@@ -9,11 +9,11 @@ description: Add a section with teaser cards that link to blog posts and dropdow
 
 ![Carnation blog post listing](paragraphs--blog-posts-listing--carnation.jpeg)
 
-### Lily
+### [deprecated] Lily
 
 ![Lily blog post listing](paragraphs--blog-posts-listing--lily.jpeg)
 
-### Rose
+### [deprecated] Rose
 
 ![Rose blog post listing](paragraphs--blog-posts-listing--rose.jpeg)
 

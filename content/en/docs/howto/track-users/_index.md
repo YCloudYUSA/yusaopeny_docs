@@ -161,3 +161,5 @@ You may also need to request that your GTM/GA code be added to the CRM/MMS to re
 2. Configure the module at **Administration** > **YMCA Website Services** > **Settings** > **Cross-domain Tracking Settings** (`/admin/openy/settings/xdt`)
     - The cookie defaults to the standard for GA4, but can be modified for use with different systems.
     - The module will not have any effect until a domain is configured. Add the domains of any external sites where you would like to enable tracking.
+
+

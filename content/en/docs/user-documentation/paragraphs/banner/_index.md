@@ -13,7 +13,7 @@ In the Header Area of your content, select “Add Banner” from the dropdown. T
 
 * **Title (required):** This field adds a headline to your banner. The placement of the title will depend on your theme and customization, but it will typically appear as large, all-caps text.
 
-* **Color (required):** The background color for your banner. You typically will not see this color in Lily or Carnation, but in Rose, it will display behind your text. Choose from the list of available options.
+* **Color (required):** The background color for your banner. You typically will not see this color in [deprecated] Lily or Carnation, but in [deprecated] Rose, it will display behind your text. Choose from the list of available options.
 
 * **Description (optional):** Displays beneath your Title. You have the option to style your text using the text editor, but it’s not as consistent as other places where you typically see the editor.
 
@@ -36,7 +36,7 @@ In the Header Area of your content, select “Add Banner” from the dropdown. T
 ### Content Types that Support Banner
 
 * [Landing Page](../../content-types/landing-page)
-* [Program (Works better in Carnation/Lily)](../../content-types/program)
+* [Program (Works better in Carnation)](../../content-types/program)
 * [Branch](../../content-types/branch)
 * [Camp](../../content-types/camp)
 * Facility

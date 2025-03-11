@@ -109,5 +109,3 @@ In order to check for regressions during the upgrade, it is best to work with sm
 Use [`drush sql-dump`](https://www.drush.org/latest/commands/sql_dump/) or another backup tool to take a backup of the site in its current state.
 
 ### Proceed with an update to next version until succeeded (Start from item 1)
-
-

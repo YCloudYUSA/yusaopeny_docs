@@ -201,4 +201,3 @@ The default configuration for a the Camp Header block should be:
   - Right
     - Create custom block > **Camp menu**
     - Create custom block > **Camp quick links**
-
