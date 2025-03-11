@@ -1,10 +1,11 @@
+```markdown
 ---
 title: "Shared Content"
 ---
 
 [Requirements](#requirements) | [Getting Started](#getting-started) | [Fetching Shared Content](#fetching) | [Publishing Shared Content](#publishing) | [FAQ](#faq)
 
-[Released in 0.12](https://github.com/ymcatwincities/openy_gated_content/releases/tag/1.2), Virtual Y's Shared Content module allows Y's to share their content with other associations/branches and to pull shared content to use on their own site.
+Released in 0.12, Virtual Y's Shared Content module allows Y's to share their content with other associations/branches and to pull shared content to use on their own site.
 
 <a name="requirements"></a>
 ## Requirements
@@ -40,13 +41,13 @@ In order to share content, you'll first need to register your site with the Open
 - Go to **Virtual Y** > **Shared Content** > **Source Servers** (`/admin/virtual-y/shared-content/server`)
 - Use the **List additional actions** arrow (`▾`) under Operations then **Edit**
 
-![A visual depiction of the above menu sequence to configure source servers](./source_server_config.png) 
+![A visual depiction of the above menu sequence to configure source servers](./source_server_config.png)
 
 On the following page, simply **Save** the form. Once you've saved the form and your site is able to contact the server, the **Source Token** will be populated.
 
-![A screenshot of the source server form](./source_server_form.png) 
+![A screenshot of the source server form](./source_server_form.png)
 
-New connection requests are curlreviewed periodically and are approved by the Open Y team to prevent abuse. Please allow up to two business days for approval, or email [ycloud@ymca.net](mailto:ycloud@ymca.net) with the URL of your site to request approval.
+New connection requests are reviewed periodically and are approved by the Open Y team to prevent abuse. Please allow up to two business days for approval, or email [ycloud@ymca.net](mailto:ycloud@ymca.net) with the URL of your site to request approval.
 
 <a name="fetching"></a>
 ## Fetching Shared Content
@@ -82,11 +83,14 @@ You can share your own content to other Y's in the Movement too!
 - To share a single item:
   - expand the **Shared Content** options on the sidebar of the content edit page,
   - then check "Available to share".
+
 ![A screenshot of the "Available to share" option](./shared-content-available-to-share.png)
+
 - To share multiple items, visit the **Content** list (`/admin/content`) then:
   1. Check the **Update this item** checkbox.
   2. In the **Action** dropdown, select **Share to Virtual Y**.
   3. Use the **Apply to selected items** button.
+
 <a name="faq"></a>
 ## FAQ
 

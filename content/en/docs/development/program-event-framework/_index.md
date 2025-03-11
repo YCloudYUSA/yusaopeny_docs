@@ -1,3 +1,4 @@
+```markdown
 ---
 title: Program Event Framework
 description: A robust set of content types and syncer modules that build interactive tools to help members find and book activities.
@@ -6,45 +7,45 @@ tags:
     - "Group Schedules"
 ---
 
-"Program Event Framework" refers to the entire ecosystem of content and modules in YMCA Website Services that work together to build Activity Finder, Group Schedules, and more.
+"Program Event Framework" (PEF) refers to the entire ecosystem of content and modules in YMCA Website Services that work together to build Activity Finder, Group Schedules, and more. PEF provides a structured approach to managing program-related content, ensuring consistency and ease of use.
 
 ## Content Types
 
-These provide the containers for PEF content in Drupal:
+These content types provide the containers for PEF content in Drupal:
 
-- [Program](../../user-documentation/content-types/program)
-- [Program Subcategory](../../user-documentation/content-types/program-subcategory)
-- [Activity, Class, Session](../../user-documentation/content-types/activity-class-session)
+- [Program](../../user-documentation/content-types/program) - Represents a high-level program (e.g., "Swimming", "Camps").
+- [Program Subcategory](../../user-documentation/content-types/program-subcategory) - Represents a specific subcategory within a program (e.g., "Lap Swimming" within "Swimming").
+- [Activity, Class, Session](../../user-documentation/content-types/activity-class-session) - Represents the individual activities, classes, and sessions offered.
 
 ## Syncers
 
-These provide integrations to pull content from external systems into the content types:
+These modules provide integrations to pull content from external systems into the content types listed above. They automate the process of importing data from various platforms into the YMCA Website Services ecosystem.
 
-- [Extended Daxko API Integration (`drupal/openy_daxko2`)](https://www.drupal.org/project/openy_daxko2)
-- [Simple Daxko Integration (deprecated) (`drupal/daxko`)](https://www.drupal.org/project/daxko)
-- [ActiveNet Integration (`drupal/activenet`)](https://www.drupal.org/project/activenet)
-- [Personify Integration (`drupal/personify`)](https://www.drupal.org/project/personify)
-- [GroupEx Pro (Daxko) Integration (`drupal/groupexpro`)](https://www.drupal.org/project/groupexpro)
-- [PEF (Program Event Framework) GXP (GroupEx Pro) Sync (`ynorth-projects/openy_pef_gxp_sync`)](https://github.com/ynorth-projects/openy_pef_gxp_sync)
-- [YMCA 360 (Y360) Integration (`drupal/yusaopeny_ymca360`)](https://www.drupal.org/project/yusaopeny_ymca360)
-- [Traction Rec Integration (`ycloudyusa/openy_traction_rec`)](https://github.com/YCloudYUSA/openy_traction_rec)
-  - [How to configure the Traction Rec integration](https://github.com/YCloudYUSA/openy_traction_rec?tab=readme-ov-file#ymca-website-services-traction-rec-integration)
-  - [How to import data from Traction Rec](https://github.com/YCloudYUSA/openy_traction_rec/blob/main/modules/openy_traction_rec_import/README.md#ymca-website-services-traction-rec-pef-integration)
+- [Extended Daxko API Integration (`drupal/openy_daxko2`)](https://www.drupal.org/project/openy_daxko2) - Integrates with Daxko Operations using their API.
+- [Simple Daxko Integration (deprecated) (`drupal/daxko`)](https://www.drupal.org/project/daxko) - *Deprecated*. An earlier integration with Daxko, now superseded by the Extended Daxko API Integration.
+- [ActiveNet Integration (`drupal/activenet`)](https://www.drupal.org/project/activenet) - Integrates with the ActiveNet recreation management system.
+- [Personify Integration (`drupal/personify`)](https://www.drupal.org/project/personify) - Integrates with the Personify member management system.
+- [GroupEx Pro (Daxko) Integration (`drupal/groupexpro`)](https://www.drupal.org/project/groupexpro) - Integrates with Daxko's GroupEx Pro scheduling software.
+- [PEF (Program Event Framework) GXP (GroupEx Pro) Sync (`ynorth-projects/openy_pef_gxp_sync`)](https://github.com/ynorth-projects/openy_pef_gxp_sync) - Syncs GroupEx Pro data specifically for the Program Event Framework.
+- [YMCA 360 (Y360) Integration (`drupal/yusaopeny_ymca360`)](https://www.drupal.org/project/yusaopeny_ymca360) - Integrates with the YMCA 360 virtual platform.
+- [Traction Rec Integration (`ycloudyusa/openy_traction_rec`)](https://github.com/YCloudYUSA/openy_traction_rec) - Integrates with the Traction Rec platform.
+    - [How to configure the Traction Rec integration](https://github.com/YCloudYUSA/openy_traction_rec?tab=readme-ov-file#ymca-website-services-traction-rec-integration)
+    - [How to import data from Traction Rec](https://github.com/YCloudYUSA/openy_traction_rec/blob/main/modules/openy_traction_rec_import/README.md#ymca-website-services-traction-rec-pef-integration)
 
 ## Displays
 
-These display the content for users to discover:
+These modules and features display the content entered into the content types, allowing users to discover and engage with programs and activities.
 
 - Activity Finder
-  - [Activity Finder (User Docs)](../../user-documentation/schedules/activity-finder)
+    - [Activity Finder (User Docs)](../../user-documentation/schedules/activity-finder) - Documentation for end-users on how to use the Activity Finder.
     - [Activity Finder (`ycloudyusa/yusaopeny_activity_finder`)](https://github.com/YCloudYUSA/yusaopeny_activity_finder) - this repo contains in-depth developer documentation.
 - Group Schedules
-  - [Group Schedules (User Docs)](../../user-documentation/schedules/group-schedules)
-  - [Repeat Schedules (`ynorth-projects/openy_repeat`)](https://github.com/ynorth-projects/openy_repeat) - contains the "Repeat Schedules" block which is the basis for Group Schedules.
+    - [Group Schedules (User Docs)](../../user-documentation/schedules/group-schedules) - Documentation for end-users on how to use Group Schedules.
+    - [Repeat Schedules (`ynorth-projects/openy_repeat`)](https://github.com/ynorth-projects/openy_repeat) - contains the "Repeat Schedules" block which is the basis for Group Schedules.
 
-## Data model
+## Data Model
 
-The network of data structures in PEF can be confusing. Here's how it all works
+The network of data structures in PEF can be complex. This diagram illustrates the relationships between the main content types and their key fields.
 
 ```mermaid
 ---
@@ -138,4 +139,4 @@ erDiagram
     session }o--|| facility : field_session_plocation
 ```
 
-More information on how this data gets out into each display will be coming soon.
+More information on how this data is displayed in each component will be added soon.

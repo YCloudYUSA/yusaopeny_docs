@@ -1,6 +1,6 @@
 ---
 title: Featured News Posts
-description: Create a standalone page listing curated News Posts.
+description: Display a curated list of news posts on a page.
 ---
 
 ## Examples
@@ -23,27 +23,27 @@ description: Create a standalone page listing curated News Posts.
 
 ## Areas It Can Be Used
 
-* Content Area
-* Bottom Area
+*   Content Area
+*   Bottom Area
 
 ---
 
 ## How to Use Featured News Posts
 
-Add a *Headline* for this section of content in the Title field.
-
-Next, type in the name of the news post you would like to feature in the autocomplete field. Click on the post when it shows up below.
+1.  Add a **Headline** for this section of content in the *Title* field. This title will appear above the featured news posts.
+2.  In the *News Posts* field, begin typing the name of the news post you want to feature. An autocomplete list will appear.
+3.  Click on the desired news post from the autocomplete results.
+4.  To add more news posts, click the *Add another item* button.
+5.  Click the *Save* button to save your changes.
 
 ![Featured News Posts admin fields](paragraphs--featured-news--admin.png)
 
-To add another news post, click the *Add another item* button. Click the blue save button at the bottom when you’re finished.
-
 ## Content Types that Support Featured News Posts
 
-* [Landing Page](../../content-types/landing-page)
-* [Program](../../content-types/program)
-* [Program Subcategory](../../content-types/program-subcategory)
-* [Branch](../../content-types/branch)
-* [Camp](../../content-types/camp)
-* Facility
-* [News Post](../../content-types/news-post)
+*   [Landing Page](../../content-types/landing-page)
+*   [Program](../../content-types/program)
+*   [Program Subcategory](../../content-types/program-subcategory)
+*   [Branch](../../content-types/branch)
+*   [Camp](../../content-types/camp)
+*   Facility
+*   [News Post](../../content-types/news-post)

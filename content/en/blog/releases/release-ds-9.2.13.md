@@ -1,4 +1,5 @@
- ---
+```markdown
+---
 title: Digital Services Release 9.2.13
 description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.13.0)
 date: 2023-03-14
@@ -68,7 +69,7 @@ Expanding upon the December release, we are making additional components and con
 - Branch Menu
 
     - Single level sub-menu that displays within a branch page (and sub-pages) that allows users to drill down to additional content specific to that branch.
-    - Branch Menu Training & Documentation **ADD LINK**
+    - [Branch Menu Training & Documentation](https://ds-docs.y.org/docs/user-documentation/content-types/branch/#branch-menu)
 
 - Branch Amenities
 
@@ -78,15 +79,15 @@ Expanding upon the December release, we are making additional components and con
 - Branch Social Links
 
     - Component for placing Branch-specific social media links on a Branch page.
-    - Branch Social Links Training & Documentation **ADD LINK**
+    - [Branch Social Links Training & Documentation](https://ds-docs.y.org/docs/user-documentation/content-types/branch/#branch-social-links)
 
-- Additional Layout Builder improvements, update,s and documentation:
+- Additional Layout Builder improvements, updates, and documentation:
 
     - Added Layout Builder roadmap summary to docs
     - Standardized and updated existing component field names for consistency
     - Resolved issues with low contrast of text over images
     - Updated documentation to include [new components](https://ds-docs.y.org/docs/content-structure/layout-builder/) and [updates to content types](https://ds-docs.y.org/docs/content-structure/content-types/)
-    - Included node_revision_delete in distribution w/ default settings
+    - Included `node_revision_delete` in distribution w/ default settings
 
 
 ### Drupal Core Update
@@ -116,10 +117,11 @@ Expanding upon the December release, we are making additional components and con
 - Created documentation for all YUSA Sandbox environments.
 - Added a [Glossary](https://ds-docs.y.org/docs/glossary/) to Website Services documentation.
 - Sandboxes, Event Content Type - ensure dates for demo event content are always set to be in the future.
-- Included node_revision_delete in distribution w/ default settings
+- Included `node_revision_delete` in distribution w/ default settings
 
 
 ## Bug Fixes
 
 - Resolved an issue with H2 text size not displaying correctly
 - Removed Google Translate logo from Select Language menu
+```

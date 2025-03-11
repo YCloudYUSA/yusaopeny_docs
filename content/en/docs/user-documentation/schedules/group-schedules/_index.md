@@ -1,3 +1,4 @@
+```markdown
 ---
 title: Group Schedules
 description: Displays daily group exercise classes with filters and a PDF download.
@@ -18,19 +19,23 @@ As of August 2024, the Schedules have [an updated design](https://www.figma.com/
 - [Repeat Schedules Layout Builder](../../layout-builder/repeat-schedules)
   - Available with `openy_repeat` [2.2.0 and above](https://github.com/ynorth-projects/openy_repeat/releases) via the **Repeat (Group) Schedules** (`lb_repeat_schedules`) module.
 
-## Block configuration
+## Block Configuration
 
 After you add the Paragraph or Block to a page, configure the options:
 
-- **PDF Schedule link** - a link to a manually generated PDF as an alternative to the automatically generated one.
-- **Clear All link** - where the user is directed when they use the "Clear all" link.
-- **Limit by category** - choose categories with autocomplete to only show certain categories.
-- **Filters** - choose the filters that show up in the sidebar.
-- **Limit by Location** - choose a location to only show events from that location.
-- **Display instructor**
-- **Display end time**
-- **Categories Exclude** - exclude any programs that are tagged with specific categories.
-- **PDF only view** - only show the PDF link and not the schedule.
+-   **PDF Schedule link** - a link to a manually generated PDF as an alternative to the automatically generated one.
+-   **Clear All link** - where the user is directed when they use the "Clear all" link.
+-   **Limit by category** - choose categories with autocomplete to only show certain categories.
+-   **Filters** - choose the filters that show up in the sidebar.
+    The available filters are:
+    -   by category
+    -   by class name
+    -   by instructor name
+-   **Limit by Location** - choose a location to only show events from that location.
+-   **Display instructor** - controls whether the instructor's name is displayed.
+-   **Display end time**
+-   **Categories Exclude** - exclude any programs that are tagged with specific categories.
+-   **PDF only view** - only show the PDF link and not the schedule.
 
 ## Front-end
 

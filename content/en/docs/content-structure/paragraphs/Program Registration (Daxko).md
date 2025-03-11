@@ -1,19 +1,20 @@
+```markdown
 ---
 title: Program Registration (Daxko)
 ---
 
-This is paragraph that renders the Programs Search Block.
+This paragraph renders the Programs Search Block.
 
-Programs Search Block provides a form to search programs from Daxko.
+The Programs Search Block provides a form to search programs from Daxko.
 
-Relates to: [Daxko](../Development/Daxko.md)
+**Related topics:** [Daxko](../Development/Daxko.md)
 
-Daxko & Program Registration (Daxko) configuration must be setup before the Program Registration paragraph will work.
+**Important:** The Daxko and Program Registration (Daxko) configurations must be set up before the Program Registration paragraph will work.
 
-Configuration setting at /admin/config/development/daxko/programs-search
+Configuration settings are located at `/admin/config/development/daxko/programs-search`.  You must have the `administer daxko` permission to configure these settings. See the [Daxko settings documentation](./Daxko.md) for more information on configuring the connection to Daxko.
 
 ### Fields
 
-| Name  | Machine name | Required | Description |
-| ------------- | ------------- | ------------- | ------------- |
-| Program registration block | field\_prgf\_reg\_block | No | Block reference to the programs_search_block block. Should have default value and should be hidden in form display. |
+| Name                         | Machine name          | Required | Description                                                                                                                    |
+| ---------------------------- | ----------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Program registration block | field\_prgf\_reg\_block | No       | Block reference to the `programs_search_block` block. Should have a default value and should be hidden in the form display. |

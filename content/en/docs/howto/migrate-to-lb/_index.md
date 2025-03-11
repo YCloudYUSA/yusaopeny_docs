@@ -1,7 +1,8 @@
+```markdown
 ---
 title: How to migrate content into Layout Builder
-linkTitle: "migrate to Layout Builder"
-description: Leaping to Layout Builder can seem daunting, but we have resources to help.
+linkTitle: "Migrate to Layout Builder"
+description: Migrating to Layout Builder can seem daunting, but we have resources to help.
 ---
 
 Before you start your migration, we recommend you:
@@ -13,21 +14,21 @@ Before you start your migration, we recommend you:
 
 ## How long do I have?
 
-Layout Builder components for YMCA Website Services were developed and released throughout 2023. The plan at the outset was that Paragraphs-based components would be supported for one year from the time of the Layout Builder components' completion, then would cease being supported. Site owners can begin migrating their content at any time. Upon the deprecation of Paragraphs components, they will not "disappear", but they will no longer be supported by the YMCA Website Services core team.
+Layout Builder components for YMCA Website Services were developed and released throughout 2023. The initial plan was to support Paragraphs-based components for one year after the Layout Builder components were completed, after which they would no longer be supported. Site owners can begin migrating their content at any time.  After the deprecation of Paragraphs components, they will not "disappear", but the YMCA Website Services core team will no longer support them.
 
 As of October 2023, the timeline is:
 
-- **December 2023** -  Layout Builder components are considered "feature complete"
-- **2024** - refinement and bug fixing of Layout Builder components, basic bug fixing only for Paragraphs components.
-- **December 2024** - end of support for Paragraphs components.
+-   **December 2023** - Layout Builder components are considered "feature complete."
+-   **2024** - Refinement and bug fixing of Layout Builder components; basic bug fixing only for Paragraphs components.
+-   **December 2024** - End of support for Paragraphs components.
 
-Site owners are encouraged to plan a migration of their content to Layout Builder in 2024, after which point they will be responsible for maintaining Paragraphs components.
+Site owners are encouraged to plan a migration of their content to Layout Builder in 2024, after which they will be responsible for maintaining Paragraphs components.
 
 (Timeline is subject to change based on community feedback and priorities.)
 
 ## Plan your migration
 
-The migration from Paragraphs to Layout Builder is not a small one, but it can be done in bite-sized pieces and spread out over some time if necessary. We recommend working with a [partner agency](https://ds.ymca.org/partners) to assist you through the process.
+The migration from Paragraphs to Layout Builder is not a small one, but it can be done in manageable pieces and spread out over time if necessary. We recommend working with a [partner agency](https://ds.ymca.org/partners) to assist you through the process.
 
 > **TIP**: As you work through the migration, the new pieces of your site _will_ look different than others. Help members through the process with some messaging in an [Alert](../../user-documentation/content-types/alert) or [news post](../../user-documentation/content-types/lb-article) letting them know that things will be changing.
 
@@ -37,13 +38,13 @@ If you're doing your migration throughout your regular business, without startin
 
 ### A campaign or goal
 
-If you have an upcoming marketing campaign you could build one or a few brand new Landing Pages with Layout Builder to try out the process. This way you're easing both your editors and members into the new designs without getting too deep.
+If you have an upcoming marketing campaign, you could build one or a few brand new Landing Pages with Layout Builder to try out the process. This way, you're easing both your editors and members into the new designs without getting too deep.
 
-If you have a natural pause in events (maybe over a holiday) or a big series coming up you could use that as the break point for new events. Old events don't necessarily have to be converted to the new design as they're not often viewed after their date has passed.
+If you have a natural pause in events (maybe over a holiday) or a big series coming up, you could use that as the break point for new events. Old events don't necessarily have to be converted to the new design, as they're not often viewed after their date has passed.
 
 ### A section of the site
 
-Maybe you want to ease into the process with some lesser-used pages, maybe you want to change the home page and top-level menu items to show off the new designs right from the outset. Either way, you can decide on a section and carve off a few pages at a time.
+Maybe you want to ease into the process with some lesser-used pages, or maybe you want to change the home page and top-level menu items to show off the new designs right from the outset. Either way, you can decide on a section and carve off a few pages at a time.
 
 ### A content type
 
@@ -51,32 +52,37 @@ Events or News articles are a good option to try out the new designs, although y
 
 ## Prepare your content
 
-Once you know what you're going to move, you'll want to get the content ready to migrate. Most text will need to be copied and pasted to the new pages (this is a great opportunity for review), but images and documents will be able to be re-used from the [Media Library](../../user-documentation/media).
+Once you know what you're going to move, you'll want to get the content ready to migrate. Most text will need to be copied and pasted to the new pages (this is a great opportunity for review), but images and documents can be re-used from the [Media Library](../../user-documentation/media).
 
 It could be helpful to print or screenshot pages (Firefox can capture a [full-page screenshot](https://support.mozilla.org/en-US/kb/take-screenshots-firefox)) and then annotate them to decide how each section of the page will map to its Layout Builder component. You could even use the [Wayback Machine](https://web.archive.org/) to save a snapshot of the page.
 
 ### Component mapping
 
-While the exact mappings are up to each site's content editors, here are some possible mappings from Paragraphs to Layout Builder
+While the exact mappings are up to each site's content editors, here are some possible mappings from Paragraphs to Layout Builder.  Note that available Layout Builder components may vary based on your specific YMCA Website Services configuration.
 
 > Paragraph
-> : the Layout Builder component it maps to.
+>
+> : The Layout Builder component it maps to.
 
 1 Column
 2 Columns
 3 Columns
 4 Columns
 Secondary Description and Sidebar
+
 : These paragraphs can be replicated using 1-4 column [Layouts](../../user-documentation/layout-builder/#layouts)
 
 Activity Finder
+
 : [Activity Finder](../../user-documentation/layout-builder/activity-finder)
 
 All Amenities
+
 : [Branch Amenities](../../user-documentation/content-types/branch/#layout-builder-blocks)
 
 Banner
 Small Banner
+
 : [Banner](../../user-documentation/layout-builder/banner)
 
 Blog Posts Listing
@@ -85,66 +91,83 @@ Featured News Posts
 Latest Blog Posts
 Latest News Posts
 News Posts Listing
+
 : [Articles Filter, Articles Listing, Featured Articles](../../user-documentation/layout-builder/article-views)
 
 Camp Menu
+
 : [Camp Menu](../../user-documentation/content-types/camp/#camp-menus)
 
 Categories Listing
-: TBD
+
+: TBD (To Be Determined - consult with the YMCA Website Services team or a partner agency for the best alternative)
 
 Code
+
 : [Code](../../user-documentation/layout-builder/code)
 
 Date Block
-: None
+
+: None (Functionality may be achievable with a custom block or a combination of other components)
 
 Embedded GroupEx Pro Schedule
+
 : Due to changes in the GroupEx Pro embed functionality, we recommend moving to a [Code](../../user-documentation/layout-builder/code) block.
 
 FAQ
+
 : [Accordion](../../user-documentation/layout-builder/accordion)
 
 Featured Content
 Story Card
+
 : [Cards](../../user-documentation/layout-builder/cards) or [Grid CTA](../../user-documentation/layout-builder/grid-cta)
 
 Gallery
+
 : [Carousel](../../user-documentation/layout-builder/carousel)
 
 Grid Content
+
 : [Grid CTA](../../user-documentation/layout-builder/grid-cta) or [Icon Grid](../../user-documentation/layout-builder/icon-grid)
 
 Limited Time Offer
+
 : Banner (small variant) or Alert
 
 Membership Calculator Paragraph
+
 : [Membership Calculator](../../user-documentation/membership)
 
 Promo Card
+
 : [Promo Card](../../user-documentation/layout-builder/promo-card)
 
 Simple Content
-: [Table](../../user-documentation/layout-builder/table)
+
+: [Table](../../user-documentation/layout-builder/table) or WYSIWYG/Text Block
 
 Social Share Icons
+
 : [Deprecated](../../user-documentation/paragraphs/social-share-icons)
 
 Teaser
+
 : [Ping-pong](../../user-documentation/layout-builder/ping-pong)
 
 Webform
+
 : [Webform](../../user-documentation/layout-builder/webform)
 
 ## Build it
 
 Once you have a plan, go build it! Use the [Layout Builder](../../user-documentation/layout-builder) documentation to help you through the process. Building each page might look something like this:
 
-- Create a new, unpublished, Landing Page (with Layout Builder)
-- Add blocks and content to the new page
-- Ensure the URL Alias of the new page matches that of the old page
-- Un-publish the old page and publish the new page.
-- Test out the new page in a new browser, an incognito window, or your phone or tablet
+-   Create a new, unpublished, Landing Page (with Layout Builder).
+-   Add blocks and content to the new page.
+-   Ensure the URL Alias of the new page matches that of the old page.
+-   Un-publish the old page and publish the new page.
+-   Test out the new page in a new browser, an incognito window, or your phone or tablet.
 
 ## Get help
 

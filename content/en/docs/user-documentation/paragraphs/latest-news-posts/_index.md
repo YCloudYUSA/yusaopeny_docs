@@ -1,36 +1,37 @@
+```markdown
 ---
 title: Latest News Posts
-description: Embed a listing of News Posts with optional filtering by Camp/Branch.
+description: Embed a listing of news posts with optional filtering by Camp/Branch.
 ---
 
-These three paragraphs embed a listing of News posts, sorted by the most recent, in a row/listing design
+These paragraphs embed listings of news posts, sorted by the most recent, in a row/listing design. There are three variations:
 
-* **Latest News Posts** shows all the most recent news posts across your entire site.
-* **Latest News Posts (Branch)** filters news posts by the branch the paragraph is embedded on (for example, if on a Downtown YMCA page, only Downtown YMCA news posts will show up). Placed on a non-branch page, only the headline will show up.
-* **Latest News Posts (Camp)** filters News posts by the branch the paragraph is embedded on (for example, if on a Camp Widjiwagan page, only Camp Widjiwagan YMCA News posts will show up). Placed on a non-camp page, only the headline will show up.
+*   **Latest News Posts:** Displays all the most recent news posts across your entire site.
+*   **Latest News Posts (Branch):** Filters news posts by the branch on which the paragraph is embedded. For example, if placed on a "Downtown YMCA" page, only "Downtown YMCA" news posts will be shown. If placed on a non-branch page, only the headline will be displayed.
+*   **Latest News Posts (Camp):** Filters news posts by the camp on which the paragraph is embedded. For example, if placed on a "Camp Widjiwagan" page, only "Camp Widjiwagan YMCA" news posts will be shown. If placed on a non-camp page, only the headline will be displayed.
 
 ## Examples
 
 ### Carnation
 
-![Latest blog posts in Carnation](paragraphs--latest-news-posts--carnation.png)
+![Latest news posts in Carnation](paragraphs--latest-news-posts--carnation.png)
 
 ### Rose
 
-![Latest blog posts in Rose](paragraphs--latest-news-posts--rose.png)
+![Latest news posts in Rose](paragraphs--latest-news-posts--rose.png)
 
 ---
 
-## Areas it Should Be Used
+## Areas to Use
 
-* Content Area
-* Bottom Area
+*   Content Area
+*   Bottom Area
 
 ---
 
 ## How to Use Latest News Posts
 
-From the paragraphs dropdown, add the “Latest News Posts.” Enter a header title for the section in the text field and hit save.
+From the paragraphs dropdown, add the desired "Latest News Posts" paragraph type. Enter a header title for the section in the text field, and save.
 
 ![Latest news posts admin fields](paragraphs--latest-news-posts--admin.png)
 
@@ -38,20 +39,21 @@ From the paragraphs dropdown, add the “Latest News Posts.” Enter a header ti
 
 ## Content Types that Support Latest News Posts
 
-* [Landing Page](../../content-types/landing-page)
-* Facility
+*   [Landing Page](../../content-types/landing-page)
+*   Facility
 
 ## Content Types that Support Latest News Posts (Branch)
 
-* [Branch](../../content-types/branch)
+*   [Branch](../../content-types/branch)
 
 ## Content Types that Support Latest News Posts (Camp)
 
-* [Camp](../../content-types/camp)
+*   [Camp](../../content-types/camp)
 
 ## Related/Alternative Paragraphs
 
-* Event Posts Listing
-* [Blog Posts Lisiting](../blog-posts-listing)
-* [Latest News Posts/(Camp)/(Branch)](../latest-news-posts)
-* [News Posts Listing](../news-posts-listing)
+*   Event Posts Listing
+*   [Blog Posts Listing](../blog-posts-listing)
+*   [Latest News Posts/(Camp)/(Branch)](../latest-news-posts)
+*   [News Posts Listing](../news-posts-listing)
+```

@@ -1,7 +1,10 @@
+```markdown
 ---
 title: Amenities
 ---
 
-This is a vocabulary that will be used for adding reference Branch amenities. We will use this for the Branch.
+This vocabulary is used to categorize branch amenities. It is used to tag Branch content.
 
-**Machine_name**: amenities
+**Machine name:** `amenities`
+
+To manage the available amenities, navigate to: [admin/structure/taxonomy/manage/amenities/overview](internal:/admin/structure/taxonomy/manage/amenities/overview).

@@ -1,34 +1,31 @@
+```markdown
 ---
 title: Patch YMCA Website Services
 ---
 
-Here you can find instructions how you can patch YMCA Website Services distribution used on
-your project.
+Here you can find instructions on how to patch a YMCA Website Services distribution used in your project.
 
-## When you need to patch YMCA Website Services
+## When to Patch YMCA Website Services
 
-- In case you found a bug and prepared a patch for YMCA Website Services on github.
-- In case you developed a new feature that will be good to have in YMCA Website Services and
-created Pull Request to YMCA Website Services repository
-- In case you want to add a feature that added to YMCA Website Services but not included yet to
-YMCA Website Services release.
+-   If you've found a bug and created a patch for YMCA Website Services on GitHub.
+-   If you've developed a new feature that would benefit YMCA Website Services and created a Pull Request (PR) to the YMCA Website Services repository.
+-   If you want to use a feature that has been added to YMCA Website Services but isn't yet included in a released version.
 
-### How to patch YMCA Website Services via composer?
+### How to Patch YMCA Website Services via Composer
 
-If you followed instructions [docs/Development/Start new YMCA Website Services project](https://github.com/YCloudYUSA/yusaopeny/blob/8.x-1.x/docs/Development/Start%20new%20OpenY%20project.md)
-and you have configured `composer.json` you need just to do a few simple steps:
-1. Build a link to a patch using pull request ID
+If you followed the instructions in [docs/Development/Start new YMCA Website Services project](https://github.com/YCloudYUSA/yusaopeny/blob/8.x-1.x/docs/Development/Start%20new%20OpenY%20project.md) and your `composer.json` is configured correctly, follow these steps:
+
+1.  **Create a patch link using the Pull Request ID:**
 
     ```
     https://patch-diff.githubusercontent.com/raw/YCloudYUSA/yusaopeny/pull/XXX.patch
     ```
 
-Where XXX is a number of pull request you want to use.
+    Replace `XXX` with the number of the pull request you want to use.
 
-2. Add a new section `patches` to the section `extra` and add a patch to YMCA Website Services
-repository, as on this example:
+2.  **Add a `patches` section to the `extra` section of your `composer.json` file:**
 
-    ```
+    ```json
     "extra": {
         "installer-paths": {
           ...
@@ -42,6 +39,16 @@ repository, as on this example:
     }
     ```
 
-3. After adding a patch execute command `composer update`
-4. Verify you can see added changes in YMCA Website Services
-5. Enjoy!
+    -   `Patch description`:  A brief description of what the patch does.  This helps you remember the purpose of the patch later.
+    -   `https://...XXX.patch`: The patch link created in step 1.
+
+3.  **Run `composer update`:**
+
+    This command applies the patch to your project.
+
+4.  **Verify the Changes:**
+
+    Check that the changes from the patch are present in your YMCA Website Services installation.
+
+5.  **Enjoy!**
+```

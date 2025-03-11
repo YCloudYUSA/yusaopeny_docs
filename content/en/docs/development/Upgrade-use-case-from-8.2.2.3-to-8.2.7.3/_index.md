@@ -1,21 +1,24 @@
+```markdown
 ---
 title: Upgrade use case from 8.2.2.3 to 8.2.7.3
 aliases:
   - /docs/wiki/upgrade-use-case-from-8.2.2.3-to-8.2.7.3/
 ---
 
-This document is archived but may contain useful information for troubleshooting future updates. For updated update steps, visit [How to upgrade YMCA Website Services]({{< relref OpenY-upgrade-how-to-for-Developers.md >}}).
+This document is archived but may contain useful information for troubleshooting future updates. For updated upgrade steps, visit [How to upgrade YMCA Website Services]({{< relref OpenY-upgrade-how-to-for-Developers.md >}}).
 
 ---
 
-1 uninstall `lndr` and `optimizely` modules before running [composer update commands]({{< relref "OpenY-upgrade-how-to-for-Developers#run-command-with-next-never-version--replace-new_version_here-with-the-version-you-are-upgrading-to-eg-8207-" >}})
+Follow these steps to upgrade from version 8.2.2.3 to 8.2.7.3.
 
-2 config to remove
-```sh
+1.  Uninstall the `lndr` and `optimizely` modules before running the [composer update commands]({{< relref "OpenY-upgrade-how-to-for-Developers#run-command-with-next-never-version--replace-new_version_here-with-the-version-you-are-upgrading-to-eg-8207-" >}}).
 
-drush cdel image.style.browser_thumbnail
-```
+2.  Remove the `image.style.browser_thumbnail` configuration:
 
-3 enable `openy_focal_point` and `media_directories_ui` should be enabled when upgrade from 8.2.2.3 to 8.2.7.3
+    ```sh
+    drush cdel image.style.browser_thumbnail
+    ```
 
-4 - run drush updatedb [and next steps from tutorial]({{< relref "OpenY-upgrade-how-to-for-Developers#update-the-site" >}})
+3.  Enable the `openy_focal_point` and `media_directories_ui` modules.
+
+4.  Run `drush updatedb` and follow the remaining steps in the [upgrade tutorial]({{< relref "OpenY-upgrade-how-to-for-Developers#update-the-site" >}}).

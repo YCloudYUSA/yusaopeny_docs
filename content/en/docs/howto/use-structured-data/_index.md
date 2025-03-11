@@ -1,3 +1,4 @@
+```markdown
 ---
 title: How to leverage structured data
 linkTitle: use structured data
@@ -8,7 +9,7 @@ description: Structured data helps the machines reading your site - search engin
 >
 > -- [Why add structured data to a page (Google)](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data#why)
 
-The distribution (as of [version 10.3.0]({{% relref "release-ds-10.3.0.md" %}})) leverages the community contributed [Schema.org metatag module](https://www.drupal.org/project/schema_metatag) and custom code to integrate structured data into many content types. You can test if your page is outputting structured data by using the [Schema.org Validator](https://validator.schema.org/) or [Google's Rich Results Test](https://search.google.com/test/rich-results)
+The distribution (as of [version 10.3.0]({{% relref "release-ds-10.3.0.md" %}})) leverages the community contributed [Schema.org metatag module](https://www.drupal.org/project/schema_metatag) and custom code to integrate structured data into many content types. You can test if your page is outputting structured data by using the [Schema.org Validator](https://validator.schema.org/) or [Google's Rich Results Test](https://search.google.com/test/rich-results).
 
 Once your site is updated, structured data will be _automatically generated_ 🎉 with no additional work from content editors.
 
@@ -45,7 +46,7 @@ If an Accordion section contains Frequently Asked Questions, check the **FAQ?** 
 Tips for writing good FAQ content:
 
 - Ensure the content contains individual sets of questions ("How old does my child need to be to swim at the YMCA?") and answers ("The YMCA offers swim classes starting at age 3 and the pool is open to children of all ages with parental supervision").
-- Only one FAQ should be added to a page. If more than one is added, only the first will be output to the structured data.
+- Only one FAQ should be added to a page. If more than one is added, only the first will be output to the structured data. See [Google's Content guidelines for FAQs](https://developers.google.com/search/docs/appearance/structured-data/faqpage#content-guidelines) for more information.
 
 ### Customizing FAQs
 
@@ -53,7 +54,7 @@ Due to the complexity of the FAQ data, the structured data is [managed entirely 
 
 ## Other Metatags
 
-The distribution also includes metadata configuration for each content type, which can be found in the Metatag configuration (`/admin/config/search/metatag`).
+The distribution also includes metadata configuration for each content type, which can be found in the Metatag configuration (`/admin/config/search/metatag`).  Refer to the [Metatag module documentation](https://www.drupal.org/docs/contributed-modules/metatag) for more information.
 
 ### Homepage Metatag Overrides
 
@@ -61,8 +62,8 @@ On some sites, the homepage may have unique metadata requirements. The homepage 
 
 For sites that use Layout Builder, it may be necessary to disable the **Front Page** metatag settings so that the **Landing Page (Layout Builder)** tags can be used instead.
 
-1. Go to `/admin/config/search/metatag/front`
-2. Scroll to the bottom of the form.
-3. Uncheck **Active** and Save the settings.
+1.  Go to `/admin/config/search/metatag/front`
+2.  Scroll to the bottom of the form.
+3.  Uncheck **Active** and Save the settings.
 
 Once you have changed the settings, check the metadata of the homepage with a tool like [Social Share Preview](https://socialsharepreview.com/) to ensure the correct data is being output.

@@ -2,12 +2,13 @@
 title: Gallery
 ---
 
-This is a paragraph type that will be used for the gallery content.
+The Gallery paragraph type is used to display a collection of images, often with accompanying text and links.
 
 ### Fields
-| Name  | Machine name | Required | Description |
-| ------------- | ------------- | ------------- | ------------- |
-| Headline | field\_prgf_headline | Yes | Headline of the gallery. |
-| Description | field\_prgf_description | No | WYSIWYG field without summary. |
-| Link | field\_prgf_link | No | Link field that should store internal and external links. |
-| Images | field\_prgf_images | No | Entityreference to media image. Multiple values. |
+
+| Name        | Machine Name        | Required | Description                                                                                   |
+| :---------- | :------------------ | :------- | :-------------------------------------------------------------------------------------------- |
+| Headline    | `field_prgf_headline` | Yes      | Headline of the gallery. Plain text.                                                        |
+| Description | `field_prgf_description` | No      | WYSIWYG field without summary.  Allows for rich text formatting to describe the gallery. |
+| Link        | `field_prgf_link`   | No      | Link field for internal and external URLs. Can be used to link to more information.          |
+| Images      | `field_prgf_images`  | No      | Entity reference to media images.  Supports multiple images in the gallery.                |

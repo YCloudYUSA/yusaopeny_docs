@@ -16,6 +16,7 @@ Before you can use the Repeat Schedules block, you will need to:
 
 Configure the options:
 
+-  The **Repeat (Group) Schedules** block uses the `lb_repeat_schedules` block content type.
 - See [Group Schedules Block Configuration](../../schedules/group-schedules#block-configuration) for configuration details.
 
 {{< readfile "../lb-save-block.partial" >}}

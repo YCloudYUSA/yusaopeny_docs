@@ -4,40 +4,42 @@ weight: 3
 no_list: true
 ---
 
-The options available to associations to gate your content is dependent on your Customer Management System.  Currently the following options may be used to gate content within the Virtual Y website.
+The authentication options available for gating your content depend on your Customer Management System (CRM). Currently, the following options can be used to control access to content within the Virtual Y website.
 
 ## Personify
 
-### Single Sign On (SSO)
+### Single Sign-On (SSO)
 
-You may require members to log into their account within the Personify CRM system.
+Requires members to log in using their existing Personify CRM credentials.
 
 ## Daxko
 
-### Single Sign On (SSO)
+### Single Sign-On (SSO)
 
-You may require members to log into their account within the Daxko CRM system.
+Requires members to log in using their existing Daxko CRM credentials.
 
-Note, Daxko API access is required.  Daxko charges an API usage fee.
+**Note:** Daxko API access is required and may incur API usage fees from Daxko. Contact Daxko for details on API access and associated costs.
 
 ### Barcode Validation
 
-You may require members to enter their bar code before accessing the site.  Virtual Y will validate the barcode with Daxko prior to granting access.
+Requires members to enter their barcode. The Virtual Y site validates the barcode against the Daxko system before granting access.
 
 [Set up Daxko Barcode Validation](./daxko-barcode).
 
 ## ReClique
 
-### Single Sign On
+### Single Sign-On (SSO)
 
-You may require members to log into their account within the ReClique CORE CRM system.
+Requires members to log in using their existing ReClique CORE CRM credentials.
 
 ## CSV File Uploads
 
-### CSV Upload without email verification
+Allows associations to upload a CSV file containing membership information to grant access. Two options are available:
 
-An association may upload a membership CSV file indicating what members may access the gated content.  Members provide their email address and the Virtual Y site will validate a match before granting access.
+### CSV Upload without Email Verification
 
-### CSV Upload with email verification
+Upload a CSV file containing member email addresses. The Virtual Y site validates the entered email address against the uploaded list before granting access.
 
-An association may upload a membership CSV file indicating what members may access the gated content.  Members provide their email address and the Virtual Y site will require members access their email and click a link to gain access to the gated content.
+### CSV Upload with Email Verification
+
+Upload a CSV file containing member email addresses. The Virtual Y site sends a verification email to the address provided. The member must click the link in the email to gain access.

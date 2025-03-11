@@ -1,13 +1,14 @@
+```markdown
 ---
 title: Simple Schedules
-description: The "PEF Schedules" module allows Ys to create and manage schedules with a simple, calendar-based view.
+description: The PEF Schedules module allows Ys to create and manage schedules with a simple, calendar-based view powered by FullCalendar.
 tags:
     - "Decoupled Applications"
 ---
 
 [YCloudYUSA/y_pef_schedule](https://github.com/YCloudYUSA/y_pef_schedule)
 
-See [PEF Schedules](../../../development/program-event-framework/pef-schedules) for installation instructions.
+See [PEF Schedules](../../../development/program-event-framework/pef-schedules) for installation instructions. Also reference the [README.md](https://github.com/YCloudYUSA/y_pef_schedule/blob/main/README.md) file in the module for additional information.
 
 Once you install the PEF Schedules module, you will be able to build schedules and add sessions via a calendar-based builder.
 
@@ -15,7 +16,7 @@ Once you install the PEF Schedules module, you will be able to build schedules a
 
 ### Create schedule groupings
 
-The Schedule editor allows Content Editors to create Sessions on a "WYSIWYG" calendar interface. As described in the [PEF data model](../../../development/program-event-framework#data-model), [Sessions](../../content-types/activity-class-session#session) require [Classes](../../content-types/activity-class-session#class), which require [Activities](../../content-types/activity-class-session#activity), which require [Program Subcategories](../../content-types/program-subcategory), which require [Programs](../../content-types/program).
+The Schedule editor allows Content Editors to create Sessions on a WYSIWYG calendar interface. As described in the [PEF data model](../../../development/program-event-framework#data-model), [Sessions](../../content-types/activity-class-session#session) require [Classes](../../content-types/activity-class-session#class), which reference [Activities](../../content-types/activity-class-session#activity), which reference [Program Subcategories](../../content-types/program-subcategory), which require [Programs](../../content-types/program).
 
 ```mermaid
 flowchart LR
@@ -39,21 +40,22 @@ PEF Schedules adds a new **Color** field to Activities which is used to style th
 
 ![An example of different colored Activity labels](simple-schedules--activity-colors.png)
 
-The **Color** field takes a hex value (`#XXXXXX` where `X` is a hexadecimal character (`0-9`, `a-f`)). We recommend using colors from the [Brand Standard Color Wheel](../../../development/colorways#base-variables). The default color is configurable in the Calendar Settings. We recommend selecting dark tones from the color wheel. as the item titles are displayed with white text.
+The **Color** field takes a hex value (`#XXXXXX` where `X` is a hexadecimal character (`0-9`, `a-f`)). We recommend using colors from the [Brand Standard Color Wheel](../../../development/colorways#base-variables). The default color is configurable in the Calendar Settings. We recommend selecting dark tones from the color wheel as the item titles are displayed with white text.
 
 ### Calendar settings
 
-Settings for the calendar are configurable at **Admin** > **YMCA Website Services** > **Settings** > **Schedules calendar settings** (`admin/openy/settings/schedules-calendar`).
+Settings for the calendar are configurable at **Admin** > **YMCA Website Services** > **Settings** > **Schedules calendar settings** (`admin/openy/settings/schedules-calendar`). This form is managed by the `\Drupal\y_pef_schedule\Form\FullCalendarSettingsForm`.
 
 Options include:
 
-- Slot settings - These relate to creating events on the calendar.
-    - **Slot Duration** - The default length of each time slot.
-    - **Snap Duration** - The default granularity to which events "snap" when clicking and dragging on the calendar.
-    - **Slot Label Interval** - The interval between time labels on the calendar's time axis.
-- Time Settings - These help make the calendar display more relevant to your user's needs.
-    - **Min Time** - The earliest time that is visible on the calendar view.
-    - **Max Time** - The latest time that is visible on the calendar view.
+- **Slot settings** - These relate to creating events on the calendar.
+    - **Slot Duration** - The default length of each time slot. This setting defines the length of each time slot in the calendar (e.g., `00:30:00` for 30 minutes). Must be in the format of `HH:MM:SS`.
+    - **Snap Duration** - The default granularity to which events "snap" when clicking and dragging on the calendar.  This setting determines the granularity of time slot selection and event dragging (e.g., `00:30:00` for 30 minutes). Must be in the format of `HH:MM:SS`.
+    - **Slot Label Interval** - The interval between time labels on the calendar's time axis.  This setting specifies the interval between time labels displayed along the calendar's axis (e.g., `01:00` for every hour).  Must be in the format of `HH:MM`.
+- **Time Settings** - These help make the calendar display more relevant to your user's needs.
+    - **Min Time** - The earliest time that is visible on the calendar view. Enter the earliest time in `HH:MM:SS` format that you want to be visible in the calendar’s view. This setting helps to limit the view to specific hours, making the calendar more relevant to the user’s needs.
+    - **Max Time** - The latest time that is visible on the calendar view. Enter the latest time in `HH:MM:SS` format that you want to be visible in the calendar’s view. This time represents the cutoff point at which the calendar view will stop displaying events for the day.
+- **Default Color** - Enter the default color for activities in the calendar. Enter the color in hexadecimal string format `#XXXXXX` where `X` is a hexadecimal character (`0-9`, `a-f`).
 
 ## Manage schedules
 
@@ -90,6 +92,6 @@ When creating a session from the schedule, you'll see a simplified version of th
 
 Once content is added to the schedule, you have several options for showing it to users:
 
-1. Place the [Simple Schedule block](../../layout-builder/simple-schedule) on any Layout Builder page.
-2. All items added via the Simple Schedule will be shown in [Activity Finder](../activity-finder) or [Group Schedules](../group-schedules). Follow the directions on those pages to configure the respective components and add them to a page.
-3. Download the schedule PDF and upload it somewhere on your site.
+1.  Place the [Simple Schedule block](../../layout-builder/simple-schedule) on any Layout Builder page. This block adds a calendar view of a Branch schedule to a page.  Configure the block by selecting the desired schedule.
+2.  All items added via the Simple Schedule will be shown in [Activity Finder](../activity-finder) or [Group Schedules](../group-schedules). Follow the directions on those pages to configure the respective components and add them to a page.
+3.  Download the schedule PDF and upload it somewhere on your site.

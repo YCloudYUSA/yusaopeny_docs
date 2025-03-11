@@ -1,3 +1,4 @@
+```markdown
 ---
 title: Branch
 description: One of the first places members go when they visit a Y website is to their local Y’s page.
@@ -12,7 +13,7 @@ Branch pages contain multiple data fields that work together to help members fin
 - Branch Amenities - [Design System](<../../../../../../assets/img/designs/lb-ui-kit/Branch CT.jpg>)
   - Pre-release: [Mobile](<../../../../../../assets/img/designs/lb/Branch Amenities Mobile.png>) | [Desktop](<../../../../../../assets/img/designs/lb/Branch Amenities Desktop.png>)
 - Branch Hours - [Design System](<../../../../../../assets/img/designs/lb-ui-kit/Branch Hours.jpg>)
-  - Pre-release: [Mobile](<../../../../../../assets/img/designs/lb/Branch Location Mobile.png>) | [Desktop](<../../../../../../assets/img/designs/lb/Branch Location Desktop.png>)
+  - Pre-release: [Mobile](<../../../../../../assets/img/designs/lb/Branch Hours Mobile.png>) | [Desktop](<../../../../../../assets/img/designs/lb/Branch Hours Desktop.png>)
 - Branch Menu - [Design System](<../../../../../../assets/img/designs/lb-ui-kit/Branch Menu.jpg>)
   - Pre-release: [Mobile](<../../../../../../assets/img/designs/lb/Branch Menu Mobile.png>) | [Desktop](<../../../../../../assets/img/designs/lb/Branch Menu Desktop.png>)
 - Branch Preferred Branch - [Design System](<../../../../../../assets/img/designs/lb-ui-kit/Branch Preferred Branch.jpg>)
@@ -40,6 +41,7 @@ Fill in the content fields:
 
 - **Address**: The physical address of your location. Be sure to include all address fields.
 - **Branch Coordinates** (required): This field pins your branch on the locations map.
+
   <details><summary>To get your branch's coordinates:</summary>
 
   ([with Google Maps](https://support.google.com/maps/answer/18539?hl=en&co=GENIE.Platform%3DDesktop))
@@ -49,7 +51,7 @@ Fill in the content fields:
   - To copy the coordinates, left-click on the latitude and longitude.
   - Paste the `lat, long` into one of the fields, then cut and paste to separate them. ![Screenshot of the Drupal Branch admin screen with the latitude and longitude separated into different fields.](branch-lat-long-paste.png)
 
-</details>
+  </details>
 
 - **Phone** (required): The main phone line for your branch. Will be displayed as it is entered and linked to allow mobile users to tap to call.
 - **Fax**: Optional.
@@ -172,7 +174,7 @@ This component allows you to place up to 6 social media links on a branch page.
 
 - Add the **Branch Social Links** block to the pre-configured **Social links** section of your page using [the standard process](../../layout-builder#blocks).
 - Add up to 6 links in the **Links** field. Icons for each social media platform will be populated automatically.
-  - Currently supported platforms include Facebook, Instagram, Linkedin, Twitter, and YouTube. [Request a new platform](https://www.drupal.org/node/add/project-issue/lb_branch_social_links_blocks) if you need.
+  - Currently supported platforms include Facebook, Instagram, LinkedIn, Twitter, and YouTube. [Request a new platform](https://www.drupal.org/node/add/project-issue/lb_branch_social_links_blocks) if you need.
 - After adding or updating the block, be sure to [save and publish your branch](../../layout-builder#saving-and-publishing).
 
 ### Home Branch Selector
@@ -181,7 +183,7 @@ This component allows you to place up to 6 social media links on a branch page.
 
 This feature allows users to select a single branch location as their home / preferred branch so that they can easily access branch-specific content across the site.
 
-![A screenshot of the Home Branch selector with a label and a n arrow pointing to a downward-pointing chevron with the label "Link to bring back the popup"](branch--home-branch-selector.png)
+![A screenshot of the Home Branch selector with a label and an arrow pointing to a downward-pointing chevron with the label "Link to bring back the popup"](branch--home-branch-selector.png)
 
 The Home Branch selector popup will appear to users who arrive at the site and:
 
@@ -210,7 +212,7 @@ Selecting a home branch will:
 
 If you want to completely remove the Home Branch selector from your site you will need to disable it via the command line. **DO NOT** disable the module via the admin UI as this will result in an error.
 
-``` shell
+```shell
 drush pmu ws_home_branch openy_home_branch
 ```
 
@@ -222,11 +224,12 @@ Once you are ready to migrate a Branch:
 
 1. Either clone the page or open it in a separate tab so that it's easier to compare content.
 2. Prepare the Branch for Layout Builder:
-  - **Edit** the Branch,
-  - Add links in the **Menu** section if you'd like,
-  - click **Use Layout Builder**,
-  - if you'd like, **uncheck Published** while you migrate to hide the page temporarily, then
-  - **Save**. ![Screenshot of the Branch edit screen.](branch-migrate-use-lb.png)
+   - **Edit** the Branch,
+   - Add links in the **Menu** section if you'd like,
+   - click **Use Layout Builder**,
+   - if you'd like, **uncheck Published** while you migrate to hide the page temporarily, then
+   - **Save**. ![Screenshot of the Branch edit screen.](branch-migrate-use-lb.png)
 3. Your Branch will now display a set of default blocks: Hours (and header), Menu, Social Links, and Amenities.
 4. From here, you can [use Layout Builder](../../layout-builder#updating-an-existing-page) to move your old content from Paragraphs into Blocks. Review the [full list of designs](../../layout-builder/designs) or the [list of components]({{% relref "lb-2023-roadmap.md" %}}) if you need help deciding how to place things. Your old content will still be available to reference in the **Edit** tab in the old Header/Content/Footer sections.
 5. When you're finished, **Save** the layout and **Publish** the Branch!
+```

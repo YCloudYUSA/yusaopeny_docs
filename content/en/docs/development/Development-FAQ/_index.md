@@ -10,7 +10,7 @@ aliases:
 
 ### Getting started with a local environment
 
-To start developing you need to obtain the latest YMCA Website Services codebase. See the [`openy-project` repository](https://github.com/YCloudYUSA/yusaopeny-project#latest-development-version-drupal-9-2x) for the full process.
+To start developing, you need to obtain the latest YMCA Website Services codebase. See the [`openy-project` repository](https://github.com/YCloudYUSA/yusaopeny-project#latest-development-version-drupal-9-2x) for the full process. This includes instructions for setting up your local environment and configuring your development tools.
 
 [This video tutorial](https://www.youtube.com/watch?v=0XbqXlDyDCY) will walk you through how to initiate a local development environment.
 
@@ -18,11 +18,11 @@ The YMCA Website Services team has pre-built environments and walkthroughs using
 
 ### Gathering information about your local environment
 
-To best troubleshoot issues, it's helpful for the YMCA Website Services team to have as much information about your environment as possible. Before you ask for help, watch this tutorial on [how to gather that information](https://www.youtube.com/watch?v=01y617maeBE).
+To best troubleshoot issues, it's helpful for the YMCA Website Services team to have as much information about your environment as possible. Before you ask for help, watch this tutorial on [how to gather that information](https://www.youtube.com/watch?v=01y617maeBE). This video explains how to collect relevant details about your setup, such as operating system, software versions, and configuration settings.
 
 ### Debugging with Xdebug in your local
 
-The Docksal project maintains detailed information for [using Xdebug with VSCode, PHPStorm, and more](https://docs.docksal.io/tools/xdebug/).
+The Docksal project maintains detailed information for [using Xdebug with VSCode, PHPStorm, and more](https://docs.docksal.io/tools/xdebug/). This documentation covers installation, configuration, and usage of Xdebug with popular IDEs for efficient debugging of your code.
 
 ## Contributing
 
@@ -36,7 +36,11 @@ The YMCA Website Services Lead Technical Architect (Andrii Podanenko, `@podarok`
 
 ### What labels in PRs should I use?
 
+[Link to Labels documentation]
+
 ### What milestone should I specify?
+
+[Link to Milestones documentation]
 
 ### Why I can't add labels or specify milestones?
 
@@ -56,7 +60,7 @@ It is important to make commit messages with some sort of sense for the human to
 
 ### What is the "DeepCode" bot?
 
-DeepCode bot is the automated, machine learning code review system that analyses huge amounts of GitHub repositories and is sometimes useful to find common issues before humans do reviews. It is helpful, but not always necessary to fix issues found by the DeepCode bot because sometimes it fails. If you see a comment be sure to read the report. If the report makes sense, then fix the issue suggested by the bot.
+The DeepCode bot is an automated, machine learning code review system that analyzes a large number of GitHub repositories. It can be useful for finding common issues before human reviews. It is helpful, but not always necessary to fix issues found by the DeepCode bot because sometimes it flags false positives. If you see a comment, be sure to read the report. If the report makes sense, then fix the issue suggested by the bot.
 
 ## Build Automation & CI
 
@@ -104,9 +108,9 @@ Occasionally, configuration will get removed or otherwise go missing in the upgr
 
 Usually, these changes are resolved by update hooks that import new config, but on occasion, these too can fail or break. In that case, we have a few options for resolving the issue:
 
-1. Re-run the most recent related update hook.
-2. Import the config with drush.
-3. Import the config with the Drupal UI.
+1.  Re-run the most recent related update hook.
+2.  Import the config with drush.
+3.  Import the config with the Drupal UI.
 
 The first step in any of this troubleshooting is to try to find the offending config. In this case, searching your codebase for "text-color" might lead you to [this config file in y_lb](https://github.com/YCloudYUSA/y_lb/blob/main/config/optional/bootstrap_styles.settings.yml). Now, we can try a few things...
 
@@ -124,9 +128,9 @@ drush php-eval "\Drupal::moduleHandler()->loadInclude('y_lb', 'install'); y_lb_u
 
 Understanding this command:
 
-- [`drush php-eval`](https://www.drush.org/12.x/commands/php_eval/) evaluates an arbitrary php command on the command line.
-- [`\Drupal::moduleHandler()->loadInclude($module, $type)`](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Extension%21ModuleHandler.php/function/ModuleHandler%3A%3AloadInclude/10) loads the `y_lb.install.php` file.
-- `y_lb_update_9001();` runs the individual function from the file.
+-   [`drush php-eval`](https://www.drush.org/12.x/commands/php_eval/) evaluates an arbitrary php command on the command line.
+-   [`\Drupal::moduleHandler()->loadInclude($module, $type)`](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Extension%21ModuleHandler.php/function/ModuleHandler%3A%3AloadInclude/10) loads the `y_lb.install.php` file.
+-   `y_lb_update_9001();` runs the individual function from the file.
 
 #### Import config with drush
 
@@ -142,6 +146,6 @@ Be aware that all configs in that directory will be imported. Targeting a single
 
 Another way to import a single configuration file is with the Drupal "Config Synchronization" admin pages. To import a single item:
 
-- Go to **Admin** > **Configuration** > **Development** > **Config Synchronization** > **Import** > **Single item** (`admin/config/development/configuration/single/import`).
-- Choose the **Configuration type** (if you are unsure, choose "Simple Configuration")
-- Paste in the configuration from the file and click **Import**.
+-   Go to **Admin** > **Configuration** > **Development** > **Config Synchronization** > **Import** > **Single item** (`admin/config/development/configuration/single/import`).
+-   Choose the **Configuration type** (if you are unsure, choose "Simple Configuration")
+-   Paste in the configuration from the file and click **Import**.

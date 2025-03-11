@@ -1,80 +1,83 @@
+```markdown
 ---
 title: 'Building Buttons'
 weight: 1
 ---
 
 {{< alert color="warning">}}
-This document applies to the legacy WYSIWYG editor, CKEditor 4. See the [Using Button Classes](../adding-links#using-button-classes) for updated instructions.
+This document applies to the legacy WYSIWYG editor, CKEditor 4. See the [Using Button Classes](../adding-links#using-button-classes) for updated instructions on creating buttons using CSS classes in the current editor.
 {{< /alert >}}
 
-[As an alternate to using the link tool](../adding-links), you can easily create buttons with YMCA Website Services using the button editor. When you click on the button icon, it will open a pop-up.
+As an alternative to using the link tool, you can create buttons with YMCA Website Services using the button editor in CKEditor 4. When you click the button icon, a pop-up window will appear.
 
-![WYSIWYG Editor options with the button tab highlighted in green.](buttons--toolbar.png)
+![CKEditor 4 options with the button tab highlighted in green.](buttons--toolbar.png)
 
->You can also edit a button you've created previously by clicking on the link in the text editor.
+> You can also edit a button you've created previously by clicking on the link within the text editor.
 
-![blog-description__text-editor-edit-button|640x295,75%](buttons--popup.gif)
+![Edit button pop-up.](buttons--popup.gif)
 
-There are three tabs for creating your button: an info tab, a target tab, and an icon tab.
+The button editor has three tabs: **Info**, **Target**, and **Icons**.
 
-![blog-description__text-editor-button-tabs|690x137,50%](buttons--tabs.png)
+![Button editor tabs.](buttons--tabs.png)
 
 ---
+
 ## Info Tab
 
-This screen gives you basic options to style your link or button. On the top left “Style Option,” you will have several options to style your button or output it as a link.
+This tab provides basic styling options for your button or link. The **Style Option** dropdown menu in the top-left corner allows you to style your button or output it as a plain link.
 
-* The link option will allow you to embed your link text in line with a paragraph.
-* In Lily, all button styles other than link default to purple.
-* In Rose, all options except “default” will output a blue button. “Default” outputs a white button.
-* In Carnation, the button options all output different colors.
+*   **Link:** Embeds your link text inline within a paragraph.
+*   **Button Styles:** The appearance of the button styles depends on your website's theme:
+    *   **Lily:** All button styles other than "Link" default to purple.
+    *   **Rose:** All options except "Default" will output a blue button. "Default" outputs a white button.
+    *   **Carnation:** The button options all output different colors.
 
-### Button Guide Example:
+### Button Style Guide Example:
 
-> @mlefler From the YMCA of Lincoln, NE, [built this guide to provide examples](https://www.ymcalincoln.org/buttons) of possible styles for buttons. Ask your developer partner to provide you a style guide for your site.
+> @mlefler From the YMCA of Lincoln, NE, [built this guide to provide examples](https://www.ymcalincoln.org/buttons) of possible styles for buttons. Consult your developer or designer for a style guide specific to your YMCA website.
 
-The top right “Size” dropdown four options for your button size. If you chose “Link” style option, the Size option will not affect your link.
+The **Size** dropdown menu in the top-right corner offers four options for your button size. If you select the "Link" style option, the Size option will not affect your link's appearance.
 
-![blog-destiption__text-editor-button_style|166x500,50%](buttons--style.png)
-![blog-destiption__text-editor-button_size|282x200,50%](buttons--size.png)
+![Button style options.](buttons--style.png)
+![Button size options.](buttons--size.png)
 
-Add the text for your link/button in the bottom left. Enter your link in the URL field on the bottom right.
+Add the text for your link/button in the bottom-left **Text** field. Enter the destination URL in the **URL** field on the bottom right.
 
-* For links on your website, don’t use the full URL. Highlight everything beginning with the `/` after your `.com`, `.org`, etc.
-  * For example, for example.org/about, you would choose `/about`. This is called the relative path, and it will help your analytics tracking.
-* For links on other websites, grab the full URL, including the `https://`.
-  * For example, for example.org/about, you should choose `https://example.org/about`.
-* For email links, add `mailto:example@exampleymca.org.`
+*   **Internal Links (links within your website):** Use a relative path, starting with a `/` after your domain.
+    *   For example, to link to `example.org/about`, enter `/about`. This is called a relative path and helps with analytics tracking.
+*   **External Links (links to other websites):** Use the full URL, including `https://`.
+    *   For example, to link to `example.org/about`, enter `https://example.org/about`.
+*   **Email Links:** Use the `mailto:` prefix followed by the email address.
+    *   For example: `mailto:example@exampleymca.org`.
 
-[More on absolute vs relative links](https://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/).
+[Learn more about absolute vs. relative links](https://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/).
 
 ---
 
 ## Target Tab
 
-This tab gives you the ability to change the behavior of your link. By default, all links will have a “not set” behavior, which means the link will open in the same active tab. The other options include…
+This tab allows you to control the link's behavior when clicked. By default, all links have a "Not Set" behavior, which means the link opens in the same tab. The other options include:
 
-* Frame
-* Popup
-* New Window
-* Topmost Window
-* Same Window
-* Parent Window
+*   **Frame**
+*   **Popup**
+*   **New Window (_blank)**
+*   **Topmost Window (_top)**
+*   **Same Window (_self)**
+*   **Parent Window (_parent)**
 
-**[» Learn about link targets](http://www.tagindex.net/html/frame/a_target.html)**
+**[» Learn more about link targets](http://www.tagindex.net/html/frame/a_target.html)**
 
 ---
 
 ## Icons Tab
 
-![blog-destiption__text-editor-button_icons|388x500,50%](buttons--icons.png)
+![Button icon options.](buttons--icons.png)
 
-You can add icons to your buttons or links in the icons tab. On the right, you will have fields that integrate with the Font Awesome library. To have an icon show up on the left, use the Left Icon text field. For the right, use the Right Icon text field.
+You can add icons to your buttons or links using the **Icons** tab. Use the **Left Icon** and **Right Icon** text fields to integrate icons from the Font Awesome library.
 
-*Example:* For a Right Chevron, type `fa-chevron-right`.
+*Example:* To display a right-facing chevron, type `fa-chevron-right` in the **Right Icon** text field.
 
-**View free font awesome icons at [fontawesome.com](https://fontawesome.com/v5/search?m=free)**
+**Browse free Font Awesome icons at [fontawesome.com](https://fontawesome.com/v5/search?m=free)**
 
->**Note:** The left field makes reference to the Bootstrap Glyphicons library. As of this documentation, this icon library has been deprecated, and the Glyphicons fields will not work in YMCA Website Services.
->
->Because the button embed is an open-source tool developed by a third party, these fields will go away once the code’s maintainer updates the code.
+> **Note:** The left fields reference the Bootstrap Glyphicons library. This icon library has been deprecated, and the Glyphicons fields will not function correctly in YMCA Website Services. These fields will be removed once the code is updated by the tool's maintainer.
+```

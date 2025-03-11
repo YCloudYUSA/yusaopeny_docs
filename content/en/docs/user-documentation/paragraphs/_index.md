@@ -2,54 +2,64 @@
 title: "Paragraphs"
 weight: 4
 description: >
-  Embed simple text, images, blocks and interactive components with blocks, YMCA Website Services’s layout-building component.
+  Embed text, images, blocks, and interactive components using Paragraphs, the layout-building component of YMCA Website Services.
 ---
 
-YMCA Website Services content editors use paragraphs to create unique layouts for their pages. Each paragraph is a section of content that comes with its own styling, functionality, and fields.
+YMCA Website Services content editors use Paragraphs to create flexible and unique layouts for their pages. Each Paragraph is a self-contained section of content with its own styling, functionality, and fields. Paragraphs are based on the [Paragraphs Drupal module](https://www.drupal.org/project/paragraphs).
 
-You can add a paragraph onto a page when you see the paragraphs dropdown field. These paragraphs will typically be inside one of the four main “Areas” inside a content type:
+You can add a Paragraph to a page when you see the Paragraphs field. These Paragraphs are typically placed within one of the four main "Areas" of a content type:
 
-* *Header Area* - Used for adding images and page titles
-* *Content Area* - Where your main content goes
-* *Sidebar Area* - Where you put related information, such as promotions and links to other content.
-* *Bottom Area* - The “anchoring” elements of your page, such as a call to action.
+*   **Header Area** - Used for adding images, page titles, and other introductory content.
+*   **Content Area** - The primary area for your main content.
+*   **Sidebar Area** - Used for related information, such as promotions or links to other content.
+*   **Bottom Area** - Often used for calls to action or other "anchoring" elements at the end of the page.
 
 ![Choose a paragraph by selecting an area and picking an option from the dropdown.](paragraphs--select.gif)
 
-> Not all content types use all four regions. For example, a content type use its fields to put content inside the Sidebar Area, while another may have a sidebar area but use its Image field instead of a Header Area
+> Not all content types use all four areas. Some content types might use fields directly to populate the Sidebar Area, while others might use an Image field instead of a dedicated Header Area.
 
 ## Two Ways to Add Paragraphs
 
-Content editors have two ways to add paragraphs onto a page - inline editor and admin portal.
+Content editors can add Paragraphs to a page using either the inline editor or the admin portal.
 
 ### Admin Portal
 
-To add a paragraph into an Area, open that area and select a paragraph from the dropdown. The button will usually be labeled with "Add [First Paragraph in List]" (the first paragraph in the list depends on the content type/area), and there will be some helper text above.
+To add a Paragraph to an Area:
 
-> The video below provides an example of the functionality of paragraphs; however, the specific layouts demoed are **not** YMCA Website Services layouts.
+1.  Open the desired Area.
+2.  Select a Paragraph type from the dropdown. The button is typically labeled "Add [First Paragraph in List]".
+3.  Helper text is usually provided above the dropdown.
+
+> The video below provides an example of the functionality of Paragraphs; however, the specific layouts demonstrated are **not** YMCA Website Services layouts.
 
 {{< youtube 6ti2l8HB5Qc >}}
 
 ### Inline Editor
 
-If you've upgraded to YMCA Website Services 2.4 or later, you can add a paragraph from the front-end by clicking on the Plus icon in a given region and selecting a paragraph from the pop-up window.
+If you've upgraded to YMCA Website Services 2.4 or later, you can add a Paragraph from the front-end:
 
-> **Note:** Not all paragraphs are available for inline editing yet. More paragraphs will be added to the inline content editor in later releases
+1.  Click the Plus icon in the desired region.
+2.  Select a Paragraph type from the pop-up window.
+
+> **Note:** Not all Paragraph types are available for inline editing yet. More Paragraphs will be added to the inline content editor in future releases.
 
 ## Rearranging Paragraphs
 
-Sometimes you have one layout in your head and it doesn’t look as good when you add it to your page. You can easily move around your sections by clicking on the cross icon to the left of your paragraphs. Drag around your paragraphs to rearrange.
+If the initial layout doesn't meet your needs, you can easily rearrange sections:
+
+1.  Click the cross icon to the left of the Paragraph.
+2.  Drag the Paragraph to its new position.
 
 ![Just drag your paragraphs to rearrange them](paragraphs--reorder.gif)
 
 ## Editing Paragraphs
 
-Need to fix a typo? Click the edit button next to each paragraph to open it back up and make edits.
+To correct a typo or update content, click the edit button next to the Paragraph. This will open the Paragraph for editing.
 
 ## Deleting Paragraphs
 
-Maybe you didn’t need that section. Don’t worry: you can easily delete a paragraph by clicking on the remove option from the dropdown next to where it says “Edit.”
+To remove an unwanted section, click the remove option from the dropdown menu next to "Edit."
 
-### Choosing the Right Paragraph Type
+## Choosing the Right Paragraph Type
 
-YMCA Website Services comes with more than 50 paragraph types, and depending on your partner’s customizations, you may have even more. This documentation will focus the types that come out of the box with YMCA Website Services and how to use them.
+YMCA Website Services offers over 50 Paragraph types out of the box, and customizations by your partner might add even more. This documentation focuses on the standard Paragraph types available with YMCA Website Services and how to use them.

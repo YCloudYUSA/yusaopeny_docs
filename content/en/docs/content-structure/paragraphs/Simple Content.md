@@ -1,10 +1,13 @@
+```markdown
 ---
 title: Simple Content
 ---
 
-Simple Content is used for adding text to the pages.
+The **Simple Content** paragraph type is used for adding formatted text to pages. It provides a WYSIWYG editor for rich text input.
 
 ### Fields
-| Name  | Machine name | Required | Description |
-| ------------- | ------------- | ------------- | ------------- |
-| Content | field\_prgf_description | Yes | WYSIWYG field without summary. |
+
+| Name      | Machine name           | Required | Description                                  |
+| :---------- | :--------------------- | :------- | :------------------------------------------- |
+| **Content** | `field_prgf_description` | Yes      | WYSIWYG editor for formatted text content. |
+```

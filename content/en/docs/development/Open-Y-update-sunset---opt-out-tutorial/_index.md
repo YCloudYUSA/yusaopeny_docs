@@ -1,27 +1,29 @@
 ---
-title: Open Y analytics sunset
+title: Open Y Analytics Sunset
 aliases:
   - /docs/wiki/open-y-update-sunset---opt-out-tutorial/
 ---
 
 ## Preamble
 
-Back on 28 Jan 2020 Open Y decided to add an anonymous analytics module [`openy_analytics`](https://github.com/YCloudYUSA/yusaopeny/tree/9.x-2.x/modules/custom/openy_analytics) which was a free opt-in/opt-out solution for the Core team to gather stats from Open Y sites about the frequency of components used.
+On January 28, 2020, the Open Y initiative introduced an anonymous analytics module, [`openy_analytics`](https://github.com/YCloudYUSA/yusaopeny/tree/9.x-2.x/modules/custom/openy_analytics). This module was designed as a free, opt-in/opt-out solution, allowing the Core Team to gather statistics from Open Y sites regarding the usage frequency of various components.
 
-The idea behind this was to gather data in order to understand the demand for the components in Open Y and use the data to make better decisions.
+The primary goal was to collect data that would inform decision-making and enhance our understanding of component demand within the Open Y ecosystem.
 
-Recently, the Open Y Core Team decided to sunset this functionality and remove `openy_analytics` as well as `openy_update` modules from the Open Y Distribution, as this feature was rarely used. By sunsetting this functionality, we reduced server load from Open Y instances and archive the analytics server.
+Recently, the Open Y Core Team decided to sunset this functionality and remove both the `openy_analytics` and `openy_update` modules from the Open Y distribution due to low usage. This sunsetting reduces the server load on Open Y instances and allows us to archive the analytics server.
 
-## How to opt-out from analytics subsystem
+## How to Opt-Out of the Analytics Subsystem
 
-Visit YMCA Website Services -> Terms and Conditions in your YMCA Website Services site instance and uncheck the Optional Permissions checkbox
+To opt-out, navigate to **YMCA Website Services -> Terms and Conditions** within your YMCA Website Services site instance and uncheck the **Optional Permissions** checkbox.
 
-![image](https://user-images.githubusercontent.com/563412/130236284-5979a4fe-289c-4ccc-9c18-059d17d143e8.png)
+![Terms and Conditions Checkbox](https://user-images.githubusercontent.com/563412/130236284-5979a4fe-289c-4ccc-9c18-059d17d143e8.png)
 
-After submitting this form your site will stop sending anonymous data.
+After submitting the form, your site will no longer transmit anonymous data. If the checkbox was already disabled, no action is needed, as you had not previously opted in.
 
-If the checkbox was not enabled just disregard it, you didn't opt-in earlier.
+## Deprecation Details
 
-## Deprecation action
+The uninstall and deprecation process was implemented in [Pull Request #2537](https://github.com/YCloudYUSA/yusaopeny/pull/2537).
 
-Uninstall and deprecation was done in [#2537](https://github.com/YCloudYUSA/yusaopeny/pull/2537)
+## Related Packages
+
+The `openy_analytics` module was part of the **Analytics** package. This package, as described in `openy.packages.yml`, aimed to "integrate the website with analytic systems and capture website statistic." It included modules like `google_tag` and `google_analytics` to configure integrations with Google Analytics or Google Tag Manager.

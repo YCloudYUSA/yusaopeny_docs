@@ -28,14 +28,21 @@ Fill in the content fields:
 - **Section heading**: Displayed as a heading above the cards.
 - **Section subheading**: Displayed below the heading.
 - **Section link**: A link button displayed below the list of cards.
-- **# of columns**: Allows 1- to 4-columns of cards.
+- **# of columns**: Allows 1 to 4 columns of cards.
 - **Card items**: Add up to 4. When you are finished adding or editing each item, be sure to click **Create/Update tab** or **Create/Update custom block** to finalize the item. Each card has:
   - **Heading** (required)
-  - **Image**: Chose from the library or add a new image to be displayed behind the card text.
+  - **Image**: Choose from the library or add a new image to be displayed behind the card text.
   - **Description**: A full text editor to add card content.
   - **Link**: A link at the bottom of the card.
-    - As of the December 2024 release, Card links can use [link attributes](../../content-editing-basics#link-attributes).
+    - As of the December 2024 release, Card links can use [link attributes](../../content-editing-basics#link-attributes) such as `id`, `target`, and `class`.
   - **Topic Tag**: This is displayed at the top of the card and can be used to group cards visually.
+
+The Cards block offers several variations that change the look and feel:
+
+-   **Standard**: The default card style.
+-   **Overlay**:  Places the card content over the image.
+-   **Chevron**: Adds a chevron graphic to the image area.
+-   **Color**:  Applies a background color to the card.
 
 {{< readfile "../lb-styles.partial" >}}
 

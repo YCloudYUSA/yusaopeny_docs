@@ -1,44 +1,57 @@
+```markdown
 ---
 title: Server Requirements
 ---
 
-If you need to prepare server for the YMCA Website Services instance, here below you should find all needed software to meet its requirements.
+If you need to prepare a server for the YMCA Website Services instance, the information below outlines the necessary software and configurations.
 
-### List of requirements
+### Requirements
 
-1. Ubuntu LTS (14 or 16) is preferred. CentOS is ok as well. Or even any other Linux distribution, but was not tested by YMCA Website Services team so far.
+1.  **Operating System:** Ubuntu LTS (Long Term Support) versions 14 or 16 are preferred. CentOS is also acceptable. Other Linux distributions may work, but have not been fully tested by the YMCA Website Services team.
 
-2. (Drupal 8 server requirements should be met)[https://www.drupal.org/docs/system-requirements/php-requirements].
+2.  **Drupal 8/9/10 Requirements:** Meet the server requirements specified by Drupal.
+    *   [Drupal 8 server requirements](https://www.drupal.org/docs/8/system-requirements)
+    *   [Drupal 9 server requirements](https://www.drupal.org/docs/9/how-to-prepare-your-site-for-drupal-9/server-requirements)
+    *   [Drupal 10 server requirements](https://www.drupal.org/docs/10/system-requirements)
 
-3. PHP 5.6+ (PHP 7 is better in terms of performance)
+3.  **PHP:** PHP 7.4 or higher is strongly recommended for performance and security reasons.  Refer to the specific Drupal version's documentation for supported PHP versions.
 
-### List of PHP modules server should have:
+### PHP Modules
 
-  - php{{ php_version }}
-  - php{{ php_version }}-mcrypt
-  - php{{ php_version }}-cli
-  - php{{ php_version }}-common
-  - php{{ php_version }}-curl
-  - php{{ php_version }}-dev
-  - php{{ php_version }}-fpm
-  - php{{ php_version }}-gd
-  - php{{ php_version }}-mysql
-  - php{{ php_version }}-memcached
-  - php{{ php_version }}-imagick
-  - php{{ php_version }}-xml
-  - php{{ php_version }}-xdebug
-  - php{{ php_version }}-mbstring
-  - php{{ php_version }}-soap
-  - php{{ php_version }}-zip
+The following PHP modules are required:
 
+  - php
+  - php-cli
+  - php-common
+  - php-curl
+  - php-fpm
+  - php-gd
+  - php-mysql or php-pgsql (depending on your database)
+  - php-intl
+  - php-mbstring
+  - php-xml
+  - php-zip
+  - php-opcache (recommended)
+  - imagick (recommended for image processing)
+  - memcached or redis (for caching)
 
-4. MySQL 5.5+ . Here are the best settings https://github.com/cibox/cibox/blob/master/core/facade-mysql/defaults/main.yml to get it fast and furious
-5. Apache 2 with mod-php (preffered for stability) or nginx with php-fpm (better for speed and scalability)
-  - libapache2-mod-php{{ php_version }}
-6. Memcache server (optional)
+**Note:** Replace `php` with the specific PHP version (e.g., `php7.4`, `php8.1`). Use your system's package manager (e.g., `apt`, `yum`) to install these modules.
 
-7.  Server tools
- * Ansible (optional)
- * Docker (optional)
- * SOLR 4.x (if there will be requirement for SOLR search support)
- * Varnish (optional)
+4.  **Database Server:** MySQL 5.7+ or MariaDB 10.3+ are recommended. PostgreSQL is also supported.  Optimized MySQL settings can be found at [cibox/cibox](https://github.com/cibox/cibox/blob/master/core/facade-mysql/defaults/main.yml). Note that these settings may need adjustments based on your specific server resources and workload.
+
+5.  **Web Server:** Apache 2 with `mod_php` (known for stability) or Nginx with `php-fpm` (better for speed and scalability)
+    *   Apache: `libapache2-mod-php`
+    *   Nginx: Requires configuration to proxy PHP requests to `php-fpm`.
+
+6.  **Caching (Optional but Recommended):**
+    *   Memcached server
+    *   Redis server
+
+7.  **Server Tools (Optional):**
+    *   Ansible (for provisioning and configuration management)
+    *   Docker (for containerization)
+    *   SOLR 4.x or higher (for advanced search functionality)
+    *   Varnish (for HTTP caching and acceleration)
+
+**Note:** Ensure that your firewall is properly configured and only necessary ports are open for security reasons. Regularly update your server software to patch security vulnerabilities.
+```

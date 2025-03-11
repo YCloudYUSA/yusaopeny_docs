@@ -1,3 +1,4 @@
+```markdown
 ---
 title: Upgrade to Open Y 1.x
 aliases:
@@ -8,41 +9,44 @@ This document is archived but may contain useful information for troubleshooting
 
 ---
 
-Upgrade to old, Open Y 1.x version ( tested on upgrading 8.0.2 to 8.1.1.14 )
-=====
+Upgrade to old, Open Y 1.x version (tested on upgrading 8.0.2 to 8.1.1.14)
 
 See [upgrade from 8.1.3 to 8.2.2.1]({{< relref "Upgrade-OpenY-8.1.3-to-8.2.2.1.md" >}})
 
 We found the oldest OpenY instance working on 8.0.2 version of OpenY so this document should cover all the way of updating it to the latest version.
 
-### Prepare dedicated environment for upgrade testing
+### Prepare a dedicated environment for upgrade testing
 
-Ensure you have working computer or virtual machine with
- - Ubuntu 14.04(16.04 or any decent Ubuntu LTS versions) 64 bit
- - MySQL 5.5+
- - Apache 2.4
- - PHP 5.6-7.1 (7.2 is not supported yet)
+Ensure you have a working computer or virtual machine with:
 
-OpenY team maintains [Vagrant preconfigured Virtualbox based virtual machine with OpenY](https://github.com/YCloudYUSA/yusaopeny-cibox-vm). Feel free to use it to get working virtual environment.
-Your own OpenY instance should have Virtual machine injected into your site codebase. Just find ```Vagrantfile``` and proceed with ```vagrant up``` [accordingly to the documentation](https://github.com/YCloudYUSA/yusaopeny-cibox-vm/blob/master/README.md).
+*   Ubuntu 14.04 (16.04 or any decent Ubuntu LTS versions) 64 bit
+*   MySQL 5.5+
+*   Apache 2.4
+*   PHP 5.6-7.1 (7.2 is not supported yet)
 
-### Obtain local copy of your production site
+The OpenY team maintains a [Vagrant preconfigured Virtualbox based virtual machine with OpenY](https://github.com/YCloudYUSA/yusaopeny-cibox-vm). Feel free to use it to get a working virtual environment.
 
-You have to create local copy of your site locally to be able to proceed with the upgrade.
-For that
- - Make a backup of your production database and copy it to your local machine
- - Make a copy of your production site codebase and copy it to your local machine
+Your own OpenY instance should have a Virtual machine injected into your site codebase. Just find `Vagrantfile` and proceed with `vagrant up` [accordingly to the documentation](https://github.com/YCloudYUSA/yusaopeny-cibox-vm/blob/master/README.md).
+
+### Obtain a local copy of your production site
+
+You have to create a local copy of your site locally to be able to proceed with the upgrade.
+
+For that:
+
+*   Make a backup of your production database and copy it to your local machine.
+*   Make a copy of your production site codebase and copy it to your local machine.
 
 ...
 
-1. ### Detect version of your OpenY
+### Detect the version of your OpenY
 
-Starting from OpenY 1.10 release you should see a version of OpenY in your site reports dashboard.
-For previous versions the best way to check your version is to analyze creation date of index.php pr README.txt file in the docroot folder of your site and compare it to the release date from https://github.com/YCloudYUSA/yusaopeny/releases . Your OpenY version should be the one which is older than creation date of the files.
+Starting from OpenY 1.10 release, you should see the version of OpenY in your site reports dashboard.
+For previous versions, the best way to check your version is to analyze the creation date of `index.php` or `README.txt` file in the docroot folder of your site and compare it to the release date from <https://github.com/YCloudYUSA/yusaopeny/releases>. Your OpenY version should be the one which is older than the creation date of the files.
 
-2. ### Run command with next never version
+### Run the command with the next never version
 
-In a same folder where is your ```docroot``` folder run
+In the same folder where your `docroot` folder is located, run:
 
 ```sh
 mv composer.json composer.json.bak || true
@@ -55,42 +59,44 @@ sh yparse.sh | xargs drush en -y
 cd ../../../../
 composer require YCloudYUSA/yusaopeny:NEW_VERSION_HERE --no-update
 composer update --prefer-dist --with-dependencies --prefer-stable --update-with-all-dependencies --no-suggest
-
 ```
 
-3. ### Update the site
+### Update the site
 
-Go to docroot folder of your codebase and run
+Go to the docroot folder of your codebase and run:
+
 ```sh
 drush updatedb
 drush entup
 ```
 
-Sometimes, when ```updatedb``` fails, it is important to get stable version of some modules we found causing problems
+Sometimes, when `updatedb` fails, it is important to get a stable version of some modules we found causing problems:
+
 ```sh
 drush dl -y plugin-8.x-2.5 contribute-8.x-1.0-beta7 scheduler-8.x-1.0 views_block_filter_block datalayer simple_menu_icons rabbit_hole metatag simple_sitemap-8.x-2.9 easy_breadcrumb-8.x-1.6
 drush en -y plugin contribute scheduler views_block_filter_block datalayer simple_menu_icons rabbit_hole metatag simple_sitemap || true
 drush ev "Drupal::service('module_installer')->install(['content_moderation','openy']);"
 ```
 
+Ensure the commands above finished with no error messages. The best way to check it - run them one more time. If the next run shows:
 
-Ensure commands above finished with no error messages. Best way to check it - run them one more time. If next run shows
 ```sh
 $ drush updatedb
 No database updates required                                                                                    [success]
 $ drush entup
 No entity schema updates required                                                                               [success]
 ```
-You almost 100% proved updated were executed correctly.
 
-4. ### Check for regressions
+You almost 100% proved the updates were executed correctly.
 
-...
-
-5. ### Backup current state of the updated site
+### Check for regressions
 
 ...
 
-6. ### Proceed with an update to next version until succeeded (Start from item 1)
+### Backup current state of the updated site
+
+...
+
+### Proceed with an update to the next version until succeeded (Start from item 1)
 
 ...

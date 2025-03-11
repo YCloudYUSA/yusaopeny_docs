@@ -1,101 +1,139 @@
+```markdown
 ---
 title: Start new YMCA Website Services project
 ---
 
-Here you can find instructions how you can start project based on YMCA Website Services distribution.
+Here you can find instructions on how you can start a project based on the YMCA Website Services distribution.
 
 ## New project from scratch based on YMCA Website Services
 
-In order to start new project from scratch, you can use [installation instructions](https://github.com/YCloudYUSA/yusaopeny-project#installation) that will build your project and even add development environment.
+To start a new project from scratch, you can use the [installation instructions](https://github.com/YCloudYUSA/yusaopeny-project#installation). These instructions will guide you through building your project and even setting up a development environment.
 
+## Add YMCA Website Services to an existing Drupal 10 project
 
-## Add YMCA Website Services to existing Drupal 8 project
+To add YMCA Website Services to an existing Drupal 10 project, you'll need to modify your `composer.json` file. Here's a step-by-step guide:
 
 Please take a look at the full `composer.json` file below that you should eventually get.
-<details>
-  <summary><strong>Example composer.json (Drupal 8.3.2 + YMCA Website Services 1.2)</strong></summary>
 
-```
+<details>
+  <summary><strong>Example composer.json (Drupal 10 + YMCA Website Services)</strong></summary>
+
+```json
 {
     "name": "drupal/drupal",
     "description": "Drupal is an open source content management platform powering millions of websites and applications.",
     "type": "project",
     "license": "GPL-2.0+",
     "require": {
-        "composer/installers": "^1.0.24",
-        "wikimedia/composer-merge-plugin": "~1.4",
-        "YCloudYUSA/yusaopeny": "8.*.*",
-        "cweagans/composer-patches": "~1.0"
+        "composer/installers": "^1.9",
+        "wikimedia/composer-merge-plugin": "~2.0",
+        "YCloudYUSA/yusaopeny": "2.0.*",
+        "cweagans/composer-patches": "^1.7"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "preferred-install": "dist",
-        "autoloader-suffix": "Drupal8",
-        "secure-http": false
+        "sort-packages": true,
+        "platform-check": false
     },
     "extra": {
-        "_readme": [
-            "By default Drupal loads the autoloader from ./vendor/autoload.php.",
-            "To change the autoloader you can edit ./autoload.php.",
-            "This file specifies the packages.drupal.org repository.",
-            "You can read more about this composer repository at:",
-            "https://www.drupal.org/node/2718229"
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "docroot/"
+            }
+        },
+        "installer-types": [
+            "drupal-module",
+            "drupal-theme",
+            "drupal-profile",
+            "drupal-drush",
+            "drupal-library",
+            "drupal-core"
         ],
-        "merge-plugin": {
-            "include": [
-                "core/composer.json"
-            ],
-            "recurse": false,
-            "replace": false,
-            "merge-extra": false
-        },
         "installer-paths": {
-          "core": ["type:drupal-core"],
-          "libraries/{$name}": ["type:drupal-library"],
-          "modules/contrib/{$name}": ["type:drupal-module"],
-          "profiles/contrib/{$name}": ["type:drupal-profile"],
-          "themes/contrib/{$name}": ["type:drupal-theme"],
-          "drush/contrib/{$name}": ["type:drupal-drush"],
-          "modules/custom/{$name}": ["type:drupal-custom-module"],
-          "themes/custom/{$name}": ["type:drupal-custom-theme"]
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "docroot/drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "docroot/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "docroot/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
         },
-        "enable-patching": true
-    },
-    "autoload": {
-        "psr-4": {
-            "Drupal\Core\Composer\": "core/lib/Drupal/Core/Composer"
+        "enable-patching": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
         }
     },
-    "scripts": {
-        "pre-autoload-dump": "Drupal\Core\Composer\Composer::preAutoloadDump",
-        "post-autoload-dump": [
-          "Drupal\Core\Composer\Composer::ensureHtaccess"
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
         ],
-        "post-package-install": "Drupal\Core\Composer\Composer::vendorTestCodeCleanup",
-        "post-package-update": "Drupal\Core\Composer\Composer::vendorTestCodeCleanup",
+        "files": [
+            "docroot/core/includes/bootstrap.inc"
+        ]
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold::scaffold",
+        "pre-install-cmd": [
+            "DrupalComposer\\DrupalScaffold::preInstallCmd"
+        ],
+        "pre-update-cmd": [
+            "DrupalComposer\\DrupalScaffold::preUpdateCmd"
+        ],
         "post-install-cmd": [
-            "bash scripts/remove_vendor_git_folders.sh || :"
+            "DrupalComposer\\DrupalScaffold::postInstallCmd",
+            "DrupalComposer\\DrupalScaffold::createRequiredFiles",
+            "DrupalComposer\\DrupalScaffold::removePatchesDir",
+            "DrupalComposer\\DrupalScaffold::removeVendorGitFolders"
         ],
         "post-update-cmd": [
+            "DrupalComposer\\DrupalScaffold::postUpdateCmd",
+            "DrupalComposer\\DrupalScaffold::createRequiredFiles",
+            "DrupalComposer\\DrupalScaffold::removePatchesDir",
+            "DrupalComposer\\DrupalScaffold::removeVendorGitFolders"
+        ],
+        "post-create-project-cmd": [
+            "DrupalComposer\\DrupalScaffold::postCreateProjectCmd",
+            "DrupalComposer\\DrupalScaffold::removePatchesDir",
+            "DrupalComposer\\DrupalScaffold::removeVendorGitFolders"
+        ],
+        "remove-vendor-git-folders": [
             "bash scripts/remove_vendor_git_folders.sh || :"
         ]
     },
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packages.drupal.org/8"
+            "url": "https://packages.drupal.org/10"
         },
         {
             "type": "package",
             "package": {
                 "name": "library-kenwheeler/slick",
-                "version": "1.6.0",
+                "version": "1.8.1",
                 "type": "drupal-library",
                 "source": {
                     "url": "https://github.com/kenwheeler/slick",
                     "type": "git",
-                    "reference": "1.6.0"
+                    "reference": "1.8.1"
                 }
             }
         },
@@ -103,12 +141,12 @@ Please take a look at the full `composer.json` file below that you should eventu
             "type": "package",
             "package": {
                 "name": "library-dinbror/blazy",
-                "version": "1.8.2",
+                "version": "1.10.3",
                 "type": "drupal-library",
                 "source": {
                     "url": "https://github.com/dinbror/blazy",
                     "type": "git",
-                    "reference": "1.8.2"
+                    "reference": "v1.10.3"
                 }
             }
         },
@@ -129,12 +167,12 @@ Please take a look at the full `composer.json` file below that you should eventu
             "type": "package",
             "package": {
                 "name": "library-enyo/dropzone",
-                "version": "4.3.0",
+                "version": "5.7.6",
                 "type": "drupal-library",
                 "source": {
                     "url": "https://github.com/enyo/dropzone",
                     "type": "git",
-                    "reference": "v4.3.0"
+                    "reference": "v5.7.6"
                 }
             }
         },
@@ -205,71 +243,90 @@ Please take a look at the full `composer.json` file below that you should eventu
 
 </details>
 
-1. Add `"YCloudYUSA/yusaopeny": "8.*.*"` to the `require` section in your `composer.json`, like [here](https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/composer.json#L7)
+1.  **Add YMCA Website Services as a dependency:**
 
-2. Add all required repositories that are [listed here](https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/composer.json#L31) to your `composer.json`
+    Add `"YCloudYUSA/yusaopeny": "2.0.*"` to the `require` section of your `composer.json`. This line specifies that you want to include the YMCA Website Services package, version 2.x, in your project.  See [example](https://github.com/YCloudYUSA/yusaopeny-project/blob/10.2.x/composer.json#L7).
 
-3. Add installer path as here to your `composer json`. See [example](https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/composer.json#L165).
+2.  **Add required repositories:**
 
-- `composer.json` **inside** of docroot
-Installer path will look like this:
+    Add all the necessary repositories, as [listed here](https://github.com/YCloudYUSA/yusaopeny-project/blob/10.2.x/composer.json#L31), to your `composer.json`. These repositories provide information about where to find the required libraries and packages.
 
-    ```
-    "installer-paths": {
-        "core": ["type:drupal-core"],
-        "libraries/{$name}": ["type:drupal-library"],
-        "modules/contrib/{$name}": ["type:drupal-module"],
-        "profiles/contrib/{$name}": ["type:drupal-profile"],
-        "themes/contrib/{$name}": ["type:drupal-theme"],
-        "drush/contrib/{$name}": ["type:drupal-drush"],
-        "modules/custom/{$name}": ["type:drupal-custom-module"],
-        "themes/custom/{$name}": ["type:drupal-custom-theme"]
-    }
-     ```
+3.  **Configure installer paths:**
 
-- `composer.json` **outside** of docroot
-Installer path will look like this:
+    Add the installer paths configuration to your `composer.json`. This configuration tells Composer where to place different types of packages (modules, themes, etc.) within your Drupal installation. See [example](https://github.com/YCloudYUSA/yusaopeny-project/blob/10.2.x/composer.json#L165).
 
-    ```
-    "installer-paths": {
-        "docroot/core": ["type:drupal-core"],
-        "docroot/libraries/{$name}": ["type:drupal-library"],
-        "docroot/modules/contrib/{$name}": ["type:drupal-module"],
-        "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
-        "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
-        "drush/contrib/{$name}": ["type:drupal-drush"],
-        "docroot/modules/custom/{$name}": ["type:drupal-custom-module"],
-        "docroot/themes/custom/{$name}": ["type:drupal-custom-theme"]
-    }
-    ```
+    *   If your `composer.json` is located **inside** the `docroot` directory, use the following:
 
-4. Add `"cweagans/composer-patches": "~1.0"` to the `require` section in you `composer.json`. See [example](https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/composer.json#L10).
+        ```json
+        "installer-paths": {
+            "core": ["type:drupal-core"],
+            "libraries/{$name}": ["type:drupal-library"],
+            "modules/contrib/{$name}": ["type:drupal-module"],
+            "profiles/contrib/{$name}": ["type:drupal-profile"],
+            "themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"],
+            "modules/custom/{$name}": ["type:drupal-custom-module"],
+            "themes/custom/{$name}": ["type:drupal-custom-theme"]
+        }
+        ```
 
-5. Add `"enable-patching": true` to the `extra` section in your `composer.json` See [example](https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/composer.json#L173).
+    *   If your `composer.json` is located **outside** the `docroot` directory, use the following:
 
-6. Add `"secure-http": false` to the `config` section in your `composer.json` See [example](https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/composer.json#L177).
+        ```json
+        "installer-paths": {
+            "docroot/core": ["type:drupal-core"],
+            "docroot/libraries/{$name}": ["type:drupal-library"],
+            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
+            "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "docroot/drush/contrib/{$name}": ["type:drupal-drush"],
+            "docroot/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "docroot/themes/custom/{$name}": ["type:drupal-custom-theme"]
+        }
+        ```
 
-7. Remove `composer.lock` and `vendor` folder from the project if they are exist in your folder.
+4.  **Enable Composer Patches:**
 
-8. Remove `"replace"` section from your `composer.json`
+    Add `"cweagans/composer-patches": "^1.7"` to the `require` section of your `composer.json`. This allows you to apply patches to contributed modules and themes. See [example](https://github.com/YCloudYUSA/yusaopeny-project/blob/10.2.x/composer.json#L10).
 
-9. (Optional) If you keep `vendor` folder in your git repository, we recommend to clean up project from `.git` folder inside modules and libraries. To do so
-- Add cleaner script to your project from [YMCA Website Services composer package](https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/scripts/remove_vendor_git_folders.sh). You can just copy it and paste onto your project.
-- [Adjust folders](https://github.com/YCloudYUSA/yusaopeny-project/blob/8.1.x/scripts/remove_vendor_git_folders.sh#L4) that you would like to cleanup
-- Execute it in `post-install-cmd` and `post-update-cmd`:
+5.  **Enable patching in extra section:**
 
-    ```
-    "post-install-cmd": [
-        "bash scripts/remove_vendor_git_folders.sh || :"
-    ],
-    "post-update-cmd": [
-        "bash scripts/remove_vendor_git_folders.sh || :"
-    ]
-    ```
+    Add `"enable-patching": true` to the `extra` section in your `composer.json`. See [example](https://github.com/YCloudYUSA/yusaopeny-project/blob/10.2.x/composer.json#L173).
 
-9. Run `composer install`
+6.  **Disable Secure HTTP:**
 
-# [CIBox](https://github.com/cibox/cibox)
+    Add `"secure-http": false` to the `config` section in your `composer.json`. See [example](https://github.com/YCloudYUSA/yusaopeny-project/blob/10.2.x/composer.json#L177).
+
+7.  **Clean up:**
+
+    Remove the `composer.lock` file and the `vendor` directory from your project if they exist. This ensures that you're starting with a clean slate and that Composer will resolve all dependencies correctly.
+
+8.  **Remove "replace" section:**
+
+    Remove the `"replace"` section from your `composer.json` file.  This section is not typically needed and can sometimes cause conflicts.
+
+9.  **(Optional) Clean up vendor Git folders:**
+
+    If you keep the `vendor` directory in your Git repository, it's recommended to remove the `.git` folders inside modules and libraries. To do this:
+
+    *   Add the cleaner script from the [YMCA Website Services composer package](https://github.com/YCloudYUSA/yusaopeny-project/blob/10.2.x/scripts/remove_vendor_git_folders.sh) to your project. You can copy and paste the script.
+    *   [Adjust the folders](https://github.com/YCloudYUSA/yusaopeny-project/blob/10.2.x/scripts/remove_vendor_git_folders.sh#L4) that you want to clean up in the script.
+    *   Execute the script in the `post-install-cmd` and `post-update-cmd` sections of your `composer.json`:
+
+        ```json
+        "post-install-cmd": [
+            "bash scripts/remove_vendor_git_folders.sh || :"
+        ],
+        "post-update-cmd": [
+            "bash scripts/remove_vendor_git_folders.sh || :"
+        ]
+        ```
+
+10. **Run Composer Install:**
+
+    Run `composer install` to install the YMCA Website Services and its dependencies.  This command reads your `composer.json` file and downloads the specified packages into the `vendor` directory.
+
+# CIBox
 
 In this section you can learn how to configure development environment and CI server using Open Source product [CIBox](https://github.com/cibox/cibox).
 
@@ -277,7 +334,7 @@ In this section you can learn how to configure development environment and CI se
 
 1. Generate project based on [this quickstart](http://docs.cibox.tools/en/latest/Quickstart/#prepare-github-project)
 
-2. Add YMCA Website Services to the project using (Add YMCA Website Services to already existing Drupal 8 project)
+2. Add YMCA Website Services to the project using (Add YMCA Website Services to already existing Drupal 10 project)
 
 3. Init git and add initial commit
 
@@ -316,3 +373,4 @@ In this section you can learn how to configure development environment and CI se
 
 ## End to end installation
 [![YMCA Website Services install - in 16 minutes end to end, no tutorial](https://img.youtube.com/vi/RT6kC38zgvo/0.jpg)](https://youtu.be/RT6kC38zgvo)
+```

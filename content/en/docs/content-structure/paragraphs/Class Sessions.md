@@ -1,57 +1,83 @@
+```markdown
 ---
 title: Class Sessions
 ---
 
-This is dynamic paragraph that renders the class session instances, based on url query parameter location with a valid id.
+This dynamic paragraph renders class session instances based on the URL query parameter `location` with a valid ID.
 
 Relates to [Branches Popup (Class)](Branches Popup (Class).md).
 
 ### Fields
-| Name  | Machine name | Required | Description |
-| ------------- | ------------- | ------------- | ------------- |
-| Block | field\_prgf_block | Yes | Block reference to the view/block. Should have default value and should be hidden in form display. |
 
-### Displayed table
-* Location(should be displayed in case if &location=% not in the URL. Otherwise should be hiddedn.
-* Time + date
-* Registration(link)
-* Details
-  * Online registration
-  * Ticket required
-  * In membership
-* Age Min - Max
+| Name | Machine name | Required | Description |
+|---|---|---|---|
+| Block | `field_prgf_block` | Yes | Block reference to the view/block. Should have a default value and should be hidden in form display. |
 
-### Use cases
+### Displayed Table
+
+The following fields are displayed in a table format:
+
+*   **Location:** Displayed unless `&location=%` is present in the URL, in which case it is hidden.
+*   **Time + Date**
+*   **Registration:** A link to the registration page.
+*   **Details:**
+    *   Online registration information
+    *   Ticket requirement status
+    *   Membership eligibility
+*   **Age:** Minimum and maximum age range for the class.
+
+### Use Cases
+
+These use cases describe the behavior of the Class Sessions paragraph in different scenarios, specifically regarding location filtering.
+
+#### Class Page WITHOUT Location Popup
+
 *Use case 3: Class page WITHOUT location popup*
-3.1 Location in specified URL
-- When I open Class page WITHOUT location popup on page
-- And I have location=% in the URL
-- We skip cookie whether is empty or exist
-- Results should be filtered based on location from URL
-- In sidebar we should see location teaser
 
-3.2 Preferred branch is empty and no location in URL or Preferred branch is selected and no location in URL
-- When I open Class page WITHOUT location popup on page
-- And I don't have a preferred branch
-- Or I have a preferred branch
-- And I don't have location=% in the URL
-- Results should contain all branches
-- In sidebar we should see "All locations...."
+##### Location Specified in URL
+
+3.  1 Location in specified URL
+
+    *   When a Class page **without** a location popup is opened.
+    *   **And** the URL contains `location=%`.
+    *   The system skips any existing cookie values.
+    *   The class session results are filtered based on the location specified in the URL.
+    *   A location teaser is displayed in the sidebar.
+
+##### Preferred Branch Empty or Selected, No Location in URL
+
+3.  2 Preferred branch is empty and no location in URL or Preferred branch is selected and no location in URL
+
+    *   When a Class page **without** a location popup is opened.
+    *   **And either:**
+        *   No preferred branch is selected.
+        *   A preferred branch is selected, **but** the URL **does not** contain `location=%`.
+    *   The class session results include all branches.
+    *   "All locations..." is displayed in the sidebar.
+
+#### Class Page WITH Location Popup
 
 *Use case 4: Class page WITH location popup*
-4.1 Location in specified URL
-- When I open Class page WITH location popup on page
-- And I have location=% in the URL
-- We skip cookie whether is empty or exist
-- Results should be filtered based on location from URL
-- In sidebar we should see location teaser
-- Location is sidebar should have "Edit" link that will open location popup
 
-4.2 Preferred branch is empty and no location in URL or Preferred branch is selected and no location in URL
-- When I open Class page WITH location popup on page
-- And I don't have a preferred branch
-- Or I have a preferred branch
-- And I don't have location=% in the URL
-- Results should contain all branches
-- In sidebar we should see "All locations...."
-- Location popup should be shown (Unless only one location is associated with the class)
+##### Location Specified in URL
+
+4.  1 Location in specified URL
+
+    *   When a Class page **with** a location popup is opened.
+    *   **And** the URL contains `location=%`.
+    *   The system skips any existing cookie values.
+    *   The class session results are filtered based on the location specified in the URL.
+    *   A location teaser is displayed in the sidebar.
+    *   The location teaser in the sidebar includes an "Edit" link that opens the location popup.
+
+##### Preferred Branch Empty or Selected, No Location in URL
+
+5.  2 Preferred branch is empty and no location in URL or Preferred branch is selected and no location in URL
+
+    *   When a Class page **with** a location popup is opened.
+    *   **And either:**
+        *   No preferred branch is selected.
+        *   A preferred branch is selected, **but** the URL **does not** contain `location=%`.
+    *   The class session results include all branches.
+    *   "All locations..." is displayed in the sidebar.
+    *   The location popup is displayed, unless only one location is associated with the class.

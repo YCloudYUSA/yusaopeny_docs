@@ -1,9 +1,10 @@
+```markdown
 ---
 title: Layout Builder
 weight: 3
 ---
 
-Layout Builder is a powerful new page-building addition to your YMCA website.
+Layout Builder is a powerful page-building tool for your YMCA website. It allows content editors and site builders to quickly and easily create visual layouts for displaying content. You can customize how content is arranged on a single page, across types of content, or even create custom landing pages with an easy-to-use drag-and-drop interface.
 
 > Drupal's Layout Builder allows content editors and site builders to easily and quickly create visual layouts for displaying content. Users can customize how content is arranged on a single page, across types of content, or even create custom landing pages with an easy-to-use drag-and-drop interface.
 >
@@ -11,7 +12,7 @@ Layout Builder is a powerful new page-building addition to your YMCA website.
 
 ## Getting Started with Layout Builder
 
-YMCA Website Services 9.2.12 introduces a new Content Type: **Landing Page (Layout Builder)**. This new page will allow you to build pages using **[Sections](#sections)** with different **[Layouts](#layouts)** that contain **[Custom Blocks](#blocks)**. Please contact your development partner if you need assistance updating the latest version.
+YMCA Website Services 9.2.12 introduces a new Content Type: **Landing Page (Layout Builder)**. This new page will allow you to build pages using **[Sections](#sections)** with different **[Layouts](#layouts)** that contain **[Custom Blocks](#blocks)**. Please contact your development partner if you need assistance updating to the latest version.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PL6Wo-UX6nhySupPRWKqy0BFlzYLzYR8rB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -19,8 +20,8 @@ YMCA Website Services 9.2.12 introduces a new Content Type: **Landing Page (Layo
 
 To use Layout Builder, you'll first have to create a new page:
 
-- Choose any Layout Builder-enabled content type, or start with a basic [Landing Page](../content-types/lb-landing-page)
-- Go to **Content** > **Add Content** > **The Content Type**.
+1.  Choose any Layout Builder-enabled content type, or start with a basic [Landing Page](../content-types/lb-landing-page).
+2.  Go to **Content** > **Add Content** > **The Content Type**.
 
 Once you've saved, you will see an empty page. Click the **Layout** tab to enter Layout Builder or go directly there with **Save and edit layout**.
 
@@ -38,16 +39,16 @@ Changes to the page are not displayed to site viewers until you **Save Layout** 
 
 When in the **Layout** editor, you will have these options at the top of the page:
 
-- **Save Layout** will save your changes and return you to the main page view.
-- **Save and edit layout** will save your changes and keep you in Layout Builder.
-- **Discard Changes**
-- **Revert to Defaults** will reset your page to the default empty layout.
+*   **Save Layout** will save your changes and return you to the main page view.
+*   **Save and edit layout** will save your changes and keep you in Layout Builder.
+*   **Discard Changes**
+*   **Revert to Defaults** will reset your page to the default empty layout.
 
 After saving your changes, be sure your page is published:
 
-- Click the **Edit** tab.
-- Check **Published**.
-- **Save** the page.
+1.  Click the **Edit** tab.
+2.  Check **Published**.
+3.  **Save** the page.
 
 ## Fundamentals
 
@@ -73,9 +74,9 @@ Some options in this configuration may not yet be fully supported.
 
 ### Blocks
 
-While **Sections** contain the page's **structure**, **Blocks** contain its **content**.
+While **Sections** contain the page's **structure**, **Blocks** contain its **content**. Blocks are boxes of content rendered into a region of a web page.
 
-To create a block, click Add Block in any section of the page, then Create Custom Block.
+To create a block, click **Add Block** in any section of the page, then **Create Custom Block**.
 
 ![A screenshot showing the Add Block and Create Custom Block buttons.](lb_add_block.png)
 
@@ -100,3 +101,4 @@ When rearranging large blocks on the page it can often be challenging to drag th
 If you run into a problem, [get in touch](../../../community).
 
 <small>Content on this page is adapted from [Drupal.org](https://www.drupal.org/docs/8/core/modules/layout-builder) and [Western Washington University](https://brand.wwu.edu/layout-builder)</small>
+```

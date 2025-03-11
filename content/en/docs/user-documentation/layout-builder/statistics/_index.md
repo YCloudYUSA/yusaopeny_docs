@@ -1,3 +1,4 @@
+```markdown
 ---
 title: Statistics
 description: Infographic-like display that highlights relevant statistics to users.
@@ -15,20 +16,22 @@ description: Infographic-like display that highlights relevant statistics to use
 -----
 
 **Designs:**
-- [Design System](../../../../../../assets/img/designs/lb-ui-kit/Statistics.jpg)
-- Pre-release: [Mobile](<../../../../../../assets/img/designs/lb/Statistics Mobile.png>) | [Desktop](<../../../../../../assets/img/designs/lb/Statistics Desktop.png>)
+
+*   [Design System](../../../../../../assets/img/designs/lb-ui-kit/Statistics.jpg)
+*   Pre-release: [Mobile](../../../../../../assets/img/designs/lb/Statistics Mobile.png) | [Desktop](../../../../../../assets/img/designs/lb/Statistics Desktop.png)
 
 {{< readfile "../lb-add-block.partial" >}}
 
 Fill in the content fields:
 
-- **Title** (required): Never displayed, even if "Display Title" is checked. For administrative use only.
-- **Section heading**: Displayed as a heading above the item.
-- **Section subheading**: Displayed below the heading.
-- **Media**: Chose from the library or add a new image to be displayed to the left of the statistics.
-- **Section link**: Add a link below the statistics items.
-- **Statistics items**: Add as many items as you like using the **Add Statistics Item** or **Add new custom block** button. When you are finished adding or editing each item, be sure to click **Create/Update tab** or **Create/Update custom block** to finalize the item. Each item contains:
-  - **Number value**: The number value for the statistic. Can include a prefix ("$100") and/or suffix ("$100M").
-  - **Description**: A description of the statistic.
+*   **Title** (required): This title is for administrative purposes only and is never displayed to users, even if "Display Title" is checked.
+*   **Section heading**: Displayed as a heading above the statistics items.
+*   **Section subheading**: Displayed below the heading.
+*   **Media**: Choose an existing image from the media library or upload a new image. The image will be displayed to the left of the statistics.
+*   **Section link**: Add a link to be displayed below the statistics items.
+*   **Statistics items**: Add as many statistics items as needed by using the **Add Statistics Item** or **Add new custom block** button. After adding or editing each item, remember to click **Create/Update tab** or **Create/Update custom block** to save your changes. Each item includes the following fields:
+    *   **Number value**: The numerical value of the statistic. This field accepts a prefix (e.g., "$100") and/or a suffix (e.g., "100M").
+    *   **Description**: A description of the statistic.
 
 {{< readfile "../lb-save-block.partial" >}}
+```

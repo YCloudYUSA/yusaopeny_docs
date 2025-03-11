@@ -1,3 +1,4 @@
+```markdown
 ---
 title: "Upgrading from 9.2.11.5 to 10.3"
 ---
@@ -8,133 +9,140 @@ A YMCA website is currently running on Y USA Open Y (`openy-9.x-2.11.5`) using D
 
 ## Upgrade Steps
 
-1. **Prepare for Upgrade to WS**
+**Note:** Before starting, ensure you have a backup of your database and files. It is highly recommended to perform these steps on a staging environment first.
 
-   * Ensure your site is on the latest Y USA Open Y 9.x release
+1.  **Prepare for Upgrade to WS**
 
-      ```bash
-      composer require -W ycloudyusa/yusaopeny:9.2.13.0 drupal/core-project-message:^9.5  drupal/core-composer-scaffold:^9.5 drupal/core-recommended:^9.5
-      ```
+    *   Ensure your site is on the latest Y USA Open Y 9.x release (9.2.13.0). This step is crucial for a smooth transition.
 
-   * Run database updates
+        ```bash
+        composer require -W ycloudyusa/yusaopeny:9.2.13.0 drupal/core-project-message:^9.5 drupal/core-composer-scaffold:^9.5 drupal/core-recommended:^9.5
+        ```
 
-      ```bash
-      ../vendor/drush/drush/drush updatedb -l $SITE_URL
-      ```
+    *   Run database updates using Drush. Replace `$SITE_URL` with your actual site URL.
 
-2. **Upgrade to WS 10.2**
+        ```bash
+        ../vendor/drush/drush/drush updatedb -l $SITE_URL
+        ```
 
-   * Require the 10.2.14 release of Y USA Open Y and update Drupal core and dependencies
+2.  **Upgrade to WS 10.2**
 
-      ```bash
-      composer require -W ycloudyusa/yusaopeny:10.2.14 drupal/core-project-message:^10.0.11  drupal/core-composer-scaffold:^10.0.11 drupal/core-recommended:^10.0.11 drupal/core:^10.0.11 'drupal/smtp:^1.4' consolidation/robo:^4
-      ```
+    *   Require the 10.2.14 release of Y USA Open Y and update Drupal core and its dependencies. This step upgrades Drupal core to version 10.
 
-3. **Address QuickEdit/RDF Dependency Issue**
+        ```bash
+        composer require -W ycloudyusa/yusaopeny:10.2.14 drupal/core-project-message:^10.0.11 drupal/core-composer-scaffold:^10.0.11 drupal/core-recommended:^10.0.11 drupal/core:^10.0.11 'drupal/smtp:^1.4' consolidation/robo:^4
+        ```
 
-   * Temporarily require QuickEdit and RDF
+3.  **Address QuickEdit/RDF Dependency Issue**
 
-      ```bash
-      composer require drupal/quickedit drupal/rdf
-      ```
+    *   Temporarily require the `quickedit` and `rdf` modules.
 
-   * Run database updates
+        ```bash
+        composer require drupal/quickedit drupal/rdf
+        ```
 
-      ```bash
-      ../vendor/drush/drush/drush updatedb -l
-      ```
+    *   Run database updates.
 
-   * Remove and re-add QuickEdit to resolve dependency conflicts
+        ```bash
+        ../vendor/drush/drush/drush updatedb -l $SITE_URL
+        ```
 
-      ```bash
-      composer remove drupal/quickedit
-      composer require drupal/quickedit drupal/rdf
-      ```
+    *   Remove and re-add `quickedit` to resolve potential dependency conflicts.
 
-4. **Upgrade to WS 10.3.0.1**
+        ```bash
+        composer remove drupal/quickedit
+        composer require drupal/quickedit drupal/rdf
+        ```
 
-   * Require the 10.3.0.1 release
+4.  **Upgrade to WS 10.3.0.1**
 
-      ```bash
-      composer require -W ycloudyusa/yusaopeny:10.3.0.1 drupal/core-project-message:^10.0.11  drupal/core-composer-scaffold:^10.0.11 drupal/core-recommended:^10.0.11 drupal/core:^10.0.11
-      ```
+    *   Require the 10.3.0.1 release.
 
-   * Run database updates
+        ```bash
+        composer require -W ycloudyusa/yusaopeny:10.3.0.1 drupal/core-project-message:^10.0.11 drupal/core-composer-scaffold:^10.0.11 drupal/core-recommended:^10.0.11 drupal/core:^10.0.11
+        ```
 
-      ```bash
-      ../vendor/drush/drush/drush updatedb -l $SITE_URL
-      ```
+    *   Run database updates.
 
-5. **Upgrade to WS 10.3.1**
+        ```bash
+        ../vendor/drush/drush/drush updatedb -l $SITE_URL
+        ```
 
-   * Require the 10.3.1 release
+5.  **Upgrade to WS 10.3.1**
 
-      ```bash
-      composer require -W ycloudyusa/yusaopeny:10.3.1 drupal/core-project-message:^10.0.11  drupal/core-composer-scaffold:^10.0.11 drupal/core-recommended:^10.0.11 drupal/core:^10.0.11
-      ```
+    *   Require the 10.3.1 release.
 
-6. **Add CKEditor5 Paste Filter**
+        ```bash
+        composer require -W ycloudyusa/yusaopeny:10.3.1 drupal/core-project-message:^10.0.11 drupal/core-composer-scaffold:^10.0.11 drupal/core-recommended:^10.0.11 drupal/core:^10.0.11
+        ```
 
-   * Require the CKEditor5 Paste Filter module
+6.  **Add CKEditor5 Paste Filter**
 
-      ```bash
-      composer require drupal/ckeditor5_paste_filter
-      ```
+    *   Require the `ckeditor5_paste_filter` module. This module enhances the CKEditor 5 experience by providing better control over pasted content.
 
-   * Run database updates
+        ```bash
+        composer require drupal/ckeditor5_paste_filter
+        ```
 
-      ```bash
-      ../vendor/drush/drush/drush updatedb -l $SITE_URL
-      ```
+    *   Run database updates.
 
-7. **Upgrade to WS 10.3.2**
+        ```bash
+        ../vendor/drush/drush/drush updatedb -l $SITE_URL
+        ```
 
-   * Require the 10.3.2 release
+7.  **Upgrade to WS 10.3.2**
 
-      ```bash
-      composer require -W ycloudyusa/yusaopeny:10.3.2 drupal/core-project-message:^10.0.11  drupal/core-composer-scaffold:^10.0.11 drupal/core-recommended:^10.0.11 drupal/core:^10.0.11
-      ```
+    *   Require the 10.3.2 release.
 
-8. **Upgrade to WS 10.3.3.2**
+        ```bash
+        composer require -W ycloudyusa/yusaopeny:10.3.2 drupal/core-project-message:^10.0.11 drupal/core-composer-scaffold:^10.0.11 drupal/core-recommended:^10.0.11 drupal/core:^10.0.11
+        ```
 
-   * Require the 10.3.3.2 release
+8.  **Upgrade to WS 10.3.3.2**
 
-      ```bash
-      composer require -W ycloudyusa/yusaopeny:10.3.3.2
-      ```
+    *   Require the 10.3.3.2 release.
 
-   * Run database updates
+        ```bash
+        composer require -W ycloudyusa/yusaopeny:10.3.3.2
+        ```
 
-      ```bash
-      ../vendor/drush/drush/drush updatedb -l $SITE_URL
-      ```
+    *   Run database updates.
 
-9. **Address CKEditor5 Font Issue**
+        ```bash
+        ../vendor/drush/drush/drush updatedb -l $SITE_URL
+        ```
 
-   * Uninstall the existing CKEditor5 Font module
+9.  **Address CKEditor5 Font Issue**
 
-      ```bash
-      uninstall ckeditor5_font
-      ```
+    *   Uninstall the existing `ckeditor5_font` module.
 
-   * Require the latest beta version of CKEditor5 Font
+        ```bash
+        drush pmu ckeditor5_font -y
+        ```
 
-      ```bash
-      composer require 'drupal/ckeditor5_font:^1.1@beta'
-      ```
+    *   Require the latest beta version of `ckeditor5_font`.
 
-   * Enable the CKEditor5 Font module
+        ```bash
+        composer require 'drupal/ckeditor5_font:^1.1@beta'
+        ```
 
-      ```bash
-      ../vendor/drush/drush/drush en ckeditor5_font
-      ```
+    *   Enable the `ckeditor5_font` module.
+
+        ```bash
+        ../vendor/drush/drush/drush en ckeditor5_font -y
+        ```
 
 ## Important Considerations
 
-* **Backup:** Always back up your site and database before performing any major upgrades.
-* **Testing:** Thoroughly test your site after each upgrade step on a staging environment before deploying to production.
-* **Customizations:** If you have made significant customizations to your site, consult with a Drupal developer to ensure a smooth upgrade process.
-* **Drush Path:** Adjust the `../vendor/drush/drush/drush` path if your Drush installation is located elsewhere.
-* **$SITE_URL:** Replace `$SITE_URL` with the actual URL of your site.
+*   **Backup:** Always back up your site and database before performing any major upgrades.
+*   **Testing:** Thoroughly test your site after each upgrade step on a staging environment before deploying to production.
+*   **Customizations:** If you have made significant customizations to your site, consult with a Drupal developer to ensure a smooth upgrade process.
+*   **Drush Path:** Adjust the `../vendor/drush/drush/drush` path if your Drush installation is located elsewhere.
+*   **$SITE_URL:** Replace `$SITE_URL` with the actual URL of your site.
+*   **Configuration Management:** After upgrading, review your site's configuration and ensure it aligns with the new features and settings in version 10.3.
+*   **Module Compatibility:** Verify that all contributed modules are compatible with Drupal 10.  Update or replace modules as needed.
+*   **Theme Compatibility:** Ensure your theme is compatible with Drupal 10. You may need to update your theme or switch to a compatible theme.
+*   **Clear Caches:** After each major step, clear Drupal's caches to ensure the changes are reflected. Use `drush cr` or navigate to *Configuration > Development > Performance > Clear all caches*.
 
 **Disclaimer:** This use case provides a general outline for upgrading the YMCA Website Services Drupal distribution. Specific steps and commands may vary depending on your site's configuration and any additional modules or customizations you have installed. Always refer to the official YMCA Website Services documentation and Drupal.org for the most up-to-date information and best practices.
+```

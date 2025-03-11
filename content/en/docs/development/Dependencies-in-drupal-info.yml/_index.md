@@ -1,34 +1,47 @@
 ---
-title: Dependencies in drupal info.yml
+title: Dependencies in Drupal info.yml
 aliases:
   - /docs/wiki/dependencies-in-drupal-info.yml/
 ---
 
-In order to generate `composer.json`, Drupal.org defines specific rules in the modules `info.yml` file
+In order to generate `composer.json` files for Drupal projects, Drupal.org uses specific rules defined in a module's `info.yml` file. These dependencies are used to manage the module's external libraries and Drupal core module requirements.
 
-If you need to add a dependency to the Drupal.org module you should provide a format:
+## Declaring Dependencies
 
-```yml
+If your module depends on another Drupal module, you should declare it in your module's `info.yml` file using the following format:
+
+```yaml
 dependencies:
   - drupal:webform
 ```
 
-In this case, your module will have composer dependency to [drupal/webform](https://dgo.to/webform)
+This tells the packager to include `drupal/webform` as a Composer dependency for your module. The Drupal.org packaging system resolves `drupal:webform` to the correct package name and version.
 
-If you make it:
+You can find the correct Drupal.org project shortname to use for dependency declarations on the project page near the bottom. For example, the [Webform project](https://www.drupal.org/project/webform) is `webform`. The corresponding composer package name is `drupal/webform`.
 
-```yml
+## Incorrect Dependency Declaration
+
+If you were to specify a dependency like this:
+
+```yaml
 dependencies:
   - whatevernameyouwish:webform
 ```
 
-the Drupal.org packaging routine will replace it with `drupal:webform` on the fly.
+The Drupal.org packaging routine will automatically correct it to `drupal:webform` during the packaging process.
 
-In order to break the dependency on composer level but still tell Drupal core to have module dependency while resolving dependencies during the process of enabling the module, you should use the simplified format:
+## Soft Dependencies (Drupal Core Only)
 
-```yml
+There may be situations where you want to express a dependency for Drupal core to manage during module installation and enabling, but not require Composer to manage it. This is sometimes referred to as a "soft dependency". In such cases, you can use the simplified format:
+
+```yaml
 dependencies:
   - webform
 ```
 
-In the above case, composer won't have any dependencies, but your module will require that the webform module be available in the codebase in order to be enabled by Drupal core.
+In this scenario:
+
+*   Composer will *not* include any dependency.
+*   Drupal core *will* require that the `webform` module be present in the codebase before your module can be enabled.  Drupal will check for the existence of the module when resolving dependencies during module installation.
+
+This approach is useful when a module's functionality degrades gracefully if another module is not present, but is enhanced if it is.

@@ -1,3 +1,4 @@
+```markdown
 ---
 title: Development
 weight: 98
@@ -5,7 +6,7 @@ aliases:
   - /docs/wiki/
 ---
 
-Welcome to the development corner of the YMCA Website Services distribution.
+Welcome to the development corner of the YMCA Website Services distribution. This section contains resources and guidelines for developers, QA engineers, and YMCA associations involved in the development and maintenance of YMCA Website Services.
 
 ## For YMCA Associations
 
@@ -45,16 +46,16 @@ Whether you are just getting started with YMCA Website Services or need to test 
 ### Processes & Components
 
 - [Development Processes]({{< relref "Open-Y-technology-pipeline" >}})
-- [Development-FAQ]({{< relref "Development-FAQ" >}})
+- [Development FAQ]({{< relref "Development-FAQ" >}})
 - [Videos]({{< relref "Videos" >}})
 - [Spam Protection Strategies]({{< relref "OpenY-anti-spam-protection" >}})
 
 ### Environment Setup
 
 - [Tech Stack]({{< relref "Open-Y-3rd-party-dependencies" >}})
-- [Open-Y-one-click-install-how-to]({{< relref "Open-Y-one-click-install-how-to" >}})
-- [Install-Solr-site-search-for-Open-Y]({{< relref "Install-Solr-site-search-for-Open-Y" >}})
-- [Install-SSL-certificate-for-the-OpenY-site]({{< relref "Install-SSL-certificate-for-the-OpenY-site" >}})
+- [OpenY One-Click Install How-to]({{< relref "Open-Y-one-click-install-how-to" >}})
+- [Install Solr Site Search for OpenY]({{< relref "Install-Solr-site-search-for-Open-Y" >}})
+- [Install SSL Certificate for the OpenY Site]({{< relref "Install-SSL-certificate-for-the-OpenY-site" >}})
 - [Switching Drupal Core Versions]({{< relref "Drupal-9-core-dependencies-version-flexibility" >}})
 
 ## Contributing to YMCA Website Services
@@ -86,19 +87,20 @@ Whether you are just getting started with YMCA Website Services or need to test 
 
 ### Releases
 
-- [Open-Y-Release-Schedule-and-Guidelines]({{< relref "Open-Y-Release-Schedule-and-Guidelines" >}})
-- [How-we-release-OpenY-distribution-from-code-perspective]({{< relref "How-we-release-OpenY-distribution-from-code-perspective" >}})
+- [OpenY Release Schedule and Guidelines]({{< relref "Open-Y-Release-Schedule-and-Guidelines" >}})
+- [How we release OpenY distribution from code perspective]({{< relref "How-we-release-OpenY-distribution-from-code-perspective" >}})
 
 ### Update Processes & Notices
 
 - [Updating YMCA Website Services]({{< relref "OpenY-upgrade-how-to-for-Developers" >}})
-- [Important-versions-for-upgrade-path]({{< relref "Important-versions-for-upgrade-path" >}})
+- [Important versions for upgrade path]({{< relref "Important-versions-for-upgrade-path" >}})
 
-These documents are for old versions of YMCA Website Services, but may contain useful information for troubleshooting future update issues.
+These documents are for old versions of YMCA Website Services but may contain useful information for troubleshooting future update issues.
 
 - [SA-CORE-2018-004]({{< relref "OpenY-security---Drupal-SA-CORE-2018-004" >}})
 - [SA-CORE-2018-002]({{< relref "OpenY-security-update-how-to.-Update-Drupal-core-only" >}})
 - [Upgrade from 8.0.x to 8.1.x]({{< relref "OpenY-upgrade-for-developers.-Upgrade-to-old-OpenY-1.x-version" >}})
-- [Upgrade-OpenY-8.1.3-to-8.2.2.1]({{< relref "Upgrade-OpenY-8.1.3-to-8.2.2.1" >}})
-- [Upgrade-use-case-from-8.2.2.3-to-8.2.7.3]({{< relref "Upgrade-use-case-from-8.2.2.3-to-8.2.7.3" >}})
-- [openy-9.x-2.11.5 to 10.3 latest distribution]({{< relref "upgrade_use_case_drupal_9_drupal_10_1" >}})
+- [Upgrade OpenY 8.1.3 to 8.2.2.1]({{< relref "Upgrade-OpenY-8.1.3-to-8.2.2.1" >}})
+- [Upgrade use case from 8.2.2.3 to 8.2.7.3]({{< relref "Upgrade-use-case-from-8.2.2.3-to-8.2.7.3" >}})
+- [Openy 9.x-2.11.5 to 10.3 latest distribution]({{< relref "upgrade_use_case_drupal_9_drupal_10_1" >}})
+```

@@ -1,3 +1,4 @@
+```markdown
 ---
 title: Demo Content
 description: The distribution comes with demo content to help kick-start your site building.

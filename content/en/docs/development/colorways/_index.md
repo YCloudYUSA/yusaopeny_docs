@@ -1,3 +1,4 @@
+```markdown
 ---
 title: Colorways
 description: What goes into making the selectable colorways in Layout Builder.
@@ -5,13 +6,13 @@ description: What goes into making the selectable colorways in Layout Builder.
 
 ## CSS Variables
 
-### Base variables
+### Base Variables
 
-We start by defining a base set of colors based on the "Y Color Wheel and Neighbored Color Zones" from the "Websites & Platforms Style Guide", available in the [YMCA Brand Resource Center](https://theybrand.org/).
+We start by defining a base set of colors based on the "Y Color Wheel and Neighbored Color Zones" from the "Websites & Platforms Style Guide", available in the [YMCA Brand Resource Center](https://theybrand.org/). These colors are used to create the color palettes available in the Layout Builder.
 
 ![A color wheel with labels corresponding to the official YMCA colors.](colorways--colorwheel.png)
 
-> **Note:** RGB variable values are not complete color definitions and must be wrapped in `rgb{a}()`, like `background-color: rgb(var(--ylb-color-rgb-red-dark), 0.5);`.
+> **Note:** RGB variable values are not complete color definitions and must be wrapped in `rgb{a}()`, like `background-color: rgb(var(--ylb-color-rgb-red-dark), 0.5);`. This allows you to control the opacity of the color.
 
 ```scss
 :root {
@@ -68,30 +69,28 @@ We start by defining a base set of colors based on the "Y Color Wheel and Neighb
 }
 ```
 
-### Colorway variables
+### Colorway Variables
 
-Each colorway begins with four initial colors, derived from the above color wheel:
+Each colorway is built upon four core colors derived from the base color palette:
 
-- PrimaryColor
-- SecondaryColor
-- TertiaryColor
-- PartnerColor
+- `PrimaryColor`: The main color for the colorway.
+- `SecondaryColor`: A complementary color to the primary.
+- `TertiaryColor`: Another complementary color, providing additional visual interest.
+- `PartnerColor`:  A contrasting color, often used for buttons and calls to action.
 
-All page elements should be composed of these four variables, with "primary/secondary/tertiary" providing complimentary colors and "partner" providing a complimentary option for buttons or other calls to action.
+These four colors are used to style the majority of page elements. Each variable is prefixed with `ws` to denote "Website Services". RGB versions of these colors are also provided for use with `rgba()` styles.
 
-Each variable is prefixed with `ws`. RGB versions of these four options are provided for use with `rgba()` styles.
+In addition to the main colors, five more variables are used to define the YMCA logo gradients:
 
-Additionally, 5 variables are used to more specifically define the gradients in the Y logo:
+- `LogoChevronDark`
+- `LogoChevronMid`
+- `LogoChevronLight`
+- `LogoTriangleDark`
+- `LogoTriangleLight`
 
-- LogoChevronDark
-- LogoChevronMid
-- LogoChevronLight
-- LogoTriangleDark
-- LogoTriangleLight
+> **Important:** These `Logo` variables should **only** be used for styling the YMCA logo.  They are not intended for use in other page components. The Canadian Y logo does not change colors, and therefore these extra colors are not needed for Canadian colorways.
 
-These variables should not be used in page components outside the logo. The Canadian Y logo does not change colors, and therefore these extra colors are not needed for Canadian colorways.
-
-All together, these variables make up a colorway:
+Here's a complete list of the colorway variables:
 
 ```css
 --wsPrimaryColor
@@ -109,7 +108,7 @@ All together, these variables make up a colorway:
 --wsLogoTriangleLight
 ```
 
-These variables should reference base variables, or other colors provided. Once combined, the full colorway definition should look like this:
+These variables are typically defined by referencing the base color variables.  Here's an example of a complete colorway definition:
 
 ```scss
 :root {
@@ -131,16 +130,16 @@ These variables should reference base variables, or other colors provided. Once 
 
 ## Logo Colors
 
-In order to provide consistency across colorways and reduce code duplication, the logo has been decomposed into 6 sections:
+To ensure consistency and minimize code duplication, the YMCA logo is divided into six distinct sections, each styled individually:
 
-- "the"
-- "chevron"
-- "ymca"
-- "triangle"
-- "registeredtm"
-- "areas-of-impact"
+- `the`
+- `chevron`
+- `ymca`
+- `triangle`
+- `registeredtm`
+- `areas-of-impact`
 
-The "chevron" and "triangle" components are composed of `radialGradient` elements which leverage the additional `wsLogo` variables defined above. The other components use the existing colorway variables. Each component is a `path` with an `id` and the color defined in a `fill`.
+The `chevron` and `triangle` sections use `radialGradient` elements, taking advantage of the `wsLogo` variables mentioned above. The other sections are styled using the standard colorway variables. Each section is a `path` element with a unique `id` and a color defined using the `fill` property.
 
 ![The YMCA logo with labels corresponding to the colors used in each component as described in text below.](colorways--logo-breakdown.png)
 
@@ -148,9 +147,9 @@ The "chevron" and "triangle" components are composed of `radialGradient` element
 - `#logo-chevron` uses a gradient composed of (from top to bottom) `--wsLogoChevronLight`, `--wsLogoChevronMid`, and `--wsLogoChevronDark`
 - `#logo-ymca` uses `--wsPartnerColor`
 - `#logo-triangle` uses a gradient composed of (from left to right) `--wsLogoTriangleLight` and `--wsLogoTriangleDark`
-- `#logo-registeredtm uses `--wsPartnerColor`
+- `#logo-registeredtm` uses `--wsPartnerColor`
 - `#logo-areas-of-interest` uses `--wsSecondaryColor`
 
 ## Y Styles
 
-Each "Y Styles" option enables a different library, as seen in [y_lb.ws_style_option.yml](https://github.com/YCloudYUSA/y_lb/blob/main/y_lb.ws_style_option.yml). Those libraries [can be overridden by a custom theme](https://www.drupal.org/node/2497313) if necessary.
+Each "Y Styles" option activates a specific CSS library, as defined in [`y_lb.ws_style_option.yml`](https://github.com/YCloudYUSA/y_lb/blob/main/y_lb.ws_style_option.yml). These libraries can be overridden by a custom theme, allowing for further customization (see the [Drupal documentation on Overriding Theme Functions](https://www.drupal.org/node/2497313) for details).

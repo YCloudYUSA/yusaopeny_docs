@@ -1,19 +1,22 @@
+```markdown
 ---
 title: Adding Media with CKEditor 5
 description: Using the new unified Media editor.
 weight: 1
 ---
 
-Once your site is updated to use CKEditor 5 you will see a new **Insert Media** button that unifies the processes for embedding Images, Documents, and Videos. ![The new Insert Media button in CKEditor 5.](adding-media--button.png)
+Once your site is updated to use CKEditor 5 you will see a new **Insert Media** button that unifies the processes for embedding Images, Documents, and Videos.
+![The new Insert Media button in CKEditor 5.](adding-media--button.png)
 
 ## Add or select media
 
-1. To get started, click **Insert Media** in the CKEditor toolbar (or try the <abbr title="Show more items"><kbd> ⋮ </kbd></abbr> button if it's hidden). You will be presented with the **Add or select media** dialog. ![The "Add or select media" dialog](adding-media--dialog.png)
-2. Choose the media type (Image, Document, etc.) that you would like to embed from the list on the left. 
+1. To get started, click **Insert Media** in the CKEditor toolbar (or try the <abbr title="Show more items"><kbd> ⋮ </kbd></abbr> button if it's hidden). You will be presented with the **Add or select media** dialog.
+![The Add or select media dialog](adding-media--dialog.png)
+2. Choose the media type (Image, Document, etc.) that you would like to embed from the list on the left.
 3. Add or upload your media:
     - If you are adding new media:
       - If given the option, drag and drop the item from your filesystem to the dialog, or click **Select File**.
-      - For Video (via YouTube or Vimeo), add the video directly via **Admin** > **Content** > **Media** **Add Media** > **Video** before opening the dialog.
+      - For Video (via YouTube or Vimeo), add the video directly via **Admin** > **Content** > **Media** > **Add Media** > **Video** before opening the dialog.
     - If you are reusing media that exists on the site, scroll down and search for the item, then click the checkbox to select it.
 4. Choose **Insert selected** to embed the chosen media.
 
@@ -21,7 +24,7 @@ Once your site is updated to use CKEditor 5 you will see a new **Insert Media** 
 
 Once your media has been inserted into the field, you can hover over the media to choose from a variety of options.
 
-![The embedded media options with labels for "Toggle caption on", "Link media", "Add alt text", "Choose view mode", and "Set alignment"](adding-media--options.png)
+![The embedded media options with labels for Toggle caption on, Link media, Add alt text, Choose view mode, and Set alignment](adding-media--options.png)
 
 ### Toggle caption on
 
@@ -59,3 +62,4 @@ Use the <kbd>⮐</kbd> button at the top or bottom of the media to insert a para
 ### Deleting your media
 
 Click to select the media, then type <kbd>Delete</kbd> to remove it.
+```

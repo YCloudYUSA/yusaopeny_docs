@@ -23,6 +23,7 @@ description: Many blocks come together to create a configurable header and foote
 The header and footer on Layout Builder pages is composed of many complimentary blocks. The Header and Footer are special Sections that are pre-populated on each Layout Builder-enabled content type. If the Header or Footer do not already exist in your content, you can add them on your own.
 
 ## Header Section
+
 ![Screenshot of the Header Section with block labels](lb-header-footer--header.png)
 
 If a Header section does not already exist, add a new Section and choose the **WS Header** Layout. Then, add the following blocks by selecting **Add block** and then using the search box under **All system blocks**:
@@ -62,7 +63,7 @@ Each block has some specific configuration recommendations:
 
 **Content**
 
-- The contents of this block are not configurable, but it may be omitted or removed if your site does not provide translation uses another translation method.
+- The contents of this block are not configurable, but it may be omitted or removed if your site does not provide translation or uses another translation method.
 
 ### Utility Menu
 
@@ -81,7 +82,7 @@ The option to add a Utility Menu was added in the December 2024 release. This me
 
 **Configuration**
 
-- **Title (required):** Never displayed, even if “Display Title” is checked. For administrative use only.
+- **Title (required):** Never displayed, even if "Display Title" is checked. For administrative use only.
 - **WS Site Logo:** Choose which logo is displayed in the block.
   - **Theme logo** uses the logo defined by the active theme, in the **Appearance** > **Settings** > **(The active theme)**.
   - **Colorway logo** uses a dynamic SVG that responds to the configured YMCA colorway. This option is recommended for the Header.
@@ -91,7 +92,7 @@ The option to add a Utility Menu was added in the December 2024 release. This me
 {{< alert color="info" title="Areas of impact usage" >}}
 As per the [Brand Graphics Guide (requires Y login)](https://theybrand.org/wordpress/brand-graphics-areas-of-impact-usage-on-websites):
 
-> The areas of impact must appear on a website, but it is at the YMCA’s discretion whether to include them as the trademarked graphic paired with the logo or as a way of telling the story of our positive impact.
+> The areas of impact must appear on a website, but it is at the YMCA's discretion whether to include them as the trademarked graphic paired with the logo or as a way of telling the story of our positive impact.
 
 If you choose to hide the Areas of Impact in the logo, we recommend you include them elsewhere on the page.
 {{< /alert >}}
@@ -138,7 +139,7 @@ The main navigation also supports an optional [nested CTA block](#main-menu-cta-
 **Content**
 
 - Menu items can be managed under **Structure** > **Menus** > **User account**.
-- To show items with a button style, add the `highlighted` to the menu item under **Attributes** > **Class**.
+- To show items with a button style, add the `highlighted` class to the menu item under **Attributes** > **Class**.
   ![The menu item configuration with the highlighted class added. An overlay in the upper right corner shows the resulting link.](lb-header-footer--highlighted.png)
   - On mobile devices, only `highlighted` items from this menu will display.
 
@@ -160,7 +161,7 @@ If a Footer section does not already exist, add a new Section and choose the **W
 
 ### Site Logo
 
-[See above](#site-logo-block). The "white logo" is recommended for the footer.
+[See above](#site-logo-block). The white logo is recommended for the footer.
 
 ### Footer Menu Left, Center, Right
 
@@ -223,7 +224,7 @@ To use it:
   > CTA blocks will only be displayed on _first-level menu items_. Blocks on all other levels will be ignored.
   1. Click the <kbd><i class="fas fa-pencil"></i></kbd> in the Main Menu section, then choose **Edit menu**. ![The Edit Menu item in the main menu contextual options](lb-header-footer--edit-menu.png)
   2. Go to **Admin** > **Structure** > **Menus** > **Main navigation** then **Edit** a link.
-- In the **CTA block** section, click **Add new custom block**. ![The "Add new custom block" button](lb-header-footer--add-block.png)
+- In the **CTA block** section, click **Add new custom block**. ![The Add new custom block button](lb-header-footer--add-block.png)
 - Fill in the fields:
   - Expand the **Media** section and choose or upload an image
   - Add a short **Heading**

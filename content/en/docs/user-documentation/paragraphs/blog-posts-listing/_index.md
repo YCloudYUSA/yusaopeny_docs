@@ -1,6 +1,6 @@
 ---
 title: Blog Posts Listing
-description: Add a section with teaser cards that link to blog posts and dropdown search fields.
+description: Add a section with teaser cards that link to blog posts. Includes optional dropdown search fields.
 ---
 
 ## Examples
@@ -19,22 +19,26 @@ description: Add a section with teaser cards that link to blog posts and dropdow
 
 ## Areas it Should Be Used
 
-* Content Area
-* Bottom Area
+*   Content Area
+*   Bottom Area
 
-## How to Use Blog Posts
+## How to Use Blog Posts Listing
 
-From the paragraphs dropdown, add *Blog Posts Listing*. Enter a header title for the section in the text field and hit *Save*.
+1.  From the paragraphs dropdown, add **Blog Posts Listing**.
+2.  Enter a header title for the section in the text field.
+3.  Hit **Save**.
 
-![BLog posts listing admin fields](paragraphs--blog-posts-listing--fields.png)
+![Blog posts listing admin fields](paragraphs--blog-posts-listing--fields.png)
 
-## Content Types that Support Blog Posts
+This paragraph allows you to display a listing of blog posts with optional search and filtering capabilities. The appearance and available options might vary based on the theme (Carnation, Lily, Rose).
 
-* [Landing Page](../../content-types/landing-page)
+## Content Types that Support Blog Posts Listing
+
+*   [Landing Page](../../content-types/landing-page)
 
 ## Related/Alternative Paragraphs
 
-* Event Posts Listing
-* [Latest Blog Posts/(Camp)/(Branch)](../latest-blog-posts)
-* [Latest News Posts/(Camp)/(Branch)](../latest-news-posts)
-* [News Posts Listing](../news-posts-listing)
+*   Event Posts Listing
+*   [Latest Blog Posts/(Camp)/(Branch)](../latest-blog-posts) - Displays a listing of the *latest* blog posts.
+*   [Latest News Posts/(Camp)/(Branch)](../latest-news-posts)
+*   [News Posts Listing](../news-posts-listing)

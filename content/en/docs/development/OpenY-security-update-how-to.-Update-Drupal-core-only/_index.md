@@ -1,3 +1,4 @@
+```markdown
 ---
 title: SA-CORE-2018-002 security update
 aliases:
@@ -8,158 +9,234 @@ This document is archived but may contain useful information for troubleshooting
 
 ---
 
-To update your OpenY site with security fix from Drupal core https://www.drupal.org/sa-core-2018-002
-OpenY team is suggesting 2 options- via patch and via Drupal core upgrade(or OpenY upgrade).
-Drupal core upgrade or OpenY upgrade is not always possible, but security issue should be fixed asap.
-So consider to apply patch and plan OpenY upgrade later.
+To update your OpenY site with the security fix from Drupal core [SA-CORE-2018-002](https://www.drupal.org/sa-core-2018-002), the OpenY team suggests two options: applying a patch or upgrading Drupal core (or upgrading OpenY). While a Drupal core or OpenY upgrade isn't always immediately feasible, security issues should be addressed as soon as possible. Therefore, consider applying the patch and planning an OpenY upgrade for later.
 
-### How to apply patch
+### How to Apply the Patch
 
-### Patching OpenY releases 8.0.1 - 8.1.0 (Drupal core 8.2.x)
+Before you begin, it is crucial to identify the OpenY release version you are using. This will determine the correct patch to apply. You can find your OpenY version in the `openy.info.yml` file located in the root of your OpenY installation (e.g., `/docroot/profiles/contrib/yusaopeny/openy.info.yml`). The `version` key in that file indicates your OpenY version.
 
-For patching your very old OpenY release it is highly recommended to upgrade OpenY to latest version or at least to one of the 8.1.1-8.1.6 (Drupal core 8.3.x) with Drupal core upgrade to 8.3.9 https://www.drupal.org/project/drupal/releases/8.3.9 . In case if it is not possible right now, follow steps below:
-* Login to your production server environment via SSH and find ```docroot``` folder of your site codebase. If you installed OpenY by following a tutorial - you should:
-```sh
-ssh -l root YOUR_SERVER_DOMAIN_NAME
-cd /var/www/html
-wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/8.2.x.patch
-```
-Now you are ready to patch your site. But before patching - make a backup of the file which is about to be patched
-```sh
-cp docroot/core/lib/Drupal/Core/DrupalKernel.php /var/backups/DrupalKernel.php
-```
-To patch your site run the command to test if the patch can be applied:
-```sh
-patch -p1 --dry-run < 8.2.x.patch
-```
-You should see a result
-```sh
-# patch -p1 --dry-run < 8.2.x.patch
-checking file docroot/core/lib/Drupal/Core/DrupalKernel.php
-checking file docroot/core/lib/Drupal/Core/Security/RequestSanitizer.php
-```
-In case if result different - stop on this step and let us know you have issue.
-In case if all good proceed with a command below, which will patch your site:
-```sh
-patch -p1 < 8.2.x.patch
-```
-You should see the same output as previously, but now your site is patched.
+### Patching OpenY Releases 8.0.1 - 8.1.0 (Drupal core 8.2.x)
 
-TIP: In case if you are using git repository for your site run
+For older OpenY releases, it's highly recommended to upgrade to the latest version of OpenY or at least to a version between 8.1.1 and 8.1.6 (Drupal core 8.3.x) and then upgrade Drupal core to 8.3.9 ([Drupal 8.3.9 Release Notes](https://www.drupal.org/project/drupal/releases/8.3.9)). If an immediate upgrade isn't possible, follow these steps:
+
+1.  **Log in to your production server:** Access your server environment via SSH and locate the `docroot` folder of your site's codebase. If you followed an OpenY installation tutorial, you should:
+
+    ```sh
+    ssh -l root YOUR_SERVER_DOMAIN_NAME
+    cd /var/www/html
+    wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/8.2.x.patch
+    ```
+
+2.  **Back up the file to be patched:** Before applying the patch, create a backup of `DrupalKernel.php`:
+
+    ```sh
+    cp docroot/core/lib/Drupal/Core/DrupalKernel.php /var/backups/DrupalKernel.php
+    ```
+
+3.  **Test the patch:** Run the following command to check if the patch can be applied successfully:
+
+    ```sh
+    patch -p1 --dry-run < 8.2.x.patch
+    ```
+
+    You should see the following output:
+
+    ```sh
+    # patch -p1 --dry-run < 8.2.x.patch
+    checking file docroot/core/lib/Drupal/Core/DrupalKernel.php
+    checking file docroot/core/lib/Drupal/Core/Security/RequestSanitizer.php
+    ```
+
+    If the output differs, stop and seek assistance.
+
+4.  **Apply the patch:** If the dry run was successful, apply the patch with the following command:
+
+    ```sh
+    patch -p1 < 8.2.x.patch
+    ```
+
+    You should see the same output as the dry run, indicating that your site is now patched.
+
+    If the patch fails with an error message like "Hunk #1 FAILED at 123", this means the file has been modified since the patch was created. You will need to manually resolve the conflicts or revert to a clean version of the file before applying the patch.
+
+    Common causes for patch failures include:
+
+    *   The file has been previously patched with a different patch.
+    *   The file has been customized or modified.
+    *   The patch is for a different version of Drupal core.
+
+    If you encounter issues, consult the Drupal documentation on patching or seek assistance from the OpenY community.
+
+    After successfully applying the patch, clear the Drupal cache to ensure the changes take effect:
+
+    ```sh
+    drush cr
+    ```
+
+**Tip:** If you're using a Git repository for your site, run the following commands to commit and push the patched core:
+
 ```sh
-git add docroot/core/lib/Drupal/Core/DrupalKernel.php docroot/core/lib/Drupal/Core/Security && git commit -m "Patching OpenY core" && git push
+git add docroot/core/lib/Drupal/Core/DrupalKernel.php docroot/core/lib/Drupal/Core/Security/RequestSanitizer.php && git commit -m "Patching OpenY core" && git push
 ```
+
+This will store the patched core in your repository.
+
+### Patching OpenY Releases 8.1.1 - 8.1.6 (Drupal core 8.3.x)
+
+For these OpenY releases, upgrading to the latest version or at least to one of the 8.1.7-8.1.10 releases (Drupal core 8.4.x) with a Drupal core upgrade to 8.4.6 ([Drupal 8.4.6 Release Notes](https://www.drupal.org/project/drupal/releases/8.4.6)) is highly recommended. If that is not currently possible, follow these steps:
+
+1.  **Log in to your production server:** Access your server environment via SSH and locate the `docroot` folder of your site's codebase. If you followed an OpenY installation tutorial, you should:
+
+    ```sh
+    ssh -l root YOUR_SERVER_DOMAIN_NAME
+    cd /var/www/html
+    wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/8.3.x.patch
+    ```
+
+2.  **Back up the file to be patched:** Before applying the patch, create a backup of `DrupalKernel.php`:
+
+    ```sh
+    cp docroot/core/lib/Drupal/Core/DrupalKernel.php /var/backups/DrupalKernel.php
+    ```
+
+3.  **Test the patch:** Run the following command to check if the patch can be applied successfully:
+
+    ```sh
+    patch -p1 --dry-run < 8.3.x.patch
+    ```
+
+    You should see the following output:
+
+    ```sh
+    # patch -p1 --dry-run < 8.3.x.patch
+    checking file docroot/core/lib/Drupal/Core/DrupalKernel.php
+    checking file docroot/core/lib/Drupal/Core/Security/RequestSanitizer.php
+    ```
+
+    If the output differs, stop and seek assistance.
+
+4.  **Apply the patch:** If the dry run was successful, apply the patch with the following command:
+
+    ```sh
+    patch -p1 < 8.3.x.patch
+    ```
+
+    You should see the same output as previously, indicating that your site is now patched.
+
+    After successfully applying the patch, clear the Drupal cache to ensure the changes take effect:
+
+    ```sh
+    drush cr
+    ```
+
+**Tip:** If you're using a Git repository for your site, run:
+
+```sh
+git add docroot/core/lib/Drupal/Core/DrupalKernel.php docroot/core/lib/Drupal/Core/Security/RequestSanitizer.php && git commit -m "Patching OpenY core" && git push
+```
+
 to store your patched core into your own repository.
 
-### Patching OpenY releases 8.1.1 - 8.1.6 (Drupal core 8.3.x)
+### Patching OpenY Releases 8.1.7 - 8.1.9 (Drupal core 8.4.x)
 
-For patching your relatively old OpenY release it is highly recommended to upgrade OpenY to latest version or at least to one of the 8.1.7-8.1.10 (Drupal core 8.4.x) with Drupal core upgrade to 8.4.6 https://www.drupal.org/project/drupal/releases/8.4.6 . In case if it is not possible right now, follow steps below:
-* Login to your production server environment via SSH and find ```docroot``` folder of your site codebase. If you installed OpenY by following a tutorial - you should:
-```sh
-ssh -l root YOUR_SERVER_DOMAIN_NAME
-cd /var/www/html
-wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/8.3.x.patch
-```
-Now you are ready to patch your site. But before patching - make a backup of the file which is about to be patched
-```sh
-cp docroot/core/lib/Drupal/Core/DrupalKernel.php /var/backups/DrupalKernel.php
-```
-To patch your site run the command to test if the patch can be applied:
-```sh
-patch -p1 --dry-run < 8.3.x.patch
-```
-You should see a result
-```sh
-# patch -p1 --dry-run < 8.3.x.patch
-checking file docroot/core/lib/Drupal/Core/DrupalKernel.php
-checking file docroot/core/lib/Drupal/Core/Security/RequestSanitizer.php
-```
-In case if result different - stop on this step and let us know you have issue.
-In case if all good proceed with a command below, which will patch your site:
-```sh
-patch -p1 < 8.3.x.patch
-```
-You should see the same output as previously, but now your site is patched.
+For these OpenY releases, it is highly recommended to upgrade to the latest version (8.1.10 or later) or at least to version 8.1.10 (Drupal core 8.4.x) with a Drupal core upgrade to 8.4.6 ([Drupal 8.4.6 Release Notes](https://www.drupal.org/project/drupal/releases/8.4.6)). If that is not currently possible, follow these steps:
 
-TIP: In case if you are using git repository for your site run
-```sh
-git add docroot/core/lib/Drupal/Core/DrupalKernel.php docroot/core/lib/Drupal/Core/Security && git commit -m "Patching OpenY core" && git push
-```
-to store your patched core into your own repository.
+1.  **Log in to your production server:** Access your server environment via SSH and locate the `docroot` folder of your site's codebase. If you followed an OpenY installation tutorial, you should:
 
-### Patching OpenY releases 8.1.7 - 8.1.9 (Drupal core 8.4.x)
+    ```sh
+    ssh -l root YOUR_SERVER_DOMAIN_NAME
+    cd /var/www/html
+    wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/8.4.x.patch
+    ```
 
-For patching your OpenY release it is highly recommended to upgrade OpenY to latest version (8.1.10 or never) or at least to one of the 8.1.10 (Drupal core 8.4.x) with Drupal core upgrade to 8.4.6 https://www.drupal.org/project/drupal/releases/8.4.6 . In case if it is not possible right now, follow steps below:
-* Login to your production server environment via SSH and find ```docroot``` folder of your site codebase. If you installed OpenY by following a tutorial - you should:
-```sh
-ssh -l root YOUR_SERVER_DOMAIN_NAME
-cd /var/www/html
-wget https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/8.4.x.patch
-```
-Now you are ready to patch your site. But before patching - make a backup of the file which is about to be patched
-```sh
-cp docroot/core/lib/Drupal/Core/DrupalKernel.php /var/backups/DrupalKernel.php
-```
-To patch your site run the command to test if the patch can be applied:
-```sh
-patch -p1 --dry-run < 8.4.x.patch
-```
-You should see a result
-```sh
-# patch -p1 --dry-run < 8.4.x.patch
-checking file docroot/core/lib/Drupal/Core/DrupalKernel.php
-checking file docroot/core/lib/Drupal/Core/Security/RequestSanitizer.php
-```
-In case if result different - stop on this step and let us know you have issue.
-In case if all good proceed with a command below, which will patch your site:
-```sh
-patch -p1 < 8.4.x.patch
-```
-You should see the same output as previously, but now your site is patched.
+2.  **Back up the file to be patched:** Before applying the patch, create a backup of `DrupalKernel.php`:
 
-TIP: In case if you are using git repository for your site run
+    ```sh
+    cp docroot/core/lib/Drupal/Core/DrupalKernel.php /var/backups/DrupalKernel.php
+    ```
+
+3.  **Test the patch:** Run the following command to check if the patch can be applied successfully:
+
+    ```sh
+    patch -p1 --dry-run < 8.4.x.patch
+    ```
+
+    You should see the following output:
+
+    ```sh
+    # patch -p1 --dry-run < 8.4.x.patch
+    checking file docroot/core/lib/Drupal/Core/DrupalKernel.php
+    checking file docroot/core/lib/Drupal/Core/Security/RequestSanitizer.php
+    ```
+
+    If the output differs, stop and seek assistance.
+
+4.  **Apply the patch:** If the dry run was successful, apply the patch with the following command:
+
+    ```sh
+    patch -p1 < 8.4.x.patch
+    ```
+
+    You should see the same output as previously, indicating that your site is now patched.
+
+    After successfully applying the patch, clear the Drupal cache to ensure the changes take effect:
+
+    ```sh
+    drush cr
+    ```
+
+**Tip:** If you're using a Git repository for your site, run:
+
 ```sh
-git add docroot/core/lib/Drupal/Core/DrupalKernel.php docroot/core/lib/Drupal/Core/Security && git commit -m "Patching OpenY core" && git push
+git add docroot/core/lib/Drupal/Core/DrupalKernel.php docroot/core/lib/Drupal/Core/Security/RequestSanitizer.php && git commit -m "Patching OpenY core" && git push
 ```
+
 to store your patched core into your own repository.
 
 ==========================
 
-### How to patch your Digitalocean OpenY install
+### How to Patch Your DigitalOcean OpenY Install
 
-In case if you have followed tutorial you should have your OPenY installed on you DigitalOcean server(droplet) in a predictable for current document folder. That's why we prepared a short how to patch your OpenY site in a most simple way if you are not a Tech Guru, but just a user
-1. Log in as an admin user to your site admin UI by visiting ```/user/login``` URI page.
-2. Go to ```/admin/reports/status``` after login and search for Drupal Version string. It should be something like 8.2.x, 8.3.x or 8.4.x (x - some number too, like 8.4.2, for example). Based on your finding follow the steps below to your version
-3. Login to your ВigitalOcean cloud console at digitalocean.com and find Access Console in the dropdown for the droplet you are using for the OpenY ![image](https://user-images.githubusercontent.com/563412/38104705-b2ebf8fe-3392-11e8-8c27-55db3ed032ff.png)
-4. You should see a popup window with a black screen where console asks you for the login. Use ```root``` user and a password generated for you upon droplet creation.
-5. After login to a console run the command below, respectively to the version of your Drupal core.
+If you followed a tutorial to install OpenY on DigitalOcean, your OpenY installation should be located in a predictable folder. This section provides a simplified method for patching your OpenY site, designed for users who are not technical experts.
 
-### One line script to patch 8.2.x Drupal core for OpenY
+1.  **Log in to your site:** Log in to your site's administrative interface as an administrator by visiting the `/user/login` URL.
 
-Type manually exact line
+2.  **Check Drupal Version:** Go to `/admin/reports/status` after login and search for Drupal Version string. It should be something like `8.2.x`, `8.3.x` or `8.4.x` (`x` - some number too, like `8.4.2`, for example). Based on your finding follow the steps below to your version
+
+3.  **Access the DigitalOcean Console:** Log in to your DigitalOcean cloud console at digitalocean.com and find "Access Console" in the dropdown menu for the droplet you're using for OpenY.
+
+    ![DigitalOcean Access Console](https://user-images.githubusercontent.com/563412/38104705-b2ebf8fe-3392-11e8-8c27-55db3ed032ff.png)
+
+4.  **Log in to the Console:** A popup window with a black screen will appear, prompting you for login credentials. Use `root` as the username and the password generated for you when the droplet was created.
+
+5.  **Run the Patch Script:** After logging in to the console, run the command corresponding to your Drupal core version.
+
+### One-Line Script to Patch 8.2.x Drupal Core for OpenY
+
+Type the following line manually and press Enter:
 
 ```sh
 bash < <(curl -s https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/run8.2.x.sh)
 ```
-and hit Enter.
-You should see ```OpenY was patched``` message.
 
-### One line script to patch 8.3.x Drupal core for OpenY
+You should see the message `OpenY was patched`.
 
-Type manually exact line
+### One-Line Script to Patch 8.3.x Drupal Core for OpenY
+
+Type the following line manually and press Enter:
 
 ```sh
 bash < <(curl -s https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/run8.3.x.sh)
 ```
-and hit Enter.
-You should see ```OpenY was patched``` message.
 
-### One line script to patch 8.4.x Drupal core for OpenY
+You should see the message `OpenY was patched`.
 
-Type manually exact line
+### One-Line Script to Patch 8.4.x Drupal Core for OpenY
+
+Type the following line manually and press Enter:
 
 ```sh
 bash < <(curl -s https://raw.githubusercontent.com/YCloudYUSA/yusaopeny-project/8.1.x/scripts/patches/run8.2.x.sh)
 ```
-and hit Enter.
-You should see ```OpenY was patched``` message.
+
+You should see the message `OpenY was patched`.

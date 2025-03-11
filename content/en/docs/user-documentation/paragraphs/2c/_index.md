@@ -1,6 +1,6 @@
 ---
 title: 2 Columns
-description: Add two equal-width, reusable blocks of content, side-by-side. The left side stacks on top of the right side for mobile. 
+description: Add two equal-width, reusable blocks of content, side-by-side. The left side stacks on top of the right side for mobile. In the Lily theme, the left column is 8 units wide and the right column is 4 units wide.
 ---
 
 ## Examples
@@ -21,15 +21,15 @@ description: Add two equal-width, reusable blocks of content, side-by-side. The 
 
 ## Areas it Can Be Used
 
-* Content Area
-* Bottom Area
+*   Content Area
+*   Bottom Area
 
 ---
 
 ## How it Works
 
-* Select "Two Columns" from the paragraphs dropdown.
-* Insert a custom block into the Left and Right Column
+*   Select "Two Columns" from the paragraphs dropdown.
+*   Insert a custom block into the Left and Right Column.
 
 [Learn more about custom blocks ⇒](../../blocks)
 
@@ -51,12 +51,12 @@ If you want to add multiple rows of content with 2 columns, add a new 2 columns 
 
 ## Content Types That Support this Paragraph
 
-* [Landing Page](../../content-types/landing-page)
-* [Branch (Not Supported in Carnation)](../../content-types/branch)
-* [Camp](../../content-types/camp)
-* Facility
-* [Program](../../content-types/program)
-* [Program Subcategory](../../content-types/program-subcategory)
-* [Blog Post](../../content-types/blog-post)
-* Event
-* [News Post](../../content-types/news-post)
+*   [Landing Page](../../content-types/landing-page)
+*   [Branch (Not Supported in Carnation)](../../content-types/branch)
+*   [Camp](../../content-types/camp)
+*   Facility
+*   [Program](../../content-types/program)
+*   [Program Subcategory](../../content-types/program-subcategory)
+*   [Blog Post](../../content-types/blog-post)
+*   Event
+*   [News Post](../../content-types/news-post)

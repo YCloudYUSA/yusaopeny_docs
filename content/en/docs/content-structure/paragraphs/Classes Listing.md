@@ -1,11 +1,13 @@
+```markdown
 ---
 title: Classes Listing
-description: "and classes listing filters"
+description: "Displays published classes and provides filtering options."
 ---
 
-Classes Listing - should display all published classes grouped by activity.
+The **Classes Listing** paragraph displays all published classes, grouped by activity.
 
-Classes Listing Filters - this paragraph should disply filter form for "Classes Listing" with following fields:
+The **Classes Listing Filters** provide a filter form with the following fields:
+
 - Location
 - Program
 - Sub-program
@@ -14,54 +16,64 @@ Classes Listing Filters - this paragraph should disply filter form for "Classes 
 Relates to [Branches Popup (All)](Branches Popup (All).md).
 
 ### Fields
+
 | Name  | Machine name | Required | Description |
 | ------------- | ------------- | ------------- | ------------- |
-| Block | field\_prgf_block | Yes | Block reference to the view/block. Should have default value and should be hidden in form display. |
+| Block | `field_prgf_block` | Yes | Block reference to the view/block.  A default value should be set, and this field should be hidden in the form display. |
 
-### Use cases
-*Use case 1: Classes Listing paragraph on a Program subcategory page WITHOUT location popup paragraph*
-1.1 Preferred branch is selected and no location in URL
-- When I open Program subcategory page with Classes Listing WITHOUT location popup on page
-- And I have a preferred branch
-- And I don't have location=% in the URL
-- Filter by location should be predefined based on cookie
-- Results should be filtered
+### Use Cases
 
-1.2 Preferred branch is empty and no location in URL
-- When I open Program subcategory page with Classes Listing WITHOUT location popup on page
-- And I don't have a preferred branch
-- And I don't have location=% in the URL
-- Filter by location should show "All"
-- Results should be shown for all branches
+#### Use case 1: Classes Listing paragraph on a Program subcategory page **WITHOUT** location popup paragraph
 
-1.3 Location in specified URL
-- When I open Program subcategory page with Classes Listing WITHOUT location popup on page
-- And I have location=% in the URL
-- We skip cookie whether is empty or exist
-- Filter by location should show branch from URL
-- Results should be filtered
+**1.1 Preferred branch is selected and no location in URL**
 
-*Use case 2: Classes Listing paragraph on a Program subcategory page WITH location popup*
-2.1 Preferred branch is selected and no location in URL
-- When I open Program subcategory page with Classes Listing WITH location popup on page
-- And I have a preferred branch
-- And I don't have location=% in the URL
-- Location popup shouldn't be shown
-- Filter by location should be predefined based on cookie
-- Results should be filtered
+*   When I open a Program subcategory page with the Classes Listing paragraph **WITHOUT** a location popup on the page.
+*   And I have a preferred branch set (via cookie).
+*   And I don't have `location=%` in the URL.
+*   Then the filter by location should be pre-defined based on the cookie value.
+*   And the results should be filtered accordingly.
 
-2.2 Preferred branch is empty and no location in URL
-- When I open Program subcategory page with Classes Listing WITH location popup on page
-- And I don't have a preferred branch
-- And I don't have location=% in the URL
-- Filter by location should show "All"
-- Results should be shown for all branches
-- Location popup should be shown
+**1.2 Preferred branch is empty and no location in URL**
 
-2.3 Location in specified URL
-- When I open Program subcategory page with Classes Listing WITH location popup on page
-- And I have location=% in the URL
-- We skip cookie whether is empty or exist
-- Location popup shouldn't be shown
-- Filter by location should show branch from URL
-- Results should be filtered
+*   When I open a Program subcategory page with the Classes Listing paragraph **WITHOUT** a location popup on the page.
+*   And I don't have a preferred branch set (cookie is empty).
+*   And I don't have `location=%` in the URL.
+*   Then the filter by location should show "All".
+*   And the results should be shown for all branches.
+
+**1.3 Location specified in URL**
+
+*   When I open a Program subcategory page with the Classes Listing paragraph **WITHOUT** a location popup on the page.
+*   And I have `location=%` in the URL.
+*   Then the preferred branch cookie should be ignored, regardless of its value.
+*   And the filter by location should show the branch from the URL.
+*   And the results should be filtered accordingly.
+
+#### Use case 2: Classes Listing paragraph on a Program subcategory page **WITH** location popup
+
+**2.1 Preferred branch is selected and no location in URL**
+
+*   When I open a Program subcategory page with the Classes Listing paragraph **WITH** a location popup on the page.
+*   And I have a preferred branch set (via cookie).
+*   And I don't have `location=%` in the URL.
+*   Then the location popup shouldn't be shown.
+*   And the filter by location should be pre-defined based on the cookie value.
+*   And the results should be filtered accordingly.
+
+**2.2 Preferred branch is empty and no location in URL**
+
+*   When I open a Program subcategory page with the Classes Listing paragraph **WITH** a location popup on the page.
+*   And I don't have a preferred branch set (cookie is empty).
+*   And I don't have `location=%` in the URL.
+*   Then the filter by location should show "All".
+*   And the results should be shown for all branches.
+*   And the location popup should be shown.
+
+**2.3 Location specified in URL**
+
+*   When I open a Program subcategory page with the Classes Listing paragraph **WITH** a location popup on the page.
+*   And I have `location=%` in the URL.
+*   Then the preferred branch cookie should be ignored, regardless of its value.
+*   And the location popup shouldn't be shown.
+*   And the filter by location should show the branch from the URL.
+*   And the results should be filtered accordingly.

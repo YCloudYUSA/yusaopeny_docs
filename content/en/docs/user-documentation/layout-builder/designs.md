@@ -1,30 +1,31 @@
+```markdown
 ---
 title: Designs
 weight: -10
-description: An overview of all custom Layout Builder blocks.
+description: An overview of all custom Layout Builder blocks and their designs.
 ---
 
-The distribution has shipped with two versions of Layout Builder component designs. The first-generation "Pre-release" designs were shipped with version [9.2.12 (December 2022)](https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.12.1) and [9.2.13 (March 2023)](https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.13.0). The revised and feature-complete "Design System" designs shipped with the June 2023 release.
+The distribution has shipped with two generations of Layout Builder component designs. The first-generation "Pre-release" designs were included with versions [9.2.12 (December 2022)](https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.12.1) and [9.2.13 (March 2023)](https://github.com/YCloudYUSA/yusaopeny/releases/tag/9.2.13.0). The refined and feature-complete "Design System" designs were released in June 2023.
 
 ## Design System
 
-Discover our Design System in our [interactive UI kit](/ui-kit).
+Explore our Design System through our [interactive UI kit](/ui-kit).
 
 ### Colorways
 
-Based on the YMCA Brand Guide, the distribution contains four "colorways" that allow content editors to apply accessible, brand-compliant styles to all components on a Layout Builder-based page.
+Following the YMCA Brand Guide, the distribution offers four "colorways." Content editors can use these to apply accessible, brand-compliant styles to all components within a Layout Builder-based page.
 
 | Blue                                                                                      | Green                                                                                       | Purple                                                                                        | Red                                                                                     |
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | ![Blue Colorway Design](<../../../../../assets/img/designs/lb-ui-kit/Blue Colourway.jpg>) | ![Green Colorway Design](<../../../../../assets/img/designs/lb-ui-kit/Green Colourway.jpg>) | ![Purple Colorway Design](<../../../../../assets/img/designs/lb-ui-kit/Purple Colourway.jpg>) | ![Red Colorway Design](<../../../../../assets/img/designs/lb-ui-kit/Red Colourway.jpg>) |
 
-### Canadian Colourways
+### Canadian Colorways
 
-See [How to use the Canadian Colorway for Layout Builder](../../../howto/canada).
+Refer to [How to use the Canadian Colorway for Layout Builder](../../../howto/canada) for specific instructions.
 
 ### Content Types
 
-The distribution provides new [Content Types](../../content-types) for use with Layout Builder components.
+The distribution offers new [Content Types](../../content-types) designed for use with Layout Builder components.
 
 | [Article](../../content-types/lb-article)                                                    | [Branch](../../content-types/branch)                                                    | [Camp](../../content-types/camp)                                                       | [Event](../../content-types/lb-event)                                                  |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
@@ -32,7 +33,7 @@ The distribution provides new [Content Types](../../content-types) for use with 
 
 ### Components
 
-Each of these components is available on [Layout Builder](../) pages via the **Create custom block** selector.
+You can access each of these components on [Layout Builder](../) pages via the **Create custom block** selector.
 
 | Component                | Design                                                                                                         |
 |--------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -50,7 +51,7 @@ Each of these components is available on [Layout Builder](../) pages via the **C
 | Card                     | ![Card Design](<../../../../../assets/img/designs/lb-ui-kit/Card.jpg>)                                         |
 | Card - Column Variations | ![Card - Column Variations Design](<../../../../../assets/img/designs/lb-ui-kit/Card - Column Variations.jpg>) |
 | Carousel                 | ![Carousel Design](<../../../../../assets/img/designs/lb-ui-kit/Carousel.jpg>)                                 |
-| Donate                   | ![Donate Design](<../../../../../assets/img/designs/lb-ui-kit/Donate.jpg>)                                     |                                     |
+| Donate                   | ![Donate Design](<../../../../../assets/img/designs/lb-ui-kit/Donate.jpg>)                                     |
 | Event List               | ![Event List Design](<../../../../../assets/img/designs/lb-ui-kit/Event List.jpg>)                             |
 | Forms                    | ![Forms Design](<../../../../../assets/img/designs/lb-ui-kit/Forms.jpg>)                                       |
 | Global Footer            | ![Global Footer Design](<../../../../../assets/img/designs/lb-ui-kit/Global Footer.jpg>)                       |
@@ -92,7 +93,6 @@ Each of these components is available on [Layout Builder](../) pages via the **C
 | Event                                | ![Events Mobile Design](<../../../../../assets/img/designs/lb/Events Mobile.png>)                           | ![Event Desktop Design](<../../../../../assets/img/designs/lb/Event Desktop.png>)                             |
 | Grid Content                         | ![Grid Content Mobile Design](<../../../../../assets/img/designs/lb/Grid Content Mobile.png>)               | ![Grid Content Desktop Design](<../../../../../assets/img/designs/lb/Grid Content Desktop.png>)               |
 | Hero Banner                          | ![Hero Banner Mobile Design](<../../../../../assets/img/designs/lb/Hero Banner Mobile.png>)                 | ![Hero Banner Desktop Design](<../../../../../assets/img/designs/lb/Hero Banner Desktop.png>)                 |
-| Modals                               | ![Modals Mobile Design](<../../../../../assets/img/designs/lb/Modals Mobile.png>)                           | ![Modals Desktop Design](<../../../../../assets/img/designs/lb/Modals Desktop.png>)                           |
 | Modals                               | ![Modals Mobile Design](<../../../../../assets/img/designs/lb/Modals Mobile.png>)                           | ![Modals Desktop Design](<../../../../../assets/img/designs/lb/Modals Desktop.png>)                           |
 | Partners (/Sponsors)                 | ![Sponsors Mobile Design](<../../../../../assets/img/designs/lb/Sponsors Mobile.png>)                       | ![Sponsors Desktop Design](<../../../../../assets/img/designs/lb/Sponsors Desktop.png>)                       |
 | Ping Pong                            | ![Ping Pong Mobile Design](<../../../../../assets/img/designs/lb/Ping Pong Mobile.png>)                     | ![Ping Pong Desktop Design](<../../../../../assets/img/designs/lb/Ping Pong Desktop.png>)                     |

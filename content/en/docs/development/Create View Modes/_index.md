@@ -2,33 +2,38 @@
 title: Create & Use New View Modes
 ---
 
-As with any other entity in Drupal, when it comes to render the rendering it in different contexts, you might want to have specific view modes.
+As with any other entity in Drupal, when rendering it in different contexts, you might want to have specific view modes.
 
-Here you can find instructions how you can add new view modes into embedded entity form on YMCA Website Services distribution.
+Here you can find instructions on how to add new view modes into the embedded entity form on the YMCA Website Services distribution.
 
-### Create a new View Mode
+### Create a New View Mode
 
-1. Go to 'View modes' page: Structure -> Display modes -> View modes (or visit the URL: `/admin/structure/display-modes/view`
-![Configuration project add/update form](../../assets/view_mode_in_menu.png)
+1.  Go to the 'View modes' page: **Structure** \> **Display modes** \> **View modes** (or visit the URL: `/admin/structure/display-modes/view`).
 
-![Configuration project add/update form](../../assets/view_mode_types.png)
+    ![View Modes in Menu](../../assets/view_mode_in_menu.png)
 
-2. Create new view mode: click 'Add view mode' button and select entity type (or visit the URL: `/admin/structure/display-modes/view/add`
+    ![View Mode Types](../../assets/view_mode_types.png)
 
-![Configuration project add/update form](../../assets/view_mode_firt_way_to_create.png)
+2.  Create a new view mode: click the 'Add view mode' button and select an entity type (or visit the URL: `/admin/structure/display-modes/view/add`).
 
-or after each entity type you can see 'Add new {Name} view mode' and click on it
-![Configuration project add/update form](../../assets/view_mode_seond_way.png)
+    ![Add View Mode - First Way](../../assets/view_mode_firt_way_to_create.png)
 
-3. Select "Media" and then give a name to your new view mode (or visit the URL: /`admin/structure/display-modes/view/add/media`
-![Configuration project add/update form](../../assets/view_mode_creating.png)
+    Alternatively, after each entity type, you can see 'Add new {Name} view mode' and click on it.
+
+    ![Add View Mode - Second Way](../../assets/view_mode_seond_way.png)
+
+3. Select "Media" and then give a name to your new view mode (or visit the URL: `/admin/structure/display-modes/view/add/media`).
+
+    ![Creating View Mode](../../assets/view_mode_creating.png)
 
 ### Use the View Mode
 
-1. Go to Configuration -> Text editor embed buttons (or visit the URL: `/admin/config/content/embed`
-![Configuration project add/update form](../../assets/view_mode_using.png)
+1.  Go to **Configuration** \> **Text editor embed buttons** (or visit the URL: `/admin/config/content/embed`).
 
-![Configuration project add/update form](../../assets/view_mode_using_list.png)
+    ![Using View Mode](../../assets/view_mode_using.png)
 
-2. Then make sure you enable the new view mode in "Allowed Entity Embed Display plugins", and at the bottom of the page click "Save".
-![Configuration project add/update form](../../assets/view_mode_enable.png)
+    ![View Mode Using List](../../assets/view_mode_using_list.png)
+
+2.  Ensure you enable the new view mode in "Allowed Entity Embed Display plugins" and click "Save" at the bottom of the page.
+
+    ![Enable View Mode](../../assets/view_mode_enable.png)

@@ -1,13 +1,23 @@
+```markdown
 # YMCA Website Services Docs
 
-This repository stores documentation of the YMCA Website Services ecosystem that could be [read here](https://ds-docs.y.org/)
+This repository stores documentation of the YMCA Website Services ecosystem. You can view the documentation [here](https://ds-docs.y.org/).
 
-[Docsy][] is a [Hugo theme module][] for technical documentation sites, providing easy
-site navigation, structure, and more. This **YMCA Website Services Docs Project** uses the
-Docsy theme to serve documentation for the [YMCA Website Services](https://ds.ymca.org/) distribution.
+[Docsy][] is a [Hugo theme module][] for technical documentation sites, providing easy site navigation, structure, and more. This **YMCA Website Services Docs Project** uses the Docsy theme to serve documentation for the [YMCA Website Services](https://ds.ymca.org/) distribution.
 
 You can find detailed theme instructions in the [Docsy user guide][].
 
+## Contributing
+
+We welcome contributions to improve our documentation. If you find inaccuracies, have suggestions, or want to add new content, please follow these steps:
+
+1.  **Create an Issue:** If you've found a problem but aren't sure how to fix it, create an issue in the [yusaopeny_docs repo](https://github.com/YCloudYUSA/yusaopeny_docs/issues). For page-specific issues, click the **Create Issue** button in the top right corner.
+
+2.  **Fork the Repository:** If you're ready to make changes, fork the [yusaopeny_docs](https://github.com/YCloudYUSA/yusaopeny_docs) repository.
+
+3.  **Edit the Documentation:** Make your changes in your forked repository. Refer to the [Documentation Tips & Tricks](/docs/contribution-guidelines/docs-tips/) for guidance on formatting, styles, and shortcodes.
+
+4.  **Submit a Pull Request:** Once you're satisfied with your changes, submit a pull request to the main repository.
 
 ## Working with this repo
 
@@ -17,13 +27,12 @@ To contribute to this repo:
 
 OR (the old-fashioned way)...
 
-1. Fork this repo if you're not a maintainer.
+1.  Fork this repo if you're not a maintainer.
+2.  Clone the repo, being sure to include the submodules:
 
-2. Clone the repo, being sure to include the submodules:
-
-```bash
-git clone https://github.com/YCloudYUSA/yusaopeny_docs.git
-```
+    ```bash
+    git clone https://github.com/YCloudYUSA/yusaopeny_docs.git
+    ```
 
 You can now edit your own versions of the site’s source files.
 
@@ -45,35 +54,51 @@ Once you've made your working copy of the site repo, from the repo root folder, 
 hugo server
 ```
 
+By default, your site will be available at `http://localhost:1313/`. Hugo will watch for changes to the content and automatically refresh your site.
+
+**Common Hugo Server Options:**
+
+Hugo has a number of flags you can use to change local server behavior:
+
+*   `--tlsAuto`: Generate and use locally-trusted certificates to run the site over `https`.
+*   `--buildDrafts`: Include content marked as draft.
+*   `--buildFuture`: Include content with publishdate in the future.
+
+Example:
+
+```shell
+hugo serve --tlsAuto --buildDrafts --buildFuture
+```
+
 ## Running a container locally
 
-You can run openy_docs inside a [Docker](https://docs.docker.com/)
-container, the container runs with a volume bound to the `openy_docs`
+You can run `openy_docs` inside a [Docker](https://docs.docker.com/)
+container. The container runs with a volume bound to the `openy_docs`
 folder. This approach doesn't require you to install any dependencies other
 than [Docker Desktop](https://www.docker.com/products/docker-desktop) on
 Windows and Mac, and [Docker Compose](https://docs.docker.com/compose/install/)
 on Linux.
 
-1. Build the docker image
+1.  Build the docker image
 
-   ```bash
-   docker-compose build
-   ```
+    ```bash
+    docker-compose build
+    ```
 
-1. Run the built image
+2.  Run the built image
 
-   ```bash
-   docker-compose up
-   ```
+    ```bash
+    docker-compose up
+    ```
 
-   > NOTE: You can run both commands at once with `docker-compose up --build`.
+    > NOTE: You can run both commands at once with `docker-compose up --build`.
 
-1. Verify that the service is working.
+3.  Verify that the service is working.
 
-   Open your web browser and type `http://localhost:1313` in your navigation bar,
-   This opens a local instance of the openy_docs homepage. You can now make
-   changes to the YMCA Website Services Docs and those changes will immediately show up in your
-   browser after you save.
+    Open your web browser and type `http://localhost:1313` in your navigation bar.
+    This opens a local instance of the `openy_docs` homepage. You can now make
+    changes to the YMCA Website Services Docs and those changes will immediately show up in your
+    browser after you save.
 
 ### Cleanup
 
@@ -84,6 +109,7 @@ To remove the produced images run:
 ```console
 docker-compose rm
 ```
+
 For more information see the [Docker Compose
 documentation](https://docs.docker.com/compose/gettingstarted/).
 
@@ -120,3 +146,4 @@ See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/instal
 [example.docsy.dev]: https://example.docsy.dev
 [Hugo theme module]: https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
 [Netlify]: https://netlify.com
+```

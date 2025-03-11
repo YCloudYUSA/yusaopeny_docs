@@ -2,13 +2,22 @@
 title: Composer
 ---
 
-Please always make sure `composer.lock` file is updated after any changes in `composer.json` file.
-You can use `composer update` command to update any package, in this case composer will take care about updating of `composer.lock` file.
+It's crucial to keep your `composer.lock` file synchronized with your `composer.json` file. Here's how:
 
-```
-composer update drupal/metatag
-```
+*   **After any changes to `composer.json`**: Ensure you update the `composer.lock` file.
 
-Also you can use `composer update --lock` command to force updating of `composer.lock` file according to dependencies in `composer.json`.
+*   **Update a specific package:** Use the `composer update` command, which automatically updates the `composer.lock` file.
 
-Please check official composer documentation for details: https://getcomposer.org/doc/01-basic-usage.md
+    ```
+    composer update drupal/metatag
+    ```
+
+*   **Force update the `composer.lock` file:** Use `composer update --lock` to regenerate the `composer.lock` file based on the dependencies defined in `composer.json`. This is useful if you suspect the lock file is out of sync.
+
+    ```
+    composer update --lock
+    ```
+
+For comprehensive information, refer to the official Composer documentation:
+
+[https://getcomposer.org/doc/01-basic-usage.md](https://getcomposer.org/doc/01-basic-usage.md)

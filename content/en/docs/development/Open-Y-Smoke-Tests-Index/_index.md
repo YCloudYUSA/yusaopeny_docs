@@ -4,14 +4,18 @@ aliases:
   - /docs/wiki/open-y-smoke-tests-index/
 ---
 
-## Smoke tests in core and dependencies
+## Smoke Tests Overview
+
+Smoke tests are a type of software testing that verifies the most important functions of a system are working. The purpose is to ensure that the application is stable enough for further testing. The following links provide access to smoke tests for various components of the YMCA Website Services platform.
+
+## Core and Dependencies Smoke Tests
 
 - [YMCA Website Services core tests and dependencies](https://github.com/YCloudYUSA/yusaopeny/blob/9.x-2.x/SMOKE_TESTS.md)
 - [Alert Application](https://github.com/open-y-subprojects/openy_node_alert/blob/main/SMOKE_TESTS.md)
 - [Virtual Y Application](https://github.com/YCloudYUSA/yusaopeny_gated_content/blob/master/SMOKE_TESTS.md)
 - [Activity Finder v3](https://github.com/YCloudYUSA/yusaopeny_activity_finder/blob/4.x/openy_af_vue_app/SMOKE_TESTS.md)
 
-## YMCA Website Services Features
+## YMCA Website Services Features Smoke Tests
 
 - [Location Finder Application](https://github.com/open-y-subprojects/openy_features/blob/main/openy_prgf/modules/openy_prgf_loc_finder/SMOKE_TESTS.md)
 - [Small Banner](https://github.com/open-y-subprojects/openy_features/blob/main/openy_prgf/modules/openy_prgf_small_banner/SMOKE_TESTS.md)

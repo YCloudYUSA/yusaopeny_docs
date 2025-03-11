@@ -1,3 +1,5 @@
+```markdown
 ---
 title: News
 ---
+```

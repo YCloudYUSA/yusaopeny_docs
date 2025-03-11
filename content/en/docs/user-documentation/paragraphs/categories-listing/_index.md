@@ -27,25 +27,25 @@ description: Embed horizontal cards for program subcategories on a programs page
 
 ## Areas It Should Be Used
 
-* Content Area
+*   Content Area
 
 ---
 
 ## How To Use It
 
-* [On a Programs page](../../content-types/program), go to the content area and click to open it.
-* Select Categories listing.
+1.  On a [Programs page](../../content-types/program), go to the content area and click to open it.
+2.  Select **Categories listing**.
 
-![Categories list admin](paragraphs--categories-listing--fields.png)
+    ![Categories list admin](paragraphs--categories-listing--fields.png)
 
-> This paragraph can only used on programs pages that have [subcategories tied to them](../../content-types/program-subcategory). If a program has no subcategories tied to it or if it’s used on another content type, it will not work.
+> This paragraph can only be used on programs pages that have [subcategories tied to them](../../content-types/program-subcategory). If a program has no subcategories tied to it or if it’s used on another content type, it will not work.
 
 [Learn more about programs content type ⇒](../../content-types/program)
 
-[Learn more about programs subcategories content type ⇒](../../content-types/program-subcategory)
+[Learn more about program subcategories content type ⇒](../../content-types/program-subcategory)
 
 ---
 
 ## Content Types that Support Categories Listing
 
-* [Program](../../content-types/program)
+*   [Program](../../content-types/program)

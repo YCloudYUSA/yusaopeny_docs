@@ -1,38 +1,49 @@
+```markdown
 ---
 title: "Add/Edit Video"
 ---
 
 View [a video of this process](https://www.youtube.com/watch?v=wrVbQA25IQU&list=PL_QVggMcFfKbWXjK0wtdCAslI8osKbaga&index=5&t=0s).
 
-- Add a New Video
-  * Open Y Sites: Go to Content. Click the Blue “Add Content” button. Select “Virtual Y Video.”
-  * Standalone Virtual Y sites: Go to Virtual Y -> Videos -> Add Video
-    *  You can also add a new Video from the main Content tab.
+## Adding a New Video
 
-- Add a Title for your video and a description. These will display below the video. 
+There are multiple ways to add a new video, depending on the type of site you're working with:
 
-- Use the Media tab to select your video. Click “Select videos.”
-    * New Videos – The default option. 
-    * Name your video the same as your content. 
-    * Copy and paste your video URL into the Video URL field
-        * This field currently supports Vimeo and YouTube.
-        * You can use the main url in your browser’s site tab. You don’t need any code or special embed URLs.
-    * All other fields (Media Tags, Directory, Revision Log Message, URL Alias) can usually be ignored.
-    * Previously Uploaded Videos – If you’ve uploaded a video before and you’re reusing it, you can go to the “Select Videos” tab and choose the video you wish to embed.
+*   **Y Sites:** Navigate to "Content" and click the blue "Add Content" button. Select "Virtual Y Video."
+*   **Standalone Virtual Y Sites:** Go to "Virtual Y" -> "Videos" -> "Add Video."
+*   **From the Main Content Tab:** You can also add a new video directly from the main "Content" tab.
 
-- Select a Level for your Video if applicable (such as for an on-demand class). 
-    - You can add/edit the default levels by going to Structure -> Taxonomy -> Virtual YMCA Level -> List terms.
+## Video Details
 
-- Type in the Instructor name, if applicable. 
+*   **Title and Description:** Add a title and description for your video. These will be displayed below the video player.
 
-- Choose a category for your video by typing it in and selecting from the dropdown. One category per video.
+## Media Tab
 
-- If your video includes the use of equipment (such as exercise equipment for a workout video), type in the name of your equipment and select from the list. To add another piece of equipment, click “Add another item.”
+*   **Selecting Your Video:** In the "Media" tab, click "Select videos."
+    *   **New Videos (Default):** This option is for uploading new videos.
+        *   **Video Name:** Name your video file the same as your content title for easy identification.
+        *   **Video URL:** Copy and paste your video URL into the "Video URL" field.
+            *   **Supported Platforms:** This field supports Vimeo and YouTube URLs.
+            *   **URL Format:** Use the main URL from your browser's address bar. You do not need embed code or special URLs.
+        *   **Other Fields:** The "Media Tags," "Directory," "Revision Log Message," and "URL Alias" fields can usually be ignored.
+    *   **Previously Uploaded Videos:** If you are reusing a video you've already uploaded, go to the "Select Videos" tab and choose the desired video.
 
-- You can configure the available equipment to choose from by going to Structure -> Taxonomy -> Virtual YMCA Equipment -> List terms.
+## Additional Options
 
-- Add your video’s length in seconds in the “Duration” field.”
+*   **Level (if applicable):** Select a level for your video, such as for an on-demand class.
+    *   **Add/Edit Levels:** You can add or edit the default levels by going to "Structure" -> "Taxonomy" -> "Virtual YMCA Level" -> "List terms."
 
-- To feature your video on the Virtual Y homepage, click the featured box.
+*   **Instructor Name (if applicable):** Type in the instructor's name.
 
-- Click the blue Save button to save the document.
+*   **Category:** Choose a category for your video by typing it in and selecting from the dropdown. Only one category can be assigned per video.
+
+*   **Equipment:** If your video features the use of equipment (e.g., exercise equipment in a workout video), type the name of the equipment and select it from the list. To add multiple items, click "Add another item."
+    *   **Configure Equipment List:** You can configure the available equipment options by going to "Structure" -> "Taxonomy" -> "Virtual YMCA Equipment" -> "List terms."
+
+*   **Duration:** Add your video's length in seconds in the "Duration" field.
+
+*   **Featured Video:** To feature your video on the Virtual Y homepage, click the "featured" checkbox.
+
+## Saving
+
+*   Click the blue "Save" button to save your video.

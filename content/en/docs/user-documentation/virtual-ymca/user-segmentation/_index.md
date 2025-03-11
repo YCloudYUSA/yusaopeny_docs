@@ -1,31 +1,45 @@
+```markdown
 ---
 title: "User Segmentation"
 ---
 
-User segmentation is a feature within Virtual Y that can help you separate your users into different categories. This can allow you to diversify your 2021 membership strategy or break out your Virtual Y content into different categories (fitness, wellness, family enrichment, etc.).
+User segmentation is a feature within Virtual Y that allows you to categorize your users. This enables you to:
+
+*   Diversify your membership strategy.
+*   Organize your Virtual Y content into categories such as fitness, wellness, and family enrichment.
 
 ## Set Up User Segmentation
 
-1. On your Drupal toolbar, hover over Virtual Y, and click Virtual YMCA Settings. 
-2. Click over to the tab labeled AUTH settings. You will see a list of authentication method options. If you do not see the desired authentication method, you will have to install it from the Extend menu.
-![A screenshot of the the Virtual Y settings tabs with "AUTH Settings" highlighted](./segmentation-auth-settings.png) 
-3. Click Edit on the desired authentication method you will be using. User segmentation will be set up in the field labeled Permissions Mapping at the top of this page.
-4. Within the membership field, carefully type in or paste the name of a membership type in your CRM that should be allowed to access Virtual Y. Then, in the dropdown, select what level of access should be granted to users with that membership type. ![A screenshot of the "Permissions Mapping" dialog](./segmentation-permission-mapping.png) 
-5. Continue adding all accepted membership types by clicking the Add one more button until all accepted membership types are listed.
-6. **If you want to remove a membership type:** Delete the membership name from the field and select None as the Virtual Y role. Then, scroll to the bottom of the page and click the blue Save button. The empty line should disappear from your mapping list. 
+1.  In your Drupal toolbar, hover over **Virtual Y** and click **Virtual YMCA Settings**.
+2.  Click the **AUTH Settings** tab. A list of authentication method options appears. If your desired authentication method isn't listed, install it from the **Extend** menu.
+
+    ![A screenshot of the the Virtual Y settings tabs with "AUTH Settings" highlighted](./segmentation-auth-settings.png)
+
+3.  Click **Edit** on the authentication method you want to use. User segmentation settings are located in the **Permissions Mapping** field at the top of the page.
+4.  In the membership field, carefully type or paste the name of a membership type from your CRM that you want to grant access to Virtual Y. Then, use the dropdown to select the appropriate access level for users with that membership type.
+
+    ![A screenshot of the "Permissions Mapping" dialog](./segmentation-permission-mapping.png)
+
+5.  To add more membership types, click the **Add one more** button until all desired membership types are listed.
+6.  **To remove a membership type:** Delete the membership name from the field and select **None** as the Virtual Y role. Then, scroll to the bottom of the page and click the blue **Save** button. The empty line should then disappear from your mapping list.
 
 ## Add a New Role
 
-You may desire to add additional roles beyond the default 3 that are included in Virtual Y. We recommend including no more than 5 roles, as the level of fragmentation and content management upkeep becomes difficult to sustain beyond that number.
+You might need to add roles beyond the default three included in Virtual Y. While you can, keeping the number of roles to five or fewer is recommended, as managing content and avoiding fragmentation becomes more difficult with more roles.
 
-If you are not familiar with Drupal roles, it is recommended you reach out to your agency partner to help you customize your Virtual Y roles.
+If you're unfamiliar with Drupal roles, consult with your agency partner for help customizing your Virtual Y roles.
 
-1. Click People in the Drupal toolbar
-2. Select the Roles tab at the top of the page
-![A screenshot of the People tabs with Roles highlighted](./segmentation-roles.png) 
-3. Click the Add Role blue button
-4. Enter in your new role name in the field. 
-![A screenshot of the Role Name field](./segmentation-role-name.png) 
+1.  Click **People** in the Drupal toolbar.
+2.  Select the **Roles** tab.
 
-**Note:** the Machine Name for your role must begin with virtual_y_ or else it will not be included in the permissions mapping table. You can achieve this by either naming your official role "Virtual Y [Desired Role Name]" or by clicking the small Edit button link next to the Machine Name and editing the text.
-![A screenshot showing the Role name and Machine-readable name fields](./segmentation-machine-name.png)
+    ![A screenshot of the People tabs with Roles highlighted](./segmentation-roles.png)
+
+3.  Click the blue **Add Role** button.
+4.  Enter the name of your new role in the field.
+
+    ![A screenshot of the Role Name field](./segmentation-role-name.png)
+
+    **Note:** The **Machine Name** for your role must begin with `virtual_y_`, or it won't be included in the permissions mapping table. To ensure this, either name your official role "Virtual Y [Desired Role Name]" or click the small **Edit** button link next to the **Machine Name** and edit the text.
+
+    ![A screenshot showing the Role name and Machine-readable name fields](./segmentation-machine-name.png)
+```

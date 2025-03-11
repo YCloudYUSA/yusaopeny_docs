@@ -7,7 +7,7 @@ tags:
 
 Sometimes called “Group Exercise” or “Group Schedules”, the Repeat Schedules block provides a similar view to Activity Finder, but focused more on recurring, often drop-in classes.
 
-See [Group Schedules](../../schedules/group-schedules) for more details.
+See [Group Schedules](../../schedules/group-schedules) for more details, including available [block configuration options](../../schedules/group-schedules/#block-configuration) and a description of the [front-end display](../../schedules/group-schedules/#front-end).
 
 ## Examples
 

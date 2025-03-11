@@ -11,6 +11,12 @@ See a live example of Activity Finder in [our sandbox site](https://sandbox-carn
 
 ## How it Works
 
+This paragraph type embeds a block. The specific block used determines the functionality and appearance of the Activity Finder. Multiple Activity Finder block types exist, including:
+
+*   **Activity Finder Block:** (deprecated) Original Activity Finder
+*   **Activity Finder Search Block:** (deprecated)
+*   **Activity Finder v4:** Latest Activity Finder, uses Vue.js.
+
 This paragraph type requires an integration into a CRM. See [Program Activity Framework](../../../development/program-event-framework) for a list of existing integrations. Any other CRM will require custom developer work.
 
 How you use these paragraphs will depend on how your Association has structured its program data on the CRM and on how you decide to get people to program results.

@@ -1,70 +1,83 @@
+```markdown
 ---
 title: "Taxonomy, Vocabularies, and Terms"
 weight: 4
 description: >
-  Group pieces of related content together for tagging, filtering, sorting and grouping.
+  Group pieces of related content together for tagging, filtering, sorting, and grouping.
 ---
 
-The Taxonomy feature in YMCA Website Services creates organized lists of categories, which allow you to group content, create folders for Images ([in YMCA Website Services 2.4 and later](https://github.com/ymcatwincities/openy/releases/tag/8.2.4.0)) and create standard options for dropdown fields in your content.
+Taxonomy, in YMCA Website Services, is a system for classifying and organizing website content. It uses organized lists of categories to group content, create folders for Images ([in YMCA Website Services 2.4 and later](https://github.com/ymcatwincities/openy/releases/tag/8.2.4.0)), and create standard options for dropdown fields. Think of it as a way to tag, filter, sort, and group your content.
 
 {{< youtube upFz4WrJ1-Q >}}
 
-Each list is called a *Vocabulary*, while each item in your list is called a *Term*. Terms comprise a Term Name and any additional data/settings for that particular vocabulary (see below in *Vocabularies in YMCA Website Services* for details).
+Each list of categories is called a *Vocabulary*, and each individual category within a vocabulary is called a *Term*.  Terms consist of a Term Name and can include additional data or settings specific to that vocabulary (see *Vocabularies in YMCA Website Services* for details).  Taxonomy terms are an entity type
 
 ## How to Edit Vocabulary Lists
 
-Go to **Structure** > **Taxonomy**. When you find the Vocabulary you want to edit, click *List Terms*.
+1.  Go to **Structure** > **Taxonomy**.
+2.  Find the Vocabulary you want to edit.
+3.  Click *List Terms*.
 
 ![The taxonomy item options](taxonomy--list-terms.png)
 
-You can rearrange your terms by hovering your mouse over the cross icon and dragging them. This will determine the order in which they appear. By default these are alphabetical.
+You can rearrange your terms by hovering your mouse over the cross icon and dragging them. This determines the order in which they appear on your website. By default, terms are displayed alphabetically if no specific order is set.
 
 ![Reordering taxonomy items via drag and drop](taxonomy--reorder.gif)
 
-Moving a term to the right will "nest" it underneath another term, making it a "child" to that term.
+Moving a term to the right will "nest" it underneath another term, creating a parent-child relationship. The nested term becomes a "child" of the term above it. This allows you to create hierarchical taxonomies.
 
 ## Adding/Editing Terms
 
-Click on *Edit* to make changes to an existing item or *Add Term* to add a new one.
+1.  To edit an existing term, click *Edit*.
+2.  To add a new term, click *Add Term*.
 
 On the next page, you can add a *Name* for your vocabulary and an optional *Description*.
 
-Below those two fields, you can add the additional information unique to your vocabulary.
+Below those two fields, you can add additional information unique to your vocabulary. The available fields will depend on how the vocabulary is configured.
 
 ### Term Example - Grey Color
 
-> The *Color* Vocabulary provides a standard list of color options across your website, such as in a background color for your header.
+> The *Color* Vocabulary provides a standard list of color options across your website, such as for a background color for your header.
 >
 > ![The list of color taxonomy items in a dropdown](taxonomy--color-list.png)
-> To change your shade of grey, you would go to **Structure** > **Taxonomy** > **Color** > **Grey**.
+> To change the shade of grey:
 >
-> Below the name of your Grey term, you'll find a color widget where you can change your standard shade of Grey across your site.
+> 1.  Go to **Structure** > **Taxonomy** > **Color**.
+> 2.  Click *List Terms*.
+> 3.  Click *Edit* next to *Grey*.
+>
+> Below the name of the Grey term, you'll find a color widget where you can change your standard shade of Grey across your site.
 >
 > In this example, you can change the color of the *Grey* term in the *Color* Vocabulary using a Color widget.
 
-
 ![The field admin for a taxonomy color item](taxonomy--color-fields.png)
 
-## Vocabularies
-Because Vocabularies are lists of categories, how they will show up depends on which Vocabulary you use.
+## Vocabularies in YMCA Website Services
+
+Vocabularies are lists of categories.  How they are used and displayed depends on the specific vocabulary. Here are some common vocabularies in YMCA Website Services:
 
 ### Amenities
-Used for tagging [branches](../content-types/branch) with amenities. Amenities display on a branch page and as a filter on a locations page.
+
+Used for tagging [branches](../content-types/branch) with amenities (e.g., "Pool," "Sauna," "Gym"). Amenities are displayed on the branch page and can be used as filters on a locations page.
 
 ![The locations page with a list of amenities](taxonomy--amenities.png)
 
 ### Color
-As mentioned above, Color is a list of colors you can use across your site, primarily in your page headers, [small banners](../paragraphs/small-banner), [galleries](../paragraphs/gallery) and [banners](../paragraphs/banner).
+
+The Color vocabulary provides a list of colors for use across your site, primarily in page headers, [small banners](../paragraphs/small-banner), [galleries](../paragraphs/gallery), and [banners](../paragraphs/banner).  Using a standardized color vocabulary ensures brand consistency.
 
 ### Blog/News Category
-These taxonomies tag blog/news posts. Categories display in the sidebar and as filters in your [Blog Post Listing](../content-types/blog-post) and [News Posts Listing](../content-types/news-post) paragraphs, respectively.
+
+These vocabularies are used to tag blog and news posts. Categories are often displayed in the sidebar and as filters in the [Blog Post Listing](../content-types/blog-post) and [News Posts Listing](../content-types/news-post) paragraphs, respectively.
 
 ### Media Folders
-Creates folders for your images in the media browser.
+
+This vocabulary creates folders for organizing images in the media browser.
 
 [View Media Folders tutorial ⇒](https://youtu.be/gcaBlhyPZEY)
 
 ### Media Tags
-Creates tags for filtering images (YMCA Website Services 2.3.3 and earlier), Documents and Videos in the media browser.
+
+This vocabulary creates tags for filtering images (YMCA Website Services 2.3.3 and earlier), documents, and videos in the media browser. Using tags helps you organize and find media assets more easily.
 
 [View Image and Document tutorials](../media)

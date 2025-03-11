@@ -1,3 +1,4 @@
+```markdown
 ---
 title: Documentation Tips & Tricks
 ---
@@ -10,7 +11,7 @@ The YMCA Website Services Docs are written in [Markdown](https://commonmark.org/
 
 The old documentation made heavy use of horizontal rules `---` and slashes in headings `## // Heading`. We try to use standard Markdown headings for organization and remove those visual indicators for better accessibility.
 
-Headings with a page should start with level 2 `##` in order to properly build the in-page navigation.
+Headings within a page should start with level 2 `##` in order to properly build the in-page navigation.
 
 ## Links
 
@@ -27,6 +28,7 @@ Internal paths with spaces in them should have their destination wrapped in angl
 ```markdown
 [Accordion Desktop](<../assets/designs/lb/Accordion Desktop.png>)
 ```
+
 [Accordion Desktop](<../assets/designs/lb/Accordion Desktop.png>)
 
 ## Images
@@ -79,7 +81,7 @@ Although blockquotes sometimes work just as well:
 
 > **Warning:** This is a warning.
 
-## Color swatches
+## Color Swatches
 
 The `color` shortcode can be used to display a small color swatch after a hex or RGB color value. Pass one quoted value for hex, or three numeric values for RGB.
 
@@ -97,9 +99,9 @@ color: {{< color "#a92b31" >}}
 color: {{< color 169 43 49 >}}
 ```
 
-## Remote Markdown files
+## Remote Markdown Files
 
-The `include-remote-md` shortcode fetches a remote markdown file and includes it in the page. This happens only when your Docsy project is built, so future changes of the remote markdown file are only included when you rebuild your project. See [docsy#1739](https://github.com/google/docsy/pull/1739)
+The `include-remote-md` shortcode fetches a remote markdown file and includes it in the page. This happens only when your Docsy project is built, so future changes to the remote markdown file are only included when you rebuild your project. See [docsy#1739](https://github.com/google/docsy/pull/1739)
 
 If the file has a H1 (`# ....`) instead of frontmatter, you can put the title line in as the second parameter and it will be removed instead. For example:
 

@@ -1,9 +1,12 @@
+```markdown
 ---
 title: Promo Card
 description: Add a small individual card to the sidebar of a page with evergreen promotional content, such as links to join pages.
 ---
 
 ## Examples
+
+The Promo Card comes in three default color variations: Carnation, Lily and Rose.
 
 ### Carnation
 
@@ -21,7 +24,7 @@ description: Add a small individual card to the sidebar of a page with evergreen
 
 ## Areas It Should be Used
 
-* Sidebar Area
+*   Sidebar Area
 
 ---
 
@@ -29,23 +32,25 @@ description: Add a small individual card to the sidebar of a page with evergreen
 
 In your sidebar area, select *Add Promo Card* from the paragraphs list.
 
-You can add an optional large *Title* in the top text field, while the required *Headline* field puts a smaller headline below the title.
+The Promo Card has the following fields:
 
-The description field is a text editor that allows you to enter any content you want with the standard text editor options.
+*   **Title:** (Optional) A large title that appears at the top of the card.  (Machine name: `field_prgf_title`)
+*   **Headline:** (Required) A smaller headline that appears below the title. (Machine name: `field_prgf_headline`)
+*   **Description:** (Optional) A WYSIWYG text editor field for entering content. Standard text editor options are available. (Machine name: `field_prgf_description`)
 
-[Learn how to use the Text Editor ⇒](../../text-editor)
+    [Learn how to use the Text Editor ⇒](../../text-editor)
+*   **Link:** (Optional) A link field for adding a call to action. (Machine name: `field_prgf_link`)
 
-You can add link and call to action text in the Link field.
-
-[Learn how to use link fields ⇒](../../content-editing-basics/#linksbutton-fields)
+    [Learn how to use link fields ⇒](../../content-editing-basics/#linksbutton-fields)
 
 ---
 
 ## Content Types that Support Promo Card
 
-* [Landing Page](../../content-types/landing-page)
-* [News Post](../../content-types/news-post)
-* [Blog Post](../../content-types/blog-post)
-* [Program](../../content-types/program)
-* Facility
-* [Program Subcategory](../../content-types/program-subcategory)
+*   [Landing Page](../../content-types/landing-page)
+*   [News Post](../../content-types/news-post)
+*   [Blog Post](../../content-types/blog-post)
+*   [Program](../../content-types/program)
+*   Facility
+*   [Program Subcategory](../../content-types/program-subcategory)
+```

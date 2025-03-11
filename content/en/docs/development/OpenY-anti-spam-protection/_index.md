@@ -1,21 +1,31 @@
 ---
-title: anti spam protection
+title: Anti-spam Protection
 aliases:
   - /docs/wiki/openy-anti-spam-protection/
 ---
 
-In order to protect YMCA Website Services customers, we have added anti-spam protection based on CAPTCHA and Google reCAPTCHA out of the box in YMCA Website Services core
+To protect YMCA Website Services customers, anti-spam protection based on CAPTCHA and Google reCAPTCHA is included in the YMCA Website Services core. This solution leverages the [CAPTCHA](https://www.drupal.org/project/captcha) and [reCAPTCHA](https://www.drupal.org/project/recaptcha) Drupal modules.
 
-You can check [the tutorial for how to install and configure reCaptcha on your site](https://www.youtube.com/watch?v=sx36hoDj4Wc).
+## Understanding CAPTCHA and reCAPTCHA
 
-In the majority of cases having the above configuration in place will protect you from 99% of spam, unless there is human-entered spam that has no protection. To overcome some human-based spam you should use blacklist logic for blocking email domains, used in spam messages.
+*   **CAPTCHA:** A challenge-response test used to determine whether the user is human. It blocks form submissions by spambots, which are automated scripts that post spam content. The CAPTCHA module provides this feature to virtually any user-facing web form.
+*   **reCAPTCHA:** A free service from Google that protects your website from spam and abuse while letting real people pass through with ease. It uses an advanced risk analysis engine and adaptive CAPTCHAs to keep automated software from engaging in abusive activities on your site.
 
-For that, you can use [the Protected Submissions module](https://www.drupal.org/project/protected_submissions) module, which allows you to harden all submissions on a site with a list of stop words as well as per-language settings.
+## Configuration
 
-## Virtual Y use case
+1.  **Install and Enable Modules:** Install both the [CAPTCHA module](https://www.drupal.org/project/captcha) and the [reCAPTCHA module](https://www.drupal.org/project/recaptcha). Enable them in the Extend administration page (`/admin/modules`).
+2.  **reCAPTCHA Settings:** Configure reCAPTCHA settings at `/admin/config/people/captcha/recaptcha`. You'll need a Site key and a Secret key.
+3.  **Get API Keys:** Register your website at the [reCAPTCHA Admin console](https://www.google.com/recaptcha/admin/create) to obtain your Site key and Secret key.
+4.  **Enter API Keys:** Input the Site key and Secret key into the reCAPTCHA settings form.
+5.  **CAPTCHA Settings:** Configure where you want the CAPTCHA/reCAPTCHA to appear on your site at `/admin/config/people/captcha`.
 
-In order to overcome caching issues, Virtual Y uses the [simple_recaptcha](https://www.drupal.org/project/simple_recaptcha) module which could be used in similar cases.
+## Additional Spam Protection
 
-The CAPTCHA + reCAPTCHA module solution has presented some reliability issues. The most recent [discussion and fix from drupal.org](https://www.drupal.org/project/captcha/issues/3089263) has also not reliably resolved issues for some clients.
+In most cases, the above configuration protects you from most spam. However, human-entered spam may require additional protection.
 
-At some point, the “Simple reCaptcha” module was used on a project and had no issues, so we’ve started to replace the “CAPTCHA” + “reCAPTCHA” modules with “Simple reCAPTCHA”.
+*   **Blacklist Logic:** Implement blacklist logic to block email domains frequently used in spam messages.
+*   **Protected Submissions Module:**  Consider using the [Protected Submissions module](https://www.drupal.org/project/protected_submissions) to harden all submissions on a site with a list of stop words and per-language settings.
+
+## Virtual Y Use Case
+
+For Virtual Y, the [simple_recaptcha](https://www.drupal.org/project/simple_recaptcha) module is used to address caching issues and may be suitable in similar cases.  The standard CAPTCHA + reCAPTCHA module combination has sometimes presented reliability issues.  Replacing those modules with "Simple reCAPTCHA" may resolve those issues.

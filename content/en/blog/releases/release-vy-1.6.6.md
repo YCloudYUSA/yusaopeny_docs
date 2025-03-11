@@ -9,10 +9,9 @@ date: 2023-03-15
 - Updated documentation for VY [1:1 Meetings](https://ds-docs.y.org/docs/user-documentation/virtual-ymca/1on1/)
 - VY custom provider trims spaces from email addresses on CSV import.
 
-
 ## Bug Fixes
 
-- Resolved issue with users not being able to join 1:1 Meetings
+- Resolved issue with users not being able to join 1:1 Meetings.
 - Fixed broken previews for Shared Content.
 - Applied a Gated Content patch to remove errors.
 - Fixed menu styling issues.

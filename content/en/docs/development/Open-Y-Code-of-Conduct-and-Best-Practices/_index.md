@@ -1,3 +1,4 @@
+```markdown
 ---
 title: Code of Conduct and Best Practices
 aliases:
@@ -8,7 +9,7 @@ The YMCA Website Services community aims to build from the methods and best prac
 
 # Bylaws
 
-For the OpenY distribution we have [Terms of Use]({{< relref "WS-Terms-of-Use" >}}) and [Participant Agreement]({{< relref "WS-Participant-Agreement" >}}).
+For the OpenY distribution, we have a [Terms of Use]({{< relref "WS-Terms-of-Use" >}}) and [Participant Agreement]({{< relref "WS-Participant-Agreement" >}}).
 
 # Development
 
@@ -20,7 +21,8 @@ To understand how we use and develop technologies, refer to the documents below:
 - [YMCA Website Services Development FAQ]({{< relref "Development-FAQ" >}})
 - [YMCA Website Services Development Best Practices]({{< relref "../Code-Review-Quality-Best-Practices" >}})
 
-JavaScript Code Standards
+## JavaScript Code Standards
 
 - [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react) (for reviewing JavaScript ES5/ES6)
 - [Vue.js code style guide](https://vuejs.org/v2/style-guide/) (for Vue.js components)
+```
