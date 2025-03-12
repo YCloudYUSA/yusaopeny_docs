@@ -9,11 +9,11 @@ description: Add a horizontal menu beneath the Header Area on a camp page.
 
 ![Carnation camp menu](paragraphs--camp-menu--carnation.jpeg)
 
-### Lily
+### [deprecated] Lily
 
 ![Lily camp menu](paragraphs--camp-menu--lily.jpeg)
 
-### Rose
+### [deprecated] Rose
 
 ![Rose camp menu](paragraphs--camp-menu--rose.jpeg)
 

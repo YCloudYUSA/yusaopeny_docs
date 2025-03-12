@@ -54,7 +54,7 @@ ITCare
 Layout Builder
 : A Drupal module that allows content editors to create visual layouts for displaying content using a drag-and-drop interface. See [Layout Builder](../user-documentation/layout-builder).
 
-Lily
+[deprecated] Lily
 : One of the distribution themes. "Lily offers bold banner headings and eye-catching tiles to organize child page content." See [Sandboxes](../wiki/sandboxes).
 
 Membership calculator
@@ -81,7 +81,7 @@ PEF
 Personify
 : A service provider that offers member management systems and more. Integrates with a number of features of the distribution. [Personify](https://personifycorp.com/).
 
-Rose
+[deprecated] Rose
 : One of the distribution themes. Rose offers sprawling site menu options and high accessibility for blind and low-vision users. See [Sandboxes](../wiki/sandboxes).
 
 Sandbox

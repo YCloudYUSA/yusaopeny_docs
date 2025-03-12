@@ -28,7 +28,7 @@ See [open-y-subprojects/openy_daxko_gxp_syncer](https://github.com/open-y-subpro
 
 ### Embedded schedules
 
-This replaces the deprecated [Embedded GroupEx Pro Schedule Paragraph]({{< relref "embedded-gxp-schedule" >}}).
+This replaces the [deprecated] [Embedded GroupEx Pro Schedule Paragraph]({{< relref "embedded-gxp-schedule" >}}).
 
 Embed code for GroupEx Pro schedules can be found in your GroupEx Pro admin interface. 
 

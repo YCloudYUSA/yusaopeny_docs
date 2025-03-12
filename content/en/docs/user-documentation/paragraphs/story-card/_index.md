@@ -3,7 +3,7 @@ title: Story Card
 description: Add a simple card to the sidebar with a title, headline and call to action.
 ---
 
-> This Paragraph works best in Lily and Rose.
+> This Paragraph works best in [deprecated] Lily and [deprecated] Rose.
 
 ## Areas it Can Be Used
 
@@ -19,16 +19,16 @@ To work around this, add a > or another special character to indicate to users t
 
 ### Recommendations for use with Carnation
 
-While this component is available to use in Carnation, it is not themed with a border as in Lily or Rose. The best practice is to use this paragraph sparingly and only in the following content types:
+While this component is available to use in Carnation, it is not themed with a border as in [deprecated] Lily or [deprecated] Rose. The best practice is to use this paragraph sparingly and only in the following content types:
 
 * Facility
 * Event
 
-This Paragraph works best in Lily and Rose. In Carnation, the Story Card works best inside the News Post, Event, and Blog Post paragraphs.
+This Paragraph works best in [deprecated] Lily and [deprecated] Rose. In Carnation, the Story Card works best inside the News Post, Event, and Blog Post paragraphs.
 
 ## Advanced
 
-**Note:** In the headline area on Lily and Rose, a large quotation mark will display to the left of your headline. This can be easily disabled using the following CSS:
+**Note:** In the headline area on [deprecated] Lily and [deprecated] Rose, a large quotation mark will display to the left of your headline. This can be easily disabled using the following CSS:
 
 `.story-card .quote svg { display: none; }`
 
