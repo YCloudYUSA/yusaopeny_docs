@@ -19,12 +19,12 @@ As of December 2021, themes [have been decoupled](https://github.com/YCloudYUSA/
 - [openy_carnation project](https://www.drupal.org/project/openy_carnation) on Drupal.org
 - [README](https://git.drupalcode.org/project/openy_carnation) for getting started with development
 
-### Lily
+### Lily [deprecated in 10.3.10, removed in 10.4.0]
 
 - [openy_lily project](https://www.drupal.org/project/openy_lily) on Drupal.org
 - [README](https://git.drupalcode.org/project/openy_lily) for getting started with development
 
-### Rose
+### Rose [deprecated in 10.3.10, removed in 10.4.0]
 
 - [openy_rose project](https://www.drupal.org/project/openy_rose) on Drupal.org
 - [README](https://git.drupalcode.org/project/openy_rose) for getting started with development
