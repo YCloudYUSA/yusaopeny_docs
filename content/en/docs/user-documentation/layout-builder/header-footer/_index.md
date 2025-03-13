@@ -193,7 +193,8 @@ Each of these three blocks references a menu. The three menus can be used to spl
 
 **Content**
 
-- Go to **Structure** > **Block layout** > **Custom block library**
+- Go to **Content** > **Blocks**
+   - [Prior to Drupal 10.1](https://www.drupal.org/node/3320855), blocks can be found under **Structure** > **Block layout** > **Custom block library**
 - Find the **Footer Copyright Block**
 - **Edit** the block, then **Save** when finished.
 
