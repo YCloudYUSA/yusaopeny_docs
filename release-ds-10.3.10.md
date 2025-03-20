@@ -7,7 +7,7 @@ date: 2025-04-03
 ### PHP Requirement Updated  
 - The minimum PHP requirement has been updated to **v8.3**.  
 - This change was a collaborative effort between updates **#219** and **#220**.  
-- **Update #219** prepared the codebase by pointing the development environment to a fork and updating composer packages.  
+- Update [#219](https://github.com/YCloudYUSA/yusaopeny/pull/219) prepared the codebase by pointing the development environment to a fork and updating composer packages.  
 - **Update #220** officially set the minimum PHP version to **8.3**.  
 - While no specific benefits of PHP 8.3 for yusaopeny are mentioned, upgrading to the latest PHP version generally provides performance improvements and enhanced security.  
 
