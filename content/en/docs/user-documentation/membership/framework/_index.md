@@ -117,4 +117,3 @@ The examples below use Paragraphs, but similar pages can be created using [Layou
 - Click on the “Save and add variations” button (or go to the “Variations” tab if editing a previously created product)
 - A typical setup for variations of a membership is shown in the following screenshot
 ![A screenshot of a product variations configuration.](membership-framework--product-variations.png)
-

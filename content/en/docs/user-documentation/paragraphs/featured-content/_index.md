@@ -32,7 +32,7 @@ description: Add a section of simple columns onto a page with an optional call-t
 
 Select *Add featured content* from the paragraphs dropdown. Add an optional *headline* in the headline field above.
 
-* **Lily/Rose:** The headline left-aligns by default.
+* [deprecated] Lily/Rose: The headline left-aligns by default.
 * **Carnation:** The headline center-aligns in Carnation.
 
 Next, add an optional *Description* [using the text editor](../../text-editor/basic-text-formatting). Avoid changing your text alignment for your description.
@@ -55,7 +55,7 @@ Finally, add content for each column of content using the text editor. To add ad
 
 ![Featured content admin fields](paragraphs--featured-content--admin.gif)
 
-* **Lily/Rose:** Adding more columns than what you selected in the “Style” dropdown will create additional rows. Aligning each column’s content is not recommended unless you are not using any other field.
+* [deprecated] Lily/Rose: Adding more columns than what you selected in the “Style” dropdown will create additional rows. Aligning each column’s content is not recommended unless you are not using any other field.
 
 ---
 

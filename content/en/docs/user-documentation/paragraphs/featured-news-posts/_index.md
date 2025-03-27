@@ -15,7 +15,7 @@ description: Create a standalone page listing curated News Posts.
 
 ![Featured News Posts in Carnation on mobile](paragraphs--featured-news--carnation-mobile.jpeg)
 
-### Rose
+### [deprecated] Rose
 
 ![Featured News Posts in Rose](paragraphs--featured-news--rose.jpeg)
 
