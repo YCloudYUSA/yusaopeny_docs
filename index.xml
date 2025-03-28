@@ -18,7 +18,36 @@
  
  &lt;a href="/ui-kit">interactive UI kit&lt;/a>.&lt;/p>
 &lt;h3 id="colorways">Colorways&lt;a class="td-heading-self-link" href="#colorways" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>Based on the YMCA Brand Guide, the distribution contains four &amp;ldquo;colorways&amp;rdquo; that allow content editors to apply accessible, brand-compliant styles to all components on a Layout Builder-based page.&lt;/p></description></item><item><title>December 11, 2024</title><link>/blog/2024/12/11/december-11-2024/</link><pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate><guid>/blog/2024/12/11/december-11-2024/</guid><description>&lt;p>Tom Scarborough is joined by Kylie Aldridge-Ogden from the Core team, guest Mike Hennesey from YMCA360, and Y-USA CIO Tom Gardner to discuss status of YMCA&amp;rsquo;s Website Services.&lt;/p>
+&lt;p>Based on the YMCA Brand Guide, the distribution contains four &amp;ldquo;colorways&amp;rdquo; that allow content editors to apply accessible, brand-compliant styles to all components on a Layout Builder-based page.&lt;/p></description></item><item><title>Digital Services Release 10.3.10.1</title><link>/blog/2025/03/28/digital-services-release-10.3.10.1/</link><pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate><guid>/blog/2025/03/28/digital-services-release-10.3.10.1/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>y_lb_article Module (Version 1.2.22)&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>New Feature:&lt;/strong> Implemented automatic sorting of featured articles based on their publication date. (
+
+
+
+&lt;a href="https://www.drupal.org/project/y_lb_article/releases/1.2.22" target="_blank">Release Details&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="core--module-updates">Core &amp;amp; Module Updates&lt;a class="td-heading-self-link" href="#core--module-updates" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Drupal Core&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Bug Fix:&lt;/strong> Addresses an intermittent issue where contextual links disappear after updating to Drupal ~10.3.0, accompanied by a &lt;code>TypeError&lt;/code> in &lt;code>settings_tray.js&lt;/code> during block placement. A fix involving a null check in &lt;code>settings_tray.js&lt;/code> has been implemented. (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/239" target="_blank">PR #239&lt;/a>, 
+
+
+
+&lt;a href="https://www.drupal.org/project/drupal/issues/3458067" target="_blank">Drupal Issue&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>openy_map Module (Version 5.2.5)&lt;/strong>&lt;/p></description></item><item><title>December 11, 2024</title><link>/blog/2024/12/11/december-11-2024/</link><pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate><guid>/blog/2024/12/11/december-11-2024/</guid><description>&lt;p>Tom Scarborough is joined by Kylie Aldridge-Ogden from the Core team, guest Mike Hennesey from YMCA360, and Y-USA CIO Tom Gardner to discuss status of YMCA&amp;rsquo;s Website Services.&lt;/p>
 &lt;p>Agenda items include:&lt;/p>
 &lt;ul>
 &lt;li>Small Y Template Release&lt;/li>
