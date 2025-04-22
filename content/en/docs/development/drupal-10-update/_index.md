@@ -28,10 +28,10 @@ Step through the distribution's [important versions](../important-versions-for-u
 ## Upgrade Report
 
 - Install Upgrade Status
-    - `fin composer show drupal/core | grep versions`
-    - `fin composer require --dev drupal/core-dev:[copy version above] --update-with-all-dependencies`
-    - `fin composer require drupal/upgrade_status`
-    - `fin drush en upgrade_status`
+    - `composer show drupal/core | grep versions`
+    - `composer require --dev drupal/core-dev:[copy version above] --update-with-all-dependencies`
+    - `composer require drupal/upgrade_status`
+    - `drush en upgrade_status`
 - Run the report
     - `/admin/reports/upgrade-status`
 - Check if the website is using custom CKEditor plugins with  [CKEditor Plugin Report](https://www.drupal.org/project/ckeditor_plugin_report)
