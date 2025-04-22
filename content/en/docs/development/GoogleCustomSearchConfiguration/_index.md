@@ -148,7 +148,7 @@ drush site-install openy \
    --db-url="mysql://user:pass@host:3306/db" \
    --root=/var/www/docroot \
    openy_configure_profile.preset=extended \
-   openy_theme_select.theme=openy_rose \
+   openy_theme_select.theme=openy_carnation \
    openy_third_party_services.google_search_engine_id="01234567890123456789:abcedefgh"
 ```
 
@@ -158,4 +158,3 @@ Use the following snippet to set the Search Engine ID on already installed websi
 
 ```
 drush config-set openy_google_search.settings google_engine_id "01234567890123456789:abcedefgh"
-```

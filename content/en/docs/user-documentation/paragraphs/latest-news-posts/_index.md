@@ -15,7 +15,7 @@ These three paragraphs embed a listing of News posts, sorted by the most recent,
 
 ![Latest blog posts in Carnation](paragraphs--latest-news-posts--carnation.png)
 
-### Rose
+### [deprecated] Rose
 
 ![Latest blog posts in Rose](paragraphs--latest-news-posts--rose.png)
 
