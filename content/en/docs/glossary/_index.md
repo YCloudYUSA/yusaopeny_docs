@@ -49,7 +49,7 @@ ImageX
 : A partner agency that works on the distribution and provides services directly to YMCAs. Also "ImageX Media". [ImageX](https://imagexmedia.com/).
 
 ITCare
-: A partner agency that works on the distribution and provides services directly to YMCAs. [IT Care](https://itcare.company/en).
+: A partner agency that works on the distribution and provides services directly to YMCAs. [IT Care](https://itcare.company/).
 
 Layout Builder
 : A Drupal module that allows content editors to create visual layouts for displaying content using a drag-and-drop interface. See [Layout Builder](../user-documentation/layout-builder).
