@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Releases on YMCA Website Services</title><link>/blog/releases/</link><description>Recent content in Releases on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Services Release 10.3.10.1</title><link>/blog/2025/03/28/digital-services-release-10.3.10.1/</link><pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate><guid>/blog/2025/03/28/digital-services-release-10.3.10.1/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Releases on YMCA Website Services</title><link>/blog/releases/</link><description>Recent content in Releases on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Services Release 10.5.0.0</title><link>/blog/2025/07/08/digital-services-release-10.5.0.0/</link><pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate><guid>/blog/2025/07/08/digital-services-release-10.5.0.0/</guid><description>&lt;h2 id="highlights">Highlights:&lt;a class="td-heading-self-link" href="#highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>A More User-Friendly Future:&lt;/strong>&lt;br>
+Drupal&amp;rsquo;s commitment to User Experience (UX) is now formalized with new leadership. This means we can expect a more intuitive and efficient admin interface in future updates.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>A Safer, More Secure Platform:&lt;/strong>&lt;br>
+The core security reporting process has been enhanced, making the platform safer for everyone by allowing vulnerabilities to be fixed faster.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Theme Fix:&lt;/strong>&lt;br>
+The misaligned arrow on alert components has been corrected.&lt;/p></description></item><item><title>Digital Services Release 10.3.10.1</title><link>/blog/2025/03/28/digital-services-release-10.3.10.1/</link><pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate><guid>/blog/2025/03/28/digital-services-release-10.3.10.1/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>y_lb_article Module (Version 1.2.22)&lt;/strong>
 &lt;ul>
