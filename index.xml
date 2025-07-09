@@ -30,7 +30,31 @@ The core security reporting process has been enhanced, making the platform safer
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Theme Fix:&lt;/strong>&lt;br>
-The misaligned arrow on alert components has been corrected.&lt;/p></description></item><item><title>Digital Services Release 10.3.10.1</title><link>/blog/2025/03/28/digital-services-release-10.3.10.1/</link><pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate><guid>/blog/2025/03/28/digital-services-release-10.3.10.1/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+The misaligned arrow on alert components has been corrected.&lt;/p></description></item><item><title>Digital Services Release 10.4.0.0</title><link>/blog/2025/06/17/digital-services-release-10.4.0.0/</link><pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate><guid>/blog/2025/06/17/digital-services-release-10.4.0.0/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features:&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Improved Admin Menu Layout and Navigation:&lt;/strong>&lt;br>
+Easier and more intuitive access to site management tools.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Updated Quick Edit Styles:&lt;/strong>&lt;br>
+Better in-context editing experience for content editors.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Updated Libraries:&lt;/strong>&lt;br>
+Includes updated versions of libraries such as jQuery for improved compatibility and security.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Fixed Block Styles:&lt;/strong>&lt;br>
+Resolved styling issues on the Bilet-Editor layout.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Improved Search Index Configuration and Accessibility:&lt;/strong>&lt;br>
+Better indexing and enhanced accessibility features.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Tweaks to Views, Form Behavior, and Mobile Responsiveness:&lt;/strong>&lt;br>
+Refinements that improve the look, feel, and usability across devices.&lt;/p></description></item><item><title>Digital Services Release 10.3.10.1</title><link>/blog/2025/03/28/digital-services-release-10.3.10.1/</link><pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate><guid>/blog/2025/03/28/digital-services-release-10.3.10.1/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>y_lb_article Module (Version 1.2.22)&lt;/strong>
 &lt;ul>
