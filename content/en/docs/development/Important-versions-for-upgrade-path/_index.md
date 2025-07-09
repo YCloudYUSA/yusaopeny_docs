@@ -48,6 +48,12 @@ See [Version Constraints practices for YMCA Website Services]({{< relref "Compos
 
 ## Known issues
 
+### Missing or Invalid Theme: `openy_rose`
+
+When upgrading from older versions (such as 10.3.x) to YMCA Website Services 10.5.x, you might encounter an error related to the missing `openy_rose` theme. The upgrade process may halt with an error message. This happens because the `openy_rose` theme was removed from the distribution, but it may still be present in the site's configuration.
+
+Uninstall the `openy_rose` theme to resolve this issue before running the database update.
+
 If you are faced with an issue when `composer` installs an improper version of `drupal/core` for the chosen version of YMCA Website Services from the list above, please use this trick in order to downgrade:
 
 ```sh
