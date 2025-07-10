@@ -82,7 +82,7 @@ erDiagram
         entityRefProgSub field_activity_category
     }
     activity }o--|| program_subcategory : field_activity_category
-    class {
+    "class" {
         entityRefActivity field_class_activity
         paragraph field_bottom_content
         paragraph field_content
@@ -91,7 +91,7 @@ erDiagram
         meta field_meta_tags
         paragraph field_sidebar_content
     }
-    class }o--|| activity : field_class_activity
+    "class" }o--|| activity : field_class_activity
     session {
         listText field_activity_type
         entityRefClass field_session_class
@@ -116,7 +116,7 @@ erDiagram
         paragraph field_session_time
         numberInt field_wait_list_availability
     }
-    session }|--|| class : field_session_class
+    session }|--|| "class" : field_session_class
     session ||--o{ session_time_paragraph : field_session_type
     session_time_paragraph {
         dateRange field_session_time_date
