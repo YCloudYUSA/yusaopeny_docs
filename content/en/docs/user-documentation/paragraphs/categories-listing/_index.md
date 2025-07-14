@@ -15,11 +15,11 @@ description: Embed horizontal cards for program subcategories on a programs page
 
 ![Categories listing in Carnation on mobile](paragraphs--categories-listing--carnation-mobile.jpeg)
 
-### Lily
+### [deprecated] Lily
 
 ![Categories listing in Lily](paragraphs--categories-listing--lily.jpeg)
 
-### Rose
+### [deprecated] Rose
 
 ![Categories listing in Rose](paragraphs--categories-listing--rose.jpeg)
 

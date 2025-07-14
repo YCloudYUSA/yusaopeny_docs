@@ -16,7 +16,7 @@ Areas Where it Should Be Used:
 
 After selecting “All Amenities” from the paragraphs list, you can change the title that displays above the search checkboxes by entering text in the Title field.
 
-Styling will differ greatly based on the theme. Use of this paragraph in Rose is not recommended.
+Styling will differ greatly based on the theme. Use of this paragraph in [deprecated] Rose is not recommended.
 
 Supported Content Types
 
