@@ -42,11 +42,17 @@ These supplemental documents elaborate on a few specific cases:
 - `10.3.0.1` - Drupal 10|9 release, before New Demo Content and Initial Replacement Paragraphs to Blocks for Native Layout Builder Experience
 - **`10.3.1`** - Drupal 10|9 release, New Demo Content and Initial Replacement Paragraphs to Blocks for Native Layout Builder Experience. In this release we bumped a lot of dependencies to become up to date
 - 10.3.2 - Introduced [recurring event support in the Event Content Type](https://www.drupal.org/project/ws_event/issues/3409162) which requires an automated migration between `date_range` and `smart_date` fields. If possible, update to this version during the upgrade process.
-- 10.3.2.3 - Introduced before 10.1 and 10.2 Drupal core. Also upgraded openy_map.This version ensures we support removed modules pre 10.1 for contrib modules
+- 10.3.2.3 - Introduced before 10.1 and 10.2 Drupal core. Also upgraded openy_map. This version ensures we support removed modules pre 10.1 for contrib modules
 
+---
 See [Version Constraints practices for YMCA Website Services]({{< relref "Composer-version-constraints-for-Open-Y" >}})
 
 ## Known issues
+
+If you are **not using Rose or Lily theme**, you need to **uninstall them before applying 10.5.0.0**
+If you are **using Rose theme**, you need to **re-require Drupal/openy_rose before applying 10.5.0.0**.  
+If you are **using Lily theme**, you need to **re-require Drupal/openy_lily before applying 10.5.0.0**.
+
 
 If you are faced with an issue when `composer` installs an improper version of `drupal/core` for the chosen version of YMCA Website Services from the list above, please use this trick in order to downgrade:
 
