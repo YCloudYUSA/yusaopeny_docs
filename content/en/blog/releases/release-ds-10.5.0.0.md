@@ -31,5 +31,13 @@ We've switched to using `drupal/ymca_sync`, moving away from association-specifi
 
 ---
 
+## Important Upgrade Note for Deprecated Themes
+
+If you are **not using Rose or Lily theme**, you need to **uninstall them before applying 10.5.0.0**.  
+If you are **using Rose theme**, you need to **re-require `Drupal/openy_rose` before applying 10.5.0.0**.  
+If you are **using Lily theme**, you need to **re-require `Drupal/openy_lily` before applying 10.5.0.0**.
+
+---
+
 Please review the full changelog here:  
 [OpenY 10.5.0.0 Release Notes](https://github.com/YCloudYUSA/yusaopeny/releases/tag/10.5.0.0)
