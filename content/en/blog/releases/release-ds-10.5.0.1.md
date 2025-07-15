@@ -6,7 +6,7 @@ date: 2025-07-15
 ## Highlights
 
 - **Migrate Ecosystem Lock Fix:**  
-  This release addresses issues related to the migrate ecosystem lock mechanism.  
+  This release addresses issues related to the migrate ecosystem lock to previous version.  
   See original issue: [ITCR-822](https://jet-dev.atlassian.net/browse/ITCR-822)  
   Pull request: [#278 – fix: Migrate ecosystem](https://github.com/YCloudYUSA/yusaopeny/pull/278) by @podarok
 
