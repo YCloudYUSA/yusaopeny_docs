@@ -97,3 +97,4 @@ New connection requests are reviewed periodically and are approved by the Open Y
 ### Can I share content before my site is live?
 
 If your site is in a "pre-live" mode and is somehow restricted from being publicly accessible (sometimes called "Site Lock" or "HTTP Auth") you will not be able to share content. Please wait until your site is live to share content.
+

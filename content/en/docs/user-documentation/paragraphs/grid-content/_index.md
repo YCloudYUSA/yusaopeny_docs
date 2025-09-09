@@ -9,11 +9,11 @@ description: Embed one or more rows of up to four columns of content - each with
 
 ![Grid content in Carnation](paragraphs--grid-content--carnation.png)
 
-### Lily
+### [deprecated] Lily
 
 ![Grid content in Lily](paragraphs--grid-content--lily.png)
 
-### Rose
+### [deprecated] Rose
 
 ![Grid content in Rose](paragraphs--grid-content--rose.png)
 
