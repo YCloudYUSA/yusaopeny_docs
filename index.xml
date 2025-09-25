@@ -112,7 +112,7 @@ This foundational shift introduces:&lt;/p>
 
 
 
-&lt;a href="https://github.com/open-y-project/ymca/compare/10.5.0.1...11.1.0.0-beta1" target="_blank">10.5.0.1 → 11.1.0.0-beta1&lt;/a>&lt;/p></description></item><item><title>Digital Services Release 10.5.0.1</title><link>/blog/2025/07/15/digital-services-release-10.5.0.1/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>/blog/2025/07/15/digital-services-release-10.5.0.1/</guid><description>&lt;h2 id="highlights">Highlights&lt;a class="td-heading-self-link" href="#highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/compare/10.5.0.1...11.1.0.0-beta1" target="_blank">10.5.0.1 → 11.1.0.0-beta1&lt;/a>&lt;/p></description></item><item><title>Digital Services Release 10.5.0.1</title><link>/blog/2025/07/15/digital-services-release-10.5.0.1/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>/blog/2025/07/15/digital-services-release-10.5.0.1/</guid><description>&lt;h2 id="highlights">Highlights&lt;a class="td-heading-self-link" href="#highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>Migrate Ecosystem Lock Fix:&lt;/strong>&lt;br>
 This release addresses issues related to the migrate ecosystem lock to previous version.&lt;br>
