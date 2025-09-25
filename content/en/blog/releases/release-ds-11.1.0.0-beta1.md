@@ -1,10 +1,11 @@
 ---
 title: "Digital Services Release 11.1.0.0-beta1"
-description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0-beta1)
-date: 2025-25-09
+description: "Annotated release notes. Full changelog on [GitHub](https://github.com/open-y-project/ymca/compare/10.5.0.1...11.1.0.0-beta1)"
+date: 2025-09-25
 ---
 # Purpose of beta1 release for YMCA Website Services
-The main goal of this beta release is to start field testing the upgrade to Drupal 11 and collect initial feedback from the community.  
+
+This beta release's main goal is to start field testing the upgrade to Drupal 11 and collect initial feedback from the community.  
 
 This release marks a major architectural evolution of the YMCA Website Services platform, centered on the upgrade from Drupal 10.5 to Drupal 11.1.  
 This foundational shift introduces:
@@ -17,7 +18,7 @@ This foundational shift introduces:
 ## New Features
 
 ### Drupal 11 Upgrade
-- Entire platform upgraded to **Drupal 11** for a modern, secure, performant experience.  
+- The entire platform was upgraded to **Drupal 11** for a modern, secure, and performant experience.  
 - PRs: #231, #256  
 - Ensured compatibility with **Symfony 7** (required by Drupal 11).  
 - Key updates:  
@@ -33,7 +34,7 @@ This foundational shift introduces:
 - Dedicated upgrade path for smoother Drupal 11 transition. (#287)
 
 ### Future-Forward AI Integration
-- Core AI module for automating titles, summaries, SEO tags.  
+- Core AI module for automating titles, summaries, and SEO tags.  
 
 ### Content Editor Improvements
 - **Project Browser**: Intuitive admin interface for module discovery/installation.  
