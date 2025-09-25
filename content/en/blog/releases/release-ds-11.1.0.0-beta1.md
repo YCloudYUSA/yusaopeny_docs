@@ -1,9 +1,10 @@
 ---
 title: "Digital Services Release 11.1.0.0-beta1"
-description: "Annotated release notes. Full changelog on [GitHub](https://github.com/open-y-project/ymca/compare/10.5.0.1...11.1.0.0-beta1)"
+description: Annotated release notes. Full changelog on [GitHub](https://github.com/open-y-project/ymca/compare/10.5.0.1...11.1.0.0-beta1)
 date: 2025-09-25
 ---
-# Purpose of beta1 release for YMCA Website Services
+
+## Purpose of beta1 release for YMCA Website Services
 
 This beta release's main goal is to start field testing the upgrade to Drupal 11 and collect initial feedback from the community.  
 
