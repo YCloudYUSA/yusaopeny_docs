@@ -1,6 +1,6 @@
 ---
 title: "Digital Services Release 11.1.0.0-beta1"
-description: Annotated release notes. Full changelog on [GitHub](https://github.com/open-y-project/ymca/compare/10.5.0.1...11.1.0.0-beta1)
+description: Annotated release notes. Full changelog on [GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0-beta1)
 date: 2025-09-25
 ---
 
