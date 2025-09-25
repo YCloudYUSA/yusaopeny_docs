@@ -1,8 +1,9 @@
 ---
 title: "Digital Services Release 10.5.0.1"
-description: description: Migrate ecosystem lock fix. 
+description: Migrate ecosystem lock fix. 
 date: 2025-07-15
 ---
+
 ## Highlights
 
 - **Migrate Ecosystem Lock Fix:**  
