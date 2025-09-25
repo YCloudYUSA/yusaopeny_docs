@@ -1,4 +1,133 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Releases on YMCA Website Services</title><link>/blog/releases/</link><description>Recent content in Releases on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Services Release 10.5.0.0</title><link>/blog/2025/07/08/digital-services-release-10.5.0.0/</link><pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate><guid>/blog/2025/07/08/digital-services-release-10.5.0.0/</guid><description>&lt;h2 id="highlights">Highlights:&lt;a class="td-heading-self-link" href="#highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Releases on YMCA Website Services</title><link>/blog/releases/</link><description>Recent content in Releases on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Services Release 11.1.0.0-beta1</title><link>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</link><pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate><guid>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</guid><description>&lt;h2 id="purpose-of-beta1-release-for-ymca-website-services">Purpose of beta1 release for YMCA Website Services&lt;a class="td-heading-self-link" href="#purpose-of-beta1-release-for-ymca-website-services" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>This beta release&amp;rsquo;s main goal is to start field testing the upgrade to Drupal 11 and collect initial feedback from the community.&lt;/p>
+&lt;p>This release marks a major architectural evolution of the YMCA Website Services platform, centered on the upgrade from Drupal 10.5 to Drupal 11.1.&lt;br>
+This foundational shift introduces:&lt;/p>
+&lt;ul>
+&lt;li>A modern, more efficient development paradigm&lt;/li>
+&lt;li>Enhanced site-building capabilities for non-technical users&lt;/li>
+&lt;li>Substantial improvements in performance and security&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="new-features">New Features&lt;a class="td-heading-self-link" href="#new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="drupal-11-upgrade">Drupal 11 Upgrade&lt;a class="td-heading-self-link" href="#drupal-11-upgrade" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>The entire platform was upgraded to &lt;strong>Drupal 11&lt;/strong> for a modern, secure, and performant experience.&lt;/li>
+&lt;li>PRs: #231, #256&lt;/li>
+&lt;li>Ensured compatibility with &lt;strong>Symfony 7&lt;/strong> (required by Drupal 11).&lt;/li>
+&lt;li>Key updates:
+&lt;ul>
+&lt;li>&lt;code>drupal/core&lt;/code> → &lt;code>~11.0.13&lt;/code>&lt;/li>
+&lt;li>&lt;code>drupal/ymca_sync&lt;/code> → &lt;code>^10 || ^11&lt;/code>&lt;/li>
+&lt;li>New modules: &lt;code>ymcatwincities/media_entity_document&lt;/code>, &lt;code>ycloudyusa/ws_outsiders&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Fixes and commits included staged changes, CI/CD results, and dependency alignment.&lt;/li>
+&lt;/ul>
+&lt;h3 id="ws_outsiders-module">ws_outsiders Module&lt;a class="td-heading-self-link" href="#ws_outsiders-module" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Introduced &lt;code>ws_outsiders&lt;/code>, built with standard coding styles and conventional commit messages. (#253)&lt;/li>
+&lt;/ul>
+&lt;h3 id="enhanced-upgrade-path">Enhanced Upgrade Path&lt;a class="td-heading-self-link" href="#enhanced-upgrade-path" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Dedicated upgrade path for smoother Drupal 11 transition. (#287)&lt;/li>
+&lt;/ul>
+&lt;h3 id="future-forward-ai-integration">Future-Forward AI Integration&lt;a class="td-heading-self-link" href="#future-forward-ai-integration" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Core AI module for automating titles, summaries, and SEO tags.&lt;/li>
+&lt;/ul>
+&lt;h3 id="content-editor-improvements">Content Editor Improvements&lt;a class="td-heading-self-link" href="#content-editor-improvements" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Project Browser&lt;/strong>: Intuitive admin interface for module discovery/installation.&lt;/li>
+&lt;li>&lt;strong>Workspaces&lt;/strong>: Stable for staged content sets.&lt;/li>
+&lt;li>&lt;strong>Streamlined Administration&lt;/strong>: Experimental, more intuitive admin navigation.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="technical-changes">Technical Changes&lt;a class="td-heading-self-link" href="#technical-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>jQuery 3.x Support&lt;/strong>: Added &lt;code>jquery-migrate&lt;/code> for legacy scripts. (#289)&lt;/li>
+&lt;li>&lt;strong>Improved Drupal 11 Compatibility&lt;/strong>: Multiple PRs (#250, #273)&lt;/li>
+&lt;li>&lt;strong>Beta/RC for openy_carnation&lt;/strong>: Theme now supports beta and release candidate versions. (#276)&lt;/li>
+&lt;li>&lt;strong>Media Library Fix&lt;/strong>: CSS class issue resolved. (#288)&lt;/li>
+&lt;li>&lt;strong>Camp Menu/Quick Links Fix&lt;/strong>: Blocks now created correctly. (#292)&lt;/li>
+&lt;li>&lt;strong>Upgrade Path Stability&lt;/strong>: Fixed issues with uninstalling unsupported modules/themes. (#293)&lt;/li>
+&lt;li>&lt;strong>Dependency Handling&lt;/strong>: Fixed &lt;code>MissingDependencyException&lt;/code>. (#296)&lt;/li>
+&lt;li>&lt;strong>CKEditor 5 Font Plugin&lt;/strong>: Removed for stability. (#272, #269)&lt;/li>
+&lt;li>&lt;strong>Migration Tools&lt;/strong>: Patch applied. (#274)&lt;/li>
+&lt;li>&lt;strong>Module/Composer Updates&lt;/strong>: Multiple fixes (#275)&lt;/li>
+&lt;li>&lt;strong>Composer Dependencies&lt;/strong>: Updated for Drupal 11 compatibility, removed &lt;code>symfony/dom-crawler&lt;/code>. (#267, #268, #275)&lt;/li>
+&lt;li>&lt;strong>openy_carnation Theme&lt;/strong>: Min version set to &lt;code>beta3&lt;/code>. (#290)&lt;/li>
+&lt;li>&lt;strong>Composer Scaffold&lt;/strong>: Added &lt;code>drupal/core-composer-scaffold&lt;/code>. (#270)&lt;/li>
+&lt;li>&lt;strong>Build Testing&lt;/strong>: Completed for Drupal 11. (#271)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="development-experience-changes">Development Experience Changes&lt;a class="td-heading-self-link" href="#development-experience-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Single Directory Components (SDC)&lt;/strong>: UI component files colocated (Twig, CSS, JS, metadata).&lt;/li>
+&lt;li>&lt;strong>Object-Oriented Hooks&lt;/strong>: Procedural → Object-oriented with PHP attributes, supporting DI.&lt;/li>
+&lt;li>&lt;strong>Symfony 7 + PHP 8.3+&lt;/strong>: Performance and modern language features.&lt;/li>
+&lt;li>&lt;strong>New Icon Management API&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Native WebP Image Support&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Dependency-Based Asset Ordering&lt;/strong>: Correct CSS/JS load order.&lt;/li>
+&lt;li>&lt;strong>Improved Cache Headers&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Granular Access Control&lt;/strong>: Conditional policies.&lt;/li>
+&lt;li>&lt;strong>Removed UI for Module/Theme Installation&lt;/strong>: Composer-only workflow.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="removals">Removals&lt;a class="td-heading-self-link" href="#removals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Deprecated Modules Removed&lt;/strong> (via self-uninstall dummy modules):
+&lt;ul>
+&lt;li>&lt;code>ckeditor&lt;/code>, &lt;code>ckeditor5_font&lt;/code>, &lt;code>inline_entity_menu_form&lt;/code> (#9)&lt;/li>
+&lt;li>Themes: &lt;code>bartik&lt;/code>, &lt;code>seven&lt;/code> + block configs&lt;/li>
+&lt;li>&lt;code>openy_txnm_color&lt;/code> (from &lt;code>openy.info.yml&lt;/code>)&lt;/li>
+&lt;li>&lt;code>media_library_bulk_upload&lt;/code>, &lt;code>color&lt;/code> (commented out in &lt;code>openy.packages.yml&lt;/code>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Panelbutton for CKEditor Removed&lt;/strong> (#10)&lt;/li>
+&lt;li>&lt;strong>End of Drupal 10 Support&lt;/strong>: Platform now requires &lt;strong>Drupal 11&lt;/strong>. (#8)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>Please review the full changelog here:
+
+
+
+
+&lt;a href="https://github.com/open-y-project/ymca/compare/10.5.0.1...11.1.0.0-beta1" target="_blank">10.5.0.1 → 11.1.0.0-beta1&lt;/a>&lt;/p></description></item><item><title>Digital Services Release 10.5.0.1</title><link>/blog/2025/07/15/digital-services-release-10.5.0.1/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>/blog/2025/07/15/digital-services-release-10.5.0.1/</guid><description>&lt;h2 id="highlights">Highlights&lt;a class="td-heading-self-link" href="#highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Migrate Ecosystem Lock Fix:&lt;/strong>&lt;br>
+This release addresses issues related to the migrate ecosystem lock to previous version.&lt;br>
+See original issue: 
+
+
+
+&lt;a href="https://jet-dev.atlassian.net/browse/ITCR-822" target="_blank">ITCR-822&lt;/a>&lt;br>
+Pull request: 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/278" target="_blank">#278 – fix: Migrate ecosystem&lt;/a> by @podarok&lt;/li>
+&lt;/ul>
+&lt;h2 id="related-changes">Related Changes&lt;a class="td-heading-self-link" href="#related-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>openy_custom module version bumped to 
+
+
+
+&lt;a href="https://github.com/open-y-subprojects/openy_custom/releases/tag/3.0.3" target="_blank">3.0.3&lt;/a>&lt;/li>
+&lt;li>Tagged from branch: 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/tree/drupal10_5fixes" target="_blank">&lt;code>drupal10_5fixes&lt;/code>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="verification">Verification&lt;a class="td-heading-self-link" href="#verification" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Jenkins build: 
+
+
+
+&lt;a href="http://openy.cibox.tools:8081/view/SANDBOXES/job/SANDBOX_CARNATION_CUSTOM/4756/consoleFull" target="_blank">CARNATION_CUSTOM #4756&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Digital Services Release 10.5.0.0</title><link>/blog/2025/07/08/digital-services-release-10.5.0.0/</link><pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate><guid>/blog/2025/07/08/digital-services-release-10.5.0.0/</guid><description>&lt;h2 id="highlights">Highlights:&lt;a class="td-heading-self-link" href="#highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>A More User-Friendly Future:&lt;/strong>&lt;br>
