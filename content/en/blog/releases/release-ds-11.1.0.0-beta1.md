@@ -90,4 +90,4 @@ This foundational shift introduces:
 ---
 
 Please review the full changelog here: 
-[10.5.0.1 → 11.1.0.0-beta1](https://github.com/open-y-project/ymca/compare/10.5.0.1...11.1.0.0-beta1)
+[10.5.0.1 → 11.1.0.0-beta1](https://github.com/YCloudYUSA/yusaopeny/compare/10.5.0.1...11.1.0.0-beta1)
