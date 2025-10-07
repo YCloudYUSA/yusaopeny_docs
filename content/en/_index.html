@@ -6,25 +6,89 @@ linkTitle = "YMCA Website Services Docs"
 
 {{< blocks/cover title="Welcome to the YMCA Digital Services Documentation" image_anchor="top" height="med" color="dark" >}}
 <div class="mx-auto">
-	<a class="btn btn-lg btn-primary me-3 mb-4" href="{{< relref "/docs" >}}">
-		Read the Docs<i class="fas fa-arrow-alt-circle-right ms-2"></i>
-	</a>
+	<p class="lead mt-3">Your guide to building, managing, and extending YMCA websites</p>
 	<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/YCloudYUSA/yusaopeny-project#installation">
 		Install YMCA Website Services <i class="fab fa-github ms-2 "></i>
 	</a>
-	<p class="lead mt-5"></p>
 </div>
 {{< /blocks/cover >}}
 
-
 {{% blocks/lead color="primary" %}}
-YMCA Website Services is a digital transformation platform for YMCAs.
+<h2 class="text-center mb-4">I am a...</h2>
+<p class="text-center">Choose your role to get started with the right documentation</p>
 {{% /blocks/lead %}}
+
+{{< blocks/section color="white" type="row">}}
+
+{{% blocks/feature icon="fa-pen-fancy" title="Content Editor" url="/docs/user-documentation/" %}}
+Learn to create and manage content, build pages, and use components on your YMCA website.
+
+**Quick Start:**
+- [Content Management Basics](/docs/user-documentation/)
+- [Creating Pages](/docs/howto/)
+- [Using Components](/docs/content-structure/)
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-code" title="Developer" url="/docs/development/" %}}
+Build features, contribute code, and customize YMCA Website Services for your organization.
+
+**Quick Start:**
+- [Development Setup](/docs/development/)
+- [Upgrade Guides](/docs/development/)
+- [Contributing Code](/docs/contribution-guidelines/)
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-server" title="Site Builder" url="/docs/howto/" %}}
+Install, configure, and deploy YMCA Website Services for your association.
+
+**Quick Start:**
+- [Installation Guide](https://github.com/YCloudYUSA/yusaopeny-project#installation)
+- [Configuration How-tos](/docs/howto/)
+- [Deployment Best Practices](/docs/development/)
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-chart-line" title="Decision Maker" url="/docs/" %}}
+Understand the platform, explore features, and see what's coming on the roadmap.
+
+**Quick Start:**
+- [Platform Overview](/docs/)
+- [Product Roadmap](/roadmap/)
+- [Community & Support](/community/)
+{{% /blocks/feature %}}
+
+{{< /blocks/section >}}
+
+{{< blocks/section color="dark" type="row">}}
+<div class="col-12 text-center mb-4">
+	<h2>Browse by Documentation Type</h2>
+	<p class="lead">Following the <a href="https://diataxis.fr/" target="_blank" style="color: #ffa500;">Diátaxis</a> framework for clear, purposeful documentation</p>
+</div>
+{{< /blocks/section >}}
 
 {{< blocks/section color="dark" type="row">}}
 
+{{% blocks/feature icon="fa-graduation-cap" title="Tutorials" url="/docs/user-documentation/" %}}
+**Learning-oriented guides** to help you get started and build foundational skills step-by-step.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-tasks" title="How-to Guides" url="/docs/howto/" %}}
+**Task-oriented instructions** to help you accomplish specific goals and solve real-world problems.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-book" title="Reference" url="/docs/development/" %}}
+**Information-oriented documentation** with technical details, APIs, and system specifications.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-lightbulb" title="Explanation" url="/docs/content-structure/" %}}
+**Understanding-oriented guides** that explain concepts, architecture, and design decisions.
+{{% /blocks/feature %}}
+
+{{< /blocks/section >}}
+
+{{< blocks/section color="primary" type="row">}}
+
 {{% blocks/feature icon="fa-user-friends" title="Visit the message board!" %}}
-Get updates and ask questions.
+Get updates and ask questions in our community forum.
 
 [Join the community...](/community)
 {{% /blocks/feature %}}
@@ -34,12 +98,49 @@ YMCA Website Services is open source! Dig into the code on GitHub.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fab fa-slack" title="Join the conversation!" %}}
-Hop into our Slack team to chat with developers, implementers, decision-makers, and more.
+Hop into our Slack team to chat with developers, implementers, and decision-makers.
 
 [<i class="fas fa-envelope"></i> Email us to request access...](<mailto:ycloud@ymca.net?subject=Slack Access Request>)
 {{% /blocks/feature %}}
 
 {{< /blocks/section >}}
 
-{{% blocks/lead color="primary" %}}
-<a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-dark.svg" alt="Deploys by Netlify" /> </a>{{% /blocks/lead %}}
+{{% blocks/section color="white" %}}
+<div class="text-center">
+	<h3>Popular Topics</h3>
+	<div class="row justify-content-center mt-4">
+		<div class="col-md-3">
+			<h5><i class="fas fa-arrow-circle-up text-primary"></i> Upgrading</h5>
+			<ul class="list-unstyled">
+				<li><a href="/docs/development/">Upgrade Guide</a></li>
+				<li><a href="/docs/development/">Release Schedule</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<h5><i class="fas fa-puzzle-piece text-success"></i> Components</h5>
+			<ul class="list-unstyled">
+				<li><a href="/docs/content-structure/">Content Types</a></li>
+				<li><a href="/docs/assets/">Assets</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<h5><i class="fas fa-cogs text-warning"></i> Configuration</h5>
+			<ul class="list-unstyled">
+				<li><a href="/docs/howto/">Setup Guides</a></li>
+				<li><a href="/docs/development/">Tech Stack</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<h5><i class="fas fa-hands-helping text-info"></i> Contributing</h5>
+			<ul class="list-unstyled">
+				<li><a href="/docs/contribution-guidelines/">Contribution Guide</a></li>
+				<li><a href="/docs/development/">Code Standards</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+{{% /blocks/section %}}
+
+{{% blocks/lead color="secondary" %}}
+<a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-dark.svg" alt="Deploys by Netlify" /> </a>
+{{% /blocks/lead %}}
