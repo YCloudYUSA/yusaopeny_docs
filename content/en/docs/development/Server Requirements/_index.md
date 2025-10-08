@@ -4,41 +4,65 @@ title: Server Requirements
 
 If you need to prepare server for the YMCA Website Services instance, here below you should find all needed software to meet its requirements.
 
-### List of requirements
+## System Requirements
 
-1. Ubuntu LTS (14 or 16) is preferred. CentOS is ok as well. Or even any other Linux distribution, but was not tested by YMCA Website Services team so far.
+### For Drupal 11 (Current Version)
 
-2. (Drupal 8 server requirements should be met)[https://www.drupal.org/docs/system-requirements/php-requirements].
+- **Drupal**: 11.1.x or higher
+- **PHP**: 8.3 or higher
+- **Composer**: 2.0 or higher
+- **Database**:
+  - MySQL 8.0+ OR
+  - MariaDB 10.6+
+- **Web Server**:
+  - Apache 2.4+ OR
+  - Nginx 1.18+
+- **Operating System**: Linux-based OS (Ubuntu LTS 20.04+ recommended)
 
-3. PHP 5.6+ (PHP 7 is better in terms of performance)
+For detailed requirements, see the [official Drupal system requirements](https://www.drupal.org/docs/system-requirements).
 
-### List of PHP modules server should have:
+### Required PHP Modules
 
-  - php{{ php_version }}
-  - php{{ php_version }}-mcrypt
-  - php{{ php_version }}-cli
-  - php{{ php_version }}-common
-  - php{{ php_version }}-curl
-  - php{{ php_version }}-dev
-  - php{{ php_version }}-fpm
-  - php{{ php_version }}-gd
-  - php{{ php_version }}-mysql
-  - php{{ php_version }}-memcached
-  - php{{ php_version }}-imagick
-  - php{{ php_version }}-xml
-  - php{{ php_version }}-xdebug
-  - php{{ php_version }}-mbstring
-  - php{{ php_version }}-soap
-  - php{{ php_version }}-zip
+  - php8.3 (or higher)
+  - php8.3-cli
+  - php8.3-common
+  - php8.3-curl
+  - php8.3-dev
+  - php8.3-fpm (for Nginx)
+  - php8.3-gd
+  - php8.3-mysql
+  - php8.3-xml
+  - php8.3-mbstring
+  - php8.3-soap
+  - php8.3-zip
 
+### Optional but Recommended
 
-4. MySQL 5.5+ . Here are the best settings https://github.com/cibox/cibox/blob/master/core/facade-mysql/defaults/main.yml to get it fast and furious
-5. Apache 2 with mod-php (preffered for stability) or nginx with php-fpm (better for speed and scalability)
-  - libapache2-mod-php{{ php_version }}
-6. Memcache server (optional)
+- **Cache**: Memcached or Redis for improved performance
+- **Search**: Apache SOLR 8.x for advanced search functionality
+- **HTTP Cache**: Varnish or Nginx reverse proxy for high-traffic sites
+- **Development Tools**:
+  - Docker (recommended for local development via Docksal or DDEV)
+  - Ansible (for server provisioning)
 
-7.  Server tools
- * Ansible (optional)
- * Docker (optional)
- * SOLR 4.x (if there will be requirement for SOLR search support)
- * Varnish (optional)
+## Development Environments
+
+**Recommended**: [Docksal](https://docksal.io/) (Docker-based development environment)
+
+**Alternatives**:
+- [DDEV](https://ddev.com/)
+- Manual installation following the [installation guide](https://github.com/YCloudYUSA/yusaopeny-project#installation)
+
+## Legacy Version Requirements
+
+### Drupal 10
+
+- **PHP**: 8.1 or higher
+- **MySQL**: 5.7.8+ or MariaDB 10.3.7+
+- See [Drupal 10 upgrade guide](../drupal-10-update/)
+
+### Drupal 9 (End of Life)
+
+- **PHP**: 7.3 or higher (8.0+ recommended)
+- **MySQL**: 5.5.3+ or MariaDB 10.1.0+
+- See [Drupal 9 to 10 upgrade guide](../upgrade_use_case_drupal_9_drupal_10_1/)

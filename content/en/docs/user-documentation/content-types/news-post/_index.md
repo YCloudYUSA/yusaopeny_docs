@@ -1,11 +1,35 @@
 ---
-title: News Post
-description: Designed for timely content, articles and news pieces tagged with one or more physical locations.
+title: News Post (Paragraphs)
+description: Legacy Paragraphs-based news content. Migrate to Article (Layout Builder) for modern blog/news functionality.
 ---
 
-> *Note: This Content Type is [similar to the Blog Post content type](../blog-post).*
+<div class="alert alert-warning" role="alert">
+  <h4 class="alert-heading"><i class="fas fa-exclamation-triangle me-2"></i>Legacy Content Type</h4>
+  <p><strong>This is a legacy Paragraphs-based content type.</strong> For new news posts and blogs, use <a href="../lb-article/"><strong>Article (Layout Builder)</strong></a> instead.</p>
+  <hr>
+  <p class="mb-0">
+    <strong>Why migrate?</strong> Article (Layout Builder) offers:
+    <ul class="mb-0">
+      <li>✅ Unified content type for blogs, news, and press releases</li>
+      <li>✅ Flexible Layout Builder layouts (vs rigid 2-column only)</li>
+      <li>✅ Better SEO with modern meta fields and structured data</li>
+      <li>✅ Improved categorization with Tags taxonomy</li>
+      <li>✅ Active development and support</li>
+    </ul>
+  </p>
+  <p class="mt-2 mb-0">
+    <a href="../../howto/migrate-paragraphs-to-layout-builder/" class="alert-link"><strong>→ See Migration Guide</strong></a> |
+    <a href="../lb-article/" class="alert-link"><strong>→ Article (Layout Builder) Documentation</strong></a>
+  </p>
+</div>
+
+---
+
+> *Note: This Content Type is [similar to the Blog Post content type](../blog-post).* Both have been replaced by **Article (Layout Builder)**.
 
 ![An example news post page](news-post--example.png)
+
+## About News Post (Paragraphs)
 
 News posts in YMCA Website Services allow you the flexibility to both create simple posts using only the text editor and more robust layouts with paragraphs.
 

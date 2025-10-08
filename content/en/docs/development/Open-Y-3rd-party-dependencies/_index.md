@@ -6,6 +6,17 @@ aliases:
 
 YMCA Website Services's system requirements generally track [those of Drupal](https://www.drupal.org/docs/system-requirements) with some occasional more opinionated recommendations.
 
+## Current Version Requirements (Drupal 11)
+
+- **Drupal**: 11.1.x or higher
+- **PHP**: 8.3 or higher
+- **Composer**: 2.0 or higher
+- **Database**: MySQL 8.0+ OR MariaDB 10.6+
+- **Web Server**: Apache 2.4+ OR Nginx 1.18+
+- **Operating System**: Linux-based (Ubuntu LTS 20.04+ recommended)
+
+For complete requirements, see our [Server Requirements](../server-requirements/) page.
+
 ## General Requirements
 
 Supported versions may differ based on your Drupal version.
@@ -14,8 +25,8 @@ Supported versions may differ based on your Drupal version.
 - A [supported database server](https://www.drupal.org/docs/system-requirements/database-server-requirements) like MySQL or MariaDB
 - A [supported version of PHP](https://www.drupal.org/docs/system-requirements/php-requirements)
 - A Linux-based operating system
-  - [Ubuntu](https://ubuntu.com/) 16, 18, and 20 are supported.
-  - CentOS or similar may work as well.
+  - [Ubuntu](https://ubuntu.com/) 20.04 LTS and 22.04 LTS are supported
+  - CentOS or similar may work as well
 
 Recommended for advanced functionality, but not required:
 

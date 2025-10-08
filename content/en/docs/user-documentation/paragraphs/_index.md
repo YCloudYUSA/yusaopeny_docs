@@ -1,9 +1,15 @@
 ---
-title: "Paragraphs"
-weight: 4
+title: "Paragraphs (Legacy)"
+weight: 99
 description: >
-  Embed simple text, images, blocks and interactive components with blocks, YMCA Website Services’s layout-building component.
+  ⚠️ DEPRECATED: Paragraphs are legacy components. New sites should use Layout Builder. See migration guide below.
 ---
+
+> ⚠️ **Deprecated Feature**
+>
+> **Paragraphs are legacy components.** All new YMCA websites should use [Layout Builder](../layout-builder/) instead. Existing sites using Paragraphs will continue to work, but we strongly recommend migrating to Layout Builder for better performance, maintainability, and access to new features.
+>
+> **For Small Y sites:** The [Small Y template](../../small-y/) exclusively uses Layout Builder.
 
 YMCA Website Services content editors use paragraphs to create unique layouts for their pages. Each paragraph is a section of content that comes with its own styling, functionality, and fields.
 

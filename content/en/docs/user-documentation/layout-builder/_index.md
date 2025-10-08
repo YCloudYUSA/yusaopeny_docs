@@ -1,6 +1,8 @@
 ---
 title: Layout Builder
-weight: 3
+weight: 1
+description: >
+  Build beautiful, flexible pages with Layout Builder's drag-and-drop interface.
 ---
 
 Layout Builder is a powerful new page-building addition to your YMCA website.
@@ -79,7 +81,29 @@ To create a block, click Add Block in any section of the page, then Create Custo
 
 ![A screenshot showing the Add Block and Create Custom Block buttons.](lb_add_block.png)
 
-Your YMCA website has a wide array of blocks to choose from. In this section, you will find detailed descriptions of those blocks.
+Your YMCA website has a wide array of blocks to choose from.
+
+<div class="block-library-cta card border-0 shadow-sm mb-4" style="background: linear-gradient(135deg, rgba(0, 167, 157, 0.05), rgba(88, 44, 131, 0.05)); border-radius: 16px;">
+  <div class="card-body p-4">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <h3 class="mb-2" style="color: var(--ymca-teal);">
+          <i class="fas fa-th-large me-2"></i>Browse the Block Library
+        </h3>
+        <p class="mb-0 text-muted" style="font-size: 1.05rem;">
+          Explore 30+ Layout Builder blocks organized by category. Find banners, cards, grids, views, testimonials, schedules, and more.
+        </p>
+      </div>
+      <div class="col-md-4 text-md-end mt-3 mt-md-0">
+        <a href="block-library/" class="btn btn-lg btn-primary" style="background: var(--ymca-teal); border-color: var(--ymca-teal); padding: 0.75rem 2rem;">
+          View All Blocks <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
 
 ## Tips and Tricks
 
@@ -100,3 +124,26 @@ When rearranging large blocks on the page it can often be challenging to drag th
 If you run into a problem, [get in touch](../../../community).
 
 <small>Content on this page is adapted from [Drupal.org](https://www.drupal.org/docs/8/core/modules/layout-builder) and [Western Washington University](https://brand.wwu.edu/layout-builder)</small>
+
+<style>
+:root {
+  --ymca-teal: #00A79D;
+  --ymca-purple: #582C83;
+  --ymca-blue: #0060AF;
+  --ymca-red: #E31E24;
+  --ymca-yellow: #FDB912;
+}
+
+.block-library-cta {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.block-library-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 167, 157, 0.15) !important;
+}
+
+.block-library-cta .btn:hover {
+  transform: translateX(4px);
+}
+</style>
