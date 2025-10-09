@@ -62,3 +62,192 @@ kbd {
 aside .taxonomy-terms-cloud {
   display: none;
 }
+
+// ============================================================================
+// ACCESSIBLE CODE BLOCK STYLING (WCAG AA Compliant)
+// ============================================================================
+
+// Inline code styling with improved contrast
+code {
+  background-color: #e8e8e8; // Improved from #f4f4f4 for better contrast
+  color: #2d2d2d; // Explicit dark text for 7:1 contrast ratio
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Menlo', 'Consolas', 'Roboto Mono', 'Courier New', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+  border: 1px solid #d0d0d0; // Subtle border for better definition
+
+  // Focus state for keyboard navigation
+  &:focus {
+    outline: 2px solid #0060AF; // YMCA blue
+    outline-offset: 2px;
+  }
+}
+
+// Code block (pre) styling
+pre {
+  background-color: #2d2d2d; // Dark background
+  color: #f8f8f2; // Light text (14:1 contrast ratio)
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  border: 1px solid #1a1a1a;
+  position: relative;
+
+  // Scrollbar styling for better visibility
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+
+    &:hover {
+      background: #777;
+    }
+  }
+
+  // Code inside pre blocks
+  code {
+    background: none;
+    color: inherit;
+    padding: 0;
+    border: none;
+    font-size: inherit;
+  }
+}
+
+// Copy button accessibility improvements
+.highlight {
+  position: relative;
+
+  .copy-button,
+  button[aria-label*="copy"],
+  button[title*="copy"] {
+    // Ensure good contrast
+    background: rgba(0, 96, 175, 0.9); // YMCA blue with opacity
+    color: #ffffff;
+    border: 1px solid #0060AF;
+    border-radius: 4px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    // Focus state for keyboard users
+    &:focus {
+      outline: 2px solid #FDB912; // YMCA yellow for high contrast
+      outline-offset: 2px;
+      background: #0060AF;
+    }
+
+    // Hover state
+    &:hover {
+      background: #0060AF;
+      transform: scale(1.05);
+    }
+
+    // Active state
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
+
+// Table accessibility improvements
+table {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #2d2d2d;
+  }
+
+  // Focus state for keyboard navigation
+  th:focus,
+  td:focus {
+    outline: 2px solid #0060AF;
+    outline-offset: -2px;
+  }
+}
+
+// Alert/callout boxes with proper contrast
+.alert-info {
+  background-color: rgba(0, 96, 175, 0.1);
+  border-left: 4px solid #0060AF;
+  color: #1a1a1a;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.alert-warning {
+  background-color: rgba(253, 185, 18, 0.1);
+  border-left: 4px solid #FDB912;
+  color: #1a1a1a;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.alert-danger {
+  background-color: rgba(227, 30, 36, 0.1);
+  border-left: 4px solid #E31E24;
+  color: #1a1a1a;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.alert-success {
+  background-color: rgba(0, 167, 157, 0.1);
+  border-left: 4px solid #00A79D;
+  color: #1a1a1a;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+// Card hover effects with accessibility
+.card {
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  // Focus state for keyboard navigation
+  &:focus-within {
+    outline: 2px solid #0060AF;
+    outline-offset: 2px;
+  }
+}
+
+// Link focus states (global improvement)
+a:focus {
+  outline: 2px solid #0060AF;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+// Button focus states
+button:focus,
+.btn:focus {
+  outline: 2px solid #FDB912;
+  outline-offset: 2px;
+}

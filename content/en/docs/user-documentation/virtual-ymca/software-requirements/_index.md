@@ -6,14 +6,18 @@ title: Software Requirements
 * Open Y version 2.0 or newer.
 * The ability to install Virtual YMCA modules
 
-## Virtual Y Standalone Site 
-### Hosting 
+## Virtual Y Standalone Site
+### Hosting
 **Tech stack required**
 
 * Ubuntu Server (local or Cloud environment) with 2CPU and 2GB of RAM minimum.
-*  Server configured with LAMP stack (Linux/Apache/MySQL/PHP).
-* PHP 7.4+ ( PHP 8.1+ is recommended)
-* Composer
+* Server configured with LAMP stack (Linux/Apache/MySQL/PHP).
+* **PHP:** 8.3 or higher
+* **Database:** MySQL 8.0+ or MariaDB 10.6+
+* **Web Server:** Apache 2.4+ or Nginx 1.18+
+* **Composer:** 2.0 or higher
+
+For detailed requirements, see [Server Requirements](/docs/development/server-requirements/).
 
 **Recommended Hosting Solutions**
 * Digital Ocean – Cost-effective. For self-installs.
