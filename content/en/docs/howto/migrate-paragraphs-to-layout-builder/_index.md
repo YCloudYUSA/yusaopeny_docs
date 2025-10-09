@@ -501,7 +501,7 @@ Ready to start your migration? Follow these steps:
 2. **[Choose approach](#step-3-choose-your-migration-approach)** - Manual, automated, or hybrid
 3. **[Create migration plan](#step-5-bulk-migration-tips)** - Prioritize pages, assign owners
 4. **[Start small](#step-4-manual-migration-process-recommended)** - Migrate 5-10 pages as pilot
-5. **[Get help if needed](/community/partners/)** - Contact agency partners
+5. **[Get help if needed](https://ds.ymca.org/partners)** - Contact agency partners
 
 **Questions?** Join [YMCA Community Slack](https://ycloud.y.org/slack) and ask in #development! 🚀
 

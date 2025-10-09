@@ -156,7 +156,7 @@ Before evaluating costs, understand which offering fits your YMCA best.
 ### One-Time Costs
 
 **Initial Setup (with agency partner):**
-- Small Y Template: $15,000 - $35,000
+- Small Y Template: $2,000 - $35,000
 - Full Distribution: $40,000 - $100,000+
 
 **What's included in setup:**
@@ -199,7 +199,7 @@ Before evaluating costs, understand which offering fits your YMCA best.
 
 | Platform Type | Initial Cost (Estimate) | Annual Cost (Estimate) | Total 5-Year Cost (Estimate) |
 |--------------|------------------------|----------------------|------------------------------|
-| **Small Y Template** | $15,000 - $35,000 | $3,000 - $10,000 | $30,000 - $85,000 |
+| **Small Y Template** | $2,000 - $35,000 | $3,000 - $10,000 | $17,000 - $85,000 |
 | **Full Distribution** | $40,000 - $80,000 | $10,000 - $25,000 | $90,000 - $205,000 |
 | **Custom WordPress** | $20,000 - $50,000 | $5,000 - $15,000 | $45,000 - $125,000 |
 | **Proprietary CMS** | $30,000 - $100,000 | $15,000 - $40,000 | $105,000 - $300,000 |
@@ -293,7 +293,7 @@ Before evaluating costs, understand which offering fits your YMCA best.
 
 ### Implementation Partners
 
-**Find a partner:** [Agency Partner Directory](/community/partners/)
+**Find a partner:** [Agency Partner Directory](https://ds.ymca.org/partners)
 
 **What to look for:**
 - Drupal and YMCA Website Services experience
@@ -369,7 +369,7 @@ Now that you understand the platform and costs, take these next steps:
 - [ ] Got executive buy-in and budget approval
 - [ ] Set realistic timeline expectations
 
-**Ready to move forward?** Contact an [agency partner](/community/partners/) or join the [community Slack](https://ycloud.y.org/slack) to announce your project!
+**Ready to move forward?** Contact an [agency partner](https://ds.ymca.org/partners) or join the [community Slack](https://ycloud.y.org/slack) to announce your project!
 
 ---
 
@@ -424,7 +424,7 @@ A: Yes, anytime. You own your code and data completely.
 - **[Community Slack](https://ycloud.y.org/slack)** - Real-time chat with YMCA digital leaders
 - **[Monthly Community Calls](/blog/monthly-calls/)** - Live Q&A and demos
 - **[GitHub Discussions](https://github.com/YCloudYUSA/yusaopeny/discussions)** - Ask questions publicly
-- **[Agency Partners](/community/partners/)** - Professional consultation
+- **[Agency Partners](https://ds.ymca.org/partners)** - Professional consultation
 
 ### Resources for Executives
 
@@ -506,7 +506,7 @@ A: Yes, anytime. You own your code and data completely.
 
 ---
 
-**Ready to get started?** Join the [community Slack](https://ycloud.y.org/slack), explore the [Small Y Template](/docs/small-y/), or contact an [agency partner](/community/partners/) for a consultation! 🚀
+**Ready to get started?** Join the [community Slack](https://ycloud.y.org/slack), explore the [Small Y Template](/docs/small-y/), or contact an [agency partner](https://ds.ymca.org/partners) for a consultation! 🚀
 
 <style>
 .alert-success {

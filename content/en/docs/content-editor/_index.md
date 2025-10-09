@@ -11,7 +11,7 @@ hide_sidebar: true
 <div class="text-center mb-5 mt-4">
   <h1 class="display-4 mb-3">Welcome, Content Editors! 🎨</h1>
   <p class="lead">Everything you need to create beautiful pages, manage content, and publish updates to your YMCA website.</p>
-  <p style="font-size: 1.125rem;"><strong>New here?</strong> Start with our <a href="/docs/getting-started/">Getting Started Guide</a>.</p>
+  <p style="font-size: 1.125rem;"><strong>New here?</strong> Start with our <a href="/docs/user-documentation/">Getting Started Guide for Content Editors</a>.</p>
 </div>
 
 <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
@@ -24,15 +24,15 @@ hide_sidebar: true
             <i class="fas fa-rocket fa-2x" style="color: var(--ymca-teal);"></i>
           </div>
           <div class="flex-grow-1">
-            <h4 class="card-title mb-2">Getting Started</h4>
+            <h4 class="card-title mb-2">Getting Started for Content Editors</h4>
             <p class="card-text text-muted mb-3" style="font-size: 1rem;">
-              New to YMCA Website Services? Learn the basics of content editing, understand the interface, and create your first page.
+              Learn the basics of content editing, understand the interface, and create your first page with Layout Builder.
             </p>
           </div>
         </div>
         <div class="mt-auto">
-          <a href="/docs/getting-started/" class="btn btn-outline-primary btn-sm w-100">
-            Start Learning <i class="fas fa-arrow-right ms-2"></i>
+          <a href="/docs/user-documentation/" class="btn btn-outline-primary btn-sm w-100">
+            Start Here <i class="fas fa-arrow-right ms-2"></i>
           </a>
         </div>
         <hr class="my-3">
@@ -41,7 +41,7 @@ hide_sidebar: true
           <ul class="mb-0 mt-2">
             <li>Logging in and navigating the admin</li>
             <li>Creating your first landing page</li>
-            <li>Understanding content types</li>
+            <li>Adding blocks from the Block Library</li>
             <li>Working with media and images</li>
           </ul>
         </div>

@@ -11,7 +11,7 @@ hide_sidebar: true
 <div class="text-center mb-5 mt-4">
   <h1 class="display-4 mb-3">Welcome, Decision Makers! 📊</h1>
   <p class="lead">Explore YMCA Website Services capabilities and connect with the community.</p>
-  <p style="font-size: 1.125rem;"><strong>Evaluating the platform?</strong> Start with <a href="/docs/getting-started/">Getting Started</a>.</p>
+  <p style="font-size: 1.125rem;"><strong>Evaluating the platform?</strong> Start with <a href="/docs/decision-maker/getting-started/">Getting Started for Decision Makers</a>.</p>
 </div>
 
 <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
@@ -24,25 +24,25 @@ hide_sidebar: true
             <i class="fas fa-compass fa-2x" style="color: var(--ymca-teal);"></i>
           </div>
           <div class="flex-grow-1">
-            <h4 class="card-title mb-2">Getting Started</h4>
+            <h4 class="card-title mb-2">Getting Started for Decision Makers</h4>
             <p class="card-text text-muted mb-3" style="font-size: 1rem;">
-              Understand what YMCA Website Services can do for your Y. Explore features, capabilities, and community resources.
+              Evaluate YMCA Website Services, understand costs and ROI, and make informed decisions for your organization.
             </p>
           </div>
         </div>
         <div class="mt-auto">
-          <a href="/docs/getting-started/" class="btn btn-outline-info btn-sm w-100">
-            Learn More <i class="fas fa-arrow-right ms-2"></i>
+          <a href="/docs/decision-maker/getting-started/" class="btn btn-outline-info btn-sm w-100">
+            Start Here <i class="fas fa-arrow-right ms-2"></i>
           </a>
         </div>
         <hr class="my-3">
         <div class="text-muted" style="font-size: 0.95rem;">
           <strong>You'll learn:</strong>
           <ul class="mb-0 mt-2">
-            <li>Platform overview</li>
-            <li>Key features and benefits</li>
-            <li>Success stories</li>
-            <li>Implementation options</li>
+            <li>Platform overview and capabilities</li>
+            <li>Small Y vs Full Distribution</li>
+            <li>Total cost of ownership</li>
+            <li>Implementation timeline</li>
           </ul>
         </div>
       </div>
