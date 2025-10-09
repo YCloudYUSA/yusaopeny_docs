@@ -4,42 +4,417 @@ linkTitle = "YMCA Website Services Docs"
 
 +++
 
-{{< blocks/cover title="Welcome to the YMCA Digital Services Documentation" image_anchor="top" height="med" color="dark" >}}
-<div class="mx-auto">
-	<a class="btn btn-lg btn-primary me-3 mb-4" href="{{< relref "/docs" >}}">
-		Read the Docs<i class="fas fa-arrow-alt-circle-right ms-2"></i>
-	</a>
-	<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/YCloudYUSA/yusaopeny-project#installation">
+{{< blocks/cover title="YMCA Digital Services Documentation" image_anchor="top" height="min" color="dark" >}}
+<div class="mx-auto compact-hero">
+	<p class="mb-3">Your complete guide to building, managing, and extending YMCA websites</p>
+	<a class="btn btn-lg btn-light me-3 mb-2" href="https://github.com/YCloudYUSA/yusaopeny-project#installation">
 		Install YMCA Website Services <i class="fab fa-github ms-2 "></i>
 	</a>
-	<p class="lead mt-5"></p>
 </div>
 {{< /blocks/cover >}}
 
-
 {{% blocks/lead color="primary" %}}
-YMCA Website Services is a digital transformation platform for YMCAs.
+<div class="compact-lead">
+	<h2 class="text-center mb-1">I am a...</h2>
+	<p class="text-center mb-0">Choose your role to jump straight to the documentation you need</p>
+</div>
 {{% /blocks/lead %}}
 
-{{< blocks/section color="dark" type="row">}}
+{{< blocks/section color="white" >}}
+<div class="container">
+	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+		<!-- Content Editor Card -->
+		<div class="col">
+			<div class="card h-100 shadow-sm border-0 hover-lift persona-card-primary">
+				<div class="card-body text-center p-4">
+					<div class="card-icon mb-4">
+						<i class="fas fa-pen-fancy fa-3x" style="color: var(--ymca-teal);"></i>
+					</div>
+					<h4 class="card-title mb-3 fw-bold">Content Editor</h4>
+					<p class="card-text text-muted mb-4">Create and manage content, build pages, and use components on your YMCA website.</p>
+					<div class="d-grid gap-2 mb-3">
+						<a href="/docs/content-editor/" class="btn btn-primary">Get Started</a>
+					</div>
+					<hr class="my-3">
+					<div class="text-start small">
+						<strong>Quick Links:</strong>
+						<ul class="list-unstyled mt-2 mb-0">
+							<li><a href="/docs/user-documentation/layout-builder/block-library/" class="text-decoration-none"><strong style="color: var(--ymca-yellow);">🧱 Block Library</strong></a></li>
+							<li><a href="/docs/user-documentation/content-types/" class="text-decoration-none"><strong style="color: var(--ymca-yellow);">📄 Content Types</strong></a></li>
+							<li><a href="/docs/user-documentation/" class="text-decoration-none">🚀 Getting Started</a></li>
+							<li><a href="/docs/user-documentation/layout-builder/" class="text-decoration-none">🎨 Layout Builder</a></li>
+							<li><a href="/docs/troubleshooting/" class="text-decoration-none">🔧 Troubleshooting</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
-{{% blocks/feature icon="fa-user-friends" title="Visit the message board!" %}}
-Get updates and ask questions.
+		<!-- Developer Card -->
+		<div class="col">
+			<div class="card h-100 shadow-sm border-0 hover-lift persona-card-success">
+				<div class="card-body text-center p-4">
+					<div class="card-icon mb-4">
+						<i class="fas fa-code fa-3x" style="color: var(--ymca-purple);"></i>
+					</div>
+					<h4 class="card-title mb-3 fw-bold">Developer</h4>
+					<p class="card-text text-muted mb-4">Build features, contribute code, and customize YMCA Website Services for your organization.</p>
+					<div class="d-grid gap-2 mb-3">
+						<a href="/docs/developer/" class="btn btn-success">Get Started</a>
+					</div>
+					<hr class="my-3">
+					<div class="text-start small">
+						<strong>Quick Links:</strong>
+						<ul class="list-unstyled mt-2 mb-0">
+							<li><a href="/docs/contribution-guidelines/" class="text-decoration-none"><strong style="color: var(--ymca-yellow);">🤝 Contribution Guidelines</strong></a></li>
+							<li><a href="/docs/developer/getting-started/" class="text-decoration-none">🚀 Getting Started</a></li>
+							<li><a href="/docs/development/Open-Y-technology-pipeline/" class="text-decoration-none">⚙️ Tech Stack</a></li>
+							<li><a href="/docs/quick-reference/" class="text-decoration-none">📚 Quick Reference</a></li>
+							<li><a href="/docs/troubleshooting/" class="text-decoration-none">🔧 Troubleshooting</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
-[Join the community...](/community)
-{{% /blocks/feature %}}
+		<!-- Site Builder Card -->
+		<div class="col">
+			<div class="card h-100 shadow-sm border-0 hover-lift persona-card-warning">
+				<div class="card-body text-center p-4">
+					<div class="card-icon mb-4">
+						<i class="fas fa-server fa-3x" style="color: var(--ymca-blue);"></i>
+					</div>
+					<h4 class="card-title mb-3 fw-bold">Site Builder</h4>
+					<p class="card-text text-muted mb-4">Install, configure, and deploy YMCA Website Services for your association.</p>
+					<div class="d-grid gap-2 mb-3">
+						<a href="/docs/site-builder/" class="btn btn-warning text-white">Get Started</a>
+					</div>
+					<hr class="my-3">
+					<div class="text-start small">
+						<strong>Quick Links:</strong>
+						<ul class="list-unstyled mt-2 mb-0">
+							<li><a href="/docs/small-y/" class="text-decoration-none"><strong style="color: var(--ymca-yellow);">✨ Small Y Template</strong></a></li>
+							<li><a href="/docs/site-builder/getting-started/" class="text-decoration-none">🚀 Getting Started</a></li>
+							<li><a href="https://github.com/YCloudYUSA/yusaopeny-project#installation" class="text-decoration-none">📦 Installation</a></li>
+							<li><a href="/docs/howto/" class="text-decoration-none">🔧 How-to Guides</a></li>
+							<li><a href="/docs/troubleshooting/" class="text-decoration-none">🛠️ Troubleshooting</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Decision Maker Card -->
+		<div class="col">
+			<div class="card h-100 shadow-sm border-0 hover-lift persona-card-info">
+				<div class="card-body text-center p-4">
+					<div class="card-icon mb-4">
+						<i class="fas fa-chart-line fa-3x" style="color: var(--ymca-red);"></i>
+					</div>
+					<h4 class="card-title mb-3 fw-bold">Decision Maker</h4>
+					<p class="card-text text-muted mb-4">Understand the platform, explore features, and connect with the YMCA community.</p>
+					<div class="d-grid gap-2 mb-3">
+						<a href="/docs/decision-maker/" class="btn btn-info text-white">Get Started</a>
+					</div>
+					<hr class="my-3">
+					<div class="text-start small">
+						<strong>Quick Links:</strong>
+						<ul class="list-unstyled mt-2 mb-0">
+							<li><a href="/docs/small-y/" class="text-decoration-none"><strong style="color: var(--ymca-yellow);">✨ Small Y Template</strong></a></li>
+							<li><a href="/docs/decision-maker/getting-started/" class="text-decoration-none">🚀 Getting Started</a></li>
+							<li><a href="/community/" class="text-decoration-none">👥 Success Stories</a></li>
+							<li><a href="/blog/releases/" class="text-decoration-none">📰 Release Notes</a></li>
+							<li><a href="https://ycloud.y.org/slack" class="text-decoration-none">💬 Join Community</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+/* YMCA Brand Colors (Small Y Theme) */
+:root {
+	--ymca-teal: #00A79D;
+	--ymca-purple: #582C83;
+	--ymca-blue: #0060AF;
+	--ymca-red: #E31E24;
+	--ymca-yellow: #FDB912;
+}
+
+/* Compact Hero Section - Reduce height by 4x */
+.td-cover-block--height-min {
+	min-height: 150px !important;
+	padding-top: 2rem !important;
+	padding-bottom: 2rem !important;
+}
+
+.td-cover-block h1 {
+	font-size: 2rem !important;
+	margin-top: 0 !important;
+	margin-bottom: 0.5rem !important;
+	padding-bottom: 0.5rem !important;
+}
+
+.compact-hero {
+	padding-top: 0 !important;
+	margin-top: 0 !important;
+}
+
+.compact-hero p {
+	font-size: 1rem !important;
+	margin-bottom: 0.75rem !important;
+}
+
+@media (min-width: 768px) {
+	.td-cover-block h1 {
+		font-size: 2.5rem !important;
+	}
+}
+
+/* Compact Lead Section - Reduce height by 3x */
+.td-box--primary {
+	padding-top: 1rem !important;
+	padding-bottom: 1rem !important;
+}
+
+.compact-lead {
+	padding-top: 0.5rem !important;
+	padding-bottom: 0.5rem !important;
+}
+
+.compact-lead h2 {
+	font-size: 1.75rem !important;
+	margin-bottom: 0.25rem !important;
+}
+
+.compact-lead p {
+	font-size: 1rem !important;
+	margin-bottom: 0 !important;
+}
+
+.td-arrow-down {
+	padding-bottom: 1rem !important;
+}
+
+.td-arrow-down::after {
+	bottom: -1rem !important;
+}
+
+.hover-lift {
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover-lift:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 24px rgba(0, 167, 157, 0.2) !important;
+}
+
+.card {
+	border-radius: 16px;
+	border: none;
+	overflow: hidden;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+
+.card-text {
+	flex-grow: 1;
+	line-height: 1.6;
+}
+
+/* Persona Card Specific Styling */
+.persona-card-primary .btn-primary {
+	background-color: var(--ymca-teal);
+	border-color: var(--ymca-teal);
+	border-radius: 50px;
+	padding: 0.75rem 2rem;
+	font-weight: 600;
+}
+
+.persona-card-primary .btn-primary:hover {
+	background-color: #008c84;
+	border-color: #008c84;
+	transform: scale(1.05);
+}
+
+.persona-card-success .btn-success {
+	background-color: var(--ymca-purple);
+	border-color: var(--ymca-purple);
+	border-radius: 50px;
+	padding: 0.75rem 2rem;
+	font-weight: 600;
+}
+
+.persona-card-success .btn-success:hover {
+	background-color: #4a2470;
+	border-color: #4a2470;
+	transform: scale(1.05);
+}
+
+.persona-card-warning .btn-warning {
+	background-color: var(--ymca-blue);
+	border-color: var(--ymca-blue);
+	border-radius: 50px;
+	padding: 0.75rem 2rem;
+	font-weight: 600;
+	color: white;
+}
+
+.persona-card-warning .btn-warning:hover {
+	background-color: #004f8f;
+	border-color: #004f8f;
+	transform: scale(1.05);
+}
+
+.persona-card-info .btn-info {
+	background-color: var(--ymca-red);
+	border-color: var(--ymca-red);
+	border-radius: 50px;
+	padding: 0.75rem 2rem;
+	font-weight: 600;
+}
+
+.persona-card-info .btn-info:hover {
+	background-color: #c51a1f;
+	border-color: #c51a1f;
+	transform: scale(1.05);
+}
+
+.card-icon {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	background: linear-gradient(135deg, rgba(0, 167, 157, 0.1), rgba(0, 167, 157, 0.05));
+}
+</style>
+{{< /blocks/section >}}
+
+{{< blocks/section color="dark" >}}
+<div class="col-12 text-center mb-5">
+	<h2 class="mb-3">Browse by Documentation Type</h2>
+	<p class="lead">Following the <a href="https://diataxis.fr/" target="_blank" class="text-warning text-decoration-none">Diátaxis</a> framework for clear, purposeful documentation</p>
+</div>
+
+<div class="container">
+	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+		<div class="col">
+			<div class="text-center p-4 bg-white bg-opacity-10 rounded h-100">
+				<i class="fas fa-graduation-cap fa-3x text-warning mb-3"></i>
+				<h4 class="mb-3">Tutorials</h4>
+				<p class="mb-3">Learning-oriented guides to help you get started step-by-step.</p>
+				<a href="/docs/user-documentation/" class="btn btn-outline-light">Start Learning</a>
+			</div>
+		</div>
+		<div class="col">
+			<div class="text-center p-4 bg-white bg-opacity-10 rounded h-100">
+				<i class="fas fa-tasks fa-3x text-info mb-3"></i>
+				<h4 class="mb-3">How-to Guides</h4>
+				<p class="mb-3">Task-oriented instructions to accomplish specific goals.</p>
+				<a href="/docs/howto/" class="btn btn-outline-light">Find Solutions</a>
+			</div>
+		</div>
+		<div class="col">
+			<div class="text-center p-4 bg-white bg-opacity-10 rounded h-100">
+				<i class="fas fa-book fa-3x text-success mb-3"></i>
+				<h4 class="mb-3">Reference</h4>
+				<p class="mb-3">Technical details, APIs, and system specifications.</p>
+				<a href="/docs/development/" class="btn btn-outline-light">View Docs</a>
+			</div>
+		</div>
+		<div class="col">
+			<div class="text-center p-4 bg-white bg-opacity-10 rounded h-100">
+				<i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+				<h4 class="mb-3">Explanation</h4>
+				<p class="mb-3">Understanding concepts, architecture, and design decisions.</p>
+				<a href="/docs/content-structure/" class="btn btn-outline-light">Learn More</a>
+			</div>
+		</div>
+	</div>
+</div>
+{{< /blocks/section >}}
+
+{{% blocks/section color="white" %}}
+<div class="container">
+	<div class="text-center mb-5">
+		<h2>Popular Topics</h2>
+		<p class="lead text-muted">Quick access to commonly used documentation</p>
+	</div>
+	<div class="row g-4">
+		<div class="col-md-3">
+			<div class="card border-primary h-100">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fas fa-rocket text-primary"></i> Getting Started</h5>
+					<ul class="list-unstyled">
+						<li><a href="/docs/getting-started/">Onboarding Guide</a></li>
+						<li><a href="/docs/small-y/">Small Y Template</a></li>
+						<li><a href="https://github.com/YCloudYUSA/yusaopeny-project#installation">Installation</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card border-success h-100">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fas fa-life-ring text-success"></i> Support & Reference</h5>
+					<ul class="list-unstyled">
+						<li><a href="/docs/quick-reference/">Quick Reference</a></li>
+						<li><a href="/docs/troubleshooting/">Troubleshooting</a></li>
+						<li><a href="/docs/user-documentation/">Content Editor Guide</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card border-warning h-100">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fas fa-code text-warning"></i> Development</h5>
+					<ul class="list-unstyled">
+						<li><a href="/docs/development/drupal-10-update/">Drupal 10 → 11 Upgrade</a></li>
+						<li><a href="/docs/development/Open-Y-technology-pipeline/">Technology Pipeline</a></li>
+						<li><a href="/blog/releases/">Release Notes</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card border-info h-100">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fas fa-hands-helping text-info"></i> Contributing</h5>
+					<ul class="list-unstyled">
+						<li><a href="/docs/contribution-guidelines/">Contribution Guide</a></li>
+						<li><a href="/docs/development/Code-Review-Quality-Best-Practices/">Code Standards</a></li>
+						<li><a href="https://github.com/YCloudYUSA/yusaopeny">GitHub Repo</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{% /blocks/section %}}
+
+{{< blocks/section color="primary" type="row">}}
 
 {{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/YCloudYUSA/yusaopeny" %}}
 YMCA Website Services is open source! Dig into the code on GitHub.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fab fa-slack" title="Join the conversation!" %}}
-Hop into our Slack team to chat with developers, implementers, decision-makers, and more.
+Hop into our Slack team to chat with developers, implementers, and decision-makers.
 
 [<i class="fas fa-envelope"></i> Email us to request access...](<mailto:ycloud@ymca.net?subject=Slack Access Request>)
 {{% /blocks/feature %}}
 
 {{< /blocks/section >}}
 
-{{% blocks/lead color="primary" %}}
-<a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-dark.svg" alt="Deploys by Netlify" /> </a>{{% /blocks/lead %}}
+{{% blocks/lead color="secondary" %}}
+<a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-dark.svg" alt="Deploys by Netlify" /> </a>
+{{% /blocks/lead %}}

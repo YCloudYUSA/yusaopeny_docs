@@ -203,11 +203,6 @@ enable = false
 	url = "mailto:ycloud@ymca.net?subject=Slack Access Request"
 	icon = "fab fa-slack"
         desc = "Chat with developers and community members. Email us to request access."
-[[params.links.developer]]
-	name = "Message Board"
-	url = "https://community.ycloud.y.org"
-	icon = "fa fa-user-friends"
-        desc = "Connect with the community and ask for help and support."
 
 [module]
   # uncomment line below for temporary local development of module
