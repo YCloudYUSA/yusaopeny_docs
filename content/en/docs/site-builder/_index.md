@@ -11,11 +11,45 @@ hide_sidebar: true
 <div class="text-center mb-5 mt-4">
   <h1 class="display-4 mb-3">Welcome, Site Builders! 🏗️</h1>
   <p class="lead">Configure and launch YMCA websites for your organization.</p>
-  <p style="font-size: 1.125rem;"><strong>First time setup?</strong> Follow the <a href="https://github.com/YCloudYUSA/yusaopeny-project#installation">Installation Guide</a>.</p>
+  <p style="font-size: 1.125rem;"><strong>New here?</strong> Start with our <a href="/docs/site-builder/getting-started/">Getting Started Guide for Site Builders</a>.</p>
 </div>
 
 <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
-  <!-- Card 1: Installation -->
+  <!-- Card 1: Getting Started -->
+  <div class="col">
+    <div class="card h-100 shadow-sm border-0 hover-lift persona-topic-card">
+      <div class="card-body p-4">
+        <div class="d-flex align-items-start mb-3">
+          <div class="card-icon-small me-3" style="background: linear-gradient(135deg, rgba(0, 167, 157, 0.1), rgba(0, 167, 157, 0.05));">
+            <i class="fas fa-rocket fa-2x" style="color: var(--ymca-teal);"></i>
+          </div>
+          <div class="flex-grow-1">
+            <h4 class="card-title mb-2">Getting Started for Site Builders</h4>
+            <p class="card-text text-muted mb-3" style="font-size: 1rem;">
+              Learn site builder fundamentals, understand installation options, and configure your first YMCA website.
+            </p>
+          </div>
+        </div>
+        <div class="mt-auto">
+          <a href="/docs/site-builder/getting-started/" class="btn btn-outline-warning btn-sm w-100">
+            Start Here <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+        <hr class="my-3">
+        <div class="text-muted" style="font-size: 0.95rem;">
+          <strong>You'll learn:</strong>
+          <ul class="mb-0 mt-2">
+            <li>Site builder role and responsibilities</li>
+            <li>Installation and deployment workflows</li>
+            <li>Configuration management basics</li>
+            <li>Best practices for YMCA sites</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2: Installation -->
   <div class="col">
     <div class="card h-100 shadow-sm border-0 hover-lift persona-topic-card">
       <div class="card-body p-4">

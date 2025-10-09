@@ -69,11 +69,13 @@ Before installing, decide which solution fits your YMCA best.
 
 Before starting, ensure your server meets these requirements:
 
-- **PHP:** 8.1 or higher
-- **Database:** MySQL 8.0+ or MariaDB 10.5+
-- **Web Server:** Apache 2.4+ or Nginx
-- **Composer:** 2.0+
-- **Memory:** 512MB PHP memory limit minimum
+- **Drupal:** 11.1.x or higher
+- **PHP:** 8.3 or higher
+- **Database:** MySQL 8.0+ or MariaDB 10.6+
+- **Web Server:** Apache 2.4+ or Nginx 1.18+
+- **Composer:** 2.0 or higher
+
+For detailed requirements, see [Server Requirements](/docs/development/server-requirements/).
 
 ### Installation Steps
 
@@ -433,43 +435,3 @@ MY_YMCA_SITE/
 ---
 
 **Ready to build?** Start creating content with the [Content Editor Guide](/docs/user-documentation/) or configure advanced features! 🚀
-
-<style>
-.alert-warning {
-  background-color: rgba(253, 185, 18, 0.1);
-  border-left: 4px solid #FDB912;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 4px;
-}
-
-.card {
-  transition: all 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-code {
-  background-color: #f4f4f4;
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-family: 'Courier New', monospace;
-}
-
-pre {
-  background-color: #2d2d2d;
-  color: #f8f8f2;
-  padding: 1rem;
-  border-radius: 4px;
-  overflow-x: auto;
-}
-
-pre code {
-  background: none;
-  color: inherit;
-  padding: 0;
-}
-</style>
