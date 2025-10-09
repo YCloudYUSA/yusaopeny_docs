@@ -363,6 +363,13 @@ Fixes #123
 
 ### Pull Request Checklist
 
+<div class="checklist-container" style="position: relative; background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+  <button onclick="copyPRChecklist()" style="position: absolute; top: 10px; right: 10px; background: #582C83; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px;">
+    <i class="fas fa-copy"></i> Copy Checklist
+  </button>
+
+  <div id="pr-checklist-content" style="margin-top: 1rem;">
+
 - [ ] Code follows Drupal coding standards
 - [ ] Added/updated tests if applicable
 - [ ] Updated documentation
@@ -370,6 +377,32 @@ Fixes #123
 - [ ] Passes automated tests
 - [ ] Screenshots for UI changes
 - [ ] Tested on multiple browsers/devices
+
+  </div>
+</div>
+
+<script>
+function copyPRChecklist() {
+  const checklistText = `Pull Request Checklist:
+
+- [ ] Code follows Drupal coding standards
+- [ ] Added/updated tests if applicable
+- [ ] Updated documentation
+- [ ] No merge conflicts
+- [ ] Passes automated tests
+- [ ] Screenshots for UI changes
+- [ ] Tested on multiple browsers/devices`;
+
+  navigator.clipboard.writeText(checklistText).then(() => {
+    const btn = event.target.closest('button');
+    const originalHTML = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+    setTimeout(() => {
+      btn.innerHTML = originalHTML;
+    }, 2000);
+  });
+}
+</script>
 
 ---
 

@@ -88,6 +88,10 @@ By the end of this guide, you'll be able to:
 - **Monthly releases** with security updates and new features
 - **Drupal 11** ready (future-proof technology)
 
+<div class="alert alert-info" role="alert" style="margin-top: 1.5rem;">
+  <i class="fas fa-exclamation-circle me-2"></i><strong>Important Disclaimer:</strong> All budget estimates, timelines, and agency recommendations in this guide are provided for reference only and are intended to serve as a template for discussion and planning with your chosen digital partner. Actual costs, timelines, and services will vary based on your specific needs, geographic location, project scope, and chosen implementation approach. Always obtain detailed quotes from multiple implementation partners before making decisions.
+</div>
+
 ---
 
 ## Step 2: Choose Your Solution Path
@@ -192,7 +196,7 @@ Before evaluating costs, understand which offering fits your YMCA best.
 ### Cost Comparison vs. Alternatives
 
 <div class="alert alert-info" role="alert">
-  <i class="fas fa-info-circle me-2"></i><strong>Note:</strong> The following cost estimates are approximate and will vary significantly based on your specific needs, agency partner, hosting provider, customization requirements, and in-house capabilities. Use these as rough guidelines for budgeting, but obtain detailed quotes from implementation partners for accurate pricing.
+  <i class="fas fa-info-circle me-2"></i><strong>Cost Estimate Disclaimer:</strong> The following cost comparisons are approximate estimates provided for reference only and are intended to serve as a template for discussion and planning with your chosen digital partner. Actual costs will vary significantly based on your specific needs, geographic location, agency partner rates, hosting provider, customization requirements, content migration complexity, and in-house capabilities. These figures represent typical ranges observed across multiple implementations but should not be considered guaranteed pricing. Always obtain detailed, written quotes from 2-3 implementation partners before making budget decisions.
 </div>
 
 **YMCA Website Services vs. Proprietary Platforms (Estimated Ranges):**
@@ -229,8 +233,13 @@ Before evaluating costs, understand which offering fits your YMCA best.
 - [Missouri Valley Family YMCA](https://www.drupal.org/node/3536562) - Modern mobile-first redesign with Layout Builder completed in one quarter
 - [Attleboro Norton YMCA](https://www.drupal.org/node/3513046) - WordPress to Drupal 10 migration with Daxko integration, launched in 10 days
 - [YMCA of the North](https://www.drupal.org/case-study/activity-finder-for-ymca-of-the-north) - Activity Finder managing 15,000+ activities with Personify CRM integration
+- [YMCA of the North](https://fivejars.com/work/broadening-mobile-experience-for-ymca-north-members/) - Mobile experience enhancement improving member engagement and accessibility
+- [YMCA of Pierce and Kitsap Counties](https://fivejars.com/work/ymca-pierce-and-kitsap-counties/) - Multi-location site with integrated member portal and program management
+- [YMCA of Southwestern Ontario](https://imagexmedia.com/work/ymca-southwestern-ontario) - Regional site serving multiple branches with unified branding
+- [YMCA of Greater New York](https://imagexmedia.com/work/ymca-greater-new-york) - Large-scale metropolitan implementation with extensive customization
+- [YMCA of Metropolitan Los Angeles](https://imagexmedia.com/work/ymca-metropolitan-los-angeles) - Complex multi-branch site with advanced program finder
 
-[**→ View more case studies**](https://www.drupal.org/case-study/ymca-website-services)
+[**→ View more case studies**](https://ds.ymca.org/aboutus) | [**Add your case study**](https://github.com/YCloudYUSA/yusaopeny_docs/blob/main/content/en/docs/decision-maker/getting-started/_index.md)
 
 ### Support Options
 
@@ -247,13 +256,6 @@ Before evaluating costs, understand which offering fits your YMCA best.
 #### Paid Agency Support
 
 **Find an agency partner:** [Browse the Agency Partner Directory](https://ds.ymca.org/partners)
-
-**Services offered:**
-- Dedicated support contracts ($500-2,000/mo)
-- Guaranteed response times (4-24 hours)
-- Proactive monitoring and maintenance
-- Feature development and enhancements
-- Strategic consulting
 
 **Best for:** Medium-large YMCAs needing reliability and speed
 
@@ -457,9 +459,7 @@ A: Yes, anytime. You own your code and data completely.
 
 ### Resources for Executives
 
-- **[Platform Overview (PDF)]** - Share with board and leadership
-- **[ROI Calculator]** - Estimate 5-year costs vs alternatives
-- **[Case Studies](/community/)** - Success stories from peer YMCAs
+- **[Case Studies](https://ds.ymca.org/aboutus)** - Success stories from peer YMCAs
 - **[Release Notes](/blog/releases/)** - Quarterly updates and roadmap
 
 ---
