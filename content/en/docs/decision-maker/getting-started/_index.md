@@ -147,7 +147,7 @@ Before evaluating costs, understand which offering fits your YMCA best.
 | **Technical Resources** | Minimal | Moderate-High |
 | **Customization** | Moderate | Maximum |
 | **Best for Branches** | 1-5 | 6+ |
-| **Hosting Costs** | $50-200/mo | $200-500/mo |
+| **Hosting Costs** | $50-300/mo | $200-500/mo |
 
 ---
 
@@ -171,14 +171,14 @@ Before evaluating costs, understand which offering fits your YMCA best.
 
 | Category | Small Y | Full Distribution |
 |----------|---------|-------------------|
-| **Hosting** | $50-200/mo | $200-500/mo |
+| **Hosting** | $50-300/mo | $200-500/mo |
 | **Maintenance** | $200-500/mo | $500-1,500/mo |
 | **Content updates** | In-house staff | In-house staff |
 | **Security updates** | Included in maintenance | Included in maintenance |
 | **Feature enhancements** | Project-based | Project-based |
 
 **Total annual operating cost:**
-- Small Y: $3,000 - $8,400/year (hosting + basic maintenance)
+- Small Y: $3,000 - $9,600/year (hosting + basic maintenance)
 - Full Distribution: $8,400 - $24,000/year
 
 ### Hidden Costs to Consider
@@ -226,12 +226,11 @@ Before evaluating costs, understand which offering fits your YMCA best.
 </div>
 
 **Featured Implementations:**
-- Greater Wichita YMCA - Small Y Template
-- Treasure Valley Family YMCA - Multi-branch site
-- YMCA of Central Ohio - 14 branches with Activity Finder
-- Triangle Area YMCA - Modern redesign with campaigns
+- [Missouri Valley Family YMCA](https://www.drupal.org/node/3536562) - Modern mobile-first redesign with Layout Builder completed in one quarter
+- [Attleboro Norton YMCA](https://www.drupal.org/node/3513046) - WordPress to Drupal 10 migration with Daxko integration, launched in 10 days
+- [YMCA of the North](https://www.drupal.org/case-study/activity-finder-for-ymca-of-the-north) - Activity Finder managing 15,000+ activities with Personify CRM integration
 
-[**→ View case studies and testimonials**](/community/)
+[**→ View more case studies**](https://www.drupal.org/case-study/ymca-website-services)
 
 ### Support Options
 
@@ -247,11 +246,7 @@ Before evaluating costs, understand which offering fits your YMCA best.
 
 #### Paid Agency Support
 
-**Recommended agency partners:**
-- **CivicActions** - Full-service Drupal agency
-- **Aten Design Group** - Non-profit specialists
-- **Forum One** - Mission-driven digital
-- **Bounteous** - Enterprise Drupal experts
+**Find an agency partner:** [Browse the Agency Partner Directory](https://ds.ymca.org/partners)
 
 **Services offered:**
 - Dedicated support contracts ($500-2,000/mo)
@@ -360,6 +355,13 @@ Now that you understand the platform and costs, take these next steps:
 
 **Decision Framework Checklist:**
 
+<div class="checklist-container" style="position: relative; background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+  <button onclick="copyChecklist()" style="position: absolute; top: 10px; right: 10px; background: #0060AF; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px;">
+    <i class="fas fa-copy"></i> Copy Checklist
+  </button>
+
+  <div id="checklist-content" style="margin-top: 1rem;">
+
 - [ ] Identified technical resources (in-house vs agency)
 - [ ] Determined budget (one-time + annual)
 - [ ] Chose solution path (Small Y vs Full)
@@ -368,6 +370,33 @@ Now that you understand the platform and costs, take these next steps:
 - [ ] Shortlisted 2-3 implementation partners
 - [ ] Got executive buy-in and budget approval
 - [ ] Set realistic timeline expectations
+
+  </div>
+</div>
+
+<script>
+function copyChecklist() {
+  const checklistText = `Decision Framework Checklist:
+
+- [ ] Identified technical resources (in-house vs agency)
+- [ ] Determined budget (one-time + annual)
+- [ ] Chose solution path (Small Y vs Full)
+- [ ] Reviewed case studies from similar YMCAs
+- [ ] Connected with community on Slack
+- [ ] Shortlisted 2-3 implementation partners
+- [ ] Got executive buy-in and budget approval
+- [ ] Set realistic timeline expectations`;
+
+  navigator.clipboard.writeText(checklistText).then(() => {
+    const btn = event.target.closest('button');
+    const originalHTML = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+    setTimeout(() => {
+      btn.innerHTML = originalHTML;
+    }, 2000);
+  });
+}
+</script>
 
 **Ready to move forward?** Contact an [agency partner](https://ds.ymca.org/partners) or join the [community Slack](https://ycloud.y.org/slack) to announce your project!
 
@@ -381,7 +410,7 @@ Now that you understand the platform and costs, take these next steps:
 |----------|------------------|-------------------|
 | How many branches? | 1-5 | 6+ |
 | Technical resources? | Minimal | Moderate-High |
-| Budget range? | $25-50K | $60-150K |
+| Budget range? | $2-50K | $40-150K |
 | Timeline? | 4-8 weeks | 3-6 months |
 | Customization needs? | Moderate | Maximum |
 | Staff training? | 2-3 hours | 8-12 hours |
