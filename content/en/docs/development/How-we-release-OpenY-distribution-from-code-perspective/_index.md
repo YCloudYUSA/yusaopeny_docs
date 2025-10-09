@@ -9,8 +9,6 @@ aliases:
 1. YMCA Website Services Drupal Profile Distribution [YCloudYUSA/yusaopeny](https://github.com/YCloudYUSA/yusaopeny)
 1. YMCA Website Services Project for initiating an YMCA Website Services instance - [YCloudYUSA/yusaopeny-project](https://github.com/YCloudYUSA/yusaopeny-project)
 1. Continuous Integration/DevOps for rebuilding/installing YMCA Website Services - [YCloudYUSA/yusaopeny-cibox-build](https://github.com/YCloudYUSA/yusaopeny-cibox-build)
-1. CIBox development environment (Virtualbox, Docker, Vagrant) [YCloudYUSA/yusaopeny-cibox-vm](https://github.com/YCloudYUSA/yusaopeny-cibox-vm)
-1. Docksal development environment (Docker, VirtualBox) - [YCloudYUSA/yusaopeny-docksal](https://github.com/YCloudYUSA/yusaopeny-docksal)
 
 ### Release Management
 

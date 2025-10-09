@@ -40,7 +40,7 @@ These display the content for users to discover:
     - [Activity Finder (`ycloudyusa/yusaopeny_activity_finder`)](https://github.com/YCloudYUSA/yusaopeny_activity_finder) - this repo contains in-depth developer documentation.
 - Group Schedules
   - [Group Schedules (User Docs)](../../user-documentation/schedules/group-schedules)
-  - [Repeat Schedules (`ynorth-projects/openy_repeat`)](https://github.com/ynorth-projects/openy_repeat) - contains the "Repeat Schedules" block which is the basis for Group Schedules.
+  - [Repeat Schedules (`drupal/openy_repeat`)](https://www.drupal.org/project/openy_repeat) - contains the "Repeat Schedules" block which is the basis for Group Schedules.
 
 ## Data model
 

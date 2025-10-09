@@ -288,11 +288,9 @@ In this section you can learn how to configure development environment and CI se
   git remote add origin git@github.com:NAMESPACE/PROJECT.git
   git push -u origin master
   ```
-4. Spin up your local vagrant machine
+4. Spin up your local development environment
 
-  ```bash
-  vagrant up --provision
-  ```
+  **Recommended**: Use [DDEV](https://ddev.com/) for local development
 
 5. Setup CI server for new project based on [CIBox documentation](https://github.com/cibox/cibox#provision-new-ci-server).
 

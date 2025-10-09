@@ -38,6 +38,10 @@ Browse all available content types by category. Click any type to see detailed d
 
 Modern, flexible content types built for the Layout Builder page building system.
 
+<div class="alert alert-info" role="alert">
+  <i class="fas fa-info-circle me-2"></i><strong>Dual Support:</strong> Branch and Camp content types support both Layout Builder and Paragraphs, giving you flexibility in how you build your content. They appear in both sections below.
+</div>
+
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-4">
   <div class="col">
     <a href="./lb-landing-page" class="text-decoration-none">
@@ -114,6 +118,46 @@ Modern, flexible content types built for the Layout Builder page building system
       </div>
     </a>
   </div>
+
+  <div class="col">
+    <a href="./branch" class="text-decoration-none">
+      <div class="content-type-card card h-100 border-0 shadow-sm lb-type">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-start mb-3">
+            <div class="ct-icon me-3" style="background: linear-gradient(135deg, rgba(0, 167, 157, 0.1), rgba(0, 167, 157, 0.05));">
+              <i class="fas fa-building" style="color: var(--ymca-teal);"></i>
+            </div>
+            <div class="flex-grow-1">
+              <h4 class="card-title mb-1" style="font-size: 1.125rem;">Branch</h4>
+              <span class="badge bg-success mb-2 me-1" style="font-size: 0.75rem;">LAYOUT BUILDER</span>
+              <span class="badge bg-warning text-dark mb-2" style="font-size: 0.75rem;">PARAGRAPHS</span>
+            </div>
+          </div>
+          <p class="card-text text-muted small mb-0">YMCA branch locations with structured fields for address, hours, amenities. Supports both Layout Builder and Paragraphs.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col">
+    <a href="./camp" class="text-decoration-none">
+      <div class="content-type-card card h-100 border-0 shadow-sm lb-type">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-start mb-3">
+            <div class="ct-icon me-3" style="background: linear-gradient(135deg, rgba(0, 167, 157, 0.1), rgba(0, 167, 157, 0.05));">
+              <i class="fas fa-campground" style="color: var(--ymca-teal);"></i>
+            </div>
+            <div class="flex-grow-1">
+              <h4 class="card-title mb-1" style="font-size: 1.125rem;">Camp</h4>
+              <span class="badge bg-success mb-2 me-1" style="font-size: 0.75rem;">LAYOUT BUILDER</span>
+              <span class="badge bg-warning text-dark mb-2" style="font-size: 0.75rem;">PARAGRAPHS</span>
+            </div>
+          </div>
+          <p class="card-text text-muted small mb-0">Camp parent pages with structured fields. Supports both Layout Builder and Paragraphs for flexible content management.</p>
+        </div>
+      </div>
+    </a>
+  </div>
 </div>
 
 ### Paragraphs-Based Content Types (Legacy/Standard)
@@ -154,10 +198,11 @@ These content types use Paragraphs components or structured field configurations
             </div>
             <div class="flex-grow-1">
               <h4 class="card-title mb-1" style="font-size: 1.125rem;">Branch</h4>
+              <span class="badge bg-success mb-2 me-1" style="font-size: 0.75rem;">LAYOUT BUILDER</span>
               <span class="badge bg-warning text-dark mb-2" style="font-size: 0.75rem;">PARAGRAPHS</span>
             </div>
           </div>
-          <p class="card-text text-muted small mb-0">YMCA branch locations with structured fields for address, hours, amenities.</p>
+          <p class="card-text text-muted small mb-0">YMCA branch locations with structured fields for address, hours, amenities. Supports both Layout Builder and Paragraphs.</p>
         </div>
       </div>
     </a>
@@ -173,10 +218,11 @@ These content types use Paragraphs components or structured field configurations
             </div>
             <div class="flex-grow-1">
               <h4 class="card-title mb-1" style="font-size: 1.125rem;">Camp</h4>
+              <span class="badge bg-success mb-2 me-1" style="font-size: 0.75rem;">LAYOUT BUILDER</span>
               <span class="badge bg-warning text-dark mb-2" style="font-size: 0.75rem;">PARAGRAPHS</span>
             </div>
           </div>
-          <p class="card-text text-muted small mb-0">Camp parent pages. Use Camp Subpage (LB) for flexible subpages.</p>
+          <p class="card-text text-muted small mb-0">Camp parent pages with structured fields. Supports both Layout Builder and Paragraphs for flexible content management.</p>
         </div>
       </div>
     </a>

@@ -39,6 +39,22 @@ This page provides a link for the member to continue their registration, or a me
 ![A screenshot of the membership calculator summary step with a price listed.](membership-calculator--summary-price.png)
 ![A screenshot of the membership calculator summary step showing no membership available.](membership-calculator--summary-none.png)
 
+## Location Filtering
+
+**As of version 10.4.0.0**, the Membership Calculator automatically excludes unpublished Branch locations from the location selector and pricing calculations.
+
+**Impact:**
+- Only **published** Branch content appears in the Primary Location step
+- Pricing calculations only include rates from published locations
+- Unpublished branches (e.g., temporarily closed for renovations) won't appear in the calculator
+
+**To control location visibility:**
+1. Navigate to **Content** > **Locations** (`/admin/content?type=branch`)
+2. **Publish** or **Unpublish** Branch locations as needed
+3. Changes take effect immediately (may require cache clear: `drush cr`)
+
+For more details, see the [10.4.0.0 release notes](https://github.com/YCloudYUSA/yusaopeny/releases/tag/10.4.0.0).
+
 ## Placing the Calculator on a page
 
 Once configured, the Membership Calculator can be placed on a page using:

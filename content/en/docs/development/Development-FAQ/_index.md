@@ -14,7 +14,9 @@ To start developing you need to obtain the latest YMCA Website Services codebase
 
 [This video tutorial](https://www.youtube.com/watch?v=0XbqXlDyDCY) will walk you through how to initiate a local development environment.
 
-The YMCA Website Services team has pre-built environments and walkthroughs using either [Vagrant and VirtualBox](https://github.com/YCloudYUSA/yusaopeny-cibox-vm#drupal-vagrant-dev-box-for-openy-support) or [Docker and Docksal](https://github.com/YCloudYUSA/yusaopeny-docksal#get-started). Choose the method that you're most comfortable with and get started!
+**Recommended**: [DDEV](https://ddev.com/) (Docker-based development environment)
+
+**Alternative**: Manual installation following the [installation guide](https://github.com/YCloudYUSA/yusaopeny-project#installation)
 
 ### Gathering information about your local environment
 
@@ -22,7 +24,7 @@ To best troubleshoot issues, it's helpful for the YMCA Website Services team to 
 
 ### Debugging with Xdebug in your local
 
-The Docksal project maintains detailed information for [using Xdebug with VSCode, PHPStorm, and more](https://docs.docksal.io/tools/xdebug/).
+DDEV maintains detailed information for [using Xdebug with VSCode, PHPStorm, and more](https://ddev.readthedocs.io/en/stable/users/debugging-profiling/step-debugging/).
 
 ## Contributing
 

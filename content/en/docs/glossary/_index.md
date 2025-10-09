@@ -55,7 +55,7 @@ Layout Builder
 : A Drupal module that allows content editors to create visual layouts for displaying content using a drag-and-drop interface. See [Layout Builder](../user-documentation/layout-builder).
 
 Lily
-: One of the distribution themes. "Lily offers bold banner headings and eye-catching tiles to organize child page content." See [Sandboxes](../wiki/sandboxes).
+: **[Deprecated in Drupal 11]** One of the legacy distribution themes. "Lily offers bold banner headings and eye-catching tiles to organize child page content." For Drupal 11 sites, use Carnation theme. See [Sandboxes](../wiki/sandboxes).
 
 Membership calculator
 : A feature of the distribution providing a wizard-style flow to assist members with choosing a membership and then funnel them into the member management system. See [Membership Calculator](../user-documentation/paragraphs/membership-calculator/).
@@ -82,7 +82,7 @@ Personify
 : A service provider that offers member management systems and more. Integrates with a number of features of the distribution. [Personify](https://personifycorp.com/).
 
 Rose
-: One of the distribution themes. Rose offers sprawling site menu options and high accessibility for blind and low-vision users. See [Sandboxes](../wiki/sandboxes).
+: **[Deprecated in Drupal 11]** One of the legacy distribution themes. Rose offers sprawling site menu options and high accessibility for blind and low-vision users. For Drupal 11 sites, use Carnation theme. See [Sandboxes](../wiki/sandboxes).
 
 Sandbox
 : A set of example sites for evaluating and testing the distribution. See [Sandboxes](../wiki/sandboxes).

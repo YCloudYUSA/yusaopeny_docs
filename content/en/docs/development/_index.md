@@ -57,6 +57,26 @@ Whether you are just getting started with YMCA Website Services or need to test 
 - [Install-SSL-certificate-for-the-OpenY-site]({{< relref "Install-SSL-certificate-for-the-OpenY-site" >}})
 - [Switching Drupal Core Versions]({{< relref "Drupal-9-core-dependencies-version-flexibility" >}})
 
+### Advanced: Multi-Domain Configuration
+
+**As of version 10.4.0.0**, YMCA Website Services includes support for the Domain Access module, enabling multi-domain and multi-branch site architectures.
+
+**Use cases:**
+- Multiple YMCAs sharing one Drupal installation
+- Branch-specific domains (e.g., `downtown.ymca.org`, `westside.ymca.org`)
+- White-label YMCA sites
+
+**To enable Domain Access:**
+
+```bash
+composer require drupal/domain
+drush en domain domain_access -y
+```
+
+Configure domains at **Configuration** > **Domain Access** (`/admin/config/domain`).
+
+For more details, see the [10.4.0.0 release notes](https://github.com/YCloudYUSA/yusaopeny/releases/tag/10.4.0.0) and the [Domain Access module documentation](https://www.drupal.org/project/domain).
+
 ## Contributing to YMCA Website Services
 
 ### Working with Existing Functionality
@@ -92,6 +112,8 @@ Whether you are just getting started with YMCA Website Services or need to test 
 ### Update Processes & Notices
 
 - [Updating YMCA Website Services]({{< relref "OpenY-upgrade-how-to-for-Developers" >}})
+- [Drupal 9 to Drupal 10 Upgrade]({{< relref "drupal-10-update" >}})
+- [Drupal 11 Migration Guide]({{< relref "drupal-11-migration" >}}) (Beta - stable Q4 2025)
 - [Important-versions-for-upgrade-path]({{< relref "Important-versions-for-upgrade-path" >}})
 
 These documents are for old versions of YMCA Website Services, but may contain useful information for troubleshooting future update issues.

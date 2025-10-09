@@ -139,3 +139,27 @@ Breaking down the error message:
 3. Re-run `drush updb`.
 4. If you run into other missing configs, add them to the list to be imported in `update` hook and re-run `updb`.
 5. Consider backporting your customization which led to the challenge of doing this upgrade in order for it to be covered and tested by distribution developers.
+
+---
+
+## Planning for Drupal 11
+
+After successfully upgrading to Drupal 10, you may want to plan for Drupal 11 in the future.
+
+See the [Drupal 11 Migration Guide](../drupal-11-migration/) for:
+- Drupal 11 beta status and Q4 2025 stable release timeline
+- New features and breaking changes in Drupal 11
+- Known issues (including jQuery 3.x compatibility)
+- Prerequisites and upgrade steps
+
+**Note:** Most YMCAs should remain on Drupal 10 until the stable Drupal 11 release in Q4 2025. Drupal 10 is supported until December 9, 2026.
+
+---
+
+## Additional Resources
+
+- [Drupal Core Project](https://www.drupal.org/project/drupal)
+- [Drupal 11 Migration Guide](../drupal-11-migration/)
+- [Server Requirements](../server-requirements/)
+- [Upgrade Guide for Developers](../openy-upgrade-how-to-for-developers/)
+- [YMCA Website Services Releases](https://github.com/YCloudYUSA/yusaopeny/releases)

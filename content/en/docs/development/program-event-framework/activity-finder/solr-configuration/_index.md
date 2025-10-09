@@ -68,18 +68,14 @@ when you visited it.
 By visiting /activity-finder-v4?step=results or clicking on suggested buttons you should see results, activities with filters and all other functionality, shipped with Activity Finder v4
 For the Demo content from OpenY, it should look like
 ![image](https://user-images.githubusercontent.com/563412/105170087-1dfd7700-5b25-11eb-9e57-5db48e41af5e.png)
-See sandboxes
+See sandbox
 - Carnation https://sandbox-carnation-cus-d9.openy.org/activity-finder-v4
-- Lily https://sandbox-carnation-cus-d9.openy.org/activity-finder-v4
-- Rose https://sandbox-carnation-cus-d9.openy.org/activity-finder-v4
 
 
 Activity Finder v3 also installed when you chose Custom Installation with Demo content and is part of demo content.
 Could be accessed via /activity-finder url
-See sandboxes
+See sandbox
 - Carnation https://sandbox-carnation-cus-d9.openy.org/activity-finder
-- Lily https://sandbox-carnation-cus-d9.openy.org/activity-finder
-- Rose https://sandbox-carnation-cus-d9.openy.org/activity-finder
 
 ### Development SOLR 8 installation
 
@@ -88,11 +84,11 @@ Solr Docker readme https://github.com/docker-solr/docker-solr/blob/master/README
 ```sh
 mkdir solr8
 sudo chown 8983:8983 solr8
-docker run -v "$PWD/solr8:/var/solr" -p 8984:8983 --name d9_sandbox_rose_custom solr solr-precreate d9_sandbox_rose_custom
+docker run -v "$PWD/solr8:/var/solr" -p 8984:8983 --name d9_sandbox_carnation_custom solr solr-precreate d9_sandbox_carnation_custom
 # stop docker and remove created container
-# unpack solr_8.x_config.zip into data/d9_sandbox_rose_custom/conf/
+# unpack solr_8.x_config.zip into data/d9_sandbox_carnation_custom/conf/
 
-docker run -v "$PWD/solr8:/var/solr" -p 8984:8983 --name d9_sandbox_rose_custom solr solr-precreate d9_sandbox_rose_custom
+docker run -v "$PWD/solr8:/var/solr" -p 8984:8983 --name d9_sandbox_carnation_custom solr solr-precreate d9_sandbox_carnation_custom
 
 ```
 

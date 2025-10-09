@@ -185,7 +185,7 @@ yusaopeny/
 | Directory | Purpose |
 |-----------|---------|
 | `web/modules/custom/` | Custom modules for YMCA features |
-| `web/themes/custom/` | Custom themes (Lily, Rose, Carnation) |
+| `web/themes/custom/` | Custom themes (Carnation) |
 | `config/sync/` | Configuration files (version controlled) |
 | `web/profiles/openy/` | Installation profile and defaults |
 

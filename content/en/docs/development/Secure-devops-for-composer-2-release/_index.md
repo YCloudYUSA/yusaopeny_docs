@@ -12,7 +12,7 @@ Composer was upgraded to `2.x` on October 30, 2020. This could cause instability
 
 The YMCA Website Services team prepared an avoidance plan for the community to take action steps before the release while YMCA Website Services will be verifying Composer `2.x` causes no issues or regressions.
 
-If you use Docksal or Vagrant local environments your composer version will not update automatically, so you're currently safe from inadvertent updates. Instructions for updating those environments will be included with any necessary YMCA Website Services updates at a later date.
+If you use DDEV local environment your composer version will not update automatically, so you're currently safe from inadvertent updates. Instructions for updating DDEV will be included with any necessary YMCA Website Services updates at a later date.
 
 ### Case before October 30, 2020, when you are on composer 1.x
 

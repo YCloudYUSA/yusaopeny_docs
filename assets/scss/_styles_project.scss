@@ -84,14 +84,11 @@ code {
   }
 }
 
-// Code block (pre) styling
+// Code block (pre) styling - removed custom colors to use theme defaults
 pre {
-  background-color: #2d2d2d; // Dark background
-  color: #f8f8f2; // Light text (14:1 contrast ratio)
   padding: 1rem;
   border-radius: 4px;
   overflow-x: auto;
-  border: 1px solid #1a1a1a;
   position: relative;
 
   // Scrollbar styling for better visibility
@@ -100,16 +97,16 @@ pre {
   }
 
   &::-webkit-scrollbar-track {
-    background: #1a1a1a;
+    background: rgba(0,0,0,0.1);
     border-radius: 4px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #555;
+    background: rgba(0,0,0,0.3);
     border-radius: 4px;
 
     &:hover {
-      background: #777;
+      background: rgba(0,0,0,0.5);
     }
   }
 
@@ -251,3 +248,76 @@ button:focus,
   outline: 2px solid #FDB912;
   outline-offset: 2px;
 }
+
+// ============================================================================
+// CHECKBOX/EMOJI LIST STYLING
+// ============================================================================
+
+// Improve paragraph spacing in content areas to make checkbox lists more readable
+.td-content {
+  // Reduce spacing between consecutive paragraphs to create list-like appearance
+  > p + p {
+    margin-top: 0.5rem;
+  }
+
+  // When paragraph starts with strong element (common pattern for checkbox lists)
+  > p strong:first-child {
+    color: #1a1a1a;
+    font-weight: 600;
+  }
+
+  // Add subtle left padding to content paragraphs for better visual hierarchy
+  > p {
+    line-height: 1.7;
+  }
+}
+
+// Improve actual unordered/ordered lists with better spacing
+ul, ol {
+  li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+
+    // Style list markers with YMCA teal
+    &::marker {
+      color: var(--ymca-teal, #00A79D);
+    }
+
+    // When list item starts with strong/emoji
+    strong:first-child {
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+
+    // Nested lists
+    ul, ol {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+// Special styling for decision tool and comparison sections
+.decision-tool {
+  p {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+
+    strong {
+      color: #1a1a1a;
+    }
+  }
+}
+
+// ============================================================================
+// SYNTAX HIGHLIGHTING ACCESSIBILITY NOTE
+// ============================================================================
+
+// TODO: The default "tango" theme uses low-contrast colors for bash code blocks:
+// - Comments: #8f5902 (orange/brown) - only 3.8:1 contrast ratio
+// - Strings: bright green - hard to read
+// - Consider changing Hugo config.toml to use a different Chroma style
+//   with better WCAG AA compliance (e.g., "github", "monokailight")
+//
+// Attempted CSS overrides faced compilation issues due to Docsy's
+// complex theme selector specificity. Recommend addressing at theme level.

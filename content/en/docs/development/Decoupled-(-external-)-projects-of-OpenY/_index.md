@@ -22,7 +22,7 @@ Check all GitHub for the tag [``openy-decoupled``](https://github.com/topics/ope
 1. [`open-y-subprojects/openy_focal_point`](https://github.com/open-y-subprojects/openy_focal_point) - YMCA Website Services Focal Point routines
 1. [`open-y-subprojects/shared_content_server`](https://github.com/open-y-subprojects/shared_content_server) - Shared Content Server
 1. [`ynorth-projects/openy_node_session`](https://github.com/ynorth-projects/openy_node_session) - YMCA Website Services Node Session
-1. [`ynorth-projects/openy_repeat`](https://github.com/ynorth-projects/openy_repeat) - Repeat API for PEF. Schedules APP built in Vue.js
+1. [`drupal/openy_repeat`](https://www.drupal.org/project/openy_repeat) - Repeat API for PEF. Schedules APP built in Vue.js (moved to drupal.org)
 1. [`ynorth-projects/openy_pef_gxp_sync`](https://github.com/ynorth-projects/openy_pef_gxp_sync) - Groupex Pro Embed/OpenY Syncer into PEF
 1. [`ymcatwincities/ymca_sync`](https://github.com/ymcatwincities/ymca_sync) - Syncer backend core
 1. [`YCloudYUSA/yusaopeny_activity_finder`](https://github.com/YCloudYUSA/yusaopeny_activity_finder) - Activity Finder app
