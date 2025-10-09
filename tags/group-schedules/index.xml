@@ -7,7 +7,7 @@
 
 
 
-&lt;a href="https://github.com/ynorth-projects/openy_repeat" target="_blank">&lt;code>ynorth-project/openy_repeat&lt;/code>&lt;/a> and 
+&lt;a href="https://www.drupal.org/project/openy_repeat" target="_blank">&lt;code>drupal/openy_repeat&lt;/code>&lt;/a> and 
 
 
 
@@ -141,7 +141,7 @@
 
 
 
-&lt;a href="https://github.com/ynorth-projects/openy_repeat/releases" target="_blank">at least 2.2.0&lt;/a>.&lt;/li>
+&lt;a href="https://www.drupal.org/project/openy_repeat/releases" target="_blank">at least 2.2.0&lt;/a>.&lt;/li>
 &lt;li>Enable the &lt;strong>Repeat (Group) Schedules&lt;/strong> (&lt;code>lb_repeat_schedules&lt;/code>) module at &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>).&lt;/li>
 &lt;/ul>
 

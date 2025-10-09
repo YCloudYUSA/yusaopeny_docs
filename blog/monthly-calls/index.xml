@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monthly Community Calls on YMCA Website Services</title><link>/blog/monthly-calls/</link><description>Recent content in Monthly Community Calls on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/monthly-calls/index.xml" rel="self" type="application/rss+xml"/><item><title>December 11, 2024</title><link>/blog/2024/12/11/december-11-2024/</link><pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate><guid>/blog/2024/12/11/december-11-2024/</guid><description>&lt;p>Tom Scarborough is joined by Kylie Aldridge-Ogden from the Core team, guest Mike Hennesey from YMCA360, and Y-USA CIO Tom Gardner to discuss status of YMCA&amp;rsquo;s Website Services.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monthly Community Calls on YMCA Website Services</title><link>/blog/monthly-calls/</link><description>Recent content in Monthly Community Calls on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/monthly-calls/index.xml" rel="self" type="application/rss+xml"/><item><title>July 9, 2025</title><link>/blog/2025/07/09/july-9-2025/</link><pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate><guid>/blog/2025/07/09/july-9-2025/</guid><description>&lt;p>The YMCA Website Services Community Call from July 9th, 2025 featured updates from the IT Care team and Y-USA leadership on distribution maintenance, security updates, and the roadmap ahead.&lt;/p>
+&lt;p>Agenda items include:&lt;/p>
+&lt;ul>
+&lt;li>Drupal 10.5 Core Upgrade (Completed)&lt;/li>
+&lt;li>Drupal 11 Progress Update&lt;/li>
+&lt;li>Improvements to Schedules&lt;/li>
+&lt;li>Security Patches &amp;amp; Bug Fixes&lt;/li>
+&lt;li>Future AI Integration Discussion&lt;/li>
+&lt;li>Q&amp;amp;A with Community&lt;/li>
+&lt;/ul>
+&lt;h2 id="key-highlights">Key Highlights&lt;a class="td-heading-self-link" href="#key-highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="y-usa-commitment-tom-y-usa">Y-USA Commitment (Tom, Y-USA)&lt;a class="td-heading-self-link" href="#y-usa-commitment-tom-y-usa" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>IT Care retained to maintain the code distribution through 2025&lt;/li>
+&lt;li>Commitment to keeping distribution patched, secure, and stable&lt;/li>
+&lt;li>Focus on security and functionality updates from the community&lt;/li>
+&lt;li>Pause on new functionality in 2025, with plans for 2026 still in development&lt;/li>
+&lt;/ul>
+&lt;h3 id="drupal-105-core-upgrade-dmytro-it-care">Drupal 10.5 Core Upgrade (Dmytro, IT Care)&lt;a class="td-heading-self-link" href="#drupal-105-core-upgrade-dmytro-it-care" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>Completed this week&lt;/strong> - key improvements include:&lt;/p></description></item><item><title>December 11, 2024</title><link>/blog/2024/12/11/december-11-2024/</link><pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate><guid>/blog/2024/12/11/december-11-2024/</guid><description>&lt;p>Tom Scarborough is joined by Kylie Aldridge-Ogden from the Core team, guest Mike Hennesey from YMCA360, and Y-USA CIO Tom Gardner to discuss status of YMCA&amp;rsquo;s Website Services.&lt;/p>
 &lt;p>Agenda items include:&lt;/p>
 &lt;ul>
 &lt;li>Small Y Template Release&lt;/li>

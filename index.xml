@@ -18,7 +18,17 @@
  
  &lt;a href="/ui-kit">interactive UI kit&lt;/a>.&lt;/p>
 &lt;h3 id="colorways">Colorways&lt;a class="td-heading-self-link" href="#colorways" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>Based on the YMCA Brand Guide, the distribution contains four &amp;ldquo;colorways&amp;rdquo; that allow content editors to apply accessible, brand-compliant styles to all components on a Layout Builder-based page.&lt;/p></description></item><item><title>Digital Services Release 11.1.0.0-beta1</title><link>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</link><pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate><guid>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</guid><description>&lt;h2 id="purpose-of-beta1-release-for-ymca-website-services">Purpose of beta1 release for YMCA Website Services&lt;a class="td-heading-self-link" href="#purpose-of-beta1-release-for-ymca-website-services" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Based on the YMCA Brand Guide, the distribution contains four &amp;ldquo;colorways&amp;rdquo; that allow content editors to apply accessible, brand-compliant styles to all components on a Layout Builder-based page.&lt;/p></description></item><item><title>Small Y vs Full Distribution: Complete Decision Guide</title><link>/docs/small-y/vs-full-distribution/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/small-y/vs-full-distribution/</guid><description>&lt;p>Choosing between Small Y Template and Full Distribution is one of the most important decisions for your YMCA website project. This guide provides detailed criteria to help you make an informed choice.&lt;/p>
+&lt;h2 id="quick-decision-tool">Quick Decision Tool&lt;a class="td-heading-self-link" href="#quick-decision-tool" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Answer these 5 questions to find your recommended path:&lt;/p>
+&lt;div class="decision-tool" style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+&lt;p>&lt;strong>1. How many branch locations do you have?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>1-3 branches → Small Y ⭐&lt;/li>
+&lt;li>4-5 branches → Small Y or Full (your choice)&lt;/li>
+&lt;li>6+ branches → Full Distribution&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>2. Do you have in-house Drupal developers?&lt;/strong>&lt;/p></description></item><item><title>Digital Services Release 11.1.0.0-beta1</title><link>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</link><pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate><guid>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</guid><description>&lt;h2 id="purpose-of-beta1-release-for-ymca-website-services">Purpose of beta1 release for YMCA Website Services&lt;a class="td-heading-self-link" href="#purpose-of-beta1-release-for-ymca-website-services" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>This beta release&amp;rsquo;s main goal is to start field testing the upgrade to Drupal 11 and collect initial feedback from the community.&lt;/p>
 &lt;p>This release marks a major architectural evolution of the YMCA Website Services platform, centered on the upgrade from Drupal 10.5 to Drupal 11.1.&lt;br>
 This foundational shift introduces:&lt;/p>
@@ -147,7 +157,26 @@ Pull request:
 
 
 &lt;a href="http://openy.cibox.tools:8081/view/SANDBOXES/job/SANDBOX_CARNATION_CUSTOM/4756/consoleFull" target="_blank">CARNATION_CUSTOM #4756&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Digital Services Release 10.5.0.0</title><link>/blog/2025/07/08/digital-services-release-10.5.0.0/</link><pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate><guid>/blog/2025/07/08/digital-services-release-10.5.0.0/</guid><description>&lt;h2 id="highlights">Highlights:&lt;a class="td-heading-self-link" href="#highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;/ul></description></item><item><title>July 9, 2025</title><link>/blog/2025/07/09/july-9-2025/</link><pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate><guid>/blog/2025/07/09/july-9-2025/</guid><description>&lt;p>The YMCA Website Services Community Call from July 9th, 2025 featured updates from the IT Care team and Y-USA leadership on distribution maintenance, security updates, and the roadmap ahead.&lt;/p>
+&lt;p>Agenda items include:&lt;/p>
+&lt;ul>
+&lt;li>Drupal 10.5 Core Upgrade (Completed)&lt;/li>
+&lt;li>Drupal 11 Progress Update&lt;/li>
+&lt;li>Improvements to Schedules&lt;/li>
+&lt;li>Security Patches &amp;amp; Bug Fixes&lt;/li>
+&lt;li>Future AI Integration Discussion&lt;/li>
+&lt;li>Q&amp;amp;A with Community&lt;/li>
+&lt;/ul>
+&lt;h2 id="key-highlights">Key Highlights&lt;a class="td-heading-self-link" href="#key-highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="y-usa-commitment-tom-y-usa">Y-USA Commitment (Tom, Y-USA)&lt;a class="td-heading-self-link" href="#y-usa-commitment-tom-y-usa" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>IT Care retained to maintain the code distribution through 2025&lt;/li>
+&lt;li>Commitment to keeping distribution patched, secure, and stable&lt;/li>
+&lt;li>Focus on security and functionality updates from the community&lt;/li>
+&lt;li>Pause on new functionality in 2025, with plans for 2026 still in development&lt;/li>
+&lt;/ul>
+&lt;h3 id="drupal-105-core-upgrade-dmytro-it-care">Drupal 10.5 Core Upgrade (Dmytro, IT Care)&lt;a class="td-heading-self-link" href="#drupal-105-core-upgrade-dmytro-it-care" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>Completed this week&lt;/strong> - key improvements include:&lt;/p></description></item><item><title>Digital Services Release 10.5.0.0</title><link>/blog/2025/07/08/digital-services-release-10.5.0.0/</link><pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate><guid>/blog/2025/07/08/digital-services-release-10.5.0.0/</guid><description>&lt;h2 id="highlights">Highlights:&lt;a class="td-heading-self-link" href="#highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>A More User-Friendly Future:&lt;/strong>&lt;br>
@@ -2357,7 +2386,7 @@ rnings for alert requests&lt;/li>
 
 
 &lt;img src="https://user-images.githubusercontent.com/563412/130978526-fd949acf-1b00-4d20-93f0-cb339a23cb65.png" alt="image" />&lt;/p>
-&lt;p>Rose and Lily themes are using Bootstrap v3, Carnation theme is on Bootstrap v4
+&lt;p>Carnation theme uses Bootstrap v4
 And when we set it to 4 then the AF4 result page looks good for the tablet screen on Carnation
 
 

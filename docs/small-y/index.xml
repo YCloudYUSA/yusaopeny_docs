@@ -1,1 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Small Y Template on YMCA Website Services</title><link>/docs/small-y/</link><description>Recent content in Small Y Template on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/small-y/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Small Y Template on YMCA Website Services</title><link>/docs/small-y/</link><description>Recent content in Small Y Template on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/small-y/index.xml" rel="self" type="application/rss+xml"/><item><title>Small Y vs Full Distribution: Complete Decision Guide</title><link>/docs/small-y/vs-full-distribution/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/small-y/vs-full-distribution/</guid><description>&lt;p>Choosing between Small Y Template and Full Distribution is one of the most important decisions for your YMCA website project. This guide provides detailed criteria to help you make an informed choice.&lt;/p>
+&lt;h2 id="quick-decision-tool">Quick Decision Tool&lt;a class="td-heading-self-link" href="#quick-decision-tool" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Answer these 5 questions to find your recommended path:&lt;/p>
+&lt;div class="decision-tool" style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+&lt;p>&lt;strong>1. How many branch locations do you have?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>1-3 branches → Small Y ⭐&lt;/li>
+&lt;li>4-5 branches → Small Y or Full (your choice)&lt;/li>
+&lt;li>6+ branches → Full Distribution&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>2. Do you have in-house Drupal developers?&lt;/strong>&lt;/p></description></item></channel></rss>
