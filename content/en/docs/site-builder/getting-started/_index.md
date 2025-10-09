@@ -39,7 +39,7 @@ Before installing, decide which solution fits your YMCA best.
 - Need simplified administration
 
 **What's included:**
-- Modern Lily design system
+- Modern Carnation design system
 - Layout Builder (drag-and-drop page building)
 - Essential content types only
 - Streamlined configuration

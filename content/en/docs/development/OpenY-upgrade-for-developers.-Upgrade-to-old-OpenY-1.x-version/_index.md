@@ -23,8 +23,7 @@ Ensure you have working computer or virtual machine with
  - Apache 2.4
  - PHP 5.6-7.1 (7.2 is not supported yet)
 
-OpenY team maintains [Vagrant preconfigured Virtualbox based virtual machine with OpenY](https://github.com/YCloudYUSA/yusaopeny-cibox-vm). Feel free to use it to get working virtual environment.
-Your own OpenY instance should have Virtual machine injected into your site codebase. Just find ```Vagrantfile``` and proceed with ```vagrant up``` [accordingly to the documentation](https://github.com/YCloudYUSA/yusaopeny-cibox-vm/blob/master/README.md).
+**Recommended development environment**: [DDEV](https://ddev.com/) (Docker-based development environment)
 
 ### Obtain local copy of your production site
 

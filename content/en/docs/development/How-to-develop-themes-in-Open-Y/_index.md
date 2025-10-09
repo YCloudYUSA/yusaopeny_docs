@@ -14,17 +14,15 @@ Each theme has its own dependencies and build processes. Please read the steps i
 
 As of December 2021, themes [have been decoupled](https://github.com/YCloudYUSA/yusaopeny/pull/2595) from the YMCA Website Services profile to independent projects on Drupal.org.
 
-### Carnation
+### Carnation (Current)
 
 - [openy_carnation project](https://www.drupal.org/project/openy_carnation) on Drupal.org
 - [README](https://git.drupalcode.org/project/openy_carnation) for getting started with development
 
-### Lily
+### Lily and Rose (Deprecated in Drupal 11)
 
+**Note:** The Lily and Rose themes have been removed from Drupal 11 distributions. For Drupal 11 implementations, use Carnation theme.
+
+For legacy Drupal 10 sites still using these themes:
 - [openy_lily project](https://www.drupal.org/project/openy_lily) on Drupal.org
-- [README](https://git.drupalcode.org/project/openy_lily) for getting started with development
-
-### Rose
-
 - [openy_rose project](https://www.drupal.org/project/openy_rose) on Drupal.org
-- [README](https://git.drupalcode.org/project/openy_rose) for getting started with development

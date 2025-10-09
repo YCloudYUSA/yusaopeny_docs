@@ -22,12 +22,11 @@ There are three tabs for creating your button: an info tab, a target tab, and an
 ---
 ## Info Tab
 
-This screen gives you basic options to style your link or button. On the top left “Style Option,” you will have several options to style your button or output it as a link.
+This screen gives you basic options to style your link or button. On the top left "Style Option," you will have several options to style your button or output it as a link.
 
 * The link option will allow you to embed your link text in line with a paragraph.
-* In Lily, all button styles other than link default to purple.
-* In Rose, all options except “default” will output a blue button. “Default” outputs a white button.
-* In Carnation, the button options all output different colors.
+* In Carnation (current theme), the button options all output different colors.
+* **Note:** For legacy sites using Lily or Rose themes (deprecated in Drupal 11), button styling may differ.
 
 ### Button Guide Example:
 

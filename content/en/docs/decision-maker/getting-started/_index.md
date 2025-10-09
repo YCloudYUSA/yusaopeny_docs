@@ -112,7 +112,7 @@ Before evaluating costs, understand which offering fits your YMCA best.
 - Prefer simplicity over maximum flexibility
 
 **What's included:**
-- Modern Lily design system (clean, accessible)
+- Modern Carnation design system (clean, accessible)
 - Layout Builder (drag-and-drop page building)
 - Essential content types only
 - Streamlined configuration

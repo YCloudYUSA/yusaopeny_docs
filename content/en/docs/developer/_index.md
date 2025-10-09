@@ -39,7 +39,7 @@ hide_sidebar: true
         <div class="text-muted" style="font-size: 0.95rem;">
           <strong>You'll learn:</strong>
           <ul class="mb-0 mt-2">
-            <li>Local development setup (DDEV/Docksal)</li>
+            <li>Local development setup (DDEV)</li>
             <li>Git workflow and branching strategy</li>
             <li>Coding standards and best practices</li>
             <li>Submitting and reviewing pull requests</li>
@@ -75,7 +75,7 @@ hide_sidebar: true
           <ul class="mb-0 mt-2">
             <li>Drupal 11 core and modules</li>
             <li>Composer dependency management</li>
-            <li>Local development setup (Docksal/DDEV)</li>
+            <li>Local development setup (DDEV)</li>
             <li>CI/CD pipeline</li>
           </ul>
         </div>

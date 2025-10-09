@@ -42,24 +42,30 @@ For detailed requirements, see the [official Drupal system requirements](https:/
 - **Search**: Apache SOLR 8.x for advanced search functionality
 - **HTTP Cache**: Varnish or Nginx reverse proxy for high-traffic sites
 - **Development Tools**:
-  - Docker (recommended for local development via Docksal or DDEV)
+  - Docker (recommended for local development via DDEV)
   - Ansible (for server provisioning)
 
 ## Development Environments
 
-**Recommended**: [Docksal](https://docksal.io/) (Docker-based development environment)
+**Recommended**: [DDEV](https://ddev.com/) (Docker-based development environment)
 
 **Alternatives**:
-- [DDEV](https://ddev.com/)
 - Manual installation following the [installation guide](https://github.com/YCloudYUSA/yusaopeny-project#installation)
 
-## Legacy Version Requirements
+## Version-Specific Requirements
+
+### Drupal 11 (Beta)
+
+- **PHP**: 8.3 or higher
+- **MySQL**: 8.0+ or MariaDB 10.6+
+- See [Drupal 11 Migration Guide](../drupal-11-migration/) (Beta - stable Q4 2025)
 
 ### Drupal 10
 
 - **PHP**: 8.1 or higher
 - **MySQL**: 5.7.8+ or MariaDB 10.3.7+
 - See [Drupal 10 upgrade guide](../drupal-10-update/)
+- **Support until**: December 9, 2026
 
 ### Drupal 9 (End of Life)
 

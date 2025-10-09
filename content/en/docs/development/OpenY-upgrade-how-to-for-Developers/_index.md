@@ -31,9 +31,7 @@ Ensure you have a working computer or virtual machine with:
 - PHP 8.1 (pre 8.1 could be an issue with some contrib modules)
 - Drush 12 || 10 || 11
 
-The YMCA Website Services team maintains [Vagrant preconfigured Virtualbox based virtual machine with OpenY](https://github.com/YCloudYUSA/yusaopeny-cibox-vm). Feel free to use it to get a working virtual environment.
-
-Your own YMCA Website Services instance should have a virtual machine injected into your site codebase. Just find ```Vagrantfile``` and proceed with ```vagrant up``` [accordingly to the documentation](https://github.com/ymcatwincities/openy-cibox-vm/blob/master/README.md).
+**Recommended development environment**: [DDEV](https://ddev.com/) (Docker-based development environment)
 
 ### Obtain local copy of your production site
 
@@ -109,5 +107,24 @@ In order to check for regressions during the upgrade, it is best to work with sm
 Use [`drush sql-dump`](https://www.drush.org/latest/commands/sql_dump/) or another backup tool to take a backup of the site in its current state.
 
 ### Proceed with an update to next version until succeeded (Start from item 1)
+
+---
+
+## Version-Specific Upgrade Guides
+
+For major version upgrades between Drupal core versions, refer to these dedicated guides:
+
+- **[Drupal 9 to Drupal 10](../drupal-10-update/)** - Detailed guide for upgrading from Drupal 9.x to Drupal 10.x
+- **[Drupal 10 to Drupal 11](../drupal-11-migration/)** - Beta release guide for early adopters (stable Q4 2025)
+
+**Note:** Most YMCAs should remain on Drupal 10 until the stable Drupal 11 release in Q4 2025. Drupal 10 is supported until December 9, 2026.
+
+---
+
+## Additional Resources
+
+- [Important Versions for Upgrade Path](../important-versions-for-upgrade-path/)
+- [Server Requirements](../server-requirements/)
+- [YMCA Website Services Releases](https://github.com/YCloudYUSA/yusaopeny/releases)
 
 

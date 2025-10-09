@@ -23,7 +23,7 @@ Encountering problems during an upgrade? Find solutions to common upgrade issues
 
 2. **Follow Official Upgrade Path**
    - Drupal 9 → 10: [Upgrade Guide](/docs/development/drupal-10-update/)
-   - Drupal 10 → 11: [Upgrade Guide](/docs/development/upgrade_use_case_drupal_9_drupal_10_1/)
+   - Drupal 10 → 11: [Migration Guide](/docs/development/drupal-11-migration/) (Beta - stable Q4 2025)
 
 3. **Use Upgrade Status Module**
    ```bash

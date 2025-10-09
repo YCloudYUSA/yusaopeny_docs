@@ -46,11 +46,10 @@ See also Drupal's recommendations for [managing site performance and scalability
 
 ### For development
 
-- [Oracle VM Virtualbox](https://www.virtualbox.org/)
-- [Vagrant configuration manager](https://www.vagrantup.com/)
-- [Ansible configuration manager and automation](https://www.ansible.com/)
-- [Composer package manager](https://getcomposer.org/)
+- [DDEV Docker-based development environment](https://ddev.com/) (recommended)
 - [Docker virtual environments](https://www.docker.com/)
+- [Composer package manager](https://getcomposer.org/)
+- [Ansible configuration manager and automation](https://www.ansible.com/)
 
 See our [installation instructions](https://github.com/YCloudYUSA/yusaopeny-project#installation) for a full walkthrough of these tools.
 

@@ -9,7 +9,7 @@ Repeat Schedules combines data from [the Activity, Class, and Session](../../con
 
 Before you can use the Repeat Schedules block, you will need to:
 
-- Ensure the `openy_repeat` module is updated to [at least 2.2.0](https://github.com/ynorth-projects/openy_repeat/releases).
+- Ensure the `openy_repeat` module is updated to [at least 2.2.0](https://www.drupal.org/project/openy_repeat/releases).
 - Enable the **Repeat (Group) Schedules** (`lb_repeat_schedules`) module at **Admin** > **Extend** (`/admin/modules`).
 
 {{< readfile "../lb-add-block.partial" >}}

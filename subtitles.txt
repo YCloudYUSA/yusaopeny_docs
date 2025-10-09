@@ -1,0 +1,488 @@
+Okay,
+people are joining. I'm accepting.
+Let's wait maybe for
+a minute and then we can get started.
+Anyway, this call is going to be
+recorded and then publish it to
+community. Whoever would be able to
+join, there's a chance to review
+letting in the participants was always a
+fun like video game for me as they pop
+up, you know, got to accept, got to let
+them in.
+I click that button, accept all
+automatically. So,
+yeah. Well, it's more fun if you go for
+them individually, though. That is true
+video game.
+Accept this one, deny this one. Right.
+I'm kidding. That's just satisfying in
+its own way.
+Okay.
+Hello.
+Yeah. Hi there.
+Good to see
+people. People are joining.
+I see.
+So maybe we can get started.
+Okay. Yeah,
+cool.
+I think word to you, Tom. And then feel
+free to let me know.
+All right. Yeah. No, thank you. Um,
+yeah, just greetings everyone. It's it's
+wonderful to see people on on the call.
+Um yeah, I just want to say a quick word
+that um you know YUSA has retained um
+the talents of IT care to maintain the
+code distribution through um well going
+forward but through 2025. We have
+promised that we will keep the code
+distribution patched and updated for um
+security updates and functionality
+updates from the community. Um so that
+progresses as you'll uh hear from the IT
+care team through uh Drupal 10.4 and
+then uh by end of year to Drupal 11 and
+they're going to talk about that in more
+in more detail. So while there is a
+pause on new functionality being added
+in 2025 um our commitment to keeping the
+code distribution um secure and updated
+and stable is what we're uh discussing
+here. So, um, so anyway, with that, uh,
+I'll return the floor over to Janna and
+Andre.
+Yeah, thank you so much, Tom. Welcome
+everyone. Thank you for joining us
+today. Thank you for joining this
+community call. That's the first one in
+2025.
+Yeah. And I'm Janna from IT Care. uh
+together with Y USA, we're excited to
+share some progress ongoing work and
+future opportunities around the YMCA
+website services distribution.
+And I'd like to say that our goal today
+is to share first of all uh what's been
+done. That's going to be a little report
+uh performance improvements, upgrades,
+uh collaborate on what's going to be
+next like Drupal 11, Drupal CMS, etc.
+And connect with the community. We'd
+like to hear your questions, your
+suggestions, uh and any other feedback
+you may have. So, let's get started. Let
+me share my screen. We have presentation
+for this call. So that's going to be
+this one. Let me share this.
+Okay.
+Yep. Can you see my screen?
+Yes.
+Okay.
+Looks good. So before we dive in, I'd
+like to share our agenda for today. So
+number one, it's a Drupal 10.5 core
+upgrade. I changed that one from Drupal
+104 to Drupal 10 5 just this week. So
+that's completed milestone that's
+upgrade which come just this week. And
+second one is Drupal 11 which is in
+progress. So Andre will speak about this
+and uh improvements to schedules that's
+about speed flexibility
+and preparing for the future. Um here
+we'd like to discuss whatever would you
+uh suggest maybe you'll have some
+questions and also we'll share latest
+updates what's going to be next. Yeah.
+So that's agenda. Let me check if we
+have intro.
+So uh at this point I'd like to uh say
+that each section from this agenda will
+be lead by a team member from our side
+and we also will share the way YMCA
+members uh can get involved. So now I
+think I'd like to pass my phone to
+Ditro. So he will speak about Drupal
+10.5
+core upgrade.
+Yeah, thank you Jana. Uh so uh the
+Drupal uh 10.5 core upgrade is uh the
+key update before Drupal 11 and uh it
+includes uh several uh improvements. So
+the key improvements are uh the core
+functionality that uh has been improved
+uh has been released to the in the new
+version. The uh CK editor also includes
+some of new features uh and uh it's
+updated to the latest version. Uh the
+membership calculator logic uh is uh the
+um um logic that uh will exclude the
+unpublished locations. Uh this is uh the
+fix provided to membership uh builder
+application.
+Uh the media library improvements. Uh
+this is the core uh updates. The media
+entity document
+module has uh functionality is now
+involved in u Drupal core and there are
+some fixes that are enable media library
+to work faster and uh enables content
+workflow abilities for content editors.
+the uh content manager man permissions.
+Uh uh the users now will now require the
+administer content permission to perform
+set certain bulk uh content operations.
+Uh this will enhance the security
+and uh the uh schedules program event
+framework uh changes. uh this uh allows
+uh the classes with special symbols to
+be used uh in the application and um
+that are the key improvements in the uh
+10.5.
+Um also with uh 10.54 core uh the some
+of the security vulnerability
+uh vulnerabilities were patched. The
+unauthorized code injection that
+prevents attackers from adding malicious
+content scripts or popups uh to your web
+pages. the um improper access control
+that reinforces user permission checks
+uh to ensure that only authorized staff
+can access administrative functions
+uh or sensitive data
+and malicious code execution uh that
+closes a potential loophole in how the
+system processes the certain types of
+data.
+um and pre to prevent the the
+sophisticated attack.
+So yeah, these are the security
+vulnerabilities.
+As for the new features, uh these are
+the uh
+the features that uh were requested by
+our uh partners in uh other
+organizations
+that have been implemented and added to
+the functionality. So the expanding menu
+on mouse hover uh this uh will go with
+this version and uh this is an option
+for the menu and uh display only the
+hours option for the branch pages. Uh
+it's for the uh branch hours um overlay
+uh that allows to display all holidays
+instead of the upcoming ones
+and uh the certain bug fixes uh were
+provided in this version. Uh
+for the multiple alerts uh the error was
+mis uh misaligned
+and uh for some of the website the uh
+mobile burger menu uh for sub pages uh
+was fixed as well.
+Uh so these are the uh key updates uh in
+the Drupal 10.5 version and Janna could
+you please next slide.
+Sure.
+Oh sorry
+here we go.
+Yeah. And why this update is important?
+As you see, it keeps us aligned with the
+latest security and performance
+standards standards. So you can make
+sure that uh when your site is updated
+to the latest version, it complies uh uh
+all the security standards now uh and uh
+performance uh of the uh latest code uh
+provided by the Drupal community and uh
+open uh the YMCA community as well u
+from the all the developers.
+Um this also prepares ecosystem for the
+future AI integrations uh within uh that
+are allowed in the uh future Drupal uh
+core. So for the AI uh it's just the
+preparation research and uh um in this
+case uh uh the system is getting ready
+for this one. Uh and uh the current
+challenge is uh to adjust uh some AI
+tools that are remain partially blocked
+uh due to the ecosystem constraints.
+These are uh involves
+um clarifying the business needs and
+requirements and uh building the
+architecture.
+So uh this is a challenge for our next
+iterations.
+Yeah, thank you. That's a lot. Thank you
+so much Ditro.
+Okay. So from Drupal 10.5 we are moving
+to Drupal 11 which is in progress and
+here Angie will share news with us.
+Yeah thank you Janna. So with Drupal 11
+we are doing really great progress in
+local environment. We already have built
+uh and uh we are not seeing a lot of
+problems with the core which is a good
+news. Uh hopefully in next one or two
+weeks we'll be releasing alpha version
+of Drupal 11. Alpha version won't have
+support for upgrade path. It's for early
+adopters and for us to be able to
+uh present functionalities
+in Drupal 11 on development sandboxes.
+So we are focusing mostly on small Y
+work because in the YMCA community
+majority of associations are uh more
+smaller than bigger but uh small Y is
+almost the same as standard installation
+which is covering maybe 80 to 90% of the
+installations. So our hope is to release
+small Y+ standard as soon as possible
+and uh then to work on extended version
+to uh and to collect feedback from early
+adopters of Drupal 11 and uh maybe some
+bug fixes for the upgrade path and after
+alpha version is somehow tested we'll be
+working on uh stable version of the
+distribution to cover majority of
+functionalities.
+Keep in mind and this is applicable to
+Drupal 10.5 as well that based on the
+agreement with Y USA since not Y USA but
+also with core team since 2024
+Lily and Rose themes are deprecated and
+in 10.5 as well as Drupal 11 they are
+removed from the distribution they still
+available so you still can use them. But
+as core team uh we are not anymore
+support them officially. They are
+supported by you, by your organizations,
+by your partners. So just keep that in
+mind.
+What we are working right now is we are
+testing Drupal 11 and fixing some bugs.
+Major issues come to visic editor
+because with Drupal 10.5 with Drupal 11
+CK editor version 5 comes in play a lot
+of functionalities that we built since
+2018 up until now they are now covered
+by Drupal core. So do expect that
+we'll be removing some of the features
+from the distribution in favor of
+leveraging what comes with Drupal core
+as well as uh and I believe this is for
+the next slide. Drupal 11 opens us a lot
+of no it's not the next slide so I'll
+talk about AI a little bit later. Jeanna
+word back to you.
+Thank you so much. Yep. Okay. So,
+uh we are moving forward. So, next one
+is going to be improvements to schedules
+which is also related to this upgrades.
+And here I believe Ditro will have some
+information for us.
+Uh yes, this is a quick update. Uh
+actually uh the schedules uh are um we
+are enhancing the um ability in to use
+the uh different names in the uh classes
+and uh enable the uh database for the
+future integration of AI that can uh
+suggest people uh for for some classes
+and
+This
+um allows us to u
+see uh sorry to uh make this uh uh
+schedules application compatible uh with
+all the features and uh the updates to
+the syncer also included.
+Thanks John.
+Thank you so much.
+Okay,
+so that was main updates uh from us and
+now we'd like to discuss what's going to
+be next uh preparing for the future. Uh
+I named that slide that's about Drupal
+10.5 and Drupal 11 and why it's
+important. So I think Andre that's what
+you are waiting for. Yeah, this is a
+sensitive topic and we are not ready to
+share any news about AI but one of the
+big uh things that are coming to Drupal
+and not only to Drupal is integrations
+with different
+and at this point we are not committing
+in the distribution to this we just with
+upgrading distribution
+we are opening the doors to those
+opportunities and right now we are
+collecting feedback, initial thoughts,
+any ideas or uh demand from associations
+to the email that you see on the slide.
+So this email been read by Tom Scarbor.
+So if you have any ideas, any requests,
+please share your thoughts to this
+email. And uh later this year or next
+year, we'll be hopefully
+organizing some workshops, demos,
+discussions, what have you. So Drupal 11
+is definitely a baseline for the
+distribution in Q3, Q4 this year.
+uh be ready with you and your partners,
+I mean digital partners to upgrade to
+this uh uh core. It's more decent, more
+flexible. We see performance improvement
+a lot with this core. In terms of
+functionalities, as Tom said in the
+beginning of the call, do not expect a
+lot of new functionalities
+added specifically to YMCA needs.
+Yes, with the core you'll get a lot of
+new features that uh supported by Drupal
+community. Some of them really important
+for YMCA too. But before we are on that
+version, we are not going to share any
+thoughts about that. Just to keep this
+maybe in a secret or just to keep a
+momentum to the proper time.
+Okay, that's fair.
+Thank you so much, Andre.
+Okay, so let's move forward and I think
+it's a time for Q&A session. We'll be
+happy to hear your questions,
+suggestions or any feedback you may have
+now or maybe later. Feel free to use
+that email from previous slide and on
+the next one will be also
+um yep. So
+you can use chat for questions in the
+zoom or you can unplug your plug your
+microphone and ask question if you have
+any.
+Hey uh I've got a quick one. Um thanks
+for all the work keeping keeping
+everything updated. Um, I know in the
+past we've had like dev sandboxes and
+prod sandboxes. Um, and the prod
+sandboxes have been pretty important for
+a lot of the community to test things
+out. It seems like those have been down
+for a couple days. Um, is it possible to
+kind of keep the the development
+segregated so that the you know the this
+the production sandboxes stay um stay up
+while the uh we do most of the dev on
+the the other side.
+Yes. Yes, I'll answer this question.
+Thank you, Avi. So, we just released a
+10.5
+and uh that release broke standards and
+boxes. So, it's our top priority and
+hopefully tomorrow or day after tomorrow
+they will be fix it. And yes, our idea
+is that standards and boxes
+they will stay
+hopefully forever
+uh like up and running for you to play
+with that. And if something is not
+working, if any sandbox is not working,
+just ping gas in the channel will
+immediately rebuild it. Development
+boxes, yes, they will also work. And our
+hope in next couple of weeks to get the
+Drupal 11 for the developers community
+to play with them.
+Thanks.
+Okay. Thank you so much, Avi.
+Also, I'd like to ask maybe Tom Scarboro
+or Sandep or Tom Gardner if he's on the
+call would like to say a few words or
+add anything.
+Yeah, nothing additional on my end. Uh I
+don't know if uh you had anything you
+wanted to jump in on, Sandy.
+Yeah. Um good good work IT care team. Um
+I was just going to say that uh you know
+we are committed to the core updates in
+2025 which is upgrade to Drupal 10.5 and
+11 support small Y template and ensure
+that the distribution is passion
+secured. Um again the plans for 2026 are
+still being developed so we can speak to
+speak speak to them at this time. Uh so
+we expect to have some more clarity soon
+on that and we'll share updates with the
+community as they become available.
+Oh, thank you.
+Okay,
+thank you so much. If you'll have
+questions later, feel free to reach out
+and use this email as we have a plenty
+of places where you can stay in touch
+with us and ask your questions. Uh so as
+a reminder,
+Yep. Go ahead. Sorry Z, I think Demitri
+has a question to you.
+Go ahead.
+Tom, you want to take that or do you
+want me to?
+I I I can take that. So, Dimmitri, for
+2025, uh the scope for distribution was
+pretty narrow. As I just said, uh we
+were committed to the core updates,
+support for small Y template, and
+ensuring that the distribution is
+secured and patched. If you have ideas
+for the road map um you know you can
+always share that with the team uh
+ycloud yca.net
+um and you know our door is open if you
+would like to have a discussion with ITK
+or Yusa about uh you know a specific um
+specific strategy or specific change
+that that you think is important. We'll
+be more than happy to hear about that.
+So um I just want to be clear that it's
+not that the door is shut on the
+partners. welcome feedback as Andre said
+that you know these upgrades kind of
+opened the door for future updates which
+I want to be very very clear that YUSS
+scope for 2025 was was limited to just
+the core updates and for 2026 we don't
+know yet um so yeah if and and and we
+welcome feedback so yeah if you if you
+want to reach out to IT care or yusa
+with uh you know any uh and and share
+your thoughts you're more than welcome
+to do Yeah,
+thank you so much.
+Yeah, we're still keeping Slack channels
+monitoring.
+So, uh it's all under Tom Scarbor
+overview. So, nothing is missed. Uh no
+problems with you asking directly why
+you say nothing locked to ITR only. It
+just it is what it is 2025.
+Yeah.
+Well, as a reminder, um, DS YMCorg,
+that's, uh, the YMCA digital services
+website. Here you'll find information,
+the latest one. DS docs yorg
+documentation for the distribution and
+also some kind of tutorials. Uh, YouTube
+for videos also video tutorials. Uh,
+GitHub code repository.
+uh Slack discussions or if you need any
+help or just email us anytime at this
+email ycloud YMCA
+with any questions you may have. So
+we'll we're looking forward to stay
+connected with you all and thank you so
+much for joining us today. If you have
+questions we are still here.
+Okay, wrapping up. Thank you Tim. Take
+care.
+Thank you. Thank you. Thank you for
+joining.
+Thank you.

@@ -97,6 +97,8 @@ Both Small Y and Full Distribution include these core features:
 
 **Answer:** YES! Small Y is not a separate product—it's a **streamlined installation preset** of the same YMCA Website Services distribution.
 
+**Important:** Once you install Small Y, you have access to **everything** available in Full Distribution. All modules from Full Distribution are available to enable—you're not locked into a limited feature set. The only difference is which modules are enabled by default.
+
 ### Modules You Can Add to Small Y
 
 You can enable any of these Full Distribution modules via **Extend** → **Modules** in the Drupal admin:
@@ -117,6 +119,12 @@ You can enable any of these Full Distribution modules via **Extend** → **Modul
 - Database size (+10-50MB per module)
 - Update complexity (more modules = more updates to test)
 
+**Styling Considerations:** Some Full Distribution modules may require additional theme work:
+- 🎨 **Theme compatibility** - Modules designed for legacy themes (Lily/Rose) may need Carnation theme styling adjustments
+- 🔧 **Custom CSS** - Minor CSS tweaks may be needed for optimal appearance
+- 💻 **Development time** - Budget 2-8 hours for styling work per complex module
+- ✅ **Solution** - Work with a developer or agency partner to ensure proper integration
+
 ### What You CANNOT Add
 
 ❌ **Different installation presets** - Once installed, you can't switch from Small Y preset to Full preset without reinstalling
@@ -126,21 +134,6 @@ You can enable any of these Full Distribution modules via **Extend** → **Modul
 ---
 
 ## Technical Specifications
-
-### Performance Comparison
-
-Based on testing with identical content (50 pages, 20 images):
-
-| Metric | Small Y Template | Full Distribution | Difference |
-|--------|------------------|-------------------|------------|
-| **Database Size** | 45 MB | 120 MB | **-62% smaller** |
-| **Enabled Modules** | ~80 modules | ~150 modules | **-47% fewer** |
-| **Average Page Load** | 1.2 seconds | 1.8 seconds | **-33% faster** |
-| **Time to Interactive** | 2.1 seconds | 3.2 seconds | **-34% faster** |
-| **Admin Interface Load** | 1.5 seconds | 2.4 seconds | **-38% faster** |
-| **Lighthouse Score** | 92/100 | 85/100 | **+7 points** |
-
-*Testing environment: Standard shared hosting (2GB RAM, 2 CPU cores)*
 
 ### System Requirements
 

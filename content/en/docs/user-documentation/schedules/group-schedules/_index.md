@@ -8,7 +8,7 @@ tags:
 
 Sometimes called "Group Exercise" or "Group Schedules", the **Repeat Schedules** block provides a similar view to Activity Finder, but focuses on recurring, often drop-in classes. You can see [an example of this on our sandbox site](https://sandbox-carnation-cus.y.org/schedules-0).
 
-Developers can find more information in [`ynorth-project/openy_repeat`](https://github.com/ynorth-projects/openy_repeat) and [Program Event Framework](../../../development/program-event-framework).
+Developers can find more information in [`drupal/openy_repeat`](https://www.drupal.org/project/openy_repeat) and [Program Event Framework](../../../development/program-event-framework).
 
 As of August 2024, the Schedules have [an updated design](https://www.figma.com/design/wVbmVOI5zwOMDYRjI3GLEI/YUSA-Design-System?node-id=4980%3A17269&t=GBUj9iIBpCBJw6yW-1) with improved functionality and user experience. The improved design will also respond to the selected [colorway and page styles](../../layout-builder/advanced-options/#page-styles).
 
@@ -16,7 +16,7 @@ As of August 2024, the Schedules have [an updated design](https://www.figma.com/
 
 - [Repeat Schedules Paragraph](../../paragraphs/repeat-schedules)
 - [Repeat Schedules Layout Builder](../../layout-builder/repeat-schedules)
-  - Available with `openy_repeat` [2.2.0 and above](https://github.com/ynorth-projects/openy_repeat/releases) via the **Repeat (Group) Schedules** (`lb_repeat_schedules`) module.
+  - Available with `openy_repeat` [2.2.0 and above](https://www.drupal.org/project/openy_repeat/releases) via the **Repeat (Group) Schedules** (`lb_repeat_schedules`) module.
 
 ## Block configuration
 
