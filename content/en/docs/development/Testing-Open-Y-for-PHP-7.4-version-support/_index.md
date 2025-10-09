@@ -14,7 +14,7 @@ aliases:
 1. Obtain latest development code of YMCA Website Services
 
 ```sh
-composer create-project YCloudYUSA/yusaopeny-project:9.2.x-development-dev openy7.4
+composer create-project ycloudyusa/yusaopeny-project:10.2.x-development-dev openy7.4
 ```
 
 2. Add phpcompatibility to require-dev section

@@ -102,7 +102,7 @@ git checkout -b feature/my-contribution
 
 ```bash
 # 1. Create a new project
-composer create-project ymca/yusaopeny-project ymca-dev --no-interaction
+composer create-project ycloudyusa/yusaopeny-project ymca-dev --no-interaction
 cd ymca-dev
 ```
 

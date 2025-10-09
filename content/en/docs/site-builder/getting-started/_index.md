@@ -83,7 +83,7 @@ For detailed requirements, see [Server Requirements](/docs/development/server-re
 
 ```bash
 # 1. Create a new project
-composer create-project ymca/small-y-project MY_YMCA_SITE --no-interaction
+composer create-project ycloudyusa/yusaopeny-project MY_YMCA_SITE --no-interaction
 
 # 2. Navigate to the directory
 cd MY_YMCA_SITE
@@ -100,7 +100,7 @@ drush site:install openy_lily \
 
 ```bash
 # 1. Create a new project
-composer create-project ymca/yusaopeny-project MY_YMCA_SITE --no-interaction
+composer create-project ycloudyusa/yusaopeny-project MY_YMCA_SITE --no-interaction
 
 # 2. Navigate to the directory
 cd MY_YMCA_SITE
