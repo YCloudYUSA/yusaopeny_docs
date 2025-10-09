@@ -46,7 +46,7 @@ These sandboxes are based on the latest [stable release](https://github.com/YClo
     <summary>These sandboxes are built on CI by running:</summary>
 
 ```sh
-composer create-project YCloudYUSA/yusaopeny-project buildnew --no-interaction --prefer-dist
+composer create-project ycloudyusa/yusaopeny-project buildnew --no-interaction
 
 ansible-playbook docroot/reinstall.yml -i /tmp/inventory5068801741271597001.ini -f 5 -e php_env_vars=APP_ENV=dev -e mysql_user=*** -e mysql_password=*** -e mysql_db=sandbox_carnation_custom -e drupal_folder=/var/www/sandbox_carnation_custom -e site_url=https://sandbox-carnation-cus.y.org -e pp_environment=demo -e run_reinstall=true -e "openy_profile_install_settings='openy_configure_profile.preset=complete openy_theme_select.theme=openy_carnation'" -e use_solr=false -i localhost, --connection=local -vvvv
 ```
@@ -65,7 +65,7 @@ These sandboxes are based on the [latest development version](https://github.com
     <summary>These sandboxes are built on CI by running:</summary>
 
 ```sh
-composer create-project YCloudYUSA/yusaopeny-project:dev-9.2.x-development buildnew --no-interaction --prefer-dist
+composer create-project ycloudyusa/yusaopeny-project:10.2.x-development-dev buildnew --no-interaction
 
 ansible-playbook docroot/reinstall.yml -i /tmp/inventory5068801741271597001.ini -f 5 -e php_env_vars=APP_ENV=dev -e mysql_user=*** -e mysql_password=*** -e mysql_db=sandbox_carnation_custom -e drupal_folder=/var/www/sandbox_carnation_custom -e site_url=https://sandbox-carnation-cus.y.org -e pp_environment=demo -e run_reinstall=true -e "openy_profile_install_settings='openy_configure_profile.preset=complete openy_theme_select.theme=openy_carnation'" -e use_solr=false -i localhost, --connection=local -vvvv
 ```
@@ -94,7 +94,7 @@ These are based on the YMCA Website Services stable Standard profile and the dev
     <summary>To rebuild the sandbox, CI is running:</summary>
 
 ```sh
-composer create-project YCloudYUSA/yusaopeny-project buildnew --no-interaction --prefer-dist
+composer create-project ycloudyusa/yusaopeny-project buildnew --no-interaction
 cd buildnew
 composer config minimum-stability dev
 composer require "openy/openy_memberships":"dev-master as 1.0.0"
@@ -113,9 +113,9 @@ ansible-playbook docroot/reinstall.yml -i /tmp/inventory13097841656330601319.ini
     <summary>To rebuild the sandbox, CI is running:</summary>
 
 ```sh
-composer create-project YCloudYUSA/yusaopeny-project:dev-9.2.x-development-af4 build --no-interaction --prefer-dist
+composer create-project ycloudyusa/yusaopeny-project:10.2.x-development-dev build --no-interaction
 cd ${WORKSPACE}/build
-composer require YCloudYUSA/yusaopeny_activity_finder:"4.x-dev as 4.0"
+composer require ycloudyusa/yusaopeny_activity_finder:"4.x-dev as 4.0"
 
 ansible-playbook docroot/reinstall.yml -i /tmp/inventory4660848605526222353.ini -f 5 -e php_env_vars=APP_ENV=dev -e mysql_user=*** -e mysql_password=*** -e mysql_db=d9_sandbox_carnation_custom -e drupal_folder=/var/www/d9_sandbox_carnation_custom -e site_url=https://sandbox-carnation-cus-d9.y.org -e pp_environment=demo -e run_reinstall=true -e "openy_profile_install_settings='openy_configure_profile.preset=complete openy_theme_select.theme=openy_carnation'" -i localhost, --connection=local -vvvv
 
