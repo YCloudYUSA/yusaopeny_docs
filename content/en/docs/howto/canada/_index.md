@@ -77,3 +77,11 @@ Y Canada site developers may want to hide the existing YUSA styles in order to p
   display: none;
 }
 ```
+
+The Banner Overlay variation is suitable for use by Canadian YMCAs. To add that back, add this code after the above:
+
+```css
+#drupal-off-canvas .form-item-appearance-ws-style-ws-style-option-hero-banner:has(input[value*='overlay']) {
+  display: block;
+}
+```
