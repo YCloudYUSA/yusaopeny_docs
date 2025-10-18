@@ -28,24 +28,7 @@
 &lt;li>4-5 branches → Small Y or Full (your choice)&lt;/li>
 &lt;li>6+ branches → Full Distribution&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>2. Do you have in-house Drupal developers?&lt;/strong>&lt;/p></description></item><item><title>YMCA D11 Headless Conversion Strategy (2025-2027)</title><link>/roadmap/headless-conversion-2025/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/roadmap/headless-conversion-2025/</guid><description>&lt;h1 id="ymca-d11-headless-conversion-strategy">YMCA D11 Headless Conversion Strategy&lt;a class="td-heading-self-link" href="#ymca-d11-headless-conversion-strategy" aria-label="Heading self-link">&lt;/a>&lt;/h1>
-&lt;p>&lt;strong>Strategic Initiative&lt;/strong>: Modernize YMCA digital platform with headless architecture
-&lt;strong>Timeline&lt;/strong>: 59 sprints (~118 weeks / 2.3 years)
-&lt;strong>Story Points&lt;/strong>: ~305 points
-&lt;strong>Start Date&lt;/strong>: Q1 2025
-&lt;strong>Completion Target&lt;/strong>: Q2 2027&lt;/p>
-&lt;hr>
-&lt;h2 id="executive-summary">Executive Summary&lt;a class="td-heading-self-link" href="#executive-summary" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>This strategic initiative will transform the YMCA Drupal 11 distribution from a traditional monolithic architecture to a modern headless platform, enabling:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>56% faster page load times&lt;/strong> (LCP: 4.5s → 2.0s)&lt;/li>
-&lt;li>&lt;strong>150% increase in conversion rates&lt;/strong> (2% → 5%)&lt;/li>
-&lt;li>&lt;strong>Multi-channel content delivery&lt;/strong> (web, mobile app, voice assistants)&lt;/li>
-&lt;li>&lt;strong>AI-ready architecture&lt;/strong> with structured JSON data feeds&lt;/li>
-&lt;li>&lt;strong>Enhanced accessibility&lt;/strong> (WCAG 2.1 AA compliance built-in)&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Total Investment&lt;/strong>: 305 story points over 59 sprints
-&lt;strong>Expected ROI&lt;/strong>: Improved user engagement, higher program enrollment, better SEO rankings&lt;/p></description></item><item><title>Digital Services Release 11.1.0.0-beta1</title><link>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</link><pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate><guid>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</guid><description>&lt;h2 id="purpose-of-beta1-release-for-ymca-website-services">Purpose of beta1 release for YMCA Website Services&lt;a class="td-heading-self-link" href="#purpose-of-beta1-release-for-ymca-website-services" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>2. Do you have in-house Drupal developers?&lt;/strong>&lt;/p></description></item><item><title>Digital Services Release 11.1.0.0-beta1</title><link>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</link><pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate><guid>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</guid><description>&lt;h2 id="purpose-of-beta1-release-for-ymca-website-services">Purpose of beta1 release for YMCA Website Services&lt;a class="td-heading-self-link" href="#purpose-of-beta1-release-for-ymca-website-services" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>This beta release&amp;rsquo;s main goal is to start field testing the upgrade to Drupal 11 and collect initial feedback from the community.&lt;/p>
 &lt;p>This release marks a major architectural evolution of the YMCA Website Services platform, centered on the upgrade from Drupal 10.5 to Drupal 11.1.&lt;br>
 This foundational shift introduces:&lt;/p>
