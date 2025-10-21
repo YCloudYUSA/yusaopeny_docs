@@ -358,4 +358,4 @@ For complex migrations or production assistance:
 ---
 
 **Last Updated**: 2025-10-21
-**Issue Tracking**: [ITCR-978](https://jet-dev.atlassian.net/browse/ITCR-978)
+**GitHub Issue**: [#5 - Upgrade path for openy_admin theme and core modules](https://github.com/YCloudYUSA/yusaopeny/issues/5)

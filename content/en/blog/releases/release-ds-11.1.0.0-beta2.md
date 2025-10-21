@@ -4,33 +4,6 @@ description: Annotated release notes. Full changelog on [GitHub](https://github.
 date: 2025-10-20
 ---
 
-## Important Upgrade Notice
-
-<div class="alert alert-warning" role="alert">
-  <h4 class="alert-heading">⚠️ Package Migration Warning</h4>
-
-If you're upgrading from **Open Y 9.2.11.3 or earlier** (package `ymcatwincities/openy`) to YUSA Open Y (package `ycloudyusa/yusaopeny`), you may encounter issues with profile and module paths.
-
-**Before upgrading**, review the [Open Y to YUSA Open Y Migration Guide](/docs/development/openy-to-yusaopeny-migration/) to ensure a smooth transition.
-
-**Symptoms of migration issues**:
-- "Profile openy not found" errors
-- openy_admin theme not loading
-- Modules showing as missing
-- "Class not found" errors after upgrade
-
-**Quick Fix**:
-```bash
-drush cr
-drush ev "drupal_flush_all_caches();"
-drush updatedb -y
-```
-
-For detailed troubleshooting, see [GitHub Issue #5](https://github.com/YCloudYUSA/yusaopeny/issues/5) and [ITCR-978](https://jet-dev.atlassian.net/browse/ITCR-978).
-</div>
-
----
-
 ## What's Changed
 
 This beta2 release includes bug fixes and improvements to the Drupal 11 platform.
@@ -79,17 +52,9 @@ drush updatedb -y
 drush cr
 ```
 
-### From Old Open Y (ymcatwincities/openy)
-
-**Critical**: Follow the [Open Y to YUSA Open Y Migration Guide](/docs/development/openy-to-yusaopeny-migration/) first, then upgrade to 11.1.0.0-beta2.
-
 ---
 
 ## Known Issues
-
-### Profile Path Migration
-
-Sites upgrading from `ymcatwincities/openy` to `ycloudyusa/yusaopeny` may experience path-related issues. See migration guide above for detailed resolution steps.
 
 ### jQuery 3.x Compatibility
 
