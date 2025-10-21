@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Package Rename on YMCA Website Services</title><link>/tags/package-rename/</link><description>Recent content in Package Rename on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/tags/package-rename/index.xml" rel="self" type="application/rss+xml"/><item><title>Migrating from Open Y to YUSA Open Y</title><link>/docs/development/openy-to-yusaopeny-migration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/openy-to-yusaopeny-migration/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>In July 2022, the YMCA Website Services installation profile package was renamed from &lt;code>ymcatwincities/openy&lt;/code> to &lt;code>ycloudyusa/yusaopeny&lt;/code> to reflect the project&amp;rsquo;s evolution and governance transition to Y-USA.&lt;/p>
+&lt;p>This change affects the installation profile path and may cause issues during upgrades if not handled correctly.&lt;/p>
+&lt;p>&lt;strong>Issue Reference&lt;/strong>: 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/issues/5" target="_blank">GitHub Issue #5&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h2 id="what-changed">What Changed&lt;a class="td-heading-self-link" href="#what-changed" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="package-name">Package Name&lt;a class="td-heading-self-link" href="#package-name" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Old&lt;/strong>: &lt;code>ymcatwincities/openy&lt;/code>&lt;/li>
+&lt;li>&lt;strong>New&lt;/strong>: &lt;code>ycloudyusa/yusaopeny&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="profile-installation-path">Profile Installation Path&lt;a class="td-heading-self-link" href="#profile-installation-path" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>When Composer installs the profile, the path changes based on the package name:&lt;/p></description></item></channel></rss>

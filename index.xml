@@ -28,7 +28,27 @@
 &lt;li>4-5 branches → Small Y or Full (your choice)&lt;/li>
 &lt;li>6+ branches → Full Distribution&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>2. Do you have in-house Drupal developers?&lt;/strong>&lt;/p></description></item><item><title>Digital Services Release 11.1.0.0-beta1</title><link>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</link><pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate><guid>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</guid><description>&lt;h2 id="purpose-of-beta1-release-for-ymca-website-services">Purpose of beta1 release for YMCA Website Services&lt;a class="td-heading-self-link" href="#purpose-of-beta1-release-for-ymca-website-services" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>2. Do you have in-house Drupal developers?&lt;/strong>&lt;/p></description></item><item><title>Digital Services Release 11.1.0.0-beta2</title><link>/blog/2025/10/20/digital-services-release-11.1.0.0-beta2/</link><pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate><guid>/blog/2025/10/20/digital-services-release-11.1.0.0-beta2/</guid><description>&lt;h2 id="whats-changed">What&amp;rsquo;s Changed&lt;a class="td-heading-self-link" href="#whats-changed" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>This beta2 release includes bug fixes and improvements to the Drupal 11 platform.&lt;/p>
+&lt;h3 id="bug-fixes">Bug Fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Layout Builder Event Location Fix&lt;/strong>: Creating lb_event without location data no longer causes 500 errors (#295)&lt;/li>
+&lt;li>&lt;strong>Media Field in Layout Builder&lt;/strong>: Fixed missing field when adding media in Layout Builder (#306)&lt;/li>
+&lt;li>&lt;strong>Demo Content Updates&lt;/strong>: Updated y_lb_demo_content module (#303)&lt;/li>
+&lt;/ul>
+&lt;h3 id="new-features">New Features&lt;a class="td-heading-self-link" href="#new-features" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>EXIF Orientation Module&lt;/strong>: Automatically installed and enabled for proper image rotation (#304)&lt;/li>
+&lt;/ul>
+&lt;h3 id="technical-improvements">Technical Improvements&lt;a class="td-heading-self-link" href="#technical-improvements" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>PR Builder Updates&lt;/strong>: Updated RoboFile.php for improved PR testing (#302)&lt;/li>
+&lt;li>&lt;strong>Documentation Updates&lt;/strong>: Improved developer and upgrade documentation (#305)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="upgrade-path">Upgrade Path&lt;a class="td-heading-self-link" href="#upgrade-path" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="from-drupal-10x">From Drupal 10.x&lt;a class="td-heading-self-link" href="#from-drupal-10x" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>If you&amp;rsquo;re on Drupal 10.x and want to test Drupal 11:&lt;/p></description></item><item><title>Digital Services Release 11.1.0.0-beta1</title><link>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</link><pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate><guid>/blog/2025/09/25/digital-services-release-11.1.0.0-beta1/</guid><description>&lt;h2 id="purpose-of-beta1-release-for-ymca-website-services">Purpose of beta1 release for YMCA Website Services&lt;a class="td-heading-self-link" href="#purpose-of-beta1-release-for-ymca-website-services" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>This beta release&amp;rsquo;s main goal is to start field testing the upgrade to Drupal 11 and collect initial feedback from the community.&lt;/p>
 &lt;p>This release marks a major architectural evolution of the YMCA Website Services platform, centered on the upgrade from Drupal 10.5 to Drupal 11.1.&lt;br>
 This foundational shift introduces:&lt;/p>
