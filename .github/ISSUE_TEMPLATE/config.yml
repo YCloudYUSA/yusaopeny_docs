@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🤝 Community Support
+    url: https://github.com/YCloudYUSA/yusaopeny/discussions
+    about: Ask questions and discuss with the community
+  - name: 📖 Documentation Site
+    url: https://ds-docs.y.org/
+    about: Browse the official distribution documentation
+  - name: 🏗️ Main Distribution Repository
+    url: https://github.com/YCloudYUSA/yusaopeny
+    about: Report code issues in the main distribution repo
