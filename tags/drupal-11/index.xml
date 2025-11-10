@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Drupal 11 on YMCA Website Services</title><link>/tags/drupal-11/</link><description>Recent content in Drupal 11 on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/tags/drupal-11/index.xml" rel="self" type="application/rss+xml"/><item><title>Drupal 11 Migration Guide</title><link>/docs/development/drupal-11-migration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/drupal-11-migration/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;strong>YMCA Website Services 11.1.0.0-beta1&lt;/strong> brings compatibility with Drupal 11, released September 23, 2024. This is currently a &lt;strong>beta release&lt;/strong> for early adopters and testing. A stable release is targeted for &lt;strong>Q4 2025&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>YMCA Website Services 11.1.0.0-beta3&lt;/strong> brings compatibility with Drupal 11, released November 10, 2025. This is currently a &lt;strong>beta release&lt;/strong> for early adopters and testing. A stable release is targeted for &lt;strong>Q4 2025&lt;/strong>.&lt;/p>
+&lt;p>With beta3, major components including Activity Finder 6.0.0 and Memberships 3.1.0 now have full Drupal 11 support, marking significant progress toward production readiness.&lt;/p>
 &lt;h3 id="whats-new-in-drupal-11">What&amp;rsquo;s New in Drupal 11&lt;a class="td-heading-self-link" href="#whats-new-in-drupal-11" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;p>From the 
 
 
 
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0-beta1" target="_blank">11.1.0.0-beta1 release notes&lt;/a>:&lt;/p>
-&lt;p>&lt;strong>Major Platform Upgrades:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Drupal 11 core upgrade&lt;/li>
-&lt;li>PHP 8.3+ requirement (Symfony 7 integration)&lt;/li>
-&lt;li>Composer-only module management (module upload UI removed)&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>New Development Features:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Single Directory Components (SDC) for streamlined UI component development&lt;/li>
-&lt;li>Object-Oriented Hooks (class-based hooks replacing procedural)&lt;/li>
-&lt;li>New Icon Management API&lt;/li>
-&lt;li>Native WebP image support&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Content Editor Improvements:&lt;/strong>&lt;/p></description></item></channel></rss>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0-beta3" target="_blank">11.1.0.0-beta3 release notes&lt;/a>:&lt;/p>
+&lt;p>&lt;strong>Major Platform Upgrades:&lt;/strong>&lt;/p></description></item></channel></rss>
