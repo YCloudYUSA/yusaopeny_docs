@@ -10,11 +10,13 @@ tags:
 
 ## Overview
 
-**YMCA Website Services 11.1.0.0-beta1** brings compatibility with Drupal 11, released September 23, 2024. This is currently a **beta release** for early adopters and testing. A stable release is targeted for **Q4 2025**.
+**YMCA Website Services 11.1.0.0-beta3** brings compatibility with Drupal 11, released November 10, 2025. This is currently a **beta release** for early adopters and testing. A stable release is targeted for **Q4 2025**.
+
+With beta3, major components including Activity Finder 6.0.0 and Memberships 3.1.0 now have full Drupal 11 support, marking significant progress toward production readiness.
 
 ### What's New in Drupal 11
 
-From the [11.1.0.0-beta1 release notes](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0-beta1):
+From the [11.1.0.0-beta3 release notes](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0-beta3):
 
 **Major Platform Upgrades:**
 - Drupal 11 core upgrade
@@ -39,7 +41,7 @@ From the [11.1.0.0-beta1 release notes](https://github.com/YCloudYUSA/yusaopeny/
 - `bartik` and `seven` themes
 - `panelbutton` module
 
-For complete release details, see [11.1.0.0-beta1 on GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0-beta1).
+For complete release details, see [11.1.0.0-beta3 on GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0-beta3).
 
 ---
 

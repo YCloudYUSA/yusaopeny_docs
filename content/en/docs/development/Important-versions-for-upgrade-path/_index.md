@@ -43,7 +43,9 @@ These supplemental documents elaborate on a few specific cases:
 - **`10.3.1`** - Drupal 10|9 release, New Demo Content and Initial Replacement Paragraphs to Blocks for Native Layout Builder Experience. In this release we bumped a lot of dependencies to become up to date
 - 10.3.2 - Introduced [recurring event support in the Event Content Type](https://www.drupal.org/project/ws_event/issues/3409162) which requires an automated migration between `date_range` and `smart_date` fields. If possible, update to this version during the upgrade process.
 - 10.3.2.3 - Introduced before 10.1 and 10.2 Drupal core. Also upgraded openy_map. This version ensures we support removed modules pre 10.1 for contrib modules
-- **`11.1.0.0-beta1`** - First Drupal 11 release (beta). Includes PHP 8.3+ requirement, jQuery Migrate for backward compatibility, and removal of deprecated themes/modules. Stable release targeted for Q4 2025. See [Drupal 11 Migration Guide](../drupal-11-migration/) for details.
+- **`11.1.0.0-beta1`** - First Drupal 11 release (beta). Includes PHP 8.3+ requirement, jQuery Migrate for backward compatibility, and removal of deprecated themes/modules.
+- **`11.1.0.0-beta2`** - Drupal 11 bug fixes including Layout Builder fixes and EXIF orientation module.
+- **`11.1.0.0-beta3`** - Latest Drupal 11 beta with Activity Finder 6.0.0 and Memberships 3.1.0 Drupal 11 support. Major components now ready. Stable release targeted for Q4 2025. See [Drupal 11 Migration Guide](../drupal-11-migration/) for details.
 
 ---
 See [Version Constraints practices for YMCA Website Services]({{< relref "Composer-version-constraints-for-Open-Y" >}})
@@ -65,7 +67,7 @@ See the [Drupal 11 Migration Guide](../drupal-11-migration/) for:
 - Known issues (jQuery 3.x compatibility)
 - Upgrade steps and troubleshooting
 
-**Note:** The Drupal 11 release is currently in beta (11.1.0.0-beta1). Stable release targeted for Q4 2025. Most YMCAs should remain on Drupal 10 until then.
+**Note:** The Drupal 11 release is currently in beta (11.1.0.0-beta3 as of November 2025). With Activity Finder and Memberships now Drupal 11-ready, production readiness is approaching. Stable release targeted for Q4 2025. Most YMCAs should remain on Drupal 10 until the stable release.
 
 
 If you are faced with an issue when `composer` installs an improper version of `drupal/core` for the chosen version of YMCA Website Services from the list above, please use this trick in order to downgrade:

@@ -51,7 +51,7 @@ You need to follow this migration guide if:
 
 **You can skip this guide if:**
 - ❌ Your site was freshly installed with `ycloudyusa/yusaopeny` (version 9.2.12+)
-- ❌ You're only upgrading between YUSA Open Y versions (e.g., 11.1.0.0-beta1 → 11.1.0.0-beta2)
+- ❌ You're only upgrading between YUSA Open Y versions (e.g., 11.1.0.0-beta2 → 11.1.0.0-beta3)
 
 ---
 
