@@ -94,7 +94,7 @@ drush cr
 
 ### jQuery 3.x Compatibility
 
-Drupal 11 uses jQuery 3.x. YMCA Website Services includes jQuery Migrate for backward compatibility, but custom JavaScript should be tested. See [11.1.0.0-beta1 release notes]({{< relref "release-ds-11.1.0.0-beta1" >}}) for details.
+Drupal 11 uses jQuery 4.x. YMCA Website Services includes jQuery Migrate for backward compatibility, but custom JavaScript should be tested. See [11.1.0.0-beta1 release notes]({{< relref "release-ds-11.1.0.0-beta1" >}}) for details.
 
 ---
 
