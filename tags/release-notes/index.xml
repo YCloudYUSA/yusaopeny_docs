@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Notes on YMCA Website Services</title><link>/tags/release-notes/</link><description>Recent content in Release Notes on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/tags/release-notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Drupal 11 Full Changelog (11.1.0.0)</title><link>/docs/development/drupal-11-changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/drupal-11-changelog/</guid><description>&lt;p>&lt;strong>Generated&lt;/strong>: 2025-11-18 14:31:21&lt;/p>
+&lt;p>&lt;strong>Repository&lt;/strong>: 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="mailto:git@github.com">git@github.com&lt;/a>:YCloudYUSA/yusaopeny.git
+&lt;strong>Comparing&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>10.5.0.1 (Jul 14, 2025)- 11.1.0.0-beta4 (Nov 17, 2025)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="summary">Summary&lt;a class="td-heading-self-link" href="#summary" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Total Changes&lt;/strong>: 161&lt;/li>
+&lt;li>&lt;strong>Added Packages&lt;/strong>: 59&lt;/li>
+&lt;li>&lt;strong>Updated Packages&lt;/strong>: 90&lt;/li>
+&lt;li>&lt;strong>Removed Packages&lt;/strong>: 12&lt;/li>
+&lt;li>&lt;strong>Unchanged Packages&lt;/strong>: 0&lt;/li>
+&lt;/ul>
+&lt;h3 id="changes-by-category">Changes by Category&lt;a class="td-heading-self-link" href="#changes-by-category" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>Drupal Core&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Added: 0&lt;/li>
+&lt;li>Updated: 2&lt;/li>
+&lt;li>Removed: 2&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Drupal Contributed Module&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Added: 42&lt;/li>
+&lt;li>Updated: 30&lt;/li>
+&lt;li>Removed: 9&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>PHP Library&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Added: 17&lt;/li>
+&lt;li>Updated: 58&lt;/li>
+&lt;li>Removed: 1&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;hr>
+&lt;h2 id="changes-by-persona">Changes by Persona&lt;a class="td-heading-self-link" href="#changes-by-persona" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>These changes are organized by the user personas most likely to care about them.&lt;/p></description></item></channel></rss>

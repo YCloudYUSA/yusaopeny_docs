@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Notes on YMCA Website Services</title><link>/blog/releases/</link><description>Recent content in Release Notes on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Services Release 11.1.0.0-beta3</title><link>/blog/2025/11/10/digital-services-release-11.1.0.0-beta3/</link><pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/10/digital-services-release-11.1.0.0-beta3/</guid><description>&lt;h2 id="whats-changed">What&amp;rsquo;s Changed&lt;a class="td-heading-self-link" href="#whats-changed" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Notes on YMCA Website Services</title><link>/blog/releases/</link><description>Recent content in Release Notes on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Services Release 11.1.0.0 - Drupal 11 Stable</title><link>/blog/2025/11/18/digital-services-release-11.1.0.0-drupal-11-stable/</link><pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/18/digital-services-release-11.1.0.0-drupal-11-stable/</guid><description>&lt;h2 id="-drupal-11-stable-release">🎉 Drupal 11 Stable Release&lt;a class="td-heading-self-link" href="#-drupal-11-stable-release" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>We&amp;rsquo;re excited to announce the &lt;strong>first stable release&lt;/strong> of YMCA Website Services with Drupal 11 support! Version 11.1.0.0 marks a major milestone in the platform&amp;rsquo;s evolution, bringing improved performance, modern architecture, and enhanced capabilities for YMCA organizations.&lt;/p>
+&lt;p>This release represents months of work upgrading the entire platform from Drupal 10 to Drupal 11, including all contributed modules, custom components, and integrations.&lt;/p>
+&lt;hr>
+&lt;h2 id="key-highlights">Key Highlights&lt;a class="td-heading-self-link" href="#key-highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="platform-modernization">Platform Modernization&lt;a class="td-heading-self-link" href="#platform-modernization" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Drupal 11 Core&lt;/strong>: Full compatibility with Drupal 11.1.9, ensuring long-term security and support&lt;/li>
+&lt;li>&lt;strong>PHP 8.3+ Support&lt;/strong>: Modern PHP support with Symfony 7 integration for better performance&lt;/li>
+&lt;li>&lt;strong>jQuery 4.x&lt;/strong>: Updated JavaScript libraries with jQuery Migrate for backward compatibility&lt;/li>
+&lt;/ul>
+&lt;h3 id="strategic-capabilities">Strategic Capabilities&lt;a class="td-heading-self-link" href="#strategic-capabilities" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Recipes Subsystem&lt;/strong>: New architectural feature enabling faster, standardized deployment of pre-configured features across sites&lt;/li>
+&lt;li>&lt;strong>Enhanced Email Integrations&lt;/strong>: Expanded mailer support including Azure, Postal, Mailtrap, and MicrosoftGraph&lt;/li>
+&lt;li>&lt;strong>Icon Management API&lt;/strong>: New system for managing and using consistent SVG icons across your site&lt;/li>
+&lt;/ul>
+&lt;h3 id="content-editor-improvements">Content Editor Improvements&lt;a class="td-heading-self-link" href="#content-editor-improvements" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Workspace Enhancements&lt;/strong>: Critical fixes for content staging and draft management&lt;/li>
+&lt;li>&lt;strong>Form Building&lt;/strong>: Native Bootstrap support in Webforms with improved validation&lt;/li>
+&lt;li>&lt;strong>Media Library Fixes&lt;/strong>: Resolved selection reset issues and improved Layout Builder media handling&lt;/li>
+&lt;li>&lt;strong>Navigation Improvements&lt;/strong>: Fixed menu link visibility and logo display issues&lt;/li>
+&lt;/ul>
+&lt;h3 id="component-updates">Component Updates&lt;a class="td-heading-self-link" href="#component-updates" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>This release includes major version updates for critical components:&lt;/p></description></item><item><title>Digital Services Release 11.1.0.0-beta3</title><link>/blog/2025/11/10/digital-services-release-11.1.0.0-beta3/</link><pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/10/digital-services-release-11.1.0.0-beta3/</guid><description>&lt;h2 id="whats-changed">What&amp;rsquo;s Changed&lt;a class="td-heading-self-link" href="#whats-changed" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>This beta3 release focuses on patch cleanup, dependency updates, and component improvements as we approach the stable Drupal 11 release in Q4 2025.&lt;/p>
 &lt;h3 id="core-improvements">Core Improvements&lt;a class="td-heading-self-link" href="#core-improvements" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ul>

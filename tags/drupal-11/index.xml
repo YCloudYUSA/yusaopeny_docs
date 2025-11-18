@@ -1,10 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Drupal 11 on YMCA Website Services</title><link>/tags/drupal-11/</link><description>Recent content in Drupal 11 on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/tags/drupal-11/index.xml" rel="self" type="application/rss+xml"/><item><title>Drupal 11 Migration Guide</title><link>/docs/development/drupal-11-migration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/drupal-11-migration/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;strong>YMCA Website Services 11.1.0.0-beta3&lt;/strong> brings compatibility with Drupal 11, released November 10, 2025. This is currently a &lt;strong>beta release&lt;/strong> for early adopters and testing. A stable release is targeted for &lt;strong>Q4 2025&lt;/strong>.&lt;/p>
-&lt;p>With beta3, major components including Activity Finder 6.0.0 and Memberships 3.1.0 now have full Drupal 11 support, marking significant progress toward production readiness.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Drupal 11 on YMCA Website Services</title><link>/tags/drupal-11/</link><description>Recent content in Drupal 11 on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/tags/drupal-11/index.xml" rel="self" type="application/rss+xml"/><item><title>Drupal 11 Full Changelog (11.1.0.0)</title><link>/docs/development/drupal-11-changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/drupal-11-changelog/</guid><description>&lt;p>&lt;strong>Generated&lt;/strong>: 2025-11-18 14:31:21&lt;/p>
+&lt;p>&lt;strong>Repository&lt;/strong>: 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="mailto:git@github.com">git@github.com&lt;/a>:YCloudYUSA/yusaopeny.git
+&lt;strong>Comparing&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>10.5.0.1 (Jul 14, 2025)- 11.1.0.0-beta4 (Nov 17, 2025)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="summary">Summary&lt;a class="td-heading-self-link" href="#summary" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Total Changes&lt;/strong>: 161&lt;/li>
+&lt;li>&lt;strong>Added Packages&lt;/strong>: 59&lt;/li>
+&lt;li>&lt;strong>Updated Packages&lt;/strong>: 90&lt;/li>
+&lt;li>&lt;strong>Removed Packages&lt;/strong>: 12&lt;/li>
+&lt;li>&lt;strong>Unchanged Packages&lt;/strong>: 0&lt;/li>
+&lt;/ul>
+&lt;h3 id="changes-by-category">Changes by Category&lt;a class="td-heading-self-link" href="#changes-by-category" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>Drupal Core&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Added: 0&lt;/li>
+&lt;li>Updated: 2&lt;/li>
+&lt;li>Removed: 2&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Drupal Contributed Module&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Added: 42&lt;/li>
+&lt;li>Updated: 30&lt;/li>
+&lt;li>Removed: 9&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>PHP Library&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Added: 17&lt;/li>
+&lt;li>Updated: 58&lt;/li>
+&lt;li>Removed: 1&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;hr>
+&lt;h2 id="changes-by-persona">Changes by Persona&lt;a class="td-heading-self-link" href="#changes-by-persona" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>These changes are organized by the user personas most likely to care about them.&lt;/p></description></item><item><title>Drupal 11 Migration Guide</title><link>/docs/development/drupal-11-migration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/drupal-11-migration/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>YMCA Website Services 11.1.0.0&lt;/strong> is the first &lt;strong>stable release&lt;/strong> with Drupal 11 compatibility, released November 18, 2025. This release brings modern architecture, improved performance, and enhanced capabilities for YMCA organizations.&lt;/p>
+&lt;p>All major components including Activity Finder 6.0.0 and Memberships 3.1.0 have full Drupal 11 support, making this release production-ready.&lt;/p>
 &lt;h3 id="whats-new-in-drupal-11">What&amp;rsquo;s New in Drupal 11&lt;a class="td-heading-self-link" href="#whats-new-in-drupal-11" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;p>From the 
 
 
 
-&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0-beta3" target="_blank">11.1.0.0-beta3 release notes&lt;/a>:&lt;/p>
-&lt;p>&lt;strong>Major Platform Upgrades:&lt;/strong>&lt;/p></description></item></channel></rss>
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0" target="_blank">11.1.0.0 stable release&lt;/a>:&lt;/p>
+&lt;p>&lt;strong>Major Platform Upgrades:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Drupal 11 core upgrade&lt;/li>
+&lt;li>PHP 8.3+ requirement (Symfony 7 integration)&lt;/li>
+&lt;li>Composer-only module management (module upload UI removed)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>New Development Features:&lt;/strong>&lt;/p></description></item></channel></rss>
