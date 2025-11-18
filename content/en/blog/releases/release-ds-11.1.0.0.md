@@ -47,16 +47,16 @@ This release includes major version updates for critical components:
 
 The upgrade from 10.5.0.1 to 11.1.0.0 includes:
 
-- **161 Total Package Changes**
+- **158 Total Package Changes**
 - **59 Added Packages**
-- **90 Updated Packages**
+- **87 Updated Packages**
 - **12 Removed Packages**
 
 ### By Category
 
 - **Drupal Core**: Updated 2 packages, removed 2 deprecated packages
 - **Drupal Contributed Modules**: Added 42, updated 30, removed 9
-- **PHP Libraries**: Added 17, updated 58, removed 1
+- **PHP Libraries**: Added 17, updated 55, removed 1
 
 ---
 
