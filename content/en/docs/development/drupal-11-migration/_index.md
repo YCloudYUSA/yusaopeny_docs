@@ -10,13 +10,13 @@ tags:
 
 ## Overview
 
-**YMCA Website Services 11.1.0.0-beta3** brings compatibility with Drupal 11, released November 10, 2025. This is currently a **beta release** for early adopters and testing. A stable release is targeted for **Q4 2025**.
+**YMCA Website Services 11.1.0.0** is the first **stable release** with Drupal 11 compatibility, released November 18, 2025. This release brings modern architecture, improved performance, and enhanced capabilities for YMCA organizations.
 
-With beta3, major components including Activity Finder 6.0.0 and Memberships 3.1.0 now have full Drupal 11 support, marking significant progress toward production readiness.
+All major components including Activity Finder 6.0.0 and Memberships 3.1.0 have full Drupal 11 support, making this release production-ready.
 
 ### What's New in Drupal 11
 
-From the [11.1.0.0-beta3 release notes](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0-beta3):
+From the [11.1.0.0 stable release](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0):
 
 **Major Platform Upgrades:**
 - Drupal 11 core upgrade
@@ -41,18 +41,21 @@ From the [11.1.0.0-beta3 release notes](https://github.com/YCloudYUSA/yusaopeny/
 - `bartik` and `seven` themes
 - `panelbutton` module
 
-For complete release details, see [11.1.0.0-beta3 on GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0-beta3).
+For complete release details, see:
+- **[11.1.0.0 Release Notes]({{< relref "/blog/releases/release-ds-11.1.0.0" >}})**
+- **[Full Drupal 11 Changelog]({{< relref "/docs/development/drupal-11-changelog" >}})** - Comprehensive feature and package changes
+- **[11.1.0.0 on GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.1.0.0)**
 
 ---
 
 ## Before You Upgrade
 
-**Important:** This is a **beta release**. Only upgrade if:
-- You're testing for bugs before the stable Q4 2025 release
-- You have a staging environment for testing
-- You're comfortable troubleshooting potential issues
+**Production Ready:** Version 11.1.0.0 is a **stable release** suitable for production use. However:
 
-**Most YMCAs should remain on Drupal 10** until the stable Drupal 11 release in Q4 2025.
+- **Always test first:** Upgrade staging/testing environments before production
+- **Create backups:** Ensure you have complete backups before upgrading
+- **Review changes:** See the [Full Changelog]({{< relref "/docs/development/drupal-11-changelog" >}}) for detailed changes
+- **Plan accordingly:** Major version upgrades require planning and testing
 
 ---
 
@@ -69,19 +72,19 @@ Before upgrading to Drupal 11:
 
 ## Known Issues
 
-### jQuery 3.x Script Compatibility
+### jQuery 4.x Script Compatibility
 
-**Issue:** Drupal 11 uses jQuery 3.x, which breaks some legacy jQuery 1.x/2.x scripts.
+**Issue:** Drupal 11 uses jQuery 4.x, which may affect some legacy jQuery scripts.
 
 **Solution:** As of version **11.1.0.0-alpha2**, YMCA Website Services includes jQuery Migrate to provide backward compatibility.
 
 **What this means:**
-- Legacy jQuery syntax (jQuery 1.x/2.x) continues to work with jQuery 3.x
+- Legacy jQuery syntax (jQuery 1.x/2.x/3.x) continues to work with jQuery 4.x via jQuery Migrate
 - Custom JavaScript and third-party libraries maintain compatibility
 - No immediate action required for most sites
 
 **For developers with custom JavaScript:**
-- Test your custom modules with jQuery 3.x
+- Test your custom modules with jQuery 4.x
 - Update deprecated jQuery methods when possible
 - jQuery Migrate provides console warnings about deprecated code
 
@@ -93,9 +96,10 @@ Before upgrading to Drupal 11:
 
 ## Getting Help
 
-**Testing Drupal 11 beta?**
+**Upgrading to Drupal 11?**
+- Review the [Full Changelog]({{< relref "/docs/development/drupal-11-changelog" >}}) for detailed information
 - Report bugs in the [GitHub issue queue](https://github.com/YCloudYUSA/yusaopeny/issues)
-- Join [YMCA Website Services Slack](https://ycloud.y.org/slack) for community support
+- Join [YMCA Website Services Slack](https://ycloud.y.org/slack) for community support (#support channel)
 - Attend [monthly community calls](/blog/monthly-calls/) for Q&A
 
 **Need professional assistance?**
