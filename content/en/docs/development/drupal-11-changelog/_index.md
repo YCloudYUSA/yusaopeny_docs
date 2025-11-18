@@ -11,7 +11,7 @@ weight: 10
 ---
 
 
-**Generated**: 2025-11-18 14:31:21
+**Generated**: 2025-11-18 16:38:08
 
 **Repository**: git@github.com:YCloudYUSA/yusaopeny.git
 **Comparing**:
@@ -22,9 +22,9 @@ weight: 10
 
 ## Summary
 
-- **Total Changes**: 161
+- **Total Changes**: 158
 - **Added Packages**: 59
-- **Updated Packages**: 90
+- **Updated Packages**: 87
 - **Removed Packages**: 12
 - **Unchanged Packages**: 0
 
@@ -42,7 +42,7 @@ weight: 10
 
 **PHP Library**:
 - Added: 17
-- Updated: 58
+- Updated: 55
 - Removed: 1
 
 
@@ -67,297 +67,66 @@ These changes are organized by the user personas most likely to care about them.
 
 **drupal/core** (10.5.1 → 11.1.9)
 
-- **Bug affecting visibility of newly added menu links, impacting content editors&#039; ability to see menu items before publishing; developers need to fix it.**
-  - `a77e5ed3`
-- **Adds validation constraints to system date fields, affecting content editors and developers.**
-  - `4053f045`
-- **Provided Config Action to add new blocks to navigation from recipes, usable by editors and developers.**
+- **Block navigation**
   - `90406aa4`
-- **Introduced an icon management API for content editors to use icons, while developers added the API.**
-  - `a9db6605`
-- **Removes the createCopy action from EntityDisplayBase, affecting content editors&#039; UI for copying entities and an API change.**
-  - `80341a8c`
-- **Stops calling node_add_body_field() from NodeTypeForm, altering default fields in new content types used by content editors and a code change.**
-  - `d518cd48`
-- **Adds default vertical-align for table cells, improving UI consistency for content editors and affecting site builder styling.**
-  - `9f5dc888`
-- **Changes toolbar configuration action to avoid duplicate items, impacting UI components for editors and site builders; also a developer change.**
-  - `cdac41d0`
-- **Added form class to summary in contact.module, affecting UI of forms for content editors.**
-  - `fa4d1993`
-- **Added &#039;Is empty&#039; and &#039;Is not empty&#039; operators for filtering, useful for content editors.**
-  - `75ae0d4d`
-- **Updates spell-check configuration, impacting content editing and developer settings.**
-  - `b425ccb3`
-- **Fixes navigation logo issue affecting UI and site configuration.**
-  - `ebc77b09`
-- **Adds missing label key to navigation layouts YAML, impacting layout UI and site configuration.**
+- **Block example updates**
+  - `f1bf725f`
+- **navigation label added**
   - `ca4e5f23`
-- **Fixes large gap of white space in Claro CSS for dropbutton items, affecting UI appearance.**
-  - `5b061c9f`
-- **Adds new recipe and default content subsystems, providing new UI components for editors, requiring configuration for site builders, code changes for developers, and platform capabilities for decision makers.**
-  - `8cab4c34`
-- **Corrects padding on child menu items, UI issue for content editors and code change for developers.**
-  - `3ea5423d`
-- **Bug in Views UI action buttons causing layout shift; affects content editors using Views and developers fixing the issue.**
-  - `afa13181`
-- **Added validation constraints to core.menu.schema.yml; impacts menu creation for content editors and developers.**
-  - `a8aec03f`
-- **Fixes label and description likely affect UI elements seen by content editors; also a bug fix in code.**
-  - `98ca9a14`
-- **Validation constraints on image settings affect content editors&#039; configuration and are a developer change.**
-  - `d0cc36ec`
-- **Ensures published entities in a workspace return the workspace-specific revision, improving content management.**
-  - `4c89783a`
-- **Translations not visible in admin content overview, impacting content editors and requiring code fix**
+- **Translation UI issue**
   - `9d302e5d`
-- **CKEditor toolbar config issue affecting UI for content editors, needs code adjustment**
-  - `15a01f56`
-- **Linking behavior in CKEditor 5 affects content editing experience; requires fix**
+- **CKEditor URL fix for editors**
   - `d4c8c21b`
-- **Bug fix preventing content creation with images in a workspace, affecting editors and requiring code changes.**
-  - `62ccc2af`
-- **Adds a Drupal Support link in the Olivero theme welcome text, improving UI for editors and requiring theme code changes.**
+- **Adds link to welcome text**
   - `fdda4128`
-- **UI enhancement adding outline to active buttons; affects theme configuration and requires developer work.**
-  - `87416478`
-- **Adding owner field to BlockContent entity type introduces new content management capability; developers, content editors, site builders, and decision makers benefit.**
-  - `c4e09053`
-- **Creates header component for Umami with JS, new UI component.**
+- **New Open component**
+  - `af2ddbad`
+- **Adds new header component**
   - `13a680ce`
-- **Creates new SDC component for Umami Banner, new UI component.**
+- **New SDC component with JS**
   - `7186f7f9`
-
-**drupal/admin_toolbar** (3.6.1 → 3.6.2)
-
-- **Fixes MacOS keyboard shortcuts used by editors; code change.**
-  - `0412425d`
-
-**drupal/advanced_help_block** (1.0.7 → 1.0.8)
-
-- **Adds missing dependency for Advanced Help Block requiring the Help module, enabling content editors to use the block, requiring site builders to install the module, and constitutes a developer-level bug fix.**
-  - `a9d90031`
 
 **drupal/better_exposed_filters** (6.0.6 → 7.1.0-beta4)
 
-- **Adds option to hide exposed field labels, useful for content editors and implemented by developers.**
-  - `278c293d`
-- **Adds minimum length validation, useful for content editors editing forms and implemented by developers.**
-  - `2b3287f0`
-- **Adds RTL support for slider filters, helpful for content editors and implemented by developers.**
-  - `939d0c50`
-- **Ensures title info only added if form element not empty, improving UI for content editors and code by developers.**
-  - `c56869ed`
-- **Adds accessibility improvements to form labels, enhancing user experience for editors; involves code changes affecting UI components.**
-  - `dca6c148`
-- **Repositions the JS range slider for cleaner UI and easier content editing; requires code adjustments to front‑end behavior.**
-  - `c9fd8966`
+- **HTML validation affects content editing**
+  - `a32a5a0c`
 
 **drupal/inline_entity_form** (2.0.0-rc10 → 3.0.0-rc21)
 
-- **Adds an accessibility label to a UI field used by content editors, and involves code changes.**
+- **Adds label for accessibility**
   - `23cd78d5`
-- **Fixes incorrect bundle form display for users with limited permissions, affecting editor UI and requiring code adjustments.**
-  - `d8419f6d`
-
-**drupal/metatag** (2.1.1 → 2.2.0)
-
-- **Introduces SVG icon meta tag enabling content editors to specify icons.**
-  - `b6d61dea`
-- **Adds placeholder &lt;none&gt; to clear inherited values, improving metadata control.**
-  - `aa44d4ba`
-- **Allows optional suffix after trimmed meta tags, enhancing flexibility.**
-  - `85dfe411`
-
-**drupal/openy_carnation** (3.2.1 → 4.0.0-beta4)
-
-- **Introduces Bootstrap jQuery migrate tools, enabling new UI components; developers build features, site builders configure, content editors use components, decision makers see strategic improvement.**
-  - `353e0d80`
 
 **drupal/webform** (6.3.0-beta3 → 6.3.0-beta5)
 
-- **Visual alignment issue affecting UI for forms, content editors and site builders**
-  - `7227446b`
-- **Add access check for notes operation, permission change impacting content editors**
-  - `144913a0`
-- **Autocomplete for date element improves accessibility UI, relevant to content editors and developers**
-  - `7874e214`
-- **Adds link option to Terms of Service element, UI feature for editors and code change.**
-  - `174cea37`
-- **Justify content settings for WebformFlexbox element, UI improvement and code change.**
-  - `7595248c`
-- **Option to add CSS class to fieldset legend element, UI tweak for editors and code update.**
-  - `9ffede30`
-- **Bug affecting submission list rendering; content editors see broken links, developers fix.**
-  - `1cffb051`
-- **Allows customizing file limit error messages; useful for content editors, implemented by developers.**
-  - `9eb1fb52`
-- **Bug where values not shown in submission display; affects content editors and requires developer fix.**
-  - `afcb7fa9`
-- **Issue disabling text format that cannot be reenabled; impacts content editors, fixed by developers.**
-  - `0f9db91e`
-- **Conditional checkbox logic bug affecting form building; content editors notice, developers fix.**
-  - `392af8d1`
-- **Confusing file upload message when limit enabled; UI issue for content editors, fixed by developers.**
-  - `c167ee6d`
-- **File element with button option incorrectly invalidates uploads; affects content editors, requires developer fix.**
-  - `af56ea0e`
-- **Introduces Bootstrap theme support, affecting UI components, configuration, implementation, and platform capabilities.**
-  - `d27c98d4`
-- **Fixes entity reference field creation for taxonomy when only one bundle is selected; impacts developers and content editors using these fields.**
-  - `7b8b76b1`
-- **Changes duplicate submission permissions to allow editing own submissions; affects content editors, permission setup, implementation, and platform capabilities.**
-  - `48fc5079`
-- **Fixes title display options for Date List element, impacting UI usage by content editors and code implementation.**
-  - `3112ba15`
-- **Overrides wizard previous/next labels to improve UI consistency; relevant to developers and content editors.**
-  - `d6f7a56e`
-- **Fixes error inconsistencies when deleting form elements after reordering, affecting form usage by content editors and code implementation.**
-  - `f6681335`
-- **Fixes telephone validation affecting form fields used by content editors; involves code changes.**
-  - `d4dc5e73`
-- **Adds US ZIP code validation for advanced address element, useful for forms created by content editors and requires code updates.**
-  - `e2f907f5`
-- **Ensures minimum items rule is respected in multi-value elements, impacting form configuration for content editors and code logic.**
-  - `84dfe5c0`
-- **Ensures submissions are deleted when a webform is removed, affecting content management and requiring backend changes.**
+- **Deletes submissions on delete**
   - `36247b0c`
-- **Introduces new permission for filtering and bulk actions on overview page; relevant to role configuration, code changes, and strategic feature assessment.**
-  - `256f810b`
-- **Allows immediate purging of submissions after submission, useful for content editors managing data and involves backend logic.**
-  - `dba0924f`
-- **Same as commit 256f810b: new permission for filter and bulk action on overview page, affecting roles, code, and feature strategy.**
-  - `03af8298`
-- **Fixes bulk deletion failure due to random row order; impacts content editors using bulk delete and requires code fix.**
-  - `3598f6b8`
-- **Updates controller to support paragraph-based references, impacting code architecture and content reference handling.**
-  - `57c24e6b`
-- **Improves batch import of webform submissions, relevant for developers, deployment setup, and content editors using imports.**
-  - `a91016d1`
-- **Adds error message for SymfonyMailer plugin usage, affecting developer integration, site configuration, and form notifications.**
-  - `708da243`
-- **Ensures variants do not override title/description, impacting content editors&#039; form variants and developer code.**
-  - `ed35905e`
-- **Performance improvement for field removal, affecting code performance, deployment, and content editors manipulating forms.**
-  - `36e87386`
-
-**drupal/ymca_sync** (10.0.6 → 11.0.0)
-
-- **Major Drupal core upgrade introduces new platform capabilities, requiring updates for developers, site builders, content editors, and strategic planning.**
-  - `3e63f504`
-
-**drupal/responsive_favicons** (2.0.1 → 3.0.1)
-
-- **General improvements and fixes likely affect UI, content management, and underlying code.**
-  - `e1f8ff8e`
-- **New option for removing existing files in the upload folder is useful for content editors and involves code changes.**
-  - `7eb319f1`
-- **Option to keep tags even if icon files are missing affects content management UI and underlying logic.**
-  - `018b7483`
-- **Adding a project logo enhances the visual component for content editors; also requires code updates.**
-  - `e29ee00e`
-- **Warning message about cache-busting parameters removal is a UI improvement for editors and involves code changes.**
-  - `4218e94e`
-
-**drupal/lb_hero** (1.5.0 → 1.5.4)
-
-- **Adds link attribute support, enabling content editors to customize links and developers modified the component code.**
-  - `b8935699`
+- **Terms link UI**
+  - `174cea37`
+- **CSS class fieldset legend**
+  - `9ffede30`
 
 **ycloudyusa/yusaopeny** (10.5.0.1 → 11.1.0.0-beta4)
 
-- **Adds inline_entity_form component for content editing; affects UI and development.**
+- **inline entity form**
   - `7ca36b94`
-- **Updates media directories, impacting content management UI and backend code.**
-  - `994a248a`
-- **Fixes a UI issue in the MediaLibrary dialog that content editors rely on for media management.**
-  - `4c71bf31`
-- **Bug fix for adding camp menu block, directly impacting content editors using blocks.**
-  - `27139832`
-- **Missing field in Layout Builder media addition affects content editors using layout builder.**
+- **jQuery support**
+  - `13528e9e`
+- **UI missing field**
   - `80a40369`
-- **Updating activity finder component enhances content editor functionality and requires developer updates.**
-  - `ec6240c0`
-
-**symfony/mailer** (v6.4.23 → v7.4.0-RC1)
-
-- **Support for translatable subject in TwigBridge enabling content editors to set translated email subjects.**
-  - `5c4bb1cb`
-- **Same as above: support for translatable subject in TwigBridge.**
-  - `08d9a42a`
-
-**symfony/validator** (v6.4.23 → v7.4.0-RC1)
-
-- **Adds Indonesian translations for UI messages, useful for content editors and maintained by developers.**
-  - `448b9923`
-- **Polish translation for word count validation message improves UI localization for content editors and is maintained by developers.**
-  - `865d5e5e`
-- **Japanese translation for Twig template validator improves user-facing validation messages used by content editors.**
-  - `297a24dc`
-- **Adding min/max in LengthValidator error messages enhances UX for content editors and is a developer change.**
-  - `25e8c167`
-- **Same improvement as above, affecting both developers and content editors.**
-  - `77ab6ecc`
-- **Bug fix for required options in validator affects validation behavior seen by content editors and is a developer fix.**
-  - `8d5f3780`
 
 **sebastian/diff** (4.0.6 → 5.1.1)
 
-- **Link to security policy added, content usage and code change**
+- **Adds link to policy**
   - `2c9aad82`
 
 **commerceguys/addressing** (v1.4.2 → v2.2.4)
 
-- **Added address line 3 expands form fields; relevant to UI components used by content editors and API consumers (developers).**
-  - `5db4c30b`
-- **Show additional name field for patronymic countries introduces new UI element for content editors and developers.**
-  - `0e0ab2b7`
-- **Allows default values in address formats, affecting how address fields appear on pages and forms used by content editors.**
-  - `f9007af0`
-- **Adds option to disable postal code validation in AddressFormatConstraint, impacting form behavior for content editors.**
-  - `74edab28`
-- **Adds missing Indonesian provinces to address data, useful for content editors using address components.**
-  - `431b0794`
-- **Updates India subdivision names in the updater, ensuring accurate data for content editors.**
-  - `fd8c6ce9`
-- **Corrects Chile administrative area terminology from provinces to regions, affecting address data used by content editors.**
-  - `975a6528`
-
-**solarium/solarium** (6.3.7 → 6.4.1)
-
-- **Introduces vector filters, a feature that can be used by content editors to filter content and by developers to implement the filtering logic.**
-  - `02a3b688`
-
-**ycloudyusa/y_lb** (3.10.7 → 4.0.6-rc4)
-
-- **Upgrading y_camp for Drupal 11 compatibility impacts component usage by developers and content editors, and enhances platform functionality.**
-  - `37f71e10`
-- **Adding support for lb_claro introduces new UI/theme components relevant to developers, decision makers, and content editors.**
-  - `6aed1a9a`
-- **Option to override styles per node empowers content editors, requires developer implementation, and offers strategic customization capability.**
-  - `f01e6bdf`
-- **Entity builders in form build allow new info saving, affecting developers, deployment (site builder), and content editors using forms.**
-  - `9791b7de`
-
-**ezyang/htmlpurifier** (v4.18.0 → v4.19.0)
-
-- **Adds safe iframe hosts option useful for content editors embedding iframes, enhances platform security, and is a developer change.**
-  - `b5cbf0cc`
-- **Adds CSS direction support for RTL languages, enabling content editors to set text direction and improving platform features.**
-  - `63e631eb`
-- **Expands default image width allowances, affecting content editors who upload images.**
-  - `00a07484`
-- **Defines option URI.AllowedSymbols, useful for content editors customizing URLs and platform configuration.**
-  - `77ebd086`
-
-**ycloudyusa/useless_machines** (1.2 → 2.0.4)
-
-- **Removing the panel button from CKEditor alters the editor UI used by content editors, requires configuration changes for site builders, impacts developer code and overall platform feature set.**
-  - `2472719c`
+- **Adds subdivisions UI**
+  - `843435b5`
 
 **ycloudyusa/y_lb_demo_content** (3.4.5 → 4.0.0-beta4)
 
-- **Adds icon components to the Media Library UI, improving content editor experience while involving code changes.**
+- **Adds icon UI for media library**
   - `24071476`
 
 
@@ -367,459 +136,164 @@ These changes are organized by the user personas most likely to care about them.
 
 **drupal/core** (10.5.1 → 11.1.9)
 
-- **Ensures config entity langcode property does not change, impacting site configuration and deployment.**
-  - `48ec1302`
-- **Updated the update API to prevent major version upgrades from 10.4.0 to 11.0.0, affecting deployment and code.**
+- **Navigation hook, config change**
+  - `6d278495`
+- **API updates for deployment**
   - `2b1e0890`
-- **Adds default vertical-align for table cells, improving UI consistency for content editors and affecting site builder styling.**
-  - `9f5dc888`
-- **Changes toolbar configuration action to avoid duplicate items, impacting UI components for editors and site builders; also a developer change.**
-  - `cdac41d0`
-- **Issue #3346707 involves significant changes in core; likely affecting developers and site builders.**
-  - `66e74c95`
-- **Adds revolt/event-loop dependency to core, a major architectural change impacting developers, site builders, and strategic decision makers.**
-  - `d5a6567a`
-- **Removed deprecated document.all in tabledrag.js, a bug fix affecting JavaScript functionality.**
-  - `b008e50c`
-- **Dependency update (open-telemetry/sem-conv) introduces deprecation breaking daily dependency runs.**
-  - `47899c48`
-- **Breaking changes in sebastianbergmann/comparator library for Drupal, requiring code adjustments.**
-  - `de0c8701`
-- **JavaScript files added by AJAX responses are only optimized in maintenance mode; affects performance.**
-  - `1791c83a`
-- **Twig/twig 3.11.0 introduces breaking changes for Drupal templating engine.**
-  - `87f4dfdc`
-- **PECL UUID implementation can return invalid UUIDs; bug impacting system stability.**
-  - `4d37577e`
-- **New throbber SVG images lack xmlns attribute; bug fix.**
-  - `9bd4b2a6`
-- **Adds validation constraints to system.logging, affecting code and configuration.**
-  - `5c08461f`
-- **Adds validation constraints to language.content_settings.*.*, affecting configuration and code.**
-  - `1b8cedce`
-- **Creates flexible configuration, a feature relevant to deployment and strategic planning.**
-  - `0e39184c`
-- **Adds support for recipes to drupal/recommended-project and legacy-project, affecting developers and deployment.**
-  - `72abc007`
-- **Fixes navigation logo issue affecting UI and site configuration.**
-  - `ebc77b09`
-- **Adds static caching to layout temp store repository for performance improvements.**
-  - `0e1da736`
-- **Adds missing label key to navigation layouts YAML, impacting layout UI and site configuration.**
-  - `ca4e5f23`
-- **Adds validation constraints to image.style.*, affecting API and configuration.**
-  - `49de33ad`
-- **Adds zlib to required extensions for runtime requirement checks, impacting deployment.**
+- **Add config clone action, config update**
+  - `9d12b2c8`
+- **Same config clone action, same?**
+  - `417d0416`
+- **index on locales**
+  - `f5a1a23c`
+- **Config changes**
+  - `1d8507d2`
+- **Runtime extension check**
   - `58aafb87`
-- **Removes deprecated moved_files entries in core, cleaning up code and config.**
-  - `768b30e9`
-- **Corrects mis-implementation of moved_files syntax in core.libraries.yml.**
-  - `7402887b`
-- **Removes remaining deprecated code from Drupal 11, cleaning up legacy code.**
-  - `5fe90bbf`
-- **Adds composer dependency on ext-zlib for runtime requirements.**
+- **Composer dependency update**
   - `64057821`
-- **Adds new recipe and default content subsystems, providing new UI components for editors, requiring configuration for site builders, code changes for developers, and platform capabilities for decision makers.**
-  - `8cab4c34`
-- **Adds configuration setting to reposition comment form, relevant for site setup and developers.**
-  - `4dccbe9f`
-- **Adds PHP 8.3 requirement for Drupal 11.0.x, affecting deployment and code compatibility.**
+- **Pagination for workspace manage page**
+  - `23eeb724`
+- **Deprecated removal in core libs**
+  - `92aa0e59`
+- **Deprecated modules removed**
+  - `4b6d6615`
+- **Field UI deprecated; system update**
+  - `460414c4`
+- **URL module changes affect platform**
+  - `9649f0eb`
+- **Validation config update**
+  - `7017ba13`
+- **Adds link to Update module docs**
+  - `10655fc4`
+- **PHP 8.3 requirement update**
   - `b6331db0`
-- **Introduces lazy database creation for sessions, affecting deployment and performance.**
-  - `e7017f6a`
-- **New workspace should auto-switch; affects site configuration and requires implementation**
+- **access policy API implementation**
+  - `3698610c`
+- **Translation UI issue**
+  - `9d302e5d`
+- **Workspace switch config**
   - `c4d64828`
-- **Adding packageManager key to core/package.json for corepack, relevant to deployment setup**
-  - `cbc6c5e5`
-- **Validation constraints added to search.settings affect site configuration and require code changes**
-  - `9e7182f3`
-- **Adds a Drupal Support link in the Olivero theme welcome text, improving UI for editors and requiring theme code changes.**
-  - `fdda4128`
-- **UI enhancement adding outline to active buttons; affects theme configuration and requires developer work.**
+- **Button outline active state**
   - `87416478`
-- **Adds configuration validation for weights used in blocks and filters, impacting site builder setup and code.**
+- **Config validation weights**
   - `27a54eb6`
-- **Adds an interface for operators() on Views, impacting developers using Views and potentially site builders.**
-  - `6290bae4`
-- **Removal of deprecated code from taxonomy module affects core system; developers maintain code and site builders need to be aware of changes for deployment.**
-  - `efc03b35`
-- **Deprecated code removal in system module impacts core functionality; relevant for developers and site builders during updates.**
-  - `8da7cd4c`
-- **Adding owner field to BlockContent entity type introduces new content management capability; developers, content editors, site builders, and decision makers benefit.**
-  - `c4e09053`
-- **Mechanism to skip processing entity types in workspaces enhances workflow control; developers, site builders, and decision makers find it useful.**
-  - `ff7343d4`
-- **Ensuring config installer sync status during field_field_config_create improves system stability; relevant for developers and site builders.**
-  - `499d8e77`
-- **Require array argument for AddCssCommand changes API usage; developers must adjust code, site builders need to update configurations.**
-  - `846e584e`
-- **Adding details to MigrateSkipRowException messages improves migration debugging; developers and site builders benefit.**
-  - `10bd4b94`
-- **Removal of deprecated non_lazy_route_enhancer and non_lazy_route_filter cleans core system; relevant for developers and site builders.**
-  - `4ba1c840`
-- **Removing deprecated ContextProvidersPass updates core architecture; developers and site builders need to be aware.**
-  - `5ead2a17`
-- **Removal of empty IE11 polyfill stub simplifies codebase; developers and site builders benefit from cleaner system.**
-  - `6645ac94`
-- **Removes deprecated code from block content module, system update.**
-  - `41f4ce1f`
-- **Adjusts Database API to remove deprecated Drupal 10 code in Drupal 11.**
-  - `8cde52c9`
-- **Removes deprecated code from Diff component, system update.**
-  - `795e72a5`
-- **Adds void returns for Symfony 7, system update.**
-  - `02f2bb34`
-- **Adds a new data type &#039;bytes&#039; to the configuration schema, affecting how configurations are stored and used by developers and site builders.**
-  - `191e88b5`
-
-**drupal/core-composer-scaffold** (10.5.6 → 11.1.9)
-
-- **Adds support for recipe files in drupal/recommended-project and drupal/legacy-project, enabling site builders to configure new setups, developers to extend or use recipes, and decision makers to see platform capability expansion.**
-  - `79e3fcb1`
+- **Deprecated function bug fix**
+  - `302317ad`
 
 **drupal/admin_toolbar** (3.6.1 → 3.6.2)
 
-- **Removes Core Update routes affecting configuration and deployment.**
+- **Removed module update routes**
   - `1e71df02`
-
-**drupal/advanced_help_block** (1.0.7 → 1.0.8)
-
-- **Adds missing dependency for Advanced Help Block requiring the Help module, enabling content editors to use the block, requiring site builders to install the module, and constitutes a developer-level bug fix.**
-  - `a9d90031`
-
-**drupal/libraries** (4.1.0 → 4.1.1)
-
-- **Adds PHP 8.4 compatibility by addressing deprecation of implicit nullable default values, impacting platform deployment and maintenance.**
-  - `e67c53a0`
-
-**drupal/better_exposed_filters** (6.0.6 → 7.1.0-beta4)
-
-- **Adds warning to status page about missing nouislider library, informs site builders and developers.**
-  - `20fa1cca`
-- **Adds composer.libraries.json for 7.x, relevant to site builders installing dependencies and developers customizing.**
-  - `34a31a4b`
-- **Creates mirror for external library dependency for composer support, relevant to site builders and developers.**
-  - `381c81ab`
-- **Same as previous commit; creates mirror for external library dependency for composer support.**
-  - `9c0cd6a6`
-
-**drupal/media_library_form_element** (2.1.2 → 2.1.4)
-
-- **Deprecation of RenderElement in Drupal core affects code maintenance and deployment updates.**
-  - `98b4d01a`
-
-**drupal/csv_serialization** (3.0.1 → 4.0.1)
-
-- **Fixes deprecated method usage in CSV serialization library, improving code compatibility with PHP 8.1.**
-  - `11f675ba`
-- **Replaces deprecated League\Csv\ByteSequence::BOF_UTF8 constant to avoid warnings, ensuring code stability.**
-  - `feed0f8b`
-- **Removes PHP 8.1 deprecated function warning by updating code, maintaining compatibility.**
-  - `5322d4f7`
-
-**drupal/openy_carnation** (3.2.1 → 4.0.0-beta4)
-
-- **Adds jquery_legacy library for legacy scripts; developers implement code and site builders may update deployment/config.**
-  - `a37f190c`
-- **Introduces Bootstrap jQuery migrate tools, enabling new UI components; developers build features, site builders configure, content editors use components, decision makers see strategic improvement.**
-  - `353e0d80`
-
-**drupal/openy_gtranslate** (1.0.8 → 2.0.0)
-
-- **Fixes Google Translate functionality in the legacy Carnation theme, requiring code changes (developer) and potential deployment of updated theme (site builder).**
-  - `84deeef8`
-
-**drupal/scheduler** (2.2.1 → 2.2.2)
-
-- **Adds rules to trigger scheduler jobs on commit/merge request, affecting configuration and automation capabilities.**
-  - `5e9592e4`
 
 **drupal/webform** (6.3.0-beta3 → 6.3.0-beta5)
 
-- **Adds minified flag to libraries.yml, affecting asset pipeline and deployment**
-  - `1285584a`
-- **Visual alignment issue affecting UI for forms, content editors and site builders**
-  - `7227446b`
-- **Performance loss due to cascading effect, affects deployment and performance**
-  - `afa51110`
-- **Removal of Add-ons feature; platform capability impact, deployment changes, strategic consideration.**
-  - `893122a6`
-- **Excessive memory usage during dynamic library build; concerns developers and site builders during deployment.**
-  - `3b9c7f7c`
-- **Improved remote_post handler to exclude inaccessible fields; relevant for developers, site builders configuring, and decision makers evaluating platform security.**
-  - `d3b3fd6a`
-- **Introduces Bootstrap theme support, affecting UI components, configuration, implementation, and platform capabilities.**
-  - `d27c98d4`
-- **Adds a new &#039;group_relation&#039; entity type, requiring implementation, configuration, and strategic evaluation.**
-  - `33c935de`
-- **Changes duplicate submission permissions to allow editing own submissions; affects content editors, permission setup, implementation, and platform capabilities.**
-  - `48fc5079`
-- **Fixes schema mismatch between submission tables; developers need to adjust code, site builders may handle database migrations.**
-  - `9d52f3c6`
-- **Upgrade from 6.2.x to 6.3.x removes webform_shortcuts causing missing-module errors; site builders must manage upgrade, developers adjust code, decision makers evaluate upgrade impact.**
+- **Upgrade removes module causing errors**
   - `2afb544f`
-- **Introduces new permission for filtering and bulk actions on overview page; relevant to role configuration, code changes, and strategic feature assessment.**
-  - `256f810b`
-- **Same as commit 256f810b: new permission for filter and bulk action on overview page, affecting roles, code, and feature strategy.**
-  - `03af8298`
-- **Ensures data-options don&#039;t override existing config, affecting API behavior and configuration.**
-  - `2bbf12a2`
-- **Improves batch import of webform submissions, relevant for developers, deployment setup, and content editors using imports.**
-  - `a91016d1`
-- **Adds error message for SymfonyMailer plugin usage, affecting developer integration, site configuration, and form notifications.**
-  - `708da243`
-- **Fixes undefined function error in webform token handling, important for developers and deployment stability.**
-  - `5b0d49e2`
-- **Ensures variants do not override title/description, impacting content editors&#039; form variants and developer code.**
-  - `ed35905e`
-- **Addresses warning in translation manager, relevant to developers and site configuration.**
-  - `92d18cdf`
-- **Performance improvement for field removal, affecting code performance, deployment, and content editors manipulating forms.**
-  - `36e87386`
-
-**drupal/openy_pef_gxp_sync** (1.1.10 → 2.0.1)
-
-- **Adds a new dependency to composer.json which affects installation and code integration.**
-  - `8a953b4e`
-- **Adds drupal/openy_mappings as a dependency, impacting deployment and development work.**
-  - `e3827a0c`
+- **Bootstrap config**
+  - `d27c98d4`
 
 **drupal/ymca_sync** (10.0.6 → 11.0.0)
 
-- **Composer.json update affects package dependencies, impacting build and deployment.**
+- **Composer update for deployment**
   - `23b20c69`
-- **Major Drupal core upgrade introduces new platform capabilities, requiring updates for developers, site builders, content editors, and strategic planning.**
-  - `3e63f504`
+
+**drupal/responsive_favicons** (2.0.1 → 3.0.1)
+
+- **Cache busting warning affects deployment**
+  - `4218e94e`
 
 **ycloudyusa/yusaopeny** (10.5.0.1 → 11.1.0.0-beta4)
 
-- **Feature adjusts Drupal 11 compatibility, affecting core version and deployment.**
-  - `bdda671b`
-- **Introduces ws_outsiders module, enhancing platform capabilities and deployment configuration.**
-  - `8d06f605`
-- **Moves Drupal features to a fork within ws_outsiders, changing architecture and deployment setup.**
-  - `13ebee60`
-- **Forces specific Drupal core version; impacts deployment and development configuration.**
-  - `3e5022ac`
-- **Uses local_drupal11 branch from project, affecting deployment and development environment.**
-  - `d209049c`
-- **Removes failing or non-existent modules; cleanup for deployment and development.**
+- **Add features dev deploy**
+  - `5c91318a`
+- **Remove modules**
   - `64f13920`
-- **Adds Drupal 11 development features; affects deployment and developer workflow.**
+- **Drupal 11 dev config**
   - `87acb545`
-- **Dependency update affecting system configuration.**
-  - `9a64babc`
-- **Updated version of ycloudyusa/y_lb dependency.**
-  - `e0cdec71`
-- **Added Drupal core composer scaffold component.**
+- **Composer scaffold update**
   - `44770558`
-- **Updated open-y-subprojects/openy_custom subproject.**
-  - `20dafec6`
-- **Bug fix patch for migrate_tools.**
-  - `30edd6fa`
-- **Added drupal/features component.**
+- **Drupal features add**
   - `77786d83`
-- **Removed symfony/dom-crawler dependency.**
-  - `4882be5d`
-- **Updated carnation subproject.**
+- **Update library**
   - `8db90769`
-- **Updated carnation subproject (duplicate update).**
+- **Update library**
   - `68692b73`
-- **Core Drupal upgrade affects system configuration, API compatibility, and overall platform capabilities.**
+- **Drupal core update**
   - `6730ebc2`
-- **Provides an upgrade path to Drupal 11, impacting deployment strategy and platform evolution.**
+- **Drupal upgrade path**
   - `3ea5e1b5`
-- **Adds jquery-migrate to core jQuery, affecting front‑end compatibility and deployment dependencies.**
-  - `13528e9e`
-
-**symfony/polyfill-intl-grapheme** (v1.31.0 → v1.33.0)
-
-- **Adds a new API function grapheme_str_split in Symfony&#039;s Intl polyfill, useful for developers handling Unicode strings. Site builders may need to update dependencies to support PHP 8.4 compatibility.**
-  - `14c74360`
-
-**symfony/dependency-injection** (v6.4.23 → v7.4.0-RC2)
-
-- **Bug fix adding a custom autoloader for missing config classes impacts code and deployment**
-  - `d1f7528f`
-- **Feature enabling arrays or config-builders from config files changes API for developers and configuration handling for site builders**
-  - `942cea70`
-- **Adds ability to tag resources in any config format, affecting code and deployment configuration**
-  - `5dc302bf`
-- **Introduces JSON schema for validating YAML config files, a major feature relevant to developers, site builders, and decision makers**
-  - `2d38f116`
-- **Same as above – JSON schema for validating YAML config files, a major feature**
-  - `e9c51de0`
-- **Removal of deprecated SplObjectStorage calls cleans up code and may affect deployment**
-  - `900da8a4`
-
-**symfony/filesystem** (v6.4.24 → v7.4.0-RC1)
-
-- **Removed backward compatibility layers for new methods and parameters; affects code architecture and deployment.**
-  - `900b2f14`
-- **Changed temporary file creation from uniqid() to safer approach; technical improvement requiring deployment updates.**
-  - `c46c178f`
-
-**symfony/http-foundation** (v6.4.24 → v7.4.0-RC1)
-
-- **Adds global lower bounds to dependencies in CI, affecting build configuration.**
-  - `3a978ec5`
 
 **symfony/http-kernel** (v6.4.23 → v7.4.0-RC2)
 
-- **Adds new share directory config and API method, useful for developers and site builders configuring deployments.**
+- **share dir config**
   - `de4e609f`
 
 **symfony/error-handler** (v6.4.23 → v8.0.0-RC1)
 
-- **Adds CLI command to dump static error pages, useful for site builders during deployment and for developers customizing error handling; also a platform capability improvement.**
+- **Static error page command**
   - `f344b88b`
 
 **symfony/var-dumper** (v6.4.23 → v8.0.0-RC1)
 
-- **Update required PHP version; impacts deployment and platform compatibility.**
-  - `ab6d26bc`
-- **Remove Twig 2 support; impacts compatibility and deployment.**
-  - `bcc3a2bc`
+- **DOM extension support added**
+  - `0950cebe`
+- **HTTP client upgrade**
+  - `a9f7f10b`
 
 **symfony/mailer** (v6.4.23 → v7.4.0-RC1)
 
-- **DSN param &#039;auto_tls&#039; allows disabling STARTTLS in SMTP configuration; developers adjust code and site builders may configure this setting.**
-  - `87877980`
-- **Configuration added for DKIM and S/MIME signers, affecting deployment config.**
+- **Config dkim/smime**
   - `871cf21c`
-- **DSN param to enforce TLS/STARTTLS in mailer, config change.**
-  - `879d6df4`
-- **Adding MicrosoftGraph API transport; developer and site builder may need to configure.**
-  - `7bde58cb`
-- **CI dependency bounds change affecting deployment environment.**
-  - `676b5e67`
 
 **doctrine/lexer** (2.1.1 → 3.0.1)
 
-- **Dropping PHP &lt;8.1 support changes the platform&#039;s runtime requirements, impacting deployment configurations (site builder), code compatibility and architecture decisions (developer), and overall platform capabilities for strategic planning (decision maker).**
+- **Drops php 8.1 support**
   - `c4f371c0`
 
 **symfony/routing** (v6.4.24 → v7.4.0-RC2)
 
-- **Adds JSON schema for validating and autocompleting YAML config files, improving configuration and platform capability.**
+- **JSON schema config validation**
   - `23627610`
-- **Same as above: adds JSON schema for YAML config validation, enhancing configuration and platform capability.**
+- **Same as 236276.**
   - `29106470`
-- **Auto-register routes from attributes on controller services, a major feature for developers and site builders.**
-  - `ec13b221`
-- **Allows environment-specific route configuration in RoutesConfig trees, affecting configuration and deployment.**
-  - `ba77be3a`
 
 **symfony/serializer** (v6.4.24 → v7.4.0-RC1)
 
-- **Adds JSON schema for validating YAML config files, impacting configuration setup**
+- **Schema config validation for deployment**
   - `6837bf9e`
-
-**symfony/validator** (v6.4.23 → v7.4.0-RC1)
-
-- **JSON schema for YAML config validation aids site builders in configuration, developers add tooling, decision makers see improved configurability.**
-  - `74e760ca`
-
-**symfony/process** (v6.4.24 → v7.4.0-RC1)
-
-- **Adds Laravel Herd PHP detection path, affecting deployment configuration and platform setup.**
-  - `85dc2723`
-
-**twig/twig** (v3.20.0 → v3.22.0)
-
-- **Code change that reduces deprecation warnings, improving runtime behavior and deployment stability.**
-  - `155d0faa`
-- **Feature adding configuration keys for CommonMark extensions, enhancing API flexibility and deployment options, relevant to developers, site builders, and strategic planning.**
-  - `5f2b1ee6`
-- **Bug fix preventing errors when template info is guessed, enhancing runtime stability and deployment reliability.**
-  - `98b664a0`
-
-**guzzlehttp/psr7** (2.7.1 → 2.8.0)
-
-- **Adds PHP 8.5 support, impacting code compatibility for developers, deployment requirements for site builders, and platform capability considerations for decision makers.**
-  - `b0b99b85`
 
 **masterminds/html5** (2.9.0 → 2.10.0)
 
-- **Adds PHP 8.4 to CI config, affecting deployment and testing environment**
+- **CI config update**
   - `dc8be119`
-
-**pear/archive_tar** (1.5.0 → 1.6.0)
-
-- **Adds support for older PHP5.4, affecting deployment compatibility and code adjustments.**
-  - `bb299860`
-- **Removes old PHP5 support and adds PHP8, impacting platform compatibility and development requirements.**
-  - `bc24cf89`
-
-**mck89/peast** (v1.17.2 → v1.17.4)
-
-- **The commit marks a new release, which is relevant for deployment and strategic planning.**
-  - `5440ff13`
 
 **sebastian/diff** (4.0.6 → 5.1.1)
 
-- **Dropped PHP 8.0 support, platform compatibility update**
+- **PHP 8.0 drop affects deployment**
   - `aa6da0de`
-- **Added security policy, major platform feature**
-  - `9e6751a8`
 
-**commerceguys/addressing** (v1.4.2 → v2.2.4)
+**solarium/solarium** (6.3.7 → 6.4.1)
 
-- **Bumping GitHub Actions checkout version updates CI/CD pipeline configuration.**
-  - `3493cda8`
-
-**doctrine/annotations** (1.14.4 → 2.0.2)
-
-- **PHP version bump requires environment configuration changes, affects deployment and platform compatibility.**
-  - `5ccddc60`
-- **Adding psalm.xml to .gitattributes configures static analysis, relevant to deployment and developer tooling.**
-  - `523bc8e7`
-
-**doctrine/inflector** (2.0.10 → 2.1.0)
-
-- **Introduces a new website schema validation workflow, requiring configuration/deployment and improving platform quality.**
-  - `a0e4cd4b`
+- **Vector filter config**
+  - `02a3b688`
 
 **ycloudyusa/y_lb** (3.10.7 → 4.0.6-rc4)
 
-- **Updating dependencies to support y_lb 4 and Drupal 11 affects platform installation, code compatibility, and strategic platform capabilities.**
+- **updates deps for platform**
   - `a643ae9d`
-- **Entity builders in form build allow new info saving, affecting developers, deployment (site builder), and content editors using forms.**
-  - `9791b7de`
-
-**ycloudyusa/yusaopeny_activity_finder** (5.3.0 → 6.0.0)
-
-- **Replacing deprecated node-sass with sass updates the build dependency, impacting deployment and code compilation.**
-  - `e2ce493c`
-- **Adds Drupal 11 support to activity finder modules, affecting deployment on new platform versions and enhancing platform capabilities.**
-  - `90605c24`
 
 **ezyang/htmlpurifier** (v4.18.0 → v4.19.0)
 
-- **PHP 8.4 support ensures compatibility for deployment and strategic decisions.**
-  - `ff005f6e`
-- **Docker files for dev environment aid site builders in setup; developers use them.**
+- **Add Docker files**
   - `bdabc9b6`
-- **Docker files ignored during installation help site builders avoid unnecessary files.**
-  - `9f99c615`
-- **PHP 8.5 support ensures compatibility for deployment and strategic planning.**
-  - `1eb05d98`
-- **Release commit indicates a new platform version; site builders need to update deployments, developers may pull the updated code.**
-  - `b287d2a1`
 
 **ycloudyusa/useless_machines** (1.2 → 2.0.4)
 
-- **Uninstalling redundant Drupal modules reduces system overhead, improves configuration and stability; affects developers&#039; code architecture, site builders&#039; deployment setup, and decision makers&#039; platform performance considerations.**
+- **Uninstall modules reduces system size**
   - `d703f518`
-- **Removing the panel button from CKEditor alters the editor UI used by content editors, requires configuration changes for site builders, impacts developer code and overall platform feature set.**
+- **Config changes for ckeditor**
   - `2472719c`
-- **Uninstalling unsupported modules improves system reliability and maintenance; relevant to site builders&#039; configuration, developers&#039; code base, and decision makers&#039; platform stability.**
-  - `fe59e491`
-
-**ycloudyusa/y_lb_demo_content** (3.4.5 → 4.0.0-beta4)
-
-- **Fixes a migration bug for partners block demo content, affecting deployment correctness and requiring developer fixes.**
-  - `0a12d9f9`
 
 
 ### 💻 For Developers
@@ -828,1418 +302,1023 @@ These changes are organized by the user personas most likely to care about them.
 
 **drupal/core** (10.5.1 → 11.1.9)
 
-- **Bug affecting visibility of newly added menu links, impacting content editors&#039; ability to see menu items before publishing; developers need to fix it.**
-  - `a77e5ed3`
-- **Adds a new API for modules, enhancing platform capabilities; relevant for developers and decision makers evaluating strategic value.**
-  - `fcc49e3b`
-- **Adds a hook for altering entity form modes, an API change useful for developers.**
-  - `fcafca2b`
-- **Adds validation constraints to system date fields, affecting content editors and developers.**
-  - `4053f045`
-- **Fixes SQLite connection options conversion bug, affecting database internals.**
-  - `fce26f74`
-- **Ensures config entity langcode property does not change, impacting site configuration and deployment.**
-  - `48ec1302`
-- **Adjusts EntityAccessControlHandler behavior, a core security feature.**
-  - `73a97cf5`
-- **Resets default revision flag on duplicate content entities, affecting content management logic.**
-  - `b2de8152`
-- **Allows modules to hook into top of content section of new core navigation, a UI extension point.**
-  - `6d278495`
-- **Adds render caching for navigation render array, improving performance.**
-  - `cacbe74b`
-- **Fixes runtime error related to unspecified issue (likely bug).**
-  - `2cfaabae`
-- **Adds a maintainer to the serialization subsystem, a developer role.**
-  - `f81963fe`
-- **Fixes fatal TypeError in Extension system, a core bug.**
-  - `0372fb2b`
-- **Adds void return type to procedural alter hooks, improving code consistency.**
-  - `3c751f06`
-- **Deprecated method in views plugins replaced to maintain compatibility.**
-  - `37d224d5`
-- **Added return types to hook_update_N implementations for type safety.**
-  - `1d629fe1`
-- **Updated the update API to prevent major version upgrades from 10.4.0 to 11.0.0, affecting deployment and code.**
-  - `2b1e0890`
-- **Removed deprecated &quot;spaceless&quot; filter in core templates.**
-  - `754ced85`
-- **Implemented procedural hook short circuit per module or file for better code architecture.**
-  - `c351bb37`
-- **Caught potential exception when calling Request::create() in PathBasedBreadcrumbBuilder.**
-  - `ed4d2ac5`
-- **Provided Config Action to add new blocks to navigation from recipes, usable by editors and developers.**
-  - `90406aa4`
-- **Added array return to all hook_views_data and hook_field_views_data implementations.**
-  - `4bcb237b`
-- **Introduced an icon management API for content editors to use icons, while developers added the API.**
-  - `a9db6605`
-- **Added void return to all pageAttachments, pageTop and pageBottom hook implementations.**
-  - `fc537128`
-- **Adds filecache to OOP hook attribute parsing, an internal API improvement.**
-  - `0b3e06f7`
-- **Same as above; adds filecache to OOP hook attribute parsing.**
-  - `b3803559`
-- **Removes the createCopy action from EntityDisplayBase, affecting content editors&#039; UI for copying entities and an API change.**
-  - `80341a8c`
-- **Stops calling node_add_body_field() from NodeTypeForm, altering default fields in new content types used by content editors and a code change.**
-  - `d518cd48`
-- **Adds last() function to ItemInterface/ItemList, an API enhancement for developers.**
-  - `1cd878a8`
-- **Provides a way for other modules to flag something (likely blocks or content), an API change for developers and possibly site builders.**
-  - `a1db8ccf`
-- **Adds a trait for forms that collect input on behalf of a recipe, an API feature for form developers.**
-  - `2f638cb0`
-- **Adds void return type to all hook_cron implementations, a coding style change for developers.**
-  - `9acafe2c`
-- **Adds missing @return types for StringTranslationTrait methods, improving API documentation for developers.**
-  - `f99d1329`
-- **Adds void return type to all *_alter hook implementations, a coding style change for developers.**
-  - `919089fb`
-- **Adds return type hints to hook_schema implementations, improving API type safety and code quality.**
-  - `8201fc3a`
-- **Adds void return type to all preprocess hook implementations, enhancing API consistency.**
-  - `a28ce055`
-- **Adds filecache to OOP hook attribute parsing, improving code architecture.**
-  - `f0843d43`
-- **Adds return types to UserCreationTrait, strengthening API type safety.**
-  - `cb324402`
-- **Converts procedural hook implementations to Hook classes, refactoring code architecture.**
-  - `3a31a596`
-- **Adds int return type to all hook_update_last_removed implementations, enhancing API consistency.**
-  - `a5d57126`
-- **Adds void return type to various hook_form_alter implementations, improving code quality.**
-  - `87e523b2`
-- **Adds void return type to all hook_entity_type_alter implementations, strengthening API consistency.**
-  - `8a55e0d0`
-- **Updates Implements hook comments for accuracy or adds missing ones, improving documentation.**
-  - `8e4e9839`
-- **Adds array return type to all hook_removed_post_updates implementations, enhancing API consistency.**
-  - `8dfa661d`
-- **Fixes deprecated OOP hooks handling in ModuleHandler, a core API bug relevant to developers.**
-  - `18f89ca0`
-- **Corrects return type on HookCollectorPass::collectAllHookImplementations(), affecting developers working with hook collections.**
-  - `67720198`
-- **Changes toolbar configuration action to avoid duplicate items, impacting UI components for editors and site builders; also a developer change.**
-  - `cdac41d0`
-- **Adds return typehint to DeprecatedServicePropertyTrait::__get(), improving core dependency injection API for developers.**
-  - `b0db4fa1`
-- **Fixes hook_module_implements_alter cache_flush procedural requirement, a core bug relevant to developers.**
-  - `3be754e4`
-- **Adds array return type to all hook_theme implementations, enhancing API consistency for developers.**
-  - `9ef2ea71`
-- **Adds void return type to hook_install and hook_uninstall implementations, a core API change for developers.**
-  - `3aa87e67`
-- **Issue #3346707 involves significant changes in core; likely affecting developers and site builders.**
-  - `66e74c95`
-- **Adds revolt/event-loop dependency to core, a major architectural change impacting developers, site builders, and strategic decision makers.**
-  - `d5a6567a`
-- **Removed deprecated document.all in tabledrag.js, a bug fix affecting JavaScript functionality.**
-  - `b008e50c`
-- **Dependency update (open-telemetry/sem-conv) introduces deprecation breaking daily dependency runs.**
-  - `47899c48`
-- **Breaking changes in sebastianbergmann/comparator library for Drupal, requiring code adjustments.**
-  - `de0c8701`
-- **JavaScript files added by AJAX responses are only optimized in maintenance mode; affects performance.**
-  - `1791c83a`
-- **Twig/twig 3.11.0 introduces breaking changes for Drupal templating engine.**
-  - `87f4dfdc`
-- **Added form class to summary in contact.module, affecting UI of forms for content editors.**
-  - `fa4d1993`
-- **PECL UUID implementation can return invalid UUIDs; bug impacting system stability.**
-  - `4d37577e`
-- **Added &#039;Is empty&#039; and &#039;Is not empty&#039; operators for filtering, useful for content editors.**
-  - `75ae0d4d`
-- **New throbber SVG images lack xmlns attribute; bug fix.**
-  - `9bd4b2a6`
-- **Adds validation constraints to system.logging, affecting code and configuration.**
-  - `5c08461f`
-- **Fixes deprecated Entity class references in code.**
-  - `4ffd3eee`
-- **Adds helper method for generating HTML placeholders, a code utility.**
-  - `65f5ac35`
-- **Improves exception message in createConnectionOptionsFromUrl(), a bug fix.**
-  - `4ffe6c00`
-- **Adds validation constraints to language.content_settings.*.*, affecting configuration and code.**
-  - `1b8cedce`
-- **Removes adding an extension via a URL, a code change.**
-  - `de8b03d5`
-- **Adds support for recipes to drupal/recommended-project and legacy-project, affecting developers and deployment.**
-  - `72abc007`
-- **Bug fix: Umami content created in the same second.**
-  - `324554b9`
-- **Adds a module or feature (&quot;Add m...&quot;), which is a code-level change.**
-  - `d85745b7`
-- **Introduces validation constraints for the user.mail field, affecting data model and API.**
-  - `8b65c455`
-- **Requires access block library in BlockContentAccessControlHandler; a backend implementation change.**
-  - `e72e0fd3`
-- **Adds validation constraints to system.action.* entities, modifying core functionality.**
-  - `71912c8f`
-- **Adds validation constraints to language.entity.*, a technical update.**
-  - `17bf277a`
-- **Adds validation constraints to search.page.* entities, affecting search functionality.**
-  - `c9c2e50d`
-- **Creates an index on locales_location for type and name, a database optimization.**
-  - `f5a1a23c`
-- **Adds subsystem maintainers for Navigation; a configuration/maintenance change.**
-  - `c9d05df6`
-- **Adds validation constraints to user.role.*, updating role data model.**
-  - `ced8f1e9`
-- **Renames ensure_exists to createIfNotExists and camel-cases function names; code refactoring.**
-  - `15b96a53`
-- **Adds validation component or code change affecting core functionality.**
-  - `3310b1fa`
-- **Updates spell-check configuration, impacting content editing and developer settings.**
-  - `b425ccb3`
-- **Likely code modification or bug fix, though message truncated.**
-  - `1d8507d2`
-- **Bug fix in HtmlOutputLogger, improving logging functionality.**
-  - `e4e47f2e`
-- **Adds static caching to layout temp store repository for performance improvements.**
-  - `0e1da736`
-- **Adds support for custom YAML tag in YamlFileLoader, affecting developer code.**
-  - `5b0b5bf2`
-- **Adds validation constraints to image.style.*, affecting API and configuration.**
-  - `49de33ad`
-- **Adds zlib to required extensions for runtime requirement checks, impacting deployment.**
-  - `58aafb87`
-- **Removes deprecated moved_files entries in core, cleaning up code and config.**
-  - `768b30e9`
-- **Fixes mismatch between implementation and description for Drupal.Message.prototype.remove().**
-  - `ced77c25`
-- **Corrects mis-implementation of moved_files syntax in core.libraries.yml.**
-  - `7402887b`
-- **Fixes large gap of white space in Claro CSS for dropbutton items, affecting UI appearance.**
-  - `5b061c9f`
-- **Removes remaining deprecated code from Drupal 11, cleaning up legacy code.**
-  - `5fe90bbf`
-- **Adds composer dependency on ext-zlib for runtime requirements.**
-  - `64057821`
-- **Adds new recipe and default content subsystems, providing new UI components for editors, requiring configuration for site builders, code changes for developers, and platform capabilities for decision makers.**
-  - `8cab4c34`
-- **Removes deprecated methods in InputStreamUploadedFile, a code refactoring affecting developers.**
-  - `e39062ed`
-- **Removes incorrectly added method from InputStreamUploadedFile, bug fix for developers.**
-  - `609ed2cb`
-- **Adds cache tags to taxonomy_tid ViewsArgumentDefault plugin, code change affecting developers.**
-  - `cf17933b`
-- **Implements chaining for User::addRo..., refactoring code for developers.**
-  - `dad4106d`
-- **Fixes deprecated ReflectionMethod constructor in PHP 8.4, developer bug fix.**
-  - `7de22287`
-- **Large multi-author commit likely a bug fix or feature update affecting developers.**
-  - `87619154`
-- **Corrects padding on child menu items, UI issue for content editors and code change for developers.**
-  - `3ea5423d`
-- **Large multi-author commit likely a bug fix or feature update affecting developers.**
-  - `0f7c6345`
-- **Fixes deprecated string array keys in data provider methods, developer refactoring.**
-  - `a1c0e56b`
-- **Bug in Views UI action buttons causing layout shift; affects content editors using Views and developers fixing the issue.**
-  - `afa13181`
-- **Added validation constraints to core.menu.schema.yml; impacts menu creation for content editors and developers.**
-  - `a8aec03f`
-- **Removal of deprecated core code affects system stability and API usage.**
-  - `78f4e11c`
-- **Deprecated serialization component removed, impacting backend functionality.**
-  - `1a889afc`
-- **Type hints added to WebAssert methods improve code quality and debugging.**
-  - `b7a11f6d`
-- **Trait for file upload location enhances field handling in core logic.**
-  - `67932252`
-- **Fixes label and description likely affect UI elements seen by content editors; also a bug fix in code.**
-  - `98ca9a14`
-- **Adds configuration setting to reposition comment form, relevant for site setup and developers.**
-  - `4dccbe9f`
-- **Validation constraints added to image modules improve data integrity in core code.**
-  - `f96ec551`
-- **Legacy attributes removed and XML fixture naming standardized for module updates.**
-  - `b136381b`
-- **Alter hook addition modifies core behavior, a developer-level change.**
-  - `e04c062b`
-- **Validation constraints added to contact settings enhance form data handling.**
-  - `7017ba13`
-- **Removal of deprecated country call is a technical code change affecting developers.**
-  - `cf7be165`
-- **Large multi‑contributor issue likely involves bug fixes or feature changes, relevant to developers.**
-  - `6e727b80`
-- **Creation of enums and deprecation of constants is an API/architecture change for developers.**
-  - `7e71fba3`
-- **Adding return type hints to Composer‑inherit classes is a technical enhancement for developers.**
-  - `ceb6154d`
-- **Validation constraints on image settings affect content editors&#039; configuration and are a developer change.**
-  - `d0cc36ec`
-- **Removal of deprecated SDC code is a maintenance fix for developers.**
-  - `8b77186b`
-- **Deprecated code removal in comment module is a technical update for developers.**
-  - `c802640a`
-- **Adding validation constraints to system.diff is an internal developer change.**
-  - `6944c42f`
-- **Removal of deprecated code in File module is a technical fix for developers.**
-  - `94bbe550`
-- **Adds support for tagged_iterator to YamlFileLoader, a technical change impacting code functionality.**
-  - `e6a316b5`
-- **Removes deprecated code from the shortcut module, a refactor that improves code quality.**
-  - `35aceade`
-- **Adds validation constraints to system.cron, enhancing configuration integrity.**
-  - `fae8e584`
-- **Adds PHP 8.3 requirement for Drupal 11.0.x, affecting deployment and code compatibility.**
-  - `b6331db0`
-- **Adds validation constraints to text.settings, improving data handling.**
-  - `250b776e`
-- **Provides deprecation/bc support for library-overrides when files are moved, a code maintenance change.**
-  - `a45115a9`
-- **Implements the new access policy API, adding platform capability and affecting strategic planning.**
-  - `3698610c`
-- **Replaces deprecated help_topics module with an obsolete stub, a code cleanup.**
-  - `26ed6408`
-- **Ensures published entities in a workspace return the workspace-specific revision, improving content management.**
-  - `4c89783a`
-- **Adds API requirement for DraggableListBuilderTrait, affecting code usage.**
-  - `d2745192`
-- **Removes deprecated translation wrapper, cleaning up core APIs.**
-  - `b167d74a`
-- **Eliminates deprecated node module functions, maintaining code quality.**
-  - `c841aad1`
-- **Cleans up Extension API by removing obsolete code.**
-  - `f601a927`
-- **Deletes deprecated ServiceIdHashTrait and related utilities.**
-  - `74d5726d`
-- **Removes outdated actions from node module, simplifying API.**
-  - `ff9344c1`
-- **Purges deprecated include file code to improve maintainability.**
-  - `b52b09f0`
-- **Updates Cache API by removing obsolete components.**
-  - `86d49119`
-- **Eliminates support for ContainerAwareInterface, streamlining dependency handling.**
-  - `0f8531cc`
-- **Introduces lazy database creation for sessions, affecting deployment and performance.**
-  - `e7017f6a`
-- **Bug fix for deprecated jQuery function affecting core code**
-  - `19a71a3a`
-- **Translations not visible in admin content overview, impacting content editors and requiring code fix**
-  - `9d302e5d`
-- **New workspace should auto-switch; affects site configuration and requires implementation**
-  - `c4d64828`
-- **CKEditor toolbar config issue affecting UI for content editors, needs code adjustment**
-  - `15a01f56`
-- **Linking behavior in CKEditor 5 affects content editing experience; requires fix**
-  - `d4c8c21b`
-- **Adding packageManager key to core/package.json for corepack, relevant to deployment setup**
-  - `cbc6c5e5`
-- **Void return added to Container::reset() is a technical API change**
-  - `fd447f3e`
-- **Creation of interface for overriding definitions, a code architecture change**
-  - `544a27a0`
-- **Validation constraints added to search.settings affect site configuration and require code changes**
-  - `9e7182f3`
-- **Removal of deprecated block module code is a technical cleanup**
-  - `0886458a`
-- **Bug fix preventing content creation with images in a workspace, affecting editors and requiring code changes.**
-  - `62ccc2af`
-- **Likely a bug or feature fix; no clear UI impact from the message.**
-  - `611fb344`
-- **Adds a Drupal Support link in the Olivero theme welcome text, improving UI for editors and requiring theme code changes.**
-  - `fdda4128`
-- **UI enhancement adding outline to active buttons; affects theme configuration and requires developer work.**
-  - `87416478`
-- **Adds configuration validation for weights used in blocks and filters, impacting site builder setup and code.**
-  - `27a54eb6`
-- **Creates a new component or feature (likely an API change); no UI impact indicated.**
-  - `af2ddbad`
-- **Code change or bug fix; message does not indicate UI or deployment changes.**
-  - `2c2ca6bc`
-- **Removal of deprecated trait is a code cleanup affecting developers only.**
-  - `1dcdbb9f`
-- **Adds an interface for operators() on Views, impacting developers using Views and potentially site builders.**
-  - `6290bae4`
-- **Removal of deprecated code from taxonomy module affects core system; developers maintain code and site builders need to be aware of changes for deployment.**
-  - `efc03b35`
-- **Deprecated code removal in system module impacts core functionality; relevant for developers and site builders during updates.**
-  - `8da7cd4c`
-- **Adding owner field to BlockContent entity type introduces new content management capability; developers, content editors, site builders, and decision makers benefit.**
-  - `c4e09053`
-- **Mechanism to skip processing entity types in workspaces enhances workflow control; developers, site builders, and decision makers find it useful.**
-  - `ff7343d4`
-- **Ensuring config installer sync status during field_field_config_create improves system stability; relevant for developers and site builders.**
-  - `499d8e77`
-- **Require array argument for AddCssCommand changes API usage; developers must adjust code, site builders need to update configurations.**
-  - `846e584e`
-- **Adding details to MigrateSkipRowException messages improves migration debugging; developers and site builders benefit.**
-  - `10bd4b94`
-- **Removal of deprecated non_lazy_route_enhancer and non_lazy_route_filter cleans core system; relevant for developers and site builders.**
-  - `4ba1c840`
-- **Removing deprecated ContextProvidersPass updates core architecture; developers and site builders need to be aware.**
+- **Remove deprecated code**
   - `5ead2a17`
-- **Removal of empty IE11 polyfill stub simplifies codebase; developers and site builders benefit from cleaner system.**
+- **Deprecation removal**
   - `6645ac94`
-- **Adds file upload lock handling in FileUploadHandler, a technical bug fix.**
+- **File upload lock bug fix**
   - `bbc4baeb`
-- **Adds fallback for DraggableListBuilder::getWeight() to handle NULL weight entities.**
+- **DraggableList bug fix**
   - `1224497e`
-- **Removes deprecated code from block content module, system update.**
+- **Adds maintainer list**
+  - `48661d8c`
+- **Add role for manager**
+  - `d00a6fe1`
+- **ComponentValidator bug fix**
+  - `2cee90be`
+- **EntityAccessControlHandler bug fix**
+  - `73a97cf5`
+- **Revision flag reset bug fix**
+  - `b2de8152`
+- **Navigation hook, config change**
+  - `6d278495`
+- **Render caching bug fix**
+  - `cacbe74b`
+- **Bug fix in core extension**
+  - `2cfaabae`
+- **Deprecated method fix**
+  - `37d224d5`
+- **Hook update return types**
+  - `1d629fe1`
+- **API updates for deployment**
+  - `2b1e0890`
+- **Deprecated filter removal**
+  - `754ced85`
+- **Hook modification**
+  - `c351bb37`
+- **Exception handling**
+  - `ed4d2ac5`
+- **Block navigation**
+  - `90406aa4`
+- **Views hook return**
+  - `4bcb237b`
+- **API changes**
+  - `a9db6605`
+- **Hook code updates**
+  - `fc537128`
+- **Cache feature added**
+  - `0b3e06f7`
+- **Cache feature added**
+  - `b3803559`
+- **Adds form trait API**
+  - `2f638cb0`
+- **Hook return type change**
+  - `9acafe2c`
+- **Missing return types added**
+  - `f99d1329`
+- **Alter hook void return**
+  - `919089fb`
+- **Adds return type to schema hooks**
+  - `8201fc3a`
+- **Adds return type to preprocess hooks**
+  - `a28ce055`
+- **Adds filecache to OOP hook parsing**
+  - `f0843d43`
+- **Add return types for UserCreationTrait**
+  - `cb324402`
+- **Convert hooks to classes**
+  - `3a31a596`
+- **Add return type**
+  - `a5d57126`
+- **Return type change**
+  - `87e523b2`
+- **Add void return type**
+  - `8a55e0d0`
+- **Hook comment update**
+  - `8e4e9839`
+- **Array type for hooks**
+  - `8dfa661d`
+- **Deprecated hook handling bug**
+  - `18f89ca0`
+- **Fix API return type**
+  - `67720198`
+- **Change default toolbar config**
+  - `cdac41d0`
+- **Add return typehint**
+  - `b0db4fa1`
+- **Adds return type to hooks**
+  - `9ef2ea71`
+- **Adds void return type**
+  - `3aa87e67`
+- **Adds missing param type for form API**
+  - `7601bef9`
+- **Add config clone action, config update**
+  - `9d12b2c8`
+- **Same config clone action, same?**
+  - `417d0416`
+- **Adds taxonomy config for code**
+  - `2bc8f11f`
+- **Enforces type safety**
+  - `6dae8f50`
+- **Node.js import fix**
+  - `ef8420a1`
+- **Deprecated API fix**
+  - `f723b401`
+- **Twig deprecation fix**
+  - `8562e1e6`
+- **Deprecated PHP 8.4 feature removed**
+  - `73233616`
+- **PHP 8.8?**
+  - `2d888850`
+- **SVG bug fix**
+  - `9bd4b2a6`
+- **Block example updates**
+  - `f1bf725f`
+- **Bug fix**
+  - `0d679d63`
+- **Validation added**
+  - `5c08461f`
+- **Fix deprecated class**
+  - `4ffd3eee`
+- **Helper method for HTML**
+  - `65f5ac35`
+- **Adds new functionality**
+  - `d85745b7`
+- **validation constraints**
+  - `17bf277a`
+- **validation**
+  - `c9c2e50d`
+- **index on locales**
+  - `f5a1a23c`
+- **User role validation**
+  - `ced8f1e9`
+- **Rename function**
+  - `15b96a53`
+- **Validation added**
+  - `3310b1fa`
+- **Updated container comment**
+  - `09da47c6`
+- **Config changes**
+  - `1d8507d2`
+- **static caching repo**
+  - `0e1da736`
+- **yaml tag support**
+  - `5b0b5bf2`
+- **navigation label added**
+  - `ca4e5f23`
+- **Adds image validation constraints**
+  - `49de33ad`
+- **Runtime extension check**
+  - `58aafb87`
+- **Remove deprecated core entries**
+  - `768b30e9`
+- **Co-maintainer added**
+  - `dc4efd22`
+- **co-maintainer role change**
+  - `4e051663`
+- **bug fix API**
+  - `ced77c25`
+- **library syntax bug**
+  - `7402887b`
+- **CSS layout issue**
+  - `5b061c9f`
+- **Remove deprecated code**
+  - `5fe90bbf`
+- **Adds subsystems**
+  - `8cab4c34`
+- **Bug fix in file upload API**
+  - `609ed2cb`
+- **Fix cache tags for taxonomy view**
+  - `cf17933b`
+- **User API chaining bug fix**
+  - `dad4106d`
+- **PHP 8.4 deprecation warning**
+  - `7de22287`
+- **Adds validation constraints to system.mail**
+  - `e8154b1a`
+- **Pagination for workspace manage page**
+  - `23eeb724`
+- **Remove deprecated code**
+  - `30f78685`
+- **Add workspace-safe actions**
+  - `399ef4ac`
+- **Adds file doc to template**
+  - `a33f086c`
+- **Deprecated removal in core libs**
+  - `92aa0e59`
+- **Adds validation constraints**
+  - `a8aec03f`
+- **Removes deprecated code**
+  - `598c7978`
+- **Remove deprecated code**
+  - `756bc282`
+- **Adds docs for navigation**
+  - `0da57783`
+- **Bug fix/patch**
+  - `f57c955b`
+- **Adds validation constraints**
+  - `a9c47bf5`
+- **Remove deprecated code**
+  - `a42a04b8`
+- **Remove deprecated code**
+  - `2a223b0a`
+- **Remove deprecated code**
+  - `96c2ec1a`
+- **Deprecated code removal**
+  - `09182a40`
+- **Deprecated code removal**
+  - `94a4993f`
+- **Deprecated code removal**
+  - `c91a9bb1`
+- **Deprecated code removal**
+  - `05302f31`
+- **Deprecated code removal**
+  - `173ea49d`
+- **Deprecated code migration**
+  - `828fa2af`
+- **Remove deprecated code**
+  - `d0d7e29f`
+- **Remove deprecated module**
+  - `d7b58d44`
+- **Deprecated modules removed**
+  - `4b6d6615`
+- **Deprecated code removal**
+  - `c4ea627e`
+- **Deprecated code removal**
+  - `3ae7cbb9`
+- **Deprecated code removal**
+  - `a15d5701`
+- **Deprecated code…**
+  - `c36283b8`
+- **Deprecated code removal**
+  - `1dc74bf5`
+- **Deprecated code removal**
+  - `ec6d2813`
+- **Field UI deprecated; system update**
+  - `460414c4`
+- **URL module changes affect platform**
+  - `9649f0eb`
+- **Remove deprecated code**
+  - `2138ac30`
+- **Adds DB fixtures for dev**
+  - `f5151255`
+- **Adds validation constraints**
+  - `4053f045`
+- **Adds validation constraints**
+  - `bb73461c`
+- **Removes deprecated code**
+  - `12a7aa17`
+- **Remove deprecated code**
+  - `78f4e11c`
+- **Remove deprecated code**
+  - `1a889afc`
+- **Add trait for file upload location**
+  - `67932252`
+- **Alter function code**
+  - `e04c062b`
+- **Validation config update**
+  - `7017ba13`
+- **Deprecated removal**
+  - `cf7be165`
+- **Deprecated code removal**
+  - `8b77186b`
+- **Deprecated code removal**
+  - `c802640a`
+- **YamlFileLoader API update**
+  - `e6a316b5`
+- **Removed deprecated code**
+  - `35aceade`
+- **Cron validation added**
+  - `fae8e584`
+- **validation constraints added**
+  - `250b776e`
+- **deprecation support added**
+  - `a45115a9`
+- **access policy API implementation**
+  - `3698610c`
+- **Deprecated module removal**
+  - `26ed6408`
+- **Workspace revision fix**
+  - `4c89783a`
+- **Trait requirement clarification**
+  - `d2745192`
+- **Deprecated code removal**
+  - `c841aad1`
+- **API cleanup**
+  - `f601a927`
+- **Remove deprecated code**
+  - `b52b09f0`
+- **Remove deprecated code**
+  - `86d49119`
+- **Remove deprecated code**
+  - `0f8531cc`
+- **Implement lazy database creation**
+  - `e7017f6a`
+- **Deprecated jQuery function bug**
+  - `19a71a3a`
+- **Translation UI issue**
+  - `9d302e5d`
+- **Workspace switch config**
+  - `c4d64828`
+- **Adds validation constraints**
+  - `9e7182f3`
+- **Remove deprecated code**
+  - `0886458a`
+- **Bug fix entity creation**
+  - `62ccc2af`
+- **Button outline active state**
+  - `87416478`
+- **Config validation weights**
+  - `27a54eb6`
+- **Deprecated trait removal**
+  - `1dcdbb9f`
+- **Views interface added**
+  - `6290bae4`
+- **Remove deprecated code**
+  - `efc03b35`
+- **Deprecated removal**
+  - `8da7cd4c`
+- **Add owner entity type**
+  - `c4e09053`
+- **config installer sync check**
+  - `499d8e77`
+- **AddCssCommand requires array**
+  - `846e584e`
+- **MigrateSkipRowException details**
+  - `10bd4b94`
+- **deprecated route filter removal**
+  - `4ba1c840`
+- **Deprecated code removal**
   - `41f4ce1f`
-- **Adjusts Database API to remove deprecated Drupal 10 code in Drupal 11.**
+- **API changes**
   - `8cde52c9`
-- **Removes deprecated code from Diff component, system update.**
+- **Deprecated code removal**
   - `795e72a5`
-- **Creates header component for Umami with JS, new UI component.**
-  - `13a680ce`
-- **Creates new SDC component for Umami Banner, new UI component.**
+- **New SDC component with JS**
   - `7186f7f9`
-- **Fixes deprecated array_slice usage in code.**
+- **Deprecated function bug fix**
   - `302317ad`
-- **Adds void returns for Symfony 7, system update.**
-  - `02f2bb34`
-- **Adds a new data type &#039;bytes&#039; to the configuration schema, affecting how configurations are stored and used by developers and site builders.**
+- **New config schema type**
   - `191e88b5`
 
 **drupal/core-composer-scaffold** (10.5.6 → 11.1.9)
 
-- **Adds support for recipe files in drupal/recommended-project and drupal/legacy-project, enabling site builders to configure new setups, developers to extend or use recipes, and decision makers to see platform capability expansion.**
+- **Adds recipe support**
   - `79e3fcb1`
 
 **drupal/admin_toolbar** (3.6.1 → 3.6.2)
 
-- **Fixes MacOS keyboard shortcuts used by editors; code change.**
+- **Keyboard shortcut bug fix**
   - `0412425d`
-- **Removes Core Update routes affecting configuration and deployment.**
+- **Removed module update routes**
   - `1e71df02`
 
 **drupal/advanced_help_block** (1.0.7 → 1.0.8)
 
-- **Adds missing dependency for Advanced Help Block requiring the Help module, enabling content editors to use the block, requiring site builders to install the module, and constitutes a developer-level bug fix.**
+- **Adds missing dependency**
   - `a9d90031`
 
 **drupal/libraries** (4.1.0 → 4.1.1)
 
-- **Fixes a bug in the Libraries API that affects installation when no install profile is present.**
+- **API bug fix**
   - `19621134`
-- **Adds PHP 8.4 compatibility by addressing deprecation of implicit nullable default values, impacting platform deployment and maintenance.**
+- **PHP deprecation**
   - `e67c53a0`
 
 **drupal/better_exposed_filters** (6.0.6 → 7.1.0-beta4)
 
-- **Adds option to hide exposed field labels, useful for content editors and implemented by developers.**
-  - `278c293d`
-- **Adds warning to status page about missing nouislider library, informs site builders and developers.**
-  - `20fa1cca`
-- **Adds composer.libraries.json for 7.x, relevant to site builders installing dependencies and developers customizing.**
-  - `34a31a4b`
-- **Adds minimum length validation, useful for content editors editing forms and implemented by developers.**
-  - `2b3287f0`
-- **Warns about deprecated Twig filter &#039;spaceless&#039;, relevant to developers updating code.**
-  - `105dd68c`
-- **Adds RTL support for slider filters, helpful for content editors and implemented by developers.**
-  - `939d0c50`
-- **Ensures title info only added if form element not empty, improving UI for content editors and code by developers.**
-  - `c56869ed`
-- **Creates mirror for external library dependency for composer support, relevant to site builders and developers.**
-  - `381c81ab`
-- **Same as previous commit; creates mirror for external library dependency for composer support.**
-  - `9c0cd6a6`
-- **Adds a new attribute; likely a technical change affecting code.**
-  - `65909e19`
-- **Introduces a CSS class for sort elements; mainly a UI tweak handled by developers.**
-  - `50fc3df2`
-- **Fixes random suffix issue in exposed filters; a bug fix requiring developer intervention.**
-  - `ae918715`
-- **Corrects session creation on reset button; technical bug resolution.**
-  - `54de732e`
-- **Adds HTML validation for disallowed attributes; code-level change.**
-  - `a32a5a0c`
-- **Enables auto-submit for sorts only; a UI behavior tweak handled by developers.**
-  - `cdeb6297`
-- **Adds warning on missing default value in resetForm(); developer-level feature.**
+- **API warning bug fix**
   - `d77a2d53`
-- **Improves BEF multiple select links generation; a significant platform enhancement relevant to decision makers.**
+- **Enhances BEF API**
   - `fa93f375`
-- **Fixes broken checkboxes; bug fix requiring developer work.**
-  - `5876c256`
-- **Addresses compatibility issue with older filter definitions; a technical fix.**
-  - `d7b328c5`
-- **Adds accessibility improvements to form labels, enhancing user experience for editors; involves code changes affecting UI components.**
+- **Fixes filter length bug**
+  - `2b3287f0`
+- **Deprecation warning fix**
+  - `105dd68c`
+- **composer mirror**
+  - `381c81ab`
+- **composer mirror**
+  - `9c0cd6a6`
+- **attribute API**
+  - `65909e19`
+- **Fixes filter suffix bug**
+  - `ae918715`
+- **Bug fix for session creation**
+  - `54de732e`
+- **HTML validation affects content editing**
+  - `a32a5a0c`
+- **Enhances auto-submit feature**
+  - `cdeb6297`
+- **Accessibility fix**
   - `dca6c148`
-- **Repositions the JS range slider for cleaner UI and easier content editing; requires code adjustments to front‑end behavior.**
-  - `c9fd8966`
 
 **drupal/media_library_form_element** (2.1.2 → 2.1.4)
 
-- **Deprecation of RenderElement in Drupal core affects code maintenance and deployment updates.**
+- **Deprecated API removal**
   - `98b4d01a`
-- **Adds support for integer and array default values, a technical feature relevant to developers building or customizing components.**
+- **API support change**
   - `68eb4ed9`
 
 **drupal/captcha** (2.0.7 → 2.0.9)
 
-- **Adds a data-nosnippet attribute around the captcha component to improve SEO and search engine snippet handling.**
+- **Fixes captcha behavior**
   - `f40e0f59`
 
 **drupal/csv_serialization** (3.0.1 → 4.0.1)
 
-- **Fixes deprecated method usage in CSV serialization library, improving code compatibility with PHP 8.1.**
+- **Deprecated API fix**
   - `11f675ba`
-- **Replaces deprecated League\Csv\ByteSequence::BOF_UTF8 constant to avoid warnings, ensuring code stability.**
+- **Deprecated API update**
   - `feed0f8b`
-- **Removes PHP 8.1 deprecated function warning by updating code, maintaining compatibility.**
-  - `5322d4f7`
-
-**drupal/inline_entity_form** (2.0.0-rc10 → 3.0.0-rc21)
-
-- **Adds an accessibility label to a UI field used by content editors, and involves code changes.**
-  - `23cd78d5`
-- **Fixes incorrect bundle form display for users with limited permissions, affecting editor UI and requiring code adjustments.**
-  - `d8419f6d`
-- **Deprecates implicit nullable parameter usage in code, a technical change relevant to developers.**
-  - `45bc6296`
 
 **drupal/metatag** (2.1.1 → 2.2.0)
 
-- **Adds new meta tag for fediverse:creator, enhancing platform capability.**
+- **Adds fediverse support**
   - `fa211c54`
-- **Introduces SVG icon meta tag enabling content editors to specify icons.**
+- **SVG meta tag API**
   - `b6d61dea`
-- **Adds placeholder &lt;none&gt; to clear inherited values, improving metadata control.**
+- **Placeholder for inherited value**
   - `aa44d4ba`
-- **Allows optional suffix after trimmed meta tags, enhancing flexibility.**
+- **Suffix trim option**
   - `85dfe411`
-
-**drupal/migrate_tools** (6.0.5 → 6.1.2)
-
-- **Adds ability to use all entity operations on the migration list builder, affecting API and developer usage.**
-  - `13cae612`
-- **Introduces new parameters in MigrateExecutable constructor, changing API for developers.**
-  - `8c7029dd`
-
-**drupal/openy_carnation** (3.2.1 → 4.0.0-beta4)
-
-- **Adds jquery_legacy library for legacy scripts; developers implement code and site builders may update deployment/config.**
-  - `a37f190c`
-- **Introduces Bootstrap jQuery migrate tools, enabling new UI components; developers build features, site builders configure, content editors use components, decision makers see strategic improvement.**
-  - `353e0d80`
 
 **drupal/openy_gtranslate** (1.0.8 → 2.0.0)
 
-- **Fixes Google Translate functionality in the legacy Carnation theme, requiring code changes (developer) and potential deployment of updated theme (site builder).**
+- **Bug fix for translate API**
   - `84deeef8`
 
 **drupal/scheduler** (2.2.1 → 2.2.2)
 
-- **Adds rules to trigger scheduler jobs on commit/merge request, affecting configuration and automation capabilities.**
+- **Job trigger rules API**
   - `5e9592e4`
-- **Implements static caching for SchedulerManager::getPlugins(), a code optimization.**
+- **Caching improvement**
   - `89456f77`
-- **Fixes deprecation of autoloading hooks in scheduler.tokens.inc, addressing a bug.**
-  - `d8aa902f`
-- **Adds caching improvements for SchedulerManager::getPlugins() and getEntityFormIds(), enhancing performance.**
-  - `58172b63`
-- **Ignores deprecated getSystemData() function, updating code to avoid deprecation warnings.**
+- **Deprecated API removal**
   - `c4f9af05`
 
 **drupal/webform** (6.3.0-beta3 → 6.3.0-beta5)
 
-- **Adds minified flag to libraries.yml, affecting asset pipeline and deployment**
-  - `1285584a`
-- **Replace deprecated rgba() function, bug fix**
-  - `04f7ca5f`
-- **Add LegacyModuleImplementsAlter attribute annotation, developer-level change**
-  - `c06d901d`
-- **Remove deprecated dialogClass, bug fix**
-  - `a6f2b49a`
-- **Visual alignment issue affecting UI for forms, content editors and site builders**
-  - `7227446b`
-- **Add access check for notes operation, permission change impacting content editors**
-  - `144913a0`
-- **Autocomplete for date element improves accessibility UI, relevant to content editors and developers**
-  - `7874e214`
-- **Avoid addcslashes() deprecation warning during submission preview, bug fix**
-  - `6a6dc6b9`
-- **Performance loss due to cascading effect, affects deployment and performance**
-  - `afa51110`
-- **Bug about missing route; technical fix.**
-  - `da13b381`
-- **Accessibility violation in Tippy.js; code change needed.**
-  - `12467387`
-- **Dropbutton improvement requiring node/form IDs; technical implementation.**
-  - `516877dc`
-- **Adds link option to Terms of Service element, UI feature for editors and code change.**
-  - `174cea37`
-- **Allow custom data-options on elements; developer-level API change.**
-  - `b085c3af`
-- **Adds &quot;titlecase&quot; to spell-checker word list; internal configuration.**
-  - `25861d14`
-- **Justify content settings for WebformFlexbox element, UI improvement and code change.**
-  - `7595248c`
-- **Removal of Add-ons feature; platform capability impact, deployment changes, strategic consideration.**
-  - `893122a6`
-- **Option to add CSS class to fieldset legend element, UI tweak for editors and code update.**
-  - `9ffede30`
-- **Adds Spanish words to spell-checker list; internal configuration.**
-  - `29ae0522`
-- **Bug affecting submission list rendering; content editors see broken links, developers fix.**
-  - `1cffb051`
-- **Code cleanup removing &#039;use strict&#039;; only relevant to developers.**
-  - `1b35c12b`
-- **Allows customizing file limit error messages; useful for content editors, implemented by developers.**
-  - `9eb1fb52`
-- **Bug where values not shown in submission display; affects content editors and requires developer fix.**
-  - `afcb7fa9`
-- **Issue disabling text format that cannot be reenabled; impacts content editors, fixed by developers.**
-  - `0f9db91e`
-- **Excessive memory usage during dynamic library build; concerns developers and site builders during deployment.**
-  - `3b9c7f7c`
-- **Conditional checkbox logic bug affecting form building; content editors notice, developers fix.**
-  - `392af8d1`
-- **Confusing file upload message when limit enabled; UI issue for content editors, fixed by developers.**
-  - `c167ee6d`
-- **File element with button option incorrectly invalidates uploads; affects content editors, requires developer fix.**
-  - `af56ea0e`
-- **Improved remote_post handler to exclude inaccessible fields; relevant for developers, site builders configuring, and decision makers evaluating platform security.**
-  - `d3b3fd6a`
-- **Adds a database index for performance improvement, affecting developers and strategic performance considerations.**
-  - `15d416b2`
-- **Fixes PHP implode error handling in EntityReferenceSelection, a technical code change.**
-  - `e3f9bf74`
-- **Same as above: PHP implode error fix for EntityReferenceSelection.**
-  - `ab9be6b5`
-- **Introduces Bootstrap theme support, affecting UI components, configuration, implementation, and platform capabilities.**
-  - `d27c98d4`
-- **Fixes entity reference field creation for taxonomy when only one bundle is selected; impacts developers and content editors using these fields.**
-  - `7b8b76b1`
-- **Adds a new &#039;group_relation&#039; entity type, requiring implementation, configuration, and strategic evaluation.**
-  - `33c935de`
-- **Changes duplicate submission permissions to allow editing own submissions; affects content editors, permission setup, implementation, and platform capabilities.**
-  - `48fc5079`
-- **Fixes title display options for Date List element, impacting UI usage by content editors and code implementation.**
-  - `3112ba15`
-- **Overrides wizard previous/next labels to improve UI consistency; relevant to developers and content editors.**
-  - `d6f7a56e`
-- **Fixes error inconsistencies when deleting form elements after reordering, affecting form usage by content editors and code implementation.**
-  - `f6681335`
-- **Fixes telephone validation affecting form fields used by content editors; involves code changes.**
-  - `d4dc5e73`
-- **Adds US ZIP code validation for advanced address element, useful for forms created by content editors and requires code updates.**
-  - `e2f907f5`
-- **Ensures minimum items rule is respected in multi-value elements, impacting form configuration for content editors and code logic.**
-  - `84dfe5c0`
-- **Fixes schema mismatch between submission tables; developers need to adjust code, site builders may handle database migrations.**
-  - `9d52f3c6`
-- **Upgrade from 6.2.x to 6.3.x removes webform_shortcuts causing missing-module errors; site builders must manage upgrade, developers adjust code, decision makers evaluate upgrade impact.**
+- **Upgrade removes module causing errors**
   - `2afb544f`
-- **Ensures submissions are deleted when a webform is removed, affecting content management and requiring backend changes.**
+- **Deletes submissions on delete**
   - `36247b0c`
-- **Introduces new permission for filtering and bulk actions on overview page; relevant to role configuration, code changes, and strategic feature assessment.**
+- **Adds permission API**
   - `256f810b`
-- **Allows immediate purging of submissions after submission, useful for content editors managing data and involves backend logic.**
-  - `dba0924f`
-- **Same as commit 256f810b: new permission for filter and bulk action on overview page, affecting roles, code, and feature strategy.**
+- **Remove deprecated API**
+  - `a6f2b49a`
+- **Fixes deprecated function**
+  - `6a6dc6b9`
+- **Dropbutton improvement code**
+  - `516877dc`
+- **Terms link UI**
+  - `174cea37`
+- **Custom options code**
+  - `b085c3af`
+- **Flexbox API tweak**
+  - `7595248c`
+- **CSS class fieldset legend**
+  - `9ffede30`
+- **Disable format bug fix**
+  - `0f9db91e`
+- **Memory issue in library build**
+  - `3b9c7f7c`
+- **PHP error handling**
+  - `ab9be6b5`
+- **Bootstrap config**
+  - `d27c98d4`
+- **Entity reference bug fix**
+  - `7b8b76b1`
+- **Remove entity type**
+  - `33c935de`
+- **Duplicate submission logic**
+  - `48fc5079`
+- **Date list title bug**
+  - `3112ba15`
+- **Wizard label fix**
+  - `d6f7a56e`
+- **permission API change**
   - `03af8298`
-- **Fixes bulk deletion failure due to random row order; impacts content editors using bulk delete and requires code fix.**
+- **bug fix for bulk delete**
   - `3598f6b8`
-- **Ensures data-options don&#039;t override existing config, affecting API behavior and configuration.**
+- **config override bug**
   - `2bbf12a2`
-- **Updates controller to support paragraph-based references, impacting code architecture and content reference handling.**
-  - `57c24e6b`
-- **Improves batch import of webform submissions, relevant for developers, deployment setup, and content editors using imports.**
+- **Import bug fix**
   - `a91016d1`
-- **Adds error message for SymfonyMailer plugin usage, affecting developer integration, site configuration, and form notifications.**
-  - `708da243`
-- **Fixes undefined function error in webform token handling, important for developers and deployment stability.**
-  - `5b0d49e2`
-- **Ensures variants do not override title/description, impacting content editors&#039; form variants and developer code.**
-  - `ed35905e`
-- **Addresses warning in translation manager, relevant to developers and site configuration.**
-  - `92d18cdf`
-- **Performance improvement for field removal, affecting code performance, deployment, and content editors manipulating forms.**
-  - `36e87386`
 
 **drupal/openy_pef_gxp_sync** (1.1.10 → 2.0.1)
 
-- **Adds a new dependency to composer.json which affects installation and code integration.**
+- **Adds dependency**
   - `8a953b4e`
-- **Adds drupal/openy_mappings as a dependency, impacting deployment and development work.**
+- **Adds dependency**
   - `e3827a0c`
 
 **drupal/ymca_sync** (10.0.6 → 11.0.0)
 
-- **Composer.json update affects package dependencies, impacting build and deployment.**
-  - `23b20c69`
-- **Major Drupal core upgrade introduces new platform capabilities, requiring updates for developers, site builders, content editors, and strategic planning.**
+- **Drupal 11 upgrade**
   - `3e63f504`
 
 **drupal/responsive_favicons** (2.0.1 → 3.0.1)
 
-- **General improvements and fixes likely affect UI, content management, and underlying code.**
+- **Various improvements and fixes**
   - `e1f8ff8e`
-- **Adding a suffix to icon URLs improves browser caching; mainly a technical code change.**
+- **Add suffix to icons URLs for browser cache**
   - `d2d2ad5a`
-- **New option for removing existing files in the upload folder is useful for content editors and involves code changes.**
+- **Allow removal of existing files in upload folder**
   - `7eb319f1`
-- **Option to keep tags even if icon files are missing affects content management UI and underlying logic.**
-  - `018b7483`
-- **Adding a project logo enhances the visual component for content editors; also requires code updates.**
+- **Adds logo for favicon generator**
   - `e29ee00e`
-- **Warning message about cache-busting parameters removal is a UI improvement for editors and involves code changes.**
+- **Cache busting warning affects deployment**
   - `4218e94e`
 
 **drupal/lb_hero** (1.5.0 → 1.5.4)
 
-- **Adds link attribute support, enabling content editors to customize links and developers modified the component code.**
+- **Adds link attribute API**
   - `b8935699`
 
 **ycloudyusa/yusaopeny** (10.5.0.1 → 11.1.0.0-beta4)
 
-- **Feature adjusts Drupal 11 compatibility, affecting core version and deployment.**
+- **Drupal 11 lenient config**
   - `bdda671b`
-- **Adds development-related features; primarily a developer change.**
+- **Add features dev deploy**
   - `5c91318a`
-- **Introduces ws_outsiders module, enhancing platform capabilities and deployment configuration.**
+- **ws_outsiders feature**
   - `8d06f605`
-- **Adds inline_entity_form component for content editing; affects UI and development.**
+- **inline entity form**
   - `7ca36b94`
-- **Moves Drupal features to a fork within ws_outsiders, changing architecture and deployment setup.**
+- **Move features to fork**
   - `13ebee60`
-- **Forces specific Drupal core version; impacts deployment and development configuration.**
+- **Force drupal core**
   - `3e5022ac`
-- **Uses local_drupal11 branch from project, affecting deployment and development environment.**
+- **Use local branch**
   - `d209049c`
-- **Removes failing or non-existent modules; cleanup for deployment and development.**
+- **Remove modules**
   - `64f13920`
-- **Updates media directories, impacting content management UI and backend code.**
+- **Updates media directories code**
   - `994a248a`
-- **Adds Drupal 11 development features; affects deployment and developer workflow.**
+- **Drupal 11 dev config**
   - `87acb545`
-- **Dependency update affecting system configuration.**
+- **Update dependencies**
   - `9a64babc`
-- **Updated version of ycloudyusa/y_lb dependency.**
-  - `e0cdec71`
-- **Added Drupal core composer scaffold component.**
-  - `44770558`
-- **Updated open-y-subprojects/openy_custom subproject.**
+- **Subproject update**
   - `20dafec6`
-- **Bug fix patch for migrate_tools.**
+- **Patch for migrate tools**
   - `30edd6fa`
-- **Added drupal/features component.**
+- **Drupal features add**
   - `77786d83`
-- **Removed symfony/dom-crawler dependency.**
+- **Remove dependency**
   - `4882be5d`
-- **Updated carnation subproject.**
+- **Update library**
   - `8db90769`
-- **Updated carnation subproject (duplicate update).**
+- **Update library**
   - `68692b73`
-- **Enabled beta and RC releases for openy_carnation, strategic feature.**
-  - `f5926031`
-- **Core Drupal upgrade affects system configuration, API compatibility, and overall platform capabilities.**
+- **Drupal core update**
   - `6730ebc2`
-- **Provides an upgrade path to Drupal 11, impacting deployment strategy and platform evolution.**
+- **Drupal upgrade path**
   - `3ea5e1b5`
-- **Fixes a UI issue in the MediaLibrary dialog that content editors rely on for media management.**
+- **CSS fix**
   - `4c71bf31`
-- **Adds jquery-migrate to core jQuery, affecting front‑end compatibility and deployment dependencies.**
+- **jQuery support**
   - `13528e9e`
-- **Bug fix for adding camp menu block, directly impacting content editors using blocks.**
+- **bug fix on menu block**
   - `27139832`
-- **Missing field in Layout Builder media addition affects content editors using layout builder.**
+- **code update**
+  - `9aa55882`
+- **UI missing field**
   - `80a40369`
-- **Updating activity finder component enhances content editor functionality and requires developer updates.**
+- **API version bump**
   - `ec6240c0`
 
 **symfony/console** (v6.4.23 → v7.4.0-RC2)
 
-- **Adds missing VERBOSITY_SILENT case in CommandDataCollector, a console API change.**
+- **Verbosity fix for command collector**
   - `c28ad914`
-- **Adds support for Cursor helper in invokable commands, an API enhancement.**
+- **Cursor helper support**
   - `36cbedff`
-- **Feature adds interactive invokable commands with #[Interact] and #[Ask] attributes; enhances platform capabilities for developers and could be evaluated strategically.**
+- **Adds interactive command support**
   - `cd2f31f1`
-- **Same feature as above, adding interactive command support.**
+- **Same feature**
   - `617f500b`
-- **Bug fix ensuring terminal usability after termination signal.**
+- **bug fix terminal**
   - `80f8c48c`
-- **Adds optional timeout for human interaction in QuestionHelper, a console helper improvement.**
-  - `671639a4`
-- **Adds #[Input] attribute to support DTOs in commands, an API change.**
-  - `525f69f6`
-- **Adds phpdoc for return type of subscribed signals, documentation enhancement.**
-  - `dc8d57e6`
-- **Bug fix restoring SHELL_VERBOSITY after command execution.**
+- **bug fix for console**
   - `53a85282`
-- **Adds getter for the original command &quot;code&quot; object, a console API change.**
+- **add getter**
   - `263db9fc`
-- **Adds getter for original command code object in Console, a developer-level API change.**
+- **feature add**
   - `123fe4dd`
-- **Same as above, adds getter method to Console, developer-level change.**
+- **same feature**
   - `2169188e`
-- **Improves error messages in Questionhelper, developer-level enhancement.**
+- **error messages in helper**
   - `d3709f93`
-- **Fixes TreeHelper::addChild bug when string provided, developer-level bug fix.**
+- **TreeHelper bug fix**
   - `1c43dcd7`
-- **Same as above, bug fix in Console TreeHelper.**
-  - `b4ee0d4d`
-- **Fixes retry bypass for UnrecoverableExceptionInterface in RunCommandMessageHandler, developer-level bug fix.**
-  - `0a90e686`
 
 **symfony/string** (v6.4.24 → v8.0.0-RC1)
 
-- **Introduces new locale-aware casing methods, enhancing API and platform capabilities.**
+- **Adds type hints**
+  - `95ff83d5`
+- **Locale aware casing**
   - `2172dad9`
-- **Feature implementation of locale-aware casing methods; adds functionality to the library.**
-  - `0cf71450`
-- **Adds WORD_STRICT mode to truncate method, extending API features.**
-  - `25ad779f`
-- **Introduces TruncateMode mode to truncate methods, enhancing string manipulation capabilities.**
+- **API changes**
   - `670e18c4`
-- **Bug fix for truncating in WordBefore mode; improves reliability of API.**
+- **Bug fix**
   - `af689ccf`
-- **Adds Spanish inflector with rules, expanding language support and platform features.**
+- **Code update**
   - `f1f4d05d`
-- **Adds kebab() method to AbstractString, adding new string transformation capability.**
+- **Add method**
   - `8133473e`
-- **Feature implementation of kebab() method; enhances API and platform functionality.**
+- **Adds API method**
   - `ae7e1061`
-- **Adds pascal() method to AbstractString, providing new string transformation feature.**
+- **Adds API method**
   - `16341141`
-- **Deprecation of __sleep/wakeup in string implementation affects API usage for developers.**
+- **Deprecates API behavior**
   - `68acca99`
-- **Deprecation of __sleep/wakeup in GenericMetadata implementation impacts developer code.**
+- **Deprecates API behavior**
   - `eb940c91`
-- **Deprecation of __sleep/wakeup in AbstractPart implementation affects developers using Mime classes.**
+- **Deprecates API in code**
   - `3ba35cbf`
 
 **symfony/polyfill-intl-grapheme** (v1.31.0 → v1.33.0)
 
-- **Adds a new API function grapheme_str_split in Symfony&#039;s Intl polyfill, useful for developers handling Unicode strings. Site builders may need to update dependencies to support PHP 8.4 compatibility.**
+- **Adds API for grapheme handling**
   - `14c74360`
 
 **symfony/dependency-injection** (v6.4.23 → v7.4.0-RC2)
 
-- **Bug fix adding a custom autoloader for missing config classes impacts code and deployment**
+- **Custom autoloader for config classes**
   - `d1f7528f`
-- **Feature enabling arrays or config-builders from config files changes API for developers and configuration handling for site builders**
+- **Config file handling arrays**
   - `942cea70`
-- **Allows multiple AsDecorator attributes, a developer‑level API change**
+- **Multiple decorators support**
   - `b1c766ee`
-- **Adds ability to tag resources in any config format, affecting code and deployment configuration**
+- **Resource tags via configs**
   - `5dc302bf`
-- **Introduces JSON schema for validating YAML config files, a major feature relevant to developers, site builders, and decision makers**
+- **Adds JSON schema for config validation**
   - `2d38f116`
-- **Same as above – JSON schema for validating YAML config files, a major feature**
-  - `e9c51de0`
-- **Removal of deprecated SplObjectStorage calls cleans up code and may affect deployment**
-  - `900da8a4`
-- **Adds $target argument to registerAliasForArgument, a developer‑level API change**
-  - `4fdd47eb`
-- **Same as above – adds $target argument to registerAliasForArgument**
+- **API changes**
   - `c1ad4533`
-- **Uses php-serialize to dump container for debug/lint commands, a developer‑level feature**
+- **Technical feature**
   - `40d1ce56`
 
 **symfony/var-exporter** (v6.4.24 → v8.0.0-RC1)
 
-- **Adds type hints to public/protected properties, affecting API usage.**
+- **Adds type hints**
   - `ba8bedec`
-- **Drops support for partially initialized lazy objects, changing API behavior.**
+- **Deprecates lazy object support**
   - `a546e8d1`
-- **Allows reinitializing lazy objects with new initializer, an API change.**
+- **Reinitializes lazy objects**
   - `ea260e7b`
-- **Removes deprecated calls to SplObjectStorage methods, refactoring code.**
+- **Remove deprecated SplObjectStorage methods**
   - `4cc55530`
-- **Adds support for exporting named closures, extending API functionality.**
+- **API export feature**
   - `374e1b00`
 
 **symfony/event-dispatcher** (v6.4.24 → v7.4.0-RC1)
 
-- **Adds type hints to public and protected properties, improving code quality and API usage.**
+- **Adds type hints**
   - `c459b40f`
-- **Removes deprecated calls to SplObjectStorage methods, enhancing code reliability for developers.**
+- **PHPDoc for classes**
+  - `9b1de7b5`
+- **Fixes deprecated API**
   - `b0cf3162`
-- **Adds support for union types on AsEventListener, improving event listener API for developers.**
+- **Adds union type support**
   - `899a660f`
 
 **symfony/filesystem** (v6.4.24 → v7.4.0-RC1)
 
-- **Removed backward compatibility layers for new methods and parameters; affects code architecture and deployment.**
+- **BC layer removal**
   - `900b2f14`
-- **Added readFile() method to Filesystem API, a developer-facing feature.**
+- **Filesystem API added**
   - `40f7a3ad`
-- **Changed temporary file creation from uniqid() to safer approach; technical improvement requiring deployment updates.**
-  - `c46c178f`
 
 **symfony/finder** (v6.4.24 → v7.4.0-RC1)
 
-- **Adds type hints to public/protected properties, a code-level change affecting the library&#039;s API.**
+- **Adds type info to code**
   - `fa965929`
-- **Improves PHPDoc type information for Finder component, an internal refactoring that impacts developers only.**
-  - `c1a41e8e`
 
 **symfony/http-foundation** (v6.4.24 → v7.4.0-RC1)
 
-- **Adds new API methods to HttpFoundation for overriding HTTP methods.**
-  - `b49cc7d1`
-- **Introduces a property listing allowed HTTP method overrides in HttpFoundation.**
-  - `e9b1d43b`
-- **Improves Request::createFromGlobals() by using request_parse_body when possible.**
-  - `f9b8417c`
-- **Adds a new attribute #[IsSignatureValid] to HttpKernel for signature validation.**
-  - `155a7afc`
-- **Fixes error handling when a directory path points to a file in HttpFoundation.**
+- **Bug fix in file handling**
   - `034d5d53`
-- **Adds global lower bounds to dependencies in CI, affecting build configuration.**
-  - `3a978ec5`
-- **Fixes backward compatibility break introduced in #61267 and defines structured suffix formats as constants.**
-  - `73c7f621`
-- **Adds new MIME type mappings to HttpFoundation&#039;s getMimeTypes() method.**
-  - `034e4829`
-- **Adds support for the QUERY HTTP method across HttpFoundation, HttpKernel, and WebProfilerBundle.**
-  - `698bc94b`
-- **Deprecation of __sleep/__wakeup methods in AbstractPart affects developers using the HTTP foundation library for custom code.**
-  - `ce39711e`
+- **Improve PHPDoc types**
+  - `3eef5d4f`
 
 **symfony/http-kernel** (v6.4.23 → v7.4.0-RC2)
 
-- **Bug fix for StreamedResponse chunk support in HttpKernelBrowser.**
+- **StreamedResponse bug fix**
   - `a369024f`
-- **Adds new share directory config and API method, useful for developers and site builders configuring deployments.**
+- **share dir config**
   - `de4e609f`
-- **Feature to collect dumps during console profiling; relevant to developers.**
+- **debug dumps feature**
   - `b762004c`
-- **Bug fix refining Vary header handling; developer focus.**
-  - `6b9ab1a0`
-- **Removal of signer configuration via IsSignatureValid attribute; developer change.**
+- **Remove signer config attribute**
   - `4e1be73e`
-- **Adds IsSignatureValid attribute for signature validation; developer feature.**
+- **Add new attribute for signature validation**
   - `e129d986`
-- **Bug fix handling array vary header in HTTP cache store; developer focus.**
+- **Bug fix HTTP cache header array handling**
   - `5be86590`
-- **Bug fix for MapUploadedFile throwing exception on empty files array; developer focus.**
+- **Bug fix in HttpKernel**
   - `50e7be24`
-- **Adds support for QUERY HTTP method in HttpFoundation and WebProfilerBundle; developer feature.**
+- **HTTP method support**
   - `0760fd3d`
-- **Deprecates an API feature for MIME part serialization, impacting developers who use AbstractPart implementations.**
-  - `2d616d7e`
-- **Deprecates an API feature for validator metadata serialization, affecting developers using GenericMetadata implementations.**
-  - `af063f57`
-- **Deprecates an API feature for string serialization, impacting developers who use string implementations.**
+- **Deprecates API method**
   - `8beb7e94`
-- **Removes deprecated calls to SplObjectStorage methods, a maintenance change that affects developers using this storage class.**
-  - `d77a209c`
 
 **symfony/error-handler** (v6.4.23 → v8.0.0-RC1)
 
-- **Feature adds support for non-empty-string/non-empty-list when patching return types, enhancing error handling capabilities useful for developers and strategic planning.**
+- **Deprecated code removal**
+  - `dc149e12`
+- **Type annotations**
+  - `1cea1a29`
+- **API patch return types**
   - `422c8d8d`
-- **Adds CLI command to dump static error pages, useful for site builders during deployment and for developers customizing error handling; also a platform capability improvement.**
+- **Static error page command**
   - `f344b88b`
+- **Deprecated API removal**
+  - `5aca12bd`
 
 **symfony/var-dumper** (v6.4.23 → v8.0.0-RC1)
 
-- **Update required PHP version; impacts deployment and platform compatibility.**
-  - `ab6d26bc`
-- **Remove backward-compatibility layers; code maintenance.**
-  - `38f7a35f`
-- **Clean up deprecated code; maintain library.**
-  - `5651b3b4`
-- **Add type hints for better code quality.**
-  - `29640583`
-- **Remove Twig 2 support; impacts compatibility and deployment.**
-  - `bcc3a2bc`
-- **Add default message to dd; improves debugging.**
-  - `654cb58c`
-- **Feature addition: default message for dd function.**
-  - `bd5a3025`
-- **Add support for new DOM extension classes; library enhancement.**
-  - `0950cebe`
-- **Adjust namespaces to accommodate new DOM extension classes.**
-  - `eb2c4ea3`
-- **Handle new DOM HTMLElement class in var-dumper; code update.**
-  - `c33d4205`
-- **Adds support for amphp/http-client v5, a technical API change**
-  - `a9f7f10b`
-- **Adds support for virtual properties in VarDumper**
-  - `db014dc3`
-- **Feature #57833: adds support for virtual properties in VarDumper**
-  - `70171f7b`
-- **Adds caster for AddressInfo objects in VarDumper**
-  - `34035786`
-- **Adds caster for Socket instances in VarDumper**
-  - `de6124d6`
-- **Adds casters for object-converted resources in VarDumper**
+- **Adds API casters for resources**
   - `f3961425`
-- **Removes deprecated Application::add() methods in Console/FrameworkBundle**
+- **Removes deprecated methods**
   - `01c3819f`
-- **Adds support for adding more default castors to AbstractCloner::addDefaultCasters()**
+- **Adds new casters for cloning logic**
   - `074341c9`
-- **Removes deprecated resource casters in VarDumper**
-  - `8a73d0be`
-- **Internal refactoring to remove duplicate default caster for Socket in the VarDumper library; developers may need to be aware of API changes.**
+- **Twig 2 support removed**
+  - `bcc3a2bc`
+- **dd function default message added**
+  - `654cb58c`
+- **dd function default message added for feature #53123**
+  - `bd5a3025`
+- **DOM extension support added**
+  - `0950cebe`
+- **Namespace changes affect code**
+  - `eb2c4ea3`
+- **DOM class update**
+  - `c33d4205`
+- **ID generation change**
+  - `db077381`
+- **HTTP client upgrade**
+  - `a9f7f10b`
+- **Remove duplicate caster**
   - `45827514`
-- **Adds new feature allowing developers to add more default casters via AbstractCloner::addDefaultCasters(); relevant for code customization.**
-  - `2d19238a`
-- **Cleanup of deprecated calls in SplObjectStorage; a bug fix affecting the library used by developers.**
-  - `c6cd9248`
 
 **symfony/mailer** (v6.4.23 → v7.4.0-RC1)
 
-- **Removal of deprecated code paths cleans up the mailer library; developers maintain the code.**
-  - `ff357d80`
-- **Adding type hints improves code quality and readability; developers benefit.**
-  - `52ebf0dc`
-- **Azure bridge adds new mail delivery capability to platform; developers implement API changes, decision makers evaluate the new feature.**
-  - `19db4292`
-- **Support for Azure/Resend in exception handling enhances error reporting; developer improvement.**
-  - `2f4ca90d`
-- **DSN param &#039;auto_tls&#039; allows disabling STARTTLS in SMTP configuration; developers adjust code and site builders may configure this setting.**
-  - `87877980`
-- **Timestamp added to debug logs improves troubleshooting; developer.**
-  - `bfccafa8`
-- **Allowing users with recipients defined in EnvelopeListener provides flexibility; developer.**
-  - `eb2ca0cc`
-- **Mailomat bridge adds new mail delivery integration; developers implement, decision makers consider platform expansion.**
-  - `92943ae6`
-- **Same as above but flagged feature request; developer and decision maker.**
-  - `1853eb7d`
-- **Postal mailer implementation introduces new mail delivery method; developer and decision maker.**
-  - `b2720aa3`
-- **Adds a new mailer implementation (Postal) which introduces significant platform functionality.**
-  - `8b2fb264`
-- **Introduces a new Sweego Mailer Bridge, expanding email service options.**
-  - `2cf98fa0`
-- **Adds a Mailtrap bridge, providing another testing email service integration.**
-  - `c455af38`
-- **Creates accessors to determine usage of SMTPUTF8 extension, improving code flexibility.**
-  - `eaa68be3`
-- **Implements logic to send messages with SMTPUTF8 when supported, enhancing email compatibility.**
-  - `75a9583c`
-- **Adds a retry_period option for email transport configuration.**
-  - `29c39e6d`
-- **Adds an AhaSend Bridge, adding another email service integration.**
-  - `0f836d77`
-- **Same as above: feature #58698 adds AhaSend Bridge, expanding platform capabilities.**
-  - `7ec706b6`
-- **Adds missing retry_period DSN option for email transport configuration.**
-  - `8c391b08`
-- **Adds and uses Dsn::getBooleanOption in notifier, improving code functionality.**
-  - `3f0bd904`
-- **Technical mailer change adding DSN option for IPv4 binding.**
-  - `44e73172`
-- **Configuration added for DKIM and S/MIME signers, affecting deployment config.**
-  - `871cf21c`
-- **DSN param to enforce TLS/STARTTLS in mailer, config change.**
-  - `879d6df4`
-- **Support for translatable subject in TwigBridge enabling content editors to set translated email subjects.**
-  - `5c4bb1cb`
-- **Same as above: support for translatable subject in TwigBridge.**
-  - `08d9a42a`
-- **Adding MicrosoftGraph API transport; developer and site builder may need to configure.**
+- **Adds API transport**
   - `7bde58cb`
+- **SMTP config tweak**
+  - `87877980`
+- **Debug log addition**
+  - `bfccafa8`
+- **Adds mailomat bridge**
+  - `1853eb7d`
+- **Implement Postal mailer**
+  - `b2720aa3`
+- **Adds DSN for SMTP**
+  - `44e73172`
+- **Config dkim/smime**
+  - `871cf21c`
 
 **doctrine/lexer** (2.1.1 → 3.0.1)
 
-- **Dropping PHP &lt;8.1 support changes the platform&#039;s runtime requirements, impacting deployment configurations (site builder), code compatibility and architecture decisions (developer), and overall platform capabilities for strategic planning (decision maker).**
+- **Drops php 8.1 support**
   - `c4f371c0`
 
 **symfony/mime** (v6.4.24 → v7.4.0-RC2)
 
-- **Adds new functionality for custom MIME encoders, affecting the API.**
+- **Deprecated code removal**
+  - `01345418`
+- **Custom encoder API**
   - `d0585553`
-- **Same feature as commit d0585553; adds support for custom MIME encoders.**
+- **Feature support**
   - `ee360536`
-- **Introduces new accessors to determine SMTPUTF8 usage, an API change.**
+- **SMTPUTF8 accessors**
   - `e6bf54be`
-- **Updates the Address class, likely a bug fix or small API tweak.**
+- **Address class update**
   - `9e0e1061`
 
 **symfony/routing** (v6.4.24 → v7.4.0-RC2)
 
-- **Removal of backward compatibility layers changes the routing API; developers need to adjust code.**
-  - `40c7bb5d`
-- **Removal of Doctrine annotations support alters routing capabilities; developers and decision makers should be aware.**
-  - `73615d30`
-- **New routing syntax `{foo:bar}` adds functionality for mapping parameters to request attributes, impacting platform capabilities.**
-  - `91479c48`
-- **Adding UID_RFC9562 constant enhances routing requirement patterns; developers need to use it.**
-  - `df460a34`
-- **Adding MONGODB_ID regex improves routing requirement patterns; relevant for developers.**
+- **Adds regex for route patterns**
   - `5801dd9d`
-- **Adding alias in `{foo:bar}` syntax expands routing flexibility, affecting platform capabilities.**
-  - `6accdb7d`
-- **Adds alias syntax in route parameters, a routing API change affecting developers.**
+- **Adds route alias API**
   - `5d4973c3`
-- **Allows query-specific parameters via `_query` in UrlGenerator, developer-level feature.**
-  - `c2f19998`
-- **Enables creating request context with parameters directly, a routing API change for developers.**
+- **Adds request context API**
   - `782a740b`
-- **Adds JSON schema for validating and autocompleting YAML config files, improving configuration and platform capability.**
+- **JSON schema config validation**
   - `23627610`
-- **Same as above: adds JSON schema for YAML config validation, enhancing configuration and platform capability.**
+- **Same as 236276.**
   - `29106470`
-- **Auto-register routes from attributes on controller services, a major feature for developers and site builders.**
+- **Auto-register routes via attributes**
   - `ec13b221`
-- **Allows environment-specific route configuration in RoutesConfig trees, affecting configuration and deployment.**
+- **Routing API update**
   - `ba77be3a`
 
 **symfony/serializer** (v6.4.24 → v7.4.0-RC1)
 
-- **Bug fix in Serializer affecting code behavior**
+- **bug fix in serializer**
   - `21269417`
-- **Adds a new context option for XML encoder, a technical feature**
+- **serializer option added**
   - `56d1da3b`
-- **Introduces a new serialization attribute annotation, developer-focused**
+- **API changes**
   - `406d2dcf`
-- **Adds a new serialization attribute annotation, developer-focused**
+- **Adds serialization attribute API**
   - `696bbf1c`
-- **Bug fix dealing with asymmetric visibility for properties**
+- **Bug fix on serializer**
   - `0637155b`
-- **Adds JSON schema for validating YAML config files, impacting configuration setup**
+- **Schema config validation for deployment**
   - `6837bf9e`
-- **Deprecates __sleep/wakeup on string implementations, a technical change**
-  - `196fb821`
-- **Bug fix handling invalid mapping type property type in Serializer**
+- **bug fix serializer mapping**
   - `91b01d65`
-- **Adds new XML serialization feature (CDATA_WRAPPING_NAME_PATTERN) affecting code that developers use.**
-  - `c9f75d52`
-- **Same feature as above, adding CDATA wrapping support to XmlEncoder.**
-  - `ed9ba964`
-- **Extends AttributeLoader prefix recognition, a code-level change relevant to developers.**
+- **Adds accessor prefix support**
   - `16cb4ac4`
 
 **symfony/validator** (v6.4.23 → v7.4.0-RC1)
 
-- **Adds Indonesian translations for UI messages, useful for content editors and maintained by developers.**
-  - `448b9923`
-- **Bug fix in validator handling Doctrine-style options; relevant to code maintenance.**
-  - `94b1a714`
-- **Fixes incorrect value on AbstractComparison constructor; developer concern.**
-  - `46111e5a`
-- **Polish translation for word count validation message improves UI localization for content editors and is maintained by developers.**
-  - `865d5e5e`
-- **Deprecates implicit constraint option names in YAML/XML mapping; a change to API usage for developers.**
-  - `4f9b77c9`
-- **Adds option to allow ANY protocol in Assert\Url constraint; developer feature.**
-  - `012b1213`
-- **Introduces ExtendsValidationFor attribute for new constraints, enhancing extensibility for developers and strategic platform capabilities.**
-  - `9cc995d7`
-- **Same feature as above; ExtendsValidationFor adds flexibility to validators.**
-  - `249bb3b3`
-- **Adds Video constraint for validating video files, expanding platform capabilities and developer functionality.**
-  - `af2056bc`
-- **JSON schema for YAML config validation aids site builders in configuration, developers add tooling, decision makers see improved configurability.**
-  - `74e760ca`
-- **Deprecation of __sleep/wakeup on AbstractPart affects API usage for developers.**
-  - `dfa835d9`
-- **Deprecation of __sleep/wakeup on GenericMetadata changes validator internals, relevant to developers.**
-  - `0c0fcbda`
-- **Removal of deprecated no-op function calls cleans up code for PHP8.5, a developer concern.**
+- **Deprecated PHP 8.5 function removal**
   - `22d2015e`
-- **Deprecation of passing choices as $options to Choice constraint alters validator API, developer focus.**
-  - `60c962ab`
-- **Japanese translation for Twig template validator improves user-facing validation messages used by content editors.**
-  - `297a24dc`
-- **Adding min/max in LengthValidator error messages enhances UX for content editors and is a developer change.**
-  - `25e8c167`
-- **Same improvement as above, affecting both developers and content editors.**
+- **Deprecate constraint names**
+  - `4f9b77c9`
+- **Add protocol option**
+  - `012b1213`
+- **ExtendsValidationFor annotation**
+  - `9cc995d7`
+- **ExtendsValidationFor annotation**
+  - `249bb3b3`
+- **Adds validation limits**
   - `77ab6ecc`
-- **Marking UniqueEntity options as deprecated changes validator API, developer concern.**
+- **Deprecates API**
   - `a23b5201`
-- **Bug fix for required options in validator affects validation behavior seen by content editors and is a developer fix.**
-  - `8d5f3780`
-- **Adds missing Polish plural form for filename length validator, improving validation logic used by developers.**
+- **Fixes phpdoc bug**
+  - `1eba40e1`
+- **Adds Polish plural form**
   - `837a2288`
-- **Deprecates handling options in base Constraint class, affecting API usage for developers.**
-  - `67a846a3`
 
 **symfony/process** (v6.4.24 → v7.4.0-RC1)
 
-- **Adds type hints to public and protected properties, improving code quality.**
+- **Adds types to properties**
   - `8d97ce8e`
-- **Introduces a new feature that allows ignoring signals during process execution, impacting platform capabilities and deployment behavior.**
-  - `14730a20`
-- **Bug fix: `ExecutableFinder::addSuffix()` has no effect, improving the Process component&#039;s functionality.**
-  - `f7456b85`
-- **Security improvement: replaces `uniqid()` with `random_bytes()` for identifier generation.**
-  - `bb0a8b77`
-- **Adds Laravel Herd PHP detection path, affecting deployment configuration and platform setup.**
+- **Adds php detection path**
   - `85dc2723`
-- **Adds `fromShellCommandline` to `RunProcessMessage`, enhancing Messenger Process functionality.**
-  - `2b42be26`
-- **Adds missing return type for docblock Closure, improving code documentation and quality.**
-  - `7ca8dc2d`
 
 **symfony/yaml** (v6.4.24 → v7.4.0-RC2)
 
-- **Adds precise types for Yaml flags, a technical API change relevant to developers.**
-  - `14a66d35`
-- **Unifies --format handling in commands; major feature affecting platform usage, relevant to developers and decision makers.**
-  - `4c5e2378`
-- **Adds support for dumping null as empty value via flag; technical API change.**
-  - `606d725c`
-- **Adds compact nested mapping support to Dumper; technical feature.**
+- **Yaml Dumper API change**
   - `b5176af9`
-- **Bug fix for Yaml::DUMP_COMPACT_NESTED_MAPPING not applying to sequences; developer relevant.**
-  - `491c6ac3`
-- **Adds flag to enforce double quotes on string values; technical API change.**
+- **API flag added**
   - `a2f18c22`
-- **Feature adding DUMP_FORCE_DOUBLE_QUOTES_ON_VALUES flag; major feature for platform capabilities, relevant to developers and decision makers.**
-  - `54005e38`
-- **Deprecates __sleep/wakeup on AbstractPart; developer relevant.**
+- **Deprecates internal PHP magic methods**
   - `31cc125a`
 
 **twig/twig** (v3.20.0 → v3.22.0)
 
-- **Introduces operator classes replacing arrays, altering API and code architecture.**
+- **Operator classes change API**
   - `df877a1d`
-- **Moves operator definitions to objects, improving internal representation.**
-  - `1ea5ac60`
-- **Adds proper prefix spread operator feature.**
-  - `3964aeba`
-- **Same as above; adds prefix spread operator.**
+- **Docs update for precedence**
+  - `9334a706`
+- **feature implementation**
   - `640b382a`
-- **Re-add mixed return type, a bug fix or API change.**
+- **bug fix**
   - `5f6c67f8`
-- **Simplifies Error implementation, refactoring error handling.**
-  - `d10bcadd`
-- **Code change that reduces deprecation warnings, improving runtime behavior and deployment stability.**
-  - `155d0faa`
-- **Feature adding configuration keys for CommonMark extensions, enhancing API flexibility and deployment options, relevant to developers, site builders, and strategic planning.**
+- **Update config keys for extensions**
   - `5f2b1ee6`
-- **Code refactoring adding use statements for proper class references, improving code quality and type safety.**
-  - `8c789527`
-- **Bug fix preventing errors when template info is guessed, enhancing runtime stability and deployment reliability.**
+- **Bug fix**
   - `98b664a0`
 
 **guzzlehttp/psr7** (2.7.1 → 2.8.0)
 
-- **Adds PHP 8.5 support, impacting code compatibility for developers, deployment requirements for site builders, and platform capability considerations for decision makers.**
+- **PHP version upgrade**
   - `b0b99b85`
 
 **masterminds/html5** (2.9.0 → 2.10.0)
 
-- **Adds PHP 8.4 to CI config, affecting deployment and testing environment**
-  - `dc8be119`
-- **Fixes php-cs-fixer remarks, a code style improvement**
+- **Fixes code style**
   - `9e650079`
 
 **pear/archive_tar** (1.5.0 → 1.6.0)
 
-- **Adds support for older PHP5.4, affecting deployment compatibility and code adjustments.**
+- **PHP compatibility changes**
   - `bb299860`
-- **Removes old PHP5 support and adds PHP8, impacting platform compatibility and development requirements.**
-  - `bc24cf89`
 
 **sebastian/diff** (4.0.6 → 5.1.1)
 
-- **Removed deprecated attribute, API change**
+- **Deprecated attribute removed**
   - `aa4ff791`
-- **Dropped PHP 8.0 support, platform compatibility update**
+- **PHP 8.0 drop affects deployment**
   - `aa6da0de`
-- **Avoid deprecated/removed attributes, code cleanup**
+- **Attribute usage fix**
   - `720f9b00`
-- **Link to security policy added, content usage and code change**
-  - `2c9aad82`
-- **Implemented diff line methods, API enhancement**
+- **Security policy added**
+  - `9e6751a8`
+- **Diff API methods**
   - `8c8dbdbb`
-- **Implemented IteratorAggregate interface, code feature**
+- **Iterator implementation**
   - `8bf1d7fe`
 
 **commerceguys/addressing** (v1.4.2 → v2.2.4)
 
-- **Relaxed type hints in a PHP file to fix runtime errors, a technical code change.**
-  - `5f23f663`
-- **Removed deprecated code from the repository, a cleanup and bug‑fix.**
-  - `516da8b8`
-- **Corrected administrative area type for France to &#039;region&#039;, updating backend data.**
-  - `17fcb0ff`
-- **Removed sorting codes from French territories, a code cleanup.**
-  - `8f1d2d66`
-- **Made the region field required for Turkey in address data, altering backend validation.**
-  - `242aa104`
-- **Added missing ISO codes for two Taiwan subdivisions, updating address data.**
-  - `04c8ec7a`
-- **Added four additional subdivisions to KR-50, extending address data.**
-  - `b2c35fca`
-- **Added Zimbabwe provinces, enhancing the address dataset.**
-  - `b10f747b`
-- **Added missing Brazilian municipality to the address data.**
-  - `b0012429`
-- **Further improvements to Philippine subdivisions, fixing #155 in the dataset.**
-  - `48a0e531`
-- **Updated ISO codes for CN subdivisions improves address accuracy for developers using the API and expands coverage for decision makers.**
-  - `0f0866b3`
-- **Added subdivisions for Costa Rica (CR) and Estonia (EE) increases country support for developers and strategic coverage for decision makers.**
-  - `7769755a`
-- **Removed sorting code from BL, NC, RE formats fixes data formatting bug for developers.**
-  - `b1781653`
-- **Added address line 3 expands form fields; relevant to UI components used by content editors and API consumers (developers).**
-  - `5db4c30b`
-- **Show additional name field for patronymic countries introduces new UI element for content editors and developers.**
-  - `0e0ab2b7`
-- **Fixed wrong type hints corrects code type safety; developer only.**
-  - `2f4cbde6`
-- **Simplified constructors improves code maintainability; developer only.**
-  - `e521d238`
-- **Added subdivisions for Honduras (HN) expands coverage for developers and decision makers.**
-  - `003128fb`
-- **Added subdivisions for Barbados (BB), Micronesia (FM), Kiribati (KI), Panama (PA) expands coverage for developers and decision makers.**
-  - `7aed0770`
-- **Changed administrative area type to region for BY/UA/RU improves data consistency; developer and decision maker.**
-  - `d2eba5a0`
-- **Removal of administrative area field for specific countries modifies address data model.**
-  - `4cbd92d1`
-- **Same removal of administrative area field for other country codes, affecting API.**
-  - `0cf03147`
-- **Adding new administrative areas for Paraguay updates address format and data model.**
-  - `a10be69d`
-- **Adds punctuation to PY/UY formats per UPU, a code change in formatting logic.**
-  - `df10ee21`
-- **Allows Symfony 7 for dev dependencies, a framework update affecting backend code.**
-  - `62af482b`
-- **Uppercasing address lines logic change in formatting code.**
-  - `861de87d`
-- **Switches locality type to Town/City for New Zealand, affecting data mapping.**
-  - `de88e596`
-- **Rebuilds address format logic for Kazakhstan, a code refactor.**
+- **API address format change**
   - `32ba3776`
-- **Adds subdivisions for Kazakhstan to address data model.**
+- **Adds subdivisions UI**
   - `843435b5`
-- **Allows default values in address formats, affecting how address fields appear on pages and forms used by content editors.**
+- **API changes for address defaults**
   - `f9007af0`
-- **Adds option to disable postal code validation in AddressFormatConstraint, impacting form behavior for content editors.**
+- **Address validation config**
   - `74edab28`
-- **Adds missing Indonesian provinces to address data, useful for content editors using address components.**
+- **region field required**
+  - `242aa104`
+- **ISO codes added**
+  - `04c8ec7a`
+- **Adds new address data**
+  - `b0012429`
+- **Fixes subdivision bug**
+  - `48a0e531`
+- **Remove sorting code**
+  - `b1781653`
+- **Add address line 3**
+  - `5db4c30b`
+- **Show additional name field**
+  - `0e0ab2b7`
+- **Fix type hints**
+  - `2f4cbde6`
+- **Simplify constructors**
+  - `e521d238`
+- **Add subdivisions**
+  - `003128fb`
+- **Add subdivisions**
+  - `7aed0770`
+- **Remove admin field code**
+  - `4cbd92d1`
+- **Remove admin?**
+  - `0cf03147`
+- **Adds province data**
   - `431b0794`
-- **Updates India subdivision names in the updater, ensuring accurate data for content editors.**
+- **Updates subdivision names**
   - `fd8c6ce9`
-- **Corrects Chile administrative area terminology from provinces to regions, affecting address data used by content editors.**
+- **Renames admin areas**
   - `975a6528`
 
 **doctrine/collections** (2.3.0 → 2.4.0)
 
-- **Adds a cautionary note about using non-scalar values in `matching()` expressions, an API change that developers need to be aware of.**
+- **API warning**
   - `5765c3c6`
-- **Addresses existing deprecations in the Doctrine Collections library, a code update relevant for developers.**
-  - `201c66f2`
 
 **doctrine/annotations** (1.14.4 → 2.0.2)
 
-- **Removal of deprecated APIs impacts code usage and maintenance.**
+- **Deprecated API removal**
   - `6d492921`
-- **PHP version bump requires environment configuration changes, affects deployment and platform compatibility.**
-  - `5ccddc60`
-- **Removing a deprecated method is an API change affecting developers.**
-  - `7a95b3bf`
-- **Providing hints for using PsrCachedReader improves code usage for developers.**
-  - `7d2d4e95`
-- **Adding psalm.xml to .gitattributes configures static analysis, relevant to deployment and developer tooling.**
-  - `523bc8e7`
 
 **league/csv** (9.24.1 → 9.27.1)
 
-- **Bug fix ensuring DOMDocument::createTextNode() receives a string.**
+- **DOM bug fix**
   - `be8fcb02`
-- **Adds ndjson support in JsonConverter, enhancing data conversion capabilities.**
+- **JSON conversion update**
   - `1afbb9a9`
-- **Introduces TabularDataProvider and TabularData support on Converters, expanding API features.**
-  - `45932246`
-- **Adds TabularDataProvider and TabularData support on Writer, improving data output options.**
-  - `db834f07`
-- **Improves AbstractCsv::download implementation, a code enhancement.**
+- **API docs update**
+  - `62c1903b`
+- **Bug fix**
   - `128e5419`
 
 **doctrine/inflector** (2.0.10 → 2.1.0)
 
-- **Adds Esperanto language support to the inflector, a code change that enhances multilingual capability.**
+- **Adds language support**
   - `8c7ae9c2`
-- **Introduces a new website schema validation workflow, requiring configuration/deployment and improving platform quality.**
+- **Schema validation workflow**
   - `a0e4cd4b`
-- **Adds Italian inflection rules to the library, a code update affecting multilingual support.**
+- **Italian rule addition**
   - `d3a8df8f`
-- **Updates irregular word list with &#039;alga&#039;, a minor code change that refines inflection accuracy.**
-  - `5256968f`
 
 **consolidation/annotated-command** (4.10.1 → 4.10.4)
 
-- **Bug fix affecting fputcsv API, relevant to developers.**
+- **fputcsv bug fix**
   - `0cf112da`
 
 **solarium/solarium** (6.3.7 → 6.4.1)
 
-- **Adds CBOR support for update queries, an API-level change affecting code architecture and technical functionality.**
+- **CBOR update queries API**
   - `321a1ccf`
-- **Introduces vector filters, a feature that can be used by content editors to filter content and by developers to implement the filtering logic.**
+- **Vector filter config**
   - `02a3b688`
 
 **setasign/fpdi** (v2.6.3 → v2.6.4)
 
-- **Bug fix in code preventing PHP warning by adding a check for false return value of readBytes()**
+- **Fixes PHP warning**
   - `555d0952`
 
 **ycloudyusa/y_lb** (3.10.7 → 4.0.6-rc4)
 
-- **Updating dependencies to support y_lb 4 and Drupal 11 affects platform installation, code compatibility, and strategic platform capabilities.**
+- **updates deps for platform**
   - `a643ae9d`
-- **Upgrading y_camp for Drupal 11 compatibility impacts component usage by developers and content editors, and enhances platform functionality.**
-  - `37f71e10`
-- **Adding support for lb_claro introduces new UI/theme components relevant to developers, decision makers, and content editors.**
-  - `6aed1a9a`
-- **Option to override styles per node empowers content editors, requires developer implementation, and offers strategic customization capability.**
-  - `f01e6bdf`
-- **Entity builders in form build allow new info saving, affecting developers, deployment (site builder), and content editors using forms.**
+- **Adds entity builders for form**
   - `9791b7de`
 
 **ycloudyusa/yusaopeny_activity_finder** (5.3.0 → 6.0.0)
 
-- **Replacing deprecated node-sass with sass updates the build dependency, impacting deployment and code compilation.**
+- **Replace deprecated package**
   - `e2ce493c`
-- **Fixes a deprecated exception by adding backward-compatible error logging; purely code-level change.**
+- **Bug fix**
   - `2767cbb4`
-- **Adds Drupal 11 support to activity finder modules, affecting deployment on new platform versions and enhancing platform capabilities.**
+- **Drupal 11 support**
   - `90605c24`
-- **Refactors code to use injected logger service instead of deprecated exception; architectural improvement.**
+- **Refactor logger**
   - `aa8b1f27`
-- **Fixes constructor injection for TypedConfigManagerInterface, improving configuration handling in the form base class.**
+- **Injects config interface**
   - `f7c9bbe3`
 
 **ezyang/htmlpurifier** (v4.18.0 → v4.19.0)
 
-- **Adds safe iframe hosts option useful for content editors embedding iframes, enhances platform security, and is a developer change.**
+- **API option for iframe hosts**
   - `b5cbf0cc`
-- **Bug fix in preg_replace null parameter; impacts library functionality.**
+- **Bug fix in code**
   - `5d154a23`
-- **Adds CSS direction support for RTL languages, enabling content editors to set text direction and improving platform features.**
-  - `63e631eb`
-- **Expands default image width allowances, affecting content editors who upload images.**
-  - `00a07484`
-- **Adds warning for misleading option; a bug fix.**
+- **Adds warning for misleading option**
   - `b21a5910`
-- **PHP 8.4 support ensures compatibility for deployment and strategic decisions.**
+- **PHP 8.4 support**
   - `ff005f6e`
-- **Docker files for dev environment aid site builders in setup; developers use them.**
-  - `bdabc9b6`
-- **Defines option URI.AllowedSymbols, useful for content editors customizing URLs and platform configuration.**
+- **Define option URI.AllowedSymbols**
   - `77ebd086`
-- **Docker files ignored during installation help site builders avoid unnecessary files.**
-  - `9f99c615`
-- **PHP 8.5 support ensures compatibility for deployment and strategic planning.**
-  - `1eb05d98`
-- **Release commit indicates a new platform version; site builders need to update deployments, developers may pull the updated code.**
-  - `b287d2a1`
-
-**ycloudyusa/useless_machines** (1.2 → 2.0.4)
-
-- **Uninstalling redundant Drupal modules reduces system overhead, improves configuration and stability; affects developers&#039; code architecture, site builders&#039; deployment setup, and decision makers&#039; platform performance considerations.**
-  - `d703f518`
-- **Removing the panel button from CKEditor alters the editor UI used by content editors, requires configuration changes for site builders, impacts developer code and overall platform feature set.**
-  - `2472719c`
-- **Uninstalling unsupported modules improves system reliability and maintenance; relevant to site builders&#039; configuration, developers&#039; code base, and decision makers&#039; platform stability.**
-  - `fe59e491`
-
-**ycloudyusa/y_lb_demo_content** (3.4.5 → 4.0.0-beta4)
-
-- **Adds icon components to the Media Library UI, improving content editor experience while involving code changes.**
-  - `24071476`
-- **Fixes a migration bug for partners block demo content, affecting deployment correctness and requiring developer fixes.**
-  - `0a12d9f9`
 
 
 ### 📊 For Decision Makers
@@ -2248,318 +1327,52 @@ These changes are organized by the user personas most likely to care about them.
 
 **drupal/core** (10.5.1 → 11.1.9)
 
-- **Adds a new API for modules, enhancing platform capabilities; relevant for developers and decision makers evaluating strategic value.**
-  - `fcc49e3b`
-- **Adds revolt/event-loop dependency to core, a major architectural change impacting developers, site builders, and strategic decision makers.**
-  - `d5a6567a`
-- **Creates flexible configuration, a feature relevant to deployment and strategic planning.**
-  - `0e39184c`
-- **Adds pdureau as co-maintainer for Theme API with focus on SDC, a maintenance change.**
+- **Co-maintainer added**
   - `dc4efd22`
-- **Adds e0ipso as co-maintainer of core theme system with focus on SDC, a maintenance change.**
-  - `4e051663`
-- **Adds new recipe and default content subsystems, providing new UI components for editors, requiring configuration for site builders, code changes for developers, and platform capabilities for decision makers.**
+- **Adds subsystems**
   - `8cab4c34`
-- **Implements the new access policy API, adding platform capability and affecting strategic planning.**
-  - `3698610c`
-- **Adding owner field to BlockContent entity type introduces new content management capability; developers, content editors, site builders, and decision makers benefit.**
-  - `c4e09053`
-- **Mechanism to skip processing entity types in workspaces enhances workflow control; developers, site builders, and decision makers find it useful.**
-  - `ff7343d4`
-
-**drupal/core-composer-scaffold** (10.5.6 → 11.1.9)
-
-- **Adds support for recipe files in drupal/recommended-project and drupal/legacy-project, enabling site builders to configure new setups, developers to extend or use recipes, and decision makers to see platform capability expansion.**
-  - `79e3fcb1`
-
-**drupal/better_exposed_filters** (6.0.6 → 7.1.0-beta4)
-
-- **Improves BEF multiple select links generation; a significant platform enhancement relevant to decision makers.**
-  - `fa93f375`
-
-**drupal/metatag** (2.1.1 → 2.2.0)
-
-- **Adds new meta tag for fediverse:creator, enhancing platform capability.**
-  - `fa211c54`
-- **Introduces SVG icon meta tag enabling content editors to specify icons.**
-  - `b6d61dea`
-- **Adds placeholder &lt;none&gt; to clear inherited values, improving metadata control.**
-  - `aa44d4ba`
-- **Allows optional suffix after trimmed meta tags, enhancing flexibility.**
-  - `85dfe411`
-
-**drupal/openy_carnation** (3.2.1 → 4.0.0-beta4)
-
-- **Introduces Bootstrap jQuery migrate tools, enabling new UI components; developers build features, site builders configure, content editors use components, decision makers see strategic improvement.**
-  - `353e0d80`
-
-**drupal/scheduler** (2.2.1 → 2.2.2)
-
-- **Adds rules to trigger scheduler jobs on commit/merge request, affecting configuration and automation capabilities.**
-  - `5e9592e4`
-
-**drupal/webform** (6.3.0-beta3 → 6.3.0-beta5)
-
-- **Removal of Add-ons feature; platform capability impact, deployment changes, strategic consideration.**
-  - `893122a6`
-- **Improved remote_post handler to exclude inaccessible fields; relevant for developers, site builders configuring, and decision makers evaluating platform security.**
-  - `d3b3fd6a`
-- **Adds a database index for performance improvement, affecting developers and strategic performance considerations.**
-  - `15d416b2`
-- **Introduces Bootstrap theme support, affecting UI components, configuration, implementation, and platform capabilities.**
-  - `d27c98d4`
-- **Adds a new &#039;group_relation&#039; entity type, requiring implementation, configuration, and strategic evaluation.**
-  - `33c935de`
-- **Changes duplicate submission permissions to allow editing own submissions; affects content editors, permission setup, implementation, and platform capabilities.**
-  - `48fc5079`
-- **Upgrade from 6.2.x to 6.3.x removes webform_shortcuts causing missing-module errors; site builders must manage upgrade, developers adjust code, decision makers evaluate upgrade impact.**
-  - `2afb544f`
-- **Introduces new permission for filtering and bulk actions on overview page; relevant to role configuration, code changes, and strategic feature assessment.**
-  - `256f810b`
-- **Same as commit 256f810b: new permission for filter and bulk action on overview page, affecting roles, code, and feature strategy.**
-  - `03af8298`
+- **URL module changes affect platform**
+  - `9649f0eb`
 
 **drupal/ymca_sync** (10.0.6 → 11.0.0)
 
-- **Major Drupal core upgrade introduces new platform capabilities, requiring updates for developers, site builders, content editors, and strategic planning.**
+- **Drupal 11 upgrade**
   - `3e63f504`
 
 **ycloudyusa/yusaopeny** (10.5.0.1 → 11.1.0.0-beta4)
 
-- **Feature adjusts Drupal 11 compatibility, affecting core version and deployment.**
-  - `bdda671b`
-- **Introduces ws_outsiders module, enhancing platform capabilities and deployment configuration.**
-  - `8d06f605`
-- **Adds inline_entity_form component for content editing; affects UI and development.**
-  - `7ca36b94`
-- **Enabled beta and RC releases for openy_carnation, strategic feature.**
-  - `f5926031`
-- **Core Drupal upgrade affects system configuration, API compatibility, and overall platform capabilities.**
-  - `6730ebc2`
-- **Provides an upgrade path to Drupal 11, impacting deployment strategy and platform evolution.**
-  - `3ea5e1b5`
-
-**symfony/console** (v6.4.23 → v7.4.0-RC2)
-
-- **Feature adds interactive invokable commands with #[Interact] and #[Ask] attributes; enhances platform capabilities for developers and could be evaluated strategically.**
-  - `cd2f31f1`
-- **Same feature as above, adding interactive command support.**
-  - `617f500b`
+- **Subproject update**
+  - `20dafec6`
 
 **symfony/string** (v6.4.24 → v8.0.0-RC1)
 
-- **Introduces new locale-aware casing methods, enhancing API and platform capabilities.**
+- **Locale aware casing**
   - `2172dad9`
-- **Feature implementation of locale-aware casing methods; adds functionality to the library.**
-  - `0cf71450`
-- **Adds WORD_STRICT mode to truncate method, extending API features.**
-  - `25ad779f`
-- **Introduces TruncateMode mode to truncate methods, enhancing string manipulation capabilities.**
-  - `670e18c4`
-- **Bug fix for truncating in WordBefore mode; improves reliability of API.**
-  - `af689ccf`
-- **Adds Spanish inflector with rules, expanding language support and platform features.**
-  - `f1f4d05d`
-- **Adds kebab() method to AbstractString, adding new string transformation capability.**
-  - `8133473e`
-- **Feature implementation of kebab() method; enhances API and platform functionality.**
-  - `ae7e1061`
-- **Adds pascal() method to AbstractString, providing new string transformation feature.**
-  - `16341141`
 
-**symfony/dependency-injection** (v6.4.23 → v7.4.0-RC2)
+**symfony/http-kernel** (v6.4.23 → v7.4.0-RC2)
 
-- **Introduces JSON schema for validating YAML config files, a major feature relevant to developers, site builders, and decision makers**
-  - `2d38f116`
-- **Same as above – JSON schema for validating YAML config files, a major feature**
-  - `e9c51de0`
-
-**symfony/error-handler** (v6.4.23 → v8.0.0-RC1)
-
-- **Feature adds support for non-empty-string/non-empty-list when patching return types, enhancing error handling capabilities useful for developers and strategic planning.**
-  - `422c8d8d`
-- **Adds CLI command to dump static error pages, useful for site builders during deployment and for developers customizing error handling; also a platform capability improvement.**
-  - `f344b88b`
-
-**symfony/var-dumper** (v6.4.23 → v8.0.0-RC1)
-
-- **Update required PHP version; impacts deployment and platform compatibility.**
-  - `ab6d26bc`
-- **Remove Twig 2 support; impacts compatibility and deployment.**
-  - `bcc3a2bc`
-- **Add default message to dd; improves debugging.**
-  - `654cb58c`
-- **Feature addition: default message for dd function.**
-  - `bd5a3025`
-
-**symfony/mailer** (v6.4.23 → v7.4.0-RC1)
-
-- **Azure bridge adds new mail delivery capability to platform; developers implement API changes, decision makers evaluate the new feature.**
-  - `19db4292`
-- **Mailomat bridge adds new mail delivery integration; developers implement, decision makers consider platform expansion.**
-  - `92943ae6`
-- **Same as above but flagged feature request; developer and decision maker.**
-  - `1853eb7d`
-- **Postal mailer implementation introduces new mail delivery method; developer and decision maker.**
-  - `b2720aa3`
-- **Adds a new mailer implementation (Postal) which introduces significant platform functionality.**
-  - `8b2fb264`
-- **Introduces a new Sweego Mailer Bridge, expanding email service options.**
-  - `2cf98fa0`
-- **Adds a Mailtrap bridge, providing another testing email service integration.**
-  - `c455af38`
-- **Adds an AhaSend Bridge, adding another email service integration.**
-  - `0f836d77`
-- **Same as above: feature #58698 adds AhaSend Bridge, expanding platform capabilities.**
-  - `7ec706b6`
-
-**doctrine/lexer** (2.1.1 → 3.0.1)
-
-- **Dropping PHP &lt;8.1 support changes the platform&#039;s runtime requirements, impacting deployment configurations (site builder), code compatibility and architecture decisions (developer), and overall platform capabilities for strategic planning (decision maker).**
-  - `c4f371c0`
-
-**symfony/routing** (v6.4.24 → v7.4.0-RC2)
-
-- **Removal of Doctrine annotations support alters routing capabilities; developers and decision makers should be aware.**
-  - `73615d30`
-- **New routing syntax `{foo:bar}` adds functionality for mapping parameters to request attributes, impacting platform capabilities.**
-  - `91479c48`
-- **Adding alias in `{foo:bar}` syntax expands routing flexibility, affecting platform capabilities.**
-  - `6accdb7d`
-- **Adds JSON schema for validating and autocompleting YAML config files, improving configuration and platform capability.**
-  - `23627610`
-- **Same as above: adds JSON schema for YAML config validation, enhancing configuration and platform capability.**
-  - `29106470`
-- **Auto-register routes from attributes on controller services, a major feature for developers and site builders.**
-  - `ec13b221`
-
-**symfony/validator** (v6.4.23 → v7.4.0-RC1)
-
-- **Introduces ExtendsValidationFor attribute for new constraints, enhancing extensibility for developers and strategic platform capabilities.**
-  - `9cc995d7`
-- **Same feature as above; ExtendsValidationFor adds flexibility to validators.**
-  - `249bb3b3`
-- **Adds Video constraint for validating video files, expanding platform capabilities and developer functionality.**
-  - `af2056bc`
-- **JSON schema for YAML config validation aids site builders in configuration, developers add tooling, decision makers see improved configurability.**
-  - `74e760ca`
-
-**symfony/process** (v6.4.24 → v7.4.0-RC1)
-
-- **Introduces a new feature that allows ignoring signals during process execution, impacting platform capabilities and deployment behavior.**
-  - `14730a20`
-
-**symfony/yaml** (v6.4.24 → v7.4.0-RC2)
-
-- **Unifies --format handling in commands; major feature affecting platform usage, relevant to developers and decision makers.**
-  - `4c5e2378`
-- **Feature adding DUMP_FORCE_DOUBLE_QUOTES_ON_VALUES flag; major feature for platform capabilities, relevant to developers and decision makers.**
-  - `54005e38`
-
-**twig/twig** (v3.20.0 → v3.22.0)
-
-- **Feature adding configuration keys for CommonMark extensions, enhancing API flexibility and deployment options, relevant to developers, site builders, and strategic planning.**
-  - `5f2b1ee6`
-
-**guzzlehttp/psr7** (2.7.1 → 2.8.0)
-
-- **Adds PHP 8.5 support, impacting code compatibility for developers, deployment requirements for site builders, and platform capability considerations for decision makers.**
-  - `b0b99b85`
-
-**pear/archive_tar** (1.5.0 → 1.6.0)
-
-- **Adds support for older PHP5.4, affecting deployment compatibility and code adjustments.**
-  - `bb299860`
-- **Removes old PHP5 support and adds PHP8, impacting platform compatibility and development requirements.**
-  - `bc24cf89`
-
-**mck89/peast** (v1.17.2 → v1.17.4)
-
-- **The commit marks a new release, which is relevant for deployment and strategic planning.**
-  - `5440ff13`
+- **debug dumps feature**
+  - `b762004c`
 
 **sebastian/diff** (4.0.6 → 5.1.1)
 
-- **Dropped PHP 8.0 support, platform compatibility update**
-  - `aa6da0de`
-- **Added security policy, major platform feature**
+- **Security policy added**
   - `9e6751a8`
-
-**commerceguys/addressing** (v1.4.2 → v2.2.4)
-
-- **Updated ISO codes for CN subdivisions improves address accuracy for developers using the API and expands coverage for decision makers.**
-  - `0f0866b3`
-- **Added subdivisions for Costa Rica (CR) and Estonia (EE) increases country support for developers and strategic coverage for decision makers.**
-  - `7769755a`
-- **Added subdivisions for Honduras (HN) expands coverage for developers and decision makers.**
-  - `003128fb`
-- **Added subdivisions for Barbados (BB), Micronesia (FM), Kiribati (KI), Panama (PA) expands coverage for developers and decision makers.**
-  - `7aed0770`
-- **Changed administrative area type to region for BY/UA/RU improves data consistency; developer and decision maker.**
-  - `d2eba5a0`
-
-**doctrine/annotations** (1.14.4 → 2.0.2)
-
-- **PHP version bump requires environment configuration changes, affects deployment and platform compatibility.**
-  - `5ccddc60`
-
-**league/csv** (9.24.1 → 9.27.1)
-
-- **Adds ndjson support in JsonConverter, enhancing data conversion capabilities.**
-  - `1afbb9a9`
-- **Introduces TabularDataProvider and TabularData support on Converters, expanding API features.**
-  - `45932246`
-- **Adds TabularDataProvider and TabularData support on Writer, improving data output options.**
-  - `db834f07`
 
 **doctrine/inflector** (2.0.10 → 2.1.0)
 
-- **Adds Esperanto language support to the inflector, a code change that enhances multilingual capability.**
-  - `8c7ae9c2`
-- **Introduces a new website schema validation workflow, requiring configuration/deployment and improving platform quality.**
+- **Schema validation workflow**
   - `a0e4cd4b`
-- **Adds Italian inflection rules to the library, a code update affecting multilingual support.**
-  - `d3a8df8f`
-- **Updates irregular word list with &#039;alga&#039;, a minor code change that refines inflection accuracy.**
-  - `5256968f`
-
-**ycloudyusa/y_lb** (3.10.7 → 4.0.6-rc4)
-
-- **Updating dependencies to support y_lb 4 and Drupal 11 affects platform installation, code compatibility, and strategic platform capabilities.**
-  - `a643ae9d`
-- **Upgrading y_camp for Drupal 11 compatibility impacts component usage by developers and content editors, and enhances platform functionality.**
-  - `37f71e10`
-- **Adding support for lb_claro introduces new UI/theme components relevant to developers, decision makers, and content editors.**
-  - `6aed1a9a`
-- **Option to override styles per node empowers content editors, requires developer implementation, and offers strategic customization capability.**
-  - `f01e6bdf`
 
 **ycloudyusa/yusaopeny_activity_finder** (5.3.0 → 6.0.0)
 
-- **Adds Drupal 11 support to activity finder modules, affecting deployment on new platform versions and enhancing platform capabilities.**
+- **Drupal 11 support**
   - `90605c24`
 
 **ezyang/htmlpurifier** (v4.18.0 → v4.19.0)
 
-- **Adds safe iframe hosts option useful for content editors embedding iframes, enhances platform security, and is a developer change.**
-  - `b5cbf0cc`
-- **Adds CSS direction support for RTL languages, enabling content editors to set text direction and improving platform features.**
-  - `63e631eb`
-- **PHP 8.4 support ensures compatibility for deployment and strategic decisions.**
+- **PHP 8.4 support**
   - `ff005f6e`
-- **Defines option URI.AllowedSymbols, useful for content editors customizing URLs and platform configuration.**
-  - `77ebd086`
-- **PHP 8.5 support ensures compatibility for deployment and strategic planning.**
-  - `1eb05d98`
-
-**ycloudyusa/useless_machines** (1.2 → 2.0.4)
-
-- **Uninstalling redundant Drupal modules reduces system overhead, improves configuration and stability; affects developers&#039; code architecture, site builders&#039; deployment setup, and decision makers&#039; platform performance considerations.**
-  - `d703f518`
-- **Removing the panel button from CKEditor alters the editor UI used by content editors, requires configuration changes for site builders, impacts developer code and overall platform feature set.**
-  - `2472719c`
-- **Uninstalling unsupported modules improves system reliability and maintenance; relevant to site builders&#039; configuration, developers&#039; code base, and decision makers&#039; platform stability.**
-  - `fe59e491`
 
 
 ---
@@ -3975,15 +2788,6 @@ The following packages had notable changes requiring attention:
   
   </details>
   
-- **symfony/deprecation-contracts**: v3.5.1 → v3.6.0
-    <details>
-  <summary>📋 Show 2 commits</summary>
-
-    - `perf` make test case classes compatible with PHPUnit 10+
-    - `chore` Merge branch &#039;7.1&#039; into 7.2
-  
-  </details>
-  
 - **symfony/service-contracts**: v3.5.1 → v3.6.1
     <details>
   <summary>📋 Show 12 commits</summary>
@@ -4164,8 +2968,6 @@ The following packages had notable changes requiring attention:
     - `fix` Fix registrering grapheme_str_split()
   
   </details>
-  
-- **symfony/polyfill-intl-normalizer**: v1.31.0 → v1.33.0
   
 - **symfony/dependency-injection**: v6.4.23 → v7.4.0-RC2
     <details>
@@ -5388,14 +4190,6 @@ The following packages had notable changes requiring attention:
     - `chore` Merge pull request #80 from greg0ire/php8-syntax
     - `chore` Merge branch &#039;2.1.x&#039; into 3.0.x
     - `chore` PHPUnit 10 (#117)
-  
-  </details>
-  
-- **symfony/polyfill-intl-idn**: v1.31.0 → v1.33.0
-    <details>
-  <summary>📋 Show 1 commits</summary>
-
-    - `test` Give testing some love
   
   </details>
   
