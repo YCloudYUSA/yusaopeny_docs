@@ -1,4 +1,15 @@
-# Features & Improvements Report
+---
+title: "Drupal 11 Full Changelog (11.1.0.0)"
+description: Comprehensive feature and package changes from YMCA Website Services 10.5.0.1 to 11.1.0.0
+aliases:
+  - /docs/development/drupal-11-full-changelog/
+tags:
+  - "Drupal 11"
+  - "Changelog"
+  - "Release Notes"
+weight: 10
+---
+
 
 **Generated**: 2025-11-18 14:31:21
 

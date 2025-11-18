@@ -32,9 +32,8 @@ Major releases bring YMCA Website Services up to compatibility with new Drupal c
 - PHP version requirement updates
 
 **Recent major releases:**
-- **11.1.0.0-beta3** (November 10, 2025) - Drupal 11 compatibility with Activity Finder 6.0.0 and Memberships 3.1.0
-- **11.1.0.0-beta2** (October 20, 2025) - Drupal 11 bug fixes and improvements
-- **11.1.0.0-beta1** (September 23, 2024) - Initial Drupal 11 compatibility
+- **11.1.0.0** (November 18, 2025) - First stable Drupal 11 release with full production readiness
+- **10.5.0.1** (July 14, 2025) - Latest Drupal 10 stable release
 - **10.4.0.0** (June 17, 2024) - Drupal 10.4 core initialization
 
 #### Minor Releases
@@ -86,8 +85,8 @@ View all releases and release notes:
 **Latest stable release:** Check [GitHub Releases](https://github.com/YCloudYUSA/yusaopeny/releases) for the most current version.
 
 **Supported versions:**
-- Drupal 11.x: Latest beta release (11.1.0.0-beta3 as of November 2025, stable release Q4 2025)
-- Drupal 10.x: Supported until December 2026
+- Drupal 11.x: **11.1.0.0** (stable release as of November 18, 2025) - [Release Notes]({{< relref "/blog/releases/release-ds-11.1.0.0" >}}) | [Full Changelog]({{< relref "/docs/development/drupal-11-changelog" >}})
+- Drupal 10.x: **10.5.0.1** (supported until December 2026)
 
 ### Virtual Y Releases
 
