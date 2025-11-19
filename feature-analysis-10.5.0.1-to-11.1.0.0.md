@@ -72,7 +72,7 @@ These changes are organized by the user personas most likely to care about them.
   - `fdda4128`- `fdda4128` Issue #3416039 by ressa, divya.sejekan, catch, Gábor Hojtsy: Add link to Drupal Support in Olivero Welcome text
 - **Creates a new header component for Umami with JavaScript functionality, allowing editors to add dynamic header elements and customize page layouts without writing code**
   - `13a680ce`- `13a680ce` Issue #3404302 by finnsky, smustgrave, lauriii, markconroy: Create header component for Umami, with JS
-- **Develops new SDC (Sustainability Data Center) component for Umami Banner, enabling editors to display banner content with custom styling**
+- **Develops new SDC (Single Directory Component) component for Umami Banner, enabling editors to display banner content with custom styling**
   - `7186f7f9`- `7186f7f9` Issue #3365497 by finnsky, Gauravvvv, sarahjean, smustgrave, snig, e0ipso, pdureau: Create new SDC component for Umami Banner
 
 **drupal/better_exposed_filters** (6.0.6 → 7.1.0-beta4)
