@@ -59,27 +59,27 @@ For complete release details, see:
 
 ---
 
-## ⚠️ Critical: Google Tag Module and Drupal 11.1 Point Release
+## ⚠️ Critical: Google Tag Module and Drupal 11.1
 
-**IMPORTANT:** After upgrading to Drupal 11, you **must update to the Drupal 11.1 point release** as your first step.
+**IMPORTANT:** YMCA Website Services upgrades **directly to Drupal 11.1** (not 11.0). This is crucial for Google Analytics functionality.
 
 ### Why This Matters
 
-The **Drupal 11.1 point release** is the last version that includes the `google_tag` module. This module is critical for:
+The **Drupal 11.1** release is the last version that includes the `google_tag` module. This module is critical for:
 - Migrating existing Google Analytics configurations
 - Restoring Google Analytics functionality after upgrade
 - Maintaining tracking and analytics continuity
 
-### Without Updating to 11.1
+### Without Upgrading to 11.1
 
-If you skip directly to Drupal 11.2 or later versions:
+If you skip to Drupal 11.2 or later versions:
 - ❌ The `google_analytics` module will not be available
 - ❌ Google Analytics configuration cannot be migrated properly
 - ❌ Analytics tracking may be lost or require manual reconfiguration
 
 ### Upgrade Sequence
 
-1. ✅ Update to Drupal 11.1
+1. ✅ Upgrade directly to Drupal 11.1 (via YMCA Website Services 11.1.0.0)
 2. ✅ Verify Google Analytics configuration is working
 3. ✅ Only then proceed to newer point releases (11.2+)
 
