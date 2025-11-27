@@ -73,7 +73,7 @@ The **Drupal 11.1 point release** is the last version that includes the `google_
 ### Without Updating to 11.1
 
 If you skip directly to Drupal 11.2 or later versions:
-- ❌ The `google_tag` module will not be available
+- ❌ The `google_analytics` module will not be available
 - ❌ Google Analytics configuration cannot be migrated properly
 - ❌ Analytics tracking may be lost or require manual reconfiguration
 
