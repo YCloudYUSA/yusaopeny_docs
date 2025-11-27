@@ -80,8 +80,8 @@ If you skip directly to Drupal 11.2 or later versions:
 ### Upgrade Sequence
 
 1. ✅ Update to Drupal 11.1
-3. ✅ Verify Google Analytics configuration is working
-4. ✅ Only then proceed to newer point releases (11.2+)
+2. ✅ Verify Google Analytics configuration is working
+3. ✅ Only then proceed to newer point releases (11.2+)
 
 This ensures the `google_tag` module handles the migration before it's removed in later versions.
 
