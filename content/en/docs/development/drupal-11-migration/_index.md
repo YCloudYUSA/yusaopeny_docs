@@ -59,6 +59,35 @@ For complete release details, see:
 
 ---
 
+## ⚠️ Critical: Google Tag Module and Drupal 11.1 Point Release
+
+**IMPORTANT:** After upgrading to Drupal 11, you **must update to the Drupal 11.1 point release** as your first step.
+
+### Why This Matters
+
+The **Drupal 11.1 point release** is the last version that includes the `google_tag` module. This module is critical for:
+- Migrating existing Google Analytics configurations
+- Restoring Google Analytics functionality after upgrade
+- Maintaining tracking and analytics continuity
+
+### Without Updating to 11.1
+
+If you skip directly to Drupal 11.2 or later versions:
+- ❌ The `google_tag` module will not be available
+- ❌ Google Analytics configuration cannot be migrated properly
+- ❌ Analytics tracking may be lost or require manual reconfiguration
+
+### Upgrade Sequence
+
+1. ✅ Upgrade from Drupal 10 to **Drupal 11.0**
+2. ✅ **Immediately update to Drupal 11.1** (critical step)
+3. ✅ Verify Google Analytics configuration is working
+4. ✅ Only then proceed to newer point releases (11.2+)
+
+This ensures the `google_tag` module handles the migration before it's removed in later versions.
+
+---
+
 ## Prerequisites
 
 Before upgrading to Drupal 11:
