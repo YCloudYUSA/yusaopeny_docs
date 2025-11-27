@@ -59,6 +59,32 @@ For complete release details, see:
 
 ---
 
+## ⚠️ Critical: Google Analytics Module Deprecation
+
+**IMPORTANT:** The `google_analytics` module is deprecated and will not be available in Drupal 11.2+. You must migrate to `google_tag` module before upgrading past Drupal 11.1.
+
+### Why This Matters
+
+- The `google_analytics` module is being removed from Drupal core
+- The `google_tag` module will remain available and is the recommended replacement
+- Drupal 11.1 is the last version where migration path from `google_analytics` to `google_tag` is supported
+
+### If You Skip This Step
+
+If you upgrade directly to Drupal 11.2 or later without migrating:
+- ❌ The `google_analytics` module will not be available
+- ❌ Your existing Google Analytics configuration will be lost
+- ❌ You'll need to manually reconfigure tracking via `google_tag`
+
+### Upgrade Sequence
+
+1. ✅ Update directly to Drupal 11.1
+2. ✅ Migrate from `google_analytics` to `google_tag` module
+3. ✅ Verify analytics tracking is working
+4. ✅ Only then proceed to newer point releases (11.2+)
+
+---
+
 ## Prerequisites
 
 Before upgrading to Drupal 11:
