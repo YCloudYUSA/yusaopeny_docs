@@ -79,7 +79,6 @@ If you skip directly to Drupal 11.2 or later versions:
 
 ### Upgrade Sequence
 
-1. ✅ Upgrade from Drupal 10 to **Drupal 11.0**
 2. ✅ **Immediately update to Drupal 11.1** (critical step)
 3. ✅ Verify Google Analytics configuration is working
 4. ✅ Only then proceed to newer point releases (11.2+)
