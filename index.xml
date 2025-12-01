@@ -28,7 +28,63 @@
 &lt;li>4-5 branches → Small Y or Full (your choice)&lt;/li>
 &lt;li>6+ branches → Full Distribution&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>2. Do you have in-house Drupal developers?&lt;/strong>&lt;/p></description></item><item><title>Digital Services Release 11.1.0.0 - Drupal 11 Stable</title><link>/blog/2025/11/18/digital-services-release-11.1.0.0-drupal-11-stable/</link><pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/18/digital-services-release-11.1.0.0-drupal-11-stable/</guid><description>&lt;h2 id="-drupal-11-stable-release">🎉 Drupal 11 Stable Release&lt;a class="td-heading-self-link" href="#-drupal-11-stable-release" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>2. Do you have in-house Drupal developers?&lt;/strong>&lt;/p></description></item><item><title>Digital Services Release 11.1.0.2</title><link>/blog/2025/12/01/digital-services-release-11.1.0.2/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>/blog/2025/12/01/digital-services-release-11.1.0.2/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>GroupExPro Removal:&lt;/strong>
+Removed &amp;lsquo;groupexpro&amp;rsquo; from installation types complete/custom. (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/321" target="_blank">PR #321&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="core--module-updates">Core &amp;amp; Module Updates&lt;a class="td-heading-self-link" href="#core--module-updates" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Virtual Y (yusaopeny_gated_content) 1.11.1-1.11.2&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Fix VimeoEvent provider compatibility with video_embed_field 3.0&lt;/li>
+&lt;li>Fix broken gated content styles on non-LB pages&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content/releases/tag/1.11.1" target="_blank">Release 1.11.1&lt;/a>, 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny_gated_content/releases/tag/1.11.2" target="_blank">Release 1.11.2&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>OpenY Custom (openy_custom) 3.1.1&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Drupal 11.1 compatibility: AJAX method deprecation and JavaScript modernization&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/open-y-subprojects/openy_custom/releases/tag/3.1.1" target="_blank">Release Details&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>PEF Schedule (y_pef_schedule) 2.1.0-2.1.1&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Move field.storage.block_content.field_block to optional config&lt;/li>
+&lt;li>Remove autoload configuration&lt;/li>
+&lt;li>
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/y_pef_schedule/releases/tag/2.1.0" target="_blank">Release 2.1.0&lt;/a>, 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/y_pef_schedule/releases/tag/2.1.1" target="_blank">Release 2.1.1&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Activity Finder (yusaopeny_activity_finder) 6.1.0-6.1.1&lt;/strong>&lt;/p></description></item><item><title>Digital Services Release 11.1.0.0 - Drupal 11 Stable</title><link>/blog/2025/11/18/digital-services-release-11.1.0.0-drupal-11-stable/</link><pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/18/digital-services-release-11.1.0.0-drupal-11-stable/</guid><description>&lt;h2 id="-drupal-11-stable-release">🎉 Drupal 11 Stable Release&lt;a class="td-heading-self-link" href="#-drupal-11-stable-release" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>We&amp;rsquo;re excited to announce the &lt;strong>first stable release&lt;/strong> of YMCA Website Services with Drupal 11 support! Version 11.1.0.0 marks a major milestone in the platform&amp;rsquo;s evolution, bringing improved performance, modern architecture, and enhanced capabilities for YMCA organizations.&lt;/p>
 &lt;p>This release represents months of work upgrading the entire platform from Drupal 10 to Drupal 11, including all contributed modules, custom components, and integrations.&lt;/p>
 &lt;hr>
