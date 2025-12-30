@@ -1,5 +1,10 @@
 ---
-title: Upgrade path
+title: Upgrade path (Developer Reference)
+description: Technical reference for developers working with configuration updates and hook_update_N.
+---
+
+This page provides technical reference for developers implementing configuration updates. For site administrators managing upgrades, see the [Upgrade Tool documentation]({{< relref "upgrade-tool" >}}).
+
 ---
 
 All changes in configurations should be added to appropriate hook\_update\_N in order to update already existing environments. We suggest to use https://www.drupal.org/project/confi for working with hook\_update\_N.
