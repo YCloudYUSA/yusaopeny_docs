@@ -14,7 +14,7 @@ Before upgrading, please review these [required version steps for your upgrade p
 - [Obtain a local copy of your production site](#obtain-local-copy-of-your-production-site)
 - [Run command](#run-command)
 - [Update the site](#update-the-site)
-- [Visit the YMCA Website Services upgrade tool dashboard](#visit-openy-upgrade-tool-dashboard)
+- [Visit the Upgrade Tool Dashboard](#visit-the-upgrade-tool-dashboard)
 - [Check for regressions/Smoke tests](#check-for-regressions)
 - [Backup current state of the updated site](#backup-current-state-of-the-updated-site)
 - [Proceed with an update to next version until succeeded (Start from item 1)](#proceed-with-an-update-to-next-version-until-succeeded-start-from-item-1)
@@ -92,11 +92,19 @@ drush cr
 
 which should clear up the errors.
 
-### Visit OpenY upgrade tool dashboard
+### Visit the Upgrade Tool Dashboard
 
-Review and revert or apply an updated version of the configs after the upgrade.
+After running updates, visit the **Upgrade Tool Dashboard** at `/admin/openy/development/upgrade-log/dashboard` to review configuration changes between your site and the distribution.
 
-![image](https://user-images.githubusercontent.com/563412/55151463-01759b00-5157-11e9-878e-dc744698a021.png)
+The dashboard shows:
+- **Manual Changes (Pending Review)** - Customizations that need your attention
+- **Reviewed Changes** - Customizations you've already acknowledged
+
+For each change, you can **Keep My Customization**, **Restore Distribution Version**, or **Edit Manually**.
+
+{{% alert title="Learn More" %}}
+See the complete [Upgrade Tool documentation]({{< relref "upgrade-tool" >}}) for detailed instructions on using the dashboard, understanding diffs, and best practices.
+{{% /alert %}}
 
 ### Check for regressions
 
