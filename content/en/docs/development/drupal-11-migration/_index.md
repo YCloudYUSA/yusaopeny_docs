@@ -96,6 +96,42 @@ Before upgrading to Drupal 11:
 
 ---
 
+## Upgrade Process for Drupal 11.1+
+
+### Critical: Database Update Command Order
+
+**Issue:** Starting with Drupal 11.1, the database schema includes new columns (e.g., `router.alias`). Running `drush cr` before `drush updb` will fail because the code expects columns that don't exist yet in the database.
+
+**Error Example:**
+```
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alias' in 'INSERT INTO'
+```
+
+**Solution:** Use `--no-cache-clear` flag with `drush updb` and run cache rebuild after:
+
+```bash
+# 1. Import database (if migrating from another environment)
+drush sql:drop -y
+drush sql:cli < database-dump.sql
+
+# 2. Run database updates WITHOUT cache clear
+drush updb --no-cache-clear -y
+
+# 3. Clear cache AFTER schema is updated
+drush cr
+```
+
+**Why This Works:**
+- `--no-cache-clear` prevents Drupal from rebuilding caches during `updb`
+- Database schema updates (like adding `router.alias` column) complete first
+- Cache rebuild then works because schema is up-to-date
+
+**References:**
+- [Drush updatedb documentation](https://www.drush.org/12.x/commands/updatedb/)
+- [Drupal upgrade guide](https://www.drupal.org/docs/upgrading-drupal)
+
+---
+
 ## Known Issues
 
 ### jQuery 4.x Script Compatibility
