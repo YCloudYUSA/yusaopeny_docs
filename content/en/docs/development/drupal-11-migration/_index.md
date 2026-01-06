@@ -127,7 +127,7 @@ drush cr
 - Cache rebuild then works because schema is up-to-date
 
 **References:**
-- [Drush updatedb documentation](https://www.drush.org/12.x/commands/updatedb/)
+- [Drush updatedb documentation](https://www.drush.org/13.x/commands/updatedb/)
 - [Drupal upgrade guide](https://www.drupal.org/docs/upgrading-drupal)
 
 ---
