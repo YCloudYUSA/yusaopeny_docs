@@ -51,6 +51,8 @@ When you delete content using the normal "Delete" button:
 3. The content is hidden from the website
 4. The content appears in the Trash view
 
+![Trash Delete content](trash-delete-example.png)
+
 Nothing changes in how you delete content - the Trash module works automatically in the background.
 
 ## Restoring Content
@@ -61,6 +63,8 @@ To restore deleted content:
 2. Locate the content you want to restore
 3. Click the **Restore** button in the Operations column
 4. Confirm the restoration in the popup
+
+![Restore content](trash-content-restore.png)
 
 Once restored:
 - Content returns to the normal content listing
@@ -77,6 +81,8 @@ To permanently delete content from the trash:
 3. Click the dropdown arrow next to the "Restore" button
 4. Select **Purge** from the dropdown
 5. Confirm the purge operation
+
+![Purge content](trash-content-purge.png)
 
 ⚠️ **Warning**: Purging permanently removes content from the database. This action cannot be undone.
 
@@ -135,6 +141,8 @@ Configure automatic cleanup via cron:
 - Runs periodically to check for expired items
 - Items older than the retention period are permanently deleted
 - Can be triggered manually via Drush: `drush trash:purge-expired`
+
+![Trash Settings](trash-settings.png)
 
 ## Content Preview
 
