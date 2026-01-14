@@ -40,6 +40,8 @@ The trash view shows all deleted content with:
 - Deletion date
 - Action buttons (Restore, Purge)
 
+![Trash view showing deleted content](trash-view.png)
+
 ## Deleting Content
 
 When you delete content using the normal "Delete" button:
