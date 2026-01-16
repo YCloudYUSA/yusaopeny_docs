@@ -125,6 +125,7 @@ If you don't see an option available or would like to rename a branch amenity, g
 The Branch Menu is a single-level sub-menu that displays within a branch page (and sub-pages) that allows users to drill down to additional content specific to that branch. The Branch Menu always shows "Branch Home" as its first link.
 
 - **Menu links**: A list of menu links to be displayed in the menu. Allows unlimited items but we recommend a maximum of 6-8 depending on the Link text length.
+- **Maximum Links** (Added in y_branch_menu 1.1.1): Allows you to override the default link limit and control the number of menu links displayed in the branch menu block. This field gives administrators more flexibility in managing menu display across different branches.
 
 ![Screenshot of the branch menu block.](branch-menu.png)
 
@@ -158,6 +159,8 @@ These blocks are available via **All system blocks** in Layout Builder:
     - Pre-release: [Mobile](<../../../../../../assets/img/designs/lb/Branch Menu Mobile.png>) | [Desktop](<../../../../../../assets/img/designs/lb/Branch Menu Desktop.png>)
   - Can be placed on a Landing Page to show the Branch Menu for a specific branch. Choose a branch in the **Location** field. This can be useful if you are creating sub-pages for a branch.
     - Added in the December 2024 release.
+  - **Maximum Links** field allows you to control how many menu links are displayed in the block.
+    - Added in y_branch_menu 1.1.1 (January 2026).
 
 One additional component is available that requires additional information:
 
