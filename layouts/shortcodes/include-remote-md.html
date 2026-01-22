@@ -17,10 +17,10 @@
 {{ $content := delimit (after 1 $split) $marker }}
 
 {{/*  Output stuff after the frontmatter if a frontmatter was detected. */}}
-{{- $content -}}
+{{- $content | $.Page.RenderString -}}
 {{ else }}
 {{/*  Output the content of the file if no frontmatter was detected. */}}
-{{- .Content -}}
+{{- .Content | $.Page.RenderString -}}
 {{ end }}
 {{ end }}
 {{ else }}
