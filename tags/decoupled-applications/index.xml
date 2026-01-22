@@ -7,26 +7,17 @@
 &lt;p>This module requires the following modules:&lt;/p>
 &lt;ul>
 &lt;li>
-
-
-
-&lt;a href="https://github.com/open-y-subprojects/openy_map" target="_blank">openy_map&lt;/a> (For pulling the list of location-related content types.)&lt;/li>
+&lt;p>&lt;a href="https://github.com/open-y-subprojects/openy_map" target="_blank">openy_map&lt;/a> (For pulling the list of location-related content types.)&lt;/li>&lt;/p>
 &lt;/ul>
 &lt;p>This module also requires one of the following to store data:&lt;/p>
 &lt;ul>
 &lt;li>A Solr server (preferably a server or index per-environment).&lt;/li>
 &lt;li>A subscription with access to the 
-
-
-
-&lt;a href="https://api.daxko.com/v3/docs" target="_blank">Daxko API&lt;/a>.&lt;/li>
+&lt;p>&lt;a href="https://api.daxko.com/v3/docs" target="_blank">Daxko API&lt;/a>.&lt;/li>&lt;/p>
 &lt;/ul>
 &lt;h2 id="recommended-modules">Recommended modules&lt;a class="td-heading-self-link" href="#recommended-modules" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Activity Finder is most often used with a 
-
-
-
-&lt;a href="https://ds-docs.y.org/docs/development/program-event-framework/#syncers" target="_blank">syncer&lt;/a> to pull data from an external source.&lt;/p></description></item><item><title>Activity Finder</title><link>/docs/user-documentation/schedules/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/activity-finder/</guid><description>&lt;p>Activity Finder combines data from 
+&lt;p>&lt;a href="https://ds-docs.y.org/docs/development/program-event-framework/#syncers" target="_blank">syncer&lt;/a> to pull data from an external source.&lt;/p></description></item><item><title>Activity Finder</title><link>/docs/user-documentation/schedules/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/schedules/activity-finder/</guid><description>&lt;p>Activity Finder combines data from 
 
 
 
@@ -174,42 +165,23 @@ It includes a Vue.js component, &lt;code>fullcalendar-app&lt;/code>, to display 
 &lt;h3 id="requirements">Requirements&lt;a class="td-heading-self-link" href="#requirements" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ul>
 &lt;li>
-
-
-
-&lt;a href="https://www.drupal.org/project/drupal" target="_blank">Drupal&lt;/a>&lt;/li>
+&lt;p>&lt;a href="https://www.drupal.org/project/drupal" target="_blank">Drupal&lt;/a>&lt;/li>&lt;/p>
 &lt;li>
-
-
-
-&lt;a href="https://github.com/ynorth-projects/openy_repeat" target="_blank">Open Y Repeat&lt;/a>&lt;/li>
+&lt;p>&lt;a href="https://github.com/ynorth-projects/openy_repeat" target="_blank">Open Y Repeat&lt;/a>&lt;/li>&lt;/p>
 &lt;li>
-
-
-
-&lt;a href="https://vuejs.org/" target="_blank">Vue.js 3&lt;/a>&lt;/li>
+&lt;p>&lt;a href="https://vuejs.org/" target="_blank">Vue.js 3&lt;/a>&lt;/li>&lt;/p>
 &lt;li>
-
-
-
-&lt;a href="https://axios-http.com/" target="_blank">Axios-HTTP&lt;/a>&lt;/li>
+&lt;p>&lt;a href="https://axios-http.com/" target="_blank">Axios-HTTP&lt;/a>&lt;/li>&lt;/p>
 &lt;li>
-
-
-
-&lt;a href="https://fullcalendar.io/" target="_blank">FullCalendar&lt;/a>&lt;/li>
+&lt;p>&lt;a href="https://fullcalendar.io/" target="_blank">FullCalendar&lt;/a>&lt;/li>&lt;/p>
 &lt;/ul>
 &lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">composer require ycloudyusa/y_pef_schedule
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drush en y_pef_schedule lb_simple_schedule
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol>
 &lt;li>Install as you would normally install a contributed Drupal module. For further information, see
-
-
-
-
-&lt;a href="https://www.drupal.org/docs/extending-drupal/installing-drupal-modules" target="_blank">Installing Drupal Modules&lt;/a>.&lt;/li>
-&lt;li>Enable the module by navigating to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>) in your Drupal admin interface, then enabling &amp;quot;Y PEF Schedules Admin tool&amp;quot; and &amp;quot;LB Simple Schedule&amp;quot;.&lt;/li>
+&lt;p>&lt;a href="https://www.drupal.org/docs/extending-drupal/installing-drupal-modules" target="_blank">Installing Drupal Modules&lt;/a>.&lt;/li>&lt;/p>
+&lt;li>Enable the module by navigating to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Extend&lt;/strong> (&lt;code>/admin/modules&lt;/code>) in your Drupal admin interface, then enabling &amp;ldquo;Y PEF Schedules Admin tool&amp;rdquo; and &amp;ldquo;LB Simple Schedule&amp;rdquo;.&lt;/li>
 &lt;/ol>
 &lt;h2 id="configuration">Configuration&lt;a class="td-heading-self-link" href="#configuration" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ol>

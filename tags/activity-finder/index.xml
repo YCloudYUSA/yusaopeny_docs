@@ -7,26 +7,17 @@
 &lt;p>This module requires the following modules:&lt;/p>
 &lt;ul>
 &lt;li>
-
-
-
-&lt;a href="https://github.com/open-y-subprojects/openy_map" target="_blank">openy_map&lt;/a> (For pulling the list of location-related content types.)&lt;/li>
+&lt;p>&lt;a href="https://github.com/open-y-subprojects/openy_map" target="_blank">openy_map&lt;/a> (For pulling the list of location-related content types.)&lt;/li>&lt;/p>
 &lt;/ul>
 &lt;p>This module also requires one of the following to store data:&lt;/p>
 &lt;ul>
 &lt;li>A Solr server (preferably a server or index per-environment).&lt;/li>
 &lt;li>A subscription with access to the 
-
-
-
-&lt;a href="https://api.daxko.com/v3/docs" target="_blank">Daxko API&lt;/a>.&lt;/li>
+&lt;p>&lt;a href="https://api.daxko.com/v3/docs" target="_blank">Daxko API&lt;/a>.&lt;/li>&lt;/p>
 &lt;/ul>
 &lt;h2 id="recommended-modules">Recommended modules&lt;a class="td-heading-self-link" href="#recommended-modules" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Activity Finder is most often used with a 
-
-
-
-&lt;a href="https://ds-docs.y.org/docs/development/program-event-framework/#syncers" target="_blank">syncer&lt;/a> to pull data from an external source.&lt;/p></description></item><item><title>Activity Finder</title><link>/docs/user-documentation/layout-builder/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/activity-finder/</guid><description>&lt;p>Activity Finder combines data from 
+&lt;p>&lt;a href="https://ds-docs.y.org/docs/development/program-event-framework/#syncers" target="_blank">syncer&lt;/a> to pull data from an external source.&lt;/p></description></item><item><title>Activity Finder</title><link>/docs/user-documentation/layout-builder/activity-finder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/user-documentation/layout-builder/activity-finder/</guid><description>&lt;p>Activity Finder combines data from 
 
 
 
