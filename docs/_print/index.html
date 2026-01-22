@@ -3713,72 +3713,72 @@ It includes a Vue.js component, <code>fullcalendar-app</code>, to display and in
 > - <code>Salesforce/TractionRec source field</code> → <code>Drupal destination field</code></p><ul><li><strong>Program</strong> - from <code>programs.json</code> / TREC Program Categories<ul><li>Id → id</li><li>Name → Title</li><li>Available → Published (<code>status</code>)</li></ul></li><li><strong>Program Subcategory</strong> - from <code>program_categories.json</code>/ TREC Programs<ul><li>Id → id</li><li>Name → Title</li><li>Program → Program (<code>field_category_program</code>) via a lookup to the Programs import</li><li>Available → Published (<code>status</code>)</li></ul></li><li><strong>Activity</strong> - from <code>classes.json</code> / TREC Courses<ul><li>Id → id</li><li>Name → Title</li><li>Program/Id → Program Subcategory (<code>field_activity_category</code>) via a lookup to the Program Subcategory import</li><li>Available → Published (<code>status</code>)</li></ul></li><li><strong>Class</strong> - from <code>classes.json</code> / TREC Courses<ul><li>Id → id<ul><li>The Class Id will also be used to set the Activity (<code>field_class_activity</code>)</li></ul></li><li>Name → Title</li><li>Program/Id → <em>ignored</em></li><li>Description/Rich Description → Description (<code>field_class_description</code>)<ul><li>If a Rich Description is set, it will be used, otherwise the Description field will be used.</li></ul></li><li>Available → Published (<code>status</code>)</li></ul></li><li><strong>Session</strong> - from <code>sessions.json</code> / TREC Sessions<ul><li>Course_Option/Name → Title</li><li>Course_Option/ID → id<ul><li>Also used to generate the Registration link URL using the Community URL set in Traction Rec auth settings (<code>/admin/openy/integrations/traction-rec/auth</code>).</li></ul></li><li>Course_Session/Course/Id → Class</li><li>Course_Session/Course/Name → Course</li><li>Course_Session/Course/Description & Rich_Description → Description (<code>field_class_description</code>)<ul><li>If a Rich Description is set, it will be used, otherwise the Description field will be used.</li></ul></li><li>Course_Option/Start_Date → Session Time > Start date</li><li>Course_Option/Start_Time → Session Time > Start time</li><li>Course_Option/End_Date → Session Time > End date</li><li>Course_Option/End_Time → Session Time > End time</li><li>Course_Option/Day_of_Week → Session Time > Days</li><li>Course_Option/Age_Min → Min Age (<code>field_session_min_age</code>) converted to months</li><li>Course_Option/Age_Max → Max Age (<code>field_session_max_age</code>) converted to months</li><li>Course_Option/Location/Name → Location (<code>field_session_location</code>)<ul><li>Location Name is used as a backup in case the Location Mapping does not match.</li></ul></li><li>Course_Option/Location/Id → Location (<code>field_session_location</code>)<ul><li>Location ID is used to attempt to match a location in the Location mapping in the Traction Rec importer settings (<code>/admin/openy/integrations/traction-rec/importer</code>)</li></ul></li><li>Course_Option/Instructor → Instructor (<code>field_session_instructor</code>) trimmed to 255 characters</li><li>Course_Option/Available_Online → Online registration (<code>field_session_online</code>)</li><li>Course_Option/Available → Published (<code>status</code>)</li><li>Course_Option/Register_Online_From_Date → not used</li><li>Course_Option/Register_Online_To_Date → not used</li><li>Course_Option/Capacity → Initial Availability (<code>field_availability</code>)</li><li>Course_Option/Total_Capacity_Available → Initial Availability (<code>field_availability</code>)</li><li>Course_Option/Unlimited_Capacity → if set, overrides Capacity and sets Initial Availability (<code>field_availability</code>) to 100</li><li>Course_Option/Unlimited_Waitlist_Capacity → Wait list Unlimited Capacity (<code>waitlist_unlimited_capacity</code>)</li><li>Course_Option/Waitlist_Total → Wait list capacity (<code>waitlist_capacity</code>)</li><li>Course_Option/Product/Price_Description → Price description (<code>field_price_description</code>)</li><li>Course_Session/Id → Class (<code>field_session_class</code>) via a lookup to the Class import</li></ul></li></ul><h2 id=data-model>Data Model<a class=td-heading-self-link href=#data-model aria-label="Heading self-link"></a></h2><p>This module assumes a Traction Rec "standard" data model in its queries. Any deviations from this model will require overriding the queries in <code>src/TractionRec.php</code>.</p><p>This model contains a subset of the fields in Traction Rec that are relevant to our usage. All entities have more fields than listed.</p><p>Field types are taken from Salesforce's <strong>Setup</strong> > <strong>Object Manager</strong> > <strong>{Entity}</strong> > <strong>Fields & Relationships</strong>.</p><ul><li>Number field options are: <code>number(length_decimal places)</code></li></ul><pre class=mermaid>erDiagram
     Program_Category__c {
         id Id
-        text(80) Name
+        &amp;#34;text(80)&amp;#34; Name
     }
     Program__c {
         id Id
-        text(80) Name
+        &amp;#34;text(80)&amp;#34; Name
         checkbox Available__c
-        textArea(255) Description__c
+        &amp;#34;textArea(255)&amp;#34; Description__c
     }
     Program_Category_Tag__c {
         id Id
         autoNumber Name
-        lookup(Program) Program__c
-        lookup(Program_Category) Program_Category_c
+        &amp;#34;lookup(Program)&amp;#34; Program__c
+        &amp;#34;lookup(Program_Category)&amp;#34; Program_Category_c
     }
     Course__c {
         id Id
-        text(80) Name
+        &amp;#34;text(80)&amp;#34; Name
         checkbox Available__c
-        text(128) Code__c
-        longTextArea(640) Description__c
-        lookup(Program) Program__c
+        &amp;#34;text(128)&amp;#34; Code__c
+        &amp;#34;longTextArea(640)&amp;#34; Description__c
+        &amp;#34;lookup(Program)&amp;#34; Program__c
         richTextArea Rich_Description__c
     }
     Course_Session__c {
         id Id
-        text(80) Name
+        &amp;#34;text(80)&amp;#34; Name
         checkbox Available__C
-        text(128) Code__c
-        lookup(Course) Course__c
-        longTextArea(640) Description__c
-        number(18_0) Num_Option_Entitlements__c
-        lookup(ProductAndDiscount) Product__C
+        &amp;#34;text(128)&amp;#34; Code__c
+        &amp;#34;lookup(Course)&amp;#34; Course__c
+        &amp;#34;longTextArea(640)&amp;#34; Description__c
+        &amp;#34;number(18_0)&amp;#34; Num_Option_Entitlements__c
+        &amp;#34;lookup(ProductAndDiscount)&amp;#34; Product__C
         richTextArea Rich_Description__c
         sum Total_Option_Capacity__c
-        formula(number) Total_Option_Capacity_Remaining__C
+        &amp;#34;formula(number)&amp;#34; Total_Option_Capacity_Remaining__C
         sum Total_Option_Registrants__c
         count Total_Options_Available__c
     }
     Course_Option__c {
         id Id
-        text(80) Name
-        number(3_1) Age_Max__c
-        number(3_1) Age_Min__c
+        &amp;#34;text(80)&amp;#34; Name
+        &amp;#34;number(3_1)&amp;#34; Age_Max__c
+        &amp;#34;number(3_1)&amp;#34; Age_Min__c
         checkbox Available__c
-        number(18_0) Capacity__c
-        picklist(multiSelect) Day_of_Week__c
+        &amp;#34;number(18_0)&amp;#34; Capacity__c
+        &amp;#34;picklist(multiSelect)&amp;#34; Day_of_Week__c
         date End_Date__c
-        text(8) End_Time__c
-        text(128) Instructor__c
-        lookup(ProductAndDiscount) Product__c
-        number(18_0) Registration_Total_c
-        longTextArea(3500) Setup_Notes__c
-        number(3_0) Setup_Time_Required___c
+        &amp;#34;text(8)&amp;#34; End_Time__c
+        &amp;#34;text(128)&amp;#34; Instructor__c
+        &amp;#34;lookup(ProductAndDiscount)&amp;#34; Product__c
+        &amp;#34;number(18_0)&amp;#34; Registration_Total_c
+        &amp;#34;longTextArea(3500)&amp;#34; Setup_Notes__c
+        &amp;#34;number(3_0)&amp;#34; Setup_Time_Required___c
         date Start_Date__c
-        text(8) Start_Time__c
-        longTextArea(3500) Tear_Down_Notes__c
-        number(3_0) Tear_Down_Time_Required__C
+        &amp;#34;text(8)&amp;#34; Start_Time__c
+        &amp;#34;longTextArea(3500)&amp;#34; Tear_Down_Notes__c
+        &amp;#34;number(3_0)&amp;#34; Tear_Down_Time_Required__C
     }
     Course_Session_Option__c {
         id Id
         autoNumber Name
-        lookup(CourseOption) Course_Option__c
-        masterDetail(CourseSession) Course_Session__c
+        &amp;#34;lookup(CourseOption)&amp;#34; Course_Option__c
+        &amp;#34;masterDetail(CourseSession)&amp;#34; Course_Session__c
         checkbox Option_Available__c
-        number(18_0) Option_Capacity__c
-        number(18_0) Option_Registration_Total__c
+        &amp;#34;number(18_0)&amp;#34; Option_Capacity__c
+        &amp;#34;number(18_0)&amp;#34; Option_Registration_Total__c
     }
     Program_Category__c ||--|{ Program_Category_Tag__c : &amp;#34;&amp;#34;
     Program__c ||--|{ Program_Category_Tag__c : &amp;#34;&amp;#34;
