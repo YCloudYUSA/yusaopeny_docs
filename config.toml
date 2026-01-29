@@ -204,6 +204,12 @@ enable = false
 	icon = "fab fa-slack"
         desc = "Chat with developers and community members. Email us to request access."
 
+# Enable Mermaid diagrams rendering
+# https://www.docsy.dev/docs/content/diagrams-and-formulae/
+[params.mermaid]
+enable = true
+version = "11.4.1"
+
 [module]
   # uncomment line below for temporary local development of module
   # replacements = "github.com/google/docsy -> ../../docsy"
