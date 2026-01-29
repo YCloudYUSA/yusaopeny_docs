@@ -1,0 +1,6 @@
+{{- /* Render mermaid code blocks without HTML entity encoding */ -}}
+{{- /* This prevents Hugo from encoding " as &#34; which breaks Mermaid parsing */ -}}
+<pre class="mermaid">
+{{- .Inner | safeHTML -}}
+</pre>
+{{- .Page.Store.Set "hasmermaid" true -}}
