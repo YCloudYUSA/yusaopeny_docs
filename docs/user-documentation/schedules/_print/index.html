@@ -50,13 +50,13 @@ Auto<svg class="bi ms-auto d-none"><use href="#check2"/></svg></button></li></ul
 <a href=../../content-types/activity-class-session#activity>Activities</a>, which require
 <a href=../../content-types/program-subcategory>Program Subcategories</a>, which require
 <a href=../../content-types/program>Programs</a>.</p><pre class=mermaid>flowchart LR
-    subgraph &#34;PEF Relationships&#34;
+    subgraph "PEF Relationships"
         direction LR
-        Session -- requires --&gt; Class
-        Class -- references --&gt; Activity
-        Activity -- references --&gt; PS
-        PS -- requires --&gt; Program
-        PS[&#34;Program Subcategory&#34;]
+        Session -- requires --> Class
+        Class -- references --> Activity
+        Activity -- references --> PS
+        PS -- requires --> Program
+        PS["Program Subcategory"]
     end</pre><p>You will need to create <strong>at least</strong> a Class and Activity to start adding events to the calendar. Go to <strong>Admin</strong> > <strong>Content</strong> > <strong>Add Content</strong> (<code>/node/add</code>) to start adding items.</p><p>If you have preexisting content for any of these content types you can use them here. You may first need to configure the Activity Color for existing Activities.</p><h3 id=activity-colors>Activity colors<a class=td-heading-self-link href=#activity-colors aria-label="Heading self-link"></a></h3><p>PEF Schedules adds a new <strong>Color</strong> field to Activities which is used to style the categories on the calendar.</p><p><figure class=image-caption><a href=/docs/user-documentation/schedules/simple-schedules/simple-schedules--activity-colors.png title="View original image"><img alt="An example of different colored Activity labels" srcset="/docs/user-documentation/schedules/simple-schedules/simple-schedules--activity-colors_hu13936270175059427193.png 458w,
 /docs/user-documentation/schedules/simple-schedules/simple-schedules--activity-colors_hu14243133512785812976.png 726w,
 /docs/user-documentation/schedules/simple-schedules/simple-schedules--activity-colors_hu17014808621598212358.png 1200w" sizes=50vw src=/docs/user-documentation/schedules/simple-schedules/simple-schedules--activity-colors_hu13936270175059427193.png><figcaption><i class="fa-solid fa-external-link fa-fw"></i></figcaption></a></figure></p><p>The <strong>Color</strong> field takes a hex value (<code>#XXXXXX</code> where <code>X</code> is a hexadecimal character (<code>0-9</code>, <code>a-f</code>)). We recommend using colors from the

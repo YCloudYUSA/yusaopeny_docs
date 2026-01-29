@@ -671,8 +671,8 @@ A: Yes, anytime. You own your code and data completely.</p><hr><h2 id=need-help>
     end
     ctStyles[Content Type Styles]
   end
-  blockStyles -- override --&gt; pageStyles
-  pageStyles -- override --&gt; ctStyles
+  blockStyles -- override --> pageStyles
+  pageStyles -- override --> ctStyles
   class ct ct
   class page page
   class block block</pre><h3 id=content-type-styles>Content Type styles<a class=td-heading-self-link href=#content-type-styles aria-label="Heading self-link"></a></h3><blockquote><p><strong>Note:</strong> This configuration may not be accessible to all content editors. Ask an administrator for assistance if necessary.</p></blockquote><details><summary>The default values for page-level Y Styles options are set in the Content Type display options.</summary><p>To access them:</p><ul><li>Go to <strong>Admin</strong> > <strong>Structure</strong> > <strong>Content types</strong> > <strong>Landing Page (Layout Builder)</strong> (or another LB-enabled content type) > <strong>Manage display</strong></li><li>Ensure you&rsquo;re acting on the <strong>Default</strong> display, then click <strong>Manage layout</strong>.<figure class=image-caption><a href=/docs/user-documentation/layout-builder/advanced-options/lb-advanced--manage-layout.png title="View original image"><img alt="A screenshot of the &ldquo;Manage display&rdquo; administration screen." srcset="/docs/user-documentation/layout-builder/advanced-options/lb-advanced--manage-layout_hu14826420805829773244.png 458w,
@@ -2173,13 +2173,13 @@ For recommended image sizes for your YMCA Website Services site, talk to your ag
 <a href=../../content-types/activity-class-session#activity>Activities</a>, which require
 <a href=../../content-types/program-subcategory>Program Subcategories</a>, which require
 <a href=../../content-types/program>Programs</a>.</p><pre class=mermaid>flowchart LR
-    subgraph &#34;PEF Relationships&#34;
+    subgraph "PEF Relationships"
         direction LR
-        Session -- requires --&gt; Class
-        Class -- references --&gt; Activity
-        Activity -- references --&gt; PS
-        PS -- requires --&gt; Program
-        PS[&#34;Program Subcategory&#34;]
+        Session -- requires --> Class
+        Class -- references --> Activity
+        Activity -- references --> PS
+        PS -- requires --> Program
+        PS["Program Subcategory"]
     end</pre><p>You will need to create <strong>at least</strong> a Class and Activity to start adding events to the calendar. Go to <strong>Admin</strong> > <strong>Content</strong> > <strong>Add Content</strong> (<code>/node/add</code>) to start adding items.</p><p>If you have preexisting content for any of these content types you can use them here. You may first need to configure the Activity Color for existing Activities.</p><h3 id=activity-colors>Activity colors<a class=td-heading-self-link href=#activity-colors aria-label="Heading self-link"></a></h3><p>PEF Schedules adds a new <strong>Color</strong> field to Activities which is used to style the categories on the calendar.</p><p><figure class=image-caption><a href=/docs/user-documentation/schedules/simple-schedules/simple-schedules--activity-colors.png title="View original image"><img alt="An example of different colored Activity labels" srcset="/docs/user-documentation/schedules/simple-schedules/simple-schedules--activity-colors_hu13936270175059427193.png 458w,
 /docs/user-documentation/schedules/simple-schedules/simple-schedules--activity-colors_hu14243133512785812976.png 726w,
 /docs/user-documentation/schedules/simple-schedules/simple-schedules--activity-colors_hu17014808621598212358.png 1200w" sizes=50vw src=/docs/user-documentation/schedules/simple-schedules/simple-schedules--activity-colors_hu13936270175059427193.png><figcaption><i class="fa-solid fa-external-link fa-fw"></i></figcaption></a></figure></p><p>The <strong>Color</strong> field takes a hex value (<code>#XXXXXX</code> where <code>X</code> is a hexadecimal character (<code>0-9</code>, <code>a-f</code>)). We recommend using colors from the
@@ -3448,7 +3448,7 @@ erDiagram
         entityRefProgSub field_activity_category
     }
     activity }o--|| program_subcategory : field_activity_category
-    &#34;class&#34; {
+    "class" {
         entityRefActivity field_class_activity
         paragraph field_bottom_content
         paragraph field_content
@@ -3457,7 +3457,7 @@ erDiagram
         meta field_meta_tags
         paragraph field_sidebar_content
     }
-    &#34;class&#34; }o--|| activity : field_class_activity
+    "class" }o--|| activity : field_class_activity
     session {
         listText field_activity_type
         entityRefClass field_session_class
@@ -3482,7 +3482,7 @@ erDiagram
         paragraph field_session_time
         numberInt field_wait_list_availability
     }
-    session }|--|| &#34;class&#34; : field_session_class
+    session }|--|| "class" : field_session_class
     session ||--o{ session_time_paragraph : field_session_type
     session_time_paragraph {
         dateRange field_session_time_date
@@ -3685,79 +3685,79 @@ The username already exists in this or another Salesforce organization. Username
 </code></pre><p><a href=https://github.com/YCloudYUSA/openy_traction_rec/blob/main/src/TractionRec.php target=_blank>TractionRec.php for the full queries</a>):</p></p><h3 id=object-mapping>Object Mapping<a class=td-heading-self-link href=#object-mapping aria-label="Heading self-link"></a></h3><p>The fetcher outputs these files:</p><ul><li><code>classes.json</code> - from Courses<ul><li>Maps to both Activities and Classes. Since TREC does not have this distinction, information in the resulting Activities and Classes in Drupal is duplicated.</li></ul></li><li><code>locations.json</code> - from Locations<ul><li>This file is unused, but Locations map to Location via the Session import.</li></ul></li><li><code>program_categories.json</code> - from Program Category Tags<ul><li>Maps to Program.</li></ul></li><li><code>programs.json</code> - from Programs<ul><li>Maps to Program Subcategory.</li></ul></li><li><code>sessions.json</code> - from Course Options<ul><li>Maps to Session.</li></ul></li></ul><p><strong>Note:</strong> Traction Rec&rsquo;s labels for &ldquo;Programs&rdquo; and their child groupings are different:</p><ul><li>Traction Rec: &ldquo;Program Category&rdquo; is the parent of &ldquo;Program&rdquo;.</li><li>Drupal: &ldquo;Program&rdquo; is the parent of &ldquo;Program Subcategory&rdquo;.</li></ul><h3 id=mapping-to-drupal-fields>Mapping to Drupal fields<a class=td-heading-self-link href=#mapping-to-drupal-fields aria-label="Heading self-link"></a></h3><p>Those files are then imported into Drupal content via<p><a href=https://github.com/YCloudYUSA/openy_traction_rec/tree/main/modules/openy_traction_rec_import/config/install target=_blank>importers</a> (in config items that start with <code>migrate_plus.</code>). The import goes as follows:</p></p><blockquote><ul><li>Drupal Content Type (bundle)<ul><li><code>Salesforce/TractionRec source field</code> → <code>Drupal destination field</code></li></ul></li></ul></blockquote><ul><li><strong>Program</strong> - from <code>programs.json</code> / TREC Program Categories<ul><li>Id → id</li><li>Name → Title</li><li>Available → Published (<code>status</code>)</li></ul></li><li><strong>Program Subcategory</strong> - from <code>program_categories.json</code>/ TREC Programs<ul><li>Id → id</li><li>Name → Title</li><li>Program → Program (<code>field_category_program</code>) via a lookup to the Programs import</li><li>Available → Published (<code>status</code>)</li></ul></li><li><strong>Activity</strong> - from <code>classes.json</code> / TREC Courses<ul><li>Id → id</li><li>Name → Title</li><li>Program/Id → Program Subcategory (<code>field_activity_category</code>) via a lookup to the Program Subcategory import</li><li>Available → Published (<code>status</code>)</li></ul></li><li><strong>Class</strong> - from <code>classes.json</code> / TREC Courses<ul><li>Id → id<ul><li>The Class Id will also be used to set the Activity (<code>field_class_activity</code>)</li></ul></li><li>Name → Title</li><li>Program/Id → <em>ignored</em></li><li>Description/Rich Description → Description (<code>field_class_description</code>)<ul><li>If a Rich Description is set, it will be used, otherwise the Description field will be used.</li></ul></li><li>Available → Published (<code>status</code>)</li></ul></li><li><strong>Session</strong> - from <code>sessions.json</code> / TREC Sessions<ul><li>Course_Option/Name → Title</li><li>Course_Option/ID → id<ul><li>Also used to generate the Registration link URL using the Community URL set in Traction Rec auth settings (<code>/admin/openy/integrations/traction-rec/auth</code>).</li></ul></li><li>Course_Session/Course/Id → Class</li><li>Course_Session/Course/Name → Course</li><li>Course_Session/Course/Description & Rich_Description → Description (<code>field_class_description</code>)<ul><li>If a Rich Description is set, it will be used, otherwise the Description field will be used.</li></ul></li><li>Course_Option/Start_Date → Session Time > Start date</li><li>Course_Option/Start_Time → Session Time > Start time</li><li>Course_Option/End_Date → Session Time > End date</li><li>Course_Option/End_Time → Session Time > End time</li><li>Course_Option/Day_of_Week → Session Time > Days</li><li>Course_Option/Age_Min → Min Age (<code>field_session_min_age</code>) converted to months</li><li>Course_Option/Age_Max → Max Age (<code>field_session_max_age</code>) converted to months</li><li>Course_Option/Location/Name → Location (<code>field_session_location</code>)<ul><li>Location Name is used as a backup in case the Location Mapping does not match.</li></ul></li><li>Course_Option/Location/Id → Location (<code>field_session_location</code>)<ul><li>Location ID is used to attempt to match a location in the Location mapping in the Traction Rec importer settings (<code>/admin/openy/integrations/traction-rec/importer</code>)</li></ul></li><li>Course_Option/Instructor → Instructor (<code>field_session_instructor</code>) trimmed to 255 characters</li><li>Course_Option/Available_Online → Online registration (<code>field_session_online</code>)</li><li>Course_Option/Available → Published (<code>status</code>)</li><li>Course_Option/Register_Online_From_Date → not used</li><li>Course_Option/Register_Online_To_Date → not used</li><li>Course_Option/Capacity → Initial Availability (<code>field_availability</code>)</li><li>Course_Option/Total_Capacity_Available → Initial Availability (<code>field_availability</code>)</li><li>Course_Option/Unlimited_Capacity → if set, overrides Capacity and sets Initial Availability (<code>field_availability</code>) to 100</li><li>Course_Option/Unlimited_Waitlist_Capacity → Wait list Unlimited Capacity (<code>waitlist_unlimited_capacity</code>)</li><li>Course_Option/Waitlist_Total → Wait list capacity (<code>waitlist_capacity</code>)</li><li>Course_Option/Product/Price_Description → Price description (<code>field_price_description</code>)</li><li>Course_Session/Id → Class (<code>field_session_class</code>) via a lookup to the Class import</li></ul></li></ul><h2 id=data-model>Data Model<a class=td-heading-self-link href=#data-model aria-label="Heading self-link"></a></h2><p>This module assumes a Traction Rec &ldquo;standard&rdquo; data model in its queries. Any deviations from this model will require overriding the queries in <code>src/TractionRec.php</code>.</p><p>This model contains a subset of the fields in Traction Rec that are relevant to our usage. All entities have more fields than listed.</p><p>Field types are taken from Salesforce&rsquo;s <strong>Setup</strong> > <strong>Object Manager</strong> > <strong>{Entity}</strong> > <strong>Fields & Relationships</strong>.</p><ul><li>Number field options are: <code>number(length_decimal places)</code></li></ul><pre class=mermaid>erDiagram
     Program_Category__c {
         id Id
-        &#34;text(80)&#34; Name
+        "text(80)" Name
     }
     Program__c {
         id Id
-        &#34;text(80)&#34; Name
+        "text(80)" Name
         checkbox Available__c
-        &#34;textArea(255)&#34; Description__c
+        "textArea(255)" Description__c
     }
     Program_Category_Tag__c {
         id Id
         autoNumber Name
-        &#34;lookup(Program)&#34; Program__c
-        &#34;lookup(Program_Category)&#34; Program_Category_c
+        "lookup(Program)" Program__c
+        "lookup(Program_Category)" Program_Category_c
     }
     Course__c {
         id Id
-        &#34;text(80)&#34; Name
+        "text(80)" Name
         checkbox Available__c
-        &#34;text(128)&#34; Code__c
-        &#34;longTextArea(640)&#34; Description__c
-        &#34;lookup(Program)&#34; Program__c
+        "text(128)" Code__c
+        "longTextArea(640)" Description__c
+        "lookup(Program)" Program__c
         richTextArea Rich_Description__c
     }
     Course_Session__c {
         id Id
-        &#34;text(80)&#34; Name
+        "text(80)" Name
         checkbox Available__C
-        &#34;text(128)&#34; Code__c
-        &#34;lookup(Course)&#34; Course__c
-        &#34;longTextArea(640)&#34; Description__c
-        &#34;number(18_0)&#34; Num_Option_Entitlements__c
-        &#34;lookup(ProductAndDiscount)&#34; Product__C
+        "text(128)" Code__c
+        "lookup(Course)" Course__c
+        "longTextArea(640)" Description__c
+        "number(18_0)" Num_Option_Entitlements__c
+        "lookup(ProductAndDiscount)" Product__C
         richTextArea Rich_Description__c
         sum Total_Option_Capacity__c
-        &#34;formula(number)&#34; Total_Option_Capacity_Remaining__C
+        "formula(number)" Total_Option_Capacity_Remaining__C
         sum Total_Option_Registrants__c
         count Total_Options_Available__c
     }
     Course_Option__c {
         id Id
-        &#34;text(80)&#34; Name
-        &#34;number(3_1)&#34; Age_Max__c
-        &#34;number(3_1)&#34; Age_Min__c
+        "text(80)" Name
+        "number(3_1)" Age_Max__c
+        "number(3_1)" Age_Min__c
         checkbox Available__c
-        &#34;number(18_0)&#34; Capacity__c
-        &#34;picklist(multiSelect)&#34; Day_of_Week__c
+        "number(18_0)" Capacity__c
+        "picklist(multiSelect)" Day_of_Week__c
         date End_Date__c
-        &#34;text(8)&#34; End_Time__c
-        &#34;text(128)&#34; Instructor__c
-        &#34;lookup(ProductAndDiscount)&#34; Product__c
-        &#34;number(18_0)&#34; Registration_Total_c
-        &#34;longTextArea(3500)&#34; Setup_Notes__c
-        &#34;number(3_0)&#34; Setup_Time_Required___c
+        "text(8)" End_Time__c
+        "text(128)" Instructor__c
+        "lookup(ProductAndDiscount)" Product__c
+        "number(18_0)" Registration_Total_c
+        "longTextArea(3500)" Setup_Notes__c
+        "number(3_0)" Setup_Time_Required___c
         date Start_Date__c
-        &#34;text(8)&#34; Start_Time__c
-        &#34;longTextArea(3500)&#34; Tear_Down_Notes__c
-        &#34;number(3_0)&#34; Tear_Down_Time_Required__C
+        "text(8)" Start_Time__c
+        "longTextArea(3500)" Tear_Down_Notes__c
+        "number(3_0)" Tear_Down_Time_Required__C
     }
     Course_Session_Option__c {
         id Id
         autoNumber Name
-        &#34;lookup(CourseOption)&#34; Course_Option__c
-        &#34;masterDetail(CourseSession)&#34; Course_Session__c
+        "lookup(CourseOption)" Course_Option__c
+        "masterDetail(CourseSession)" Course_Session__c
         checkbox Option_Available__c
-        &#34;number(18_0)&#34; Option_Capacity__c
-        &#34;number(18_0)&#34; Option_Registration_Total__c
+        "number(18_0)" Option_Capacity__c
+        "number(18_0)" Option_Registration_Total__c
     }
-    Program_Category__c ||--|{ Program_Category_Tag__c : &#34;&#34;
-    Program__c ||--|{ Program_Category_Tag__c : &#34;&#34;
-    Program__c ||--|{ Course__c : &#34;&#34;
-    Course__c ||--|{ Course_Session__c : &#34;&#34;
-    Course_Session__c ||--|{ Course_Session_Option__c : &#34;&#34;
-    Course_Option__c ||--|{ Course_Session_Option__c : &#34;&#34;</pre><h2 id=using-google-tag-manager-gtm>Using Google Tag Manager (GTM)<a class=td-heading-self-link href=#using-google-tag-manager-gtm aria-label="Heading self-link"></a></h2><p>By<p><a href=https://developer.salesforce.com/blogs/2019/04/google-tag-manager-for-community-cloud target=_blank>integrating Google Tag Manager (GTM) with your Salesforce Community</a>, you can enable your marketing team to manage the deployment of marketing tags and tracking pixels, without relying on a developer to modify any code.</p></p><p>You may also want to<p><a href=https://ds-docs.y.org/docs/howto/track-users/#cross-domain-tracking target=_blank>configure cross-domain tracking</a> on your Drupal site.</p></p><h2 id=import>Import<a class=td-heading-self-link href=#import aria-label="Heading self-link"></a></h2><p>The module allows you to synchronize classes and programs from the<p><a href=https://www.tractionrec.com target=_blank>Traction Rec CRM</a> to the YMCA Website Services Program Event Framework (PEF).</p></p><p>It uses Migrate API to import data fetched from Traction Rec and provides Drush commands and a configuration UI.</p><p>The import process consists of 2 <code>drush</code> commands:</p><ol><li><p><code>openy-tr:fetch-all</code> this command fetches required data from Traction Rec and saves it to JSON files.</p><ul><li>Alias: <code>tr:fetch</code></li></ul></li><li><p><code>openy-tr:import</code> the command migrates fetched JSON files to YMCA Website Services and creates sessions, classes, activities, categories and programs.</p><ul><li>Alias: <code>tr:import</code></li></ul></li></ol><p>You can run the commands manually for one-time import or add both to cron jobs.</p><p>Other available <code>drush</code> commands:</p><ul><li><p><code>openy-tr:rollback</code> - Rolls back all imported nodes.</p><ul><li>Alias: <code>tr:rollback</code></li></ul></li><li><p><code>openy-tr:reset-lock</code> - Resets import lock.</p><ul><li>Alias: <code>tr:reset-lock</code></li></ul></li><li><p><code>openy-tr:clean-up</code> - Removes imported JSON files from the filesystem.</p><ul><li>Alias: <code>tr:clean-up</code></li></ul></li><li><p><code>openy-tr:quick-availability-sync</code> - Sync total availability data for sessions.</p><ul><li>Alias: <code>tr:qas</code></li></ul></li></ul></div><div class=td-content style=page-break-before:always><h1 id=pg-541617a506b4363b56c7bcf59ec9f30a>12.40 - Pull Requests review standard</h1><p>Check more
+    Program_Category__c ||--|{ Program_Category_Tag__c : ""
+    Program__c ||--|{ Program_Category_Tag__c : ""
+    Program__c ||--|{ Course__c : ""
+    Course__c ||--|{ Course_Session__c : ""
+    Course_Session__c ||--|{ Course_Session_Option__c : ""
+    Course_Option__c ||--|{ Course_Session_Option__c : ""</pre><h2 id=using-google-tag-manager-gtm>Using Google Tag Manager (GTM)<a class=td-heading-self-link href=#using-google-tag-manager-gtm aria-label="Heading self-link"></a></h2><p>By<p><a href=https://developer.salesforce.com/blogs/2019/04/google-tag-manager-for-community-cloud target=_blank>integrating Google Tag Manager (GTM) with your Salesforce Community</a>, you can enable your marketing team to manage the deployment of marketing tags and tracking pixels, without relying on a developer to modify any code.</p></p><p>You may also want to<p><a href=https://ds-docs.y.org/docs/howto/track-users/#cross-domain-tracking target=_blank>configure cross-domain tracking</a> on your Drupal site.</p></p><h2 id=import>Import<a class=td-heading-self-link href=#import aria-label="Heading self-link"></a></h2><p>The module allows you to synchronize classes and programs from the<p><a href=https://www.tractionrec.com target=_blank>Traction Rec CRM</a> to the YMCA Website Services Program Event Framework (PEF).</p></p><p>It uses Migrate API to import data fetched from Traction Rec and provides Drush commands and a configuration UI.</p><p>The import process consists of 2 <code>drush</code> commands:</p><ol><li><p><code>openy-tr:fetch-all</code> this command fetches required data from Traction Rec and saves it to JSON files.</p><ul><li>Alias: <code>tr:fetch</code></li></ul></li><li><p><code>openy-tr:import</code> the command migrates fetched JSON files to YMCA Website Services and creates sessions, classes, activities, categories and programs.</p><ul><li>Alias: <code>tr:import</code></li></ul></li></ol><p>You can run the commands manually for one-time import or add both to cron jobs.</p><p>Other available <code>drush</code> commands:</p><ul><li><p><code>openy-tr:rollback</code> - Rolls back all imported nodes.</p><ul><li>Alias: <code>tr:rollback</code></li></ul></li><li><p><code>openy-tr:reset-lock</code> - Resets import lock.</p><ul><li>Alias: <code>tr:reset-lock</code></li></ul></li><li><p><code>openy-tr:clean-up</code> - Removes imported JSON files from the filesystem.</p><ul><li>Alias: <code>tr:clean-up</code></li></ul></li><li><p><code>openy-tr:quick-availability-sync</code> - Sync total availability data for sessions.</p><ul><li>Alias: <code>tr:qas</code></li></ul></li></ul></div><div class=td-content style=page-break-before:always><h1 id=pg-541617a506b4363b56c7bcf59ec9f30a>12.40 - Pull Requests review standard</h1><p>Check more
 <a href=/docs/development/code-review-quality-best-practices/>technical guidelines about our best practices for code quality</a>.</p><h1 id=adherence-to-standards>Adherence to Standards<a class=td-heading-self-link href=#adherence-to-standards aria-label="Heading self-link"></a></h1><p>The YMCA Website Services Core Team will adhere to the same standards we set for the community for all areas of development and technologies as per the YMCA Website Services documentation.</p><p>The YMCA Website Services Core Team reserves the right to break these standards only in the following scenarios:</p><ul><li>Emergency - a major defect or security risk has been discovered that requires extreme measures to resolve.</li><li>When the standards are broken, it is the responsibility of the YMCA Website Services Core Team to explain why the standards needed to be broken, and what the new standards will be moving forward.</li><li>This communication will be posted to the YMCA Website Services message board, Slack, and the documentation on GitHub will be updated to reflect the new standards.</li></ul><h2 id=requirements-for-pull-requests>Requirements for Pull Requests<a class=td-heading-self-link href=#requirements-for-pull-requests aria-label="Heading self-link"></a></h2><ul><li>Code in Pull Requests should follow our established
 <a href=/docs/development/code-review-quality-best-practices/>best practices</a></li><li>Submitters&rsquo; profiles on GitHub or Drupal.org should be up to date and contain at least a name and organization.</li></ul><h2 id=template-for-the-pr>Template for the PR<a class=td-heading-self-link href=#template-for-the-pr aria-label="Heading self-link"></a></h2><p>In order to create a good quality Pull Request, we prepared a
 <a href=https://github.com/YCloudYUSA/yusaopeny/blob/8.x-2.x/.github/PULL_REQUEST_TEMPLATE.md target=_blank>PR template</a> which is automatically added to new Pull Requests on GitHub.</p><p>List of requirements from the template:</p><ul><li>Provide a link to the original issue, which is going to be fixed by the PR you are creating.</li><li>All coding styles are fulfilled and there are no issues reported by CodeSniffer. See

@@ -255,12 +255,11 @@ It includes a Vue.js component, &lt;code>fullcalendar-app&lt;/code>, to display 
  
  &lt;a href="../../content-types/program">Programs&lt;/a>.&lt;/p>
 &lt;pre class="mermaid">flowchart LR
- subgraph &amp;#34;PEF Relationships&amp;#34;
+ subgraph "PEF Relationships"
  direction LR
- Session -- requires --&amp;gt; Class
- Class -- references --&amp;gt; Activity
- Activity -- references --&amp;gt; PS
- PS -- requires --&amp;gt; Program
- PS[&amp;#34;Program Subcategory&amp;#34;]
- end&lt;/pre>
-&lt;p>You will need to create &lt;strong>at least&lt;/strong> a Class and Activity to start adding events to the calendar. Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> (&lt;code>/node/add&lt;/code>) to start adding items.&lt;/p></description></item></channel></rss>
+ Session -- requires --> Class
+ Class -- references --> Activity
+ Activity -- references --> PS
+ PS -- requires --> Program
+ PS["Program Subcategory"]
+ end&lt;/pre>&lt;p>You will need to create &lt;strong>at least&lt;/strong> a Class and Activity to start adding events to the calendar. Go to &lt;strong>Admin&lt;/strong> &amp;gt; &lt;strong>Content&lt;/strong> &amp;gt; &lt;strong>Add Content&lt;/strong> (&lt;code>/node/add&lt;/code>) to start adding items.&lt;/p></description></item></channel></rss>
