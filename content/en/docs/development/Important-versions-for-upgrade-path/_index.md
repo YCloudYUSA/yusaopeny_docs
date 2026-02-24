@@ -45,6 +45,10 @@ These supplemental documents elaborate on a few specific cases:
 - 10.3.2.3 - Introduced before 10.1 and 10.2 Drupal core. Also upgraded openy_map. This version ensures we support removed modules pre 10.1 for contrib modules
 - **`11.1.0.0`** - **First stable Drupal 11 release** (November 18, 2025). Includes PHP 8.3+ requirement, jQuery Migrate for backward compatibility, Activity Finder 6.0.0, Memberships 3.1.0, and full Drupal 11 support. Production ready. See [Drupal 11 Migration Guide](../drupal-11-migration/) and [Full Changelog](../drupal-11-changelog/) for details.
 
+  **⚠️ Important Drupal Core Version Requirement:** Before upgrading to YMCA Website Services 11.1.0.0 (Drupal 11), your site must be running **Drupal core 10.3.x or higher**. The YMCA Website Services distribution version number (e.g., 10.3.2.3) does not directly reflect the underlying Drupal core version. Verify your Drupal core version before attempting the upgrade to Drupal 11. For detailed prerequisites and upgrade instructions, see:
+  - [Drupal 11 Migration Guide - Prerequisites](../drupal-11-migration/#prerequisites)
+  - [Official Drupal.org Upgrade Guide: Drupal 10 to 11](https://www.drupal.org/docs/upgrading-drupal/upgrading-drupal/how-to-upgrade-from-drupal-10-to-drupal-11)
+
 ---
 See [Version Constraints practices for YMCA Website Services]({{< relref "Composer-version-constraints-for-Open-Y" >}})
 
