@@ -30,5 +30,6 @@ Fill in the content fields:
 - **Body**: A full text editor to add tables or other content to the page.
   - To add a table in the editor, click the **Table** icon, then configure the table options in the popup. ![A screenshot of the table icon and properties popup.](lb_table_icon.png)
   - To edit an existing table properties, right click in the table and then choose an option from the menu. ![A screenshot of the table operations menu.](lb_table_menu.png)
+  - As of the 11.3.1.0 release, global table styles are applied automatically to tables created in CKEditor, providing consistent styling across all Layout Builder content types.
 
 {{< readfile "../lb-save-block.partial" >}}

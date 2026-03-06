@@ -100,7 +100,7 @@ Date Block
 : None
 
 Embedded GroupEx Pro Schedule
-: Due to changes in the GroupEx Pro embed functionality, we recommend moving to a [Code](../../user-documentation/layout-builder/code) block.
+: GroupEx Pro integration has been deprecated. We recommend moving to a [Code](../../user-documentation/layout-builder/code) block for any third-party schedule embeds.
 
 FAQ
 : [Accordion](../../user-documentation/layout-builder/accordion)

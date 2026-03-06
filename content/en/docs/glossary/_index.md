@@ -43,7 +43,7 @@ Five Jars
 : A partner agency that works on the distribution and provides services directly to YMCAs. Also "5J". [Five Jars](https://fivejars.com/).
 
 GroupEx Pro
-: A group-exercise management platform. Integrates with the Group Schedules feature. Acquired by Daxko in 2019. [GroupEx PRO](https://groupexpro.com/).
+: **[Deprecated]** A group-exercise management platform formerly integrated with the Group Schedules feature. Acquired by Daxko in 2019. The GroupEx Pro API is no longer available; as of `groupexpro` 3.0.0, deprecated modules are automatically uninstalled during `drush updb`. [GroupEx PRO](https://groupexpro.com/).
 
 ImageX
 : A partner agency that works on the distribution and provides services directly to YMCAs. Also "ImageX Media". [ImageX](https://imagexmedia.com/).

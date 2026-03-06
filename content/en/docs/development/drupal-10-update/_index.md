@@ -144,15 +144,14 @@ Breaking down the error message:
 
 ## Planning for Drupal 11
 
-After successfully upgrading to Drupal 10, you may want to plan for Drupal 11 in the future.
+After successfully upgrading to Drupal 10, you should plan your upgrade to Drupal 11. The latest stable release is **11.3.1.0** (Drupal core 11.3.3).
 
 See the [Drupal 11 Migration Guide](../drupal-11-migration/) for:
-- Drupal 11 beta status and Q4 2025 stable release timeline
 - New features and breaking changes in Drupal 11
 - Known issues (including jQuery 3.x compatibility)
 - Prerequisites and upgrade steps
 
-**Note:** Most YMCAs should remain on Drupal 10 until the stable Drupal 11 release in Q4 2025. Drupal 10 is supported until December 9, 2026.
+**Note:** Drupal 10 is supported until December 9, 2026, but upgrading to Drupal 11 is recommended.
 
 ---
 

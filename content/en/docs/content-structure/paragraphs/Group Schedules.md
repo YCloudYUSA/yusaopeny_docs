@@ -1,8 +1,12 @@
 ---
-title: Group Schedules
+title: Group Schedules (Deprecated)
 ---
 
-This is dynamic paragraph that renders the group schedules from GroupEx Pro.
+{{% alert title="Deprecated" color="warning" %}}
+The GroupEx Pro API is no longer available. As of `groupexpro` 3.0.0, the deprecated modules (`groupex_form_cache`, `openy_group_schedules`, `openy_gxp`) are automatically uninstalled during `drush updb`. No manual action is needed.
+{{% /alert %}}
+
+This was a dynamic paragraph that rendered group schedules from GroupEx Pro.
 
 ### Fields
 
