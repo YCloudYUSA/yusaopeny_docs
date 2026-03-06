@@ -1,46 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Notes on YMCA Website Services</title><link>/tags/release-notes/</link><description>Recent content in Release Notes on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/tags/release-notes/index.xml" rel="self" type="application/rss+xml"/><item><title>[DRAFT] Drupal 11 Full Changelog (11.1.0.0)</title><link>/docs/development/drupal-11-changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/drupal-11-changelog/</guid><description>&lt;p>&lt;strong>Generated&lt;/strong>: 2025-11-19 05:38:01&lt;/p>
-&lt;p>&lt;strong>Repository&lt;/strong>: 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Notes on YMCA Website Services</title><link>/tags/release-notes/</link><description>Recent content in Release Notes on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/tags/release-notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Drupal 11 Full Changelog</title><link>/docs/development/drupal-11-changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/development/drupal-11-changelog/</guid><description>&lt;p>&lt;strong>Latest Release&lt;/strong>: 
 
 
 
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.3.1.0" target="_blank">11.3.1.0&lt;/a> (March 2026)&lt;/p>
+&lt;p>See the 
 
- 
- 
- 
- &lt;a href="mailto:git@github.com">git@github.com&lt;/a>:YCloudYUSA/yusaopeny.git
-&lt;strong>Comparing&lt;/strong>:&lt;/p>
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.3.1.0" target="_blank">11.3.1.0 release notes on GitHub&lt;/a> for the full changelog of the latest release, including:&lt;/p>
 &lt;ul>
-&lt;li>10.5.0.1 (Jul 14, 2025)- 11.1.0.0 (Nov 17, 2025)&lt;/li>
+&lt;li>Drupal core 11.1.9 → 11.3.3&lt;/li>
+&lt;li>Entity Browser replaced by Media Library&lt;/li>
+&lt;li>Google Analytics module removed (replaced by Google Tag)&lt;/li>
+&lt;li>GroupEx Pro deprecated and auto-uninstalled&lt;/li>
+&lt;li>Media Tags vocabulary replacing media_directories&lt;/li>
+&lt;li>Trash module enabled by default&lt;/li>
+&lt;li>17 LB block packages with major version bumps&lt;/li>
+&lt;li>AVIF GD extension required&lt;/li>
+&lt;li>67% faster installation, 93% less memory usage&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h2 id="summary">Summary&lt;a class="td-heading-self-link" href="#summary" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Total Changes&lt;/strong>: 158&lt;/li>
-&lt;li>&lt;strong>Added Packages&lt;/strong>: 59&lt;/li>
-&lt;li>&lt;strong>Updated Packages&lt;/strong>: 87&lt;/li>
-&lt;li>&lt;strong>Removed Packages&lt;/strong>: 12&lt;/li>
-&lt;li>&lt;strong>Unchanged Packages&lt;/strong>: 0&lt;/li>
-&lt;/ul>
-&lt;h3 id="changes-by-category">Changes by Category&lt;a class="td-heading-self-link" href="#changes-by-category" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>&lt;strong>Drupal Core&lt;/strong>:&lt;/p>
-&lt;ul>
-&lt;li>Added: 0&lt;/li>
-&lt;li>Updated: 2&lt;/li>
-&lt;li>Removed: 2&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Drupal Contributed Module&lt;/strong>:&lt;/p>
-&lt;ul>
-&lt;li>Added: 42&lt;/li>
-&lt;li>Updated: 30&lt;/li>
-&lt;li>Removed: 9&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>PHP Library&lt;/strong>:&lt;/p>
-&lt;ul>
-&lt;li>Added: 17&lt;/li>
-&lt;li>Updated: 55&lt;/li>
-&lt;li>Removed: 1&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;hr>
-&lt;h2 id="changes-by-persona">Changes by Persona&lt;a class="td-heading-self-link" href="#changes-by-persona" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>These changes are organized by the user personas most likely to care about them.&lt;/p></description></item></channel></rss>
+&lt;h2 id="10501-to-11100-changelog">10.5.0.1 to 11.1.0.0 Changelog&lt;a class="td-heading-self-link" href="#10501-to-11100-changelog" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Generated&lt;/strong>: 2025-11-19 05:38:01&lt;/p></description></item></channel></rss>

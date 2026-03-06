@@ -729,7 +729,14 @@
  &lt;td>Link field that supports internal and external URLs.&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Group Schedules</title><link>/docs/content-structure/paragraphs/group-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/group-schedules/</guid><description>&lt;p>This is dynamic paragraph that renders the group schedules from GroupEx Pro.&lt;/p>
+&lt;/table></description></item><item><title>Group Schedules (Deprecated)</title><link>/docs/content-structure/paragraphs/group-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/group-schedules/</guid><description>&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Deprecated&lt;/h4>
+
+ The GroupEx Pro API is no longer available. As of &lt;code>groupexpro&lt;/code> 3.0.0, the deprecated modules (&lt;code>groupex_form_cache&lt;/code>, &lt;code>openy_group_schedules&lt;/code>, &lt;code>openy_gxp&lt;/code>) are automatically uninstalled during &lt;code>drush updb&lt;/code>. No manual action is needed.
+
+&lt;/div>
+
+&lt;p>This was a dynamic paragraph that rendered group schedules from GroupEx Pro.&lt;/p>
 &lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;table>
  &lt;thead>

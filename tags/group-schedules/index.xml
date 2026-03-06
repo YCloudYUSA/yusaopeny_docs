@@ -87,12 +87,12 @@
 
 
 
-&lt;a href="https://www.drupal.org/project/groupexpro" target="_blank">GroupEx Pro (Daxko) Integration (&lt;code>drupal/groupexpro&lt;/code>)&lt;/a>&lt;/li>
+&lt;a href="https://www.drupal.org/project/groupexpro" target="_blank">GroupEx Pro (Daxko) Integration (&lt;code>drupal/groupexpro&lt;/code>)&lt;/a> — &lt;strong>Deprecated.&lt;/strong> The GroupEx Pro API is no longer available. As of &lt;code>groupexpro&lt;/code> 3.0.0, deprecated modules are automatically uninstalled during &lt;code>drush updb&lt;/code>.&lt;/li>
 &lt;li>
 
 
 
-&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync" target="_blank">PEF (Program Event Framework) GXP (GroupEx Pro) Sync (&lt;code>ynorth-projects/openy_pef_gxp_sync&lt;/code>)&lt;/a>&lt;/li>
+&lt;a href="https://github.com/ynorth-projects/openy_pef_gxp_sync" target="_blank">PEF (Program Event Framework) GXP (GroupEx Pro) Sync (&lt;code>ynorth-projects/openy_pef_gxp_sync&lt;/code>)&lt;/a> — &lt;strong>Deprecated.&lt;/strong> See above.&lt;/li>
 &lt;li>
 
 

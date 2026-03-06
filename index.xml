@@ -3664,7 +3664,14 @@ And when we set it to 4 then the AF4 result page looks good for the tablet scree
  &lt;td>Link field that supports internal and external URLs.&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Group Schedules</title><link>/docs/content-structure/paragraphs/group-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/group-schedules/</guid><description>&lt;p>This is dynamic paragraph that renders the group schedules from GroupEx Pro.&lt;/p>
+&lt;/table></description></item><item><title>Group Schedules (Deprecated)</title><link>/docs/content-structure/paragraphs/group-schedules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/paragraphs/group-schedules/</guid><description>&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Deprecated&lt;/h4>
+
+ The GroupEx Pro API is no longer available. As of &lt;code>groupexpro&lt;/code> 3.0.0, the deprecated modules (&lt;code>groupex_form_cache&lt;/code>, &lt;code>openy_group_schedules&lt;/code>, &lt;code>openy_gxp&lt;/code>) are automatically uninstalled during &lt;code>drush updb&lt;/code>. No manual action is needed.
+
+&lt;/div>
+
+&lt;p>This was a dynamic paragraph that rendered group schedules from GroupEx Pro.&lt;/p>
 &lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;table>
  &lt;thead>
@@ -4053,8 +4060,9 @@ And when we set it to 4 then the AF4 result page looks good for the tablet scree
  &lt;td>Tags style that will be used for map tags filter. Default - checkboxes. Second option is multiselect widget with checkboxes.&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Media Tags</title><link>/docs/content-structure/taxonomy/media-tags/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/media-tags/</guid><description>&lt;p>This is a vocabulary that will be used for adding media tags that will allow you to structure your media assets library.&lt;/p>
-&lt;p>&lt;strong>Machine name&lt;/strong>: media_tags&lt;/p></description></item><item><title>Membership</title><link>/docs/content-structure/content-types/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/membership/</guid><description>&lt;p>Membership content type is used for adding membership on the site.&lt;/p>
+&lt;/table></description></item><item><title>Media Tags</title><link>/docs/content-structure/taxonomy/media-tags/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/taxonomy/media-tags/</guid><description>&lt;p>This is a vocabulary used for adding media tags that allow you to structure your media assets library.&lt;/p>
+&lt;p>&lt;strong>Machine name&lt;/strong>: &lt;code>media_tags&lt;/code>&lt;/p>
+&lt;p>As of version 11.3.1.0, &lt;strong>Media Tags&lt;/strong> replaces the previous &lt;code>media_directories&lt;/code> vocabulary. Media directories have been removed and migrated to Media Tags during the upgrade process.&lt;/p></description></item><item><title>Membership</title><link>/docs/content-structure/content-types/membership/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-structure/content-types/membership/</guid><description>&lt;p>Membership content type is used for adding membership on the site.&lt;/p>
 &lt;h3 id="fields">Fields&lt;a class="td-heading-self-link" href="#fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;table>
  &lt;thead>
