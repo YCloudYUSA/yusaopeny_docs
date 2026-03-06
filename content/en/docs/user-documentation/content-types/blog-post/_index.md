@@ -94,7 +94,7 @@ When choosing color card, you are presented with two styling options in dropdown
 
 The content area is the main body of your page. You can use the default fields entered below for a simple block post or build a more robust layout using paragraphs.
 
-* **Image**: Displays above your description and inside a Photo Card. Not required. Uses the [media browser and image field.](../../media)
+* **Image**: Displays above your description and inside a Photo Card. Not required. Uses the [Media Library and image field.](../../media)
 
 * **Description**: [Using the text editor](../../text-editor), you can enter anything from a brief summary to the entire body of your text.
 

@@ -58,7 +58,7 @@ Having performance problems? This guide will help you diagnose and optimize your
    ```
 
 2. **Optimize Images**
-   - Use WebP format where possible
+   - Use WebP or AVIF format where possible (AVIF requires the GD extension with AVIF support)
    - Enable image optimization: `/admin/config/media/image-styles`
 
 3. **Clean Up Database**

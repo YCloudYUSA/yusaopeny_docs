@@ -24,8 +24,8 @@ These provide integrations to pull content from external systems into the conten
 - [Simple Daxko Integration (deprecated) (`drupal/daxko`)](https://www.drupal.org/project/daxko)
 - [ActiveNet Integration (`drupal/activenet`)](https://www.drupal.org/project/activenet)
 - [Personify Integration (`drupal/personify`)](https://www.drupal.org/project/personify)
-- [GroupEx Pro (Daxko) Integration (`drupal/groupexpro`)](https://www.drupal.org/project/groupexpro)
-- [PEF (Program Event Framework) GXP (GroupEx Pro) Sync (`ynorth-projects/openy_pef_gxp_sync`)](https://github.com/ynorth-projects/openy_pef_gxp_sync)
+- [GroupEx Pro (Daxko) Integration (`drupal/groupexpro`)](https://www.drupal.org/project/groupexpro) — **Deprecated.** The GroupEx Pro API is no longer available. As of `groupexpro` 3.0.0, deprecated modules are automatically uninstalled during `drush updb`.
+- [PEF (Program Event Framework) GXP (GroupEx Pro) Sync (`ynorth-projects/openy_pef_gxp_sync`)](https://github.com/ynorth-projects/openy_pef_gxp_sync) — **Deprecated.** See above.
 - [YMCA 360 (Y360) Integration (`drupal/yusaopeny_ymca360`)](https://www.drupal.org/project/yusaopeny_ymca360)
 - [Traction Rec Integration (`ycloudyusa/openy_traction_rec`)](https://github.com/YCloudYUSA/openy_traction_rec)
   - [How to configure the Traction Rec integration](https://github.com/YCloudYUSA/openy_traction_rec?tab=readme-ov-file#ymca-website-services-traction-rec-integration)

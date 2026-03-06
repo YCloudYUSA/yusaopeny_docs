@@ -28,8 +28,8 @@ Ensure you have a working computer or virtual machine with:
 - Ubuntu 20.04 (16.04, 18.04, or any decent Ubuntu LTS version) 64 bit
 - MySQL 5.7+ (8+ is preferred because of the performance improvements)
 - Apache 2.4 (or Nginx + php-fpm in case if you are fine with htaccess issues down the road)
-- PHP 8.1 (pre 8.1 could be an issue with some contrib modules)
-- Drush 12 || 10 || 11
+- PHP 8.3+ (required for Drupal 11; PHP 8.4/8.5 supported as of 11.3.1.0)
+- Drush 13 || 12
 
 **Recommended development environment**: [DDEV](https://ddev.com/) (Docker-based development environment)
 
@@ -123,9 +123,9 @@ Use [`drush sql-dump`](https://www.drush.org/latest/commands/sql_dump/) or anoth
 For major version upgrades between Drupal core versions, refer to these dedicated guides:
 
 - **[Drupal 9 to Drupal 10](../drupal-10-update/)** - Detailed guide for upgrading from Drupal 9.x to Drupal 10.x
-- **[Drupal 10 to Drupal 11](../drupal-11-migration/)** - Beta release guide for early adopters (stable Q4 2025)
+- **[Drupal 10 to Drupal 11](../drupal-11-migration/)** - Migration guide for upgrading to Drupal 11
 
-**Note:** Most YMCAs should remain on Drupal 10 until the stable Drupal 11 release in Q4 2025. Drupal 10 is supported until December 9, 2026.
+**Note:** Drupal 11 stable releases are available (11.1.0.0+). The latest release is 11.3.1.0, which includes Drupal core 11.3.3. See [Important Versions for Upgrade Path](../important-versions-for-upgrade-path/) for the required upgrade sequence.
 
 ---
 

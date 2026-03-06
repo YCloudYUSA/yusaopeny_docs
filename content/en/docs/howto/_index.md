@@ -118,7 +118,7 @@ Browse our collection of step-by-step guides to accomplish common tasks with YMC
             <span class="badge bg-warning text-dark" style="font-size: 0.7rem;">INTERMEDIATE</span>
           </div>
           <h5 class="card-title mb-2" style="font-size: 1rem; font-weight: 600;">Track & Analyze Users</h5>
-          <p class="card-text text-muted" style="font-size: 0.875rem; line-height: 1.4;">Set up Google Analytics and monitoring for user insights.</p>
+          <p class="card-text text-muted" style="font-size: 0.875rem; line-height: 1.4;">Set up Google Tag and monitoring for user insights.</p>
         </div>
       </div>
     </a>

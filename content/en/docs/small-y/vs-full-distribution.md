@@ -64,7 +64,7 @@ Both Small Y and Full Distribution include these core features:
 - ✅ **Group Schedules** - Class schedule displays
 - ✅ **Webforms** - Contact forms, surveys, registrations
 - ✅ **SEO Tools** - Meta tags, XML sitemap, redirects
-- ✅ **Google Analytics** - Traffic tracking
+- ✅ **Google Tag** - Traffic tracking via Google Analytics (GA4)
 - ✅ **Security Updates** - Monthly Drupal core and module updates
 
 ### Small Y Template Includes
@@ -129,7 +129,7 @@ You can enable any of these Full Distribution modules via **Extend** → **Modul
 
 ❌ **Different installation presets** - Once installed, you can't switch from Small Y preset to Full preset without reinstalling
 ❌ **Demo content after installation** - Demo content is only available during initial installation
-❌ **Past Drupal versions** - Small Y requires Drupal 11.1+
+❌ **Past Drupal versions** - Small Y requires Drupal 11.3+
 
 ---
 
@@ -138,7 +138,7 @@ You can enable any of these Full Distribution modules via **Extend** → **Modul
 ### System Requirements
 
 Both Small Y and Full Distribution require:
-- **Drupal:** 11.1.x or higher
+- **Drupal:** 11.3.x or higher
 - **PHP:** 8.3 or higher
 - **Database:** MySQL 8.0+ or MariaDB 10.6+
 - **Web Server:** Apache 2.4+ or Nginx 1.18+

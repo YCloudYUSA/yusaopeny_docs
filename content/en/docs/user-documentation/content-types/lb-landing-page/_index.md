@@ -510,7 +510,7 @@ Right (40%):
 - **Social proof:** Testimonials vs. stats vs. logos
 
 **Simple tests (no tools required):**
-1. Change headline on homepage, track bounce rate + time on site (Google Analytics)
+1. Change headline on homepage, track bounce rate + time on site (Google Tag)
 2. Test CTA button text, measure clicks (heatmap tools like Hotjar)
 3. Try different hero images, monitor conversions
 
@@ -527,7 +527,7 @@ One organization changed just three words in their CTA and saw **104% conversion
 **Tools to understand user behavior:**
 - **Hotjar** - Heatmaps, session recordings, surveys (free tier available)
 - **Microsoft Clarity** - Free heatmaps and session recordings
-- **Google Analytics** - Behavior flow, exit pages, conversion funnels
+- **Google Tag / GA4** - Behavior flow, exit pages, conversion funnels
 
 **What to look for:**
 - **Heatmaps:** Where do users click? Are they finding CTAs?

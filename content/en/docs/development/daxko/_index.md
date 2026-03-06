@@ -10,6 +10,10 @@ Account configuration must be setup before the Program Registration paragraph wi
 
 ## GroupEx Pro
 
+{{% alert title="Deprecation Notice" color="warning" %}}
+GroupEx Pro integration modules have been deprecated and removed from the YMCA Website Services distribution as of version 11.3.1.0. Sites still using GroupEx Pro should migrate to alternative schedule solutions.
+{{% /alert %}}
+
 There are three methods of integrating GroupEx Pro with your YMCA Website Services site. In order from most to least  complex/customizable:
 
 - API integration

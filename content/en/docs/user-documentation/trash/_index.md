@@ -9,6 +9,8 @@ The Trash module provides a safety net for content management by implementing so
 
 ## What is the Trash Module?
 
+As of the 11.3.1.0 release, the Trash module is enabled by default on new YMCA Website Services installations.
+
 The Trash module adds a trash bin for content entities in your YMCA Website Services site. When editors delete content, it isn't immediately removed from the database. Instead, it's moved to a trash storage area where it remains until either:
 
 - An administrator permanently deletes (purges) it
