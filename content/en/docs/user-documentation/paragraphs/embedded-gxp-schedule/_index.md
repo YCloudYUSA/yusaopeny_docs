@@ -1,11 +1,7 @@
 ---
-title: Embedded GroupEx Pro Schedule (Deprecated)
+title: Embedded GroupEx Pro Schedule
 description: Embed the out-of-box GroupEx Pro schedule script on a page with a single click.
 ---
-
-{{% alert title="Deprecated" color="warning" %}}
-The GroupEx Pro API is no longer available. As of `groupexpro` 3.0.0, the deprecated modules (`groupex_form_cache`, `openy_group_schedules`, `openy_gxp`) are automatically uninstalled during `drush updb`. No manual action is needed. Consider using [Repeat Schedules](../../schedules/group-schedules) or [Activity Finder](../../schedules/activity-finder) as alternatives.
-{{% /alert %}}
 
 ## Example
 

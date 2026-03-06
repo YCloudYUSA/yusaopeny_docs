@@ -16,7 +16,7 @@ Check all GitHub for the tag [``openy-decoupled``](https://github.com/topics/ope
 1. [`YCloudYUSA/yusaopeny_loc_finder`](https://github.com/YCloudYUSA/yusaopeny_loc_filter) - Extended Location Finder
 1. [`Open-Y-subprojects/reqclique_gxp_sync`](https://github.com/Open-Y-subprojects/reqclique_gxp_sync) - Reqclique Group Exercise Sync — **Deprecated.** GroupEx Pro API is no longer available.
 1. [`open-y-subprojects/virtual_y_signaling_server`](https://github.com/open-y-subprojects/virtual_y_signaling_server) - Signalling server for Virtual Y
-1. [`open-y-subprojects/openy_daxko_gxp_syncer`](https://github.com/open-y-subprojects/openy_daxko_gxp_syncer) - Daxko GroupEx PRO v1 API Syncer into Program Event Framework — **Deprecated.** GroupEx Pro API is no longer available.
+1. [`open-y-subprojects/openy_daxko_gxp_syncer`](https://github.com/open-y-subprojects/openy_daxko_gxp_syncer) - Daxko GroupEx PRO v1 API Syncer into Program Event Framework
 1. [`open-y-subprojects/ynorth_gxp_spots_proxy`](https://github.com/open-y-subprojects/ynorth_gxp_spots_proxy) - Availability Spots Cache Proxy for Groupex PRO embed API Syncer into PEF — **Deprecated.** GroupEx Pro API is no longer available.
 1. [`open-y-subprojects/openy_node_alert`](https://github.com/open-y-subprojects/openy_node_alert) - Alerts APP for YMCA Website Services
 1. [`open-y-subprojects/openy_focal_point`](https://github.com/open-y-subprojects/openy_focal_point) - YMCA Website Services Focal Point routines
