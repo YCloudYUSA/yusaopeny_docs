@@ -1,13 +1,12 @@
 ---
 title: "Release Notes Structure Guide"
+linkTitle: "Release Notes Guide"
 description: "Best practices for writing multi-audience release notes based on industry research"
 ---
 
-## Release Notes Structure — Research & Recommendations
-
 Research into how leading open source projects handle multi-audience release notes, comparing approaches and identifying best practices.
 
-### How Leading Projects Do It
+## How Leading Projects Do It
 
 | Project | Approach | Persona handling |
 |---------|----------|-----------------|
@@ -19,21 +18,21 @@ Research into how leading open source projects handle multi-audience release not
 
 **Key pattern**: none of these projects create separate files per persona per release. They all use **one document** where sections progressively become more technical.
 
-### Current Approach (PR #149) vs Industry Practice
+## Separate Files vs Sections Within One Document
 
-PR #149 introduces **4 separate persona-specific files** (`content-editor/`, `developer/`, `site-builder/`, `decision-maker/`) per release. This is a new pattern for the project.
+Creating separate per-persona files for each release (e.g., `content-editor/release-X.md`, `developer/release-X.md`, `site-builder/release-X.md`, `decision-maker/release-X.md`) has clear strengths:
 
-**Strengths of separate files:**
 - Each audience sees only what's relevant to them
 - Targeted language per persona
 - Quantified metrics (67% faster, 93% less memory) — excellent communication
 
-**Concerns with separate files:**
-- **Duplication**: The same facts (trash module, media tags, entity browser migration) are repeated across 5 files with different wording. Fixing an error means finding and updating it in multiple places.
-- **Maintenance scale**: Every future release needs 5 coordinated documents. After 5 releases = 25 files to maintain.
+However, it introduces maintenance concerns:
+
+- **Duplication**: The same facts are repeated across multiple files with different wording. Fixing an error means finding and updating it in multiple places.
+- **Maintenance scale**: Every future release needs multiple coordinated documents.
 - **No precedent**: None of the major projects researched (Next.js, Laravel, Stripe, GitLab, Drupal core) use separate files per persona per release.
 
-### Recommended Structure
+## Recommended Structure
 
 A structure that achieves persona targeting without duplication:
 
@@ -68,9 +67,9 @@ A structure that achieves persona targeting without duplication:
 - **Maintainable** — one file to review, one file to fix errors in
 - **Scales naturally** — adding a new release = one new file, not five
 
-### Alternative: YAML Data + Hugo Templates
+## Alternative: YAML Data + Hugo Templates
 
-Since yusaopeny_docs uses Hugo, a more advanced zero-duplication approach:
+Since this documentation site uses Hugo, a more advanced zero-duplication approach is possible:
 
 1. Store release facts in a data file (e.g., `data/releases/v11.3.1.0.yaml`)
 2. Create Hugo templates that render persona-specific pages from the same data
@@ -78,7 +77,7 @@ Since yusaopeny_docs uses Hugo, a more advanced zero-duplication approach:
 
 This requires more upfront setup but eliminates duplication entirely.
 
-### Technical Review Requirement
+## Technical Review Requirement
 
 Developer-facing release notes contain API examples and code snippets. These **must be technically verified** before publication:
 
@@ -89,7 +88,7 @@ Developer-facing release notes contain API examples and code snippets. These **m
 
 **Example of why this matters**: Release 11.3.1.0 developer docs referenced `$entity->delete(['force' => TRUE])` for the Trash module — this API does not exist. `EntityInterface::delete()` accepts zero parameters. The correct approach uses `TrashManager::executeInTrashContext()`.
 
-### References
+## References
 
 - [Next.js 16 Release](https://nextjs.org/blog/next-16) — single post, progressive technical detail
 - [Laravel Upgrade Guide](https://laravel.com/docs/11.x/upgrade) — one doc, code examples per change

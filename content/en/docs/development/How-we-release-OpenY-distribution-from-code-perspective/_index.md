@@ -26,3 +26,7 @@ When tagging a new release of YMCA Website Services, the Lead Architect takes th
 1. Ensure the version of YMCA Website Services is the proper one in site info (`admin/reports/status`).
 1. Publish announcement in #developers YMCA Website Services Slack channel.
 1. Publish announcement in #general YMCA Website Services Slack channel.
+
+### Release Notes Writing Guide
+
+For best practices on structuring release notes for multiple audiences (content editors, developers, site builders, decision makers), see the [Release Notes Structure Guide]({{< relref "/docs/contribution-guidelines/release-notes-guide" >}}).
