@@ -41,7 +41,7 @@ date: 2026-03-04
     - Major version upgrade with enhanced performance and PHP 8.4/8.5 support
     - [Release 11.3.3](https://www.drupal.org/project/drupal/releases/11.3.3)
 
-- **Layout Builder Blocks (15 packages updated)**
+- **Layout Builder Blocks (16 packages updated)**
     - lb_accordion 2.3.1 → 3.0.0
     - lb_cards 2.2.1 → 3.0.0
     - lb_carousel 2.1.1 → 3.0.0
@@ -54,6 +54,7 @@ date: 2026-03-04
     - lb_related_articles_blocks 1.3.0 → 2.0.0
     - lb_related_events_blocks 1.4.0 → 2.0.0
     - lb_simple_menu 1.1.0 → 2.0.0
+    - lb_staff_members_blocks 1.3.1 → 2.0.0
     - lb_statistics 2.1.0 → 3.0.0
     - lb_testimonial_blocks 1.1.1 → 2.0.0
     - lb_webform 1.3.1 → 2.0.0
@@ -107,6 +108,18 @@ date: 2026-03-04
 
 - **GroupExPro 2.3.1 → 3.0.0**
     - Final version before deprecation (API discontinued)
+
+---
+
+## Removed Packages — 5 packages
+
+| Package | Last Version | Reason |
+|---|---|---|
+| `drupal/dropzonejs_eb_widget` | 2.11.0 | Part of entity_browser ecosystem |
+| `drupal/entity_browser_entity_form` | 2.15.0 | Replaced by media_library |
+| `drupal/google_analytics` | 4.0.2 | Replaced by google_tag |
+| `doctrine/annotations` | 2.0.2 | Deprecated in PHP 8.x, replaced by attributes |
+| `psr/cache` | 3.0.0 | No longer a direct dependency |
 
 ---
 

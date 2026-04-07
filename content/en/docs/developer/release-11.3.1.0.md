@@ -195,7 +195,11 @@ $media->field_media_tags->appendItem(['target_id' => $tag_id]);
 $entity->delete(); // Soft delete (moves to trash)
 
 // Permanent deletion (bypass trash)
-$entity->delete(['force' => TRUE]);
+$trash_manager = \Drupal::service('trash.manager');
+$storage = \Drupal::entityTypeManager()->getStorage('node');
+$trash_manager->executeInTrashContext('inactive', function () use ($storage, $entity) {
+  $storage->delete([$entity->id() => $entity]);
+});
 
 // Restore from trash
 \Drupal::service('trash.manager')->restore($entity);
