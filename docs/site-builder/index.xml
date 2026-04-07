@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Site Builder Hub on YMCA Website Services</title><link>/docs/site-builder/</link><description>Recent content in Site Builder Hub on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/site-builder/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Site Builder Hub on YMCA Website Services</title><link>/docs/site-builder/</link><description>Recent content in Site Builder Hub on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/site-builder/index.xml" rel="self" type="application/rss+xml"/><item><title>Release 11.3.1.0 for Site Builders</title><link>/docs/site-builder/release-11.3.1.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/site-builder/release-11.3.1.0/</guid><description>&lt;h2 id="yusa-open-y-11310-layout-builder-updates--configuration-changes">YUSA Open Y 11.3.1.0: Layout Builder Updates &amp;amp; Configuration Changes&lt;a class="td-heading-self-link" href="#yusa-open-y-11310-layout-builder-updates--configuration-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>What You Need to Know for Site Building:&lt;/strong>&lt;/p>
+&lt;h3 id="-layout-builder--blocks">🧱 Layout Builder &amp;amp; Blocks&lt;a class="td-heading-self-link" href="#-layout-builder--blocks" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>All blocks updated for Drupal 11.3 compatibility:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Every Layout Builder block received major version updates&lt;/li>
+&lt;li>All 71 PRs tested across GitHub and drupal.org repositories&lt;/li>
+&lt;li>Themes updated for compatibility&lt;/li>
+&lt;li>Custom block configurations should be reviewed post-upgrade&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>CKEditor 5 improvements in Layout Builder:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Fixed balloon toolbar positioning in Layout Builder dialogs&lt;/li>
+&lt;li>No more tooltips disappearing behind modal windows&lt;/li>
+&lt;li>Smoother editing experience when building complex layouts&lt;/li>
+&lt;/ul>
+&lt;h3 id="-theme--styling-updates">🎨 Theme &amp;amp; Styling Updates&lt;a class="td-heading-self-link" href="#-theme--styling-updates" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>Y Styles expansion:&lt;/strong>&lt;/p></description></item></channel></rss>

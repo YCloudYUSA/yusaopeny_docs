@@ -28,7 +28,112 @@
 &lt;li>4-5 branches → Small Y or Full (your choice)&lt;/li>
 &lt;li>6+ branches → Full Distribution&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>2. Do you have in-house Drupal developers?&lt;/strong>&lt;/p></description></item><item><title>Digital Services Release 11.1.0.2</title><link>/blog/2025/12/01/digital-services-release-11.1.0.2/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>/blog/2025/12/01/digital-services-release-11.1.0.2/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>2. Do you have in-house Drupal developers?&lt;/strong>&lt;/p></description></item><item><title>Release 11.3.1.0 for Content Editors</title><link>/docs/content-editor/release-11.3.1.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-editor/release-11.3.1.0/</guid><description>&lt;h2 id="yusa-open-y-11310-smarter-content-tools--better-media-management">YUSA Open Y 11.3.1.0: Smarter Content Tools &amp;amp; Better Media Management&lt;a class="td-heading-self-link" href="#yusa-open-y-11310-smarter-content-tools--better-media-management" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>What&amp;rsquo;s Changing in Your Daily Work:&lt;/strong>&lt;/p>
+&lt;h3 id="-new-way-to-organize-media-big-change">🏷️ New Way to Organize Media (Big Change!)&lt;a class="td-heading-self-link" href="#-new-way-to-organize-media-big-change" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>Old way:&lt;/strong> Navigate through nested folders to find images
+&lt;strong>New way:&lt;/strong> Tag images with multiple labels, search instantly&lt;/p>
+&lt;p>&lt;strong>How it works:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Tag photos with multiple categories: &amp;ldquo;Summer 2026&amp;rdquo;, &amp;ldquo;Youth Programs&amp;rdquo;, &amp;ldquo;Featured&amp;rdquo;&lt;/li>
+&lt;li>Type to search and autocomplete finds your media instantly&lt;/li>
+&lt;li>Create hierarchical tags (e.g., Programs → Youth → Swimming)&lt;/li>
+&lt;li>Your existing media automatically gets migrated&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Example workflow:&lt;/strong>&lt;/p></description></item><item><title>Release 11.3.1.0 for Decision Makers</title><link>/docs/decision-maker/release-11.3.1.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/decision-maker/release-11.3.1.0/</guid><description>&lt;h2 id="yusa-open-y-11310-strategic-platform-modernization">YUSA Open Y 11.3.1.0: Strategic Platform Modernization&lt;a class="td-heading-self-link" href="#yusa-open-y-11310-strategic-platform-modernization" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Executive Summary&lt;/strong>&lt;/p>
+&lt;p>This major release represents a strategic platform modernization that reduces technical debt, improves operational efficiency, and positions your digital infrastructure for long-term sustainability through 2030.&lt;/p>
+&lt;hr>
+&lt;h2 id="-business-impact-metrics">📈 Business Impact Metrics&lt;a class="td-heading-self-link" href="#-business-impact-metrics" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Operational Efficiency Gains:&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Installation Time: 537s → 180s (67% reduction)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Memory Requirements: 4.38GB → 326MB (93% reduction)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Database Queries: -50% (menu operations)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Deployment Speed: 3x faster average
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>What this means financially:&lt;/strong>&lt;/p></description></item><item><title>Release 11.3.1.0 for Developers</title><link>/docs/developer/release-11.3.1.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/developer/release-11.3.1.0/</guid><description>&lt;h2 id="yusa-open-y-11310-breaking-changes--performance-architecture">YUSA Open Y 11.3.1.0: Breaking Changes &amp;amp; Performance Architecture&lt;a class="td-heading-self-link" href="#yusa-open-y-11310-breaking-changes--performance-architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="-breaking-changes---action-required">⚠️ Breaking Changes - Action Required&lt;a class="td-heading-self-link" href="#-breaking-changes---action-required" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;h4 id="1-entity-browser-removal">1. Entity Browser Removal&lt;a class="td-heading-self-link" href="#1-entity-browser-removal" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// REMOVED - No longer available
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">use&lt;/span> &lt;span class="nx">Drupal\entity_browser\&lt;/span>&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// MIGRATE TO - Core media library
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">use&lt;/span> &lt;span class="nx">Drupal\media_library\&lt;/span>&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Impact:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>34 modules migrated automatically&lt;/li>
+&lt;li>Custom code using entity_browser WILL BREAK&lt;/li>
+&lt;li>Form alterations referencing &lt;code>entity_browser_entity_reference&lt;/code> need updates&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Migration pattern:&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Before
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nv">$form&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;field_media&amp;#39;&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="s1">&amp;#39;widget&amp;#39;&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="s1">&amp;#39;#type&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;entity_browser_entity_reference&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// After
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nv">$form&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;field_media&amp;#39;&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="s1">&amp;#39;widget&amp;#39;&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="s1">&amp;#39;#type&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;media_library_widget&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Required actions:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Search codebase: &lt;code>grep -r &amp;quot;entity_browser&amp;quot; custom/&lt;/code>&lt;/li>
+&lt;li>Update form displays programmatically altering media fields&lt;/li>
+&lt;li>Remove entity_browser service dependencies&lt;/li>
+&lt;li>Update tests mocking entity_browser interactions&lt;/li>
+&lt;/ul>
+&lt;h4 id="2-php-8485-compatibility">2. PHP 8.4/8.5 Compatibility&lt;a class="td-heading-self-link" href="#2-php-8485-compatibility" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;p>&lt;strong>Deprecated patterns eliminated (~256K warnings/day fixed):&lt;/strong>&lt;/p></description></item><item><title>Release 11.3.1.0 for Site Builders</title><link>/docs/site-builder/release-11.3.1.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/site-builder/release-11.3.1.0/</guid><description>&lt;h2 id="yusa-open-y-11310-layout-builder-updates--configuration-changes">YUSA Open Y 11.3.1.0: Layout Builder Updates &amp;amp; Configuration Changes&lt;a class="td-heading-self-link" href="#yusa-open-y-11310-layout-builder-updates--configuration-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>What You Need to Know for Site Building:&lt;/strong>&lt;/p>
+&lt;h3 id="-layout-builder--blocks">🧱 Layout Builder &amp;amp; Blocks&lt;a class="td-heading-self-link" href="#-layout-builder--blocks" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>All blocks updated for Drupal 11.3 compatibility:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Every Layout Builder block received major version updates&lt;/li>
+&lt;li>All 71 PRs tested across GitHub and drupal.org repositories&lt;/li>
+&lt;li>Themes updated for compatibility&lt;/li>
+&lt;li>Custom block configurations should be reviewed post-upgrade&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>CKEditor 5 improvements in Layout Builder:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Fixed balloon toolbar positioning in Layout Builder dialogs&lt;/li>
+&lt;li>No more tooltips disappearing behind modal windows&lt;/li>
+&lt;li>Smoother editing experience when building complex layouts&lt;/li>
+&lt;/ul>
+&lt;h3 id="-theme--styling-updates">🎨 Theme &amp;amp; Styling Updates&lt;a class="td-heading-self-link" href="#-theme--styling-updates" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>Y Styles expansion:&lt;/strong>&lt;/p></description></item><item><title>Digital Services Release 11.3.1.0</title><link>/blog/2026/03/04/digital-services-release-11.3.1.0/</link><pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate><guid>/blog/2026/03/04/digital-services-release-11.3.1.0/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Drupal 11.3 Support:&lt;/strong>
+Upgraded Drupal Core from 11.1.9 to 11.3.3 with full compatibility across all Layout Builder blocks, themes, and content types. (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/324" target="_blank">PR #324&lt;/a>)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Performance Improvements:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Installation speed improved by 67% (537s → 180s)&lt;/li>
+&lt;li>Memory usage reduced by 93% (4.38GB → 326MB)&lt;/li>
+&lt;li>MenuTreeStorage optimization: 50% fewer SELECT queries (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/329" target="_blank">PR #329&lt;/a>)&lt;/li>
+&lt;li>Route rebuild optimization during module installation (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/331" target="_blank">PR #331&lt;/a>)&lt;/li>
+&lt;li>Batch module installation for faster deployments (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/327" target="_blank">PR #327&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Media Tags System:&lt;/strong>
+Replaces folder-based organization with hierarchical tag structure. Features tree display, badge/chip UI, and autocomplete multi-select capabilities. (
+
+
+
+&lt;a href="https://github.com/open-y-subprojects/openy_features/pull/110" target="_blank">openy_features #110&lt;/a>)&lt;/p></description></item><item><title>Digital Services Release 11.1.0.2</title><link>/blog/2025/12/01/digital-services-release-11.1.0.2/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>/blog/2025/12/01/digital-services-release-11.1.0.2/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>GroupExPro Removal:&lt;/strong>
 Removed &amp;lsquo;groupexpro&amp;rsquo; from installation types complete/custom. (

@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Notes on YMCA Website Services</title><link>/blog/releases/</link><description>Recent content in Release Notes on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Services Release 11.1.0.2</title><link>/blog/2025/12/01/digital-services-release-11.1.0.2/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>/blog/2025/12/01/digital-services-release-11.1.0.2/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Notes on YMCA Website Services</title><link>/blog/releases/</link><description>Recent content in Release Notes on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Services Release 11.3.1.0</title><link>/blog/2026/03/04/digital-services-release-11.3.1.0/</link><pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate><guid>/blog/2026/03/04/digital-services-release-11.3.1.0/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Drupal 11.3 Support:&lt;/strong>
+Upgraded Drupal Core from 11.1.9 to 11.3.3 with full compatibility across all Layout Builder blocks, themes, and content types. (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/324" target="_blank">PR #324&lt;/a>)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Performance Improvements:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Installation speed improved by 67% (537s → 180s)&lt;/li>
+&lt;li>Memory usage reduced by 93% (4.38GB → 326MB)&lt;/li>
+&lt;li>MenuTreeStorage optimization: 50% fewer SELECT queries (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/329" target="_blank">PR #329&lt;/a>)&lt;/li>
+&lt;li>Route rebuild optimization during module installation (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/331" target="_blank">PR #331&lt;/a>)&lt;/li>
+&lt;li>Batch module installation for faster deployments (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/327" target="_blank">PR #327&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Media Tags System:&lt;/strong>
+Replaces folder-based organization with hierarchical tag structure. Features tree display, badge/chip UI, and autocomplete multi-select capabilities. (
+
+
+
+&lt;a href="https://github.com/open-y-subprojects/openy_features/pull/110" target="_blank">openy_features #110&lt;/a>)&lt;/p></description></item><item><title>Digital Services Release 11.1.0.2</title><link>/blog/2025/12/01/digital-services-release-11.1.0.2/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>/blog/2025/12/01/digital-services-release-11.1.0.2/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>GroupExPro Removal:&lt;/strong>
 Removed &amp;lsquo;groupexpro&amp;rsquo; from installation types complete/custom. (
