@@ -10,7 +10,7 @@ A huge amount of configuration is available with Layout Builder components using
 
 ## Y Styles
 
-These options provide customizations of Layout Builder-enabled pages at the Content Type, Page, and Component(/Block) level.
+These options provide customizations of Layout Builder-enabled pages at the Content Type, Page, and Component(/Block) level. As of the 11.3.1.0 release, Y Styles support has been expanded to additional content types beyond Landing Pages.
 
 Styles inherit from content types, to pages, to components. Some styles can also be overridden at each level - block styles can override page styles, which can override content type styles.
 

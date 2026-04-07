@@ -35,7 +35,7 @@ The Program tag will pull your Program Subcategory in as a horizontal card on a 
 
 ### Header Area
 
-* **Image**: Using an image field, select an image from the media browser. Displays in the header and as a thumbnail in [Categories Listing](../../paragraphs/categories-listing).
+* **Image**: Using an image field, select an image from the Media Library. Displays in the header and as a thumbnail in [Categories Listing](../../paragraphs/categories-listing).
 
 * **Color**: A dropdown to select a background color for your header.
 

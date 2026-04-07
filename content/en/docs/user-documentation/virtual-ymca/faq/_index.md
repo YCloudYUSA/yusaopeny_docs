@@ -83,7 +83,7 @@ For even more Virtual Y FAQs, [check out Y-USA’s post.](https://ds.ymca.org/fr
   * Virtual Y supports the most recent versions of all modern web browsers such as [Edge](https://www.microsoft.com/en-us/windows/microsoft-edge), [Firefox](http://www.mozilla.com/firefox/upgrade.html), [Chrome](http://www.google.com/chrome), [Safari](http://www.apple.com/safari/), and [Opera](http://www.opera.com/)
   * Internet Explorer 11 and earlier are not supported due to the inability of that browser to play videos from services such as [https://youtube.com](https://youtube.com/). Here is [YouTube’s official statement](https://support.google.com/youtube/answer/175292?hl=en) on not supporting Internet Explorer.
 * [User Activity Logs Documentation](../logging)
-* [Setting up Google Analytics for Virtual Y ](https://ycloud.y.org/sites/virtual.y.org/files/2020-08/Virtual-Y-8-Google-Analytics.pdf)(web)
+* [Setting up Google Analytics for Virtual Y ](https://ycloud.y.org/sites/virtual.y.org/files/2020-08/Virtual-Y-8-Google-Analytics.pdf)(web) - **Note:** As of version 11.3.1.0, the `google_analytics` module has been replaced by `google_tag`. Configure tracking at **Admin** > **Configuration** > **Services** > **Google Tag** (`/admin/config/services/google_tag`).
 
 ### Committed to VY - Content Editors
 

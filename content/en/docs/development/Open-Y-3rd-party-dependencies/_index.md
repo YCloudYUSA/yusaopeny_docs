@@ -8,8 +8,8 @@ YMCA Website Services's system requirements generally track [those of Drupal](ht
 
 ## Current Version Requirements (Drupal 11)
 
-- **Drupal**: 11.1.x or higher
-- **PHP**: 8.3 or higher
+- **Drupal**: 11.3.x or higher
+- **PHP**: 8.3 or higher (8.4 and 8.5 tested for stability)
 - **Composer**: 2.0 or higher
 - **Database**: MySQL 8.0+ OR MariaDB 10.6+
 - **Web Server**: Apache 2.4+ OR Nginx 1.18+

@@ -36,3 +36,7 @@ Fill in the content fields:
 {{% alert color=warning title=Note: %}}
 The Breadcrumbs block may not show the correct path while editing the page layout, but it will display properly for viewers.
 {{% /alert %}}
+
+## Caching
+
+As of the 11.3.1.0 release, breadcrumb caching has been improved. Previously, breadcrumbs were set with `max-age=0`, which prevented them from being cached and could negatively impact page performance. This has been fixed so that breadcrumbs are now properly cached along with the rest of the page.

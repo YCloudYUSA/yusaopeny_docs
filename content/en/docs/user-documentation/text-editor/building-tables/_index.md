@@ -8,6 +8,8 @@ weight: 1
 
 The table editor has been drastically improved in CKEditor 5 and is described in detail [in their documentation](https://ckeditor.com/docs/ckeditor5/latest/features/tables/tables.html).
 
+As of the 11.3.1.0 release, global table styles are applied automatically to tables created in CKEditor across all Layout Builder content types, providing consistent and responsive table presentation without additional configuration.
+
 ### Adding a New Table
 To add a table, click on the table icon. A popup will appear with your initial setup options:
 

@@ -119,7 +119,7 @@ Some link fields contain an additional **Attributes** section. You can add attri
 
 ### Image Fields/Image Library
 
-You can add, edit and upload images any time you see a tab with Image in the title. To use the media browser, click the button in the image field.
+You can add, edit and upload images any time you see a tab with Image in the title. To use the Media Library, click the **Add media** button in the image field.
 
 [More on Using the Image Library ⇒](../text-editor/adding-images)
 

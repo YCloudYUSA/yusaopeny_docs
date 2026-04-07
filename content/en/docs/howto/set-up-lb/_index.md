@@ -96,11 +96,11 @@ This list contains the relevant permissions for using Layout Builder in the YMCA
   - Or, give permissions to only specific block types:
     - **{Block type}: {View/Edit/Delete/Revert} content block**
 - Add other necessary permissions for managing content:
-  - **Entity Browser**
-    - **Access Media Directories: Field widget pages**
-    - **Access Media Directories: Standalone pages**
-  - **Media Directories UI**
-    - **Access to Media Directories browser**
+  - **Media Library**
+    - **View media** (to browse existing media)
+    - **Create media** (to upload new media)
+  - **Media Tags**
+    - **Access to Media Tags browser**
   - **Contextual Links**
     - **Use Contextual Links**
 - **Node** - These permissions allow users to create, edit, delete, or revert the Layout Builder _content types_.

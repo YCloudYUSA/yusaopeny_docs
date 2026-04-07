@@ -19,6 +19,6 @@ Here are some things you should check before you go live with your Virtual Y sit
   * If you’re using the Daxko Barcode provider, ensure you’ve set the **Message for login failures** at **Virtual Y** > **Virtual YMCA Settings** > **GC Auth Settings** > **Edit Daxko barcode provider**.
 
 ## Final clean-up
-* If you’re using it, ensure you’ve set up Google Analytics at **Configuration** > **System** > **Google Analytics**.
+* If you’re using it, ensure you’ve set up Google Tag at **Configuration** > **Services** > **Google Tag** (`/admin/config/services/google_tag`) with your GA4 measurement ID.
 * If you’re using any basic authentication to protect the site before it goes live (what Y Cloud calls “Site Lock”), ask your hosting partner to turn it off.
 * If you'd like to share content with other Ys, review [Shared Content](../shared-content/) and initiate a connection to the Open Y Shared Content server

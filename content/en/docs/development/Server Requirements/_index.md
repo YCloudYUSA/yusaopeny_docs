@@ -8,8 +8,8 @@ If you need to prepare server for the YMCA Website Services instance, here below
 
 ### For Drupal 11 (Current Version)
 
-- **Drupal**: 11.1.x or higher
-- **PHP**: 8.3 or higher
+- **Drupal**: 11.3.x (as of YMCA Website Services 11.3.1.0)
+- **PHP**: 8.3 or higher (8.4 and 8.5 supported)
 - **Composer**: 2.0 or higher
 - **Database**:
   - MySQL 8.0+ OR
@@ -29,7 +29,7 @@ For detailed requirements, see the [official Drupal system requirements](https:/
   - php8.3-curl
   - php8.3-dev
   - php8.3-fpm (for Nginx)
-  - php8.3-gd
+  - php8.3-gd (**must include AVIF support** - required as of 11.3.1.0)
   - php8.3-mysql
   - php8.3-xml
   - php8.3-mbstring
@@ -54,11 +54,12 @@ For detailed requirements, see the [official Drupal system requirements](https:/
 
 ## Version-Specific Requirements
 
-### Drupal 11 (Beta)
+### Drupal 11 (Stable)
 
-- **PHP**: 8.3 or higher
+- **PHP**: 8.3 or higher (8.4 and 8.5 supported)
 - **MySQL**: 8.0+ or MariaDB 10.6+
-- See [Drupal 11 Migration Guide](../drupal-11-migration/) (Beta - stable Q4 2025)
+- **GD with AVIF support** required as of 11.3.1.0
+- See [Drupal 11 Migration Guide](../drupal-11-migration/)
 
 ### Drupal 10
 

@@ -110,7 +110,7 @@ cd ymca-dev
 
 ```bash
 # 1. Configure DDEV
-ddev config --project-type=drupal10 --docroot=web --create-docroot
+ddev config --project-type=drupal --docroot=web --create-docroot
 
 # 2. Start DDEV
 ddev start

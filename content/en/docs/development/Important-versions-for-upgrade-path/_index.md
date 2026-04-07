@@ -49,6 +49,22 @@ These supplemental documents elaborate on a few specific cases:
   - [Drupal 11 Migration Guide - Prerequisites](../drupal-11-migration/#prerequisites)
   - [Official Drupal.org Upgrade Guide: Drupal 10 to 11](https://www.drupal.org/docs/upgrading-drupal/upgrading-drupal/how-to-upgrade-from-drupal-10-to-drupal-11)
 
+- **`11.1.0.2`** - Required intermediate step before upgrading to 11.3.x. Ensures all pre-11.3 update hooks are executed.
+
+- **`11.3.1.0`** - **Major Drupal 11.3 release**. Drupal core upgraded from 11.1.9 to 11.3.3. Key changes:
+  - **Entity Browser replaced by Media Library** - all media fields migrated from Entity Browser/DropzoneJS to core Media Library
+  - **Google Analytics module removed** - replaced by Google Tag (`google_tag`). Sites must configure Google Tag after upgrade
+  - **GroupEx Pro deprecated** - automatically uninstalled via `drush updb`
+  - **Media Directories replaced by Media Tags** (`media_directories` removed)
+  - **Trash module enabled by default** - provides soft-delete functionality for content
+  - **AVIF GD extension required** - PHP must have GD compiled with AVIF support
+  - **History module removed** from Drupal core
+  - **Removed modules:** `entity_browser`, `dropzonejs`, `google_analytics`, `media_directories`, `history`, `groupex_pro`
+  - **67% faster installation**
+  - PHP 8.4/8.5 stability fixes
+
+  **⚠️ Upgrade path requirement:** You must upgrade to **11.1.0.2** first before upgrading to 11.3.1.0. Do not skip directly from 11.1.0.0 to 11.3.x.
+
 ---
 See [Version Constraints practices for YMCA Website Services]({{< relref "Composer-version-constraints-for-Open-Y" >}})
 
@@ -69,7 +85,12 @@ See the [Drupal 11 Migration Guide](../drupal-11-migration/) for:
 - Known issues (jQuery 3.x compatibility)
 - Upgrade steps and troubleshooting
 
-**Note:** Drupal 11 stable release **11.1.0.0** is now available (as of November 18, 2025) and is production-ready. All major components including Activity Finder and Memberships are Drupal 11-compatible. See the [11.1.0.0 Release Notes]({{< relref "/blog/releases/release-ds-11.1.0.0" >}}) and [Full Changelog](../drupal-11-changelog/) for complete details.
+### For 11.3.x Upgrades
+
+- **AVIF support required:** Ensure your PHP GD extension is compiled with AVIF support before upgrading to 11.3.1.0.
+- **Entity Browser removal:** All Entity Browser and DropzoneJS widgets are automatically migrated to Media Library. Review your custom media fields after upgrade.
+- **Google Analytics replacement:** The `google_analytics` module is removed. Configure `google_tag` module after upgrade to maintain tracking.
+- **GroupEx Pro:** Automatically uninstalled during `drush updb`. If your site uses GroupEx Pro integrations, plan for alternative solutions before upgrading.
 
 
 If you are faced with an issue when `composer` installs an improper version of `drupal/core` for the chosen version of YMCA Website Services from the list above, please use this trick in order to downgrade:

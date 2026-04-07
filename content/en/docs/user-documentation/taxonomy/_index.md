@@ -5,7 +5,7 @@ description: >
   Group pieces of related content together for tagging, filtering, sorting and grouping.
 ---
 
-The Taxonomy feature in YMCA Website Services creates organized lists of categories, which allow you to group content, create folders for Images ([in YMCA Website Services 2.4 and later](https://github.com/ymcatwincities/openy/releases/tag/8.2.4.0)) and create standard options for dropdown fields in your content.
+The Taxonomy feature in YMCA Website Services creates organized lists of categories, which allow you to group content, tag media items, and create standard options for dropdown fields in your content.
 
 {{< youtube upFz4WrJ1-Q >}}
 
@@ -59,12 +59,7 @@ As mentioned above, Color is a list of colors you can use across your site, prim
 ### Blog/News Category
 These taxonomies tag blog/news posts. Categories display in the sidebar and as filters in your [Blog Post Listing](../content-types/blog-post) and [News Posts Listing](../content-types/news-post) paragraphs, respectively.
 
-### Media Folders
-Creates folders for your images in the media browser.
-
-[View Media Folders tutorial ⇒](https://youtu.be/gcaBlhyPZEY)
-
 ### Media Tags
-Creates tags for filtering images (YMCA Website Services 2.3.3 and earlier), Documents and Videos in the media browser.
+Creates tags for filtering and organizing Images, Documents, and Videos in the Media Library.
 
 [View Image and Document tutorials](../media)

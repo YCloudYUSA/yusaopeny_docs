@@ -69,7 +69,7 @@ Before installing, decide which solution fits your YMCA best.
 
 Before starting, ensure your server meets these requirements:
 
-- **Drupal:** 11.1.x or higher
+- **Drupal:** 11.3.x or higher
 - **PHP:** 8.3 or higher
 - **Database:** MySQL 8.0+ or MariaDB 10.6+
 - **Web Server:** Apache 2.4+ or Nginx 1.18+

@@ -1,6 +1,6 @@
 ---
-title: "[DRAFT] Drupal 11 Full Changelog (11.1.0.0)"
-description: Comprehensive feature and package changes from YMCA Website Services 10.5.0.1 to 11.1.0.0
+title: "Drupal 11 Full Changelog"
+description: Comprehensive feature and package changes for YMCA Website Services Drupal 11 releases
 aliases:
   - /docs/development/drupal-11-full-changelog/
 tags:
@@ -11,11 +11,28 @@ weight: 10
 ---
 
 
+**Latest Release**: [11.3.1.0](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.3.1.0) (March 2026)
+
+See the [11.3.1.0 release notes on GitHub](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.3.1.0) for the full changelog of the latest release, including:
+- Drupal core 11.1.9 → 11.3.3
+- Entity Browser replaced by Media Library
+- Google Analytics module removed (replaced by Google Tag)
+- GroupEx Pro deprecated and auto-uninstalled
+- Media Tags vocabulary replacing media_directories
+- Trash module enabled by default
+- 17 LB block packages with major version bumps
+- AVIF GD extension required
+- 67% faster installation, 93% less memory usage
+
+---
+
+## 10.5.0.1 to 11.1.0.0 Changelog
+
 **Generated**: 2025-11-19 05:38:01
 
 **Repository**: git@github.com:YCloudYUSA/yusaopeny.git
 **Comparing**:
-- 10.5.0.1 (Jul 14, 2025)- 11.1.0.0 (Nov 17, 2025)
+- 10.5.0.1 (Jul 14, 2025) → 11.1.0.0 (Nov 17, 2025)
 
 
 ---

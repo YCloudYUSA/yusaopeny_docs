@@ -110,7 +110,7 @@ hide_sidebar: true
         <div class="text-muted" style="font-size: 0.95rem;">
           <strong>You'll learn:</strong>
           <ul class="mb-0 mt-2">
-            <li>Latest release (Drupal 11.1.x)</li>
+            <li>Latest release (Drupal 11.3.x)</li>
             <li>Recent feature additions</li>
             <li>Security updates</li>
             <li>Upgrade timeline</li>

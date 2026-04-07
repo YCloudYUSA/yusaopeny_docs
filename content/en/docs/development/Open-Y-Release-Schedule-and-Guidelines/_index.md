@@ -32,9 +32,9 @@ Major releases bring YMCA Website Services up to compatibility with new Drupal c
 - PHP version requirement updates
 
 **Recent major releases:**
+- **11.3.1.0** (March 2026) - Drupal 11.3.3 core, Entity Browser replaced by Media Library, Google Analytics replaced by Google Tag, GroupEx Pro deprecated
 - **11.1.0.0** (November 18, 2025) - First stable Drupal 11 release with full production readiness
 - **10.5.0.1** (July 14, 2025) - Latest Drupal 10 stable release
-- **10.4.0.0** (June 17, 2024) - Drupal 10.4 core initialization
 
 #### Minor Releases
 
@@ -69,7 +69,6 @@ YMCA Website Services releases are coordinated with [Drupal core's release sched
 
 #### Upcoming Drupal Core Milestones
 
-- **Drupal 11.3.0 / 10.6.0:** December 8, 2025
 - **Drupal 10 End of Life:** December 9, 2026
 - **Drupal 12:** Expected 2026
 
@@ -85,7 +84,7 @@ View all releases and release notes:
 **Latest stable release:** Check [GitHub Releases](https://github.com/YCloudYUSA/yusaopeny/releases) for the most current version.
 
 **Supported versions:**
-- Drupal 11.x: **11.1.0.0** (stable release as of November 18, 2025) - [Release Notes]({{< relref "/blog/releases/release-ds-11.1.0.0" >}}) | [Full Changelog]({{< relref "/docs/development/drupal-11-changelog" >}})
+- Drupal 11.x: **11.3.1.0** (latest stable release, Drupal core 11.3.3)
 - Drupal 10.x: **10.5.0.1** (supported until December 2026)
 
 ### Virtual Y Releases
