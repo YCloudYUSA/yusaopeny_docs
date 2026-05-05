@@ -755,6 +755,149 @@ body.mx-with-sidebar.mx-side-mini #mx-sidebar .mx-side-hdr strong { display: non
   flex-shrink: 0;
 }
 
+/* W3/P1 — usage tips block on catalog index. Dev-view only; collapsed
+ * by default so it never blocks the SDC grid below. Operator decision
+ * 2026-05-05 — embed how-to-use info inline so reviewers do not have
+ * to leave the catalog to learn the keyboard shortcuts + tab semantics. */
+.usage-tips {
+  margin-top: 1.5rem;
+}
+.usage-tips__details {
+  border: 1px solid var(--mx-rule);
+  border-radius: var(--r-md);
+  background: var(--mx-panel);
+  overflow: hidden;
+}
+.usage-tips__summary {
+  padding: 14px 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  background: var(--mx-panel-sunken);
+  font-family: var(--mx-font-sans);
+  font-weight: 500;
+  user-select: none;
+}
+.usage-tips__summary::-webkit-details-marker { display: none; }
+.usage-tips__summary::before {
+  content: '▸';
+  display: inline-block;
+  width: 1em;
+  color: var(--y-primary);
+  font-size: 0.875rem;
+  transition: transform 120ms ease;
+}
+.usage-tips__details[open] > .usage-tips__summary::before {
+  transform: rotate(90deg);
+}
+.usage-tips__summary-text {
+  font-size: 1rem;
+  color: var(--mx-ink);
+}
+.usage-tips__summary-hint {
+  font-family: var(--mx-font-mono);
+  font-size: 0.75rem;
+  color: var(--mx-ink-muted);
+  font-weight: 400;
+}
+.usage-tips__body {
+  padding: 16px 20px 20px;
+}
+.usage-tips__lede {
+  margin: 0 0 16px;
+  color: var(--mx-ink-muted);
+  font-size: 0.9375rem;
+}
+.usage-tips__grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.usage-tips__card {
+  border: 1px solid var(--mx-rule);
+  border-radius: var(--r-sm);
+  padding: 12px 14px;
+  background: var(--mx-bg);
+}
+.usage-tips__card h3 {
+  margin: 0 0 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--y-primary);
+}
+.usage-tips__card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--mx-ink);
+}
+.usage-tips__card li + li { margin-top: 4px; }
+.usage-tips__card kbd {
+  display: inline-block;
+  padding: 1px 5px;
+  background: var(--mx-panel-sunken);
+  border: 1px solid var(--mx-rule);
+  border-radius: var(--r-xs);
+  font-family: var(--mx-font-mono);
+  font-size: 0.6875rem;
+  color: var(--mx-ink);
+  line-height: 1.2;
+  vertical-align: 1px;
+}
+.usage-tips__card code {
+  font-family: var(--mx-font-mono);
+  font-size: 0.75rem;
+  background: var(--mx-panel-sunken);
+  padding: 1px 5px;
+  border-radius: var(--r-xs);
+  color: var(--mx-ink);
+}
+.usage-tips__card a {
+  color: var(--y-primary-dark);
+  text-decoration: none;
+}
+.usage-tips__card a:hover { text-decoration: underline; }
+.usage-tips__card p {
+  margin: 0 0 8px;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--mx-ink);
+}
+.usage-tips__card p + p { margin-top: 8px; }
+.usage-tips__card pre {
+  margin: 8px 0;
+  padding: 8px 10px;
+  background: var(--mx-panel-sunken);
+  border: 1px solid var(--mx-rule);
+  border-radius: var(--r-xs);
+  overflow-x: auto;
+  font-size: 0.6875rem;
+  line-height: 1.4;
+}
+.usage-tips__card pre code {
+  background: none;
+  padding: 0;
+  font-family: var(--mx-font-mono);
+  color: var(--mx-ink);
+}
+.usage-tips__foot {
+  margin: 16px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--mx-rule);
+  font-size: 0.8125rem;
+  color: var(--mx-ink-muted);
+}
+.usage-tips__foot code {
+  font-family: var(--mx-font-mono);
+  font-size: 0.75rem;
+  background: var(--mx-panel-sunken);
+  padding: 1px 5px;
+  border-radius: var(--r-xs);
+  color: var(--mx-ink);
+}
+
 /* W2/P1 — slot children props section on parent page. Always visible
  * (no dev-view gate); slot contracts are first-class info. */
 .slot-children__grid {

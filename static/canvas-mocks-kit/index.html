@@ -34,6 +34,176 @@
   </div>
 </header>
 
+<section class="usage-tips page-section" data-view-only="dev">
+  <details class="usage-tips__details">
+    <summary class="usage-tips__summary">
+      <span class="usage-tips__summary-text">Navigating the catalog</span>
+      <span class="usage-tips__summary-hint">click to expand</span>
+    </summary>
+    <div class="usage-tips__body">
+      <p class="usage-tips__lede">
+        How to find what you need across these 70 SDC pages.
+      </p>
+      <div class="usage-tips__grid">
+        <article class="usage-tips__card">
+          <h3>Find an SDC fast</h3>
+          <ul>
+            <li><kbd>⌘</kbd>+<kbd>K</kbd> (or <kbd>/</kbd>) opens the command palette. Type any part of the SDC id, title, alias, or props — both parents and slot children match.</li>
+            <li>Sidebar tree on the left groups SDCs by author-facing category (Site shell pinned top, Slot children pinned bottom).</li>
+            <li>Filter input above the tree narrows the list as you type — searches id + title + aliases + props.</li>
+            <li>Recent SDCs surface at the top of the palette so the most-touched components stay one keystroke away.</li>
+          </ul>
+        </article>
+        <article class="usage-tips__card">
+          <h3>Read a per-SDC page</h3>
+          <ul>
+            <li><strong>Default</strong> — canonical fixture rendered at desktop width. The iframe shows the actual rendered twig output.</li>
+            <li><strong>Devices · N</strong> — same fixture × every viewport (mobile / tablet / desktop / large_desktop) with the schema's region grid below each frame.</li>
+            <li><strong>Variations · N</strong> — cartesian gallery of every variation × background combo declared in the schema enums.</li>
+            <li><strong>Slot children · N</strong> — full props schema for every direct child SDC (always visible — slot contracts are first-class info).</li>
+            <li><strong>Props</strong> + <strong>More views</strong> — schema table + extra-page links (dev-view only).</li>
+          </ul>
+        </article>
+        <article class="usage-tips__card">
+          <h3>Inspect slot children</h3>
+          <ul>
+            <li>Children appear nested under their parent in the sidebar (organism children) or in the dedicated <strong>Slot children</strong> group at the bottom (chrome children — <code>y-footer-link</code>, <code>y-header-cta</code>, etc.).</li>
+            <li>Each child has its own page rendered inside a 1-item parent shell so you see the surrounding chrome (frame chevron, accordion wrapper, grid column) — not a naked element.</li>
+            <li>Multi-parent children appear under every parent that slots them; the "Used by" row on the child page lists all of them.</li>
+          </ul>
+        </article>
+        <article class="usage-tips__card">
+          <h3>Use the JSON index</h3>
+          <ul>
+            <li>Every SDC's metadata lives at one endpoint: <code>https://ds-docs.y.org/canvas-mocks-kit/mocks-index.json</code></li>
+            <li>Each entry carries id, title, category, bundle code, props list, children array, parents array, and the bundle-icon SVG glyph.</li>
+            <li>Useful for batch tooling: scripts that audit, compare, or generate code from the schema set.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="usage-tips__foot">
+        Catalog: <a href="https://ds-docs.y.org/canvas-mocks-kit/" target="_blank" rel="noopener"><code>ds-docs.y.org/canvas-mocks-kit/</code></a> · JSON index: <a href="mocks-index.json" target="_blank" rel="noopener"><code>/mocks-index.json</code></a>.
+      </p>
+    </div>
+  </details>
+</section>
+
+<section class="usage-tips page-section" data-view-only="dev">
+  <details class="usage-tips__details">
+    <summary class="usage-tips__summary">
+      <span class="usage-tips__summary-text">Using these mocks in your project</span>
+      <span class="usage-tips__summary-hint">click to expand</span>
+    </summary>
+    <div class="usage-tips__body">
+      <p class="usage-tips__lede">
+        Workflows for the five most common roles consuming this catalog.
+      </p>
+      <div class="usage-tips__grid">
+        <article class="usage-tips__card">
+          <h3>Drupal SDC theme port</h3>
+          <ul>
+            <li>The frame iframe on every SDC page is the <strong>visual ground truth</strong>: same twig template renders here as in production.</li>
+            <li>If your Drupal render does not match the frame, the divergence is in your theme — not in the mock. The Props tab carries the schema your theme must accept.</li>
+            <li>Pair-check with the live production demo at <a href="https://small-y-stable.y.org/demo-ui-kit" target="_blank" rel="noopener">small-y-stable.y.org/demo-ui-kit</a> when an SDC reads ambiguous.</li>
+          </ul>
+        </article>
+        <article class="usage-tips__card">
+          <h3>WordPress Timber port</h3>
+          <ul>
+            <li>The same <code>.twig</code> source files that render this catalog also drive the WordPress canvas-wp port via Timber. Drop them in unchanged.</li>
+            <li>Replicate the fixture shape shown in the Default tab — your Timber test should pass the same data and produce the same DOM.</li>
+            <li>Slot children pages document the per-child schema; Timber loops feed the same prop names.</li>
+          </ul>
+        </article>
+        <article class="usage-tips__card">
+          <h3>React / Edge consumer</h3>
+          <ul>
+            <li>The Slot children section + the Props tab together form a <strong>props interface contract</strong>.</li>
+            <li>Use them as the source for TypeScript / Zod / JSON Schema types when porting an SDC to a JSX renderer.</li>
+            <li>Variations enums map directly to discriminated-union props (e.g. <code>variation: 'standard' | 'color' | 'overlay' | 'chevron'</code>).</li>
+          </ul>
+        </article>
+        <article class="usage-tips__card">
+          <h3>Designer / PM speccing</h3>
+          <ul>
+            <li>Copy the deep frame URL into your ticket — <code>/canvas-mocks-kit/y-cards/frame-chevron.html</code> beats a screenshot because it stays in sync with code.</li>
+            <li>Pair every spec with the live production render at <a href="https://small-y-stable.y.org/demo-ui-kit" target="_blank" rel="noopener">small-y-stable.y.org/demo-ui-kit</a> as a side-by-side reference.</li>
+            <li>The Variations gallery surfaces enum combos production may never hit — useful for edge-case acceptance criteria.</li>
+          </ul>
+        </article>
+        <article class="usage-tips__card">
+          <h3>Reviewer</h3>
+          <ul>
+            <li>Walk the sidebar by category. Site shell up top, Slot children at the bottom — everything in between is grouped by author-facing labels.</li>
+            <li>File feedback against deep URLs: <code>&lt;sdc&gt;/index.html#variations</code>, <code>&lt;sdc&gt;/y-lb-demo-mapping.html</code>, or a specific frame.</li>
+            <li>The frame iframe is the single visual reference — if it looks wrong, write the bug from the frame URL.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="usage-tips__foot">
+        Live production render: <a href="https://small-y-stable.y.org/demo-ui-kit" target="_blank" rel="noopener"><code>small-y-stable.y.org/demo-ui-kit</code></a> · Catalog reference: <code>https://ds-docs.y.org/canvas-mocks-kit/&lt;sdc&gt;/index.html</code>.
+      </p>
+    </div>
+  </details>
+</section>
+
+<section class="usage-tips page-section" data-view-only="dev">
+  <details class="usage-tips__details">
+    <summary class="usage-tips__summary">
+      <span class="usage-tips__summary-text">Using these mocks with agents</span>
+      <span class="usage-tips__summary-hint">click to expand</span>
+    </summary>
+    <div class="usage-tips__body">
+      <p class="usage-tips__lede">
+        Every page on this catalog is reachable as a stable public URL — feed those URLs into Claude Code, GitHub Copilot, or any agent runtime that supports web fetch. No source repo access needed.
+      </p>
+      <div class="usage-tips__grid">
+        <article class="usage-tips__card">
+          <h3>Fetch a per-SDC page</h3>
+          <p>Pull canonical render + schema in one request. The HTML carries an inlined <code>__MOCKS_INDEX</code> with full metadata for every SDC.</p>
+<pre><code>WebFetch https://ds-docs.y.org/canvas-mocks-kit/y-cards/index.html</code></pre>
+          <p>Returns the rendered overview + Props table + Slot children section + a JSON snapshot. Use as ground truth before generating downstream code.</p>
+        </article>
+        <article class="usage-tips__card">
+          <h3>Read the JSON index</h3>
+          <p>All SDC metadata in one endpoint — bypass the HTML when you only need structure:</p>
+<pre><code>curl https://ds-docs.y.org/canvas-mocks-kit/mocks-index.json \
+  | jq '.[] | select(.kind=="parent") | .id'</code></pre>
+          <p>Returns ids, props, children arrays, categories, bundle codes for every parent + slot child. Pipe into prompts for batch analysis.</p>
+        </article>
+        <article class="usage-tips__card">
+          <h3>Compare mock vs production</h3>
+          <p>Pair every catalog frame with the live demo for parity checks. Agent prompt:</p>
+<pre><code>Compare these two renders:
+  https://ds-docs.y.org/canvas-mocks-kit/y-hero/frame-promo.html
+  https://small-y-stable.y.org/demo-ui-kit (scroll to y-hero)
+Report visual differences.</code></pre>
+        </article>
+        <article class="usage-tips__card">
+          <h3>Generate from contract</h3>
+          <p>Slot children section + Variations enums = full implementation contract. Feed both into the agent:</p>
+<pre><code>Read https://ds-docs.y.org/canvas-mocks-kit/y-accordion/index.html
+Generate a React component matching the y-accordion-item
+schema from the Slot children section.
+Use the Variations gallery to enumerate prop unions.</code></pre>
+        </article>
+        <article class="usage-tips__card">
+          <h3>File tickets with deep URLs</h3>
+          <p>Agent composes ticket bodies that reference exact frames so reviewers reproduce the issue in one click:</p>
+<pre><code>y-cards chevron variation breaks at tablet viewport.
+Mock reference:
+  https://ds-docs.y.org/canvas-mocks-kit/y-cards/frame-chevron.html
+Live render:
+  https://small-y-stable.y.org/demo-ui-kit</code></pre>
+        </article>
+      </div>
+      <p class="usage-tips__foot">
+        All URLs in this section are public. No private repository access required for the agent runtime.
+      </p>
+    </div>
+  </details>
+</section>
+
 
 <section class="gallery" id="g-chrome">
   <h2 class="gallery__title">Site shell <span style="color:var(--mx-ink-subtle)">· 6</span></h2>
