@@ -1,0 +1,62 @@
+{#
+/**
+ * Y Grid CTA component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section subheading
+ * - cta_text: (string) Section button text
+ * - cta_url: (string) Section button URL
+ * - columns: (string) Number of columns (2, 3, 4)
+ * - heading_level: (string) h2, h3, h4
+ *
+ * Slots:
+ * - items: Grid item components
+ */
+#}
+
+{% set heading_level = heading_level|default('h2') %}
+{% set columns = columns|default('3') %}
+
+{% set classes = [
+  'y-grid-cta',
+  'y-grid-cta--cols-' ~ columns,
+  style|default('standard') != 'standard' ? 'y-grid-cta--style-' ~ style,
+  section|default('body') != 'body' ? 'y-grid-cta--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-grid-cta">
+  <div class="y-grid-cta__container">
+    {% if title or subtitle %}
+      <div class="y-grid-cta__header">
+        {% if title %}
+          {% if heading_level == 'h2' %}
+            <h2 class="y-grid-cta__title">{{ title }}</h2>
+          {% elseif heading_level == 'h3' %}
+            <h3 class="y-grid-cta__title">{{ title }}</h3>
+          {% elseif heading_level == 'h4' %}
+            <h4 class="y-grid-cta__title">{{ title }}</h4>
+          {% else %}
+            <h2 class="y-grid-cta__title">{{ title }}</h2>
+          {% endif %}
+        {% endif %}
+
+        {% if subtitle %}
+          <p class="y-grid-cta__subtitle">{{ subtitle|raw }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="y-grid-cta__grid">
+      {{ items }}
+    </div>
+
+    {% if cta_text and cta_url %}
+      <div class="y-grid-cta__footer">
+        <a href="{{ cta_url }}" class="y-grid-cta__button">
+          {{ cta_text }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</section>

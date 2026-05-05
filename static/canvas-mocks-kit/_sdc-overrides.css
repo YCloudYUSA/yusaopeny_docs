@@ -1,0 +1,39 @@
+/* canvas-mocks-kit — mock-only CSS overrides
+ *
+ * STRICT POLICY (ADR-011): this file MUST NOT contain workarounds for
+ * upstream y_canvas SDC bugs. If a component renders incorrectly in
+ * the mock, that mirrors the upstream rendering — fix the bug in the
+ * y_canvas component repo, not here.
+ *
+ * Allowed contents:
+ *   1. Mock-environment affordances — overrides required because the
+ *      mock's iframe context differs from production runtime. Examples:
+ *      - components that depend on outer-page JS triggers (modals,
+ *        dropdowns) have no opener inside the iframe → force-show
+ *        affordance for preview only.
+ *      - file:// CORS limitations (already handled in mask-utils.mjs +
+ *        ADR-007 — separate from this file).
+ *
+ *   2. Loud upstream-bug indicators — temporary `outline: dashed red`
+ *      or comment-only annotations that surface the bug, never silently
+ *      mask it.
+ *
+ * Forbidden contents:
+ *   - Color/font/layout patches that make broken upstream CSS look
+ *     right. These hide the bug pressure that would otherwise drive
+ *     upstream fixes.
+ *
+ * Each rule cites its category + tracking id. Long-form in
+ * docs/decisions/coverage-gaps.md.
+ */
+
+/* CATEGORY 1 — mock-environment affordance (no opener in iframe)
+ * y-modal renders aria-hidden=true by default; production opens via
+ * JS trigger from outer page. Inside our iframe preview there's no
+ * trigger, so reviewers would see nothing. Force the dialog visible
+ * for preview ONLY. Functional behavior of the modal (open/close,
+ * dismissibility) is NOT in scope here. */
+[data-component="y-modal"][aria-hidden="true"] { display: block !important; }
+.y-modal { position: relative !important; }
+.y-modal__backdrop { display: none !important; }
+.y-modal__dialog { position: relative !important; transform: none !important; }

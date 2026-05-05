@@ -1,0 +1,73 @@
+/* Y Partners Tier Component */
+
+.y-partners-tier {
+  margin-bottom: 2rem;
+  padding: 0 15px;
+}
+
+.y-partners-tier:last-child {
+  margin-bottom: 0;
+}
+
+/* Title */
+.y-partners-tier__title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 20px;
+  color: var(--wsPrimaryColor, black);
+  font-family: var(--y-font-family);
+}
+
+@media (max-width: 991.98px) {
+  .y-partners-tier__title {
+    text-align: center;
+  }
+}
+
+/* Grid */
+.y-partners-tier__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Column variations */
+@media (min-width: 576px) {
+  .y-partners-tier--cols-3 .y-partners-tier__grid,
+  .y-partners-tier--cols-4 .y-partners-tier__grid,
+  .y-partners-tier--cols-6 .y-partners-tier__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .y-partners-tier--cols-2 .y-partners-tier__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .y-partners-tier--cols-3 .y-partners-tier__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .y-partners-tier--cols-4 .y-partners-tier__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .y-partners-tier--cols-6 .y-partners-tier__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .y-partners-tier--cols-6 .y-partners-tier__grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+.y-partners-tier--style-small-y .y-partners-tier__title {
+  font-family: var(--ws-font-family-heading);
+}

@@ -1,0 +1,51 @@
+{#
+/**
+ * Y Tabs component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section subheading
+ * - tabs_id: (string) Unique ID for tabs
+ * - heading_level: (string) h2, h3, h4
+ *
+ * Slots:
+ * - items: Tab item components
+ */
+#}
+
+{% set heading_level = heading_level|default('h2') %}
+{% set tabs_id = tabs_id|default('y-tabs-' ~ random()) %}
+
+{% set classes = [
+  'y-tabs',
+  style|default('standard') != 'standard' ? 'y-tabs--style-' ~ style,
+  section|default('body') != 'body' ? 'y-tabs--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-tabs" id="{{ tabs_id }}">
+  <div class="y-tabs__container">
+    {% if title or subtitle %}
+      <div class="y-tabs__header">
+        {% if title %}
+          {% if heading_level == 'h2' %}
+            <h2 class="y-tabs__title">{{ title }}</h2>
+          {% elseif heading_level == 'h3' %}
+            <h3 class="y-tabs__title">{{ title }}</h3>
+          {% elseif heading_level == 'h4' %}
+            <h4 class="y-tabs__title">{{ title }}</h4>
+          {% else %}
+            <h2 class="y-tabs__title">{{ title }}</h2>
+          {% endif %}
+        {% endif %}
+
+        {% if subtitle %}
+          <p class="y-tabs__subtitle">{{ subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="y-tabs__content">
+      {{ items }}
+    </div>
+  </div>
+</section>

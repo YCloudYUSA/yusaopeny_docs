@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "title": "Default — featured hero event + 3 secondary",
+    "description": "Hero + secondary_events slot. Photos sourced from y_lb_demo events/carousel imagery."
+  },
+  "title": "Featured Events",
+  "subtitle": "Don't miss what's happening at the YMCA.",
+  "cta_text": "View All Events",
+  "cta_url": "/events",
+  "hero_title": "Family Swim Night",
+  "hero_description": "Open swim with games and activities for all ages. Refreshments + door prizes.",
+  "hero_image": { "src": "../assets/photos/y_lb_demo/events_page_image_1.jpeg", "alt": "Swim night" },
+  "hero_url": "/events/swim-night",
+  "style": "standard",
+  "section": "body",
+  "secondary_events": [
+    { "title": "Yoga in the Park",       "url": "/events/yoga-park",     "image": { "src": "../assets/photos/y_lb_demo/carousel_image_2.jpeg", "alt": "Yoga" },   "date": "2026-05-08", "time": "8 AM" },
+    { "title": "Health & Wellness Fair", "url": "/events/wellness-fair", "image": { "src": "../assets/photos/y_lb_demo/carousel_image_4.jpeg", "alt": "Health" }, "date": "2026-05-15", "time": "10 AM" },
+    { "title": "Memorial Day 5K",        "url": "/events/memorial-5k",   "image": { "src": "../assets/photos/y_lb_demo/carousel_image_6.jpeg", "alt": "Run" },    "date": "2026-05-25", "time": "8 AM" }
+  ]
+}

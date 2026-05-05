@@ -1,0 +1,28 @@
+{#
+/**
+ * Y Partners Tier component.
+ *
+ * Variables:
+ * - title: (string) Tier label/heading
+ * - columns: (string) Number of columns (2, 3, 4, 6)
+ * - partners: (slot) Partner items
+ */
+#}
+
+{% set cols = columns|default('4') %}
+{% set classes = [
+  'y-partners-tier',
+  'y-partners-tier--cols-' ~ cols,
+  style|default('standard') != 'standard' ? 'y-partners-tier--style-' ~ style,
+  section|default('body') != 'body' ? 'y-partners-tier--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-partners-tier">
+  {% if title %}
+    <h3 class="y-partners-tier__title">{{ title }}</h3>
+  {% endif %}
+
+  <div class="y-partners-tier__grid">
+    {{ partners }}
+  </div>
+</div>

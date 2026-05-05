@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "title": "Default — sidebar menu (5 links)",
+    "description": "Hand-authored fixture (no y_lb_demo coverage for simple_menu in current y_lb_demo_content snapshot)."
+  },
+  "title": "Member Resources",
+  "icon": "",
+  "links": [
+    { "title": "Member Login",          "url": "/login",     "active": false },
+    { "title": "Class Schedules",       "url": "/schedules", "active": true },
+    { "title": "Reserve a Class",       "url": "/reserve",   "active": false },
+    { "title": "Personal Training",     "url": "/training",  "active": false },
+    { "title": "Cancel Membership",     "url": "/cancel",    "active": false }
+  ],
+  "heading_level": "h2",
+  "style": "standard",
+  "section": "body"
+}

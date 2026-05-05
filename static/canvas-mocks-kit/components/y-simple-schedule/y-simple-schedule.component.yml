@@ -1,0 +1,126 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Simple Schedule
+description: Simple schedule table for classes or events
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Section heading for the schedule
+      examples:
+        - 'Weekly Schedule'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Supporting text below the heading
+      examples:
+        - 'View our class times and availability'
+
+    show_header:
+      type: boolean
+      title: Show Header
+      description: Display column headers in the table
+      default: true
+      examples:
+        - true
+
+    columns:
+      type: array
+      title: Columns
+      description: Array of column header labels
+      examples:
+        - ['Time', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+
+    rows:
+      type: array
+      title: Rows
+      description: Array of row data arrays
+      examples:
+        - [['6:00 AM', 'Yoga', 'Spin', 'Yoga', 'HIIT', 'Yoga']]
+
+    highlight_today:
+      type: boolean
+      title: Highlight Today
+      description: Visually highlight the current day column
+      default: true
+      examples:
+        - true
+
+    empty_cell_text:
+      type: string
+      title: Empty Cell Text
+      description: Text to display in empty schedule cells
+      default: '-'
+      examples:
+        - 'No class'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      subtitle:
+        label: Subtitle
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+      tablet:
+        - [title]
+        - [subtitle]
+      desktop:
+        - [title]
+        - [subtitle]
+      large_desktop:
+        - [title]
+        - [subtitle]
+
+complexity:
+  level: complex
+  css_lines: 87
+  has_js: false
+  schema_props: 10
+  enum_variants: 4
+  demo_pages: 1
+  has_media: false
+  responsive_breakpoints: 1
+  backend_reason: 'y_pef_schedule + openy_repeat + fullcalendar + colorapi + session entity chain'
+  entity_chain: [session, class, activity, program, branch]
+  integrations: [fullcalendar]
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-simple-schedule

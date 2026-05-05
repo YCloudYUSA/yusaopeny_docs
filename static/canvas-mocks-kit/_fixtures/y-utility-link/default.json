@@ -1,0 +1,9 @@
+{
+  "_meta": {
+    "title": "Default — Find a Location utility link (location icon)",
+    "description": "W2/P1 sweep fixture. Chrome slot-child of y-utility-nav. Schema example values; icon=location to exercise the icon-bearing visual variant rather than the bare-text default."
+  },
+  "title": "Find a Location",
+  "url": "/locations",
+  "icon": "location"
+}

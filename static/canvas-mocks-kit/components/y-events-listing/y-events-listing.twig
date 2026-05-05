@@ -1,0 +1,74 @@
+{#
+/**
+ * Y Events Listing component.
+ *
+ * Variables:
+ * - events: (array) Events list
+ * - columns: (string) Number of columns
+ * - show_pagination: (boolean) Show pagination
+ * - current_page: (number) Current page number
+ * - total_pages: (number) Total number of pages
+ */
+#}
+
+{% set cols = columns|default('3') %}
+{% set classes = [
+  'y-events-listing',
+  'y-events-listing--cols-' ~ cols,
+  style|default('standard') != 'standard' ? 'y-events-listing--style-' ~ style,
+  section|default('body') != 'body' ? 'y-events-listing--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-events-listing">
+  {% if events %}
+    <div class="y-events-listing__grid">
+      {% for event in events %}
+        <article class="y-events-listing__card">
+          {% if event.image.src %}
+            <div class="y-events-listing__image">
+              <a href="{{ event.url }}">
+                <img src="{{ event.image.src }}" alt="{{ event.image.alt|default(event.title) }}" loading="lazy" />
+              </a>
+              {% if event.category %}
+                <span class="y-events-listing__category-badge">{{ event.category }}</span>
+              {% endif %}
+            </div>
+          {% endif %}
+          <div class="y-events-listing__content">
+            <div class="y-events-listing__meta">
+              {% if event.date %}
+                <time class="y-events-listing__date">{{ event.date }}</time>
+              {% endif %}
+              {% if event.time %}
+                <span class="y-events-listing__time">{{ event.time }}</span>
+              {% endif %}
+            </div>
+            <h3 class="y-events-listing__title">
+              <a href="{{ event.url }}">{{ event.title }}</a>
+            </h3>
+            {% if event.location %}
+              <div class="y-events-listing__location">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                {{ event.location }}
+              </div>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if show_pagination|default(true) and total_pages > 1 %}
+      <nav class="y-events-listing__pagination" aria-label="{{ 'Events pagination'|t }}">
+        <button type="button" class="y-events-listing__page-btn" {{ current_page <= 1 ? 'disabled' : '' }}>←</button>
+        <span class="y-events-listing__page-info">{{ 'Page @current of @total'|t({'@current': current_page|default(1), '@total': total_pages}) }}</span>
+        <button type="button" class="y-events-listing__page-btn" {{ current_page >= total_pages ? 'disabled' : '' }}>→</button>
+      </nav>
+    {% endif %}
+  {% else %}
+    <div class="y-events-listing__empty">
+      <p>{{ 'No events found.'|t }}</p>
+    </div>
+  {% endif %}
+</div>

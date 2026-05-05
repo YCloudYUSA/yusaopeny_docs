@@ -1,0 +1,132 @@
+/* Y Webform Component */
+
+.y-webform {
+  padding: 3rem 1rem;
+}
+
+/* Background variations */
+.y-webform--bg-white {
+  background: #fff;
+}
+
+.y-webform--bg-light {
+  background: #f8f9fa;
+}
+
+.y-webform--bg-primary {
+  background: var(--wsPrimaryColor, #0060af);
+}
+
+.y-webform--bg-primary .y-webform__title,
+.y-webform--bg-primary .y-webform__description {
+  color: #fff;
+}
+
+.y-webform__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header */
+.y-webform__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.y-webform__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 0.75rem;
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+}
+
+.y-webform__description {
+  font-size: 1.125rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Content */
+.y-webform__content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.y-webform--bg-white .y-webform__content {
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Form element styles */
+.y-webform__content form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.y-webform__content form input[type="text"],
+.y-webform__content form input[type="email"],
+.y-webform__content form input[type="tel"],
+.y-webform__content form textarea,
+.y-webform__content form select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.y-webform__content form input:focus,
+.y-webform__content form textarea:focus,
+.y-webform__content form select:focus {
+  outline: none;
+  border-color: var(--wsPrimaryColor, #0060af);
+  box-shadow: 0 0 0 3px rgba(0, 96, 175, 0.15);
+}
+
+.y-webform__content form button[type="submit"],
+.y-webform__content form input[type="submit"] {
+  background: var(--wsPrimaryColor, #0060af);
+  color: #fff;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.y-webform__content form button[type="submit"]:hover,
+.y-webform__content form input[type="submit"]:hover {
+  background: var(--wsPrimaryColorDark, #004080);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-webform {
+    padding: 4rem 2rem;
+  }
+
+  .y-webform__title {
+    font-size: 2rem;
+  }
+
+  .y-webform__content {
+    padding: 2.5rem;
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+.y-webform--style-small-y .y-webform__title {
+  font-family: var(--ws-font-family-heading);
+}

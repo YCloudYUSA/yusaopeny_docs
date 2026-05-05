@@ -1,0 +1,64 @@
+{#
+/**
+ * Y Grid Item component.
+ *
+ * Variables:
+ * - title: (string) Item heading
+ * - description: (string) Item description (HTML)
+ * - image: (object) Item image
+ * - cta_text: (string) Button text
+ * - cta_url: (string) Button URL
+ * - heading_level: (string) h3, h4, h5
+ */
+#}
+
+{% set heading_level = heading_level|default('h3') %}
+
+{% set classes = [
+  'y-grid-item',
+  style|default('standard') != 'standard' ? 'y-grid-item--style-' ~ style,
+  section|default('body') != 'body' ? 'y-grid-item--section-' ~ section,
+] %}
+
+<article class="{{ classes|join(' ') }}" data-component="y-grid-item">
+  {% if image.src %}
+    <div class="y-grid-item__media">
+      {% if cta_url %}
+        <a href="{{ cta_url }}" class="y-grid-item__media-link">
+      {% endif %}
+        <img
+          src="{{ image.src }}"
+          alt="{{ image.alt|default('') }}"
+          class="y-grid-item__image"
+          loading="lazy"
+          {% if image.width %}width="{{ image.width }}"{% endif %}
+          {% if image.height %}height="{{ image.height }}"{% endif %}
+        />
+      {% if cta_url %}
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="y-grid-item__content">
+    {% if title %}
+      <{{ heading_level }} class="y-grid-item__title">
+        {{ title }}
+      </{{ heading_level }}>
+    {% endif %}
+
+    {% if description %}
+      <div class="y-grid-item__description">
+        {{ description|raw }}
+      </div>
+    {% endif %}
+
+    {% if cta_text and cta_url %}
+      <div class="y-grid-item__cta">
+        <a href="{{ cta_url }}" class="y-grid-item__button">
+          {{ cta_text }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</article>

@@ -1,0 +1,40 @@
+{#
+/**
+ * Y Partners component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section description
+ * - show_header: (boolean) Show title/subtitle section
+ * - tiers: (slot) Partner tier groups
+ */
+#}
+
+{% set classes = [
+  'y-partners',
+  style|default('standard') != 'standard' ? 'y-partners--style-' ~ style,
+  section|default('body') != 'body' ? 'y-partners--section-' ~ section,
+] %}
+
+{% set has_header = show_header|default(true) and (title or subtitle) %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-partners">
+  <div class="y-partners__container">
+    <div class="y-partners__layout">
+      {% if has_header %}
+        <div class="y-partners__header">
+          {% if title %}
+            <h2 class="y-partners__title">{{ title }}</h2>
+          {% endif %}
+          {% if subtitle %}
+            <p class="y-partners__subtitle">{{ subtitle }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <div class="y-partners__content {{ has_header ? 'y-partners__content--with-header' : '' }}">
+        {{ tiers }}
+      </div>
+    </div>
+  </div>
+</section>

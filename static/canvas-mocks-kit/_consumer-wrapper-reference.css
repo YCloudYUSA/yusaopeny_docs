@@ -1,0 +1,69 @@
+/*
+ * Consumer page-wrapper REFERENCE.
+ *
+ * This file is NOT loaded by the kit's mocks pages. It is shipped
+ * for downstream consumers (Drupal themes, WordPress canvas-wp,
+ * Edge previewers, future canvas-editor-app) to copy or @import
+ * when they mount kit SDCs at viewports > 1280 CSS px.
+ *
+ * Why this exists: see docs/decisions/ADR-014-consumer-page-wrapper-contract.md.
+ *
+ * Kit SDCs ship per-component layout (flex / grid columns, overhang
+ * offsets like ping-pong's `margin-left: 72px`). They assume a page
+ * wrapper:
+ *   - caps body-section SDCs at --ec-body-max-width
+ *   - full-bleeds banner-section SDCs (y-hero etc.)
+ *   - reserves side gutters that scale with the viewport
+ *
+ * Without that wrapper, kit CSS is faithful but reads as
+ * left-anchored drift on viewports >1280px because individual SDC
+ * margin overrides have nothing to push against.
+ *
+ * Source pattern: ITCare-Company/energycitizen.green
+ *   web/themes/custom/ec_canvas/templates/layout/page--canvas-page.html.twig
+ *   web/themes/custom/ec_canvas/assets/layout.css
+ *
+ * The selectors below assume:
+ *   .canvas-content-region   = the element that contains the SDCs
+ *   data-component="y-hero"  = banner-section SDC (full-bleed)
+ *   everything else          = body-section SDC (capped)
+ *
+ * Tweak selectors to match your runtime DOM. Custom properties keep
+ * the same names so a token-aligned consumer ends up matching
+ * EC theme's production output.
+ */
+
+.canvas-content-region {
+  /* Tune per project; 1200px matches EC theme. */
+  --ec-body-max-width: 1200px;
+  /* Tune per project; 16px on phones, 1fr lets it grow on big screens. */
+  --ec-body-side-gutter: 16px;
+
+  display: grid;
+  grid-template-columns:
+    [full-start]
+      minmax(var(--ec-body-side-gutter), 1fr)
+    [content-start]
+      min(var(--ec-body-max-width), calc(100% - 2 * var(--ec-body-side-gutter)))
+    [content-end]
+      minmax(var(--ec-body-side-gutter), 1fr)
+    [full-end];
+  width: 100%;
+}
+
+.canvas-content-region > * {
+  /* Default every direct child to the capped content column. */
+  grid-column: content-start / content-end;
+  /* Prevent intrinsic-min-width from stretching the column. */
+  min-width: 0;
+}
+
+/*
+ * Banner-class SDCs span full viewport width.
+ * Kit SDCs that should be banner: y-hero (today). Future heroes
+ * should declare meta:section: banner in component.yml so consumers
+ * can rely on a schema lookup instead of a bundle list.
+ */
+.canvas-content-region > [data-component="y-hero"] {
+  grid-column: full-start / full-end;
+}

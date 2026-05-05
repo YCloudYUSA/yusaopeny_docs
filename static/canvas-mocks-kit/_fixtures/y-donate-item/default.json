@@ -1,0 +1,10 @@
+{
+  "_meta": {
+    "title": "Default — single donation amount ($50, highlighted)",
+    "description": "W2/P1 sweep fixture. Single y-donate-item rendered inside a 1-item y-donate parent shell. Mirrors y-donate default.json items[1] (highlighted=true so reviewers see the active state)."
+  },
+  "amount": "$50",
+  "description": "Sponsors a youth program week",
+  "url": "/donate?amount=50",
+  "highlighted": true
+}

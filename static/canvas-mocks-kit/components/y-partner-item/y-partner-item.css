@@ -1,0 +1,60 @@
+/* Y Partner Item Component */
+
+.y-partner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* Logo */
+.y-partner-item__logo {
+  margin-bottom: 0.75rem;
+}
+
+.y-partner-item__image {
+  width: 150px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Name */
+.y-partner-item__name {
+  font-size: 0.875rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.y-partner-item__link {
+  color: var(--wsPrimaryColor, #0060af);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.y-partner-item__link:hover {
+  color: var(--wsPrimaryColorDark, #004080);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-partner-item__image {
+    width: 180px;
+    height: 100px;
+  }
+
+  .y-partner-item__name {
+    font-size: 1rem;
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+.y-partner-item--style-small-y .y-partner-item__title {
+  font-family: var(--ws-font-family-heading);
+}

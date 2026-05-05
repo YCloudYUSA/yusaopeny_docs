@@ -1,0 +1,14 @@
+{
+  "_meta": { "title": "Default — pool schedule" },
+  "title": "Pool Schedule", "subtitle": "Lap swim + open swim per week.",
+  "show_header": true, "columns": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+  "rows": [
+    { "label": "6 – 8 AM",   "cells": ["Lap", "Lap",     "Lap", "Lap", "Lap",     "",      ""] },
+    { "label": "8 – 10 AM",  "cells": ["Open","Lap",     "Open","Lap", "Open",    "Family","Family"] },
+    { "label": "10 AM – 12", "cells": ["Aqua","Aqua",    "Aqua","Aqua","Aqua",    "Open",  "Open"] },
+    { "label": "12 – 2 PM",  "cells": ["Lap", "Lap",     "Lap", "Lap", "Lap",     "Lap",   "Lap"] },
+    { "label": "5 – 7 PM",   "cells": ["Swim","Family",  "Swim","Open","Family",  "",      ""] }
+  ],
+  "highlight_today": true, "empty_cell_text": "Closed",
+  "style": "standard", "section": "body"
+}

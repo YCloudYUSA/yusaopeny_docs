@@ -1,0 +1,71 @@
+{#
+/**
+ * Y Branch Amenities component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section description
+ * - image: (object) Featured image
+ * - amenities_open: (array) Available amenities list
+ * - amenities_closed: (array) Unavailable amenities list
+ */
+#}
+
+{% set classes = [
+  'y-branch-amenities',
+  style|default('standard') != 'standard' ? 'y-branch-amenities--style-' ~ style,
+  section|default('body') != 'body' ? 'y-branch-amenities--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-branch-amenities">
+  <div class="y-branch-amenities__container">
+    {% if image.src %}
+      <div class="y-branch-amenities__image-wrapper">
+        <img
+          src="{{ image.src }}"
+          alt="{{ image.alt|default(title|default('Branch amenities')) }}"
+          class="y-branch-amenities__image"
+          loading="lazy"
+          {% if image.width %}width="{{ image.width }}"{% endif %}
+          {% if image.height %}height="{{ image.height }}"{% endif %}
+        />
+      </div>
+    {% endif %}
+
+    <div class="y-branch-amenities__content">
+      {% if title or subtitle %}
+        <div class="y-branch-amenities__header">
+          {% if title %}
+            <h2 class="y-branch-amenities__title">{{ title }}</h2>
+          {% endif %}
+          {% if subtitle %}
+            <p class="y-branch-amenities__subtitle">{{ subtitle }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if amenities_open or amenities_closed %}
+        <ul class="y-branch-amenities__list" aria-label="{{ 'Branch Amenities'|t }}">
+          {% if amenities_open %}
+            {% for amenity in amenities_open %}
+              <li class="y-branch-amenities__item y-branch-amenities__item--open">
+                <span class="y-branch-amenities__icon y-branch-amenities__icon--check" aria-hidden="true">✓</span>
+                {{ amenity }}
+                <span class="visually-hidden"> ({{ 'available'|t }})</span>
+              </li>
+            {% endfor %}
+          {% endif %}
+          {% if amenities_closed %}
+            {% for amenity in amenities_closed %}
+              <li class="y-branch-amenities__item y-branch-amenities__item--closed">
+                <span class="y-branch-amenities__icon y-branch-amenities__icon--x" aria-hidden="true">✕</span>
+                {{ amenity }}
+                <span class="visually-hidden"> ({{ 'unavailable'|t }})</span>
+              </li>
+            {% endfor %}
+          {% endif %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</section>

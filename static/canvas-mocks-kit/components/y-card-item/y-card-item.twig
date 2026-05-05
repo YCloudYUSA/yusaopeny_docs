@@ -1,0 +1,83 @@
+{#
+/**
+ * Y Card Item component.
+ *
+ * Variables:
+ * - title: (string) Card heading (required)
+ * - description: (string) Card description (HTML)
+ * - image: (object) Card image with src, alt, width, height
+ * - cta_text: (string) Link text
+ * - cta_url: (string) Link URL
+ * - tag: (string) Category tag
+ * - heading_level: (string) h3, h4, h5
+ */
+#}
+
+{% set heading_level = heading_level|default('h3') %}
+
+{% set classes = [
+  'y-card-item',
+  image.src ? 'y-card-item--has-image' : 'y-card-item--no-image',
+  section|default('body') != 'body' ? 'y-card-item--section-' ~ section,
+] %}
+
+<article class="{{ classes|join(' ') }}" data-component="y-card-item">
+  {% if image.src %}
+    <div class="y-card-item__image-wrapper">
+      {# Chevron SVG - lb_cards chevron style, shown only in chevron variation via CSS #}
+      <div class="y-card-item__chevron" aria-hidden="true">
+        <svg preserveAspectRatio="none" viewBox="0 0 863 610" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path d="M853.164443,287.453806 L851.894623,285.264012 L709.950849,38.2331146 L707.466419,33.9089651 C694.699258,12.5350138 671.554009,-0.384834781 646.735904,0.00874206473 L529.553617,0.00874206473 C516.509619,0.0393090701 505.951495,10.6658834 505.95153,23.7638452 C505.878831,27.6926463 506.830464,31.572251 508.712008,35.0177214 L651.67716,283.656316 C665.197627,306.800159 665.418515,335.423093 652.25686,358.774553 L528.035354,574.982027 C526.15381,578.427498 525.202177,582.307103 525.274876,586.235903 C525.274876,599.355483 535.866608,609.991006 548.932172,609.991006 L669.12338,609.991006 C693.942917,610.390316 717.090828,597.468982 729.853895,576.090783 L732.338325,571.766633 L851.867019,363.874832 L854.075401,360.021904 C860.132215,349.149681 863.208928,336.858896 862.991745,324.403109 C863.043758,311.439517 859.682037,298.692489 853.247258,287.453806 L853.164443,287.453806 Z" fill="var(--wsTertiaryColor, #004F4F)"/>
+            <path d="M710.164443,287.453806 L708.894623,285.264012 L566.950849,38.2331146 L564.466419,33.9089651 C551.699258,12.5350138 528.554009,-0.384834781 503.735904,0.00874206473 L0,0.0177360411 L0.378555001,610 L526.12338,609.991006 C550.942917,610.390316 574.090828,597.468982 586.853895,576.090783 L589.338325,571.766633 L708.867019,363.874832 L711.075401,360.021904 C717.132215,349.149681 720.208928,336.858896 719.991745,324.403109 C720.043758,311.439517 716.682037,298.692489 710.247258,287.453806 L710.164443,287.453806 Z" fill="var(--wsSecondaryColor, #01A490)"/>
+          </g>
+        </svg>
+      </div>
+      <div class="y-card-item__img-container">
+        <img
+          src="{{ image.src }}"
+          alt="{{ image.alt|default('') }}"
+          class="y-card-item__image"
+          loading="lazy"
+          {% if image.width %}width="{{ image.width }}"{% endif %}
+          {% if image.height %}height="{{ image.height }}"{% endif %}
+        />
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="y-card-item__content">
+    {# Tag always in content area per ws_small_y pattern #}
+    {% if tag %}
+      <span class="y-card-item__tag">{{ tag }}</span>
+    {% endif %}
+
+    <{{ heading_level }} class="y-card-item__title">
+      {% if cta_url %}
+        <a href="{{ cta_url }}" class="y-card-item__title-link">
+          {{ title }}
+        </a>
+      {% else %}
+        {{ title }}
+      {% endif %}
+    </{{ heading_level }}>
+
+    {% if description %}
+      <div class="y-card-item__description">
+        {{ description|raw }}
+      </div>
+    {% endif %}
+
+    {% if cta_text and cta_url %}
+      <div class="y-card-item__footer">
+        <a href="{{ cta_url }}" class="y-card-item__cta">
+          {{ cta_text }}
+          <svg class="y-card-item__cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</article>

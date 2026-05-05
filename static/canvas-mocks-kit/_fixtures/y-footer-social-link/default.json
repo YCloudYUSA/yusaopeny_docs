@@ -1,0 +1,9 @@
+{
+  "_meta": {
+    "title": "Default — Facebook social link",
+    "description": "W2/P1 sweep fixture. Chrome slot-child of y-footer. Schema example values for the default platform=facebook enum."
+  },
+  "platform": "facebook",
+  "url": "https://facebook.com/ymca",
+  "label": "Follow us on Facebook"
+}

@@ -1,0 +1,30 @@
+{#
+/**
+ * Y Nav Link — individual navigation menu item.
+ *
+ * Variables:
+ * - title: (string) Link display text
+ * - url: (string) Link destination
+ * - children: (slot) Submenu child links
+ */
+#}
+
+{% set title = title|default('') %}
+{% set url = url|default('#') %}
+{% set has_children = children is not empty %}
+
+<li class="y-nav-menu__item{{ has_children ? ' y-nav-menu__item--has-children' : '' }}">
+  <a href="{{ url }}" class="y-nav-menu__link"{% if has_children %} aria-expanded="false" data-nav-toggle{% endif %}>
+    {{ title }}
+    {% if has_children %}
+      <svg class="y-nav-menu__chevron" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <polyline points="1 1 6 6 11 1"></polyline>
+      </svg>
+    {% endif %}
+  </a>
+  {% if has_children %}
+    <ul class="y-nav-menu__submenu">
+      {{ children }}
+    </ul>
+  {% endif %}
+</li>

@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "title": "Default — single accordion item (FAQ entry)",
+    "description": "Pilot fixture for W2/P1. Single y-accordion-item rendered inside a 1-item y-accordion parent shell so the disclosure button + chevron + body chrome read correctly. Field values mirror y-accordion default.json items[0]."
+  },
+  "title": "What are your hours of operation?",
+  "content": "<p>We are open Monday through Friday from 5am to 10pm, and weekends from 7am to 8pm.</p>",
+  "expanded": true,
+  "item_id": "faq-pilot-1",
+  "section": "body"
+}

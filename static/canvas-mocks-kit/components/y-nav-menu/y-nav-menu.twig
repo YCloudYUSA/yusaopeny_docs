@@ -1,0 +1,22 @@
+{#
+/**
+ * Y Nav Menu — main navigation with dropdown support.
+ *
+ * Variables:
+ * - style: (string) standard, dropdown
+ * - items: (slot) y-nav-link child components
+ */
+#}
+
+{% set style = style|default('standard') %}
+
+{% set classes = [
+  'y-nav-menu',
+  'y-nav-menu--' ~ style,
+] %}
+
+<nav {{ attributes.addClass(classes) }} data-component="y-nav-menu" aria-label="Main navigation">
+  <ul class="y-nav-menu__list">
+    {{ items }}
+  </ul>
+</nav>

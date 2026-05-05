@@ -1,0 +1,593 @@
+/* Y Carousel Component
+   Migrated from lb_carousel
+   ============================================================ */
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+.y-carousel {
+  position: relative;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+/* Section description / Header */
+.y-carousel__header {
+  padding: 55px 0 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__header {
+    padding: 100px 0 60px;
+    margin-bottom: 3rem;
+  }
+}
+
+.y-carousel__title {
+  font-size: 48px;
+  line-height: 54px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #2f2f2f;
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+}
+
+@media (min-width: 768px) {
+  .y-carousel__title {
+    font-size: 64px;
+    line-height: 70px;
+    margin-bottom: 24px;
+  }
+}
+
+.y-carousel__subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  color: #666;
+  margin: 0;
+}
+
+/* ========================================
+   CAROUSEL WRAPPER
+   ======================================== */
+.y-carousel__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slides container */
+.y-carousel__slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* ========================================
+   CAROUSEL ITEM
+   ======================================== */
+.y-carousel__item {
+  text-align: var(--wsTextAlignment, unset);
+  background-color: #F2F2F2;
+  height: auto;
+  flex: 0 0 100%;
+  min-width: 100%;
+}
+
+.y-carousel__item--with-info {
+  min-height: 520px;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__item--with-info {
+    height: 590px;
+  }
+}
+
+.y-carousel__item-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__item-inner {
+    flex-direction: row;
+    background-image: none !important;
+  }
+}
+
+/* Image wrapper */
+.y-carousel__image-wrapper {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__image-wrapper {
+    flex: 2 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .y-carousel__image-wrapper {
+    flex: 3 1;
+  }
+}
+
+.y-carousel__image-wrapper img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  min-height: 230px;
+  display: block;
+}
+
+/* Gallery info panel */
+.y-carousel__info {
+  display: flex;
+  flex-direction: column;
+  align-items: var(--wsFlexAlignment, unset);
+  justify-content: center;
+  gap: 20px;
+  background-color: #F2F2F2;
+  padding: 40px 20px 60px;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__info {
+    padding: 60px 48px;
+    flex: 1 1;
+    gap: 26px;
+  }
+}
+
+@media (min-width: 992px) {
+  .y-carousel__info {
+    padding: 60px;
+  }
+}
+
+.y-carousel__info-title {
+  font-size: 26px;
+  line-height: 32px;
+  margin: 0;
+  font-weight: 700;
+  color: #2f2f2f;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__info-title {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+
+.y-carousel__info-text {
+  font-size: 18px;
+  margin: 0;
+  line-height: 28px;
+  color: #666;
+}
+
+.y-carousel__info-cta {
+  margin: 10px 0 0;
+  width: fit-content;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__info-cta {
+    margin: 0;
+  }
+}
+
+/* ========================================
+   CONTROL PANEL (arrows + indicators)
+   ======================================== */
+/* Control panel is outside .y-carousel__wrapper so it isn't
+   clipped by overflow:hidden. Positioned relative to .y-carousel. */
+.y-carousel__control-panel {
+  position: relative;
+  margin: -20px 20px 0;
+  background-color: var(--wsSecondaryColor, black);
+  border-radius: 26px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 8px;
+  align-items: center;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__control-panel {
+    height: 50px;
+    width: 730px;
+    margin: -25px auto 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .y-carousel__control-panel {
+    width: 850px;
+  }
+}
+
+/* Control buttons */
+.y-carousel__control-panel button {
+  opacity: 1;
+  position: static;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background: var(--ylb-color-white, #ffffff) no-repeat center;
+  background-size: 58%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__control-panel button {
+    width: 40px;
+    height: 40px;
+    background-size: auto;
+  }
+}
+
+.y-carousel__control-panel button:hover,
+.y-carousel__control-panel button:focus {
+  opacity: 0.7;
+}
+
+.y-carousel__control-panel button .visually-hidden {
+  color: black;
+}
+
+/* Arrow icons */
+.y-carousel__btn-prev,
+.y-carousel__btn-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.y-carousel__btn-prev svg,
+.y-carousel__btn-next svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--wsPrimaryColor, #006B6B);
+}
+
+@media (min-width: 768px) {
+  .y-carousel__btn-prev svg,
+  .y-carousel__btn-next svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ========================================
+   INDICATORS
+   ======================================== */
+.y-carousel__indicators {
+  position: static;
+  width: 690px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.y-carousel__indicator {
+  opacity: 1;
+  border: none;
+  margin: 0;
+  background-color: unset;
+  padding: 15px;
+  cursor: pointer;
+  flex: 1 1;
+  list-style: none;
+  height: fit-content;
+}
+
+.y-carousel__indicator-bar {
+  height: 4px;
+  opacity: 0.3;
+  border-radius: 7px;
+  background-color: var(--ylb-color-white, #ffffff);
+  transition: opacity 0.2s ease;
+}
+
+.y-carousel__indicator--active .y-carousel__indicator-bar {
+  opacity: 1;
+}
+
+/* ========================================
+   NAVIGATION (Alternative style)
+   ======================================== */
+.y-carousel__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.y-carousel__nav:hover {
+  background: #fff;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.y-carousel__nav:focus {
+  outline: 2px solid var(--wsPrimaryColor, #0060af);
+  outline-offset: 2px;
+}
+
+.y-carousel__nav svg {
+  width: 24px;
+  height: 24px;
+  color: #2f2f2f;
+}
+
+.y-carousel__nav--prev {
+  left: 1rem;
+}
+
+.y-carousel__nav--next {
+  right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__nav {
+    width: 56px;
+    height: 56px;
+  }
+
+  .y-carousel__nav--prev {
+    left: 2rem;
+  }
+
+  .y-carousel__nav--next {
+    right: 2rem;
+  }
+}
+
+/* ========================================
+   PAGINATION (dots style)
+   ======================================== */
+.y-carousel__pagination {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.y-carousel__pagination-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.y-carousel__pagination-dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.y-carousel__pagination-dot--active {
+  background: #fff;
+  transform: scale(1.2);
+}
+
+/* ========================================
+   EFFECT: Fade
+   ======================================== */
+.y-carousel--effect-fade .y-carousel__slides {
+  position: relative;
+}
+
+.y-carousel--effect-fade .y-carousel__slides > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.y-carousel--effect-fade .y-carousel__slides > *:first-child {
+  position: relative;
+  opacity: 1;
+}
+
+.y-carousel--effect-fade .y-carousel__item--active {
+  opacity: 1;
+  position: relative;
+}
+
+/* ========================================
+   EFFECT: Slide (default)
+   ======================================== */
+.y-carousel--effect-slide .y-carousel__slides {
+  transition: transform 0.5s ease;
+}
+
+/* ========================================
+   TEXT ALIGNMENT
+   ======================================== */
+.y-carousel--align-left .y-carousel__item {
+  text-align: left;
+}
+
+.y-carousel--align-left .y-carousel__info {
+  align-items: flex-start;
+}
+
+.y-carousel--align-center .y-carousel__item {
+  text-align: center;
+}
+
+.y-carousel--align-center .y-carousel__info {
+  align-items: center;
+}
+
+/* ========================================
+   AUTOPLAY INDICATOR
+   ======================================== */
+.y-carousel__autoplay-toggle {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: var(--ylb-color-white, #ffffff);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__autoplay-toggle {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.y-carousel__autoplay-toggle svg {
+  width: 16px;
+  height: 16px;
+}
+
+.y-carousel--autoplay-paused .y-carousel__autoplay-toggle .pause-icon {
+  display: none;
+}
+
+.y-carousel--autoplay-playing .y-carousel__autoplay-toggle .play-icon {
+  display: none;
+}
+
+/* ========================================
+   SECTION: Banner (full-width)
+   Matches LB full-width (-fw) layout.
+   ======================================== */
+.y-carousel--section-banner {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* ========================================
+   WS_SMALL_Y STYLE OVERRIDES
+   Based on small_y_carousels module styles
+   ======================================== */
+
+/* Section description - ws_small_y sizing */
+.y-carousel__header {
+  padding: 0 0 30px;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__header {
+    padding: 0 0 60px;
+    margin-bottom: 0;
+  }
+}
+
+.y-carousel__title {
+  font-size: 35px;
+  line-height: 40px;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+/* Info panel title - larger on desktop for ws_small_y */
+.y-carousel__info-title {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__info-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+/* Info panel alignment - centered on mobile, left on desktop */
+.y-carousel__info {
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__info {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.y-carousel__info-text {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__info-text {
+    text-align: left;
+  }
+}
+
+/* Control panel - ws_small_y uses secondary color */
+.y-carousel__control-panel {
+  background-color: var(--wsSecondaryColor, #01A490);
+}
+
+/* Button styling - ws_small_y */
+.y-carousel .btn {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 8px 13px;
+  border-radius: 10px;
+  background-color: var(--wsPrimaryColor, #006B6B);
+  color: var(--ylb-color-white, white);
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.y-carousel .btn:hover {
+  background-color: var(--wsSecondaryColor, #01A490);
+}

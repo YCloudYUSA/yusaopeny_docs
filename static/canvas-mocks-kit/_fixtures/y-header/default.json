@@ -1,0 +1,8 @@
+{
+  "_meta": { "title": "Default — full header" },
+  "style": "standard", "sticky": false, "section": "body",
+  "logo": "<a href='/' class='y-site-logo'><strong>YMCA</strong> of Madison</a>",
+  "navigation": "<ul style='list-style:none;display:flex;gap:1.5rem;margin:0;padding:0'><li><a href='/who'>Who We Are</a></li><li><a href='/programs'>Programs</a></li><li><a href='/membership'>Membership</a></li><li><a href='/locations'>Locations</a></li></ul>",
+  "utility_nav": "<div style='font-size:.875rem;color:#666'>Locations · Jobs · News · Language</div>",
+  "cta": "<a href='/donate' style='background:#006B6B;color:#fff;padding:.5rem 1rem;border-radius:4px;text-decoration:none'>Donate</a> <a href='/join' style='background:#01A490;color:#fff;padding:.5rem 1rem;border-radius:4px;text-decoration:none'>Join</a>"
+}

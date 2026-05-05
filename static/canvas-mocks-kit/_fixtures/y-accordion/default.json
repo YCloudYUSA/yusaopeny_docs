@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "title": "Default — FAQ accordion (4 items)",
+    "description": "Canonical default fixture matches y-accordion.component.yml schema defaults (style=standard, first_open=true, is_faq=false). Real demo content lives in y-lb-demo-mapping page."
+  },
+  "title": "Frequently Asked Questions",
+  "subtitle": "Find answers to common questions about our programs and services.",
+  "is_faq": false,
+  "first_open": true,
+  "style": "standard",
+  "section": "body",
+  "items": [
+    {
+      "title": "What are your hours of operation?",
+      "content": "<p>We are open Monday through Friday from 5am to 10pm, and weekends from 7am to 8pm.</p>",
+      "expanded": true,
+      "item_id": "faq-1"
+    },
+    {
+      "title": "How do I sign up for a membership?",
+      "content": "<p>Visit any of our branches or sign up online through our membership page. Choose between individual, family, or senior plans.</p>",
+      "expanded": false,
+      "item_id": "faq-2"
+    },
+    {
+      "title": "Do you offer financial assistance?",
+      "content": "<p>Yes. We offer scholarships and reduced rates based on household income. Speak to a branch manager to learn more.</p>",
+      "expanded": false,
+      "item_id": "faq-3"
+    },
+    {
+      "title": "Are guest passes available?",
+      "content": "<p>Members may bring guests for a small fee. First-time visitors can request a free day pass at any branch.</p>",
+      "expanded": false,
+      "item_id": "faq-4"
+    }
+  ]
+}

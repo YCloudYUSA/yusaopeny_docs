@@ -1,0 +1,56 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Footer Social Link
+description: Social media icon link for footer
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    platform:
+      type: string
+      title: Social Platform
+      description: Social media platform name
+      default: facebook
+      enum:
+        - facebook
+        - instagram
+        - youtube
+        - linkedin
+        - twitter
+        - tiktok
+      meta:enum:
+        facebook: 'Facebook'
+        instagram: 'Instagram'
+        youtube: 'YouTube'
+        linkedin: 'LinkedIn'
+        twitter: 'X (Twitter)'
+        tiktok: 'TikTok'
+      examples:
+        - facebook
+    url:
+      type: string
+      title: Profile URL
+      examples:
+        - 'https://facebook.com/ymca'
+    label:
+      type: string
+      title: Aria Label
+      description: Accessible label for screen readers
+      examples:
+        - 'Follow us on Facebook'
+
+complexity:
+  level: simple
+  css_lines: 26
+  has_js: false
+  schema_props: 4
+  enum_variants: 2
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 0
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-footer-social-link

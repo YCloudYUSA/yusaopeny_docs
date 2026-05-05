@@ -1,0 +1,78 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Utility Link
+description: Utility navigation link with optional icon
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Link Title
+      description: Display text for the link
+      examples:
+        - 'Find a Location'
+
+    url:
+      type: string
+      title: Link URL
+      description: Link destination
+      examples:
+        - '/locations'
+
+    icon:
+      type: string
+      title: Icon
+      description: Icon identifier for the link
+      default: none
+      enum:
+        - none
+        - location
+        - briefcase
+        - heart
+        - phone
+        - email
+        - user
+      meta:enum:
+        none: 'None'
+        location: 'Location'
+        briefcase: 'Briefcase'
+        heart: 'Heart'
+        phone: 'Phone'
+        email: 'Email'
+        user: 'User'
+      examples:
+        - none
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of link areas
+    regions:
+      link:
+        label: Link
+    icon_map:
+      mobile:
+        - [link]
+      tablet:
+        - [link]
+      desktop:
+        - [link]
+      large_desktop:
+        - [link]
+
+complexity:
+  level: simple
+  css_lines: 1
+  has_js: false
+  schema_props: 4
+  enum_variants: 2
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 0
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-utility-link

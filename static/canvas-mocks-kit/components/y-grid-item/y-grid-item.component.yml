@@ -1,0 +1,139 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Grid Item
+description: Single grid item with image, title, description, and CTA
+status: experimental
+group: Molecules
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Item heading
+      examples:
+        - 'Youth Programs'
+
+    description:
+      type: string
+      title: Description
+      description: Item description (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<p>Programs designed for children and teens.</p>'
+
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Image
+      description: Item image
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/grid-item.jpg'
+          alt: 'Youth programs'
+          width: 400
+          height: 300
+
+    cta_text:
+      type: string
+      title: Button Text
+      description: Call-to-action button label
+      examples:
+        - 'Learn More'
+
+    cta_url:
+      type: string
+      title: Button URL
+      description: Call-to-action button link
+      examples:
+        - '/programs/youth'
+
+    heading_level:
+      type: string
+      title: Heading Level
+      description: Semantic heading level
+      default: h3
+      enum:
+        - h3
+        - h4
+        - h5
+      meta:enum:
+        h3: 'Heading 3'
+        h4: 'Heading 4'
+        h5: 'Heading 5'
+      examples:
+        - h3
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      image:
+        label: Image
+      title:
+        label: Title
+      description:
+        label: Description
+      cta:
+        label: Call to Action
+    icon_map:
+      mobile:
+        - [image]
+        - [title]
+        - [description]
+        - [cta]
+      tablet:
+        - [image]
+        - [title]
+        - [description]
+        - [cta]
+      desktop:
+        - [image]
+        - [title]
+        - [description]
+        - [cta]
+      large_desktop:
+        - [image]
+        - [title]
+        - [description]
+        - [cta]
+
+complexity:
+  level: simple
+  css_lines: 101
+  has_js: false
+  schema_props: 9
+  enum_variants: 6
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-grid-item

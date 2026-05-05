@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "title": "Default — single carousel slide (Aquatic Center sample)",
+    "description": "W2/P1 sweep fixture. Single y-carousel-item rendered inside a 1-item y-carousel parent shell. Mirrors y-carousel default.json slides[0]."
+  },
+  "title": "Aquatic Center",
+  "description": "<p>State-of-the-art pools and water features for swim lessons and recreation.</p>",
+  "image": {
+    "src": "../assets/photos/y_lb_demo/carousel_image_1.jpeg",
+    "alt": "Aquatic center",
+    "width": 1200,
+    "height": 400
+  },
+  "cta_text": "Learn More",
+  "cta_url": "/aquatic-center"
+}

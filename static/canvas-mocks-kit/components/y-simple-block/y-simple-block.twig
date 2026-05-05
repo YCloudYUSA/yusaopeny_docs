@@ -1,0 +1,20 @@
+{#
+/**
+ * Y Simple Block component.
+ *
+ * Variables:
+ * - body: (string) HTML body content
+ */
+#}
+
+{% set classes = [
+  'y-simple-block',
+  style|default('standard') != 'standard' ? 'y-simple-block--style-' ~ style,
+  section|default('body') != 'body' ? 'y-simple-block--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-simple-block">
+  {% if body %}
+    <div class="y-simple-block__body">{{ body|raw }}</div>
+  {% endif %}
+</div>

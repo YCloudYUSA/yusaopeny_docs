@@ -1,0 +1,111 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Activity Finder
+description: Activity finder application container for program search
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Main heading for the activity finder section
+      examples:
+        - 'Find Activities'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Supporting text below the main heading
+      examples:
+        - 'Search for programs, classes, and activities near you'
+
+    api_endpoint:
+      type: string
+      title: API Endpoint
+      description: URL for activity search API
+      examples:
+        - '/api/v1/activities'
+
+    locations:
+      type: array
+      title: Locations
+      description: Available location options for filtering
+      examples:
+        - ['Downtown Y', 'Westside Y', 'Northside Y']
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  app:
+    title: Application
+    description: The activity finder React application
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      subtitle:
+        label: Subtitle
+      app:
+        label: Application
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [app]
+      tablet:
+        - [title]
+        - [subtitle]
+        - [app, app]
+      desktop:
+        - [title]
+        - [subtitle]
+        - [app, app]
+      large_desktop:
+        - [title]
+        - [subtitle]
+        - [app, app]
+
+complexity:
+  level: complex
+  css_lines: 56
+  has_js: false
+  schema_props: 7
+  enum_variants: 4
+  demo_pages: 1
+  has_media: false
+  responsive_breakpoints: 1
+  backend_reason: 'search_api + solr + REST API + vue.js + session→class→activity→program entity chain'
+  entity_chain: [session, class, activity, program_subcategory, program, branch]
+  integrations: [solr, rest_api, vue.js]
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-activity-finder

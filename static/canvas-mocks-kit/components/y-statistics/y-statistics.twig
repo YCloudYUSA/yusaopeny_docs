@@ -1,0 +1,79 @@
+{#
+/**
+ * Y Statistics component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section subheading
+ * - image: (object) Content image
+ * - cta_text: (string) Button text
+ * - cta_url: (string) Button URL
+ * - columns: (string) Number of columns (2, 3, 4)
+ * - heading_level: (string) h2, h3, h4
+ *
+ * Slots:
+ * - items: Statistics item components
+ */
+#}
+
+{% set heading_level = heading_level|default('h2') %}
+{% set columns = columns|default('4') %}
+
+{% set classes = [
+  'y-statistics',
+  'y-statistics--cols-' ~ columns,
+  image.src ? 'y-statistics--has-image',
+  style|default('standard') != 'standard' ? 'y-statistics--style-' ~ style,
+  section_color|default('colored') ? 'y-statistics--' ~ section_color|default('colored'),
+  section|default('body') != 'body' ? 'y-statistics--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-statistics">
+
+  {% if title or subtitle %}
+    <div class="y-statistics__header">
+      <div class="y-statistics__header-inner">
+        {% if title %}
+          {% if heading_level == 'h2' %}
+            <h2 class="y-statistics__title">{{ title }}</h2>
+          {% elseif heading_level == 'h3' %}
+            <h3 class="y-statistics__title">{{ title }}</h3>
+          {% elseif heading_level == 'h4' %}
+            <h4 class="y-statistics__title">{{ title }}</h4>
+          {% else %}
+            <h2 class="y-statistics__title">{{ title }}</h2>
+          {% endif %}
+        {% endif %}
+
+        {% if subtitle %}
+          <p class="y-statistics__subtitle">{{ subtitle }}</p>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if cta_text and cta_url %}
+    <div class="y-statistics__cta">
+      <a href="{{ cta_url }}" class="y-statistics__button">
+        {{ cta_text }}
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="y-statistics__content">
+    {% if image.src %}
+      <div class="y-statistics__image">
+        <img
+          src="{{ image.src }}"
+          alt="{{ image.alt|default('') }}"
+          loading="lazy"
+        />
+      </div>
+    {% endif %}
+
+    <div class="y-statistics__items">
+      {{ items }}
+    </div>
+  </div>
+
+</section>

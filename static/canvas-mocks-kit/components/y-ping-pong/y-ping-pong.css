@@ -1,0 +1,381 @@
+/* Y Ping Pong Component
+   ws_small_y styling
+   ============================================================ */
+
+.y-ping-pong {
+  padding: 40px 20px;
+}
+
+@media (min-width: 992px) {
+  .y-ping-pong {
+    padding: 60px 36px;
+  }
+}
+
+/* Container - ws_small_y overlapping layout */
+.y-ping-pong__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  min-height: auto;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  .y-ping-pong__container {
+    flex-direction: row;
+    align-items: stretch;
+    width: calc(100% - 72px);
+    min-height: 455px;
+    background-color: var(--smally-ping-pong-item-background, #F2F2F2);
+  }
+}
+
+/* Media - ws_small_y overlapping image */
+.y-ping-pong__media {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: calc(100% - 25px);
+  margin-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+  .y-ping-pong__media {
+    position: absolute;
+    top: 40px;
+    left: -72px;
+    bottom: -40px;
+    width: 50%;
+    max-width: none;
+    margin-bottom: 0;
+  }
+}
+
+.y-ping-pong__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  min-height: 250px;
+}
+
+@media (min-width: 992px) {
+  .y-ping-pong__image {
+    min-height: auto;
+  }
+}
+
+/* Content - ws_small_y padding */
+.y-ping-pong__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px 40px;
+}
+
+@media (min-width: 992px) {
+  .y-ping-pong__content {
+    flex: 1;
+    padding: 30px;
+    margin-left: calc(50% - 72px);
+  }
+}
+
+/* Title - ws_small_y styling with accent bar */
+.y-ping-pong__title {
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 500;
+  color: var(--wsPrimaryColor, #006B6B);
+  margin: 0 0 30px;
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+}
+
+.y-ping-pong__title::after {
+  content: '';
+  display: block;
+  margin-top: 30px;
+  height: 8px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: var(--wsSecondaryColor, #01A490);
+}
+
+@media (min-width: 992px) {
+  .y-ping-pong__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+/* Description - ws_small_y */
+.y-ping-pong__description {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--smally-ping-pong-color, #2F2F2F);
+  margin-bottom: 36px;
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+}
+
+@media (min-width: 992px) {
+  .y-ping-pong__description {
+    margin-bottom: 30px;
+  }
+}
+
+.y-ping-pong__description p {
+  margin: 0 0 1rem;
+}
+
+.y-ping-pong__description p:last-child {
+  margin-bottom: 0;
+}
+
+/* CTA - ws_small_y button */
+.y-ping-pong__cta {
+  display: flex;
+  gap: 20px 30px;
+}
+
+.y-ping-pong__button {
+  display: inline-block;
+  padding: 8px 13px;
+  background: var(--wsPrimaryColor, #006B6B);
+  color: var(--ylb-color-white, white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.y-ping-pong__button:hover {
+  background: var(--wsSecondaryColor, #01A490);
+  transform: none;
+}
+
+/* ========================================
+   Offset variation (matches LB ws_style_option)
+   equal_column: 50% / 50% (default)
+   first_column: 66% / 33%
+   second_column: 33% / 66%
+   ======================================== */
+
+/* equal_column (default): 50/50 — already set by base styles */
+
+/* first_column: 66% / 33% — image takes 66%, content 33% */
+@media (min-width: 992px) {
+  .y-ping-pong--style-small-y.y-ping-pong--first_column .y-ping-pong__media {
+    width: 66%;
+  }
+
+  .y-ping-pong--style-small-y.y-ping-pong--first_column .y-ping-pong__content {
+    margin-left: calc(66% - 72px);
+  }
+
+  .y-ping-pong--style-small-y.y-ping-pong--first_column.y-ping-pong--image-right .y-ping-pong__content {
+    margin-left: 0;
+    margin-right: calc(66% - 72px);
+  }
+}
+
+/* second_column: 33% / 66% — image takes 33%, content 66% */
+@media (min-width: 992px) {
+  .y-ping-pong--style-small-y.y-ping-pong--second_column .y-ping-pong__media {
+    width: 33%;
+  }
+
+  .y-ping-pong--style-small-y.y-ping-pong--second_column .y-ping-pong__content {
+    margin-left: calc(33% - 72px);
+  }
+
+  .y-ping-pong--style-small-y.y-ping-pong--second_column.y-ping-pong--image-right .y-ping-pong__content {
+    margin-left: 0;
+    margin-right: calc(33% - 72px);
+  }
+}
+
+/* ========================================
+   Position: Image Right
+   ws_small_y - swap sides
+   ======================================== */
+.y-ping-pong--image-right .y-ping-pong__container {
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .y-ping-pong--image-right .y-ping-pong__container {
+    flex-direction: row;
+    margin-left: 72px;
+    margin-right: 0;
+  }
+
+  .y-ping-pong--image-right .y-ping-pong__media {
+    left: auto;
+    right: -72px;
+  }
+
+  .y-ping-pong--image-right .y-ping-pong__content {
+    margin-left: 0;
+    margin-right: calc(50% - 72px);
+  }
+}
+
+/* ========================================
+   Background variants
+   ======================================== */
+.y-ping-pong--bg-white {
+  background-color: #fff;
+}
+
+.y-ping-pong--bg-gray {
+  background-color: #f8f9fa;
+}
+
+/* Primary background - teal with white text */
+.y-ping-pong--bg-primary .y-ping-pong__container {
+  background-color: var(--wsPrimaryColor, #006B6B);
+}
+
+.y-ping-pong--bg-primary .y-ping-pong__title {
+  color: #fff;
+}
+
+.y-ping-pong--bg-primary .y-ping-pong__title::after {
+  background-color: var(--ylb-color-white, white);
+}
+
+.y-ping-pong--bg-primary .y-ping-pong__description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.y-ping-pong--bg-primary .y-ping-pong__button {
+  background: var(--ylb-color-white, white);
+  color: var(--wsPrimaryColor, #006B6B);
+}
+
+.y-ping-pong--bg-primary .y-ping-pong__button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+
+/* Ping Pong Item */
+.y-ping-pong--style-small-y {
+  margin-bottom: 40px;
+  border-radius: 10px;
+  width: calc(100% - 72px);
+  position: relative;
+  min-height: 455px;
+  background-color: var(--smally-ping-pong-item-background, #F2F2F2);
+}
+
+@media (max-width: 1199.98px) {
+  .y-ping-pong--style-small-y {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+/* Image Wrapper */
+.y-ping-pong--style-small-y .y-ping-pong__media {
+  position: absolute;
+  top: 40px;
+  right: -72px;
+  bottom: -40px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1199.98px) {
+  .y-ping-pong--style-small-y .y-ping-pong__media {
+    position: unset;
+    max-width: calc(100% - 25px);
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .y-ping-pong--style-small-y .y-ping-pong__media {
+    min-height: 250px !important;
+  }
+}
+
+/* Title */
+.y-ping-pong--style-small-y .y-ping-pong__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  color: var(--smally-ping-pong-color-header, black);
+}
+
+.y-ping-pong--style-small-y .y-ping-pong__title::after {
+  content: "";
+  display: block;
+  margin-top: 30px;
+  height: 8px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: rgb(11, 169, 232);
+}
+
+@media (max-width: 991.98px) {
+  .y-ping-pong--style-small-y .y-ping-pong__title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+/* Description */
+.y-ping-pong--style-small-y .y-ping-pong__description {
+  font-family: var(--ylb-font-family-verdana, Verdana), sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  color: var(--smally-ping-pong-color, black);
+}
+
+@media (max-width: 991.98px) {
+  .y-ping-pong--style-small-y .y-ping-pong__description {
+    margin-bottom: 36px;
+  }
+}
+
+.y-ping-pong--style-small-y .y-ping-pong__description p {
+  font-family: var(--ylb-font-family-verdana, Verdana), sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  color: var(--smally-ping-pong-color, black);
+}
+
+@media (max-width: 991.98px) {
+  .y-ping-pong--style-small-y .y-ping-pong__description p {
+    margin-bottom: 36px;
+  }
+}
+
+/* Buttons */
+.y-ping-pong--style-small-y .y-ping-pong__buttons {
+  display: flex;
+  gap: 20px 30px;
+}
+
+/* Content Wrapper Padding */
+.y-ping-pong--style-small-y .y-ping-pong__content {
+  padding: 30px;
+}
+
+@media (max-width: 1199.98px) {
+  .y-ping-pong--style-small-y .y-ping-pong__content {
+    padding: 0 20px 40px;
+  }
+}

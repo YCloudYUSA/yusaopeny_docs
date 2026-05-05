@@ -1,0 +1,73 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Simple Block
+description: Simple content block with just body content
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    body:
+      type: string
+      title: Body Content
+      description: Main content area (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<p>This is a simple content block for displaying formatted text and basic HTML content.</p>'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      body:
+        label: Body Content
+    icon_map:
+      mobile:
+        - [body]
+      tablet:
+        - [body, body]
+      desktop:
+        - [body, body]
+      large_desktop:
+        - [body, body]
+
+complexity:
+  level: simple
+  css_lines: 30
+  has_js: false
+  schema_props: 4
+  enum_variants: 4
+  demo_pages: 11
+  has_media: true
+  responsive_breakpoints: 0
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-simple-block

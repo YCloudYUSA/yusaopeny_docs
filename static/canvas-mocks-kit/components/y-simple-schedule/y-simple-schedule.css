@@ -1,0 +1,87 @@
+/* Y Simple Schedule Component */
+
+.y-simple-schedule {
+  padding: 2rem 1rem;
+}
+
+.y-simple-schedule__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.y-simple-schedule__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 1.5rem;
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+}
+
+.y-simple-schedule__table-wrapper {
+  overflow-x: auto;
+}
+
+.y-simple-schedule__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.y-simple-schedule__table th,
+.y-simple-schedule__table td {
+  padding: 0.875rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.y-simple-schedule__table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.y-simple-schedule__time {
+  font-weight: 600;
+  color: var(--wsPrimaryColor, #0060af);
+  white-space: nowrap;
+}
+
+.y-simple-schedule__name {
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+.y-simple-schedule__instructor,
+.y-simple-schedule__location {
+  color: #666;
+}
+
+.y-simple-schedule__table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.y-simple-schedule__empty {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-simple-schedule {
+    padding: 3rem 2rem;
+  }
+
+  .y-simple-schedule__title {
+    font-size: 1.75rem;
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+.y-simple-schedule--style-small-y .y-simple-schedule__title {
+  font-family: var(--ws-font-family-heading);
+}

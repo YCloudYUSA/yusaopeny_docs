@@ -1,0 +1,10 @@
+{
+  "_meta": { "title": "Default — 4 stats, small-y primary" },
+  "title": "By the Numbers", "subtitle": "Making a difference in our community", "background": "primary", "columns": "4", "style": "small-y", "section": "body",
+  "items": [
+    { "value": "50000", "suffix": "+", "label": "Members Served", "description": "A growing family of individuals finding support, health, and connection through our dedicated regional hubs." },
+    { "value": "125",   "label": "Programs Offered", "description": "From youth development to senior wellness, we provide a diverse range of activities designed to empower every age and interest." },
+    { "value": "98",    "suffix": "%", "label": "Member Satisfaction", "description": "Our commitment to excellence is reflected in the trust of our community, ensuring every visitor feels valued and supported." },
+    { "value": "2",     "prefix": "$", "suffix": "M+", "label": "Community Investment", "description": "Fueling local growth through direct funding, scholarships, and resources that create lasting opportunities for all." }
+  ]
+}

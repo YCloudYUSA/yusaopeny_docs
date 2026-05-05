@@ -1,0 +1,56 @@
+{#
+/**
+ * Y Menu CTA component.
+ *
+ * Variables:
+ * - title: (string) CTA heading
+ * - description: (string) Brief description
+ * - image: (object) Featured image
+ * - cta_text: (string) Button text
+ * - cta_url: (string) Button URL
+ * - heading_level: (string) h3, h4, h5
+ */
+#}
+
+{% set heading_level = heading_level|default('h4') %}
+
+{% set classes = [
+  'y-menu-cta',
+  style|default('standard') != 'standard' ? 'y-menu-cta--style-' ~ style,
+  section|default('body') != 'body' ? 'y-menu-cta--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-menu-cta">
+  {% if image.src %}
+    <div class="y-menu-cta__media">
+      <img
+        src="{{ image.src }}"
+        alt="{{ image.alt|default('') }}"
+        class="y-menu-cta__image"
+        loading="lazy"
+        {% if image.width %}width="{{ image.width }}"{% endif %}
+        {% if image.height %}height="{{ image.height }}"{% endif %}
+      />
+    </div>
+  {% endif %}
+
+  <div class="y-menu-cta__content">
+    {% if title %}
+      <{{ heading_level }} class="y-menu-cta__title">
+        {{ title }}
+      </{{ heading_level }}>
+    {% endif %}
+
+    {% if description %}
+      <p class="y-menu-cta__description">{{ description }}</p>
+    {% endif %}
+
+    {% if cta_text and cta_url %}
+      <div class="y-menu-cta__action">
+        <a href="{{ cta_url }}" class="y-menu-cta__button">
+          {{ cta_text }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</div>

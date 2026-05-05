@@ -1,0 +1,56 @@
+/* Y Activity Finder Component */
+
+.y-activity-finder {
+  padding: 3rem 1rem;
+  background: #f8f9fa;
+}
+
+.y-activity-finder__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.y-activity-finder__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.y-activity-finder__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 0.5rem;
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+}
+
+.y-activity-finder__subtitle {
+  font-size: 1.125rem;
+  color: #666;
+  margin: 0;
+}
+
+.y-activity-finder__app {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-height: 400px;
+  padding: 2rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-activity-finder {
+    padding: 4rem 2rem;
+  }
+
+  .y-activity-finder__title {
+    font-size: 2.5rem;
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+.y-activity-finder--style-small-y .y-activity-finder__title {
+  font-family: var(--ws-font-family-heading);
+}

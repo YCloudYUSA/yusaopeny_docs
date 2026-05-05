@@ -1,0 +1,8 @@
+{
+  "_meta": { "title": "Default — footer" },
+  "copyright": "© 2026 YMCA of Madison County. All rights reserved.",
+  "back_to_top": true, "style": "standard", "section": "body",
+  "footer_logo": "<strong>YMCA</strong><br>of Madison County",
+  "footer_menus": "<div style='display:grid;grid-template-columns:repeat(3,1fr);gap:2rem'><div><h4 style='margin-top:0'>About</h4><ul style='list-style:none;padding:0'><li><a href='/about'>Our Mission</a></li><li><a href='/contact'>Contact</a></li></ul></div><div><h4 style='margin-top:0'>Programs</h4><ul style='list-style:none;padding:0'><li><a href='/swim'>Swim</a></li><li><a href='/youth'>Youth</a></li><li><a href='/wellness'>Wellness</a></li></ul></div><div><h4 style='margin-top:0'>Get Involved</h4><ul style='list-style:none;padding:0'><li><a href='/volunteer'>Volunteer</a></li><li><a href='/donate'>Donate</a></li><li><a href='/jobs'>Jobs</a></li></ul></div></div>",
+  "social_links": "<div style='display:flex;gap:.75rem'><a href='#'>FB</a> <a href='#'>IG</a> <a href='#'>TW</a> <a href='#'>YT</a></div>"
+}

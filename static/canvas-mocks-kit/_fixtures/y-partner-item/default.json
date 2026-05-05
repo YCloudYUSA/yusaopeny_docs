@@ -1,0 +1,12 @@
+{
+  "_meta": {
+    "title": "Default — single partner logo (Acme Corp sample)",
+    "description": "W2/P1 sweep fixture. Single y-partner-item rendered inside a 1-item y-partners-tier > 1-item y-partners parent shell (depth=2 slot). Mirrors y-partners default.json tiers[0].partners[0]."
+  },
+  "name": "Acme Corp",
+  "logo": {
+    "src": "../assets/photos/y_lb_demo/partner_logo_1.jpg",
+    "alt": "Acme Corp"
+  },
+  "url": "/partners/acme"
+}

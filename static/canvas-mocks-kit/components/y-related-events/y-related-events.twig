@@ -1,0 +1,81 @@
+{#
+/**
+ * Y Related Events component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - events: (array) Event list
+ *   - title: (string) Event title
+ *   - url: (string) Event URL
+ *   - image: (object) Event image
+ *   - date: (string) Event date
+ *   - time: (string) Event time
+ *   - location: (string) Event location
+ * - cta_text: (string) View all link text
+ * - cta_url: (string) View all link URL
+ */
+#}
+
+{% set classes = [
+  'y-related-events',
+  style|default('standard') != 'standard' ? 'y-related-events--style-' ~ style,
+  section|default('body') != 'body' ? 'y-related-events--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-related-events">
+  <div class="y-related-events__container">
+    {% if title %}
+      <div class="y-related-events__header">
+        <h2 class="y-related-events__title">{{ title }}</h2>
+        {% if cta_text and cta_url %}
+          <a href="{{ cta_url }}" class="y-related-events__cta">{{ cta_text }}</a>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if events %}
+      <div class="y-related-events__grid">
+        {% for event in events %}
+          <article class="y-related-events__card">
+            {% if event.image.src %}
+              <div class="y-related-events__image">
+                <a href="{{ event.url }}">
+                  <img
+                    src="{{ event.image.src }}"
+                    alt="{{ event.image.alt|default(event.title) }}"
+                    loading="lazy"
+                    {% if event.image.width %}width="{{ event.image.width }}"{% endif %}
+                    {% if event.image.height %}height="{{ event.image.height }}"{% endif %}
+                  />
+                </a>
+              </div>
+            {% endif %}
+            <div class="y-related-events__content">
+              {% if event.date %}
+                <div class="y-related-events__date-badge">
+                  <span class="y-related-events__date">{{ event.date }}</span>
+                  {% if event.time %}
+                    <span class="y-related-events__time">{{ event.time }}</span>
+                  {% endif %}
+                </div>
+              {% endif %}
+              {% if event.title %}
+                <h3 class="y-related-events__card-title">
+                  <a href="{{ event.url }}">{{ event.title }}</a>
+                </h3>
+              {% endif %}
+              {% if event.location %}
+                <div class="y-related-events__location">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  {{ event.location }}
+                </div>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>

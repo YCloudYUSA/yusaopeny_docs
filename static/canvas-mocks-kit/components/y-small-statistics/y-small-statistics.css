@@ -1,0 +1,191 @@
+/* Y Small Statistics Component */
+
+.small-y-statistics {
+  padding: 0;
+}
+
+.small-y-statistics--bg-white {
+  background: #fff;
+}
+
+.small-y-statistics--bg-light {
+  background: #f8f9fa;
+}
+
+.small-y-statistics--bg-primary .small-y-statistics__header {
+  background: linear-gradient(118.46deg, var(--wsPrimaryColor, #006b6b) 28.72%, var(--wsSecondaryColor, #01a490) 96.61%);
+}
+
+/* Header with chevron */
+.small-y-statistics__header {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+
+.small-y-statistics__header-wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.small-y-statistics__chevron {
+  position: absolute;
+  z-index: 1;
+  top: -45%;
+  right: 5px;
+  transform: translateX(50%);
+}
+
+@media (min-width: 992px) {
+  .small-y-statistics__chevron {
+    height: 250%;
+    top: -90%;
+    right: 60px;
+    transform: translate(0);
+  }
+}
+
+.small-y-statistics__chevron svg {
+  height: 120%;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .small-y-statistics__chevron svg {
+    width: auto;
+  }
+}
+
+.small-y-statistics__chevron--lighter {
+  right: -180px;
+}
+
+/* Chevron colors — primary bg */
+.small-y-statistics--bg-primary .small-y-statistics__chevron svg path {
+  fill: var(--small-y-colored-chevron-dark, #0fa895);
+}
+
+.small-y-statistics--bg-primary .small-y-statistics__chevron--lighter svg path {
+  fill: var(--small-y-colored-chevron, #5bbbbc);
+}
+
+/* Header bg — light */
+.small-y-statistics--bg-light .small-y-statistics__header {
+  background: var(--ylb-color-light-grey-1, #f2f2f2);
+}
+
+.small-y-statistics--bg-light .small-y-statistics-item__value {
+  background-color: var(--wsPrimaryColor, #636466);
+  color: var(--y-color-white, white);
+}
+
+/* Chevron colors — light/white bg */
+.small-y-statistics--bg-light .small-y-statistics__chevron svg path,
+.small-y-statistics--bg-white .small-y-statistics__chevron svg path {
+  fill: var(--small-y-gray-chevron, #c5c5c5);
+}
+
+.small-y-statistics--bg-light .small-y-statistics__chevron--lighter svg path,
+.small-y-statistics--bg-white .small-y-statistics__chevron--lighter svg path {
+  fill: var(--small-y-gray-chevron-dark, #c5c5c5);
+}
+
+.small-y-statistics--bg-primary .small-y-statistics__title {
+  color: #fff;
+}
+
+.small-y-statistics__container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+  top: -60px;
+}
+
+@media (min-width: 600px) {
+  .small-y-statistics__container,
+  .small-y-statistics__header-wrapper {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .small-y-statistics__container,
+  .small-y-statistics__header-wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .small-y-statistics__container,
+  .small-y-statistics__header-wrapper {
+    max-width: 1200px;
+  }
+}
+
+.small-y-statistics__title {
+  font-family: var(--ylb-font-family-cachet, Cachet), Verdana, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  color: var(--wsPrimaryColor, black);
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.small-y-statistics__subtitle {
+  font-family: var(--ylb-font-family-verdana, Verdana), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+
+.small-y-statistics--bg-primary .small-y-statistics__subtitle {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.small-y-statistics__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.small-y-statistics__grid > * {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+}
+
+/* Columns */
+@media (min-width: 1060px) {
+  .small-y-statistics--cols-2 .small-y-statistics__grid > *,
+  .small-y-statistics--cols-3 .small-y-statistics__grid > *,
+  .small-y-statistics--cols-4 .small-y-statistics__grid > * {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .small-y-statistics__header {
+    padding: 60px 0;
+  }
+
+  .small-y-statistics__title {
+    font-size: 1.75rem;
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+.small-y-statistics--style-small-y .small-y-statistics__title {
+  font-family: var(--ylb-font-family-cachet);
+}

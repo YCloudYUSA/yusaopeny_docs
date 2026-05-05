@@ -1,0 +1,112 @@
+/* Y Menu Block Component */
+
+.y-menu-block {
+  padding: 1rem;
+}
+
+.y-menu-block__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.y-menu-block__menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.y-menu-block__menu a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.y-menu-block__menu a:hover,
+.y-menu-block__menu a.is-active {
+  color: var(--wsPrimaryColor, #0060af);
+}
+
+/* Vertical style */
+.y-menu-block--vertical .y-menu-block__menu ul ul {
+  padding-left: 1rem;
+}
+
+.y-menu-block--vertical .y-menu-block__menu ul ul a {
+  font-size: 0.9375rem;
+  color: #666;
+}
+
+/* Horizontal style */
+.y-menu-block--horizontal .y-menu-block__menu > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.y-menu-block--horizontal .y-menu-block__menu > ul > li > a {
+  font-weight: 600;
+}
+
+/* Dropdown style */
+.y-menu-block--dropdown .y-menu-block__menu > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.y-menu-block--dropdown .y-menu-block__menu > ul > li {
+  position: relative;
+}
+
+.y-menu-block--dropdown .y-menu-block__menu ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.y-menu-block--dropdown .y-menu-block__menu > ul > li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.y-menu-block--dropdown .y-menu-block__menu ul ul a {
+  padding: 0.5rem 1rem;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .y-menu-block--horizontal .y-menu-block__menu > ul,
+  .y-menu-block--dropdown .y-menu-block__menu > ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .y-menu-block--dropdown .y-menu-block__menu ul ul {
+    position: static;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    padding-left: 1rem;
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+.y-menu-block--style-small-y .y-menu-block__title {
+  font-family: var(--ws-font-family-heading);
+}

@@ -1,0 +1,136 @@
+/* Y Grid CTA Component */
+
+.y-grid-cta {
+  padding: 3rem 1rem;
+}
+
+/* Container */
+.y-grid-cta__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.y-grid-cta__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.y-grid-cta__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 0.75rem;
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+  line-height: 1.2;
+}
+
+.y-grid-cta__subtitle {
+  font-size: 1.125rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.y-grid-cta__header h2 {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  color: var(--wsPrimaryColor, #006b6b);
+  font-family: var(--y-font-family, 'Cachet', Verdana, sans-serif);
+}
+
+@media (min-width: 768px) {
+  .y-grid-cta__header h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+/* Grid */
+.y-grid-cta__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.y-grid-cta--cols-2 .y-grid-cta__grid {
+  grid-template-columns: 1fr;
+}
+
+.y-grid-cta--cols-3 .y-grid-cta__grid {
+  grid-template-columns: 1fr;
+}
+
+.y-grid-cta--cols-4 .y-grid-cta__grid {
+  grid-template-columns: 1fr;
+}
+
+/* Footer */
+.y-grid-cta__footer {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.y-grid-cta__button {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: var(--wsPrimaryColor, #0060af);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: var(--wsBorderRadius, 4px);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.y-grid-cta__button:hover {
+  background: #004080;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (min-width: 576px) {
+  .y-grid-cta--cols-2 .y-grid-cta__grid,
+  .y-grid-cta--cols-3 .y-grid-cta__grid,
+  .y-grid-cta--cols-4 .y-grid-cta__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .y-grid-cta {
+    padding: 4rem 2rem;
+  }
+
+  .y-grid-cta__title {
+    font-size: 2rem;
+  }
+
+  .y-grid-cta--cols-3 .y-grid-cta__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .y-grid-cta--cols-4 .y-grid-cta__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .y-grid-cta {
+    padding: 5rem 2rem;
+  }
+
+  .y-grid-cta__title {
+    font-size: 2.25rem;
+  }
+
+  .y-grid-cta__grid {
+    gap: 2rem;
+  }
+
+  .y-grid-cta--cols-4 .y-grid-cta__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+

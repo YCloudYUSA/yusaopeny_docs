@@ -1,0 +1,127 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Search Results
+description: Search results display with pagination and result count
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Main heading for the search results page
+      examples:
+        - 'Search Results'
+
+    search_query:
+      type: string
+      title: Search Query
+      description: The current search term being displayed
+      examples:
+        - 'swimming lessons'
+
+    total_results:
+      type: integer
+      title: Total Results
+      description: Total number of matching results
+      examples:
+        - 42
+
+    current_page:
+      type: integer
+      title: Current Page
+      description: Current active page number
+      default: 1
+      examples:
+        - 1
+
+    total_pages:
+      type: integer
+      title: Total Pages
+      description: Total number of pages available
+      examples:
+        - 5
+
+    items_per_page:
+      type: integer
+      title: Items Per Page
+      description: Number of results displayed per page
+      default: 10
+      examples:
+        - 10
+
+    empty_message:
+      type: string
+      title: Empty Message
+      description: Message shown when no results are found
+      examples:
+        - 'No results found for your search. Try different keywords.'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  results:
+    title: Search Results
+    description: Individual search result items
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      results:
+        label: Search Results
+    icon_map:
+      mobile:
+        - [title]
+        - [results]
+      tablet:
+        - [title]
+        - [results, results]
+      desktop:
+        - [title]
+        - [results, results]
+      large_desktop:
+        - [title]
+        - [results, results]
+
+complexity:
+  level: medium
+  css_lines: 238
+  has_js: false
+  schema_props: 10
+  enum_variants: 4
+  demo_pages: 5
+  has_media: false
+  responsive_breakpoints: 2
+  backend_reason: 'search results display, depends on search backend'
+  integrations: [search]
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-search-results

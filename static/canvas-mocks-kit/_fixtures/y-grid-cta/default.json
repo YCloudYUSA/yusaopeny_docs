@@ -1,0 +1,16 @@
+{
+  "_meta": { "title": "Default — 3-col CTA grid", "description": "Hand-authored. Photos sourced from y_lb_demo membership/jointhey/volunteer page imagery." },
+  "title": "Get Started Today",
+  "subtitle": "Pick the path that fits your goals.",
+  "cta_text": "View All Programs",
+  "cta_url": "/programs",
+  "columns": "3",
+  "heading_level": "h2",
+  "style": "standard",
+  "section": "body",
+  "items": [
+    { "title": "Join the Y",   "description": "<p>Become a member with full access.</p>",            "image": { "src": "../assets/photos/y_lb_demo/membership_page_image_1.jpeg",   "alt": "Join the Y" },   "cta_text": "Sign Up",      "cta_url": "/membership",  "heading_level": "h3" },
+    { "title": "Find a Class", "description": "<p>Browse fitness, swim, and youth classes.</p>",     "image": { "src": "../assets/photos/y_lb_demo/jointhey_page_image_1.jpeg",     "alt": "Find a Class" }, "cta_text": "Browse",       "cta_url": "/classes",     "heading_level": "h3" },
+    { "title": "Volunteer",    "description": "<p>Make a difference in your community.</p>",         "image": { "src": "../assets/photos/y_lb_demo/volunteer_ops_page_image_1.jpeg","alt": "Volunteer" },    "cta_text": "Get Involved", "cta_url": "/volunteer",   "heading_level": "h3" }
+  ]
+}

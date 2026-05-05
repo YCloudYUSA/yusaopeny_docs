@@ -1,0 +1,127 @@
+/* Y Branch Hours Component */
+
+.y-branch-hours {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.y-branch-hours__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--wsPrimaryColor, #0060af);
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+}
+
+/* Hours list */
+.y-branch-hours__list {
+  margin: 0;
+  padding: 0;
+}
+
+.y-branch-hours__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.y-branch-hours__row:last-child {
+  border-bottom: none;
+}
+
+.y-branch-hours__row--today {
+  background: rgba(0, 96, 175, 0.05);
+  margin: 0 -0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+}
+
+.y-branch-hours__row--today .y-branch-hours__day,
+.y-branch-hours__row--today .y-branch-hours__time {
+  font-weight: 700;
+  color: var(--wsPrimaryColor, #0060af);
+}
+
+/* Day */
+.y-branch-hours__day {
+  font-size: 0.9375rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Time */
+.y-branch-hours__time {
+  font-size: 0.9375rem;
+  color: #666;
+  margin: 0;
+  text-align: right;
+}
+
+/* Notice */
+.y-branch-hours__notice {
+  font-size: 0.8125rem;
+  color: #666;
+  margin: 1rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f0f0f0;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-branch-hours {
+    padding: 2rem;
+  }
+
+  .y-branch-hours__title {
+    font-size: 1.5rem;
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+
+/* Title — ported from .block-lb-branch-hours .branch-name h1 */
+.y-branch-hours--style-small-y .y-branch-hours__title {
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+@media (min-width: 768px) {
+  .y-branch-hours--style-small-y .y-branch-hours__title {
+    font-size: 65px;
+    line-height: 75px;
+  }
+}
+
+/* Day labels — ported from .block-lb-branch-hours--wrapper .info-card .label */
+.y-branch-hours--style-small-y .y-branch-hours__day {
+  font-size: 15px;
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  font-weight: 700;
+}
+
+/* General typography — ported from .block-lb-branch-hours--wrapper div */
+.y-branch-hours--style-small-y .y-branch-hours__time {
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+/* Notice — inherit body font */
+.y-branch-hours--style-small-y .y-branch-hours__notice {
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+}

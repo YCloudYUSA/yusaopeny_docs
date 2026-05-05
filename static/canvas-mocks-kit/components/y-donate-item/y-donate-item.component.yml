@@ -1,0 +1,88 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Donate Item
+description: Individual donation amount option button
+status: experimental
+group: Molecules
+
+props:
+  type: object
+  properties:
+    amount:
+      type: string
+      title: Amount
+      description: Donation amount to display
+      examples:
+        - '$25'
+
+    label:
+      type: string
+      title: Label
+      description: Optional label describing what the amount supports
+      examples:
+        - 'Provides swim lessons for one child'
+
+    url:
+      type: string
+      title: Donation URL
+      description: Link to donation form with pre-selected amount
+      examples:
+        - '/donate?amount=25'
+
+    is_featured:
+      type: boolean
+      title: Featured
+      description: Highlight this amount as recommended
+      default: false
+      examples:
+        - true
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      amount:
+        label: Amount
+      label:
+        label: Label
+    icon_map:
+      mobile:
+        - [amount]
+        - [label]
+      tablet:
+        - [amount]
+        - [label]
+      desktop:
+        - [amount]
+        - [label]
+      large_desktop:
+        - [amount]
+        - [label]
+
+complexity:
+  level: simple
+  css_lines: 86
+  has_js: false
+  schema_props: 6
+  enum_variants: 2
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-donate-item

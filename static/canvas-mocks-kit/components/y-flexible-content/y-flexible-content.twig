@@ -1,0 +1,29 @@
+{#
+/**
+ * Y Flexible Content component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - background: (string) Background color variant
+ * - content: (slot) Content blocks
+ */
+#}
+
+{% set classes = [
+  'y-flexible-content',
+  'y-flexible-content--single',
+  background ? 'y-flexible-content--bg-' ~ background : '',
+  style|default('standard') != 'standard' ? 'y-flexible-content--style-' ~ style,
+  section|default('body') != 'body' ? 'y-flexible-content--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-flexible-content">
+  <div class="y-flexible-content__container">
+    {% if title %}
+      <h2 class="y-flexible-content__title">{{ title }}</h2>
+    {% endif %}
+    <div class="y-flexible-content__content">
+      {{ content }}
+    </div>
+  </div>
+</section>

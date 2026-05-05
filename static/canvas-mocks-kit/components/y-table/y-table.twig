@@ -1,0 +1,50 @@
+{#
+/**
+ * Y Table component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section subheading
+ * - content: (string) Table or text content (HTML)
+ * - striped: (boolean) Striped table rows
+ * - bordered: (boolean) Bordered table cells
+ * - responsive: (boolean) Enable responsive scrolling
+ * - heading_level: (string) h2, h3, h4
+ */
+#}
+
+{% set heading_level = heading_level|default('h2') %}
+{% set striped = striped ?? true %}
+{% set bordered = bordered ?? false %}
+{% set responsive = responsive ?? true %}
+
+{% set classes = [
+  'y-table',
+  striped ? 'y-table--striped',
+  bordered ? 'y-table--bordered',
+  responsive ? 'y-table--responsive',
+  style|default('standard') != 'standard' ? 'y-table--style-' ~ style,
+  section|default('body') != 'body' ? 'y-table--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-table">
+  {% if title or subtitle %}
+    <div class="y-table__header">
+      {% if title %}
+        <{{ heading_level }} class="y-table__title">
+          {{ title }}
+        </{{ heading_level }}>
+      {% endif %}
+
+      {% if subtitle %}
+        <p class="y-table__subtitle">{{ subtitle }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if content %}
+    <div class="y-table__content">
+      {{ content|raw }}
+    </div>
+  {% endif %}
+</section>

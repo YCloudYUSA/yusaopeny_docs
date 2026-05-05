@@ -1,0 +1,140 @@
+/* Y Accordion Component */
+
+/* Default (body): matches Bootstrap container responsive max-widths */
+.y-accordion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .y-accordion {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .y-accordion {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .y-accordion {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .y-accordion {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .y-accordion--section-banner {
+    max-width: 95%;
+  }
+}
+
+/* mobile: [title], [subtitle], [items] — col-12 */
+.y-accordion__header,
+.y-accordion__container {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.y-accordion__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 0.5rem;
+  font-family: var(--y-font-family, 'Cachet', sans-serif);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.y-accordion__subtitle {
+  font-size: 1.125rem;
+  color: #666;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 1.5rem !important;
+}
+
+.y-accordion__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* desktop: [title+subtitle, items] — header col-4 (33%), items col-8 (67%) */
+@media (min-width: 992px) {
+  .y-accordion {
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .y-accordion__header {
+    flex: 0 0 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+    position: sticky;
+    top: 2rem;
+    padding-top: 1rem;
+  }
+
+  .y-accordion__container {
+    flex: 1;
+    max-width: none;
+    padding-top: 2rem;
+  }
+}
+
+
+/* FAQ variant */
+.y-accordion--faq {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .y-accordion--faq {
+    padding: 3rem;
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   Ported from ymcasv.org small_y_accordion.css
+   ======================================== */
+
+
+/* Title styling */
+.y-accordion--style-small-y .y-accordion__title {
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 400;
+  color: var(--wsPrimaryColor, #006b6b);
+}
+
+@media (min-width: 992px) {
+  .y-accordion--style-small-y .y-accordion__title {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
+
+
+/* Subtitle */
+.y-accordion--style-small-y .y-accordion__subtitle {
+  color: #2f2f2f;
+}
+
+/* Item container */
+.y-accordion--style-small-y .y-accordion-item {
+  border: none;
+}

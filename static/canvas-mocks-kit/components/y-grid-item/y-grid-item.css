@@ -1,0 +1,124 @@
+/* Y Grid Item Component */
+
+.y-grid-item {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: var(--wsBorderRadius, 8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 100%;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.y-grid-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Media */
+.y-grid-item__media {
+  flex-shrink: 0;
+}
+
+.y-grid-item__media-link {
+  display: block;
+}
+
+.y-grid-item__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content */
+.y-grid-item__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.y-grid-item__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 0.75rem;
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+  line-height: 1.3;
+}
+
+.y-grid-item__description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.y-grid-item__description p {
+  margin: 0 0 0.75rem;
+}
+
+.y-grid-item__description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Embedded media */
+.y-grid-item__description img {
+  max-width: 100%;
+  height: auto;
+}
+
+.y-grid-item__description .media,
+.y-grid-item__description figure {
+  margin: 1rem 0;
+  max-width: 100%;
+}
+
+.y-grid-item__description .media img {
+  display: block;
+  border-radius: var(--wsBorderRadius, 8px);
+}
+
+.y-grid-item__description figure figcaption {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* CTA */
+.y-grid-item__cta {
+  margin-top: auto;
+}
+
+.y-grid-item__button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--wsPrimaryColor, #0060af);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: var(--wsBorderRadius, 4px);
+  transition: background-color 0.2s ease;
+}
+
+.y-grid-item__button:hover {
+  background: #004080;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-grid-item__title {
+    font-size: 1.375rem;
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+.y-grid-item--style-small-y .y-grid-item__title {
+  font-family: var(--ws-font-family-heading);
+}

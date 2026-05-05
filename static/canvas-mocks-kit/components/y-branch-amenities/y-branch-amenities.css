@@ -1,0 +1,211 @@
+/* Y Branch Amenities Component */
+
+.y-branch-amenities {
+  padding: 3rem 1rem;
+  background: #fff;
+}
+
+.y-branch-amenities__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Image */
+.y-branch-amenities__image-wrapper {
+  flex-shrink: 0;
+}
+
+.y-branch-amenities__image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Content */
+.y-branch-amenities__content {
+  flex: 1;
+}
+
+/* Header */
+.y-branch-amenities__header {
+  margin-bottom: 1.5rem;
+}
+
+.y-branch-amenities__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 0.5rem;
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+  line-height: 1.2;
+}
+
+.y-branch-amenities__subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Amenities list */
+.y-branch-amenities__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.y-branch-amenities__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+  color: #333;
+  padding: 0.5rem 0;
+}
+
+/* Icons */
+.y-branch-amenities__icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.y-branch-amenities__icon--check {
+  background: #28a745;
+  color: #fff;
+}
+
+.y-branch-amenities__icon--x {
+  background: #dc3545;
+  color: #fff;
+}
+
+/* Status variations */
+.y-branch-amenities__item--closed {
+  color: #999;
+}
+
+/* Visually hidden for screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-branch-amenities {
+    padding: 4rem 2rem;
+  }
+
+  .y-branch-amenities__container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .y-branch-amenities__image-wrapper {
+    width: 50%;
+  }
+
+  .y-branch-amenities__image {
+    display: block;
+  }
+
+  .y-branch-amenities__title {
+    font-size: 1.75rem;
+  }
+
+  .y-branch-amenities__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .y-branch-amenities__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+
+/* Wrapper background — ported from .block-branch-amenities */
+.y-branch-amenities--style-small-y {
+  background: linear-gradient(
+    118.46deg,
+    var(--ws-primary-color, #0060af) 56.84%,
+    var(--ws-secondary-color, #0a2240) 96.61%
+  );
+  overflow: hidden;
+  color: var(--ws-color-white, #ffffff);
+}
+
+/* Title — ported from .block-branch-amenities .field-section-title */
+.y-branch-amenities--style-small-y .y-branch-amenities__title {
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 40px;
+  color: var(--ws-color-white, #ffffff);
+}
+
+@media (min-width: 768px) {
+  .y-branch-amenities--style-small-y .y-branch-amenities__title {
+    font-size: 56px;
+    line-height: 70px;
+  }
+}
+
+/* Subtitle — ported from .block-branch-amenities .field-section-subtitle */
+.y-branch-amenities--style-small-y .y-branch-amenities__subtitle {
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--ws-color-white, #ffffff);
+}
+
+/* Amenity item — ported from .block-branch-amenities .amenity */
+.y-branch-amenities--style-small-y .y-branch-amenities__item {
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--ws-color-white, #ffffff);
+}
+
+/* Check icon on dark background */
+.y-branch-amenities--style-small-y .y-branch-amenities__icon--check {
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--ws-color-white, #ffffff);
+}
+
+/* Closed items — muted on dark background */
+.y-branch-amenities--style-small-y .y-branch-amenities__item--closed {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.y-branch-amenities--style-small-y .y-branch-amenities__icon--x {
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.6);
+}

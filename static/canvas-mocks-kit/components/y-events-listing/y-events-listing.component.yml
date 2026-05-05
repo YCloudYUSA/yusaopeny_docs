@@ -1,0 +1,165 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Events Listing
+description: Grid listing of event cards with pagination
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Main heading for the events section
+      examples:
+        - 'Upcoming Events'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Supporting text below the main heading
+      examples:
+        - 'Join us for exciting programs and activities'
+
+    columns:
+      type: integer
+      title: Columns
+      description: Number of columns in the grid layout
+      default: 3
+      enum:
+        - 2
+        - 3
+        - 4
+      meta:enum:
+        2: '2 Columns'
+        3: '3 Columns'
+        4: '4 Columns'
+      examples:
+        - 3
+
+    show_pagination:
+      type: boolean
+      title: Show Pagination
+      description: Display pagination controls
+      default: true
+      examples:
+        - true
+
+    items_per_page:
+      type: integer
+      title: Items Per Page
+      description: Number of events to display per page
+      default: 9
+      examples:
+        - 9
+
+    current_page:
+      type: integer
+      title: Current Page
+      description: Current active page number
+      default: 1
+      examples:
+        - 1
+
+    total_pages:
+      type: integer
+      title: Total Pages
+      description: Total number of pages available
+      examples:
+        - 5
+
+    empty_message:
+      type: string
+      title: Empty Message
+      description: Message shown when no events are found
+      examples:
+        - 'No upcoming events found.'
+
+    view_mode:
+      type: string
+      title: View Mode
+      description: Display style for event cards
+      default: 'grid'
+      enum:
+        - 'grid'
+        - 'list'
+      meta:enum:
+        grid: 'Grid View'
+        list: 'List View'
+      examples:
+        - 'grid'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  events:
+    title: Events
+    description: Event card items
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      subtitle:
+        label: Subtitle
+      events:
+        label: Events
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [events]
+      tablet:
+        - [title]
+        - [subtitle]
+        - [events, events]
+      desktop:
+        - [title]
+        - [subtitle]
+        - [events, events]
+      large_desktop:
+        - [title]
+        - [subtitle]
+        - [events, events]
+
+complexity:
+  level: medium
+  css_lines: 315
+  has_js: false
+  schema_props: 12
+  enum_variants: 8
+  demo_pages: 2
+  has_media: false
+  responsive_breakpoints: 10
+  backend_reason: 'views:listing_events + lb_event nodes + smart_date + infinite scroll'
+  entity_chain: [lb_event]
+  integrations: [views:listing_events, smart_date, views_infinite_scroll]
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-events-listing

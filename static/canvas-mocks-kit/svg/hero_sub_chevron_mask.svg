@@ -1,0 +1,17 @@
+<svg width="498" height="370" viewBox="0 0 498 370" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+  <!-- Leaf-shaped sub-chevron mask. Original width/height/viewBox
+       preserved so .hero__banner__sub_chevron layout CSS still fits. -->
+  <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M0 40
+           C 0 18 18 0 40 0
+           H 390
+           C 438 0 482 30 496 78
+           L 498 92
+           C 500 112 498 132 492 150
+           L 416 320
+           C 400 352 364 370 322 370
+           H 40
+           C 18 370 0 352 0 330
+           Z"
+        fill="#ffffff"/>
+</svg>

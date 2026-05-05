@@ -1,0 +1,110 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Small Statistics Item
+description: Individual compact statistic with value and label
+status: experimental
+group: Molecules
+
+props:
+  type: object
+  properties:
+    value:
+      type: string
+      title: Value
+      description: The statistic number or value
+      examples:
+        - '10,000+'
+
+    label:
+      type: string
+      title: Label
+      description: Description of what the value represents
+      examples:
+        - 'Members Served'
+
+    prefix:
+      type: string
+      title: Prefix
+      description: Optional prefix before the value (e.g., $, #)
+      examples:
+        - '$'
+
+    suffix:
+      type: string
+      title: Suffix
+      description: Optional suffix after the value (e.g., +, %)
+      examples:
+        - '+'
+
+    description:
+      type: string
+      title: Description
+      description: Optional description text below the label
+
+    animate:
+      type: boolean
+      title: Animate
+      description: Enable count-up animation when scrolled into view
+      default: true
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      value:
+        label: Value
+      label:
+        label: Label
+    icon_map:
+      mobile:
+        - [value]
+        - [label]
+      tablet:
+        - [value]
+        - [label]
+      desktop:
+        - [value]
+        - [label]
+      large_desktop:
+        - [value]
+        - [label]
+
+complexity:
+  level: simple
+  css_lines: 52
+  has_js: true
+  schema_props: 8
+  enum_variants: 4
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-small-statistics-item

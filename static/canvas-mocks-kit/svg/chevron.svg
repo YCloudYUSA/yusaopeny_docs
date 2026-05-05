@@ -1,0 +1,17 @@
+<svg width="411" height="661" viewBox="0 0 411 661" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+  <!-- EC brand leaf — replaces the original Y-chevron mask. Original
+       viewBox/width/height preserved so existing layout CSS still fits
+       the slot; internal path redrawn as a leaf to echo the logo. -->
+  <path d="M205.5 10
+           C 325 46 390 178 378 340
+           C 366 458 300 604 205.5 651
+           C 111 604 45 458 33 340
+           C 21 178 86 46 205.5 10 Z"
+        fill="currentColor"/>
+  <path d="M205.5 40 L205.5 640"
+        stroke="#0f2a17" stroke-width="6" stroke-linecap="round" opacity="0.22"/>
+  <path d="M205.5 160 Q140 210 90 300 M205.5 290 Q140 330 92 400 M205.5 420 Q148 450 118 520"
+        stroke="#0f2a17" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.18"/>
+  <path d="M205.5 160 Q271 210 321 300 M205.5 290 Q271 330 319 400 M205.5 420 Q263 450 293 520"
+        stroke="#0f2a17" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.18"/>
+</svg>

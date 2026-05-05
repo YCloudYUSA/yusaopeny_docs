@@ -1,0 +1,217 @@
+/* Y Tabs Component */
+
+.y-tabs__container {
+  padding: 3rem 1rem;
+}
+
+/* Container */
+.y-tabs__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.y-tabs__header {
+  margin-bottom: 2rem;
+}
+
+.y-tabs__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 0.5rem;
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+  line-height: 1.2;
+}
+
+.y-tabs__subtitle {
+  font-size: 1.125rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Tab navigation - styles for child tab-items */
+.y-tabs__content {
+  /* Container for tab navigation and panels */
+}
+
+/* Tab list styling (applied through y-tab-item) */
+.y-tabs [role="tablist"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 0;
+}
+
+.y-tabs [role="tab"] {
+  padding: 0.75rem 1.25rem;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  color: #666;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.y-tabs [role="tab"]:hover {
+  color: var(--wsPrimaryColor, #0060af);
+}
+
+.y-tabs [role="tab"][aria-selected="true"] {
+  color: var(--wsPrimaryColor, #0060af);
+  border-bottom-color: var(--wsPrimaryColor, #0060af);
+}
+
+/* Tab panels */
+.y-tabs [role="tabpanel"] {
+  padding: 1.5rem 0;
+}
+
+.y-tabs [role="tabpanel"][hidden] {
+  display: none;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-tabs__container {
+    padding: 4rem 2rem;
+    max-width: 720px;
+  }
+
+  .y-tabs__title {
+    font-size: 2rem;
+  }
+
+  .y-tabs [role="tab"] {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .y-tabs__container {
+    padding: 5rem 2rem;
+  }
+
+  .y-tabs__title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .y-tabs__container {
+    max-width: 1140px;
+  }
+}
+
+/* Banner / full-width section */
+.y-tabs--section-banner {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.y-tabs--section-banner .y-tabs__container {
+  max-width: none;
+}
+
+.y-tabs--section-banner.y-tabs--style-small-y [role="tablist"] {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* ========================================
+   STYLE: Small Y
+   Ported from ymcasv.org small_y_tabs.css
+   ======================================== */
+
+/* Header spacing */
+.y-tabs--style-small-y .y-tabs__header {
+  margin-bottom: 30px !important;
+}
+
+@media (max-width: 991.98px) {
+  .y-tabs--style-small-y .y-tabs__header {
+    margin-bottom: 40px !important;
+  }
+}
+
+/* Title styling */
+.y-tabs--style-small-y .y-tabs__title {
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--y-font-family, 'Cachet', Verdana, sans-serif);
+  color: var(--ws-color-green-dark, #006b6b);
+  font-weight: 400;
+}
+
+@media (max-width: 991.98px) {
+  .y-tabs--style-small-y .y-tabs__title {
+    margin-bottom: 30px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+/* Subtitle styling */
+.y-tabs--style-small-y .y-tabs__subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--ws-color-dark-grey, #2f2f2f);
+}
+
+/* Tab list container */
+.y-tabs--style-small-y [role="tablist"] {
+  border: none;
+  background-color: var(--ws-color-light-grey, #f2f2f2);
+  gap: 30px;
+  border-radius: var(--ws-border-radius, 10px);
+  margin-bottom: 20px !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px 150px 20px 20px;
+}
+
+@media (max-width: 991.98px) {
+  .y-tabs--style-small-y [role="tablist"] {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 40px !important;
+    gap: 16px;
+  }
+}
+
+/* Tab buttons */
+.y-tabs--style-small-y [role="tab"] {
+  border: none;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 6px 16px;
+  border-radius: var(--ws-border-radius, 10px);
+  font-weight: bold;
+  background-color: var(--ws-color-white, #FFFFFF);
+  color: var(--ws-color-grey, #636466);
+  margin-bottom: 0;
+}
+
+.y-tabs--style-small-y [role="tab"]:hover {
+  color: var(--wsPrimaryColor, #0060af);
+  border: none;
+}
+
+.y-tabs--style-small-y [role="tab"][aria-selected="true"] {
+  background-color: var(--wsPrimaryColor, #0060af);
+  color: var(--ws-color-white, #FFFFFF);
+}

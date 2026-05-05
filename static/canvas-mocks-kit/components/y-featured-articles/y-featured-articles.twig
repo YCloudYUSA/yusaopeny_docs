@@ -1,0 +1,85 @@
+{#
+/**
+ * Y Featured Articles component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - articles: (array) Featured articles
+ * - cta_text: (string) View all link text
+ * - cta_url: (string) View all link URL
+ */
+#}
+
+{% set classes = [
+  'y-featured-articles',
+  style|default('standard') != 'standard' ? 'y-featured-articles--style-' ~ style,
+  section|default('body') != 'body' ? 'y-featured-articles--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-featured-articles">
+  <div class="y-featured-articles__container">
+    {% if title %}
+      <div class="y-featured-articles__header">
+        <h2 class="y-featured-articles__title">{{ title }}</h2>
+        {% if cta_text and cta_url %}
+          <a href="{{ cta_url }}" class="y-featured-articles__cta">{{ cta_text }}</a>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if articles %}
+      <div class="y-featured-articles__grid">
+        {% for article in articles %}
+          {% if loop.first %}
+            {# Hero article #}
+            <article class="y-featured-articles__hero">
+              {% if article.image.src %}
+                <div class="y-featured-articles__hero-image">
+                  <a href="{{ article.url }}">
+                    <img src="{{ article.image.src }}" alt="{{ article.image.alt|default(article.title) }}" loading="lazy" />
+                  </a>
+                </div>
+              {% endif %}
+              <div class="y-featured-articles__hero-content">
+                {% if article.category %}
+                  <span class="y-featured-articles__category">{{ article.category }}</span>
+                {% endif %}
+                <h3 class="y-featured-articles__hero-title">
+                  <a href="{{ article.url }}">{{ article.title }}</a>
+                </h3>
+                {% if article.excerpt %}
+                  <p class="y-featured-articles__excerpt">{{ article.excerpt }}</p>
+                {% endif %}
+                {% if article.date %}
+                  <time class="y-featured-articles__date">{{ article.date }}</time>
+                {% endif %}
+              </div>
+            </article>
+          {% else %}
+            {# Secondary articles #}
+            <article class="y-featured-articles__secondary">
+              {% if article.image.src %}
+                <div class="y-featured-articles__secondary-image">
+                  <a href="{{ article.url }}">
+                    <img src="{{ article.image.src }}" alt="{{ article.image.alt|default(article.title) }}" loading="lazy" />
+                  </a>
+                </div>
+              {% endif %}
+              <div class="y-featured-articles__secondary-content">
+                {% if article.category %}
+                  <span class="y-featured-articles__category y-featured-articles__category--small">{{ article.category }}</span>
+                {% endif %}
+                <h4 class="y-featured-articles__secondary-title">
+                  <a href="{{ article.url }}">{{ article.title }}</a>
+                </h4>
+                {% if article.date %}
+                  <time class="y-featured-articles__date">{{ article.date }}</time>
+                {% endif %}
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,137 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Featured Highlights
+description: Featured content highlights with image and text
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Main heading for the highlights section
+      examples:
+        - 'Why Choose the Y'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Supporting text below the main heading
+      examples:
+        - 'Discover what makes us different'
+
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Featured Image
+      description: Main image for the highlights section
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/ping-pong.jpg'
+          alt: 'YMCA community members'
+
+    description:
+      type: string
+      title: Description
+      description: Main content text (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<p>At the Y, we believe in nurturing potential and creating community.</p>'
+
+    cta_text:
+      type: string
+      title: CTA Button Text
+      description: Call-to-action button label
+      examples:
+        - 'Learn More'
+
+    cta_url:
+      type: string
+      title: CTA Button URL
+      description: Call-to-action button link
+      examples:
+        - '/about'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  highlights:
+    title: Highlight Items
+    description: Individual highlight items with icons
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      subtitle:
+        label: Subtitle
+      image:
+        label: Featured Image
+      description:
+        label: Description
+      cta:
+        label: Call to Action
+      highlights:
+        label: Highlight Items
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [image]
+        - [description]
+        - [cta]
+        - [highlights]
+      tablet:
+        - [title, subtitle]
+        - [image, image, description, description]
+        - [image, image, cta, cta]
+        - [highlights, highlights, highlights, highlights]
+      desktop:
+        - [title, subtitle]
+        - [image, image, description, description]
+        - [image, image, cta, cta]
+        - [highlights, highlights, highlights, highlights]
+      large_desktop:
+        - [title, subtitle]
+        - [image, image, description, description]
+        - [image, image, cta, cta]
+        - [highlights, highlights, highlights, highlights]
+
+complexity:
+  level: simple
+  css_lines: 110
+  has_js: false
+  schema_props: 9
+  enum_variants: 4
+  demo_pages: 2
+  has_media: true
+  responsive_breakpoints: 2
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-featured-highlights

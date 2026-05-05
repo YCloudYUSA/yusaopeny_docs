@@ -1,0 +1,37 @@
+{#
+/**
+ * Y Activity Finder component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section description
+ * - api_endpoint: (string) API URL
+ * - locations: (array) Location options
+ * - app: (slot) React application
+ */
+#}
+
+{% set classes = [
+  'y-activity-finder',
+  style|default('standard') != 'standard' ? 'y-activity-finder--style-' ~ style,
+  section|default('body') != 'body' ? 'y-activity-finder--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-activity-finder">
+  <div class="y-activity-finder__container">
+    {% if title or subtitle %}
+      <div class="y-activity-finder__header">
+        {% if title %}
+          <h2 class="y-activity-finder__title">{{ title }}</h2>
+        {% endif %}
+        {% if subtitle %}
+          <p class="y-activity-finder__subtitle">{{ subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="y-activity-finder__app" data-api="{{ api_endpoint }}">
+      {{ app }}
+    </div>
+  </div>
+</section>

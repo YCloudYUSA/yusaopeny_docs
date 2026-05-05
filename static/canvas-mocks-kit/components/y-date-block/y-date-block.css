@@ -1,0 +1,39 @@
+/* Y Date Block Component */
+
+.y-date-block {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.y-date-block__title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #666;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+}
+
+.y-date-block__dates {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.y-date-block__date {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--wsPrimaryColor, #0060af);
+}
+
+.y-date-block__separator {
+  color: #999;
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+.y-date-block--style-small-y .y-date-block__title {
+  font-family: var(--ws-font-family-heading);
+}

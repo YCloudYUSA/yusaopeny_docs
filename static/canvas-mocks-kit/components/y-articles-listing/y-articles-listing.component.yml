@@ -1,0 +1,151 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Articles Listing
+description: Grid listing of article cards with pagination
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Main heading for the articles section
+      examples:
+        - 'Latest Articles'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Supporting text below the main heading
+      examples:
+        - 'Stay informed with news from your Y'
+
+    columns:
+      type: integer
+      title: Columns
+      description: Number of columns in the grid layout
+      default: 3
+      enum:
+        - 2
+        - 3
+        - 4
+      meta:enum:
+        2: '2 Columns'
+        3: '3 Columns'
+        4: '4 Columns'
+      examples:
+        - 3
+
+    show_pagination:
+      type: boolean
+      title: Show Pagination
+      description: Display pagination controls
+      default: true
+      examples:
+        - true
+
+    items_per_page:
+      type: integer
+      title: Items Per Page
+      description: Number of articles to display per page
+      default: 9
+      examples:
+        - 9
+
+    current_page:
+      type: integer
+      title: Current Page
+      description: Current active page number
+      default: 1
+      examples:
+        - 1
+
+    total_pages:
+      type: integer
+      title: Total Pages
+      description: Total number of pages available
+      examples:
+        - 5
+
+    empty_message:
+      type: string
+      title: Empty Message
+      description: Message shown when no articles are found
+      examples:
+        - 'No articles found matching your criteria.'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  articles:
+    title: Articles
+    description: Article card items
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      subtitle:
+        label: Subtitle
+      articles:
+        label: Articles
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [articles]
+      tablet:
+        - [title]
+        - [subtitle]
+        - [articles, articles]
+      desktop:
+        - [title]
+        - [subtitle]
+        - [articles, articles]
+      large_desktop:
+        - [title]
+        - [subtitle]
+        - [articles, articles]
+
+complexity:
+  level: medium
+  css_lines: 259
+  has_js: false
+  schema_props: 11
+  enum_variants: 6
+  demo_pages: 2
+  has_media: false
+  responsive_breakpoints: 5
+  backend_reason: 'views:listing_articles + article_lb nodes + taxonomy filters'
+  entity_chain: [article_lb]
+  integrations: [views:listing_articles, better_exposed_filters]
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-articles-listing

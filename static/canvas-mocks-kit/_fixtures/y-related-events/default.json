@@ -1,0 +1,11 @@
+{
+  "_meta": { "title": "Default — 3 related events" },
+  "title": "Related Events", "subtitle": "Coming up at the Y.",
+  "columns": "3", "show_date": true, "show_location": true, "show_category": true, "cta_text": "View All", "cta_url": "/events",
+  "style": "standard", "section": "body",
+  "events": [
+    { "title": "Family Swim", "url": "/events/swim",    "image": { "src": "../assets/photos/card-800.svg", "alt": "" }, "summary": "Open swim.",   "date": "2026-05-03", "time": "6 PM", "location": "Downtown", "category": "Family" },
+    { "title": "Yoga in Park", "url": "/events/yoga",   "image": { "src": "../assets/photos/card-800.svg", "alt": "" }, "summary": "Outdoor flow.", "date": "2026-05-08", "time": "8 AM", "location": "Westside", "category": "Wellness" },
+    { "title": "Wellness Fair", "url": "/events/fair",  "image": { "src": "../assets/photos/card-800.svg", "alt": "" }, "summary": "Free screenings.","date": "2026-05-15", "time": "10 AM", "location": "Main",   "category": "Health" }
+  ]
+}
