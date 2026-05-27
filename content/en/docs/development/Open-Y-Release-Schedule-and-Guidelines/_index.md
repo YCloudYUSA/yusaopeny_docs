@@ -1,8 +1,15 @@
 ---
 title: Release Schedule and Guidelines
+keywords:
+  - release-schedule
+  - release-cadence
+  - versioning
+  - semver
 aliases:
   - /docs/wiki/open-y-release-schedule-and-guidelines/
 ---
+
+> Related: [Release Process]({{< relref "/docs/development/How-we-release-OpenY-distribution-from-code-perspective" >}}) (code-side tagging and `openy.info.yml` bumps) · [Release Notes Structure Guide]({{< relref "/docs/contribution-guidelines/release-notes-guide" >}}) (how to write the notes).
 
 ## YMCA Website Services Release Guidelines
 
