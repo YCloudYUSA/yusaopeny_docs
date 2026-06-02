@@ -11,7 +11,11 @@
 (function () {
   "use strict";
 
-  const isIndex = /\/mocks\/index\.html?$|\/mocks\/?$/.test(window.location.pathname);
+  // Catalog index page is tagged `<body data-mx-index>` by the exporter.
+  // Path-independent so sidebar/palette links resolve under any deploy base
+  // (`/canvas-mocks-kit/` on ds-docs, `/docs/design/mocks/` in dev) instead
+  // of assuming a `/mocks/` path. nav.js is `defer`, so body is parsed here.
+  const isIndex = !!(document.body && document.body.dataset.mxIndex);
 
   // Category labels — aligned with ds-docs.y.org Block Library taxonomy
   // (top 8) plus Canvas-only groupings (bottom 5). Source of truth for
