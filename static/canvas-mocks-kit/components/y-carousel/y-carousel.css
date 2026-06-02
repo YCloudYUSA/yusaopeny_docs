@@ -13,7 +13,7 @@
 
 /* Section description / Header */
 .y-carousel__header {
-  padding: 55px 0 30px;
+  padding: 0 0 30px;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 1rem;
@@ -23,32 +23,35 @@
 
 @media (min-width: 768px) {
   .y-carousel__header {
-    padding: 100px 0 60px;
-    margin-bottom: 3rem;
+    padding: 0 0 60px;
+    margin-bottom: 0;
   }
 }
 
 .y-carousel__title {
-  font-size: 48px;
-  line-height: 54px;
+  font-family: var(--ylb-font-family-cachet, 'Cachet', Verdana, sans-serif);
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 500;
+  color: var(--wsPrimaryColor, #006b6b);
+  text-align: center;
   margin-bottom: 20px;
-  font-weight: 700;
-  color: #2f2f2f;
-  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
 }
 
 @media (min-width: 768px) {
   .y-carousel__title {
-    font-size: 64px;
-    line-height: 70px;
-    margin-bottom: 24px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
 .y-carousel__subtitle {
+  font-family: Verdana, sans-serif;
   font-size: 18px;
   line-height: 28px;
-  color: #666;
+  font-weight: 400;
+  color: var(--ylb-color-dark-grey-1, #2f2f2f);
+  text-align: center;
   margin: 0;
 }
 
@@ -72,17 +75,13 @@
 .y-carousel__item {
   text-align: var(--wsTextAlignment, unset);
   background-color: #F2F2F2;
-  height: auto;
   flex: 0 0 100%;
   min-width: 100%;
-}
-
-.y-carousel__item--with-info {
   min-height: 520px;
 }
 
 @media (min-width: 768px) {
-  .y-carousel__item--with-info {
+  .y-carousel__item {
     height: 590px;
   }
 }
@@ -103,6 +102,7 @@
 /* Image wrapper */
 .y-carousel__image-wrapper {
   overflow: hidden;
+  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -129,7 +129,8 @@
 .y-carousel__info {
   display: flex;
   flex-direction: column;
-  align-items: var(--wsFlexAlignment, unset);
+  align-items: center;
+  text-align: center;
   justify-content: center;
   gap: 20px;
   background-color: #F2F2F2;
@@ -141,6 +142,8 @@
     padding: 60px 48px;
     flex: 1 1;
     gap: 26px;
+    align-items: flex-start;
+    text-align: left;
   }
 }
 
@@ -151,25 +154,35 @@
 }
 
 .y-carousel__info-title {
+  font-family: var(--ylb-font-family-cachet, 'Cachet', Verdana, sans-serif);
   font-size: 26px;
   line-height: 32px;
   margin: 0;
-  font-weight: 700;
-  color: #2f2f2f;
+  font-weight: 400;
+  color: var(--wsPrimaryColor, #006b6b);
 }
 
 @media (min-width: 768px) {
   .y-carousel__info-title {
-    font-size: 32px;
-    line-height: 34px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
 .y-carousel__info-text {
+  font-family: Verdana, sans-serif;
   font-size: 18px;
   margin: 0;
   line-height: 28px;
-  color: #666;
+  font-weight: 400;
+  color: var(--ylb-color-dark-grey-1, #2f2f2f);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .y-carousel__info-text {
+    text-align: left;
+  }
 }
 
 .y-carousel__info-cta {
@@ -191,7 +204,7 @@
 .y-carousel__control-panel {
   position: relative;
   margin: -20px 20px 0;
-  background-color: var(--wsSecondaryColor, black);
+  background-color: var(--wsSecondaryColor, #01a490);
   border-radius: 26px;
   height: 40px;
   display: flex;
@@ -259,14 +272,15 @@
 .y-carousel__btn-next svg {
   width: 16px;
   height: 16px;
-  stroke: var(--wsPrimaryColor, #006B6B);
+  stroke: black;
+  stroke-width: 2.5;
 }
 
 @media (min-width: 768px) {
   .y-carousel__btn-prev svg,
   .y-carousel__btn-next svg {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -327,7 +341,6 @@
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .y-carousel__nav:hover {
@@ -392,7 +405,6 @@
   background: rgba(255, 255, 255, 0.5);
   border: 2px solid #fff;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .y-carousel__pagination-dot:hover {
@@ -505,89 +517,26 @@
 }
 
 /* ========================================
-   WS_SMALL_Y STYLE OVERRIDES
-   Based on small_y_carousels module styles
+   CTA BUTTON
    ======================================== */
-
-/* Section description - ws_small_y sizing */
-.y-carousel__header {
-  padding: 0 0 30px;
-}
-
-@media (min-width: 768px) {
-  .y-carousel__header {
-    padding: 0 0 60px;
-    margin-bottom: 0;
-  }
-}
-
-.y-carousel__title {
-  font-size: 35px;
-  line-height: 40px;
-}
-
-@media (min-width: 768px) {
-  .y-carousel__title {
-    font-size: 50px;
-    line-height: 60px;
-  }
-}
-
-/* Info panel title - larger on desktop for ws_small_y */
-.y-carousel__info-title {
-  font-size: 26px;
-  line-height: 32px;
-}
-
-@media (min-width: 768px) {
-  .y-carousel__info-title {
-    font-size: 50px;
-    line-height: 60px;
-  }
-}
-
-/* Info panel alignment - centered on mobile, left on desktop */
-.y-carousel__info {
-  align-items: center;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .y-carousel__info {
-    align-items: flex-start;
-    text-align: left;
-  }
-}
-
-.y-carousel__info-text {
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .y-carousel__info-text {
-    text-align: left;
-  }
-}
-
-/* Control panel - ws_small_y uses secondary color */
-.y-carousel__control-panel {
-  background-color: var(--wsSecondaryColor, #01A490);
-}
-
-/* Button styling - ws_small_y */
 .y-carousel .btn {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 600;
+  font-family: var(--ylb-font-family-cachet, 'Cachet', Verdana, sans-serif);
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 400;
   padding: 8px 13px;
   border-radius: 10px;
-  background-color: var(--wsPrimaryColor, #006B6B);
-  color: var(--ylb-color-white, white);
-  border: none;
+  background-color: var(--wsPartnerColor, #0060af);
+  color: var(--ylb-color-white, #ffffff);
+  border: 2px solid transparent;
+  text-align: center;
   text-decoration: none;
   display: inline-block;
 }
 
 .y-carousel .btn:hover {
-  background-color: var(--wsSecondaryColor, #01A490);
+  background-color: var(--ylb-color-white, #ffffff);
+  color: var(--wsPartnerColor, #0060af);
+  border-color: var(--wsPartnerColor, #0060af);
 }
+

@@ -27,6 +27,22 @@
  * docs/decisions/coverage-gaps.md.
  */
 
+/* CATEGORY 1 — mock-environment affordance (Drupal base theme utility class)
+ * .visually-hidden is provided globally by Drupal core/base theme CSS.
+ * Mocks have no base theme → text inside visually-hidden spans renders visible.
+ * Rule mirrors Drupal core drupal.visually-hidden.css exactly. */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 /* CATEGORY 1 — mock-environment affordance (no opener in iframe)
  * y-modal renders aria-hidden=true by default; production opens via
  * JS trigger from outer page. Inside our iframe preview there's no

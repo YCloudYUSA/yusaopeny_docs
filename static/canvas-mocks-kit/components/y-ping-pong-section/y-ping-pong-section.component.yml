@@ -35,6 +35,30 @@ props:
         small-y: 'Small Y'
 
 
+    background:
+      type: string
+      title: Background
+      description: Background color for child ping-pong items
+      enum:
+        - color
+        - gray
+        - white
+      meta:enum:
+        color: 'Primary Color'
+        gray: 'Gray'
+        white: 'White'
+
+    align:
+      type: string
+      title: Alignment
+      description: Starting image position (left = first item image-left, right = first item image-right)
+      enum:
+        - left
+        - right
+      meta:enum:
+        left: 'Left (starts image-left)'
+        right: 'Right (starts image-right)'
+
     section:
       type: string
       title: Section
@@ -81,13 +105,13 @@ slots:
 
 complexity:
   level: medium
-  css_lines: 185
+  css_lines: 228
   has_js: false
-  schema_props: 5
-  enum_variants: 4
+  schema_props: 6
+  enum_variants: 9
   demo_pages: 12
   has_media: true
-  responsive_breakpoints: 11
+  responsive_breakpoints: 16
 
 libraryOverrides:
   dependencies:

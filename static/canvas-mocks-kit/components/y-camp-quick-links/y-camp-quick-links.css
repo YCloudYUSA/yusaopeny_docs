@@ -15,7 +15,7 @@
   color: #2f2f2f;
   margin: 0 0 1.5rem;
   text-align: center;
-  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
 }
 
 .y-camp-quick-links__grid {
@@ -86,9 +86,3 @@
   }
 }
 
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.y-camp-quick-links--style-small-y .y-camp-quick-links__title {
-  font-family: var(--ws-font-family-heading);
-}

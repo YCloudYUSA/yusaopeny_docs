@@ -13,7 +13,7 @@
 
 /* Section description */
 .y-cards__header {
-  color: var(--ylb-color-dark-grey-1, darkgray);
+  color: var(--ylb-color-dark-grey-1, #2f2f2f);
   margin-bottom: 50px;
 }
 
@@ -22,20 +22,23 @@
 }
 
 .y-cards__title {
-  font-size: 48px;
-  line-height: normal;
+  font-size: 35px;
+  line-height: 40px;
   text-align: var(--wsTextAlignment, center);
-  font-weight: 700;
+  font-weight: 400;
   color: var(--wsPrimaryColor, #006B6B);
-  margin: 0 0 0.5rem;
-  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+  margin: 0 0 20px;
+  font-family: var(--ylb-font-family-cachet, 'Cachet', Verdana, sans-serif);
 }
 
 .y-cards__subtitle {
+  display: block;
   font-size: 18px;
   line-height: 28px;
+  font-weight: 400;
   text-align: var(--wsTextAlignment, center);
-  color: #666;
+  color: var(--ylb-color-dark-grey-1, #2f2f2f);
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
   margin: 0;
 }
 
@@ -62,21 +65,6 @@
   height: 20px;
 }
 
-.y-cards--style-small-y .y-cards__header-text h2 {
-  font-size: 35px;
-  line-height: 40px;
-  margin-bottom: 20px;
-  font-weight: 400;
-  color: var(--wsPrimaryColor, #006b6b);
-  font-family: var(--y-font-family, 'Cachet', Verdana, sans-serif);
-}
-
-@media (min-width: 768px) {
-  .y-cards--style-small-y .y-cards__header-text h2 {
-    font-size: 50px;
-    line-height: 60px;
-  }
-}
 
 /* Grid */
 .y-cards__grid {
@@ -213,12 +201,10 @@
   }
 
   .y-cards__title {
-    font-size: 2.5rem;
+    font-size: 50px;
+    line-height: 60px;
   }
 
-  .y-cards--cols-3 .y-cards__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 @media (min-width: 992px) {
@@ -258,6 +244,10 @@
 }
 
 @media (min-width: 1060px) {
+  .y-cards--cols-3 .y-cards__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .y-cards--cols-2 .y-card__image-wrapper {
     min-height: 360px;
   }
@@ -634,90 +624,3 @@
   color: var(--wsPrimaryColor, #006B6B);
 }
 
-/* ========================================
-   STYLE: Small Y
-   Ported from ymcasv.org small_y_cards.css
-   ======================================== */
-.y-cards--style-small-y .y-cards__header {
-  color: var(--ws-color-dark-grey, #2f2f2f);
-  margin-bottom: 50px;
-}
-
-
-.y-cards--style-small-y .y-cards__subtitle {
-  font-size: 18px;
-  line-height: 28px;
-}
-
-.y-cards--style-small-y .y-card-item {
-  margin: 0 auto;
-  max-width: 360px;
-  border-radius: var(--ws-border-radius, 10px);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-  border: none;
-  color: var(--ws-color-dark-grey, #2f2f2f);
-  height: 100%;
-  position: relative;
-}
-
-.y-cards--style-small-y .y-card-item:hover {
-  transform: none;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-}
-
-.y-cards--style-small-y .y-card-item:has(a):hover {
-  cursor: pointer;
-}
-
-.y-cards--style-small-y .y-card-item:has(a):hover .y-card-item__title {
-  text-decoration: underline;
-}
-
-.y-cards--style-small-y .y-card-item__image-wrapper {
-  border-top-left-radius: var(--ws-border-radius, 10px);
-  border-top-right-radius: var(--ws-border-radius, 10px);
-  overflow: hidden;
-  min-height: 270px;
-}
-
-.y-cards--style-small-y .y-card-item__image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.y-cards--style-small-y .y-card-item__content {
-  padding: 20px;
-  align-items: flex-start;
-  text-align: left;
-}
-
-.y-cards--style-small-y .y-card-item__content > * {
-  margin-bottom: 20px;
-}
-
-.y-cards--style-small-y .y-card-item__title {
-  font-size: 32px;
-  line-height: 32px;
-  margin-bottom: 25px;
-}
-
-.y-cards--style-small-y .y-card-item__tag {
-  font-family: var(--ws-font-family-heading, Verdana, sans-serif);
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
-  min-height: 17px;
-  padding: 2px 4px;
-  color: var(--ws-color-dark-grey, #2f2f2f);
-  width: fit-content;
-  background: transparent;
-  border-radius: 0;
-  position: static;
-}
-
-.y-cards--style-small-y .y-card-item__description {
-  font-size: 18px;
-  line-height: 28px;
-  color: var(--ws-color-dark-grey, #2f2f2f);
-}

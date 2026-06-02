@@ -1,8 +1,7 @@
 {
   "_meta": { "title": "Default — 5 search results", "description": "Hand-authored." },
-  "title": "Search Results",
-  "search_query": "swim",
-  "total_results": 17,
+  "title": "Search results",
+  "query": "demo",
   "current_page": 1,
   "total_pages": 4,
   "items_per_page": 5,
@@ -10,10 +9,10 @@
   "style": "standard",
   "section": "body",
   "results": [
-    { "title": "Swim Lessons", "url": "/programs/swim-lessons", "summary": "<p>Learn to swim in a safe, welcoming environment for all ages.</p>", "type": "Program" },
-    { "title": "Aquatic Center", "url": "/facilities/aquatic-center", "summary": "<p>Indoor and outdoor pools open year-round.</p>", "type": "Facility" },
-    { "title": "Family Swim Night", "url": "/events/swim-night", "summary": "<p>Open swim with games and prizes.</p>", "type": "Event" },
-    { "title": "Lap Swim Schedule", "url": "/schedules/lap-swim", "summary": "<p>Reserved lanes for fitness swimmers.</p>", "type": "Schedule" },
-    { "title": "Swim Team Try-outs", "url": "/programs/swim-team", "summary": "<p>Spring season try-outs March 15.</p>", "type": "Program" }
+    { "title": "Swim Lessons", "url": "/programs/swim-lessons" },
+    { "title": "Aquatic Center", "url": "/facilities/aquatic-center" },
+    { "title": "Family Swim Night", "url": "/events/swim-night" },
+    { "title": "Lap Swim Schedule", "url": "/schedules/lap-swim" },
+    { "title": "Swim Team Try-outs", "url": "/programs/swim-team" }
   ]
 }

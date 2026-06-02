@@ -69,9 +69,3 @@
   }
 }
 
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.small-y-statistics-item--style-small-y .small-y-statistics-item__title {
-  font-family: var(--ws-font-family-heading);
-}

@@ -2,14 +2,21 @@
 
 .y-basic-block {
   padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.y-basic-block--section-banner {
+  max-width: none;
+  margin: 0;
 }
 
 .y-basic-block__title {
   font-size: 1.5rem;
-  font-weight: 700;
-  color: #2f2f2f;
+  font-weight: 400;
+  color: var(--wsPrimaryColor, #006b6b);
   margin: 0 0 1rem;
-  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+  font-family: var(--ylb-font-family-cachet, 'Cachet', Verdana, sans-serif);
 }
 
 .y-basic-block__body {
@@ -59,9 +66,3 @@
   margin-top: 0.5rem;
 }
 
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.y-basic-block--style-small-y .y-basic-block__title {
-  font-family: var(--ws-font-family-heading);
-}

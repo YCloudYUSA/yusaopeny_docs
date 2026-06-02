@@ -104,9 +104,3 @@
   }
 }
 
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.y-menu-block--style-small-y .y-menu-block__title {
-  font-family: var(--ws-font-family-heading);
-}

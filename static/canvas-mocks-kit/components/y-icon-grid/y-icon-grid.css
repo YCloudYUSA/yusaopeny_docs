@@ -2,7 +2,8 @@
 
 .y-icon-grid {
   padding: 3rem 1rem;
-  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Container */
@@ -14,38 +15,33 @@
 /* Header */
 .y-icon-grid__header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
+  order: -2;
 }
 
 .y-icon-grid__title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #2f2f2f;
-  margin: 0 0 0.75rem;
-  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
-  line-height: 1.2;
-}
-
-.y-icon-grid__subtitle {
-  font-size: 1.125rem;
-  color: #666;
-  margin: 0;
-  line-height: 1.5;
-}
-
-.y-icon-grid__header h2 {
+  font-family: "Cachet", sans-serif;
   font-size: 35px;
   line-height: 40px;
-  margin-bottom: 20px;
+  font-weight: 400;
   color: var(--wsPrimaryColor, #006b6b);
-  font-family: var(--y-font-family, 'Cachet', Verdana, sans-serif);
+  margin: 0 0 20px;
 }
 
 @media (min-width: 768px) {
-  .y-icon-grid__header h2 {
+  .y-icon-grid__title {
     font-size: 50px;
     line-height: 60px;
   }
+}
+
+.y-icon-grid__subtitle {
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--ylb-color-dark-grey-1, #2f2f2f);
+  margin: 0;
 }
 
 /* Grid */
@@ -53,40 +49,45 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
+  row-gap: 60px;
 }
 
+/* Footer — order: -1 places button between header and grid */
+.y-icon-grid__footer {
+  text-align: center;
+  order: -1;
+  margin: 0 0 60px;
+}
+
+.y-icon-grid__button {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  font-family: "Cachet", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--ylb-color-white, #ffffff);
+  background-color: var(--wsPartnerColor, #0060af);
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.y-icon-grid__button:hover {
+  background-color: var(--ylb-color-white, #ffffff);
+  color: var(--wsPartnerColor, #0060af);
+  border-color: var(--wsPartnerColor, #0060af);
+}
+
+/* Responsive */
 @media (min-width: 576px) {
   .y-icon-grid--cols-2 .y-icon-grid__grid,
   .y-icon-grid--cols-3 .y-icon-grid__grid,
   .y-icon-grid--cols-6 .y-icon-grid__grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-/* Footer */
-.y-icon-grid__footer {
-  text-align: center;
-  margin-top: 2.5rem;
-}
-
-.y-icon-grid__button {
-  display: inline-block;
-  padding: 0.875rem 2rem;
-  background: var(--wsPrimaryColor, #0060af);
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  border-radius: var(--wsBorderRadius, 4px);
-  transition: background-color 0.2s ease;
-}
-
-.y-icon-grid__button:hover {
-  background: #004080;
-}
-
-/* Responsive */
-@media (min-width: 576px) {
   .y-icon-grid--cols-3 .y-icon-grid__grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -96,14 +97,9 @@
   }
 }
 
-
 @media (min-width: 768px) {
   .y-icon-grid {
     padding: 4rem 2rem;
-  }
-
-  .y-icon-grid__title {
-    font-size: 2rem;
   }
 
   .y-icon-grid__grid {
@@ -128,52 +124,7 @@
     padding: 5rem 2rem;
   }
 
-  .y-icon-grid__title {
-    font-size: 2.25rem;
-  }
-
   .y-icon-grid--cols-6 .y-icon-grid__grid {
     grid-template-columns: repeat(6, 1fr);
   }
-}
-
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.y-icon-grid--style-small-y {
-  display: flex;
-  flex-direction: column;
-}
-
-.y-icon-grid--style-small-y .y-icon-grid__header {
-  margin-bottom: 40px;
-  order: -2;
-}
-
-.y-icon-grid--style-small-y .y-icon-grid__title {
-  font-size: 35px;
-  line-height: 40px;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-
-@media (min-width: 768px) {
-  .y-icon-grid--style-small-y .y-icon-grid__title {
-    font-size: 50px;
-    line-height: 60px;
-  }
-}
-
-.y-icon-grid--style-small-y .y-icon-grid__subtitle {
-  font-size: 18px;
-  line-height: 28px;
-}
-
-.y-icon-grid--style-small-y .y-icon-grid__grid {
-  row-gap: 60px;
-}
-
-.y-icon-grid--style-small-y .y-icon-grid__footer {
-  order: -1;
-  margin: 0 0 60px;
 }

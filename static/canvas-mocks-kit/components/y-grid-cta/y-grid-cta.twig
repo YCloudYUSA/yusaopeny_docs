@@ -44,19 +44,19 @@
         {% if subtitle %}
           <p class="y-grid-cta__subtitle">{{ subtitle|raw }}</p>
         {% endif %}
+
+        {% if cta_text and cta_url %}
+          <div class="y-grid-cta__footer">
+            <a href="{{ cta_url }}" class="y-grid-cta__button">
+              {{ cta_text }}
+            </a>
+          </div>
+        {% endif %}
       </div>
     {% endif %}
 
     <div class="y-grid-cta__grid">
       {{ items }}
     </div>
-
-    {% if cta_text and cta_url %}
-      <div class="y-grid-cta__footer">
-        <a href="{{ cta_url }}" class="y-grid-cta__button">
-          {{ cta_text }}
-        </a>
-      </div>
-    {% endif %}
   </div>
 </section>

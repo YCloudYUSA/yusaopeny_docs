@@ -28,7 +28,7 @@
 /* Image - ws_small_y min-height: 270px */
 .y-card-item__image-wrapper {
   position: relative;
-  min-height: 270px;
+  height: 270px;
   overflow: hidden;
   border-top-left-radius: var(--wsBorderRadius, 10px);
   border-top-right-radius: var(--wsBorderRadius, 10px);
@@ -102,18 +102,22 @@
 
 /* Title - ws_small_y uses teal for card headings */
 .y-card-item__title {
+  display: block;
   font-size: 32px;
   line-height: 32px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--wsPrimaryColor, #006B6B);
   margin: 0 0 25px;
-  font-family: var(--y-font-family);
+  font-family: var(--ylb-font-family-cachet, 'Cachet', sans-serif);
 }
 
 .y-card-item__title-link {
-  color: inherit;
+  display: block;
+  color: var(--wsPrimaryColor, #006b6b);
+  font-family: var(--ylb-font-family-cachet, 'Cachet', sans-serif);
+  font-size: 32px;
+  font-weight: 400;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .y-card-item__title-link:hover {
@@ -123,10 +127,11 @@
 /* Description */
 .y-card-item__description {
   flex: 1;
-  font-size: 0.9375rem;
-  color: #666;
-  line-height: 1.6;
+  font-size: 18px;
+  color: var(--ylb-color-dark-grey-1, #2f2f2f);
+  line-height: 28px;
   margin-bottom: 1rem;
+  font-family: Verdana, sans-serif;
 }
 
 .y-card-item__description p {
@@ -143,23 +148,31 @@
   padding-top: 0.5rem;
 }
 
-/* CTA Button - ws_small_y filled button style */
+/* CTA Button */
 .y-card-item__cta {
   display: inline-block;
   padding: 8px 13px;
-  background-color: var(--wsPrimaryColor, #006B6B);
+  background-color: var(--wsPartnerColor, #0060af);
   color: var(--ylb-color-white, white);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+/* --style-small-y: restore small-y button size */
+.y-cards--style-small-y .y-card-item__cta {
   font-size: 18px;
   line-height: 24px;
-  border-radius: 10px;
-  border: none;
-  transition: background-color 0.2s ease;
+  font-weight: 600;
 }
 
 .y-card-item__cta:hover {
-  background-color: var(--wsSecondaryColor, #01A490);
+  background-color: var(--ylb-color-white, white);
+  color: var(--wsPartnerColor, black);
+  border-color: var(--wsPartnerColor, black);
   text-decoration: none;
 }
 
@@ -178,9 +191,6 @@
     padding: 1.5rem;
   }
 
-  .y-card-item__title {
-    font-size: 1.375rem;
-  }
 }
 
 /* ========================================

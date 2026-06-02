@@ -2,6 +2,13 @@
 
 .y-simple-block {
   padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.y-simple-block--section-banner {
+  max-width: none;
+  margin: 0;
 }
 
 .y-simple-block__body {
@@ -45,9 +52,3 @@
   margin-top: 0.5rem;
 }
 
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.y-simple-block--style-small-y .y-simple-block__title {
-  font-family: var(--ws-font-family-heading);
-}

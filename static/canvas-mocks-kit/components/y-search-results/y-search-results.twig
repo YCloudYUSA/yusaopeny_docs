@@ -21,9 +21,7 @@
 <section class="{{ classes|join(' ') }}" data-component="y-search-results">
   <div class="y-search-results__container">
     <div class="y-search-results__header">
-      {% if query %}
-        <h2 class="y-search-results__title">{{ 'Search results for "@query"'|t({'@query': query}) }}</h2>
-      {% endif %}
+      <h2 class="y-search-results__title">{{ title|default('Search results'|t) }}</h2>
       {% if results_count is defined %}
         <p class="y-search-results__count">{{ '@count results found'|t({'@count': results_count}) }}</p>
       {% endif %}
@@ -49,12 +47,10 @@
         {% endfor %}
       </div>
 
-      {% if total_pages > 1 %}
-        <nav class="y-search-results__pagination" aria-label="{{ 'Search pagination'|t }}">
-          <button type="button" class="y-search-results__page-btn" {{ current_page <= 1 ? 'disabled' : '' }}>{{ 'Previous'|t }}</button>
-          <span class="y-search-results__page-info">{{ 'Page @current of @total'|t({'@current': current_page|default(1), '@total': total_pages}) }}</span>
-          <button type="button" class="y-search-results__page-btn" {{ current_page >= total_pages ? 'disabled' : '' }}>{{ 'Next'|t }}</button>
-        </nav>
+      {% if total_pages > 1 and current_page < total_pages %}
+        <div class="y-search-results__pagination">
+          <button type="button" class="y-search-results__page-btn">{{ 'Load More'|t }}</button>
+        </div>
       {% endif %}
     {% else %}
       <div class="y-search-results__empty">

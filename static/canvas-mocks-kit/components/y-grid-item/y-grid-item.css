@@ -4,21 +4,29 @@
   display: flex;
   flex-direction: column;
   background: #fff;
-  border-radius: var(--wsBorderRadius, 8px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   height: 100%;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.y-grid-item:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 
 /* Media */
 .y-grid-item__media {
   flex-shrink: 0;
+}
+
+.y-grid-item__media img {
+  height: 100%;
+  margin-bottom: 40px !important;
+}
+
+/* --style-small-y overrides */
+.y-grid-cta--style-small-y .y-grid-item {
+  box-shadow: none;
+}
+
+.y-grid-cta--style-small-y .y-grid-item__media img {
+  height: 164px;
+  clip-path: circle(81px at center);
 }
 
 .y-grid-item__media-link {
@@ -41,18 +49,20 @@
 }
 
 .y-grid-item__title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #2f2f2f;
-  margin: 0 0 0.75rem;
-  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
-  line-height: 1.3;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 400;
+  color: var(--wsPrimaryColor, black);
+  margin: 0 0 20px;
+  font-family: var(--ylb-font-family-cachet, 'Cachet', Verdana, sans-serif);
 }
 
 .y-grid-item__description {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--ylb-color-dark-grey-1, #2f2f2f);
+  line-height: 28px;
   flex: 1;
   margin-bottom: 1rem;
 }
@@ -96,29 +106,29 @@
 .y-grid-item__button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: var(--wsPrimaryColor, #0060af);
-  color: #fff;
+  font-family: "Cachet", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: var(--wsPartnerColor, #0060af);
+  color: var(--ylb-color-white, #ffffff);
+  border: 2px solid transparent;
+  text-align: center;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9375rem;
-  border-radius: var(--wsBorderRadius, 4px);
-  transition: background-color 0.2s ease;
+  border-radius: 10px;
+  margin-top: 36px;
 }
 
 .y-grid-item__button:hover {
-  background: #004080;
+  background-color: var(--ylb-color-white, #ffffff);
+  color: var(--wsPartnerColor, #0060af);
+  border-color: var(--wsPartnerColor, #0060af);
 }
 
 /* Responsive */
 @media (min-width: 768px) {
   .y-grid-item__title {
-    font-size: 1.375rem;
+    font-size: 32px;
+    line-height: 32px;
   }
-}
-
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.y-grid-item--style-small-y .y-grid-item__title {
-  font-family: var(--ws-font-family-heading);
 }

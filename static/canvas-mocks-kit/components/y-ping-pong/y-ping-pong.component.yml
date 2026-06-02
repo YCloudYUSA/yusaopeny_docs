@@ -169,13 +169,13 @@ slots:
 
 complexity:
   level: medium
-  css_lines: 340
+  css_lines: 394
   has_js: false
   schema_props: 11
-  enum_variants: 10
+  enum_variants: 15
   demo_pages: 6
   has_media: true
-  responsive_breakpoints: 15
+  responsive_breakpoints: 21
 
 libraryOverrides:
   dependencies:

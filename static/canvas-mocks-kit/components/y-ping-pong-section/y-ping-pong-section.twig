@@ -13,6 +13,8 @@
   'y-ping-pong-section',
   style|default('standard') != 'standard' ? 'y-ping-pong-section--style-' ~ style,
   section|default('body') != 'body' ? 'y-ping-pong-section--section-' ~ section,
+  background ? 'y-ping-pong-section--bg-' ~ background,
+  align ? 'y-ping-pong-section--align-' ~ align,
 ] %}
 
 <section class="{{ classes|join(' ') }}" data-component="y-ping-pong-section">

@@ -7,7 +7,7 @@
   text-align: center;
   padding: 1rem;
   flex: 0 0 50%;
-  max-width: 50%;
+  max-width: 70%;
 }
 
 /* Logo */
@@ -30,9 +30,12 @@
 }
 
 .y-partner-item__link {
-  color: var(--wsPrimaryColor, #0060af);
+  color: var(--ylb-color-dark-grey-1, rgb(47, 47, 47));
+  display: block;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .y-partner-item__link:hover {
@@ -52,9 +55,3 @@
   }
 }
 
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.y-partner-item--style-small-y .y-partner-item__title {
-  font-family: var(--ws-font-family-heading);
-}

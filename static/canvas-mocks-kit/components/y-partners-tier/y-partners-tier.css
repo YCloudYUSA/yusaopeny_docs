@@ -14,9 +14,10 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 40px;
+  margin-top: 0;
   margin-bottom: 20px;
-  color: var(--wsPrimaryColor, black);
-  font-family: var(--y-font-family);
+  color: var(--wsPrimaryColor, #006b6b);
+  font-family: var(--ylb-font-family-cachet, 'Cachet', Verdana, sans-serif);
 }
 
 @media (max-width: 991.98px) {
@@ -65,9 +66,3 @@
   }
 }
 
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.y-partners-tier--style-small-y .y-partners-tier__title {
-  font-family: var(--ws-font-family-heading);
-}

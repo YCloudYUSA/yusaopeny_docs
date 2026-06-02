@@ -1,5 +1,8 @@
 {
   "_meta": { "title": "Default — 4 quick link cards" },
-  "title": "Camp Quick Links", "columns": "4", "style": "standard", "section": "body",
-  "links": "<a href='/camp/schedule' class='y-camp-quick-link'><img src='../assets/photos/icon-200.svg' alt='' width='80' height='80'><span>Daily Schedule</span></a><a href='/camp/pack' class='y-camp-quick-link'><img src='../assets/photos/icon-200.svg' alt='' width='80' height='80'><span>Pack List</span></a><a href='/camp/portal' class='y-camp-quick-link'><img src='../assets/photos/icon-200.svg' alt='' width='80' height='80'><span>Parent Portal</span></a><a href='/camp/photos' class='y-camp-quick-link'><img src='../assets/photos/icon-200.svg' alt='' width='80' height='80'><span>Photo Gallery</span></a>"
+  "title": "Camp Quick Links",
+  "columns": "4",
+  "style": "standard",
+  "section": "body",
+  "links": "<a href='/camp/schedule' class='y-camp-quick-link'><img src='../assets/photos/distribution-icons/icon-calendar.png' alt='' width='80' height='80'><span>Daily Schedule</span></a><a href='/camp/pack' class='y-camp-quick-link'><img src='../assets/photos/distribution-icons/icon-generalcamp.png' alt='' width='80' height='80'><span>Pack List</span></a><a href='/camp/portal' class='y-camp-quick-link'><img src='../assets/photos/distribution-icons/icon-kids.png' alt='' width='80' height='80'><span>Parent Portal</span></a><a href='/camp/photos' class='y-camp-quick-link'><img src='../assets/photos/distribution-icons/icon-swimming.png' alt='' width='80' height='80'><span>Activities</span></a>"
 }

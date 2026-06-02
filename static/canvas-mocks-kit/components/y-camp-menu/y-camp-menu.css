@@ -26,6 +26,7 @@
   font-weight: 700;
   color: #2f2f2f;
   margin: 0 0 1rem;
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
 }
 
 .y-camp-menu__list {
@@ -89,9 +90,3 @@
   }
 }
 
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.y-camp-menu--style-small-y .y-camp-menu__title {
-  font-family: var(--ws-font-family-heading);
-}

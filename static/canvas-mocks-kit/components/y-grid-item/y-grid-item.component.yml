@@ -126,10 +126,10 @@ slots:
 
 complexity:
   level: simple
-  css_lines: 101
+  css_lines: 126
   has_js: false
-  schema_props: 9
-  enum_variants: 6
+  schema_props: 8
+  enum_variants: 7
   demo_pages: 0
   has_media: false
   responsive_breakpoints: 1

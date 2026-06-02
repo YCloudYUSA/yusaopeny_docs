@@ -53,7 +53,7 @@
     {% endif %}
 
     <{{ heading_level }} class="y-card-item__title">
-      {% if cta_url %}
+      {% if cta_text and cta_url %}
         <a href="{{ cta_url }}" class="y-card-item__title-link">
           {{ title }}
         </a>

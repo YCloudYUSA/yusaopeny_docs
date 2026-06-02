@@ -60,6 +60,20 @@ props:
         - 'light'
 
 
+    cta_text:
+      type: string
+      title: CTA Button Text
+      description: Text for the donation page link button
+      examples:
+        - 'Donation page'
+
+    cta_url:
+      type: string
+      title: CTA Button URL
+      description: URL for the donation page link button
+      examples:
+        - '/donate'
+
     section:
       type: string
       title: Section

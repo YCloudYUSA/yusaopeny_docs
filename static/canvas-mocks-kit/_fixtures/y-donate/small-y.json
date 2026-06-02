@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "title": "Default — donation amount picker",
-    "description": "Upstream y-donate-item schema/twig mismatch: schema declares `label` + `is_featured`; twig reads `description` + `highlighted`. Fixture follows twig (rendering source). Tracked as upstream y_canvas issue."
+    "title": "Small Y — gradient bg with CTA",
+    "description": "Small Y style with image, chevron, and donation page link button."
   },
   "title": "Support Your Y",
   "subtitle": "Your donation makes a difference in our community.",
@@ -11,7 +11,7 @@
     "width": 2786,
     "height": 3360
   },
-  "style": "standard",
+  "style": "small-y",
   "background": "light",
   "section": "body",
   "cta_text": "Donation page",

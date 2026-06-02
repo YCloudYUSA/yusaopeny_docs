@@ -41,7 +41,7 @@
   font-weight: 700;
   color: #2f2f2f;
   margin: 0 0 0.75rem;
-  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+  font-family: var(--ws-font-family-heading);
 }
 
 .y-featured-highlights__subtitle {
@@ -102,9 +102,3 @@
   }
 }
 
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.y-featured-highlights--style-small-y .y-featured-highlights__title {
-  font-family: var(--ws-font-family-heading);
-}

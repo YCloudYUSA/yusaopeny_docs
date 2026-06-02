@@ -1,19 +1,9 @@
 /* Y Accordion Item Component */
 
 .y-accordion-item {
-  border: 2px solid #e5e5e5;
-  border-radius: var(--wsBorderRadius, 8px);
   background: #fff;
   overflow: hidden;
   transition: border-color 0.2s ease;
-}
-
-.y-accordion-item:hover {
-  border-color: #ccc;
-}
-
-.y-accordion-item--expanded {
-  border-color: var(--wsPrimaryColor, #0060af);
 }
 
 /* Header */
@@ -28,29 +18,9 @@
   justify-content: space-between;
   width: 100%;
   padding: 1rem 1.25rem;
-  background: #fff;
-  border: none;
   cursor: pointer;
   text-align: left;
-  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
-  font-size: 1rem;
-  font-weight: 600;
-  color: #2f2f2f;
   transition: background-color 0.2s ease;
-}
-
-.y-accordion-item__button:hover {
-  background: #f8f9fa;
-}
-
-.y-accordion-item__button:focus {
-  outline: 2px solid var(--wsPrimaryColor, #0060af);
-  outline-offset: -2px;
-}
-
-.y-accordion-item--expanded .y-accordion-item__button {
-  background: var(--wsPrimaryColor, #0060af);
-  color: #fff;
 }
 
 /* Title */
@@ -76,9 +46,6 @@
   transition: transform 0.3s ease;
 }
 
-.y-accordion-item--expanded .y-accordion-item__chevron {
-  transform: rotate(180deg);
-}
 
 /* Content */
 .y-accordion-item__content {
@@ -91,7 +58,11 @@
 
 .y-accordion-item__body {
   padding: 1.25rem;
-  color: #666;
+  color: var(--ylb-color-dark-grey-1, rgb(47, 47, 47));
+  display: block;
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1.6;
 }
 
@@ -141,7 +112,6 @@
 @media (min-width: 768px) {
   .y-accordion-item__button {
     padding: 1.25rem 1.5rem;
-    font-size: 1.125rem;
   }
 
   .y-accordion-item__body {
@@ -149,40 +119,34 @@
   }
 }
 
-/* ========================================
-   PARENT STYLE: Small Y
-   Ported from ymcasv.org small_y_accordion.css
-   ======================================== */
-
-/* Item border-radius */
-.y-accordion--style-small-y .y-accordion-item {
+/* Item */
+.y-accordion-item {
   border-radius: 10px;
   overflow: hidden;
 }
 
 /* Header states */
-.y-accordion--style-small-y .y-accordion-item__header {
+.y-accordion-item__header {
   border-radius: 10px;
   border: 2px solid var(--wsSecondaryColor, #01a490);
   background: var(--ylb-color-white, #fff);
 }
 
-.y-accordion--style-small-y .y-accordion-item--expanded .y-accordion-item__header,
-.y-accordion--style-small-y .y-accordion-item__header:hover {
+.y-accordion-item--expanded .y-accordion-item__header,
+.y-accordion-item__header:hover {
   background: var(--wsPrimaryColor, #006b6b);
   border-color: var(--wsPrimaryColor, #006b6b);
 }
 
-.y-accordion--style-small-y .y-accordion-item--expanded .y-accordion-item__header .y-accordion-item__button,
-.y-accordion--style-small-y .y-accordion-item__header:hover .y-accordion-item__button {
+.y-accordion-item--expanded .y-accordion-item__header .y-accordion-item__button,
+.y-accordion-item__header:hover .y-accordion-item__button {
   color: var(--ylb-color-white, #fff);
   border-radius: 10px;
 }
 
-
 /* Button styling */
-.y-accordion--style-small-y .y-accordion-item__button {
-  text-decoration: unset;
+.y-accordion-item__button {
+  text-decoration: underline;
   color: var(--ylb-color-dark-grey-1, #2F2F2F);
   text-transform: initial;
   font-size: 18px;
@@ -195,40 +159,58 @@
   border: none;
 }
 
-.y-accordion--style-small-y .y-accordion-item__button:focus {
+.y-accordion-item__button:focus {
   outline: transparent;
   box-shadow: none;
   border: unset;
 }
 
 /* Body styling */
-.y-accordion--style-small-y .y-accordion-item__body {
+.y-accordion-item__body {
   color: var(--ylb-color-dark-grey-1, #2F2F2F);
 }
 
-.y-accordion--style-small-y .y-accordion-item__body p {
+.y-accordion-item__body p {
   color: #2f2f2f;
 }
 
-.y-accordion--style-small-y .y-accordion-item__body .field-body {
+.y-accordion-item__body .field-body {
   overflow: hidden;
 }
 
-/* Chevron */
-.y-accordion--style-small-y .y-accordion-item__chevron {
+/* Chevron — standard: UP when closed, DOWN when open */
+.y-accordion-item__chevron {
   width: 32px;
   height: 20px;
   stroke-width: 3;
   position: absolute;
   top: 50%;
   right: 0.5em;
-  transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(180deg);
   transition: transform 0.2s ease;
+  stroke: currentColor;
+}
+
+.y-accordion-item__button[aria-expanded="true"] .y-accordion-item__chevron {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+/* --style-small-y overrides */
+.y-accordion--style-small-y .y-accordion-item__button {
+  text-decoration: none;
+}
+
+/* --style-small-y: DOWN when closed, UP when open */
+.y-accordion--style-small-y .y-accordion-item__chevron {
+  transform: translateY(-50%) rotate(0deg);
   stroke: #000;
 }
 
-.y-accordion--style-small-y .y-accordion-item__button[aria-expanded="true"] .y-accordion-item__chevron,
-.y-accordion--style-small-y .y-accordion-item__header:hover .y-accordion-item__chevron {
+.y-accordion--style-small-y .y-accordion-item__button[aria-expanded="true"] .y-accordion-item__chevron {
   transform: translateY(-50%) rotate(180deg);
+  stroke: #fff;
+}
+
+.y-accordion--style-small-y .y-accordion-item__header:hover .y-accordion-item__chevron {
   stroke: #fff;
 }

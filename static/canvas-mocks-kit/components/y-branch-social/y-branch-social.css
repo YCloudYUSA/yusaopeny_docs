@@ -15,18 +15,18 @@
 
 /* Title */
 .y-branch-social__title {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #2f2f2f;
+  font-family: var(--ylb-font-family-cachet, 'Cachet', sans-serif);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--wsPrimaryColor, #006b6b);
   margin: 0;
-  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
 }
 
 /* Links container */
 .y-branch-social__links {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 30px;
 }
 
 /* Individual link */
@@ -34,16 +34,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: #f8f9fa;
-  color: #333;
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  background-color: rgba(0, 0, 0, 0);
+  color: #20bdbe;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .y-branch-social__link:hover {
-  transform: scale(1.1);
+  color: var(--ws-secondary-color, #0a2240);
 }
 
 .y-branch-social__link svg {
@@ -51,36 +52,6 @@
   height: 22px;
 }
 
-/* Platform-specific colors */
-.y-branch-social__link--facebook:hover {
-  background: #1877f2;
-  color: #fff;
-}
-
-.y-branch-social__link--twitter:hover {
-  background: #000;
-  color: #fff;
-}
-
-.y-branch-social__link--instagram:hover {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  color: #fff;
-}
-
-.y-branch-social__link--youtube:hover {
-  background: #ff0000;
-  color: #fff;
-}
-
-.y-branch-social__link--linkedin:hover {
-  background: #0a66c2;
-  color: #fff;
-}
-
-.y-branch-social__link--pinterest:hover {
-  background: #e60023;
-  color: #fff;
-}
 
 .y-branch-social__link--tiktok:hover {
   background: #000;
@@ -111,52 +82,8 @@
   }
 }
 
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-
-/* Title */
-.y-branch-social--style-small-y .y-branch-social__title {
-  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
-}
-
-/* Social link icon background — ported from .field-social-links a:before */
+/* --style-small-y overrides */
 .y-branch-social--style-small-y .y-branch-social__link {
-  background-color: var(--ws-primary-color, #0060af);
-  color: var(--ws-color-white, #ffffff);
+  color: var(--wsPartnerColor, #0060af);
 }
 
-/* Hover states retain platform-specific overrides but start from brand base */
-.y-branch-social--style-small-y .y-branch-social__link:hover {
-  background-color: var(--ws-secondary-color, #0a2240);
-  color: var(--ws-color-white, #ffffff);
-}
-
-/* Platform hover overrides (keep default platform colors on hover) */
-.y-branch-social--style-small-y .y-branch-social__link--facebook:hover {
-  background-color: #1877f2;
-}
-
-.y-branch-social--style-small-y .y-branch-social__link--twitter:hover {
-  background-color: #000;
-}
-
-.y-branch-social--style-small-y .y-branch-social__link--instagram:hover {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-}
-
-.y-branch-social--style-small-y .y-branch-social__link--youtube:hover {
-  background-color: #ff0000;
-}
-
-.y-branch-social--style-small-y .y-branch-social__link--linkedin:hover {
-  background-color: #0a66c2;
-}
-
-.y-branch-social--style-small-y .y-branch-social__link--pinterest:hover {
-  background-color: #e60023;
-}
-
-.y-branch-social--style-small-y .y-branch-social__link--tiktok:hover {
-  background-color: #000;
-}

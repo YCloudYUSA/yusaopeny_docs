@@ -135,10 +135,10 @@ slots:
 
 complexity:
   level: medium
-  css_lines: 127
+  css_lines: 122
   has_js: false
-  schema_props: 9
-  enum_variants: 8
+  schema_props: 8
+  enum_variants: 10
   demo_pages: 6
   has_media: true
   responsive_breakpoints: 3

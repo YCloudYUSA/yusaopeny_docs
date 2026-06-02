@@ -12,6 +12,7 @@
   color: #666;
   margin: 0 0 0.5rem;
   text-transform: uppercase;
+  font-family: var(--ws-font-family-heading);
 }
 
 .y-date-block__dates {
@@ -31,9 +32,3 @@
   color: #999;
 }
 
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.y-date-block--style-small-y .y-date-block__title {
-  font-family: var(--ws-font-family-heading);
-}

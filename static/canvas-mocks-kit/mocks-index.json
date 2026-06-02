@@ -259,59 +259,6 @@
     "url": "y-date-block/index.html"
   },
   {
-    "id": "y-basic-block",
-    "title": "Basic Block",
-    "group": "organisms",
-    "category": "content",
-    "bundle": "lb_basic_block",
-    "description": "Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.",
-    "tags": [
-      "Organism"
-    ],
-    "aliases": [
-      "text block",
-      "body block",
-      "simple text"
-    ],
-    "props": [
-      "title",
-      "body",
-      "style",
-      "section"
-    ],
-    "slotChild": null,
-    "children": [],
-    "kind": "parent",
-    "bundleIconSvg": "<svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" role=\"presentation\" aria-hidden=\"true\"><defs><pattern id=\"mx-bi-stripes\" patternUnits=\"userSpaceOnUse\" width=\"3\" height=\"3\" patternTransform=\"rotate(45)\"><rect width=\"3\" height=\"3\" fill=\"#d6ecec\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"3\" stroke=\"#006B6B\" stroke-width=\"1.5\"/></pattern></defs><rect x=\"1.00\" y=\"1.00\" width=\"6.50\" height=\"6.50\" rx=\"1\" fill=\"var(--y-primary, #006B6B)\" stroke=\"transparent\" stroke-width=\"0.5\"/><rect x=\"1.00\" y=\"8.50\" width=\"14.00\" height=\"6.50\" rx=\"1\" fill=\"#ffffff\" stroke=\"#dcdcdc\" stroke-width=\"0.5\"/></svg>",
-    "url": "y-basic-block/index.html"
-  },
-  {
-    "id": "y-simple-block",
-    "title": "Simple Block",
-    "group": "organisms",
-    "category": "content",
-    "bundle": "lb_simple_block",
-    "description": "Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.",
-    "tags": [
-      "Organism"
-    ],
-    "aliases": [
-      "body",
-      "paragraph",
-      "single column"
-    ],
-    "props": [
-      "body",
-      "style",
-      "section"
-    ],
-    "slotChild": null,
-    "children": [],
-    "kind": "parent",
-    "bundleIconSvg": "<svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" role=\"presentation\" aria-hidden=\"true\"><defs><pattern id=\"mx-bi-stripes\" patternUnits=\"userSpaceOnUse\" width=\"3\" height=\"3\" patternTransform=\"rotate(45)\"><rect width=\"3\" height=\"3\" fill=\"#d6ecec\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"3\" stroke=\"#006B6B\" stroke-width=\"1.5\"/></pattern></defs><rect x=\"1.00\" y=\"1.00\" width=\"14.00\" height=\"14.00\" rx=\"1\" fill=\"#ffffff\" stroke=\"#dcdcdc\" stroke-width=\"0.5\"/></svg>",
-    "url": "y-simple-block/index.html"
-  },
-  {
     "id": "y-code-block",
     "title": "Code Block",
     "group": "organisms",
@@ -624,6 +571,63 @@
     "url": "y-featured-highlights/index.html"
   },
   {
+    "id": "y-basic-block",
+    "title": "Basic Block",
+    "group": "organisms",
+    "category": "content",
+    "bundle": "lb_basic_block",
+    "description": "Content block with title and body. Two-region slot layout — heading row above rich-text body. Use for editorial sections that need a labelled heading + prose pair.",
+    "tags": [
+      "Organism",
+      "content",
+      "slot"
+    ],
+    "aliases": [
+      "text block",
+      "body block",
+      "simple text"
+    ],
+    "props": [
+      "title",
+      "body",
+      "style",
+      "section"
+    ],
+    "slotChild": null,
+    "children": [],
+    "kind": "parent",
+    "bundleIconSvg": "<svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" role=\"presentation\" aria-hidden=\"true\"><defs><pattern id=\"mx-bi-stripes\" patternUnits=\"userSpaceOnUse\" width=\"3\" height=\"3\" patternTransform=\"rotate(45)\"><rect width=\"3\" height=\"3\" fill=\"#d6ecec\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"3\" stroke=\"#006B6B\" stroke-width=\"1.5\"/></pattern></defs><rect x=\"1.00\" y=\"1.00\" width=\"6.50\" height=\"6.50\" rx=\"1\" fill=\"var(--y-primary, #006B6B)\" stroke=\"transparent\" stroke-width=\"0.5\"/><rect x=\"1.00\" y=\"8.50\" width=\"14.00\" height=\"6.50\" rx=\"1\" fill=\"#ffffff\" stroke=\"#dcdcdc\" stroke-width=\"0.5\"/></svg>",
+    "url": "y-basic-block/index.html"
+  },
+  {
+    "id": "y-simple-block",
+    "title": "Simple Block",
+    "group": "organisms",
+    "category": "content",
+    "bundle": "lb_simple_block",
+    "description": "Body-only content block — no title slot. Single-region layout. Use for inline copy or stripped-down content areas where a heading is not needed.",
+    "tags": [
+      "Organism",
+      "content",
+      "slot"
+    ],
+    "aliases": [
+      "body",
+      "paragraph",
+      "single column"
+    ],
+    "props": [
+      "body",
+      "style",
+      "section"
+    ],
+    "slotChild": null,
+    "children": [],
+    "kind": "parent",
+    "bundleIconSvg": "<svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" role=\"presentation\" aria-hidden=\"true\"><defs><pattern id=\"mx-bi-stripes\" patternUnits=\"userSpaceOnUse\" width=\"3\" height=\"3\" patternTransform=\"rotate(45)\"><rect width=\"3\" height=\"3\" fill=\"#d6ecec\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"3\" stroke=\"#006B6B\" stroke-width=\"1.5\"/></pattern></defs><rect x=\"1.00\" y=\"1.00\" width=\"14.00\" height=\"14.00\" rx=\"1\" fill=\"#ffffff\" stroke=\"#dcdcdc\" stroke-width=\"0.5\"/></svg>",
+    "url": "y-simple-block/index.html"
+  },
+  {
     "id": "y-grid-cta",
     "title": "Grid CTA",
     "group": "organisms",
@@ -852,7 +856,7 @@
     "id": "y-simple-menu",
     "title": "Simple Menu",
     "group": "organisms",
-    "category": "location-nav",
+    "category": "navigation",
     "bundle": "lb_simple_menu",
     "description": "Sidebar / inline menu with title + linked items. Hand-authored fixture.",
     "tags": [
@@ -1227,6 +1231,8 @@
       "image",
       "style",
       "background",
+      "cta_text",
+      "cta_url",
       "section"
     ],
     "slotChild": "y-donate-item",

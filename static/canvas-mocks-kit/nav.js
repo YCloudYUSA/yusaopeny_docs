@@ -25,6 +25,7 @@
     "people":          "People & quotes",
     "activities":      "Activity & schedule blocks",
     "location-nav":    "Location & wayfinding",
+    "navigation":      "Navigation",
     "forms-ctas":      "Forms & calls to action",
     "page-fields":     "Page fields",
     "highlights":      "Highlights",
@@ -45,7 +46,7 @@
   const GROUP_ORDER = [
     "chrome",
     "hero-banner", "content", "grid-card", "views-listings",
-    "people", "activities", "location-nav", "forms-ctas",
+    "people", "activities", "location-nav", "navigation", "forms-ctas",
     "page-fields", "highlights", "numbers-text",
     "templates",
     "slot-children",

@@ -77,7 +77,7 @@
 }
 
 .small-y-statistics--bg-light .small-y-statistics-item__value {
-  background-color: var(--wsPrimaryColor, #636466);
+  background-color: var(--wsPrimaryColor, #006b6b);
   color: var(--y-color-white, white);
 }
 
@@ -183,9 +183,3 @@
   }
 }
 
-/* ========================================
-   STYLE: Small Y
-   ======================================== */
-.small-y-statistics--style-small-y .small-y-statistics__title {
-  font-family: var(--ylb-font-family-cachet);
-}

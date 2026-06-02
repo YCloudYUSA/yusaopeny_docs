@@ -40,6 +40,10 @@
         <div class="y-donate__options">
           {{ items }}
         </div>
+
+        {% if cta_text and cta_url %}
+          <a href="{{ cta_url }}" class="y-donate__cta">{{ cta_text }}</a>
+        {% endif %}
       </div>
     </div>
   </div>

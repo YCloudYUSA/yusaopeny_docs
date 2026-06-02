@@ -366,6 +366,12 @@
   }
 }
 
+@media (min-width: 992px) {
+  .hero__banner__sub_chevron .wrapper-content {
+    padding-left: 139.5px;
+  }
+}
+
 .hero__banner__sub_chevron .hero_banner-content {
   position: relative;
   z-index: 3;
@@ -820,24 +826,26 @@
   display: inline-block;
   padding: 14px 32px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   border-radius: var(--wsBorderRadius, 4px);
-  transition: background-color 0.2s ease, transform 0.2s ease;
   border: none;
   cursor: pointer;
 }
 
 /* Color background: white button with primary text */
 .hero__banner.background-color .btn-primary {
-  color: var(--wsPrimaryColor, #006B6B);
+  color: var(--wsPartnerColor, black);
   background-color: #ffffff;
   font-size: 24px;
+  border: 2px solid transparent;
 }
 
 .hero__banner.background-color .btn-primary:hover {
-  background-color: #f0f0f0;
-  transform: translateY(-2px);
+  background-color: transparent;
+  color: var(--ylb-color-white, white);
+  border-color: var(--ylb-color-white, white);
+  font-weight: 400;
 }
 
 /* Gray background: primary button with white text */
@@ -863,9 +871,15 @@
 
 /* Sub_frame + color background: same primary button */
 .hero__banner.hero__banner__sub_frame.background-color .btn-primary {
+  background-color: var(--wsPartnerColor, black);
   color: var(--ylb-color-white, white);
-  background-color: var(--wsPrimaryColor, #006B6B);
   border: 2px solid transparent;
+}
+
+.hero__banner.hero__banner__sub_frame.background-color .btn-primary:hover {
+  background-color: var(--ylb-color-white, white);
+  color: var(--wsPartnerColor, black);
+  border-color: var(--wsPartnerColor, black);
 }
 
 /* ========================================

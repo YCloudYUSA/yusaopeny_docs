@@ -1,14 +1,16 @@
 {
-  "_meta": { "title": "Default — pool schedule" },
-  "title": "Pool Schedule", "subtitle": "Lap swim + open swim per week.",
-  "show_header": true, "columns": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-  "rows": [
-    { "label": "6 – 8 AM",   "cells": ["Lap", "Lap",     "Lap", "Lap", "Lap",     "",      ""] },
-    { "label": "8 – 10 AM",  "cells": ["Open","Lap",     "Open","Lap", "Open",    "Family","Family"] },
-    { "label": "10 AM – 12", "cells": ["Aqua","Aqua",    "Aqua","Aqua","Aqua",    "Open",  "Open"] },
-    { "label": "12 – 2 PM",  "cells": ["Lap", "Lap",     "Lap", "Lap", "Lap",     "Lap",   "Lap"] },
-    { "label": "5 – 7 PM",   "cells": ["Swim","Family",  "Swim","Open","Family",  "",      ""] }
+  "_meta": { "title": "Default — pool & fitness class schedule" },
+  "title": "Weekly Class Schedule",
+  "schedule": [
+    { "time": "6:00 AM",  "name": "Morning Yoga",     "instructor": "Sarah K.",   "location": "Studio A" },
+    { "time": "7:00 AM",  "name": "Spin Class",        "instructor": "Mike T.",    "location": "Cycle Room" },
+    { "time": "8:30 AM",  "name": "Aqua Aerobics",     "instructor": "Linda R.",   "location": "Pool" },
+    { "time": "10:00 AM", "name": "Senior Fitness",    "instructor": "Tom B.",     "location": "Gym Floor" },
+    { "time": "12:00 PM", "name": "Pilates",           "instructor": "Amy L.",     "location": "Studio B" },
+    { "time": "5:30 PM",  "name": "HIIT",              "instructor": "Chris D.",   "location": "Gym Floor" },
+    { "time": "6:30 PM",  "name": "Lap Swim",          "instructor": "",           "location": "Pool" },
+    { "time": "7:00 PM",  "name": "Family Swim",       "instructor": "",           "location": "Pool" }
   ],
-  "highlight_today": true, "empty_cell_text": "Closed",
-  "style": "standard", "section": "body"
+  "style": "standard",
+  "section": "body"
 }
