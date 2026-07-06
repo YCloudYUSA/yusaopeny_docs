@@ -65,6 +65,8 @@ These supplemental documents elaborate on a few specific cases:
 
   **⚠️ Upgrade path requirement:** You must upgrade to **11.1.0.2** first before upgrading to 11.3.1.0. Do not skip directly from 11.1.0.0 to 11.3.x.
 
+- **`11.3.1.6`** - Constrains `drupal/core` and `drupal/core-composer-scaffold` to `>=11.3 <11.4`. Drupal core 11.4 introduces errors in the distribution, so this release pins sites to the 11.3.x line. **Do not upgrade Drupal core to 11.4 on this release** — a later release will lift the constraint once 11.4+ compatibility is verified.
+
 ---
 See [Version Constraints practices for YMCA Website Services]({{< relref "Composer-version-constraints-for-Open-Y" >}})
 
