@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Notes on YMCA Website Services</title><link>/blog/releases/</link><description>Recent content in Release Notes on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Services Release 11.3.1.0</title><link>/blog/2026/03/04/digital-services-release-11.3.1.0/</link><pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate><guid>/blog/2026/03/04/digital-services-release-11.3.1.0/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Notes on YMCA Website Services</title><link>/blog/releases/</link><description>Recent content in Release Notes on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Services Release 11.3.1.6</title><link>/blog/2026/07/06/digital-services-release-11.3.1.6/</link><pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate><guid>/blog/2026/07/06/digital-services-release-11.3.1.6/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Drupal Core constrained to 11.3.x:&lt;/strong>
+&lt;code>drupal/core&lt;/code> and &lt;code>drupal/core-composer-scaffold&lt;/code> are now constrained to &lt;code>&amp;gt;=11.3 &amp;lt;11.4&lt;/code>. Drupal core 11.4 introduces errors in the distribution, so this release pins sites to the 11.3.x line until 11.4+ compatibility is verified. (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/376" target="_blank">PR #376&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="core--module-updates">Core &amp;amp; Module Updates&lt;a class="td-heading-self-link" href="#core--module-updates" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Drupal Core&lt;/strong>
+&lt;ul>
+&lt;li>Constrained to &lt;code>&amp;gt;=11.3 &amp;lt;11.4&lt;/code> — do not upgrade core to 11.4 on this release.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="whats-changed">What&amp;rsquo;s Changed&lt;a class="td-heading-self-link" href="#whats-changed" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="ycloudyusayusaopeny">YCloudYUSA/yusaopeny&lt;a class="td-heading-self-link" href="#ycloudyusayusaopeny" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Constrain drupal/core to &amp;lt;11.4 to avoid 11.4 errors in 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/376" target="_blank">https://github.com/YCloudYUSA/yusaopeny/pull/376&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Full Changelog&lt;/strong>: 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/compare/11.3.1.5...11.3.1.6" target="_blank">https://github.com/YCloudYUSA/yusaopeny/compare/11.3.1.5...11.3.1.6&lt;/a>&lt;/p></description></item><item><title>Digital Services Release 11.3.1.0</title><link>/blog/2026/03/04/digital-services-release-11.3.1.0/</link><pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate><guid>/blog/2026/03/04/digital-services-release-11.3.1.0/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Drupal 11.3 Support:&lt;/strong>
