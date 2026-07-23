@@ -2,7 +2,15 @@
 title: "Release Notes Structure Guide"
 linkTitle: "Release Notes Guide"
 description: "Best practices for writing multi-audience release notes based on industry research"
+keywords:
+  - release-notes
+  - changelog
+  - structure
+  - audiences
+  - writing-guide
 ---
+
+> This guide covers **how to write release notes**. For the **code release process** (tagging, `openy.info.yml` version bumps, mirror refresh, Slack announcements), see [Release Process]({{< relref "/docs/development/How-we-release-OpenY-distribution-from-code-perspective" >}}).
 
 Research into how leading open source projects handle multi-audience release notes, comparing approaches and identifying best practices.
 
