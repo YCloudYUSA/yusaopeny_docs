@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "title": "Default — featured hero + 3 secondary articles",
+    "description": "Hero + secondary_articles slot. Photos sourced from y_lb_demo article_image_*.jpeg."
+  },
+  "title": "Latest News",
+  "subtitle": "Stay informed about your YMCA community.",
+  "cta_text": "View All Articles",
+  "cta_url": "/articles",
+  "hero_title": "New aquatic center opens this fall",
+  "hero_description": "Three new pools, accessible features, and lap lanes for every level. Tour scheduled for community members.",
+  "hero_image": { "src": "../assets/photos/y_lb_demo/article_image_1.jpeg", "alt": "Pool" },
+  "hero_url": "/articles/aquatic-center",
+  "style": "standard",
+  "section": "body",
+  "secondary_articles": [
+    { "title": "Spring soccer registration now open",  "url": "/articles/spring-soccer", "image": { "src": "../assets/photos/y_lb_demo/article_image_2.jpeg", "alt": "Soccer" },    "summary": "Registration runs through April 30.",       "date": "2026-04-10" },
+    { "title": "Volunteer of the year: Maria Chen",     "url": "/articles/volunteer",     "image": { "src": "../assets/photos/y_lb_demo/article_image_3.jpeg", "alt": "Volunteer" }, "summary": "Recognized for 1,200 hours of service.",   "date": "2026-04-05" },
+    { "title": "Free membership week for new families", "url": "/articles/free-week",     "image": { "src": "../assets/photos/y_lb_demo/article_image_4.jpeg", "alt": "Family" },    "summary": "May 1–7. Bring proof of residence.",        "date": "2026-04-01" }
+  ]
+}

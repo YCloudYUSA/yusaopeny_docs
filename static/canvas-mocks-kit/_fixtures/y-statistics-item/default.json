@@ -1,0 +1,9 @@
+{
+  "_meta": {
+    "title": "Default — single statistics counter (Kids engaged 4M)",
+    "description": "W2/P1 sweep fixture. Single y-statistics-item rendered inside a 1-item y-statistics parent shell. Mirrors y-statistics default.json items[0]."
+  },
+  "value": "4",
+  "suffix": "M",
+  "label": "Kids engaged in positive programs"
+}

@@ -1,0 +1,114 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Icon Grid Item
+description: Single icon grid item with icon, title, and description
+status: experimental
+group: Molecules
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Item heading
+      examples:
+        - 'Swimming'
+
+    description:
+      type: string
+      title: Description
+      description: Item description (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<p>Indoor and outdoor pools for all ages.</p>'
+
+    icon:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Icon
+      description: Icon or small image
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/icon-example.png'
+          alt: 'Swimming icon'
+          width: 80
+          height: 80
+
+    cta_url:
+      type: string
+      title: Link URL
+      description: Optional link URL
+      examples:
+        - '/programs/swimming'
+
+    heading_level:
+      type: string
+      title: Heading Level
+      description: Semantic heading level
+      default: h4
+      enum:
+        - h3
+        - h4
+        - h5
+      meta:enum:
+        h3: 'Heading 3'
+        h4: 'Heading 4'
+        h5: 'Heading 5'
+      examples:
+        - h4
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      icon:
+        label: Icon
+      title:
+        label: Title
+      description:
+        label: Description
+    icon_map:
+      mobile:
+        - [icon]
+        - [title]
+        - [description]
+      tablet:
+        - [icon]
+        - [title]
+        - [description]
+      desktop:
+        - [icon]
+        - [title]
+        - [description]
+      large_desktop:
+        - [icon]
+        - [title]
+        - [description]
+
+complexity:
+  level: simple
+  css_lines: 104
+  has_js: false
+  schema_props: 7
+  enum_variants: 4
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 2
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-icon-grid-item

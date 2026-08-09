@@ -1,0 +1,111 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Date Block
+description: Date display block with start/end dates
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Label above the date display
+      examples:
+        - 'Event Dates'
+
+    start_date:
+      type: string
+      title: Start Date
+      description: Start date in display format
+      examples:
+        - 'January 15, 2025'
+
+    end_date:
+      type: string
+      title: End Date
+      description: End date in display format (optional for single-day events)
+      examples:
+        - 'January 20, 2025'
+
+    format:
+      type: string
+      title: Date Format
+      description: Display format for dates
+      default: 'medium'
+      enum:
+        - 'short'
+        - 'medium'
+        - 'long'
+      meta:enum:
+        short: 'Short (Jan 15)'
+        medium: 'Medium (January 15, 2025)'
+        long: 'Long (Wednesday, January 15, 2025)'
+      examples:
+        - 'medium'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      start_date:
+        label: Start Date
+      end_date:
+        label: End Date
+    icon_map:
+      mobile:
+        - [title]
+        - [start_date]
+        - [end_date]
+      tablet:
+        - [title]
+        - [start_date, end_date]
+      desktop:
+        - [title]
+        - [start_date, end_date]
+      large_desktop:
+        - [title]
+        - [start_date, end_date]
+
+complexity:
+  level: simple
+  css_lines: 39
+  has_js: false
+  schema_props: 7
+  enum_variants: 6
+  demo_pages: 2
+  has_media: false
+  responsive_breakpoints: 0
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-date-block

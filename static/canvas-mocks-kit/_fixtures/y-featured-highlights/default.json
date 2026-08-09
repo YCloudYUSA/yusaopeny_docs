@@ -1,0 +1,8 @@
+{
+  "_meta": { "title": "Default" },
+  "title": "Spotlight", "subtitle": "What's making news at the Y.",
+  "image": { "src": "../assets/photos/banner-1200.svg", "alt": "" },
+  "description": "<p>Our community impact in numbers, stories, and milestones — updated quarterly.</p>",
+  "cta_text": "Read More", "cta_url": "/spotlight",
+  "style": "standard", "section": "body"
+}

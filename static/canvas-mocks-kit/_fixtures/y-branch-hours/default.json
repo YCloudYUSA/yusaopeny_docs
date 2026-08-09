@@ -1,0 +1,11 @@
+{
+  "_meta": { "title": "Default — weekly hours + holiday notice", "description": "Twig fields: hours[] = {day, hours, is_today}; holiday_hours = string." },
+  "title": "Branch Hours", "show_today": true, "closed_label": "Closed",
+  "hours": [
+    { "day": "Mon – Fri", "hours": "9am – 10pm", "is_today": true  },
+    { "day": "Sat",       "hours": "9am – 6pm",  "is_today": false },
+    { "day": "Sun",       "hours": "9am – 4pm",  "is_today": false }
+  ],
+  "holiday_hours": "Memorial Day (May 25): 8 AM – 12 PM.\nIndependence Day (Jul 4): Closed.",
+  "style": "standard", "section": "body"
+}

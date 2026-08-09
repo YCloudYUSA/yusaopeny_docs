@@ -1,0 +1,99 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Partners Tier
+description: Partner tier grouping with title and partner logos
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Tier Title
+      description: Name of the partner tier level
+      examples:
+        - 'Platinum Partners'
+
+    size:
+      type: string
+      title: Logo Size
+      description: Display size for partner logos in this tier
+      default: 'medium'
+      enum:
+        - 'small'
+        - 'medium'
+        - 'large'
+      meta:enum:
+        small: 'Small'
+        medium: 'Medium'
+        large: 'Large'
+      examples:
+        - 'large'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  partners:
+    title: Partners
+    description: Partner items in this tier
+    allowedComponents:
+      - sdc.y_canvas.y-partner-item
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Tier Title
+      partners:
+        label: Partners
+    icon_map:
+      mobile:
+        - [title]
+        - [partners]
+      tablet:
+        - [title]
+        - [partners, partners]
+      desktop:
+        - [title]
+        - [partners, partners]
+      large_desktop:
+        - [title]
+        - [partners, partners]
+
+complexity:
+  level: simple
+  css_lines: 68
+  has_js: false
+  schema_props: 5
+  enum_variants: 6
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 3
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-partners-tier

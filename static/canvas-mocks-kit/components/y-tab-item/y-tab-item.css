@@ -1,0 +1,81 @@
+/* Y Tab Item Component */
+
+.y-tab-item {
+  /* Tab items work within parent y-tabs */
+}
+
+.y-tab-item__button {
+  border: none;
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #636466;
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.y-tab-item__button:hover {
+  color: var(--wsPartnerColor, #0060af);
+}
+
+.y-tab-item__button[aria-selected="true"] {
+  background-color: var(--wsPartnerColor, #0060af);
+  color: #fff;
+  font-weight: 700;
+}
+
+.y-tab-item__panel {
+  padding: 1.5rem 0;
+}
+
+.y-tab-item__panel[hidden] {
+  display: none;
+}
+
+.y-tab-item__title {
+  display: none;
+}
+
+.y-tab-item__content {
+  color: var(--ylb-color-dark-grey-1, #2f2f2f);
+  display: block;
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.y-tab-item__content p {
+  margin: 0 0 1rem;
+}
+
+.y-tab-item__content p:last-child {
+  margin-bottom: 0;
+}
+
+.y-tab-item__content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.y-tab-item__content .media,
+.y-tab-item__content figure {
+  margin: 1rem 0;
+  max-width: 100%;
+}
+
+.y-tab-item__content .media img {
+  display: block;
+  border-radius: var(--wsBorderRadius, 8px);
+}
+
+.y-tab-item__content figure figcaption {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,150 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Icon Grid
+description: Grid layout with icon-based items
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Section heading
+      examples:
+        - 'Our Services'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Section subheading
+      examples:
+        - 'What we provide for our members'
+
+    cta_text:
+      type: string
+      title: Section Button Text
+      description: Section-level call-to-action
+      examples:
+        - 'See All Services'
+
+    cta_url:
+      type: string
+      title: Section Button URL
+      description: Section-level call-to-action link
+      examples:
+        - '/services'
+
+    columns:
+      type: string
+      title: Columns
+      description: Number of columns in the grid
+      default: '4'
+      enum:
+        - '2'
+        - '3'
+        - '4'
+        - '6'
+      meta:enum:
+        '2': '2 Columns'
+        '3': '3 Columns'
+        '4': '4 Columns'
+        '6': '6 Columns'
+      examples:
+        - '4'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+    heading_level:
+      type: string
+      title: Heading Level
+      description: Semantic heading level
+      default: h2
+      enum:
+        - h2
+        - h3
+        - h4
+      meta:enum:
+        h2: 'Heading 2'
+        h3: 'Heading 3'
+        h4: 'Heading 4'
+      examples:
+        - h2
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  items:
+    title: Icon Grid Items
+    description: Icon grid item components
+    allowedComponents:
+      - sdc.y_canvas.y-icon-grid-item
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      subtitle:
+        label: Subtitle
+      cta:
+        label: Call to Action
+      items:
+        label: Icon Grid Items
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [items]
+        - [cta]
+      tablet:
+        - [title]
+        - [subtitle]
+        - [items]
+        - [cta]
+      desktop:
+        - [title]
+        - [subtitle]
+        - [items]
+        - [cta]
+      large_desktop:
+        - [title]
+        - [subtitle]
+        - [items]
+        - [cta]
+
+complexity:
+  level: medium
+  css_lines: 167
+  has_js: false
+  schema_props: 9
+  enum_variants: 8
+  demo_pages: 6
+  has_media: true
+  responsive_breakpoints: 4
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-icon-grid

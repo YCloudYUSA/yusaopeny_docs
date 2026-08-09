@@ -1,0 +1,147 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Carousel
+description: YMCA carousel/slider component for hero banners and content
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Section Heading
+      description: Optional heading above the carousel
+      examples:
+        - 'Featured Programs'
+
+    subtitle:
+      type: string
+      title: Section Subheading
+      description: Optional subheading text
+      examples:
+        - 'Discover what we have to offer'
+
+    autoplay:
+      type: boolean
+      title: Autoplay
+      description: Automatically advance slides
+      default: true
+      examples:
+        - true
+
+    autoplay_delay:
+      type: integer
+      title: Autoplay Delay (ms)
+      description: Time between slide transitions
+      default: 5000
+      examples:
+        - 5000
+
+    show_navigation:
+      type: boolean
+      title: Show Navigation Arrows
+      description: Display previous/next buttons
+      default: true
+      examples:
+        - true
+
+    show_pagination:
+      type: boolean
+      title: Show Pagination Dots
+      description: Display slide indicator dots
+      default: true
+      examples:
+        - true
+
+    loop:
+      type: boolean
+      title: Loop
+      description: Enable infinite loop
+      default: true
+      examples:
+        - true
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+    effect:
+      type: string
+      title: Transition Effect
+      description: Slide transition animation
+      default: slide
+      enum:
+        - slide
+        - fade
+      meta:enum:
+        slide: 'Slide'
+        fade: 'Fade'
+      examples:
+        - slide
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  slides:
+    title: Carousel Slides
+    description: Add carousel items to this section
+    allowedComponents:
+      - sdc.y_canvas.y-carousel-item
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Section Heading
+      subtitle:
+        label: Section Subheading
+      slides:
+        label: Carousel Slides
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [slides]
+      tablet:
+        - [title, subtitle]
+        - [slides, slides]
+      desktop:
+        - [title, subtitle]
+        - [slides, slides]
+      large_desktop:
+        - [title, subtitle]
+        - [slides, slides]
+
+complexity:
+  level: complex
+  css_lines: 582
+  has_js: true
+  schema_props: 11
+  enum_variants: 6
+  demo_pages: 2
+  has_media: true
+  responsive_breakpoints: 21
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-carousel

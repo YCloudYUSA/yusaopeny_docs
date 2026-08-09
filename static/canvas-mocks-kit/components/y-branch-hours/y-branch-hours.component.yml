@@ -1,0 +1,114 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Branch Hours
+description: Branch operating hours display with daily schedule
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Section heading for hours
+      examples:
+        - 'Hours of Operation'
+
+    hours:
+      type: array
+      title: Hours
+      description: Array of day/hours objects
+      examples:
+        - [{"day": "Monday", "hours": "5:00 AM - 10:00 PM"}, {"day": "Sunday", "hours": "7:00 AM - 6:00 PM"}]
+
+    show_today:
+      type: boolean
+      title: Highlight Today
+      description: Visually highlight the current day
+      default: true
+      examples:
+        - true
+
+    closed_label:
+      type: string
+      title: Closed Label
+      description: Text to display when branch is closed
+      default: 'Closed'
+      examples:
+        - 'Closed'
+
+    holiday_hours:
+      type: string
+      title: Holiday Hours Note
+      description: Optional note about holiday schedule changes
+      examples:
+        - 'Hours may vary on holidays. Please call ahead.'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      hours:
+        label: Hours
+      holiday_hours:
+        label: Holiday Hours Note
+    icon_map:
+      mobile:
+        - [title]
+        - [hours]
+        - [holiday_hours]
+      tablet:
+        - [title]
+        - [hours, hours]
+        - [holiday_hours, holiday_hours]
+      desktop:
+        - [title]
+        - [hours, hours]
+        - [holiday_hours, holiday_hours]
+      large_desktop:
+        - [title]
+        - [hours, hours]
+        - [holiday_hours, holiday_hours]
+
+complexity:
+  level: simple
+  css_lines: 127
+  has_js: false
+  schema_props: 8
+  enum_variants: 4
+  demo_pages: 1
+  has_media: false
+  responsive_breakpoints: 2
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-branch-hours

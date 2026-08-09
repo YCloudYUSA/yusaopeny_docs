@@ -1,0 +1,28 @@
+{#
+/**
+ * Y Repeat Schedules component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - api_endpoint: (string) API URL
+ * - app: (slot) Schedule application
+ */
+#}
+
+{% set classes = [
+  'y-repeat-schedules',
+  style|default('standard') != 'standard' ? 'y-repeat-schedules--style-' ~ style,
+  section|default('body') != 'body' ? 'y-repeat-schedules--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-repeat-schedules">
+  <div class="y-repeat-schedules__container">
+    {% if title %}
+      <h2 class="y-repeat-schedules__title">{{ title }}</h2>
+    {% endif %}
+
+    <div class="y-repeat-schedules__app" data-api="{{ api_endpoint }}">
+      {{ app }}
+    </div>
+  </div>
+</section>

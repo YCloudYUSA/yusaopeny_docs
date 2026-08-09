@@ -1,0 +1,134 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Events Filter
+description: Filter controls for events listing with category, date, and location options
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Main heading for the filter section
+      examples:
+        - 'Find Events'
+
+    show_search:
+      type: boolean
+      title: Show Search
+      description: Display the search input field
+      default: true
+      examples:
+        - true
+
+    show_categories:
+      type: boolean
+      title: Show Categories
+      description: Display category filter dropdown
+      default: true
+      examples:
+        - true
+
+    show_date_filter:
+      type: boolean
+      title: Show Date Filter
+      description: Display date range filter
+      default: true
+      examples:
+        - true
+
+    show_location_filter:
+      type: boolean
+      title: Show Location Filter
+      description: Display location filter dropdown
+      default: true
+      examples:
+        - true
+
+    search_placeholder:
+      type: string
+      title: Search Placeholder
+      description: Placeholder text for search input
+      examples:
+        - 'Search events...'
+
+    categories:
+      type: array
+      title: Categories
+      description: Available category options for filtering
+      examples:
+        - ['Fitness', 'Youth Programs', 'Family Events', 'Community']
+
+    locations:
+      type: array
+      title: Locations
+      description: Available location options for filtering
+      examples:
+        - ['Downtown Y', 'Westside Y', 'Northside Y']
+
+    action_url:
+      type: string
+      title: Form Action URL
+      description: URL where filter form submits
+      examples:
+        - '/events'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+    icon_map:
+      mobile:
+        - [title]
+      tablet:
+        - [title]
+      desktop:
+        - [title]
+      large_desktop:
+        - [title]
+
+complexity:
+  level: medium
+  css_lines: 199
+  has_js: false
+  schema_props: 12
+  enum_variants: 4
+  demo_pages: 1
+  has_media: false
+  responsive_breakpoints: 1
+  backend_reason: 'views exposed filter block for listing_events'
+  integrations: [views:listing_events]
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-events-filter

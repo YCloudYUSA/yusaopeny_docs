@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "title": "Default — equal columns, image left, white bg",
+    "description": "Canonical default fixture matches y-ping-pong.component.yml schema defaults (image_position=left, offset_variation=equal_column, background=white, style=standard). Real demo content lives in y-lb-demo-mapping page."
+  },
+  "title": "Our Mission",
+  "description": "<p>To put Christian principles into practice through programs that build a healthy spirit, mind, and body for all. We work side-by-side with neighbors to make sure everyone has the opportunity to learn, grow, and thrive.</p>",
+  "image": {
+    "src": "../assets/photos/y_lb_demo/wwa_page_image_1.jpeg",
+    "alt": "YMCA mission",
+    "width": 800,
+    "height": 600
+  },
+  "cta_text": "Learn More",
+  "cta_url": "/about",
+  "image_position": "left",
+  "offset_variation": "equal_column",
+  "background": "white",
+  "style": "standard",
+  "heading_level": "h2",
+  "section": "body"
+}

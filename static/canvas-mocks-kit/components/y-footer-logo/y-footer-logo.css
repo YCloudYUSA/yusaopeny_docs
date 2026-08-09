@@ -1,0 +1,27 @@
+/* Y Footer Logo — molecule */
+
+.y-footer-logo {
+  display: block;
+}
+
+.y-footer-logo__link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.y-footer-logo__link:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.y-footer-logo__svg {
+  width: 209px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hide tagline (logo-areas-of-impact group) */
+.y-footer-logo--hide-tagline #logo-areas-of-impact {
+  display: none;
+}

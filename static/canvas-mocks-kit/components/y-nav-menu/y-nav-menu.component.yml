@@ -1,0 +1,59 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Nav Menu
+description: Main navigation menu with dropdown support
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    style:
+      type: string
+      title: Menu Style
+      description: Visual style of the navigation
+      default: standard
+      enum:
+        - standard
+        - dropdown
+      meta:enum:
+        standard: 'Standard (inline links)'
+        dropdown: 'Dropdown (with submenus)'
+      examples:
+        - standard
+
+slots:
+  items:
+    title: Menu Links
+    description: Navigation link items
+    allowedComponents:
+      - sdc.y_canvas.y-nav-link
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of menu areas
+    regions:
+      links:
+        label: Menu Links
+    icon_map:
+      mobile:
+        - [links]
+      tablet:
+        - [links]
+      desktop:
+        - [links]
+      large_desktop:
+        - [links]
+
+complexity:
+  level: complex
+  css_lines: 108
+  has_js: true
+  schema_props: 2
+  enum_variants: 2
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-nav-menu

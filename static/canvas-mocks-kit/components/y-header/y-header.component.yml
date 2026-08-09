@@ -1,0 +1,94 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Header
+description: Site header organism with logo, navigation, utility bar, and CTA slots
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    style:
+      type: string
+      title: Header Style
+      description: Visual style of the header
+      default: standard
+      enum:
+        - standard
+        - transparent
+        - minimal
+      meta:enum:
+        standard: 'Standard (solid background)'
+        transparent: 'Transparent (overlay on hero)'
+        minimal: 'Minimal (compact)'
+      examples:
+        - standard
+
+    sticky:
+      type: boolean
+      title: Sticky Header
+      description: Header stays fixed at top on scroll
+      default: true
+      examples:
+        - true
+
+slots:
+  logo:
+    title: Logo
+    description: Site logo component
+    allowedComponents:
+      - sdc.y_canvas.y-site-logo
+  navigation:
+    title: Navigation
+    description: Main navigation menu
+    allowedComponents:
+      - sdc.y_canvas.y-nav-menu
+  utility:
+    title: Utility Navigation
+    description: Utility links bar (locations, jobs, search)
+    allowedComponents:
+      - sdc.y_canvas.y-utility-nav
+  cta:
+    title: Call to Action
+    description: Header CTA buttons (donate, join)
+    allowedComponents:
+      - sdc.y_canvas.y-header-cta
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of header areas
+    regions:
+      logo:
+        label: Logo
+      navigation:
+        label: Navigation
+      utility:
+        label: Utility Navigation
+      cta:
+        label: Call to Action
+    icon_map:
+      mobile:
+        - [logo, logo, cta]
+        - [navigation]
+      tablet:
+        - [utility, utility, utility, utility]
+        - [logo, navigation, navigation, cta]
+      desktop:
+        - [utility, utility, utility, utility]
+        - [logo, navigation, navigation, cta]
+      large_desktop:
+        - [utility, utility, utility, utility]
+        - [logo, navigation, navigation, cta]
+
+complexity:
+  level: medium
+  css_lines: 172
+  has_js: false
+  schema_props: 3
+  enum_variants: 2
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-header

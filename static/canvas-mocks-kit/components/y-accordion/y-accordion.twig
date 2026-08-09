@@ -1,0 +1,50 @@
+{#
+/**
+ * Y Accordion component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section subheading
+ * - is_faq: (boolean) Enable FAQ structured data
+ * - first_open: (boolean) First item expanded by default
+ * - heading_level: (string) h2, h3, or h4
+ * - items: (slot) Accordion items
+ */
+#}
+
+{% set heading_level = heading_level|default('h3') %}
+{% set first_open = first_open is not defined ? true : first_open %}
+{% set accordion_id = 'accordion-' ~ (canvas_uuid|default(random())) %}
+
+{% set classes = [
+  'y-accordion',
+  is_faq ? 'y-accordion--faq' : null,
+  style|default('standard') != 'standard' ? 'y-accordion--style-' ~ style,
+  section|default('body') != 'body' ? 'y-accordion--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-accordion">
+  {% if title or subtitle %}
+    <div class="y-accordion__header">
+      {% if title %}
+        {% if heading_level == 'h2' %}
+          <h2 class="y-accordion__title">{{ title }}</h2>
+        {% elseif heading_level == 'h3' %}
+          <h3 class="y-accordion__title">{{ title }}</h3>
+        {% elseif heading_level == 'h4' %}
+          <h4 class="y-accordion__title">{{ title }}</h4>
+        {% else %}
+          <h3 class="y-accordion__title">{{ title }}</h3>
+        {% endif %}
+      {% endif %}
+
+      {% if subtitle %}
+        <p class="y-accordion__subtitle">{{ subtitle }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="y-accordion__container" id="{{ accordion_id }}">
+    {{ items }}
+  </div>
+</div>

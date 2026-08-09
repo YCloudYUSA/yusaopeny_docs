@@ -1,0 +1,66 @@
+/* Y Site Logo — molecule */
+
+.y-site-logo {
+  --wsLogoTriangleLight: #00aeef;
+  --wsLogoTriangleDark: #0060af;
+  --wsLogoChevronLight: #20bdbe;
+  --wsLogoChevronMid: #01a490;
+  --wsLogoChevronDark: #006b6b;
+  --wsPartnerColor: #0060af;
+  --wsSecondaryColor: #01a490;
+  display: flex;
+  align-items: center;
+}
+
+.y-site-logo__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: inherit;
+}
+
+.y-site-logo__svg {
+  display: block;
+  height: 46px;
+  width: auto;
+}
+
+.y-site-logo__image {
+  display: block;
+  max-height: 46px;
+  width: auto;
+  object-fit: contain;
+}
+
+.y-site-logo__name {
+  font-family: var(--y-font-family, 'Cachet', sans-serif);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--y-header-logo-color, #333);
+  white-space: nowrap;
+}
+
+.y-site-logo__name--with-image {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .y-site-logo {
+    width: 200px;
+    justify-content: flex-end;
+  }
+
+  .y-site-logo__svg {
+    height: 60px;
+  }
+
+  .y-site-logo__image {
+    max-height: 60px;
+  }
+}

@@ -1,0 +1,111 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Staff Member Item
+description: Individual staff member card with photo and details
+status: experimental
+group: Molecules
+
+props:
+  type: object
+  properties:
+    name:
+      type: string
+      title: Name
+      description: Staff member's full name
+      examples:
+        - 'Jane Smith'
+
+    title:
+      type: string
+      title: Job Title
+      description: Staff member's position or role
+      examples:
+        - 'Program Director'
+
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Photo
+      description: Staff member's headshot photo
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/staff-member.jpg'
+          alt: 'Jane Smith headshot'
+
+    email:
+      type: string
+      title: Email
+      description: Staff member's contact email
+      examples:
+        - 'jane.smith@ymca.org'
+
+    phone:
+      type: string
+      title: Phone
+      description: Staff member's contact phone number
+      examples:
+        - '(555) 123-4567'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      image:
+        label: Photo
+      name:
+        label: Name
+      title:
+        label: Job Title
+      email:
+        label: Email
+      phone:
+        label: Phone
+    icon_map:
+      mobile:
+        - [image]
+        - [name]
+        - [title]
+        - [email]
+        - [phone]
+      tablet:
+        - [image, name]
+        - [image, title]
+        - [image, email]
+        - [image, phone]
+      desktop:
+        - [image, name]
+        - [image, title]
+        - [image, email]
+        - [image, phone]
+      large_desktop:
+        - [image, name]
+        - [image, title]
+        - [image, email]
+        - [image, phone]
+
+complexity:
+  level: complex
+  css_lines: 147
+  has_js: true
+  schema_props: 7
+  enum_variants: 2
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 2
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-staff-member-item

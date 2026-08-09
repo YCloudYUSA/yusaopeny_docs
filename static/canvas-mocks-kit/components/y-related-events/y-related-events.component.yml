@@ -1,0 +1,153 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Related Events
+description: Related events grid section with configurable display
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Section Title
+      description: Heading for the related events section
+      examples:
+        - 'Related Events'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Supporting text below the heading
+      examples:
+        - 'You might also enjoy these events'
+
+    columns:
+      type: integer
+      title: Columns
+      description: Number of columns in the grid
+      default: 3
+      examples:
+        - 3
+
+    show_date:
+      type: boolean
+      title: Show Date
+      description: Display event date on cards
+      default: true
+      examples:
+        - true
+
+    show_location:
+      type: boolean
+      title: Show Location
+      description: Display event location on cards
+      default: true
+      examples:
+        - true
+
+    show_category:
+      type: boolean
+      title: Show Category
+      description: Display category tag on event cards
+      default: true
+      examples:
+        - true
+
+    cta_text:
+      type: string
+      title: CTA Button Text
+      description: Text for view all events button
+      examples:
+        - 'View All Events'
+
+    cta_url:
+      type: string
+      title: CTA Button URL
+      description: Link to full events listing
+      examples:
+        - '/events'
+
+    events:
+      type: array
+      title: Events
+      description: Array of event objects with title, url, image, date, location
+      examples:
+        - [{"title": "Turkey Trot 5K", "url": "/events/turkey-trot", "date": "Nov 28, 2024"}]
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Section Title
+      subtitle:
+        label: Subtitle
+      events:
+        label: Events
+      cta:
+        label: Call to Action
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [events]
+        - [cta]
+      tablet:
+        - [title]
+        - [subtitle]
+        - [events, events]
+        - [cta]
+      desktop:
+        - [title]
+        - [subtitle]
+        - [events, events]
+        - [cta]
+      large_desktop:
+        - [title]
+        - [subtitle]
+        - [events, events]
+        - [cta]
+
+complexity:
+  level: medium
+  css_lines: 321
+  has_js: false
+  schema_props: 12
+  enum_variants: 4
+  demo_pages: 1
+  has_media: true
+  responsive_breakpoints: 9
+  backend_reason: 'references node:lb_event + branch/camp + views + smart_date'
+  entity_chain: [lb_event, branch, camp]
+  integrations: [views:related_events, smart_date]
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-related-events

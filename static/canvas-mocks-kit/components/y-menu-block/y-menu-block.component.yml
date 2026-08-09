@@ -1,0 +1,114 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Menu Block
+description: Navigation menu block with customizable display styles
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Optional heading above the menu
+      examples:
+        - 'Quick Links'
+
+    menu_name:
+      type: string
+      title: Menu Name
+      description: Machine name of the Drupal menu to display
+      examples:
+        - 'main'
+
+    depth:
+      type: integer
+      title: Menu Depth
+      description: Maximum depth of menu levels to display
+      default: 2
+      minimum: 1
+      maximum: 5
+      examples:
+        - 2
+
+    display_style:
+      type: string
+      title: Display Style
+      description: Visual layout style for the menu
+      default: 'vertical'
+      enum:
+        - 'vertical'
+        - 'horizontal'
+        - 'dropdown'
+      meta:enum:
+        vertical: 'Vertical List'
+        horizontal: 'Horizontal Bar'
+        dropdown: 'Dropdown Menu'
+      examples:
+        - 'vertical'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  menu:
+    title: Menu Items
+    description: Rendered menu item links
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      menu:
+        label: Menu Items
+    icon_map:
+      mobile:
+        - [title]
+        - [menu]
+      tablet:
+        - [title]
+        - [menu, menu]
+      desktop:
+        - [title]
+        - [menu, menu]
+      large_desktop:
+        - [title]
+        - [menu, menu]
+
+complexity:
+  level: simple
+  css_lines: 112
+  has_js: false
+  schema_props: 7
+  enum_variants: 6
+  demo_pages: 2
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-menu-block

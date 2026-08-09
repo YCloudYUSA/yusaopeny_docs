@@ -1,0 +1,129 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Simple Menu
+description: Simple vertical menu with optional icon and title
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Menu title/heading
+      examples:
+        - 'Quick Links'
+
+    icon:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Icon
+      description: Optional icon or image
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/icon-membership.png'
+          alt: 'Menu icon'
+          width: 100
+          height: 100
+
+    links:
+      type: array
+      title: Menu Links
+      description: List of menu links
+      items:
+        type: object
+        properties:
+          title:
+            type: string
+            title: Link Title
+          url:
+            type: string
+            title: Link URL
+      examples:
+        - - title: 'About Us'
+            url: '/about'
+          - title: 'Programs'
+            url: '/programs'
+          - title: 'Contact'
+            url: '/contact'
+
+    heading_level:
+      type: string
+      title: Heading Level
+      description: Semantic heading level
+      default: h3
+      enum:
+        - h2
+        - h3
+        - h4
+      meta:enum:
+        h2: 'Heading 2'
+        h3: 'Heading 3'
+        h4: 'Heading 4'
+      examples:
+        - h3
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      icon:
+        label: Icon
+      links:
+        label: Menu Links
+    icon_map:
+      mobile:
+        - [icon]
+        - [title]
+        - [links]
+      tablet:
+        - [icon, title]
+        - [links, links]
+      desktop:
+        - [icon, title]
+        - [links, links]
+      large_desktop:
+        - [icon, title]
+        - [links, links]
+
+complexity:
+  level: simple
+  css_lines: 79
+  has_js: false
+  schema_props: 10
+  enum_variants: 6
+  demo_pages: 1
+  has_media: true
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-simple-menu

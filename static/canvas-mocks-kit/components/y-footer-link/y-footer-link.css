@@ -1,0 +1,23 @@
+/* Y Footer Link — molecule */
+
+.y-footer-link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.y-footer-link__anchor {
+  display: inline-block;
+  color: var(--y-footer-link-color, #fff);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 2px 0;
+  transition: color 0.2s ease;
+}
+
+.y-footer-link__anchor:hover,
+.y-footer-link__anchor:focus {
+  color: var(--y-footer-link-hover, #01a490);
+  text-decoration: underline;
+}

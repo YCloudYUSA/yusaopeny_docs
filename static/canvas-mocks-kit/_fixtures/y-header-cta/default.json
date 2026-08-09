@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "title": "Default — Donate (filled) + Join (secondary) header CTAs",
+    "description": "Chrome slot-child of y-header. All 5 declared props populated: primary_text, primary_url, primary_style (filled/outlined via Variations), secondary_text, secondary_url. Schema gap: only 2 items; Small Y supports more — see coverage-gaps.md."
+  },
+  "primary_text": "Donate",
+  "primary_url": "/donate",
+  "primary_style": "filled",
+  "secondary_text": "Join",
+  "secondary_url": "/join"
+}

@@ -1,0 +1,58 @@
+{#
+/**
+ * Y Staff Member Item component.
+ *
+ * Variables:
+ * - name: (string) Staff member full name
+ * - title: (string) Job title/position
+ * - email: (string) Email address
+ * - image: (object) Photo image
+ */
+#}
+
+{% set classes = [
+  'y-staff-member-item',
+  section|default('body') != 'body' ? 'y-staff-member-item--section-' ~ section,
+] %}
+
+{% set full_name = name|default('') %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-staff-member-item">
+  <div class="y-staff-member-item__wrapper">
+    <div class="y-staff-member-item__background"></div>
+
+    <div class="y-staff-member-item__photo">
+      {% if image.src %}
+        <img
+          src="{{ image.src }}"
+          alt="{{ image.alt|default(full_name|default('Staff photo')) }}"
+          class="y-staff-member-item__image"
+          loading="lazy"
+          {% if image.width %}width="{{ image.width }}"{% endif %}
+          {% if image.height %}height="{{ image.height }}"{% endif %}
+        />
+      {% else %}
+        <div class="y-staff-member-item__placeholder">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+          </svg>
+        </div>
+      {% endif %}
+    </div>
+
+    {% if full_name %}
+      <h3 class="y-staff-member-item__name">{{ full_name }}</h3>
+    {% endif %}
+
+    {% if title %}
+      <div class="y-staff-member-item__title">{{ title }}</div>
+    {% endif %}
+
+    {% if email %}
+      <span class="y-staff-member-item__divider"></span>
+      <div class="y-staff-member-item__email">
+        <a href="mailto:{{ email }}">{{ email }}</a>
+      </div>
+    {% endif %}
+  </div>
+</div>

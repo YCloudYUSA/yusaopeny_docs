@@ -1,0 +1,39 @@
+/* Y Footer Menu — molecule */
+
+.y-footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.y-footer-menu__heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--y-footer-heading-color, #fff);
+  margin: 0;
+  padding: 0;
+  font-family: var(--y-font-family, 'Cachet', sans-serif);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+.y-footer-menu__heading:after {
+  border-bottom: 3px solid var(--wsSecondaryColor, grey);
+  top: 28px;
+  content: "";
+  left: 0;
+  position: absolute;
+  width: 32px;
+}
+
+.y-footer-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

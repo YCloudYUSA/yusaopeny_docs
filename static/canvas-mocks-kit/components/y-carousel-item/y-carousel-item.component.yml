@@ -1,0 +1,138 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Carousel Item
+description: Individual carousel slide with image, title, and CTA
+status: experimental
+group: Molecules
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Slide Heading
+      description: Main heading for the slide
+      examples:
+        - 'Welcome to Your Y'
+
+    description:
+      type: string
+      title: Description
+      description: Supporting text (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<p>Join our community and discover programs for everyone.</p>'
+
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Slide Image
+      description: Background image for the slide
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/carousel-slide.jpg'
+          alt: 'Slide background'
+          width: 1440
+          height: 600
+
+    cta_text:
+      type: string
+      title: Button Text
+      description: Call-to-action button label
+      examples:
+        - 'Learn More'
+
+    cta_url:
+      type: string
+      title: Button URL
+      description: Call-to-action button link
+      examples:
+        - '/membership'
+
+    text_position:
+      type: string
+      title: Text Position
+      description: Position of text content
+      default: left
+      enum:
+        - left
+        - center
+        - right
+      meta:enum:
+        left: 'Left'
+        center: 'Center'
+        right: 'Right'
+      examples:
+        - left
+
+    theme:
+      type: string
+      title: Color Theme
+      description: Light or dark text overlay
+      default: dark
+      enum:
+        - light
+        - dark
+      meta:enum:
+        light: 'Light text'
+        dark: 'Dark text'
+      examples:
+        - dark
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      image:
+        label: Slide Image
+      title:
+        label: Slide Heading
+      description:
+        label: Description
+      cta:
+        label: Call to Action
+    icon_map:
+      mobile:
+        - [image]
+        - [title]
+        - [description]
+        - [cta]
+      tablet:
+        - [image, title]
+        - [image, description]
+        - [image, cta]
+      desktop:
+        - [image, title]
+        - [image, description]
+        - [image, cta]
+      large_desktop:
+        - [image, title]
+        - [image, description]
+        - [image, cta]
+
+complexity:
+  level: medium
+  css_lines: 275
+  has_js: false
+  schema_props: 9
+  enum_variants: 6
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 12
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-carousel-item

@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>canvas-mocks-kit · all SDCs (single-page)</title>
+<link rel="stylesheet" href="_fonts.css">
+<link rel="stylesheet" href="_tokens.css">
+<link rel="stylesheet" href="_shared.css">
+<style>
+  .all { max-width: 1200px; margin: 0 auto; padding: 24px 16px; }
+  .all__intro { padding: 24px; background: var(--mx-bg-elev, #fff); border: 1px solid var(--mx-rule, #e5e7eb); border-radius: 8px; margin-bottom: 24px; }
+  .all__intro h1 { margin: 0 0 8px; font-size: 24px; }
+  .all__intro p { margin: 0; color: var(--mx-ink-subtle, #555); }
+  .all__intro a { color: var(--mx-ink, #0c5757); }
+  .all__toc { display: flex; flex-wrap: wrap; gap: 6px; padding: 16px; background: var(--mx-bg, #fafbfc); border: 1px solid var(--mx-rule, #e5e7eb); border-radius: 6px; margin-bottom: 32px; max-height: 240px; overflow-y: auto; }
+  .all__toc-item { font: 12px ui-monospace, monospace; padding: 3px 8px; background: #fff; border: 1px solid var(--mx-rule, #e5e7eb); border-radius: 3px; color: var(--mx-ink, #1f2937); text-decoration: none; }
+  .all__toc-item:hover { background: var(--mx-accent, #ecfeff); border-color: var(--mx-ink, #0c5757); }
+  .all__section { margin-bottom: 56px; padding-top: 16px; border-top: 1px solid var(--mx-rule, #e5e7eb); scroll-margin-top: 16px; }
+  .all__section:first-of-type { border-top: none; }
+  .all__head { margin-bottom: 12px; }
+  .all__eyebrow { display: inline-block; font: 600 11px ui-monospace, monospace; letter-spacing: .04em; color: var(--mx-ink-subtle, #6b7280); margin-bottom: 6px; }
+  .all__eyebrow code { background: var(--mx-bg, #fafbfc); padding: 1px 5px; border-radius: 3px; }
+  .all__title { margin: 0 0 6px; font-size: 22px; font-weight: 600; color: var(--mx-ink, #0c5757); }
+  .all__title .all__anchor { color: inherit; text-decoration: none; }
+  .all__title .all__anchor:hover::after { content: ' #'; color: var(--mx-ink-subtle); }
+  .all__lede { margin: 0 0 6px; color: var(--mx-ink-subtle, #4b5563); font-size: 14px; line-height: 1.5; }
+  .all__links { margin: 0; font: 12px ui-monospace, monospace; color: var(--mx-ink-subtle); }
+  .all__links a { color: var(--mx-ink, #0c5757); }
+  .all__frame-wrap { background: #fff; border: 1px solid var(--mx-rule, #e5e7eb); border-radius: 6px; overflow: hidden; }
+  .all__frame { width: 100%; min-height: 400px; border: 0; display: block; }
+</style>
+</head>
+<body>
+<main class="all">
+  <section class="all__intro">
+    <h1>All SDCs · single-page scroll-mirror</h1>
+    <p>70 components rendered as lazy iframes (default fixture, desktop layout). Mirrors the live <a href="https://small-y-stable.y.org/demo-ui-kit" target="_blank" rel="noopener">demo-ui-kit</a> shape so designers can scan visual rhythm + consistency in one scroll. For per-SDC inspection, follow the <em>overview / devices / variations</em> links on each section. <a href="index.html">← back to sidebar catalog</a></p>
+  </section>
+  <nav class="all__toc" aria-label="SDC jump table">
+    <a class="all__toc-item" href="#y-accordion">y-accordion</a>
+<a class="all__toc-item" href="#y-small-statistics">y-small-statistics</a>
+<a class="all__toc-item" href="#y-header">y-header</a>
+<a class="all__toc-item" href="#y-footer">y-footer</a>
+<a class="all__toc-item" href="#y-nav-menu">y-nav-menu</a>
+<a class="all__toc-item" href="#y-menu-block">y-menu-block</a>
+<a class="all__toc-item" href="#y-utility-nav">y-utility-nav</a>
+<a class="all__toc-item" href="#y-site-logo">y-site-logo</a>
+<a class="all__toc-item" href="#y-date-block">y-date-block</a>
+<a class="all__toc-item" href="#y-code-block">y-code-block</a>
+<a class="all__toc-item" href="#y-related-articles">y-related-articles</a>
+<a class="all__toc-item" href="#y-related-events">y-related-events</a>
+<a class="all__toc-item" href="#y-simple-schedule">y-simple-schedule</a>
+<a class="all__toc-item" href="#y-repeat-schedules">y-repeat-schedules</a>
+<a class="all__toc-item" href="#y-activity-finder">y-activity-finder</a>
+<a class="all__toc-item" href="#y-camp-menu">y-camp-menu</a>
+<a class="all__toc-item" href="#y-camp-quick-links">y-camp-quick-links</a>
+<a class="all__toc-item" href="#y-branch-hours">y-branch-hours</a>
+<a class="all__toc-item" href="#y-branch-social">y-branch-social</a>
+<a class="all__toc-item" href="#y-featured-highlights">y-featured-highlights</a>
+<a class="all__toc-item" href="#y-basic-block">y-basic-block</a>
+<a class="all__toc-item" href="#y-simple-block">y-simple-block</a>
+<a class="all__toc-item" href="#y-grid-cta">y-grid-cta</a>
+<a class="all__toc-item" href="#y-flexible-content">y-flexible-content</a>
+<a class="all__toc-item" href="#y-search-results">y-search-results</a>
+<a class="all__toc-item" href="#y-map">y-map</a>
+<a class="all__toc-item" href="#y-featured-articles">y-featured-articles</a>
+<a class="all__toc-item" href="#y-featured-events">y-featured-events</a>
+<a class="all__toc-item" href="#y-webform">y-webform</a>
+<a class="all__toc-item" href="#y-simple-menu">y-simple-menu</a>
+<a class="all__toc-item" href="#y-branch-amenities">y-branch-amenities</a>
+<a class="all__toc-item" href="#y-staff-members">y-staff-members</a>
+<a class="all__toc-item" href="#y-tabs">y-tabs</a>
+<a class="all__toc-item" href="#y-promo">y-promo</a>
+<a class="all__toc-item" href="#y-modal">y-modal</a>
+<a class="all__toc-item" href="#y-articles-filter">y-articles-filter</a>
+<a class="all__toc-item" href="#y-events-filter">y-events-filter</a>
+<a class="all__toc-item" href="#y-articles-listing">y-articles-listing</a>
+<a class="all__toc-item" href="#y-events-listing">y-events-listing</a>
+<a class="all__toc-item" href="#y-partners">y-partners</a>
+<a class="all__toc-item" href="#y-donate">y-donate</a>
+<a class="all__toc-item" href="#y-carousel">y-carousel</a>
+<a class="all__toc-item" href="#y-icon-grid">y-icon-grid</a>
+<a class="all__toc-item" href="#y-statistics">y-statistics</a>
+<a class="all__toc-item" href="#y-testimonials">y-testimonials</a>
+<a class="all__toc-item" href="#y-table">y-table</a>
+<a class="all__toc-item" href="#y-ping-pong">y-ping-pong</a>
+<a class="all__toc-item" href="#y-cards">y-cards</a>
+<a class="all__toc-item" href="#y-hero">y-hero</a>
+<a class="all__toc-item" href="#y-card-item">y-card-item</a>
+<a class="all__toc-item" href="#y-icon-grid-item">y-icon-grid-item</a>
+<a class="all__toc-item" href="#y-grid-item">y-grid-item</a>
+<a class="all__toc-item" href="#y-staff-member-item">y-staff-member-item</a>
+<a class="all__toc-item" href="#y-testimonial-item">y-testimonial-item</a>
+<a class="all__toc-item" href="#y-accordion-item">y-accordion-item</a>
+<a class="all__toc-item" href="#y-carousel-item">y-carousel-item</a>
+<a class="all__toc-item" href="#y-tab-item">y-tab-item</a>
+<a class="all__toc-item" href="#y-partners-tier">y-partners-tier</a>
+<a class="all__toc-item" href="#y-partner-item">y-partner-item</a>
+<a class="all__toc-item" href="#y-statistics-item">y-statistics-item</a>
+<a class="all__toc-item" href="#y-small-statistics-item">y-small-statistics-item</a>
+<a class="all__toc-item" href="#y-donate-item">y-donate-item</a>
+<a class="all__toc-item" href="#y-footer-link">y-footer-link</a>
+<a class="all__toc-item" href="#y-footer-menu">y-footer-menu</a>
+<a class="all__toc-item" href="#y-footer-logo">y-footer-logo</a>
+<a class="all__toc-item" href="#y-footer-social-link">y-footer-social-link</a>
+<a class="all__toc-item" href="#y-header-cta">y-header-cta</a>
+<a class="all__toc-item" href="#y-menu-cta">y-menu-cta</a>
+<a class="all__toc-item" href="#y-nav-link">y-nav-link</a>
+<a class="all__toc-item" href="#y-utility-link">y-utility-link</a>
+  </nav>
+  
+<section class="all__section" id="y-accordion">
+  <header class="all__head">
+    <span class="all__eyebrow">content · <code>lb_accordion</code></span>
+    <h2 class="all__title"><a href="#y-accordion" class="all__anchor">Accordion</a></h2>
+    <p class="all__lede">Expandable section with stacked items. Optional FAQ schema (schema.org/FAQPage). 2 style variants (standard / small-y).</p>
+    <p class="all__links"><a href="y-accordion/index.html">overview</a> · <a href="y-accordion/index.html#devices">devices</a> · <a href="y-accordion/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-accordion/frame-default.html" loading="lazy" title="y-accordion default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-small-statistics">
+  <header class="all__head">
+    <span class="all__eyebrow">numbers-text · <code>lb_small_statistics</code></span>
+    <h2 class="all__title"><a href="#y-small-statistics" class="all__anchor">Small Statistics</a></h2>
+    <p class="all__lede">Compact stat counter row. Slot items = y-small-statistics-item children.</p>
+    <p class="all__links"><a href="y-small-statistics/index.html">overview</a> · <a href="y-small-statistics/index.html#devices">devices</a> · <a href="y-small-statistics/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-small-statistics/frame-default.html" loading="lazy" title="y-small-statistics default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-header">
+  <header class="all__head">
+    <span class="all__eyebrow">chrome</span>
+    <h2 class="all__title"><a href="#y-header" class="all__anchor">Header</a></h2>
+    <p class="all__lede">Site shell SDC. Mock is a design-spec snapshot — live demo differs.</p>
+    <p class="all__links"><a href="y-header/index.html">overview</a> · <a href="y-header/index.html#devices">devices</a> · <a href="y-header/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-header/frame-default.html" loading="lazy" title="y-header default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-footer">
+  <header class="all__head">
+    <span class="all__eyebrow">chrome</span>
+    <h2 class="all__title"><a href="#y-footer" class="all__anchor">Footer</a></h2>
+    <p class="all__lede">Site shell SDC. Mock is a design-spec snapshot — live demo differs.</p>
+    <p class="all__links"><a href="y-footer/index.html">overview</a> · <a href="y-footer/index.html#devices">devices</a> · <a href="y-footer/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-footer/frame-default.html" loading="lazy" title="y-footer default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-nav-menu">
+  <header class="all__head">
+    <span class="all__eyebrow">chrome</span>
+    <h2 class="all__title"><a href="#y-nav-menu" class="all__anchor">Nav Menu</a></h2>
+    <p class="all__lede">Site shell SDC. Mock is a design-spec snapshot — live demo differs.</p>
+    <p class="all__links"><a href="y-nav-menu/index.html">overview</a> · <a href="y-nav-menu/index.html#devices">devices</a> · <a href="y-nav-menu/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-nav-menu/frame-default.html" loading="lazy" title="y-nav-menu default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-menu-block">
+  <header class="all__head">
+    <span class="all__eyebrow">chrome</span>
+    <h2 class="all__title"><a href="#y-menu-block" class="all__anchor">Menu Block</a></h2>
+    <p class="all__lede">Site shell SDC. Mock is a design-spec snapshot — live demo differs.</p>
+    <p class="all__links"><a href="y-menu-block/index.html">overview</a> · <a href="y-menu-block/index.html#devices">devices</a> · <a href="y-menu-block/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-menu-block/frame-default.html" loading="lazy" title="y-menu-block default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-utility-nav">
+  <header class="all__head">
+    <span class="all__eyebrow">chrome</span>
+    <h2 class="all__title"><a href="#y-utility-nav" class="all__anchor">Utility Nav</a></h2>
+    <p class="all__lede">Site shell SDC. Mock is a design-spec snapshot — live demo differs.</p>
+    <p class="all__links"><a href="y-utility-nav/index.html">overview</a> · <a href="y-utility-nav/index.html#devices">devices</a> · <a href="y-utility-nav/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-utility-nav/frame-default.html" loading="lazy" title="y-utility-nav default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-site-logo">
+  <header class="all__head">
+    <span class="all__eyebrow">chrome</span>
+    <h2 class="all__title"><a href="#y-site-logo" class="all__anchor">Site Logo</a></h2>
+    <p class="all__lede">Site shell SDC. Mock is a design-spec snapshot — live demo differs.</p>
+    <p class="all__links"><a href="y-site-logo/index.html">overview</a> · <a href="y-site-logo/index.html#devices">devices</a> · <a href="y-site-logo/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-site-logo/frame-default.html" loading="lazy" title="y-site-logo default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-date-block">
+  <header class="all__head">
+    <span class="all__eyebrow">numbers-text · <code>lb_date_block</code></span>
+    <h2 class="all__title"><a href="#y-date-block" class="all__anchor">Date Block</a></h2>
+    <p class="all__lede">Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.</p>
+    <p class="all__links"><a href="y-date-block/index.html">overview</a> · <a href="y-date-block/index.html#devices">devices</a> · <a href="y-date-block/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-date-block/frame-default.html" loading="lazy" title="y-date-block default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-code-block">
+  <header class="all__head">
+    <span class="all__eyebrow">content · <code>lb_code_block</code></span>
+    <h2 class="all__title"><a href="#y-code-block" class="all__anchor">Code Block</a></h2>
+    <p class="all__lede">Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.</p>
+    <p class="all__links"><a href="y-code-block/index.html">overview</a> · <a href="y-code-block/index.html#devices">devices</a> · <a href="y-code-block/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-code-block/frame-default.html" loading="lazy" title="y-code-block default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-related-articles">
+  <header class="all__head">
+    <span class="all__eyebrow">views-listings · <code>lb_related_articles</code></span>
+    <h2 class="all__title"><a href="#y-related-articles" class="all__anchor">Related Articles</a></h2>
+    <p class="all__lede">Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.</p>
+    <p class="all__links"><a href="y-related-articles/index.html">overview</a> · <a href="y-related-articles/index.html#devices">devices</a> · <a href="y-related-articles/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-related-articles/frame-default.html" loading="lazy" title="y-related-articles default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-related-events">
+  <header class="all__head">
+    <span class="all__eyebrow">views-listings · <code>lb_related_events</code></span>
+    <h2 class="all__title"><a href="#y-related-events" class="all__anchor">Related Events</a></h2>
+    <p class="all__lede">Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.</p>
+    <p class="all__links"><a href="y-related-events/index.html">overview</a> · <a href="y-related-events/index.html#devices">devices</a> · <a href="y-related-events/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-related-events/frame-default.html" loading="lazy" title="y-related-events default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-simple-schedule">
+  <header class="all__head">
+    <span class="all__eyebrow">activities · <code>lb_simple_schedule</code></span>
+    <h2 class="all__title"><a href="#y-simple-schedule" class="all__anchor">Simple Schedule</a></h2>
+    <p class="all__lede">Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.</p>
+    <p class="all__links"><a href="y-simple-schedule/index.html">overview</a> · <a href="y-simple-schedule/index.html#devices">devices</a> · <a href="y-simple-schedule/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-simple-schedule/frame-default.html" loading="lazy" title="y-simple-schedule default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-repeat-schedules">
+  <header class="all__head">
+    <span class="all__eyebrow">activities · <code>lb_repeat_schedules</code></span>
+    <h2 class="all__title"><a href="#y-repeat-schedules" class="all__anchor">Repeat Schedules</a></h2>
+    <p class="all__lede">Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.</p>
+    <p class="all__links"><a href="y-repeat-schedules/index.html">overview</a> · <a href="y-repeat-schedules/index.html#devices">devices</a> · <a href="y-repeat-schedules/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-repeat-schedules/frame-default.html" loading="lazy" title="y-repeat-schedules default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-activity-finder">
+  <header class="all__head">
+    <span class="all__eyebrow">activities · <code>lb_activity_finder</code></span>
+    <h2 class="all__title"><a href="#y-activity-finder" class="all__anchor">Activity Finder</a></h2>
+    <p class="all__lede">Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.</p>
+    <p class="all__links"><a href="y-activity-finder/index.html">overview</a> · <a href="y-activity-finder/index.html#devices">devices</a> · <a href="y-activity-finder/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-activity-finder/frame-default.html" loading="lazy" title="y-activity-finder default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-camp-menu">
+  <header class="all__head">
+    <span class="all__eyebrow">page-fields · <code>lb_camp_menu</code></span>
+    <h2 class="all__title"><a href="#y-camp-menu" class="all__anchor">Camp Menu</a></h2>
+    <p class="all__lede">Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.</p>
+    <p class="all__links"><a href="y-camp-menu/index.html">overview</a> · <a href="y-camp-menu/index.html#devices">devices</a> · <a href="y-camp-menu/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-camp-menu/frame-default.html" loading="lazy" title="y-camp-menu default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-camp-quick-links">
+  <header class="all__head">
+    <span class="all__eyebrow">page-fields · <code>lb_camp_quick_links</code></span>
+    <h2 class="all__title"><a href="#y-camp-quick-links" class="all__anchor">Camp Quick Links</a></h2>
+    <p class="all__lede">Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.</p>
+    <p class="all__links"><a href="y-camp-quick-links/index.html">overview</a> · <a href="y-camp-quick-links/index.html#devices">devices</a> · <a href="y-camp-quick-links/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-camp-quick-links/frame-default.html" loading="lazy" title="y-camp-quick-links default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-branch-hours">
+  <header class="all__head">
+    <span class="all__eyebrow">page-fields · <code>lb_branch_hours</code></span>
+    <h2 class="all__title"><a href="#y-branch-hours" class="all__anchor">Branch Hours</a></h2>
+    <p class="all__lede">Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.</p>
+    <p class="all__links"><a href="y-branch-hours/index.html">overview</a> · <a href="y-branch-hours/index.html#devices">devices</a> · <a href="y-branch-hours/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-branch-hours/frame-default.html" loading="lazy" title="y-branch-hours default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-branch-social">
+  <header class="all__head">
+    <span class="all__eyebrow">page-fields · <code>lb_branch_social</code></span>
+    <h2 class="all__title"><a href="#y-branch-social" class="all__anchor">Branch Social</a></h2>
+    <p class="all__lede">Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.</p>
+    <p class="all__links"><a href="y-branch-social/index.html">overview</a> · <a href="y-branch-social/index.html#devices">devices</a> · <a href="y-branch-social/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-branch-social/frame-default.html" loading="lazy" title="y-branch-social default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-featured-highlights">
+  <header class="all__head">
+    <span class="all__eyebrow">highlights · <code>lb_featured_highlights</code></span>
+    <h2 class="all__title"><a href="#y-featured-highlights" class="all__anchor">Featured Highlights</a></h2>
+    <p class="all__lede">Hand-authored placeholder fixture. See coverage-gaps.md if rendering looks off.</p>
+    <p class="all__links"><a href="y-featured-highlights/index.html">overview</a> · <a href="y-featured-highlights/index.html#devices">devices</a> · <a href="y-featured-highlights/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-featured-highlights/frame-default.html" loading="lazy" title="y-featured-highlights default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-basic-block">
+  <header class="all__head">
+    <span class="all__eyebrow">content · <code>lb_basic_block</code></span>
+    <h2 class="all__title"><a href="#y-basic-block" class="all__anchor">Basic Block</a></h2>
+    <p class="all__lede">Content block with title and body. Two-region slot layout — heading row above rich-text body. Use for editorial sections that need a labelled heading + prose pair.</p>
+    <p class="all__links"><a href="y-basic-block/index.html">overview</a> · <a href="y-basic-block/index.html#devices">devices</a> · <a href="y-basic-block/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-basic-block/frame-default.html" loading="lazy" title="y-basic-block default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-simple-block">
+  <header class="all__head">
+    <span class="all__eyebrow">content · <code>lb_simple_block</code></span>
+    <h2 class="all__title"><a href="#y-simple-block" class="all__anchor">Simple Block</a></h2>
+    <p class="all__lede">Body-only content block — no title slot. Single-region layout. Use for inline copy or stripped-down content areas where a heading is not needed.</p>
+    <p class="all__links"><a href="y-simple-block/index.html">overview</a> · <a href="y-simple-block/index.html#devices">devices</a> · <a href="y-simple-block/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-simple-block/frame-default.html" loading="lazy" title="y-simple-block default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-grid-cta">
+  <header class="all__head">
+    <span class="all__eyebrow">grid-card · <code>lb_grid_cta</code></span>
+    <h2 class="all__title"><a href="#y-grid-cta" class="all__anchor">Grid CTA</a></h2>
+    <p class="all__lede">Title + subtitle + grid of CTA cards. 2/3/4 cols. Slot items = y-grid-item children.</p>
+    <p class="all__links"><a href="y-grid-cta/index.html">overview</a> · <a href="y-grid-cta/index.html#devices">devices</a> · <a href="y-grid-cta/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-grid-cta/frame-default.html" loading="lazy" title="y-grid-cta default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-flexible-content">
+  <header class="all__head">
+    <span class="all__eyebrow">numbers-text · <code>lb_flexible_content</code></span>
+    <h2 class="all__title"><a href="#y-flexible-content" class="all__anchor">Flexible Content</a></h2>
+    <p class="all__lede">Free-form HTML content block (h1-h6, p, ul, blockquote, img). Theme-styled prose.</p>
+    <p class="all__links"><a href="y-flexible-content/index.html">overview</a> · <a href="y-flexible-content/index.html#devices">devices</a> · <a href="y-flexible-content/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-flexible-content/frame-default.html" loading="lazy" title="y-flexible-content default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-search-results">
+  <header class="all__head">
+    <span class="all__eyebrow">templates · <code>lb_search_results</code></span>
+    <h2 class="all__title"><a href="#y-search-results" class="all__anchor">Search Results</a></h2>
+    <p class="all__lede">Result list with query, total count, pagination. Inline `results` array.</p>
+    <p class="all__links"><a href="y-search-results/index.html">overview</a> · <a href="y-search-results/index.html#devices">devices</a> · <a href="y-search-results/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-search-results/frame-default.html" loading="lazy" title="y-search-results default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-map">
+  <header class="all__head">
+    <span class="all__eyebrow">location-nav · <code>lb_map</code></span>
+    <h2 class="all__title"><a href="#y-map" class="all__anchor">Map</a></h2>
+    <p class="all__lede">Geographic branch map with markers. Production embeds JS map (Google/OSM); mock = placeholder rectangle with marker list.</p>
+    <p class="all__links"><a href="y-map/index.html">overview</a> · <a href="y-map/index.html#devices">devices</a> · <a href="y-map/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-map/frame-default.html" loading="lazy" title="y-map default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-featured-articles">
+  <header class="all__head">
+    <span class="all__eyebrow">highlights · <code>lb_featured_articles</code></span>
+    <h2 class="all__title"><a href="#y-featured-articles" class="all__anchor">Featured Articles</a></h2>
+    <p class="all__lede">Hero article + secondary_articles array. Magazine-style featured news section.</p>
+    <p class="all__links"><a href="y-featured-articles/index.html">overview</a> · <a href="y-featured-articles/index.html#devices">devices</a> · <a href="y-featured-articles/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-featured-articles/frame-default.html" loading="lazy" title="y-featured-articles default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-featured-events">
+  <header class="all__head">
+    <span class="all__eyebrow">highlights · <code>lb_featured_events</code></span>
+    <h2 class="all__title"><a href="#y-featured-events" class="all__anchor">Featured Events</a></h2>
+    <p class="all__lede">Hero event + secondary_events array. Event spotlight section.</p>
+    <p class="all__links"><a href="y-featured-events/index.html">overview</a> · <a href="y-featured-events/index.html#devices">devices</a> · <a href="y-featured-events/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-featured-events/frame-default.html" loading="lazy" title="y-featured-events default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-webform">
+  <header class="all__head">
+    <span class="all__eyebrow">forms-ctas · <code>lb_webform</code></span>
+    <h2 class="all__title"><a href="#y-webform" class="all__anchor">Webform</a></h2>
+    <p class="all__lede">Webform wrapper with title + description + form slot. Slot in production = Drupal webform render; mock fills with placeholder form HTML.</p>
+    <p class="all__links"><a href="y-webform/index.html">overview</a> · <a href="y-webform/index.html#devices">devices</a> · <a href="y-webform/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-webform/frame-default.html" loading="lazy" title="y-webform default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-simple-menu">
+  <header class="all__head">
+    <span class="all__eyebrow">navigation · <code>lb_simple_menu</code></span>
+    <h2 class="all__title"><a href="#y-simple-menu" class="all__anchor">Simple Menu</a></h2>
+    <p class="all__lede">Sidebar / inline menu with title + linked items. Hand-authored fixture.</p>
+    <p class="all__links"><a href="y-simple-menu/index.html">overview</a> · <a href="y-simple-menu/index.html#devices">devices</a> · <a href="y-simple-menu/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-simple-menu/frame-default.html" loading="lazy" title="y-simple-menu default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-branch-amenities">
+  <header class="all__head">
+    <span class="all__eyebrow">page-fields · <code>lb_branch_amenities</code></span>
+    <h2 class="all__title"><a href="#y-branch-amenities" class="all__anchor">Branch Amenities</a></h2>
+    <p class="all__lede">Branch amenity list (pool, gym, sauna...) with open/closed status. Inline array prop (amenities), not slot. y_lb_demo migration only ships parent fields — amenities array synthesized.</p>
+    <p class="all__links"><a href="y-branch-amenities/index.html">overview</a> · <a href="y-branch-amenities/index.html#devices">devices</a> · <a href="y-branch-amenities/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-branch-amenities/frame-default.html" loading="lazy" title="y-branch-amenities default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-staff-members">
+  <header class="all__head">
+    <span class="all__eyebrow">people · <code>lb_staff_members</code></span>
+    <h2 class="all__title"><a href="#y-staff-members" class="all__anchor">Staff Members</a></h2>
+    <p class="all__lede">Staff card grid with photos, titles, emails, phones. 2 styles × 4 column counts. No y_lb_demo coverage — hand-authored.</p>
+    <p class="all__links"><a href="y-staff-members/index.html">overview</a> · <a href="y-staff-members/index.html#devices">devices</a> · <a href="y-staff-members/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-staff-members/frame-default.html" loading="lazy" title="y-staff-members default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-tabs">
+  <header class="all__head">
+    <span class="all__eyebrow">content · <code>lb_tabs</code></span>
+    <h2 class="all__title"><a href="#y-tabs" class="all__anchor">Tabs</a></h2>
+    <p class="all__lede">Tabbed content container. 2 styles. Slot items = y-tab-item children. No y_lb_demo coverage — hand-authored fixture.</p>
+    <p class="all__links"><a href="y-tabs/index.html">overview</a> · <a href="y-tabs/index.html#devices">devices</a> · <a href="y-tabs/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-tabs/frame-default.html" loading="lazy" title="y-tabs default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-promo">
+  <header class="all__head">
+    <span class="all__eyebrow">hero-banner · <code>lb_promo</code></span>
+    <h2 class="all__title"><a href="#y-promo" class="all__anchor">Promo</a></h2>
+    <p class="all__lede">Promotional card with image + title + description + CTA. 3 image styles × 3 backgrounds × 2 styles. No y_lb_demo coverage — hand-authored fixture.</p>
+    <p class="all__links"><a href="y-promo/index.html">overview</a> · <a href="y-promo/index.html#devices">devices</a> · <a href="y-promo/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-promo/frame-default.html" loading="lazy" title="y-promo default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-modal">
+  <header class="all__head">
+    <span class="all__eyebrow">content · <code>lb_modal</code></span>
+    <h2 class="all__title"><a href="#y-modal" class="all__anchor">Modal</a></h2>
+    <p class="all__lede">Overlay dialog with title + content + CTA. 4 sizes (small/medium/large/fullscreen) × 2 styles. Forced visible in mock preview.</p>
+    <p class="all__links"><a href="y-modal/index.html">overview</a> · <a href="y-modal/index.html#devices">devices</a> · <a href="y-modal/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-modal/frame-default.html" loading="lazy" title="y-modal default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-articles-filter">
+  <header class="all__head">
+    <span class="all__eyebrow">views-listings · <code>lb_articles_filter</code></span>
+    <h2 class="all__title"><a href="#y-articles-filter" class="all__anchor">Articles Filter</a></h2>
+    <p class="all__lede">Filter UI (search input + category list with counts) for articles listing pages.</p>
+    <p class="all__links"><a href="y-articles-filter/index.html">overview</a> · <a href="y-articles-filter/index.html#devices">devices</a> · <a href="y-articles-filter/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-articles-filter/frame-default.html" loading="lazy" title="y-articles-filter default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-events-filter">
+  <header class="all__head">
+    <span class="all__eyebrow">views-listings · <code>lb_events_filter</code></span>
+    <h2 class="all__title"><a href="#y-events-filter" class="all__anchor">Events Filter</a></h2>
+    <p class="all__lede">Filter UI for events listing pages — search + categories + date + location filters.</p>
+    <p class="all__links"><a href="y-events-filter/index.html">overview</a> · <a href="y-events-filter/index.html#devices">devices</a> · <a href="y-events-filter/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-events-filter/frame-default.html" loading="lazy" title="y-events-filter default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-articles-listing">
+  <header class="all__head">
+    <span class="all__eyebrow">views-listings · <code>lb_articles_listing</code></span>
+    <h2 class="all__title"><a href="#y-articles-listing" class="all__anchor">Articles Listing</a></h2>
+    <p class="all__lede">Grid of article cards with pagination. Inline listing — no slot; twig iterates `articles` array. Production reads node query results.</p>
+    <p class="all__links"><a href="y-articles-listing/index.html">overview</a> · <a href="y-articles-listing/index.html#devices">devices</a> · <a href="y-articles-listing/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-articles-listing/frame-default.html" loading="lazy" title="y-articles-listing default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-events-listing">
+  <header class="all__head">
+    <span class="all__eyebrow">views-listings · <code>lb_events_listing</code></span>
+    <h2 class="all__title"><a href="#y-events-listing" class="all__anchor">Events Listing</a></h2>
+    <p class="all__lede">Grid of event cards with pagination. Inline listing — twig iterates `events` array. Production reads event node query.</p>
+    <p class="all__links"><a href="y-events-listing/index.html">overview</a> · <a href="y-events-listing/index.html#devices">devices</a> · <a href="y-events-listing/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-events-listing/frame-default.html" loading="lazy" title="y-events-listing default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-partners">
+  <header class="all__head">
+    <span class="all__eyebrow">people · <code>lb_partners</code></span>
+    <h2 class="all__title"><a href="#y-partners" class="all__anchor">Partners</a></h2>
+    <p class="all__lede">Partners section with title, subtitle, and tiered partner logos. 2 styles. Nested slots: tiers → partners.</p>
+    <p class="all__links"><a href="y-partners/index.html">overview</a> · <a href="y-partners/index.html#devices">devices</a> · <a href="y-partners/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-partners/frame-default.html" loading="lazy" title="y-partners default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-donate">
+  <header class="all__head">
+    <span class="all__eyebrow">forms-ctas · <code>lb_donate</code></span>
+    <h2 class="all__title"><a href="#y-donate" class="all__anchor">Donate</a></h2>
+    <p class="all__lede">Donation section with preset amount buttons + section CTA. 2 styles × 3 backgrounds.</p>
+    <p class="all__links"><a href="y-donate/index.html">overview</a> · <a href="y-donate/index.html#devices">devices</a> · <a href="y-donate/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-donate/frame-default.html" loading="lazy" title="y-donate default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-carousel">
+  <header class="all__head">
+    <span class="all__eyebrow">hero-banner · <code>lb_carousel</code></span>
+    <h2 class="all__title"><a href="#y-carousel" class="all__anchor">Carousel</a></h2>
+    <p class="all__lede">Slide carousel with image + title + description + CTA per slide. 2 styles (standard / small-y).</p>
+    <p class="all__links"><a href="y-carousel/index.html">overview</a> · <a href="y-carousel/index.html#devices">devices</a> · <a href="y-carousel/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-carousel/frame-default.html" loading="lazy" title="y-carousel default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-icon-grid">
+  <header class="all__head">
+    <span class="all__eyebrow">grid-card · <code>lb_grid_icon</code></span>
+    <h2 class="all__title"><a href="#y-icon-grid" class="all__anchor">Icon Grid</a></h2>
+    <p class="all__lede">Grid of icon-based items (services, principles). 2/3/4/6 columns × 2 styles.</p>
+    <p class="all__links"><a href="y-icon-grid/index.html">overview</a> · <a href="y-icon-grid/index.html#devices">devices</a> · <a href="y-icon-grid/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-icon-grid/frame-default.html" loading="lazy" title="y-icon-grid default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-statistics">
+  <header class="all__head">
+    <span class="all__eyebrow">numbers-text · <code>lb_statistics</code></span>
+    <h2 class="all__title"><a href="#y-statistics" class="all__anchor">Statistics</a></h2>
+    <p class="all__lede">Animated stat counters with optional background image. 2/3/4 columns, 2 styles (standard / small-y). Uses --ylb-font-family-cachet for numbers.</p>
+    <p class="all__links"><a href="y-statistics/index.html">overview</a> · <a href="y-statistics/index.html#devices">devices</a> · <a href="y-statistics/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-statistics/frame-default.html" loading="lazy" title="y-statistics default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-testimonials">
+  <header class="all__head">
+    <span class="all__eyebrow">people · <code>lb_testimonials</code></span>
+    <h2 class="all__title"><a href="#y-testimonials" class="all__anchor">Testimonials</a></h2>
+    <p class="all__lede">Member testimonial carousel with quote / name / author title / avatar. CSS-only carousel up to 10 items. 2 styles (standard / small-y).</p>
+    <p class="all__links"><a href="y-testimonials/index.html">overview</a> · <a href="y-testimonials/index.html#devices">devices</a> · <a href="y-testimonials/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-testimonials/frame-default.html" loading="lazy" title="y-testimonials default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-table">
+  <header class="all__head">
+    <span class="all__eyebrow">content · <code>lb_table</code></span>
+    <h2 class="all__title"><a href="#y-table" class="all__anchor">Table</a></h2>
+    <p class="all__lede">Simple text/table content block with optional header. Striped, bordered, responsive flags. 2 styles (standard / small-y).</p>
+    <p class="all__links"><a href="y-table/index.html">overview</a> · <a href="y-table/index.html#devices">devices</a> · <a href="y-table/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-table/frame-default.html" loading="lazy" title="y-table default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-ping-pong">
+  <header class="all__head">
+    <span class="all__eyebrow">grid-card · <code>lb_ping_pong</code></span>
+    <h2 class="all__title"><a href="#y-ping-pong" class="all__anchor">Ping-Pong</a></h2>
+    <p class="all__lede">Two-column block with alternating image/text layout. Image position (left/right), 3 column ratios, 3 backgrounds, 2 styles.</p>
+    <p class="all__links"><a href="y-ping-pong/index.html">overview</a> · <a href="y-ping-pong/index.html#devices">devices</a> · <a href="y-ping-pong/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-ping-pong/frame-default.html" loading="lazy" title="y-ping-pong default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-cards">
+  <header class="all__head">
+    <span class="all__eyebrow">grid-card · <code>lb_grid_cta</code></span>
+    <h2 class="all__title"><a href="#y-cards" class="all__anchor">Cards</a></h2>
+    <p class="all__lede">Grid of card items with optional section heading + CTA. 4 variations (standard/color/overlay/chevron) × 3 column counts × border styles.</p>
+    <p class="all__links"><a href="y-cards/index.html">overview</a> · <a href="y-cards/index.html#devices">devices</a> · <a href="y-cards/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-cards/frame-default.html" loading="lazy" title="y-cards default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-hero">
+  <header class="all__head">
+    <span class="all__eyebrow">hero-banner · <code>lb_hero</code></span>
+    <h2 class="all__title"><a href="#y-hero" class="all__anchor">Hero Banner</a></h2>
+    <p class="all__lede">Full-bleed banner with chevron-decorated wrapper, masked image, title, description, CTA. 5 variations × 2 backgrounds.</p>
+    <p class="all__links"><a href="y-hero/index.html">overview</a> · <a href="y-hero/index.html#devices">devices</a> · <a href="y-hero/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-hero/frame-default.html" loading="lazy" title="y-hero default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-card-item">
+  <header class="all__head">
+    <span class="all__eyebrow">grid-card</span>
+    <h2 class="all__title"><a href="#y-card-item" class="all__anchor">Y Card Item</a></h2>
+    <p class="all__lede">Individual card with image, title, description and link</p>
+    <p class="all__links"><a href="y-card-item/index.html">overview</a> · <a href="y-card-item/index.html#devices">devices</a> · <a href="y-card-item/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-card-item/frame-default.html" loading="lazy" title="y-card-item default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-icon-grid-item">
+  <header class="all__head">
+    <span class="all__eyebrow">grid-card</span>
+    <h2 class="all__title"><a href="#y-icon-grid-item" class="all__anchor">Y Icon Grid Item</a></h2>
+    <p class="all__lede">Single icon grid item with icon, title, and description</p>
+    <p class="all__links"><a href="y-icon-grid-item/index.html">overview</a> · <a href="y-icon-grid-item/index.html#devices">devices</a> · <a href="y-icon-grid-item/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-icon-grid-item/frame-default.html" loading="lazy" title="y-icon-grid-item default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-grid-item">
+  <header class="all__head">
+    <span class="all__eyebrow">grid-card</span>
+    <h2 class="all__title"><a href="#y-grid-item" class="all__anchor">Y Grid Item</a></h2>
+    <p class="all__lede">Single grid item with image, title, description, and CTA</p>
+    <p class="all__links"><a href="y-grid-item/index.html">overview</a> · <a href="y-grid-item/index.html#devices">devices</a> · <a href="y-grid-item/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-grid-item/frame-default.html" loading="lazy" title="y-grid-item default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-staff-member-item">
+  <header class="all__head">
+    <span class="all__eyebrow">people</span>
+    <h2 class="all__title"><a href="#y-staff-member-item" class="all__anchor">Y Staff Member Item</a></h2>
+    <p class="all__lede">Individual staff member card with photo and details</p>
+    <p class="all__links"><a href="y-staff-member-item/index.html">overview</a> · <a href="y-staff-member-item/index.html#devices">devices</a> · <a href="y-staff-member-item/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-staff-member-item/frame-default.html" loading="lazy" title="y-staff-member-item default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-testimonial-item">
+  <header class="all__head">
+    <span class="all__eyebrow">people</span>
+    <h2 class="all__title"><a href="#y-testimonial-item" class="all__anchor">Y Testimonial Item</a></h2>
+    <p class="all__lede">Individual testimonial quote with author information</p>
+    <p class="all__links"><a href="y-testimonial-item/index.html">overview</a> · <a href="y-testimonial-item/index.html#devices">devices</a> · <a href="y-testimonial-item/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-testimonial-item/frame-default.html" loading="lazy" title="y-testimonial-item default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-accordion-item">
+  <header class="all__head">
+    <span class="all__eyebrow">content</span>
+    <h2 class="all__title"><a href="#y-accordion-item" class="all__anchor">Y Accordion Item</a></h2>
+    <p class="all__lede">Individual accordion item with expandable content</p>
+    <p class="all__links"><a href="y-accordion-item/index.html">overview</a> · <a href="y-accordion-item/index.html#devices">devices</a> · <a href="y-accordion-item/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-accordion-item/frame-default.html" loading="lazy" title="y-accordion-item default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-carousel-item">
+  <header class="all__head">
+    <span class="all__eyebrow">hero-banner</span>
+    <h2 class="all__title"><a href="#y-carousel-item" class="all__anchor">Y Carousel Item</a></h2>
+    <p class="all__lede">Individual carousel slide with image, title, and CTA</p>
+    <p class="all__links"><a href="y-carousel-item/index.html">overview</a> · <a href="y-carousel-item/index.html#devices">devices</a> · <a href="y-carousel-item/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-carousel-item/frame-default.html" loading="lazy" title="y-carousel-item default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-tab-item">
+  <header class="all__head">
+    <span class="all__eyebrow">content</span>
+    <h2 class="all__title"><a href="#y-tab-item" class="all__anchor">Y Tab Item</a></h2>
+    <p class="all__lede">Single tab with title and content panel</p>
+    <p class="all__links"><a href="y-tab-item/index.html">overview</a> · <a href="y-tab-item/index.html#devices">devices</a> · <a href="y-tab-item/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-tab-item/frame-default.html" loading="lazy" title="y-tab-item default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-partners-tier">
+  <header class="all__head">
+    <span class="all__eyebrow">people</span>
+    <h2 class="all__title"><a href="#y-partners-tier" class="all__anchor">Y Partners Tier</a></h2>
+    <p class="all__lede">Partner tier grouping with title and partner logos</p>
+    <p class="all__links"><a href="y-partners-tier/index.html">overview</a> · <a href="y-partners-tier/index.html#devices">devices</a> · <a href="y-partners-tier/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-partners-tier/frame-default.html" loading="lazy" title="y-partners-tier default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-partner-item">
+  <header class="all__head">
+    <span class="all__eyebrow">slot-children</span>
+    <h2 class="all__title"><a href="#y-partner-item" class="all__anchor">Y Partner Item</a></h2>
+    <p class="all__lede">Individual partner logo with optional link</p>
+    <p class="all__links"><a href="y-partner-item/index.html">overview</a> · <a href="y-partner-item/index.html#devices">devices</a> · <a href="y-partner-item/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-partner-item/frame-default.html" loading="lazy" title="y-partner-item default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-statistics-item">
+  <header class="all__head">
+    <span class="all__eyebrow">numbers-text</span>
+    <h2 class="all__title"><a href="#y-statistics-item" class="all__anchor">Y Statistics Item</a></h2>
+    <p class="all__lede">Individual statistic display with animated counter</p>
+    <p class="all__links"><a href="y-statistics-item/index.html">overview</a> · <a href="y-statistics-item/index.html#devices">devices</a> · <a href="y-statistics-item/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-statistics-item/frame-default.html" loading="lazy" title="y-statistics-item default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-small-statistics-item">
+  <header class="all__head">
+    <span class="all__eyebrow">numbers-text</span>
+    <h2 class="all__title"><a href="#y-small-statistics-item" class="all__anchor">Y Small Statistics Item</a></h2>
+    <p class="all__lede">Individual compact statistic with value and label</p>
+    <p class="all__links"><a href="y-small-statistics-item/index.html">overview</a> · <a href="y-small-statistics-item/index.html#devices">devices</a> · <a href="y-small-statistics-item/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-small-statistics-item/frame-default.html" loading="lazy" title="y-small-statistics-item default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-donate-item">
+  <header class="all__head">
+    <span class="all__eyebrow">forms-ctas</span>
+    <h2 class="all__title"><a href="#y-donate-item" class="all__anchor">Y Donate Item</a></h2>
+    <p class="all__lede">Individual donation amount option button</p>
+    <p class="all__links"><a href="y-donate-item/index.html">overview</a> · <a href="y-donate-item/index.html#devices">devices</a> · <a href="y-donate-item/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-donate-item/frame-default.html" loading="lazy" title="y-donate-item default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-footer-link">
+  <header class="all__head">
+    <span class="all__eyebrow">slot-children</span>
+    <h2 class="all__title"><a href="#y-footer-link" class="all__anchor">Y Footer Link</a></h2>
+    <p class="all__lede">Single footer navigation link item</p>
+    <p class="all__links"><a href="y-footer-link/index.html">overview</a> · <a href="y-footer-link/index.html#devices">devices</a> · <a href="y-footer-link/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-footer-link/frame-default.html" loading="lazy" title="y-footer-link default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-footer-menu">
+  <header class="all__head">
+    <span class="all__eyebrow">slot-children</span>
+    <h2 class="all__title"><a href="#y-footer-menu" class="all__anchor">Y Footer Menu</a></h2>
+    <p class="all__lede">Footer navigation column with heading and list of links</p>
+    <p class="all__links"><a href="y-footer-menu/index.html">overview</a> · <a href="y-footer-menu/index.html#devices">devices</a> · <a href="y-footer-menu/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-footer-menu/frame-default.html" loading="lazy" title="y-footer-menu default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-footer-logo">
+  <header class="all__head">
+    <span class="all__eyebrow">slot-children</span>
+    <h2 class="all__title"><a href="#y-footer-logo" class="all__anchor">Y Footer Logo</a></h2>
+    <p class="all__lede">Full YMCA footer logo with embedded tagline (For youth development / healthy living / social responsibility)</p>
+    <p class="all__links"><a href="y-footer-logo/index.html">overview</a> · <a href="y-footer-logo/index.html#devices">devices</a> · <a href="y-footer-logo/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-footer-logo/frame-default.html" loading="lazy" title="y-footer-logo default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-footer-social-link">
+  <header class="all__head">
+    <span class="all__eyebrow">slot-children</span>
+    <h2 class="all__title"><a href="#y-footer-social-link" class="all__anchor">Y Footer Social Link</a></h2>
+    <p class="all__lede">Social media icon link for footer</p>
+    <p class="all__links"><a href="y-footer-social-link/index.html">overview</a> · <a href="y-footer-social-link/index.html#devices">devices</a> · <a href="y-footer-social-link/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-footer-social-link/frame-default.html" loading="lazy" title="y-footer-social-link default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-header-cta">
+  <header class="all__head">
+    <span class="all__eyebrow">slot-children</span>
+    <h2 class="all__title"><a href="#y-header-cta" class="all__anchor">Y Header CTA</a></h2>
+    <p class="all__lede">Header call-to-action buttons (donate, join)</p>
+    <p class="all__links"><a href="y-header-cta/index.html">overview</a> · <a href="y-header-cta/index.html#devices">devices</a> · <a href="y-header-cta/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-header-cta/frame-default.html" loading="lazy" title="y-header-cta default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-menu-cta">
+  <header class="all__head">
+    <span class="all__eyebrow">slot-children</span>
+    <h2 class="all__title"><a href="#y-menu-cta" class="all__anchor">Y Menu CTA</a></h2>
+    <p class="all__lede">Call-to-action block for menu dropdowns with image, title, description, and link</p>
+    <p class="all__links"><a href="y-menu-cta/index.html">overview</a> · <a href="y-menu-cta/index.html#devices">devices</a> · <a href="y-menu-cta/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-menu-cta/frame-default.html" loading="lazy" title="y-menu-cta default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-nav-link">
+  <header class="all__head">
+    <span class="all__eyebrow">slot-children</span>
+    <h2 class="all__title"><a href="#y-nav-link" class="all__anchor">Y Nav Link</a></h2>
+    <p class="all__lede">Navigation link item for the main menu</p>
+    <p class="all__links"><a href="y-nav-link/index.html">overview</a> · <a href="y-nav-link/index.html#devices">devices</a> · <a href="y-nav-link/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-nav-link/frame-default.html" loading="lazy" title="y-nav-link default render"></iframe>
+  </div>
+</section>
+
+<section class="all__section" id="y-utility-link">
+  <header class="all__head">
+    <span class="all__eyebrow">slot-children</span>
+    <h2 class="all__title"><a href="#y-utility-link" class="all__anchor">Y Utility Link</a></h2>
+    <p class="all__lede">Utility navigation link with optional icon</p>
+    <p class="all__links"><a href="y-utility-link/index.html">overview</a> · <a href="y-utility-link/index.html#devices">devices</a> · <a href="y-utility-link/index.html#variations">variations</a></p>
+  </header>
+  <div class="all__frame-wrap">
+    <iframe class="all__frame" src="y-utility-link/frame-default.html" loading="lazy" title="y-utility-link default render"></iframe>
+  </div>
+</section>
+</main>
+<script>
+  // Auto-resize lazy iframes once their content lays out.
+  document.querySelectorAll('.all__frame').forEach(function (f) {
+    f.addEventListener('load', function () {
+      try {
+        var doc = f.contentDocument;
+        if (!doc || !doc.body) return;
+        var h = Math.max(doc.body.scrollHeight, 240);
+        f.style.height = h + 'px';
+      } catch (e) { /* cross-origin guard */ }
+    });
+  });
+</script>
+</body>
+</html>

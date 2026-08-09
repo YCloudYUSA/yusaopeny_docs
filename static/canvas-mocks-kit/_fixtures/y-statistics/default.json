@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "title": "Default — 4 stats × 4 columns",
+    "description": "Default fixture — columns=4, style=small-y (production standard look). Real demo content lives in y-lb-demo-mapping page."
+  },
+  "title": "Our Impact",
+  "subtitle": "Making a difference in our community across all our YMCA branches.",
+  "image": {
+    "src": "../assets/photos/banner-1200.svg",
+    "alt": "YMCA banner placeholder",
+    "width": 1200,
+    "height": 400
+  },
+  "cta_text": "Learn More",
+  "cta_url": "/about/impact",
+  "columns": "4",
+  "style": "small-y",
+  "section": "body",
+  "items": [
+    { "value": "4", "suffix": "M", "label": "Kids engaged in positive programs" },
+    { "value": "40", "suffix": "M", "label": "People served in 120 countries" },
+    { "value": "233", "suffix": "K", "label": "U.S. volunteers giving time" },
+    { "value": "15", "prefix": "$", "suffix": "B", "label": "Annual community investment" }
+  ]
+}

@@ -1,0 +1,161 @@
+/* Y Grid CTA Component */
+
+.y-grid-cta {
+  padding: 3rem 1rem;
+}
+
+/* Container — standard: flex column so footer order works */
+.y-grid-cta__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header — standard: dissolve as layout box, children become direct flex items */
+.y-grid-cta__header {
+  display: contents;
+}
+
+.y-grid-cta__title {
+  font-family: "Cachet", sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 400;
+  color: var(--wsPrimaryColor, #006b6b);
+  text-align: center;
+  margin-bottom: 20px;
+  order: 0;
+}
+
+.y-grid-cta__subtitle {
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--ylb-color-dark-grey-1, #2f2f2f);
+  margin: 0 0 2rem;
+  line-height: 28px;
+  text-align: center;
+  order: 1;
+}
+
+/* Grid */
+.y-grid-cta__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  order: 2;
+}
+
+.y-grid-cta--cols-2 .y-grid-cta__grid {
+  grid-template-columns: 1fr;
+}
+
+.y-grid-cta--cols-3 .y-grid-cta__grid {
+  grid-template-columns: 1fr;
+}
+
+.y-grid-cta--cols-4 .y-grid-cta__grid {
+  grid-template-columns: 1fr;
+}
+
+/* Footer */
+.y-grid-cta__footer {
+  text-align: center;
+  margin-top: 2.5rem;
+  order: 3;
+}
+
+.y-grid-cta__button {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  font-family: "Cachet", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--ylb-color-white, #ffffff);
+  background-color: var(--wsPartnerColor, #0060af);
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.y-grid-cta__button:hover {
+  background-color: var(--ylb-color-white, #ffffff);
+  color: var(--wsPartnerColor, #0060af);
+  border-color: var(--wsPartnerColor, #0060af);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-grid-cta {
+    padding: 4rem 2rem;
+  }
+
+  .y-grid-cta__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .y-grid-cta {
+    padding: 5rem 2rem;
+  }
+
+  .y-grid-cta__grid {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .y-grid-cta--cols-2 .y-grid-cta__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .y-grid-cta--cols-3 .y-grid-cta__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .y-grid-cta--cols-4 .y-grid-cta__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .y-grid-cta--cols-4 .y-grid-cta__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* --style-small-y: restore original layout (button above grid, inside header) */
+.y-grid-cta--style-small-y .y-grid-cta__container {
+  display: block;
+}
+
+.y-grid-cta--style-small-y .y-grid-cta__header {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.y-grid-cta--style-small-y .y-grid-cta__title {
+  order: unset;
+  font-weight: 500;
+}
+
+.y-grid-cta--style-small-y .y-grid-cta__subtitle {
+  order: unset;
+  font-size: 18px;
+  margin-bottom: 0;
+  text-align: unset;
+}
+
+.y-grid-cta--style-small-y .y-grid-cta__grid {
+  order: unset;
+}
+
+.y-grid-cta--style-small-y .y-grid-cta__footer {
+  order: unset;
+}

@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "title": "Default — modal preview (forced visible via mock override)",
+    "description": "y-modal renders aria-hidden=true by default — invisible without JS. Mock-only CSS in _sdc-overrides.css forces visible state for preview. Real modal opens via JS trigger in production."
+  },
+  "title": "Welcome to Your Y",
+  "content": "<p>Thank you for visiting. Sign up for a tour or browse our programs to find what fits your community.</p><p>New members receive a complimentary day pass.</p>",
+  "cta_text": "Get Started",
+  "cta_url": "/membership",
+  "modal_id": "default-modal",
+  "dismissible": true,
+  "size": "medium",
+  "style": "standard",
+  "section": "body"
+}

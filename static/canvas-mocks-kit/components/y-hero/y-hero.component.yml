@@ -1,0 +1,158 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Hero Banner
+description: YMCA hero banner component with ws_small_y style variations
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Heading
+      description: The main heading text for the hero banner
+      examples:
+        - 'Welcome to Your Y'
+
+    heading_level:
+      type: string
+      title: Heading Level
+      description: Semantic heading level for accessibility
+      default: h2
+      enum:
+        - h1
+        - h2
+        - h3
+      meta:enum:
+        h1: 'Heading 1 (use once per page)'
+        h2: 'Heading 2'
+        h3: 'Heading 3'
+      examples:
+        - h2
+
+    description:
+      type: string
+      title: Description
+      description: Supporting text below the heading (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<p>Join your community today and discover programs for the whole family.</p>'
+
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Background Image
+      description: Hero banner background image
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/hero-banner.jpg'
+          alt: 'Hero banner background'
+          width: 1440
+          height: 600
+
+    variation:
+      type: string
+      title: Style Variation
+      description: Visual layout style of the hero banner
+      default: tall
+      enum:
+        - tall
+        - sub_chevron
+        - sub_frame
+        - promo
+        - sub_chevron_no_media
+      meta:enum:
+        tall: 'Tall (grid layout with masked image)'
+        sub_chevron: 'Chevron (shorter with masked image)'
+        sub_frame: 'Frame (content card with faded image)'
+        promo: 'Promo (centered content)'
+        sub_chevron_no_media: 'Text Only (no image)'
+      examples:
+        - tall
+
+    background:
+      type: string
+      title: Background Style
+      description: Background color scheme
+      default: color
+      enum:
+        - color
+        - gray
+      meta:enum:
+        color: 'Brand Colors (primary/secondary gradient)'
+        gray: 'Gray (light gray gradient)'
+      examples:
+        - color
+
+    cta_text:
+      type: string
+      title: Button Text
+      description: Call-to-action button label
+      examples:
+        - 'Learn More'
+
+    cta_url:
+      type: string
+      title: Button URL
+      description: Call-to-action button link
+      examples:
+        - '/membership'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      image:
+        label: Background Image
+      title:
+        label: Heading
+      description:
+        label: Description
+      cta:
+        label: Call to Action
+    icon_map:
+      mobile:
+        - [image]
+        - [title]
+        - [description]
+        - [cta]
+      tablet:
+        - [image, image, title, title]
+        - [image, image, description, description]
+        - [image, image, cta, cta]
+      desktop:
+        - [image, image, title, title]
+        - [image, image, description, description]
+        - [image, image, cta, cta]
+      large_desktop:
+        - [image, image, title, title]
+        - [image, image, description, description]
+        - [image, image, cta, cta]
+
+complexity:
+  level: complex
+  css_lines: 1820
+  has_js: false
+  schema_props: 10
+  enum_variants: 8
+  demo_pages: 26
+  has_media: true
+  responsive_breakpoints: 84
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-hero

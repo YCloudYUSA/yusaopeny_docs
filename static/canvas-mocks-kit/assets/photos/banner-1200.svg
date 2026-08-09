@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a8a8a"/>
+      <stop offset="100%" stop-color="#01A490"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#g)"/>
+  <g fill="#ffffff" fill-opacity=".15">
+    <circle cx="240" cy="180" r="160"/>
+    <circle cx="900" cy="280" r="200"/>
+    <circle cx="1080" cy="80" r="80"/>
+  </g>
+  <text x="600" y="190" font-family="Roboto, system-ui, sans-serif" font-size="36" font-weight="500" text-anchor="middle" fill="#ffffff" opacity=".85">YMCA banner placeholder</text>
+  <text x="600" y="235" font-family="Roboto Mono, monospace" font-size="20" text-anchor="middle" fill="#ffffff" opacity=".6">1200×400</text>
+</svg>

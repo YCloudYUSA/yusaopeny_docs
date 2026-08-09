@@ -1,0 +1,112 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Staff Members
+description: Staff members grid section with team photos and info
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Section Title
+      description: Heading for the staff section
+      examples:
+        - 'Meet Our Team'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Supporting text below the heading
+      examples:
+        - 'Our dedicated staff is here to help you achieve your goals'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+    columns:
+      type: integer
+      title: Columns
+      description: Number of columns in the grid
+      default: 4
+      enum:
+        - 2
+        - 3
+        - 4
+      meta:enum:
+        2: '2 Columns'
+        3: '3 Columns'
+        4: '4 Columns'
+      examples:
+        - 4
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  members:
+    title: Staff Members
+    description: Individual staff member cards
+    allowedComponents:
+      - sdc.y_canvas.y-staff-member-item
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Section Title
+      subtitle:
+        label: Subtitle
+      members:
+        label: Staff Members
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [members]
+      tablet:
+        - [title]
+        - [subtitle]
+        - [members, members]
+      desktop:
+        - [title]
+        - [subtitle]
+        - [members, members]
+      large_desktop:
+        - [title]
+        - [subtitle]
+        - [members, members]
+
+complexity:
+  level: medium
+  css_lines: 87
+  has_js: false
+  schema_props: 6
+  enum_variants: 6
+  demo_pages: 6
+  has_media: true
+  responsive_breakpoints: 3
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-staff-members

@@ -1,0 +1,112 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Statistics Item
+description: Individual statistic display with animated counter
+status: experimental
+group: Molecules
+
+props:
+  type: object
+  properties:
+    value:
+      type: string
+      title: Value
+      description: The statistic number or value to display
+      examples:
+        - '50,000'
+
+    label:
+      type: string
+      title: Label
+      description: Description of what the value represents
+      examples:
+        - 'Community Members'
+
+    prefix:
+      type: string
+      title: Prefix
+      description: Optional prefix before the value (e.g., $)
+      examples:
+        - '$'
+
+    suffix:
+      type: string
+      title: Suffix
+      description: Optional suffix after the value (e.g., +, %)
+      examples:
+        - '+'
+
+    icon:
+      type: string
+      title: Icon
+      description: Optional icon identifier or SVG content
+      examples:
+        - 'users'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      icon:
+        label: Icon
+      value:
+        label: Value
+      label:
+        label: Label
+    icon_map:
+      mobile:
+        - [icon]
+        - [value]
+        - [label]
+      tablet:
+        - [icon]
+        - [value]
+        - [label]
+      desktop:
+        - [icon]
+        - [value]
+        - [label]
+      large_desktop:
+        - [icon]
+        - [value]
+        - [label]
+
+complexity:
+  level: complex
+  css_lines: 158
+  has_js: true
+  schema_props: 8
+  enum_variants: 4
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 5
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-statistics-item

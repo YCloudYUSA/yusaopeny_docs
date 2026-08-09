@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "title": "Default — 3 testimonials carousel",
+    "description": "Canonical default fixture matches y-testimonials.component.yml schema defaults (style=standard, items_count=3, show_controls=true). Photos sourced from y_lb_demo testimonials_image_*."
+  },
+  "title": "What Our Members Say",
+  "subtitle": "Real stories from real members across our YMCA branches.",
+  "items_count": 3,
+  "show_controls": true,
+  "style": "standard",
+  "section": "body",
+  "items": [
+    {
+      "quote": "The Y has transformed our family's health and brought us closer together. The kids love the swim lessons.",
+      "name": "Sarah Johnson",
+      "title": "Member since 2018",
+      "image": {
+        "src": "../assets/photos/y_lb_demo/testimonials_image_1.jpeg",
+        "alt": "Sarah Johnson",
+        "width": 800,
+        "height": 600
+      }
+    },
+    {
+      "quote": "The community here is unmatched. From morning fitness classes to after-school programs, the Y feels like home.",
+      "name": "Michael Chen",
+      "title": "Member since 2020",
+      "image": {
+        "src": "../assets/photos/y_lb_demo/testimonials_image_2.jpeg",
+        "alt": "Michael Chen",
+        "width": 800,
+        "height": 600
+      }
+    },
+    {
+      "quote": "I joined for the fitness equipment but stayed for the people. The staff knows everyone by name.",
+      "name": "Aisha Williams",
+      "title": "Member since 2019",
+      "image": {
+        "src": "../assets/photos/y_lb_demo/article_image_4.jpeg",
+        "alt": "Aisha Williams",
+        "width": 800,
+        "height": 600
+      }
+    }
+  ]
+}

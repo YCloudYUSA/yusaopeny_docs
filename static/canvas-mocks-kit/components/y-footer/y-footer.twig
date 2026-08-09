@@ -1,0 +1,66 @@
+{#
+/**
+ * Y Footer organism.
+ *
+ * Variables:
+ * - copyright: (string) Copyright text
+ * - back_to_top: (boolean) Show back-to-top button
+ * - logo: (slot) Footer logo (y-footer-logo)
+ * - menus: (slot) Navigation menu columns (y-footer-menu)
+ * - social: (slot) Social media icons (y-footer-social-link)
+ */
+#}
+
+{% set back_to_top = back_to_top is defined ? back_to_top : true %}
+
+<footer {{ attributes.addClass('y-footer') }} data-component="y-footer">
+
+  {# Top section — dark bg on container #}
+  <div class="y-footer__top">
+    <div class="y-footer__top-container">
+
+      {% if logo %}
+        <div class="y-footer__logo">
+          {{ logo }}
+        </div>
+      {% endif %}
+
+      {% if menus %}
+        <div class="y-footer__menus">
+          {{ menus }}
+        </div>
+      {% endif %}
+
+      {% if back_to_top %}
+        <a href="#" class="y-footer__back-to-top" aria-label="Back to top">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7 12V2M7 2L2 7M7 2L12 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      {% endif %}
+
+    </div>
+  </div>
+
+  {# Bottom section — white container, two stacked col-12 rows #}
+  <div class="y-footer__bottom">
+    <div class="y-footer__bottom-container">
+
+      {# col-12: copyright text #}
+      {% if copyright %}
+        <div class="y-footer__bottom-left">
+          <p class="y-footer__copyright">{{ copyright }}</p>
+        </div>
+      {% endif %}
+
+      {# col-12: social icons #}
+      {% if social %}
+        <div class="y-footer__bottom-right">
+          {{ social }}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+
+</footer>

@@ -1,0 +1,14 @@
+{
+  "_meta": { "title": "Default — articles filter UI" },
+  "title": "Filter Articles",
+  "show_search": true, "show_categories": true,
+  "search_placeholder": "Search articles…",
+  "categories": [
+    { "label": "All",        "value": "all",        "count": 42 },
+    { "label": "Programs",   "value": "programs",   "count": 12 },
+    { "label": "Community",  "value": "community",  "count": 8  },
+    { "label": "Membership", "value": "membership", "count": 6  },
+    { "label": "Camps",      "value": "camps",      "count": 5  }
+  ],
+  "action_url": "/articles", "style": "standard", "section": "body"
+}

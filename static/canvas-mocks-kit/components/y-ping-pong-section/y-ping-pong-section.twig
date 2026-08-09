@@ -1,0 +1,35 @@
+{#
+/**
+ * Y Ping Pong Section component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section description
+ * - items: (slot) Ping pong items
+ */
+#}
+
+{% set classes = [
+  'y-ping-pong-section',
+  style|default('standard') != 'standard' ? 'y-ping-pong-section--style-' ~ style,
+  section|default('body') != 'body' ? 'y-ping-pong-section--section-' ~ section,
+  background ? 'y-ping-pong-section--bg-' ~ background,
+  align ? 'y-ping-pong-section--align-' ~ align,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-ping-pong-section">
+  {% if title or subtitle %}
+    <div class="y-ping-pong-section__header">
+      {% if title %}
+        <h2 class="y-ping-pong-section__title">{{ title }}</h2>
+      {% endif %}
+      {% if subtitle %}
+        <p class="y-ping-pong-section__subtitle">{{ subtitle }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="y-ping-pong-section__content">
+    {{ items }}
+  </div>
+</section>

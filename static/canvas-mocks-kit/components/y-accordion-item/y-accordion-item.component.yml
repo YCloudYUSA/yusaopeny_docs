@@ -1,0 +1,91 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Accordion Item
+description: Individual accordion item with expandable content
+status: experimental
+group: Molecules
+
+props:
+  type: object
+  required:
+    - title
+  properties:
+    title:
+      type: string
+      title: Heading
+      description: The title shown on the accordion toggle button
+      examples:
+        - 'What are your hours of operation?'
+
+    content:
+      type: string
+      title: Content
+      description: The expandable content (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<p>We are open Monday through Friday from 5am to 10pm, and weekends from 7am to 8pm.</p>'
+
+    expanded:
+      type: boolean
+      title: Expanded
+      description: Whether this item should be expanded by default
+      default: false
+      examples:
+        - false
+
+    item_id:
+      type: string
+      title: Item ID
+      description: Unique identifier for accessibility (auto-generated if not provided)
+      examples:
+        - 'faq-item-1'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Heading
+      content:
+        label: Content
+    icon_map:
+      mobile:
+        - [title]
+        - [content]
+      tablet:
+        - [title]
+        - [content, content]
+      desktop:
+        - [title]
+        - [content, content]
+      large_desktop:
+        - [title]
+        - [content, content]
+
+complexity:
+  level: medium
+  css_lines: 208
+  has_js: false
+  schema_props: 6
+  enum_variants: 2
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-accordion-item

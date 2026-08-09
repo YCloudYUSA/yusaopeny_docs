@@ -1,0 +1,182 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Ping Pong
+description: Two-column content block with alternating image/text layout
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Heading
+      description: Main heading for the section
+      examples:
+        - 'Our Mission'
+
+    description:
+      type: string
+      title: Description
+      description: Body content (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<p>We build healthy spirit, mind, and body for all.</p>'
+
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Image
+      description: Featured image for the section
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/ping-pong.jpg'
+          alt: 'Community members'
+          width: 600
+          height: 400
+
+    cta_text:
+      type: string
+      title: Button Text
+      description: Call-to-action button label
+      examples:
+        - 'Learn More'
+
+    cta_url:
+      type: string
+      title: Button URL
+      description: Call-to-action button link
+      examples:
+        - '/about'
+
+    image_position:
+      type: string
+      title: Image Position
+      description: Position of the image relative to content
+      default: left
+      enum:
+        - left
+        - right
+      meta:enum:
+        left: 'Image Left'
+        right: 'Image Right'
+      examples:
+        - left
+
+    offset_variation:
+      type: string
+      title: Offset variation
+      description: Width ratio between image and content columns
+      default: equal_column
+      enum:
+        - equal_column
+        - first_column
+        - second_column
+      meta:enum:
+        equal_column: '50% / 50%'
+        first_column: '66% / 33%'
+        second_column: '33% / 66%'
+      examples:
+        - equal_column
+
+    background:
+      type: string
+      title: Background Color
+      description: Section background color
+      default: white
+      enum:
+        - white
+        - gray
+        - primary
+      meta:enum:
+        white: 'White'
+        gray: 'Light Gray'
+        primary: 'Primary Color'
+      examples:
+        - white
+
+    heading_level:
+      type: string
+      title: Heading Level
+      description: Semantic heading level
+      default: h2
+      enum:
+        - h2
+        - h3
+        - h4
+      meta:enum:
+        h2: 'Heading 2'
+        h3: 'Heading 3'
+        h4: 'Heading 4'
+      examples:
+        - h2
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      image:
+        label: Image
+      title:
+        label: Heading
+      description:
+        label: Description
+      cta:
+        label: Call to Action
+    icon_map:
+      mobile:
+        - [image]
+        - [title]
+        - [description]
+        - [cta]
+      tablet:
+        - [image, title]
+        - [image, description]
+        - [image, cta]
+      desktop:
+        - [image, title]
+        - [image, description]
+        - [image, cta]
+      large_desktop:
+        - [image, title]
+        - [image, description]
+        - [image, cta]
+
+complexity:
+  level: medium
+  css_lines: 394
+  has_js: false
+  schema_props: 11
+  enum_variants: 15
+  demo_pages: 6
+  has_media: true
+  responsive_breakpoints: 21
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-ping-pong

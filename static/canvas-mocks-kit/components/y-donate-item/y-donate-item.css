@@ -1,0 +1,55 @@
+/* Y Donate Item Component */
+
+.y-donate-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem 7px;
+  background: var(--wsPartnerColor, #0060af);
+  border: 2px solid var(--wsPartnerColor, #0060af);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.y-donate-item:hover {
+  background: var(--ylb-color-white, #fff);
+  border-color: var(--wsPartnerColor, #0060af);
+}
+
+.y-donate-item:hover .y-donate-item__amount,
+.y-donate-item:hover .y-donate-item__description {
+  color: var(--wsPartnerColor, #0060af);
+}
+
+.y-donate-item--highlighted {
+  background: var(--wsPrimaryColor, #006b6b);
+  border-color: var(--wsPrimaryColor, #006b6b);
+}
+
+.y-donate-item--highlighted:hover {
+  background: var(--ylb-color-white, #fff);
+  border-color: var(--wsPrimaryColor, #006b6b);
+}
+
+.y-donate-item--highlighted:hover .y-donate-item__amount,
+.y-donate-item--highlighted:hover .y-donate-item__description {
+  color: var(--wsPrimaryColor, #006b6b);
+}
+
+.y-donate-item__amount {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--ylb-color-white, #fff);
+  font-family: var(--ylb-font-family-cachet, 'Cachet', Verdana, sans-serif);
+  line-height: normal;
+}
+
+.y-donate-item__description {
+  font-size: 0.75rem;
+  color: var(--ylb-color-white, #fff);
+  text-align: center;
+  margin-top: 0.25rem;
+}

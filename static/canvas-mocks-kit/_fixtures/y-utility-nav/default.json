@@ -1,0 +1,6 @@
+{
+  "_meta": { "title": "Default — utility nav" },
+  "site_name": "YMCA of Madison County", "show_search": true, "show_language": true,
+  "style": "standard", "section": "body",
+  "items": "<ul style='list-style:none;display:flex;gap:1rem;margin:0;padding:0;font-size:.875rem'><li><a href='/locations'>Locations</a></li><li><a href='/jobs'>Jobs</a></li><li><a href='/news'>News</a></li></ul>"
+}

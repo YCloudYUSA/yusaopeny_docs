@@ -1,0 +1,26 @@
+/* Y Footer Social Link — molecule */
+
+.y-footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--y-footer-social-color, #fff);
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.y-footer-social-link:hover,
+.y-footer-social-link:focus {
+  background-color: var(--y-footer-link-hover, #01a490);
+  border-color: var(--y-footer-link-hover, #01a490);
+  color: #fff;
+}
+
+.y-footer-social-link svg {
+  width: 18px;
+  height: 18px;
+}

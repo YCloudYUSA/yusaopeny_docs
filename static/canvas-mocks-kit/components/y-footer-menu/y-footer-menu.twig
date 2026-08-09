@@ -1,0 +1,20 @@
+{#
+/**
+ * Y Footer Menu — footer navigation column.
+ *
+ * Variables:
+ * - heading: (string) Column heading text
+ * - items: (slot) Footer link items (y-footer-link)
+ */
+#}
+
+<div class="y-footer-menu" data-component="y-footer-menu">
+  {% if heading %}
+    <h4 class="y-footer-menu__heading">{{ heading }}</h4>
+  {% endif %}
+  {% if items %}
+    <ul class="y-footer-menu__list">
+      {{ items }}
+    </ul>
+  {% endif %}
+</div>

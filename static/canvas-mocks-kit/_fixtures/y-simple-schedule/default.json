@@ -1,0 +1,16 @@
+{
+  "_meta": { "title": "Default — pool & fitness class schedule" },
+  "title": "Weekly Class Schedule",
+  "schedule": [
+    { "time": "6:00 AM",  "name": "Morning Yoga",     "instructor": "Sarah K.",   "location": "Studio A" },
+    { "time": "7:00 AM",  "name": "Spin Class",        "instructor": "Mike T.",    "location": "Cycle Room" },
+    { "time": "8:30 AM",  "name": "Aqua Aerobics",     "instructor": "Linda R.",   "location": "Pool" },
+    { "time": "10:00 AM", "name": "Senior Fitness",    "instructor": "Tom B.",     "location": "Gym Floor" },
+    { "time": "12:00 PM", "name": "Pilates",           "instructor": "Amy L.",     "location": "Studio B" },
+    { "time": "5:30 PM",  "name": "HIIT",              "instructor": "Chris D.",   "location": "Gym Floor" },
+    { "time": "6:30 PM",  "name": "Lap Swim",          "instructor": "",           "location": "Pool" },
+    { "time": "7:00 PM",  "name": "Family Swim",       "instructor": "",           "location": "Pool" }
+  ],
+  "style": "standard",
+  "section": "body"
+}

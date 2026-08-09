@@ -1,0 +1,138 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Donate
+description: Donation section with amount options and call-to-action
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Section Title
+      description: Main heading for the donation section
+      examples:
+        - 'Support Your Y'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Supporting text explaining the donation purpose
+      examples:
+        - 'Your donation makes a difference in our community'
+
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Background Image
+      description: Optional background image for the donation section
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/donate-banner.jpg'
+          alt: 'Community members at the Y'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+    background:
+      type: string
+      title: Background Style
+      description: Background color or style variant
+      default: 'light'
+      enum:
+        - 'light'
+        - 'dark'
+        - 'primary'
+      meta:enum:
+        light: 'Light'
+        dark: 'Dark'
+        primary: 'Primary Color'
+      examples:
+        - 'light'
+
+
+    cta_text:
+      type: string
+      title: CTA Button Text
+      description: Text for the donation page link button
+      examples:
+        - 'Donation page'
+
+    cta_url:
+      type: string
+      title: CTA Button URL
+      description: URL for the donation page link button
+      examples:
+        - '/donate'
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  items:
+    title: Donation Options
+    description: Donation amount buttons/options
+    allowedComponents:
+      - sdc.y_canvas.y-donate-item
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Section Title
+      subtitle:
+        label: Subtitle
+      image:
+        label: Background Image
+      items:
+        label: Donation Options
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [image]
+        - [items]
+      tablet:
+        - [title, subtitle]
+        - [image, image]
+        - [items, items]
+      desktop:
+        - [title, subtitle]
+        - [image, image]
+        - [items, items]
+      large_desktop:
+        - [title, subtitle]
+        - [image, image]
+        - [items, items]
+
+complexity:
+  level: medium
+  css_lines: 211
+  has_js: false
+  schema_props: 7
+  enum_variants: 6
+  demo_pages: 2
+  has_media: true
+  responsive_breakpoints: 7
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-donate

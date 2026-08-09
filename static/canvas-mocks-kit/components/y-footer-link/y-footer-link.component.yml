@@ -1,0 +1,34 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Footer Link
+description: Single footer navigation link item
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Link Text
+      examples:
+        - 'Privacy Policy'
+    url:
+      type: string
+      title: Link URL
+      examples:
+        - '/privacy-policy'
+
+complexity:
+  level: simple
+  css_lines: 23
+  has_js: false
+  schema_props: 3
+  enum_variants: 0
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 0
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-footer-link

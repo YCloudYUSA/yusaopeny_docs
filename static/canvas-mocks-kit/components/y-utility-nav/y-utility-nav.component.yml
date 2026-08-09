@@ -1,0 +1,73 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Utility Nav
+description: Utility navigation bar with links, search, and language toggle
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    site_name:
+      type: string
+      title: Site Name
+      description: Site name displayed on the left side of the utility bar
+      default: ''
+      examples:
+        - 'SMALL Y'
+
+    show_search:
+      type: boolean
+      title: Show Search
+      description: Display search icon toggle
+      default: true
+      examples:
+        - true
+
+    show_language:
+      type: boolean
+      title: Show Language Selector
+      description: Display language selector toggle
+      default: false
+      examples:
+        - false
+
+slots:
+  items:
+    title: Utility Links
+    description: Utility navigation link items
+    allowedComponents:
+      - sdc.y_canvas.y-utility-link
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of utility areas
+    regions:
+      links:
+        label: Utility Links
+      search:
+        label: Search
+      language:
+        label: Language Selector
+    icon_map:
+      mobile:
+        - [search]
+      tablet:
+        - [links, links, search, language]
+      desktop:
+        - [links, links, search, language]
+      large_desktop:
+        - [links, links, search, language]
+
+complexity:
+  level: simple
+  css_lines: 101
+  has_js: false
+  schema_props: 4
+  enum_variants: 0
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-utility-nav

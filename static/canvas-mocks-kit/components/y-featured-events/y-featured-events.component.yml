@@ -1,0 +1,172 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Featured Events
+description: Featured events section with hero event and secondary grid
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Main heading for the featured events section
+      examples:
+        - 'Featured Events'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Supporting text below the main heading
+      examples:
+        - "Don't miss these upcoming events at your Y"
+
+    cta_text:
+      type: string
+      title: CTA Button Text
+      description: Text for the view all events button
+      examples:
+        - 'View All Events'
+
+    cta_url:
+      type: string
+      title: CTA Button URL
+      description: Link to full events listing
+      examples:
+        - '/events'
+
+    hero_title:
+      type: string
+      title: Hero Event Title
+      description: Title of the featured hero event
+      examples:
+        - 'Annual Turkey Trot 5K Run'
+
+    hero_description:
+      type: string
+      title: Hero Event Description
+      description: Excerpt text for the hero event
+      examples:
+        - 'Join us for our annual Thanksgiving tradition! A fun run for the whole family.'
+
+    hero_image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Hero Event Image
+      description: Featured image for the hero event
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/featured-article.jpg'
+          alt: 'Turkey Trot runners'
+
+    hero_url:
+      type: string
+      title: Hero Event URL
+      description: Link to the full hero event page
+      examples:
+        - '/events/turkey-trot'
+
+    hero_date:
+      type: string
+      title: Hero Event Date
+      description: Date of the hero event
+      examples:
+        - 'November 28, 2024'
+
+    hero_location:
+      type: string
+      title: Hero Event Location
+      description: Location of the hero event
+      examples:
+        - 'Downtown YMCA'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  secondary_events:
+    title: Secondary Events
+    description: Additional featured event cards
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      subtitle:
+        label: Subtitle
+      cta:
+        label: Call to Action
+      hero_image:
+        label: Hero Event Image
+      hero_title:
+        label: Hero Event Title
+      hero_description:
+        label: Hero Event Description
+      secondary_events:
+        label: Secondary Events
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [hero_image]
+        - [hero_title]
+        - [hero_description]
+        - [secondary_events]
+        - [cta]
+      tablet:
+        - [title, subtitle]
+        - [hero_image, hero_image, hero_title, hero_title]
+        - [hero_image, hero_image, hero_description, hero_description]
+        - [secondary_events, secondary_events, secondary_events, secondary_events]
+        - [cta, cta, cta, cta]
+      desktop:
+        - [title, subtitle]
+        - [hero_image, hero_image, hero_title, hero_title]
+        - [hero_image, hero_image, hero_description, hero_description]
+        - [secondary_events, secondary_events, secondary_events, secondary_events]
+        - [cta, cta, cta, cta]
+      large_desktop:
+        - [title, subtitle]
+        - [hero_image, hero_image, hero_title, hero_title]
+        - [hero_image, hero_image, hero_description, hero_description]
+        - [secondary_events, secondary_events, secondary_events, secondary_events]
+        - [cta, cta, cta, cta]
+
+complexity:
+  level: medium
+  css_lines: 314
+  has_js: false
+  schema_props: 13
+  enum_variants: 4
+  demo_pages: 2
+  has_media: true
+  responsive_breakpoints: 6
+  backend_reason: 'references node:lb_event, manual selection'
+  entity_chain: [lb_event]
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-featured-events

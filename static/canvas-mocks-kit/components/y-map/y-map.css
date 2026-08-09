@@ -1,0 +1,84 @@
+/* Y Map Component */
+
+.y-map {
+  padding: 2rem 1rem;
+}
+
+.y-map__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.y-map__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 1.5rem;
+  font-family: var(--ws-font-family-heading);
+}
+
+.y-map__canvas {
+  background: #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.y-map__canvas noscript {
+  text-align: center;
+  color: #666;
+}
+
+/* Locations list */
+.y-map__locations {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.y-map__location {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.y-map__location-title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 0.5rem;
+}
+
+.y-map__location-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.y-map__location-title a:hover {
+  color: var(--wsPrimaryColor, #0060af);
+}
+
+.y-map__location-address {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-map {
+    padding: 3rem 2rem;
+  }
+
+  .y-map__title {
+    font-size: 1.75rem;
+  }
+}
+

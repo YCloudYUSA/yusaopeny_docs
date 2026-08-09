@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "title": "Default — 3 tabs (Membership / Programs / Schedules)",
+    "description": "Hand-authored fixture (no y_lb_demo coverage). First tab active by default."
+  },
+  "title": "Membership Options",
+  "subtitle": "Choose the plan that fits your needs.",
+  "tabs_id": "membership-tabs",
+  "style": "standard",
+  "heading_level": "h2",
+  "section": "body",
+  "items": [
+    {
+      "title": "Individual",
+      "content": "<p>Perfect for adults committed to their fitness routine. Access to all branches, group classes, and aquatic facilities.</p><ul><li>$29/month</li><li>1 person</li><li>Free guest passes (2/year)</li></ul>",
+      "tab_id": "tab-individual",
+      "active": true,
+      "heading_level": "h3"
+    },
+    {
+      "title": "Family",
+      "content": "<p>Bring everyone along. Up to 4 family members enjoy full access plus discounted youth programs.</p><ul><li>$59/month</li><li>Up to 4 members</li><li>10% off camps and programs</li></ul>",
+      "tab_id": "tab-family",
+      "active": false,
+      "heading_level": "h3"
+    },
+    {
+      "title": "Senior",
+      "content": "<p>For members 60+. Reduced rate, full access, plus senior fitness classes and social programs.</p><ul><li>$22/month</li><li>1 person, age 60+</li><li>Free SilverSneakers compatibility</li></ul>",
+      "tab_id": "tab-senior",
+      "active": false,
+      "heading_level": "h3"
+    }
+  ]
+}

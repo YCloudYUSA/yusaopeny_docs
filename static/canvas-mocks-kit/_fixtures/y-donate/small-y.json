@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "title": "Small Y — gradient bg with CTA",
+    "description": "Small Y style with image, chevron, and donation page link button."
+  },
+  "title": "Support Your Y",
+  "subtitle": "Your donation makes a difference in our community.",
+  "image": {
+    "src": "../assets/photos/donate-banner.jpg",
+    "alt": "Donate banner",
+    "width": 2786,
+    "height": 3360
+  },
+  "style": "small-y",
+  "background": "light",
+  "section": "body",
+  "cta_text": "Donation page",
+  "cta_url": "/donate",
+  "items": [
+    { "amount": "$25",  "description": "Provides 1 swim lesson", "url": "/donate?amount=25",  "highlighted": false },
+    { "amount": "$50",  "description": "Sponsors a youth program week", "url": "/donate?amount=50",  "highlighted": true },
+    { "amount": "$100", "description": "Funds a family membership scholarship", "url": "/donate?amount=100", "highlighted": false },
+    { "amount": "$250", "description": "Equipment for community programs", "url": "/donate?amount=250", "highlighted": false },
+    { "amount": "$500", "description": "Annual scholarship for one youth", "url": "/donate?amount=500", "highlighted": false }
+  ]
+}

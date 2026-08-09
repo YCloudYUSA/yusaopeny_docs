@@ -1,0 +1,54 @@
+/* Y Simple Block Component */
+
+.y-simple-block {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.y-simple-block--section-banner {
+  max-width: none;
+  margin: 0;
+}
+
+.y-simple-block__body {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.y-simple-block__body p {
+  margin: 0 0 1rem;
+}
+
+.y-simple-block__body p:last-child {
+  margin-bottom: 0;
+}
+
+.y-simple-block__body a {
+  color: var(--wsPrimaryColor, #0060af);
+}
+
+/* Embedded media */
+.y-simple-block__body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.y-simple-block__body .media,
+.y-simple-block__body figure {
+  margin: 1rem 0;
+  max-width: 100%;
+}
+
+.y-simple-block__body .media img {
+  display: block;
+  border-radius: var(--wsBorderRadius, 8px);
+}
+
+.y-simple-block__body figure figcaption {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+

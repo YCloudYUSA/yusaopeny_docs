@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "title": "Default — single tab item (Individual membership sample)",
+    "description": "W2/P1 sweep fixture. Single y-tab-item rendered inside a 1-item y-tabs parent shell. Mirrors y-tabs default.json items[0]."
+  },
+  "title": "Individual",
+  "content": "<p>Perfect for adults committed to their fitness routine. Access to all branches, group classes, and aquatic facilities.</p><ul><li>$29/month</li><li>1 person</li><li>Free guest passes (2/year)</li></ul>",
+  "tab_id": "tab-individual",
+  "active": true,
+  "heading_level": "h3"
+}
