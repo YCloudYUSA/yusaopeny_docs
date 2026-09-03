@@ -22,7 +22,6 @@ When tagging a new release of YMCA Website Services, the Lead Architect takes th
 1. Spin up a copy of an YMCA Website Services site and check top priority functionality for regressions.
 1. Send for review to Core Team, get approval.
 1. Change the YMCA Website Services version to next with -dev suffix for developers in [`openy.info.yml`](https://github.com/YCloudYUSA/yusaopeny/blob/main/openy.info.yml#L5).
-1. Refresh the YMCA Website Services private mirror on the `openy.cibox.tools` CI server.
 1. Ensure the version of YMCA Website Services is the proper one in site info (`admin/reports/status`).
 1. Publish announcement in #developers YMCA Website Services Slack channel.
 1. Publish announcement in #general YMCA Website Services Slack channel.
