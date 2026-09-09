@@ -1,0 +1,110 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Camp Menu
+description: Camp-specific navigation menu with icons
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Menu section heading
+      examples:
+        - 'Camp Navigation'
+
+    camp_name:
+      type: string
+      title: Camp Name
+      description: Name of the camp displayed above menu
+      examples:
+        - 'Camp Lakewood'
+
+    background:
+      type: string
+      title: Background Color
+      description: Background color variant for the menu section
+      default: 'white'
+      enum:
+        - 'white'
+        - 'gray'
+        - 'primary'
+      meta:enum:
+        white: 'White'
+        gray: 'Light Gray'
+        primary: 'Primary Color'
+      examples:
+        - 'white'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  menu_items:
+    title: Menu Items
+    description: Navigation menu item links
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      camp_name:
+        label: Camp Name
+      menu_items:
+        label: Menu Items
+    icon_map:
+      mobile:
+        - [title]
+        - [camp_name]
+        - [menu_items]
+      tablet:
+        - [title]
+        - [camp_name]
+        - [menu_items, menu_items]
+      desktop:
+        - [title]
+        - [camp_name]
+        - [menu_items, menu_items]
+      large_desktop:
+        - [title]
+        - [camp_name]
+        - [menu_items, menu_items]
+
+complexity:
+  level: simple
+  css_lines: 97
+  has_js: false
+  schema_props: 6
+  enum_variants: 6
+  demo_pages: 2
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-camp-menu

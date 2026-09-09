@@ -1,0 +1,70 @@
+{#
+/**
+ * Y Featured Events component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - events: (array) Featured events
+ * - cta_text: (string) View all link text
+ * - cta_url: (string) View all link URL
+ */
+#}
+
+{% set classes = [
+  'y-featured-events',
+  style|default('standard') != 'standard' ? 'y-featured-events--style-' ~ style,
+  section|default('body') != 'body' ? 'y-featured-events--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-featured-events">
+  <div class="y-featured-events__container">
+    {% if title %}
+      <div class="y-featured-events__header">
+        <h2 class="y-featured-events__title">{{ title }}</h2>
+        {% if cta_text and cta_url %}
+          <a href="{{ cta_url }}" class="y-featured-events__cta">{{ cta_text }}</a>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if events %}
+      <div class="y-featured-events__grid">
+        {% for event in events %}
+          <article class="y-featured-events__card {{ loop.first ? 'y-featured-events__card--hero' : '' }}">
+            {% if event.image.src %}
+              <div class="y-featured-events__image">
+                <a href="{{ event.url }}">
+                  <img src="{{ event.image.src }}" alt="{{ event.image.alt|default(event.title) }}" loading="lazy" />
+                </a>
+              </div>
+            {% endif %}
+            <div class="y-featured-events__content">
+              <div class="y-featured-events__meta">
+                {% if event.date %}
+                  <time class="y-featured-events__date">{{ event.date }}</time>
+                {% endif %}
+                {% if event.time %}
+                  <span class="y-featured-events__time">{{ event.time }}</span>
+                {% endif %}
+              </div>
+              <h3 class="y-featured-events__card-title">
+                <a href="{{ event.url }}">{{ event.title }}</a>
+              </h3>
+              {% if event.description and loop.first %}
+                <p class="y-featured-events__description">{{ event.description }}</p>
+              {% endif %}
+              {% if event.location %}
+                <div class="y-featured-events__location">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  {{ event.location }}
+                </div>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,64 @@
+{#
+/**
+ * Y Promo component.
+ *
+ * Variables:
+ * - title: (string) Card heading
+ * - description: (string) Body content (HTML)
+ * - image: (object) Promotional image
+ * - cta_text: (string) Button text
+ * - cta_url: (string) Button URL
+ * - image_style: (string) standard, rounded, circle
+ * - background: (string) white, gray, primary
+ * - heading_level: (string) h2, h3, h4
+ */
+#}
+
+{% set heading_level = heading_level|default('h3') %}
+{% set image_style = image_style|default('standard') %}
+{% set background = background|default('white') %}
+
+{% set classes = [
+  'y-promo',
+  'y-promo--image-' ~ image_style,
+  'y-promo--bg-' ~ background,
+  style|default('standard') != 'standard' ? 'y-promo--style-' ~ style,
+  section|default('body') != 'body' ? 'y-promo--section-' ~ section,
+] %}
+
+<article class="{{ classes|join(' ') }}" data-component="y-promo">
+  {% if image.src %}
+    <div class="y-promo__media">
+      <img
+        src="{{ image.src }}"
+        alt="{{ image.alt|default('') }}"
+        class="y-promo__image"
+        loading="lazy"
+        {% if image.width %}width="{{ image.width }}"{% endif %}
+        {% if image.height %}height="{{ image.height }}"{% endif %}
+      />
+    </div>
+  {% endif %}
+
+  <div class="y-promo__content">
+    {% if title %}
+      <{{ heading_level }} class="y-promo__title">
+        {{ title }}
+      </{{ heading_level }}>
+    {% endif %}
+
+    {% if description %}
+      <div class="y-promo__description">
+        {{ description|raw }}
+      </div>
+    {% endif %}
+
+    {% if cta_text and cta_url %}
+      <div class="y-promo__cta">
+        <a href="{{ cta_url }}" class="y-promo__button">
+          {{ cta_text }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</article>

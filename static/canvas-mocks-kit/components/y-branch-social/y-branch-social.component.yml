@@ -1,0 +1,109 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Branch Social
+description: Social media links for branch with icon display
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Section heading for social links
+      examples:
+        - 'Connect With Us'
+
+    links:
+      type: array
+      title: Social Links
+      description: Array of social media link objects with platform and URL
+      examples:
+        - [{"platform": "facebook", "url": "https://facebook.com/ymca"}, {"platform": "instagram", "url": "https://instagram.com/ymca"}]
+
+    display_style:
+      type: string
+      title: Display Style
+      description: Visual style for social icons
+      default: 'icons'
+      enum:
+        - 'icons'
+        - 'buttons'
+        - 'text'
+      meta:enum:
+        icons: 'Icons Only'
+        buttons: 'Icon Buttons'
+        text: 'Text Links'
+      examples:
+        - 'icons'
+
+    show_labels:
+      type: boolean
+      title: Show Labels
+      description: Display platform name alongside icons
+      default: false
+      examples:
+        - false
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      links:
+        label: Social Links
+    icon_map:
+      mobile:
+        - [title]
+        - [links]
+      tablet:
+        - [title]
+        - [links, links]
+      desktop:
+        - [title]
+        - [links, links]
+      large_desktop:
+        - [title]
+        - [links, links]
+
+complexity:
+  level: medium
+  css_lines: 162
+  has_js: false
+  schema_props: 7
+  enum_variants: 6
+  demo_pages: 2
+  has_media: false
+  responsive_breakpoints: 2
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-branch-social

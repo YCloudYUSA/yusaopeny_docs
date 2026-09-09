@@ -1,0 +1,39 @@
+{#
+/**
+ * Y Small Statistics Item component.
+ *
+ * Variables:
+ * - value: (string) The statistic number
+ * - label: (string) Description
+ * - prefix: (string) Text before number (e.g., $)
+ * - suffix: (string) Text after number (e.g., +, %)
+ * - animate: (boolean) Enable count-up animation
+ */
+#}
+
+{% set animate = animate ?? true %}
+
+{% set classes = [
+  'small-y-statistics-item',
+  style|default('standard') != 'standard' ? 'small-y-statistics-item--style-' ~ style,
+  section|default('body') != 'body' ? 'small-y-statistics-item--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="small-y-statistics-item">
+  {% if value %}
+    <div class="small-y-statistics-item__value">
+      {% if prefix %}<span class="small-y-statistics-item__prefix">{{ prefix }}</span>{% endif %}
+      <span class="{% if animate %}js-count{% endif %}"
+            {% if animate %}data-count="{{ value }}"{% endif %}>
+        {{ animate ? '0' : value }}
+      </span>
+      {% if suffix %}<span class="small-y-statistics-item__suffix">{{ suffix }}</span>{% endif %}
+    </div>
+  {% endif %}
+  {% if label %}
+    <div class="small-y-statistics-item__label"><p>{{ label }}</p></div>
+  {% endif %}
+  {% if description %}
+    <div class="small-y-statistics-item__description"><p>{{ description }}</p></div>
+  {% endif %}
+</div>

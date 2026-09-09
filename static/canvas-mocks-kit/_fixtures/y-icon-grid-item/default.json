@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "title": "Default — single icon-grid item (Swimming sample)",
+    "description": "W2/P1 sweep fixture. Single y-icon-grid-item rendered inside a 1-item y-icon-grid parent shell so the surrounding section header + grid column read correctly. Mirrors y-icon-grid default.json items[0]."
+  },
+  "title": "Swimming",
+  "description": "<p>Indoor and outdoor pools for all ages.</p>",
+  "icon": {
+    "src": "../assets/photos/distribution-icons/icon-swimming.png",
+    "alt": "Swimming icon",
+    "width": 200,
+    "height": 200
+  },
+  "section": "body"
+}

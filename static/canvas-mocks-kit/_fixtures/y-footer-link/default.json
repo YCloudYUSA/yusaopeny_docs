@@ -1,0 +1,8 @@
+{
+  "_meta": {
+    "title": "Default — single footer link (Privacy Policy)",
+    "description": "W2/P1 sweep fixture. y-footer-link is a chrome slot-child (parent y-footer uses HTML string slots, not arrays) so this fixture renders standalone via the child twig. Schema example values."
+  },
+  "title": "Privacy Policy",
+  "url": "/privacy-policy"
+}

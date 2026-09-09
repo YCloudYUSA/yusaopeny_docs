@@ -1,0 +1,142 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Related Articles
+description: Related articles grid section with configurable display
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Section Title
+      description: Heading for the related articles section
+      examples:
+        - 'Related Articles'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Supporting text below the heading
+      examples:
+        - 'You might also be interested in'
+
+    columns:
+      type: integer
+      title: Columns
+      description: Number of columns in the grid
+      default: 3
+      examples:
+        - 3
+
+    show_date:
+      type: boolean
+      title: Show Date
+      description: Display publication date on article cards
+      default: true
+      examples:
+        - true
+
+    show_category:
+      type: boolean
+      title: Show Category
+      description: Display category tag on article cards
+      default: true
+      examples:
+        - true
+
+    cta_text:
+      type: string
+      title: CTA Button Text
+      description: Text for view all articles button
+      examples:
+        - 'View All Articles'
+
+    cta_url:
+      type: string
+      title: CTA Button URL
+      description: Link to full articles listing
+      examples:
+        - '/articles'
+
+    articles:
+      type: array
+      title: Articles
+      description: Array of article objects with title, url, image, date, category
+      examples:
+        - [{"title": "Summer Programs", "url": "/articles/summer", "date": "Dec 1, 2024"}]
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Section Title
+      subtitle:
+        label: Subtitle
+      cta:
+        label: Call to Action
+      articles:
+        label: Articles
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [articles]
+        - [cta]
+      tablet:
+        - [title, subtitle]
+        - [articles, articles]
+        - [cta, cta]
+      desktop:
+        - [title, subtitle]
+        - [articles, articles]
+        - [cta, cta]
+      large_desktop:
+        - [title, subtitle]
+        - [articles, articles]
+        - [cta, cta]
+
+complexity:
+  level: medium
+  css_lines: 300
+  has_js: false
+  schema_props: 11
+  enum_variants: 4
+  demo_pages: 1
+  has_media: true
+  responsive_breakpoints: 9
+  backend_reason: 'references node:article_lb + branch/camp + views + taxonomy'
+  entity_chain: [article_lb, branch, camp]
+  integrations: [views:related_articles]
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-related-articles

@@ -1,0 +1,13 @@
+{
+  "_meta": { "title": "Default — 5 social links", "description": "platform values must be lowercase — twig matches them in {% if link.platform == 'facebook' %} etc." },
+  "title": "Follow Us",
+  "links": [
+    { "platform": "facebook",  "url": "https://facebook.com/ymca",  "label": "Facebook" },
+    { "platform": "instagram", "url": "https://instagram.com/ymca", "label": "Instagram" },
+    { "platform": "twitter",   "url": "https://twitter.com/ymca",   "label": "Twitter" },
+    { "platform": "youtube",   "url": "https://youtube.com/ymca",   "label": "YouTube" },
+    { "platform": "linkedin",  "url": "https://linkedin.com/ymca",  "label": "LinkedIn" }
+  ],
+  "display_style": "horizontal", "show_labels": true,
+  "style": "standard", "section": "body"
+}

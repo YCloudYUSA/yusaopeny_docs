@@ -1,0 +1,168 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Promo
+description: Promotional card with image, title, description, and call-to-action
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Card heading
+      examples:
+        - 'Join Today'
+
+    description:
+      type: string
+      title: Description
+      description: Card body content (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<p>Become a member and enjoy all our facilities.</p>'
+
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Image
+      description: Promotional image
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/promo.jpg'
+          alt: 'Promo image'
+          width: 400
+          height: 300
+
+    cta_text:
+      type: string
+      title: Button Text
+      description: Call-to-action button label
+      examples:
+        - 'Learn More'
+
+    cta_url:
+      type: string
+      title: Button URL
+      description: Call-to-action button link
+      examples:
+        - '/membership'
+
+    image_style:
+      type: string
+      title: Image Style
+      description: How the image is displayed
+      default: standard
+      enum:
+        - standard
+        - rounded
+        - circle
+      meta:enum:
+        standard: 'Standard'
+        rounded: 'Rounded corners'
+        circle: 'Circle (for icons/avatars)'
+      examples:
+        - standard
+
+    background:
+      type: string
+      title: Background Color
+      description: Card background color
+      default: white
+      enum:
+        - white
+        - gray
+        - primary
+      meta:enum:
+        white: 'White'
+        gray: 'Light Gray'
+        primary: 'Primary Color'
+      examples:
+        - white
+
+    heading_level:
+      type: string
+      title: Heading Level
+      description: Semantic heading level
+      default: h3
+      enum:
+        - h2
+        - h3
+        - h4
+      meta:enum:
+        h2: 'Heading 2'
+        h3: 'Heading 3'
+        h4: 'Heading 4'
+      examples:
+        - h3
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      image:
+        label: Image
+      title:
+        label: Title
+      description:
+        label: Description
+      cta:
+        label: Call to Action
+    icon_map:
+      mobile:
+        - [image]
+        - [title]
+        - [description]
+        - [cta]
+      tablet:
+        - [image, image, title, title]
+        - [image, image, description, description]
+        - [image, image, cta, cta]
+      desktop:
+        - [image, image, title, title]
+        - [image, image, description, description]
+        - [image, image, cta, cta]
+      large_desktop:
+        - [image, image, title, title]
+        - [image, image, description, description]
+        - [image, image, cta, cta]
+
+complexity:
+  level: medium
+  css_lines: 381
+  has_js: false
+  schema_props: 11
+  enum_variants: 10
+  demo_pages: 2
+  has_media: true
+  responsive_breakpoints: 3
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-promo

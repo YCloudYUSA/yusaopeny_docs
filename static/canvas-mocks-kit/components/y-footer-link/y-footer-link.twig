@@ -1,0 +1,16 @@
+{#
+/**
+ * Y Footer Link — individual footer navigation link.
+ *
+ * Variables:
+ * - title: (string) Link display text
+ * - url: (string) Link destination
+ */
+#}
+
+{% set title = title|default('') %}
+{% set url = url|default('#') %}
+
+<li class="y-footer-link" data-component="y-footer-link">
+  <a href="{{ url }}" class="y-footer-link__anchor">{{ title }}</a>
+</li>

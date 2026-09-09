@@ -1,0 +1,135 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Menu CTA
+description: Call-to-action block for menu dropdowns with image, title, description, and link
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: CTA heading
+      examples:
+        - 'Join Today'
+
+    description:
+      type: string
+      title: Description
+      description: Brief description text
+      examples:
+        - 'Become a member and start your wellness journey.'
+
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Image
+      description: Featured image
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/menu-cta.jpg'
+          alt: 'Join now'
+          width: 300
+          height: 200
+
+    cta_text:
+      type: string
+      title: Button Text
+      description: Call-to-action button label
+      examples:
+        - 'Get Started'
+
+    cta_url:
+      type: string
+      title: Button URL
+      description: Call-to-action button link
+      examples:
+        - '/join'
+
+    heading_level:
+      type: string
+      title: Heading Level
+      description: Semantic heading level
+      default: h4
+      enum:
+        - h3
+        - h4
+        - h5
+      meta:enum:
+        h3: 'Heading 3'
+        h4: 'Heading 4'
+        h5: 'Heading 5'
+      examples:
+        - h4
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      description:
+        label: Description
+      image:
+        label: Image
+      cta:
+        label: Call to Action
+    icon_map:
+      mobile:
+        - [image]
+        - [title]
+        - [description]
+        - [cta]
+      tablet:
+        - [image, title]
+        - [image, description]
+        - [image, cta]
+      desktop:
+        - [image, title]
+        - [image, description]
+        - [image, cta]
+      large_desktop:
+        - [image, title]
+        - [image, description]
+        - [image, cta]
+
+complexity:
+  level: medium
+  css_lines: 90
+  has_js: false
+  schema_props: 9
+  enum_variants: 6
+  demo_pages: 3
+  has_media: true
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-menu-cta

@@ -1,0 +1,136 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Card Item
+description: Individual card with image, title, description and link
+status: experimental
+group: Molecules
+
+props:
+  type: object
+  required:
+    - title
+  properties:
+    title:
+      type: string
+      title: Card Heading
+      description: The main heading for the card
+      examples:
+        - 'Youth Programs'
+
+    description:
+      type: string
+      title: Description
+      description: Card description text (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<p>Fun and enriching programs for children of all ages.</p>'
+
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Card Image
+      description: Image displayed at the top of the card
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/card-item.jpg'
+          alt: 'Youth program activities'
+          width: 400
+          height: 300
+
+    cta_text:
+      type: string
+      title: Link Text
+      description: Text for the card link/button
+      examples:
+        - 'Learn More'
+
+    cta_url:
+      type: string
+      title: Link URL
+      description: URL for the card link
+      examples:
+        - '/programs/youth'
+
+    tag:
+      type: string
+      title: Category Tag
+      description: Optional category or topic tag
+      examples:
+        - 'Youth & Family'
+
+    heading_level:
+      type: string
+      title: Heading Level
+      description: Semantic heading level for card title
+      default: h3
+      enum:
+        - h3
+        - h4
+        - h5
+      meta:enum:
+        h3: 'Heading 3'
+        h4: 'Heading 4'
+        h5: 'Heading 5'
+      examples:
+        - h3
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      image:
+        label: Card Image
+      title:
+        label: Card Heading
+      description:
+        label: Description
+      cta:
+        label: Call to Action
+    icon_map:
+      mobile:
+        - [image]
+        - [title]
+        - [description]
+        - [cta]
+      tablet:
+        - [image, image]
+        - [title, title]
+        - [description, description]
+        - [cta, cta]
+      desktop:
+        - [image, image]
+        - [title, title]
+        - [description, description]
+        - [cta, cta]
+      large_desktop:
+        - [image, image]
+        - [title, title]
+        - [description, description]
+        - [cta, cta]
+
+complexity:
+  level: medium
+  css_lines: 342
+  has_js: false
+  schema_props: 9
+  enum_variants: 4
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 2
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-card-item

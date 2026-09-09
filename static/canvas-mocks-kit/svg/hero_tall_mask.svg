@@ -1,0 +1,18 @@
+<svg width="667" height="551" viewBox="0 0 667 551" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+  <!-- Leaf-shaped hero tall mask. Original width/height/viewBox
+       preserved so existing layout CSS (.hero__banner__tall mask slot)
+       still fits; internal path redrawn as a leaf to echo the logo. -->
+  <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M0 48
+           C 0 22 21 0 48 0
+           H 520
+           C 580 0 636 40 656 102
+           L 664 126
+           C 670 150 670 176 664 200
+           L 560 470
+           C 538 520 488 551 432 551
+           H 48
+           C 21 551 0 529 0 503
+           Z"
+        fill="#ffffff"/>
+</svg>

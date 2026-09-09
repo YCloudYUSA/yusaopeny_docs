@@ -1,0 +1,9 @@
+{
+  "_meta": {
+    "title": "Default — Programs nav link (no submenu)",
+    "description": "W2/P1 sweep fixture. Chrome slot-child of y-nav-menu. Schema example values; submenu slot left empty so reviewers see the simplest case (top-level link without dropdown)."
+  },
+  "title": "Programs",
+  "url": "/programs",
+  "children": ""
+}

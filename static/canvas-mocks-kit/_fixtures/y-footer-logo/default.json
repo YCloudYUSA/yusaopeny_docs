@@ -1,0 +1,8 @@
+{
+  "_meta": {
+    "title": "Default — YMCA footer logo",
+    "description": "W2/P1 sweep fixture. Chrome slot-child of y-footer. Twig renders the brand mark + tagline; schema fields wire URL + alt text only."
+  },
+  "url": "/",
+  "alt": "YMCA Home"
+}

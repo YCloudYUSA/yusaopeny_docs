@@ -1,0 +1,74 @@
+{
+  "_meta": {
+    "title": "Default — 4 cards × 4 columns",
+    "description": "Canonical default fixture matches y-cards.component.yml schema defaults (columns=4, variation=standard, border_style=solid). Placeholder card image carries dimensions overlay; real demo content lives in build-y-lb-demo-mapping.mjs verification page."
+  },
+  "title": "Our Programs",
+  "subtitle": "Discover programs designed for all ages and interests across our YMCA branches.",
+  "cta_text": "View All Programs",
+  "cta_url": "/programs",
+  "columns": "4",
+  "variation": "standard",
+  "border_style": "solid",
+  "text_alignment": "left",
+  "heading_level": "h2",
+  "section": "body",
+  "items": [
+    {
+      "title": "Youth & Family",
+      "description": "<p>Programs that bring families together — sports leagues, day camps, and arts.</p>",
+      "image": {
+        "src": "../assets/photos/y_lb_demo/homepage_image_1.jpeg",
+        "alt": "Youth & Family programs",
+        "width": 800,
+        "height": 600
+      },
+      "tag": "Programs",
+      "cta_text": "Learn More",
+      "cta_url": "/programs/youth",
+      "heading_level": "h3"
+    },
+    {
+      "title": "Health & Wellness",
+      "description": "<p>Group fitness, swimming, and personal training to support your health goals.</p>",
+      "image": {
+        "src": "../assets/photos/y_lb_demo/homepage_image_4.jpeg",
+        "alt": "Health & Wellness programs",
+        "width": 800,
+        "height": 600
+      },
+      "tag": "Programs",
+      "cta_text": "Explore",
+      "cta_url": "/programs/wellness",
+      "heading_level": "h3"
+    },
+    {
+      "title": "Aquatics",
+      "description": "<p>Swim lessons for all ages, lap swim, and water safety instruction.</p>",
+      "image": {
+        "src": "../assets/photos/y_lb_demo/homepage_image_7.jpeg",
+        "alt": "Aquatics programs",
+        "width": 800,
+        "height": 600
+      },
+      "tag": "Programs",
+      "cta_text": "Get Started",
+      "cta_url": "/programs/aquatics",
+      "heading_level": "h3"
+    },
+    {
+      "title": "Sports & Recreation",
+      "description": "<p>Leagues, courts, and group classes for athletes at every level.</p>",
+      "image": {
+        "src": "../assets/photos/y_lb_demo/homepage_image_10.jpeg",
+        "alt": "Sports & Recreation programs",
+        "width": 800,
+        "height": 600
+      },
+      "tag": "Programs",
+      "cta_text": "Join Now",
+      "cta_url": "/programs/sports",
+      "heading_level": "h3"
+    }
+  ]
+}

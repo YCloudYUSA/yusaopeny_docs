@@ -1,0 +1,5 @@
+{
+  "_meta": { "title": "Default — main nav" },
+  "style": "standard", "section": "body",
+  "items": "<ul style='list-style:none;display:flex;gap:1.5rem;margin:0;padding:0'><li><a href='/who'>Who We Are</a></li><li><a href='/programs'>Programs</a></li><li><a href='/membership'>Membership</a></li><li><a href='/locations'>Locations</a></li><li><a href='/news'>News</a></li></ul>"
+}

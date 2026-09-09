@@ -1,0 +1,34 @@
+{#
+/**
+ * Y Camp Menu component.
+ *
+ * Variables:
+ * - title: (string) Menu heading
+ * - camp_name: (string) Camp name
+ * - background: (string) Background color variant
+ * - menu_items: (slot) Menu item links
+ */
+#}
+
+{% set classes = [
+  'y-camp-menu',
+  background ? 'y-camp-menu--bg-' ~ background : '',
+  style|default('standard') != 'standard' ? 'y-camp-menu--style-' ~ style,
+  section|default('body') != 'body' ? 'y-camp-menu--section-' ~ section,
+] %}
+
+<nav class="{{ classes|join(' ') }}" data-component="y-camp-menu" aria-label="{{ title|default('Camp Navigation') }}">
+  <div class="y-camp-menu__container">
+    {% if camp_name %}
+      <div class="y-camp-menu__header">
+        <span class="y-camp-menu__camp-name">{{ camp_name }}</span>
+      </div>
+    {% endif %}
+    {% if title %}
+      <h3 class="y-camp-menu__title">{{ title }}</h3>
+    {% endif %}
+    <ul class="y-camp-menu__list">
+      {{ menu_items }}
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,55 @@
+{#
+/**
+ * Y Carousel Item component.
+ * ws_small_y gallery style: image on left, info panel on right
+ *
+ * Variables:
+ * - title: (string) Slide heading
+ * - description: (string) Supporting text (HTML)
+ * - image: (object) Slide image
+ * - cta_text: (string) Button text
+ * - cta_url: (string) Button URL
+ */
+#}
+
+{% set has_info = title or description or (cta_text and cta_url) %}
+
+{% set classes = [
+  'y-carousel__item',
+  has_info ? 'y-carousel__item--with-info' : '',
+  section|default('body') != 'body' ? 'y-carousel-item--section-' ~ section,
+] %}
+
+<div {{ attributes.addClass(classes) }} data-component="y-carousel-item">
+  <div class="y-carousel__item-inner">
+    {% if image.src %}
+      <div class="y-carousel__image-wrapper">
+        <img
+          src="{{ image.src }}"
+          alt="{{ image.alt|default('') }}"
+          loading="lazy"
+          {% if image.width %}width="{{ image.width }}"{% endif %}
+          {% if image.height %}height="{{ image.height }}"{% endif %}
+        />
+      </div>
+    {% endif %}
+
+    {% if has_info %}
+      <div class="y-carousel__info">
+        {% if title %}
+          <h2 class="y-carousel__info-title">{{ title }}</h2>
+        {% endif %}
+
+        {% if description %}
+          <p class="y-carousel__info-text">{{ description|striptags }}</p>
+        {% endif %}
+
+        {% if cta_text and cta_url %}
+          <a href="{{ cta_url }}" class="btn y-carousel__info-cta">
+            {{ cta_text }}
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>

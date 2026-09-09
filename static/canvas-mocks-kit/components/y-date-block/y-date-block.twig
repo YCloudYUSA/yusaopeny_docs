@@ -1,0 +1,34 @@
+{#
+/**
+ * Y Date Block component.
+ *
+ * Variables:
+ * - title: (string) Block heading
+ * - start_date: (string) Start date
+ * - end_date: (string) End date
+ * - format: (string) Date format
+ */
+#}
+
+{% set classes = [
+  'y-date-block',
+  style|default('standard') != 'standard' ? 'y-date-block--style-' ~ style,
+  section|default('body') != 'body' ? 'y-date-block--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-date-block">
+  {% if title %}
+    <h3 class="y-date-block__title">{{ title }}</h3>
+  {% endif %}
+  <div class="y-date-block__dates">
+    {% if start_date %}
+      <time class="y-date-block__date y-date-block__start">{{ start_date }}</time>
+    {% endif %}
+    {% if start_date and end_date %}
+      <span class="y-date-block__separator">—</span>
+    {% endif %}
+    {% if end_date %}
+      <time class="y-date-block__date y-date-block__end">{{ end_date }}</time>
+    {% endif %}
+  </div>
+</div>

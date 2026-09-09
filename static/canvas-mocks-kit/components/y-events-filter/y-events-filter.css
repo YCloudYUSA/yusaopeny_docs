@@ -1,0 +1,199 @@
+/* Y Events Filter Component */
+
+.y-events-filter {
+  padding: 1.5rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.y-events-filter__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Group */
+.y-events-filter__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.y-events-filter__label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Categories */
+.y-events-filter__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.y-events-filter__category {
+  padding: 0.5rem 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 0.875rem;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.y-events-filter__category:hover {
+  border-color: var(--wsPrimaryColor, #0060af);
+  color: var(--wsPrimaryColor, #0060af);
+}
+
+.y-events-filter__category--active {
+  background: var(--wsPrimaryColor, #0060af);
+  border-color: var(--wsPrimaryColor, #0060af);
+  color: #fff;
+}
+
+/* Date filter */
+.y-events-filter__dates {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.y-events-filter__date-input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 0.9375rem;
+}
+
+.y-events-filter__date-input:focus {
+  outline: none;
+  border-color: var(--wsPrimaryColor, #0060af);
+  box-shadow: 0 0 0 3px rgba(0, 96, 175, 0.15);
+}
+
+.y-events-filter__date-separator {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* Select */
+.y-events-filter__select {
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 0.9375rem;
+  background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") no-repeat right 0.75rem center/12px 12px;
+  appearance: none;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.y-events-filter__select:focus {
+  outline: none;
+  border-color: var(--wsPrimaryColor, #0060af);
+  box-shadow: 0 0 0 3px rgba(0, 96, 175, 0.15);
+}
+
+/* Clear button */
+.y-events-filter__clear {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-decoration: underline;
+  align-self: flex-start;
+}
+
+.y-events-filter__clear:hover {
+  color: #333;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-events-filter {
+    padding: 1.5rem 2rem;
+  }
+
+  .y-events-filter__container {
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .y-events-filter__group {
+    flex: 0 0 auto;
+  }
+
+  .y-events-filter__clear {
+    margin-left: auto;
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+
+/* --- Labels --- */
+.y-events-filter--style-small-y .y-events-filter__label {
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  color: var(--ws-color-dark-grey, #2f2f2f);
+}
+
+/* --- Category buttons --- */
+.y-events-filter--style-small-y .y-events-filter__category {
+  border-radius: var(--ws-border-radius, 10px);
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+}
+
+.y-events-filter--style-small-y .y-events-filter__category:hover {
+  border-color: var(--ws-partner-color, #004080);
+  color: var(--ws-partner-color, #004080);
+}
+
+.y-events-filter--style-small-y .y-events-filter__category--active {
+  background: var(--ws-primary-color, #0060af);
+  border-color: var(--ws-primary-color, #0060af);
+  color: var(--ws-color-white, #ffffff);
+}
+
+/* --- Date inputs --- */
+.y-events-filter--style-small-y .y-events-filter__date-input {
+  border-radius: var(--ws-border-radius, 10px);
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+}
+
+.y-events-filter--style-small-y .y-events-filter__date-input:focus {
+  border-color: var(--ws-primary-color, #0060af);
+  box-shadow: 0 0 0 3px rgba(0, 96, 175, 0.15);
+}
+
+/* --- Select --- */
+.y-events-filter--style-small-y .y-events-filter__select {
+  border-radius: var(--ws-border-radius, 10px);
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+}
+
+.y-events-filter--style-small-y .y-events-filter__select:focus {
+  border-color: var(--ws-primary-color, #0060af);
+  box-shadow: 0 0 0 3px rgba(0, 96, 175, 0.15);
+}
+
+/* --- Clear button --- */
+.y-events-filter--style-small-y .y-events-filter__clear {
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  color: var(--ws-partner-color, #004080);
+}
+
+.y-events-filter--style-small-y .y-events-filter__clear:hover {
+  color: var(--ws-primary-color, #0060af);
+}

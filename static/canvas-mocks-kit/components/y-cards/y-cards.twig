@@ -1,0 +1,77 @@
+{#
+/**
+ * Y Cards component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section subheading
+ * - cta_text: (string) Section CTA button text
+ * - cta_url: (string) Section CTA URL
+ * - columns: (string) Number of columns (2, 3, 4)
+ * - variation: (string) standard, color, overlay, chevron
+ * - border_style: (string) solid, drop-shadow, none
+ * - text_alignment: (string) left, center
+ * - heading_level: (string) h2, h3, h4
+ * - items: (slot) Card items
+ */
+#}
+
+{% set heading_level = heading_level|default('h2') %}
+{% set columns = columns|default('4') %}
+{% set variation = variation|default('standard') %}
+{% set border_style = border_style|default('solid') %}
+{% set text_alignment = text_alignment|default('left') %}
+
+{% set classes = [
+  'y-cards',
+  'y-cards--' ~ variation,
+  'y-cards--cols-' ~ columns,
+  'y-cards--border-' ~ border_style,
+  'y-cards--align-' ~ text_alignment,
+  style|default('standard') != 'standard' ? 'y-cards--style-' ~ style,
+  section|default('body') != 'body' ? 'y-cards--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-cards">
+  {% if title or subtitle or (cta_text and cta_url) %}
+    <div class="y-cards__header">
+      {% if title or subtitle %}
+        <div class="y-cards__header-text">
+          {% if title %}
+            {% if heading_level == 'h2' %}
+              <h2 class="y-cards__title">{{ title }}</h2>
+            {% elseif heading_level == 'h3' %}
+              <h3 class="y-cards__title">{{ title }}</h3>
+            {% elseif heading_level == 'h4' %}
+              <h4 class="y-cards__title">{{ title }}</h4>
+            {% else %}
+              <h2 class="y-cards__title">{{ title }}</h2>
+            {% endif %}
+          {% endif %}
+
+          {% if subtitle %}
+            <p class="y-cards__subtitle">
+              {{ subtitle }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if cta_text and cta_url %}
+        <div class="y-cards__header-cta">
+          <a href="{{ cta_url }}" class="y-cards__cta-link">
+            {{ cta_text }}
+            <svg class="y-cards__cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="y-cards__grid">
+    {{ items }}
+  </div>
+</div>

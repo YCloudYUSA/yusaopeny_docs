@@ -1,0 +1,105 @@
+{#
+/**
+ * Y Header organism.
+ *
+ * Variables:
+ * - style: (string) standard, transparent, minimal
+ * - sticky: (boolean) sticky positioning on scroll
+ * - logo: (slot) Site logo
+ * - navigation: (slot) Main navigation
+ * - utility: (slot) Utility navigation bar
+ * - cta: (slot) Call to action buttons
+ */
+#}
+
+{% set style = style|default('standard') %}
+{% set sticky = sticky is defined ? sticky : true %}
+
+{% set classes = [
+  'y-header',
+  'y-header--' ~ style,
+  sticky ? 'y-header--sticky',
+] %}
+
+<header {{ attributes.addClass(classes) }} data-component="y-header">
+  {# Utility bar — top row #}
+  {% if utility %}
+    <div class="y-header__utility-bar">
+      <div class="y-header__container">
+        {{ utility }}
+      </div>
+    </div>
+  {% endif %}
+
+  {# Main bar — bottom row #}
+  <div class="y-header__main-bar">
+    <div class="y-header__container">
+      {# Logo #}
+      {% if logo %}
+        <div class="y-header__logo">
+          {{ logo }}
+        </div>
+      {% endif %}
+
+      {# Navigation #}
+      {% if navigation %}
+        <div class="y-header__navigation">
+          {{ navigation }}
+        </div>
+      {% endif %}
+
+      {# CTA #}
+      {% if cta %}
+        <div class="y-header__cta">
+          {{ cta }}
+        </div>
+      {% endif %}
+
+      {# Mobile search toggle (visible only on mobile/tablet) #}
+      <button
+        class="y-header__search-toggle"
+        type="button"
+        aria-label="Search"
+      >
+        <svg class="y-header__search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M13 6.5C13 7.93437 12.5344 9.25938 11.75 10.3344L15.7063 14.2937C16.0969 14.6844 16.0969 15.3188 15.7063 15.7094C15.3156 16.1 14.6812 16.1 14.2906 15.7094L10.3344 11.75C9.25938 12.5375 7.93437 13 6.5 13C2.90937 13 0 10.0906 0 6.5C0 2.90937 2.90937 0 6.5 0C10.0906 0 13 2.90937 13 6.5ZM6.5 11C7.09095 11 7.67611 10.8836 8.22208 10.6575C8.76804 10.4313 9.26412 10.0998 9.68198 9.68198C10.0998 9.26412 10.4313 8.76804 10.6575 8.22208C10.8836 7.67611 11 7.09095 11 6.5C11 5.90905 10.8836 5.32389 10.6575 4.77792C10.4313 4.23196 10.0998 3.73588 9.68198 3.31802C9.26412 2.90016 8.76804 2.56869 8.22208 2.34254C7.67611 2.1164 7.09095 2 6.5 2C5.90905 2 5.32389 2.1164 4.77792 2.34254C4.23196 2.56869 3.73588 2.90016 3.31802 3.31802C2.90016 3.73588 2.56869 4.23196 2.34254 4.77792C2.1164 5.32389 2 5.90905 2 6.5C2 7.09095 2.1164 7.67611 2.34254 8.22208C2.56869 8.76804 2.90016 9.26412 3.31802 9.68198C3.73588 10.0998 4.23196 10.4313 4.77792 10.6575C5.32389 10.8836 5.90905 11 6.5 11Z" fill="#636466"/>
+        </svg>
+      </button>
+
+      {# Mobile hamburger toggle #}
+      <button
+        class="y-header__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="y-header-mobile-nav"
+        aria-label="Toggle navigation"
+        data-header-toggle
+      >
+        <svg class="y-header__toggle-svg" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25053 0.239844C2.31974 0.100665 2.46177 0.0126648 2.61721 0.0126648H22.2462C22.5502 0.0126648 22.7483 0.332263 22.6129 0.604486L21.5077 2.82718C21.4385 2.96635 21.2965 3.05435 21.141 3.05435H1.51202C1.208 3.05435 1.00999 2.73476 1.14535 2.46253L2.25053 0.239844Z" style="fill:var(--wsPartnerColor, #0060AF);"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25053 9.21266C2.31974 9.07349 2.46177 8.98549 2.61721 8.98549H22.2462C22.5502 8.98549 22.7483 9.30508 22.6129 9.57731L21.5077 11.8C21.4385 11.9392 21.2965 12.0272 21.141 12.0272H1.51202C1.208 12.0272 1.00999 11.7076 1.14535 11.4354L2.25053 9.21266Z" style="fill:var(--wsPartnerColor, #0060AF);"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25053 18.1855C2.31974 18.0463 2.46177 17.9583 2.61721 17.9583H22.2462C22.5502 17.9583 22.7483 18.2779 22.6129 18.5501L21.5077 20.7728C21.4385 20.912 21.2965 21 21.141 21H1.51202C1.208 21 1.00999 20.6804 1.14535 20.4082L2.25053 18.1855Z" style="fill:var(--wsPartnerColor, #0060AF);"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  {# Mobile navigation drawer #}
+  <div class="y-header__mobile-nav" id="y-header-mobile-nav" data-header-mobile-nav hidden>
+    {% if navigation %}
+      <div class="y-header__mobile-navigation">
+        {{ navigation }}
+      </div>
+    {% endif %}
+    {% if utility %}
+      <div class="y-header__mobile-utility">
+        {{ utility }}
+      </div>
+    {% endif %}
+    {% if cta %}
+      <div class="y-header__mobile-cta">
+        {{ cta }}
+      </div>
+    {% endif %}
+  </div>
+</header>

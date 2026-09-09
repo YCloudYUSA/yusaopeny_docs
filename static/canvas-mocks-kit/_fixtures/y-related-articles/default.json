@@ -1,0 +1,11 @@
+{
+  "_meta": { "title": "Default — 3 related articles" },
+  "title": "Related Articles", "subtitle": "More from your YMCA.",
+  "columns": "3", "show_date": true, "show_category": true, "cta_text": "View All", "cta_url": "/articles",
+  "style": "standard", "section": "body",
+  "articles": [
+    { "title": "Spring soccer", "url": "/articles/soccer", "image": { "src": "../assets/photos/card-800.svg", "alt": "" }, "summary": "Registration open.", "date": "2026-04-10", "category": "Programs" },
+    { "title": "Volunteer year",  "url": "/articles/volunteer", "image": { "src": "../assets/photos/card-800.svg", "alt": "" }, "summary": "Maria Chen recognized.", "date": "2026-04-05", "category": "Community" },
+    { "title": "Free week",       "url": "/articles/free-week", "image": { "src": "../assets/photos/card-800.svg", "alt": "" }, "summary": "May 1-7 open trial.", "date": "2026-04-01", "category": "Membership" }
+  ]
+}

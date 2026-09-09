@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "title": "Default — single testimonial card (Sarah Johnson sample)",
+    "description": "W2/P1 sweep fixture. Single y-testimonial-item rendered inside a 1-item y-testimonials parent shell. Mirrors y-testimonials default.json items[0]."
+  },
+  "quote": "The Y has transformed our family's health and brought us closer together. The kids love the swim lessons.",
+  "name": "Sarah Johnson",
+  "title": "Member since 2018",
+  "image": {
+    "src": "../assets/photos/y_lb_demo/testimonials_image_1.jpeg",
+    "alt": "Sarah Johnson",
+    "width": 800,
+    "height": 600
+  }
+}

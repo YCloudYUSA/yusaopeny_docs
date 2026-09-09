@@ -1,0 +1,142 @@
+/* Y Webform Component */
+
+.y-webform {
+  padding: 3rem 1rem;
+}
+
+/* Background variations */
+.y-webform--bg-white {
+  background: #fff;
+}
+
+.y-webform--bg-light {
+  background: #f8f9fa;
+}
+
+.y-webform--bg-primary {
+  background: var(--wsPrimaryColor, #0060af);
+}
+
+.y-webform--bg-primary .y-webform__title,
+.y-webform--bg-primary .y-webform__description {
+  color: #fff;
+}
+
+.y-webform__container {
+  max-width: 100%;
+}
+
+/* Header */
+.y-webform__header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.y-webform__title {
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 400;
+  color: var(--wsPrimaryColor, #006b6b);
+  margin: 0 0 0.75rem;
+  font-family: var(--ylb-font-family-cachet, 'Cachet', sans-serif);
+  text-align: left;
+}
+
+.y-webform__description {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--ws-color-dark-grey, #2f2f2f);
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0;
+  text-align: left;
+}
+
+/* Content */
+.y-webform__content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.y-webform--bg-white .y-webform__content {
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Form element styles */
+.y-webform__content form label {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: Verdana, sans-serif;
+  color: var(--ws-color-dark-grey, #2f2f2f);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.y-webform__content form input[type="text"],
+.y-webform__content form input[type="email"],
+.y-webform__content form input[type="tel"],
+.y-webform__content form textarea,
+.y-webform__content form select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.y-webform__content form input:focus,
+.y-webform__content form textarea:focus,
+.y-webform__content form select:focus {
+  outline: none;
+  border-color: var(--wsPrimaryColor, #0060af);
+  box-shadow: 0 0 0 3px rgba(0, 96, 175, 0.15);
+}
+
+.y-webform__content form button[type="submit"],
+.y-webform__content form input[type="submit"] {
+  font-family: var(--ylb-font-family-cachet, 'Cachet', sans-serif);
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  background-color: var(--wsPartnerColor, #0060af);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  padding: 7px 18px 9px;
+  margin-left: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.y-webform__content form button[type="submit"]:hover,
+.y-webform__content form input[type="submit"]:hover {
+  background: var(--wsPrimaryColorDark, #004080);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-webform {
+    padding: 4rem 2rem;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .y-webform__title {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  .y-webform__content {
+    padding: 2.5rem;
+  }
+}
+

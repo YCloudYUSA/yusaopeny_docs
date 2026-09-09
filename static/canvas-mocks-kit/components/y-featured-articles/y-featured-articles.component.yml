@@ -1,0 +1,165 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Featured Articles
+description: Featured articles section with hero article and secondary grid
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Main heading for the featured articles section
+      examples:
+        - 'Featured Stories'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Supporting text below the main heading
+      examples:
+        - 'The latest news and stories from your Y'
+
+    cta_text:
+      type: string
+      title: CTA Button Text
+      description: Text for the view all articles button
+      examples:
+        - 'View All Articles'
+
+    cta_url:
+      type: string
+      title: CTA Button URL
+      description: Link to full articles listing
+      examples:
+        - '/articles'
+
+    hero_title:
+      type: string
+      title: Hero Article Title
+      description: Title of the featured hero article
+      examples:
+        - 'Summer Programs Now Open for Registration'
+
+    hero_description:
+      type: string
+      title: Hero Article Description
+      description: Excerpt text for the hero article
+      examples:
+        - 'Join us for an exciting summer of activities, camps, and programs for all ages.'
+
+    hero_image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Hero Article Image
+      description: Featured image for the hero article
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/featured-article.jpg'
+          alt: 'Summer camp activities'
+
+    hero_url:
+      type: string
+      title: Hero Article URL
+      description: Link to the full hero article
+      examples:
+        - '/articles/summer-programs'
+
+    hero_date:
+      type: string
+      title: Hero Article Date
+      description: Publication date for the hero article
+      examples:
+        - 'December 1, 2024'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  secondary_articles:
+    title: Secondary Articles
+    description: Additional featured article cards
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      subtitle:
+        label: Subtitle
+      cta:
+        label: Call to Action
+      hero_image:
+        label: Hero Article Image
+      hero_title:
+        label: Hero Article Title
+      hero_description:
+        label: Hero Article Description
+      secondary_articles:
+        label: Secondary Articles
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [hero_image]
+        - [hero_title]
+        - [hero_description]
+        - [secondary_articles]
+        - [cta]
+      tablet:
+        - [title, subtitle]
+        - [hero_image, hero_image, hero_title, hero_title]
+        - [hero_image, hero_image, hero_description, hero_description]
+        - [secondary_articles, secondary_articles, secondary_articles, secondary_articles]
+        - [cta, cta, cta, cta]
+      desktop:
+        - [title, subtitle]
+        - [hero_image, hero_image, hero_title, hero_title]
+        - [hero_image, hero_image, hero_description, hero_description]
+        - [secondary_articles, secondary_articles, secondary_articles, secondary_articles]
+        - [cta, cta, cta, cta]
+      large_desktop:
+        - [title, subtitle]
+        - [hero_image, hero_image, hero_title, hero_title]
+        - [hero_image, hero_image, hero_description, hero_description]
+        - [secondary_articles, secondary_articles, secondary_articles, secondary_articles]
+        - [cta, cta, cta, cta]
+
+complexity:
+  level: medium
+  css_lines: 367
+  has_js: false
+  schema_props: 12
+  enum_variants: 4
+  demo_pages: 4
+  has_media: true
+  responsive_breakpoints: 6
+  backend_reason: 'references node:article_lb, manual selection'
+  entity_chain: [article_lb]
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-featured-articles

@@ -1,0 +1,14 @@
+{
+  "_meta": {
+    "title": "Default — single staff-member card (Sarah Johnson sample)",
+    "description": "W2/P1 sweep fixture. Single y-staff-member-item rendered inside a 1-item y-staff-members parent shell. Mirrors y-staff-members default.json members[0]."
+  },
+  "name": "Sarah Johnson",
+  "title": "Executive Director",
+  "image": {
+    "src": "../assets/photos/y_lb_demo/jobs_page_image_1.jpeg",
+    "alt": "Sarah Johnson"
+  },
+  "email": "sarah@example.org",
+  "phone": "555-0101"
+}

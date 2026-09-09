@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "title": "Default — Join Today menu CTA block",
+    "description": "W2/P1 sweep fixture. Chrome slot-child of y-menu-block. Schema example values."
+  },
+  "title": "Join Today",
+  "description": "Become a member and start your wellness journey.",
+  "image": {
+    "src": "../assets/photos/y_lb_demo/membership_page_image_1.jpeg",
+    "alt": "Join now",
+    "width": 300,
+    "height": 200
+  },
+  "cta_text": "Get Started",
+  "cta_url": "/join",
+  "heading_level": "h3"
+}

@@ -1,0 +1,36 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Footer Menu
+description: Footer navigation column with heading and list of links
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    heading:
+      type: string
+      title: Column Heading
+      examples:
+        - 'Programs'
+
+slots:
+  items:
+    title: Menu Links
+    description: Footer link items for this column
+    allowedComponents:
+      - sdc.y_canvas.y-footer-link
+
+complexity:
+  level: simple
+  css_lines: 29
+  has_js: false
+  schema_props: 2
+  enum_variants: 0
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 0
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-footer-menu

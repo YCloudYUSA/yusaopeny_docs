@@ -1,0 +1,66 @@
+/* Y Header CTA — molecule */
+
+.y-header-cta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.y-header-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-family: var(--y-font-family, 'Cachet', sans-serif);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  border-radius: var(--ws-border-radius, 10px);
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+/* Filled style */
+.y-header-cta__btn--filled {
+  background-color: var(--y-cta-primary-bg, #0060af);
+  color: var(--y-cta-primary-color, #fff);
+  border: 2px solid var(--y-cta-primary-bg, #0060af);
+}
+
+.y-header-cta__btn--filled:hover {
+  background-color: var(--y-cta-primary-hover-bg, #004080);
+  border-color: var(--y-cta-primary-hover-bg, #004080);
+}
+
+/* Secondary filled style (matches Small Y "Join" button) */
+.y-header-cta__btn--outlined {
+  background-color: var(--y-cta-secondary-bg, #00487c);
+  color: var(--y-cta-secondary-color, #fff);
+  border: 2px solid var(--y-cta-secondary-bg, #00487c);
+}
+
+.y-header-cta__btn--outlined:hover {
+  background-color: var(--y-cta-secondary-hover-bg, #003a64);
+  color: var(--y-cta-secondary-hover-color, #fff);
+}
+
+/* Mobile: stack buttons */
+@media (max-width: 991px) {
+  .y-header__mobile-cta .y-header-cta {
+    flex-direction: column;
+  }
+
+  .y-header__mobile-cta .y-header-cta__btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .y-header-cta__btn {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "title": "Default — 4 services × 4 columns",
+    "description": "Canonical default fixture matches y-icon-grid.component.yml schema defaults (columns=4, style=standard). Icons sourced from y_lb_demo_content distribution-icons set (semantic names — Lera ITCR-757)."
+  },
+  "title": "Our Services",
+  "subtitle": "What we provide for our members across all branches.",
+  "cta_text": "See All Services",
+  "cta_url": "/services",
+  "columns": "4",
+  "style": "standard",
+  "section": "body",
+  "items": [
+    {
+      "title": "Swimming",
+      "description": "<p>Indoor and outdoor pools for all ages.</p>",
+      "icon": { "src": "../assets/photos/distribution-icons/icon-swimming.png", "alt": "Swimming icon", "width": 200, "height": 200 }
+    },
+    {
+      "title": "Group Fitness",
+      "description": "<p>Yoga, Pilates, HIIT, and more for every fitness level.</p>",
+      "icon": { "src": "../assets/photos/distribution-icons/icon-sports-aerobics.png", "alt": "Aerobics icon", "width": 200, "height": 200 }
+    },
+    {
+      "title": "Youth Sports",
+      "description": "<p>Soccer, basketball, and seasonal leagues for kids.</p>",
+      "icon": { "src": "../assets/photos/distribution-icons/icon-basketball.png", "alt": "Basketball icon", "width": 200, "height": 200 }
+    },
+    {
+      "title": "Personal Training",
+      "description": "<p>One-on-one coaching with certified trainers.</p>",
+      "icon": { "src": "../assets/photos/distribution-icons/icon-heartbeat.png", "alt": "Heartbeat icon", "width": 200, "height": 200 }
+    }
+  ]
+}

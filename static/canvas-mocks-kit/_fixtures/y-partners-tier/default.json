@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "title": "Default — single partners tier (4 partners × 4 columns)",
+    "description": "W2/P1 sweep fixture. Single y-partners-tier rendered inside a 1-item y-partners parent shell. Mirrors y-partners default.json tiers[0]."
+  },
+  "title": "",
+  "columns": "4",
+  "size": "medium",
+  "style": "standard",
+  "partners": [
+    { "name": "Acme Corp",        "logo": { "src": "../assets/photos/y_lb_demo/partner_logo_1.jpg", "alt": "Acme Corp" },        "url": "/partners/acme" },
+    { "name": "Beta Industries",  "logo": { "src": "../assets/photos/y_lb_demo/partner_logo_2.png", "alt": "Beta Industries" },  "url": "/partners/beta" },
+    { "name": "Gamma Foundation", "logo": { "src": "../assets/photos/y_lb_demo/partner_logo_3.jpg", "alt": "Gamma Foundation" }, "url": "/partners/gamma" },
+    { "name": "Delta Group",      "logo": { "src": "../assets/photos/y_lb_demo/partner_logo_4.jpg", "alt": "Delta Group" },      "url": "/partners/delta" }
+  ]
+}

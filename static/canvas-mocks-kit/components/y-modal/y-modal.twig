@@ -1,0 +1,69 @@
+{#
+/**
+ * Y Modal component.
+ *
+ * Variables:
+ * - title: (string) Modal heading
+ * - content: (string) Body content (HTML)
+ * - cta_text: (string) Button text
+ * - cta_url: (string) Button URL
+ * - modal_id: (string) Unique modal ID
+ * - dismissible: (boolean) Allow closing by clicking outside
+ * - size: (string) small, medium, large, fullscreen
+ */
+#}
+
+{% set modal_id = modal_id|default('y-modal-' ~ random()) %}
+{% set dismissible = dismissible ?? true %}
+{% set size = size|default('medium') %}
+
+{% set classes = [
+  'y-modal',
+  'y-modal--' ~ size,
+  style|default('standard') != 'standard' ? 'y-modal--style-' ~ style,
+  section|default('body') != 'body' ? 'y-modal--section-' ~ section,
+] %}
+
+{% set dialog_classes = [
+  'y-modal__dialog',
+  size == 'fullscreen' ? 'y-modal__dialog--fullscreen',
+] %}
+
+<div class="{{ classes|join(' ') }}"
+     id="{{ modal_id }}"
+     data-component="y-modal"
+     data-dismissible="{{ dismissible ? 'true' : 'false' }}"
+     role="dialog"
+     aria-modal="true"
+     {% if title %}aria-labelledby="{{ modal_id }}-title"{% endif %}
+     aria-hidden="true">
+
+  <div class="y-modal__backdrop"></div>
+
+  <div class="{{ dialog_classes|join(' ') }}">
+    <div class="y-modal__content">
+      <div class="y-modal__header">
+        {% if title %}
+          <h2 id="{{ modal_id }}-title" class="y-modal__title">{{ title }}</h2>
+        {% endif %}
+        <button type="button" class="y-modal__close" aria-label="Close modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      {% if content %}
+        <div class="y-modal__body">
+          {{ content|raw }}
+        </div>
+      {% endif %}
+
+      {% if cta_text and cta_url %}
+        <div class="y-modal__footer">
+          <a href="{{ cta_url }}" class="y-modal__button">
+            {{ cta_text }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

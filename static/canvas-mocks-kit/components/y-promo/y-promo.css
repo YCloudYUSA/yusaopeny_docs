@@ -1,0 +1,434 @@
+/* Y Promo Component
+   Migrated from lb_promo
+   ============================================================ */
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+.y-promo {
+  border-radius: var(--wsBorderRadius, unset);
+  box-shadow: var(--wsBoxShadow, none);
+  border: var(--wsBorderStyle, none);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* ========================================
+   IMAGE / MEDIA
+   ======================================== */
+.y-promo__media {
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  padding-top: 59.19%; /* 451/762 — matches LB 'promo' image style aspect ratio */
+}
+
+.y-promo__image-wrapper {
+  border-top-left-radius: var(--wsBorderRadius, unset);
+  border-top-right-radius: var(--wsBorderRadius, unset);
+  overflow: hidden;
+}
+
+.y-promo__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ========================================
+   CONTENT / BODY
+   ======================================== */
+.y-promo__content {
+  text-align: var(--wsTextAlignment, unset);
+  display: flex;
+  flex-direction: column;
+  align-items: var(--wsFlexAlignment, unset);
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.y-promo__title,
+.y-promo__heading {
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 0.75rem;
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+}
+
+.y-promo__description,
+.y-promo__body {
+  font-size: 18px;
+  line-height: 28px;
+  color: #666;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.y-promo__description p,
+.y-promo__body p {
+  margin: 0 0 0.75rem;
+}
+
+.y-promo__description p:last-child,
+.y-promo__body p:last-child {
+  margin-bottom: 0;
+}
+
+/* ========================================
+   CTA / BUTTON
+   ======================================== */
+.y-promo__cta {
+  margin-top: auto;
+}
+
+.y-promo__button-wrapper {
+  bottom: -25px;
+  position: var(--wsButtonPosition, unset);
+}
+
+.y-promo__button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--wsPrimaryColor, #0060af);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: var(--wsBorderRadius, 4px);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.y-promo__button:hover {
+  background: #004080;
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   BORDER STYLES
+   ======================================== */
+.y-promo--border-solid {
+  box-shadow: var(--ylb-border-style-none, none);
+  border: var(--ylb-border-style-solid, 1px solid #e5e5e5);
+}
+
+.y-promo--border-drop-shadow {
+  box-shadow: var(--ylb-border-style-drop-shadow, 0 4px 12px rgba(0, 0, 0, 0.1));
+  border: var(--ylb-border-style-none, none);
+}
+
+.y-promo--border-none {
+  box-shadow: var(--ylb-border-style-none, none);
+  border: var(--ylb-border-style-none, none);
+}
+
+/* ========================================
+   TEXT ALIGNMENT
+   ======================================== */
+.y-promo--align-left .y-promo__content {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.y-promo--align-center .y-promo__content {
+  text-align: center;
+  align-items: center;
+}
+
+/* ========================================
+   BUTTON POSITION
+   ======================================== */
+.y-promo--button-inside .y-promo__button-wrapper {
+  position: static;
+}
+
+.y-promo--button-overlapping .y-promo__button-wrapper {
+  position: absolute;
+}
+
+/* ========================================
+   IMAGE STYLES
+   ======================================== */
+/* Rounded image */
+.y-promo--image-rounded .y-promo__image {
+  border-radius: var(--wsBorderRadius, 8px);
+}
+
+.y-promo--image-rounded .y-promo__media {
+  padding: 1rem 1rem 0;
+}
+
+/* Circle image */
+.y-promo--image-circle .y-promo__media {
+  padding: 1.5rem 1.5rem 0;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.y-promo--image-circle .y-promo__image {
+  position: static;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .y-promo--image-circle .y-promo__image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* ========================================
+   BACKGROUND COLORS
+   ======================================== */
+/* Gray background */
+.y-promo--bg-gray {
+  background: #f8f9fa;
+}
+
+/* Primary color background */
+.y-promo--bg-primary {
+  background: var(--wsPrimaryColor, #0060af);
+}
+
+.y-promo--bg-primary .y-promo__title,
+.y-promo--bg-primary .y-promo__heading {
+  color: #fff;
+}
+
+.y-promo--bg-primary .y-promo__description,
+.y-promo--bg-primary .y-promo__body {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.y-promo--bg-primary .y-promo__button {
+  background: #fff;
+  color: var(--wsPrimaryColor, #0060af);
+}
+
+.y-promo--bg-primary .y-promo__button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Secondary color background */
+.y-promo--bg-secondary {
+  background: var(--wsSecondaryColor, #333);
+}
+
+.y-promo--bg-secondary .y-promo__title,
+.y-promo--bg-secondary .y-promo__heading {
+  color: #fff;
+}
+
+.y-promo--bg-secondary .y-promo__description,
+.y-promo--bg-secondary .y-promo__body {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.y-promo--bg-secondary .y-promo__button {
+  background: #fff;
+  color: var(--wsSecondaryColor, #333);
+}
+
+/* ========================================
+   RESPONSIVE STYLES
+   ======================================== */
+@media (min-width: 768px) {
+  .y-promo__title,
+  .y-promo__heading {
+    font-size: 1.375rem;
+  }
+}
+
+/* ========================================
+   HORIZONTAL LAYOUT
+   ======================================== */
+.y-promo--horizontal {
+  flex-direction: row;
+}
+
+.y-promo--horizontal .y-promo__media {
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.y-promo--horizontal .y-promo__image-wrapper {
+  height: 100%;
+  border-top-right-radius: unset;
+  border-bottom-left-radius: var(--wsBorderRadius, unset);
+}
+
+.y-promo--horizontal .y-promo__image {
+  height: 100%;
+  min-height: 200px;
+}
+
+.y-promo--horizontal .y-promo__content {
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .y-promo--horizontal {
+    flex-direction: column;
+  }
+
+  .y-promo--horizontal .y-promo__media {
+    width: 100%;
+  }
+
+  .y-promo--horizontal .y-promo__image-wrapper {
+    border-bottom-left-radius: unset;
+    border-top-right-radius: var(--wsBorderRadius, unset);
+  }
+}
+
+/* ========================================
+   CARD VARIANT (Bootstrap-like)
+   ======================================== */
+.y-promo-card {
+  border-radius: var(--wsBorderRadius, unset);
+  box-shadow: var(--wsBoxShadow, none);
+  border: var(--wsBorderStyle, none);
+}
+
+.y-promo-card .card-img-top {
+  border-top-left-radius: var(--wsBorderRadius, unset);
+  border-top-right-radius: var(--wsBorderRadius, unset);
+  overflow: hidden;
+}
+
+.y-promo-card .card-body {
+  text-align: var(--wsTextAlignment, unset);
+  display: flex;
+  flex-direction: column;
+  align-items: var(--wsFlexAlignment, unset);
+}
+
+.y-promo-card .card-heading {
+  font-size: 30px;
+  line-height: 32px;
+}
+
+.y-promo-card .body {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* ========================================
+   WS_SMALL_Y STYLE OVERRIDES
+   Based on small_y pattern (consistent with cards)
+   ======================================== */
+
+/* Promo base - ws_small_y defaults (matching cards) */
+.y-promo {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  position: relative;
+}
+
+/* Heading - teal color from ws_small_y */
+.y-promo__title,
+.y-promo__heading {
+  color: var(--wsPrimaryColor, #006B6B);
+}
+
+/* Button styling - ws_small_y */
+.y-promo__button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 8px 13px;
+  border-radius: 10px;
+  background-color: var(--wsPrimaryColor, #006B6B);
+  color: var(--ylb-color-white, white);
+  border: none;
+}
+
+.y-promo__button:hover {
+  background-color: var(--wsSecondaryColor, #01A490);
+  transform: none;
+}
+
+/* Card variant - ws_small_y styling */
+.y-promo-card {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+.y-promo-card .card-heading {
+  color: var(--wsPrimaryColor, #006B6B);
+}
+
+/* Primary background - white button */
+.y-promo--bg-primary .y-promo__button {
+  background: var(--ylb-color-white, white);
+  color: var(--wsPrimaryColor, #006B6B);
+}
+
+.y-promo--bg-primary .y-promo__button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Secondary background - white button */
+.y-promo--bg-secondary .y-promo__button {
+  background: var(--ylb-color-white, white);
+  color: var(--wsSecondaryColor, #01A490);
+}
+
+/* ========================================
+   SECTION VARIANTS
+   ======================================== */
+
+/* Default (body): matches Bootstrap container responsive max-widths */
+.y-promo {
+  width: 100%;
+  margin: 1.5rem auto;
+}
+
+@media (min-width: 600px) {
+  .y-promo {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .y-promo {
+    max-width: 720px;
+    margin: 3rem auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .y-promo {
+    max-width: 960px;
+    margin: 96px auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .y-promo {
+    max-width: 1140px;
+  }
+}
+
+/* Banner section: full-width viewport breakout, overrides container constraints */
+.y-promo--section-banner {
+  max-width: none;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+}

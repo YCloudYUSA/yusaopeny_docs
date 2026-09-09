@@ -1,0 +1,58 @@
+{#
+/**
+ * Y Map component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - center_lat: (number) Map center latitude
+ * - center_lng: (number) Map center longitude
+ * - zoom: (number) Initial zoom level
+ * - height: (string) Map height
+ * - markers: (array) Location markers
+ */
+#}
+
+{% set classes = [
+  'y-map',
+  style|default('standard') != 'standard' ? 'y-map--style-' ~ style,
+  section|default('body') != 'body' ? 'y-map--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-map">
+  <div class="y-map__container">
+    {% if title %}
+      <h2 class="y-map__title">{{ title }}</h2>
+    {% endif %}
+
+    <div
+      class="y-map__canvas"
+      data-center-lat="{{ center_lat|default(0) }}"
+      data-center-lng="{{ center_lng|default(0) }}"
+      data-zoom="{{ zoom|default(10) }}"
+      style="height: {{ height|default('400px') }}"
+    >
+      <noscript>
+        <p>{{ 'JavaScript is required to view the map.'|t }}</p>
+      </noscript>
+    </div>
+
+    {% if markers %}
+      <ul class="y-map__locations">
+        {% for marker in markers %}
+          <li class="y-map__location">
+            <h3 class="y-map__location-title">
+              {% if marker.url %}
+                <a href="{{ marker.url }}">{{ marker.title }}</a>
+              {% else %}
+                {{ marker.title }}
+              {% endif %}
+            </h3>
+            {% if marker.address %}
+              <p class="y-map__location-address">{{ marker.address }}</p>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "title": "Default",
+    "description": "Tall variation, color background — anchor fixture for Phase 1 end-to-end."
+  },
+  "title": "Welcome to Your Y",
+  "heading_level": "h2",
+  "description": "<p>Join your community today and discover programs for the whole family.</p>",
+  "image": {
+    "src": "../assets/photos/y_lb_demo/homepage_image_1.jpeg",
+    "alt": "Family at YMCA",
+    "width": 1280,
+    "height": 720
+  },
+  "variation": "tall",
+  "background": "color",
+  "cta_text": "Learn More",
+  "cta_url": "/membership",
+  "section": "body"
+}

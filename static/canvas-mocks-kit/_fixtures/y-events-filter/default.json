@@ -1,0 +1,21 @@
+{
+  "_meta": { "title": "Default — events filter UI" },
+  "title": "Filter Events",
+  "show_search": true, "show_categories": true,
+  "show_date_filter": true, "show_location_filter": true,
+  "search_placeholder": "Search events…",
+  "categories": [
+    { "label": "All",       "value": "all",       "count": 28 },
+    { "label": "Family",    "value": "family",    "count": 9  },
+    { "label": "Wellness",  "value": "wellness",  "count": 7  },
+    { "label": "Sports",    "value": "sports",    "count": 6  },
+    { "label": "Community", "value": "community", "count": 6  }
+  ],
+  "locations": [
+    { "label": "All Branches", "value": "all" },
+    { "label": "Downtown",     "value": "downtown" },
+    { "label": "North",        "value": "north" },
+    { "label": "South",        "value": "south" }
+  ],
+  "action_url": "/events", "style": "standard", "section": "body"
+}

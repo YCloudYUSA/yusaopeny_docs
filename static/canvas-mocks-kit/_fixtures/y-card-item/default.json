@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "title": "Default — single card item (Programs sample)",
+    "description": "W2/P1 sweep fixture. Single y-card-item rendered inside a 1-item y-cards parent shell so the surrounding grid + section header + CTA chrome read correctly. Fields mirror y-cards default.json items[0]."
+  },
+  "title": "Youth & Family",
+  "description": "<p>Programs that bring families together — sports leagues, day camps, and arts.</p>",
+  "image": {
+    "src": "../assets/photos/y_lb_demo/homepage_image_1.jpeg",
+    "alt": "Youth & Family programs",
+    "width": 800,
+    "height": 600
+  },
+  "tag": "Programs",
+  "cta_text": "Learn More",
+  "cta_url": "/programs/youth",
+  "heading_level": "h3",
+  "section": "body"
+}

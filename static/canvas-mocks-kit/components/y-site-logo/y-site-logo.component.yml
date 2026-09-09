@@ -1,0 +1,77 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Site Logo
+description: Site logo with image and text fallback
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Logo Image
+      description: Logo image file
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/logo.png'
+          alt: 'YMCA Logo'
+          width: 120
+          height: 60
+
+    alt:
+      type: string
+      title: Alt Text
+      description: Alt text for the logo image
+      default: 'Home'
+      examples:
+        - 'YMCA of Example City'
+
+    url:
+      type: string
+      title: Link URL
+      description: URL the logo links to
+      default: '/'
+      examples:
+        - '/'
+
+    site_name:
+      type: string
+      title: Site Name
+      description: Text fallback when no logo image is provided
+      examples:
+        - 'YMCA of Example City'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of logo areas
+    regions:
+      image:
+        label: Logo Image
+      site_name:
+        label: Site Name
+    icon_map:
+      mobile:
+        - [image]
+        - [site_name]
+      tablet:
+        - [image, site_name]
+      desktop:
+        - [image, site_name]
+      large_desktop:
+        - [image, site_name]
+
+complexity:
+  level: simple
+  css_lines: 66
+  has_js: false
+  schema_props: 5
+  enum_variants: 0
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-site-logo

@@ -1,0 +1,5 @@
+{
+  "_meta": { "title": "Default — camp menu (5 links)" },
+  "title": "Camp Y", "camp_name": "Camp Madison", "background": "primary", "style": "standard", "section": "body",
+  "menu_items": "<li><a href='/camp/about' class='active'>About</a></li><li><a href='/camp/programs'>Programs</a></li><li><a href='/camp/sessions'>Sessions</a></li><li><a href='/camp/pricing'>Pricing</a></li><li><a href='/camp/register'>Register</a></li>"
+}

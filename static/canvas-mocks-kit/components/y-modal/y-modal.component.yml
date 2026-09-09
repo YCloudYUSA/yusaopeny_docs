@@ -1,0 +1,139 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Modal
+description: Modal dialog popup with title, content, and optional CTA
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Modal heading
+      examples:
+        - 'Welcome!'
+
+    content:
+      type: string
+      title: Content
+      description: Modal body content (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<p>Thank you for visiting our site.</p>'
+
+    cta_text:
+      type: string
+      title: Button Text
+      description: Call-to-action button label
+      examples:
+        - 'Get Started'
+
+    cta_url:
+      type: string
+      title: Button URL
+      description: Call-to-action button link
+      examples:
+        - '/membership'
+
+    modal_id:
+      type: string
+      title: Modal ID
+      description: Unique identifier for the modal
+      examples:
+        - 'welcome-modal'
+
+    dismissible:
+      type: boolean
+      title: Dismissible
+      description: Whether the modal can be closed by clicking outside
+      default: true
+      examples:
+        - true
+
+    size:
+      type: string
+      title: Size
+      description: Modal size
+      default: medium
+      enum:
+        - small
+        - medium
+        - large
+        - fullscreen
+      meta:enum:
+        small: 'Small'
+        medium: 'Medium'
+        large: 'Large'
+        fullscreen: 'Full Screen'
+      examples:
+        - medium
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      content:
+        label: Content
+      cta:
+        label: Call to Action
+    icon_map:
+      mobile:
+        - [title]
+        - [content]
+        - [cta]
+      tablet:
+        - [title]
+        - [content]
+        - [cta]
+      desktop:
+        - [title]
+        - [content]
+        - [cta]
+      large_desktop:
+        - [title]
+        - [content]
+        - [cta]
+
+complexity:
+  level: medium
+  css_lines: 177
+  has_js: false
+  schema_props: 10
+  enum_variants: 6
+  demo_pages: 2
+  has_media: false
+  responsive_breakpoints: 2
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-modal

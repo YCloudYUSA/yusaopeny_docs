@@ -1,0 +1,352 @@
+/* Y Card Item Component */
+
+/* ws_small_y card styling */
+.y-card-item {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 0 auto;
+  max-width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  color: var(--ylb-color-dark-grey-1, #2F2F2F);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ws_small_y hover - underline heading, cursor pointer */
+.y-card-item:hover {
+  cursor: pointer;
+}
+
+.y-card-item:hover .y-card-item__title {
+  text-decoration: underline;
+}
+
+/* Image - ws_small_y min-height: 270px */
+.y-card-item__image-wrapper {
+  position: relative;
+  height: 270px;
+  overflow: hidden;
+  border-top-left-radius: var(--wsBorderRadius, 10px);
+  border-top-right-radius: var(--wsBorderRadius, 10px);
+}
+
+/* Chevron - hidden by default */
+.y-card-item__chevron {
+  display: none;
+}
+
+/* Image container - for chevron variation padding */
+.y-card-item__img-container {
+  height: 100%;
+}
+
+.y-card-item__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* ws_small_y - no image scale on hover */
+
+/* Tag - ws_small_y style: gray uppercase text, no background
+   For Standard cards, position in content area below image */
+.y-card-item__tag {
+  position: static;
+  display: block;
+  padding: 2px 4px;
+  margin-bottom: 15px;
+  background: transparent;
+  color: var(--ylb-color-dark-grey-1, #2F2F2F);
+  font-family: var(--ylb-font-family-verdana, Verdana, sans-serif);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  width: fit-content;
+}
+
+.y-card-item__tag--inline {
+  position: static;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+/* For Overlay and Color variations, position tag over the image with white text */
+.y-cards--overlay .y-card-item,
+.y-cards--color .y-card-item {
+  position: relative;
+}
+
+.y-cards--overlay .y-card-item__tag,
+.y-cards--color .y-card-item__tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+/* Content */
+.y-card-item__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+/* Title - ws_small_y uses teal for card headings */
+.y-card-item__title {
+  display: block;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--wsPrimaryColor, #006B6B);
+  margin: 0 0 25px;
+  font-family: var(--ylb-font-family-cachet, 'Cachet', sans-serif);
+}
+
+.y-card-item__title-link {
+  display: block;
+  color: var(--wsPrimaryColor, #006b6b);
+  font-family: var(--ylb-font-family-cachet, 'Cachet', sans-serif);
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.y-card-item__title-link:hover {
+  text-decoration: underline;
+}
+
+/* Description */
+.y-card-item__description {
+  flex: 1;
+  font-size: 18px;
+  color: var(--ylb-color-dark-grey-1, #2f2f2f);
+  line-height: 28px;
+  margin-bottom: 1rem;
+  font-family: Verdana, sans-serif;
+}
+
+.y-card-item__description p {
+  margin: 0 0 0.75rem;
+}
+
+.y-card-item__description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer */
+.y-card-item__footer {
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+/* CTA Button */
+.y-card-item__cta {
+  display: inline-block;
+  padding: 8px 13px;
+  background-color: var(--wsPartnerColor, #0060af);
+  color: var(--ylb-color-white, white);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+/* --style-small-y: restore small-y button size */
+.y-cards--style-small-y .y-card-item__cta {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.y-card-item__cta:hover {
+  background-color: var(--ylb-color-white, white);
+  color: var(--wsPartnerColor, black);
+  border-color: var(--wsPartnerColor, black);
+  text-decoration: none;
+}
+
+.y-card-item__cta-icon {
+  display: none;
+}
+
+/* No image variant */
+.y-card-item--no-image {
+  min-height: 200px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-card-item__content {
+    padding: 1.5rem;
+  }
+
+}
+
+/* ========================================
+   PARENT VARIATION: Color
+   ======================================== */
+.y-cards--color .y-card-item {
+  background: var(--wsPrimaryColor, #006B6B);
+  border-color: transparent;
+  color: #fff;
+}
+
+.y-cards--color .y-card-item__title,
+.y-cards--color .y-card-item__title-link {
+  color: #fff;
+}
+
+.y-cards--color .y-card-item__title-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.y-cards--color .y-card-item__description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Color variation - outline button (white border, white text) */
+.y-cards--color .y-card-item__cta {
+  background-color: transparent;
+  color: var(--ylb-color-white, white);
+  border: 2px solid var(--ylb-color-white, white);
+}
+
+.y-cards--color .y-card-item__cta:hover {
+  background-color: var(--ylb-color-white, white);
+  color: var(--wsPrimaryColor, #006B6B);
+}
+
+.y-cards--color .y-card-item__tag {
+  background: transparent;
+  color: var(--ylb-color-white, white);
+}
+
+/* ========================================
+   PARENT VARIATION: Overlay
+   lb_cards style - image at top, content below with negative margin
+   ======================================== */
+.y-cards--overlay .y-card-item {
+  background-color: var(--wsPrimaryColor, #006B6B);
+}
+
+.y-cards--overlay .y-card-item__image-wrapper {
+  position: relative;
+  min-height: 270px;
+}
+
+.y-cards--overlay .y-card-item__img-container {
+  height: 100%;
+  padding: 0;
+}
+
+.y-cards--overlay .y-card-item__image-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  /* Teal gradient overlay using primary color */
+  background: linear-gradient(180deg, rgba(0, 107, 107, 0.1) 0.1%, rgba(0, 107, 107, 0.72) 64.9%, var(--wsPrimaryColor, #006B6B) 100%);
+}
+
+.y-cards--overlay .y-card-item__content {
+  margin-top: -55px;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  background-color: var(--wsPrimaryColor, #006B6B);
+  border-radius: var(--wsBorderRadius, 10px);
+}
+
+.y-cards--overlay .y-card-item__title,
+.y-cards--overlay .y-card-item__title-link {
+  color: #fff;
+}
+
+.y-cards--overlay .y-card-item__description {
+  color: rgba(255, 255, 255, 0.9);
+  flex: 0;
+}
+
+/* Hide tag in overlay - content at bottom only */
+.y-cards--overlay .y-card-item__tag {
+  display: none;
+}
+
+/* Overlay variation - white filled button with teal text (matching reference) */
+.y-cards--overlay .y-card-item__cta {
+  background-color: var(--ylb-color-white, white);
+  color: var(--wsPrimaryColor, #006B6B);
+  border: 2px solid var(--ylb-color-white, white);
+}
+
+.y-cards--overlay .y-card-item__cta:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* ========================================
+   PARENT VARIATION: Chevron
+   lb_cards chevron style - SVG behind the image
+   ======================================== */
+.y-cards--chevron .y-card-item {
+  border: 2px solid var(--wsSecondaryColor, #01A490);
+}
+
+.y-cards--chevron .y-card-item__image-wrapper {
+  min-height: 240px;
+  aspect-ratio: auto;
+  border-top-left-radius: var(--wsBorderRadius, 10px);
+  border-top-right-radius: var(--wsBorderRadius, 10px);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--wsSecondaryColor, #01A490);
+}
+
+/* Show and style the chevron SVG - lb_cards positioning */
+.y-cards--chevron .y-card-item__chevron {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -5%;
+  left: -8%;
+  transform: scale(1.01, 1.1);
+}
+
+.y-cards--chevron .y-card-item__chevron svg {
+  height: 100%;
+  width: 100%;
+}
+
+/* Image container with padding so image doesn't cover chevron */
+.y-cards--chevron .y-card-item__img-container {
+  padding: 15px;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 400px) {
+  .y-cards--chevron .y-card-item__img-container {
+    padding: 20px;
+  }
+}
+
+/* Image with rounded corners */
+.y-cards--chevron .y-card-item__image {
+  min-height: 170px;
+  border-radius: var(--wsBorderRadius, 10px);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

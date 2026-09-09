@@ -1,0 +1,52 @@
+{#
+/**
+ * Y Accordion Item component.
+ *
+ * Variables:
+ * - title: (string) Item heading (required)
+ * - content: (string) Expandable content (HTML)
+ * - expanded: (boolean) Whether item is expanded
+ * - item_id: (string) Unique ID for accessibility
+ */
+#}
+
+{% set expanded = expanded|default(false) %}
+{% set unique_id = item_id|default('accordion-item-' ~ (canvas_uuid|default(random()))) %}
+{% set header_id = unique_id ~ '-header' %}
+{% set content_id = unique_id ~ '-content' %}
+
+{% set classes = [
+  'y-accordion-item',
+  expanded ? 'y-accordion-item--expanded' : null,
+  section|default('body') != 'body' ? 'y-accordion-item--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-accordion-item">
+  <h4 class="y-accordion-item__header" id="{{ header_id }}">
+    <button
+      class="y-accordion-item__button"
+      type="button"
+      aria-expanded="{{ expanded ? 'true' : 'false' }}"
+      aria-controls="{{ content_id }}"
+    >
+      <span class="y-accordion-item__title">{{ title }}</span>
+      <span class="y-accordion-item__icon" aria-hidden="true">
+        <svg class="y-accordion-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </span>
+    </button>
+  </h4>
+
+  <div
+    class="y-accordion-item__content"
+    id="{{ content_id }}"
+    role="region"
+    aria-labelledby="{{ header_id }}"
+    {% if not expanded %}hidden{% endif %}
+  >
+    <div class="y-accordion-item__body">
+      {{ content|raw }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+{#
+/**
+ * Y Partner Item component.
+ *
+ * Variables:
+ * - name: (string) Partner name
+ * - logo: (object) Partner logo image
+ * - url: (string) Optional link to partner website
+ */
+#}
+
+{% set classes = [
+  'y-partner-item',
+  style|default('standard') != 'standard' ? 'y-partner-item--style-' ~ style,
+  section|default('body') != 'body' ? 'y-partner-item--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-partner-item">
+  {% if logo.src %}
+    <div class="y-partner-item__logo">
+      <img
+        src="{{ logo.src }}"
+        alt="{{ logo.alt|default(name|default('Partner logo')) }}"
+        class="y-partner-item__image"
+        loading="lazy"
+        {% if logo.width %}width="{{ logo.width }}"{% endif %}
+        {% if logo.height %}height="{{ logo.height }}"{% endif %}
+      />
+    </div>
+  {% endif %}
+
+  {% if name %}
+    <div class="y-partner-item__name">
+      {% if url %}
+        <a href="{{ url }}" class="y-partner-item__link" target="_blank" rel="noopener noreferrer">
+          {{ name }}
+        </a>
+      {% else %}
+        {{ name }}
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

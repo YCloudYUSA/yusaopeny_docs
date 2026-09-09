@@ -1,0 +1,116 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Small Statistics
+description: Compact statistics display section
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Optional section heading
+      examples:
+        - 'By the Numbers'
+
+    subtitle:
+      type: string
+      title: Section Subheading
+      description: Optional section subheading text
+
+    background:
+      type: string
+      title: Background
+      description: Background color style
+      default: light
+      enum:
+        - light
+        - white
+        - primary
+      meta:enum:
+        light: 'Grey Header'
+        white: 'White'
+        primary: 'Color Header'
+
+    columns:
+      type: integer
+      title: Columns
+      description: Number of columns in the grid
+      default: 4
+      enum:
+        - 2
+        - 3
+        - 4
+      meta:enum:
+        2: '2 Columns'
+        3: '3 Columns'
+        4: '4 Columns'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  items:
+    title: Statistics Items
+    description: Individual statistic items
+    allowedComponents:
+      - sdc.y_canvas.y-small-statistics-item
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      items:
+        label: Statistics Items
+    icon_map:
+      mobile:
+        - [title]
+        - [items]
+      tablet:
+        - [title]
+        - [items, items]
+      desktop:
+        - [title]
+        - [items, items]
+      large_desktop:
+        - [title]
+        - [items, items]
+
+complexity:
+  level: simple
+  css_lines: 65
+  has_js: false
+  schema_props: 7
+  enum_variants: 10
+  demo_pages: 10
+  has_media: false
+  responsive_breakpoints: 2
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-small-statistics

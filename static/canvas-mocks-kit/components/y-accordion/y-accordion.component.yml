@@ -1,0 +1,125 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Accordion
+description: YMCA accordion component with expandable sections
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Section Heading
+      description: The main heading for the accordion section
+      examples:
+        - 'Frequently Asked Questions'
+
+    subtitle:
+      type: string
+      title: Section Subheading
+      description: Supporting text below the main heading
+      examples:
+        - 'Find answers to common questions about our programs'
+
+    is_faq:
+      type: boolean
+      title: FAQ Schema
+      description: Enable FAQ structured data (schema.org FAQPage) for SEO
+      default: false
+      examples:
+        - false
+
+    first_open:
+      type: boolean
+      title: First Item Open
+      description: Expand the first accordion item by default
+      default: true
+      examples:
+        - true
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+    heading_level:
+      type: string
+      title: Heading Level
+      description: Semantic heading level for accessibility
+      default: h3
+      enum:
+        - h2
+        - h3
+        - h4
+      meta:enum:
+        h2: 'Heading 2'
+        h3: 'Heading 3'
+        h4: 'Heading 4'
+      examples:
+        - h3
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  items:
+    title: Accordion Items
+    description: Add accordion items to this section
+    allowedComponents:
+      - sdc.y_canvas.y-accordion-item
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Section Heading
+      subtitle:
+        label: Section Subheading
+      items:
+        label: Accordion Items
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [items]
+      tablet:
+        - [title, items]
+        - [subtitle, items]
+      desktop:
+        - [title, items]
+        - [subtitle, items]
+      large_desktop:
+        - [title, items]
+        - [subtitle, items]
+
+complexity:
+  level: simple
+  css_lines: 114
+  has_js: true
+  schema_props: 8
+  enum_variants: 6
+  demo_pages: 2
+  has_media: false
+  responsive_breakpoints: 4
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-accordion

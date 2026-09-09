@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "title": "Default — pricing table example",
+    "description": "Canonical default fixture matches y-table.component.yml schema defaults (style=standard, striped=true, bordered=false, responsive=true). Real demo content lives in y-lb-demo-mapping page."
+  },
+  "title": "Membership Plans",
+  "subtitle": "Choose the plan that works best for you and your family.",
+  "content": "<table><thead><tr><th>Plan</th><th>Monthly</th><th>Annual</th><th>Includes</th></tr></thead><tbody><tr><td>Individual</td><td>$29</td><td>$320</td><td>1 person, all branches</td></tr><tr><td>Family</td><td>$59</td><td>$650</td><td>Up to 4 family members</td></tr><tr><td>Senior (60+)</td><td>$22</td><td>$240</td><td>1 person, discounted</td></tr><tr><td>Youth (under 18)</td><td>$15</td><td>$165</td><td>1 person, family-supervised</td></tr></tbody></table>",
+  "striped": true,
+  "bordered": false,
+  "responsive": true,
+  "style": "standard",
+  "heading_level": "h2",
+  "section": "body"
+}

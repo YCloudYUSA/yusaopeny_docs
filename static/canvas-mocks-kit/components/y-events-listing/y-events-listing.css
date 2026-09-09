@@ -1,0 +1,315 @@
+/* Y Events Listing Component */
+
+.y-events-listing {
+  padding: 2rem 1rem;
+}
+
+/* Grid */
+.y-events-listing__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .y-events-listing__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .y-events-listing--cols-2 .y-events-listing__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .y-events-listing--cols-3 .y-events-listing__grid,
+  .y-events-listing--cols-4 .y-events-listing__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .y-events-listing--cols-4 .y-events-listing__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Card */
+.y-events-listing__card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.y-events-listing__card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Image */
+.y-events-listing__image {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.y-events-listing__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.y-events-listing__card:hover .y-events-listing__image img {
+  transform: scale(1.05);
+}
+
+.y-events-listing__category-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--wsPrimaryColor, #0060af);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+/* Content */
+.y-events-listing__content {
+  padding: 1.25rem;
+}
+
+/* Meta */
+.y-events-listing__meta {
+  margin-bottom: 0.5rem;
+}
+
+.y-events-listing__date {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--wsPrimaryColor, #0060af);
+  display: block;
+}
+
+.y-events-listing__time {
+  font-size: 0.8125rem;
+  color: #666;
+}
+
+/* Title */
+.y-events-listing__title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+
+.y-events-listing__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.y-events-listing__title a:hover {
+  color: var(--wsPrimaryColor, #0060af);
+}
+
+/* Location */
+.y-events-listing__location {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.8125rem;
+  color: #666;
+}
+
+.y-events-listing__location svg {
+  color: #999;
+}
+
+/* Pagination */
+.y-events-listing__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.y-events-listing__page-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.y-events-listing__page-btn:hover:not(:disabled) {
+  border-color: var(--wsPrimaryColor, #0060af);
+  color: var(--wsPrimaryColor, #0060af);
+}
+
+.y-events-listing__page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.y-events-listing__page-info {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Empty */
+.y-events-listing__empty {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .y-events-listing {
+    padding: 3rem 2rem;
+  }
+}
+
+/* ========================================
+   STYLE: Small Y
+   ======================================== */
+
+/* --- Container --- */
+.y-events-listing--style-small-y {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .y-events-listing--style-small-y {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .y-events-listing--style-small-y {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .y-events-listing--style-small-y {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .y-events-listing--style-small-y {
+    max-width: 1140px;
+  }
+}
+
+/* --- Grid --- */
+.y-events-listing--style-small-y .y-events-listing__grid {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .y-events-listing--style-small-y .y-events-listing__grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .y-events-listing--style-small-y .y-events-listing__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --- Card --- */
+.y-events-listing--style-small-y .y-events-listing__card {
+  border-radius: var(--ws-border-radius, 10px);
+  background: var(--ws-color-white, #ffffff);
+}
+
+/* --- Image --- */
+.y-events-listing--style-small-y .y-events-listing__image {
+  border-radius: var(--ws-border-radius, 10px) var(--ws-border-radius, 10px) 0 0;
+  overflow: hidden;
+}
+
+/* --- Content --- */
+.y-events-listing--style-small-y .y-events-listing__content {
+  padding: 20px;
+}
+
+/* --- Date --- */
+.y-events-listing--style-small-y .y-events-listing__date {
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--ws-primary-color, #0060af);
+}
+
+/* --- Category badge --- */
+.y-events-listing--style-small-y .y-events-listing__category-badge {
+  font-size: 14px;
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  background: unset;
+  color: var(--ws-color-dark-grey, #2f2f2f);
+  border-radius: 0;
+  padding: 0;
+  position: static;
+  text-transform: none;
+  font-weight: 400;
+  display: inline;
+  margin-right: 10px;
+}
+
+/* --- Title --- */
+.y-events-listing--style-small-y .y-events-listing__title {
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--ws-color-dark-grey, #2f2f2f);
+}
+
+.y-events-listing--style-small-y .y-events-listing__title a {
+  color: var(--ws-partner-color, #004080);
+}
+
+.y-events-listing--style-small-y .y-events-listing__title a:hover {
+  color: var(--ws-primary-color, #0060af);
+}
+
+/* --- Location --- */
+.y-events-listing--style-small-y .y-events-listing__location {
+  font-size: 14px;
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+  color: var(--ws-color-dark-grey, #2f2f2f);
+}
+
+/* --- Pagination --- */
+.y-events-listing--style-small-y .y-events-listing__page-btn {
+  border-radius: var(--ws-border-radius, 10px);
+  font-family: var(--ws-font-family-heading, Verdana, Geneva, sans-serif);
+}
+
+.y-events-listing--style-small-y .y-events-listing__page-btn:hover:not(:disabled) {
+  border-color: var(--ws-partner-color, #004080);
+  color: var(--ws-partner-color, #004080);
+}

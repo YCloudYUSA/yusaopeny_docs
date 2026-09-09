@@ -1,0 +1,86 @@
+{#
+/**
+ * Y Articles Listing component.
+ *
+ * Variables:
+ * - articles: (array) Articles list
+ * - columns: (string) Number of columns
+ * - show_pagination: (boolean) Show pagination
+ * - current_page: (number) Current page number
+ * - total_pages: (number) Total number of pages
+ */
+#}
+
+{% set cols = columns|default('3') %}
+{% set classes = [
+  'y-articles-listing',
+  'y-articles-listing--cols-' ~ cols,
+  style|default('standard') != 'standard' ? 'y-articles-listing--style-' ~ style,
+  section|default('body') != 'body' ? 'y-articles-listing--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-articles-listing">
+  {% if articles %}
+    <div class="y-articles-listing__grid">
+      {% for article in articles %}
+        <article class="y-articles-listing__card">
+          {% if article.image.src %}
+            <div class="y-articles-listing__image">
+              <a href="{{ article.url }}">
+                <img
+                  src="{{ article.image.src }}"
+                  alt="{{ article.image.alt|default(article.title) }}"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+          {% endif %}
+          <div class="y-articles-listing__content">
+            {% if article.category %}
+              <span class="y-articles-listing__category">{{ article.category }}</span>
+            {% endif %}
+            <h3 class="y-articles-listing__title">
+              <a href="{{ article.url }}">{{ article.title }}</a>
+            </h3>
+            {% if article.excerpt %}
+              <p class="y-articles-listing__excerpt">{{ article.excerpt }}</p>
+            {% endif %}
+            {% if article.date %}
+              <time class="y-articles-listing__date">{{ article.date }}</time>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if show_pagination|default(true) and total_pages > 1 %}
+      <nav class="y-articles-listing__pagination" aria-label="{{ 'Article pagination'|t }}">
+        <button
+          type="button"
+          class="y-articles-listing__page-btn"
+          {{ current_page <= 1 ? 'disabled' : '' }}
+          aria-label="{{ 'Previous page'|t }}"
+        >
+          ←
+        </button>
+
+        <span class="y-articles-listing__page-info">
+          {{ 'Page @current of @total'|t({'@current': current_page|default(1), '@total': total_pages}) }}
+        </span>
+
+        <button
+          type="button"
+          class="y-articles-listing__page-btn"
+          {{ current_page >= total_pages ? 'disabled' : '' }}
+          aria-label="{{ 'Next page'|t }}"
+        >
+          →
+        </button>
+      </nav>
+    {% endif %}
+  {% else %}
+    <div class="y-articles-listing__empty">
+      <p>{{ 'No articles found.'|t }}</p>
+    </div>
+  {% endif %}
+</div>

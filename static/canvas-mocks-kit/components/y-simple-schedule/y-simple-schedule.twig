@@ -1,0 +1,51 @@
+{#
+/**
+ * Y Simple Schedule component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - schedule: (array) Schedule items
+ * - show_filters: (boolean) Show filter controls
+ */
+#}
+
+{% set classes = [
+  'y-simple-schedule',
+  style|default('standard') != 'standard' ? 'y-simple-schedule--style-' ~ style,
+  section|default('body') != 'body' ? 'y-simple-schedule--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-simple-schedule">
+  <div class="y-simple-schedule__container">
+    {% if title %}
+      <h2 class="y-simple-schedule__title">{{ title }}</h2>
+    {% endif %}
+
+    {% if schedule %}
+      <div class="y-simple-schedule__table-wrapper">
+        <table class="y-simple-schedule__table">
+          <thead>
+            <tr>
+              <th>{{ 'Time'|t }}</th>
+              <th>{{ 'Class'|t }}</th>
+              <th>{{ 'Instructor'|t }}</th>
+              <th>{{ 'Location'|t }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in schedule %}
+              <tr>
+                <td class="y-simple-schedule__time">{{ item.time }}</td>
+                <td class="y-simple-schedule__name">{{ item.name }}</td>
+                <td class="y-simple-schedule__instructor">{{ item.instructor }}</td>
+                <td class="y-simple-schedule__location">{{ item.location }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% else %}
+      <p class="y-simple-schedule__empty">{{ 'No classes scheduled.'|t }}</p>
+    {% endif %}
+  </div>
+</section>

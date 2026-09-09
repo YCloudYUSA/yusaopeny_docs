@@ -1,0 +1,35 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Footer Logo
+description: Full YMCA footer logo with embedded tagline (For youth development / healthy living / social responsibility)
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    url:
+      type: string
+      title: Logo Link URL
+      default: '/'
+      examples:
+        - '/'
+    alt:
+      type: string
+      title: Logo Alt Text
+      examples:
+        - 'YMCA Home'
+
+complexity:
+  level: simple
+  css_lines: 27
+  has_js: false
+  schema_props: 3
+  enum_variants: 0
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 0
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-footer-logo

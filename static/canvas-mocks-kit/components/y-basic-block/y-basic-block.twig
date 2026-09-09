@@ -1,0 +1,24 @@
+{#
+/**
+ * Y Basic Block component.
+ *
+ * Variables:
+ * - title: (string) Block heading
+ * - body: (string) HTML body content
+ */
+#}
+
+{% set classes = [
+  'y-basic-block',
+  style|default('standard') != 'standard' ? 'y-basic-block--style-' ~ style,
+  section|default('body') != 'body' ? 'y-basic-block--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-basic-block">
+  {% if title %}
+    <h2 class="y-basic-block__title">{{ title }}</h2>
+  {% endif %}
+  {% if body %}
+    <div class="y-basic-block__body">{{ body|raw }}</div>
+  {% endif %}
+</div>

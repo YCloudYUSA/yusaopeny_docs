@@ -1,0 +1,10 @@
+{
+  "_meta": {
+    "title": "Default — single small-statistics counter (Members Served 50000+)",
+    "description": "W2/P1 sweep fixture. Single y-small-statistics-item rendered inside a 1-item y-small-statistics parent shell (background=primary, style=small-y). Mirrors y-small-statistics default.json items[0]."
+  },
+  "value": "50000",
+  "suffix": "+",
+  "label": "Members Served",
+  "description": "A growing family of individuals finding support, health, and connection through our dedicated regional hubs."
+}

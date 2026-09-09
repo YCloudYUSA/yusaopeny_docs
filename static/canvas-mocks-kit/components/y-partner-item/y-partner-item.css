@@ -1,0 +1,57 @@
+/* Y Partner Item Component */
+
+.y-partner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  flex: 0 0 50%;
+  max-width: 70%;
+}
+
+/* Logo */
+.y-partner-item__logo {
+  margin-bottom: 0.75rem;
+}
+
+.y-partner-item__image {
+  width: 150px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Name */
+.y-partner-item__name {
+  font-size: 0.875rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.y-partner-item__link {
+  color: var(--ylb-color-dark-grey-1, rgb(47, 47, 47));
+  display: block;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.y-partner-item__link:hover {
+  color: var(--wsPrimaryColorDark, #004080);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-partner-item__image {
+    width: 180px;
+    height: 100px;
+  }
+
+  .y-partner-item__name {
+    font-size: 1rem;
+  }
+}
+

@@ -1,0 +1,8 @@
+{
+  "_meta": { "title": "Default -- flexible content with mixed blocks", "description": "Hand-authored." },
+  "title": "About Our Y",
+  "background": "white",
+  "style": "standard",
+  "section": "body",
+  "content": "<h2>Welcome</h2><p>The YMCA of Madison County serves over 30,000 members across 5 branches. Our mission focuses on youth development, healthy living, and social responsibility.</p><h3>Our Values</h3><ul><li>Caring</li><li>Honesty</li><li>Respect</li><li>Responsibility</li></ul><blockquote>The Y is more than a gym - it's a community where everyone belongs.</blockquote>"
+}

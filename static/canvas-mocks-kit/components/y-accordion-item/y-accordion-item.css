@@ -1,0 +1,216 @@
+/* Y Accordion Item Component */
+
+.y-accordion-item {
+  background: #fff;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+/* Header */
+.y-accordion-item__header {
+  margin: 0;
+}
+
+/* Button */
+.y-accordion-item__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+/* Title */
+.y-accordion-item__title {
+  flex: 1;
+  padding-right: 1rem;
+  line-height: 1.4;
+}
+
+/* Icon */
+.y-accordion-item__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.y-accordion-item__chevron {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+
+/* Content */
+.y-accordion-item__content {
+  overflow: hidden;
+}
+
+.y-accordion-item__content[hidden] {
+  display: none;
+}
+
+.y-accordion-item__body {
+  padding: 1.25rem;
+  color: var(--ylb-color-dark-grey-1, rgb(47, 47, 47));
+  display: block;
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.y-accordion-item__body p {
+  margin: 0 0 1rem;
+}
+
+.y-accordion-item__body p:last-child {
+  margin-bottom: 0;
+}
+
+.y-accordion-item__body ul,
+.y-accordion-item__body ol {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.y-accordion-item__body ul:last-child,
+.y-accordion-item__body ol:last-child {
+  margin-bottom: 0;
+}
+
+/* Embedded media */
+.y-accordion-item__body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.y-accordion-item__body .media,
+.y-accordion-item__body figure {
+  margin: 1rem 0;
+  max-width: 100%;
+}
+
+.y-accordion-item__body .media img {
+  display: block;
+  border-radius: var(--wsBorderRadius, 8px);
+}
+
+.y-accordion-item__body figure figcaption {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-accordion-item__button {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .y-accordion-item__body {
+    padding: 1.5rem;
+  }
+}
+
+/* Item */
+.y-accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Header states */
+.y-accordion-item__header {
+  border-radius: 10px;
+  border: 2px solid var(--wsSecondaryColor, #01a490);
+  background: var(--ylb-color-white, #fff);
+}
+
+.y-accordion-item--expanded .y-accordion-item__header,
+.y-accordion-item__header:hover {
+  background: var(--wsPrimaryColor, #006b6b);
+  border-color: var(--wsPrimaryColor, #006b6b);
+}
+
+.y-accordion-item--expanded .y-accordion-item__header .y-accordion-item__button,
+.y-accordion-item__header:hover .y-accordion-item__button {
+  color: var(--ylb-color-white, #fff);
+  border-radius: 10px;
+}
+
+/* Button styling */
+.y-accordion-item__button {
+  text-decoration: underline;
+  color: var(--ylb-color-dark-grey-1, #2F2F2F);
+  text-transform: initial;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--ylb-font-family-verdana, Verdana), sans-serif;
+  position: relative;
+  padding-right: 2em;
+  background-color: unset;
+  box-shadow: unset;
+  border: none;
+}
+
+.y-accordion-item__button:focus {
+  outline: transparent;
+  box-shadow: none;
+  border: unset;
+}
+
+/* Body styling */
+.y-accordion-item__body {
+  color: var(--ylb-color-dark-grey-1, #2F2F2F);
+}
+
+.y-accordion-item__body p {
+  color: #2f2f2f;
+}
+
+.y-accordion-item__body .field-body {
+  overflow: hidden;
+}
+
+/* Chevron — standard: UP when closed, DOWN when open */
+.y-accordion-item__chevron {
+  width: 32px;
+  height: 20px;
+  stroke-width: 3;
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  transform: translateY(-50%) rotate(180deg);
+  transition: transform 0.2s ease;
+  stroke: currentColor;
+}
+
+.y-accordion-item__button[aria-expanded="true"] .y-accordion-item__chevron {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+/* --style-small-y overrides */
+.y-accordion--style-small-y .y-accordion-item__button {
+  text-decoration: none;
+}
+
+/* --style-small-y: DOWN when closed, UP when open */
+.y-accordion--style-small-y .y-accordion-item__chevron {
+  transform: translateY(-50%) rotate(0deg);
+  stroke: #000;
+}
+
+.y-accordion--style-small-y .y-accordion-item__button[aria-expanded="true"] .y-accordion-item__chevron {
+  transform: translateY(-50%) rotate(180deg);
+  stroke: #fff;
+}
+
+.y-accordion--style-small-y .y-accordion-item__header:hover .y-accordion-item__chevron {
+  stroke: #fff;
+}

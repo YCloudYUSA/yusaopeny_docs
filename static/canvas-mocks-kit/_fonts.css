@@ -1,0 +1,40 @@
+/* canvas-mocks-kit public bundle — Cachet → Verdana alias.
+ *
+ * Per ADR-004 + ADR-010: Cachet W05 binaries are NDA-restricted and MUST
+ * NOT ship in any public deploy. The Public deploy ADR (W3/P1) keeps
+ * 'Cachet' as the font-family name in component CSS (ADR-012 byte-for-byte
+ * mirror) while remapping the binary lookup to local('Verdana') so the
+ * canvas-mocks-kit bundle on ds-docs.y.org never serves a Cachet woff/woff2.
+ *
+ * If Verdana is not installed on the viewer's OS, the cascade falls
+ * through to the next item declared in each component's font-family
+ * declaration (typically Geneva / Arial / sans-serif).
+ */
+@font-face {
+  font-family: 'Cachet';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Verdana');
+}
+@font-face {
+  font-family: 'Cachet';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Verdana');
+}
+@font-face {
+  font-family: 'Cachet';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Verdana Bold'), local('Verdana');
+}
+@font-face {
+  font-family: 'Cachet';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Verdana Bold'), local('Verdana');
+}

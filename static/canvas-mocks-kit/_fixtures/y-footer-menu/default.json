@@ -1,0 +1,8 @@
+{
+  "_meta": {
+    "title": "Default — Programs footer menu column with 3 links",
+    "description": "W2/P1 sweep fixture. Chrome slot-child of y-footer. Standalone render via child twig — slot 'items' filled with pre-rendered HTML mirroring 3 y-footer-link children since parent does not iterate JSON arrays for this slot."
+  },
+  "heading": "Programs",
+  "items": "<ul><li><a href=\"/swim\">Swim Lessons</a></li><li><a href=\"/youth\">Youth Sports</a></li><li><a href=\"/wellness\">Wellness Center</a></li></ul>"
+}

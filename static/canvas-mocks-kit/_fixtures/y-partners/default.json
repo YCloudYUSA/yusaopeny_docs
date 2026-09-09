@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "title": "Default — single tier, 4 partners × 4 columns",
+    "description": "Canonical default fixture. Logos sourced from y_lb_demo partner_logo_*."
+  },
+  "title": "Our Partners",
+  "subtitle": "Proud to partner with these organizations.",
+  "show_header": true,
+  "style": "standard",
+  "section": "body",
+  "tiers": [
+    {
+      "title": "",
+      "columns": "4",
+      "size": "medium",
+      "style": "standard",
+      "partners": [
+        { "name": "Acme Corp",        "logo": { "src": "../assets/photos/y_lb_demo/partner_logo_1.jpg", "alt": "Acme Corp" },        "url": "/partners/acme" },
+        { "name": "Beta Industries",  "logo": { "src": "../assets/photos/y_lb_demo/partner_logo_2.png", "alt": "Beta Industries" },  "url": "/partners/beta" },
+        { "name": "Gamma Foundation", "logo": { "src": "../assets/photos/y_lb_demo/partner_logo_3.jpg", "alt": "Gamma Foundation" }, "url": "/partners/gamma" },
+        { "name": "Delta Group",      "logo": { "src": "../assets/photos/y_lb_demo/partner_logo_4.jpg", "alt": "Delta Group" },      "url": "/partners/delta" }
+      ]
+    }
+  ]
+}

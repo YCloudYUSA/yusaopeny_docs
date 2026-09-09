@@ -1,0 +1,118 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Ping Pong Section
+description: Container for alternating ping-pong content blocks
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Section Title
+      description: Main heading for the ping-pong section
+      examples:
+        - 'Our Programs'
+
+    subtitle:
+      type: string
+      title: Section Subtitle
+      description: Supporting text below the heading
+      examples:
+        - 'Discover what we offer for every member of your family'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    background:
+      type: string
+      title: Background
+      description: Background color for child ping-pong items
+      enum:
+        - color
+        - gray
+        - white
+      meta:enum:
+        color: 'Primary Color'
+        gray: 'Gray'
+        white: 'White'
+
+    align:
+      type: string
+      title: Alignment
+      description: Starting image position (left = first item image-left, right = first item image-right)
+      enum:
+        - left
+        - right
+      meta:enum:
+        left: 'Left (starts image-left)'
+        right: 'Right (starts image-right)'
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  items:
+    title: Ping Pong Items
+    description: Alternating image/text content blocks
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Section Title
+      subtitle:
+        label: Section Subtitle
+      items:
+        label: Ping Pong Items
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [items]
+      tablet:
+        - [title]
+        - [subtitle]
+        - [items, items]
+      desktop:
+        - [title]
+        - [subtitle]
+        - [items, items]
+      large_desktop:
+        - [title]
+        - [subtitle]
+        - [items, items]
+
+complexity:
+  level: medium
+  css_lines: 228
+  has_js: false
+  schema_props: 6
+  enum_variants: 9
+  demo_pages: 12
+  has_media: true
+  responsive_breakpoints: 16
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-ping-pong-section

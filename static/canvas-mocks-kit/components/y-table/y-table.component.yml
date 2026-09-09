@@ -1,0 +1,139 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Table
+description: Simple text or table content block with optional header
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Section heading
+      examples:
+        - 'Pricing Plans'
+
+    subtitle:
+      type: string
+      title: Subtitle
+      description: Section subheading
+      examples:
+        - 'Choose the plan that works best for you'
+
+    content:
+      type: string
+      title: Content
+      description: Table or text content (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<table><thead><tr><th>Plan</th><th>Price</th></tr></thead><tbody><tr><td>Basic</td><td>$29</td></tr></tbody></table>'
+
+    striped:
+      type: boolean
+      title: Striped Rows
+      description: Add alternating row colors to tables
+      default: true
+      examples:
+        - true
+
+    bordered:
+      type: boolean
+      title: Bordered
+      description: Add borders to table cells
+      default: false
+      examples:
+        - false
+
+    responsive:
+      type: boolean
+      title: Responsive
+      description: Enable horizontal scrolling on small screens
+      default: true
+      examples:
+        - true
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+    heading_level:
+      type: string
+      title: Heading Level
+      description: Semantic heading level
+      default: h2
+      enum:
+        - h2
+        - h3
+        - h4
+      meta:enum:
+        h2: 'Heading 2'
+        h3: 'Heading 3'
+        h4: 'Heading 4'
+      examples:
+        - h2
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      subtitle:
+        label: Subtitle
+      content:
+        label: Content
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [content]
+      tablet:
+        - [title]
+        - [subtitle]
+        - [content, content]
+      desktop:
+        - [title]
+        - [subtitle]
+        - [content, content]
+      large_desktop:
+        - [title]
+        - [subtitle]
+        - [content, content]
+
+complexity:
+  level: medium
+  css_lines: 195
+  has_js: false
+  schema_props: 10
+  enum_variants: 6
+  demo_pages: 2
+  has_media: false
+  responsive_breakpoints: 2
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-table

@@ -1,0 +1,98 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Testimonial Item
+description: Individual testimonial quote with author information
+status: experimental
+group: Molecules
+
+props:
+  type: object
+  properties:
+    quote:
+      type: string
+      title: Quote
+      description: The testimonial text content
+      examples:
+        - "The Y has transformed our family's health and brought us closer together."
+
+    name:
+      type: string
+      title: Author Name
+      description: Name of the person giving the testimonial
+      examples:
+        - 'Sarah Johnson'
+
+    title:
+      type: string
+      title: Author Title
+      description: Title or description of the author
+      examples:
+        - 'Member since 2018'
+
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Author Photo
+      description: Optional photo of the testimonial author
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/testimonial-avatar.jpg'
+          alt: 'Sarah Johnson'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      image:
+        label: Author Photo
+      quote:
+        label: Quote
+      name:
+        label: Author Name
+      title:
+        label: Author Title
+    icon_map:
+      mobile:
+        - [image]
+        - [quote]
+        - [name]
+        - [title]
+      tablet:
+        - [image, quote]
+        - [image, name]
+        - [image, title]
+      desktop:
+        - [image, quote]
+        - [image, name]
+        - [image, title]
+      large_desktop:
+        - [image, quote]
+        - [image, name]
+        - [image, title]
+
+complexity:
+  level: medium
+  css_lines: 157
+  has_js: false
+  schema_props: 6
+  enum_variants: 2
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 5
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-testimonial-item

@@ -1,0 +1,97 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Flexible Content
+description: Flexible content container for mixed content blocks
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Section heading for the content area
+      examples:
+        - 'More Information'
+
+    background:
+      type: string
+      title: Background Color
+      description: Background color variant for the section
+      default: 'white'
+      enum:
+        - 'white'
+        - 'gray'
+        - 'primary'
+      meta:enum:
+        white: 'White'
+        gray: 'Light Gray'
+        primary: 'Primary Color'
+      examples:
+        - 'white'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  content:
+    title: Content Blocks
+    description: Mixed content blocks to display
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      content:
+        label: Content Blocks
+    icon_map:
+      mobile:
+        - [title]
+        - [content]
+      tablet:
+        - [title]
+        - [content, content]
+      desktop:
+        - [title]
+        - [content, content]
+      large_desktop:
+        - [title]
+        - [content, content]
+
+complexity:
+  level: simple
+  css_lines: 78
+  has_js: false
+  schema_props: 5
+  enum_variants: 6
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 2
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-flexible-content

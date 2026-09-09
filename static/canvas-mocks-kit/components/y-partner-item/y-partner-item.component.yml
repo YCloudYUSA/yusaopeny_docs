@@ -1,0 +1,94 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Partner Item
+description: Individual partner logo with optional link
+status: experimental
+group: Molecules
+
+props:
+  type: object
+  properties:
+    name:
+      type: string
+      title: Partner Name
+      description: Name of the partner organization
+      examples:
+        - 'Community Foundation'
+
+    logo:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Partner Logo
+      description: Logo image for the partner
+      examples:
+        - src: '/themes/custom/y_canvas/assets/images/demo/partner-logo.jpg'
+          alt: 'Community Foundation logo'
+
+    url:
+      type: string
+      title: Partner URL
+      description: Link to the partner website
+      examples:
+        - 'https://communityfoundation.org'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      logo:
+        label: Partner Logo
+      name:
+        label: Partner Name
+    icon_map:
+      mobile:
+        - [logo]
+        - [name]
+      tablet:
+        - [logo]
+        - [name]
+      desktop:
+        - [logo]
+        - [name]
+      large_desktop:
+        - [logo]
+        - [name]
+
+complexity:
+  level: simple
+  css_lines: 59
+  has_js: false
+  schema_props: 6
+  enum_variants: 4
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-partner-item

@@ -1,0 +1,60 @@
+{#
+/**
+ * Y Featured Highlights component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section subheading
+ * - image: (object) Featured image
+ * - description: (string) Description text
+ * - cta_text: (string) CTA button text
+ * - cta_url: (string) CTA button URL
+ * - highlights: (slot) Highlight items
+ */
+#}
+
+{% set classes = [
+  'y-featured-highlights',
+  'y-featured-highlights--image-left',
+  style|default('standard') != 'standard' ? 'y-featured-highlights--style-' ~ style,
+  section|default('body') != 'body' ? 'y-featured-highlights--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-featured-highlights">
+  <div class="y-featured-highlights__container">
+    {% if image %}
+      <div class="y-featured-highlights__media">
+        <img
+          src="{{ image.src }}"
+          alt="{{ image.alt|default('') }}"
+          class="y-featured-highlights__image"
+          {% if image.width %}width="{{ image.width }}"{% endif %}
+          {% if image.height %}height="{{ image.height }}"{% endif %}
+          loading="lazy"
+        />
+      </div>
+    {% endif %}
+
+    <div class="y-featured-highlights__content">
+      {% if title %}
+        <h2 class="y-featured-highlights__title">{{ title }}</h2>
+      {% endif %}
+      {% if subtitle %}
+        <p class="y-featured-highlights__subtitle">{{ subtitle }}</p>
+      {% endif %}
+      {% if description %}
+        <div class="y-featured-highlights__description">{{ description|raw }}</div>
+      {% endif %}
+
+      {% if highlights %}
+        <div class="y-featured-highlights__items">
+          {{ highlights }}
+        </div>
+      {% endif %}
+
+      {% if cta_text and cta_url %}
+        <a href="{{ cta_url }}" class="y-featured-highlights__cta">{{ cta_text }}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>

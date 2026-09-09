@@ -1,0 +1,48 @@
+/**
+ * Y Canvas theme global styles
+ */
+
+/* CSS Custom Properties for YMCA colors */
+:root {
+  --y-font-family: 'Cachet', Verdana, sans-serif;
+  --y-primary: #0060af;
+  --y-secondary: #0a2240;
+  --y-accent: #ed1c24;
+  --y-light: #f5f5f5;
+  --y-dark: #333333;
+
+  /* Small Y design tokens (kebab-case) */
+  --ws-border-radius: 10px;
+  --ws-primary-color: #01a490;
+  --ws-secondary-color: #006b6b;
+  --ws-partner-color: #004080;
+  --ws-font-family-heading: Verdana, Geneva, sans-serif;
+  --ws-color-white: #ffffff;
+  --ws-color-grey: #636466;
+  --ws-color-dark-grey: #2f2f2f;
+  --ws-color-light-grey: #f2f2f2;
+  --ws-color-green-dark: #006b6b;
+
+  /* Small Y (Carnation) camelCase variables used by SDC components */
+  --wsPrimaryColor: #006b6b;
+  --wsSecondaryColor: #01a490;
+  --wsTertiaryColor: #20bdbe;
+  --wsPartnerColor: #0060af;
+  --wsBorderRadius: 10px;
+  --ylb-color-white: #ffffff;
+  --ylb-color-dark-grey-1: #2f2f2f;
+  --ylb-color-light-grey-1: #f2f2f2;
+  --ylb-font-family-cachet: 'Cachet', Verdana, sans-serif;
+  --ylb-font-family-verdana: Verdana, sans-serif;
+  --smally-hero-gradient: linear-gradient(118.46deg, #01a490 28.72%, #006b6b 96.61%);
+  --small-y-colored-chevron-dark: #0fa895;
+  --small-y-colored-chevron: #5bbbbc;
+  --small-y-gray-chevron: #e0e0e0;
+  --small-y-gray-chevron-dark: #c5c5c5;
+}
+
+body {
+  margin: 0;
+  font-family: var(--y-font-family);
+  overflow-x: hidden;
+}

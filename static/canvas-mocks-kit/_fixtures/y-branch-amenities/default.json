@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "title": "Default — 6 open + 3 closed amenities",
+    "description": "Upstream schema declares `amenities[]` (objects) but twig reads `amenities_open[]` + `amenities_closed[]` (string arrays). Following twig (rendering source). Tracked in coverage-gaps.md."
+  },
+  "title": "Branch Amenities",
+  "subtitle": "Members have full access to all facilities at the YMCA of Downtown Springfield.",
+  "image": { "src": "../assets/photos/y_lb_demo/location_individual_page_image_1.jpeg", "alt": "Branch facilities" },
+  "show_status": true,
+  "open_label": "Open",
+  "closed_label": "Closed",
+  "columns": 4,
+  "style": "standard",
+  "section": "body",
+  "amenities_open": [
+    "Swimming Pool",
+    "Fitness Center",
+    "Group Fitness Studios",
+    "Basketball Court",
+    "Childcare",
+    "Free Wi-Fi"
+  ],
+  "amenities_closed": [
+    "Sauna",
+    "Steam Room",
+    "Outdoor Track"
+  ]
+}

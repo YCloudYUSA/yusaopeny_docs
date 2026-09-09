@@ -1,0 +1,7 @@
+{
+  "_meta": { "title": "Default — site logo" },
+  "image": { "src": "../svg/y-logo.svg", "alt": "YMCA logo", "width": 93, "height": 70 },
+  "alt": "YMCA of Madison County",
+  "url": "/",
+  "site_name": "YMCA of Madison County"
+}

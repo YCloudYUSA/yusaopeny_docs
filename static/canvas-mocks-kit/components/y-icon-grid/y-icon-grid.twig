@@ -1,0 +1,62 @@
+{#
+/**
+ * Y Icon Grid component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section subheading
+ * - cta_text: (string) Section button text
+ * - cta_url: (string) Section button URL
+ * - columns: (string) Number of columns (2, 3, 4, 6)
+ * - heading_level: (string) h2, h3, h4
+ *
+ * Slots:
+ * - items: Icon grid item components
+ */
+#}
+
+{% set heading_level = heading_level|default('h2') %}
+{% set columns = columns|default('4') %}
+
+{% set classes = [
+  'y-icon-grid',
+  'y-icon-grid--cols-' ~ columns,
+  style|default('standard') != 'standard' ? 'y-icon-grid--style-' ~ style,
+  section|default('body') != 'body' ? 'y-icon-grid--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-icon-grid">
+  <div class="y-icon-grid__container">
+    {% if title or subtitle %}
+      <div class="y-icon-grid__header">
+        {% if title %}
+          {% if heading_level == 'h2' %}
+            <h2 class="y-icon-grid__title">{{ title }}</h2>
+          {% elseif heading_level == 'h3' %}
+            <h3 class="y-icon-grid__title">{{ title }}</h3>
+          {% elseif heading_level == 'h4' %}
+            <h4 class="y-icon-grid__title">{{ title }}</h4>
+          {% else %}
+            <h2 class="y-icon-grid__title">{{ title }}</h2>
+          {% endif %}
+        {% endif %}
+
+        {% if subtitle %}
+          <p class="y-icon-grid__subtitle">{{ subtitle|raw }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="y-icon-grid__grid">
+      {{ items }}
+    </div>
+
+    {% if cta_text and cta_url %}
+      <div class="y-icon-grid__footer">
+        <a href="{{ cta_url }}" class="y-icon-grid__button">
+          {{ cta_text }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</section>

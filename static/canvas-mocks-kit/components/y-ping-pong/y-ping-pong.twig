@@ -1,0 +1,68 @@
+{#
+/**
+ * Y Ping Pong component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - description: (string) Body content (HTML)
+ * - image: (object) Featured image
+ * - cta_text: (string) Button text
+ * - cta_url: (string) Button URL
+ * - image_position: (string) left or right
+ * - background: (string) white, gray, or primary
+ * - heading_level: (string) h2, h3, h4
+ */
+#}
+
+{% set heading_level = heading_level|default('h2') %}
+{% set image_position = image_position|default('left') %}
+{% set offset_variation = offset_variation|default('equal_column') %}
+{% set background = background|default('white') %}
+
+{% set classes = [
+  'y-ping-pong',
+  'y-ping-pong--image-' ~ image_position,
+  'y-ping-pong--' ~ offset_variation,
+  'y-ping-pong--bg-' ~ background,
+  style|default('standard') != 'standard' ? 'y-ping-pong--style-' ~ style,
+  section|default('body') != 'body' ? 'y-ping-pong--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-ping-pong">
+  <div class="y-ping-pong__container">
+    {% if image.src %}
+      <div class="y-ping-pong__media">
+        <img
+          src="{{ image.src }}"
+          alt="{{ image.alt|default('') }}"
+          class="y-ping-pong__image"
+          loading="lazy"
+          {% if image.width %}width="{{ image.width }}"{% endif %}
+          {% if image.height %}height="{{ image.height }}"{% endif %}
+        />
+      </div>
+    {% endif %}
+
+    <div class="y-ping-pong__content">
+      {% if title %}
+        <{{ heading_level }} class="y-ping-pong__title">
+          {{ title }}
+        </{{ heading_level }}>
+      {% endif %}
+
+      {% if description %}
+        <div class="y-ping-pong__description">
+          {{ description|raw }}
+        </div>
+      {% endif %}
+
+      {% if cta_text and cta_url %}
+        <div class="y-ping-pong__cta">
+          <a href="{{ cta_url }}" class="y-ping-pong__button">
+            {{ cta_text }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

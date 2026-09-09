@@ -1,0 +1,79 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Footer
+description: Site footer organism with logo, navigation menus, social links, and copyright
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    copyright:
+      type: string
+      title: Copyright Text
+      examples:
+        - '© 2024 YMCA. All rights reserved.'
+    back_to_top:
+      type: boolean
+      title: Show Back to Top Button
+      default: true
+      examples:
+        - true
+
+slots:
+  logo:
+    title: Footer Logo
+    description: Footer logo with site name and tagline
+    allowedComponents:
+      - sdc.y_canvas.y-footer-logo
+  menus:
+    title: Footer Menus
+    description: Navigation menu columns
+    allowedComponents:
+      - sdc.y_canvas.y-footer-menu
+  social:
+    title: Social Media Links
+    description: Social media icon links
+    allowedComponents:
+      - sdc.y_canvas.y-footer-social-link
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of footer areas
+    regions:
+      logo:
+        label: Logo
+      menus:
+        label: Navigation Menus
+      social:
+        label: Social Links
+      bottom_links:
+        label: Bottom Links
+    icon_map:
+      mobile:
+        - [logo]
+        - [menus]
+        - [social]
+        - [bottom_links]
+      tablet:
+        - [logo, menus, menus]
+        - [bottom_links, bottom_links, social]
+      desktop:
+        - [logo, menus, menus, menus]
+        - [bottom_links, bottom_links, social, social]
+      large_desktop:
+        - [logo, menus, menus, menus]
+        - [bottom_links, bottom_links, social, social]
+
+complexity:
+  level: medium
+  css_lines: 177
+  has_js: false
+  schema_props: 3
+  enum_variants: 0
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-footer

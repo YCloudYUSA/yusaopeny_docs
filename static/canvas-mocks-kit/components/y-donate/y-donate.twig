@@ -1,0 +1,50 @@
+{#
+/**
+ * Y Donate component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section description
+ * - image: (object) Background image
+ * - background: (string) Background style
+ * - items: (slot) Donation options
+ */
+#}
+
+{% set bg = background|default('light') %}
+{% set classes = [
+  'y-donate',
+  'y-donate--bg-' ~ bg,
+  image.src ? 'y-donate--has-image' : '',
+  style|default('standard') != 'standard' ? 'y-donate--style-' ~ style,
+  section|default('body') != 'body' ? 'y-donate--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-donate"
+  {% if image.src %}style="--donate-bg-image: url('{{ image.src }}')"{% endif %}
+>
+  <div class="y-donate__inner">
+    {% if image.src %}
+      <div class="image" style="background-image: var(--donate-bg-image)"></div>
+    {% endif %}
+
+    <div class="y-donate__container">
+      <div class="y-donate__content">
+        {% if title %}
+          <h2 class="y-donate__title">{{ title }}</h2>
+        {% endif %}
+        {% if subtitle %}
+          <p class="y-donate__subtitle">{{ subtitle }}</p>
+        {% endif %}
+
+        <div class="y-donate__options">
+          {{ items }}
+        </div>
+
+        {% if cta_text and cta_url %}
+          <a href="{{ cta_url }}" class="y-donate__cta">{{ cta_text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+{#
+/**
+ * Y Menu Block component.
+ *
+ * Variables:
+ * - title: (string) Block heading
+ * - menu_name: (string) Machine name of menu
+ * - depth: (integer) Menu depth level
+ * - display_style: (string) Display variant
+ * - menu: (slot) Menu items
+ */
+#}
+
+{% set classes = [
+  'y-menu-block',
+  display_style ? 'y-menu-block--' ~ display_style : 'y-menu-block--vertical',
+  style|default('standard') != 'standard' ? 'y-menu-block--style-' ~ style,
+  section|default('body') != 'body' ? 'y-menu-block--section-' ~ section,
+] %}
+
+<nav class="{{ classes|join(' ') }}" data-component="y-menu-block" aria-label="{{ title|default('Navigation') }}">
+  {% if title %}
+    <h3 class="y-menu-block__title">{{ title }}</h3>
+  {% endif %}
+  <div class="y-menu-block__menu">
+    {{ menu }}
+  </div>
+</nav>

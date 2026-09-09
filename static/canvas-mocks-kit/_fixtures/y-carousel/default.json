@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "title": "Default — 3 carousel slides",
+    "description": "Canonical default fixture matching y-carousel.component.yml schema defaults. Real demo content lives in y-lb-demo-mapping page. Photos sourced from y_lb_demo carousel_image_*.jpeg."
+  },
+  "title": "Explore Our Facilities",
+  "subtitle": "Take a virtual tour through our branches and amenities.",
+  "autoplay": true,
+  "autoplay_delay": 5000,
+  "show_navigation": true,
+  "show_pagination": true,
+  "loop": true,
+  "style": "standard",
+  "effect": "slide",
+  "section": "body",
+  "slides": [
+    {
+      "title": "Aquatic Center",
+      "description": "<p>State-of-the-art pools and water features for swim lessons and recreation.</p>",
+      "image": { "src": "../assets/photos/y_lb_demo/carousel_image_1.jpeg", "alt": "Aquatic center", "width": 1200, "height": 400 },
+      "cta_text": "Learn More",
+      "cta_url": "/aquatic-center"
+    },
+    {
+      "title": "Fitness Floor",
+      "description": "<p>Modern equipment and group fitness studios.</p>",
+      "image": { "src": "../assets/photos/y_lb_demo/carousel_image_3.jpeg", "alt": "Fitness floor", "width": 1200, "height": 400 },
+      "cta_text": "Learn More",
+      "cta_url": "/fitness"
+    },
+    {
+      "title": "Youth Center",
+      "description": "<p>Safe spaces for kids to learn, play, and grow.</p>",
+      "image": { "src": "../assets/photos/y_lb_demo/carousel_image_5.jpeg", "alt": "Youth center", "width": 1200, "height": 400 },
+      "cta_text": "Learn More",
+      "cta_url": "/youth"
+    }
+  ]
+}

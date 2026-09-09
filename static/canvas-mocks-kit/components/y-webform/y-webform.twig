@@ -1,0 +1,39 @@
+{#
+/**
+ * Y Webform component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - description: (string) Description text
+ * - webform_id: (string) Webform machine name
+ * - background: (string) Background style (white, light, primary)
+ * - form: (slot) Rendered form content
+ */
+#}
+
+{% set bg = background|default('white') %}
+{% set classes = [
+  'y-webform',
+  'y-webform--bg-' ~ bg,
+  style|default('standard') != 'standard' ? 'y-webform--style-' ~ style,
+  section|default('body') != 'body' ? 'y-webform--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-webform">
+  <div class="y-webform__container">
+    {% if title or description %}
+      <div class="y-webform__header">
+        {% if title %}
+          <h2 class="y-webform__title">{{ title }}</h2>
+        {% endif %}
+        {% if description %}
+          <p class="y-webform__description">{{ description }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="y-webform__content">
+      {{ form }}
+    </div>
+  </div>
+</section>

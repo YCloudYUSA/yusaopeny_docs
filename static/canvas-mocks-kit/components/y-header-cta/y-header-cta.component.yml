@@ -1,0 +1,85 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Header CTA
+description: Header call-to-action buttons (donate, join)
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    primary_text:
+      type: string
+      title: Primary Button Text
+      description: Primary CTA button label
+      examples:
+        - 'Donate'
+
+    primary_url:
+      type: string
+      title: Primary Button URL
+      description: Primary CTA button link
+      examples:
+        - '/donate'
+
+    primary_style:
+      type: string
+      title: Primary Button Style
+      description: Visual style of the primary button
+      default: filled
+      enum:
+        - filled
+        - outlined
+      meta:enum:
+        filled: 'Filled (solid background)'
+        outlined: 'Outlined (border only)'
+      examples:
+        - filled
+
+    secondary_text:
+      type: string
+      title: Secondary Button Text
+      description: Secondary CTA button label
+      examples:
+        - 'Join'
+
+    secondary_url:
+      type: string
+      title: Secondary Button URL
+      description: Secondary CTA button link
+      examples:
+        - '/membership'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of CTA areas
+    regions:
+      primary:
+        label: Primary Button
+      secondary:
+        label: Secondary Button
+    icon_map:
+      mobile:
+        - [primary]
+        - [secondary]
+      tablet:
+        - [primary, secondary]
+      desktop:
+        - [primary, secondary]
+      large_desktop:
+        - [primary, secondary]
+
+complexity:
+  level: simple
+  css_lines: 66
+  has_js: false
+  schema_props: 6
+  enum_variants: 2
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 2
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-header-cta

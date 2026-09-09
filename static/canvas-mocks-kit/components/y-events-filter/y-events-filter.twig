@@ -1,0 +1,74 @@
+{#
+/**
+ * Y Events Filter component.
+ *
+ * Variables:
+ * - categories: (array) Category filter options
+ * - locations: (array) Location filter options
+ * - show_date_filter: (boolean) Show date filter
+ * - date_start: (string) Selected start date
+ * - date_end: (string) Selected end date
+ */
+#}
+
+{% set classes = [
+  'y-events-filter',
+  style|default('standard') != 'standard' ? 'y-events-filter--style-' ~ style,
+  section|default('body') != 'body' ? 'y-events-filter--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-events-filter">
+  <div class="y-events-filter__container">
+    {% if categories %}
+      <div class="y-events-filter__group">
+        <label class="y-events-filter__label">{{ 'Category'|t }}</label>
+        <div class="y-events-filter__categories">
+          {% for category in categories %}
+            <button
+              type="button"
+              class="y-events-filter__category {{ category.active ? 'y-events-filter__category--active' : '' }}"
+              data-category="{{ category.id }}"
+            >
+              {{ category.label }}
+            </button>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if show_date_filter|default(true) %}
+      <div class="y-events-filter__group">
+        <label class="y-events-filter__label">{{ 'Date Range'|t }}</label>
+        <div class="y-events-filter__dates">
+          <input
+            type="date"
+            class="y-events-filter__date-input"
+            value="{{ date_start }}"
+            aria-label="{{ 'Start date'|t }}"
+          />
+          <span class="y-events-filter__date-separator">{{ 'to'|t }}</span>
+          <input
+            type="date"
+            class="y-events-filter__date-input"
+            value="{{ date_end }}"
+            aria-label="{{ 'End date'|t }}"
+          />
+        </div>
+      </div>
+    {% endif %}
+
+    {% if locations %}
+      <div class="y-events-filter__group">
+        <label for="location-filter" class="y-events-filter__label">{{ 'Location'|t }}</label>
+        <select id="location-filter" class="y-events-filter__select">
+          <option value="">{{ 'All Locations'|t }}</option>
+          {% for location in locations %}
+            <option value="{{ location.id }}">{{ location.label }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    {% endif %}
+
+    <button type="button" class="y-events-filter__clear">{{ 'Clear Filters'|t }}</button>
+  </div>
+</div>

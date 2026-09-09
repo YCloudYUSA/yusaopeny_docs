@@ -1,0 +1,23 @@
+{#
+/**
+ * Y Utility Link — utility navigation item with optional icon.
+ *
+ * Variables:
+ * - title: (string) Link display text
+ * - url: (string) Link destination
+ * - icon: (string) Icon identifier
+ */
+#}
+
+{% set title = title|default('') %}
+{% set url = url|default('#') %}
+{% set icon = icon|default('none') %}
+
+<li class="y-utility-nav__item">
+  <a href="{{ url }}" class="y-utility-nav__link">
+    {% if icon != 'none' %}
+      <span class="y-utility-nav__icon" aria-hidden="true" data-icon="{{ icon }}"></span>
+    {% endif %}
+    <span class="y-utility-nav__text">{{ title }}</span>
+  </a>
+</li>

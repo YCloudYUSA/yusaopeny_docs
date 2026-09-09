@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "title": "Default — 4 staff cards × 4 columns",
+    "description": "Hand-authored fixture (no y_lb_demo coverage). Photos sourced from y_lb_demo article/jobs imagery for variety."
+  },
+  "title": "Meet Our Team",
+  "subtitle": "Dedicated staff committed to your wellness and community.",
+  "style": "standard",
+  "columns": "4",
+  "section": "body",
+  "members": [
+    { "name": "Sarah Johnson",  "title": "Executive Director",   "image": { "src": "../assets/photos/y_lb_demo/jobs_page_image_1.jpeg", "alt": "Sarah Johnson" },   "email": "sarah@example.org",   "phone": "555-0101" },
+    { "name": "Michael Chen",   "title": "Aquatics Director",    "image": { "src": "../assets/photos/y_lb_demo/jobs_page_image_3.jpeg", "alt": "Michael Chen" },    "email": "michael@example.org", "phone": "555-0102" },
+    { "name": "Aisha Williams", "title": "Wellness Coordinator", "image": { "src": "../assets/photos/y_lb_demo/jobs_page_image_5.jpeg", "alt": "Aisha Williams" },  "email": "aisha@example.org",   "phone": "555-0103" },
+    { "name": "Carlos Rivera",  "title": "Youth Programs Lead",  "image": { "src": "../assets/photos/y_lb_demo/jobs_page_image_7.jpeg", "alt": "Carlos Rivera" },   "email": "carlos@example.org",  "phone": "555-0104" }
+  ]
+}

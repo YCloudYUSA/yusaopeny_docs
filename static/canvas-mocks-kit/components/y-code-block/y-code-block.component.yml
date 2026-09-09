@@ -1,0 +1,104 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Code Block
+description: Custom code/script embed block for third-party integrations
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Optional heading above the embedded content
+      examples:
+        - 'Video Player'
+
+    code:
+      type: string
+      title: Code Content
+      description: HTML, JavaScript, or embed code to render
+      contentMediaType: text/html
+      examples:
+        - '<iframe src="https://www.youtube.com/embed/..." frameborder="0"></iframe>'
+
+    language:
+      type: string
+      title: Language
+      description: Type of code being embedded
+      default: 'html'
+      enum:
+        - 'html'
+        - 'javascript'
+        - 'css'
+        - 'embed'
+      meta:enum:
+        html: 'HTML'
+        javascript: 'JavaScript'
+        css: 'CSS'
+        embed: 'Embed Code'
+      examples:
+        - 'embed'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      code:
+        label: Code Content
+    icon_map:
+      mobile:
+        - [title]
+        - [code]
+      tablet:
+        - [title]
+        - [code, code]
+      desktop:
+        - [title]
+        - [code, code]
+      large_desktop:
+        - [title]
+        - [code, code]
+
+complexity:
+  level: simple
+  css_lines: 52
+  has_js: false
+  schema_props: 6
+  enum_variants: 6
+  demo_pages: 2
+  has_media: false
+  responsive_breakpoints: 0
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-code-block

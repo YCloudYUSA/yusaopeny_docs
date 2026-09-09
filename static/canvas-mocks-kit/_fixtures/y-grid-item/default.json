@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "title": "Default — single grid-cta item (Join the Y sample)",
+    "description": "W2/P1 sweep fixture. Single y-grid-item rendered inside a 1-item y-grid-cta parent shell. Mirrors y-grid-cta default.json items[0]."
+  },
+  "title": "Join the Y",
+  "description": "<p>Become a member with full access.</p>",
+  "image": {
+    "src": "../assets/photos/y_lb_demo/membership_page_image_1.jpeg",
+    "alt": "Join the Y"
+  },
+  "cta_text": "Sign Up",
+  "cta_url": "/membership",
+  "heading_level": "h3",
+  "section": "body"
+}

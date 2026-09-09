@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "title": "Default — promo card",
+    "description": "Hand-authored fixture (no y_lb_demo coverage)."
+  },
+  "title": "Join Today",
+  "description": "<p>Become a member and unlock access to all branches, classes, and programs.</p>",
+  "image": {
+    "src": "../assets/photos/y_lb_demo/promo_image_1.jpeg",
+    "alt": "Join the YMCA",
+    "width": 800,
+    "height": 600
+  },
+  "cta_text": "Sign Up",
+  "cta_url": "/membership",
+  "image_style": "standard",
+  "background": "white",
+  "heading_level": "h2",
+  "style": "standard",
+  "section": "body"
+}

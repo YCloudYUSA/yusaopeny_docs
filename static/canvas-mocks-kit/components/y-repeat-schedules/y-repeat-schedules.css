@@ -1,0 +1,42 @@
+/* Y Repeat Schedules Component */
+
+.y-repeat-schedules {
+  padding: 2rem 1rem;
+}
+
+.y-repeat-schedules__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.y-repeat-schedules__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0 0 1.5rem;
+  font-family: var(--ws-font-family-heading);
+}
+
+.y-repeat-schedules__app {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-height: 300px;
+  padding: 1.5rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-repeat-schedules {
+    padding: 3rem 2rem;
+  }
+
+  .y-repeat-schedules__title {
+    font-size: 1.75rem;
+  }
+
+  .y-repeat-schedules__app {
+    padding: 2rem;
+  }
+}
+

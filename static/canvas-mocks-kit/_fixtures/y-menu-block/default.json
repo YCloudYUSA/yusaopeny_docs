@@ -1,0 +1,6 @@
+{
+  "_meta": { "title": "Default — sidebar menu block" },
+  "title": "Member Resources", "menu_name": "member-resources", "depth": 2,
+  "display_style": "vertical", "style": "standard", "section": "body",
+  "items": "<ul style='list-style:none;padding:0;margin:0'><li><a href='/login'>Log In</a></li><li><a href='/schedules'>Class Schedules</a></li><li><a href='/reserve'>Reserve a Class</a></li><li><a href='/training'>Personal Training</a></li><li><a href='/cancel'>Cancel Membership</a></li></ul>"
+}

@@ -1,0 +1,105 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Tab Item
+description: Single tab with title and content panel
+status: experimental
+group: Molecules
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Tab Title
+      description: Tab button label
+      examples:
+        - 'Individual'
+
+    content:
+      type: string
+      title: Content
+      description: Tab panel content (HTML allowed)
+      contentMediaType: text/html
+      examples:
+        - '<p>Individual membership information.</p>'
+
+    tab_id:
+      type: string
+      title: Tab ID
+      description: Unique identifier for this tab
+      examples:
+        - 'individual-tab'
+
+    active:
+      type: boolean
+      title: Active
+      description: Whether this tab is initially active
+      default: false
+      examples:
+        - false
+
+    heading_level:
+      type: string
+      title: Content Heading Level
+      description: Heading level for content title
+      default: h3
+      enum:
+        - h3
+        - h4
+        - h5
+      meta:enum:
+        h3: 'Heading 3'
+        h4: 'Heading 4'
+        h5: 'Heading 5'
+      examples:
+        - h3
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Tab Title
+      content:
+        label: Content
+    icon_map:
+      mobile:
+        - [title]
+        - [content]
+      tablet:
+        - [title]
+        - [content, content]
+      desktop:
+        - [title]
+        - [content, content]
+      large_desktop:
+        - [title]
+        - [content, content]
+
+complexity:
+  level: simple
+  css_lines: 87
+  has_js: false
+  schema_props: 7
+  enum_variants: 4
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-tab-item

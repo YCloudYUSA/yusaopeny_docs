@@ -1,0 +1,14 @@
+{
+  "_meta": {
+    "title": "Default — webform placeholder",
+    "description": "y-webform.twig delegates form rendering to Drupal's webform module via webform_id slot. In mocks, slot is filled with placeholder HTML markup."
+  },
+  "title": "Try the Y",
+  "description": "Fill out the form below to get your complimentary one-time guest pass.",
+  "webform_id": "try_the_y",
+  "background": "white",
+  "display_style": "standard",
+  "style": "standard",
+  "section": "body",
+  "form": "<form><div style='margin-bottom:1rem'><label for='f-name'>Name</label><input id='f-name' type='text' placeholder='Jane Doe'></div><div style='margin-bottom:1rem'><label for='f-email'>Email</label><input id='f-email' type='email' placeholder='jane@example.org'></div><div style='margin-bottom:1rem'><label for='f-phone'>Phone</label><input id='f-phone' type='tel' placeholder='555-0100'></div><button type='submit'>Submit</button><p style='font-size:.875rem;color:#666;margin-top:1rem'>Placeholder form — production renders Drupal webform via webform_id.</p></form>"
+}

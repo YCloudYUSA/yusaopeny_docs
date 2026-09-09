@@ -1,0 +1,58 @@
+{#
+/**
+ * Y Icon Grid Item component.
+ *
+ * Variables:
+ * - title: (string) Item heading
+ * - description: (string) Item description (HTML)
+ * - icon: (object) Icon image
+ * - cta_url: (string) Optional link URL
+ * - heading_level: (string) h3, h4, h5
+ */
+#}
+
+{% set heading_level = heading_level|default('h4') %}
+
+{% set classes = [
+  'y-icon-grid-item',
+  section|default('body') != 'body' ? 'y-icon-grid-item--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-icon-grid-item">
+  {% if icon.src %}
+    <div class="y-icon-grid-item__icon">
+      {% if cta_url %}
+        <a href="{{ cta_url }}" class="y-icon-grid-item__icon-link">
+      {% endif %}
+        <img
+          src="{{ icon.src }}"
+          alt="{{ icon.alt|default('') }}"
+          class="y-icon-grid-item__icon-image"
+          loading="lazy"
+          {% if icon.width %}width="{{ icon.width }}"{% endif %}
+          {% if icon.height %}height="{{ icon.height }}"{% endif %}
+        />
+      {% if cta_url %}
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if title %}
+    <{{ heading_level }} class="y-icon-grid-item__title">
+      {% if cta_url %}
+        <a href="{{ cta_url }}" class="y-icon-grid-item__title-link">
+          {{ title }}
+        </a>
+      {% else %}
+        {{ title }}
+      {% endif %}
+    </{{ heading_level }}>
+  {% endif %}
+
+  {% if description %}
+    <div class="y-icon-grid-item__description">
+      {{ description|raw }}
+    </div>
+  {% endif %}
+</div>

@@ -1,0 +1,61 @@
+{#
+/**
+ * Y Search Results component.
+ *
+ * Variables:
+ * - query: (string) Search query
+ * - results_count: (number) Total results
+ * - results: (array) Search results
+ * - show_filters: (boolean) Show filter options
+ * - current_page: (number) Current page
+ * - total_pages: (number) Total pages
+ */
+#}
+
+{% set classes = [
+  'y-search-results',
+  style|default('standard') != 'standard' ? 'y-search-results--style-' ~ style,
+  section|default('body') != 'body' ? 'y-search-results--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-search-results">
+  <div class="y-search-results__container">
+    <div class="y-search-results__header">
+      <h2 class="y-search-results__title">{{ title|default('Search results'|t) }}</h2>
+      {% if results_count is defined %}
+        <p class="y-search-results__count">{{ '@count results found'|t({'@count': results_count}) }}</p>
+      {% endif %}
+    </div>
+
+    {% if results %}
+      <div class="y-search-results__list">
+        {% for result in results %}
+          <article class="y-search-results__item">
+            {% if result.type %}
+              <span class="y-search-results__type">{{ result.type }}</span>
+            {% endif %}
+            <h3 class="y-search-results__item-title">
+              <a href="{{ result.url }}">{{ result.title }}</a>
+            </h3>
+            {% if result.excerpt %}
+              <p class="y-search-results__excerpt">{{ result.excerpt }}</p>
+            {% endif %}
+            {% if result.date %}
+              <time class="y-search-results__date">{{ result.date }}</time>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+
+      {% if total_pages > 1 and current_page < total_pages %}
+        <div class="y-search-results__pagination">
+          <button type="button" class="y-search-results__page-btn">{{ 'Load More'|t }}</button>
+        </div>
+      {% endif %}
+    {% else %}
+      <div class="y-search-results__empty">
+        <p>{{ 'No results found. Try a different search term.'|t }}</p>
+      </div>
+    {% endif %}
+  </div>
+</section>

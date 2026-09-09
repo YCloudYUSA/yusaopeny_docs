@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>y-staff-members · small-y</title>
+<link rel="stylesheet" href="../_fonts.css">
+<link rel="stylesheet" href="../assets/y_canvas/css/y-canvas.css">
+<link rel="stylesheet" href="../components/y-staff-members/y-staff-members.css">
+<link rel="stylesheet" href="../components/y-staff-member-item/y-staff-member-item.css">
+<link rel="stylesheet" href="../_sdc-overrides.css">
+<script src="../components/y-staff-member-item/y-staff-member-item.js" defer></script>
+<style>
+  /* Frame baseline — fonts/tokens come from y-canvas.css above (theme SoT).
+   * Per-SDC fonts (Cachet vs Verdana per ws_small_y rules) opt-in via
+   * --ylb-font-family-cachet / --ylb-font-family-verdana token references
+   * inside each component's CSS. Frame imposes nothing extra. */
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: transparent; }
+  body > [data-component] { overflow: hidden; }
+
+  /* Chrome SDC placeholder (F-8) — visually distinct from broken render */
+  .__chrome-placeholder { display: flex; align-items: center; justify-content: center; min-height: 320px; padding: 32px 16px; background: repeating-linear-gradient(45deg, #f5f7fb, #f5f7fb 10px, #ecf0f7 10px, #ecf0f7 20px); }
+  .__chrome-placeholder__inner { max-width: 520px; padding: 28px 32px; background: #fff; border: 1px solid #d6dde8; border-radius: 10px; box-shadow: 0 4px 16px rgba(15, 23, 42, .06); font: 14px/1.55 system-ui, -apple-system, sans-serif; color: #1f2937; }
+  .__chrome-placeholder__badge { display: inline-block; padding: 3px 8px; background: #fef3c7; color: #92400e; font: 600 10px/1 system-ui, sans-serif; letter-spacing: .06em; border-radius: 3px; margin-bottom: 12px; }
+  .__chrome-placeholder__title { margin: 0 0 10px; font: 600 22px/1.2 system-ui, sans-serif; color: #0f172a; }
+  .__chrome-placeholder__lede { margin: 0 0 12px; }
+  .__chrome-placeholder__cta { margin: 0; }
+  .__chrome-placeholder__cta a { color: #0c5757; font-weight: 600; }
+  .__chrome-placeholder code { background: #eef2f7; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+  /* Demo CTA toast (F-7) */
+  .__demo-cta-toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: #1a1a1a; color: #fff; padding: 10px 16px; border-radius: 6px; font: 13px/1.4 system-ui, sans-serif; box-shadow: 0 6px 20px rgba(0,0,0,.25); z-index: 99999; max-width: 80vw; opacity: 0; transition: opacity .18s ease; pointer-events: none; }
+  .__demo-cta-toast.is-visible { opacity: 1; }
+  .__demo-cta-toast code { background: rgba(255,255,255,.14); padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+</style>
+</head>
+<body>
+
+
+
+<section class="y-staff-members y-staff-members--cols-4 y-staff-members--style-small-y " data-component="y-staff-members">
+      <div class="y-staff-members__header">
+              <h2 class="y-staff-members__title">Meet Our Team</h2>
+                    <p class="y-staff-members__subtitle">Dedicated staff committed to your wellness and community.</p>
+          </div>
+  
+  <div class="y-staff-members__grid">
+    
+
+
+
+<div class="y-staff-member-item " data-component="y-staff-member-item">
+  <div class="y-staff-member-item__wrapper">
+    <div class="y-staff-member-item__background"></div>
+
+    <div class="y-staff-member-item__photo">
+              <img
+          src="../assets/photos/y_lb_demo/jobs_page_image_1.jpeg"
+          alt="Sarah Johnson"
+          class="y-staff-member-item__image"
+          loading="lazy"
+                            />
+          </div>
+
+          <h3 class="y-staff-member-item__name">Sarah Johnson</h3>
+    
+          <div class="y-staff-member-item__title">Executive Director</div>
+    
+          <span class="y-staff-member-item__divider"></span>
+      <div class="y-staff-member-item__email">
+        <a href="mailto:sarah@example.org">sarah@example.org</a>
+      </div>
+      </div>
+</div>
+
+
+
+
+
+<div class="y-staff-member-item " data-component="y-staff-member-item">
+  <div class="y-staff-member-item__wrapper">
+    <div class="y-staff-member-item__background"></div>
+
+    <div class="y-staff-member-item__photo">
+              <img
+          src="../assets/photos/y_lb_demo/jobs_page_image_3.jpeg"
+          alt="Michael Chen"
+          class="y-staff-member-item__image"
+          loading="lazy"
+                            />
+          </div>
+
+          <h3 class="y-staff-member-item__name">Michael Chen</h3>
+    
+          <div class="y-staff-member-item__title">Aquatics Director</div>
+    
+          <span class="y-staff-member-item__divider"></span>
+      <div class="y-staff-member-item__email">
+        <a href="mailto:michael@example.org">michael@example.org</a>
+      </div>
+      </div>
+</div>
+
+
+
+
+
+<div class="y-staff-member-item " data-component="y-staff-member-item">
+  <div class="y-staff-member-item__wrapper">
+    <div class="y-staff-member-item__background"></div>
+
+    <div class="y-staff-member-item__photo">
+              <img
+          src="../assets/photos/y_lb_demo/jobs_page_image_5.jpeg"
+          alt="Aisha Williams"
+          class="y-staff-member-item__image"
+          loading="lazy"
+                            />
+          </div>
+
+          <h3 class="y-staff-member-item__name">Aisha Williams</h3>
+    
+          <div class="y-staff-member-item__title">Wellness Coordinator</div>
+    
+          <span class="y-staff-member-item__divider"></span>
+      <div class="y-staff-member-item__email">
+        <a href="mailto:aisha@example.org">aisha@example.org</a>
+      </div>
+      </div>
+</div>
+
+
+
+
+
+<div class="y-staff-member-item " data-component="y-staff-member-item">
+  <div class="y-staff-member-item__wrapper">
+    <div class="y-staff-member-item__background"></div>
+
+    <div class="y-staff-member-item__photo">
+              <img
+          src="../assets/photos/y_lb_demo/jobs_page_image_7.jpeg"
+          alt="Carlos Rivera"
+          class="y-staff-member-item__image"
+          loading="lazy"
+                            />
+          </div>
+
+          <h3 class="y-staff-member-item__name">Carlos Rivera</h3>
+    
+          <div class="y-staff-member-item__title">Youth Programs Lead</div>
+    
+          <span class="y-staff-member-item__divider"></span>
+      <div class="y-staff-member-item__email">
+        <a href="mailto:carlos@example.org">carlos@example.org</a>
+      </div>
+      </div>
+</div>
+
+  </div>
+</section>
+
+<script>
+  // Demo CTA neutralizer (Vlad PR #8 F-7) — click on [data-demo-url] toasts
+  // the production-shape URL instead of navigating to a non-existent page.
+  (function () {
+    var toast;
+    var hideTimer;
+    document.addEventListener('click', function (e) {
+      var el = e.target.closest && e.target.closest('[data-demo-url]');
+      if (!el) return;
+      e.preventDefault();
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.className = '__demo-cta-toast';
+        document.body.appendChild(toast);
+      }
+      toast.innerHTML = 'demo CTA — would link to <code>' + el.getAttribute('data-demo-url').replace(/[<>&]/g, function (c) { return { '<': '&lt;', '>': '&gt;', '&': '&amp;' }[c]; }) + '</code> in production';
+      toast.classList.add('is-visible');
+      clearTimeout(hideTimer);
+      hideTimer = setTimeout(function () { toast.classList.remove('is-visible'); }, 2200);
+    });
+  })();
+</script>
+</body>
+</html>

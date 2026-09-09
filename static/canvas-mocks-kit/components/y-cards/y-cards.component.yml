@@ -1,0 +1,192 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Cards
+description: YMCA cards grid component with multiple style variations
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Section Heading
+      description: The main heading for the cards section
+      examples:
+        - 'Our Programs'
+
+    subtitle:
+      type: string
+      title: Section Subheading
+      description: Supporting text below the main heading
+      examples:
+        - 'Discover programs designed for all ages and interests'
+
+    cta_text:
+      type: string
+      title: Section CTA Text
+      description: Call-to-action button text for the section
+      examples:
+        - 'View All Programs'
+
+    cta_url:
+      type: string
+      title: Section CTA URL
+      description: Call-to-action button link
+      examples:
+        - '/programs'
+
+    columns:
+      type: string
+      title: Number of Columns
+      description: How many cards to show per row
+      default: '4'
+      enum:
+        - '2'
+        - '3'
+        - '4'
+      meta:enum:
+        '2': '2 Columns'
+        '3': '3 Columns'
+        '4': '4 Columns'
+      examples:
+        - '4'
+
+    variation:
+      type: string
+      title: Style Variation
+      description: Visual style of the cards
+      default: standard
+      enum:
+        - standard
+        - color
+        - overlay
+        - chevron
+      meta:enum:
+        standard: 'Standard'
+        color: 'Color (colored backgrounds)'
+        overlay: 'Overlay (image with gradient)'
+        chevron: 'Chevron (with decoration)'
+      examples:
+        - standard
+
+    border_style:
+      type: string
+      title: Border Style
+      description: Card border appearance
+      default: solid
+      enum:
+        - solid
+        - drop-shadow
+        - none
+      meta:enum:
+        solid: 'Solid Border'
+        drop-shadow: 'Drop Shadow'
+        none: 'No Border'
+      examples:
+        - solid
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+    text_alignment:
+      type: string
+      title: Text Alignment
+      description: Alignment of text within cards
+      default: left
+      enum:
+        - left
+        - center
+      meta:enum:
+        left: 'Left'
+        center: 'Center'
+      examples:
+        - left
+
+    heading_level:
+      type: string
+      title: Heading Level
+      description: Semantic heading level for section title
+      default: h2
+      enum:
+        - h2
+        - h3
+        - h4
+      meta:enum:
+        h2: 'Heading 2'
+        h3: 'Heading 3'
+        h4: 'Heading 4'
+      examples:
+        - h2
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  items:
+    title: Card Items
+    description: Add card items to this section
+    allowedComponents:
+      - sdc.y_canvas.y-card-item
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Section Heading
+      subtitle:
+        label: Section Subheading
+      cta:
+        label: Call to Action
+      items:
+        label: Card Items
+    icon_map:
+      mobile:
+        - [title]
+        - [subtitle]
+        - [cta]
+        - [items]
+      tablet:
+        - [title, subtitle]
+        - [cta, cta]
+        - [items, items]
+      desktop:
+        - [title, subtitle]
+        - [cta, cta]
+        - [items, items]
+      large_desktop:
+        - [title, subtitle]
+        - [cta, cta]
+        - [items, items]
+
+complexity:
+  level: complex
+  css_lines: 710
+  has_js: false
+  schema_props: 12
+  enum_variants: 14
+  demo_pages: 32
+  has_media: true
+  responsive_breakpoints: 11
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-cards

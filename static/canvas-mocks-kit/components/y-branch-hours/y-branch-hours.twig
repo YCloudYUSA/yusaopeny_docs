@@ -1,0 +1,40 @@
+{#
+/**
+ * Y Branch Hours component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - hours: (array) Daily hours
+ *   - day: (string) Day name
+ *   - hours: (string) Hours text
+ *   - is_today: (boolean) Highlight current day
+ * - holiday_hours: (string) Holiday notice
+ */
+#}
+
+{% set classes = [
+  'y-branch-hours',
+  style|default('standard') != 'standard' ? 'y-branch-hours--style-' ~ style,
+  section|default('body') != 'body' ? 'y-branch-hours--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-branch-hours">
+  {% if title %}
+    <h3 class="y-branch-hours__title">{{ title }}</h3>
+  {% endif %}
+
+  {% if hours %}
+    <dl class="y-branch-hours__list">
+      {% for item in hours %}
+        <div class="y-branch-hours__row {{ item.is_today ? 'y-branch-hours__row--today' : '' }}">
+          <dt class="y-branch-hours__day">{{ item.day }}</dt>
+          <dd class="y-branch-hours__time">{{ item.hours }}</dd>
+        </div>
+      {% endfor %}
+    </dl>
+  {% endif %}
+
+  {% if holiday_hours %}
+    <p class="y-branch-hours__notice">{{ holiday_hours }}</p>
+  {% endif %}
+</section>

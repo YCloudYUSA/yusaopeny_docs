@@ -1,0 +1,63 @@
+{#
+/**
+ * Y Articles Filter component.
+ *
+ * Variables:
+ * - categories: (array) Category filter options
+ * - show_search: (boolean) Show search input
+ * - search_placeholder: (string) Search placeholder text
+ * - results_count: (number) Number of results
+ */
+#}
+
+{% set classes = [
+  'y-articles-filter',
+  style|default('standard') != 'standard' ? 'y-articles-filter--style-' ~ style,
+  section|default('body') != 'body' ? 'y-articles-filter--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-articles-filter">
+  <div class="y-articles-filter__container">
+    {% if categories %}
+      <div class="y-articles-filter__categories">
+        {% for category in categories %}
+          <button
+            type="button"
+            class="y-articles-filter__category {{ category.active ? 'y-articles-filter__category--active' : '' }}"
+            data-category="{{ category.id }}"
+            {% if category.active %}aria-pressed="true"{% endif %}
+          >
+            {{ category.label }}
+            {% if category.count is defined %}
+              <span class="y-articles-filter__count">({{ category.count }})</span>
+            {% endif %}
+          </button>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if show_search|default(true) %}
+      <div class="y-articles-filter__search">
+        <label for="articles-search" class="visually-hidden">{{ 'Search articles'|t }}</label>
+        <input
+          type="search"
+          id="articles-search"
+          class="y-articles-filter__input"
+          placeholder="{{ search_placeholder|default('Search articles...') }}"
+        />
+        <button type="button" class="y-articles-filter__search-btn" aria-label="{{ 'Search'|t }}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </button>
+      </div>
+    {% endif %}
+
+    {% if results_count is defined %}
+      <div class="y-articles-filter__results">
+        {{ 'Showing @count articles'|t({'@count': results_count}) }}
+      </div>
+    {% endif %}
+  </div>
+</div>

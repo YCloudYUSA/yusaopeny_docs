@@ -1,0 +1,17 @@
+{
+  "_meta": { "title": "Default — 5-branch map", "description": "Hand-authored. Production embeds Google/OSM map JS — mock placeholder." },
+  "title": "Find a Branch",
+  "center_lat": 39.7684,
+  "center_lng": -86.1581,
+  "zoom": 11,
+  "height": "500px",
+  "markers": [
+    { "lat": 39.7684, "lng": -86.1581, "title": "Downtown Branch", "url": "/branches/downtown" },
+    { "lat": 39.7950, "lng": -86.1390, "title": "North Branch",    "url": "/branches/north" },
+    { "lat": 39.7250, "lng": -86.1700, "title": "South Branch",    "url": "/branches/south" },
+    { "lat": 39.7500, "lng": -86.2000, "title": "West Branch",     "url": "/branches/west" },
+    { "lat": 39.7800, "lng": -86.1100, "title": "East Branch",     "url": "/branches/east" }
+  ],
+  "style": "standard",
+  "section": "body"
+}

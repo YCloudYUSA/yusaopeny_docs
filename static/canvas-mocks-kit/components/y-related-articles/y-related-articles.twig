@@ -1,0 +1,70 @@
+{#
+/**
+ * Y Related Articles component.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - articles: (array) Article list
+ *   - title: (string) Article title
+ *   - url: (string) Article URL
+ *   - image: (object) Article image
+ *   - date: (string) Published date
+ *   - category: (string) Article category
+ * - cta_text: (string) View all link text
+ * - cta_url: (string) View all link URL
+ */
+#}
+
+{% set classes = [
+  'y-related-articles',
+  style|default('standard') != 'standard' ? 'y-related-articles--style-' ~ style,
+  section|default('body') != 'body' ? 'y-related-articles--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}" data-component="y-related-articles">
+  <div class="y-related-articles__container">
+    {% if title %}
+      <div class="y-related-articles__header">
+        <h2 class="y-related-articles__title">{{ title }}</h2>
+        {% if cta_text and cta_url %}
+          <a href="{{ cta_url }}" class="y-related-articles__cta">{{ cta_text }}</a>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if articles %}
+      <div class="y-related-articles__grid">
+        {% for article in articles %}
+          <article class="y-related-articles__card">
+            {% if article.image.src %}
+              <div class="y-related-articles__image">
+                <a href="{{ article.url }}">
+                  <img
+                    src="{{ article.image.src }}"
+                    alt="{{ article.image.alt|default(article.title) }}"
+                    loading="lazy"
+                    {% if article.image.width %}width="{{ article.image.width }}"{% endif %}
+                    {% if article.image.height %}height="{{ article.image.height }}"{% endif %}
+                  />
+                </a>
+              </div>
+            {% endif %}
+            <div class="y-related-articles__content">
+              {% if article.category %}
+                <span class="y-related-articles__category">{{ article.category }}</span>
+              {% endif %}
+              {% if article.title %}
+                <h3 class="y-related-articles__card-title">
+                  <a href="{{ article.url }}">{{ article.title }}</a>
+                </h3>
+              {% endif %}
+              {% if article.date %}
+                <time class="y-related-articles__date">{{ article.date }}</time>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>

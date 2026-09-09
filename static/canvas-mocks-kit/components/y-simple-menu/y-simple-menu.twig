@@ -1,0 +1,52 @@
+{#
+/**
+ * Y Simple Menu component.
+ *
+ * Variables:
+ * - title: (string) Menu heading
+ * - icon: (object) Optional icon image
+ * - links: (array) Menu links with title and url
+ * - heading_level: (string) h2, h3, h4
+ */
+#}
+
+{% set heading_level = heading_level|default('h3') %}
+
+{% set classes = [
+  'y-simple-menu',
+  style|default('standard') != 'standard' ? 'y-simple-menu--style-' ~ style,
+  section|default('body') != 'body' ? 'y-simple-menu--section-' ~ section,
+] %}
+
+<nav class="{{ classes|join(' ') }}" data-component="y-simple-menu">
+  <div class="y-simple-menu__header">
+    {% if icon.src %}
+      <img
+        src="{{ icon.src }}"
+        alt="{{ icon.alt|default('') }}"
+        class="y-simple-menu__icon"
+        loading="lazy"
+        {% if icon.width %}width="{{ icon.width }}"{% endif %}
+        {% if icon.height %}height="{{ icon.height }}"{% endif %}
+      />
+    {% endif %}
+
+    {% if title %}
+      <{{ heading_level }} class="y-simple-menu__title">
+        {{ title }}
+      </{{ heading_level }}>
+    {% endif %}
+  </div>
+
+  {% if links %}
+    <ul class="y-simple-menu__list">
+      {% for link in links %}
+        <li class="y-simple-menu__item">
+          <a href="{{ link.url }}" class="y-simple-menu__link">
+            {{ link.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</nav>

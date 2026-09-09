@@ -1,0 +1,18 @@
+{
+  "_meta": { "title": "Default — 5 search results", "description": "Hand-authored." },
+  "title": "Search results",
+  "query": "demo",
+  "current_page": 1,
+  "total_pages": 4,
+  "items_per_page": 5,
+  "empty_message": "No results found.",
+  "style": "standard",
+  "section": "body",
+  "results": [
+    { "title": "Swim Lessons", "url": "/programs/swim-lessons" },
+    { "title": "Aquatic Center", "url": "/facilities/aquatic-center" },
+    { "title": "Family Swim Night", "url": "/events/swim-night" },
+    { "title": "Lap Swim Schedule", "url": "/schedules/lap-swim" },
+    { "title": "Swim Team Try-outs", "url": "/programs/swim-team" }
+  ]
+}

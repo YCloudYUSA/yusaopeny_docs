@@ -1,0 +1,117 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Branch Amenities
+description: Branch amenities list showing available facilities and their status
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Section heading for amenities
+      examples:
+        - 'Amenities'
+
+    amenities:
+      type: array
+      title: Amenities List
+      description: Array of amenity objects with name, icon, and status
+      examples:
+        - [{"name": "Swimming Pool", "status": "open"}, {"name": "Gym", "status": "open"}]
+
+    show_status:
+      type: boolean
+      title: Show Status
+      description: Display open/closed status for each amenity
+      default: true
+      examples:
+        - true
+
+    open_label:
+      type: string
+      title: Open Label
+      description: Text to display when amenity is open
+      default: 'Open'
+      examples:
+        - 'Open'
+
+    closed_label:
+      type: string
+      title: Closed Label
+      description: Text to display when amenity is closed
+      default: 'Closed'
+      examples:
+        - 'Closed'
+
+    columns:
+      type: integer
+      title: Columns
+      description: Number of columns for amenities grid
+      default: 2
+      examples:
+        - 2
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      amenities:
+        label: Amenities List
+    icon_map:
+      mobile:
+        - [title]
+        - [amenities]
+      tablet:
+        - [title]
+        - [amenities, amenities]
+      desktop:
+        - [title]
+        - [amenities, amenities]
+      large_desktop:
+        - [title]
+        - [amenities, amenities]
+
+complexity:
+  level: medium
+  css_lines: 211
+  has_js: false
+  schema_props: 9
+  enum_variants: 4
+  demo_pages: 2
+  has_media: true
+  responsive_breakpoints: 3
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-branch-amenities

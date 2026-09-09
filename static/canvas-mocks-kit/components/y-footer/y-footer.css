@@ -1,0 +1,177 @@
+/* Y Footer — organism */
+/* Structure mirrors ws_small_y footer.scss */
+
+.y-footer {
+  --y-footer-outer-bg:      var(--ylb-color-light-grey-1, #f2f2f2);
+  --y-footer-top-bg:        var(--wsPrimaryColor, #006b6b);
+  --y-footer-top-color:     var(--ylb-color-white, #fff);
+  --y-footer-bottom-bg:     var(--ylb-color-white, #fff);
+  --y-footer-bottom-color:  var(--ylb-color-grey-1, #636466);
+  --y-footer-heading-color: var(--ylb-color-white, #fff);
+  --y-footer-link-color:    var(--ylb-color-white, #fff);
+  --y-footer-link-hover:    var(--wsSecondaryColor, #01a490);
+  --y-footer-border:        var(--wsSecondaryColor, #01a490);
+  --y-footer-radius:        var(--wsBorderRadius, 10px);
+
+  width: 100%;
+  font-family: Verdana, sans-serif;
+  background-color: var(--y-footer-outer-bg);
+  background-image: url(/themes/custom/y_canvas/assets/images/chevron.svg);
+  background-repeat: no-repeat;
+  padding: 44px 0;
+}
+
+/* ── Top section ── */
+.y-footer__top {
+  padding: 44px 15px 0;
+}
+
+.y-footer__top-container {
+  max-width: 1216px;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--y-footer-top-bg);
+  color: var(--y-footer-top-color);
+  border-radius: var(--y-footer-radius);
+  padding: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.y-footer__logo {
+  flex-shrink: 0;
+}
+
+.y-footer__menus {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Back to top — absolute top-right inside container */
+.y-footer__back-to-top {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--y-footer-top-color);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.y-footer__back-to-top:hover,
+.y-footer__back-to-top:focus {
+  background-color: var(--y-footer-link-hover);
+  border-color: var(--y-footer-link-hover);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ── Bottom section — white container overlapping top ── */
+.y-footer__bottom {
+  padding: 0 15px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 10;
+}
+
+.y-footer__bottom-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--y-footer-bottom-bg);
+  border-radius: var(--y-footer-radius);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* col-12: copyright row */
+.y-footer__bottom-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+/* Horizontal line separator (::after — like Small Y) */
+.y-footer__bottom-left::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  border-bottom: 3px solid var(--y-footer-border);
+}
+
+.y-footer__copyright {
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+  color: var(--y-footer-bottom-color);
+  margin: 0;
+  text-align: center;
+}
+
+/* col-12: social icons row */
+.y-footer__bottom-right {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+/* Social icons — gray, no border */
+.y-footer__bottom-right .y-footer-social-link {
+  color: var(--y-footer-bottom-color);
+  border: none;
+  width: auto;
+  height: auto;
+}
+
+.y-footer__bottom-right .y-footer-social-link:hover,
+.y-footer__bottom-right .y-footer-social-link:focus {
+  background-color: transparent;
+  border: none;
+  color: var(--y-footer-link-hover);
+}
+
+.y-footer__bottom-right .y-footer-social-link svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ── Desktop (768px+) ── */
+@media (min-width: 768px) {
+  .y-footer__top-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .y-footer__menus {
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 40px;
+    margin-left: 88px;
+  }
+
+  .y-footer__bottom-left::after {
+    top: 40px;
+    bottom: unset;
+  }
+}

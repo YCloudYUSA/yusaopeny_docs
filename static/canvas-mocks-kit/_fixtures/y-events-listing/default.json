@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "title": "Default — 6 events × 3 columns",
+    "description": "Inline listing fixture (no slot — twig iterates `events` array). Production reads event node query. Photos sourced from y_lb_demo carousel/event imagery for variety."
+  },
+  "title": "Upcoming Events",
+  "subtitle": "Join us for programs, classes, and community events.",
+  "columns": 3,
+  "show_pagination": true,
+  "items_per_page": 9,
+  "current_page": 1,
+  "total_pages": 2,
+  "style": "standard",
+  "section": "body",
+  "events": [
+    { "title": "Family Swim Night",              "url": "/events/swim-night",   "image": { "src": "../assets/photos/y_lb_demo/carousel_image_1.jpeg",   "alt": "Swim" },       "summary": "Open swim with games and activities for all ages.",      "date": "2026-05-03", "time": "6:00 PM – 8:00 PM",  "location": "Downtown Branch" },
+    { "title": "Yoga in the Park",               "url": "/events/yoga-park",    "image": { "src": "../assets/photos/y_lb_demo/carousel_image_2.jpeg",   "alt": "Yoga" },       "summary": "Outdoor flow class for all levels. Bring a mat.",        "date": "2026-05-08", "time": "8:00 AM – 9:00 AM",  "location": "Westside Park" },
+    { "title": "Health & Wellness Fair",         "url": "/events/wellness-fair","image": { "src": "../assets/photos/y_lb_demo/events_page_image_1.jpeg","alt": "Health" },     "summary": "Free screenings, workshops, and community partners.",    "date": "2026-05-15", "time": "10:00 AM – 2:00 PM", "location": "Main Branch" },
+    { "title": "Youth Basketball League Sign-up","url": "/events/basketball",   "image": { "src": "../assets/photos/y_lb_demo/carousel_image_3.jpeg",   "alt": "Basketball" }, "summary": "Open to ages 7–14. Skill clinic included.",              "date": "2026-05-20", "time": "5:00 PM – 7:00 PM",  "location": "South Branch" },
+    { "title": "Memorial Day 5K",                "url": "/events/memorial-5k",  "image": { "src": "../assets/photos/y_lb_demo/carousel_image_4.jpeg",   "alt": "Run" },        "summary": "Charity race benefiting youth scholarships.",            "date": "2026-05-25", "time": "8:00 AM – 11:00 AM", "location": "Riverfront" },
+    { "title": "Summer Camp Open House",         "url": "/events/camp-open",    "image": { "src": "../assets/photos/y_lb_demo/carousel_image_5.jpeg",   "alt": "Camp" },       "summary": "Tour the camp facility and meet counselors.",            "date": "2026-05-30", "time": "1:00 PM – 4:00 PM",  "location": "Camp Y" }
+  ]
+}

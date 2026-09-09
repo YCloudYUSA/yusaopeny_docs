@@ -1,0 +1,53 @@
+{#
+/**
+ * Y Tab Item component.
+ *
+ * Variables:
+ * - title: (string) Tab button label
+ * - content: (string) Tab panel content (HTML)
+ * - tab_id: (string) Unique tab ID
+ * - active: (boolean) Whether tab is initially active
+ * - heading_level: (string) h3, h4, h5
+ */
+#}
+
+{% set tab_id = tab_id|default('y-tab-' ~ random()) %}
+{% set active = active ?? false %}
+{% set heading_level = heading_level|default('h3') %}
+
+{% set classes = [
+  'y-tab-item',
+  active ? 'y-tab-item--active',
+  section|default('body') != 'body' ? 'y-tab-item--section-' ~ section,
+] %}
+
+<div class="{{ classes|join(' ') }}" data-component="y-tab-item">
+  <button
+    role="tab"
+    class="y-tab-item__button"
+    id="{{ tab_id }}-tab"
+    aria-controls="{{ tab_id }}-panel"
+    aria-selected="{{ active ? 'true' : 'false' }}"
+    {% if not active %}tabindex="-1"{% endif %}
+  >
+    {{ title }}
+  </button>
+
+  <div
+    role="tabpanel"
+    class="y-tab-item__panel"
+    id="{{ tab_id }}-panel"
+    aria-labelledby="{{ tab_id }}-tab"
+    {% if not active %}hidden{% endif %}
+  >
+    {% if title %}
+      <{{ heading_level }} class="y-tab-item__title">{{ title }}</{{ heading_level }}>
+    {% endif %}
+
+    {% if content %}
+      <div class="y-tab-item__content">
+        {{ content|raw }}
+      </div>
+    {% endif %}
+  </div>
+</div>

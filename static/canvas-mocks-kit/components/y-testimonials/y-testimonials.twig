@@ -1,0 +1,98 @@
+{#
+/**
+ * Y Testimonials component — CSS-only carousel.
+ *
+ * Uses hidden radio inputs + :checked sibling selectors for slide switching.
+ * No JavaScript required. Supports up to 10 items.
+ *
+ * Variables:
+ * - title: (string) Section heading
+ * - subtitle: (string) Section subheading
+ * - show_controls: (boolean) Show navigation
+ * - heading_level: (string) h2, h3, h4
+ * - items_count: (integer) Number of testimonial items (max 10)
+ *
+ * Slots:
+ * - items: Testimonial item components
+ */
+#}
+
+{% set heading_level = heading_level|default('h2') %}
+{% set show_controls = show_controls ?? true %}
+{% set items_count = items_count|default(3) %}
+{% set carousel_id = 'y-testimonials-' ~ random() %}
+
+{% set classes = [
+  'y-testimonials',
+  style|default('standard') != 'standard' ? 'y-testimonials--style-' ~ style,
+  section|default('body') != 'body' ? 'y-testimonials--section-' ~ section,
+] %}
+
+<section class="{{ classes|join(' ') }}"
+         data-component="y-testimonials">
+
+  {% if title or subtitle %}
+    <div class="y-testimonials__header">
+      {% if title %}
+        {% if heading_level == 'h2' %}
+          <h2 class="y-testimonials__title">{{ title }}</h2>
+        {% elseif heading_level == 'h3' %}
+          <h3 class="y-testimonials__title">{{ title }}</h3>
+        {% elseif heading_level == 'h4' %}
+          <h4 class="y-testimonials__title">{{ title }}</h4>
+        {% else %}
+          <h2 class="y-testimonials__title">{{ title }}</h2>
+        {% endif %}
+      {% endif %}
+
+      {% if subtitle %}
+        <p class="y-testimonials__subtitle">{{ subtitle }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="y-testimonials__carousel" id="{{ carousel_id }}">
+    {# Hidden radio inputs — one per testimonial item #}
+    {% for i in 1..items_count %}
+      <input type="radio" class="y-testimonials__radio" id="{{ carousel_id }}-{{ i }}" name="{{ carousel_id }}"{{ i == 1 ? ' checked' : '' }}>
+    {% endfor %}
+
+    <div class="y-testimonials__track">
+      {{ items }}
+    </div>
+
+    {% if show_controls and items_count > 1 %}
+      <div class="y-testimonials__prev">
+        {% for i in 1..items_count %}
+          <label for="{{ carousel_id }}-{{ i }}" aria-label="Previous testimonial"></label>
+        {% endfor %}
+      </div>
+
+      <div class="y-testimonials__next">
+        {% for i in 1..items_count %}
+          <label for="{{ carousel_id }}-{{ i }}" aria-label="Next testimonial"></label>
+        {% endfor %}
+      </div>
+
+      <div class="y-testimonials__nav">
+        {% for i in 1..items_count %}
+          <label for="{{ carousel_id }}-{{ i }}" aria-label="Go to testimonial {{ i }}"></label>
+        {% endfor %}
+      </div>
+
+      {# Dynamic prev/next rules scoped to this carousel instance.
+         Prev: wraps to last item from first, otherwise i-1.
+         Next: wraps to first item from last, otherwise i+1. #}
+      <style>
+        {% for i in 1..items_count %}
+        #{{ carousel_id }} .y-testimonials__radio:nth-of-type({{ i }}):checked ~ .y-testimonials__prev > label:nth-child({{ i == 1 ? items_count : i - 1 }}),
+        #{{ carousel_id }} .y-testimonials__radio:nth-of-type({{ i }}):checked ~ .y-testimonials__next > label:nth-child({{ i == items_count ? 1 : i + 1 }}) {
+          opacity: 1;
+          pointer-events: auto;
+          z-index: 5;
+        }
+        {% endfor %}
+      </style>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,179 @@
+/* Y Staff Member Item Component */
+
+.y-staff-member-item {
+  box-sizing: border-box;
+  text-align: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: stretch;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 600px) {
+  .y-staff-member-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1060px) {
+  .y-staff-member-item {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .y-staff-members--cols-4 .y-staff-member-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.y-staff-member-item__wrapper {
+  padding: 100px 16px 17px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+/* Background: teal header band + grey body */
+.y-staff-member-item__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #F2F2F2;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.y-staff-member-item__background::before {
+  content: '';
+  display: block;
+  height: 100px;
+  background: var(--wsTertiaryColor, #20bdbe);
+  border-radius: 10px 10px 0 0;
+}
+
+/* Photo overlaps the teal header */
+.y-staff-member-item__photo {
+  position: relative;
+  z-index: 1;
+  margin-top: -85px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.y-staff-member-item__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.y-staff-member-item__placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.y-staff-member-item__placeholder svg {
+  width: 60px;
+  height: 60px;
+  color: #adb5bd;
+}
+
+/* Name, title, divider, email sit above absolute background */
+.y-staff-member-item__name,
+.y-staff-member-item__title,
+.y-staff-member-item__divider,
+.y-staff-member-item__email {
+  position: relative;
+  z-index: 1;
+}
+
+/* Name */
+.y-staff-member-item__name {
+  color: #231F20;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 400;
+  margin: 0 0 0.25rem;
+  font-family: var(--ylb-font-family-cachet, 'Cachet', Verdana, sans-serif);
+}
+
+/* Title */
+.y-staff-member-item__title {
+  font-size: 18px;
+  color: var(--ylb-color-dark-grey-1, #2f2f2f);
+  margin-bottom: 0.75rem;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  display: block;
+}
+
+/* Divider */
+.y-staff-member-item__divider {
+  display: inline-block;
+  width: 21px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: var(--wsSecondaryColor, blue);
+  margin: 15px 0;
+}
+
+/* Email */
+.y-staff-member-item__email {
+  font-size: 0.875rem;
+}
+
+.y-staff-member-item__email a {
+  color: var(--wsPartnerColor, blue);
+  text-decoration: none;
+  word-break: break-word;
+  word-wrap: break-word;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.y-staff-member-item__email a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .y-staff-member-item__image,
+  .y-staff-member-item__placeholder {
+    width: 165px;
+    height: 165px;
+  }
+
+  .y-staff-member-item__placeholder svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* --style-small-y overrides */
+.y-staff-members--style-small-y .y-staff-member-item__name {
+  font-weight: 500;
+}
+

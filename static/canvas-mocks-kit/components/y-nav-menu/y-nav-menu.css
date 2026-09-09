@@ -1,0 +1,108 @@
+/* Y Nav Menu — molecule */
+
+.y-nav-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.y-nav-menu__link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 0;
+  font-family: var(--y-font-family, 'Cachet', sans-serif);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--y-nav-color, #2f2f2f);
+  text-decoration: none;
+  border-bottom: 1px solid var(--y-nav-border, #e0e0e0);
+  transition: color 0.2s ease;
+}
+
+.y-nav-menu__link:hover {
+  color: var(--y-nav-hover-color, #0060af);
+}
+
+.y-nav-menu__chevron {
+  width: 12px;
+  height: 8px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.y-nav-menu__link[aria-expanded="true"] .y-nav-menu__chevron {
+  transform: rotate(180deg);
+}
+
+/* Submenu */
+.y-nav-menu__submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 16px;
+  display: none;
+}
+
+.y-nav-menu__link[aria-expanded="true"] + .y-nav-menu__submenu {
+  display: block;
+}
+
+.y-nav-menu__submenu-link {
+  display: block;
+  padding: 8px 0;
+  font-size: 14px;
+  color: var(--y-nav-color, #2f2f2f);
+  text-decoration: none;
+}
+
+.y-nav-menu__submenu-link:hover {
+  color: var(--y-nav-hover-color, #0060af);
+}
+
+/* ── Desktop (992px+) ── */
+@media (min-width: 992px) {
+  .y-nav-menu__list {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .y-nav-menu__link {
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+  }
+
+  .y-nav-menu__link:hover {
+    border-bottom-color: var(--y-nav-hover-color, #00529b);
+  }
+
+  /* Dropdown submenu */
+  .y-nav-menu__item--has-children {
+    position: relative;
+  }
+
+  .y-nav-menu__submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid var(--y-nav-border, #e0e0e0);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  .y-nav-menu__submenu-link {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .y-nav-menu__submenu-link:hover {
+    background-color: #f5f5f5;
+  }
+}

@@ -1,0 +1,88 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Y Repeat Schedules
+description: Recurring schedule application container for class schedules
+status: experimental
+group: Organisms
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Section heading for the schedule
+      examples:
+        - 'Class Schedule'
+
+    api_endpoint:
+      type: string
+      title: API Endpoint
+      description: URL for the repeat schedules API
+      examples:
+        - '/api/v1/schedules'
+
+    style:
+      type: string
+      title: Style
+      description: Visual style variant
+      default: standard
+      enum:
+        - standard
+        - small-y
+      meta:enum:
+        standard: 'Standard'
+        small-y: 'Small Y'
+
+
+    section:
+      type: string
+      title: Section
+      description: Page area where this component is placed
+      default: body
+      enum:
+        - banner
+        - body
+      meta:enum:
+        banner: 'Banner Area'
+        body: 'Body Area'
+
+slots:
+  app:
+    title: Application
+    description: The repeat schedules React application
+  layout:
+    title: Component Layout
+    description: Spatial arrangement of component areas
+    regions:
+      title:
+        label: Title
+      app:
+        label: Application
+    icon_map:
+      mobile:
+        - [title]
+        - [app]
+      tablet:
+        - [title]
+        - [app, app]
+      desktop:
+        - [title]
+        - [app, app]
+      large_desktop:
+        - [title]
+        - [app, app]
+
+complexity:
+  level: simple
+  css_lines: 48
+  has_js: false
+  schema_props: 5
+  enum_variants: 4
+  demo_pages: 0
+  has_media: false
+  responsive_breakpoints: 1
+
+libraryOverrides:
+  dependencies:
+    - y_canvas/y-repeat-schedules

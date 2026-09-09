@@ -1,0 +1,27 @@
+{#
+/**
+ * Y Header CTA molecule.
+ *
+ * Variables:
+ * - primary_text: (string) Primary button text
+ * - primary_url: (string) Primary button URL
+ * - primary_style: (string) filled, outlined
+ * - secondary_text: (string) Secondary button text
+ * - secondary_url: (string) Secondary button URL
+ */
+#}
+
+{% set primary_style = primary_style|default('filled') %}
+
+<div class="y-header-cta" data-component="y-header-cta">
+  {% if primary_text and primary_url %}
+    <a href="{{ primary_url }}" class="y-header-cta__btn y-header-cta__btn--primary y-header-cta__btn--{{ primary_style }}">
+      {{ primary_text }}
+    </a>
+  {% endif %}
+  {% if secondary_text and secondary_url %}
+    <a href="{{ secondary_url }}" class="y-header-cta__btn y-header-cta__btn--secondary y-header-cta__btn--outlined">
+      {{ secondary_text }}
+    </a>
+  {% endif %}
+</div>
