@@ -23,8 +23,13 @@ description: Expandable pairs of question/answer or header/section fields.
 Fill in the content fields:
 
 - **Title** (required): Displayed if **Display title** is checked, otherwise this is for administrative use.
-- **Accordion Item**: Add as many items as you like using the **Add Accordion Item* or **Add new custom block** button. When you are finished adding or editing each item, be sure to click **Create/Update tab** or **Create/Update custom block** to finalize the item. Each item contains:
+- **Section subheading**: The subheading of the Accordion Section
+- **Items**: Add as many items as you like using the **Add Accordion Item* or **Add new content block** button. When you are finished adding or editing each item, be sure to click **Create/Update tab** or **Create/Update content block** to finalize the item. Each item contains:
   - **Heading** (required): The heading that will be used to expand/contract the accordion.
   - **Body** (required): The content of the accordion.
+- **FAQ?**: If this section contains Frequently Asked Questions, check this box to output them as "[structured data](https://schema.org/)" in the form of a [FAQPage block](https://schema.org/FAQPage).
+  - Ensure the content contains individual sets of questions ("How old does my child need to be to swim at the YMCA?") and answers ("The YMCA offers swim classes starting at age 3 and the pool is open to children of all ages with parental supervision").
+  - Only one FAQ should be added to a page. If more than one is added, only the first will be output to the structured data.
+
 
 {{< readfile "../lb-save-block.partial" >}}
