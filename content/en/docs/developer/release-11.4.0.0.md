@@ -46,7 +46,7 @@ sites with more modules run more.
 - jQuery Migrate 4.0.2 ships with the profile as `openy/jquery_migrate` (depends on `core/jquery`); no
   `code.jquery.com` request.
 - Vue 3 for Activity Finder 4 and Group Schedules, from the shared `openy_system/vue3` library (`openy_custom` 3.2+).
-- Activity Finder backend is a plugin (`solr` / `daxko` / `mock`); `openy_activity_finder_update_9006` converts the
+- Activity Finder backend is a plugin (`solr` / `mock`); `openy_activity_finder_update_9006` converts the
   setting.
 - Direct `guzzlehttp/guzzle` require dropped (core still requires `^7.10`).
 - Major bumps: `drupal/openy_repeat` 4, `drupal/protected_pages` 3, `ycloudyusa/yusaopeny_activity_finder` 7,

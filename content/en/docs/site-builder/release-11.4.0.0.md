@@ -11,8 +11,8 @@ All configuration changes run in `drush updb`; no manual configuration is requir
 
 ### Activity Finder 7.2
 
-- **Backend setting**: the backend is now a plugin (`solr` / `daxko` / `mock`). Sites with Solr keep Solr; Daxko sites
-  stay on Daxko; sites set to Solr without `search_api_solr` are switched to `mock`. Check the Activity Finder settings
+- **Backend setting**: the backend is now a plugin (`solr` / `mock`). Sites with Solr keep Solr;
+  sites set to Solr without `search_api_solr` are switched to `mock`. Check the Activity Finder settings
   page after the upgrade.
 - **Category Tags are opt-in per block**: Activity Finder block → *Location & Category filters* → *Category filters* →
   **Category Tag**. The default stays *Activity (Program Subcategory)*. Category Tags need the Category Tags vocabulary

@@ -82,7 +82,7 @@ was built for is no longer available.
 - **Filters on Top** layout style for the Activity Finder block.
 - Fixes: "Limit by Location" dropdown no longer empty; location limits work as a constraint on the selection;
   date-only sessions no longer show `6:00pm-6:00pm`; results load when the page URL contains credentials.
-- Backend is now a plugin (`solr` / `daxko` / `mock`); `openy_activity_finder_update_9006` converts the setting and
+- Backend is now a plugin (`solr` / `mock`); `openy_activity_finder_update_9006` converts the setting and
   enables the Solr submodule only on sites that have `search_api_solr` ([AF#86](https://github.com/YCloudYUSA/yusaopeny_activity_finder/pull/86)).
 
 ### jQuery Migrate self-hosted
@@ -188,7 +188,7 @@ Drupal 11.4 core pulls `symfony/runtime`, whose Composer plugin is blocked unles
 ### Activity Finder
 
 - Sites with Solr keep the Solr backend (submodule enabled by `openy_activity_finder_update_9006`).
-- Sites on the Solr backend without `search_api_solr` are switched to the `mock` backend; Daxko sites stay on Daxko.
+- Sites on the Solr backend without `search_api_solr` are switched to the `mock` backend.
 - **Category Tags are opt-in per block**: Activity Finder block → *Location & Category filters* → *Category filters* →
   **Category Tag**. The default stays *Activity (Program Subcategory)*.
 - Sites that run their own fork of Activity Finder or `openy_node_session` as a path repository must drop it and
