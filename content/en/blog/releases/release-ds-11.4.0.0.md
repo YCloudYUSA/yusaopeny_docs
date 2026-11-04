@@ -4,6 +4,11 @@ description: Annotated release notes. Full changelog on [GitHub](https://github.
 date: 2026-11-04
 ---
 
+By role: [Content Editors]({{< relref "/docs/content-editor/release-11.4.0.0" >}}) ·
+[Site Builders]({{< relref "/docs/site-builder/release-11.4.0.0" >}}) ·
+[Developers]({{< relref "/docs/developer/release-11.4.0.0" >}}) ·
+[Decision Makers]({{< relref "/docs/decision-maker/release-11.4.0.0" >}})
+
 **Full Changelog**: https://github.com/YCloudYUSA/yusaopeny/compare/11.3.1.6...11.4.0.0
 
 ## Summary
@@ -148,7 +153,7 @@ existing sites get it from `lb_webform_update_10001`
 Still open after the upgrade: none.
 
 
-The live audit of the 27 sites on 11.4 release candidates reported 4 core advisories (FLEET-AUDIT-2026-10-28); 11.4.11 fixes them.
+The live audit of the 27 sites on 11.4 release candidates reported 4 core advisories; 11.4.11 fixes them.
 
 Site packages (not required by the distribution), fixed by the site's `composer update -W` when its own constraint allows it:
 
