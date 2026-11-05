@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Decision Maker Hub on YMCA Website Services</title><link>/docs/decision-maker/</link><description>Recent content in Decision Maker Hub on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/decision-maker/index.xml" rel="self" type="application/rss+xml"/><item><title>Release 11.3.1.0 for Decision Makers</title><link>/docs/decision-maker/release-11.3.1.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/decision-maker/release-11.3.1.0/</guid><description>&lt;h2 id="yusa-open-y-11310-strategic-platform-modernization">YUSA Open Y 11.3.1.0: Strategic Platform Modernization&lt;a class="td-heading-self-link" href="#yusa-open-y-11310-strategic-platform-modernization" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Decision Maker Hub on YMCA Website Services</title><link>/docs/decision-maker/</link><description>Recent content in Decision Maker Hub on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/decision-maker/index.xml" rel="self" type="application/rss+xml"/><item><title>Release 11.4.0.0 for Decision Makers</title><link>/docs/decision-maker/release-11.4.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/decision-maker/release-11.4.0.0/</guid><description>&lt;h2 id="ymca-website-services-11400-security-update-on-the-current-drupal-minor">YMCA Website Services 11.4.0.0: Security Update on the Current Drupal Minor&lt;a class="td-heading-self-link" href="#ymca-website-services-11400-security-update-on-the-current-drupal-minor" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Summary&lt;/strong>&lt;/p>
+&lt;p>11.4.0.0 is a platform release. It moves sites from Drupal core 11.3 to Drupal core 11.4. The current build is 11.4.0.0-rc5. A fresh &lt;code>composer update&lt;/code> resolves current releases of core and contrib
+packages. The exact constraint changes and removed patches are listed in the technical notes.&lt;/p>
+&lt;h3 id="what-changes">What changes&lt;a class="td-heading-self-link" href="#what-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Platform&lt;/strong>: Drupal core &lt;code>^11.4&lt;/code>. Several outdated requirements and patches are removed.&lt;/li>
+&lt;li>&lt;strong>GroupEx Pro&lt;/strong>: Drupal.org published
+
+
+
+
+&lt;a href="https://www.drupal.org/sa-contrib-2026-278" target="_blank">SA-CONTRIB-2026-278&lt;/a> (Critical, PHP object injection) on 2026-11-04.
+It affects &lt;code>drupal/groupexpro&lt;/code> before 2.2.1. The project was marked unsupported on 2026-10-28 and restored on
+2026-11-04 with the fix in 2.2.1. The distribution no longer includes &lt;code>drupal/groupexpro&lt;/code>. The Embedded GroupEx Pro
+Schedule moved to &lt;code>ycloudyusa/embedded_groupexpro_schedule&lt;/code> 1.0.0 and keeps working. The old GroupEx modules
+(&lt;code>openy_gxp&lt;/code>, &lt;code>openy_group_schedules&lt;/code>, &lt;code>groupex_form_cache&lt;/code>, &lt;code>openy_pef_gxp_sync&lt;/code>) are retired and uninstall
+themselves on &lt;code>drush updb&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>Page errors&lt;/strong>: jQuery Migrate is served from the site instead of an external server, to address random
+&lt;code>jQuery is not defined&lt;/code> errors.&lt;/li>
+&lt;li>&lt;strong>Accessibility&lt;/strong>: Small Y demo images get alt text through an update hook.&lt;/li>
+&lt;li>&lt;strong>Fonts (rc5)&lt;/strong>: a &lt;code>fontyourface&lt;/code> 4.3 problem can leave font stylesheets off the page. The distribution patches it
+with an upstream merge request that is still open. Sites using &lt;code>y_fonts&lt;/code> are not affected.&lt;/li>
+&lt;/ul>
+&lt;h3 id="effort-and-risk">Effort and risk&lt;a class="td-heading-self-link" href="#effort-and-risk" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>One upgrade through Composer and &lt;code>drush updb&lt;/code>. Most configuration changes run in &lt;code>drush updb&lt;/code>. The GroupEx Pro account id may need to be entered again.&lt;/li>
+&lt;li>Developers remove a few outdated requirements from the site&amp;rsquo;s &lt;code>composer.json&lt;/code>
+(see 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/developer/release-11.4.0.0/">Release 11.4.0.0 for Developers&lt;/a>).&lt;/li>
+&lt;li>Pages that use the Embedded GroupEx Pro Schedule: the account id is kept as a number, so a non-numeric id has to be
+entered again.&lt;/li>
+&lt;li>Content does not need to change.&lt;/li>
+&lt;li>Release candidate: test on staging first.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tested">Tested&lt;a class="td-heading-self-link" href="#tested" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Upgrade from 11.3.1.5 to 11.4.0.0-rc4: 34 updates, no errors. This was measured on rc4, not on rc5.&lt;/li>
+&lt;/ul>
+&lt;p>Full technical notes: 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/blog/2026/11/04/digital-services-release-11.4.0.0/">Digital Services Release 11.4.0.0&lt;/a>.&lt;/p></description></item><item><title>Release 11.3.1.0 for Decision Makers</title><link>/docs/decision-maker/release-11.3.1.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/decision-maker/release-11.3.1.0/</guid><description>&lt;h2 id="yusa-open-y-11310-strategic-platform-modernization">YUSA Open Y 11.3.1.0: Strategic Platform Modernization&lt;a class="td-heading-self-link" href="#yusa-open-y-11310-strategic-platform-modernization" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>&lt;strong>Executive Summary&lt;/strong>&lt;/p>
 &lt;p>This major release represents a strategic platform modernization that reduces technical debt, improves operational efficiency, and positions your digital infrastructure for long-term sustainability through 2030.&lt;/p>
 &lt;hr>

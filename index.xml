@@ -28,7 +28,98 @@
 &lt;li>4-5 branches → Small Y or Full (your choice)&lt;/li>
 &lt;li>6+ branches → Full Distribution&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>2. Do you have in-house Drupal developers?&lt;/strong>&lt;/p></description></item><item><title>Release 11.3.1.0 for Content Editors</title><link>/docs/content-editor/release-11.3.1.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-editor/release-11.3.1.0/</guid><description>&lt;h2 id="yusa-open-y-11310-smarter-content-tools--better-media-management">YUSA Open Y 11.3.1.0: Smarter Content Tools &amp;amp; Better Media Management&lt;a class="td-heading-self-link" href="#yusa-open-y-11310-smarter-content-tools--better-media-management" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>2. Do you have in-house Drupal developers?&lt;/strong>&lt;/p></description></item><item><title>Release 11.4.0.0 for Content Editors</title><link>/docs/content-editor/release-11.4.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-editor/release-11.4.0.0/</guid><description>&lt;h2 id="ymca-website-services-11400-what-changes-in-your-daily-work">YMCA Website Services 11.4.0.0: What Changes in Your Daily Work&lt;a class="td-heading-self-link" href="#ymca-website-services-11400-what-changes-in-your-daily-work" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Most of this release is security and platform work that happens behind the scenes. Your content, pages and media stay
+as they are. The changes you can notice:&lt;/p>
+&lt;h3 id="activity-finder">Activity Finder&lt;a class="td-heading-self-link" href="#activity-finder" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Category Tags filter&lt;/strong>: your site builder can turn this on for each Activity Finder block. It is off by default.
+Once it is on, tag sessions with Category Tags so they show up under the right filter.&lt;/li>
+&lt;li>&lt;strong>&amp;ldquo;Filters on Top&amp;rdquo; layout&lt;/strong>: a new option on the Activity Finder block that puts the filters above the results. Your
+site builder chooses it per block.&lt;/li>
+&lt;li>Fixed: the &amp;ldquo;Limit by Location&amp;rdquo; dropdown is no longer empty; sessions that have a date but no time no longer show
+&lt;code>6:00pm-6:00pm&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tables">Tables&lt;a class="td-heading-self-link" href="#tables" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>A table without a header row no longer breaks the other tables on the same page.&lt;/p></description></item><item><title>Release 11.4.0.0 for Decision Makers</title><link>/docs/decision-maker/release-11.4.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/decision-maker/release-11.4.0.0/</guid><description>&lt;h2 id="ymca-website-services-11400-security-update-on-the-current-drupal-minor">YMCA Website Services 11.4.0.0: Security Update on the Current Drupal Minor&lt;a class="td-heading-self-link" href="#ymca-website-services-11400-security-update-on-the-current-drupal-minor" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Summary&lt;/strong>&lt;/p>
+&lt;p>11.4.0.0 is a platform release. It moves sites from Drupal core 11.3 to Drupal core 11.4. The current build is 11.4.0.0-rc5. A fresh &lt;code>composer update&lt;/code> resolves current releases of core and contrib
+packages. The exact constraint changes and removed patches are listed in the technical notes.&lt;/p>
+&lt;h3 id="what-changes">What changes&lt;a class="td-heading-self-link" href="#what-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Platform&lt;/strong>: Drupal core &lt;code>^11.4&lt;/code>. Several outdated requirements and patches are removed.&lt;/li>
+&lt;li>&lt;strong>GroupEx Pro&lt;/strong>: Drupal.org published
+
+
+
+
+&lt;a href="https://www.drupal.org/sa-contrib-2026-278" target="_blank">SA-CONTRIB-2026-278&lt;/a> (Critical, PHP object injection) on 2026-11-04.
+It affects &lt;code>drupal/groupexpro&lt;/code> before 2.2.1. The project was marked unsupported on 2026-10-28 and restored on
+2026-11-04 with the fix in 2.2.1. The distribution no longer includes &lt;code>drupal/groupexpro&lt;/code>. The Embedded GroupEx Pro
+Schedule moved to &lt;code>ycloudyusa/embedded_groupexpro_schedule&lt;/code> 1.0.0 and keeps working. The old GroupEx modules
+(&lt;code>openy_gxp&lt;/code>, &lt;code>openy_group_schedules&lt;/code>, &lt;code>groupex_form_cache&lt;/code>, &lt;code>openy_pef_gxp_sync&lt;/code>) are retired and uninstall
+themselves on &lt;code>drush updb&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>Page errors&lt;/strong>: jQuery Migrate is served from the site instead of an external server, to address random
+&lt;code>jQuery is not defined&lt;/code> errors.&lt;/li>
+&lt;li>&lt;strong>Accessibility&lt;/strong>: Small Y demo images get alt text through an update hook.&lt;/li>
+&lt;li>&lt;strong>Fonts (rc5)&lt;/strong>: a &lt;code>fontyourface&lt;/code> 4.3 problem can leave font stylesheets off the page. The distribution patches it
+with an upstream merge request that is still open. Sites using &lt;code>y_fonts&lt;/code> are not affected.&lt;/li>
+&lt;/ul>
+&lt;h3 id="effort-and-risk">Effort and risk&lt;a class="td-heading-self-link" href="#effort-and-risk" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>One upgrade through Composer and &lt;code>drush updb&lt;/code>. Most configuration changes run in &lt;code>drush updb&lt;/code>. The GroupEx Pro account id may need to be entered again.&lt;/li>
+&lt;li>Developers remove a few outdated requirements from the site&amp;rsquo;s &lt;code>composer.json&lt;/code>
+(see 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/developer/release-11.4.0.0/">Release 11.4.0.0 for Developers&lt;/a>).&lt;/li>
+&lt;li>Pages that use the Embedded GroupEx Pro Schedule: the account id is kept as a number, so a non-numeric id has to be
+entered again.&lt;/li>
+&lt;li>Content does not need to change.&lt;/li>
+&lt;li>Release candidate: test on staging first.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tested">Tested&lt;a class="td-heading-self-link" href="#tested" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Upgrade from 11.3.1.5 to 11.4.0.0-rc4: 34 updates, no errors. This was measured on rc4, not on rc5.&lt;/li>
+&lt;/ul>
+&lt;p>Full technical notes: 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/blog/2026/11/04/digital-services-release-11.4.0.0/">Digital Services Release 11.4.0.0&lt;/a>.&lt;/p></description></item><item><title>Release 11.4.0.0 for Developers</title><link>/docs/developer/release-11.4.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/developer/release-11.4.0.0/</guid><description>&lt;h2 id="ymca-website-services-11400-upgrade-steps--breaking-changes">YMCA Website Services 11.4.0.0: Upgrade Steps &amp;amp; Breaking Changes&lt;a class="td-heading-self-link" href="#ymca-website-services-11400-upgrade-steps--breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="upgrade">Upgrade&lt;a class="td-heading-self-link" href="#upgrade" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>From 11.3.1.x or an 11.4.0.0 release candidate (current: 11.4.0.0-rc5). After GA, drop &lt;code>@RC&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">composer config allow-plugins.symfony/runtime &lt;span class="nb">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">composer require ycloudyusa/yusaopeny:^11.4@RC --no-update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">composer update -W
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drush updb -y --no-cache-clear
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drush cr
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>composer require&lt;/code> without &lt;code>--no-update&lt;/code> (or &lt;code>-W&lt;/code>) fails on an 11.3 site: the locked dependencies (e.g. &lt;code>drupal/confi&lt;/code>
+4.1) block a partial update and composer reverts &lt;code>composer.json&lt;/code>. A fresh &lt;code>extended&lt;/code> 11.3.1.5 install ran 34 updates
+(measured on rc4; not re-measured on rc5). Sites with more modules run more.&lt;/p></description></item><item><title>Release 11.4.0.0 for Site Builders</title><link>/docs/site-builder/release-11.4.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/site-builder/release-11.4.0.0/</guid><description>&lt;h2 id="ymca-website-services-11400-configuration-changes--post-upgrade-checks">YMCA Website Services 11.4.0.0: Configuration Changes &amp;amp; Post-Upgrade Checks&lt;a class="td-heading-self-link" href="#ymca-website-services-11400-configuration-changes--post-upgrade-checks" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Configuration changes run in &lt;code>drush updb&lt;/code>. After the upgrade, re-enter the GroupEx Pro account id if it was reset (see below) and check the items below. The target is 11.4.0.0.&lt;/p>
+&lt;h3 id="activity-finder-72">Activity Finder 7.2&lt;a class="td-heading-self-link" href="#activity-finder-72" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Backend setting&lt;/strong>: the backend is now a plugin (&lt;code>solr&lt;/code> / &lt;code>mock&lt;/code>). Sites with Solr keep Solr;
+sites set to Solr without &lt;code>search_api_solr&lt;/code> are switched to &lt;code>mock&lt;/code>. Check the Activity Finder settings
+page after the upgrade.&lt;/li>
+&lt;li>&lt;strong>Category Tags are opt-in per block&lt;/strong>: Activity Finder block → &lt;em>Location &amp;amp; Category filters&lt;/em> → &lt;em>Category filters&lt;/em> →
+&lt;strong>Category Tag&lt;/strong>. The default stays &lt;em>Activity (Program Subcategory)&lt;/em>. Category Tags need the Category Tags vocabulary
+and session field from &lt;code>openy_node_session&lt;/code> 2.4 (Activity Finder 7.2 needs &lt;code>^2.4&lt;/code>).&lt;/li>
+&lt;li>&lt;strong>Filters on Top&lt;/strong>: new layout style for the Activity Finder block.&lt;/li>
+&lt;li>&lt;strong>Limit by Location&lt;/strong> works as a constraint on the selection again.&lt;/li>
+&lt;/ul>
+&lt;h3 id="group-schedules-openy_repeat-4">Group Schedules (&lt;code>openy_repeat&lt;/code> 4)&lt;a class="td-heading-self-link" href="#group-schedules-openy_repeat-4" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>The Group Schedules dashboard moves to Vue 3 (&lt;code>openy_repeat&lt;/code> 4.1.0). Check the schedules page after the upgrade.&lt;/p></description></item><item><title>Release 11.3.1.0 for Content Editors</title><link>/docs/content-editor/release-11.3.1.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/content-editor/release-11.3.1.0/</guid><description>&lt;h2 id="yusa-open-y-11310-smarter-content-tools--better-media-management">YUSA Open Y 11.3.1.0: Smarter Content Tools &amp;amp; Better Media Management&lt;a class="td-heading-self-link" href="#yusa-open-y-11310-smarter-content-tools--better-media-management" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>&lt;strong>What&amp;rsquo;s Changing in Your Daily Work:&lt;/strong>&lt;/p>
 &lt;h3 id="-new-way-to-organize-media-big-change">🏷️ New Way to Organize Media (Big Change!)&lt;a class="td-heading-self-link" href="#-new-way-to-organize-media-big-change" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;p>&lt;strong>Old way:&lt;/strong> Navigate through nested folders to find images
@@ -95,7 +186,126 @@
 &lt;li>Smoother editing experience when building complex layouts&lt;/li>
 &lt;/ul>
 &lt;h3 id="-theme--styling-updates">🎨 Theme &amp;amp; Styling Updates&lt;a class="td-heading-self-link" href="#-theme--styling-updates" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>&lt;strong>Y Styles expansion:&lt;/strong>&lt;/p></description></item><item><title>Digital Services Release 11.3.1.6</title><link>/blog/2026/07/06/digital-services-release-11.3.1.6/</link><pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate><guid>/blog/2026/07/06/digital-services-release-11.3.1.6/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Y Styles expansion:&lt;/strong>&lt;/p></description></item><item><title>Digital Services Release 11.4.0.0</title><link>/blog/2026/11/04/digital-services-release-11.4.0.0/</link><pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate><guid>/blog/2026/11/04/digital-services-release-11.4.0.0/</guid><description>&lt;p>By role: 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/content-editor/release-11.4.0.0/">Content Editors&lt;/a> ·
+
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/site-builder/release-11.4.0.0/">Site Builders&lt;/a> ·
+
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/developer/release-11.4.0.0/">Developers&lt;/a> ·
+
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/decision-maker/release-11.4.0.0/">Decision Makers&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Full Changelog&lt;/strong>: 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/compare/11.3.1.6...11.4.0.0" target="_blank">https://github.com/YCloudYUSA/yusaopeny/compare/11.3.1.6...11.4.0.0&lt;/a>&lt;/p>
+&lt;h2 id="summary">Summary&lt;a class="td-heading-self-link" href="#summary" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>YMCA Website Services 11.4 moves the distribution to &lt;strong>Drupal 11.4&lt;/strong>. These notes cover the changes from 11.3.1.6 up
+to 11.4.0.0. The current build is 11.4.0.0-rc5 (tagged 2026-11-04):&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Drupal Core 11.3.13 → 11.4.11&lt;/strong> — 204 packages changed in a test upgrade (measured on 11.4.0.0-rc4)&lt;/li>
+&lt;li>&lt;strong>Security&lt;/strong> — a fresh &lt;code>composer update&lt;/code> resolves current releases of core, webform, captcha, paragraphs, blazy,
+rabbit_hole, svg-sanitize, guzzle and symfony packages; the Security section lists the advisories and the constraint changes&lt;/li>
+&lt;li>&lt;strong>GroupEx Pro removed from the distribution&lt;/strong> — &lt;code>drupal/groupexpro&lt;/code> is no longer in the codebase; the Embedded GroupEx Pro Schedule continues as its own package (
+
+
+
+&lt;a href="https://www.drupal.org/sa-contrib-2026-278" target="_blank">SA-CONTRIB-2026-278&lt;/a> affects &lt;code>groupexpro&lt;/code> before 2.2.1)&lt;/li>
+&lt;li>&lt;strong>Activity Finder 7.2&lt;/strong> — Vue 3, Category Tags filter, &amp;ldquo;Filters on Top&amp;rdquo; layout, location and schedule fixes&lt;/li>
+&lt;li>&lt;strong>jQuery Migrate self-hosted&lt;/strong> — no more &lt;code>code.jquery.com&lt;/code> request on every page (removes a load-order race behind
+&lt;code>jQuery is not defined&lt;/code> errors)&lt;/li>
+&lt;li>&lt;strong>Alt text on the Small Y demo images&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Drupal 12 compatibility declared&lt;/strong> — Layout Builder blocks, themes and content types got releases that declare &lt;code>^12&lt;/code> (e.g. lb_cards 3.1.0, y_camp 3.1.0, ws_event 2.1.0)&lt;/li>
+&lt;/ul>
+&lt;h2 id="platform">Platform&lt;a class="td-heading-self-link" href="#platform" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;/th>
+ &lt;th>11.3 site (11.3.1.5)&lt;/th>
+ &lt;th>11.4.0.0&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Drupal Core&lt;/td>
+ &lt;td>11.3.x (&lt;code>&amp;lt;11.4&lt;/code>)&lt;/td>
+ &lt;td>11.4.11&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Activity Finder&lt;/td>
+ &lt;td>6.2.1&lt;/td>
+ &lt;td>7.2.1&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Layout Builder (&lt;code>y_lb&lt;/code>)&lt;/td>
+ &lt;td>5.0.4&lt;/td>
+ &lt;td>5.2.1&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Carnation theme&lt;/td>
+ &lt;td>4.0.0-beta7&lt;/td>
+ &lt;td>4.2.0&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Group Schedules (&lt;code>openy_repeat&lt;/code>)&lt;/td>
+ &lt;td>3.3.0&lt;/td>
+ &lt;td>4.1.0&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Protected Pages&lt;/td>
+ &lt;td>1.9.0&lt;/td>
+ &lt;td>3.0.0&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>GroupEx Pro&lt;/td>
+ &lt;td>&lt;code>drupal/groupexpro&lt;/code>&lt;/td>
+ &lt;td>&lt;code>ycloudyusa/embedded_groupexpro_schedule&lt;/code> 1.0.0 (embed only)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="highlights">Highlights&lt;a class="td-heading-self-link" href="#highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="drupal-114-support">Drupal 11.4 Support&lt;a class="td-heading-self-link" href="#drupal-114-support" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;code>drupal/core&lt;/code> and &lt;code>drupal/core-composer-scaffold&lt;/code> raised to &lt;code>^11.4&lt;/code> (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/372" target="_blank">#372&lt;/a>).
+Core release notes: 
+
+
+
+&lt;a href="https://www.drupal.org/project/drupal/releases/11.4.0" target="_blank">Drupal 11.4.0&lt;/a>; every core release from 11.3.13 to 11.4.11 is under All Releases.
+Breaking changes of core 11.4 fixed in the packages that hit them:&lt;/p></description></item><item><title>Digital Services Release 11.3.1.6</title><link>/blog/2026/07/06/digital-services-release-11.3.1.6/</link><pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate><guid>/blog/2026/07/06/digital-services-release-11.3.1.6/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>Drupal Core constrained to 11.3.x:&lt;/strong>
 &lt;code>drupal/core&lt;/code> and &lt;code>drupal/core-composer-scaffold&lt;/code> are now constrained to &lt;code>&amp;gt;=11.3 &amp;lt;11.4&lt;/code>. Drupal core 11.4 introduces errors in the distribution, so this release pins sites to the 11.3.x line until 11.4+ compatibility is verified. (

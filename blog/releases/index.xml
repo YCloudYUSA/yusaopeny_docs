@@ -1,4 +1,123 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Notes on YMCA Website Services</title><link>/blog/releases/</link><description>Recent content in Release Notes on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Services Release 11.3.1.6</title><link>/blog/2026/07/06/digital-services-release-11.3.1.6/</link><pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate><guid>/blog/2026/07/06/digital-services-release-11.3.1.6/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Notes on YMCA Website Services</title><link>/blog/releases/</link><description>Recent content in Release Notes on YMCA Website Services</description><generator>Hugo</generator><language>en</language><atom:link href="/blog/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Services Release 11.4.0.0</title><link>/blog/2026/11/04/digital-services-release-11.4.0.0/</link><pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate><guid>/blog/2026/11/04/digital-services-release-11.4.0.0/</guid><description>&lt;p>By role: 
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/content-editor/release-11.4.0.0/">Content Editors&lt;/a> ·
+
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/site-builder/release-11.4.0.0/">Site Builders&lt;/a> ·
+
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/developer/release-11.4.0.0/">Developers&lt;/a> ·
+
+
+
+
+
+ 
+ 
+ 
+ &lt;a href="/docs/decision-maker/release-11.4.0.0/">Decision Makers&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Full Changelog&lt;/strong>: 
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/compare/11.3.1.6...11.4.0.0" target="_blank">https://github.com/YCloudYUSA/yusaopeny/compare/11.3.1.6...11.4.0.0&lt;/a>&lt;/p>
+&lt;h2 id="summary">Summary&lt;a class="td-heading-self-link" href="#summary" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>YMCA Website Services 11.4 moves the distribution to &lt;strong>Drupal 11.4&lt;/strong>. These notes cover the changes from 11.3.1.6 up
+to 11.4.0.0. The current build is 11.4.0.0-rc5 (tagged 2026-11-04):&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Drupal Core 11.3.13 → 11.4.11&lt;/strong> — 204 packages changed in a test upgrade (measured on 11.4.0.0-rc4)&lt;/li>
+&lt;li>&lt;strong>Security&lt;/strong> — a fresh &lt;code>composer update&lt;/code> resolves current releases of core, webform, captcha, paragraphs, blazy,
+rabbit_hole, svg-sanitize, guzzle and symfony packages; the Security section lists the advisories and the constraint changes&lt;/li>
+&lt;li>&lt;strong>GroupEx Pro removed from the distribution&lt;/strong> — &lt;code>drupal/groupexpro&lt;/code> is no longer in the codebase; the Embedded GroupEx Pro Schedule continues as its own package (
+
+
+
+&lt;a href="https://www.drupal.org/sa-contrib-2026-278" target="_blank">SA-CONTRIB-2026-278&lt;/a> affects &lt;code>groupexpro&lt;/code> before 2.2.1)&lt;/li>
+&lt;li>&lt;strong>Activity Finder 7.2&lt;/strong> — Vue 3, Category Tags filter, &amp;ldquo;Filters on Top&amp;rdquo; layout, location and schedule fixes&lt;/li>
+&lt;li>&lt;strong>jQuery Migrate self-hosted&lt;/strong> — no more &lt;code>code.jquery.com&lt;/code> request on every page (removes a load-order race behind
+&lt;code>jQuery is not defined&lt;/code> errors)&lt;/li>
+&lt;li>&lt;strong>Alt text on the Small Y demo images&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Drupal 12 compatibility declared&lt;/strong> — Layout Builder blocks, themes and content types got releases that declare &lt;code>^12&lt;/code> (e.g. lb_cards 3.1.0, y_camp 3.1.0, ws_event 2.1.0)&lt;/li>
+&lt;/ul>
+&lt;h2 id="platform">Platform&lt;a class="td-heading-self-link" href="#platform" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;/th>
+ &lt;th>11.3 site (11.3.1.5)&lt;/th>
+ &lt;th>11.4.0.0&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Drupal Core&lt;/td>
+ &lt;td>11.3.x (&lt;code>&amp;lt;11.4&lt;/code>)&lt;/td>
+ &lt;td>11.4.11&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Activity Finder&lt;/td>
+ &lt;td>6.2.1&lt;/td>
+ &lt;td>7.2.1&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Layout Builder (&lt;code>y_lb&lt;/code>)&lt;/td>
+ &lt;td>5.0.4&lt;/td>
+ &lt;td>5.2.1&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Carnation theme&lt;/td>
+ &lt;td>4.0.0-beta7&lt;/td>
+ &lt;td>4.2.0&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Group Schedules (&lt;code>openy_repeat&lt;/code>)&lt;/td>
+ &lt;td>3.3.0&lt;/td>
+ &lt;td>4.1.0&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Protected Pages&lt;/td>
+ &lt;td>1.9.0&lt;/td>
+ &lt;td>3.0.0&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>GroupEx Pro&lt;/td>
+ &lt;td>&lt;code>drupal/groupexpro&lt;/code>&lt;/td>
+ &lt;td>&lt;code>ycloudyusa/embedded_groupexpro_schedule&lt;/code> 1.0.0 (embed only)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="highlights">Highlights&lt;a class="td-heading-self-link" href="#highlights" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="drupal-114-support">Drupal 11.4 Support&lt;a class="td-heading-self-link" href="#drupal-114-support" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;code>drupal/core&lt;/code> and &lt;code>drupal/core-composer-scaffold&lt;/code> raised to &lt;code>^11.4&lt;/code> (
+
+
+
+&lt;a href="https://github.com/YCloudYUSA/yusaopeny/pull/372" target="_blank">#372&lt;/a>).
+Core release notes: 
+
+
+
+&lt;a href="https://www.drupal.org/project/drupal/releases/11.4.0" target="_blank">Drupal 11.4.0&lt;/a>; every core release from 11.3.13 to 11.4.11 is under All Releases.
+Breaking changes of core 11.4 fixed in the packages that hit them:&lt;/p></description></item><item><title>Digital Services Release 11.3.1.6</title><link>/blog/2026/07/06/digital-services-release-11.3.1.6/</link><pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate><guid>/blog/2026/07/06/digital-services-release-11.3.1.6/</guid><description>&lt;h2 id="updates--new-features">Updates &amp;amp; New Features&lt;a class="td-heading-self-link" href="#updates--new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>Drupal Core constrained to 11.3.x:&lt;/strong>
 &lt;code>drupal/core&lt;/code> and &lt;code>drupal/core-composer-scaffold&lt;/code> are now constrained to &lt;code>&amp;gt;=11.3 &amp;lt;11.4&lt;/code>. Drupal core 11.4 introduces errors in the distribution, so this release pins sites to the 11.3.x line until 11.4+ compatibility is verified. (
