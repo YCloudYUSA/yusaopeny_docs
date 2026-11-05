@@ -14,7 +14,7 @@ By role: [Content Editors]({{< relref "/docs/content-editor/release-11.4.0.0" >}
 ## Summary
 
 YMCA Website Services 11.4 moves the distribution to **Drupal 11.4**. These notes cover the changes from 11.3.1.6 up
-to 11.4.0.0-rc5, the current release candidate (tag date 2026-11-04):
+to 11.4.0.0. The current build is 11.4.0.0-rc5 (tagged 2026-11-04):
 
 - **Drupal Core 11.3.13 → 11.4.11** — 204 packages changed in a test upgrade (measured on 11.4.0.0-rc4)
 - **Security** — a fresh `composer update` resolves current releases of core, webform, captcha, paragraphs, blazy,
@@ -28,7 +28,7 @@ to 11.4.0.0-rc5, the current release candidate (tag date 2026-11-04):
 
 ## Platform
 
-| | 11.3 site (11.3.1.5) | 11.4.0.0-rc5 |
+| | 11.3 site (11.3.1.5) | 11.4.0.0 |
 |---|---|---|
 | Drupal Core | 11.3.x (`<11.4`) | 11.4.11 |
 | Activity Finder | 6.2.1 | 7.2.1 |
@@ -372,7 +372,7 @@ A site on 11.3.1.5 updated to 11.4 (`composer update -W`): 204 (updated 192, add
 | `ycloudyusa/embedded_groupexpro_schedule` | — | 1.0.0 | — |
 | `ycloudyusa/useless_machines` | 2.1.0 | 2.2.0 | 1 PR; [2.2.0](https://github.com/YCloudYUSA/useless_machines/releases/tag/2.2.0) |
 | `ycloudyusa/y_pef_schedule` | 2.1.1 | 2.2.0 | 3 PRs; [2.2.0](https://github.com/YCloudYUSA/y_pef_schedule/releases/tag/2.2.0) |
-| `ycloudyusa/yusaopeny` | 11.3.1.5 | 11.4.0.0-rc5 | 18 PRs; [11.3.1.6](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.3.1.6), [11.4.0.0-rc1](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc1), [11.4.0.0-rc2](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc2), [11.4.0.0-rc3](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc3), [11.4.0.0-rc4](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc4), [11.4.0.0-rc5](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc5) |
+| `ycloudyusa/yusaopeny` | 11.3.1.5 | 11.4.0.0 | 18 PRs; [11.3.1.6](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.3.1.6), [11.4.0.0-rc1](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc1), [11.4.0.0-rc2](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc2), [11.4.0.0-rc3](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc3), [11.4.0.0-rc4](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc4), [11.4.0.0-rc5](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc5) |
 | `ycloudyusa/yusaopeny_activity_finder` | 6.2.1 | 7.2.1 **major** | 8 PRs; [7.0.0](https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/7.0.0), [7.1.0](https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/7.1.0), [7.2.0](https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/7.2.0), [7.2.1](https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/7.2.1) |
 | `ycloudyusa/yusaopeny_ymca360` | 2.1.2 | 2.4.0 | 3 PRs; [2.2.0](https://github.com/YCloudYUSA/yusaopeny_ymca360/releases/tag/2.2.0), [2.3.0](https://github.com/YCloudYUSA/yusaopeny_ymca360/releases/tag/2.3.0), [2.4.0](https://github.com/YCloudYUSA/yusaopeny_ymca360/releases/tag/2.4.0) |
 
@@ -546,7 +546,7 @@ The after lock is one upgrade run (2026-11-03); a later run also brings newer re
 
 ## Distribution requirements (`composer.json`)
 
-| Package | 11.3.1.6 | 11.4.0.0-rc5 |
+| Package | 11.3.1.6 | 11.4.0.0 |
 |---|---|---|
 | `drupal/core`, `drupal/core-composer-scaffold` | `>=11.3 <11.4` | `^11.4` |
 | `ycloudyusa/yusaopeny_activity_finder` | `^6.0` | `^7.2` |
@@ -564,7 +564,7 @@ The after lock is one upgrade run (2026-11-03); a later run also brings newer re
 | `guzzlehttp/guzzle` | `^6 \|\| ^7` | direct require dropped; Guzzle is still installed because Drupal core requires `guzzlehttp/guzzle: ^7.10` |
 | `library-ckeditor/colorbutton`, `font`, `panelbutton` | pinned | removed |
 
-Patches (diff of `composer.json`, 11.3.1.6 to 11.4.0.0-rc5): 3 `drupal/core`, 1 `drupal/search_api` and 1 `drupal/webform` patches removed; the `drupal/rabbit_hole` patch replaced; a `drupal/fontyourface` patch added ([merge request !20](https://git.drupalcode.org/project/fontyourface/-/merge_requests/20.diff)).
+Patches (diff of `composer.json`, 11.3.1.6 to 11.4.0.0): 3 `drupal/core`, 1 `drupal/search_api` and 1 `drupal/webform` patches removed; the `drupal/rabbit_hole` patch replaced; a `drupal/fontyourface` patch added ([merge request !20](https://git.drupalcode.org/project/fontyourface/-/merge_requests/20.diff)).
 
 ## Bug Fixes
 
@@ -717,7 +717,7 @@ conversion and `ws_small_y_update_91009`.
 - Major version bumps (8): `consolidation/site-process` 5.4.2 → 6.1.0, `drupal/openy_repeat` 3.3.0 → 4.1.0, `drupal/protected_pages` 1.9.0 → 3.0.0, `enshrined/svg-sanitize` 0.22.0 → 1.1.1, `solarium/solarium` 6.4.1 → 7.0.0, `symfony/dom-crawler` v7.4.12 → v8.1.10, `symfony/string` v7.4.13 → v8.1.10, `ycloudyusa/yusaopeny_activity_finder` 6.2.1 → 7.2.1
 - **5** new and **0** removed Drupal extensions; `drush updb`: 34 updates (rc4 build)
 
-- **16** PRs merged in yusaopeny between the tags 11.3.1.6 and 11.4.0.0-rc5 (50 commits); **18** requirement changes in the distribution `composer.json`
+- **16** PRs merged in yusaopeny between the tags 11.3.1.6 and 11.4.0.0 (50 commits as of rc5); **18** requirement changes in the distribution `composer.json`
 
 ---
 
@@ -843,7 +843,7 @@ Every PR/MR merged into a commit between the two locked references of each of ou
 | [#24](https://github.com/YCloudYUSA/y_pef_schedule/pull/24) | fix(ITCR-1346): Replace Request::get() in schedule controller (removed in Symfony 8) | 2026-10-08 |
 | [#23](https://github.com/YCloudYUSA/y_pef_schedule/pull/23) | Use official drupal/openy_repeat package instead of ynorth-projects | 2026-10-08 |
 
-**YCloudYUSA/yusaopeny** (18 PRs, 6 releases, 11.3.1.5 → 11.4.0.0-rc5)
+**YCloudYUSA/yusaopeny** (18 PRs, 6 releases, 11.3.1.5 → 11.4.0.0)
 
 | PR | Title | Merged |
 |---|---|---|

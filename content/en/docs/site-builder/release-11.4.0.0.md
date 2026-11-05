@@ -7,7 +7,7 @@ weight: 9
 
 ## YMCA Website Services 11.4.0.0: Configuration Changes & Post-Upgrade Checks
 
-Configuration changes run in `drush updb`. After the upgrade, re-enter the GroupEx Pro account id if it was reset (see below) and check the items below. The baseline is 11.4.0.0-rc5.
+Configuration changes run in `drush updb`. After the upgrade, re-enter the GroupEx Pro account id if it was reset (see below) and check the items below. The target is 11.4.0.0.
 
 ### Activity Finder 7.2
 
