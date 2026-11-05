@@ -9,32 +9,37 @@ weight: 9
 
 **Summary**
 
-11.4.0.0 is a security and platform release. It moves sites to Drupal core 11.4, the minor that receives security
-fixes, and closes every security advisory `composer audit` reports for the distribution on 11.3 and 11.4 release
-candidate sites.
+11.4.0.0 is a platform release. It moves sites from Drupal core 11.3 to Drupal core 11.4. The current build is 11.4.0.0-rc5. A fresh `composer update` resolves current releases of core and contrib
+packages. The exact constraint changes and removed patches are listed in the technical notes.
 
-### Why upgrade
+### What changes
 
-- **Security**: 55 advisories in 21 packages are fixed, among them 7 Drupal core advisories and 20 Webform advisories.
-  After the upgrade `composer audit` reports none for the distribution.
-- **Unsupported module removed**: the GroupEx Pro module was marked unsupported by the Drupal Security Team
-  (SA-CONTRIB-2026-278, Critical). It is removed; the embedded GroupEx Pro schedule keeps working.
-- **Stability**: random `jQuery is not defined` page errors (seen on 15 of 26 sites) are fixed by serving jQuery
-  Migrate from the site itself instead of an external CDN.
-- **Accessibility**: all 132 Small Y demo images get alt text.
-- **Drupal 12 readiness**: Layout Builder blocks, themes and content types got releases that declare Drupal 12
-  support.
+- **Platform**: Drupal core `^11.4`. Several outdated requirements and patches are removed.
+- **GroupEx Pro**: Drupal.org published
+  [SA-CONTRIB-2026-278](https://www.drupal.org/sa-contrib-2026-278) (Critical, PHP object injection) on 2026-11-04.
+  It affects `drupal/groupexpro` before 2.2.1. The project was marked unsupported on 2026-10-28 and restored on
+  2026-11-04 with the fix in 2.2.1. The distribution no longer includes `drupal/groupexpro`. The Embedded GroupEx Pro
+  Schedule moved to `ycloudyusa/embedded_groupexpro_schedule` 1.0.0 and keeps working. The old GroupEx modules
+  (`openy_gxp`, `openy_group_schedules`, `groupex_form_cache`, `openy_pef_gxp_sync`) are retired and uninstall
+  themselves on `drush updb`.
+- **Page errors**: jQuery Migrate is served from the site instead of an external server, to address random
+  `jQuery is not defined` errors.
+- **Accessibility**: Small Y demo images get alt text through an update hook.
+- **Fonts (rc5)**: a `fontyourface` 4.3 problem can leave font stylesheets off the page. The distribution patches it
+  with an upstream merge request that is still open. Sites using `y_fonts` are not affected.
 
-### What it takes
+### Effort and risk
 
-- One upgrade through Composer and `drush updb`; all configuration changes run automatically.
+- One upgrade through Composer and `drush updb`. Most configuration changes run in `drush updb`. The GroupEx Pro account id may need to be entered again.
 - Developers remove a few outdated requirements from the site's `composer.json`
   (see [Release 11.4.0.0 for Developers]({{< relref "/docs/developer/release-11.4.0.0" >}})).
+- Pages that use the Embedded GroupEx Pro Schedule: the account id is kept as a number, so a non-numeric id has to be
+  entered again.
 - Content does not need to change.
+- Release candidate: test on staging first.
 
 ### Tested
 
-- 27 managed sites run 11.4 release candidates on staging and live.
-- Upgrade from 11.3.1.5 to 11.4.0.0-rc4: 34 updates, no errors.
+- Upgrade from 11.3.1.5 to 11.4.0.0-rc4: 34 updates, no errors. This was measured on rc4, not on rc5.
 
 Full technical notes: [Digital Services Release 11.4.0.0]({{< relref "/blog/releases/release-ds-11.4.0.0" >}}).

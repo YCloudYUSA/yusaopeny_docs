@@ -13,22 +13,22 @@ By role: [Content Editors]({{< relref "/docs/content-editor/release-11.4.0.0" >}
 
 ## Summary
 
-YMCA Website Services 11.4 moves the distribution to **Drupal 11.4** and closes every open security advisory on the
-current fleet:
+YMCA Website Services 11.4 moves the distribution to **Drupal 11.4**. These notes cover the changes from 11.3.1.6 up
+to 11.4.0.0-rc5, the current release candidate (tag date 2026-11-04):
 
-- **Drupal Core 11.3.13 → 11.4.11** — security coverage on the current minor; 204 packages changed
-- **Security** — all advisories `composer audit` reports for the distribution on 11.3 / 11.4-rc sites are fixed (core,
-  webform, captcha, paragraphs, blazy, rabbit_hole, svg-sanitize, guzzle, symfony and more — see Security)
-- **GroupEx Pro retired** — `drupal/groupexpro` ([SA-CONTRIB-2026-278](https://www.drupal.org/sa-contrib-2026-278), unsupported) is gone from the codebase; the Embedded GroupEx Pro Schedule continues as its own package
+- **Drupal Core 11.3.13 → 11.4.11** — 204 packages changed in a test upgrade (measured on 11.4.0.0-rc4)
+- **Security** — a fresh `composer update` resolves current releases of core, webform, captcha, paragraphs, blazy,
+  rabbit_hole, svg-sanitize, guzzle and symfony packages; the Security section lists the advisories and the constraint changes
+- **GroupEx Pro removed from the distribution** — `drupal/groupexpro` is no longer in the codebase; the Embedded GroupEx Pro Schedule continues as its own package ([SA-CONTRIB-2026-278](https://www.drupal.org/sa-contrib-2026-278) affects `groupexpro` before 2.2.1)
 - **Activity Finder 7.2** — Vue 3, Category Tags filter, "Filters on Top" layout, location and schedule fixes
-- **jQuery Migrate self-hosted** — no more `code.jquery.com` request on every page (fixes random
+- **jQuery Migrate self-hosted** — no more `code.jquery.com` request on every page (removes a load-order race behind
   `jQuery is not defined` errors)
-- **Alt text on all Small Y demo images**
-- **Drupal 12 readiness** — Layout Builder blocks, themes and content types got releases that declare `^12` (e.g. lb_cards 3.1.0, y_camp 3.1.0, ws_event 2.1.0)
+- **Alt text on the Small Y demo images**
+- **Drupal 12 compatibility declared** — Layout Builder blocks, themes and content types got releases that declare `^12` (e.g. lb_cards 3.1.0, y_camp 3.1.0, ws_event 2.1.0)
 
 ## Platform
 
-| | 11.3 site (11.3.1.5) | 11.4.0.0 |
+| | 11.3 site (11.3.1.5) | 11.4.0.0-rc5 |
 |---|---|---|
 | Drupal Core | 11.3.x (`<11.4`) | 11.4.11 |
 | Activity Finder | 6.2.1 | 7.2.1 |
@@ -55,18 +55,20 @@ Breaking changes of core 11.4 fixed in the packages that hit them:
 | `path.matcher` decorated by `AliasPathMatcher` → HTTP 500 on every page with protected_pages 1.x | `drupal/protected_pages ^3.0` ([#383](https://github.com/YCloudYUSA/yusaopeny/pull/383)) |
 | `entity_type.manager` decorated by Trash → TypeError in services typed with the concrete class | `openy_repeat` 4.1.0 (Group Schedules), `openy_features` 5.4.0 (Class Location block, [openy_features#128](https://github.com/open-y-subprojects/openy_features/pull/128)) |
 
-### GroupEx Pro retired
+### GroupEx Pro removed from the distribution
 
-The drupal.org project `groupexpro` was marked **unsupported** by the Drupal Security Team
-([SA-CONTRIB-2026-278](https://www.drupal.org/sa-contrib-2026-278), Critical, all versions). The GroupEx Pro API it
-was built for is no longer available.
+The Drupal Security Team marked the drupal.org project `groupexpro` unsupported on 2026-10-28.
+[SA-CONTRIB-2026-278](https://www.drupal.org/sa-contrib-2026-278) (Critical, PHP object injection, affects versions before 2.2.1) was published on
+2026-11-04. The project was restored the same day with the fix in 2.2.1. The distribution removed `drupal/groupexpro`
+in 11.4.0.0-rc4 ([#393](https://github.com/YCloudYUSA/yusaopeny/pull/393)). It is not a direct requirement in `composer.json`.
 
 - `drupal/groupexpro`, its `drupal/openy_gxp` package and `drupal/openy_pef_gxp_sync` are removed from the
   distribution ([#393](https://github.com/YCloudYUSA/yusaopeny/pull/393)).
 - The **Embedded GroupEx Pro Schedule** (the paragraph that embeds the GroupEx schedule widget) keeps working: the
   module moved to [`ycloudyusa/embedded_groupexpro_schedule`](https://github.com/YCloudYUSA/embedded_groupexpro_schedule)
-  1.0.0 with the same module name. The account id is stored and output as a number only; the widget scripts load over
-  https only.
+  1.0.0 with the same module name. The account id is stored and output as a number. `embedded_groupexpro_schedule_update_10001`
+  sets a stored id that is not a number to 0, so enter the account id again after `drush updb`. The widget scripts load
+  over https only.
 - `openy_gxp`, `openy_group_schedules`, `groupex_form_cache` and `openy_pef_gxp_sync` come as self-uninstalling stubs
   from [`ycloudyusa/useless_machines`](https://github.com/YCloudYUSA/useless_machines) 2.2.0
   ([useless_machines#15](https://github.com/YCloudYUSA/useless_machines/pull/15), [#394](https://github.com/YCloudYUSA/yusaopeny/pull/394)):
@@ -88,7 +90,7 @@ was built for is no longer available.
 ### jQuery Migrate self-hosted
 
 The profile used to inject `jquery-migrate-4.0.0-beta.1.js` from `code.jquery.com` into core's jQuery library. Under load
-it raced ahead of jQuery (`Uncaught ReferenceError: jQuery is not defined`, seen on 15 of 26 sites). Now jQuery Migrate
+it raced ahead of jQuery (`Uncaught ReferenceError: jQuery is not defined`). Now jQuery Migrate
 **4.0.2** ships with the profile as `openy/jquery_migrate` with a dependency on `core/jquery`
 ([#386](https://github.com/YCloudYUSA/yusaopeny/pull/386)).
 
@@ -100,9 +102,20 @@ tables, so one header-less table no longer breaks the other tables on the page
 
 ### Small Y demo images: alt text
 
-All 132 Small Y demo images get alt text on new installs; existing sites get it from `ws_small_y_update_91009`
-(only where alt is empty) — `ws_small_y` 2.2.0 ([!85](https://git.drupalcode.org/project/ws_small_y/-/merge_requests/85),
+The Small Y demo images get alt text on new installs; existing sites get it from `ws_small_y_update_91009` after
+`drush updb` (only where alt is empty) — `ws_small_y` 2.2.0 ([!85](https://git.drupalcode.org/project/ws_small_y/-/merge_requests/85),
 [!86](https://git.drupalcode.org/project/ws_small_y/-/merge_requests/86)).
+
+### Font Your Face patch
+
+`drupal/fontyourface` 4.3.0 moved its `page_attachments` hook into a hook class that runs last. The provider submodules
+(`local_fonts`, `google_fonts_api` and others) run before it, find no fonts, and no font stylesheet is attached. The
+distribution patches `drupal/fontyourface` with the upstream
+[merge request !20](https://git.drupalcode.org/project/fontyourface/-/merge_requests/20) for the open issue
+[#3630630](https://www.drupal.org/node/3630630) ([#398](https://github.com/YCloudYUSA/yusaopeny/pull/398), 11.4.0.0-rc5).
+
+- Sites that use `y_fonts` are not affected: it has its own `page_attachments` hook and no `fontyourface` dependency.
+- If your root `composer.json` carries its own patch for #3630630, remove it.
 
 ### Webform UI enabled with the Webform block
 
@@ -124,7 +137,7 @@ existing sites get it from `lb_webform_update_10001`
 ## Security
 
 
-55 advisories in 21 packages affect the 11.3 site lock and not the upgraded one (packages.drupal.org and packagist.org advisory APIs, matched against the locked versions):
+55 advisories in 21 packages affect the lock of an 11.3.1.5 test site and not the lock of the same site upgraded to 11.4.0.0-rc4; advisories published later are not included (packages.drupal.org and packagist.org advisory APIs, matched against the locked versions):
 
 | Package | Advisories | IDs | Fixed in |
 |---|---|---|---|
@@ -137,7 +150,7 @@ existing sites get it from `lb_webform_update_10001`
 | `drupal/entity` | 1 | [SA-CONTRIB-2026-113](https://www.drupal.org/sa-contrib-2026-113) | 1.8.0 |
 | `drupal/entity_browser` | 1 | [SA-CONTRIB-2026-094](https://www.drupal.org/sa-contrib-2026-9ycmpcajri) | 2.17.0 |
 | `drupal/geolocation` | 1 | [SA-CONTRIB-2026-062](https://www.drupal.org/sa-contrib-2026-xuq567xe4o) | 3.15.0 |
-| `drupal/groupexpro` | 1 | [SA-CONTRIB-2026-278](https://www.drupal.org/sa-contrib-2026-ydaojteruc) | removed |
+| `drupal/groupexpro` | 1 | [SA-CONTRIB-2026-278](https://www.drupal.org/sa-contrib-2026-278) | 2.2.1; package removed from the distribution |
 | `drupal/paragraphs` | 2 | [SA-CONTRIB-2026-060](https://www.drupal.org/sa-contrib-2026-mgwv6qpzfz), [SA-CONTRIB-2026-061](https://www.drupal.org/sa-contrib-2026-4vcblnrxz1) | 1.23.0 |
 | `drupal/rabbit_hole` | 1 | [SA-CONTRIB-2026-252](https://www.drupal.org/sa-contrib-2026-9cagfbicvj) | 1.3.0 |
 | `drupal/stage_file_proxy` | 1 | [SA-CONTRIB-2026-286](https://www.drupal.org/sa-contrib-2026-286) | 3.1.7 |
@@ -150,10 +163,8 @@ existing sites get it from `lb_webform_update_10001`
 | `symfony/mime` | 1 | [symfony/mime/CVE-2026-45070.yaml](https://symfony.com/cve-2026-45070) | v7.4.22 |
 | `symfony/yaml` | 1 | [symfony/yaml/CVE-2026-109413.yaml](https://symfony.com/cve-2026-109413) | v7.4.22 |
 
-Still open after the upgrade: none.
+Still open after the rc4 test upgrade: none.
 
-
-The live audit of the 27 sites on 11.4 release candidates reported 4 core advisories; 11.4.11 fixes them.
 
 Site packages (not required by the distribution), fixed by the site's `composer update -W` when its own constraint allows it:
 
@@ -162,7 +173,7 @@ Site packages (not required by the distribution), fixed by the site's `composer 
 | `drupal/shield` | SA-CONTRIB-2026-248 | 1.10 |
 | `drupal/simple_oauth` | SA-CONTRIB-2026-242 | 6.1.3 |
 
-`composer audit` on a fresh install: 11.3.1.6 — SA-CONTRIB-2026-278; 11.4 — none.
+`composer audit` on a fresh install, as run for the rc4 test: 11.3.1.6 — SA-CONTRIB-2026-278; 11.4 — none. It was not re-run for rc5, and new advisories change the result.
 
 ---
 
@@ -178,8 +189,9 @@ Drupal 11.4 core pulls `symfony/runtime`, whose Composer plugin is blocked unles
 
 ### GroupEx Pro
 
-- No action for sites that use the Embedded GroupEx Pro Schedule paragraph: the module keeps its name; `updb` converts
-  a stored account id to a number (`embedded_groupexpro_schedule_update_10001`).
+- Sites that use the Embedded GroupEx Pro Schedule paragraph: the module keeps its name; `updb` converts a stored
+  account id to a number (`embedded_groupexpro_schedule_update_10001`). A stored id that is not a number becomes 0:
+  enter the account id again at `/admin/openy/integrations/groupex-pro/groupexpro`.
 - Remove any root `require` of `drupal/groupexpro`, `drupal/openy_gxp` or `drupal/openy_pef_gxp_sync`:
   `useless_machines` 2.2.0 conflicts with them.
 - `openy_prgf_group_schedules` (openy_features) depends on `openy_group_schedules`; where it is still enabled, the stub
@@ -213,7 +225,9 @@ None.
 
 Uninstalled by `drush updb`:
 
-None.
+The stubs `openy_gxp`, `openy_group_schedules`, `groupex_form_cache` and `openy_pef_gxp_sync` (see the table below)
+uninstall themselves. `openy_prgf_group_schedules` (openy_features) is uninstalled together with `openy_group_schedules`:
+check that no content depends on it before you update.
 
 Same machine name, now shipped by another package (the old package is removed):
 
@@ -250,9 +264,9 @@ Installed by `drush updb`:
 
 | Package | Version on the 11.3 site | Reason |
 |---|---|---|
-| `drupal/groupexpro` | 2.1.0 | Unsupported (SA-CONTRIB-2026-278); embed moved to `ycloudyusa/embedded_groupexpro_schedule` |
+| `drupal/groupexpro` | 2.1.0 | Retired from the distribution in rc4 ([SA-CONTRIB-2026-278](https://www.drupal.org/sa-contrib-2026-278) affects versions before 2.2.1); embed moved to `ycloudyusa/embedded_groupexpro_schedule` |
 | `drupal/openy_gxp` | 2.1.0 | Part of groupexpro; stub in useless_machines |
-| `drupal/openy_pef_gxp_sync` | 2.0.1 | GroupEx Pro API discontinued; stub in useless_machines |
+| `drupal/openy_pef_gxp_sync` | 2.0.1 | Retired; stub in useless_machines |
 | `library-ckeditor/colorbutton` | 4.10.1 | CKEditor 4 only |
 | `library-ckeditor/font` | 4.12.1 | CKEditor 4 only |
 | `library-ckeditor/panelbutton` | 4.10.1 | CKEditor 4 only |
@@ -265,7 +279,7 @@ New packages: `ycloudyusa/embedded_groupexpro_schedule`, `symfony/runtime`, `sym
 ## Updated Packages
 
 
-A site on 11.3.1.5 updated to 11.4 (`composer update -W`): 204 (updated 192, added 6, removed 6) packages changed. `dev-*` packages show `version@commit`. Changes: advisories fixed, merged PRs/MRs (our packages), releases in the range (links to the release notes or the tag).
+A site on 11.3.1.5 updated to 11.4 (`composer update -W`): 204 (updated 192, added 6, removed 6) packages changed, measured on the 11.4.0.0-rc4 build (rc5 only adds the fontyourface patch to `composer.json`). `dev-*` packages show `version@commit`. Changes: advisories fixed, merged PRs/MRs (our packages), releases in the range (links to the release notes or the tag).
 
 <details>
 <summary><strong>Layout Builder Blocks — 23 packages</strong></summary>
@@ -358,7 +372,7 @@ A site on 11.3.1.5 updated to 11.4 (`composer update -W`): 204 (updated 192, add
 | `ycloudyusa/embedded_groupexpro_schedule` | — | 1.0.0 | — |
 | `ycloudyusa/useless_machines` | 2.1.0 | 2.2.0 | 1 PR; [2.2.0](https://github.com/YCloudYUSA/useless_machines/releases/tag/2.2.0) |
 | `ycloudyusa/y_pef_schedule` | 2.1.1 | 2.2.0 | 3 PRs; [2.2.0](https://github.com/YCloudYUSA/y_pef_schedule/releases/tag/2.2.0) |
-| `ycloudyusa/yusaopeny` | 11.3.1.5 | 11.4.0.0-rc4 | 16 PRs; [11.3.1.6](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.3.1.6), [11.4.0.0-rc1](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc1), [11.4.0.0-rc2](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc2), [11.4.0.0-rc3](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc3), [11.4.0.0-rc4](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc4) |
+| `ycloudyusa/yusaopeny` | 11.3.1.5 | 11.4.0.0-rc5 | 18 PRs; [11.3.1.6](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.3.1.6), [11.4.0.0-rc1](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc1), [11.4.0.0-rc2](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc2), [11.4.0.0-rc3](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc3), [11.4.0.0-rc4](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc4), [11.4.0.0-rc5](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc5) |
 | `ycloudyusa/yusaopeny_activity_finder` | 6.2.1 | 7.2.1 **major** | 8 PRs; [7.0.0](https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/7.0.0), [7.1.0](https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/7.1.0), [7.2.0](https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/7.2.0), [7.2.1](https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/7.2.1) |
 | `ycloudyusa/yusaopeny_ymca360` | 2.1.2 | 2.4.0 | 3 PRs; [2.2.0](https://github.com/YCloudYUSA/yusaopeny_ymca360/releases/tag/2.2.0), [2.3.0](https://github.com/YCloudYUSA/yusaopeny_ymca360/releases/tag/2.3.0), [2.4.0](https://github.com/YCloudYUSA/yusaopeny_ymca360/releases/tag/2.4.0) |
 
@@ -441,9 +455,9 @@ A site on 11.3.1.5 updated to 11.4 (`composer update -W`): 204 (updated 192, add
 | `drupal/entity_browser` | 2.15.0 | 2.17.0 | fixes [SA-CONTRIB-2026-094](https://www.drupal.org/sa-contrib-2026-9ycmpcajri); [8.x-2.16](https://www.drupal.org/project/entity_browser/releases/8.x-2.16) (security), [8.x-2.17](https://www.drupal.org/project/entity_browser/releases/8.x-2.17) |
 | `drupal/file_delete` | 3.0.2 | 3.0.3 | [3.0.3](https://www.drupal.org/project/file_delete/releases/3.0.3) |
 | `drupal/focal_point` | 2.1.2 | 2.1.3 | [2.1.3](https://www.drupal.org/project/focal_point/releases/2.1.3) |
-| `drupal/fontyourface` | 4.2.0 | 4.3.1 | [4.3.0](https://www.drupal.org/project/fontyourface/releases/4.3.0), [4.3.1](https://www.drupal.org/project/fontyourface/releases/4.3.1) |
+| `drupal/fontyourface` | 4.2.0 | 4.3.1 | [4.3.0](https://www.drupal.org/project/fontyourface/releases/4.3.0), [4.3.1](https://www.drupal.org/project/fontyourface/releases/4.3.1); patched in the distribution for [#3630630](https://www.drupal.org/node/3630630) |
 | `drupal/geolocation` | 3.14.0 | 3.15.0 | fixes [SA-CONTRIB-2026-062](https://www.drupal.org/sa-contrib-2026-xuq567xe4o); [8.x-3.15](https://www.drupal.org/project/geolocation/releases/8.x-3.15) (security) |
-| `drupal/groupexpro` | 2.1.0 | — | fixes [SA-CONTRIB-2026-278](https://www.drupal.org/sa-contrib-2026-ydaojteruc) |
+| `drupal/groupexpro` | 2.1.0 | — | removed from the distribution; [SA-CONTRIB-2026-278](https://www.drupal.org/sa-contrib-2026-278) affects versions before 2.2.1 |
 | `drupal/hal` | 2.0.4 | 2.0.5 | [2.0.5](https://www.drupal.org/project/hal/releases/2.0.5) |
 | `drupal/jquery_ui_touch_punch` | 1.1.1 | 1.1.2 | [1.1.2](https://www.drupal.org/project/jquery_ui_touch_punch/releases/1.1.2) |
 | `drupal/layout_builder_restrictions` | 3.0.4 | 3.0.6 | [3.0.5](https://www.drupal.org/project/layout_builder_restrictions/releases/3.0.5), [3.0.6](https://www.drupal.org/project/layout_builder_restrictions/releases/3.0.6) |
@@ -532,7 +546,7 @@ The after lock is one upgrade run (2026-11-03); a later run also brings newer re
 
 ## Distribution requirements (`composer.json`)
 
-| Package | 11.3.1.6 | 11.4.0.0 |
+| Package | 11.3.1.6 | 11.4.0.0-rc5 |
 |---|---|---|
 | `drupal/core`, `drupal/core-composer-scaffold` | `>=11.3 <11.4` | `^11.4` |
 | `ycloudyusa/yusaopeny_activity_finder` | `^6.0` | `^7.2` |
@@ -550,12 +564,12 @@ The after lock is one upgrade run (2026-11-03); a later run also brings newer re
 | `guzzlehttp/guzzle` | `^6 \|\| ^7` | direct require dropped; Guzzle is still installed because Drupal core requires `guzzlehttp/guzzle: ^7.10` |
 | `library-ckeditor/colorbutton`, `font`, `panelbutton` | pinned | removed |
 
-Patches: 3 `drupal/core`, 1 `drupal/search_api`, 1 `drupal/webform` patches removed; the `drupal/rabbit_hole` patch replaced.
+Patches (diff of `composer.json`, 11.3.1.6 to 11.4.0.0-rc5): 3 `drupal/core`, 1 `drupal/search_api` and 1 `drupal/webform` patches removed; the `drupal/rabbit_hole` patch replaced; a `drupal/fontyourface` patch added ([merge request !20](https://git.drupalcode.org/project/fontyourface/-/merge_requests/20.diff)).
 
 ## Bug Fixes
 
 
-27 merged PR/MRs of our packages whose title says fix or bug:
+28 merged PR/MRs of our packages whose title says fix or bug:
 
 - fix(ITCR-1271): widen module_installer typehint to ModuleInstallerInterface (D11.4) ([drupal/confi!15](https://git.drupalcode.org/project/confi/-/merge_requests/15))
 - Fix: run text format filters (media_embed) on accordion item body ([drupal/lb_accordion!30](https://git.drupalcode.org/project/lb_accordion/-/merge_requests/30))
@@ -577,6 +591,7 @@ Patches: 3 `drupal/core`, 1 `drupal/search_api`, 1 `drupal/webform` patches remo
 - fix(ITCR-1271): use core image formatter instead of blazy (D11.4 config schema) ([YCloudYUSA/y_lb#312](https://github.com/YCloudYUSA/y_lb/pull/312))
 - fix/issue-310-incorrect-route-processing|Fix for the issue with incor… ([YCloudYUSA/y_lb#311](https://github.com/YCloudYUSA/y_lb/pull/311))
 - fix(ITCR-1346): Replace Request::get() in schedule controller (removed in Symfony 8) ([YCloudYUSA/y_pef_schedule#24](https://github.com/YCloudYUSA/y_pef_schedule/pull/24))
+- fix(ITCP-752): patch fontyourface 4.3.x so font stylesheets are attached again ([YCloudYUSA/yusaopeny#398](https://github.com/YCloudYUSA/yusaopeny/pull/398))
 - fix(ITCR-1336): drop stale composer patches, fix empty rabbit_hole patch ([YCloudYUSA/yusaopeny#387](https://github.com/YCloudYUSA/yusaopeny/pull/387))
 - fix(ITCP-741): self-host jQuery Migrate, drop code.jquery.com CDN ([YCloudYUSA/yusaopeny#386](https://github.com/YCloudYUSA/yusaopeny/pull/386))
 - fix: bump protected_pages to ^3.0 (Drupal core 11.4+ compat) ([YCloudYUSA/yusaopeny#383](https://github.com/YCloudYUSA/yusaopeny/pull/383))
@@ -666,16 +681,18 @@ From 11.3.1.x or an 11.4.0.0 release candidate:
 
 ```bash
 composer config allow-plugins.symfony/runtime true
-composer require ycloudyusa/yusaopeny:^11.4 --no-update
+composer require ycloudyusa/yusaopeny:^11.4@RC --no-update
 composer update -W
 drush updb -y --no-cache-clear
 drush cr
 ```
 
+Keep `@RC` while 11.4.0.0 is a release candidate; drop it after the stable release.
+
 `composer require` without `--no-update` (or `-W`) fails on an 11.3 site — the locked dependencies (e.g. `drupal/confi`
 4.1) block a partial update — and composer reverts `composer.json`.
 
-All migrations run in `drush updb`: 34 updates on a fresh `extended` 11.3.1.5 install upgraded to 11.4.0.0-rc4 (sites
+All migrations run in `drush updb`: 34 updates on a fresh `extended` 11.3.1.5 install upgraded to 11.4.0.0-rc4 (measured on rc4, not re-run on rc5; sites
 with more modules run more), among them the blazy→image display updates, the Activity Finder 6.2.1 → 7.2.1 backend
 conversion (`openy_activity_finder_update_9006`), metatag 403/404 defaults, rabbit_hole and Trash storage updates,
 `lb_webform_update_10001`; on sites that use them also the GroupEx Pro stub clean-up and uninstall, the embed account
@@ -683,8 +700,7 @@ conversion and `ws_small_y_update_91009`.
 
 ## QA & Testing
 
-- 27 managed sites run 11.4 release candidates on staging and live: 23 on rc2, 4 on rc1.
-- Upgrade test 11.3.1.5 (`extended`) → 11.4.0.0-rc4 with the commands above: 34 updates, no errors.
+- Upgrade test 11.3.1.5 (`extended`) → 11.4.0.0-rc4 with the commands above: 34 updates, no errors (rc4 build; not re-run on rc5).
 - PR builder upgrade test and fresh install sandboxes green on [#390](https://github.com/YCloudYUSA/yusaopeny/pull/390).
 - GroupEx Pro retirement: PR builder green on [#394](https://github.com/YCloudYUSA/yusaopeny/pull/394) (composer removes `drupal/groupexpro`, `drupal/openy_gxp`, `drupal/openy_pef_gxp_sync`); on a live-site copy with the old modules and data, one `updb` pass drops the storage and uninstalls the stubs, the embed renders with a numeric account.
 - Local upgrade of a live site copy from 11.4.0.0-rc2 to main: `updb` clean, `composer audit` 0 advisories (before
@@ -694,14 +710,14 @@ conversion and `ws_small_y_update_91009`.
 ## Statistics
 
 
-- **126** PRs/MRs merged in our packages (61 GitHub + 65 drupal.org)
-- **540** releases between the old and new versions of the changed packages
-- **204** packages changed: 192 updated, 6 added, 6 removed
-- **55** security advisories fixed
+- **128** PRs/MRs merged in our packages (63 GitHub + 65 drupal.org), counted from the tables below
+- **541** releases between the old and new versions of the changed packages
+- **204** packages changed: 192 updated, 6 added, 6 removed (rc4 build)
+- **55** security advisories in the table above
 - Major version bumps (8): `consolidation/site-process` 5.4.2 → 6.1.0, `drupal/openy_repeat` 3.3.0 → 4.1.0, `drupal/protected_pages` 1.9.0 → 3.0.0, `enshrined/svg-sanitize` 0.22.0 → 1.1.1, `solarium/solarium` 6.4.1 → 7.0.0, `symfony/dom-crawler` v7.4.12 → v8.1.10, `symfony/string` v7.4.13 → v8.1.10, `ycloudyusa/yusaopeny_activity_finder` 6.2.1 → 7.2.1
-- **5** new and **0** removed Drupal extensions; `drush updb`: 34 updates
+- **5** new and **0** removed Drupal extensions; `drush updb`: 34 updates (rc4 build)
 
-- **14** PRs merged in yusaopeny between the tags 11.3.1.6 and 11.4.0.0-rc4 (43 commits); **18** requirement changes in the distribution `composer.json`
+- **16** PRs merged in yusaopeny between the tags 11.3.1.6 and 11.4.0.0-rc5 (50 commits); **18** requirement changes in the distribution `composer.json`
 
 ---
 
@@ -827,10 +843,12 @@ Every PR/MR merged into a commit between the two locked references of each of ou
 | [#24](https://github.com/YCloudYUSA/y_pef_schedule/pull/24) | fix(ITCR-1346): Replace Request::get() in schedule controller (removed in Symfony 8) | 2026-10-08 |
 | [#23](https://github.com/YCloudYUSA/y_pef_schedule/pull/23) | Use official drupal/openy_repeat package instead of ynorth-projects | 2026-10-08 |
 
-**YCloudYUSA/yusaopeny** (16 PRs, 5 releases, 11.3.1.5 → 11.4.0.0-rc4)
+**YCloudYUSA/yusaopeny** (18 PRs, 6 releases, 11.3.1.5 → 11.4.0.0-rc5)
 
 | PR | Title | Merged |
 |---|---|---|
+| [#399](https://github.com/YCloudYUSA/yusaopeny/pull/399) | chore: set distribution version 11.4.0.0-rc5 | 2026-11-04 |
+| [#398](https://github.com/YCloudYUSA/yusaopeny/pull/398) | fix(ITCP-752): patch fontyourface 4.3.x so font stylesheets are attached again | 2026-11-04 |
 | [#395](https://github.com/YCloudYUSA/yusaopeny/pull/395) | chore: set distribution version 11.4.0.0-rc4 | 2026-11-02 |
 | [#394](https://github.com/YCloudYUSA/yusaopeny/pull/394) | chore(ITCP-752): require useless_machines ^2.2.0 | 2026-11-02 |
 | [#393](https://github.com/YCloudYUSA/yusaopeny/pull/393) | Replace drupal/groupexpro with ycloudyusa/embedded_groupexpro_schedule | 2026-11-02 |
@@ -1231,7 +1249,7 @@ Releases between the old and the new locked version (date = release date).
 </details>
 
 <details>
-<summary><strong>YUSAOpenY Modules — 42 releases</strong></summary>
+<summary><strong>YUSAOpenY Modules — 43 releases</strong></summary>
 
 - `drupal/openy_branch_selector`: [1.2.0](https://www.drupal.org/project/openy_branch_selector/releases/1.2.0) 2026-10-08
 - `drupal/openy_daxko2`: [1.1.0](https://www.drupal.org/project/openy_daxko2/releases/1.1.0) 2026-10-08
@@ -1253,7 +1271,7 @@ Releases between the old and the new locked version (date = release date).
 - `open-y-subprojects/ynorth_gxp_spots_proxy`: [1.1.0](https://github.com/open-y-subprojects/ynorth_gxp_spots_proxy/releases/tag/1.1.0) 2026-10-09
 - `ycloudyusa/useless_machines`: [2.2.0](https://github.com/YCloudYUSA/useless_machines/releases/tag/2.2.0) 2026-11-02
 - `ycloudyusa/y_pef_schedule`: [2.2.0](https://github.com/YCloudYUSA/y_pef_schedule/releases/tag/2.2.0) 2026-10-08
-- `ycloudyusa/yusaopeny`: [11.3.1.6](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.3.1.6) 2026-07-06, [11.4.0.0-rc1](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc1) 2026-08-11, [11.4.0.0-rc2](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc2) 2026-09-03, [11.4.0.0-rc3](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc3) 2026-10-30, [11.4.0.0-rc4](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc4) 2026-11-02
+- `ycloudyusa/yusaopeny`: [11.3.1.6](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.3.1.6) 2026-07-06, [11.4.0.0-rc1](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc1) 2026-08-11, [11.4.0.0-rc2](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc2) 2026-09-03, [11.4.0.0-rc3](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc3) 2026-10-30, [11.4.0.0-rc4](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc4) 2026-11-02, [11.4.0.0-rc5](https://github.com/YCloudYUSA/yusaopeny/releases/tag/11.4.0.0-rc5) 2026-11-04
 - `ycloudyusa/yusaopeny_activity_finder`: [7.0.0](https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/7.0.0) 2026-09-03, [7.1.0](https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/7.1.0) 2026-10-08, [7.2.0](https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/7.2.0) 2026-10-29, [7.2.1](https://github.com/YCloudYUSA/yusaopeny_activity_finder/releases/tag/7.2.1) 2026-10-29
 - `ycloudyusa/yusaopeny_ymca360`: [2.2.0](https://github.com/YCloudYUSA/yusaopeny_ymca360/releases/tag/2.2.0) 2026-06-17, [2.3.0](https://github.com/YCloudYUSA/yusaopeny_ymca360/releases/tag/2.3.0) 2026-08-31, [2.4.0](https://github.com/YCloudYUSA/yusaopeny_ymca360/releases/tag/2.4.0) 2026-10-08
 
